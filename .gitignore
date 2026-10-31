@@ -1,26 +1,21 @@
-# eclipse
-bin
-*.launch
-.settings
-.metadata
-.classpath
-.project
+# Build output and local SDKs
+**/bin/
+**/obj/
+**/Assemblies/
+artifacts/
+.dotnet/
+.nuget/
+.env
+.env.local
+.DS_Store
+*.user
+*.suo
+# External games, reference mods and private analysis
+references/
+private/
+work/
+*.zip
 
-# idea
-out
-*.ipr
-*.iws
-*.iml
-.idea
-
-# gradle
-build
-.gradle
-
-# other
-eclipse
-run
-runs
-run-data
-
-repo
+# Local project documentation
+/internal docs/
+/AGENTS.md

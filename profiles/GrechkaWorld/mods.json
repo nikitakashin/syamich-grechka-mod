@@ -1,0 +1,2785 @@
+[
+  {
+    "id": "2009463077",
+    "name": "Harmony",
+    "package": "brrainz.harmony",
+    "versions": [
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [],
+    "after": [],
+    "before": [
+      "ludeon.rimworld"
+    ],
+    "incompatible": [],
+    "originalNumber": 1,
+    "order": 1,
+    "group": "Основа",
+    "summary": "Библиотека патчей для модов.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077"
+  },
+  {
+    "id": "3535481557",
+    "name": "Loading Progress",
+    "package": "ilyvion.loadingprogress",
+    "versions": [
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      }
+    ],
+    "after": [
+      "brrainz.harmony"
+    ],
+    "before": [
+      "ludeon.rimworld"
+    ],
+    "incompatible": [
+      "assassinsbro.startupimpactcontinued"
+    ],
+    "originalNumber": 2,
+    "order": 2,
+    "group": "Интерфейс",
+    "summary": "Отображение этапов загрузки игры.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3535481557"
+  },
+  {
+    "id": "3222246658",
+    "name": "[KV] Save Storage, Outfit, Crafting, Drug, & Operation Settings [1.5-1.7]",
+    "package": "savestoragesettings.kv.rw.fishtmp",
+    "versions": [
+      "1.0",
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      }
+    ],
+    "after": [],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 3,
+    "order": 3,
+    "group": "Управление",
+    "summary": "Сохранение шаблонов складов, политик и производственных заданий.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3222246658"
+  },
+  {
+    "id": "3033901359",
+    "name": "Adaptive Storage Framework",
+    "package": "adaptive.storage.framework",
+    "versions": [
+      "1.4",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      }
+    ],
+    "after": [
+      "brrainz.harmony",
+      "ludeon.rimworld",
+      "rwmt.multiplayer"
+    ],
+    "before": [
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "incompatible": [],
+    "originalNumber": 4,
+    "order": 4,
+    "group": "Основа",
+    "summary": "Многопредметные склады и визуализация содержимого.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3033901359"
+  },
+  {
+    "id": "3486264784",
+    "name": "[sbz] Fridge",
+    "package": "sbz.neatstoragefridge",
+    "versions": [
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "adaptive.storage.framework",
+        "name": "Adaptive Storage Framework",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3033901359"
+      }
+    ],
+    "after": [
+      "adaptive.storage.framework"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 5,
+    "order": 5,
+    "group": "Хранение",
+    "summary": "Компактные холодильники и морозильники.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3486264784"
+  },
+  {
+    "id": "3416243474",
+    "name": "[sbz] Neat Storage",
+    "package": "sbz.neatstorage",
+    "versions": [
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "adaptive.storage.framework",
+        "name": "Adaptive Storage Framework",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3033901359"
+      }
+    ],
+    "after": [
+      "adaptive.storage.framework"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 6,
+    "order": 6,
+    "group": "Хранение",
+    "summary": "Разные вместительные склады и контейнеры.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3416243474"
+  },
+  {
+    "id": "3484671309",
+    "name": "[sbz] Workbench Shelf",
+    "package": "sbz.neatstorageworkbenchshelf",
+    "versions": [
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "adaptive.storage.framework",
+        "name": "Adaptive Storage Framework",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3033901359"
+      }
+    ],
+    "after": [
+      "adaptive.storage.framework"
+    ],
+    "before": [],
+    "incompatible": [
+      "xggji1.patchesforworkbenchshelf"
+    ],
+    "originalNumber": 7,
+    "order": 7,
+    "group": "Хранение",
+    "summary": "Хранение материалов непосредственно у рабочих столов.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3484671309"
+  },
+  {
+    "id": "1098354593",
+    "name": "Animals Logic",
+    "package": "oblitus.animalslogic",
+    "versions": [
+      "0.19",
+      "1.0",
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      }
+    ],
+    "after": [
+      "brrainz.harmony"
+    ],
+    "before": [],
+    "incompatible": [
+      "daniledman.hardworkinganimals"
+    ],
+    "originalNumber": 8,
+    "order": 8,
+    "group": "Природа",
+    "summary": "Исправления и настройки поведения животных.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1098354593"
+  },
+  {
+    "id": "3223646936",
+    "name": "Basic Double Doors",
+    "package": "gt.sam.basicdoubledoors",
+    "versions": [
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [],
+    "after": [],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 9,
+    "order": 9,
+    "group": "Строительство",
+    "summary": "Простые двустворчатые двери.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3223646936"
+  },
+  {
+    "id": "1872244972",
+    "name": "Better ModMismatch Window",
+    "package": "madeline.modmismatchformatter",
+    "versions": [
+      "1.0",
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      }
+    ],
+    "after": [],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 10,
+    "order": 10,
+    "group": "Интерфейс",
+    "summary": "Понятное сравнение модов при загрузке сохранений.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1872244972"
+  },
+  {
+    "id": "2925432336",
+    "name": "Big and Small - Framework",
+    "package": "redmattis.betterprerequisites",
+    "versions": [
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      }
+    ],
+    "after": [
+      "ludeon.rimworld",
+      "ludeon.rimworld.royalty",
+      "ludeon.rimworld.ideology",
+      "ludeon.rimworld.biotech",
+      "ludeon.rimworld.anomaly",
+      "ludeon.rimworld.odyssey",
+      "brrainz.harmony"
+    ],
+    "before": [
+      "unlimitedhugs.hugslib",
+      "erdelf.humanoidalienraces",
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "incompatible": [],
+    "originalNumber": 11,
+    "order": 11,
+    "group": "Основа",
+    "summary": "Общие системы размеров тел и генетики.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2925432336"
+  },
+  {
+    "id": "3534185281",
+    "name": "Build From Inventory - Continued",
+    "package": "memegoddess.buildfrominventory",
+    "versions": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      }
+    ],
+    "after": [],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 19,
+    "order": 12,
+    "group": "Управление",
+    "summary": "Строительство с материалами из инвентаря.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3534185281"
+  },
+  {
+    "id": "1874644848",
+    "name": "Character Editor",
+    "package": "void.charactereditor",
+    "versions": [
+      "1.0",
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      }
+    ],
+    "after": [
+      "brrainz.harmony",
+      "ludeon.rimworld",
+      "ludeon.rimworld.royalty",
+      "ludeon.rimworld.ideology",
+      "ludeon.rimworld.biotech",
+      "ludeon.rimworld.anomaly",
+      "unlimitedhugs.hugslib"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 22,
+    "order": 13,
+    "group": "Управление",
+    "summary": "Редактирование и настройка персонажей.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1874644848"
+  },
+  {
+    "id": "3286376165",
+    "name": "Cut plants before building (Continued)",
+    "package": "mlie.cutplantsbeforebuilding",
+    "versions": [
+      "1.0",
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      }
+    ],
+    "after": [
+      "brrainz.harmony"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 23,
+    "order": 14,
+    "group": "Управление",
+    "summary": "Подготовка заросших клеток перед строительством.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3286376165"
+  },
+  {
+    "id": "1235181370",
+    "name": "Designator Shapes",
+    "package": "merthsoft.designatorshapes",
+    "versions": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2009463077"
+      }
+    ],
+    "after": [],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 24,
+    "order": 15,
+    "group": "Управление",
+    "summary": "Фигурные инструменты разметки и строительства.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1235181370"
+  },
+  {
+    "id": "1446523594",
+    "name": "Dubs Mint Menus",
+    "package": "dubwise.dubsmintmenus",
+    "versions": [
+      "1.0",
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [],
+    "after": [],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 28,
+    "order": 16,
+    "group": "Интерфейс",
+    "summary": "Удобные меню приказов, рецептов и строительства.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1446523594"
+  },
+  {
+    "id": "1662119905",
+    "name": "Dubs Mint Minimap",
+    "package": "dubwise.dubsmintminimap",
+    "versions": [
+      "1.0",
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [],
+    "after": [],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 29,
+    "order": 17,
+    "group": "Интерфейс",
+    "summary": "Миникарта колонии и заметные события.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1662119905"
+  },
+  {
+    "id": "3498575851",
+    "name": "Fortified Features Framework",
+    "package": "aoba.framework",
+    "versions": [
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      }
+    ],
+    "after": [
+      "brrainz.harmony",
+      "ludeon.rimworld",
+      "ceteam.combatextended"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 34,
+    "order": 18,
+    "group": "Основа",
+    "summary": "Библиотека функций укреплений и модов AOBA.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3498575851"
+  },
+  {
+    "id": "2773943594",
+    "name": "Geological Landforms",
+    "package": "m00nl1ght.geologicallandforms",
+    "versions": [
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [],
+    "after": [
+      "ludeon.rimworld",
+      "ludeon.rimworld.royalty",
+      "ludeon.rimworld.ideology",
+      "ludeon.rimworld.biotech",
+      "ludeon.rimworld.anomaly",
+      "ludeon.rimworld.odyssey",
+      "brrainz.harmony"
+    ],
+    "before": [
+      "rwmt.multiplayer"
+    ],
+    "incompatible": [],
+    "originalNumber": 37,
+    "order": 19,
+    "group": "Мир",
+    "summary": "Каньоны, острова и другие формы рельефа.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2773943594"
+  },
+  {
+    "id": "2800857642",
+    "name": "Map Preview",
+    "package": "m00nl1ght.mappreview",
+    "versions": [
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [],
+    "after": [
+      "ludeon.rimworld",
+      "ludeon.rimworld.royalty",
+      "ludeon.rimworld.ideology",
+      "ludeon.rimworld.biotech",
+      "ludeon.rimworld.anomaly",
+      "ludeon.rimworld.odyssey",
+      "brrainz.harmony"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 42,
+    "order": 20,
+    "group": "Интерфейс",
+    "summary": "Предпросмотр карты до выбора места поселения.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2800857642"
+  },
+  {
+    "id": "3773448562",
+    "name": "Milky Way",
+    "package": "andromeda.milkyway",
+    "versions": [
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [],
+    "after": [],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 43,
+    "order": 21,
+    "group": "Основа",
+    "summary": "Общая библиотека интерфейсных модов.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3773448562"
+  },
+  {
+    "id": "724602224",
+    "name": "Misc. Robots",
+    "package": "haplo.miscellaneous.robots",
+    "versions": [
+      "1.0",
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [],
+    "after": [
+      "haplo.miscellaneous.core"
+    ],
+    "before": [
+      "mehni.pickupandhaul",
+      "alaestor.miscrobots.plusplus",
+      "eion247658.miscvhcraftablehrobots"
+    ],
+    "incompatible": [],
+    "originalNumber": 44,
+    "order": 22,
+    "group": "Автоматизация",
+    "summary": "Роботы для переноски вещей и уборки.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=724602224"
+  },
+  {
+    "id": "717575199",
+    "name": "Misc. Training",
+    "package": "haplo.miscellaneous.training",
+    "versions": [
+      "1.0",
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [],
+    "after": [
+      "haplo.miscellaneous.core"
+    ],
+    "before": [],
+    "incompatible": [
+      "haplo.miscellaneous.trainingnotask"
+    ],
+    "originalNumber": 45,
+    "order": 23,
+    "group": "Колонисты",
+    "summary": "Тренировка стрельбы и ближнего боя.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=717575199"
+  },
+  {
+    "id": "3520130671",
+    "name": "Nice Bill Tab",
+    "package": "andromeda.nicebilltab",
+    "versions": [
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      }
+    ],
+    "after": [
+      "ceteam.combatextended",
+      "ceteam.combatextendedguns",
+      "ceteam.combatextendedarmors",
+      "ceteam.combatextendedmelee",
+      "kathanon.floatsubmenu",
+      "kathanon.searchablemenus"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 47,
+    "order": 24,
+    "group": "Интерфейс",
+    "summary": "Более удобное управление производственными заданиями.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3520130671"
+  },
+  {
+    "id": "3328729902",
+    "name": "Nice Health Tab",
+    "package": "andromeda.nicehealthtab",
+    "versions": [
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      }
+    ],
+    "after": [
+      "andromeda.milkyway",
+      "kathanon.floatsubmenu"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 48,
+    "order": 25,
+    "group": "Интерфейс",
+    "summary": "Более удобная вкладка здоровья.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3328729902"
+  },
+  {
+    "id": "3609897594",
+    "name": "Nice Inventory Tab",
+    "package": "andromeda.niceinventorytab",
+    "versions": [
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      }
+    ],
+    "after": [
+      "ceteam.combatextended",
+      "ceteam.combatextendedguns",
+      "ceteam.combatextendedarmors",
+      "ceteam.combatextendedmelee",
+      "kathanon.floatsubmenu",
+      "kathanon.searchablemenus",
+      "andromeda.nicebilltab"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 49,
+    "order": 26,
+    "group": "Интерфейс",
+    "summary": "Более удобный инвентарь колонистов.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3609897594"
+  },
+  {
+    "id": "2877392159",
+    "name": "Planning Extended",
+    "package": "scherub.planningextended",
+    "versions": [
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      }
+    ],
+    "after": [
+      "ludeon.rimworld",
+      "ludeon.rimworld.royalty",
+      "ludeon.rimworld.ideology",
+      "ludeon.rimworld.anomaly",
+      "ludeon.rimworld.odyssey",
+      "brrainz.harmony"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 50,
+    "order": 27,
+    "group": "Управление",
+    "summary": "Подробное планирование будущих построек.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2877392159"
+  },
+  {
+    "id": "3513846773",
+    "name": "Quality Colors (Continued)",
+    "package": "dawnsglow.qualcolor",
+    "versions": [
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2009463077"
+      }
+    ],
+    "after": [
+      "brrainz.harmony",
+      "ludeon.rimworld",
+      "ludeon.rimworld.royalty",
+      "ludeon.rimworld.ideology",
+      "ludeon.rimworld.biotech",
+      "ludeon.rimworld.anomaly",
+      "ludeon.rimworld.odyssey"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 51,
+    "order": 28,
+    "group": "Интерфейс",
+    "summary": "Цветовые обозначения качества вещей.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3513846773"
+  },
+  {
+    "id": "1552146295",
+    "name": "Real Ruins",
+    "package": "woolstrand.realruins",
+    "versions": [
+      "1.0",
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": null
+      }
+    ],
+    "after": [],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 52,
+    "order": 29,
+    "group": "Мир",
+    "summary": "Руины построек других игроков для исследования.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1552146295"
+  },
+  {
+    "id": "2904906618",
+    "name": "Recipe icons (Continued)",
+    "package": "mlie.recipeicons",
+    "versions": [
+      "1.0",
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      }
+    ],
+    "after": [
+      "brrainz.harmony"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 53,
+    "order": 30,
+    "group": "Интерфейс",
+    "summary": "Иконки предметов в списках рецептов.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2904906618"
+  },
+  {
+    "id": "736207111",
+    "name": "Rimsenal Faction Pack - Feral",
+    "package": "rimsenal.feral",
+    "versions": [
+      "1.0",
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [],
+    "after": [],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 59,
+    "order": 31,
+    "group": "Фракции и задания",
+    "summary": "Фракция диких бойцов и её вооружение.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=736207111"
+  },
+  {
+    "id": "2676828755",
+    "name": "Simple Warrants",
+    "package": "pb3n.simplewarrants",
+    "versions": [
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [],
+    "after": [],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 62,
+    "order": 32,
+    "group": "Фракции и задания",
+    "summary": "Контракты и награды за поимку целей.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2676828755"
+  },
+  {
+    "id": "3526251680",
+    "name": "Smart Medicine - Continued",
+    "package": "memegoddess.smartmedicine",
+    "versions": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      }
+    ],
+    "after": [],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 63,
+    "order": 33,
+    "group": "Медицина",
+    "summary": "Удобное управление лекарствами и лечением.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3526251680"
+  },
+  {
+    "id": "2202185773",
+    "name": "Smarter Construction",
+    "package": "dhultgren.smarterconstruction",
+    "versions": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      }
+    ],
+    "after": [],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 64,
+    "order": 34,
+    "group": "Управление",
+    "summary": "Строительство с учётом проходов и доступности.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2202185773"
+  },
+  {
+    "id": "3261302741",
+    "name": "Smarter Deconstruction and Mining (Continued)",
+    "package": "mlie.smarterdeconstructionandmining",
+    "versions": [
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      }
+    ],
+    "after": [
+      "brrainz.harmony"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 65,
+    "order": 35,
+    "group": "Управление",
+    "summary": "Безопасный порядок разборки и добычи.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3261302741"
+  },
+  {
+    "id": "2023507013",
+    "name": "Vanilla Expanded Framework",
+    "package": "oskarpotocki.vanillafactionsexpanded.core",
+    "versions": [
+      "1.0",
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2009463077"
+      }
+    ],
+    "after": [
+      "ludeon.rimworld",
+      "ludeon.rimworld.royalty",
+      "ludeon.rimworld.ideology",
+      "ludeon.rimworld.odyssey",
+      "ludeon.rimworld.biotech",
+      "ludeon.rimworld.anomaly",
+      "brrainz.harmony"
+    ],
+    "before": [],
+    "incompatible": [
+      "hatena.rangeanimalframework"
+    ],
+    "originalNumber": 68,
+    "order": 36,
+    "group": "Основа",
+    "summary": "Общие системы модов Vanilla Expanded.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013"
+  },
+  {
+    "id": "2288125657",
+    "name": "Vanilla Achievements Expanded",
+    "package": "vanillaexpanded.achievements",
+    "versions": [
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2023507013"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 78,
+    "order": 37,
+    "group": "Колонисты",
+    "summary": "Достижения и отслеживание игровых целей.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2288125657"
+  },
+  {
+    "id": "1814987817",
+    "name": "Vanilla Apparel Expanded",
+    "package": "vanillaexpanded.vappe",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2023507013"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 84,
+    "order": 38,
+    "group": "Колонисты",
+    "summary": "Одежда и аксессуары с полезными свойствами.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1814987817"
+  },
+  {
+    "id": "2521176396",
+    "name": "Vanilla Apparel Expanded — Accessories",
+    "package": "vanillaexpanded.vaeaccessories",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2023507013"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 85,
+    "order": 39,
+    "group": "Колонисты",
+    "summary": "Одежда и аксессуары с полезными свойствами.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2521176396"
+  },
+  {
+    "id": "2861806869",
+    "name": "Vanilla Backstories Expanded",
+    "package": "vanillaexpanded.vanillabackstoriesexpanded",
+    "versions": [
+      "1.6",
+      "1.7",
+      "1.5"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 88,
+    "order": 40,
+    "group": "Колонисты",
+    "summary": "Дополнительные предыстории персонажей.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2861806869"
+  },
+  {
+    "id": "3209927822",
+    "name": "Vanilla Base Generation Expanded",
+    "package": "vanillaexpanded.basegeneration",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 89,
+    "order": 41,
+    "group": "Мир",
+    "summary": "Более разнообразные базы и поселения фракций.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3209927822"
+  },
+  {
+    "id": "2193152410",
+    "name": "Vanilla Books Expanded",
+    "package": "vanillaexpanded.vbookse",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2023507013"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 90,
+    "order": 42,
+    "group": "Колонисты",
+    "summary": "Книги и обучение через чтение.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2193152410"
+  },
+  {
+    "id": "2134308519",
+    "name": "Vanilla Cooking Expanded",
+    "package": "vanillaexpanded.vcooke",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2023507013"
+      }
+    ],
+    "after": [
+      "vanillaexpanded.achievements",
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 93,
+    "order": 43,
+    "group": "Еда и напитки",
+    "summary": "Новые блюда, ингредиенты и кулинарные процессы.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2134308519"
+  },
+  {
+    "id": "3590516685",
+    "name": "Vanilla Cooking Expanded - Bakery",
+    "package": "vanillaexpanded.vcookebakery",
+    "versions": [
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2023507013"
+      },
+      {
+        "package": "vanillaexpanded.vcooke",
+        "name": "Vanilla Cooking Expanded",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2134308519"
+      }
+    ],
+    "after": [
+      "vanillaexpanded.vcooke"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 94,
+    "order": 44,
+    "group": "Еда и напитки",
+    "summary": "Кондитерское производство и сладости для настроения.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3590516685"
+  },
+  {
+    "id": "2134312965",
+    "name": "Vanilla Cooking Expanded - Stews",
+    "package": "vanillaexpanded.vcookestews",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "vanillaexpanded.vcooke",
+        "name": "Vanilla Cooking Expanded",
+        "url": "https://github.com/Vanilla-Expanded/VanillaCookingExpanded"
+      },
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2023507013"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core",
+      "vanillaexpanded.vcooke"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 96,
+    "order": 45,
+    "group": "Еда и напитки",
+    "summary": "Приготовление больших порций тушёных блюд.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2134312965"
+  },
+  {
+    "id": "1938420742",
+    "name": "Vanilla Events Expanded",
+    "package": "vanillaexpanded.vee",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2023507013"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 97,
+    "order": 46,
+    "group": "Мир",
+    "summary": "Новые происшествия, события и угрозы.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1938420742"
+  },
+  {
+    "id": "2787850474",
+    "name": "Vanilla Factions Expanded - Classical",
+    "package": "oskarpotocki.vfe.classical",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [
+      "oskarpotocki.vfe.mechanoid"
+    ],
+    "incompatible": [],
+    "originalNumber": 98,
+    "order": 47,
+    "group": "Фракции и задания",
+    "summary": "Античные фракции, сенаторы и механики развития.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2787850474"
+  },
+  {
+    "id": "2938820380",
+    "name": "Vanilla Factions Expanded - Empire",
+    "package": "oskarpotocki.vfe.empire",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013"
+      },
+      {
+        "package": "ludeon.rimworld.royalty",
+        "name": "Royalty",
+        "url": null
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 99,
+    "order": 48,
+    "group": "Фракции и задания",
+    "summary": "Расширение Империи, титулов и дворцовой жизни.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2938820380"
+  },
+  {
+    "id": "3025493377",
+    "name": "Vanilla Factions Expanded - Deserters",
+    "package": "oskarpotocki.vfe.deserters",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013"
+      },
+      {
+        "package": "oskarpotocki.vfe.empire",
+        "name": "Vanilla Factions Expanded - Empire",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2938820380"
+      },
+      {
+        "package": "ludeon.rimworld.royalty",
+        "name": "Royalty",
+        "url": null
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core",
+      "oskarpotocki.vfe.empire"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 100,
+    "order": 49,
+    "group": "Фракции и задания",
+    "summary": "Дезертиры, борьба с Империей и тайные операции.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3025493377"
+  },
+  {
+    "id": "2052918119",
+    "name": "Vanilla Factions Expanded - Settlers",
+    "package": "oskarpotocki.vanillafactionsexpanded.settlersmodule",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2023507013"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 103,
+    "order": 50,
+    "group": "Фракции и задания",
+    "summary": "Поселенцы Дикого Запада, фракции и оборудование.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2052918119"
+  },
+  {
+    "id": "1914064942",
+    "name": "Vanilla Fishing Expanded",
+    "package": "vanillaexpanded.vcef",
+    "versions": [
+      "1.6",
+      "1.7",
+      "1.5"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2023507013"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core",
+      "vanillaexpanded.achievements"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 105,
+    "order": 51,
+    "group": "Земледелие",
+    "summary": "Рыболовство и разные виды рыбы.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1914064942"
+  },
+  {
+    "id": "2260097569",
+    "name": "ReGrowth 2",
+    "package": "regrowth.botr.core",
+    "versions": [
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2009463077"
+      }
+    ],
+    "after": [
+      "brrainz.harmony",
+      "ludeon.rimworld",
+      "ludeon.rimworld.royalty",
+      "ludeon.rimworld.ideology",
+      "ludeon.rimworld.biotech",
+      "ludeon.rimworld.anomaly",
+      "ludeon.rimworld.odyssey",
+      "oskarpotocki.vanillafactionsexpanded.core",
+      "vanillaexpanded.vcef",
+      "oskarpotocki.vfe.tribals",
+      "oskarpotocki.vfe.empire",
+      "oskarpotocki.vfe.medieval2"
+    ],
+    "before": [
+      "balthoraz.rimuniverse.biomesmodule",
+      "vanillaexpanded.vplantse",
+      "vanillaexpanded.vplantsemushrooms",
+      "sarg.rimbees",
+      "argon.tribalmedicineremake",
+      "retextured.hd"
+    ],
+    "incompatible": [
+      "herdmigration.velcroboy333",
+      "onegative.animatedmarshes",
+      "shotgunfrenzy.rain.removes.filth",
+      "dninemfive.moa",
+      "hlx.dontsettlethere",
+      "project.neutrolope.dslexodus",
+      "archangel.replantsptrees"
+    ],
+    "originalNumber": 107,
+    "order": 52,
+    "group": "Природа",
+    "summary": "Переработка растительности и природного окружения.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2260097569"
+  },
+  {
+    "id": "2158539170",
+    "name": "Vanilla Cooking Expanded - Sushi",
+    "package": "vanillaexpanded.vcookesushi",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "vanillaexpanded.vcooke",
+        "name": "Vanilla Cooking Expanded",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2134308519"
+      },
+      {
+        "package": "vanillaexpanded.vcef",
+        "name": "Vanilla Fishing Expanded",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1914064942"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core",
+      "vanillaexpanded.vcooke",
+      "vanillaexpanded.vcef"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 109,
+    "order": 53,
+    "group": "Еда и напитки",
+    "summary": "Суши и блюда из рыбы.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2158539170"
+  },
+  {
+    "id": "2468543398",
+    "name": "Vanilla Fishing Expanded - Fishing Treasures AddOn",
+    "package": "vanillaexpanded.vcefaddon",
+    "versions": [
+      "1.6",
+      "1.7",
+      "1.5"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "vanillaexpanded.vcef",
+        "name": "Vanilla Fishing Expanded",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=1914064942"
+      }
+    ],
+    "after": [
+      "vanillaexpanded.achievements",
+      "vanillaexpanded.vcef"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 110,
+    "order": 54,
+    "group": "Земледелие",
+    "summary": "Сокровища и находки во время рыбалки.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2468543398"
+  },
+  {
+    "id": "1718190143",
+    "name": "Vanilla Furniture Expanded",
+    "package": "vanillaexpanded.vfecore",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2023507013"
+      }
+    ],
+    "after": [
+      "ludeon.rimworld",
+      "ludeon.rimworld.royalty",
+      "ludeon.rimworld.ideology",
+      "ludeon.rimworld.biotech",
+      "ludeon.rimworld.anomaly",
+      "brrainz.harmony",
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 112,
+    "order": 55,
+    "group": "Строительство",
+    "summary": "Мебель, отдых и обустройство колонии.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1718190143"
+  },
+  {
+    "id": "2608762624",
+    "name": "Vanilla Furniture Expanded - Architect",
+    "package": "vanillaexpanded.vfearchitect",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2023507013"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 113,
+    "order": 56,
+    "group": "Строительство",
+    "summary": "Архитектурные элементы и варианты построек.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2608762624"
+  },
+  {
+    "id": "1968134023",
+    "name": "Vanilla Furniture Expanded - Art",
+    "package": "vanillaexpanded.vfeart",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2023507013"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 114,
+    "order": 57,
+    "group": "Строительство",
+    "summary": "Скульптуры и художественное оформление.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1968134023"
+  },
+  {
+    "id": "3686924415",
+    "name": "Vanilla Furniture Expanded - Factory",
+    "package": "vanillaexpanded.vfefactory",
+    "versions": [
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2023507013"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 115,
+    "order": 58,
+    "group": "Автоматизация",
+    "summary": "Автоматизированные фабрики и производственная логистика.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3686924415"
+  },
+  {
+    "id": "1957158779",
+    "name": "Vanilla Furniture Expanded - Farming",
+    "package": "vanillaexpanded.vfefarming",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2023507013"
+      }
+    ],
+    "after": [
+      "ludeon.rimworld",
+      "ludeon.rimworld.royalty",
+      "ludeon.rimworld.ideology",
+      "ludeon.rimworld.odyssey",
+      "ludeon.rimworld.biotech",
+      "ludeon.rimworld.anomaly",
+      "brrainz.harmony",
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 116,
+    "order": 59,
+    "group": "Земледелие",
+    "summary": "Сельскохозяйственные постройки и оборудование.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1957158779"
+  },
+  {
+    "id": "1718191613",
+    "name": "Vanilla Furniture Expanded - Medical Module",
+    "package": "vanillaexpanded.vfemedical",
+    "versions": [
+      "1.6",
+      "1.7",
+      "1.5"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2023507013"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 117,
+    "order": 60,
+    "group": "Медицина",
+    "summary": "Медицинская мебель и оснащение больницы.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1718191613"
+  },
+  {
+    "id": "2062943477",
+    "name": "Vanilla Furniture Expanded - Power",
+    "package": "vanillaexpanded.vfepower",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2023507013"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 118,
+    "order": 61,
+    "group": "Энергетика",
+    "summary": "Дополнительные генераторы и системы питания.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2062943477"
+  },
+  {
+    "id": "1880253632",
+    "name": "Vanilla Furniture Expanded - Production",
+    "package": "vanillaexpanded.vfeproduction",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2023507013"
+      }
+    ],
+    "after": [
+      "ludeon.rimworld",
+      "ludeon.rimworld.royalty",
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 120,
+    "order": 62,
+    "group": "Производство",
+    "summary": "Дополнительные производственные столы и оборудование.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1880253632"
+  },
+  {
+    "id": "2102143149",
+    "name": "Vanilla Furniture Expanded - Props and Decor",
+    "package": "vanillaexpanded.vfepropsanddecor",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2023507013"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 121,
+    "order": 63,
+    "group": "Строительство",
+    "summary": "Декорации и предметы обстановки.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2102143149"
+  },
+  {
+    "id": "1845154007",
+    "name": "Vanilla Furniture Expanded - Security",
+    "package": "vanillaexpanded.vfesecurity",
+    "versions": [
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105"
+      }
+    ],
+    "after": [
+      "ludeon.rimworld",
+      "ludeon.rimworld.royalty",
+      "brrainz.harmony",
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 122,
+    "order": 64,
+    "group": "Вооружение",
+    "summary": "Оборонительные постройки, укрепления и ловушки.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1845154007"
+  },
+  {
+    "id": "2561619583",
+    "name": "Fortifications - Industrial",
+    "package": "aoba.fortress.industrial",
+    "versions": [
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2009463077"
+      },
+      {
+        "package": "aoba.framework",
+        "name": "Fortified Feature Framework",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3498575851"
+      }
+    ],
+    "after": [
+      "brrainz.harmony",
+      "aoba.framework",
+      "oskarpotocki.vanillafactionsexpanded.core",
+      "vanillaexpanded.vfearchitect",
+      "ceteam.combatextended",
+      "vanillaexpanded.vfesecurity",
+      "imranfish.xmlextensions"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 123,
+    "order": 65,
+    "group": "Строительство",
+    "summary": "Промышленные укрепления и оборонительные сооружения.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2561619583"
+  },
+  {
+    "id": "2887532326",
+    "name": "Fortification Industrial - Citadel",
+    "package": "aoba.fortress.industrial.citadel",
+    "versions": [
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "aoba.fortress.industrial",
+        "name": "Fortifications - Industrial",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2561619583"
+      }
+    ],
+    "after": [
+      "vanillaexpanded.achievements",
+      "oskarpotocki.vanillafactionsexpanded.core",
+      "aoba.fortress.industrial"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 124,
+    "order": 66,
+    "group": "Строительство",
+    "summary": "Продвинутая тяжёлая фортификация.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2887532326"
+  },
+  {
+    "id": "2028381079",
+    "name": "Vanilla Furniture Expanded - Spacer Module",
+    "package": "vanillaexpanded.vfespacer",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2023507013"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 125,
+    "order": 67,
+    "group": "Высокие технологии",
+    "summary": "Высокотехнологичная мебель и оборудование.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2028381079"
+  },
+  {
+    "id": "1103809207",
+    "name": "More Linkables",
+    "package": "4loris4.morelinkables",
+    "versions": [
+      "1.0",
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [],
+    "after": [
+      "xion.moretoolboxes",
+      "vanillaexpanded.vfepower",
+      "vanillaexpanded.helixiengas",
+      "farxmai2.computersnotjunk"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 127,
+    "order": 68,
+    "group": "Производство",
+    "summary": "Дополнительное оборудование для улучшения станков.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1103809207"
+  },
+  {
+    "id": "2567387768",
+    "name": "Vanilla Ideology Expanded - Hats and Rags",
+    "package": "vanillaexpanded.viehar",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "ludeon.rimworld.ideology",
+        "name": "Ideology",
+        "url": null
+      }
+    ],
+    "after": [
+      "ludeon.rimworld.ideology"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 130,
+    "order": 69,
+    "group": "Идеология",
+    "summary": "Идеологическая одежда и головные уборы.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2567387768"
+  },
+  {
+    "id": "2920385763",
+    "name": "Vanilla Nutrient Paste Expanded",
+    "package": "vanillaexpanded.vnutriente",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 135,
+    "order": 70,
+    "group": "Автоматизация",
+    "summary": "Пищевая паста, резервуары и трубопроводная раздача.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2920385763"
+  },
+  {
+    "id": "2134308522",
+    "name": "Vanilla Plants Expanded",
+    "package": "vanillaexpanded.vplantse",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2023507013"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 141,
+    "order": 71,
+    "group": "Земледелие",
+    "summary": "Дополнительные сельскохозяйственные культуры.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2134308522"
+  },
+  {
+    "id": "2748889667",
+    "name": "Vanilla Plants Expanded - More Plants",
+    "package": "vanillaexpanded.vplantsemore",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2023507013"
+      },
+      {
+        "package": "vanillaexpanded.vplantse",
+        "name": "Vanilla Plants Expanded",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2134308522"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core",
+      "vanillaexpanded.vplantse"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 142,
+    "order": 72,
+    "group": "Земледелие",
+    "summary": "Дополнительные полезные растения и продукты.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2748889667"
+  },
+  {
+    "id": "3006389281",
+    "name": "Vanilla Plants Expanded - Mushrooms",
+    "package": "vanillaexpanded.vplantsemushrooms",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2023507013"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core",
+      "vanillaexpanded.vplantse"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 143,
+    "order": 73,
+    "group": "Земледелие",
+    "summary": "Грибы и их выращивание.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3006389281"
+  },
+  {
+    "id": "2198652536",
+    "name": "Vanilla Plants Expanded - Succulents",
+    "package": "vanillaexpanded.vplantsesucculents",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2023507013"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 144,
+    "order": 74,
+    "group": "Земледелие",
+    "summary": "Декоративные суккуленты.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2198652536"
+  },
+  {
+    "id": "2842502659",
+    "name": "Vanilla Psycasts Expanded",
+    "package": "vanillaexpanded.vpsycastse",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "ludeon.rimworld.royalty",
+        "name": "Royalty",
+        "url": null
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1854607105"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core",
+      "vanillaexpanded.achievements"
+    ],
+    "before": [
+      "steve.betterquestrewards"
+    ],
+    "incompatible": [],
+    "originalNumber": 146,
+    "order": 75,
+    "group": "Псионика и магия",
+    "summary": "Школы псионики, уровни и новые способности.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2842502659"
+  },
+  {
+    "id": "2990596478",
+    "name": "Vanilla Psycasts Expanded - Hemosage",
+    "package": "vanillaexpanded.vpe.hemosage",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "ludeon.rimworld.royalty",
+        "name": "Royalty",
+        "url": null
+      },
+      {
+        "package": "ludeon.rimworld.biotech",
+        "name": "Biotech",
+        "url": null
+      },
+      {
+        "package": "vanillaexpanded.vpsycastse",
+        "name": "Vanilla Psycasts Expanded",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2842502659"
+      }
+    ],
+    "after": [
+      "ludeon.rimworld",
+      "ludeon.rimworld.royalty",
+      "ludeon.rimworld.biotech",
+      "brrainz.harmony",
+      "vanillaexpanded.vpsycastse",
+      "vanillaexpanded.achievements"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 149,
+    "order": 76,
+    "group": "Псионика и магия",
+    "summary": "Гемогенная школа псионических способностей.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2990596478"
+  },
+  {
+    "id": "3033779606",
+    "name": "Vanilla Psycasts Expanded - Puppeteer",
+    "package": "vanillaexpanded.vpe.puppeteer",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "ludeon.rimworld.royalty",
+        "name": "Royalty",
+        "url": null
+      },
+      {
+        "package": "vanillaexpanded.vpsycastse",
+        "name": "Vanilla Psycasts Expanded",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2842502659"
+      }
+    ],
+    "after": [
+      "ludeon.rimworld",
+      "ludeon.rimworld.royalty",
+      "ludeon.rimworld.biotech",
+      "brrainz.harmony",
+      "vanillaexpanded.vpsycastse",
+      "vanillaexpanded.achievements"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 150,
+    "order": 77,
+    "group": "Псионика и магия",
+    "summary": "Псионические способности управления марионетками.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3033779606"
+  },
+  {
+    "id": "3618306875",
+    "name": "Vanilla Quests Expanded - Ancients",
+    "package": "vanillaquestsexpanded.ancients",
+    "versions": [
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2023507013"
+      },
+      {
+        "package": "ludeon.rimworld.biotech",
+        "name": "Rimworld - Biotech",
+        "url": "https://store.steampowered.com/app/1826140/RimWorld__Biotech/"
+      }
+    ],
+    "after": [
+      "ludeon.rimworld",
+      "ludeon.rimworld.royalty",
+      "ludeon.rimworld.ideology",
+      "ludeon.rimworld.biotech",
+      "ludeon.rimworld.anomaly",
+      "ludeon.rimworld.odyssey",
+      "brrainz.harmony",
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 151,
+    "order": 78,
+    "group": "Фракции и задания",
+    "summary": "Древние хранилища, суперсолдаты и эксперименты.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3618306875"
+  },
+  {
+    "id": "3461526070",
+    "name": "Vanilla Quests Expanded - Cryptoforge",
+    "package": "vanillaquestsexpanded.cryptoforge",
+    "versions": [
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2023507013"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 152,
+    "order": 79,
+    "group": "Фракции и задания",
+    "summary": "Поиск древней кузницы и уникального вооружения.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3461526070"
+  },
+  {
+    "id": "3411401573",
+    "name": "Vanilla Quests Expanded - The Generator",
+    "package": "vanillaquestsexpanded.generator",
+    "versions": [
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2023507013"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 154,
+    "order": 80,
+    "group": "Фракции и задания",
+    "summary": "Цепочка экспедиций к мощному генератору.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3411401573"
+  },
+  {
+    "id": "2920751126",
+    "name": "Big and Small - Genes & More",
+    "package": "redmattis.bigsmall.core",
+    "versions": [
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "ludeon.rimworld.biotech",
+        "name": "Biotech",
+        "url": null
+      },
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "redmattis.betterprerequisites",
+        "name": "Big and Small - Framework",
+        "url": "steam://url/CommunityFilePage/2925432336"
+      }
+    ],
+    "after": [
+      "ludeon.rimworld",
+      "ludeon.rimworld.royalty",
+      "ludeon.rimworld.ideology",
+      "ludeon.rimworld.biotech",
+      "brrainz.harmony",
+      "redmattis.betterprerequisites",
+      "erdelf.humanoidalienraces",
+      "vanillaracesexpanded.android",
+      "nals.facialanimation",
+      "vanillaexpanded.vtexe.facialanims",
+      "killathon.mechhumanlikes.androidtierscore",
+      "biotexpans.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 157,
+    "order": 81,
+    "group": "Биотехнологии",
+    "summary": "Гены, ксенотипы и различия размеров существ.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2920751126"
+  },
+  {
+    "id": "2296404655",
+    "name": "Vanilla Traits Expanded",
+    "package": "vanillaexpanded.vanillatraitsexpanded",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2023507013"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 180,
+    "order": 82,
+    "group": "Колонисты",
+    "summary": "Дополнительные черты характера и особенности колонистов.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2296404655"
+  },
+  {
+    "id": "2723801948",
+    "name": "Vanilla Factions Expanded - Pirates",
+    "package": "oskarpotocki.vfe.pirates",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core",
+      "vanillaexpanded.vwel"
+    ],
+    "before": [],
+    "incompatible": [
+      "n7huntsman.combatshields"
+    ],
+    "originalNumber": 186,
+    "order": 83,
+    "group": "Фракции и задания",
+    "summary": "Пираты, наёмники, боевые костюмы и рейды.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2723801948"
+  },
+  {
+    "id": "2454918354",
+    "name": "Vanilla Weapons Expanded - Non-Lethal",
+    "package": "vanillaexpanded.vwenl",
+    "versions": [
+      "1.7",
+      "1.5",
+      "1.6"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "https://steamcommunity.com/workshop/filedetails/?id=2009463077"
+      },
+      {
+        "package": "oskarpotocki.vanillafactionsexpanded.core",
+        "name": "Vanilla Expanded Framework",
+        "url": "steam://url/CommunityFilePage/2023507013"
+      }
+    ],
+    "after": [
+      "oskarpotocki.vanillafactionsexpanded.core"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 196,
+    "order": 84,
+    "group": "Вооружение",
+    "summary": "Нелетальное оружие для захвата целей.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2454918354"
+  },
+  {
+    "id": "2007063278",
+    "name": "VGP More Veggies",
+    "package": "dismarzero.vgp.vgpmoreveggies",
+    "versions": [
+      "1.0",
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [],
+    "after": [],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 206,
+    "order": 85,
+    "group": "Земледелие",
+    "summary": "Дополнительные овощи и сельскохозяйственные культуры.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2007063278"
+  },
+  {
+    "id": "3526354009",
+    "name": "Replace Stuff - Continued",
+    "package": "memegoddess.replacestuff",
+    "versions": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      }
+    ],
+    "after": [],
+    "before": [],
+    "incompatible": [
+      "solaris.furniturebase",
+      "gloomy.furniture.continued"
+    ],
+    "originalNumber": 215,
+    "order": 86,
+    "group": "Управление",
+    "summary": "Замена материалов построек без ручной разборки.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3526354009"
+  },
+  {
+    "id": "local:grechka.quests",
+    "name": "Grechka Quests",
+    "package": "grechka.quests",
+    "versions": [
+      "1.7"
+    ],
+    "dependencies": [],
+    "after": [],
+    "before": [],
+    "incompatible": [],
+    "source": "local",
+    "version": "0.1.0",
+    "order": 87,
+    "group": "Grechka Mod",
+    "summary": "Книга квестов с редактором, наградами и импортом/экспортом JSON; первая версия.",
+    "url": "",
+    "repositoryPath": "mods/GrechkaQuests"
+  }
+]

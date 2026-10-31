@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Grechka Quests</name><author>Grechka World</author><packageId>grechka.quests</packageId>
+  <supportedVersions><li>1.7</li></supportedVersions>
+  <description>Переносимая книга квестов с внутриигровым редактором и JSON-импортом/экспортом. Квесты никогда не забирают предметы. Версия 0.1.0 для RimWorld 1.7: наличие предметов, построенные объекты, ручные цели, предметные награды. Определения и прогресс сохраняются в колонии. Не требует DLC или других модов.</description>
+  <modVersion>0.1.0</modVersion>
+</ModMetaData>

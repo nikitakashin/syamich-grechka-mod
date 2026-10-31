@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "grechka.starter",
+  "title": "Grechka — первые шаги",
+  "chapters": [
+    { "id": "start", "title": "Основа колонии" },
+    { "id": "author", "title": "Создание своей книги" }
+  ],
+  "quests": [
+    {
+      "id": "start.steel",
+      "chapter": "start",
+      "title": "Первый запас стали",
+      "description": "Собери 50 стали на домашней карте или в инвентаре колонистов. Сталь останется у тебя: квесты Grechka никогда не забирают предметы. Найденная и купленная сталь тоже подходит — это цель наличия, не производства.",
+      "requires": [],
+      "objectives": [{ "id": "steel", "type": "have", "target": "Steel", "count": 50, "text": "Иметь 50 стали" }],
+      "rewards": [{ "def": "WoodLog", "count": 20, "stuff": "" }]
+    },
+    {
+      "id": "start.stonecutter",
+      "chapter": "start",
+      "title": "Каменное производство",
+      "description": "Построй камнерезный стол. Уже существующий стол также засчитывается. Чертёж или недостроенный каркас не считаются готовым зданием.",
+      "requires": ["start.steel"],
+      "objectives": [{ "id": "bench", "type": "build", "target": "TableStonecutter", "count": 1, "text": "Иметь готовый камнерезный стол" }],
+      "rewards": [{ "def": "Steel", "count": 25, "stuff": "" }]
+    },
+    {
+      "id": "author.export",
+      "chapter": "author",
+      "title": "Твоя первая книга",
+      "description": "Открой редактор, добавь своё задание и экспортируй JSON. После этого отметь эту цель вручную. Этот пример демонстрирует ручную цель; он не проверяет факт экспорта автоматически.",
+      "requires": [],
+      "objectives": [{ "id": "done", "type": "manual", "target": "", "count": 1, "text": "Я создал задание и сохранил JSON" }],
+      "rewards": []
+    }
+  ]
+}
