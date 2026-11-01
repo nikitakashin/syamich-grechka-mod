@@ -58,4 +58,15 @@ namespace Grechka.Quests
             if (__instance.stackCount > __state) QuestGame.Current?.ObservePotentialItem(__instance.def);
         }
     }
+
+    // Vanilla's map stack-change notification also reaches ASF storage. Some
+    // mods use it after changing stackCount directly without TryAbsorbStack.
+    [HarmonyPatch(typeof(ListerMergeables), "Notify_ThingStackChanged", new Type[] { typeof(Thing) })]
+    internal static class ChangedMapStackHook
+    {
+        static void Postfix(Thing __0)
+        {
+            QuestGame.Current?.ObservePotentialItem(__0?.def);
+        }
+    }
 }
