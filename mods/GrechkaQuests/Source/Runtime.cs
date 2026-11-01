@@ -235,6 +235,7 @@ namespace Grechka.Quests
             FactoryEventAdapter.TryInstall();
             FactoryAutofarmerAdapter.TryInstall();
             AdditionalHarvestAdapter.TryInstall();
+            PipeConverterAdapter.TryInstall();
         }
         public static QuestGame Current { get { return Verse.Current.Game == null ? null : Verse.Current.Game.GetComponent<QuestGame>(); } }
         static IntVec3 RewardDropCell(Map map)
@@ -441,10 +442,12 @@ namespace Grechka.Quests
         public static bool IsEventObjective(Objective o) { return o.type == "produce" || o.type == "mine" || o.type == "harvest"; }
         public static string EventSourceSummary(Objective o)
         {
-            string standard = o.type == "produce" ? "Стандартные рецепты"
+            string standard = o.type == "produce" ? "Стандартные рецепты и выдача питательной пасты"
                 : o.type == "mine" ? "Добыча ванильных жил"
                 : "Стандартный сбор растений" + (AdditionalHarvestAdapter.Installed
                     ? " и дополнительные продукты урожая" : "; дополнительные продукты не подключены");
+            if (o.type == "produce" && PipeConverterAdapter.Installed)
+                standard += "; физический выход PipeSystem";
             if (!ModsConfig.IsActive("VanillaExpanded.VFEFactory")) return standard + ".";
             bool ready = o.type == "harvest" ? FactoryAutofarmerAdapter.Installed : FactoryEventAdapter.Installed;
             if (!ready) return standard + ". VFE Factory установлен, но его адаптер не подключился.";
@@ -455,6 +458,12 @@ namespace Grechka.Quests
         {
             return product != null && Pack != null && LoadError == null && HasColony
                 && Pack.quests.Any(q => q.objectives.Any(o => o.type == kind
+                    && (o.target == product.defName || o.variants.Contains(product.defName))));
+        }
+        internal bool WatchesHaveTarget(ThingDef product)
+        {
+            return product != null && Pack != null && LoadError == null && HasColony
+                && Pack.quests.Any(q => q.objectives.Any(o => o.type == "have"
                     && (o.target == product.defName || o.variants.Contains(product.defName))));
         }
         public static string ObjectiveProblem(Objective o)

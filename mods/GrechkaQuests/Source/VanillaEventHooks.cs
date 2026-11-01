@@ -41,6 +41,19 @@ namespace Grechka.Quests
         }
     }
 
+    // Nutrient paste dispensing creates a meal without going through the
+    // standard recipe notification. VNPE also patches this same method and
+    // can replace its result, so observe the final returned Thing once.
+    [HarmonyPatch(typeof(Building_NutrientPasteDispenser), "TryDispenseFood")]
+    internal static class NutrientPasteOutputHook
+    {
+        static void Postfix(Building_NutrientPasteDispenser __instance, Thing __result)
+        {
+            if (__result != null)
+                QuestGame.Current?.RecordVerifiedMachineOutput("produce", __instance, __result, __result.stackCount);
+        }
+    }
+
     // The vanilla mine has no quest notification. Capture the resource total just
     // around its own yield-placement call, so a failed drop does not count.
     [HarmonyPatch(typeof(Mineable), "TrySpawnYield", new Type[] { typeof(Map), typeof(bool), typeof(Pawn) })]
