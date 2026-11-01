@@ -46,6 +46,10 @@
       <workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
     </building>
     <comps>
+      <li Class="Grechka.Industry.CompProperties_TierBonuses">
+        <inputDiscount>0.1</inputDiscount>
+        <outputBonus>0.1</outputBonus>
+      </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>350</basePowerConsumption>
