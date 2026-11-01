@@ -120,10 +120,16 @@ solar_recipe = defs["Grechka_MakeSolarS1"]
 solar_group = defs["Grechka_SolarPanelGroup"]
 solar_patch = trees[root / "Patches" / "SolarGenerator.xml"].getroot()
 solar_values = solar_patch.find("./Operation/operations/li/value")
+solar_comp_patch = solar_patch.findall("./Operation/operations/li")
 require(solar_patch.findtext("./Operation/operations/li/xpath") == '/Defs/ThingDef[defName="SolarGenerator"]'
         and solar_values.findtext("minifiedDef") == "Grechka_PackedSolarS0"
         and solar_values.findtext("designatorDropdown") == solar_group.findtext("defName"),
         "vanilla solar generator must gain packaging and the shared construction group")
+require(len(solar_comp_patch) == 2
+        and solar_comp_patch[1].findtext("xpath") == '/Defs/ThingDef[defName="SolarGenerator"]/comps'
+        and solar_comp_patch[1].find("./value/li[@Class='Grechka.Industry.CompProperties_SolarUpgrade']") is not None
+        and (root / "Source" / "SolarUpgrade.cs").is_file(),
+        "installed S0 needs an in-place upgrade button")
 require(all(defs[name].get("ParentName") == "MinifiedThing"
             for name in ("Grechka_PackedSolarS0", "Grechka_PackedSolarS1")),
         "both solar generations need distinct minified definitions")

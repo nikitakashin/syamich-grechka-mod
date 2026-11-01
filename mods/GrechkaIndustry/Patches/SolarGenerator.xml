@@ -9,6 +9,10 @@
           <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
         </value>
       </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="SolarGenerator"]/comps</xpath>
+        <value><li Class="Grechka.Industry.CompProperties_SolarUpgrade"/></value>
+      </li>
     </operations>
   </Operation>
 </Patch>
