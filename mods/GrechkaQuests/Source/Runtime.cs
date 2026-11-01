@@ -512,6 +512,37 @@ namespace Grechka.Quests
             if (pawn.apparel != null) foreach (Thing item in pawn.apparel.WornApparel) CountThing(tally, "have", item, location);
             if (pawn.carryTracker != null) CountThing(tally, "have", pawn.carryTracker.CarriedThing, location);
         }
+        static List<ThingDef> transportDefs;
+        static readonly System.Reflection.FieldInfo flightPodsField = AccessTools.Field(typeof(TravellingTransporters), "transporters");
+        static void CountCargo(ObjectiveTally tally, ThingOwner contents, string location)
+        {
+            if (contents == null) return;
+            foreach (Thing thing in contents)
+            {
+                if (thing is Pawn pawn) CountPawn(tally, pawn, location);
+                else CountThing(tally, "have", thing, location);
+            }
+        }
+        static void CountOwnTransportCargo(ObjectiveTally tally)
+        {
+            if (transportDefs == null)
+                transportDefs = DefDatabase<ThingDef>.AllDefsListForReading
+                    .Where(d => d.comps != null && d.comps.Any(c => c is CompProperties_Transporter)).ToList();
+            foreach (Map map in Find.Maps)
+                foreach (ThingDef def in transportDefs)
+                    foreach (Thing thing in map.listerThings.ThingsOfDef(def))
+                    {
+                        if (thing.Faction != Faction.OfPlayer || !(thing is ThingWithComps building)) continue;
+                        CountCargo(tally, building.GetComp<CompTransporter>()?.SearchableContents, "В своих загруженных капсулах");
+                    }
+            foreach (TravellingTransporters flight in Find.WorldObjects.AllWorldObjects.OfType<TravellingTransporters>())
+            {
+                if (!flight.IsPlayerControlled) continue;
+                if (!(flightPodsField?.GetValue(flight) is List<ActiveTransporterInfo> pods)) continue;
+                foreach (ActiveTransporterInfo pod in pods)
+                    CountCargo(tally, pod.innerContainer, "В своих капсулах в пути");
+            }
+        }
         public Dictionary<string, int> ObjectiveBreakdown(Quest q, Objective o)
         {
             return tally == null ? new Dictionary<string, int>() : tally.Breakdown(Pack, q, o);
@@ -551,6 +582,7 @@ namespace Grechka.Quests
             foreach (Caravan caravan in Find.WorldObjects.Caravans)
                 if (caravan.Faction == Faction.OfPlayer)
                     foreach (Pawn pawn in caravan.PawnsListForReading) CountPawn(current, pawn, null);
+            CountOwnTransportCargo(current);
             foreach (var pair in affected)
                 if (ObjectiveProblem(pair.Value) == null)
                     Progress.Observe(Pack, pair.Key, pair.Value, current.Value(Pack, pair.Key, pair.Value), true);
@@ -593,6 +625,7 @@ namespace Grechka.Quests
             }
             foreach (Caravan caravan in Find.WorldObjects.Caravans)
                 if (caravan.Faction == Faction.OfPlayer) foreach (Pawn pawn in caravan.PawnsListForReading) CountPawn(tally, pawn, "В своих караванах");
+            CountOwnTransportCargo(tally);
             foreach (Quest q in Pack.quests)
                 foreach (Objective o in q.objectives)
                     if (ObjectiveProblem(o) == null)
