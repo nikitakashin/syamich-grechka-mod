@@ -203,6 +203,7 @@ namespace Grechka.Quests
         public void RecordVerifiedMachineOutput(string kind, Thing machine, ThingDef product, ThingDef stuff, string quality, int amount)
         {
             if (LoadError != null || Pack == null || !HasColony || machine == null || !machine.Spawned
+                || machine.Map == null || !machine.Map.IsPlayerHome
                 || machine.Faction != Faction.OfPlayer || product == null || amount <= 0) return;
             Progress.RecordEvent(Pack, kind, product.defName, stuff?.defName, quality, amount, true);
         }
@@ -225,6 +226,8 @@ namespace Grechka.Quests
         ObjectiveTally tally;
         QuestPack watchedHavePack;
         HashSet<string> watchedHaveDefs;
+        QuestPack watchedBuildPack;
+        HashSet<string> watchedBuildDefs;
         public string LoadError;
         public QuestGame(Game game)
         {
@@ -437,7 +440,9 @@ namespace Grechka.Quests
         public static string EventSourceSummary(Objective o)
         {
             string standard = o.type == "produce" ? "Стандартные рецепты"
-                : o.type == "mine" ? "Добыча ванильных жил" : "Стандартный сбор растений";
+                : o.type == "mine" ? "Добыча ванильных жил"
+                : "Стандартный сбор растений" + (AdditionalHarvestAdapter.Installed
+                    ? " и дополнительные продукты урожая" : "; дополнительные продукты не подключены");
             if (!ModsConfig.IsActive("VanillaExpanded.VFEFactory")) return standard + ".";
             bool ready = o.type == "harvest" ? FactoryAutofarmerAdapter.Installed : FactoryEventAdapter.Installed;
             if (!ready) return standard + ". VFE Factory установлен, но его адаптер не подключился.";
@@ -549,6 +554,17 @@ namespace Grechka.Quests
             foreach (var pair in affected)
                 if (ObjectiveProblem(pair.Value) == null)
                     Progress.Observe(Pack, pair.Key, pair.Value, current.Value(Pack, pair.Key, pair.Value), true);
+        }
+        internal void ObservePotentialBuilding(ThingDef changed)
+        {
+            if (changed == null || Pack == null || LoadError != null || !HasColony) return;
+            if (!ReferenceEquals(watchedBuildPack, Pack))
+            {
+                watchedBuildPack = Pack;
+                watchedBuildDefs = new HashSet<string>(Pack.quests.SelectMany(q => q.objectives)
+                    .Where(o => o.type == "build").SelectMany(o => new[] { o.target }.Concat(o.variants)));
+            }
+            if (watchedBuildDefs.Contains(changed.defName)) Refresh();
         }
         public void Refresh()
         {

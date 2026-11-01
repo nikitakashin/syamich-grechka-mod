@@ -1,5 +1,6 @@
 using System;
 using HarmonyLib;
+using RimWorld;
 using Verse;
 
 namespace Grechka.Quests
@@ -13,6 +14,26 @@ namespace Grechka.Quests
         static void Postfix(Thing __instance)
         {
             QuestGame.Current?.ObservePotentialItem(__instance.def);
+        }
+    }
+
+    // A completed building or one claimed from another faction must be
+    // observed immediately; the periodic scan is only reconciliation.
+    [HarmonyPatch(typeof(Building), "SpawnSetup", new Type[] { typeof(Map), typeof(bool) })]
+    internal static class SpawnedBuildingHook
+    {
+        static void Postfix(Building __instance)
+        {
+            QuestGame.Current?.ObservePotentialBuilding(__instance.def);
+        }
+    }
+
+    [HarmonyPatch(typeof(Building), "SetFaction", new Type[] { typeof(Faction), typeof(Pawn) })]
+    internal static class ClaimedBuildingHook
+    {
+        static void Postfix(Building __instance)
+        {
+            QuestGame.Current?.ObservePotentialBuilding(__instance.def);
         }
     }
 

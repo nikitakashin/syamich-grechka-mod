@@ -31,6 +31,7 @@ namespace Grechka.Quests
         static FieldInfo cutField;
         static FieldInfo actorField;
         static bool installed;
+        internal static bool Installed { get { return installed; } }
 
         internal static void TryInstall()
         {
