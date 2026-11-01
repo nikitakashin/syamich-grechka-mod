@@ -5,11 +5,16 @@
     <label>кварцевая жила</label>
     <description>Каменная порода с кристаллами кварца.</description>
     <graphicData Inherit="False">
-      <texPath>Buildings/Natural/QuartzOreSource</texPath>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>Cutout</shaderType>
+      <shaderType>CutoutComplex</shaderType>
+      <linkType>CornerFiller</linkType>
+      <linkFlags><li>Rock</li><li>MapEdge</li></linkFlags>
+      <color>(128,122,116)</color>
+      <colorTwo>(237,231,216)</colorTwo>
       <drawSize>(1,1)</drawSize>
     </graphicData>
+    <uiIconPath>Buildings/Natural/QuartzOreSource</uiIconPath>
     <statBases>
       <MaxHitPoints>2200</MaxHitPoints>
     </statBases>
