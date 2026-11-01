@@ -2,6 +2,10 @@
 <ModMetaData>
   <name>Grechka Quests</name><author>Grechka World</author><packageId>grechka.quests</packageId>
   <supportedVersions><li>1.7</li></supportedVersions>
-  <description>Переносимая книга квестов с внутриигровым редактором и JSON-импортом/экспортом. Квесты никогда не забирают предметы. Версия 0.1.0 для RimWorld 1.7: наличие предметов, построенные объекты, ручные цели, предметные награды. Определения и прогресс сохраняются в колонии. Не требует DLC или других модов.</description>
+  <description>Переносимая книга квестов с внутриигровым редактором и JSON-импортом/экспортом. Квесты никогда не забирают предметы. Версия 0.1.0 для RimWorld 1.7. Определения и прогресс сохраняются в колонии. Требуется Harmony; DLC и другие игровые моды необязательны.</description>
+  <modDependencies>
+    <li><packageId>brrainz.harmony</packageId><displayName>Harmony</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl></li>
+  </modDependencies>
+  <loadAfter><li>brrainz.harmony</li></loadAfter>
   <modVersion>0.1.0</modVersion>
 </ModMetaData>

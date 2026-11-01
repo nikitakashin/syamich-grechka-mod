@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <MainButtonDef><defName>GrechkaQuests</defName><label>Гречка: квесты</label><description>Книга квестов Grechka и редактор переносимых пакетов.</description><tabWindowClass>Grechka.Quests.QuestWindow</tabWindowClass><order>95</order></MainButtonDef>
+  <MainButtonDef><defName>GrechkaQuests</defName><label>Гречка: квесты</label><description>Книга квестов Grechka и редактор переносимых пакетов.</description><tabWindowClass>Grechka.Quests.QuestWindow</tabWindowClass><workerClass>Grechka.Quests.GrechkaButtonWorker</workerClass><order>95</order></MainButtonDef>
 </Defs>
