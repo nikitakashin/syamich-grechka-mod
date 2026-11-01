@@ -527,7 +527,7 @@ namespace Grechka.Quests
                     : game.ObjectiveAchieved(q, o) ? " — выполнено" : " — " + game.Value(q, o) + " / " + o.count;
                 Label(ref y, w, text + progress, 48);
                 if (QuestGame.IsEventObjective(o))
-                    Label(ref y, w, "Учитываются стандартные игровые события. Нестандартным машинам нужны отдельные адаптеры.", 48);
+                    Label(ref y, w, QuestGame.EventSourceSummary(o), 48);
                 if (o.type != "manual" && (!string.IsNullOrEmpty(o.stuff) || !string.IsNullOrEmpty(o.minQuality)))
                     Label(ref y, w, (string.IsNullOrEmpty(o.stuff) ? "" : "Материал: " + DefLabel(o.stuff) + "  ")
                         + (string.IsNullOrEmpty(o.minQuality) ? "" : "Качество не ниже: " + QualityLabel(o.minQuality)), 34);
@@ -540,7 +540,7 @@ namespace Grechka.Quests
                     if (expandedObjectives.Contains(key))
                     {
                         var breakdown = game.ObjectiveBreakdown(q, o);
-                        string scope = QuestGame.IsEventObjective(o) ? "События до подключения цели не восстанавливаются по текущим остаткам. Стандартные рецепты, основной урожай и добыча руд поддерживаются; нестандартные процессы требуют адаптера." : o.type == "build" ? "Считаются готовые свои здания на домашних картах." :
+                        string scope = QuestGame.IsEventObjective(o) ? "События до подключения цели не восстанавливаются по текущим остаткам. " + QuestGame.EventSourceSummary(o) : o.type == "build" ? "Считаются готовые свои здания на домашних картах." :
                             "Считается имущество на домашних картах, у своих пешек на картах и в караванах. Туман, чужие пешки и груз в полёте не учитываются.";
                         string detail = scope + "\nПодходит: " + string.Join(", ", new[] { o.target }.Concat(o.variants).Select(DefLabel))
                             + "\n" + (QuestGame.IsEventObjective(o) ? "Учтено событий: " + game.Value(q, o) : "Сейчас: " + (breakdown.Count == 0 ? "0" : string.Join(", ", breakdown.Select(pair => pair.Key + " — " + pair.Value)))) + ".";
@@ -842,7 +842,7 @@ namespace Grechka.Quests
                     }
                 }
                 o.text = Field(ref y, w, "Своя подпись (необязательно)", o.text, 1000);
-                if (QuestGame.IsEventObjective(o)) Label(ref y, w, "Стандартный источник подключён; для нестандартных машин нужна проверка или адаптер.", 48);
+                if (QuestGame.IsEventObjective(o)) Label(ref y, w, QuestGame.EventSourceSummary(o), 48);
                 string issue = QuestGame.ObjectiveProblem(o); if (issue != null) Label(ref y, w, issue, 48);
                 y += 8;
             }

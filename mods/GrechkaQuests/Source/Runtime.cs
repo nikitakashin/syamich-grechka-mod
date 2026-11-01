@@ -192,6 +192,20 @@ namespace Grechka.Quests
             if (LoadError != null || Pack == null || !HasColony || !IsOwnedPawn(worker) || product == null || amount <= 0) return;
             Progress.RecordEvent(Pack, kind, product.defName, stuff?.defName, quality, amount, true);
         }
+        // Automatic factories authenticate their own building instead of a pawn.
+        public void RecordVerifiedMachineOutput(string kind, Thing machine, Thing product, int amount)
+        {
+            if (product == null) return;
+            CompQuality quality = product.TryGetComp<CompQuality>();
+            RecordVerifiedMachineOutput(kind, machine, product.def, product.Stuff,
+                quality == null ? null : quality.Quality.ToString(), amount);
+        }
+        public void RecordVerifiedMachineOutput(string kind, Thing machine, ThingDef product, ThingDef stuff, string quality, int amount)
+        {
+            if (LoadError != null || Pack == null || !HasColony || machine == null || !machine.Spawned
+                || machine.Faction != Faction.OfPlayer || product == null || amount <= 0) return;
+            Progress.RecordEvent(Pack, kind, product.defName, stuff?.defName, quality, amount, true);
+        }
         Map RewardMap()
         {
             var homes = Find.Maps.Where(m => m.IsPlayerHome).ToList();
@@ -212,7 +226,11 @@ namespace Grechka.Quests
         QuestPack watchedHavePack;
         HashSet<string> watchedHaveDefs;
         public string LoadError;
-        public QuestGame(Game game) { }
+        public QuestGame(Game game)
+        {
+            FactoryEventAdapter.TryInstall();
+            FactoryAutofarmerAdapter.TryInstall();
+        }
         public static QuestGame Current { get { return Verse.Current.Game == null ? null : Verse.Current.Game.GetComponent<QuestGame>(); } }
         static IntVec3 RewardDropCell(Map map)
         {
@@ -415,6 +433,22 @@ namespace Grechka.Quests
             return tally == null ? 0 : tally.Value(Pack, q, o);
         }
         public static bool IsEventObjective(Objective o) { return o.type == "produce" || o.type == "mine" || o.type == "harvest"; }
+        public static string EventSourceSummary(Objective o)
+        {
+            string standard = o.type == "produce" ? "Стандартные рецепты"
+                : o.type == "mine" ? "Добыча ванильных жил" : "Стандартный сбор растений";
+            if (!ModsConfig.IsActive("VanillaExpanded.VFEFactory")) return standard + ".";
+            bool ready = o.type == "harvest" ? FactoryAutofarmerAdapter.Installed : FactoryEventAdapter.Installed;
+            if (!ready) return standard + ". VFE Factory установлен, но его адаптер не подключился.";
+            return standard + (o.type == "harvest" ? "; автоферма VFE Factory." : o.type == "mine"
+                ? "; буровая VFE Factory." : "; предметные процессы VFE Factory.");
+        }
+        internal bool WatchesEventTarget(string kind, ThingDef product)
+        {
+            return product != null && Pack != null && LoadError == null && HasColony
+                && Pack.quests.Any(q => q.objectives.Any(o => o.type == kind
+                    && (o.target == product.defName || o.variants.Contains(product.defName))));
+        }
         public static string ObjectiveProblem(Objective o)
         {
             if (o.type == "manual") return null;
