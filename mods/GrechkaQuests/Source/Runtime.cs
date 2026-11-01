@@ -155,6 +155,7 @@ namespace Grechka.Quests
         string draftOwnerId;
         int rewardMapId = -1;
         List<int> knownHomeMaps = new List<int>();
+        List<string> ownedLandingPodIds = new List<string>();
         List<string> graphViewKeys = new List<string>(), chapterBookKeys = new List<string>(), chapterValues = new List<string>();
         List<float> graphViewX = new List<float>(), graphViewY = new List<float>(), graphViewZoom = new List<float>();
         QuestProgress progress;
@@ -295,6 +296,7 @@ namespace Grechka.Quests
             Scribe_Values.Look(ref draftOwnerId, "grechkaDraftOwnerId", null);
             Scribe_Values.Look(ref rewardMapId, "grechkaRewardMapId", -1);
             Scribe_Collections.Look(ref knownHomeMaps, "grechkaKnownHomeMaps", LookMode.Value);
+            Scribe_Collections.Look(ref ownedLandingPodIds, "grechkaOwnedLandingPodIds", LookMode.Value);
             Scribe_Collections.Look(ref graphViewKeys, "grechkaGraphViewKeys", LookMode.Value);
             Scribe_Collections.Look(ref graphViewX, "grechkaGraphViewX", LookMode.Value);
             Scribe_Collections.Look(ref graphViewY, "grechkaGraphViewY", LookMode.Value);
@@ -304,7 +306,7 @@ namespace Grechka.Quests
             Scribe_Collections.Look(ref pendingRewards, "grechkaPendingRewards", LookMode.Deep);
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
-                completed = completed ?? new List<string>(); claimed = claimed ?? new List<string>(); manual = manual ?? new List<string>(); pendingRewards = pendingRewards ?? new List<Thing>(); knownHomeMaps = knownHomeMaps ?? new List<int>();
+                completed = completed ?? new List<string>(); claimed = claimed ?? new List<string>(); manual = manual ?? new List<string>(); pendingRewards = pendingRewards ?? new List<Thing>(); knownHomeMaps = knownHomeMaps ?? new List<int>(); ownedLandingPodIds = ownedLandingPodIds ?? new List<string>();
                 NormalizeGraphViews();
                 Restore();
                 try
@@ -513,7 +515,13 @@ namespace Grechka.Quests
             if (pawn.carryTracker != null) CountThing(tally, "have", pawn.carryTracker.CarriedThing, location);
         }
         static List<ThingDef> transportDefs;
+        static List<ThingDef> skyfallerDefs;
         static readonly System.Reflection.FieldInfo flightPodsField = AccessTools.Field(typeof(TravellingTransporters), "transporters");
+        internal void MarkOwnedLandingPod(Skyfaller pod)
+        {
+            if (pod == null || string.IsNullOrEmpty(pod.ThingID)) return;
+            if (!ownedLandingPodIds.Contains(pod.ThingID)) ownedLandingPodIds.Add(pod.ThingID);
+        }
         static void CountCargo(ObjectiveTally tally, ThingOwner contents, string location)
         {
             if (contents == null) return;
@@ -523,7 +531,7 @@ namespace Grechka.Quests
                 else CountThing(tally, "have", thing, location);
             }
         }
-        static void CountOwnTransportCargo(ObjectiveTally tally)
+        void CountOwnTransportCargo(ObjectiveTally tally)
         {
             if (transportDefs == null)
                 transportDefs = DefDatabase<ThingDef>.AllDefsListForReading
@@ -542,6 +550,23 @@ namespace Grechka.Quests
                 foreach (ActiveTransporterInfo pod in pods)
                     CountCargo(tally, pod.innerContainer, "В своих капсулах в пути");
             }
+            if (ownedLandingPodIds.Count == 0) return;
+            if (skyfallerDefs == null)
+                skyfallerDefs = DefDatabase<ThingDef>.AllDefsListForReading
+                    .Where(d => d.thingClass != null && typeof(Skyfaller).IsAssignableFrom(d.thingClass)).ToList();
+            var marked = new HashSet<string>(ownedLandingPodIds);
+            var stillPresent = new HashSet<string>();
+            foreach (Map map in Find.Maps)
+                foreach (ThingDef def in skyfallerDefs)
+                    foreach (Thing thing in map.listerThings.ThingsOfDef(def))
+                    {
+                        if (!(thing is Skyfaller pod) || !marked.Contains(pod.ThingID)) continue;
+                        stillPresent.Add(pod.ThingID);
+                        foreach (Thing inner in pod.GetDirectlyHeldThings())
+                            if (inner is ActiveTransporter transporter)
+                                CountCargo(tally, transporter.Contents?.innerContainer, "В своих капсулах при снижении");
+                    }
+            ownedLandingPodIds.RemoveAll(id => !stillPresent.Contains(id));
         }
         public Dictionary<string, int> ObjectiveBreakdown(Quest q, Objective o)
         {
