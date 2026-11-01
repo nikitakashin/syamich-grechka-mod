@@ -52,4 +52,27 @@
     <workSkill>Crafting</workSkill>
     <skillRequirements><Crafting>4</Crafting></skillRequirements>
   </RecipeDef>
+
+  <RecipeDef>
+    <defName>Grechka_MakeHousingT2</defName>
+    <label>собрать продвинутый корпус</label>
+    <description>Собрать тёмно-серый корпус T2 на базовом сборочном верстаке.</description>
+    <jobString>Собирает продвинутый корпус.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>20000</workAmount>
+    <ingredients>
+      <li><filter><thingDefs><li>Grechka_HousingT1</li></thingDefs></filter><count>1</count></li>
+      <li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>40</count></li>
+      <li><filter><thingDefs><li>Plasteel</li></thingDefs></filter><count>20</count></li>
+      <li><filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter><count>4</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs><li>Grechka_HousingT1</li><li>Steel</li><li>Plasteel</li><li>ComponentSpacer</li></thingDefs>
+    </fixedIngredientFilter>
+    <products><Grechka_HousingT2>1</Grechka_HousingT2></products>
+    <workSkill>Crafting</workSkill>
+    <skillRequirements><Crafting>6</Crafting></skillRequirements>
+  </RecipeDef>
 </Defs>

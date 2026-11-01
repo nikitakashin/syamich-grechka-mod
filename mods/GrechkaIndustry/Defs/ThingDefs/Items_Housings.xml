@@ -22,4 +22,27 @@
     <thingCategories><li>Manufactured</li></thingCategories>
     <tradeTags><li>ExoticMisc</li></tradeTags>
   </ThingDef>
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_HousingT2</defName>
+    <label>продвинутый корпус</label>
+    <description>Тёмно-серый корпус второго промышленного тира. Собирается на базовом верстаке из предыдущего корпуса, пластали и продвинутых компонентов.</description>
+    <graphicData>
+      <texPath>Items/HousingT2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>25</stackLimit>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases>
+      <MaxHitPoints>110</MaxHitPoints>
+      <MarketValue>850</MarketValue>
+      <Mass>12</Mass>
+      <Flammability>0.1</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+    </statBases>
+    <thingCategories><li>Manufactured</li></thingCategories>
+    <tradeTags><li>ExoticMisc</li></tradeTags>
+  </ThingDef>
 </Defs>
