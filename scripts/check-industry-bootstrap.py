@@ -2,6 +2,7 @@
 """Static bootstrap check for the standalone Industry T1 to T2 route."""
 
 from pathlib import Path
+from decimal import Decimal
 import sys
 import xml.etree.ElementTree as ET
 
@@ -74,15 +75,14 @@ require({"Make_ComponentSpacer", "Grechka_MakeHousingT2"} <= bench_recipes,
         "T1 bench must make the first T2 component and housing")
 advanced_patch = trees[root / "Patches" / "AdvancedComponent.xml"].getroot()
 operations = advanced_patch.findall("./Operation/operations/li")
-require(len(operations) == 3, "advanced component patch must update both costs and research gate")
+require(len(operations) == 2, "advanced component patch must update T1 cost and research gate only")
 require(operations[0].findtext("./value/count") == "2"
         and "ComponentIndustrial" in operations[0].findtext("xpath", ""),
         "advanced component must cost two T1 components")
-require(operations[1].findtext("./value/count") == "3"
-        and "Gold" in operations[1].findtext("xpath", ""),
-        "advanced component must cost three gold")
-require(operations[2].get("Class") == "PatchOperationRemove"
-        and operations[2].findtext("xpath", "").endswith("/researchPrerequisite"),
+require(not any("Gold" in item.findtext("xpath", "") for item in operations),
+        "vanilla gold amount 0.3 already means three physical gold")
+require(operations[1].get("Class") == "PatchOperationRemove"
+        and operations[1].findtext("xpath", "").endswith("/researchPrerequisite"),
         "standalone Industry must not research-gate its first T2 component")
 require((root / "Textures" / "Items" / "HousingT2.png").is_file(),
         "T2 housing texture is missing")
@@ -113,4 +113,49 @@ require(group.tag == "DesignatorDropdownGroupDef"
         and t2_bench.findtext("designatorDropdown") == group.findtext("defName"),
         "T1 and T2 benches must share one construction dropdown")
 
-print("GrechkaIndustry T1 to T2 bootstrap, upgrade and tier bonus XML: OK")
+solar = defs["Grechka_SolarS1"]
+solar_cells = defs["Grechka_SolarCellT2"]
+solar_cell_recipe = defs["Grechka_MakeSolarCellT2"]
+solar_recipe = defs["Grechka_MakeSolarS1"]
+solar_group = defs["Grechka_SolarPanelGroup"]
+solar_patch = trees[root / "Patches" / "SolarGenerator.xml"].getroot()
+solar_values = solar_patch.find("./Operation/operations/li/value")
+require(solar_patch.findtext("./Operation/operations/li/xpath") == '/Defs/ThingDef[defName="SolarGenerator"]'
+        and solar_values.findtext("minifiedDef") == "Grechka_PackedSolarS0"
+        and solar_values.findtext("designatorDropdown") == solar_group.findtext("defName"),
+        "vanilla solar generator must gain packaging and the shared construction group")
+require(all(defs[name].get("ParentName") == "MinifiedThing"
+            for name in ("Grechka_PackedSolarS0", "Grechka_PackedSolarS1")),
+        "both solar generations need distinct minified definitions")
+require(solar.findtext("minifiedDef") == "Grechka_PackedSolarS1"
+        and solar.findtext("designatorDropdown") == solar_group.findtext("defName")
+        and solar.findtext("./comps/li[@Class='CompProperties_Power']/compClass") == "CompPowerPlantSolar"
+        and solar.findtext("./comps/li[@Class='CompProperties_Power']/basePowerConsumption") == "-6000",
+        "S1 must be a packable six-kilowatt vanilla-style solar plant")
+require(solar_cells.findtext("stackLimit") == "100"
+        and solar_cell_recipe.findtext("./products/Grechka_SolarCellT2") == "8",
+        "T2 solar cells must be a stackable eight-piece product")
+cell_inputs = {
+    li.findtext("./filter/thingDefs/li"): Decimal(li.findtext("count"))
+    for li in solar_cell_recipe.findall("./ingredients/li")
+}
+require(cell_inputs == {"ComponentIndustrial": Decimal("2"), "Silver": Decimal("1"), "Gold": Decimal("0.5")},
+        "solar cell recipe must use 2 components, 10 silver and 5 gold at vanilla smallVolume=0.1")
+require(solar_recipe.findtext("./products/Grechka_SolarS1") == "1"
+        and solar_recipe.findtext("allowMixingIngredients") == "true"
+        and {li.text for li in solar_recipe.findall("./ingredients/li[1]/filter/thingDefs/li")}
+            == {"SolarGenerator", "Grechka_PackedSolarS0"},
+        "S1 recipe must consume a whole packed vanilla solar panel")
+other_recipe_inputs = {
+    li.findtext("./filter/thingDefs/li"): li.findtext("count")
+    for li in solar_recipe.findall("./ingredients/li")[1:]
+}
+require(other_recipe_inputs == {"Grechka_HousingT2": "1", "ComponentSpacer": "4", "Grechka_SolarCellT2": "8"}
+        and {li.tag: li.text for li in solar.findall("./costList/*")}
+            == {"Grechka_PackedSolarS0": "1", **other_recipe_inputs},
+        "direct S1 construction and workbench assembly must have the same costs")
+require({"Grechka_MakeSolarCellT2", "Grechka_MakeSolarS1"}
+        <= {li.text for li in t2_bench.findall("./recipes/li")},
+        "T2 bench must expose both solar recipes")
+
+print("GrechkaIndustry T1 to T2 and S1 solar XML routes: OK")

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_SolarS1</defName>
+    <label>усиленная солнечная панель</label>
+    <description>Следующая ступень после обычной солнечной панели. Производит до 6000 Вт при достаточном солнечном освещении; ночью не работает.</description>
+    <thingClass>Building</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <!-- Временная ванильная графика, пока не подготовлены слои цвета тира. -->
+      <texPath>Things/Building/Power/SolarCollector</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <shadowData><volume>(3.5,0.75,3.4)</volume><offset>(0,0,0)</offset></shadowData>
+      <damageData><rect>(0,0.6,4,2.8)</rect></damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <tickerType>Normal</tickerType>
+    <size>(4,4)</size>
+    <minifiedDef>Grechka_PackedSolarS1</minifiedDef>
+    <statBases>
+      <MaxHitPoints>360</MaxHitPoints>
+      <WorkToBuild>4500</WorkToBuild>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <building><destroySound>BuildingDestroyed_Metal_Big</destroySound></building>
+    <costList>
+      <Grechka_PackedSolarS0>1</Grechka_PackedSolarS0>
+      <Grechka_HousingT2>1</Grechka_HousingT2>
+      <ComponentSpacer>4</ComponentSpacer>
+      <Grechka_SolarCellT2>8</Grechka_SolarCellT2>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlantSolar</compClass>
+        <basePowerConsumption>-6000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Stunnable">
+        <useLargeEMPEffecter>true</useLargeEMPEffecter>
+        <empChancePerTick>0.03</empChancePerTick>
+        <affectedDamageDefs><li>EMP</li></affectedDamageDefs>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
+    <uiOrder>2101</uiOrder>
+    <constructEffect>ConstructMetal</constructEffect>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+  </ThingDef>
+</Defs>

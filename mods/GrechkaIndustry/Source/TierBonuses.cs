@@ -50,7 +50,10 @@ namespace Grechka.Industry
             var thing = bill?.billStack?.billGiver as ThingWithComps;
             CompTierBonuses bonus = thing?.GetComp<CompTierBonuses>();
             if (bonus == null || bonus.InputDiscount <= 0f || __result <= 0f) return;
-            __result = (float)Math.Ceiling(__result * (1f - bonus.InputDiscount));
+            // IngredientCount is a value, not always a physical item count:
+            // gold and silver have smallVolume=0.1. Vanilla CountRequiredOfFor
+            // divides by ValuePerUnitOf and rounds up the physical units.
+            __result *= 1f - bonus.InputDiscount;
         }
     }
 

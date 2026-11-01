@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RecipeDef>
+    <defName>Grechka_MakeSolarCellT2</defName>
+    <label>собрать улучшенные фотоэлементы ×8</label>
+    <description>Собрать восемь фотоэлементов второго тира из компонентов и драгоценных металлов.</description>
+    <jobString>Собирает фотоэлементы.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>12000</workAmount>
+    <ingredients>
+      <li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>2</count></li>
+      <!-- Silver/Gold have smallVolume=0.1: 1 and 0.5 mean 10 and 5 items. -->
+      <li><filter><thingDefs><li>Silver</li></thingDefs></filter><count>1</count></li>
+      <li><filter><thingDefs><li>Gold</li></thingDefs></filter><count>0.5</count></li>
+    </ingredients>
+    <fixedIngredientFilter><thingDefs><li>ComponentIndustrial</li><li>Silver</li><li>Gold</li></thingDefs></fixedIngredientFilter>
+    <products><Grechka_SolarCellT2>8</Grechka_SolarCellT2></products>
+    <workSkill>Crafting</workSkill>
+    <skillRequirements><Crafting>6</Crafting></skillRequirements>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Grechka_MakeSolarS1</defName>
+    <label>собрать усиленную солнечную панель</label>
+    <description>Переоснастить целую снятую ванильную панель фотоэлементами и корпусом T2. Результат выпускается упакованным для установки на карте.</description>
+    <jobString>Собирает усиленную солнечную панель.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>ConstructMetal</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>20000</workAmount>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <!-- Some vanilla ingredient paths compare the wrapper; others unwrap it. -->
+        <filter><thingDefs><li>SolarGenerator</li><li>Grechka_PackedSolarS0</li></thingDefs></filter>
+        <count>1</count>
+      </li>
+      <li><filter><thingDefs><li>Grechka_HousingT2</li></thingDefs></filter><count>1</count></li>
+      <li><filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>Grechka_SolarCellT2</li></thingDefs></filter><count>8</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs><li>SolarGenerator</li><li>Grechka_PackedSolarS0</li><li>Grechka_HousingT2</li><li>ComponentSpacer</li><li>Grechka_SolarCellT2</li></thingDefs>
+    </fixedIngredientFilter>
+    <products><Grechka_SolarS1>1</Grechka_SolarS1></products>
+    <workSkill>Crafting</workSkill>
+    <skillRequirements><Crafting>8</Crafting></skillRequirements>
+  </RecipeDef>
+</Defs>

@@ -39,6 +39,8 @@
       <li>Grechka_MakeComponentBatchT1</li>
       <li>Make_ComponentSpacer</li>
       <li>Grechka_MakeHousingT2</li>
+      <li>Grechka_MakeSolarCellT2</li>
+      <li>Grechka_MakeSolarS1</li>
     </recipes>
     <building>
       <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>

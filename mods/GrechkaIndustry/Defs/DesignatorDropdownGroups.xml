@@ -4,4 +4,8 @@
     <defName>Grechka_AssemblyBenchGroup</defName>
     <label>сборочный верстак</label>
   </DesignatorDropdownGroupDef>
+  <DesignatorDropdownGroupDef>
+    <defName>Grechka_SolarPanelGroup</defName>
+    <label>солнечная панель</label>
+  </DesignatorDropdownGroupDef>
 </Defs>

@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <!-- The T2 component is the vanilla item and recipe, with the agreed input cost. -->
+  <!-- Vanilla gold count 0.3 means three physical gold (smallVolume = 0.1). -->
   <Operation Class="PatchOperationSequence">
     <operations>
       <li Class="PatchOperationReplace">
         <xpath>/Defs/RecipeDef[defName="Make_ComponentSpacer"]/ingredients/li[filter/thingDefs/li="ComponentIndustrial"]/count</xpath>
         <value><count>2</count></value>
-      </li>
-      <li Class="PatchOperationReplace">
-        <xpath>/Defs/RecipeDef[defName="Make_ComponentSpacer"]/ingredients/li[filter/thingDefs/li="Gold"]/count</xpath>
-        <value><count>3</count></value>
       </li>
       <li Class="PatchOperationRemove">
         <xpath>/Defs/RecipeDef[defName="Make_ComponentSpacer"]/researchPrerequisite</xpath>

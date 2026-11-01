@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="SolarGenerator"]</xpath>
+        <value>
+          <minifiedDef>Grechka_PackedSolarS0</minifiedDef>
+          <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>
