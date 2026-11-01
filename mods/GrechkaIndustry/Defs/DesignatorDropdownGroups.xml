@@ -12,4 +12,8 @@
     <defName>Grechka_MechaponicsGroup</defName>
     <label>мехапоника</label>
   </DesignatorDropdownGroupDef>
+  <DesignatorDropdownGroupDef>
+    <defName>Grechka_IonizerGroup</defName>
+    <label>комнатный ионизатор</label>
+  </DesignatorDropdownGroupDef>
 </Defs>

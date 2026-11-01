@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_IonizerT3_Building</defName>
+    <label>комнатный ионизатор T3</label>
+    <description>Механитный ионизатор освещает всю закрытую комнату и автоматически убирает обычную грязь, кровь и рвоту. Потребляет 1000 Вт, очищает до восьми слоёв грязи каждые 250 тиков. Не обслуживает соседние комнаты через стены и не работает на улице. При отключении или поломке свет и уборка прекращаются. Несколько ионизаторов в одной комнате не усиливают эффект.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Buildings/IonizerT3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.25,1.25)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <fillPercent>0.3</fillPercent>
+    <rotatable>false</rotatable>
+    <size>(1,1)</size>
+    <tickerType>Rare</tickerType>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories><li>BuildingsProduction</li></thingCategories>
+    <statBases>
+      <WorkToBuild>4500</WorkToBuild>
+      <MaxHitPoints>260</MaxHitPoints>
+      <Mass>15</Mass>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <costList>
+      <Grechka_HousingT3_Item>1</Grechka_HousingT3_Item>
+      <Grechka_ComponentT3_Item>4</Grechka_ComponentT3_Item>
+      <Plasteel>40</Plasteel>
+      <Grechka_Mechanites>20</Grechka_Mechanites>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1000</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="Grechka.Industry.CompProperties_RoomIonizer">
+        <cleaningLayersPerCycle>8</cleaningLayersPerCycle>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Production</designationCategory>
+    <designatorDropdown>Grechka_IonizerGroup</designatorDropdown>
+    <uiOrder>2522</uiOrder>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <constructEffect>ConstructMetal</constructEffect>
+  </ThingDef>
+</Defs>

@@ -3,5 +3,6 @@
   <ItemGroup>
     <Compile Include="../../mods/GrechkaIndustry/Source/ProductionCycle.cs" Link="ProductionCycle.cs" />
     <Compile Include="../../mods/GrechkaIndustry/Source/LegacyDefNames.cs" Link="LegacyDefNames.cs" />
+    <Compile Include="../../mods/GrechkaIndustry/Source/RoomLightingMask.cs" Link="RoomLightingMask.cs" />
   </ItemGroup>
 </Project>

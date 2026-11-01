@@ -95,4 +95,20 @@ require({li.tag: int(li.text) for li in mechaponics.findall("./costList/*")}
         and not mechaponics.findall("researchPrerequisites"),
         "mechaponics must be reachable from the T3 route without a new research gate")
 require((root / "Textures" / "Buildings" / "MechaponicsT3.png").is_file(), "mechaponics texture missing")
+ionizer = defs["Grechka_IonizerT3_Building"]
+require(ionizer.findtext("size") == "(1,1)"
+        and ionizer.findtext("./comps/li[@Class='CompProperties_Power']/basePowerConsumption") == "1000"
+        and ionizer.findtext("./comps/li[@Class='Grechka.Industry.CompProperties_RoomIonizer']/cleaningLayersPerCycle") == "8"
+        and ionizer.find("./comps/li[@Class='CompProperties_Glower']") is None,
+        "ionizer must use the whole-room service instead of a limited-radius vanilla lamp")
+require({li.tag: int(li.text) for li in ionizer.findall("./costList/*")}
+        == {"Grechka_HousingT3_Item": 1, "Grechka_ComponentT3_Item": 4, "Plasteel": 40, "Grechka_Mechanites": 20}
+        and ionizer.findtext("designatorDropdown") == "Grechka_IonizerGroup"
+        and not ionizer.findall("researchPrerequisites"),
+        "ionizer must be reachable with the available T3 parts without a research gate")
+require(ionizer.findtext("./graphicData/texPath") == "Buildings/IonizerT3"
+        and (root / "Textures" / "Buildings" / "IonizerT3.png").is_file()
+        and ionizer.find("./graphicData/color") is None
+        and mechaponics.find("./graphicData/color") is None,
+        "prepared T3 building textures must be used directly without recoloring")
 print("GrechkaIndustry reachable T3 mechanite startup: OK")

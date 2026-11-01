@@ -37,3 +37,21 @@ Check(LegacyDefNames.Canonicalize("Grechka_ComponentT3") == "Grechka_ComponentT3
     && LegacyDefNames.Canonicalize("Grechka_ComponentT3_Item") == "Grechka_ComponentT3_Item"
     && LegacyDefNames.Canonicalize("Steel") == "Steel",
     "Item aliases are idempotent and leave other mods untouched");
+
+// A room need not be rectangular. Cells across a wall must never inherit light.
+var lighting = new RoomLightingMask();
+Check(lighting.Replace(new[] { 10, 11, 20 }).SetEquals(new[] { 10, 11, 20 })
+    && lighting.Contains(20) && !lighting.Contains(21), "Light covers the real room shape, not its bounding rectangle");
+Check(lighting.Replace(new[] { 10, 11, 21 }).SetEquals(new[] { 20, 21 })
+    && !lighting.Contains(20) && lighting.Contains(21), "A wall change with the same area invalidates both old and new cells");
+Check(lighting.Replace(new[] { 10, 11, 21, 21, 30, 31 }).SetEquals(new[] { 30, 31 }),
+    "Overlapping appliance coverage does not duplicate lighting or redraws");
+Check(lighting.Replace(new[] { 30, 31 }).SetEquals(new[] { 10, 11, 21 })
+    && lighting.Contains(30), "Losing one powered room preserves another room's light");
+Check(lighting.Replace(new[] { 31, 30 }).Count == 0,
+    "An unchanged room does not schedule unnecessary lighting redraws");
+var lastDirty = lighting.Replace(Array.Empty<int>());
+Check(lastDirty.SetEquals(new[] { 30, 31 }) && lighting.IsEmpty && !lighting.Contains(31),
+    "Removing the last appliance removes light and redraws the formerly lit cells");
+lastDirty.Add(99);
+Check(!lighting.Contains(99), "A caller cannot mutate the snapshot used by render readers");
