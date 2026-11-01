@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BenchBase">
+    <defName>Grechka_AssemblyBenchT1</defName>
+    <label>базовый сборочный верстак</label>
+    <description>Первый серийный станок Grechka Industry. Ускоряет изготовление обычных компонентов; для постройки нужен базовый корпус.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <!-- Временная ванильная графика для рабочего прототипа T1. -->
+      <texPath>Things/Building/Production/TableSculpting</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3.5,1.5)</drawSize>
+    </graphicData>
+    <size>(3,1)</size>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Grechka_HousingT1>1</Grechka_HousingT1>
+    </costList>
+    <statBases>
+      <WorkToBuild>2500</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>0.6</Flammability>
+      <WorkTableWorkSpeedFactor>1</WorkTableWorkSpeedFactor>
+    </statBases>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <designationCategory>Production</designationCategory>
+    <uiOrder>2510</uiOrder>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs><li>ITab_Bills</li></inspectorTabs>
+    <recipes><li>Grechka_MakeComponentBatchT1</li></recipes>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <workTableRoomRole>Workshop</workTableRoomRole>
+      <workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
+    </building>
+    <placeWorkers><li>PlaceWorker_PreventInteractionSpotOverlap</li></placeWorkers>
+    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+  </ThingDef>
+</Defs>

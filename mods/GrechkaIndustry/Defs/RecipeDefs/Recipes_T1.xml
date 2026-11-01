@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RecipeDef>
+    <defName>Grechka_MakeComponentByHandT1</defName>
+    <label>собрать компонент вручную</label>
+    <description>Медленно собрать один обычный компонент из 12 стали на ремесленном месте.</description>
+    <jobString>Собирает компонент вручную.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>10000</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients><li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>12</count></li></ingredients>
+    <fixedIngredientFilter><thingDefs><li>Steel</li></thingDefs></fixedIngredientFilter>
+    <products><ComponentIndustrial>1</ComponentIndustrial></products>
+    <workSkill>Crafting</workSkill>
+    <skillRequirements><Crafting>3</Crafting></skillRequirements>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Grechka_MakeHousingT1</defName>
+    <label>собрать базовый корпус</label>
+    <description>Собрать светло-серый корпус T1 из стали и обычных компонентов.</description>
+    <jobString>Собирает базовый корпус.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>12000</workAmount>
+    <ingredients>
+      <li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>80</count></li>
+      <li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>4</count></li>
+    </ingredients>
+    <fixedIngredientFilter><thingDefs><li>Steel</li><li>ComponentIndustrial</li></thingDefs></fixedIngredientFilter>
+    <products><Grechka_HousingT1>1</Grechka_HousingT1></products>
+    <workSkill>Crafting</workSkill>
+    <skillRequirements><Crafting>4</Crafting></skillRequirements>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Grechka_MakeComponentBatchT1</defName>
+    <label>собрать компоненты серией ×5</label>
+    <description>На базовом сборочном верстаке превратить 60 стали в пять обычных компонентов.</description>
+    <jobString>Собирает серию компонентов.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>20000</workAmount>
+    <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+    <ingredients><li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>60</count></li></ingredients>
+    <fixedIngredientFilter><thingDefs><li>Steel</li></thingDefs></fixedIngredientFilter>
+    <products><ComponentIndustrial>5</ComponentIndustrial></products>
+    <workSkill>Crafting</workSkill>
+    <skillRequirements><Crafting>4</Crafting></skillRequirements>
+  </RecipeDef>
+</Defs>
