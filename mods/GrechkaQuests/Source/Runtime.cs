@@ -230,6 +230,7 @@ namespace Grechka.Quests
         {
             FactoryEventAdapter.TryInstall();
             FactoryAutofarmerAdapter.TryInstall();
+            AdditionalHarvestAdapter.TryInstall();
         }
         public static QuestGame Current { get { return Verse.Current.Game == null ? null : Verse.Current.Game.GetComponent<QuestGame>(); } }
         static IntVec3 RewardDropCell(Map map)

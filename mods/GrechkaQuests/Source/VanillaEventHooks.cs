@@ -32,6 +32,7 @@ namespace Grechka.Quests
         static void Postfix(Pawn __0, Thing __1)
         {
             if (__1 == null || __1.def == null || __1.stackCount <= 0) return;
+            AdditionalHarvestAdapter.MarkMainProduct(__1);
             QuestGame game = QuestGame.Current;
             if (game == null) return;
             CompQuality quality = __1.TryGetComp<CompQuality>();
