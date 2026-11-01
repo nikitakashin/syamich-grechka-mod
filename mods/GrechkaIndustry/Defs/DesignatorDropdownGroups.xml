@@ -8,4 +8,8 @@
     <defName>Grechka_SolarPanelGroup</defName>
     <label>солнечная панель</label>
   </DesignatorDropdownGroupDef>
+  <DesignatorDropdownGroupDef>
+    <defName>Grechka_MechaponicsGroup</defName>
+    <label>мехапоника</label>
+  </DesignatorDropdownGroupDef>
 </Defs>

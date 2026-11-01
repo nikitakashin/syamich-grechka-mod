@@ -77,4 +77,22 @@ require(inputs(upgrade) == expected and "Grechka_UpgradeAssemblyBenchT3" in avai
 require(defs["Grechka_AssemblyBenchT2_Building"].findtext(
     "./comps/li[@Class='Grechka.Industry.CompProperties_AssemblyUpgrade']/targetBenchName")
         == "Grechka_AssemblyBenchT3_Building", "T2 upgrade must target the real T3 workbench")
+mechaponics = defs["Grechka_MechaponicsT3_Building"]
+require(mechaponics.findtext("thingClass") == "Grechka.Industry.Building_Mechaponics"
+        and mechaponics.findtext("size") == "(1,1)"
+        and mechaponics.findtext("tickerType") == "Rare"
+        and mechaponics.findtext("fertility") == "1"
+        and mechaponics.findtext("./building/sowTag") == "Ground",
+        "mechaponics must use one cell and neutral fertility with normal ground crops")
+require(mechaponics.findtext("./comps/li[@Class='CompProperties_Power']/basePowerConsumption") == "500"
+        and mechaponics.findtext("./modExtensions/li[@Class='Grechka.Industry.MechaponicsProperties']/growthMultiplier") == "5"
+        and mechaponics.find("./comps/li[@Class='Grechka.Industry.CompProperties_TierBonuses']") is None
+        and mechaponics.find("./comps/li[@Class='CompProperties_Glower']") is None,
+        "T3 must apply exactly x5/500W with internal light, without another tier or room-light bonus")
+require({li.tag: int(li.text) for li in mechaponics.findall("./costList/*")}
+        == {"Grechka_HousingT3_Item": 1, "Grechka_ComponentT3_Item": 2, "Plasteel": 30, "Grechka_Mechanites": 10}
+        and mechaponics.findtext("designatorDropdown") == "Grechka_MechaponicsGroup"
+        and not mechaponics.findall("researchPrerequisites"),
+        "mechaponics must be reachable from the T3 route without a new research gate")
+require((root / "Textures" / "Buildings" / "MechaponicsT3.png").is_file(), "mechaponics texture missing")
 print("GrechkaIndustry reachable T3 mechanite startup: OK")

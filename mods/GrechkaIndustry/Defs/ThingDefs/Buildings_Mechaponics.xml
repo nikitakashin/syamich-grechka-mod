@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_MechaponicsT3_Building</defName>
+    <label>мехапоника T3</label>
+    <description>Одноклеточная ферма с механитами. При питании 500 Вт растение не требует света и растёт в пять раз быстрее своей обычной скорости при тех же температуре и прочих условиях. Нужны обычные посев и сбор. Без питания рост приостанавливается; само отключение не повреждает растение. Питательный раствор не нужен.</description>
+    <thingClass>Grechka.Industry.Building_Mechaponics</thingClass>
+    <graphicData>
+      <texPath>Buildings/MechaponicsT3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.25,1.25)</drawSize>
+    </graphicData>
+    <noRightClickDraftAttack>true</noRightClickDraftAttack>
+    <altitudeLayer>LowPlant</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <fillPercent>0.3</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <castEdgeShadows>false</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <size>(1,1)</size>
+    <tickerType>Rare</tickerType>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories><li>BuildingsProduction</li></thingCategories>
+    <statBases>
+      <WorkToBuild>3500</WorkToBuild>
+      <MaxHitPoints>240</MaxHitPoints>
+      <Mass>12</Mass>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <costList>
+      <Grechka_HousingT3_Item>1</Grechka_HousingT3_Item>
+      <Grechka_ComponentT3_Item>2</Grechka_ComponentT3_Item>
+      <Plasteel>30</Plasteel>
+      <Grechka_Mechanites>10</Grechka_Mechanites>
+    </costList>
+    <fertility>1</fertility>
+    <building>
+      <defaultPlantToGrow>Plant_Rice</defaultPlantToGrow>
+      <sowTag>Ground</sowTag>
+      <buildingTags><li>Production</li></buildingTags>
+    </building>
+    <modExtensions>
+      <li Class="Grechka.Industry.MechaponicsProperties"><growthMultiplier>5</growthMultiplier></li>
+    </modExtensions>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>500</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Production</designationCategory>
+    <designatorDropdown>Grechka_MechaponicsGroup</designatorDropdown>
+    <uiOrder>2521</uiOrder>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <constructEffect>ConstructMetal</constructEffect>
+  </ThingDef>
+</Defs>
