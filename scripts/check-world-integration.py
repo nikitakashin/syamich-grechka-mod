@@ -41,5 +41,14 @@ manifest = json.loads((profile / "mods.json").read_text())
 entries = [item for item in manifest if item.get("package") == package]
 require(len(entries) == 1 and entries[0].get("repositoryPath") == "mods/GrechkaWorldIntegration",
         "Integration manifest entry is missing or duplicated")
+for entry in manifest:
+    if entry.get("source") != "local":
+        continue
+    local_package = entry["package"]
+    require(active.count(local_package) == 1,
+            "Local module is absent or duplicated in the active profile: " + local_package)
+    local_about = ET.parse(root / entry["repositoryPath"] / "About" / "About.xml").getroot()
+    require(local_about.findtext("packageId") == local_package,
+            "Local module profile and metadata disagree: " + local_package)
 
 print("Grechka World research profile, menu patch and metadata: OK")

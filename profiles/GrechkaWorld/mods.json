@@ -2783,6 +2783,33 @@
     "repositoryPath": "mods/GrechkaQuests"
   },
   {
+    "id": "local:grechka.industry",
+    "name": "Grechka Industry",
+    "package": "grechka.industry",
+    "versions": [
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      }
+    ],
+    "after": [
+      "brrainz.harmony"
+    ],
+    "before": [],
+    "incompatible": [],
+    "source": "local",
+    "version": "0.1.0",
+    "order": 88,
+    "group": "Grechka Mod",
+    "summary": "Компоненты, корпуса, верстаки T1–T3, механиты и солнечные S1–S2.",
+    "url": "",
+    "repositoryPath": "mods/GrechkaIndustry"
+  },
+  {
     "id": "local:grechka.world.integration",
     "name": "Grechka World Integration",
     "package": "grechka.world.integration",
@@ -2803,7 +2830,7 @@
     "incompatible": [],
     "source": "local",
     "version": "0.1.0",
-    "order": 88,
+    "order": 89,
     "group": "Grechka Mod",
     "summary": "Правила Grechka World: все исследования новой игры завершены, стандартная вкладка скрыта; старые сейвы применяются вручную.",
     "url": "",
