@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Keep the def for game/mod references; remove its visible button and default key. -->
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/MainButtonDef[defName="Research"]</xpath>
+        <value><buttonVisible>false</buttonVisible></value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/MainButtonDef[defName="Research"]/defaultHotKey</xpath>
+        <value><defaultHotKey>None</defaultHotKey></value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>
