@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="MinifiedThing">
+    <defName>Grechka_PackedStorageDevice</defName>
+    <label>упакованное устройство Storage</label>
+    <thingClass>Grechka.Storage.MinifiedStorageDevice</thingClass>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_DiskRack</defName>
+    <label>дисковый блок Storage</label>
+    <description>Блок для десяти съёмных дисков. Подключается кварцевым кабелем к контроллеру и питается обычной электросетью, 120 Вт. Защищён от огня и повреждений; может быть украден. При переносе диски сохраняются внутри, при разборке извлекаются целыми.</description>
+    <thingClass>Grechka.Storage.Building_DiskRack</thingClass>
+    <size>(2,2)</size>
+    <rotatable>false</rotatable>
+    <passability>Impassable</passability>
+    <fillPercent>1</fillPercent>
+    <altitudeLayer>Building</altitudeLayer>
+    <tickerType>Rare</tickerType>
+    <graphicData>
+      <texPath>Buildings/StorageDiskBlock</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <minifiedDef>Grechka_PackedStorageDevice</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>800</MaxHitPoints>
+      <Mass>30</Mass>
+      <WorkToBuild>6000</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentSpacer>4</ComponentSpacer>
+      <Grechka_QuartzProcessor>4</Grechka_QuartzProcessor>
+      <Grechka_SilverProcessor>2</Grechka_SilverProcessor>
+      <Grechka_GoldProcessor>2</Grechka_GoldProcessor>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>120</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Grechka_StorageCategory</designationCategory>
+    <uiOrder>11</uiOrder>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <constructEffect>ConstructMetal</constructEffect>
+  </ThingDef>
+</Defs>

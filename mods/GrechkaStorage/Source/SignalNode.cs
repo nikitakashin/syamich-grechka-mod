@@ -81,6 +81,8 @@ namespace Grechka.Storage
     {
         private readonly CompSignalNode controller;
         private Vector2 scroll;
+        private int tab;
+        private readonly StorageTerminalUI terminal = new StorageTerminalUI();
         public override Vector2 InitialSize { get { return new Vector2(850, 640); } }
         public Window_SignalNetwork(CompSignalNode controller)
         {
@@ -92,7 +94,7 @@ namespace Grechka.Storage
         public override void DoWindowContents(Rect rect)
         {
             Text.Font = GameFont.Medium;
-            Widgets.Label(new Rect(0, 0, rect.width - 35, 35), "Grechka Storage — сигнальная сеть");
+            Widgets.Label(new Rect(0, 0, rect.width - 35, 35), "Grechka Storage");
             Text.Font = GameFont.Small;
             if (!controller.parent.Spawned || controller.parent.Faction != Faction.OfPlayer || controller.Manager == null)
             {
@@ -106,7 +108,16 @@ namespace Grechka.Storage
             Widgets.Label(new Rect(0, 42, rect.width, 30), (online ? "Сеть доступна" : "Нет работающего контроллера")
                 + "   |   Контроллеров: " + controllers.Count + "   |   Кабелей: " + view.CableCount
                 + "   |   Устройств: " + view.Devices.Count);
-            Widgets.Label(new Rect(0, 77, rect.width, 50), "Сигнальный кабель соединяет устройства. Электричество поступает по обычной электросети.");
+            string[] tabs = { "Склад", "Диски", "Устройства", "Переносы" };
+            for (int i = 0; i < tabs.Length; i++)
+                if (Widgets.ButtonText(new Rect(i * rect.width / 4, 81, rect.width / 4 - 5, 32), (tab == i ? "• " : "") + tabs[i])) tab = i;
+            if (tab != 2)
+            {
+                if (controller.parent is Building_StorageController building)
+                    terminal.Draw(new Rect(0, 128, rect.width, rect.height - 133), building, tab);
+                else Widgets.Label(new Rect(0, 130, rect.width, 60), "Контроллер обновляется до нового формата.");
+                return;
+            }
             Widgets.DrawLineHorizontal(0, 132, rect.width);
             var outer = new Rect(0, 145, rect.width, rect.height - 150);
             var inner = new Rect(0, 0, outer.width - 20,

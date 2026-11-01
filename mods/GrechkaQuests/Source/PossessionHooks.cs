@@ -14,6 +14,7 @@ namespace Grechka.Quests
         static void Postfix(Thing __instance)
         {
             QuestGame.Current?.ObservePotentialItem(__instance.def);
+            StorageInventoryAdapter.ObserveCarrier(__instance);
         }
     }
 
@@ -25,6 +26,7 @@ namespace Grechka.Quests
         static void Postfix(Building __instance)
         {
             QuestGame.Current?.ObservePotentialBuilding(__instance.def);
+            StorageInventoryAdapter.ObserveCarrier(__instance);
         }
     }
 
@@ -34,6 +36,7 @@ namespace Grechka.Quests
         static void Postfix(Building __instance)
         {
             QuestGame.Current?.ObservePotentialBuilding(__instance.def);
+            StorageInventoryAdapter.ObserveCarrier(__instance);
         }
     }
 
@@ -43,6 +46,7 @@ namespace Grechka.Quests
         static void Postfix(Thing __0)
         {
             QuestGame.Current?.ObservePotentialItem(__0?.def);
+            if (__0 != null) StorageInventoryAdapter.ObserveCarrier(__0);
         }
     }
 

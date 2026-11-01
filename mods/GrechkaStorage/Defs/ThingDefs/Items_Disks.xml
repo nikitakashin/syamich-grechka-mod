@@ -1,0 +1,1134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_DataCore_1K_Item</defName>
+    <label>ячейка памяти 1K</label>
+    <description>Пустая аппаратная ячейка для диска 1K. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>230</MarketValue>
+      <Mass>0.3</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_Disk_1K_Item</defName>
+    <label>диск хранения 1K</label>
+    <description>Съёмный диск: 63 типа, 1024 байт. Хранит свойства отдельных вещей. Пища портится по окружающей температуре. Уничтожение диска уничтожает его содержимое.</description>
+    <thingClass>Grechka.Storage.StorageDisk</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/Disks/Normal/Disk_1K</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <modExtensions>
+      <li Class="Grechka.Storage.StorageDiskProperties">
+        <capacityBytes>1024</capacityBytes>
+        <freezing>false</freezing>
+      </li>
+    </modExtensions>
+    <statBases>
+      <MarketValue>330</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_FrozenDisk_1K_Item</defName>
+    <label>замораживающий диск 1K</label>
+    <description>Съёмный диск: 63 типа, 1024 байт. Хранит свойства отдельных вещей. Постоянная заморозка действует даже вне сети и в караване. Уничтожение диска уничтожает его содержимое.</description>
+    <thingClass>Grechka.Storage.StorageDisk</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/Disks/Freezing/FreezingDisk_1K</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <modExtensions>
+      <li Class="Grechka.Storage.StorageDiskProperties">
+        <capacityBytes>1024</capacityBytes>
+        <freezing>true</freezing>
+      </li>
+    </modExtensions>
+    <statBases>
+      <MarketValue>580</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_DataCore_4K_Item</defName>
+    <label>ячейка памяти 4K</label>
+    <description>Пустая аппаратная ячейка для диска 4K. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>890</MarketValue>
+      <Mass>0.3</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_Disk_4K_Item</defName>
+    <label>диск хранения 4K</label>
+    <description>Съёмный диск: 63 типа, 4096 байт. Хранит свойства отдельных вещей. Пища портится по окружающей температуре. Уничтожение диска уничтожает его содержимое.</description>
+    <thingClass>Grechka.Storage.StorageDisk</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/Disks/Normal/Disk_4K</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <modExtensions>
+      <li Class="Grechka.Storage.StorageDiskProperties">
+        <capacityBytes>4096</capacityBytes>
+        <freezing>false</freezing>
+      </li>
+    </modExtensions>
+    <statBases>
+      <MarketValue>990</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_FrozenDisk_4K_Item</defName>
+    <label>замораживающий диск 4K</label>
+    <description>Съёмный диск: 63 типа, 4096 байт. Хранит свойства отдельных вещей. Постоянная заморозка действует даже вне сети и в караване. Уничтожение диска уничтожает его содержимое.</description>
+    <thingClass>Grechka.Storage.StorageDisk</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/Disks/Freezing/FreezingDisk_4K</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <modExtensions>
+      <li Class="Grechka.Storage.StorageDiskProperties">
+        <capacityBytes>4096</capacityBytes>
+        <freezing>true</freezing>
+      </li>
+    </modExtensions>
+    <statBases>
+      <MarketValue>1240</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_DataCore_16K_Item</defName>
+    <label>ячейка памяти 16K</label>
+    <description>Пустая аппаратная ячейка для диска 16K. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>2870</MarketValue>
+      <Mass>0.3</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_Disk_16K_Item</defName>
+    <label>диск хранения 16K</label>
+    <description>Съёмный диск: 63 типа, 16384 байт. Хранит свойства отдельных вещей. Пища портится по окружающей температуре. Уничтожение диска уничтожает его содержимое.</description>
+    <thingClass>Grechka.Storage.StorageDisk</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/Disks/Normal/Disk_16K</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <modExtensions>
+      <li Class="Grechka.Storage.StorageDiskProperties">
+        <capacityBytes>16384</capacityBytes>
+        <freezing>false</freezing>
+      </li>
+    </modExtensions>
+    <statBases>
+      <MarketValue>2970</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_FrozenDisk_16K_Item</defName>
+    <label>замораживающий диск 16K</label>
+    <description>Съёмный диск: 63 типа, 16384 байт. Хранит свойства отдельных вещей. Постоянная заморозка действует даже вне сети и в караване. Уничтожение диска уничтожает его содержимое.</description>
+    <thingClass>Grechka.Storage.StorageDisk</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/Disks/Freezing/FreezingDisk_16K</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <modExtensions>
+      <li Class="Grechka.Storage.StorageDiskProperties">
+        <capacityBytes>16384</capacityBytes>
+        <freezing>true</freezing>
+      </li>
+    </modExtensions>
+    <statBases>
+      <MarketValue>3220</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_DataCore_64K_Item</defName>
+    <label>ячейка памяти 64K</label>
+    <description>Пустая аппаратная ячейка для диска 64K. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>8810</MarketValue>
+      <Mass>0.3</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_Disk_64K_Item</defName>
+    <label>диск хранения 64K</label>
+    <description>Съёмный диск: 63 типа, 65536 байт. Хранит свойства отдельных вещей. Пища портится по окружающей температуре. Уничтожение диска уничтожает его содержимое.</description>
+    <thingClass>Grechka.Storage.StorageDisk</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/Disks/Normal/Disk_64K</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <modExtensions>
+      <li Class="Grechka.Storage.StorageDiskProperties">
+        <capacityBytes>65536</capacityBytes>
+        <freezing>false</freezing>
+      </li>
+    </modExtensions>
+    <statBases>
+      <MarketValue>8910</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_FrozenDisk_64K_Item</defName>
+    <label>замораживающий диск 64K</label>
+    <description>Съёмный диск: 63 типа, 65536 байт. Хранит свойства отдельных вещей. Постоянная заморозка действует даже вне сети и в караване. Уничтожение диска уничтожает его содержимое.</description>
+    <thingClass>Grechka.Storage.StorageDisk</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/Disks/Freezing/FreezingDisk_64K</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <modExtensions>
+      <li Class="Grechka.Storage.StorageDiskProperties">
+        <capacityBytes>65536</capacityBytes>
+        <freezing>true</freezing>
+      </li>
+    </modExtensions>
+    <statBases>
+      <MarketValue>9160</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_DataCore_256K_Item</defName>
+    <label>ячейка памяти 256K</label>
+    <description>Пустая аппаратная ячейка для диска 256K. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>26630</MarketValue>
+      <Mass>0.3</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_Disk_256K_Item</defName>
+    <label>диск хранения 256K</label>
+    <description>Съёмный диск: 63 типа, 262144 байт. Хранит свойства отдельных вещей. Пища портится по окружающей температуре. Уничтожение диска уничтожает его содержимое.</description>
+    <thingClass>Grechka.Storage.StorageDisk</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/Disks/Normal/Disk_256K</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <modExtensions>
+      <li Class="Grechka.Storage.StorageDiskProperties">
+        <capacityBytes>262144</capacityBytes>
+        <freezing>false</freezing>
+      </li>
+    </modExtensions>
+    <statBases>
+      <MarketValue>26730</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_FrozenDisk_256K_Item</defName>
+    <label>замораживающий диск 256K</label>
+    <description>Съёмный диск: 63 типа, 262144 байт. Хранит свойства отдельных вещей. Постоянная заморозка действует даже вне сети и в караване. Уничтожение диска уничтожает его содержимое.</description>
+    <thingClass>Grechka.Storage.StorageDisk</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/Disks/Freezing/FreezingDisk_256K</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <modExtensions>
+      <li Class="Grechka.Storage.StorageDiskProperties">
+        <capacityBytes>262144</capacityBytes>
+        <freezing>true</freezing>
+      </li>
+    </modExtensions>
+    <statBases>
+      <MarketValue>26980</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_DataCore_512K_Item</defName>
+    <label>ячейка памяти 512K</label>
+    <description>Пустая аппаратная ячейка для диска 512K. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>53460</MarketValue>
+      <Mass>0.3</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_Disk_512K_Item</defName>
+    <label>диск хранения 512K</label>
+    <description>Съёмный диск: 63 типа, 524288 байт. Хранит свойства отдельных вещей. Пища портится по окружающей температуре. Уничтожение диска уничтожает его содержимое.</description>
+    <thingClass>Grechka.Storage.StorageDisk</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/Disks/Normal/Disk_512K</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <modExtensions>
+      <li Class="Grechka.Storage.StorageDiskProperties">
+        <capacityBytes>524288</capacityBytes>
+        <freezing>false</freezing>
+      </li>
+    </modExtensions>
+    <statBases>
+      <MarketValue>53560</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_FrozenDisk_512K_Item</defName>
+    <label>замораживающий диск 512K</label>
+    <description>Съёмный диск: 63 типа, 524288 байт. Хранит свойства отдельных вещей. Постоянная заморозка действует даже вне сети и в караване. Уничтожение диска уничтожает его содержимое.</description>
+    <thingClass>Grechka.Storage.StorageDisk</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/Disks/Freezing/FreezingDisk_512K</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <modExtensions>
+      <li Class="Grechka.Storage.StorageDiskProperties">
+        <capacityBytes>524288</capacityBytes>
+        <freezing>true</freezing>
+      </li>
+    </modExtensions>
+    <statBases>
+      <MarketValue>53810</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_DataCore_1M_Item</defName>
+    <label>ячейка памяти 1M</label>
+    <description>Пустая аппаратная ячейка для диска 1M. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>107320</MarketValue>
+      <Mass>0.3</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_Disk_1M_Item</defName>
+    <label>диск хранения 1M</label>
+    <description>Съёмный диск: 63 типа, 1048576 байт. Хранит свойства отдельных вещей. Пища портится по окружающей температуре. Уничтожение диска уничтожает его содержимое.</description>
+    <thingClass>Grechka.Storage.StorageDisk</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/Disks/Normal/Disk_1M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <modExtensions>
+      <li Class="Grechka.Storage.StorageDiskProperties">
+        <capacityBytes>1048576</capacityBytes>
+        <freezing>false</freezing>
+      </li>
+    </modExtensions>
+    <statBases>
+      <MarketValue>107420</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_FrozenDisk_1M_Item</defName>
+    <label>замораживающий диск 1M</label>
+    <description>Съёмный диск: 63 типа, 1048576 байт. Хранит свойства отдельных вещей. Постоянная заморозка действует даже вне сети и в караване. Уничтожение диска уничтожает его содержимое.</description>
+    <thingClass>Grechka.Storage.StorageDisk</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/Disks/Freezing/FreezingDisk_1M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <modExtensions>
+      <li Class="Grechka.Storage.StorageDiskProperties">
+        <capacityBytes>1048576</capacityBytes>
+        <freezing>true</freezing>
+      </li>
+    </modExtensions>
+    <statBases>
+      <MarketValue>107670</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_DataCore_2M_Item</defName>
+    <label>ячейка памяти 2M</label>
+    <description>Пустая аппаратная ячейка для диска 2M. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>215040</MarketValue>
+      <Mass>0.3</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_Disk_2M_Item</defName>
+    <label>диск хранения 2M</label>
+    <description>Съёмный диск: 63 типа, 2097152 байт. Хранит свойства отдельных вещей. Пища портится по окружающей температуре. Уничтожение диска уничтожает его содержимое.</description>
+    <thingClass>Grechka.Storage.StorageDisk</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/Disks/Normal/Disk_2M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <modExtensions>
+      <li Class="Grechka.Storage.StorageDiskProperties">
+        <capacityBytes>2097152</capacityBytes>
+        <freezing>false</freezing>
+      </li>
+    </modExtensions>
+    <statBases>
+      <MarketValue>215140</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_FrozenDisk_2M_Item</defName>
+    <label>замораживающий диск 2M</label>
+    <description>Съёмный диск: 63 типа, 2097152 байт. Хранит свойства отдельных вещей. Постоянная заморозка действует даже вне сети и в караване. Уничтожение диска уничтожает его содержимое.</description>
+    <thingClass>Grechka.Storage.StorageDisk</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/Disks/Freezing/FreezingDisk_2M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <modExtensions>
+      <li Class="Grechka.Storage.StorageDiskProperties">
+        <capacityBytes>2097152</capacityBytes>
+        <freezing>true</freezing>
+      </li>
+    </modExtensions>
+    <statBases>
+      <MarketValue>215390</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_DataCore_4M_Item</defName>
+    <label>ячейка памяти 4M</label>
+    <description>Пустая аппаратная ячейка для диска 4M. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>430480</MarketValue>
+      <Mass>0.3</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_Disk_4M_Item</defName>
+    <label>диск хранения 4M</label>
+    <description>Съёмный диск: 63 типа, 4194304 байт. Хранит свойства отдельных вещей. Пища портится по окружающей температуре. Уничтожение диска уничтожает его содержимое.</description>
+    <thingClass>Grechka.Storage.StorageDisk</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/Disks/Normal/Disk_4M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <modExtensions>
+      <li Class="Grechka.Storage.StorageDiskProperties">
+        <capacityBytes>4194304</capacityBytes>
+        <freezing>false</freezing>
+      </li>
+    </modExtensions>
+    <statBases>
+      <MarketValue>430580</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_FrozenDisk_4M_Item</defName>
+    <label>замораживающий диск 4M</label>
+    <description>Съёмный диск: 63 типа, 4194304 байт. Хранит свойства отдельных вещей. Постоянная заморозка действует даже вне сети и в караване. Уничтожение диска уничтожает его содержимое.</description>
+    <thingClass>Grechka.Storage.StorageDisk</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/Disks/Freezing/FreezingDisk_4M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <modExtensions>
+      <li Class="Grechka.Storage.StorageDiskProperties">
+        <capacityBytes>4194304</capacityBytes>
+        <freezing>true</freezing>
+      </li>
+    </modExtensions>
+    <statBases>
+      <MarketValue>430830</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_DataCore_8M_Item</defName>
+    <label>ячейка памяти 8M</label>
+    <description>Пустая аппаратная ячейка для диска 8M. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>861360</MarketValue>
+      <Mass>0.3</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_Disk_8M_Item</defName>
+    <label>диск хранения 8M</label>
+    <description>Съёмный диск: 63 типа, 8388608 байт. Хранит свойства отдельных вещей. Пища портится по окружающей температуре. Уничтожение диска уничтожает его содержимое.</description>
+    <thingClass>Grechka.Storage.StorageDisk</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/Disks/Normal/Disk_8M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <modExtensions>
+      <li Class="Grechka.Storage.StorageDiskProperties">
+        <capacityBytes>8388608</capacityBytes>
+        <freezing>false</freezing>
+      </li>
+    </modExtensions>
+    <statBases>
+      <MarketValue>861460</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_FrozenDisk_8M_Item</defName>
+    <label>замораживающий диск 8M</label>
+    <description>Съёмный диск: 63 типа, 8388608 байт. Хранит свойства отдельных вещей. Постоянная заморозка действует даже вне сети и в караване. Уничтожение диска уничтожает его содержимое.</description>
+    <thingClass>Grechka.Storage.StorageDisk</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/Disks/Freezing/FreezingDisk_8M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <modExtensions>
+      <li Class="Grechka.Storage.StorageDiskProperties">
+        <capacityBytes>8388608</capacityBytes>
+        <freezing>true</freezing>
+      </li>
+    </modExtensions>
+    <statBases>
+      <MarketValue>861710</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_DataCore_16M_Item</defName>
+    <label>ячейка памяти 16M</label>
+    <description>Пустая аппаратная ячейка для диска 16M. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>1723120</MarketValue>
+      <Mass>0.3</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_Disk_16M_Item</defName>
+    <label>диск хранения 16M</label>
+    <description>Съёмный диск: 63 типа, 16777216 байт. Хранит свойства отдельных вещей. Пища портится по окружающей температуре. Уничтожение диска уничтожает его содержимое.</description>
+    <thingClass>Grechka.Storage.StorageDisk</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/Disks/Normal/Disk_16M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <modExtensions>
+      <li Class="Grechka.Storage.StorageDiskProperties">
+        <capacityBytes>16777216</capacityBytes>
+        <freezing>false</freezing>
+      </li>
+    </modExtensions>
+    <statBases>
+      <MarketValue>1723220</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_FrozenDisk_16M_Item</defName>
+    <label>замораживающий диск 16M</label>
+    <description>Съёмный диск: 63 типа, 16777216 байт. Хранит свойства отдельных вещей. Постоянная заморозка действует даже вне сети и в караване. Уничтожение диска уничтожает его содержимое.</description>
+    <thingClass>Grechka.Storage.StorageDisk</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/Disks/Freezing/FreezingDisk_16M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <modExtensions>
+      <li Class="Grechka.Storage.StorageDiskProperties">
+        <capacityBytes>16777216</capacityBytes>
+        <freezing>true</freezing>
+      </li>
+    </modExtensions>
+    <statBases>
+      <MarketValue>1723470</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_DataCore_64M_Item</defName>
+    <label>ячейка памяти 64M</label>
+    <description>Пустая аппаратная ячейка для диска 64M. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>5169760</MarketValue>
+      <Mass>0.3</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_Disk_64M_Item</defName>
+    <label>диск хранения 64M</label>
+    <description>Съёмный диск: 63 типа, 67108864 байт. Хранит свойства отдельных вещей. Пища портится по окружающей температуре. Уничтожение диска уничтожает его содержимое.</description>
+    <thingClass>Grechka.Storage.StorageDisk</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/Disks/Normal/Disk_64M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <modExtensions>
+      <li Class="Grechka.Storage.StorageDiskProperties">
+        <capacityBytes>67108864</capacityBytes>
+        <freezing>false</freezing>
+      </li>
+    </modExtensions>
+    <statBases>
+      <MarketValue>5169860</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_FrozenDisk_64M_Item</defName>
+    <label>замораживающий диск 64M</label>
+    <description>Съёмный диск: 63 типа, 67108864 байт. Хранит свойства отдельных вещей. Постоянная заморозка действует даже вне сети и в караване. Уничтожение диска уничтожает его содержимое.</description>
+    <thingClass>Grechka.Storage.StorageDisk</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/Disks/Freezing/FreezingDisk_64M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <modExtensions>
+      <li Class="Grechka.Storage.StorageDiskProperties">
+        <capacityBytes>67108864</capacityBytes>
+        <freezing>true</freezing>
+      </li>
+    </modExtensions>
+    <statBases>
+      <MarketValue>5170110</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_DataCore_256M_Item</defName>
+    <label>ячейка памяти 256M</label>
+    <description>Пустая аппаратная ячейка для диска 256M. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <stackLimit>75</stackLimit>
+    <statBases>
+      <MarketValue>15509680</MarketValue>
+      <Mass>0.3</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_Disk_256M_Item</defName>
+    <label>диск хранения 256M</label>
+    <description>Съёмный диск: 63 типа, 268435456 байт. Хранит свойства отдельных вещей. Пища портится по окружающей температуре. Уничтожение диска уничтожает его содержимое.</description>
+    <thingClass>Grechka.Storage.StorageDisk</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/Disks/Normal/Disk_256M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <modExtensions>
+      <li Class="Grechka.Storage.StorageDiskProperties">
+        <capacityBytes>268435456</capacityBytes>
+        <freezing>false</freezing>
+      </li>
+    </modExtensions>
+    <statBases>
+      <MarketValue>15509780</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_FrozenDisk_256M_Item</defName>
+    <label>замораживающий диск 256M</label>
+    <description>Съёмный диск: 63 типа, 268435456 байт. Хранит свойства отдельных вещей. Постоянная заморозка действует даже вне сети и в караване. Уничтожение диска уничтожает его содержимое.</description>
+    <thingClass>Grechka.Storage.StorageDisk</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/Disks/Freezing/FreezingDisk_256M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.9,0.9)</drawSize>
+    </graphicData>
+    <modExtensions>
+      <li Class="Grechka.Storage.StorageDiskProperties">
+        <capacityBytes>268435456</capacityBytes>
+        <freezing>true</freezing>
+      </li>
+    </modExtensions>
+    <statBases>
+      <MarketValue>15510030</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+</Defs>

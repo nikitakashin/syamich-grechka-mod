@@ -14,9 +14,9 @@ namespace Grechka.Storage
             if (visibilityFrame != Time.frameCount)
             {
                 visibilityFrame = Time.frameCount;
-                visible = Find.Selector.SelectedObjects.OfType<ThingWithComps>().Any(t => t.GetComp<CompSignalNode>() != null)
+                visible = Find.Selector.SelectedObjects.OfType<ThingWithComps>().Any(t => t.GetComp<CompSignalNode>() != null || t is Building_DiskRack)
                     || Find.DesignatorManager.SelectedDesignator is Designator_Build build
-                        && build.PlacingDef is ThingDef def && def.comps.OfType<CompProperties_SignalNode>().Any();
+                        && build.PlacingDef is ThingDef def && (def.comps.OfType<CompProperties_SignalNode>().Any() || def.thingClass == typeof(Building_DiskRack));
             }
             if (!visible) return;
             drawLoc.y = AltitudeLayer.MetaOverlays.AltitudeFor();

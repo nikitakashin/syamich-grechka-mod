@@ -57,7 +57,7 @@
     <defName>Grechka_StorageController</defName>
     <label>контроллер Storage</label>
     <description>Точка доступа к кварцевой сигнальной сети. Показывает подключённые устройства и их состояние. Несколько контроллеров одной сети дают одинаковый доступ. Потребляет 400 Вт; сигнальный кабель не заменяет электрическое подключение.</description>
-    <thingClass>Building</thingClass>
+    <thingClass>Grechka.Storage.Building_StorageController</thingClass>
     <size>(2,2)</size>
     <rotatable>false</rotatable>
     <passability>Impassable</passability>
@@ -69,7 +69,7 @@
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2.5,2.5)</drawSize>
     </graphicData>
-    <minifiedDef>MinifiedThing</minifiedDef>
+    <minifiedDef>Grechka_PackedStorageDevice</minifiedDef>
     <thingCategories>
       <li>BuildingsProduction</li>
     </thingCategories>
@@ -150,6 +150,45 @@
       <li>Grechka_MakeSilverProcessor</li>
       <li>Grechka_MakeGoldCircuit</li>
       <li>Grechka_MakeGoldProcessor</li>
+      <li>Grechka_MakeDataCore_1K</li>
+      <li>Grechka_MakeDisk_1K</li>
+      <li>Grechka_MakeFrozenDisk_1K</li>
+      <li>Grechka_MakeDataCore_4K</li>
+      <li>Grechka_MakeDisk_4K</li>
+      <li>Grechka_MakeFrozenDisk_4K</li>
+      <li>Grechka_MakeDataCore_16K</li>
+      <li>Grechka_MakeDisk_16K</li>
+      <li>Grechka_MakeFrozenDisk_16K</li>
+      <li>Grechka_MakeDataCore_64K</li>
+      <li>Grechka_MakeDisk_64K</li>
+      <li>Grechka_MakeFrozenDisk_64K</li>
+      <li>Grechka_MakeDataCore_256K</li>
+      <li>Grechka_MakeDisk_256K</li>
+      <li>Grechka_MakeFrozenDisk_256K</li>
+      <li>Grechka_MakeDataCore_512K</li>
+      <li>Grechka_MakeDisk_512K</li>
+      <li>Grechka_MakeFrozenDisk_512K</li>
+      <li>Grechka_MakeDataCore_1M</li>
+      <li>Grechka_MakeDisk_1M</li>
+      <li>Grechka_MakeFrozenDisk_1M</li>
+      <li>Grechka_MakeDataCore_2M</li>
+      <li>Grechka_MakeDisk_2M</li>
+      <li>Grechka_MakeFrozenDisk_2M</li>
+      <li>Grechka_MakeDataCore_4M</li>
+      <li>Grechka_MakeDisk_4M</li>
+      <li>Grechka_MakeFrozenDisk_4M</li>
+      <li>Grechka_MakeDataCore_8M</li>
+      <li>Grechka_MakeDisk_8M</li>
+      <li>Grechka_MakeFrozenDisk_8M</li>
+      <li>Grechka_MakeDataCore_16M</li>
+      <li>Grechka_MakeDisk_16M</li>
+      <li>Grechka_MakeFrozenDisk_16M</li>
+      <li>Grechka_MakeDataCore_64M</li>
+      <li>Grechka_MakeDisk_64M</li>
+      <li>Grechka_MakeFrozenDisk_64M</li>
+      <li>Grechka_MakeDataCore_256M</li>
+      <li>Grechka_MakeDisk_256M</li>
+      <li>Grechka_MakeFrozenDisk_256M</li>
     </recipes>
     <comps>
       <li Class="CompProperties_Power">

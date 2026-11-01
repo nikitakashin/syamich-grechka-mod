@@ -99,3 +99,40 @@ for (int iteration = 0; iteration < 800; iteration++)
         throw new Exception("Phantom network at " + iteration);
 }
 Console.WriteLine("PASS 800 changing multi-source networks match independent flood-fill partitions");
+
+var steel = new DiskItemKey("Steel", null, -1);
+foreach (long capacity in new long[] { 1024, 4096, 16384, 65536, 262144, 524288, 1048576, 2097152,
+    4194304, 8388608, 16777216, 67108864, 268435456 })
+{
+    var space = new DiskSpace(capacity);
+    long maximum = (capacity - capacity / 128) * 8;
+    Check(space.MaxAccept(steel) == maximum, "AE2 one-type capacity for " + capacity + " bytes");
+    space.Add(steel, maximum);
+    if (space.UsedBytes != capacity || space.MaxAccept(steel) != 0) throw new Exception("Capacity exceeded");
+}
+var small = new DiskSpace(1024);
+for (int i = 0; i < 63; i++) small.Add(new DiskItemKey("Item" + i, null, -1), 1);
+Check(small.Types == 63 && small.UsedBytes == 63 * 9 && small.MaxAccept(steel) == 0,
+    "64th type is rejected despite remaining bytes");
+small.Add(new DiskItemKey("Item0", null, -1), 7);
+Check(small.UsedBytes == 63 * 9, "A type shares its partial byte but different types do not");
+Check(new DiskItemKey("Sword", "Steel", 1) != new DiskItemKey("Sword", "Plasteel", 1),
+    "Materials distinguish item types");
+Check(!new DiskItemKey("Sword", "Steel", 1).Equals(new DiskItemKey("Sword", "Steel", 2)),
+    "Quality distinguishes item types");
+var restoredSpace = new DiskSpace(1024);
+restoredSpace.SetCount(steel, 9000);
+Check(restoredSpace.ItemCount == 9000 && restoredSpace.MaxAccept(steel) == 0,
+    "Old over-capacity data is preserved and accepts no new items");
+restoredSpace.SetCount(steel, 8000);
+Check(restoredSpace.MaxAccept(steel) == 128, "Withdrawal restores available capacity without deleting the remainder");
+var targets = new[] { new DiskPlanTarget { Id = 1, Capacity = 1024 }, new DiskPlanTarget { Id = 2, Capacity = 65536 },
+    new DiskPlanTarget { Id = 3, Capacity = 4096, Frozen = true } };
+var groups = new[] { new DiskPlanGroup { Key = steel, Count = 100000 },
+    new DiskPlanGroup { Key = new DiskItemKey("Armor", null, 4), Count = 1 },
+    new DiskPlanGroup { Key = new DiskItemKey("Meal", null, -1), Count = 500, Frozen = true } };
+Check(DiskPlanner.TryPlan(targets, groups, out var plan) && plan.Single(p => p.Key.Equals(steel)).Target == 2
+    && plan.Single(p => p.Key.Def == "Armor").Target == 1 && plan.Single(p => p.Key.Def == "Meal").Target == 3,
+    "Optimization puts bulk items on a large disk, one-off gear on a small disk and preserves freezing");
+Check(!DiskPlanner.TryPlan(targets.Where(t => !t.Frozen).ToArray(), groups, out var impossible) && impossible == null,
+    "An impossible optimization yields no partial layout and never silently thaws food");

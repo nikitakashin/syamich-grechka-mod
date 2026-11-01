@@ -535,6 +535,8 @@ namespace Grechka.Quests
             if (t == null || t.Destroyed) return;
             var quality = (t as ThingWithComps)?.GetComp<CompQuality>();
             tally.Add(t, type, t.def.defName, t.Stuff?.defName, quality == null ? null : quality.Quality.ToString(), t.stackCount, location);
+            if (type == "have")
+                foreach (Thing stored in StorageInventoryAdapter.Held(t)) CountThing(tally, "have", stored, location);
         }
         static bool IsOwnedPawn(Pawn pawn)
         {
@@ -629,6 +631,7 @@ namespace Grechka.Quests
             foreach (Map map in Find.Maps)
             {
                 if (map.IsPlayerHome)
+                {
                     foreach (string name in names)
                     {
                         ThingDef def = QuestGame.ResolveThingDef(name);
@@ -636,6 +639,8 @@ namespace Grechka.Quests
                         foreach (Thing item in map.listerThings.ThingsOfDef(def))
                             if (!item.Position.Fogged(map)) CountThing(current, "have", item, null);
                     }
+                }
+                foreach (Thing stored in StorageInventoryAdapter.OnMap(map)) CountThing(current, "have", stored, null);
                 foreach (Pawn pawn in map.mapPawns.AllPawnsSpawned) CountPawn(current, pawn, null);
             }
             foreach (Caravan caravan in Find.WorldObjects.Caravans)
@@ -697,6 +702,7 @@ namespace Grechka.Quests
                         foreach (Thing building in map.listerThings.ThingsOfDef(d)) if (building is Building && building.Faction == Faction.OfPlayer) CountThing(tally, "build", building, "На домашних картах");
                     }
                 }
+                foreach (Thing stored in StorageInventoryAdapter.OnMap(map)) CountThing(tally, "have", stored, "В Grechka Storage");
                 foreach (Pawn pawn in map.mapPawns.AllPawnsSpawned) CountPawn(tally, pawn, "У своих пешек на картах");
             }
             foreach (Caravan caravan in Find.WorldObjects.Caravans)

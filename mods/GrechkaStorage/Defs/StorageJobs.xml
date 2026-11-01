@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>Grechka_ImportStorage</defName>
+    <driverClass>Grechka.Storage.JobDriver_ImportStorage</driverClass>
+    <reportString>переносит TargetA в Storage.</reportString>
+    <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+  </JobDef>
+  <JobDef>
+    <defName>Grechka_ExportStorage</defName>
+    <driverClass>Grechka.Storage.JobDriver_ExportStorage</driverClass>
+    <reportString>выдаёт предметы из Storage.</reportString>
+    <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+  </JobDef>
+  <JobDef>
+    <defName>Grechka_RemoveDisk</defName>
+    <driverClass>Grechka.Storage.JobDriver_RemoveDisk</driverClass>
+    <reportString>извлекает диск из TargetA.</reportString>
+    <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+  </JobDef>
+  <WorkGiverDef>
+    <defName>Grechka_StorageHauling</defName>
+    <label>переноска для Storage</label>
+    <giverClass>Grechka.Storage.WorkGiver_StorageHaul</giverClass>
+    <workType>Hauling</workType>
+    <priorityInType>95</priorityInType>
+    <verb>перенести</verb>
+    <gerund>переносит</gerund>
+    <scanThings>true</scanThings>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+</Defs>

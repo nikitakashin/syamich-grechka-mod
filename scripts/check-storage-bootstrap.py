@@ -100,7 +100,7 @@ replace = operations[0]
 require(outer.get("Class") == inner.get("Class") == "PatchOperationFindMod"
         and outer.findtext("./mods/li") == "Grechka Storage"
         and inner.findtext("./mods/li") == "Grechka Industry"
-        and sequence.get("Class") == "PatchOperationSequence" and len(operations) == 2
+        and sequence.get("Class") == "PatchOperationSequence" and len(operations) == 3
         and replace.get("Class") == "PatchOperationReplace"
         and replace.findtext("xpath") == '/Defs/ThingDef[defName="Grechka_StorageController"]/costList',
         "World controller patch must require both optional content modules")
@@ -114,7 +114,7 @@ require(operations[1].findtext("xpath") == '/Defs/ThingDef[defName="Grechka_Insc
         "World inscriber must use a reachable T1 housing without demanding its own processors")
 
 def profile_costs(installed):
-    targets = {node.findtext("defName"): copy.deepcopy(node) for node in (controller, inscriber)}
+    targets = {node.findtext("defName"): copy.deepcopy(node) for node in (controller, inscriber, defs["Grechka_DiskRack"])}
     def apply(operation):
         kind = operation.get("Class")
         if kind == "PatchOperationFindMod":
@@ -161,4 +161,45 @@ for name in ["StorageController", "Natural/QuartzOreSource"]:
     require((root / "Textures/Buildings" / (name + ".png")).is_file(), "Prepared building texture missing: " + name)
 for name in ["SiliconSubstrate", "PrintedSilicon", "QuartzCircuit", "SilverCircuit", "GoldCircuit", "QuartzProcessor", "SilverProcessor", "GoldProcessor"]:
     require((root / "Textures/Items" / (name + ".png")).is_file(), "Prepared processor texture missing: " + name)
-print("Grechka Storage standalone startup, processors, network definitions and opt-in World recipe: OK")
+sizes = [("1K", 1024), ("4K", 4096), ("16K", 16384), ("64K", 65536), ("256K", 262144),
+         ("512K", 524288), ("1M", 1048576), ("2M", 2097152), ("4M", 4194304), ("8M", 8388608),
+         ("16M", 16777216), ("64M", 67108864), ("256M", 268435456)]
+disks = [n for n in defs.values() if n.findtext("thingClass") == "Grechka.Storage.StorageDisk"]
+require(len(disks) == 26, "Every accepted capacity needs both ordinary and permanent-freezing disks")
+for size, capacity in sizes:
+    core = f"Grechka_DataCore_{size}_Item"
+    require(core in defs and f"Grechka_MakeDataCore_{size}" in available,
+            "Disk hardware core is unreachable: " + size)
+    for frozen in (False, True):
+        name = ("Grechka_FrozenDisk_" if frozen else "Grechka_Disk_") + size + "_Item"
+        node = defs[name]
+        recipe = defs[("Grechka_MakeFrozenDisk_" if frozen else "Grechka_MakeDisk_") + size]
+        props = node.find("./modExtensions/li[@Class='Grechka.Storage.StorageDiskProperties']")
+        require(node.findtext("stackLimit") == "1" and node.findtext("tickerType") == "Never"
+                and props.findtext("capacityBytes") == str(capacity)
+                and props.findtext("freezing") == str(frozen).lower()
+                and recipe.findtext("defName") in available and recipe.findtext("./products/" + name) == "1"
+                and core in inputs(recipe), "Physical disk capacity/recipe/variant is incorrect: " + name)
+        texture = node.findtext("./graphicData/texPath")
+        require((root / "Textures" / (texture + ".png")).is_file()
+                and node.find("./graphicData/color") is None,
+                "Prepared disk art is missing or recolored: " + name)
+for node in defs.values():
+    if node.tag == "RecipeDef":
+        require(not any(li.text in {d.findtext("defName") for d in disks}
+                        for li in node.findall("./ingredients/li/filter/thingDefs/li")),
+                "A recipe could consume a loaded disk and destroy its contents: " + node.findtext("defName"))
+rack = defs["Grechka_DiskRack"]
+require(controller.findtext("thingClass") == "Grechka.Storage.Building_StorageController"
+        and rack.findtext("thingClass") == "Grechka.Storage.Building_DiskRack"
+        and rack.findtext("./comps/li[@Class='CompProperties_Power']/basePowerConsumption") == "120"
+        and rack.findtext("./statBases/Flammability") == "0"
+        and rack.findtext("minifiedDef") == controller.findtext("minifiedDef") == "Grechka_PackedStorageDevice"
+        and defs["Grechka_PackedStorageDevice"].findtext("thingClass") == "Grechka.Storage.MinifiedStorageDevice",
+        "Disk rack and its loaded minified wrapper must preserve the accepted protection")
+require(operations[2].findtext("xpath") == '/Defs/ThingDef[defName="Grechka_DiskRack"]/costList'
+        and cost(operations[2].find("value"))["Grechka_HousingT3_Item"] == 1,
+        "World rack must use its T3 housing")
+for name in ("Grechka_ImportStorage", "Grechka_ExportStorage", "Grechka_RemoveDisk", "Grechka_StorageHauling"):
+    require(name in defs, "Physical pawn transfer job is missing: " + name)
+print("Grechka Storage startup, 26 physical disks, protected rack and optional World recipes: OK")

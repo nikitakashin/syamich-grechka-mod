@@ -20,7 +20,7 @@ namespace Grechka.Storage
         public List<Building> OtherBranchDevices = new List<Building>();
     }
 
-    public sealed class SignalNetworkMap : MapComponent
+    public sealed partial class SignalNetworkMap : MapComponent
     {
         private SignalTopology topology;
         private readonly HashSet<CompSignalNode> controllers = new HashSet<CompSignalNode>();
@@ -35,6 +35,7 @@ namespace Grechka.Storage
                 topology.NetworkChanged += id => views.Remove(id);
             }
             if (node.IsController) controllers.Add(node);
+            if (node.IsController && node.parent.GetType() == typeof(Building)) ScheduleMigration((Building)node.parent);
             topology.SetSource(node.parent.thingIDNumber, node.parent.OccupiedRect().Cells
                 .Where(c => c.InBounds(map)).Select(c => map.cellIndices.CellToIndex(c)));
         }

@@ -34,6 +34,19 @@
               </costList>
             </value>
           </li>
+          <li Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="Grechka_DiskRack"]/costList</xpath>
+            <value>
+              <costList>
+                <Grechka_HousingT3_Item>1</Grechka_HousingT3_Item>
+                <Grechka_ComponentT3_Item>2</Grechka_ComponentT3_Item>
+                <Steel>120</Steel>
+                <Grechka_QuartzProcessor>4</Grechka_QuartzProcessor>
+                <Grechka_SilverProcessor>2</Grechka_SilverProcessor>
+                <Grechka_GoldProcessor>2</Grechka_GoldProcessor>
+              </costList>
+            </value>
+          </li>
         </operations>
       </match>
     </match>
