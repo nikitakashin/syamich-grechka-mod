@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="RockBase">
+    <defName>Grechka_MineableQuartz</defName>
+    <label>кварцевая жила</label>
+    <description>Каменная порода с кристаллами кварца.</description>
+    <graphicData Inherit="False">
+      <texPath>Buildings/Natural/QuartzOreSource</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>2200</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Grechka_Quartz</mineableThing>
+      <mineableYield>35</mineableYield>
+      <mineableScatterCommonality>0.6</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>8~20</mineableScatterLumpSizeRange>
+      <veinMineable>true</veinMineable>
+    </building>
+  </ThingDef>
+</Defs>

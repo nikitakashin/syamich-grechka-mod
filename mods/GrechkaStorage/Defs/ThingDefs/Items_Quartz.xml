@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_Quartz</defName>
+    <label>кварц</label>
+    <description>Кристаллы из кварцевых жил. Основа сигнального кабеля и кремниевых деталей.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Jade</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(0.9,0.85,1)</color>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <MarketValue>2</MarketValue>
+      <Mass>0.25</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_QuartzDust</defName>
+    <label>кварцевая пыль</label>
+    <description>Измельчённый кварц для получения кремния в электрической плавильне.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Jade</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(0.85,0.8,0.95)</color>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <MarketValue>2.5</MarketValue>
+      <Mass>0.2</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_Silicon</defName>
+    <label>кремний</label>
+    <description>Подготовленный полупроводник для кремниевых подложек.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Steel</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(0.55,0.6,0.7)</color>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <MarketValue>5</MarketValue>
+      <Mass>0.2</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_SiliconSubstrate</defName>
+    <label>кремниевая подложка</label>
+    <description>Подложка для печатных схем и кремниевых деталей процессора.</description>
+    <graphicData>
+      <texPath>Items/SiliconSubstrate</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <MarketValue>6</MarketValue>
+      <Mass>0.1</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_PrintedSilicon</defName>
+    <label>печатный кремниевый элемент</label>
+    <description>Общая деталь кварцевого, серебряного и золотого процессоров.</description>
+    <graphicData>
+      <texPath>Items/PrintedSilicon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <MarketValue>8</MarketValue>
+      <Mass>0.1</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_QuartzCircuit</defName>
+    <label>печатная кварцевая схема</label>
+    <description>Кварцевая схема для сборки процессора.</description>
+    <graphicData>
+      <texPath>Items/QuartzCircuit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <MarketValue>12</MarketValue>
+      <Mass>0.1</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_SilverCircuit</defName>
+    <label>печатная серебряная схема</label>
+    <description>Серебряная схема для сборки процессора.</description>
+    <graphicData>
+      <texPath>Items/SilverCircuit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <MarketValue>26</MarketValue>
+      <Mass>0.1</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_GoldCircuit</defName>
+    <label>печатная золотая схема</label>
+    <description>Золотая схема для сборки процессора.</description>
+    <graphicData>
+      <texPath>Items/GoldCircuit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <MarketValue>45</MarketValue>
+      <Mass>0.1</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_QuartzProcessor</defName>
+    <label>кварцевый процессор</label>
+    <description>Процессор кварцевой сигнальной сети.</description>
+    <graphicData>
+      <texPath>Items/QuartzProcessor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <MarketValue>55</MarketValue>
+      <Mass>0.15</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_SilverProcessor</defName>
+    <label>серебряный процессор</label>
+    <description>Управляющий процессор устройств Storage.</description>
+    <graphicData>
+      <texPath>Items/SilverProcessor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <MarketValue>75</MarketValue>
+      <Mass>0.15</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_GoldProcessor</defName>
+    <label>золотой процессор</label>
+    <description>Вычислительный процессор устройств Storage.</description>
+    <graphicData>
+      <texPath>Items/GoldProcessor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <MarketValue>100</MarketValue>
+      <Mass>0.15</Mass>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>1</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+</Defs>

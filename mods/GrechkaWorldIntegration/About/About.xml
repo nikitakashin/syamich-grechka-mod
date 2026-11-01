@@ -8,6 +8,6 @@
   <modDependencies>
     <li><packageId>brrainz.harmony</packageId><displayName>Harmony</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl></li>
   </modDependencies>
-  <loadAfter><li>brrainz.harmony</li></loadAfter>
+  <loadAfter><li>brrainz.harmony</li><li>grechka.industry</li><li>grechka.storage</li></loadAfter>
   <modVersion>0.1.0</modVersion>
 </ModMetaData>

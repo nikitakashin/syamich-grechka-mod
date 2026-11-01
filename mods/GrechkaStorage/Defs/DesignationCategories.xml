@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <DesignationCategoryDef>
+    <defName>Grechka_StorageCategory</defName>
+    <label>Grechka Storage</label>
+    <order>70</order>
+  </DesignationCategoryDef>
+</Defs>

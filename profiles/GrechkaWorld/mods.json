@@ -2805,9 +2805,38 @@
     "version": "0.1.0",
     "order": 88,
     "group": "Grechka Mod",
-    "summary": "Компоненты, корпуса, верстаки T1–T3, механиты и солнечные S1–S2.",
+    "summary": "Компоненты, корпуса, верстаки T1–T3, механиты, мехапоника, комнатный ионизатор и солнечные S1–S4.",
     "url": "",
     "repositoryPath": "mods/GrechkaIndustry"
+  },
+  {
+    "id": "local:grechka.storage",
+    "name": "Grechka Storage",
+    "package": "grechka.storage",
+    "versions": [
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      }
+    ],
+    "after": [
+      "brrainz.harmony"
+    ],
+    "before": [
+      "grechka.world.integration"
+    ],
+    "incompatible": [],
+    "source": "local",
+    "version": "0.1.0",
+    "order": 89,
+    "group": "Grechka Mod",
+    "summary": "Кварцевая сеть, процессоры, высекатель и контроллер с диагностикой устройств; диски ещё в разработке.",
+    "url": "",
+    "repositoryPath": "mods/GrechkaStorage"
   },
   {
     "id": "local:grechka.world.integration",
@@ -2824,13 +2853,15 @@
       }
     ],
     "after": [
-      "brrainz.harmony"
+      "brrainz.harmony",
+      "grechka.industry",
+      "grechka.storage"
     ],
     "before": [],
     "incompatible": [],
     "source": "local",
     "version": "0.1.0",
-    "order": 89,
+    "order": 90,
     "group": "Grechka Mod",
     "summary": "Правила Grechka World: все исследования новой игры завершены, стандартная вкладка скрыта; старые сейвы применяются вручную.",
     "url": "",

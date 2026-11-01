@@ -7,3 +7,4 @@ dotnet_cmd="${DOTNET:-dotnet}"
 "$dotnet_cmd" build "$repo_root/mods/GrechkaQuests/Source/GrechkaQuests.csproj" "-p:GameManagedDir=$RIMWORLD_MANAGED_DIR" "-p:HarmonyAssembly=$HARMONY_ASSEMBLY" --nologo
 "$dotnet_cmd" build "$repo_root/mods/GrechkaWorldIntegration/Source/GrechkaWorldIntegration.csproj" "-p:GameManagedDir=$RIMWORLD_MANAGED_DIR" "-p:HarmonyAssembly=$HARMONY_ASSEMBLY" --nologo
 "$dotnet_cmd" build "$repo_root/mods/GrechkaIndustry/Source/GrechkaIndustry.csproj" "-p:GameManagedDir=$RIMWORLD_MANAGED_DIR" "-p:HarmonyAssembly=$HARMONY_ASSEMBLY" --nologo
+"$dotnet_cmd" build "$repo_root/mods/GrechkaStorage/Source/GrechkaStorage.csproj" "-p:GameManagedDir=$RIMWORLD_MANAGED_DIR" "-p:HarmonyAssembly=$HARMONY_ASSEMBLY" --nologo

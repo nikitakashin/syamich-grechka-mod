@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_QuartzCable</defName>
+    <label>подземный кварцевый кабель</label>
+    <description>Соединяет устройства с контроллером Storage. Прокладывается под зданиями и обычными электрокабелями; электричество не передаёт. Линии видны при выборе контроллера, кабеля или их строительного инструмента.</description>
+    <thingClass>Grechka.Storage.Building_QuartzCable</thingClass>
+    <drawerType>RealtimeOnly</drawerType>
+    <altitudeLayer>Conduits</altitudeLayer>
+    <rotatable>false</rotatable>
+    <passability>Standable</passability>
+    <fillPercent>0</fillPercent>
+    <size>(1,1)</size>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Things/Building/Linked/PowerConduit_Atlas</texPath>
+      <graphicClass>Grechka.Storage.Graphic_QuartzCable</graphicClass>
+      <color>(0.75,0.6,1)</color>
+    </graphicData>
+    <uiIconPath>Things/Building/Linked/HiddenConduit_MenuIcon</uiIconPath>
+    <uiIconColor>(0.75,0.6,1)</uiIconColor>
+    <building>
+      <isEdifice>false</isEdifice>
+      <isInert>true</isInert>
+      <canConstructInCorner>true</canConstructInCorner>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+      <expandHomeArea>false</expandHomeArea>
+      <ai_neverTrashThis>true</ai_neverTrashThis>
+    </building>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>120</WorkToBuild>
+      <Flammability>0</Flammability>
+      <Beauty>0</Beauty>
+    </statBases>
+    <costList>
+      <Grechka_Quartz>1</Grechka_Quartz>
+      <Steel>1</Steel>
+    </costList>
+    <placeWorkers>
+      <li>Grechka.Storage.PlaceWorker_QuartzCable</li>
+    </placeWorkers>
+    <comps>
+      <li Class="Grechka.Storage.CompProperties_SignalNode">
+        <cable>true</cable>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Grechka_StorageCategory</designationCategory>
+    <uiOrder>1</uiOrder>
+    <clearBuildingArea>false</clearBuildingArea>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <constructEffect>ConstructDirt</constructEffect>
+    <neverMultiSelect>true</neverMultiSelect>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_StorageController</defName>
+    <label>контроллер Storage</label>
+    <description>Точка доступа к кварцевой сигнальной сети. Показывает подключённые устройства и их состояние. Несколько контроллеров одной сети дают одинаковый доступ. Потребляет 400 Вт; сигнальный кабель не заменяет электрическое подключение.</description>
+    <thingClass>Building</thingClass>
+    <size>(2,2)</size>
+    <rotatable>false</rotatable>
+    <passability>Impassable</passability>
+    <fillPercent>1</fillPercent>
+    <altitudeLayer>Building</altitudeLayer>
+    <tickerType>Rare</tickerType>
+    <graphicData>
+      <texPath>Buildings/StorageController</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2.5,2.5)</drawSize>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToBuild>7000</WorkToBuild>
+      <Mass>35</Mass>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentSpacer>6</ComponentSpacer>
+      <Grechka_QuartzProcessor>8</Grechka_QuartzProcessor>
+      <Grechka_SilverProcessor>4</Grechka_SilverProcessor>
+      <Grechka_GoldProcessor>4</Grechka_GoldProcessor>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>400</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="Grechka.Storage.CompProperties_SignalNode">
+        <controller>true</controller>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Grechka_StorageCategory</designationCategory>
+    <uiOrder>10</uiOrder>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <constructEffect>ConstructMetal</constructEffect>
+  </ThingDef>
+  <ThingDef ParentName="BenchBase">
+    <defName>Grechka_Inscriber</defName>
+    <label>электрический высекатель</label>
+    <description>Печатает кремниевые элементы, кварцевые, серебряные и золотые схемы и собирает процессоры. Все рецепты доступны без прессов. Требует 200 Вт.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <size>(3,1)</size>
+    <tickerType>Normal</tickerType>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <altitudeLayer>Building</altitudeLayer>
+    <surfaceType>Item</surfaceType>
+    <graphicData>
+      <texPath>Things/Building/Production/TableMachining</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,1.5)</drawSize>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>4000</WorkToBuild>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <Grechka_Quartz>10</Grechka_Quartz>
+    </costList>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <designationCategory>Grechka_StorageCategory</designationCategory>
+    <uiOrder>5</uiOrder>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <constructEffect>ConstructMetal</constructEffect>
+    <recipes>
+      <li>Grechka_MakeSiliconSubstrate</li>
+      <li>Grechka_MakePrintedSilicon</li>
+      <li>Grechka_MakeQuartzCircuit</li>
+      <li>Grechka_MakeQuartzProcessor</li>
+      <li>Grechka_MakeSilverCircuit</li>
+      <li>Grechka_MakeSilverProcessor</li>
+      <li>Grechka_MakeGoldCircuit</li>
+      <li>Grechka_MakeGoldProcessor</li>
+    </recipes>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+    </comps>
+  </ThingDef>
+</Defs>
