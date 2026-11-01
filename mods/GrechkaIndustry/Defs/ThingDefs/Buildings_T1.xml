@@ -27,6 +27,7 @@
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
     <designationCategory>Production</designationCategory>
+    <designatorDropdown>Grechka_AssemblyBenchGroup</designatorDropdown>
     <uiOrder>2510</uiOrder>
     <passability>PassThroughOnly</passability>
     <pathCost>50</pathCost>

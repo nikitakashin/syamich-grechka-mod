@@ -41,6 +41,7 @@ housing = defs["Grechka_MakeHousingT1"]
 batch = defs["Grechka_MakeComponentBatchT1"]
 bench = defs["Grechka_AssemblyBenchT1"]
 t2_housing = defs["Grechka_MakeHousingT2"]
+t2_bench = defs["Grechka_AssemblyBenchT2"]
 
 require(hand.findtext("./products/ComponentIndustrial") == "1" and ingredients(hand) == {"Steel": 12},
         "manual component route must start from 12 steel")
@@ -84,5 +85,15 @@ require(operations[2].get("Class") == "PatchOperationRemove"
         "standalone Industry must not research-gate its first T2 component")
 require((root / "Textures" / "Items" / "HousingT2.png").is_file(),
         "T2 housing texture is missing")
+require(t2_bench.findtext("./costList/Grechka_HousingT2") == "1"
+        and t2_bench.findtext("./costList/ComponentSpacer") is not None,
+        "T2 bench must require its reachable T2 housing and component")
+require(t2_bench.findtext("./comps/li[@Class='CompProperties_Power']/basePowerConsumption") == "350",
+        "T2 bench must use electricity")
+group = defs["Grechka_AssemblyBenchGroup"]
+require(group.tag == "DesignatorDropdownGroupDef"
+        and bench.findtext("designatorDropdown") == group.findtext("defName")
+        and t2_bench.findtext("designatorDropdown") == group.findtext("defName"),
+        "T1 and T2 benches must share one construction dropdown")
 
 print("GrechkaIndustry T1 to T2 bootstrap XML and recipe path: OK")

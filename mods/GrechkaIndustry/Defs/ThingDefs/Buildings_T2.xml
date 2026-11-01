@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BenchBase">
+    <defName>Grechka_AssemblyBenchT2</defName>
+    <label>продвинутый сборочный верстак</label>
+    <description>Электрический сборочный верстак второго тира. Для строительства нужен продвинутый корпус, изготовленный на базовом верстаке.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <!-- Временная ванильная графика до двухслойной графики семейства. -->
+      <texPath>Things/Building/Production/TableSmithingElectric</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,1.5)</drawSize>
+    </graphicData>
+    <size>(3,1)</size>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Grechka_HousingT2>1</Grechka_HousingT2>
+    </costList>
+    <statBases>
+      <WorkToBuild>4000</WorkToBuild>
+      <MaxHitPoints>240</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <WorkTableWorkSpeedFactor>2</WorkTableWorkSpeedFactor>
+    </statBases>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <designationCategory>Production</designationCategory>
+    <designatorDropdown>Grechka_AssemblyBenchGroup</designatorDropdown>
+    <uiOrder>2511</uiOrder>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs><li>ITab_Bills</li></inspectorTabs>
+    <recipes>
+      <li>Grechka_MakeComponentBatchT1</li>
+      <li>Make_ComponentSpacer</li>
+      <li>Grechka_MakeHousingT2</li>
+    </recipes>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <workTableRoomRole>Workshop</workTableRoomRole>
+      <workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>350</basePowerConsumption>
+        <shortCircuitInRain>true</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <placeWorkers><li>PlaceWorker_PreventInteractionSpotOverlap</li></placeWorkers>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </ThingDef>
+</Defs>
