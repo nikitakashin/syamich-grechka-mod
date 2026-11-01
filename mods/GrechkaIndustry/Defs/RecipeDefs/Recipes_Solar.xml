@@ -48,4 +48,29 @@
     <workSkill>Crafting</workSkill>
     <skillRequirements><Crafting>8</Crafting></skillRequirements>
   </RecipeDef>
+
+  <RecipeDef>
+    <defName>Grechka_MakeSolarS2</defName>
+    <label>собрать многослойную солнечную панель</label>
+    <description>Объединить две целые снятые панели S1 с новым корпусом и фотоэлементами. Результат выпускается упакованным для установки.</description>
+    <jobString>Собирает многослойную солнечную панель.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>ConstructMetal</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>30000</workAmount>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li><filter><thingDefs><li>Grechka_SolarS1</li><li>Grechka_PackedSolarS1</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>Grechka_HousingT2</li></thingDefs></filter><count>1</count></li>
+      <li><filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>Grechka_SolarCellT2</li></thingDefs></filter><count>24</count></li>
+      <li><filter><thingDefs><li>Plasteel</li></thingDefs></filter><count>20</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs><li>Grechka_SolarS1</li><li>Grechka_PackedSolarS1</li><li>Grechka_HousingT2</li><li>ComponentSpacer</li><li>Grechka_SolarCellT2</li><li>Plasteel</li></thingDefs>
+    </fixedIngredientFilter>
+    <products><Grechka_SolarS2>1</Grechka_SolarS2></products>
+    <workSkill>Crafting</workSkill>
+    <skillRequirements><Crafting>8</Crafting></skillRequirements>
+  </RecipeDef>
 </Defs>

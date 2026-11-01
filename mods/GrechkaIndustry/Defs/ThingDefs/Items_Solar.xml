@@ -11,6 +11,11 @@
     <label>упакованная усиленная солнечная панель</label>
     <description>Усиленная панель S1 для установки на карте или дальнейшей сборки.</description>
   </ThingDef>
+  <ThingDef ParentName="MinifiedThing">
+    <defName>Grechka_PackedSolarS2</defName>
+    <label>упакованная многослойная солнечная панель</label>
+    <description>Целиком снятая панель S2 для установки или дальнейшей сборки.</description>
+  </ThingDef>
 
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_SolarCellT2</defName>

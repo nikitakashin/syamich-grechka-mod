@@ -11,7 +11,12 @@
       </li>
       <li Class="PatchOperationAdd">
         <xpath>/Defs/ThingDef[defName="SolarGenerator"]/comps</xpath>
-        <value><li Class="Grechka.Industry.CompProperties_SolarUpgrade"/></value>
+        <value>
+          <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
+            <targetDefName>Grechka_SolarS1</targetDefName>
+            <costDescription>1 снятая ванильная панель, 1 корпус T2, 4 продвинутых компонента и 8 фотоэлементов T2</costDescription>
+          </li>
+        </value>
       </li>
     </operations>
   </Operation>

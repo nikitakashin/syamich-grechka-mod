@@ -128,6 +128,7 @@ require(solar_patch.findtext("./Operation/operations/li/xpath") == '/Defs/ThingD
 require(len(solar_comp_patch) == 2
         and solar_comp_patch[1].findtext("xpath") == '/Defs/ThingDef[defName="SolarGenerator"]/comps'
         and solar_comp_patch[1].find("./value/li[@Class='Grechka.Industry.CompProperties_SolarUpgrade']") is not None
+        and solar_comp_patch[1].findtext("./value/li/targetDefName") == "Grechka_SolarS1"
         and (root / "Source" / "SolarUpgrade.cs").is_file(),
         "installed S0 needs an in-place upgrade button")
 require(all(defs[name].get("ParentName") == "MinifiedThing"
@@ -164,4 +165,29 @@ require({"Grechka_MakeSolarCellT2", "Grechka_MakeSolarS1"}
         <= {li.text for li in t2_bench.findall("./recipes/li")},
         "T2 bench must expose both solar recipes")
 
-print("GrechkaIndustry T1 to T2 and S1 solar XML routes: OK")
+solar_s2 = defs["Grechka_SolarS2"]
+solar_s2_recipe = defs["Grechka_MakeSolarS2"]
+require(defs["Grechka_PackedSolarS2"].get("ParentName") == "MinifiedThing"
+        and solar_s2.findtext("minifiedDef") == "Grechka_PackedSolarS2"
+        and solar_s2.findtext("designatorDropdown") == solar_group.findtext("defName")
+        and solar_s2.findtext("./comps/li[@Class='CompProperties_Power']/basePowerConsumption") == "-18000",
+        "S2 must be packable, share the family dropdown and produce up to 18 kW")
+require(solar.findtext("./comps/li[@Class='Grechka.Industry.CompProperties_SolarUpgrade']/targetDefName")
+        == "Grechka_SolarS2", "installed S1 must offer S2 upgrade")
+require(solar_s2_recipe.findtext("./products/Grechka_SolarS2") == "1"
+        and solar_s2_recipe.findtext("allowMixingIngredients") == "true"
+        and {li.text for li in solar_s2_recipe.findall("./ingredients/li[1]/filter/thingDefs/li")}
+            == {"Grechka_SolarS1", "Grechka_PackedSolarS1"},
+        "S2 recipe must consume two whole S1 panels")
+s2_inputs = {
+    li.findtext("./filter/thingDefs/li"): li.findtext("count")
+    for li in solar_s2_recipe.findall("./ingredients/li")[1:]
+}
+require(s2_inputs == {"Grechka_HousingT2": "1", "ComponentSpacer": "8",
+                      "Grechka_SolarCellT2": "24", "Plasteel": "20"}
+        and {li.tag: li.text for li in solar_s2.findall("./costList/*")}
+            == {"Grechka_PackedSolarS1": "2", **s2_inputs}
+        and "Grechka_MakeSolarS2" in {li.text for li in t2_bench.findall("./recipes/li")},
+        "S2 construction and workbench assembly must share accepted costs")
+
+print("GrechkaIndustry T1 to T2 and solar S0 to S2 XML routes: OK")

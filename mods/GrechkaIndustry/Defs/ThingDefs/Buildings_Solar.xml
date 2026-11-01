@@ -37,6 +37,10 @@
       <Grechka_SolarCellT2>8</Grechka_SolarCellT2>
     </costList>
     <comps>
+      <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
+        <targetDefName>Grechka_SolarS2</targetDefName>
+        <costDescription>2 снятые панели S1, 1 корпус T2, 8 продвинутых компонентов, 24 фотоэлемента T2 и 20 пластали</costDescription>
+      </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerPlantSolar</compClass>
         <basePowerConsumption>-6000</basePowerConsumption>
@@ -53,6 +57,64 @@
     <designationCategory>Power</designationCategory>
     <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
     <uiOrder>2101</uiOrder>
+    <constructEffect>ConstructMetal</constructEffect>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_SolarS2</defName>
+    <label>многослойная солнечная панель</label>
+    <description>Вторая промышленная ступень солнечной линии. Производит до 18000 Вт при достаточном солнечном освещении; ночью не работает.</description>
+    <thingClass>Building</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <!-- Временная ванильная графика до текстуры S2. -->
+      <texPath>Things/Building/Power/SolarCollector</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <shadowData><volume>(3.5,0.75,3.4)</volume><offset>(0,0,0)</offset></shadowData>
+      <damageData><rect>(0,0.6,4,2.8)</rect></damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <tickerType>Normal</tickerType>
+    <size>(4,4)</size>
+    <minifiedDef>Grechka_PackedSolarS2</minifiedDef>
+    <statBases>
+      <MaxHitPoints>420</MaxHitPoints>
+      <WorkToBuild>6500</WorkToBuild>
+      <Flammability>0.4</Flammability>
+    </statBases>
+    <building><destroySound>BuildingDestroyed_Metal_Big</destroySound></building>
+    <costList>
+      <Grechka_PackedSolarS1>2</Grechka_PackedSolarS1>
+      <Grechka_HousingT2>1</Grechka_HousingT2>
+      <ComponentSpacer>8</ComponentSpacer>
+      <Grechka_SolarCellT2>24</Grechka_SolarCellT2>
+      <Plasteel>20</Plasteel>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlantSolar</compClass>
+        <basePowerConsumption>-18000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Stunnable">
+        <useLargeEMPEffecter>true</useLargeEMPEffecter>
+        <empChancePerTick>0.03</empChancePerTick>
+        <affectedDamageDefs><li>EMP</li></affectedDamageDefs>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
+    <uiOrder>2102</uiOrder>
     <constructEffect>ConstructMetal</constructEffect>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
   </ThingDef>

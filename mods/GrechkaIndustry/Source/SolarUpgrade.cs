@@ -8,6 +8,8 @@ namespace Grechka.Industry
 {
     public sealed class CompProperties_SolarUpgrade : CompProperties
     {
+        public string targetDefName;
+        public string costDescription;
         public CompProperties_SolarUpgrade() { compClass = typeof(CompSolarUpgrade); }
     }
 
@@ -15,15 +17,20 @@ namespace Grechka.Industry
     // then consumes that package along with the new parts and builder work.
     public sealed class CompSolarUpgrade : ThingComp
     {
+        private CompProperties_SolarUpgrade Props { get { return (CompProperties_SolarUpgrade)props; } }
+
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
             Building panel = parent as Building;
             if (panel == null || !panel.Spawned || panel.Faction != Faction.OfPlayer) yield break;
+            ThingDef targetDef = DefDatabase<ThingDef>.GetNamedSilentFail(Props.targetDefName);
+            if (targetDef == null) yield break;
 
             yield return new Command_Action
             {
-                defaultLabel = "Улучшить до усиленной панели",
-                defaultDesc = "Снимет эту панель целиком и поставит чертёж S1 на том же месте. Строитель использует снятую панель, корпус T2, 4 продвинутых компонента и 8 фотоэлементов. Пока строится новая панель, электричества от старой не будет.",
+                defaultLabel = "Улучшить до " + targetDef.label,
+                defaultDesc = "Снимет эту панель целиком и поставит чертёж следующей ступени на том же месте. Стоимость: "
+                    + Props.costDescription + ". Пока строится новая панель, электричества от старой не будет.",
                 icon = TexCommand.Install,
                 action = StartUpgrade
             };
@@ -32,7 +39,7 @@ namespace Grechka.Industry
         private void StartUpgrade()
         {
             Building oldPanel = parent as Building;
-            ThingDef targetDef = DefDatabase<ThingDef>.GetNamedSilentFail("Grechka_SolarS1");
+            ThingDef targetDef = DefDatabase<ThingDef>.GetNamedSilentFail(Props.targetDefName);
             if (oldPanel == null || !oldPanel.Spawned || targetDef == null) return;
 
             Map map = oldPanel.Map;
@@ -43,7 +50,7 @@ namespace Grechka.Industry
                 targetDef, position, rotation, map, false, oldPanel);
             if (!placement.Accepted)
             {
-                Messages.Message("Здесь нельзя поставить улучшенную панель: " + placement.Reason,
+                Messages.Message("Здесь нельзя поставить следующую панель: " + placement.Reason,
                     MessageTypeDefOf.RejectInput);
                 return;
             }
@@ -59,7 +66,7 @@ namespace Grechka.Industry
             {
                 Blueprint_Build blueprint = GenConstruct.PlaceBlueprintForBuild(
                     targetDef, position, map, rotation, faction, null);
-                if (blueprint == null) throw new InvalidOperationException("Чертёж S1 не был создан.");
+                if (blueprint == null) throw new InvalidOperationException("Чертёж " + targetDef.defName + " не был создан.");
             }
             catch (Exception error)
             {
@@ -69,7 +76,7 @@ namespace Grechka.Industry
                 {
                     Log.Error("[Grechka Industry] Не удалось поставить чертёж возврата S0: " + restoreError);
                 }
-                Messages.Message("Чертёж S1 не создан. Снятая панель сохранена для повторной установки.",
+                Messages.Message("Чертёж улучшения не создан. Снятая панель сохранена для повторной установки.",
                     MessageTypeDefOf.RejectInput);
             }
         }
