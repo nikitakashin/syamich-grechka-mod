@@ -16,6 +16,7 @@
     <recipes>
       <li>Grechka_MakeComponentBatchT1</li><li>Make_ComponentSpacer</li><li>Grechka_MakeHousingT2</li>
       <li>Grechka_MakeSolarCellT2</li><li>Grechka_MakeSolarS1</li><li>Grechka_MakeSolarS2</li>
+      <li>Grechka_MakeSolarCellT3</li><li>Grechka_MakeSolarS3</li><li>Grechka_MakeSolarS4</li>
       <li>Grechka_MakeComponentT3</li><li>Grechka_MakeHousingT3</li>
     </recipes>
     <building><spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity><workTableRoomRole>Workshop</workTableRoomRole><workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor></building>

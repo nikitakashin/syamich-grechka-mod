@@ -193,4 +193,51 @@ require(s2_inputs == {"Grechka_HousingT2_Item": "1", "ComponentSpacer": "8",
         and "Grechka_MakeSolarS2" in {li.text for li in t2_bench.findall("./recipes/li")},
         "S2 construction and workbench assembly must share accepted costs")
 
-print("GrechkaIndustry T1 to T2 and solar S0 to S2 XML routes: OK")
+# New stages must preserve the accepted recursive grind in both construction
+# and bill assembly, with no accidentally free shortcut or new research gate.
+t3_recipes = {li.text for li in defs["Grechka_AssemblyBenchT3_Building"].findall("./recipes/li")}
+t3_cells = defs["Grechka_MakeSolarCellT3"]
+require(ingredients(t3_cells) == {"Grechka_SolarCellT2_Item": 8, "Grechka_Mechanites": 8, "Grechka_ComponentT3_Item": 1}
+        and t3_cells.findtext("./products/Grechka_SolarCellT3_Item") == "4"
+        and "Grechka_MakeSolarCellT3" in t3_recipes,
+        "T3 photoelements must be reachable from the existing T2 cells and mechanite route")
+require(defs["Grechka_SolarCellT3_Item"].findtext("stackLimit") == "100",
+        "T3 photoelements must remain ordinary stackable production")
+base_panels = 2  # Two S0 are already embedded in S2 before production bonuses.
+for stage, count, housings, components, cells, power, plasteel in [
+        (3, 3, 1, 8, 16, 72000, 0), (4, 6, 2, 16, 64, 576000, 100)]:
+    panel = defs[f"Grechka_SolarS{stage}_Building"]
+    recipe = defs[f"Grechka_MakeSolarS{stage}"]
+    packed = f"Grechka_PackedSolarS{stage}_Item"
+    previous_packed = f"Grechka_PackedSolarS{stage-1}_Item"
+    previous_building = f"Grechka_SolarS{stage-1}_Building"
+    expected = {previous_packed: str(count), "Grechka_HousingT3_Item": str(housings),
+                "Grechka_ComponentT3_Item": str(components), "Grechka_SolarCellT3_Item": str(cells)}
+    if plasteel:
+        expected["Plasteel"] = str(plasteel)
+    actual = {li.findtext("./filter/thingDefs/li"): li.findtext("count")
+              for li in recipe.findall("./ingredients/li")[1:]}
+    require({li.tag: li.text for li in panel.findall("./costList/*")} == expected
+            and {previous_packed: recipe.findtext("./ingredients/li/count"), **actual} == expected
+            and {li.text for li in recipe.findall("./ingredients/li[1]/filter/thingDefs/li")}
+                == {previous_packed, previous_building},
+            f"S{stage} must consume the accepted previous panels and T3 parts through both paths")
+    require(panel.findtext("minifiedDef") == packed and defs[packed].get("ParentName") == "MinifiedThing"
+            and panel.findtext("designatorDropdown") == solar_group.findtext("defName")
+            and panel.findtext("./comps/li[@Class='CompProperties_Power']/compClass") == "CompPowerPlantSolar"
+            and panel.findtext("./comps/li[@Class='CompProperties_Power']/basePowerConsumption") == str(-power)
+            and panel.findtext("size") == "(4,4)"
+            and recipe.findtext("allowMixingIngredients") == "true"
+            and recipe.findtext(f"./products/Grechka_SolarS{stage}_Building") == "1"
+            and recipe.findtext("defName") in t3_recipes,
+            f"S{stage} must be packable, solar-powered, upgradable in the same footprint and buildable on T3")
+    require(defs[previous_building].findtext(
+        "./comps/li[@Class='Grechka.Industry.CompProperties_SolarUpgrade']/targetDefName") == panel.findtext("defName"),
+        f"installed S{stage-1} must offer the next stage while retaining its whole previous panel")
+    require(not any(node.findall(tag) for node in (panel, recipe, t3_cells)
+                    for tag in ("researchPrerequisite", "researchPrerequisites")),
+            f"S{stage} must not acquire a research gate")
+    base_panels *= count
+require(base_panels == 36, "S4 must embed 36 vanilla panels before production bonuses")
+
+print("GrechkaIndustry T1 to T3 and solar S0 to S4 XML routes: OK")

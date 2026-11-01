@@ -102,6 +102,10 @@
       <Plasteel>20</Plasteel>
     </costList>
     <comps>
+      <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
+        <targetDefName>Grechka_SolarS3_Building</targetDefName>
+        <costDescription>эта панель S2 и ещё 2 панели S2, 1 корпус T3, 8 меха-компонентов и 16 фотоэлементов T3</costDescription>
+      </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerPlantSolar</compClass>
         <basePowerConsumption>-18000</basePowerConsumption>

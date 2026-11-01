@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_SolarS3_Building</defName>
+    <label>механитная солнечная панель</label>
+    <description>Механитная ступень S3 солнечной линии. Производит до 72 000 Вт при достаточном солнечном освещении; ночью не работает. Собирается из 3 панелей предыдущей ступени и деталей T3.</description>
+    <thingClass>Building</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <!--Временная ванильная графика до готовой собственной текстуры этой ступени.-->
+      <texPath>Things/Building/Power/SolarCollector</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <shadowData>
+        <volume>(3.5,0.75,3.4)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.6,4,2.8)</rect>
+      </damageData>
+      <color>(0.4,0.8,1)</color>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <tickerType>Normal</tickerType>
+    <size>(4,4)</size>
+    <minifiedDef>Grechka_PackedSolarS3_Item</minifiedDef>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Mass>100</Mass>
+      <WorkToBuild>9000</WorkToBuild>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <costList>
+      <Grechka_PackedSolarS2_Item>3</Grechka_PackedSolarS2_Item>
+      <Grechka_HousingT3_Item>1</Grechka_HousingT3_Item>
+      <Grechka_ComponentT3_Item>8</Grechka_ComponentT3_Item>
+      <Grechka_SolarCellT3_Item>16</Grechka_SolarCellT3_Item>
+    </costList>
+    <comps>
+      <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
+        <targetDefName>Grechka_SolarS4_Building</targetDefName>
+        <costDescription>эта панель S3 и ещё 5 панелей S3, 2 корпуса T3, 16 меха-компонентов, 64 фотоэлемента T3 и 100 пластали</costDescription>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlantSolar</compClass>
+        <basePowerConsumption>-72000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Stunnable">
+        <useLargeEMPEffecter>true</useLargeEMPEffecter>
+        <empChancePerTick>0.03</empChancePerTick>
+        <affectedDamageDefs>
+          <li>EMP</li>
+        </affectedDamageDefs>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <designationCategory>Power</designationCategory>
+    <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
+    <uiOrder>2103</uiOrder>
+    <constructEffect>ConstructMetal</constructEffect>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_SolarS4_Building</defName>
+    <label>механитная солнечная матрица</label>
+    <description>Механитная ступень S4 солнечной линии. Производит до 576 000 Вт при достаточном солнечном освещении; ночью не работает. Собирается из 6 панелей предыдущей ступени и деталей T3.</description>
+    <thingClass>Building</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <!--Временная ванильная графика до готовой собственной текстуры этой ступени.-->
+      <texPath>Things/Building/Power/SolarCollector</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <shadowData>
+        <volume>(3.5,0.75,3.4)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.6,4,2.8)</rect>
+      </damageData>
+      <color>(0.4,0.8,1)</color>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <tickerType>Normal</tickerType>
+    <size>(4,4)</size>
+    <minifiedDef>Grechka_PackedSolarS4_Item</minifiedDef>
+    <statBases>
+      <MaxHitPoints>650</MaxHitPoints>
+      <Mass>140</Mass>
+      <WorkToBuild>16000</WorkToBuild>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <costList>
+      <Grechka_PackedSolarS3_Item>6</Grechka_PackedSolarS3_Item>
+      <Grechka_HousingT3_Item>2</Grechka_HousingT3_Item>
+      <Grechka_ComponentT3_Item>16</Grechka_ComponentT3_Item>
+      <Grechka_SolarCellT3_Item>64</Grechka_SolarCellT3_Item>
+      <Plasteel>100</Plasteel>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlantSolar</compClass>
+        <basePowerConsumption>-576000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Stunnable">
+        <useLargeEMPEffecter>true</useLargeEMPEffecter>
+        <empChancePerTick>0.03</empChancePerTick>
+        <affectedDamageDefs>
+          <li>EMP</li>
+        </affectedDamageDefs>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <designationCategory>Power</designationCategory>
+    <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
+    <uiOrder>2104</uiOrder>
+    <constructEffect>ConstructMetal</constructEffect>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+  </ThingDef>
+</Defs>
