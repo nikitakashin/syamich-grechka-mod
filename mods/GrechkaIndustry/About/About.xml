@@ -4,7 +4,7 @@
   <author>Grechka World</author>
   <packageId>grechka.industry</packageId>
   <supportedVersions><li>1.7</li></supportedVersions>
-  <description>Промышленные цепочки Grechka World: компоненты, корпуса и сборочные верстаки T1–T2 с улучшением на месте. Требуется Harmony.</description>
+  <description>Промышленные цепочки Grechka World: компоненты, корпуса и верстаки T1–T3, экстрактор механитов, солнечные панели S1–S2 и улучшения на месте. Требуется Harmony.</description>
   <modDependencies>
     <li><packageId>brrainz.harmony</packageId><displayName>Harmony</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl></li>
   </modDependencies>

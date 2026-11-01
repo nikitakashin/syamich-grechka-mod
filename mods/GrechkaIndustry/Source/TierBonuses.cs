@@ -19,6 +19,11 @@ namespace Grechka.Industry
         private CompProperties_TierBonuses Props { get { return (CompProperties_TierBonuses)props; } }
         public float InputDiscount { get { return Props.inputDiscount; } }
 
+        internal void CopyProgressFrom(CompTierBonuses previous)
+        {
+            if (previous != null) outputCarry = new Dictionary<string, float>(previous.outputCarry);
+        }
+
         public override void PostExposeData()
         {
             base.PostExposeData();
@@ -48,6 +53,7 @@ namespace Grechka.Industry
         private static void Postfix(Bill bill, ref float __result)
         {
             var thing = bill?.billStack?.billGiver as ThingWithComps;
+            if (thing?.GetComp<CompAssemblyUpgrade>()?.IsUpgradeRecipe(bill.recipe) == true) return;
             CompTierBonuses bonus = thing?.GetComp<CompTierBonuses>();
             if (bonus == null || bonus.InputDiscount <= 0f || __result <= 0f) return;
             // IngredientCount is a value, not always a physical item count:

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RecipeDef>
+    <defName>Grechka_MakeComponentT3</defName>
+    <label>собрать меха-компонент</label><description>Собрать компонент T3 из продвинутых компонентов, пластали, урана и механитов.</description>
+    <jobString>Собирает меха-компонент.</jobString><workSpeedStat>GeneralLaborSpeed</workSpeedStat><effectWorking>Cook</effectWorking><soundWorking>Recipe_Machining</soundWorking><workAmount>20000</workAmount>
+    <ingredients>
+      <li><filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>Plasteel</li></thingDefs></filter><count>20</count></li>
+      <li><filter><thingDefs><li>Uranium</li></thingDefs></filter><count>10</count></li>
+      <li><filter><thingDefs><li>Grechka_Mechanites</li></thingDefs></filter><count>25</count></li>
+    </ingredients>
+    <fixedIngredientFilter><thingDefs><li>ComponentSpacer</li><li>Plasteel</li><li>Uranium</li><li>Grechka_Mechanites</li></thingDefs></fixedIngredientFilter>
+    <products><Grechka_ComponentT3>1</Grechka_ComponentT3></products><workSkill>Crafting</workSkill><skillRequirements><Crafting>8</Crafting></skillRequirements>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>Grechka_MakeHousingT3</defName>
+    <label>собрать меха-корпус</label><description>Собрать корпус T3 из предыдущего корпуса и механитных узлов.</description>
+    <jobString>Собирает меха-корпус.</jobString><workSpeedStat>GeneralLaborSpeed</workSpeedStat><effectWorking>Cook</effectWorking><soundWorking>Recipe_Machining</soundWorking><workAmount>30000</workAmount>
+    <ingredients>
+      <li><filter><thingDefs><li>Grechka_HousingT2</li></thingDefs></filter><count>1</count></li>
+      <li><filter><thingDefs><li>Plasteel</li></thingDefs></filter><count>60</count></li>
+      <li><filter><thingDefs><li>Grechka_ComponentT3</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>Grechka_Mechanites</li></thingDefs></filter><count>20</count></li>
+    </ingredients>
+    <fixedIngredientFilter><thingDefs><li>Grechka_HousingT2</li><li>Plasteel</li><li>Grechka_ComponentT3</li><li>Grechka_Mechanites</li></thingDefs></fixedIngredientFilter>
+    <products><Grechka_HousingT3>1</Grechka_HousingT3></products><workSkill>Crafting</workSkill><skillRequirements><Crafting>8</Crafting></skillRequirements>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>Grechka_UpgradeAssemblyBenchT3</defName><label>улучшить сборочный верстак до T3</label>
+    <description>Улучшить установленный T2 верстак. Его корпус T2 используется повторно, общая скидка производственного рецепта на улучшение не применяется.</description>
+    <jobString>Улучшает сборочный верстак до T3.</jobString><workSpeedStat>GeneralLaborSpeed</workSpeedStat><effectWorking>ConstructMetal</effectWorking><soundWorking>Recipe_Machining</soundWorking><workAmount>6500</workAmount>
+    <ingredients>
+      <li><filter><thingDefs><li>Plasteel</li></thingDefs></filter><count>160</count></li>
+      <li><filter><thingDefs><li>Grechka_ComponentT3</li></thingDefs></filter><count>14</count></li>
+      <li><filter><thingDefs><li>Grechka_Mechanites</li></thingDefs></filter><count>20</count></li>
+      <li><filter><thingDefs><li>Uranium</li></thingDefs></filter><count>40</count></li>
+    </ingredients>
+    <fixedIngredientFilter><thingDefs><li>Plasteel</li><li>Grechka_ComponentT3</li><li>Grechka_Mechanites</li><li>Uranium</li></thingDefs></fixedIngredientFilter>
+    <workSkill>Crafting</workSkill><skillRequirements><Crafting>8</Crafting></skillRequirements>
+  </RecipeDef>
+</Defs>

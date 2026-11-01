@@ -5,6 +5,7 @@
     <label>продвинутый сборочный верстак</label>
     <description>Электрический сборочный верстак второго тира. Для строительства нужен продвинутый корпус, изготовленный на базовом верстаке.</description>
     <thingClass>Building_WorkTable</thingClass>
+    <tickerType>Normal</tickerType>
     <graphicData>
       <!-- Временная ванильная графика до двухслойной графики семейства. -->
       <texPath>Things/Building/Production/TableSmithingElectric</texPath>
@@ -42,6 +43,9 @@
       <li>Grechka_MakeSolarCellT2</li>
       <li>Grechka_MakeSolarS1</li>
       <li>Grechka_MakeSolarS2</li>
+      <li>Grechka_MakeComponentT3</li>
+      <li>Grechka_MakeHousingT3</li>
+      <li>Grechka_UpgradeAssemblyBenchT3</li>
     </recipes>
     <building>
       <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
@@ -49,6 +53,12 @@
       <workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
     </building>
     <comps>
+      <li Class="Grechka.Industry.CompProperties_AssemblyUpgrade">
+        <upgradeRecipeName>Grechka_UpgradeAssemblyBenchT3</upgradeRecipeName>
+        <targetBenchName>Grechka_AssemblyBenchT3</targetBenchName>
+        <upgradeLabel>Улучшить до T3</upgradeLabel>
+        <upgradeDescription>Улучшить на месте: 160 пластали, 14 меха-компонентов, 20 механитов и 40 урана. Установленный корпус T2 засчитывается один раз. Счета, дробный бонус выпуска и относительная прочность сохраняются. Потребление T3 — 840 Вт.</upgradeDescription>
+      </li>
       <li Class="Grechka.Industry.CompProperties_TierBonuses">
         <inputDiscount>0.1</inputDiscount>
         <outputBonus>0.1</outputBonus>

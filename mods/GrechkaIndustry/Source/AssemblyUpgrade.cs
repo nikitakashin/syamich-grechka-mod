@@ -18,6 +18,10 @@ namespace Grechka.Industry
 
     public sealed class CompProperties_AssemblyUpgrade : CompProperties
     {
+        public string upgradeRecipeName = "Grechka_UpgradeAssemblyBenchT2";
+        public string targetBenchName = "Grechka_AssemblyBenchT2";
+        public string upgradeLabel = "Улучшить до T2";
+        public string upgradeDescription = "Пешка улучшит этот верстак на месте. Требуется: 120 стали, 20 пластали, 4 компонента и 6 продвинутых компонентов. Вложенный корпус T1 засчитывается. Производственные задания и прочность сохраняются. Новому верстаку потребуется 350 Вт.";
         public CompProperties_AssemblyUpgrade() { compClass = typeof(CompAssemblyUpgrade); }
     }
 
@@ -25,8 +29,7 @@ namespace Grechka.Industry
     // Only after the bill finishes do we replace the machine on the next tick.
     public sealed class CompAssemblyUpgrade : ThingComp
     {
-        private const string UpgradeRecipeName = "Grechka_UpgradeAssemblyBenchT2";
-        private const string TargetBenchName = "Grechka_AssemblyBenchT2";
+        private CompProperties_AssemblyUpgrade Props { get { return (CompProperties_AssemblyUpgrade)props; } }
         private bool ready;
         private int nextAttemptTick;
 
@@ -41,27 +44,27 @@ namespace Grechka.Industry
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
             Building_WorkTable bench = Bench;
-            if (bench == null || ready || HasUpgradeBill(bench)) yield break;
+            if (bench == null || bench.Faction != Faction.OfPlayer || ready || HasUpgradeBill(bench)) yield break;
 
             yield return new Command_Action
             {
-                defaultLabel = "Улучшить до T2",
-                defaultDesc = "Пешка улучшит этот верстак на месте. Требуется: 120 стали, 20 пластали, 4 компонента и 6 продвинутых компонентов. Вложенный корпус T1 засчитывается. Производственные задания и прочность сохраняются. Новому верстаку потребуется 350 Вт.",
+                defaultLabel = Props.upgradeLabel,
+                defaultDesc = Props.upgradeDescription,
                 icon = TexCommand.Install,
                 action = QueueUpgrade
             };
         }
 
-        private static bool HasUpgradeBill(Building_WorkTable bench)
+        private bool HasUpgradeBill(Building_WorkTable bench)
         {
             return bench.BillStack != null && bench.BillStack.Bills.Any(
-                bill => bill.recipe != null && bill.recipe.defName == UpgradeRecipeName);
+                bill => IsUpgradeRecipe(bill.recipe));
         }
 
         private void QueueUpgrade()
         {
             Building_WorkTable bench = Bench;
-            RecipeDef recipe = DefDatabase<RecipeDef>.GetNamedSilentFail(UpgradeRecipeName);
+            RecipeDef recipe = DefDatabase<RecipeDef>.GetNamedSilentFail(Props.upgradeRecipeName);
             if (bench == null || !bench.Spawned || ready || HasUpgradeBill(bench) || recipe == null) return;
 
             var bill = new Bill_Production(recipe, null);
@@ -70,7 +73,10 @@ namespace Grechka.Industry
             bench.BillStack.AddBill(bill);
         }
 
-        internal void MarkReady() { ready = true; }
+        internal bool IsUpgradeRecipe(RecipeDef recipe)
+        { return recipe != null && recipe.defName == Props.upgradeRecipeName; }
+
+        internal void MarkReady(RecipeDef recipe) { if (IsUpgradeRecipe(recipe)) ready = true; }
 
         public override void CompTick()
         {
@@ -88,8 +94,8 @@ namespace Grechka.Industry
         private void ReplaceBench()
         {
             Building_WorkTable oldBench = Bench;
-            ThingDef targetDef = DefDatabase<ThingDef>.GetNamedSilentFail(TargetBenchName);
-            if (oldBench == null || targetDef == null) throw new InvalidOperationException("Не найден верстак T2.");
+            ThingDef targetDef = DefDatabase<ThingDef>.GetNamedSilentFail(Props.targetBenchName);
+            if (oldBench == null || targetDef == null) throw new InvalidOperationException("Не найден целевой верстак.");
 
             Map map = oldBench.Map;
             IntVec3 position = oldBench.Position;
@@ -97,7 +103,7 @@ namespace Grechka.Industry
             Faction faction = oldBench.Faction;
             float healthFraction = (float)oldBench.HitPoints / oldBench.MaxHitPoints;
             var retainedBills = oldBench.BillStack.Bills.Where(
-                bill => bill.recipe == null || bill.recipe.defName != UpgradeRecipeName).ToList();
+                bill => !IsUpgradeRecipe(bill.recipe)).ToList();
 
             var newBench = (Building_WorkTable)ThingMaker.MakeThing(targetDef);
             if (faction != null) newBench.SetFaction(faction);
@@ -106,6 +112,7 @@ namespace Grechka.Industry
             {
                 GenSpawn.Spawn(newBench, position, map, rotation, WipeMode.Vanish, false, false);
                 newBench.HitPoints = Math.Max(1, Mathf.RoundToInt(newBench.MaxHitPoints * healthFraction));
+                newBench.GetComp<CompTierBonuses>()?.CopyProgressFrom(oldBench.GetComp<CompTierBonuses>());
                 foreach (Bill bill in retainedBills)
                 {
                     oldBench.BillStack.Bills.Remove(bill);
@@ -143,9 +150,8 @@ namespace Grechka.Industry
     {
         private static void Postfix(Bill_Production __instance)
         {
-            if (__instance.recipe == null || __instance.recipe.defName != "Grechka_UpgradeAssemblyBenchT2") return;
             Building_WorkTable bench = __instance.billStack?.billGiver as Building_WorkTable;
-            bench?.GetComp<CompAssemblyUpgrade>()?.MarkReady();
+            bench?.GetComp<CompAssemblyUpgrade>()?.MarkReady(__instance.recipe);
         }
     }
 }

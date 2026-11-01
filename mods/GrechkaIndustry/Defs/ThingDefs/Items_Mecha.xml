@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_Mechanites</defName>
+    <label>механиты</label>
+    <description>Микроскопические машины, извлечённые из параллельного измерения. Основное сырьё меха-технологий T3.</description>
+    <graphicData>
+      <!-- Временная ванильная графика до собственных спрайтов. -->
+      <texPath>Things/Item/Resource/ComponentIndustrial</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(0.3,0.8,1)</color>
+    </graphicData>
+    <stackLimit>200</stackLimit>
+    <soundInteract>Metal_Drop</soundInteract><soundDrop>Standard_Drop</soundDrop>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases><MaxHitPoints>100</MaxHitPoints><MarketValue>12</MarketValue><Mass>0.01</Mass><Flammability>0.1</Flammability><DeteriorationRate>2</DeteriorationRate></statBases>
+    <thingCategories><li>Manufactured</li></thingCategories>
+    <tradeTags><li>ExoticMisc</li></tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_ComponentT3</defName>
+    <label>меха-компонент</label>
+    <description>Компонент третьего тира с активными механитами. Нужен для меха-машин и корпусов T3.</description>
+    <graphicData><texPath>Things/Item/Resource/ComponentSpacer</texPath><graphicClass>Graphic_StackCount</graphicClass><color>(0.3,0.8,1)</color></graphicData>
+    <stackLimit>50</stackLimit>
+    <soundInteract>Metal_Drop</soundInteract><soundDrop>Standard_Drop</soundDrop>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases><MaxHitPoints>120</MaxHitPoints><MarketValue>1300</MarketValue><Mass>0.8</Mass><Flammability>0.1</Flammability><DeteriorationRate>2</DeteriorationRate></statBases>
+    <thingCategories><li>Manufactured</li></thingCategories>
+    <tradeTags><li>ExoticMisc</li></tradeTags>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_HousingT3</defName>
+    <label>меха-корпус</label>
+    <description>Голубой корпус третьего промышленного тира с механитными узлами.</description>
+    <graphicData><texPath>Items/HousingT2</texPath><graphicClass>Graphic_Single</graphicClass><color>(0.3,0.8,1)</color></graphicData>
+    <stackLimit>25</stackLimit>
+    <soundInteract>Metal_Drop</soundInteract><soundDrop>Standard_Drop</soundDrop>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <statBases><MaxHitPoints>160</MaxHitPoints><MarketValue>14000</MarketValue><Mass>16</Mass><Flammability>0.1</Flammability><DeteriorationRate>2</DeteriorationRate></statBases>
+    <thingCategories><li>Manufactured</li></thingCategories>
+    <tradeTags><li>ExoticMisc</li></tradeTags>
+  </ThingDef>
+</Defs>

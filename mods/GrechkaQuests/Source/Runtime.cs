@@ -232,6 +232,7 @@ namespace Grechka.Quests
         public string LoadError;
         public QuestGame(Game game)
         {
+            IndustryEventAdapter.TryInstall();
             FactoryEventAdapter.TryInstall();
             FactoryAutofarmerAdapter.TryInstall();
             AdditionalHarvestAdapter.TryInstall();
