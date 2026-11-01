@@ -42,6 +42,7 @@ batch = defs["Grechka_MakeComponentBatchT1"]
 bench = defs["Grechka_AssemblyBenchT1"]
 t2_housing = defs["Grechka_MakeHousingT2"]
 t2_bench = defs["Grechka_AssemblyBenchT2"]
+upgrade = defs["Grechka_UpgradeAssemblyBenchT2"]
 
 require(hand.findtext("./products/ComponentIndustrial") == "1" and ingredients(hand) == {"Steel": 12},
         "manual component route must start from 12 steel")
@@ -90,10 +91,21 @@ require(t2_bench.findtext("./costList/Grechka_HousingT2") == "1"
         "T2 bench must require its reachable T2 housing and component")
 require(t2_bench.findtext("./comps/li[@Class='CompProperties_Power']/basePowerConsumption") == "350",
         "T2 bench must use electricity")
+require(upgrade.find("products") is None and ingredients(upgrade) == {
+    "Steel": 120, "Plasteel": 20, "ComponentIndustrial": 4, "ComponentSpacer": 6
+}, "in-place upgrade must credit the installed T1 housing exactly once")
+require(upgrade.findtext("defName") in bench_recipes
+        and upgrade.findtext("defName") not in {item.text for item in t2_bench.findall("./recipes/li")},
+        "only a T1 bench may run the T2 upgrade bill")
+require(bench.findtext("tickerType") == "Normal"
+        and bench.find("./comps/li[@Class='Grechka.Industry.CompProperties_AssemblyUpgrade']") is not None,
+        "T1 bench must tick and have the upgrade component")
+require((root / "Source" / "AssemblyUpgrade.cs").is_file(),
+        "assembly upgrade runtime is missing")
 group = defs["Grechka_AssemblyBenchGroup"]
 require(group.tag == "DesignatorDropdownGroupDef"
         and bench.findtext("designatorDropdown") == group.findtext("defName")
         and t2_bench.findtext("designatorDropdown") == group.findtext("defName"),
         "T1 and T2 benches must share one construction dropdown")
 
-print("GrechkaIndustry T1 to T2 bootstrap XML and recipe path: OK")
+print("GrechkaIndustry T1 to T2 bootstrap and upgrade XML: OK")

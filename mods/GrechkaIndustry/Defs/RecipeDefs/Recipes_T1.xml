@@ -75,4 +75,26 @@
     <workSkill>Crafting</workSkill>
     <skillRequirements><Crafting>6</Crafting></skillRequirements>
   </RecipeDef>
+
+  <RecipeDef>
+    <defName>Grechka_UpgradeAssemblyBenchT2</defName>
+    <label>улучшить сборочный верстак до T2</label>
+    <description>Улучшить этот верстак на месте. Уже установленный корпус T1 используется повторно; нужны материалы корпуса T2 и остальная стоимость нового верстака.</description>
+    <jobString>Улучшает сборочный верстак до T2.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>ConstructMetal</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <workAmount>4000</workAmount>
+    <ingredients>
+      <li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>120</count></li>
+      <li><filter><thingDefs><li>Plasteel</li></thingDefs></filter><count>20</count></li>
+      <li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>4</count></li>
+      <li><filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter><count>6</count></li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs><li>Steel</li><li>Plasteel</li><li>ComponentIndustrial</li><li>ComponentSpacer</li></thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Crafting</workSkill>
+    <skillRequirements><Crafting>6</Crafting></skillRequirements>
+  </RecipeDef>
 </Defs>
