@@ -18,7 +18,7 @@
     <tradeTags><li>ExoticMisc</li></tradeTags>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
-    <defName>Grechka_ComponentT3</defName>
+    <defName>Grechka_ComponentT3_Item</defName>
     <label>меха-компонент</label>
     <description>Компонент третьего тира с активными механитами. Нужен для меха-машин и корпусов T3.</description>
     <graphicData><texPath>Things/Item/Resource/ComponentSpacer</texPath><graphicClass>Graphic_StackCount</graphicClass><color>(0.3,0.8,1)</color></graphicData>
@@ -30,7 +30,7 @@
     <tradeTags><li>ExoticMisc</li></tradeTags>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
-    <defName>Grechka_HousingT3</defName>
+    <defName>Grechka_HousingT3_Item</defName>
     <label>меха-корпус</label>
     <description>Голубой корпус третьего промышленного тира с механитными узлами.</description>
     <graphicData><texPath>Items/HousingT2</texPath><graphicClass>Graphic_Single</graphicClass><color>(0.3,0.8,1)</color></graphicData>

@@ -4,8 +4,10 @@ using Verse;
 
 namespace Grechka.Quests
 {
+    [StaticConstructorOnStartup]
     public static class QuestBadge
     {
+        static QuestBadge() { _ = Circle; }
         static Texture2D circle;
         static Texture2D Circle
         {

@@ -140,7 +140,7 @@ namespace Grechka.Quests
         internal static string DescribeOption(RewardOption option) { return option.title + " — " + string.Join(", ", option.items.Select(RewardLabel)); }
         static string DefLabel(string name)
         {
-            ThingDef def = DefDatabase<ThingDef>.GetNamedSilentFail(name);
+            ThingDef def = QuestGame.ResolveThingDef(name);
             return def == null ? "[нет: " + name + "]" : def.LabelCap.ToString();
         }
         static void Label(ref float y, float width, string text, float height)

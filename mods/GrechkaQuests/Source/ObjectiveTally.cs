@@ -16,15 +16,18 @@ namespace Grechka.Quests
         readonly Dictionary<string, int> values = new Dictionary<string, int>();
         readonly Dictionary<string, Dictionary<string, int>> locations = new Dictionary<string, Dictionary<string, int>>();
         readonly HashSet<object> seen = new HashSet<object>(ReferenceEqualityComparer.Instance);
+        readonly Func<string, string> canonicalize;
         static readonly string[] Qualities = { "Awful", "Poor", "Normal", "Good", "Excellent", "Masterwork", "Legendary" };
 
-        public ObjectiveTally(QuestPack pack)
+        public ObjectiveTally(QuestPack pack, Func<string, string> canonicalize = null)
         {
+            this.canonicalize = canonicalize ?? (name => name);
             foreach (Quest quest in pack.quests)
                 foreach (Objective goal in quest.objectives.Where(o => o.type == "have" || o.type == "build"))
                 {
                     var entry = new Entry { key = PackCodec.ObjectiveKey(pack.id, quest.id, goal.id), goal = goal };
-                    foreach (string def in new[] { goal.target }.Concat(goal.variants ?? new List<string>()).Distinct())
+                    foreach (string def in new[] { goal.target }.Concat(goal.variants ?? new List<string>())
+                        .Select(this.canonicalize).Distinct())
                     {
                         string index = goal.type + ":" + def;
                         List<Entry> list;
@@ -36,12 +39,13 @@ namespace Grechka.Quests
 
         public void Add(object identity, string type, string def, string stuff, string quality, int count, string location = null)
         {
+            def = canonicalize(def);
             List<Entry> entries;
             if (identity == null || count <= 0 || !targets.TryGetValue(type + ":" + def, out entries) || !seen.Add(identity)) return;
             foreach (Entry entry in entries)
             {
                 Objective goal = entry.goal;
-                if (!Matches(goal, def, stuff, quality)) continue;
+                if (!Matches(goal, def, stuff, quality, canonicalize)) continue;
                 int old; values.TryGetValue(entry.key, out old);
                 values[entry.key] = (int)Math.Min(int.MaxValue, (long)old + count);
                 if (!string.IsNullOrEmpty(location))
@@ -54,10 +58,12 @@ namespace Grechka.Quests
             }
         }
 
-        public static bool Matches(Objective goal, string def, string stuff, string quality)
+        public static bool Matches(Objective goal, string def, string stuff, string quality, Func<string, string> canonicalize = null)
         {
-            if (goal.target != def && !(goal.variants?.Contains(def) ?? false)) return false;
-            if (!string.IsNullOrEmpty(goal.stuff) && goal.stuff != stuff) return false;
+            string Canonical(string name) { return canonicalize == null ? name : canonicalize(name); }
+            def = Canonical(def);
+            if (Canonical(goal.target) != def && !(goal.variants?.Any(name => Canonical(name) == def) ?? false)) return false;
+            if (!string.IsNullOrEmpty(goal.stuff) && Canonical(goal.stuff) != Canonical(stuff)) return false;
             if (!string.IsNullOrEmpty(goal.minQuality))
             {
                 int wanted = Array.IndexOf(Qualities, goal.minQuality), actual = Array.IndexOf(Qualities, quality);

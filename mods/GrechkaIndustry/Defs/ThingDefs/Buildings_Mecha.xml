@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="BuildingBase">
-    <defName>Grechka_MechaniteExtractorT3</defName>
+    <defName>Grechka_MechaniteExtractorT3_Building</defName>
     <label>межпространственный экстрактор механитов</label>
     <description>Электрическая установка извлекает механиты из параллельного измерения без газа и реагентов. Пусковой рецепт использует доступные материалы T2. Готовая партия ждёт свободного места; отключение питания сохраняет прогресс.</description>
     <thingClass>Building</thingClass>
     <graphicData><texPath>Things/Building/Production/DeepDrill</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(2,2)</drawSize><color>(0.4,0.8,1)</color></graphicData>
     <size>(2,2)</size><tickerType>Normal</tickerType>
     <minifiedDef>MinifiedThing</minifiedDef>
-    <altitudeLayer>Building</altitudeLayer><passability>Impassable</passability><fillPercent>0.7</fillPercent>
+    <altitudeLayer>Building</altitudeLayer><passability>Impassable</passability><fillPercent>1</fillPercent>
+    <thingCategories><li>BuildingsProduction</li></thingCategories>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded><rotatable>false</rotatable>
     <statBases><WorkToBuild>6000</WorkToBuild><MaxHitPoints>360</MaxHitPoints><Flammability>0.3</Flammability><Mass>45</Mass></statBases>
-    <costList><Grechka_HousingT2>1</Grechka_HousingT2><ComponentSpacer>8</ComponentSpacer><Plasteel>40</Plasteel><Uranium>20</Uranium></costList>
+    <costList><Grechka_HousingT2_Item>1</Grechka_HousingT2_Item><ComponentSpacer>8</ComponentSpacer><Plasteel>40</Plasteel><Uranium>20</Uranium></costList>
     <comps>
       <li Class="CompProperties_Power"><compClass>CompPowerTrader</compClass><basePowerConsumption>2000</basePowerConsumption><shortCircuitInRain>true</shortCircuitInRain></li>
       <li Class="CompProperties_Flickable"/>

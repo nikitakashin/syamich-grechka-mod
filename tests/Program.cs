@@ -363,4 +363,26 @@ Check("Preview claim-all plan does not expand after another goal is reached", ()
     var plan=preview.PrepareClaimAll(); foreach(var goal in next.objectives) preview.Mark(next,goal);
     if(plan.questIds.Count!=1 || preview.FinishClaimAll(plan,null)!=null || !preview.Claimed(first) || preview.Claimed(next) || !preview.Ready(next)) throw new Exception();
 });
+Check("Def aliases count one physical item once without rewriting book identities", () => {
+    var p=Fresh(); var q=p.quests[0]; var o=q.objectives[0];
+    o.type="have"; o.target="OldWidget"; o.variants=new List<string>{"Widget"};
+    string before=PackCodec.Encode(p), signature=QuestProgress.Signature(o);
+    string Canonical(string name) => name=="OldWidget"?"Widget":name;
+    var tally=new ObjectiveTally(p,Canonical); var item=new object();
+    tally.Add(item,"have","Widget",null,null,3);
+    tally.Add(item,"have","OldWidget",null,null,3);
+    if(tally.Value(p,q,o)!=3 || PackCodec.Encode(p)!=before || QuestProgress.Signature(o)!=signature) throw new Exception();
+});
+Check("Def aliases preserve saved event counters and do not multiply equivalent variants", () => {
+    var p=Fresh(); var q=p.quests[0]; var o=q.objectives[0];
+    o.type="produce"; o.target="OldWidget"; o.variants=new List<string>{"Widget"}; o.count=5;
+    string before=PackCodec.Encode(p), signature=QuestProgress.Signature(o);
+    string Canonical(string name) => name=="OldWidget"?"Widget":name;
+    var state=new QuestProgress(null,null);
+    state.RecordEvent(p,"produce","OldWidget",null,null,2,true);
+    var restored=new QuestProgress(state.CopyAchieved(),state.CopyClaimed(),null,null,state.CopyEventCounts(),state.CopyEventSignatures());
+    restored.RecordEvent(p,"produce","Widget",null,null,3,true,Canonical);
+    if(restored.EventValue(p,q,o)!=5 || !restored.Achieved(p,q,o) || restored.Claimed(p,q)
+        || PackCodec.Encode(p)!=before || QuestProgress.Signature(o)!=signature) throw new Exception();
+});
 Console.WriteLine($"{passed} checks passed.");

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="ResourceBase">
-    <defName>Grechka_HousingT1</defName>
+    <defName>Grechka_HousingT1_Item</defName>
     <label>базовый корпус</label>
     <description>Светло-серый корпус для первых промышленных станков. Его собирают вручную из стали и обычных компонентов.</description>
     <graphicData>
@@ -24,7 +24,7 @@
   </ThingDef>
 
   <ThingDef ParentName="ResourceBase">
-    <defName>Grechka_HousingT2</defName>
+    <defName>Grechka_HousingT2_Item</defName>
     <label>продвинутый корпус</label>
     <description>Тёмно-серый корпус второго промышленного тира. Собирается на базовом верстаке из предыдущего корпуса, пластали и продвинутых компонентов.</description>
     <graphicData>

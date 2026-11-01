@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="BuildingBase">
-    <defName>Grechka_SolarS1</defName>
+    <defName>Grechka_SolarS1_Building</defName>
     <label>усиленная солнечная панель</label>
     <description>Следующая ступень после обычной солнечной панели. Производит до 6000 Вт при достаточном солнечном освещении; ночью не работает.</description>
     <thingClass>Building</thingClass>
@@ -23,22 +23,23 @@
     <canOverlapZones>false</canOverlapZones>
     <tickerType>Normal</tickerType>
     <size>(4,4)</size>
-    <minifiedDef>Grechka_PackedSolarS1</minifiedDef>
+    <minifiedDef>Grechka_PackedSolarS1_Item</minifiedDef>
     <statBases>
       <MaxHitPoints>360</MaxHitPoints>
+      <Mass>60</Mass>
       <WorkToBuild>4500</WorkToBuild>
       <Flammability>0.5</Flammability>
     </statBases>
     <building><destroySound>BuildingDestroyed_Metal_Big</destroySound></building>
     <costList>
-      <Grechka_PackedSolarS0>1</Grechka_PackedSolarS0>
-      <Grechka_HousingT2>1</Grechka_HousingT2>
+      <Grechka_PackedSolarS0_Item>1</Grechka_PackedSolarS0_Item>
+      <Grechka_HousingT2_Item>1</Grechka_HousingT2_Item>
       <ComponentSpacer>4</ComponentSpacer>
-      <Grechka_SolarCellT2>8</Grechka_SolarCellT2>
+      <Grechka_SolarCellT2_Item>8</Grechka_SolarCellT2_Item>
     </costList>
     <comps>
       <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
-        <targetDefName>Grechka_SolarS2</targetDefName>
+        <targetDefName>Grechka_SolarS2_Building</targetDefName>
         <costDescription>2 снятые панели S1, 1 корпус T2, 8 продвинутых компонентов, 24 фотоэлемента T2 и 20 пластали</costDescription>
       </li>
       <li Class="CompProperties_Power">
@@ -54,6 +55,7 @@
       </li>
     </comps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingCategories><li>BuildingsSpecial</li></thingCategories>
     <designationCategory>Power</designationCategory>
     <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
     <uiOrder>2101</uiOrder>
@@ -62,7 +64,7 @@
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
-    <defName>Grechka_SolarS2</defName>
+    <defName>Grechka_SolarS2_Building</defName>
     <label>многослойная солнечная панель</label>
     <description>Вторая промышленная ступень солнечной линии. Производит до 18000 Вт при достаточном солнечном освещении; ночью не работает.</description>
     <thingClass>Building</thingClass>
@@ -84,18 +86,19 @@
     <canOverlapZones>false</canOverlapZones>
     <tickerType>Normal</tickerType>
     <size>(4,4)</size>
-    <minifiedDef>Grechka_PackedSolarS2</minifiedDef>
+    <minifiedDef>Grechka_PackedSolarS2_Item</minifiedDef>
     <statBases>
       <MaxHitPoints>420</MaxHitPoints>
+      <Mass>80</Mass>
       <WorkToBuild>6500</WorkToBuild>
       <Flammability>0.4</Flammability>
     </statBases>
     <building><destroySound>BuildingDestroyed_Metal_Big</destroySound></building>
     <costList>
-      <Grechka_PackedSolarS1>2</Grechka_PackedSolarS1>
-      <Grechka_HousingT2>1</Grechka_HousingT2>
+      <Grechka_PackedSolarS1_Item>2</Grechka_PackedSolarS1_Item>
+      <Grechka_HousingT2_Item>1</Grechka_HousingT2_Item>
       <ComponentSpacer>8</ComponentSpacer>
-      <Grechka_SolarCellT2>24</Grechka_SolarCellT2>
+      <Grechka_SolarCellT2_Item>24</Grechka_SolarCellT2_Item>
       <Plasteel>20</Plasteel>
     </costList>
     <comps>
@@ -112,6 +115,7 @@
       </li>
     </comps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingCategories><li>BuildingsSpecial</li></thingCategories>
     <designationCategory>Power</designationCategory>
     <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
     <uiOrder>2102</uiOrder>

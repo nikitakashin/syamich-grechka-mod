@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="BenchBase">
-    <defName>Grechka_AssemblyBenchT1</defName>
+    <defName>Grechka_AssemblyBenchT1_Building</defName>
     <label>базовый сборочный верстак</label>
     <description>Первый серийный станок Grechka Industry. Ускоряет изготовление обычных компонентов; для постройки нужен базовый корпус.</description>
     <thingClass>Building_WorkTable</thingClass>
@@ -17,7 +17,7 @@
     <costList>
       <Steel>60</Steel>
       <ComponentIndustrial>2</ComponentIndustrial>
-      <Grechka_HousingT1>1</Grechka_HousingT1>
+      <Grechka_HousingT1_Item>1</Grechka_HousingT1_Item>
     </costList>
     <statBases>
       <WorkToBuild>2500</WorkToBuild>

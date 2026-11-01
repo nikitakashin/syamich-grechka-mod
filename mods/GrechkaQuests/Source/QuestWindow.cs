@@ -268,7 +268,7 @@ namespace Grechka.Quests
                         selected = quests.FirstOrDefault()?.id; graphSelection.Clear(); selectedEdgeFrom = selectedEdgeTo = null;
                         detailScroll = Vector2.zero;
                     }
-                    ThingDef chapterIcon = string.IsNullOrEmpty(chapter.icon) ? null : DefDatabase<ThingDef>.GetNamedSilentFail(chapter.icon);
+                    ThingDef chapterIcon = string.IsNullOrEmpty(chapter.icon) ? null : QuestGame.ResolveThingDef(chapter.icon);
                     if (chapterIcon != null) Widgets.ThingIcon(new Rect(button.x + 3, button.y + 4, 30, 30), chapterIcon);
                     Widgets.Label(new Rect(button.x + (chapterIcon == null ? 5 : 36), button.y + 8, button.width - (chapterIcon == null ? 10 : 41), 30), chapter.title + progress);
                     if (tab == 0 && quests.Any(game.CanClaim)) QuestBadge.Draw(new Rect(button.xMax - 22, button.y, 20, 20));
@@ -356,7 +356,7 @@ namespace Grechka.Quests
                     Widgets.DrawBoxSolid(node, background);
                     if (chosen) Widgets.DrawHighlightSelected(node); else Widgets.DrawHighlightIfMouseover(node);
                     string iconId = !string.IsNullOrEmpty(q.icon) ? q.icon : q.objectives.FirstOrDefault(o => o.type != "manual")?.target;
-                    ThingDef iconDef = string.IsNullOrEmpty(iconId) ? null : DefDatabase<ThingDef>.GetNamedSilentFail(iconId);
+                    ThingDef iconDef = string.IsNullOrEmpty(iconId) ? null : QuestGame.ResolveThingDef(iconId);
                     float iconSize = Mathf.Min(40 * zoom, node.height - 6);
                     if (iconDef != null && iconSize > 5) Widgets.ThingIcon(new Rect(node.x + 3, node.y + 3, iconSize, iconSize), iconDef);
                     float textX = iconDef == null ? node.x + 5 : node.x + iconSize + 6;
@@ -596,7 +596,7 @@ namespace Grechka.Quests
             }
             catch (Exception e) { Fail(e); }
         }
-        static string DefLabel(string name) { var d = DefDatabase<ThingDef>.GetNamedSilentFail(name); return d == null ? "[нет: " + name + "]" : d.LabelCap.ToString(); }
+        static string DefLabel(string name) { var d = QuestGame.ResolveThingDef(name); return d == null ? "[нет: " + name + "]" : d.LabelCap.ToString(); }
         static string QualityLabel(string quality)
         {
             switch (quality)
@@ -815,7 +815,7 @@ namespace Grechka.Quests
                             EditObjective(o, goal => goal.variants.Add(d.defName));
                         });
                     y += 38;
-                    var defs = new[] { o.target }.Concat(o.variants).Select(DefDatabase<ThingDef>.GetNamedSilentFail).ToList();
+                    var defs = new[] { o.target }.Concat(o.variants).Select(QuestGame.ResolveThingDef).ToList();
                     bool materialApplicable = defs.All(d => d != null && d.MadeFromStuff);
                     bool qualityApplicable = defs.All(d => d != null && d.comps != null && d.comps.Any(c => c.compClass != null && typeof(CompQuality).IsAssignableFrom(c.compClass)));
                     if (materialApplicable || !string.IsNullOrEmpty(o.stuff))
@@ -881,7 +881,7 @@ namespace Grechka.Quests
                 reward.count = Number(new Rect(w - 200, y, 110, 30), keyPrefix + "." + rewards.IndexOf(reward), reward.count, 10000);
                 if (Widgets.ButtonText(new Rect(w - 80, y, 80, 30), "Удалить")) removeReward = reward;
                 y += 38;
-                var def = DefDatabase<ThingDef>.GetNamedSilentFail(reward.def);
+                var def = QuestGame.ResolveThingDef(reward.def);
                 if (def != null && def.MadeFromStuff)
                 {
                     if (Widgets.ButtonText(new Rect(0, y, w, 30), "Материал: " + (string.IsNullOrEmpty(reward.stuff) ? "по умолчанию" : DefLabel(reward.stuff))))
@@ -1081,7 +1081,7 @@ namespace Grechka.Quests
         }
         static string DescribeReward(Reward reward)
         {
-            ThingDef def = DefDatabase<ThingDef>.GetNamedSilentFail(reward.def);
+            ThingDef def = QuestGame.ResolveThingDef(reward.def);
             return reward.count + " × " + (def == null ? reward.def : def.LabelCap.ToString());
         }
     }

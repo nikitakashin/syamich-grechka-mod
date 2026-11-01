@@ -16,7 +16,7 @@
       <li><filter><thingDefs><li>Gold</li></thingDefs></filter><count>0.5</count></li>
     </ingredients>
     <fixedIngredientFilter><thingDefs><li>ComponentIndustrial</li><li>Silver</li><li>Gold</li></thingDefs></fixedIngredientFilter>
-    <products><Grechka_SolarCellT2>8</Grechka_SolarCellT2></products>
+    <products><Grechka_SolarCellT2_Item>8</Grechka_SolarCellT2_Item></products>
     <workSkill>Crafting</workSkill>
     <skillRequirements><Crafting>6</Crafting></skillRequirements>
   </RecipeDef>
@@ -34,17 +34,17 @@
     <ingredients>
       <li>
         <!-- Some vanilla ingredient paths compare the wrapper; others unwrap it. -->
-        <filter><thingDefs><li>SolarGenerator</li><li>Grechka_PackedSolarS0</li></thingDefs></filter>
+        <filter><thingDefs><li>SolarGenerator</li><li>Grechka_PackedSolarS0_Item</li></thingDefs></filter>
         <count>1</count>
       </li>
-      <li><filter><thingDefs><li>Grechka_HousingT2</li></thingDefs></filter><count>1</count></li>
+      <li><filter><thingDefs><li>Grechka_HousingT2_Item</li></thingDefs></filter><count>1</count></li>
       <li><filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter><count>4</count></li>
-      <li><filter><thingDefs><li>Grechka_SolarCellT2</li></thingDefs></filter><count>8</count></li>
+      <li><filter><thingDefs><li>Grechka_SolarCellT2_Item</li></thingDefs></filter><count>8</count></li>
     </ingredients>
     <fixedIngredientFilter>
-      <thingDefs><li>SolarGenerator</li><li>Grechka_PackedSolarS0</li><li>Grechka_HousingT2</li><li>ComponentSpacer</li><li>Grechka_SolarCellT2</li></thingDefs>
+      <thingDefs><li>SolarGenerator</li><li>Grechka_PackedSolarS0_Item</li><li>Grechka_HousingT2_Item</li><li>ComponentSpacer</li><li>Grechka_SolarCellT2_Item</li></thingDefs>
     </fixedIngredientFilter>
-    <products><Grechka_SolarS1>1</Grechka_SolarS1></products>
+    <products><Grechka_SolarS1_Building>1</Grechka_SolarS1_Building></products>
     <workSkill>Crafting</workSkill>
     <skillRequirements><Crafting>8</Crafting></skillRequirements>
   </RecipeDef>
@@ -60,16 +60,16 @@
     <workAmount>30000</workAmount>
     <allowMixingIngredients>true</allowMixingIngredients>
     <ingredients>
-      <li><filter><thingDefs><li>Grechka_SolarS1</li><li>Grechka_PackedSolarS1</li></thingDefs></filter><count>2</count></li>
-      <li><filter><thingDefs><li>Grechka_HousingT2</li></thingDefs></filter><count>1</count></li>
+      <li><filter><thingDefs><li>Grechka_SolarS1_Building</li><li>Grechka_PackedSolarS1_Item</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>Grechka_HousingT2_Item</li></thingDefs></filter><count>1</count></li>
       <li><filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter><count>8</count></li>
-      <li><filter><thingDefs><li>Grechka_SolarCellT2</li></thingDefs></filter><count>24</count></li>
+      <li><filter><thingDefs><li>Grechka_SolarCellT2_Item</li></thingDefs></filter><count>24</count></li>
       <li><filter><thingDefs><li>Plasteel</li></thingDefs></filter><count>20</count></li>
     </ingredients>
     <fixedIngredientFilter>
-      <thingDefs><li>Grechka_SolarS1</li><li>Grechka_PackedSolarS1</li><li>Grechka_HousingT2</li><li>ComponentSpacer</li><li>Grechka_SolarCellT2</li><li>Plasteel</li></thingDefs>
+      <thingDefs><li>Grechka_SolarS1_Building</li><li>Grechka_PackedSolarS1_Item</li><li>Grechka_HousingT2_Item</li><li>ComponentSpacer</li><li>Grechka_SolarCellT2_Item</li><li>Plasteel</li></thingDefs>
     </fixedIngredientFilter>
-    <products><Grechka_SolarS2>1</Grechka_SolarS2></products>
+    <products><Grechka_SolarS2_Building>1</Grechka_SolarS2_Building></products>
     <workSkill>Crafting</workSkill>
     <skillRequirements><Crafting>8</Crafting></skillRequirements>
   </RecipeDef>

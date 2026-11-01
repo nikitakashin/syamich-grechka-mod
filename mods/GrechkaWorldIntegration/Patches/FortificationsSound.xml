@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Citadel 1.6 references a removed VFE sound. Core 1.7 has this equivalent. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef/verbs/li/soundCast[text()="VFE_Shot_InfernoSpewer"]</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>/Defs/ThingDef/verbs/li/soundCast[text()="VFE_Shot_InfernoSpewer"]</xpath>
+      <value><soundCast>InfernoCannon_Fire</soundCast></value>
+    </match>
+  </Operation>
+</Patch>

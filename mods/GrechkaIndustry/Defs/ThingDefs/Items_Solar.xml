@@ -2,23 +2,23 @@
 <Defs>
   <!-- MinifiedThing keeps the original building as InnerThing, including damage. -->
   <ThingDef ParentName="MinifiedThing">
-    <defName>Grechka_PackedSolarS0</defName>
+    <defName>Grechka_PackedSolarS0_Item</defName>
     <label>упакованная солнечная панель</label>
     <description>Целиком снятая ванильная солнечная панель. Её можно снова установить или использовать в следующей ступени солнечной линии.</description>
   </ThingDef>
   <ThingDef ParentName="MinifiedThing">
-    <defName>Grechka_PackedSolarS1</defName>
+    <defName>Grechka_PackedSolarS1_Item</defName>
     <label>упакованная усиленная солнечная панель</label>
     <description>Усиленная панель S1 для установки на карте или дальнейшей сборки.</description>
   </ThingDef>
   <ThingDef ParentName="MinifiedThing">
-    <defName>Grechka_PackedSolarS2</defName>
+    <defName>Grechka_PackedSolarS2_Item</defName>
     <label>упакованная многослойная солнечная панель</label>
     <description>Целиком снятая панель S2 для установки или дальнейшей сборки.</description>
   </ThingDef>
 
   <ThingDef ParentName="ResourceBase">
-    <defName>Grechka_SolarCellT2</defName>
+    <defName>Grechka_SolarCellT2_Item</defName>
     <label>улучшенный фотоэлемент</label>
     <description>Фотоэлемент второго тира для усиленных солнечных панелей.</description>
     <graphicData>

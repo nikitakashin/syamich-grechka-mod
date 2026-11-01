@@ -94,13 +94,14 @@ namespace Grechka.Quests
 
         // Only a verified source of completed output may call this. Moving, buying or
         // receiving an existing Thing must never be reported as a production event.
-        public void RecordEvent(QuestPack pack, string type, string def, string stuff, string quality, int amount, bool hasColony)
+        public void RecordEvent(QuestPack pack, string type, string def, string stuff, string quality, int amount, bool hasColony,
+            Func<string, string> canonicalize = null)
         {
             if (!hasColony || amount <= 0 || (type != "produce" && type != "mine" && type != "harvest")) return;
             foreach (Quest quest in pack.quests)
                 foreach (Objective goal in quest.objectives)
                 {
-                    if (goal.type != type || !ObjectiveTally.Matches(goal, def, stuff, quality) || Achieved(pack, quest, goal)) continue;
+                    if (goal.type != type || !ObjectiveTally.Matches(goal, def, stuff, quality, canonicalize) || Achieved(pack, quest, goal)) continue;
                     string key = PackCodec.ObjectiveKey(pack.id, quest.id, goal.id), signature = Signature(goal), previous;
                     if (eventSignatures.TryGetValue(key, out previous) && previous != signature) continue;
                     int old; eventCounts.TryGetValue(key, out old);

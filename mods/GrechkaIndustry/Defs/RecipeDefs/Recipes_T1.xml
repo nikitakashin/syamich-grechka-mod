@@ -31,7 +31,7 @@
       <li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>4</count></li>
     </ingredients>
     <fixedIngredientFilter><thingDefs><li>Steel</li><li>ComponentIndustrial</li></thingDefs></fixedIngredientFilter>
-    <products><Grechka_HousingT1>1</Grechka_HousingT1></products>
+    <products><Grechka_HousingT1_Item>1</Grechka_HousingT1_Item></products>
     <workSkill>Crafting</workSkill>
     <skillRequirements><Crafting>4</Crafting></skillRequirements>
   </RecipeDef>
@@ -63,15 +63,15 @@
     <soundWorking>Recipe_Machining</soundWorking>
     <workAmount>20000</workAmount>
     <ingredients>
-      <li><filter><thingDefs><li>Grechka_HousingT1</li></thingDefs></filter><count>1</count></li>
+      <li><filter><thingDefs><li>Grechka_HousingT1_Item</li></thingDefs></filter><count>1</count></li>
       <li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>40</count></li>
       <li><filter><thingDefs><li>Plasteel</li></thingDefs></filter><count>20</count></li>
       <li><filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter><count>4</count></li>
     </ingredients>
     <fixedIngredientFilter>
-      <thingDefs><li>Grechka_HousingT1</li><li>Steel</li><li>Plasteel</li><li>ComponentSpacer</li></thingDefs>
+      <thingDefs><li>Grechka_HousingT1_Item</li><li>Steel</li><li>Plasteel</li><li>ComponentSpacer</li></thingDefs>
     </fixedIngredientFilter>
-    <products><Grechka_HousingT2>1</Grechka_HousingT2></products>
+    <products><Grechka_HousingT2_Item>1</Grechka_HousingT2_Item></products>
     <workSkill>Crafting</workSkill>
     <skillRequirements><Crafting>6</Crafting></skillRequirements>
   </RecipeDef>

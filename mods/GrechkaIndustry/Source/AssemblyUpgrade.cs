@@ -19,7 +19,7 @@ namespace Grechka.Industry
     public sealed class CompProperties_AssemblyUpgrade : CompProperties
     {
         public string upgradeRecipeName = "Grechka_UpgradeAssemblyBenchT2";
-        public string targetBenchName = "Grechka_AssemblyBenchT2";
+        public string targetBenchName = "Grechka_AssemblyBenchT2_Building";
         public string upgradeLabel = "Улучшить до T2";
         public string upgradeDescription = "Пешка улучшит этот верстак на месте. Требуется: 120 стали, 20 пластали, 4 компонента и 6 продвинутых компонентов. Вложенный корпус T1 засчитывается. Производственные задания и прочность сохраняются. Новому верстаку потребуется 350 Вт.";
         public CompProperties_AssemblyUpgrade() { compClass = typeof(CompAssemblyUpgrade); }

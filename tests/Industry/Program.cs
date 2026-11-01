@@ -29,3 +29,11 @@ Check(savedPending.PendingCount == 5, "Production resumes after the previous bat
 bool rejected = false;
 try { savedPending.RecordDelivery(6); } catch (ArgumentOutOfRangeException) { rejected = true; }
 Check(rejected && savedPending.PendingCount == 5, "Invalid delivery cannot erase or duplicate a batch");
+
+foreach (string prefix in new[] { "", "Blueprint_", "Frame_", "Blueprint_Install_" })
+    Check(LegacyDefNames.Canonicalize(prefix + "Grechka_AssemblyBenchT2")
+        == prefix + "Grechka_AssemblyBenchT2_Building", "Legacy building and implied def remap: " + prefix);
+Check(LegacyDefNames.Canonicalize("Grechka_ComponentT3") == "Grechka_ComponentT3_Item"
+    && LegacyDefNames.Canonicalize("Grechka_ComponentT3_Item") == "Grechka_ComponentT3_Item"
+    && LegacyDefNames.Canonicalize("Steel") == "Steel",
+    "Item aliases are idempotent and leave other mods untouched");

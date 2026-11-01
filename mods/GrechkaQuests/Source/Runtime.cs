@@ -191,7 +191,7 @@ namespace Grechka.Quests
         public void RecordVerifiedOutput(string kind, Pawn worker, ThingDef product, ThingDef stuff, string quality, int amount)
         {
             if (LoadError != null || Pack == null || !HasColony || !IsOwnedPawn(worker) || product == null || amount <= 0) return;
-            Progress.RecordEvent(Pack, kind, product.defName, stuff?.defName, quality, amount, true);
+            Progress.RecordEvent(Pack, kind, product.defName, stuff?.defName, quality, amount, true, CanonicalThingName);
         }
         // Automatic factories authenticate their own building instead of a pawn.
         public void RecordVerifiedMachineOutput(string kind, Thing machine, Thing product, int amount)
@@ -206,7 +206,7 @@ namespace Grechka.Quests
             if (LoadError != null || Pack == null || !HasColony || machine == null || !machine.Spawned
                 || machine.Map == null || !machine.Map.IsPlayerHome
                 || machine.Faction != Faction.OfPlayer || product == null || amount <= 0) return;
-            Progress.RecordEvent(Pack, kind, product.defName, stuff?.defName, quality, amount, true);
+            Progress.RecordEvent(Pack, kind, product.defName, stuff?.defName, quality, amount, true, CanonicalThingName);
         }
         Map RewardMap()
         {
@@ -455,30 +455,54 @@ namespace Grechka.Quests
             return standard + (o.type == "harvest" ? "; автоферма VFE Factory." : o.type == "mine"
                 ? "; буровая VFE Factory." : "; предметные процессы VFE Factory.");
         }
+        private static string CompatibleThingName(string name)
+        {
+            return string.IsNullOrEmpty(name) ? name
+                : BackCompatibility.BackCompatibleDefName(typeof(ThingDef), name, false, null) ?? name;
+        }
+        public static ThingDef ResolveThingDef(string name)
+        {
+            if (string.IsNullOrEmpty(name)) return null;
+            ThingDef current = DefDatabase<ThingDef>.GetNamedSilentFail(name);
+            return current ?? DefDatabase<ThingDef>.GetNamedSilentFail(CompatibleThingName(name));
+        }
+        public static ThingDef RequireThingDef(string name)
+        {
+            return ResolveThingDef(name) ?? DefDatabase<ThingDef>.GetNamed(CompatibleThingName(name));
+        }
+        internal static string CanonicalThingName(string name)
+        {
+            return string.IsNullOrEmpty(name) ? name : QuestGame.ResolveThingDef(name)?.defName ?? name;
+        }
+        private static bool GoalTargetsDef(Objective goal, string defName)
+        {
+            return CanonicalThingName(goal.target) == defName
+                || goal.variants.Any(name => CanonicalThingName(name) == defName);
+        }
         internal bool WatchesEventTarget(string kind, ThingDef product)
         {
             return product != null && Pack != null && LoadError == null && HasColony
                 && Pack.quests.Any(q => q.objectives.Any(o => o.type == kind
-                    && (o.target == product.defName || o.variants.Contains(product.defName))));
+                    && GoalTargetsDef(o, product.defName)));
         }
         internal bool WatchesHaveTarget(ThingDef product)
         {
             return product != null && Pack != null && LoadError == null && HasColony
                 && Pack.quests.Any(q => q.objectives.Any(o => o.type == "have"
-                    && (o.target == product.defName || o.variants.Contains(product.defName))));
+                    && GoalTargetsDef(o, product.defName)));
         }
         public static string ObjectiveProblem(Objective o)
         {
             if (o.type == "manual") return null;
             foreach (string name in new[] { o.target }.Concat(o.variants))
             {
-                ThingDef d = DefDatabase<ThingDef>.GetNamedSilentFail(name);
+                ThingDef d = QuestGame.ResolveThingDef(name);
                 if (d == null) return "Нет предмета/постройки: " + name;
                 if (o.type == "build" && d.category != ThingCategory.Building) return "Цель постройки не является зданием: " + name;
                 if (o.type != "build" && d.category != ThingCategory.Item) return "Цель не является предметом: " + name;
                 if (!string.IsNullOrEmpty(o.stuff))
                 {
-                    ThingDef s = DefDatabase<ThingDef>.GetNamedSilentFail(o.stuff);
+                    ThingDef s = QuestGame.ResolveThingDef(o.stuff);
                     if (s == null || !s.IsStuff || !d.MadeFromStuff || !s.stuffProps.CanMake(d)) return "Неподходящий материал цели: " + o.stuff + " / " + name;
                 }
                 if (!string.IsNullOrEmpty(o.minQuality) && (d.comps == null || !d.comps.Any(c => c.compClass != null && typeof(CompQuality).IsAssignableFrom(c.compClass))))
@@ -488,12 +512,12 @@ namespace Grechka.Quests
         }
         public static string RewardProblem(Reward r)
         {
-            ThingDef d = DefDatabase<ThingDef>.GetNamedSilentFail(r.def);
+            ThingDef d = QuestGame.ResolveThingDef(r.def);
             if (d == null) return "Нет предмета награды: " + r.def;
             if (d.category != ThingCategory.Item || d.IsCorpse || d.thingClass == null || typeof(MinifiedThing).IsAssignableFrom(d.thingClass) || typeof(UnfinishedThing).IsAssignableFrom(d.thingClass)) return "Награда должна быть обычным предметом: " + r.def;
             if (!string.IsNullOrEmpty(r.stuff))
             {
-                ThingDef s = DefDatabase<ThingDef>.GetNamedSilentFail(r.stuff);
+                ThingDef s = QuestGame.ResolveThingDef(r.stuff);
                 if (s == null || !s.IsStuff || !d.MadeFromStuff || !s.stuffProps.CanMake(d)) return "Неподходящий материал награды: " + r.stuff;
             }
             if (d.MadeFromStuff && string.IsNullOrEmpty(r.stuff) && GenStuff.DefaultStuffFor(d) == null) return "Не найден материал для " + r.def;
@@ -593,21 +617,21 @@ namespace Grechka.Quests
             {
                 watchedHavePack = Pack;
                 watchedHaveDefs = new HashSet<string>(Pack.quests.SelectMany(q => q.objectives)
-                    .Where(o => o.type == "have").SelectMany(o => new[] { o.target }.Concat(o.variants)));
+                    .Where(o => o.type == "have").SelectMany(o => new[] { o.target }.Concat(o.variants)).Select(CanonicalThingName));
             }
             if (!watchedHaveDefs.Contains(changed.defName)) return;
             var affected = Pack.quests.SelectMany(q => q.objectives.Where(o => o.type == "have"
-                && (o.target == changed.defName || o.variants.Contains(changed.defName)))
+                && GoalTargetsDef(o, changed.defName))
                 .Select(o => new KeyValuePair<Quest, Objective>(q, o))).ToList();
             if (affected.Count == 0) return;
             var names = affected.SelectMany(pair => new[] { pair.Value.target }.Concat(pair.Value.variants)).Distinct();
-            var current = new ObjectiveTally(Pack);
+            var current = new ObjectiveTally(Pack, CanonicalThingName);
             foreach (Map map in Find.Maps)
             {
                 if (map.IsPlayerHome)
                     foreach (string name in names)
                     {
-                        ThingDef def = DefDatabase<ThingDef>.GetNamedSilentFail(name);
+                        ThingDef def = QuestGame.ResolveThingDef(name);
                         if (def == null) continue;
                         foreach (Thing item in map.listerThings.ThingsOfDef(def))
                             if (!item.Position.Fogged(map)) CountThing(current, "have", item, null);
@@ -629,18 +653,18 @@ namespace Grechka.Quests
             {
                 watchedBuildPack = Pack;
                 watchedBuildDefs = new HashSet<string>(Pack.quests.SelectMany(q => q.objectives)
-                    .Where(o => o.type == "build").SelectMany(o => new[] { o.target }.Concat(o.variants)));
+                    .Where(o => o.type == "build").SelectMany(o => new[] { o.target }.Concat(o.variants)).Select(CanonicalThingName));
             }
             if (!watchedBuildDefs.Contains(changed.defName)) return;
             var affected = Pack.quests.SelectMany(q => q.objectives.Where(o => o.type == "build"
-                && (o.target == changed.defName || o.variants.Contains(changed.defName)))
+                && GoalTargetsDef(o, changed.defName))
                 .Select(o => new KeyValuePair<Quest, Objective>(q, o))).ToList();
             var names = affected.SelectMany(pair => new[] { pair.Value.target }.Concat(pair.Value.variants)).Distinct();
-            var current = new ObjectiveTally(Pack);
+            var current = new ObjectiveTally(Pack, CanonicalThingName);
             foreach (Map map in Find.Maps.Where(m => m.IsPlayerHome))
                 foreach (string name in names)
                 {
-                    ThingDef def = DefDatabase<ThingDef>.GetNamedSilentFail(name);
+                    ThingDef def = QuestGame.ResolveThingDef(name);
                     if (def == null) continue;
                     foreach (Thing building in map.listerThings.ThingsOfDef(def))
                         if (building is Building && building.Faction == Faction.OfPlayer)
@@ -654,7 +678,7 @@ namespace Grechka.Quests
         {
             if (Pack == null) Restore();
             if (LoadError != null || !HasColony) { tally = null; return; }
-            tally = new ObjectiveTally(Pack);
+            tally = new ObjectiveTally(Pack, CanonicalThingName);
             RewardMap();
             var itemTargets = new HashSet<string>(Pack.quests.SelectMany(q => q.objectives).Where(o => o.type == "have").SelectMany(o => new[] { o.target }.Concat(o.variants)));
             var buildingTargets = new HashSet<string>(Pack.quests.SelectMany(q => q.objectives).Where(o => o.type == "build").SelectMany(o => new[] { o.target }.Concat(o.variants)));
@@ -664,12 +688,12 @@ namespace Grechka.Quests
                 {
                     foreach (string name in itemTargets)
                     {
-                        ThingDef d = DefDatabase<ThingDef>.GetNamedSilentFail(name); if (d == null) continue;
+                        ThingDef d = QuestGame.ResolveThingDef(name); if (d == null) continue;
                         foreach (Thing item in map.listerThings.ThingsOfDef(d)) if (!item.Position.Fogged(map)) CountThing(tally, "have", item, "На домашних картах");
                     }
                     foreach (string name in buildingTargets)
                     {
-                        ThingDef d = DefDatabase<ThingDef>.GetNamedSilentFail(name); if (d == null) continue;
+                        ThingDef d = QuestGame.ResolveThingDef(name); if (d == null) continue;
                         foreach (Thing building in map.listerThings.ThingsOfDef(d)) if (building is Building && building.Faction == Faction.OfPlayer) CountThing(tally, "build", building, "На домашних картах");
                     }
                 }
@@ -739,8 +763,8 @@ namespace Grechka.Quests
                     if (q.alternatives.Count > 0) rewards = rewards.Concat(q.alternatives.First(a => a.id == choices[q.id]).items);
                     foreach (Reward r in rewards)
                     {
-                        ThingDef d = DefDatabase<ThingDef>.GetNamed(r.def);
-                        ThingDef stuff = d.MadeFromStuff ? (string.IsNullOrEmpty(r.stuff) ? GenStuff.DefaultStuffFor(d) : DefDatabase<ThingDef>.GetNamed(r.stuff)) : null;
+                        ThingDef d = QuestGame.RequireThingDef(r.def);
+                        ThingDef stuff = d.MadeFromStuff ? (string.IsNullOrEmpty(r.stuff) ? GenStuff.DefaultStuffFor(d) : QuestGame.RequireThingDef(r.stuff)) : null;
                         int remaining = r.count;
                         while (remaining > 0)
                         {

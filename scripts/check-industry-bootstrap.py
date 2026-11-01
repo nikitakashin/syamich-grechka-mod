@@ -40,19 +40,19 @@ def ingredients(recipe):
 hand = defs["Grechka_MakeComponentByHandT1"]
 housing = defs["Grechka_MakeHousingT1"]
 batch = defs["Grechka_MakeComponentBatchT1"]
-bench = defs["Grechka_AssemblyBenchT1"]
+bench = defs["Grechka_AssemblyBenchT1_Building"]
 t2_housing = defs["Grechka_MakeHousingT2"]
-t2_bench = defs["Grechka_AssemblyBenchT2"]
+t2_bench = defs["Grechka_AssemblyBenchT2_Building"]
 upgrade = defs["Grechka_UpgradeAssemblyBenchT2"]
 
 require(hand.findtext("./products/ComponentIndustrial") == "1" and ingredients(hand) == {"Steel": 12},
         "manual component route must start from 12 steel")
-require(housing.findtext("./products/Grechka_HousingT1") == "1"
+require(housing.findtext("./products/Grechka_HousingT1_Item") == "1"
         and ingredients(housing) == {"Steel": 80, "ComponentIndustrial": 4},
         "housing must be reachable after manual components")
 require(batch.findtext("./products/ComponentIndustrial") == "5" and ingredients(batch) == {"Steel": 60},
         "batch route must yield five components from 60 steel")
-require(bench.findtext("./costList/Grechka_HousingT1") == "1"
+require(bench.findtext("./costList/Grechka_HousingT1_Item") == "1"
         and bench.findtext("./costList/Steel") is not None,
         "assembly bench must use the reachable T1 housing")
 
@@ -66,9 +66,9 @@ require(batch.findtext("defName") in [item.text for item in bench.findall("./rec
         "T1 bench must expose the batch recipe")
 require((root / "Textures" / "Items" / "HousingT1.png").is_file(),
         "housing texture is missing")
-require(t2_housing.findtext("./products/Grechka_HousingT2") == "1"
+require(t2_housing.findtext("./products/Grechka_HousingT2_Item") == "1"
         and ingredients(t2_housing) == {
-            "Grechka_HousingT1": 1, "Steel": 40, "Plasteel": 20, "ComponentSpacer": 4
+            "Grechka_HousingT1_Item": 1, "Steel": 40, "Plasteel": 20, "ComponentSpacer": 4
         }, "T2 housing must be reachable from T1 materials and advanced components")
 bench_recipes = {item.text for item in bench.findall("./recipes/li")}
 require({"Make_ComponentSpacer", "Grechka_MakeHousingT2"} <= bench_recipes,
@@ -86,7 +86,7 @@ require(operations[1].get("Class") == "PatchOperationRemove"
         "standalone Industry must not research-gate its first T2 component")
 require((root / "Textures" / "Items" / "HousingT2.png").is_file(),
         "T2 housing texture is missing")
-require(t2_bench.findtext("./costList/Grechka_HousingT2") == "1"
+require(t2_bench.findtext("./costList/Grechka_HousingT2_Item") == "1"
         and t2_bench.findtext("./costList/ComponentSpacer") is not None,
         "T2 bench must require its reachable T2 housing and component")
 require(t2_bench.findtext("./comps/li[@Class='CompProperties_Power']/basePowerConsumption") == "350",
@@ -113,8 +113,8 @@ require(group.tag == "DesignatorDropdownGroupDef"
         and t2_bench.findtext("designatorDropdown") == group.findtext("defName"),
         "T1 and T2 benches must share one construction dropdown")
 
-solar = defs["Grechka_SolarS1"]
-solar_cells = defs["Grechka_SolarCellT2"]
+solar = defs["Grechka_SolarS1_Building"]
+solar_cells = defs["Grechka_SolarCellT2_Item"]
 solar_cell_recipe = defs["Grechka_MakeSolarCellT2"]
 solar_recipe = defs["Grechka_MakeSolarS1"]
 solar_group = defs["Grechka_SolarPanelGroup"]
@@ -122,25 +122,28 @@ solar_patch = trees[root / "Patches" / "SolarGenerator.xml"].getroot()
 solar_values = solar_patch.find("./Operation/operations/li/value")
 solar_comp_patch = solar_patch.findall("./Operation/operations/li")
 require(solar_patch.findtext("./Operation/operations/li/xpath") == '/Defs/ThingDef[defName="SolarGenerator"]'
-        and solar_values.findtext("minifiedDef") == "Grechka_PackedSolarS0"
+        and solar_values.findtext("minifiedDef") == "Grechka_PackedSolarS0_Item"
         and solar_values.findtext("designatorDropdown") == solar_group.findtext("defName"),
         "vanilla solar generator must gain packaging and the shared construction group")
-require(len(solar_comp_patch) == 2
-        and solar_comp_patch[1].findtext("xpath") == '/Defs/ThingDef[defName="SolarGenerator"]/comps'
-        and solar_comp_patch[1].find("./value/li[@Class='Grechka.Industry.CompProperties_SolarUpgrade']") is not None
-        and solar_comp_patch[1].findtext("./value/li/targetDefName") == "Grechka_SolarS1"
+require(len(solar_comp_patch) == 3
+        and solar_comp_patch[2].findtext("xpath") == '/Defs/ThingDef[defName="SolarGenerator"]/comps'
+        and solar_comp_patch[2].find("./value/li[@Class='Grechka.Industry.CompProperties_SolarUpgrade']") is not None
+        and solar_comp_patch[2].findtext("./value/li/targetDefName") == "Grechka_SolarS1_Building"
         and (root / "Source" / "SolarUpgrade.cs").is_file(),
         "installed S0 needs an in-place upgrade button")
+require(solar_values.findtext("./thingCategories/li") == "BuildingsSpecial"
+        and solar_comp_patch[1].findtext("./value/Mass") == "50",
+        "making vanilla solar minifiable requires a category and authored mass")
 require(all(defs[name].get("ParentName") == "MinifiedThing"
-            for name in ("Grechka_PackedSolarS0", "Grechka_PackedSolarS1")),
+            for name in ("Grechka_PackedSolarS0_Item", "Grechka_PackedSolarS1_Item")),
         "both solar generations need distinct minified definitions")
-require(solar.findtext("minifiedDef") == "Grechka_PackedSolarS1"
+require(solar.findtext("minifiedDef") == "Grechka_PackedSolarS1_Item"
         and solar.findtext("designatorDropdown") == solar_group.findtext("defName")
         and solar.findtext("./comps/li[@Class='CompProperties_Power']/compClass") == "CompPowerPlantSolar"
         and solar.findtext("./comps/li[@Class='CompProperties_Power']/basePowerConsumption") == "-6000",
         "S1 must be a packable six-kilowatt vanilla-style solar plant")
 require(solar_cells.findtext("stackLimit") == "100"
-        and solar_cell_recipe.findtext("./products/Grechka_SolarCellT2") == "8",
+        and solar_cell_recipe.findtext("./products/Grechka_SolarCellT2_Item") == "8",
         "T2 solar cells must be a stackable eight-piece product")
 cell_inputs = {
     li.findtext("./filter/thingDefs/li"): Decimal(li.findtext("count"))
@@ -148,45 +151,45 @@ cell_inputs = {
 }
 require(cell_inputs == {"ComponentIndustrial": Decimal("2"), "Silver": Decimal("1"), "Gold": Decimal("0.5")},
         "solar cell recipe must use 2 components, 10 silver and 5 gold at vanilla smallVolume=0.1")
-require(solar_recipe.findtext("./products/Grechka_SolarS1") == "1"
+require(solar_recipe.findtext("./products/Grechka_SolarS1_Building") == "1"
         and solar_recipe.findtext("allowMixingIngredients") == "true"
         and {li.text for li in solar_recipe.findall("./ingredients/li[1]/filter/thingDefs/li")}
-            == {"SolarGenerator", "Grechka_PackedSolarS0"},
+            == {"SolarGenerator", "Grechka_PackedSolarS0_Item"},
         "S1 recipe must consume a whole packed vanilla solar panel")
 other_recipe_inputs = {
     li.findtext("./filter/thingDefs/li"): li.findtext("count")
     for li in solar_recipe.findall("./ingredients/li")[1:]
 }
-require(other_recipe_inputs == {"Grechka_HousingT2": "1", "ComponentSpacer": "4", "Grechka_SolarCellT2": "8"}
+require(other_recipe_inputs == {"Grechka_HousingT2_Item": "1", "ComponentSpacer": "4", "Grechka_SolarCellT2_Item": "8"}
         and {li.tag: li.text for li in solar.findall("./costList/*")}
-            == {"Grechka_PackedSolarS0": "1", **other_recipe_inputs},
+            == {"Grechka_PackedSolarS0_Item": "1", **other_recipe_inputs},
         "direct S1 construction and workbench assembly must have the same costs")
 require({"Grechka_MakeSolarCellT2", "Grechka_MakeSolarS1"}
         <= {li.text for li in t2_bench.findall("./recipes/li")},
         "T2 bench must expose both solar recipes")
 
-solar_s2 = defs["Grechka_SolarS2"]
+solar_s2 = defs["Grechka_SolarS2_Building"]
 solar_s2_recipe = defs["Grechka_MakeSolarS2"]
-require(defs["Grechka_PackedSolarS2"].get("ParentName") == "MinifiedThing"
-        and solar_s2.findtext("minifiedDef") == "Grechka_PackedSolarS2"
+require(defs["Grechka_PackedSolarS2_Item"].get("ParentName") == "MinifiedThing"
+        and solar_s2.findtext("minifiedDef") == "Grechka_PackedSolarS2_Item"
         and solar_s2.findtext("designatorDropdown") == solar_group.findtext("defName")
         and solar_s2.findtext("./comps/li[@Class='CompProperties_Power']/basePowerConsumption") == "-18000",
         "S2 must be packable, share the family dropdown and produce up to 18 kW")
 require(solar.findtext("./comps/li[@Class='Grechka.Industry.CompProperties_SolarUpgrade']/targetDefName")
-        == "Grechka_SolarS2", "installed S1 must offer S2 upgrade")
-require(solar_s2_recipe.findtext("./products/Grechka_SolarS2") == "1"
+        == "Grechka_SolarS2_Building", "installed S1 must offer S2 upgrade")
+require(solar_s2_recipe.findtext("./products/Grechka_SolarS2_Building") == "1"
         and solar_s2_recipe.findtext("allowMixingIngredients") == "true"
         and {li.text for li in solar_s2_recipe.findall("./ingredients/li[1]/filter/thingDefs/li")}
-            == {"Grechka_SolarS1", "Grechka_PackedSolarS1"},
+            == {"Grechka_SolarS1_Building", "Grechka_PackedSolarS1_Item"},
         "S2 recipe must consume two whole S1 panels")
 s2_inputs = {
     li.findtext("./filter/thingDefs/li"): li.findtext("count")
     for li in solar_s2_recipe.findall("./ingredients/li")[1:]
 }
-require(s2_inputs == {"Grechka_HousingT2": "1", "ComponentSpacer": "8",
-                      "Grechka_SolarCellT2": "24", "Plasteel": "20"}
+require(s2_inputs == {"Grechka_HousingT2_Item": "1", "ComponentSpacer": "8",
+                      "Grechka_SolarCellT2_Item": "24", "Plasteel": "20"}
         and {li.tag: li.text for li in solar_s2.findall("./costList/*")}
-            == {"Grechka_PackedSolarS1": "2", **s2_inputs}
+            == {"Grechka_PackedSolarS1_Item": "2", **s2_inputs}
         and "Grechka_MakeSolarS2" in {li.text for li in t2_bench.findall("./recipes/li")},
         "S2 construction and workbench assembly must share accepted costs")
 
