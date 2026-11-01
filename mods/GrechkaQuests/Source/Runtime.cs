@@ -596,7 +596,24 @@ namespace Grechka.Quests
                 watchedBuildDefs = new HashSet<string>(Pack.quests.SelectMany(q => q.objectives)
                     .Where(o => o.type == "build").SelectMany(o => new[] { o.target }.Concat(o.variants)));
             }
-            if (watchedBuildDefs.Contains(changed.defName)) Refresh();
+            if (!watchedBuildDefs.Contains(changed.defName)) return;
+            var affected = Pack.quests.SelectMany(q => q.objectives.Where(o => o.type == "build"
+                && (o.target == changed.defName || o.variants.Contains(changed.defName)))
+                .Select(o => new KeyValuePair<Quest, Objective>(q, o))).ToList();
+            var names = affected.SelectMany(pair => new[] { pair.Value.target }.Concat(pair.Value.variants)).Distinct();
+            var current = new ObjectiveTally(Pack);
+            foreach (Map map in Find.Maps.Where(m => m.IsPlayerHome))
+                foreach (string name in names)
+                {
+                    ThingDef def = DefDatabase<ThingDef>.GetNamedSilentFail(name);
+                    if (def == null) continue;
+                    foreach (Thing building in map.listerThings.ThingsOfDef(def))
+                        if (building is Building && building.Faction == Faction.OfPlayer)
+                            CountThing(current, "build", building, null);
+                }
+            foreach (var pair in affected)
+                if (ObjectiveProblem(pair.Value) == null)
+                    Progress.Observe(Pack, pair.Key, pair.Value, current.Value(Pack, pair.Key, pair.Value), true);
         }
         public void Refresh()
         {
