@@ -1,54 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>Grechka Storage</li>
-    </mods>
-    <match Class="PatchOperationFindMod">
-      <mods>
-        <li>Grechka Industry</li>
-      </mods>
-      <match Class="PatchOperationSequence">
-        <operations>
-          <li Class="PatchOperationReplace">
-            <xpath>/Defs/ThingDef[defName="Grechka_StorageController"]/costList</xpath>
-            <value>
-              <costList>
-                <Grechka_HousingT3_Item>1</Grechka_HousingT3_Item>
-                <Grechka_ComponentT3_Item>4</Grechka_ComponentT3_Item>
-                <Plasteel>100</Plasteel>
-                <Grechka_QuartzProcessor>8</Grechka_QuartzProcessor>
-                <Grechka_SilverProcessor>4</Grechka_SilverProcessor>
-                <Grechka_GoldProcessor>4</Grechka_GoldProcessor>
-              </costList>
-            </value>
-          </li>
-          <li Class="PatchOperationReplace">
-            <xpath>/Defs/ThingDef[defName="Grechka_Inscriber"]/costList</xpath>
-            <value>
-              <costList>
-                <Grechka_HousingT1_Item>1</Grechka_HousingT1_Item>
-                <Steel>80</Steel>
-                <ComponentIndustrial>5</ComponentIndustrial>
-                <Grechka_Quartz>10</Grechka_Quartz>
-              </costList>
-            </value>
-          </li>
-          <li Class="PatchOperationReplace">
-            <xpath>/Defs/ThingDef[defName="Grechka_DiskRack"]/costList</xpath>
-            <value>
-              <costList>
-                <Grechka_HousingT3_Item>1</Grechka_HousingT3_Item>
-                <Grechka_ComponentT3_Item>2</Grechka_ComponentT3_Item>
-                <Steel>120</Steel>
-                <Grechka_QuartzProcessor>4</Grechka_QuartzProcessor>
-                <Grechka_SilverProcessor>2</Grechka_SilverProcessor>
-                <Grechka_GoldProcessor>2</Grechka_GoldProcessor>
-              </costList>
-            </value>
-          </li>
-        </operations>
-      </match>
-    </match>
-  </Operation>
+  <!-- Storage profile prices are applied by WorldProfileState after explicit per-save approval.
+       This replaces the unconditional static cost patch and leaves standalone Storage intact. -->
 </Patch>

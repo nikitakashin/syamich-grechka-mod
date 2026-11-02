@@ -1,26 +1,63 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_MechaniteExtractorT3_Building</defName>
     <label>межпространственный экстрактор механитов</label>
     <description>Электрическая установка извлекает механиты из параллельного измерения без газа и реагентов. Пусковой рецепт использует доступные материалы T2. Готовая партия ждёт свободного места; отключение питания сохраняет прогресс.</description>
     <thingClass>Building</thingClass>
-    <graphicData><texPath>Things/Building/Production/DeepDrill</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(2,2)</drawSize><color>(0.4,0.8,1)</color></graphicData>
-    <size>(2,2)</size><tickerType>Normal</tickerType>
-    <minifiedDef>MinifiedThing</minifiedDef>
-    <altitudeLayer>Building</altitudeLayer><passability>Impassable</passability><fillPercent>1</fillPercent>
-    <thingCategories><li>BuildingsProduction</li></thingCategories>
-    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded><rotatable>false</rotatable>
-    <statBases><WorkToBuild>6000</WorkToBuild><MaxHitPoints>360</MaxHitPoints><Flammability>0.3</Flammability><Mass>45</Mass></statBases>
-    <costList><Grechka_HousingT2_Item>1</Grechka_HousingT2_Item><ComponentSpacer>8</ComponentSpacer><Plasteel>40</Plasteel><Uranium>20</Uranium></costList>
+    <graphicData>
+      <texPath>Buildings/MechaniteExtractorT3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <tickerType>Normal</tickerType>
+    <minifiedDef>Grechka_PackedMechaniteExtractorT3_Item</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <fillPercent>1</fillPercent>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToBuild>6000</WorkToBuild>
+      <MaxHitPoints>360</MaxHitPoints>
+      <Flammability>0.3</Flammability>
+      <Mass>45</Mass>
+    </statBases>
+    <costList>
+      <Grechka_HousingT2_Item>1</Grechka_HousingT2_Item>
+      <ComponentSpacer>8</ComponentSpacer>
+      <Plasteel>40</Plasteel>
+      <Uranium>20</Uranium>
+    </costList>
     <comps>
-      <li Class="CompProperties_Power"><compClass>CompPowerTrader</compClass><basePowerConsumption>2000</basePowerConsumption><shortCircuitInRain>true</shortCircuitInRain></li>
-      <li Class="CompProperties_Flickable"/>
-      <li Class="CompProperties_Breakdownable"/>
-      <li Class="CompProperties_Glower"><glowRadius>4</glowRadius><glowColor>(70,150,255,0)</glowColor></li>
-      <li Class="Grechka.Industry.CompProperties_MechaniteExtractor"><product>Grechka_Mechanites</product><cycleTicks>2500</cycleTicks><batchCount>5</batchCount></li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>2000</basePowerConsumption>
+        <shortCircuitInRain>true</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Glower">
+        <glowRadius>4</glowRadius>
+        <glowColor>(70,150,255,0)</glowColor>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_MechaniteExtractor">
+        <product>Grechka_Mechanites</product>
+        <cycleTicks>2500</cycleTicks>
+        <batchCount>5</batchCount>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
+        <targetDefName>Grechka_MechaniteExtractorT4_Building</targetDefName>
+        <costDescription>установленное устройство, 10 компонентов T4, 100 пластали и 8 субстрата</costDescription>
+      </li>
     </comps>
-    <designationCategory>Production</designationCategory><uiOrder>2520</uiOrder>
-    <constructionSkillPrerequisite>8</constructionSkillPrerequisite><constructEffect>ConstructMetal</constructEffect>
+    <designationCategory>Production</designationCategory>
+    <uiOrder>2520</uiOrder>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <constructEffect>ConstructMetal</constructEffect>
   </ThingDef>
 </Defs>

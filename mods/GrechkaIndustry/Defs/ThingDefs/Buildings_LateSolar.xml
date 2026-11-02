@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_SolarS5_Building</defName>
+    <label>архо-солнечная панель</label>
+    <description>Солнечная ступень S5: 4,608,000 Вт. Ночью сохраняет 25% мощности.</description>
+    <thingClass>Building</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Buildings/SolarPanelT4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <shadowData>
+        <volume>(3.5,0.75,3.4)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.6,4,2.8)</rect>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <tickerType>Normal</tickerType>
+    <size>(4,4)</size>
+    <minifiedDef>Grechka_PackedSolarS5_Item</minifiedDef>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Mass>140</Mass>
+      <WorkToBuild>16000</WorkToBuild>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>Grechka.Industry.CompPowerPlantLateSolar</compClass>
+        <basePowerConsumption>-4608000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Stunnable">
+        <useLargeEMPEffecter>true</useLargeEMPEffecter>
+        <empChancePerTick>0.03</empChancePerTick>
+        <affectedDamageDefs>
+          <li>EMP</li>
+        </affectedDamageDefs>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
+        <targetDefName>Grechka_SolarS6_Building</targetDefName>
+        <costDescription>8 панелей S5, 4 корпуса T5, 32 компонента T5, 128 фотоэлементов T5; установленная панель засчитывается</costDescription>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <designationCategory>Power</designationCategory>
+    <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
+    <uiOrder>2105</uiOrder>
+    <constructEffect>ConstructMetal</constructEffect>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <costList>
+      <Grechka_PackedSolarS4_Item>6</Grechka_PackedSolarS4_Item>
+      <Grechka_HousingT4_Item>2</Grechka_HousingT4_Item>
+      <Grechka_ComponentT4_Item>16</Grechka_ComponentT4_Item>
+      <Grechka_SolarCellT4_Item>64</Grechka_SolarCellT4_Item>
+    </costList>
+    <modExtensions>
+      <li Class="Grechka.Industry.LateSolarProperties">
+        <nightFraction>0.25</nightFraction>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_SolarS6_Building</defName>
+    <label>гречневое солнце</label>
+    <description>Солнечная ступень S6: 55,296,000 Вт. Работает круглосуточно на полной мощности.</description>
+    <thingClass>Building</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Buildings/GrechkaSolarPanelT5</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <shadowData>
+        <volume>(3.5,0.75,3.4)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.6,4,2.8)</rect>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <tickerType>Normal</tickerType>
+    <size>(4,4)</size>
+    <minifiedDef>Grechka_PackedSolarS6_Item</minifiedDef>
+    <statBases>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Mass>140</Mass>
+      <WorkToBuild>16000</WorkToBuild>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>Grechka.Industry.CompPowerPlantLateSolar</compClass>
+        <basePowerConsumption>-55296000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Stunnable">
+        <useLargeEMPEffecter>true</useLargeEMPEffecter>
+        <empChancePerTick>0.03</empChancePerTick>
+        <affectedDamageDefs>
+          <li>EMP</li>
+        </affectedDamageDefs>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <designationCategory>Power</designationCategory>
+    <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
+    <uiOrder>2106</uiOrder>
+    <constructEffect>ConstructMetal</constructEffect>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <costList>
+      <Grechka_PackedSolarS5_Item>8</Grechka_PackedSolarS5_Item>
+      <Grechka_HousingT5_Item>4</Grechka_HousingT5_Item>
+      <Grechka_ComponentT5_Item>32</Grechka_ComponentT5_Item>
+      <Grechka_SolarCellT5_Item>128</Grechka_SolarCellT5_Item>
+    </costList>
+    <modExtensions>
+      <li Class="Grechka.Industry.LateSolarProperties">
+        <nightFraction>1</nightFraction>
+      </li>
+    </modExtensions>
+  </ThingDef>
+</Defs>

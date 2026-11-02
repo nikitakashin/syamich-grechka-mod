@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/TraderKindDef[defName="Orbital_Exotic" or defName="Orbital_BulkGoods" or defName="Caravan_Outlander_Exotic" or defName="Caravan_Outlander_BulkGoods"]/stockGenerators</xpath>
+    <value><li Class="Grechka.Industry.StockGenerator_Industry"><offers>6</offers></li></value>
+  </Operation>
+</Patch>

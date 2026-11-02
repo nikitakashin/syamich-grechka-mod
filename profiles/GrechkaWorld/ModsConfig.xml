@@ -95,6 +95,8 @@
     <li>grechka.quests</li>
     <li>grechka.industry</li>
     <li>grechka.storage</li>
+    <li>grechka.equipment</li>
+    <li>grechka.luckyblocks</li>
     <li>grechka.world.integration</li>
   </activeMods>
   <knownExpansions>

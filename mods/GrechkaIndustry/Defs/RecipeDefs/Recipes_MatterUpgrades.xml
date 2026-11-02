@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <RecipeDef>
+    <defName>Grechka_UpgradeMatterRecyclerT5</defName>
+    <label>улучшить установку материи до T5</label>
+    <description>улучшить установку материи до T5. Все рецепты доступны без исследований.</description>
+    <jobString>улучшить установку материи до T5.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <workAmount>20000</workAmount>
+    <effectWorking>ConstructMetal</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_ComponentT5_Item</li>
+          </thingDefs>
+        </filter>
+        <count>32</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>240</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_GrechkaConcentrate</li>
+          </thingDefs>
+        </filter>
+        <count>48</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Grechka_ComponentT5_Item</li>
+        <li>Plasteel</li>
+        <li>Grechka_GrechkaConcentrate</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>Grechka_MatterRecyclerT4_Building</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>Grechka_UpgradeMatterSynthesizerT5</defName>
+    <label>улучшить установку материи до T5</label>
+    <description>улучшить установку материи до T5. Все рецепты доступны без исследований.</description>
+    <jobString>улучшить установку материи до T5.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <workAmount>20000</workAmount>
+    <effectWorking>ConstructMetal</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_ComponentT5_Item</li>
+          </thingDefs>
+        </filter>
+        <count>32</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>240</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_GrechkaConcentrate</li>
+          </thingDefs>
+        </filter>
+        <count>48</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Grechka_ComponentT5_Item</li>
+        <li>Plasteel</li>
+        <li>Grechka_GrechkaConcentrate</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <recipeUsers>
+      <li>Grechka_MatterSynthesizerT4_Building</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+</Defs>

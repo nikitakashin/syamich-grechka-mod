@@ -51,4 +51,9 @@ for entry in manifest:
     require(local_about.findtext("packageId") == local_package,
             "Local module profile and metadata disagree: " + local_package)
 
-print("Grechka World research profile, menu patch and metadata: OK")
+rules = ET.parse(mod / "Defs/MachineProfile.xml").getroot()
+require(len([r for r in rules if r.findtext("defName", "").startswith("GrechkaWorld_G01_")]) == 328,
+        "The explicit G01 catalogue must retain all 328 source identities")
+require(not ET.parse(mod / "Patches/StorageController.xml").getroot().findall("Operation"),
+        "Unconditional Storage pricing patch must not bypass per-save approval")
+print("Grechka World research profile, explicit G01 catalogue, menu patch and metadata: OK")

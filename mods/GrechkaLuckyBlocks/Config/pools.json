@@ -1,0 +1,1798 @@
+{
+  "schemaVersion": 1,
+  "raiderChance": 0.02,
+  "raiderTierWeights": [
+    60,
+    25,
+    10,
+    4,
+    1
+  ],
+  "pools": [
+    {
+      "id": "general.t1",
+      "outcomes": [
+        {
+          "id": "materials",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Steel",
+              "count": 150
+            },
+            {
+              "def": "ComponentIndustrial",
+              "count": 8
+            }
+          ],
+          "requiredMods": []
+        }
+      ]
+    },
+    {
+      "id": "resources.t1",
+      "outcomes": [
+        {
+          "id": "steel",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Steel",
+              "count": 150
+            }
+          ]
+        },
+        {
+          "id": "wood",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "WoodLog",
+              "count": 250
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "industry.t1",
+      "outcomes": [
+        {
+          "id": "components",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Steel",
+              "count": 150
+            },
+            {
+              "def": "ComponentIndustrial",
+              "count": 8
+            }
+          ]
+        },
+        {
+          "id": "vanilla",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "ComponentIndustrial",
+              "count": 8
+            },
+            {
+              "def": "Plasteel",
+              "count": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "energy.t1",
+      "outcomes": [
+        {
+          "id": "components",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "ComponentIndustrial",
+              "count": 6
+            },
+            {
+              "def": "Steel",
+              "count": 120
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "medical.t1",
+      "outcomes": [
+        {
+          "id": "medicine",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "MedicineIndustrial",
+              "count": 12
+            }
+          ]
+        },
+        {
+          "id": "spacer",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "MedicineUltratech",
+              "count": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "combat.t1",
+      "outcomes": [
+        {
+          "id": "rifle",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Gun_AssaultRifle",
+              "count": 1,
+              "quality": "Good"
+            }
+          ]
+        },
+        {
+          "id": "flak",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Apparel_FlakVest",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "farm.t1",
+      "outcomes": [
+        {
+          "id": "grain",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "RawRice",
+              "count": 200
+            }
+          ]
+        },
+        {
+          "id": "food",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "MealSurvivalPack",
+              "count": 10
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zoo.t1",
+      "outcomes": [
+        {
+          "id": "cats",
+          "weight": 1,
+          "effect": "animals",
+          "items": [],
+          "pawnKind": "Cat",
+          "pawnCount": 100
+        },
+        {
+          "id": "chickens",
+          "weight": 9,
+          "effect": "animals",
+          "items": [],
+          "pawnKind": "Chicken",
+          "pawnCount": 6
+        }
+      ]
+    },
+    {
+      "id": "mechs.t1",
+      "outcomes": [
+        {
+          "id": "parts",
+          "weight": 65,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Steel",
+              "count": 250
+            },
+            {
+              "def": "ComponentIndustrial",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "id": "four",
+          "weight": 25,
+          "effect": "hostileMechs",
+          "items": [],
+          "pawnKind": "Mech_Scyther",
+          "pawnCount": 4
+        },
+        {
+          "id": "twelve",
+          "weight": 10,
+          "effect": "hostileMechs",
+          "items": [],
+          "pawnKind": "Mech_Scyther",
+          "pawnCount": 12
+        }
+      ]
+    },
+    {
+      "id": "chaos.t1",
+      "outcomes": [
+        {
+          "id": "mountain",
+          "weight": 40,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Steel",
+              "count": 1000
+            }
+          ]
+        },
+        {
+          "id": "cats",
+          "weight": 25,
+          "effect": "animals",
+          "items": [],
+          "pawnKind": "Cat",
+          "pawnCount": 100
+        },
+        {
+          "id": "mechs",
+          "weight": 20,
+          "effect": "hostileMechs",
+          "items": [],
+          "pawnKind": "Mech_Scyther",
+          "pawnCount": 4
+        },
+        {
+          "id": "weapon",
+          "weight": 10,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Gun_ChargeRifle",
+              "count": 1,
+              "quality": "Masterwork"
+            }
+          ]
+        },
+        {
+          "id": "lunch",
+          "weight": 5,
+          "effect": "items",
+          "items": [
+            {
+              "def": "MealSimple",
+              "count": 1
+            },
+            {
+              "def": "RawPotatoes",
+              "count": 500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "storage.t1",
+      "outcomes": [
+        {
+          "id": "processors",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Grechka_QuartzProcessor",
+              "count": 4
+            },
+            {
+              "def": "Grechka_SilverProcessor",
+              "count": 2
+            }
+          ],
+          "requiredMods": [
+            "grechka.storage"
+          ]
+        },
+        {
+          "id": "disk",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Grechka_Disk_1K_Item",
+              "count": 1
+            }
+          ],
+          "requiredMods": [
+            "grechka.storage"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "general.t2",
+      "outcomes": [
+        {
+          "id": "materials",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Plasteel",
+              "count": 60
+            },
+            {
+              "def": "ComponentSpacer",
+              "count": 5
+            }
+          ],
+          "requiredMods": []
+        }
+      ]
+    },
+    {
+      "id": "resources.t2",
+      "outcomes": [
+        {
+          "id": "steel",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Steel",
+              "count": 300
+            }
+          ]
+        },
+        {
+          "id": "wood",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "WoodLog",
+              "count": 500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "industry.t2",
+      "outcomes": [
+        {
+          "id": "components",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Plasteel",
+              "count": 60
+            },
+            {
+              "def": "ComponentSpacer",
+              "count": 5
+            }
+          ]
+        },
+        {
+          "id": "vanilla",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "ComponentIndustrial",
+              "count": 16
+            },
+            {
+              "def": "Plasteel",
+              "count": 40
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "energy.t2",
+      "outcomes": [
+        {
+          "id": "components",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "ComponentIndustrial",
+              "count": 12
+            },
+            {
+              "def": "Steel",
+              "count": 240
+            }
+          ]
+        },
+        {
+          "id": "cells",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Grechka_SolarCellT2_Item",
+              "count": 6
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "medical.t2",
+      "outcomes": [
+        {
+          "id": "medicine",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "MedicineIndustrial",
+              "count": 24
+            }
+          ]
+        },
+        {
+          "id": "spacer",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "MedicineUltratech",
+              "count": 8
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "combat.t2",
+      "outcomes": [
+        {
+          "id": "rifle",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Gun_AssaultRifle",
+              "count": 1,
+              "quality": "Good"
+            }
+          ]
+        },
+        {
+          "id": "flak",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Apparel_FlakVest",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "farm.t2",
+      "outcomes": [
+        {
+          "id": "grain",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "RawRice",
+              "count": 400
+            }
+          ]
+        },
+        {
+          "id": "food",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "MealSurvivalPack",
+              "count": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zoo.t2",
+      "outcomes": [
+        {
+          "id": "cats",
+          "weight": 1,
+          "effect": "animals",
+          "items": [],
+          "pawnKind": "Cat",
+          "pawnCount": 100
+        },
+        {
+          "id": "chickens",
+          "weight": 9,
+          "effect": "animals",
+          "items": [],
+          "pawnKind": "Chicken",
+          "pawnCount": 6
+        }
+      ]
+    },
+    {
+      "id": "mechs.t2",
+      "outcomes": [
+        {
+          "id": "parts",
+          "weight": 65,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Steel",
+              "count": 500
+            },
+            {
+              "def": "ComponentIndustrial",
+              "count": 20
+            }
+          ]
+        },
+        {
+          "id": "four",
+          "weight": 25,
+          "effect": "hostileMechs",
+          "items": [],
+          "pawnKind": "Mech_Scyther",
+          "pawnCount": 4
+        },
+        {
+          "id": "twelve",
+          "weight": 10,
+          "effect": "hostileMechs",
+          "items": [],
+          "pawnKind": "Mech_Scyther",
+          "pawnCount": 12
+        }
+      ]
+    },
+    {
+      "id": "chaos.t2",
+      "outcomes": [
+        {
+          "id": "mountain",
+          "weight": 40,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Steel",
+              "count": 2000
+            }
+          ]
+        },
+        {
+          "id": "cats",
+          "weight": 25,
+          "effect": "animals",
+          "items": [],
+          "pawnKind": "Cat",
+          "pawnCount": 100
+        },
+        {
+          "id": "mechs",
+          "weight": 20,
+          "effect": "hostileMechs",
+          "items": [],
+          "pawnKind": "Mech_Scyther",
+          "pawnCount": 4
+        },
+        {
+          "id": "weapon",
+          "weight": 10,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Gun_ChargeRifle",
+              "count": 1,
+              "quality": "Masterwork"
+            }
+          ]
+        },
+        {
+          "id": "lunch",
+          "weight": 5,
+          "effect": "items",
+          "items": [
+            {
+              "def": "MealSimple",
+              "count": 1
+            },
+            {
+              "def": "RawPotatoes",
+              "count": 500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "storage.t2",
+      "outcomes": [
+        {
+          "id": "processors",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Grechka_QuartzProcessor",
+              "count": 8
+            },
+            {
+              "def": "Grechka_SilverProcessor",
+              "count": 4
+            }
+          ],
+          "requiredMods": [
+            "grechka.storage"
+          ]
+        },
+        {
+          "id": "disk",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Grechka_Disk_4K_Item",
+              "count": 1
+            }
+          ],
+          "requiredMods": [
+            "grechka.storage"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "general.t3",
+      "outcomes": [
+        {
+          "id": "materials",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Grechka_ComponentT3_Item",
+              "count": 6
+            },
+            {
+              "def": "Grechka_Mechanites",
+              "count": 60
+            }
+          ],
+          "requiredMods": [
+            "grechka.industry"
+          ]
+        },
+        {
+          "id": "vanilla",
+          "weight": 0.3,
+          "effect": "items",
+          "items": [
+            {
+              "def": "ComponentSpacer",
+              "count": 12
+            },
+            {
+              "def": "Plasteel",
+              "count": 120
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resources.t3",
+      "outcomes": [
+        {
+          "id": "steel",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Steel",
+              "count": 450
+            }
+          ]
+        },
+        {
+          "id": "wood",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "WoodLog",
+              "count": 750
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "industry.t3",
+      "outcomes": [
+        {
+          "id": "components",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Grechka_ComponentT3_Item",
+              "count": 6
+            },
+            {
+              "def": "Grechka_Mechanites",
+              "count": 60
+            }
+          ]
+        },
+        {
+          "id": "vanilla",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "ComponentIndustrial",
+              "count": 24
+            },
+            {
+              "def": "Plasteel",
+              "count": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "energy.t3",
+      "outcomes": [
+        {
+          "id": "components",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "ComponentIndustrial",
+              "count": 18
+            },
+            {
+              "def": "Steel",
+              "count": 360
+            }
+          ]
+        },
+        {
+          "id": "cells",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Grechka_SolarCellT3_Item",
+              "count": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "medical.t3",
+      "outcomes": [
+        {
+          "id": "medicine",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "MedicineIndustrial",
+              "count": 36
+            }
+          ]
+        },
+        {
+          "id": "spacer",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "MedicineUltratech",
+              "count": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "combat.t3",
+      "outcomes": [
+        {
+          "id": "rifle",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Gun_AssaultRifle",
+              "count": 1,
+              "quality": "Excellent"
+            }
+          ]
+        },
+        {
+          "id": "flak",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Apparel_FlakVest",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "farm.t3",
+      "outcomes": [
+        {
+          "id": "grain",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "RawRice",
+              "count": 600
+            }
+          ]
+        },
+        {
+          "id": "food",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "MealSurvivalPack",
+              "count": 30
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zoo.t3",
+      "outcomes": [
+        {
+          "id": "cats",
+          "weight": 1,
+          "effect": "animals",
+          "items": [],
+          "pawnKind": "Cat",
+          "pawnCount": 100
+        },
+        {
+          "id": "chickens",
+          "weight": 9,
+          "effect": "animals",
+          "items": [],
+          "pawnKind": "Chicken",
+          "pawnCount": 6
+        }
+      ]
+    },
+    {
+      "id": "mechs.t3",
+      "outcomes": [
+        {
+          "id": "parts",
+          "weight": 65,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Steel",
+              "count": 750
+            },
+            {
+              "def": "ComponentIndustrial",
+              "count": 30
+            }
+          ]
+        },
+        {
+          "id": "four",
+          "weight": 25,
+          "effect": "hostileMechs",
+          "items": [],
+          "pawnKind": "Mech_Scyther",
+          "pawnCount": 4
+        },
+        {
+          "id": "twelve",
+          "weight": 10,
+          "effect": "hostileMechs",
+          "items": [],
+          "pawnKind": "Mech_Scyther",
+          "pawnCount": 12
+        }
+      ]
+    },
+    {
+      "id": "chaos.t3",
+      "outcomes": [
+        {
+          "id": "mountain",
+          "weight": 40,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Steel",
+              "count": 3000
+            }
+          ]
+        },
+        {
+          "id": "cats",
+          "weight": 25,
+          "effect": "animals",
+          "items": [],
+          "pawnKind": "Cat",
+          "pawnCount": 100
+        },
+        {
+          "id": "mechs",
+          "weight": 20,
+          "effect": "hostileMechs",
+          "items": [],
+          "pawnKind": "Mech_Scyther",
+          "pawnCount": 4
+        },
+        {
+          "id": "weapon",
+          "weight": 10,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Gun_ChargeRifle",
+              "count": 1,
+              "quality": "Masterwork"
+            }
+          ]
+        },
+        {
+          "id": "lunch",
+          "weight": 5,
+          "effect": "items",
+          "items": [
+            {
+              "def": "MealSimple",
+              "count": 1
+            },
+            {
+              "def": "RawPotatoes",
+              "count": 500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "storage.t3",
+      "outcomes": [
+        {
+          "id": "processors",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Grechka_QuartzProcessor",
+              "count": 12
+            },
+            {
+              "def": "Grechka_SilverProcessor",
+              "count": 6
+            }
+          ],
+          "requiredMods": [
+            "grechka.storage"
+          ]
+        },
+        {
+          "id": "disk",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Grechka_Disk_16K_Item",
+              "count": 1
+            }
+          ],
+          "requiredMods": [
+            "grechka.storage"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "general.t4",
+      "outcomes": [
+        {
+          "id": "materials",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Grechka_ComponentT4_Item",
+              "count": 4
+            },
+            {
+              "def": "Grechka_ArchoSubstrate",
+              "count": 20
+            }
+          ],
+          "requiredMods": [
+            "grechka.industry"
+          ]
+        },
+        {
+          "id": "vanilla",
+          "weight": 0.3,
+          "effect": "items",
+          "items": [
+            {
+              "def": "ComponentSpacer",
+              "count": 20
+            },
+            {
+              "def": "Gold",
+              "count": 150
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resources.t4",
+      "outcomes": [
+        {
+          "id": "steel",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Steel",
+              "count": 600
+            }
+          ]
+        },
+        {
+          "id": "wood",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "WoodLog",
+              "count": 1000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "industry.t4",
+      "outcomes": [
+        {
+          "id": "components",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Grechka_ComponentT4_Item",
+              "count": 4
+            },
+            {
+              "def": "Grechka_ArchoSubstrate",
+              "count": 20
+            }
+          ]
+        },
+        {
+          "id": "vanilla",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "ComponentIndustrial",
+              "count": 32
+            },
+            {
+              "def": "Plasteel",
+              "count": 80
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "energy.t4",
+      "outcomes": [
+        {
+          "id": "components",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "ComponentIndustrial",
+              "count": 24
+            },
+            {
+              "def": "Steel",
+              "count": 480
+            }
+          ]
+        },
+        {
+          "id": "cells",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Grechka_SolarCellT3_Item",
+              "count": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "medical.t4",
+      "outcomes": [
+        {
+          "id": "medicine",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "MedicineIndustrial",
+              "count": 48
+            }
+          ]
+        },
+        {
+          "id": "spacer",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "MedicineUltratech",
+              "count": 16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "combat.t4",
+      "outcomes": [
+        {
+          "id": "rifle",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Gun_AssaultRifle",
+              "count": 1,
+              "quality": "Excellent"
+            }
+          ]
+        },
+        {
+          "id": "flak",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Apparel_FlakVest",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "farm.t4",
+      "outcomes": [
+        {
+          "id": "grain",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "RawRice",
+              "count": 800
+            }
+          ]
+        },
+        {
+          "id": "food",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "MealSurvivalPack",
+              "count": 40
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zoo.t4",
+      "outcomes": [
+        {
+          "id": "cats",
+          "weight": 1,
+          "effect": "animals",
+          "items": [],
+          "pawnKind": "Cat",
+          "pawnCount": 100
+        },
+        {
+          "id": "chickens",
+          "weight": 9,
+          "effect": "animals",
+          "items": [],
+          "pawnKind": "Chicken",
+          "pawnCount": 6
+        }
+      ]
+    },
+    {
+      "id": "mechs.t4",
+      "outcomes": [
+        {
+          "id": "parts",
+          "weight": 65,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Steel",
+              "count": 1000
+            },
+            {
+              "def": "ComponentIndustrial",
+              "count": 40
+            }
+          ]
+        },
+        {
+          "id": "four",
+          "weight": 25,
+          "effect": "hostileMechs",
+          "items": [],
+          "pawnKind": "Mech_Scyther",
+          "pawnCount": 4
+        },
+        {
+          "id": "twelve",
+          "weight": 10,
+          "effect": "hostileMechs",
+          "items": [],
+          "pawnKind": "Mech_Scyther",
+          "pawnCount": 12
+        }
+      ]
+    },
+    {
+      "id": "chaos.t4",
+      "outcomes": [
+        {
+          "id": "mountain",
+          "weight": 40,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Steel",
+              "count": 4000
+            }
+          ]
+        },
+        {
+          "id": "cats",
+          "weight": 25,
+          "effect": "animals",
+          "items": [],
+          "pawnKind": "Cat",
+          "pawnCount": 100
+        },
+        {
+          "id": "mechs",
+          "weight": 20,
+          "effect": "hostileMechs",
+          "items": [],
+          "pawnKind": "Mech_Scyther",
+          "pawnCount": 4
+        },
+        {
+          "id": "weapon",
+          "weight": 10,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Gun_ChargeRifle",
+              "count": 1,
+              "quality": "Masterwork"
+            }
+          ]
+        },
+        {
+          "id": "lunch",
+          "weight": 5,
+          "effect": "items",
+          "items": [
+            {
+              "def": "MealSimple",
+              "count": 1
+            },
+            {
+              "def": "RawPotatoes",
+              "count": 500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "storage.t4",
+      "outcomes": [
+        {
+          "id": "processors",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Grechka_QuartzProcessor",
+              "count": 16
+            },
+            {
+              "def": "Grechka_SilverProcessor",
+              "count": 8
+            }
+          ],
+          "requiredMods": [
+            "grechka.storage"
+          ]
+        },
+        {
+          "id": "disk",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Grechka_Disk_64K_Item",
+              "count": 1
+            }
+          ],
+          "requiredMods": [
+            "grechka.storage"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "general.t5",
+      "outcomes": [
+        {
+          "id": "materials",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Grechka_ComponentT5_Item",
+              "count": 4
+            },
+            {
+              "def": "Grechka_GrechkaConcentrate",
+              "count": 30
+            }
+          ],
+          "requiredMods": [
+            "grechka.industry"
+          ]
+        },
+        {
+          "id": "vanilla",
+          "weight": 0.3,
+          "effect": "items",
+          "items": [
+            {
+              "def": "ComponentSpacer",
+              "count": 40
+            },
+            {
+              "def": "Plasteel",
+              "count": 300
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resources.t5",
+      "outcomes": [
+        {
+          "id": "steel",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Steel",
+              "count": 750
+            }
+          ]
+        },
+        {
+          "id": "wood",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "WoodLog",
+              "count": 1250
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "industry.t5",
+      "outcomes": [
+        {
+          "id": "components",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Grechka_ComponentT5_Item",
+              "count": 4
+            },
+            {
+              "def": "Grechka_GrechkaConcentrate",
+              "count": 30
+            }
+          ]
+        },
+        {
+          "id": "vanilla",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "ComponentIndustrial",
+              "count": 40
+            },
+            {
+              "def": "Plasteel",
+              "count": 100
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "energy.t5",
+      "outcomes": [
+        {
+          "id": "components",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "ComponentIndustrial",
+              "count": 30
+            },
+            {
+              "def": "Steel",
+              "count": 600
+            }
+          ]
+        },
+        {
+          "id": "cells",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Grechka_SolarCellT3_Item",
+              "count": 15
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "medical.t5",
+      "outcomes": [
+        {
+          "id": "medicine",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "MedicineIndustrial",
+              "count": 60
+            }
+          ]
+        },
+        {
+          "id": "spacer",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "MedicineUltratech",
+              "count": 20
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "combat.t5",
+      "outcomes": [
+        {
+          "id": "rifle",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Gun_AssaultRifle",
+              "count": 1,
+              "quality": "Excellent"
+            }
+          ]
+        },
+        {
+          "id": "flak",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Apparel_FlakVest",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "farm.t5",
+      "outcomes": [
+        {
+          "id": "grain",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "RawRice",
+              "count": 1000
+            }
+          ]
+        },
+        {
+          "id": "food",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "MealSurvivalPack",
+              "count": 50
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zoo.t5",
+      "outcomes": [
+        {
+          "id": "cats",
+          "weight": 1,
+          "effect": "animals",
+          "items": [],
+          "pawnKind": "Cat",
+          "pawnCount": 100
+        },
+        {
+          "id": "chickens",
+          "weight": 9,
+          "effect": "animals",
+          "items": [],
+          "pawnKind": "Chicken",
+          "pawnCount": 6
+        }
+      ]
+    },
+    {
+      "id": "mechs.t5",
+      "outcomes": [
+        {
+          "id": "parts",
+          "weight": 65,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Steel",
+              "count": 1250
+            },
+            {
+              "def": "ComponentIndustrial",
+              "count": 50
+            }
+          ]
+        },
+        {
+          "id": "four",
+          "weight": 25,
+          "effect": "hostileMechs",
+          "items": [],
+          "pawnKind": "Mech_Scyther",
+          "pawnCount": 4
+        },
+        {
+          "id": "twelve",
+          "weight": 10,
+          "effect": "hostileMechs",
+          "items": [],
+          "pawnKind": "Mech_Scyther",
+          "pawnCount": 12
+        }
+      ]
+    },
+    {
+      "id": "chaos.t5",
+      "outcomes": [
+        {
+          "id": "mountain",
+          "weight": 40,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Steel",
+              "count": 5000
+            }
+          ]
+        },
+        {
+          "id": "cats",
+          "weight": 25,
+          "effect": "animals",
+          "items": [],
+          "pawnKind": "Cat",
+          "pawnCount": 100
+        },
+        {
+          "id": "mechs",
+          "weight": 20,
+          "effect": "hostileMechs",
+          "items": [],
+          "pawnKind": "Mech_Scyther",
+          "pawnCount": 4
+        },
+        {
+          "id": "weapon",
+          "weight": 10,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Gun_ChargeRifle",
+              "count": 1,
+              "quality": "Masterwork"
+            }
+          ]
+        },
+        {
+          "id": "lunch",
+          "weight": 5,
+          "effect": "items",
+          "items": [
+            {
+              "def": "MealSimple",
+              "count": 1
+            },
+            {
+              "def": "RawPotatoes",
+              "count": 500
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "storage.t5",
+      "outcomes": [
+        {
+          "id": "processors",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Grechka_QuartzProcessor",
+              "count": 20
+            },
+            {
+              "def": "Grechka_SilverProcessor",
+              "count": 10
+            }
+          ],
+          "requiredMods": [
+            "grechka.storage"
+          ]
+        },
+        {
+          "id": "disk",
+          "weight": 1,
+          "effect": "items",
+          "items": [
+            {
+              "def": "Grechka_Disk_256K_Item",
+              "count": 1
+            }
+          ],
+          "requiredMods": [
+            "grechka.storage"
+          ]
+        }
+      ]
+    }
+  ]
+}

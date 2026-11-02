@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingDef ParentName="MinifiedThing">
+    <defName>Grechka_PackedMechaponicsT3_Item</defName>
+    <label>упакованный мехапоника T3</label>
+    <description>Оборудование для перевозки, торговли и повторной установки.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_MechaponicsT3_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing">
+    <defName>Grechka_PackedMechaponicsT4_Item</defName>
+    <label>упакованный мехапоника T4</label>
+    <description>Оборудование для перевозки, торговли и повторной установки.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_MechaponicsT4_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing">
+    <defName>Grechka_PackedMechaponicsT5_Item</defName>
+    <label>упакованный мехапоника T5</label>
+    <description>Оборудование для перевозки, торговли и повторной установки.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_MechaponicsT5_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing">
+    <defName>Grechka_PackedIonizerT3_Item</defName>
+    <label>упакованный комнатный ионизатор T3</label>
+    <description>Оборудование для перевозки, торговли и повторной установки.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_IonizerT3_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing">
+    <defName>Grechka_PackedIonizerT4_Item</defName>
+    <label>упакованный комнатный ионизатор T4</label>
+    <description>Оборудование для перевозки, торговли и повторной установки.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_IonizerT4_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing">
+    <defName>Grechka_PackedIonizerT5_Item</defName>
+    <label>упакованный комнатный ионизатор T5</label>
+    <description>Оборудование для перевозки, торговли и повторной установки.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_IonizerT5_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing">
+    <defName>Grechka_PackedMechaniteExtractorT3_Item</defName>
+    <label>упакованный межпространственный экстрактор механитов</label>
+    <description>Оборудование для перевозки, торговли и повторной установки.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_MechaniteExtractorT3_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing">
+    <defName>Grechka_PackedMechaniteExtractorT4_Item</defName>
+    <label>упакованный экстрактор механитов T4</label>
+    <description>Оборудование для перевозки, торговли и повторной установки.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_MechaniteExtractorT4_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing">
+    <defName>Grechka_PackedMechaniteExtractorT5_Item</defName>
+    <label>упакованный экстрактор механитов T5</label>
+    <description>Оборудование для перевозки, торговли и повторной установки.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_MechaniteExtractorT5_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing">
+    <defName>Grechka_PackedSuppressionEmitterT4_Item</defName>
+    <label>упакованный облучатель подавления T4</label>
+    <description>Оборудование для перевозки, торговли и повторной установки.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_SuppressionEmitterT4_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing">
+    <defName>Grechka_PackedSuppressionEmitterT5_Item</defName>
+    <label>упакованный облучатель подавления T5</label>
+    <description>Оборудование для перевозки, торговли и повторной установки.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_SuppressionEmitterT5_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing">
+    <defName>Grechka_PackedAccelerationEmitterT4_Item</defName>
+    <label>упакованный облучатель ускорения T4</label>
+    <description>Оборудование для перевозки, торговли и повторной установки.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_AccelerationEmitterT4_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing">
+    <defName>Grechka_PackedAccelerationEmitterT5_Item</defName>
+    <label>упакованный облучатель ускорения T5</label>
+    <description>Оборудование для перевозки, торговли и повторной установки.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_AccelerationEmitterT5_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing">
+    <defName>Grechka_PackedWellbeingEmitterT4_Item</defName>
+    <label>упакованный облучатель тонизирования T4</label>
+    <description>Оборудование для перевозки, торговли и повторной установки.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_WellbeingEmitterT4_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing">
+    <defName>Grechka_PackedWellbeingEmitterT5_Item</defName>
+    <label>упакованный облучатель тонизирования T5</label>
+    <description>Оборудование для перевозки, торговли и повторной установки.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_WellbeingEmitterT5_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing">
+    <defName>Grechka_PackedArchoGeneratorT4_Item</defName>
+    <label>упакованный архо-генератор T4</label>
+    <description>Оборудование для перевозки, торговли и повторной установки.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_ArchoGeneratorT4_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing">
+    <defName>Grechka_PackedArchoGeneratorT5_Item</defName>
+    <label>упакованный архо-генератор T5</label>
+    <description>Оборудование для перевозки, торговли и повторной установки.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_ArchoGeneratorT5_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing">
+    <defName>Grechka_PackedMatterRecyclerT4_Item</defName>
+    <label>упакованный генератор материи T4</label>
+    <description>Оборудование для перевозки, торговли и повторной установки.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_MatterRecyclerT4_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing">
+    <defName>Grechka_PackedMatterRecyclerT5_Item</defName>
+    <label>упакованный генератор материи T5</label>
+    <description>Оборудование для перевозки, торговли и повторной установки.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_MatterRecyclerT5_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing">
+    <defName>Grechka_PackedMatterSynthesizerT4_Item</defName>
+    <label>упакованный синтезатор материи T4</label>
+    <description>Оборудование для перевозки, торговли и повторной установки.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_MatterSynthesizerT4_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing">
+    <defName>Grechka_PackedMatterSynthesizerT5_Item</defName>
+    <label>упакованный синтезатор материи T5</label>
+    <description>Оборудование для перевозки, торговли и повторной установки.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_MatterSynthesizerT5_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+</Defs>

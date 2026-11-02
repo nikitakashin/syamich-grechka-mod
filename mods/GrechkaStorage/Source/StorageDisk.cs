@@ -95,6 +95,7 @@ namespace Grechka.Storage
         internal bool TickingRot { get { return tickingRot; } }
         public IEnumerable<Thing> Items { get { return contents; } }
         public DiskSpace Space { get { EnsureSpace(); return space; } }
+        public bool SealedContents;
         public StorageDisk() { MakeContainer(); }
         private void MakeContainer()
         {
@@ -114,6 +115,7 @@ namespace Grechka.Storage
         {
             base.ExposeData();
             Scribe_Deep.Look(ref contents, "grechkaDiskContents", this);
+            Scribe_Values.Look(ref SealedContents, "grechkaSealedContents");
             Scribe_Values.Look(ref lastRotTick, "grechkaDiskRotTick", -1);
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
@@ -198,7 +200,7 @@ namespace Grechka.Storage
         }
         public override string GetInspectString()
         {
-            return base.GetInspectString() + "\nПредметов: " + Space.ItemCount.ToString("N0")
+            return base.GetInspectString() + (SealedContents ? "\nАрхив расхитителей: состав откроется после установки в блок" : "") + "\nПредметов: " + Space.ItemCount.ToString("N0")
                 + "; типов: " + Space.Types + "/63\nПамять: " + Space.UsedBytes.ToString("N0") + "/" + Capacity.ToString("N0")
                 + " байт" + (Frozen ? "\nПостоянная заморозка" : "\nОбычная порча по окружающей температуре");
         }

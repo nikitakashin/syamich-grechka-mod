@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingDef ParentName="MinifiedThing">
+    <defName>Grechka_PackedSolarS5_Item</defName>
+    <label>упакованная солнечная панель S5</label>
+    <description>Снятая целиком солнечная панель для установки или улучшения.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_SolarS5_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing">
+    <defName>Grechka_PackedSolarS6_Item</defName>
+    <label>упакованная солнечная панель S6</label>
+    <description>Снятая целиком солнечная панель для установки или улучшения.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_SolarS6_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+</Defs>

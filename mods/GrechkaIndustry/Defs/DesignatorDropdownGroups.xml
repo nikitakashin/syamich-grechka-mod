@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <DesignatorDropdownGroupDef>
     <defName>Grechka_AssemblyBenchGroup</defName>
@@ -15,5 +15,29 @@
   <DesignatorDropdownGroupDef>
     <defName>Grechka_IonizerGroup</defName>
     <label>комнатный ионизатор</label>
+  </DesignatorDropdownGroupDef>
+  <DesignatorDropdownGroupDef>
+    <defName>Grechka_SuppressionEmitterGroup</defName>
+    <label>облучатель подавления</label>
+  </DesignatorDropdownGroupDef>
+  <DesignatorDropdownGroupDef>
+    <defName>Grechka_AccelerationEmitterGroup</defName>
+    <label>облучатель ускорения</label>
+  </DesignatorDropdownGroupDef>
+  <DesignatorDropdownGroupDef>
+    <defName>Grechka_WellbeingEmitterGroup</defName>
+    <label>облучатель тонизирования</label>
+  </DesignatorDropdownGroupDef>
+  <DesignatorDropdownGroupDef>
+    <defName>Grechka_ArchoGeneratorGroup</defName>
+    <label>архо-генератор</label>
+  </DesignatorDropdownGroupDef>
+  <DesignatorDropdownGroupDef>
+    <defName>Grechka_MatterRecyclerGroup</defName>
+    <label>генератор материи</label>
+  </DesignatorDropdownGroupDef>
+  <DesignatorDropdownGroupDef>
+    <defName>Grechka_MatterSynthesizerGroup</defName>
+    <label>синтезатор материи</label>
   </DesignatorDropdownGroupDef>
 </Defs>

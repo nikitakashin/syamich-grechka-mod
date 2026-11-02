@@ -5,9 +5,8 @@
     <label>кварц</label>
     <description>Кристаллы из кварцевых жил. Основа сигнального кабеля и кремниевых деталей.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/Jade</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-      <color>(0.9,0.85,1)</color>
+      <texPath>Items/Quartz</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
@@ -31,9 +30,8 @@
     <label>кварцевая пыль</label>
     <description>Измельчённый кварц для получения кремния в электрической плавильне.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/Jade</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-      <color>(0.85,0.8,0.95)</color>
+      <texPath>Items/QuartzDust</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
@@ -57,9 +55,8 @@
     <label>кремний</label>
     <description>Подготовленный полупроводник для кремниевых подложек.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/Steel</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-      <color>(0.55,0.6,0.7)</color>
+      <texPath>Items/Silicon</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
@@ -86,6 +83,7 @@
       <texPath>Items/SiliconSubstrate</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <uiIconScale>1.65</uiIconScale>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <stackLimit>100</stackLimit>
@@ -111,6 +109,7 @@
       <texPath>Items/PrintedSilicon</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <uiIconScale>1.65</uiIconScale>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <stackLimit>100</stackLimit>
@@ -136,6 +135,7 @@
       <texPath>Items/QuartzCircuit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <uiIconScale>1.65</uiIconScale>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <stackLimit>100</stackLimit>
@@ -161,6 +161,7 @@
       <texPath>Items/SilverCircuit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <uiIconScale>1.65</uiIconScale>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <stackLimit>100</stackLimit>
@@ -186,6 +187,7 @@
       <texPath>Items/GoldCircuit</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <uiIconScale>1.65</uiIconScale>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <stackLimit>100</stackLimit>
@@ -211,6 +213,7 @@
       <texPath>Items/QuartzProcessor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <uiIconScale>1.65</uiIconScale>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <stackLimit>100</stackLimit>
@@ -236,6 +239,7 @@
       <texPath>Items/SilverProcessor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <uiIconScale>1.65</uiIconScale>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <stackLimit>100</stackLimit>
@@ -261,6 +265,7 @@
       <texPath>Items/GoldProcessor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
+    <uiIconScale>1.65</uiIconScale>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
     <stackLimit>100</stackLimit>

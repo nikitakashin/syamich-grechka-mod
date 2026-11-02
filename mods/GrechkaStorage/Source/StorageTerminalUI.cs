@@ -147,7 +147,7 @@ namespace Grechka.Storage
                 StorageOptimization.RestoreRecovery(controller);
             long total = disks.Sum(d => d.Space.ItemCount);
             Widgets.Label(new Rect(0, 40, rect.width, 26), "В дисках: " + total.ToString("N0") + "   |   Доступно: " + total.ToString("N0")
-                + "   |   Резерв: 0   |   В буфере выдачи: " + controller.Output.Contents.Sum(t => (long)t.stackCount).ToString("N0"));
+                + "   |   В крафтерах: " + controller.Map.GetComponent<CraftMap>().Crafters.Where(c => c.Spawned && controller.Map.GetComponent<CraftMap>().SameNetwork(controller, c.Controller())).SelectMany(c => c.Contents).Sum(t => (long)t.stackCount).ToString("N0") + "   |   В буфере выдачи: " + controller.Output.Contents.Sum(t => (long)t.stackCount).ToString("N0"));
             search = Widgets.TextField(new Rect(0, 73, rect.width - 155, 30), search);
             string[] filters = { "Всё", "Еда", "Снаряжение", "Прочее" };
             if (Widgets.ButtonText(new Rect(rect.width - 145, 73, 145, 30), filters[filter])) filter = (filter + 1) % filters.Length;

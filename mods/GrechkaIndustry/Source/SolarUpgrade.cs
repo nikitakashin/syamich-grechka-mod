@@ -29,8 +29,8 @@ namespace Grechka.Industry
             yield return new Command_Action
             {
                 defaultLabel = "Улучшить до " + targetDef.label,
-                defaultDesc = "Снимет эту панель целиком и поставит чертёж следующей ступени на том же месте. Стоимость: "
-                    + Props.costDescription + ". Пока строится новая панель, электричества от старой не будет.",
+                defaultDesc = "Снимет это устройство целиком и поставит чертёж следующей ступени на том же месте. Стоимость: "
+                    + Props.costDescription + ". Пока строится новое устройство, старое работать не будет.",
                 icon = TexCommand.Install,
                 action = StartUpgrade
             };
@@ -50,7 +50,7 @@ namespace Grechka.Industry
                 targetDef, position, rotation, map, false, oldPanel);
             if (!placement.Accepted)
             {
-                Messages.Message("Здесь нельзя поставить следующую панель: " + placement.Reason,
+                Messages.Message("Здесь нельзя поставить следующее устройство: " + placement.Reason,
                     MessageTypeDefOf.RejectInput);
                 return;
             }
@@ -58,7 +58,7 @@ namespace Grechka.Industry
             MinifiedThing packed = MinifyUtility.Uninstall(oldPanel);
             if (packed == null)
             {
-                Messages.Message("Не удалось снять солнечную панель целиком.", MessageTypeDefOf.RejectInput);
+                Messages.Message("Не удалось снять устройство целиком.", MessageTypeDefOf.RejectInput);
                 return;
             }
 
@@ -76,7 +76,7 @@ namespace Grechka.Industry
                 {
                     Log.Error("[Grechka Industry] Не удалось поставить чертёж возврата S0: " + restoreError);
                 }
-                Messages.Message("Чертёж улучшения не создан. Снятая панель сохранена для повторной установки.",
+                Messages.Message("Чертёж улучшения не создан. Снятое устройство сохранено для повторной установки.",
                     MessageTypeDefOf.RejectInput);
             }
         }

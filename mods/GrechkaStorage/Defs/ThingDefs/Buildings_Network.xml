@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_QuartzCable</defName>
     <label>подземный кварцевый кабель</label>
-    <description>Соединяет устройства с контроллером Storage. Прокладывается под зданиями и обычными электрокабелями; электричество не передаёт. Линии видны при выборе контроллера, кабеля или их строительного инструмента.</description>
+    <description>Соединяет устройства с контроллером Storage под землёй. Не получает урон, не горит и скрыт в обычном режиме. Прокладывается под зданиями и обычными электрокабелями; электричество не передаёт. Сигнальные линии видны при выборе сети или её строительного инструмента.</description>
     <thingClass>Grechka.Storage.Building_QuartzCable</thingClass>
     <drawerType>RealtimeOnly</drawerType>
     <altitudeLayer>Conduits</altitudeLayer>
@@ -58,7 +58,7 @@
     <label>контроллер Storage</label>
     <description>Точка доступа к кварцевой сигнальной сети. Показывает подключённые устройства и их состояние. Несколько контроллеров одной сети дают одинаковый доступ. Потребляет 400 Вт; сигнальный кабель не заменяет электрическое подключение.</description>
     <thingClass>Grechka.Storage.Building_StorageController</thingClass>
-    <size>(2,2)</size>
+    <size>(1,1)</size>
     <rotatable>false</rotatable>
     <passability>Impassable</passability>
     <fillPercent>1</fillPercent>
@@ -67,7 +67,7 @@
     <graphicData>
       <texPath>Buildings/StorageController</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(2.5,2.5)</drawSize>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <minifiedDef>Grechka_PackedStorageDevice</minifiedDef>
     <thingCategories>
@@ -118,7 +118,7 @@
     <altitudeLayer>Building</altitudeLayer>
     <surfaceType>Item</surfaceType>
     <graphicData>
-      <texPath>Things/Building/Production/TableMachining</texPath>
+      <texPath>Buildings/Map/ElectricInscriber/ElectricInscriber</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(3.5,1.5)</drawSize>
     </graphicData>
@@ -199,5 +199,6 @@
       <li Class="CompProperties_Flickable" />
       <li Class="CompProperties_Breakdownable" />
     </comps>
+    <uiIconPath>Buildings/ElectricInscriber</uiIconPath>
   </ThingDef>
 </Defs>

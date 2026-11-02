@@ -1,0 +1,2118 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingDef ParentName="BuildingBase" MayRequire="grechka.storage">
+    <defName>Grechka_SolarStorageT3_Building</defName>
+    <label>кварцевая панель</label>
+    <description>Кварцевая панель: 180,000 Вт днём, 0% мощности ночью. Тематическая ветка при установленном grechka.storage.</description>
+    <thingClass>Building</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Buildings/SolarPanelT3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <shadowData>
+        <volume>(3.5,0.75,3.4)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.6,4,2.8)</rect>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <tickerType>Normal</tickerType>
+    <size>(4,4)</size>
+    <minifiedDef>Grechka_PackedSolarStorageT3_Item</minifiedDef>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Mass>100</Mass>
+      <WorkToBuild>9000</WorkToBuild>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlantSolar</compClass>
+        <basePowerConsumption>-180000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Stunnable">
+        <useLargeEMPEffecter>true</useLargeEMPEffecter>
+        <empChancePerTick>0.03</empChancePerTick>
+        <affectedDamageDefs>
+          <li>EMP</li>
+        </affectedDamageDefs>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
+        <targetDefName>Grechka_SolarStorageT4_Building</targetDefName>
+        <costDescription>предыдущие панели и детали по показанной строительной стоимости; эта панель засчитывается</costDescription>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <designationCategory>Power</designationCategory>
+    <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
+    <uiOrder>2203</uiOrder>
+    <constructEffect>ConstructMetal</constructEffect>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <costList>
+      <Grechka_PackedSolarS3_Item>2</Grechka_PackedSolarS3_Item>
+      <Grechka_HousingT3_Item>1</Grechka_HousingT3_Item>
+      <Grechka_ComponentT3_Item>4</Grechka_ComponentT3_Item>
+      <Grechka_SolarCellT3_Item>16</Grechka_SolarCellT3_Item>
+      <Grechka_CertusQuartz>20</Grechka_CertusQuartz>
+      <Grechka_QuartzProcessor>4</Grechka_QuartzProcessor>
+    </costList>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing" MayRequire="grechka.storage">
+    <defName>Grechka_PackedSolarStorageT3_Item</defName>
+    <label>упакованная кварцевая панель</label>
+    <description>Целое устройство для монтажа или улучшения.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_SolarStorageT3_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <RecipeDef MayRequire="grechka.storage">
+    <defName>Grechka_MakeSolarStorageT3</defName>
+    <label>собрать: кварцевая панель</label>
+    <description>собрать: кварцевая панель. Все рецепты доступны без исследований.</description>
+    <jobString>собрать: кварцевая панель.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <workAmount>50000</workAmount>
+    <effectWorking>ConstructMetal</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_PackedSolarS3_Item</li>
+            <li>Grechka_SolarS3_Building</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_HousingT3_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_ComponentT3_Item</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_SolarCellT3_Item</li>
+          </thingDefs>
+        </filter>
+        <count>16</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_CertusQuartz</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_QuartzProcessor</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Grechka_PackedSolarS3_Item</li>
+        <li>Grechka_HousingT3_Item</li>
+        <li>Grechka_ComponentT3_Item</li>
+        <li>Grechka_SolarCellT3_Item</li>
+        <li>Grechka_CertusQuartz</li>
+        <li>Grechka_QuartzProcessor</li>
+        <li>Grechka_SolarS3_Building</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Grechka_SolarStorageT3_Building>1</Grechka_SolarStorageT3_Building>
+    </products>
+    <recipeUsers>
+      <li>Grechka_AssemblyBenchT3_Building</li>
+      <li>Grechka_AssemblyBenchT4_Building</li>
+      <li>Grechka_AssemblyBenchT5_Building</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+  <ThingDef ParentName="BuildingBase" MayRequire="grechka.storage">
+    <defName>Grechka_SolarStorageT4_Building</defName>
+    <label>резонансная панель</label>
+    <description>Резонансная панель: 2,200,000 Вт днём, 50% мощности ночью. Тематическая ветка при установленном grechka.storage.</description>
+    <thingClass>Building</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Buildings/SolarPanelT4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <shadowData>
+        <volume>(3.5,0.75,3.4)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.6,4,2.8)</rect>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <tickerType>Normal</tickerType>
+    <size>(4,4)</size>
+    <minifiedDef>Grechka_PackedSolarStorageT4_Item</minifiedDef>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Mass>100</Mass>
+      <WorkToBuild>9000</WorkToBuild>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>Grechka.Industry.CompPowerPlantLateSolar</compClass>
+        <basePowerConsumption>-2200000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Stunnable">
+        <useLargeEMPEffecter>true</useLargeEMPEffecter>
+        <empChancePerTick>0.03</empChancePerTick>
+        <affectedDamageDefs>
+          <li>EMP</li>
+        </affectedDamageDefs>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
+        <targetDefName>Grechka_SolarStorageT5_Building</targetDefName>
+        <costDescription>предыдущие панели и детали по показанной строительной стоимости; эта панель засчитывается</costDescription>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <designationCategory>Power</designationCategory>
+    <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
+    <uiOrder>2204</uiOrder>
+    <constructEffect>ConstructMetal</constructEffect>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <modExtensions>
+      <li Class="Grechka.Industry.LateSolarProperties">
+        <nightFraction>0.5</nightFraction>
+      </li>
+    </modExtensions>
+    <costList>
+      <Grechka_PackedSolarStorageT3_Item>4</Grechka_PackedSolarStorageT3_Item>
+      <Grechka_HousingT4_Item>1</Grechka_HousingT4_Item>
+      <Grechka_ComponentT4_Item>16</Grechka_ComponentT4_Item>
+      <Grechka_SolarCellT4_Item>64</Grechka_SolarCellT4_Item>
+      <Grechka_CertusQuartz>80</Grechka_CertusQuartz>
+      <Grechka_SilverProcessor>12</Grechka_SilverProcessor>
+    </costList>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing" MayRequire="grechka.storage">
+    <defName>Grechka_PackedSolarStorageT4_Item</defName>
+    <label>упакованная резонансная панель</label>
+    <description>Целое устройство для монтажа или улучшения.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_SolarStorageT4_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <RecipeDef MayRequire="grechka.storage">
+    <defName>Grechka_MakeSolarStorageT4</defName>
+    <label>собрать: резонансная панель</label>
+    <description>собрать: резонансная панель. Все рецепты доступны без исследований.</description>
+    <jobString>собрать: резонансная панель.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <workAmount>150000</workAmount>
+    <effectWorking>ConstructMetal</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_PackedSolarStorageT3_Item</li>
+            <li>Grechka_SolarStorageT3_Building</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_HousingT4_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_ComponentT4_Item</li>
+          </thingDefs>
+        </filter>
+        <count>16</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_SolarCellT4_Item</li>
+          </thingDefs>
+        </filter>
+        <count>64</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_CertusQuartz</li>
+          </thingDefs>
+        </filter>
+        <count>80</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_SilverProcessor</li>
+          </thingDefs>
+        </filter>
+        <count>12</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Grechka_PackedSolarStorageT3_Item</li>
+        <li>Grechka_HousingT4_Item</li>
+        <li>Grechka_ComponentT4_Item</li>
+        <li>Grechka_SolarCellT4_Item</li>
+        <li>Grechka_CertusQuartz</li>
+        <li>Grechka_SilverProcessor</li>
+        <li>Grechka_SolarStorageT3_Building</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Grechka_SolarStorageT4_Building>1</Grechka_SolarStorageT4_Building>
+    </products>
+    <recipeUsers>
+      <li>Grechka_AssemblyBenchT4_Building</li>
+      <li>Grechka_AssemblyBenchT5_Building</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+  <ThingDef ParentName="BuildingBase" MayRequire="grechka.storage">
+    <defName>Grechka_SolarStorageT5_Building</defName>
+    <label>сетевая солнечная панель</label>
+    <description>Сетевая солнечная панель: 40,000,000 Вт днём, 100% мощности ночью. Тематическая ветка при установленном grechka.storage.</description>
+    <thingClass>Building</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Buildings/GrechkaSolarPanelT5</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <shadowData>
+        <volume>(3.5,0.75,3.4)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.6,4,2.8)</rect>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <tickerType>Normal</tickerType>
+    <size>(4,4)</size>
+    <minifiedDef>Grechka_PackedSolarStorageT5_Item</minifiedDef>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Mass>100</Mass>
+      <WorkToBuild>9000</WorkToBuild>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>Grechka.Industry.CompPowerPlantLateSolar</compClass>
+        <basePowerConsumption>-40000000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Stunnable">
+        <useLargeEMPEffecter>true</useLargeEMPEffecter>
+        <empChancePerTick>0.03</empChancePerTick>
+        <affectedDamageDefs>
+          <li>EMP</li>
+        </affectedDamageDefs>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <designationCategory>Power</designationCategory>
+    <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
+    <uiOrder>2205</uiOrder>
+    <constructEffect>ConstructMetal</constructEffect>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <modExtensions>
+      <li Class="Grechka.Industry.LateSolarProperties">
+        <nightFraction>1</nightFraction>
+      </li>
+    </modExtensions>
+    <costList>
+      <Grechka_PackedSolarStorageT4_Item>6</Grechka_PackedSolarStorageT4_Item>
+      <Grechka_HousingT5_Item>3</Grechka_HousingT5_Item>
+      <Grechka_ComponentT5_Item>16</Grechka_ComponentT5_Item>
+      <Grechka_SolarCellT5_Item>64</Grechka_SolarCellT5_Item>
+      <Grechka_CertusQuartz>240</Grechka_CertusQuartz>
+      <Grechka_GoldProcessor>32</Grechka_GoldProcessor>
+    </costList>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing" MayRequire="grechka.storage">
+    <defName>Grechka_PackedSolarStorageT5_Item</defName>
+    <label>упакованная сетевая солнечная панель</label>
+    <description>Целое устройство для монтажа или улучшения.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_SolarStorageT5_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <RecipeDef MayRequire="grechka.storage">
+    <defName>Grechka_MakeSolarStorageT5</defName>
+    <label>собрать: сетевая солнечная панель</label>
+    <description>собрать: сетевая солнечная панель. Все рецепты доступны без исследований.</description>
+    <jobString>собрать: сетевая солнечная панель.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <workAmount>150000</workAmount>
+    <effectWorking>ConstructMetal</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_PackedSolarStorageT4_Item</li>
+            <li>Grechka_SolarStorageT4_Building</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_HousingT5_Item</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_ComponentT5_Item</li>
+          </thingDefs>
+        </filter>
+        <count>16</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_SolarCellT5_Item</li>
+          </thingDefs>
+        </filter>
+        <count>64</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_CertusQuartz</li>
+          </thingDefs>
+        </filter>
+        <count>240</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_GoldProcessor</li>
+          </thingDefs>
+        </filter>
+        <count>32</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Grechka_PackedSolarStorageT4_Item</li>
+        <li>Grechka_HousingT5_Item</li>
+        <li>Grechka_ComponentT5_Item</li>
+        <li>Grechka_SolarCellT5_Item</li>
+        <li>Grechka_CertusQuartz</li>
+        <li>Grechka_GoldProcessor</li>
+        <li>Grechka_SolarStorageT4_Building</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Grechka_SolarStorageT5_Building>1</Grechka_SolarStorageT5_Building>
+    </products>
+    <recipeUsers>
+      <li>Grechka_AssemblyBenchT5_Building</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+  <ThingDef ParentName="BuildingBase" MayRequire="vanillaexpanded.vpsycastse">
+    <defName>Grechka_SolarEltexT3_Building</defName>
+    <label>эльтекс-резонатор</label>
+    <description>Эльтекс-резонатор: 160,000 Вт днём, 25% мощности ночью. Тематическая ветка при установленном vanillaexpanded.vpsycastse.</description>
+    <thingClass>Building</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Buildings/SolarPanelT3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <shadowData>
+        <volume>(3.5,0.75,3.4)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.6,4,2.8)</rect>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <tickerType>Normal</tickerType>
+    <size>(4,4)</size>
+    <minifiedDef>Grechka_PackedSolarEltexT3_Item</minifiedDef>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Mass>100</Mass>
+      <WorkToBuild>9000</WorkToBuild>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>Grechka.Industry.CompPowerPlantLateSolar</compClass>
+        <basePowerConsumption>-160000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Stunnable">
+        <useLargeEMPEffecter>true</useLargeEMPEffecter>
+        <empChancePerTick>0.03</empChancePerTick>
+        <affectedDamageDefs>
+          <li>EMP</li>
+        </affectedDamageDefs>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
+        <targetDefName>Grechka_SolarEltexT4_Building</targetDefName>
+        <costDescription>предыдущие панели и детали по показанной строительной стоимости; эта панель засчитывается</costDescription>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <designationCategory>Power</designationCategory>
+    <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
+    <uiOrder>2203</uiOrder>
+    <constructEffect>ConstructMetal</constructEffect>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <modExtensions>
+      <li Class="Grechka.Industry.LateSolarProperties">
+        <nightFraction>0.25</nightFraction>
+      </li>
+    </modExtensions>
+    <costList>
+      <Grechka_PackedSolarS3_Item>2</Grechka_PackedSolarS3_Item>
+      <Grechka_HousingT3_Item>1</Grechka_HousingT3_Item>
+      <Grechka_ComponentT3_Item>4</Grechka_ComponentT3_Item>
+      <Grechka_SolarCellT3_Item>16</Grechka_SolarCellT3_Item>
+      <VPE_Eltex>20</VPE_Eltex>
+    </costList>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing" MayRequire="vanillaexpanded.vpsycastse">
+    <defName>Grechka_PackedSolarEltexT3_Item</defName>
+    <label>упакованная эльтекс-резонатор</label>
+    <description>Целое устройство для монтажа или улучшения.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_SolarEltexT3_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <RecipeDef MayRequire="vanillaexpanded.vpsycastse">
+    <defName>Grechka_MakeSolarEltexT3</defName>
+    <label>собрать: эльтекс-резонатор</label>
+    <description>собрать: эльтекс-резонатор. Все рецепты доступны без исследований.</description>
+    <jobString>собрать: эльтекс-резонатор.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <workAmount>50000</workAmount>
+    <effectWorking>ConstructMetal</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_PackedSolarS3_Item</li>
+            <li>Grechka_SolarS3_Building</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_HousingT3_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_ComponentT3_Item</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_SolarCellT3_Item</li>
+          </thingDefs>
+        </filter>
+        <count>16</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VPE_Eltex</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Grechka_PackedSolarS3_Item</li>
+        <li>Grechka_HousingT3_Item</li>
+        <li>Grechka_ComponentT3_Item</li>
+        <li>Grechka_SolarCellT3_Item</li>
+        <li>VPE_Eltex</li>
+        <li>Grechka_SolarS3_Building</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Grechka_SolarEltexT3_Building>1</Grechka_SolarEltexT3_Building>
+    </products>
+    <recipeUsers>
+      <li>Grechka_AssemblyBenchT3_Building</li>
+      <li>Grechka_AssemblyBenchT4_Building</li>
+      <li>Grechka_AssemblyBenchT5_Building</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+  <ThingDef ParentName="BuildingBase" MayRequire="vanillaexpanded.vpsycastse">
+    <defName>Grechka_SolarEltexT4_Building</defName>
+    <label>пси-солнечная панель</label>
+    <description>Пси-солнечная панель: 2,000,000 Вт днём, 75% мощности ночью. Тематическая ветка при установленном vanillaexpanded.vpsycastse.</description>
+    <thingClass>Building</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Buildings/SolarPanelT4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <shadowData>
+        <volume>(3.5,0.75,3.4)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.6,4,2.8)</rect>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <tickerType>Normal</tickerType>
+    <size>(4,4)</size>
+    <minifiedDef>Grechka_PackedSolarEltexT4_Item</minifiedDef>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Mass>100</Mass>
+      <WorkToBuild>9000</WorkToBuild>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>Grechka.Industry.CompPowerPlantLateSolar</compClass>
+        <basePowerConsumption>-2000000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Stunnable">
+        <useLargeEMPEffecter>true</useLargeEMPEffecter>
+        <empChancePerTick>0.03</empChancePerTick>
+        <affectedDamageDefs>
+          <li>EMP</li>
+        </affectedDamageDefs>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
+        <targetDefName>Grechka_SolarEltexT5_Building</targetDefName>
+        <costDescription>предыдущие панели и детали по показанной строительной стоимости; эта панель засчитывается</costDescription>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <designationCategory>Power</designationCategory>
+    <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
+    <uiOrder>2204</uiOrder>
+    <constructEffect>ConstructMetal</constructEffect>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <modExtensions>
+      <li Class="Grechka.Industry.LateSolarProperties">
+        <nightFraction>0.75</nightFraction>
+      </li>
+    </modExtensions>
+    <costList>
+      <Grechka_PackedSolarEltexT3_Item>4</Grechka_PackedSolarEltexT3_Item>
+      <Grechka_HousingT4_Item>1</Grechka_HousingT4_Item>
+      <Grechka_ComponentT4_Item>16</Grechka_ComponentT4_Item>
+      <Grechka_SolarCellT4_Item>64</Grechka_SolarCellT4_Item>
+      <VPE_Eltex>80</VPE_Eltex>
+    </costList>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing" MayRequire="vanillaexpanded.vpsycastse">
+    <defName>Grechka_PackedSolarEltexT4_Item</defName>
+    <label>упакованная пси-солнечная панель</label>
+    <description>Целое устройство для монтажа или улучшения.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_SolarEltexT4_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <RecipeDef MayRequire="vanillaexpanded.vpsycastse">
+    <defName>Grechka_MakeSolarEltexT4</defName>
+    <label>собрать: пси-солнечная панель</label>
+    <description>собрать: пси-солнечная панель. Все рецепты доступны без исследований.</description>
+    <jobString>собрать: пси-солнечная панель.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <workAmount>150000</workAmount>
+    <effectWorking>ConstructMetal</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_PackedSolarEltexT3_Item</li>
+            <li>Grechka_SolarEltexT3_Building</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_HousingT4_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_ComponentT4_Item</li>
+          </thingDefs>
+        </filter>
+        <count>16</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_SolarCellT4_Item</li>
+          </thingDefs>
+        </filter>
+        <count>64</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VPE_Eltex</li>
+          </thingDefs>
+        </filter>
+        <count>80</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Grechka_PackedSolarEltexT3_Item</li>
+        <li>Grechka_HousingT4_Item</li>
+        <li>Grechka_ComponentT4_Item</li>
+        <li>Grechka_SolarCellT4_Item</li>
+        <li>VPE_Eltex</li>
+        <li>Grechka_SolarEltexT3_Building</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Grechka_SolarEltexT4_Building>1</Grechka_SolarEltexT4_Building>
+    </products>
+    <recipeUsers>
+      <li>Grechka_AssemblyBenchT4_Building</li>
+      <li>Grechka_AssemblyBenchT5_Building</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+  <ThingDef ParentName="BuildingBase" MayRequire="vanillaexpanded.vpsycastse">
+    <defName>Grechka_SolarEltexT5_Building</defName>
+    <label>пси-солнечная матрица</label>
+    <description>Пси-солнечная матрица: 38,000,000 Вт днём, 100% мощности ночью. Тематическая ветка при установленном vanillaexpanded.vpsycastse.</description>
+    <thingClass>Building</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Buildings/GrechkaSolarPanelT5</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <shadowData>
+        <volume>(3.5,0.75,3.4)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.6,4,2.8)</rect>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <tickerType>Normal</tickerType>
+    <size>(4,4)</size>
+    <minifiedDef>Grechka_PackedSolarEltexT5_Item</minifiedDef>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Mass>100</Mass>
+      <WorkToBuild>9000</WorkToBuild>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>Grechka.Industry.CompPowerPlantLateSolar</compClass>
+        <basePowerConsumption>-38000000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Stunnable">
+        <useLargeEMPEffecter>true</useLargeEMPEffecter>
+        <empChancePerTick>0.03</empChancePerTick>
+        <affectedDamageDefs>
+          <li>EMP</li>
+        </affectedDamageDefs>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <designationCategory>Power</designationCategory>
+    <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
+    <uiOrder>2205</uiOrder>
+    <constructEffect>ConstructMetal</constructEffect>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <modExtensions>
+      <li Class="Grechka.Industry.LateSolarProperties">
+        <nightFraction>1</nightFraction>
+      </li>
+    </modExtensions>
+    <costList>
+      <Grechka_PackedSolarEltexT4_Item>6</Grechka_PackedSolarEltexT4_Item>
+      <Grechka_HousingT5_Item>3</Grechka_HousingT5_Item>
+      <Grechka_ComponentT5_Item>16</Grechka_ComponentT5_Item>
+      <Grechka_SolarCellT5_Item>64</Grechka_SolarCellT5_Item>
+      <VPE_Eltex>240</VPE_Eltex>
+    </costList>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing" MayRequire="vanillaexpanded.vpsycastse">
+    <defName>Grechka_PackedSolarEltexT5_Item</defName>
+    <label>упакованная пси-солнечная матрица</label>
+    <description>Целое устройство для монтажа или улучшения.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_SolarEltexT5_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <RecipeDef MayRequire="vanillaexpanded.vpsycastse">
+    <defName>Grechka_MakeSolarEltexT5</defName>
+    <label>собрать: пси-солнечная матрица</label>
+    <description>собрать: пси-солнечная матрица. Все рецепты доступны без исследований.</description>
+    <jobString>собрать: пси-солнечная матрица.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <workAmount>150000</workAmount>
+    <effectWorking>ConstructMetal</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_PackedSolarEltexT4_Item</li>
+            <li>Grechka_SolarEltexT4_Building</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_HousingT5_Item</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_ComponentT5_Item</li>
+          </thingDefs>
+        </filter>
+        <count>16</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_SolarCellT5_Item</li>
+          </thingDefs>
+        </filter>
+        <count>64</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>VPE_Eltex</li>
+          </thingDefs>
+        </filter>
+        <count>240</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Grechka_PackedSolarEltexT4_Item</li>
+        <li>Grechka_HousingT5_Item</li>
+        <li>Grechka_ComponentT5_Item</li>
+        <li>Grechka_SolarCellT5_Item</li>
+        <li>VPE_Eltex</li>
+        <li>Grechka_SolarEltexT4_Building</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Grechka_SolarEltexT5_Building>1</Grechka_SolarEltexT5_Building>
+    </products>
+    <recipeUsers>
+      <li>Grechka_AssemblyBenchT5_Building</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+  <ThingDef ParentName="BuildingBase" MayRequire="aoba.fortress.industrial">
+    <defName>Grechka_SolarFortressT2_Building</defName>
+    <label>бронированная панель</label>
+    <description>Бронированная панель: 24,000 Вт днём, 0% мощности ночью. Тематическая ветка при установленном aoba.fortress.industrial.</description>
+    <thingClass>Building</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Buildings/SolarPanelT2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <shadowData>
+        <volume>(3.5,0.75,3.4)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.6,4,2.8)</rect>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <tickerType>Normal</tickerType>
+    <size>(4,4)</size>
+    <minifiedDef>Grechka_PackedSolarFortressT2_Item</minifiedDef>
+    <statBases>
+      <MaxHitPoints>1600</MaxHitPoints>
+      <Mass>100</Mass>
+      <WorkToBuild>9000</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlantSolar</compClass>
+        <basePowerConsumption>-24000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Stunnable">
+        <useLargeEMPEffecter>true</useLargeEMPEffecter>
+        <empChancePerTick>0.03</empChancePerTick>
+        <affectedDamageDefs>
+          <li>EMP</li>
+        </affectedDamageDefs>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
+        <targetDefName>Grechka_SolarFortressT3_Building</targetDefName>
+        <costDescription>предыдущие панели и детали по показанной строительной стоимости; эта панель засчитывается</costDescription>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <designationCategory>Power</designationCategory>
+    <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
+    <uiOrder>2202</uiOrder>
+    <constructEffect>ConstructMetal</constructEffect>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <costList>
+      <Grechka_PackedSolarS1_Item>2</Grechka_PackedSolarS1_Item>
+      <Grechka_HousingT2_Item>1</Grechka_HousingT2_Item>
+      <ComponentSpacer>4</ComponentSpacer>
+      <Grechka_SolarCellT2_Item>16</Grechka_SolarCellT2_Item>
+      <FT_ReinforcedConcreteBag>120</FT_ReinforcedConcreteBag>
+    </costList>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing" MayRequire="aoba.fortress.industrial">
+    <defName>Grechka_PackedSolarFortressT2_Item</defName>
+    <label>упакованная бронированная панель</label>
+    <description>Целое устройство для монтажа или улучшения.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_SolarFortressT2_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <RecipeDef MayRequire="aoba.fortress.industrial">
+    <defName>Grechka_MakeSolarFortressT2</defName>
+    <label>собрать: бронированная панель</label>
+    <description>собрать: бронированная панель. Все рецепты доступны без исследований.</description>
+    <jobString>собрать: бронированная панель.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <workAmount>50000</workAmount>
+    <effectWorking>ConstructMetal</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_PackedSolarS1_Item</li>
+            <li>Grechka_SolarS1_Building</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_HousingT2_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_SolarCellT2_Item</li>
+          </thingDefs>
+        </filter>
+        <count>16</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FT_ReinforcedConcreteBag</li>
+          </thingDefs>
+        </filter>
+        <count>120</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Grechka_PackedSolarS1_Item</li>
+        <li>Grechka_HousingT2_Item</li>
+        <li>ComponentSpacer</li>
+        <li>Grechka_SolarCellT2_Item</li>
+        <li>FT_ReinforcedConcreteBag</li>
+        <li>Grechka_SolarS1_Building</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Grechka_SolarFortressT2_Building>1</Grechka_SolarFortressT2_Building>
+    </products>
+    <recipeUsers>
+      <li>Grechka_AssemblyBenchT2_Building</li>
+      <li>Grechka_AssemblyBenchT3_Building</li>
+      <li>Grechka_AssemblyBenchT4_Building</li>
+      <li>Grechka_AssemblyBenchT5_Building</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+  <ThingDef ParentName="BuildingBase" MayRequire="aoba.fortress.industrial">
+    <defName>Grechka_SolarFortressT3_Building</defName>
+    <label>крепостная панель</label>
+    <description>Крепостная панель: 200,000 Вт днём, 0% мощности ночью. Тематическая ветка при установленном aoba.fortress.industrial.</description>
+    <thingClass>Building</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Buildings/SolarPanelT3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <shadowData>
+        <volume>(3.5,0.75,3.4)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.6,4,2.8)</rect>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <tickerType>Normal</tickerType>
+    <size>(4,4)</size>
+    <minifiedDef>Grechka_PackedSolarFortressT3_Item</minifiedDef>
+    <statBases>
+      <MaxHitPoints>4000</MaxHitPoints>
+      <Mass>100</Mass>
+      <WorkToBuild>9000</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlantSolar</compClass>
+        <basePowerConsumption>-200000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Stunnable">
+        <useLargeEMPEffecter>true</useLargeEMPEffecter>
+        <empChancePerTick>0.03</empChancePerTick>
+        <affectedDamageDefs>
+          <li>EMP</li>
+        </affectedDamageDefs>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
+        <targetDefName>Grechka_SolarFortressT4_Building</targetDefName>
+        <costDescription>предыдущие панели и детали по показанной строительной стоимости; эта панель засчитывается</costDescription>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <designationCategory>Power</designationCategory>
+    <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
+    <uiOrder>2203</uiOrder>
+    <constructEffect>ConstructMetal</constructEffect>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <costList>
+      <Grechka_PackedSolarFortressT2_Item>6</Grechka_PackedSolarFortressT2_Item>
+      <Grechka_HousingT3_Item>1</Grechka_HousingT3_Item>
+      <Grechka_ComponentT3_Item>4</Grechka_ComponentT3_Item>
+      <Grechka_SolarCellT3_Item>16</Grechka_SolarCellT3_Item>
+      <FT_ConcreteCompressed>160</FT_ConcreteCompressed>
+    </costList>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing" MayRequire="aoba.fortress.industrial">
+    <defName>Grechka_PackedSolarFortressT3_Item</defName>
+    <label>упакованная крепостная панель</label>
+    <description>Целое устройство для монтажа или улучшения.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_SolarFortressT3_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <RecipeDef MayRequire="aoba.fortress.industrial">
+    <defName>Grechka_MakeSolarFortressT3</defName>
+    <label>собрать: крепостная панель</label>
+    <description>собрать: крепостная панель. Все рецепты доступны без исследований.</description>
+    <jobString>собрать: крепостная панель.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <workAmount>50000</workAmount>
+    <effectWorking>ConstructMetal</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_PackedSolarFortressT2_Item</li>
+            <li>Grechka_SolarFortressT2_Building</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_HousingT3_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_ComponentT3_Item</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_SolarCellT3_Item</li>
+          </thingDefs>
+        </filter>
+        <count>16</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FT_ConcreteCompressed</li>
+          </thingDefs>
+        </filter>
+        <count>160</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Grechka_PackedSolarFortressT2_Item</li>
+        <li>Grechka_HousingT3_Item</li>
+        <li>Grechka_ComponentT3_Item</li>
+        <li>Grechka_SolarCellT3_Item</li>
+        <li>FT_ConcreteCompressed</li>
+        <li>Grechka_SolarFortressT2_Building</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Grechka_SolarFortressT3_Building>1</Grechka_SolarFortressT3_Building>
+    </products>
+    <recipeUsers>
+      <li>Grechka_AssemblyBenchT3_Building</li>
+      <li>Grechka_AssemblyBenchT4_Building</li>
+      <li>Grechka_AssemblyBenchT5_Building</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+  <ThingDef ParentName="BuildingBase" MayRequire="aoba.fortress.industrial">
+    <defName>Grechka_SolarFortressT4_Building</defName>
+    <label>архо-крепостная панель</label>
+    <description>Архо-крепостная панель: 2,100,000 Вт днём, 25% мощности ночью. Тематическая ветка при установленном aoba.fortress.industrial.</description>
+    <thingClass>Building</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Buildings/SolarPanelT4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <shadowData>
+        <volume>(3.5,0.75,3.4)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.6,4,2.8)</rect>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <tickerType>Normal</tickerType>
+    <size>(4,4)</size>
+    <minifiedDef>Grechka_PackedSolarFortressT4_Item</minifiedDef>
+    <statBases>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Mass>100</Mass>
+      <WorkToBuild>9000</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>Grechka.Industry.CompPowerPlantLateSolar</compClass>
+        <basePowerConsumption>-2100000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Stunnable">
+        <useLargeEMPEffecter>true</useLargeEMPEffecter>
+        <empChancePerTick>0.03</empChancePerTick>
+        <affectedDamageDefs>
+          <li>EMP</li>
+        </affectedDamageDefs>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
+        <targetDefName>Grechka_SolarFortressT5_Building</targetDefName>
+        <costDescription>предыдущие панели и детали по показанной строительной стоимости; эта панель засчитывается</costDescription>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <designationCategory>Power</designationCategory>
+    <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
+    <uiOrder>2204</uiOrder>
+    <constructEffect>ConstructMetal</constructEffect>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <modExtensions>
+      <li Class="Grechka.Industry.LateSolarProperties">
+        <nightFraction>0.25</nightFraction>
+      </li>
+    </modExtensions>
+    <costList>
+      <Grechka_PackedSolarFortressT3_Item>4</Grechka_PackedSolarFortressT3_Item>
+      <Grechka_HousingT4_Item>1</Grechka_HousingT4_Item>
+      <Grechka_ComponentT4_Item>16</Grechka_ComponentT4_Item>
+      <Grechka_SolarCellT4_Item>64</Grechka_SolarCellT4_Item>
+      <FT_ConcreteCompressed>320</FT_ConcreteCompressed>
+    </costList>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing" MayRequire="aoba.fortress.industrial">
+    <defName>Grechka_PackedSolarFortressT4_Item</defName>
+    <label>упакованная архо-крепостная панель</label>
+    <description>Целое устройство для монтажа или улучшения.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_SolarFortressT4_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <RecipeDef MayRequire="aoba.fortress.industrial">
+    <defName>Grechka_MakeSolarFortressT4</defName>
+    <label>собрать: архо-крепостная панель</label>
+    <description>собрать: архо-крепостная панель. Все рецепты доступны без исследований.</description>
+    <jobString>собрать: архо-крепостная панель.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <workAmount>150000</workAmount>
+    <effectWorking>ConstructMetal</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_PackedSolarFortressT3_Item</li>
+            <li>Grechka_SolarFortressT3_Building</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_HousingT4_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_ComponentT4_Item</li>
+          </thingDefs>
+        </filter>
+        <count>16</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_SolarCellT4_Item</li>
+          </thingDefs>
+        </filter>
+        <count>64</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FT_ConcreteCompressed</li>
+          </thingDefs>
+        </filter>
+        <count>320</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Grechka_PackedSolarFortressT3_Item</li>
+        <li>Grechka_HousingT4_Item</li>
+        <li>Grechka_ComponentT4_Item</li>
+        <li>Grechka_SolarCellT4_Item</li>
+        <li>FT_ConcreteCompressed</li>
+        <li>Grechka_SolarFortressT3_Building</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Grechka_SolarFortressT4_Building>1</Grechka_SolarFortressT4_Building>
+    </products>
+    <recipeUsers>
+      <li>Grechka_AssemblyBenchT4_Building</li>
+      <li>Grechka_AssemblyBenchT5_Building</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+  <ThingDef ParentName="BuildingBase" MayRequire="aoba.fortress.industrial">
+    <defName>Grechka_SolarFortressT5_Building</defName>
+    <label>гречневая крепостная панель</label>
+    <description>Гречневая крепостная панель: 39,000,000 Вт днём, 100% мощности ночью. Тематическая ветка при установленном aoba.fortress.industrial.</description>
+    <thingClass>Building</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Buildings/GrechkaSolarPanelT5</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(4,4)</drawSize>
+      <shadowData>
+        <volume>(3.5,0.75,3.4)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.6,4,2.8)</rect>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <tickerType>Normal</tickerType>
+    <size>(4,4)</size>
+    <minifiedDef>Grechka_PackedSolarFortressT5_Item</minifiedDef>
+    <statBases>
+      <MaxHitPoints>25000</MaxHitPoints>
+      <Mass>100</Mass>
+      <WorkToBuild>9000</WorkToBuild>
+      <Flammability>0</Flammability>
+    </statBases>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>Grechka.Industry.CompPowerPlantLateSolar</compClass>
+        <basePowerConsumption>-39000000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Stunnable">
+        <useLargeEMPEffecter>true</useLargeEMPEffecter>
+        <empChancePerTick>0.03</empChancePerTick>
+        <affectedDamageDefs>
+          <li>EMP</li>
+        </affectedDamageDefs>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <designationCategory>Power</designationCategory>
+    <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
+    <uiOrder>2205</uiOrder>
+    <constructEffect>ConstructMetal</constructEffect>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <modExtensions>
+      <li Class="Grechka.Industry.LateSolarProperties">
+        <nightFraction>1</nightFraction>
+      </li>
+    </modExtensions>
+    <costList>
+      <Grechka_PackedSolarFortressT4_Item>6</Grechka_PackedSolarFortressT4_Item>
+      <Grechka_HousingT5_Item>3</Grechka_HousingT5_Item>
+      <Grechka_ComponentT5_Item>16</Grechka_ComponentT5_Item>
+      <Grechka_SolarCellT5_Item>64</Grechka_SolarCellT5_Item>
+      <FT_ConcreteCompressed>640</FT_ConcreteCompressed>
+    </costList>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing" MayRequire="aoba.fortress.industrial">
+    <defName>Grechka_PackedSolarFortressT5_Item</defName>
+    <label>упакованная гречневая крепостная панель</label>
+    <description>Целое устройство для монтажа или улучшения.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_SolarFortressT5_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <RecipeDef MayRequire="aoba.fortress.industrial">
+    <defName>Grechka_MakeSolarFortressT5</defName>
+    <label>собрать: гречневая крепостная панель</label>
+    <description>собрать: гречневая крепостная панель. Все рецепты доступны без исследований.</description>
+    <jobString>собрать: гречневая крепостная панель.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <workAmount>150000</workAmount>
+    <effectWorking>ConstructMetal</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_PackedSolarFortressT4_Item</li>
+            <li>Grechka_SolarFortressT4_Building</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_HousingT5_Item</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_ComponentT5_Item</li>
+          </thingDefs>
+        </filter>
+        <count>16</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_SolarCellT5_Item</li>
+          </thingDefs>
+        </filter>
+        <count>64</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>FT_ConcreteCompressed</li>
+          </thingDefs>
+        </filter>
+        <count>640</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Grechka_PackedSolarFortressT4_Item</li>
+        <li>Grechka_HousingT5_Item</li>
+        <li>Grechka_ComponentT5_Item</li>
+        <li>Grechka_SolarCellT5_Item</li>
+        <li>FT_ConcreteCompressed</li>
+        <li>Grechka_SolarFortressT4_Building</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Grechka_SolarFortressT5_Building>1</Grechka_SolarFortressT5_Building>
+    </products>
+    <recipeUsers>
+      <li>Grechka_AssemblyBenchT5_Building</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+  <ThingDef ParentName="BuildingBase" MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>Grechka_SolarBiotechT3_Building</defName>
+    <label>самонаводящаяся панель</label>
+    <description>Самонаводящаяся панель: 180,000 Вт днём, 0% мощности ночью. Тематическая ветка при установленном Ludeon.RimWorld.Biotech.</description>
+    <thingClass>Building</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Buildings/SolarPanelT3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(3.5,0.75,3.4)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.6,4,2.8)</rect>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <tickerType>Normal</tickerType>
+    <size>(2,2)</size>
+    <minifiedDef>Grechka_PackedSolarBiotechT3_Item</minifiedDef>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Mass>100</Mass>
+      <WorkToBuild>9000</WorkToBuild>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlantSolar</compClass>
+        <basePowerConsumption>-180000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Stunnable">
+        <useLargeEMPEffecter>true</useLargeEMPEffecter>
+        <empChancePerTick>0.03</empChancePerTick>
+        <affectedDamageDefs>
+          <li>EMP</li>
+        </affectedDamageDefs>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
+        <targetDefName>Grechka_SolarBiotechT4_Building</targetDefName>
+        <costDescription>предыдущие панели и детали по показанной строительной стоимости; эта панель засчитывается</costDescription>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <designationCategory>Power</designationCategory>
+    <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
+    <uiOrder>2203</uiOrder>
+    <constructEffect>ConstructMetal</constructEffect>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <costList>
+      <Grechka_PackedSolarS3_Item>2</Grechka_PackedSolarS3_Item>
+      <Grechka_HousingT3_Item>1</Grechka_HousingT3_Item>
+      <Grechka_ComponentT3_Item>4</Grechka_ComponentT3_Item>
+      <Grechka_SolarCellT3_Item>16</Grechka_SolarCellT3_Item>
+      <SubcoreBasic>4</SubcoreBasic>
+    </costList>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing" MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>Grechka_PackedSolarBiotechT3_Item</defName>
+    <label>упакованная самонаводящаяся панель</label>
+    <description>Целое устройство для монтажа или улучшения.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_SolarBiotechT3_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <RecipeDef MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>Grechka_MakeSolarBiotechT3</defName>
+    <label>собрать: самонаводящаяся панель</label>
+    <description>собрать: самонаводящаяся панель. Все рецепты доступны без исследований.</description>
+    <jobString>собрать: самонаводящаяся панель.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <workAmount>50000</workAmount>
+    <effectWorking>ConstructMetal</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_PackedSolarS3_Item</li>
+            <li>Grechka_SolarS3_Building</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_HousingT3_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_ComponentT3_Item</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_SolarCellT3_Item</li>
+          </thingDefs>
+        </filter>
+        <count>16</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreBasic</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Grechka_PackedSolarS3_Item</li>
+        <li>Grechka_HousingT3_Item</li>
+        <li>Grechka_ComponentT3_Item</li>
+        <li>Grechka_SolarCellT3_Item</li>
+        <li>SubcoreBasic</li>
+        <li>Grechka_SolarS3_Building</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Grechka_SolarBiotechT3_Building>1</Grechka_SolarBiotechT3_Building>
+    </products>
+    <recipeUsers>
+      <li>Grechka_AssemblyBenchT3_Building</li>
+      <li>Grechka_AssemblyBenchT4_Building</li>
+      <li>Grechka_AssemblyBenchT5_Building</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+  <ThingDef ParentName="BuildingBase" MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>Grechka_SolarBiotechT4_Building</defName>
+    <label>нейросолнечная панель</label>
+    <description>Нейросолнечная панель: 2,500,000 Вт днём, 25% мощности ночью. Тематическая ветка при установленном Ludeon.RimWorld.Biotech.</description>
+    <thingClass>Building</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Buildings/SolarPanelT4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(3.5,0.75,3.4)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.6,4,2.8)</rect>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <tickerType>Normal</tickerType>
+    <size>(2,2)</size>
+    <minifiedDef>Grechka_PackedSolarBiotechT4_Item</minifiedDef>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Mass>100</Mass>
+      <WorkToBuild>9000</WorkToBuild>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>Grechka.Industry.CompPowerPlantLateSolar</compClass>
+        <basePowerConsumption>-2500000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Stunnable">
+        <useLargeEMPEffecter>true</useLargeEMPEffecter>
+        <empChancePerTick>0.03</empChancePerTick>
+        <affectedDamageDefs>
+          <li>EMP</li>
+        </affectedDamageDefs>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
+        <targetDefName>Grechka_SolarBiotechT5_Building</targetDefName>
+        <costDescription>предыдущие панели и детали по показанной строительной стоимости; эта панель засчитывается</costDescription>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <designationCategory>Power</designationCategory>
+    <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
+    <uiOrder>2204</uiOrder>
+    <constructEffect>ConstructMetal</constructEffect>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <modExtensions>
+      <li Class="Grechka.Industry.LateSolarProperties">
+        <nightFraction>0.25</nightFraction>
+      </li>
+    </modExtensions>
+    <costList>
+      <Grechka_PackedSolarBiotechT3_Item>4</Grechka_PackedSolarBiotechT3_Item>
+      <Grechka_HousingT4_Item>1</Grechka_HousingT4_Item>
+      <Grechka_ComponentT4_Item>16</Grechka_ComponentT4_Item>
+      <Grechka_SolarCellT4_Item>64</Grechka_SolarCellT4_Item>
+      <SubcoreRegular>8</SubcoreRegular>
+    </costList>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing" MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>Grechka_PackedSolarBiotechT4_Item</defName>
+    <label>упакованная нейросолнечная панель</label>
+    <description>Целое устройство для монтажа или улучшения.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_SolarBiotechT4_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <RecipeDef MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>Grechka_MakeSolarBiotechT4</defName>
+    <label>собрать: нейросолнечная панель</label>
+    <description>собрать: нейросолнечная панель. Все рецепты доступны без исследований.</description>
+    <jobString>собрать: нейросолнечная панель.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <workAmount>150000</workAmount>
+    <effectWorking>ConstructMetal</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_PackedSolarBiotechT3_Item</li>
+            <li>Grechka_SolarBiotechT3_Building</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_HousingT4_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_ComponentT4_Item</li>
+          </thingDefs>
+        </filter>
+        <count>16</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_SolarCellT4_Item</li>
+          </thingDefs>
+        </filter>
+        <count>64</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreRegular</li>
+          </thingDefs>
+        </filter>
+        <count>8</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Grechka_PackedSolarBiotechT3_Item</li>
+        <li>Grechka_HousingT4_Item</li>
+        <li>Grechka_ComponentT4_Item</li>
+        <li>Grechka_SolarCellT4_Item</li>
+        <li>SubcoreRegular</li>
+        <li>Grechka_SolarBiotechT3_Building</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Grechka_SolarBiotechT4_Building>1</Grechka_SolarBiotechT4_Building>
+    </products>
+    <recipeUsers>
+      <li>Grechka_AssemblyBenchT4_Building</li>
+      <li>Grechka_AssemblyBenchT5_Building</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+  <ThingDef ParentName="BuildingBase" MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>Grechka_SolarBiotechT5_Building</defName>
+    <label>роевая панель</label>
+    <description>Роевая панель: 42,000,000 Вт днём, 50% мощности ночью. Тематическая ветка при установленном Ludeon.RimWorld.Biotech.</description>
+    <thingClass>Building</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Buildings/GrechkaSolarPanelT5</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(3.5,0.75,3.4)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.6,4,2.8)</rect>
+      </damageData>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.5</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <tickerType>Normal</tickerType>
+    <size>(2,2)</size>
+    <minifiedDef>Grechka_PackedSolarBiotechT5_Item</minifiedDef>
+    <statBases>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Mass>100</Mass>
+      <WorkToBuild>9000</WorkToBuild>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>Grechka.Industry.CompPowerPlantLateSolar</compClass>
+        <basePowerConsumption>-42000000</basePowerConsumption>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Stunnable">
+        <useLargeEMPEffecter>true</useLargeEMPEffecter>
+        <empChancePerTick>0.03</empChancePerTick>
+        <affectedDamageDefs>
+          <li>EMP</li>
+        </affectedDamageDefs>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
+    <designationCategory>Power</designationCategory>
+    <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
+    <uiOrder>2205</uiOrder>
+    <constructEffect>ConstructMetal</constructEffect>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <modExtensions>
+      <li Class="Grechka.Industry.LateSolarProperties">
+        <nightFraction>0.5</nightFraction>
+      </li>
+    </modExtensions>
+    <costList>
+      <Grechka_PackedSolarBiotechT4_Item>6</Grechka_PackedSolarBiotechT4_Item>
+      <Grechka_HousingT5_Item>3</Grechka_HousingT5_Item>
+      <Grechka_ComponentT5_Item>16</Grechka_ComponentT5_Item>
+      <Grechka_SolarCellT5_Item>64</Grechka_SolarCellT5_Item>
+      <SubcoreHigh>16</SubcoreHigh>
+    </costList>
+  </ThingDef>
+  <ThingDef ParentName="MinifiedThing" MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>Grechka_PackedSolarBiotechT5_Item</defName>
+    <label>упакованная роевая панель</label>
+    <description>Целое устройство для монтажа или улучшения.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_SolarBiotechT5_Building</building>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <RecipeDef MayRequire="Ludeon.RimWorld.Biotech">
+    <defName>Grechka_MakeSolarBiotechT5</defName>
+    <label>собрать: роевая панель</label>
+    <description>собрать: роевая панель. Все рецепты доступны без исследований.</description>
+    <jobString>собрать: роевая панель.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <workAmount>150000</workAmount>
+    <effectWorking>ConstructMetal</effectWorking>
+    <soundWorking>Recipe_Machining</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_PackedSolarBiotechT4_Item</li>
+            <li>Grechka_SolarBiotechT4_Building</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_HousingT5_Item</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_ComponentT5_Item</li>
+          </thingDefs>
+        </filter>
+        <count>16</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_SolarCellT5_Item</li>
+          </thingDefs>
+        </filter>
+        <count>64</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreHigh</li>
+          </thingDefs>
+        </filter>
+        <count>16</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Grechka_PackedSolarBiotechT4_Item</li>
+        <li>Grechka_HousingT5_Item</li>
+        <li>Grechka_ComponentT5_Item</li>
+        <li>Grechka_SolarCellT5_Item</li>
+        <li>SubcoreHigh</li>
+        <li>Grechka_SolarBiotechT4_Building</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Grechka_SolarBiotechT5_Building>1</Grechka_SolarBiotechT5_Building>
+    </products>
+    <recipeUsers>
+      <li>Grechka_AssemblyBenchT5_Building</li>
+    </recipeUsers>
+    <skillRequirements>
+      <Crafting>8</Crafting>
+    </skillRequirements>
+  </RecipeDef>
+</Defs>

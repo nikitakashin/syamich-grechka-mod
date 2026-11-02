@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_SolarS1_Building</defName>
@@ -7,12 +7,16 @@
     <thingClass>Building</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
-      <!-- Временная ванильная графика, пока не подготовлены слои цвета тира. -->
-      <texPath>Things/Building/Power/SolarCollector</texPath>
+      <texPath>Buildings/SolarPanelT2</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(4,4)</drawSize>
-      <shadowData><volume>(3.5,0.75,3.4)</volume><offset>(0,0,0)</offset></shadowData>
-      <damageData><rect>(0,0.6,4,2.8)</rect></damageData>
+      <shadowData>
+        <volume>(3.5,0.75,3.4)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.6,4,2.8)</rect>
+      </damageData>
     </graphicData>
     <castEdgeShadows>true</castEdgeShadows>
     <rotatable>false</rotatable>
@@ -30,7 +34,9 @@
       <WorkToBuild>4500</WorkToBuild>
       <Flammability>0.5</Flammability>
     </statBases>
-    <building><destroySound>BuildingDestroyed_Metal_Big</destroySound></building>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
     <costList>
       <Grechka_PackedSolarS0_Item>1</Grechka_PackedSolarS0_Item>
       <Grechka_HousingT2_Item>1</Grechka_HousingT2_Item>
@@ -47,22 +53,25 @@
         <basePowerConsumption>-6000</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
       </li>
-      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Breakdownable" />
       <li Class="CompProperties_Stunnable">
         <useLargeEMPEffecter>true</useLargeEMPEffecter>
         <empChancePerTick>0.03</empChancePerTick>
-        <affectedDamageDefs><li>EMP</li></affectedDamageDefs>
+        <affectedDamageDefs>
+          <li>EMP</li>
+        </affectedDamageDefs>
       </li>
     </comps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <thingCategories><li>BuildingsSpecial</li></thingCategories>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
     <designationCategory>Power</designationCategory>
     <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
     <uiOrder>2101</uiOrder>
     <constructEffect>ConstructMetal</constructEffect>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
   </ThingDef>
-
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_SolarS2_Building</defName>
     <label>многослойная солнечная панель</label>
@@ -70,12 +79,16 @@
     <thingClass>Building</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
-      <!-- Временная ванильная графика до текстуры S2. -->
-      <texPath>Things/Building/Power/SolarCollector</texPath>
+      <texPath>Buildings/SolarPanelT2</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(4,4)</drawSize>
-      <shadowData><volume>(3.5,0.75,3.4)</volume><offset>(0,0,0)</offset></shadowData>
-      <damageData><rect>(0,0.6,4,2.8)</rect></damageData>
+      <shadowData>
+        <volume>(3.5,0.75,3.4)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.6,4,2.8)</rect>
+      </damageData>
     </graphicData>
     <castEdgeShadows>true</castEdgeShadows>
     <rotatable>false</rotatable>
@@ -93,7 +106,9 @@
       <WorkToBuild>6500</WorkToBuild>
       <Flammability>0.4</Flammability>
     </statBases>
-    <building><destroySound>BuildingDestroyed_Metal_Big</destroySound></building>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+    </building>
     <costList>
       <Grechka_PackedSolarS1_Item>2</Grechka_PackedSolarS1_Item>
       <Grechka_HousingT2_Item>1</Grechka_HousingT2_Item>
@@ -111,15 +126,19 @@
         <basePowerConsumption>-18000</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
       </li>
-      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Breakdownable" />
       <li Class="CompProperties_Stunnable">
         <useLargeEMPEffecter>true</useLargeEMPEffecter>
         <empChancePerTick>0.03</empChancePerTick>
-        <affectedDamageDefs><li>EMP</li></affectedDamageDefs>
+        <affectedDamageDefs>
+          <li>EMP</li>
+        </affectedDamageDefs>
       </li>
     </comps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <thingCategories><li>BuildingsSpecial</li></thingCategories>
+    <thingCategories>
+      <li>BuildingsSpecial</li>
+    </thingCategories>
     <designationCategory>Power</designationCategory>
     <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
     <uiOrder>2102</uiOrder>

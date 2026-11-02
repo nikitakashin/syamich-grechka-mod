@@ -111,6 +111,10 @@ Check(rack.Install(cold) && rack.Disks.Count() == 1 && cold.holdingOwner.Owner =
 DamageInfo damage = default;
 rack.PreApplyDamage(ref damage, out bool absorbed);
 Check(absorbed, "Disk rack absorbs incoming damage before destruction");
+var cableDef = Fixture.Def("Grechka_TestCable", typeof(Building_QuartzCable), 1);
+var cable = (Building_QuartzCable)Fixture.Create(cableDef);
+cable.PreApplyDamage(ref damage, out absorbed);
+Check(absorbed, "Underground signal cable absorbs all incoming damage");
 var packedDef = Fixture.Def("Grechka_TestPacked", typeof(MinifiedStorageDevice), 1);
 var packed = (MinifiedStorageDevice)Fixture.Create(packedDef); packed.InnerThing = rack;
 packed.PreApplyDamage(ref damage, out absorbed);
@@ -152,6 +156,44 @@ var controllerDef = Fixture.Def("Grechka_TestController", typeof(Building_Storag
 controllerDef.category = ThingCategory.Building; controllerDef.building = new BuildingProperties();
 var controller = (Building_StorageController)Fixture.Create(controllerDef);
 Fixture.Networks[controller] = new List<StorageDisk> { disk, cold, large };
+// The native Thing overload consults installed DLC via the graphics host.
+// This fixture supplies its def-only eligibility, while allocation, value
+// conversion, bills and all ownership are still the real implementations.
+harmony.Patch(AccessTools.Method(typeof(ThingFilter), nameof(ThingFilter.Allows), new[] { typeof(Thing) }),
+    prefix: new HarmonyMethod(typeof(Fixture), nameof(Fixture.FilterDef)));
+// Real ingredient filters/value getters: generic and specific inputs cannot
+// reserve the same copper twice, and a mixed provider group stays mixed.
+var copperA = Fixture.Def("Grechka_TestCopperA", typeof(ThingWithComps), 75);
+var copperB = Fixture.Def("Grechka_TestCopperB", typeof(ThingWithComps), 75);
+var craftDisk = (StorageDisk)Fixture.Create(normalDef);
+var craftController = (Building_StorageController)Fixture.Create(controllerDef);
+Fixture.Networks[craftController] = new List<StorageDisk> { craftDisk };
+foreach (var pair in new[] { (copperA, 3), (copperB, 4) })
+{ Thing t = Fixture.Create(pair.Item1, pair.Item2); holder.Contents.TryAdd(t, false); craftDisk.Accept(t, t.stackCount); }
+var benchDef = Fixture.Def("Grechka_TestBench", typeof(Building_WorkTable), 1);
+benchDef.category = ThingCategory.Building; benchDef.building = new BuildingProperties();
+var bench = (Building_WorkTable)Fixture.Create(benchDef);
+var anyCopper = new IngredientCount(); anyCopper.SetBaseCount(4);
+anyCopper.filter.SetAllow(copperA, true); anyCopper.filter.SetAllow(copperB, true);
+var onlyA = new IngredientCount(); onlyA.SetBaseCount(3); onlyA.filter.SetAllow(copperA, true);
+var craftRecipe = new RecipeDef { defName = "Grechka_TestMixedCopper", label = "mixed copper", workerClass = typeof(RecipeWorker),
+    ingredients = new List<IngredientCount> { anyCopper, onlyA }, products = new List<ThingDefCountClass> { new ThingDefCountClass(steelDef, 1) },
+    fixedIngredientFilter = new ThingFilter(), defaultIngredientFilter = new ThingFilter() };
+AccessTools.Field(typeof(RecipeDef), "ingredientValueGetterClass").SetValue(craftRecipe, typeof(IngredientValueGetter_Volume));
+craftRecipe.fixedIngredientFilter.SetAllow(copperA, true); craftRecipe.fixedIngredientFilter.SetAllow(copperB, true);
+var selectIngredients = AccessTools.Method(typeof(StorageDisk).Assembly.GetType("Grechka.Storage.CraftRecipes"), "Select");
+object[] craftArgs = { craftController, bench, craftRecipe, null, null };
+var selected = (List<(StorageDisk disk, Thing item, int count)>)selectIngredients.Invoke(null, craftArgs);
+Check(selected != null && selected.Sum(x => x.count) == 7 && selected.Where(x => x.item.def == copperA).Sum(x => x.count) == 3
+    && craftDisk.Space.ItemCount == 7, "Craft planning combines equivalent materials without double reservation or consuming stock");
+anyCopper.SetBaseCount(5); craftArgs = new object[] { craftController, bench, craftRecipe, null, null };
+Check(selectIngredients.Invoke(null, craftArgs) == null && craftArgs[3] != null && craftDisk.Space.ItemCount == 7,
+    "Insufficient mixed input reports the actual shortage and leaves ownership unchanged");
+craftDisk.SealedContents = true;
+Check(!StorageInventory.HeldContents(craftDisk).Any(), "Sealed trader disk does not expose its contents through the inventory adapter");
+holder.Contents.TryAdd(craftDisk, false);
+Check(rack.Install(craftDisk) && !craftDisk.SealedContents && StorageInventory.HeldContents(craftDisk).Sum(t => t.stackCount) == 7,
+    "Installing a purchased disk reveals its original stored items exactly once");
 Thing bulk = Fixture.Create(steelDef, 100000); holder.Contents.TryAdd(bulk, false); large.Accept(bulk, 100000);
 string optimized = StorageOptimization.Optimize(controller);
 Check(!controller.HasRecovery && disk.Items.Contains(armor) && large.Items.Where(t => t.def == steelDef).Sum(t => (long)t.stackCount) == 108053
@@ -239,6 +281,7 @@ static class Fixture
         if (!(__0 is TestHolder holder)) return true;
         __2 = holder.Temperature; __result = true; return false;
     }
+    public static bool FilterDef(ThingFilter __instance, Thing t, ref bool __result) { __result = __instance.Allows(t.def); return false; }
     public static bool NoRelics(ref bool __result) { __result = false; return false; }
     public static readonly Dictionary<Building_StorageController, List<StorageDisk>> Networks = new();
     public static bool FailTransfer;

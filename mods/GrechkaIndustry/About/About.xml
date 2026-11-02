@@ -1,13 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <ModMetaData>
   <name>Grechka Industry</name>
   <author>Grechka World</author>
   <packageId>grechka.industry</packageId>
-  <supportedVersions><li>1.7</li></supportedVersions>
-  <description>Промышленные цепочки Grechka World: компоненты, корпуса и верстаки T1–T3, экстрактор механитов, мехапоника T3, комнатный ионизатор T3, солнечные панели S1–S4 и улучшения на месте. Требуется Harmony.</description>
+  <supportedVersions>
+    <li>1.7</li>
+  </supportedVersions>
+  <description>Промышленность Grechka: компоненты и корпуса T1–T5, механиты, мехапоника, комнатные ионизаторы, архо-облучатели, материя и солнечная линия S0–S6. Собственная торговля материалами и оборудованием. Требуется Harmony.</description>
   <modDependencies>
-    <li><packageId>brrainz.harmony</packageId><displayName>Harmony</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl></li>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+    </li>
   </modDependencies>
-  <loadAfter><li>brrainz.harmony</li></loadAfter>
-  <modVersion>0.1.0</modVersion>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+  </loadAfter>
+  <modVersion>0.2.0</modVersion>
 </ModMetaData>

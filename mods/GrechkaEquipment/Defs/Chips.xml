@@ -1,0 +1,989 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingDef ParentName="BodyPartBase">
+    <defName>Grechka_CombatChipT4_Item</defName>
+    <label>чип «берсерк» T4</label>
+    <description>Мозговой имплант. Разные семейства совместимы; другой тир этого семейства заменяется с возвратом старого чипа.</description>
+    <graphicData>
+      <texPath>Items/MythicBrainT4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>BodyPartsBionic</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <MarketValue>4000</MarketValue>
+      <Mass>0.1</Mass>
+    </statBases>
+    <costList>
+      <Gold>10</Gold>
+      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>5</Grechka_ArchoSubstrate>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>FabricationBench</li>
+        <li>Grechka_AssemblyBenchT4_Building</li>
+      </recipeUsers>
+    </recipeMaker>
+    <techLevel>Archotech</techLevel>
+  </ThingDef>
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>Grechka_CombatChipT4_Hediff</defName>
+    <label>чип «берсерк» T4</label>
+    <spawnThingOnRemoved>Grechka_CombatChipT4_Item</spawnThingOnRemoved>
+    <modExtensions>
+      <li Class="Grechka.Equipment.ImplantFamily">
+        <family>Combat</family>
+        <stableMind>true</stableMind>
+      </li>
+    </modExtensions>
+    <stages>
+      <li>
+        <painFactor>0</painFactor>
+        <statOffsets>
+          <MoveSpeed>2</MoveSpeed>
+          <MeleeDodgeChance>0.1</MeleeDodgeChance>
+        </statOffsets>
+        <statFactors>
+          <MeleeDamageFactor>1.5</MeleeDamageFactor>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>Install_Grechka_CombatChipT4</defName>
+    <label>установить: чип «берсерк» T4</label>
+    <description>Установить чип «берсерк» T4. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</description>
+    <jobString>Установка импланта.</jobString>
+    <workerClass>Grechka.Equipment.Recipe_InstallFamily</workerClass>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_CombatChipT4_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Grechka_CombatChipT4_Item</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Grechka_CombatChipT4_Hediff</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>Remove_Grechka_CombatChipT4</defName>
+    <label>извлечь: чип «берсерк» T4</label>
+    <description>Снять имплант и вернуть пригодный к повторной установке предмет.</description>
+    <jobString>Извлечение импланта.</jobString>
+    <removesHediff>Grechka_CombatChipT4_Hediff</removesHediff>
+    <workerClass>Grechka.Equipment.Recipe_RemoveFamily</workerClass>
+  </RecipeDef>
+  <ThingDef ParentName="BodyPartBase">
+    <defName>Grechka_CombatChipT5_Item</defName>
+    <label>чип «берсерк» T5</label>
+    <description>Мозговой имплант. Разные семейства совместимы; другой тир этого семейства заменяется с возвратом старого чипа.</description>
+    <graphicData>
+      <texPath>Items/GrechkaBrainT5</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>BodyPartsBionic</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <MarketValue>12000</MarketValue>
+      <Mass>0.1</Mass>
+    </statBases>
+    <costList>
+      <Gold>10</Gold>
+      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>5</Grechka_GrechkaConcentrate>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>FabricationBench</li>
+        <li>Grechka_AssemblyBenchT5_Building</li>
+      </recipeUsers>
+    </recipeMaker>
+    <techLevel>Archotech</techLevel>
+  </ThingDef>
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>Grechka_CombatChipT5_Hediff</defName>
+    <label>чип «берсерк» T5</label>
+    <spawnThingOnRemoved>Grechka_CombatChipT5_Item</spawnThingOnRemoved>
+    <modExtensions>
+      <li Class="Grechka.Equipment.ImplantFamily">
+        <family>Combat</family>
+        <stableMind>true</stableMind>
+      </li>
+    </modExtensions>
+    <stages>
+      <li>
+        <painFactor>0</painFactor>
+        <statOffsets>
+          <MoveSpeed>4</MoveSpeed>
+          <MeleeDodgeChance>0.2</MeleeDodgeChance>
+        </statOffsets>
+        <statFactors>
+          <MeleeDamageFactor>2</MeleeDamageFactor>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>Install_Grechka_CombatChipT5</defName>
+    <label>установить: чип «берсерк» T5</label>
+    <description>Установить чип «берсерк» T5. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</description>
+    <jobString>Установка импланта.</jobString>
+    <workerClass>Grechka.Equipment.Recipe_InstallFamily</workerClass>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_CombatChipT5_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Grechka_CombatChipT5_Item</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Grechka_CombatChipT5_Hediff</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>Remove_Grechka_CombatChipT5</defName>
+    <label>извлечь: чип «берсерк» T5</label>
+    <description>Снять имплант и вернуть пригодный к повторной установке предмет.</description>
+    <jobString>Извлечение импланта.</jobString>
+    <removesHediff>Grechka_CombatChipT5_Hediff</removesHediff>
+    <workerClass>Grechka.Equipment.Recipe_RemoveFamily</workerClass>
+  </RecipeDef>
+  <ThingDef ParentName="BodyPartBase">
+    <defName>Grechka_StabilityChipT4_Item</defName>
+    <label>чип «стальной разум» T4</label>
+    <description>Мозговой имплант. Разные семейства совместимы; другой тир этого семейства заменяется с возвратом старого чипа.</description>
+    <graphicData>
+      <texPath>Items/MythicBrainT4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>BodyPartsBionic</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <MarketValue>4000</MarketValue>
+      <Mass>0.1</Mass>
+    </statBases>
+    <costList>
+      <Gold>10</Gold>
+      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>5</Grechka_ArchoSubstrate>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>FabricationBench</li>
+        <li>Grechka_AssemblyBenchT4_Building</li>
+      </recipeUsers>
+    </recipeMaker>
+    <techLevel>Archotech</techLevel>
+  </ThingDef>
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>Grechka_StabilityChipT4_Hediff</defName>
+    <label>чип «стальной разум» T4</label>
+    <spawnThingOnRemoved>Grechka_StabilityChipT4_Item</spawnThingOnRemoved>
+    <modExtensions>
+      <li Class="Grechka.Equipment.ImplantFamily">
+        <family>Stability</family>
+        <stableMind>true</stableMind>
+      </li>
+    </modExtensions>
+    <stages>
+      <li />
+    </stages>
+  </HediffDef>
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>Install_Grechka_StabilityChipT4</defName>
+    <label>установить: чип «стальной разум» T4</label>
+    <description>Установить чип «стальной разум» T4. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</description>
+    <jobString>Установка импланта.</jobString>
+    <workerClass>Grechka.Equipment.Recipe_InstallFamily</workerClass>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_StabilityChipT4_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Grechka_StabilityChipT4_Item</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Grechka_StabilityChipT4_Hediff</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>Remove_Grechka_StabilityChipT4</defName>
+    <label>извлечь: чип «стальной разум» T4</label>
+    <description>Снять имплант и вернуть пригодный к повторной установке предмет.</description>
+    <jobString>Извлечение импланта.</jobString>
+    <removesHediff>Grechka_StabilityChipT4_Hediff</removesHediff>
+    <workerClass>Grechka.Equipment.Recipe_RemoveFamily</workerClass>
+  </RecipeDef>
+  <ThingDef ParentName="BodyPartBase">
+    <defName>Grechka_StabilityChipT5_Item</defName>
+    <label>чип «стальной разум» T5</label>
+    <description>Мозговой имплант. Разные семейства совместимы; другой тир этого семейства заменяется с возвратом старого чипа.</description>
+    <graphicData>
+      <texPath>Items/GrechkaBrainT5</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>BodyPartsBionic</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <MarketValue>12000</MarketValue>
+      <Mass>0.1</Mass>
+    </statBases>
+    <costList>
+      <Gold>10</Gold>
+      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>5</Grechka_GrechkaConcentrate>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>FabricationBench</li>
+        <li>Grechka_AssemblyBenchT5_Building</li>
+      </recipeUsers>
+    </recipeMaker>
+    <techLevel>Archotech</techLevel>
+  </ThingDef>
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>Grechka_StabilityChipT5_Hediff</defName>
+    <label>чип «стальной разум» T5</label>
+    <spawnThingOnRemoved>Grechka_StabilityChipT5_Item</spawnThingOnRemoved>
+    <modExtensions>
+      <li Class="Grechka.Equipment.ImplantFamily">
+        <family>Stability</family>
+        <stableMind>true</stableMind>
+      </li>
+    </modExtensions>
+    <stages>
+      <li />
+    </stages>
+  </HediffDef>
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>Install_Grechka_StabilityChipT5</defName>
+    <label>установить: чип «стальной разум» T5</label>
+    <description>Установить чип «стальной разум» T5. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</description>
+    <jobString>Установка импланта.</jobString>
+    <workerClass>Grechka.Equipment.Recipe_InstallFamily</workerClass>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_StabilityChipT5_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Grechka_StabilityChipT5_Item</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Grechka_StabilityChipT5_Hediff</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>Remove_Grechka_StabilityChipT5</defName>
+    <label>извлечь: чип «стальной разум» T5</label>
+    <description>Снять имплант и вернуть пригодный к повторной установке предмет.</description>
+    <jobString>Извлечение импланта.</jobString>
+    <removesHediff>Grechka_StabilityChipT5_Hediff</removesHediff>
+    <workerClass>Grechka.Equipment.Recipe_RemoveFamily</workerClass>
+  </RecipeDef>
+  <ThingDef ParentName="BodyPartBase">
+    <defName>Grechka_CraftChipT4_Item</defName>
+    <label>чип «ремесленник» T4</label>
+    <description>Мозговой имплант. Разные семейства совместимы; другой тир этого семейства заменяется с возвратом старого чипа.</description>
+    <graphicData>
+      <texPath>Items/MythicBrainT4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>BodyPartsBionic</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <MarketValue>4000</MarketValue>
+      <Mass>0.1</Mass>
+    </statBases>
+    <costList>
+      <Gold>10</Gold>
+      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>5</Grechka_ArchoSubstrate>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>FabricationBench</li>
+        <li>Grechka_AssemblyBenchT4_Building</li>
+      </recipeUsers>
+    </recipeMaker>
+    <techLevel>Archotech</techLevel>
+  </ThingDef>
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>Grechka_CraftChipT4_Hediff</defName>
+    <label>чип «ремесленник» T4</label>
+    <spawnThingOnRemoved>Grechka_CraftChipT4_Item</spawnThingOnRemoved>
+    <modExtensions>
+      <li Class="Grechka.Equipment.ImplantFamily">
+        <family>Craft</family>
+        <stableMind>false</stableMind>
+      </li>
+    </modExtensions>
+    <stages>
+      <li>
+        <statFactors>
+          <WorkSpeedGlobal>1.5</WorkSpeedGlobal>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>Install_Grechka_CraftChipT4</defName>
+    <label>установить: чип «ремесленник» T4</label>
+    <description>Установить чип «ремесленник» T4. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</description>
+    <jobString>Установка импланта.</jobString>
+    <workerClass>Grechka.Equipment.Recipe_InstallFamily</workerClass>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_CraftChipT4_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Grechka_CraftChipT4_Item</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Grechka_CraftChipT4_Hediff</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>Remove_Grechka_CraftChipT4</defName>
+    <label>извлечь: чип «ремесленник» T4</label>
+    <description>Снять имплант и вернуть пригодный к повторной установке предмет.</description>
+    <jobString>Извлечение импланта.</jobString>
+    <removesHediff>Grechka_CraftChipT4_Hediff</removesHediff>
+    <workerClass>Grechka.Equipment.Recipe_RemoveFamily</workerClass>
+  </RecipeDef>
+  <ThingDef ParentName="BodyPartBase">
+    <defName>Grechka_CraftChipT5_Item</defName>
+    <label>чип «ремесленник» T5</label>
+    <description>Мозговой имплант. Разные семейства совместимы; другой тир этого семейства заменяется с возвратом старого чипа.</description>
+    <graphicData>
+      <texPath>Items/GrechkaBrainT5</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>BodyPartsBionic</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <MarketValue>12000</MarketValue>
+      <Mass>0.1</Mass>
+    </statBases>
+    <costList>
+      <Gold>10</Gold>
+      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>5</Grechka_GrechkaConcentrate>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>FabricationBench</li>
+        <li>Grechka_AssemblyBenchT5_Building</li>
+      </recipeUsers>
+    </recipeMaker>
+    <techLevel>Archotech</techLevel>
+  </ThingDef>
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>Grechka_CraftChipT5_Hediff</defName>
+    <label>чип «ремесленник» T5</label>
+    <spawnThingOnRemoved>Grechka_CraftChipT5_Item</spawnThingOnRemoved>
+    <modExtensions>
+      <li Class="Grechka.Equipment.ImplantFamily">
+        <family>Craft</family>
+        <stableMind>false</stableMind>
+      </li>
+    </modExtensions>
+    <stages>
+      <li>
+        <statFactors>
+          <WorkSpeedGlobal>2</WorkSpeedGlobal>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>Install_Grechka_CraftChipT5</defName>
+    <label>установить: чип «ремесленник» T5</label>
+    <description>Установить чип «ремесленник» T5. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</description>
+    <jobString>Установка импланта.</jobString>
+    <workerClass>Grechka.Equipment.Recipe_InstallFamily</workerClass>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_CraftChipT5_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Grechka_CraftChipT5_Item</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Grechka_CraftChipT5_Hediff</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>Remove_Grechka_CraftChipT5</defName>
+    <label>извлечь: чип «ремесленник» T5</label>
+    <description>Снять имплант и вернуть пригодный к повторной установке предмет.</description>
+    <jobString>Извлечение импланта.</jobString>
+    <removesHediff>Grechka_CraftChipT5_Hediff</removesHediff>
+    <workerClass>Grechka.Equipment.Recipe_RemoveFamily</workerClass>
+  </RecipeDef>
+  <ThingDef ParentName="BodyPartBase">
+    <defName>Grechka_MovementChipT4_Item</defName>
+    <label>чип «следопыт» T4</label>
+    <description>Мозговой имплант. Разные семейства совместимы; другой тир этого семейства заменяется с возвратом старого чипа.</description>
+    <graphicData>
+      <texPath>Items/MythicBrainT4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>BodyPartsBionic</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <MarketValue>4000</MarketValue>
+      <Mass>0.1</Mass>
+    </statBases>
+    <costList>
+      <Gold>10</Gold>
+      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>5</Grechka_ArchoSubstrate>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>FabricationBench</li>
+        <li>Grechka_AssemblyBenchT4_Building</li>
+      </recipeUsers>
+    </recipeMaker>
+    <techLevel>Archotech</techLevel>
+  </ThingDef>
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>Grechka_MovementChipT4_Hediff</defName>
+    <label>чип «следопыт» T4</label>
+    <spawnThingOnRemoved>Grechka_MovementChipT4_Item</spawnThingOnRemoved>
+    <modExtensions>
+      <li Class="Grechka.Equipment.ImplantFamily">
+        <family>Movement</family>
+        <stableMind>false</stableMind>
+      </li>
+    </modExtensions>
+    <stages>
+      <li>
+        <statOffsets>
+          <MoveSpeed>1</MoveSpeed>
+        </statOffsets>
+        <restFallFactor>0.75</restFallFactor>
+      </li>
+    </stages>
+  </HediffDef>
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>Install_Grechka_MovementChipT4</defName>
+    <label>установить: чип «следопыт» T4</label>
+    <description>Установить чип «следопыт» T4. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</description>
+    <jobString>Установка импланта.</jobString>
+    <workerClass>Grechka.Equipment.Recipe_InstallFamily</workerClass>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_MovementChipT4_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Grechka_MovementChipT4_Item</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Grechka_MovementChipT4_Hediff</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>Remove_Grechka_MovementChipT4</defName>
+    <label>извлечь: чип «следопыт» T4</label>
+    <description>Снять имплант и вернуть пригодный к повторной установке предмет.</description>
+    <jobString>Извлечение импланта.</jobString>
+    <removesHediff>Grechka_MovementChipT4_Hediff</removesHediff>
+    <workerClass>Grechka.Equipment.Recipe_RemoveFamily</workerClass>
+  </RecipeDef>
+  <ThingDef ParentName="BodyPartBase">
+    <defName>Grechka_MovementChipT5_Item</defName>
+    <label>чип «следопыт» T5</label>
+    <description>Мозговой имплант. Разные семейства совместимы; другой тир этого семейства заменяется с возвратом старого чипа.</description>
+    <graphicData>
+      <texPath>Items/GrechkaBrainT5</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>BodyPartsBionic</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <MarketValue>12000</MarketValue>
+      <Mass>0.1</Mass>
+    </statBases>
+    <costList>
+      <Gold>10</Gold>
+      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>5</Grechka_GrechkaConcentrate>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>FabricationBench</li>
+        <li>Grechka_AssemblyBenchT5_Building</li>
+      </recipeUsers>
+    </recipeMaker>
+    <techLevel>Archotech</techLevel>
+  </ThingDef>
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>Grechka_MovementChipT5_Hediff</defName>
+    <label>чип «следопыт» T5</label>
+    <spawnThingOnRemoved>Grechka_MovementChipT5_Item</spawnThingOnRemoved>
+    <modExtensions>
+      <li Class="Grechka.Equipment.ImplantFamily">
+        <family>Movement</family>
+        <stableMind>false</stableMind>
+      </li>
+    </modExtensions>
+    <stages>
+      <li>
+        <statOffsets>
+          <MoveSpeed>2</MoveSpeed>
+        </statOffsets>
+        <restFallFactor>0.5</restFallFactor>
+      </li>
+    </stages>
+  </HediffDef>
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>Install_Grechka_MovementChipT5</defName>
+    <label>установить: чип «следопыт» T5</label>
+    <description>Установить чип «следопыт» T5. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</description>
+    <jobString>Установка импланта.</jobString>
+    <workerClass>Grechka.Equipment.Recipe_InstallFamily</workerClass>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_MovementChipT5_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Grechka_MovementChipT5_Item</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Grechka_MovementChipT5_Hediff</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>Remove_Grechka_MovementChipT5</defName>
+    <label>извлечь: чип «следопыт» T5</label>
+    <description>Снять имплант и вернуть пригодный к повторной установке предмет.</description>
+    <jobString>Извлечение импланта.</jobString>
+    <removesHediff>Grechka_MovementChipT5_Hediff</removesHediff>
+    <workerClass>Grechka.Equipment.Recipe_RemoveFamily</workerClass>
+  </RecipeDef>
+  <ThingDef ParentName="BodyPartBase">
+    <defName>Grechka_TonicChipT4_Item</defName>
+    <label>чип «тонизатор» T4</label>
+    <description>Мозговой имплант. Разные семейства совместимы; другой тир этого семейства заменяется с возвратом старого чипа.</description>
+    <graphicData>
+      <texPath>Items/MythicBrainT4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>BodyPartsBionic</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <MarketValue>4000</MarketValue>
+      <Mass>0.1</Mass>
+    </statBases>
+    <costList>
+      <Gold>10</Gold>
+      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>5</Grechka_ArchoSubstrate>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>FabricationBench</li>
+        <li>Grechka_AssemblyBenchT4_Building</li>
+      </recipeUsers>
+    </recipeMaker>
+    <techLevel>Archotech</techLevel>
+  </ThingDef>
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>Grechka_TonicChipT4_Hediff</defName>
+    <label>чип «тонизатор» T4</label>
+    <spawnThingOnRemoved>Grechka_TonicChipT4_Item</spawnThingOnRemoved>
+    <modExtensions>
+      <li Class="Grechka.Equipment.ImplantFamily">
+        <family>Tonic</family>
+        <stableMind>false</stableMind>
+      </li>
+    </modExtensions>
+    <stages>
+      <li>
+        <restFallFactor>0.5</restFallFactor>
+        <hungerRateFactor>0.5</hungerRateFactor>
+      </li>
+    </stages>
+  </HediffDef>
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>Install_Grechka_TonicChipT4</defName>
+    <label>установить: чип «тонизатор» T4</label>
+    <description>Установить чип «тонизатор» T4. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</description>
+    <jobString>Установка импланта.</jobString>
+    <workerClass>Grechka.Equipment.Recipe_InstallFamily</workerClass>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_TonicChipT4_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Grechka_TonicChipT4_Item</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Grechka_TonicChipT4_Hediff</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>Remove_Grechka_TonicChipT4</defName>
+    <label>извлечь: чип «тонизатор» T4</label>
+    <description>Снять имплант и вернуть пригодный к повторной установке предмет.</description>
+    <jobString>Извлечение импланта.</jobString>
+    <removesHediff>Grechka_TonicChipT4_Hediff</removesHediff>
+    <workerClass>Grechka.Equipment.Recipe_RemoveFamily</workerClass>
+  </RecipeDef>
+  <ThingDef ParentName="BodyPartBase">
+    <defName>Grechka_TonicChipT5_Item</defName>
+    <label>чип «тонизатор» T5</label>
+    <description>Мозговой имплант. Разные семейства совместимы; другой тир этого семейства заменяется с возвратом старого чипа.</description>
+    <graphicData>
+      <texPath>Items/GrechkaBrainT5</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>BodyPartsBionic</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <MarketValue>12000</MarketValue>
+      <Mass>0.1</Mass>
+    </statBases>
+    <costList>
+      <Gold>10</Gold>
+      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>5</Grechka_GrechkaConcentrate>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>FabricationBench</li>
+        <li>Grechka_AssemblyBenchT5_Building</li>
+      </recipeUsers>
+    </recipeMaker>
+    <techLevel>Archotech</techLevel>
+  </ThingDef>
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>Grechka_TonicChipT5_Hediff</defName>
+    <label>чип «тонизатор» T5</label>
+    <spawnThingOnRemoved>Grechka_TonicChipT5_Item</spawnThingOnRemoved>
+    <modExtensions>
+      <li Class="Grechka.Equipment.ImplantFamily">
+        <family>Tonic</family>
+        <stableMind>false</stableMind>
+      </li>
+    </modExtensions>
+    <stages>
+      <li>
+        <restFallFactor>0.25</restFallFactor>
+        <hungerRateFactor>0.25</hungerRateFactor>
+      </li>
+    </stages>
+  </HediffDef>
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>Install_Grechka_TonicChipT5</defName>
+    <label>установить: чип «тонизатор» T5</label>
+    <description>Установить чип «тонизатор» T5. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</description>
+    <jobString>Установка импланта.</jobString>
+    <workerClass>Grechka.Equipment.Recipe_InstallFamily</workerClass>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_TonicChipT5_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Grechka_TonicChipT5_Item</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Grechka_TonicChipT5_Hediff</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>Remove_Grechka_TonicChipT5</defName>
+    <label>извлечь: чип «тонизатор» T5</label>
+    <description>Снять имплант и вернуть пригодный к повторной установке предмет.</description>
+    <jobString>Извлечение импланта.</jobString>
+    <removesHediff>Grechka_TonicChipT5_Hediff</removesHediff>
+    <workerClass>Grechka.Equipment.Recipe_RemoveFamily</workerClass>
+  </RecipeDef>
+  <ThingDef ParentName="BodyPartBase">
+    <defName>Grechka_BrainChipT5_Item</defName>
+    <label>чип «гречневый разум» T5</label>
+    <description>Мозговой имплант. Разные семейства совместимы; другой тир этого семейства заменяется с возвратом старого чипа.</description>
+    <graphicData>
+      <texPath>Items/GrechkaBrainChipT5</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>BodyPartsBionic</li>
+    </thingCategories>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <MarketValue>12000</MarketValue>
+      <Mass>0.1</Mass>
+    </statBases>
+    <costList>
+      <Gold>10</Gold>
+      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>5</Grechka_GrechkaConcentrate>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>FabricationBench</li>
+        <li>Grechka_AssemblyBenchT5_Building</li>
+      </recipeUsers>
+    </recipeMaker>
+    <techLevel>Archotech</techLevel>
+  </ThingDef>
+  <HediffDef ParentName="ImplantHediffBase">
+    <defName>Grechka_BrainChipT5_Hediff</defName>
+    <label>чип «гречневый разум» T5</label>
+    <spawnThingOnRemoved>Grechka_BrainChipT5_Item</spawnThingOnRemoved>
+    <modExtensions>
+      <li Class="Grechka.Equipment.ImplantFamily">
+        <family>Brain</family>
+        <stableMind>false</stableMind>
+      </li>
+    </modExtensions>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>Install_Grechka_BrainChipT5</defName>
+    <label>установить: чип «гречневый разум» T5</label>
+    <description>Установить чип «гречневый разум» T5. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</description>
+    <jobString>Установка импланта.</jobString>
+    <workerClass>Grechka.Equipment.Recipe_InstallFamily</workerClass>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_BrainChipT5_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Grechka_BrainChipT5_Item</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Brain</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>Grechka_BrainChipT5_Hediff</addsHediff>
+  </RecipeDef>
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>Remove_Grechka_BrainChipT5</defName>
+    <label>извлечь: чип «гречневый разум» T5</label>
+    <description>Снять имплант и вернуть пригодный к повторной установке предмет.</description>
+    <jobString>Извлечение импланта.</jobString>
+    <removesHediff>Grechka_BrainChipT5_Hediff</removesHediff>
+    <workerClass>Grechka.Equipment.Recipe_RemoveFamily</workerClass>
+  </RecipeDef>
+  <ThoughtDef>
+    <defName>Grechka_BrainChipMood</defName>
+    <label>гречневая ясность</label>
+    <workerClass>Grechka.Equipment.ThoughtWorker_GrechkaChip</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>гречневая ясность</label>
+        <description>Гречневый чип даёт спокойствие и ясность мысли.</description>
+        <baseMoodEffect>16</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

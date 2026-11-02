@@ -83,6 +83,7 @@ namespace Grechka.Storage
         private Vector2 scroll;
         private int tab;
         private readonly StorageTerminalUI terminal = new StorageTerminalUI();
+        private readonly AutocraftUI crafting = new AutocraftUI();
         public override Vector2 InitialSize { get { return new Vector2(850, 640); } }
         public Window_SignalNetwork(CompSignalNode controller)
         {
@@ -108,9 +109,11 @@ namespace Grechka.Storage
             Widgets.Label(new Rect(0, 42, rect.width, 30), (online ? "Сеть доступна" : "Нет работающего контроллера")
                 + "   |   Контроллеров: " + controllers.Count + "   |   Кабелей: " + view.CableCount
                 + "   |   Устройств: " + view.Devices.Count);
-            string[] tabs = { "Склад", "Диски", "Устройства", "Переносы" };
+            string[] tabs = { "Склад", "Диски", "Устройства", "Переносы", "Автокрафт" };
             for (int i = 0; i < tabs.Length; i++)
-                if (Widgets.ButtonText(new Rect(i * rect.width / 4, 81, rect.width / 4 - 5, 32), (tab == i ? "• " : "") + tabs[i])) tab = i;
+                if (Widgets.ButtonText(new Rect(i * rect.width / tabs.Length, 81, rect.width / tabs.Length - 5, 32), (tab == i ? "• " : "") + tabs[i])) tab = i;
+            if (tab == 4 && controller.parent is Building_StorageController craftController)
+            { crafting.Draw(new Rect(0, 128, rect.width, rect.height - 133), craftController); return; }
             if (tab != 2)
             {
                 if (controller.parent is Building_StorageController building)

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef>
+    <defName>Grechka_ArchoAcceleration</defName><label>архо-ускорение</label><hediffClass>HediffWithComps</hediffClass><isBad>false</isBad>
+    <comps><li Class="HediffCompProperties_Disappears"><disappearsAfterTicks>120~120</disappearsAfterTicks></li></comps>
+    <stages>
+      <li><minSeverity>0</minSeverity><statFactors><MoveSpeed>1.25</MoveSpeed><WorkSpeedGlobal>1.25</WorkSpeedGlobal></statFactors></li>
+      <li><minSeverity>0.9</minSeverity><statFactors><MoveSpeed>1.6</MoveSpeed><WorkSpeedGlobal>1.6</WorkSpeedGlobal></statFactors></li>
+    </stages>
+  </HediffDef>
+  <HediffDef>
+    <defName>Grechka_ArchoSuppression</defName><label>архо-подавление</label><hediffClass>HediffWithComps</hediffClass><isBad>true</isBad>
+    <comps><li Class="HediffCompProperties_Disappears"><disappearsAfterTicks>120~120</disappearsAfterTicks></li></comps>
+    <stages>
+      <li><minSeverity>0</minSeverity><statFactors><MoveSpeed>0.75</MoveSpeed><MeleeHitChance>0.8</MeleeHitChance><ShootingAccuracyPawn>0.8</ShootingAccuracyPawn></statFactors></li>
+      <li><minSeverity>0.9</minSeverity><statFactors><MoveSpeed>0.5</MoveSpeed><MeleeHitChance>0.6</MeleeHitChance><ShootingAccuracyPawn>0.6</ShootingAccuracyPawn></statFactors></li>
+    </stages>
+  </HediffDef>
+</Defs>

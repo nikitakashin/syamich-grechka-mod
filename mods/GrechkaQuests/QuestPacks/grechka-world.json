@@ -1,0 +1,1191 @@
+{
+  "schemaVersion": 1,
+  "id": "grechka.world",
+  "title": "Grechka World — от стали до гречки",
+  "chapters": [
+    {
+      "id": "start",
+      "title": "Добро пожаловать",
+      "icon": "ChapterGettingStarted"
+    },
+    {
+      "id": "t1",
+      "title": "T1: сборка и корпуса",
+      "icon": "ChapterConstruction"
+    },
+    {
+      "id": "t2",
+      "title": "T2: серийное производство",
+      "icon": "ChapterProduction"
+    },
+    {
+      "id": "storage",
+      "title": "Цифровой склад",
+      "icon": "ChapterStorage"
+    },
+    {
+      "id": "t3",
+      "title": "T3: механиты",
+      "icon": "ChapterMechanites"
+    },
+    {
+      "id": "auto",
+      "title": "Автокрафт",
+      "icon": "ChapterAutocrafting"
+    },
+    {
+      "id": "t4",
+      "title": "T4: архотехнологии",
+      "icon": "ChapterArchotech"
+    },
+    {
+      "id": "t5",
+      "title": "T5: гречневый финал",
+      "icon": "ChapterGrechka"
+    },
+    {
+      "id": "gear",
+      "title": "Оснащение",
+      "icon": "ChapterEquipment"
+    },
+    {
+      "id": "milestones",
+      "title": "Производственные вехи",
+      "icon": "ChapterEnergy"
+    }
+  ],
+  "quests": [
+    {
+      "id": "start.guide",
+      "chapter": "start",
+      "title": "Здесь решает производство",
+      "description": "Все исследования в новой Grechka World уже завершены. Доступность машины определяют её материалы, компоненты и корпус. Книга ничего не забирает и не открывает рецепты. Даже закрытые задания учитывают цели заранее; награда доступна после предыдущих заданий. Клавиша книги по умолчанию — 5, её можно изменить в настройках. Прочитайте и отметьте цель вручную.",
+      "icon": "ObjectiveManual",
+      "graphX": 0,
+      "graphY": 0,
+      "graphPositioned": true,
+      "requires": [],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "manual",
+          "target": "",
+          "count": 1,
+          "text": "Здесь решает производство"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "WoodLog",
+          "count": 50,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "start.steel",
+      "chapter": "start",
+      "title": "Первый запас стали",
+      "description": "Нужно одновременно иметь 150 стали. Можно добыть, купить или найти: это цель наличия. После достижения отметка сохранится, сталь останется у вас.",
+      "icon": "Steel",
+      "graphX": 225,
+      "graphY": 0,
+      "graphPositioned": true,
+      "requires": [
+        "start.guide"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "have",
+          "target": "Steel",
+          "count": 150,
+          "text": "Первый запас стали"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "ComponentIndustrial",
+          "count": 4,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "start.food",
+      "chapter": "start",
+      "title": "Не забывай про колонию",
+      "description": "Высокие технологии не отменяют еду и сон. Соберите 30 риса с растений: покупка и переноска не считаются урожаем. Эта боковая задача необязательна для промышленной цепочки.",
+      "icon": "RawRice",
+      "graphX": 0,
+      "graphY": 135,
+      "graphPositioned": true,
+      "requires": [
+        "start.guide"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "harvest",
+          "target": "RawRice",
+          "count": 30,
+          "text": "Не забывай про колонию"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "MealSurvivalPack",
+          "count": 5,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "t1.bench",
+      "chapter": "t1",
+      "title": "Первое рабочее место",
+      "description": "Постройте базовый сборочный верстак, используя корпус с ремесленного места. На верстаке доступна серия обычных компонентов и подготовка продвинутого корпуса.",
+      "icon": "Grechka_AssemblyBenchT1_Building",
+      "graphX": 0,
+      "graphY": 0,
+      "graphPositioned": true,
+      "requires": [
+        "t1.housing"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "build",
+          "target": "Grechka_AssemblyBenchT1_Building",
+          "count": 1,
+          "text": "Первое рабочее место"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "Steel",
+          "count": 50,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "t1.housing",
+      "chapter": "t1",
+      "title": "Корпус — основа машины",
+      "description": "Постройте обычное ремесленное место и изготовьте на нём базовый корпус. Это ручной старт: корпус ещё не требует сборочного верстака. При необходимости обычные компоненты тоже можно собрать вручную из стали.",
+      "icon": "Grechka_HousingT1_Item",
+      "graphX": 225,
+      "graphY": 0,
+      "graphPositioned": true,
+      "requires": [
+        "start.steel"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "produce",
+          "target": "Grechka_HousingT1_Item",
+          "count": 1,
+          "text": "Корпус — основа машины"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "ComponentIndustrial",
+          "count": 6,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "t1.components",
+      "chapter": "t1",
+      "title": "Серия компонентов",
+      "description": "Произведите 10 обычных компонентов. Покупка не заменит производство, но купленные детали можно свободно использовать для строительства. Цель учитывает реальный выпуск, в том числе поддерживаемыми фабриками.",
+      "icon": "ComponentIndustrial",
+      "graphX": 0,
+      "graphY": 135,
+      "graphPositioned": true,
+      "requires": [
+        "t1.bench"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "produce",
+          "target": "ComponentIndustrial",
+          "count": 10,
+          "text": "Серия компонентов"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "Grechka_LuckyBlockT1_Item",
+          "count": 1,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "t2.housing",
+      "chapter": "t2",
+      "title": "Следующий корпус",
+      "description": "На базовом сборочном верстаке подготовьте продвинутый корпус. Более высокий тир ускоряет работу, даёт бонус выхода и уменьшает расход, но требует больше электричества.",
+      "icon": "Grechka_HousingT2_Item",
+      "graphX": 0,
+      "graphY": 0,
+      "graphPositioned": true,
+      "requires": [
+        "t1.bench"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "produce",
+          "target": "Grechka_HousingT2_Item",
+          "count": 1,
+          "text": "Следующий корпус"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "Gold",
+          "count": 15,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "t2.bench",
+      "chapter": "t2",
+      "title": "Продвинутый стол",
+      "description": "Постройте T2 из меню вариантов либо улучшите уже установленный стол. При улучшении сохраняются заказы и положение; вклад прежней машины учитывается в стоимости.",
+      "icon": "Grechka_AssemblyBenchT2_Building",
+      "graphX": 225,
+      "graphY": 0,
+      "graphPositioned": true,
+      "requires": [
+        "t2.housing"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "build",
+          "target": "Grechka_AssemblyBenchT2_Building",
+          "count": 1,
+          "text": "Продвинутый стол"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "Plasteel",
+          "count": 30,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "t2.components",
+      "chapter": "t2",
+      "title": "Продвинутые компоненты",
+      "description": "Произведите 5 продвинутых компонентов. Они — следующий общий строительный ресурс. Квестовая награда лишь помогает, вся цепочка доступна без неё.",
+      "icon": "ComponentSpacer",
+      "graphX": 0,
+      "graphY": 135,
+      "graphPositioned": true,
+      "requires": [
+        "t2.bench"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "produce",
+          "target": "ComponentSpacer",
+          "count": 5,
+          "text": "Продвинутые компоненты"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "Grechka_LuckyBlockT2_Item",
+          "count": 1,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "storage.quartz",
+      "chapter": "storage",
+      "title": "Белые жилы",
+      "description": "Добудьте 30 кварца из жил. Кварц также продаётся и встречается в минеральных метеоритах; для этой цели нужна именно добыча.",
+      "icon": "Grechka_Quartz",
+      "graphX": 0,
+      "graphY": 0,
+      "graphPositioned": true,
+      "requires": [
+        "t1.housing"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "mine",
+          "target": "Grechka_Quartz",
+          "count": 30,
+          "text": "Белые жилы"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "Silver",
+          "count": 100,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "storage.inscriber",
+      "chapter": "storage",
+      "title": "Три процессора",
+      "description": "Постройте электрический высекатель. Рецепты доступны сразу, прессы не нужны. Кремниевая подложка, кварц, серебро и золото позволяют собрать три вида процессоров.",
+      "icon": "Grechka_Inscriber",
+      "graphX": 225,
+      "graphY": 0,
+      "graphPositioned": true,
+      "requires": [
+        "storage.quartz"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "build",
+          "target": "Grechka_Inscriber",
+          "count": 1,
+          "text": "Три процессора"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "Gold",
+          "count": 15,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "storage.processor",
+      "chapter": "storage",
+      "title": "Кварцевая логика",
+      "description": "Изготовьте 8 кварцевых процессоров. Внимательно смотрите промежуточные рецепты: кварцевая пыль и кремний нужны для подложек.",
+      "icon": "Grechka_QuartzProcessor",
+      "graphX": 0,
+      "graphY": 135,
+      "graphPositioned": true,
+      "requires": [
+        "storage.inscriber"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "produce",
+          "target": "Grechka_QuartzProcessor",
+          "count": 8,
+          "text": "Кварцевая логика"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "Silver",
+          "count": 120,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "storage.controller",
+      "chapter": "storage",
+      "title": "Один контроллер, вся сеть",
+      "description": "Постройте контроллер 1×1. Он открывает склад, диски, устройства и автокрафт. Подземный кварцевый кабель передаёт сигнал; электричество требует отдельного питания. Дополнительный контроллер не добавляет каналов: каналов здесь нет.",
+      "icon": "Grechka_StorageController",
+      "graphX": 225,
+      "graphY": 135,
+      "graphPositioned": true,
+      "requires": [
+        "storage.processor",
+        "t3.components"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "build",
+          "target": "Grechka_StorageController",
+          "count": 1,
+          "text": "Один контроллер, вся сеть"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "Grechka_LuckyBlockStorageT2_Item",
+          "count": 1,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "storage.rack",
+      "chapter": "storage",
+      "title": "Диски хранят настоящие вещи",
+      "description": "Постройте дисковый блок 1×1, соедините сигнальным кабелем и установите диск через контроллер. На каждом диске 63 типа, объём зависит от размера; свойства предметов сохраняются. Цель проверяет здание, а не исправность сети.",
+      "icon": "Grechka_DiskRack",
+      "graphX": 0,
+      "graphY": 270,
+      "graphPositioned": true,
+      "requires": [
+        "storage.controller"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "build",
+          "target": "Grechka_DiskRack",
+          "count": 1,
+          "text": "Диски хранят настоящие вещи"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "Steel",
+          "count": 100,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "storage.disk",
+      "chapter": "storage",
+      "title": "Первый килобайт",
+      "description": "Иметь диск 1K. Закажите приём вещей через контроллер: пешка перенесёт их физически. Выдача также идёт переноской. Обычные диски сохраняют порчу пищи; морозильные замораживают её даже в караване. Кнопка оптимизации перераспределяет предметы по размерам дисков.",
+      "icon": "Grechka_Disk_1K_Item",
+      "graphX": 225,
+      "graphY": 270,
+      "graphPositioned": true,
+      "requires": [
+        "storage.rack"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "have",
+          "target": "Grechka_Disk_1K_Item",
+          "count": 1,
+          "text": "Первый килобайт"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "Grechka_LuckyBlockStorageT1_Item",
+          "count": 1,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "storage.certus",
+      "chapter": "storage",
+      "title": "Кристаллическая ферма",
+      "description": "Найдите событие метеорита на мировой карте и отправьте караван. Привезите сертус-кварц и переносимый источник кристаллов. Источник можно установить на базе и окружить ускорителями. Это цель наличия кварца, не проверка посещения события.",
+      "icon": "Grechka_CertusQuartz",
+      "graphX": 0,
+      "graphY": 405,
+      "graphPositioned": true,
+      "requires": [
+        "storage.quartz"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "have",
+          "target": "Grechka_CertusQuartz",
+          "count": 10,
+          "text": "Кристаллическая ферма"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "Gold",
+          "count": 25,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "t3.extractor",
+      "chapter": "t3",
+      "title": "Механиты без газа",
+      "description": "Постройте извлекатель механитов и обеспечьте электричество. Он получает материал из параллельного измерения. Газовая цепочка не нужна.",
+      "icon": "Grechka_MechaniteExtractorT3_Building",
+      "graphX": 0,
+      "graphY": 0,
+      "graphPositioned": true,
+      "requires": [
+        "t2.components"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "build",
+          "target": "Grechka_MechaniteExtractorT3_Building",
+          "count": 1,
+          "text": "Механиты без газа"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "Plasteel",
+          "count": 60,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "t3.mechanites",
+      "chapter": "t3",
+      "title": "Первый поток механитов",
+      "description": "Дождитесь реального выпуска 60 механитов. Наличие купленного материала не заменяет эту производственную цель.",
+      "icon": "Grechka_Mechanites",
+      "graphX": 225,
+      "graphY": 0,
+      "graphPositioned": true,
+      "requires": [
+        "t3.extractor"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "produce",
+          "target": "Grechka_Mechanites",
+          "count": 60,
+          "text": "Первый поток механитов"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "ComponentSpacer",
+          "count": 5,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "t3.components",
+      "chapter": "t3",
+      "title": "Меха-компонент",
+      "description": "Произведите 6 меха-компонентов. Машина, которой по назначению нужен T3, начинается сразу с T3 — её дешёвых T1/T2 вариантов нет.",
+      "icon": "Grechka_ComponentT3_Item",
+      "graphX": 0,
+      "graphY": 135,
+      "graphPositioned": true,
+      "requires": [
+        "t3.mechanites"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "produce",
+          "target": "Grechka_ComponentT3_Item",
+          "count": 6,
+          "text": "Меха-компонент"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "Grechka_LuckyBlockT3_Item",
+          "count": 1,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "t3.farming",
+      "chapter": "t3",
+      "title": "Мехапоника на одной клетке",
+      "description": "Постройте мехапонику T3: рост ×5, питание 500 Вт, без света и питательного раствора. Сеют и собирают пешки. Поздние T4/T5 растят ещё быстрее и потребляют больше энергии.",
+      "icon": "Grechka_MechaponicsT3_Building",
+      "graphX": 225,
+      "graphY": 135,
+      "graphPositioned": true,
+      "requires": [
+        "t3.components"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "build",
+          "target": "Grechka_MechaponicsT3_Building",
+          "count": 1,
+          "text": "Мехапоника на одной клетке"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "RawRice",
+          "count": 150,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "t3.clean",
+      "chapter": "t3",
+      "title": "Чистая комната",
+      "description": "Ионизатор освещает и очищает всю комнату от грязи, крови и следов. Постройте один, подключите питание и оцените его в рабочем помещении.",
+      "icon": "Grechka_IonizerT3_Building",
+      "graphX": 0,
+      "graphY": 270,
+      "graphPositioned": true,
+      "requires": [
+        "t3.components"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "build",
+          "target": "Grechka_IonizerT3_Building",
+          "count": 1,
+          "text": "Чистая комната"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "MedicineIndustrial",
+          "count": 8,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "auto.crafter",
+      "chapter": "auto",
+      "title": "Стационарный работник",
+      "description": "Поставьте крафтер 1×1 рядом со станками и соедините с кварцевой сетью. Он обслуживает до четырёх соседей и выполняет по одному циклу по кругу. Тир крафтера отвечает за скорость работника, тир станка — за его собственные бонусы.",
+      "icon": "Grechka_StorageCrafterT3_Building",
+      "graphX": 0,
+      "graphY": 0,
+      "graphPositioned": true,
+      "requires": [
+        "storage.disk",
+        "t3.components"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "build",
+          "target": "Grechka_StorageCrafterT3_Building",
+          "count": 1,
+          "text": "Стационарный работник"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "Grechka_LuckyBlockIndustryT3_Item",
+          "count": 1,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "auto.orders",
+      "chapter": "auto",
+      "title": "Без шаблонов",
+      "description": "Откройте автокрафт контроллера. Он показывает реальные рецепты подключённых станков: шаблоны создавать не надо. Закажите изделие, проверьте недостающие материалы и настройте минимальный остаток. Отметка ручная: книга не выдаёт заказ за выполненный автоматически.",
+      "icon": "ObjectiveManual",
+      "graphX": 225,
+      "graphY": 0,
+      "graphPositioned": true,
+      "requires": [
+        "auto.crafter"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "manual",
+          "target": "",
+          "count": 1,
+          "text": "Без шаблонов"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "ComponentSpacer",
+          "count": 5,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "t4.substrate",
+      "chapter": "t4",
+      "title": "Архо-субстрат",
+      "description": "Синтезируйте 20 архо-субстрата. Производственная цепочка и энергия открывают T4 без таймера исследований. Найденный или купленный материал ускоряет развитие, но это задание считает синтез.",
+      "icon": "Grechka_ArchoSubstrate",
+      "graphX": 0,
+      "graphY": 0,
+      "graphPositioned": true,
+      "requires": [
+        "t3.components"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "produce",
+          "target": "Grechka_ArchoSubstrate",
+          "count": 20,
+          "text": "Архо-субстрат"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "Gold",
+          "count": 100,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "t4.components",
+      "chapter": "t4",
+      "title": "Архо-компоненты",
+      "description": "Произведите 4 архо-компонента для поздних машин и оснащения. Один общий промежуточный материал связывает несколько архотехнологий.",
+      "icon": "Grechka_ComponentT4_Item",
+      "graphX": 225,
+      "graphY": 0,
+      "graphPositioned": true,
+      "requires": [
+        "t4.substrate"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "produce",
+          "target": "Grechka_ComponentT4_Item",
+          "count": 4,
+          "text": "Архо-компоненты"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "Grechka_LuckyBlockT4_Item",
+          "count": 1,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "t4.power",
+      "chapter": "t4",
+      "title": "Ванометрия на стероидах",
+      "description": "Постройте архо-генератор T4. Он обеспечивает постоянную мощность без топлива, аварий и охлаждения. Для длинных цепочек материи понадобится ещё больше энергии.",
+      "icon": "Grechka_ArchoGeneratorT4_Building",
+      "graphX": 0,
+      "graphY": 135,
+      "graphPositioned": true,
+      "requires": [
+        "t4.components"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "build",
+          "target": "Grechka_ArchoGeneratorT4_Building",
+          "count": 1,
+          "text": "Ванометрия на стероидах"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "Plasteel",
+          "count": 100,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "t4.matter",
+      "chapter": "t4",
+      "title": "Любая вещь — сырьё",
+      "description": "Получите материю. Переработчик превращает допустимые вещи в материю, синтезатор расходует её на выбранный ресурс. Стоимость связана с базовой ценой ресурса, время и энергия значительны; цены торговца не создают бесплатного цикла.",
+      "icon": "Grechka_Matter",
+      "graphX": 225,
+      "graphY": 135,
+      "graphPositioned": true,
+      "requires": [
+        "t4.power"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "have",
+          "target": "Grechka_Matter",
+          "count": 10,
+          "text": "Любая вещь — сырьё"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "ComponentSpacer",
+          "count": 10,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "t5.ore",
+      "chapter": "t5",
+      "title": "Гречка из недр",
+      "description": "Добудьте 50 гречневой руды. Это промышленная руда, а не еда. Её подготовка ведёт к общему концентрату, компонентам, корпусам и оснащению T5.",
+      "icon": "Grechka_GrechkaOre",
+      "graphX": 0,
+      "graphY": 0,
+      "graphPositioned": true,
+      "requires": [
+        "t4.components"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "mine",
+          "target": "Grechka_GrechkaOre",
+          "count": 50,
+          "text": "Гречка из недр"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "Uranium",
+          "count": 50,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "t5.concentrate",
+      "chapter": "t5",
+      "title": "Гречневый концентрат",
+      "description": "Произведите 30 концентрата для нескольких рецептов финального тира. Руда и подготовленный материал остаются торгуемыми.",
+      "icon": "Grechka_GrechkaConcentrate",
+      "graphX": 225,
+      "graphY": 0,
+      "graphPositioned": true,
+      "requires": [
+        "t5.ore"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "produce",
+          "target": "Grechka_GrechkaConcentrate",
+          "count": 30,
+          "text": "Гречневый концентрат"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "Gold",
+          "count": 150,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "t5.components",
+      "chapter": "t5",
+      "title": "Последний компонент",
+      "description": "Произведите 4 гречневых компонента. T5 заметно ускоряет производство, уменьшает вход и увеличивает выход — вместе с энергопотреблением.",
+      "icon": "Grechka_ComponentT5_Item",
+      "graphX": 0,
+      "graphY": 135,
+      "graphPositioned": true,
+      "requires": [
+        "t5.concentrate"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "produce",
+          "target": "Grechka_ComponentT5_Item",
+          "count": 4,
+          "text": "Последний компонент"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "Grechka_LuckyBlockT5_Item",
+          "count": 1,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "t5.sun",
+      "chapter": "t5",
+      "title": "Гречневое солнце",
+      "description": "Постройте финальную панель S6. Её цепочка начинается с обычной ванильной солнечной панели и последовательно использует предыдущие ступени. Ориентир — одна на позднюю базу, три на базу с материей; реальные нагрузки зависят от числа машин.",
+      "icon": "Grechka_SolarS6_Building",
+      "graphX": 225,
+      "graphY": 135,
+      "graphPositioned": true,
+      "requires": [
+        "t5.components"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "build",
+          "target": "Grechka_SolarS6_Building",
+          "count": 1,
+          "text": "Гречневое солнце"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "Grechka_LuckyBlockEnergyT5_Item",
+          "count": 1,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "gear.armor",
+      "chapter": "gear",
+      "title": "Меха-защита",
+      "description": "Получите броню T3. Оснащение имеет три ступени T3–T5; золотые крылья высшей ступени — отдельный совместимый элемент внешнего вида.",
+      "icon": "Grechka_ArmorT3_Item",
+      "graphX": 0,
+      "graphY": 0,
+      "graphPositioned": true,
+      "requires": [
+        "t3.components"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "have",
+          "target": "Grechka_ArmorT3_Item",
+          "count": 1,
+          "text": "Меха-защита"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "MedicineIndustrial",
+          "count": 10,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "gear.rifle",
+      "chapter": "gear",
+      "title": "Холодная очередь",
+      "description": "Получите криовинтовку. Базовый урон одной пули — 100, очередь — 10, дальность фиксирована. Очередь не является отдельной системой магазинов.",
+      "icon": "Grechka_CryoRifle",
+      "graphX": 225,
+      "graphY": 0,
+      "graphPositioned": true,
+      "requires": [
+        "gear.armor"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "have",
+          "target": "Grechka_CryoRifle",
+          "count": 1,
+          "text": "Холодная очередь"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "Grechka_LuckyBlockCombatT3_Item",
+          "count": 1,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "gear.drone",
+      "chapter": "gear",
+      "title": "Дрон-спутник",
+      "description": "Получите боевого дрона T4 и установите в utility-слот. Он атакует рядом с владельцем; цель проверяет наличие предмета, а не боевой счёт.",
+      "icon": "Grechka_CombatDroneT4_Item",
+      "graphX": 0,
+      "graphY": 135,
+      "graphPositioned": true,
+      "requires": [
+        "t4.components"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "have",
+          "target": "Grechka_CombatDroneT4_Item",
+          "count": 1,
+          "text": "Дрон-спутник"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "ComponentSpacer",
+          "count": 8,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "gear.bionics",
+      "chapter": "gear",
+      "title": "Мифическая анатомия",
+      "description": "Получите мифическую руку T4: эффективность 300%. Гречневые аналоги T5 дают 600%. Операции следуют человеческой анатомии, другие тела требуют совместимых адаптеров.",
+      "icon": "Grechka_MythicArmT4_Item",
+      "graphX": 225,
+      "graphY": 135,
+      "graphPositioned": true,
+      "requires": [
+        "t4.components"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "have",
+          "target": "Grechka_MythicArmT4_Item",
+          "count": 1,
+          "text": "Мифическая анатомия"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "MedicineUltratech",
+          "count": 5,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "gear.chips",
+      "chapter": "gear",
+      "title": "Совместимые семейства чипов",
+      "description": "Разные семьи чипов совместимы. Новый тир одной семьи заменяет предыдущий, а снятый аналог возвращается предметом. Боевые чипы могут встречаться у быстрых рейдеров: событие выбирает рассказчик. Книга не проверяет автоматически операцию или победу.",
+      "icon": "ObjectiveManual",
+      "graphX": 0,
+      "graphY": 270,
+      "graphPositioned": true,
+      "requires": [
+        "gear.bionics"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "manual",
+          "target": "",
+          "count": 1,
+          "text": "Совместимые семейства чипов"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "MedicineUltratech",
+          "count": 5,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "milestones.components",
+      "chapter": "milestones",
+      "title": "Серийная промышленность",
+      "description": "Необязательная производственная веха: выпустите 100 продвинутых компонентов за время активной книги. Старый склад не превращается задним числом в производство.",
+      "icon": "ComponentSpacer",
+      "graphX": 0,
+      "graphY": 0,
+      "graphPositioned": true,
+      "requires": [
+        "t2.components"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "produce",
+          "target": "ComponentSpacer",
+          "count": 100,
+          "text": "Серийная промышленность"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "Grechka_LuckyBlockIndustryT4_Item",
+          "count": 1,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "milestones.crystals",
+      "chapter": "milestones",
+      "title": "Запас цифровой логики",
+      "description": "Необязательная цель наличия: 100 кварцевых процессоров. Покупка и изготовление подходят одинаково. Диски сети тоже входят в поддерживаемый учёт имущества.",
+      "icon": "Grechka_QuartzProcessor",
+      "graphX": 225,
+      "graphY": 0,
+      "graphPositioned": true,
+      "requires": [
+        "storage.disk"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "have",
+          "target": "Grechka_QuartzProcessor",
+          "count": 100,
+          "text": "Запас цифровой логики"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "Grechka_LuckyBlockStorageT4_Item",
+          "count": 1,
+          "stuff": ""
+        }
+      ]
+    },
+    {
+      "id": "milestones.finish",
+      "chapter": "milestones",
+      "title": "Машины работают — колония живёт",
+      "description": "Вы прошли основную производственную цепочку. Дальше стройте собственную систему, масштабируйте материю и настраивайте остатки. Книга переносится JSON-файлом; авторский режим позволяет сделать свои главы и награды.",
+      "icon": "ObjectiveManual",
+      "graphX": 0,
+      "graphY": 135,
+      "graphPositioned": true,
+      "requires": [
+        "t5.sun",
+        "auto.orders"
+      ],
+      "objectives": [
+        {
+          "id": "goal",
+          "type": "manual",
+          "target": "",
+          "count": 1,
+          "text": "Машины работают — колония живёт"
+        }
+      ],
+      "rewards": [
+        {
+          "def": "Grechka_LuckyBlockT5_Item",
+          "count": 2,
+          "stuff": ""
+        }
+      ]
+    }
+  ]
+}

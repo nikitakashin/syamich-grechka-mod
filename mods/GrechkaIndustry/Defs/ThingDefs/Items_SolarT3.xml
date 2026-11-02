@@ -1,23 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedSolarS3_Item</defName>
     <label>упакованная механитная солнечная панель</label>
     <description>Целиком снятая панель S3 для повторной установки или дальнейшей сборки.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_SolarS3_Building</building>
+      </li>
+    </modExtensions>
   </ThingDef>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedSolarS4_Item</defName>
     <label>упакованная механитная солнечная матрица</label>
     <description>Целиком снятая панель S4 для повторной установки или дальнейшей сборки.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_SolarS4_Building</building>
+      </li>
+    </modExtensions>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_SolarCellT3_Item</defName>
     <label>механитный фотоэлемент</label>
     <description>Фотоэлемент третьего тира: предыдущие фотоэлементы усилены механитами. Используется в механитных солнечных панелях и матрицах.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-      <color>(0.4,0.8,1)</color>
+      <texPath>Items/SolarCellT3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>

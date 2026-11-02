@@ -1,0 +1,1 @@
+<Patch><Operation Class="PatchOperationAdd"><xpath>/Defs/FactionDef[caravanTraderKinds/li="Caravan_Outlander_Exotic"]/caravanTraderKinds</xpath><value><li>Grechka_DataSalvagers</li></value></Operation></Patch>

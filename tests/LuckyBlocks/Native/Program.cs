@@ -1,0 +1,40 @@
+using System.Runtime.CompilerServices;
+using Grechka.LuckyBlocks;
+using HarmonyLib;
+using RimWorld;
+using Verse;
+void Check(bool test,string label){if(!test)throw new Exception(label);Console.WriteLine("PASS "+label);}
+var game=(Game)RuntimeHelpers.GetUninitializedObject(typeof(Game));
+AccessTools.Field(typeof(Game),"maps").SetValue(game,new List<Map>());
+AccessTools.Field(typeof(Game),"components").SetValue(game,new List<GameComponent>());
+AccessTools.Field(typeof(Game),"tickManager").SetValue(game,new TickManager());
+AccessTools.Field(typeof(Game),"uniqueIDsManager").SetValue(game,new UniqueIDsManager());
+Current.Game=game;
+var prefs=AccessTools.Field(typeof(Prefs),"data");prefs.SetValue(null,Activator.CreateInstance(prefs.FieldType));
+var harmony=new Harmony("grechka.lucky.native-tests");
+harmony.CreateClassProcessor(typeof(RaiderLuckyLoot)).Patch();
+Check(Harmony.GetAllPatchedMethods().Any(m=>m.DeclaringType==typeof(IncidentWorker_RaidEnemy)&&m.Name=="GenerateRaidLoot"),"Raid loot hook binds to actual 1.7 method");
+var blockDef=new ThingDef{defName="Grechka_TestLucky",label="Test block",thingClass=typeof(LuckyBlock),category=ThingCategory.Item,stackLimit=1,useHitPoints=false,comps=new(),modExtensions=new(){new LuckyProperties{pool="missing"}}};
+var itemDef=new ThingDef{defName="Grechka_TestReward",label="reward",thingClass=typeof(ThingWithComps),category=ThingCategory.Item,stackLimit=75,useHitPoints=false,comps=new()};
+DefDatabase<ThingDef>.Add(blockDef);DefDatabase<ThingDef>.Add(itemDef);
+LuckyMod.Config=new LuckyConfig();
+var block=new LuckyBlock{def=blockDef,thingIDNumber=4441};
+Check(block.Problem()!=null && !block.Open() && !block.Destroyed,"Unavailable pool and unspawned block remain intact");
+var outcome=new LuckyOutcome{id="chosen",items=new(){new LuckyItem{def=itemDef.defName,count=80}}};
+string snapshot=LuckyCodec.EncodeOutcome(outcome);
+AccessTools.Field(typeof(LuckyBlock),"outcomeJson").SetValue(block,snapshot);
+AccessTools.Field(typeof(LuckyBlock),"prepared").SetValue(block,true);
+AccessTools.Field(typeof(LuckyBlock),"itemEntry").SetValue(block,1);
+var reward=new ThingWithComps{def=itemDef,stackCount=5,thingIDNumber=4442};
+block.GetDirectlyHeldThings().TryAdd(reward,false);
+string path=Path.Combine(Path.GetTempPath(),"grechka-lucky-"+Guid.NewGuid().ToString("N")+".xml");
+try{
+ Scribe.saver.InitSaving(path,"luckyFixture");Scribe_Deep.Look(ref block,"block");Scribe.saver.FinalizeSaving();
+ LuckyBlock restored=null;Scribe.loader.InitLoading(path);Scribe_Deep.Look(ref restored,"block");Scribe.loader.FinalizeLoading();
+ var remaining=restored.GetDirectlyHeldThings().Single();
+ Check(remaining.stackCount==5 && ReferenceEquals(remaining.holdingOwner.Owner,restored),"Real Scribe preserves only remaining rewards and their owner");
+ Check((string)AccessTools.Field(typeof(LuckyBlock),"outcomeJson").GetValue(restored)==snapshot && (bool)AccessTools.Field(typeof(LuckyBlock),"prepared").GetValue(restored),"Real Scribe preserves selected outcome and prepared state without reroll");
+ Check((int)AccessTools.Field(typeof(LuckyBlock),"itemEntry").GetValue(restored)==1,"Partial materialization cursor survives loading");
+ restored.Destroy();Check(remaining.Destroyed,"Destroyed block disposes owned contents once");
+}finally{if(File.Exists(path))File.Delete(path);}
+Console.WriteLine("Isolated game library checks only; no game process was launched or controlled.");

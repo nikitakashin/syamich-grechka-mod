@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingDef ParentName="BenchBase">
+    <defName>Grechka_AssemblyBenchT4_Building</defName>
+    <label>сборочный верстак T4</label>
+    <description>Тир 4. Скорость ×15, скидка сырья 35%, бонус выхода 50%. Потребление 2800 Вт.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Building/Production/TableSmithingElectric</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,1.5)</drawSize>
+      <color>(0.3,0.9,0.4)</color>
+    </graphicData>
+    <size>(3,1)</size>
+    <statBases>
+      <WorkToBuild>6500</WorkToBuild>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>0.3</Flammability>
+      <WorkTableWorkSpeedFactor>15</WorkTableWorkSpeedFactor>
+    </statBases>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <designationCategory>Production</designationCategory>
+    <designatorDropdown>Grechka_AssemblyBenchGroup</designatorDropdown>
+    <uiOrder>2514</uiOrder>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <recipes>
+      <li>Grechka_MakeComponentBatchT1</li>
+      <li>Make_ComponentSpacer</li>
+      <li>Grechka_MakeHousingT2</li>
+      <li>Grechka_MakeSolarCellT2</li>
+      <li>Grechka_MakeSolarS1</li>
+      <li>Grechka_MakeSolarS2</li>
+      <li>Grechka_MakeSolarCellT3</li>
+      <li>Grechka_MakeSolarS3</li>
+      <li>Grechka_MakeSolarS4</li>
+      <li>Grechka_MakeComponentT3</li>
+      <li>Grechka_MakeHousingT3</li>
+    </recipes>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <workTableRoomRole>Workshop</workTableRoomRole>
+      <workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
+    </building>
+    <comps>
+      <li Class="Grechka.Industry.CompProperties_TierBonuses">
+        <inputDiscount>0.35</inputDiscount>
+        <outputBonus>0.5</outputBonus>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>2800</basePowerConsumption>
+        <shortCircuitInRain>true</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="Grechka.Industry.CompProperties_AssemblyUpgrade">
+        <upgradeRecipeName>Grechka_UpgradeAssemblyBenchT5</upgradeRecipeName>
+        <targetBenchName>Grechka_AssemblyBenchT5_Building</targetBenchName>
+        <upgradeLabel>Улучшить до T5</upgradeLabel>
+        <upgradeDescription>Использовать корпус T4 и добавить 280 пластали, 14 компонентов T5 и 24 концентрата.</upgradeDescription>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <costList>
+      <Grechka_HousingT4_Item>1</Grechka_HousingT4_Item>
+      <Grechka_ComponentT4_Item>6</Grechka_ComponentT4_Item>
+      <Plasteel>120</Plasteel>
+    </costList>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BenchBase">
+    <defName>Grechka_AssemblyBenchT5_Building</defName>
+    <label>сборочный верстак T5</label>
+    <description>Тир 5. Скорость ×60, скидка сырья 50%, бонус выхода 100%. Потребление 11200 Вт.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Things/Building/Production/TableSmithingElectric</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3.5,1.5)</drawSize>
+      <color>(0.6,0.35,0.15)</color>
+    </graphicData>
+    <size>(3,1)</size>
+    <statBases>
+      <WorkToBuild>6500</WorkToBuild>
+      <MaxHitPoints>800</MaxHitPoints>
+      <Flammability>0.3</Flammability>
+      <WorkTableWorkSpeedFactor>60</WorkTableWorkSpeedFactor>
+    </statBases>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <designationCategory>Production</designationCategory>
+    <designatorDropdown>Grechka_AssemblyBenchGroup</designatorDropdown>
+    <uiOrder>2515</uiOrder>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <recipes>
+      <li>Grechka_MakeComponentBatchT1</li>
+      <li>Make_ComponentSpacer</li>
+      <li>Grechka_MakeHousingT2</li>
+      <li>Grechka_MakeSolarCellT2</li>
+      <li>Grechka_MakeSolarS1</li>
+      <li>Grechka_MakeSolarS2</li>
+      <li>Grechka_MakeSolarCellT3</li>
+      <li>Grechka_MakeSolarS3</li>
+      <li>Grechka_MakeSolarS4</li>
+      <li>Grechka_MakeComponentT3</li>
+      <li>Grechka_MakeHousingT3</li>
+    </recipes>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <workTableRoomRole>Workshop</workTableRoomRole>
+      <workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
+    </building>
+    <comps>
+      <li Class="Grechka.Industry.CompProperties_TierBonuses">
+        <inputDiscount>0.5</inputDiscount>
+        <outputBonus>1</outputBonus>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>11200</basePowerConsumption>
+        <shortCircuitInRain>true</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <costList>
+      <Grechka_HousingT5_Item>1</Grechka_HousingT5_Item>
+      <Grechka_ComponentT5_Item>6</Grechka_ComponentT5_Item>
+      <Plasteel>160</Plasteel>
+    </costList>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+  </ThingDef>
+</Defs>

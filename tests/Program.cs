@@ -385,4 +385,12 @@ Check("Def aliases preserve saved event counters and do not multiply equivalent 
     if(restored.EventValue(p,q,o)!=5 || !restored.Achieved(p,q,o) || restored.Claimed(p,q)
         || PackCodec.Encode(p)!=before || QuestProgress.Signature(o)!=signature) throw new Exception();
 });
+Check("Bundled World book validates without rewriting starter IDs", () => {
+    string worldPath=Path.Combine(Path.GetDirectoryName(args[0]), "grechka-world.json");
+    var world=PackCodec.Decode(File.ReadAllText(worldPath));
+    if(world.id!="grechka.world" || world.chapters.Count!=10 || world.quests.Count!=39) throw new Exception("Incomplete World book");
+    if(PackCodec.Encode(world)!=PackCodec.Encode(PackCodec.Decode(PackCodec.Encode(world)))) throw new Exception("World round trip mismatch");
+    if(world.quests.First(q=>q.id=="t1.bench").requires.Single()!="t1.housing") throw new Exception("Bootstrap chain reversed");
+    if(Fresh().id!="grechka.starter" || Fresh().quests[0].id!="start.steel") throw new Exception("Starter identity changed");
+});
 Console.WriteLine($"{passed} checks passed.");

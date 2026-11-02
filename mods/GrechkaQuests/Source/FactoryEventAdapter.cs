@@ -17,6 +17,7 @@ namespace Grechka.Quests
         [ThreadStatic] static Attempt currentAttempt;
         static FieldInfo parentField;
         static bool installed;
+        static MethodInfo originalDefName;
         internal static bool Installed { get { return installed; } }
 
         internal static void TryInstall()
@@ -38,12 +39,13 @@ namespace Grechka.Quests
             try
             {
                 var harmony = new Harmony("grechka.quests.factory");
-                harmony.Patch(getCount, postfix: new HarmonyMethod(typeof(FactoryEventAdapter), nameof(CaptureCount)));
+                harmony.Patch(getCount, postfix: new HarmonyMethod(typeof(FactoryEventAdapter), nameof(CaptureCount)) { priority = Priority.Last });
                 harmony.Patch(spawn,
                     prefix: new HarmonyMethod(typeof(FactoryEventAdapter), nameof(BeginAttempt)),
                     postfix: new HarmonyMethod(typeof(FactoryEventAdapter), nameof(EndAttempt)),
                     finalizer: new HarmonyMethod(typeof(FactoryEventAdapter), nameof(RestoreAttempt)));
                 parentField = parent;
+                originalDefName = AccessTools.Method(AccessTools.TypeByName("Grechka.WorldIntegration.WorldProfile"), "OriginalDefName", new[] { typeof(ThingDef) });
                 installed = true;
             }
             catch (Exception e)
@@ -69,8 +71,10 @@ namespace Grechka.Quests
             currentAttempt = __state;
             if (!__result || finished == null || finished.count <= 0 || __3 == null) return;
             Thing machine = parentField?.GetValue(__instance) as Thing;
-            if (machine?.def == null || !machine.def.defName.StartsWith("VFEFactory_", StringComparison.Ordinal)) return;
-            string kind = machine.def.defName == "VFEFactory_AutomatedDrillPlatform" ? "mine" : "produce";
+            if (machine?.def == null) return;
+            string sourceName = originalDefName?.Invoke(null, new object[] { machine.def }) as string ?? machine.def.defName;
+            if (!sourceName.StartsWith("VFEFactory_", StringComparison.Ordinal)) return;
+            string kind = sourceName == "VFEFactory_AutomatedDrillPlatform" ? "mine" : "produce";
             QuestGame.Current?.RecordVerifiedMachineOutput(kind, machine, __3, finished.count);
         }
 

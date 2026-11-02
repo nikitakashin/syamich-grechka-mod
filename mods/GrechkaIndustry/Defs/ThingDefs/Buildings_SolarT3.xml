@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_SolarS3_Building</defName>
@@ -7,8 +7,7 @@
     <thingClass>Building</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
-      <!--Временная ванильная графика до готовой собственной текстуры этой ступени.-->
-      <texPath>Things/Building/Power/SolarCollector</texPath>
+      <texPath>Buildings/SolarPanelT3</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(4,4)</drawSize>
       <shadowData>
@@ -18,7 +17,6 @@
       <damageData>
         <rect>(0,0.6,4,2.8)</rect>
       </damageData>
-      <color>(0.4,0.8,1)</color>
     </graphicData>
     <castEdgeShadows>true</castEdgeShadows>
     <rotatable>false</rotatable>
@@ -81,8 +79,7 @@
     <thingClass>Building</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
-      <!--Временная ванильная графика до готовой собственной текстуры этой ступени.-->
-      <texPath>Things/Building/Power/SolarCollector</texPath>
+      <texPath>Buildings/SolarPanelT3</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(4,4)</drawSize>
       <shadowData>
@@ -92,7 +89,6 @@
       <damageData>
         <rect>(0,0.6,4,2.8)</rect>
       </damageData>
-      <color>(0.4,0.8,1)</color>
     </graphicData>
     <castEdgeShadows>true</castEdgeShadows>
     <rotatable>false</rotatable>
@@ -133,6 +129,10 @@
         <affectedDamageDefs>
           <li>EMP</li>
         </affectedDamageDefs>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
+        <targetDefName>Grechka_SolarS5_Building</targetDefName>
+        <costDescription>6 панелей S4, 2 корпуса T4, 16 компонентов T4, 64 фотоэлемента T4; установленная панель засчитывается</costDescription>
       </li>
     </comps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>

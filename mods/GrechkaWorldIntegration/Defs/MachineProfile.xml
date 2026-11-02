@@ -1,0 +1,3133 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_001</defName>
+    <label>Chemistry Table</label>
+    <packageId>aoba.fortress.industrial</packageId>
+    <targetDefName>FT_TableChemistry</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_002</defName>
+    <label>Concrete mixer</label>
+    <packageId>aoba.fortress.industrial</packageId>
+    <targetDefName>FT_TableConcreteMixer</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_003</defName>
+    <label>Lathe</label>
+    <packageId>aoba.fortress.industrial</packageId>
+    <targetDefName>FT_TableLathe</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_004</defName>
+    <label>field kitchen</label>
+    <packageId>aoba.fortress.industrial.citadel</packageId>
+    <targetDefName>FTC_FieldKitchen</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_005</defName>
+    <label>electric arc furnace</label>
+    <packageId>aoba.fortress.industrial.citadel</packageId>
+    <targetDefName>FT_ArcFurnace</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_006</defName>
+    <label>pyrolysis plant</label>
+    <packageId>aoba.fortress.industrial.citadel</packageId>
+    <targetDefName>FT_HeavyChem</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_007</defName>
+    <label>biofuel refinery</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>BiofuelRefinery</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_008</defName>
+    <label>brewery</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>Brewery</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_009</defName>
+    <label>butcher spot</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>ButcherSpot</targetDefName>
+    <minimumTier>0</minimumTier>
+    <addHousing>false</addHousing>
+    <note>без корпуса</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_010</defName>
+    <label>campfire</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>Campfire</targetDefName>
+    <minimumTier>0</minimumTier>
+    <addHousing>false</addHousing>
+    <note>без корпуса</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_011</defName>
+    <label>crafting spot</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>CraftingSpot</targetDefName>
+    <minimumTier>0</minimumTier>
+    <addHousing>false</addHousing>
+    <note>без корпуса</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_012</defName>
+    <label>deep drill</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>DeepDrill</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_013</defName>
+    <label>drug lab</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>DrugLab</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_014</defName>
+    <label>electric crematorium</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>ElectricCrematorium</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_015</defName>
+    <label>electric smelter</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>ElectricSmelter</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_016</defName>
+    <label>electric smithy</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>ElectricSmithy</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_017</defName>
+    <label>electric stove</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>ElectricStove</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_018</defName>
+    <label>electric tailor bench</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>ElectricTailoringBench</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_019</defName>
+    <label>fabrication bench</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>FabricationBench</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_020</defName>
+    <label>fermenting barrel</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>FermentingBarrel</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_021</defName>
+    <label>fueled smithy</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>FueledSmithy</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_022</defName>
+    <label>fueled stove</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>FueledStove</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_023</defName>
+    <label>hand tailor bench</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>HandTailoringBench</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_024</defName>
+    <label>hopper</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>Hopper</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_025</defName>
+    <label>hydroponics basin</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>HydroponicsBasin</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_026</defName>
+    <label>nutrient paste dispenser</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>NutrientPasteDispenser</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_027</defName>
+    <label>butcher table</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>TableButcher</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_028</defName>
+    <label>machining table</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>TableMachining</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_029</defName>
+    <label>art bench</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>TableSculpting</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_030</defName>
+    <label>stonecutter's table</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>TableStonecutter</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_031</defName>
+    <label>large mech gestator</label>
+    <packageId>ludeon.rimworld.biotech</packageId>
+    <targetDefName>LargeMechGestator</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_032</defName>
+    <label>mech gestator</label>
+    <packageId>ludeon.rimworld.biotech</packageId>
+    <targetDefName>MechGestator</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_033</defName>
+    <label>subcore encoder</label>
+    <packageId>ludeon.rimworld.biotech</packageId>
+    <targetDefName>SubcoreEncoder</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_034</defName>
+    <label>chemshine barrel</label>
+    <packageId>oskarpotocki.vanillafactionsexpanded.settlersmodule</packageId>
+    <targetDefName>Building_ChemshineBarrel</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_035</defName>
+    <label>cement press</label>
+    <packageId>oskarpotocki.vfe.classical</packageId>
+    <targetDefName>VFEC_ConcretePress</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_036</defName>
+    <label>crafting bench</label>
+    <packageId>oskarpotocki.vfe.classical</packageId>
+    <targetDefName>VFEC_CraftingBench</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_037</defName>
+    <label>meat drying rack</label>
+    <packageId>oskarpotocki.vfe.classical</packageId>
+    <targetDefName>VFEC_MeatDryingRack</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_038</defName>
+    <label>tyrian farm</label>
+    <packageId>oskarpotocki.vfe.classical</packageId>
+    <targetDefName>VFEC_TyrianFarm</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_039</defName>
+    <label>wood-fired crematorium</label>
+    <packageId>oskarpotocki.vfe.classical</packageId>
+    <targetDefName>VFEC_WoodFiredCrematorium</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_040</defName>
+    <label>warcasket foundry</label>
+    <packageId>oskarpotocki.vfe.pirates</packageId>
+    <targetDefName>VFEP_WarcasketFoundry</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_041</defName>
+    <label>Scav bench</label>
+    <packageId>rimsenal.feral</packageId>
+    <targetDefName>FeralTable</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_042</defName>
+    <label>typewriter table</label>
+    <packageId>vanillaexpanded.vbookse</packageId>
+    <targetDefName>VBE_TypewritersTable</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_043</defName>
+    <label>writers table</label>
+    <packageId>vanillaexpanded.vbookse</packageId>
+    <targetDefName>VBE_WritersTable</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_044</defName>
+    <label>canning machine</label>
+    <packageId>vanillaexpanded.vcooke</packageId>
+    <targetDefName>VCE_CanningMachine</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_045</defName>
+    <label>cheese press</label>
+    <packageId>vanillaexpanded.vcooke</packageId>
+    <targetDefName>VCE_CheesePress</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_046</defName>
+    <label>condiment prep table</label>
+    <packageId>vanillaexpanded.vcooke</packageId>
+    <targetDefName>VCE_CondimentPrepTable</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_047</defName>
+    <label>deep fryer</label>
+    <packageId>vanillaexpanded.vcooke</packageId>
+    <targetDefName>VCE_DeepFrier</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_048</defName>
+    <label>electric pot</label>
+    <packageId>vanillaexpanded.vcooke</packageId>
+    <targetDefName>VCE_ElectricPot</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_049</defName>
+    <label>grill</label>
+    <packageId>vanillaexpanded.vcooke</packageId>
+    <targetDefName>VCE_Grill</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_050</defName>
+    <label>electric bakery oven</label>
+    <packageId>vanillaexpanded.vcookebakery</packageId>
+    <targetDefName>VCE_BakeryOven_Electric</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_051</defName>
+    <label>fueled bakery oven</label>
+    <packageId>vanillaexpanded.vcookebakery</packageId>
+    <targetDefName>VCE_BakeryOven_Fueled</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_052</defName>
+    <label>stew pot</label>
+    <packageId>vanillaexpanded.vcookestews</packageId>
+    <targetDefName>VCE_StewPot</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_053</defName>
+    <label>soy sauce fermenter</label>
+    <packageId>vanillaexpanded.vcookesushi</packageId>
+    <targetDefName>VCE_SoyFermenter</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_054</defName>
+    <label>sushi prep table</label>
+    <packageId>vanillaexpanded.vcookesushi</packageId>
+    <targetDefName>VCE_SushiPrepTable</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_055</defName>
+    <label>firepit</label>
+    <packageId>vanillaexpanded.vfecore</packageId>
+    <targetDefName>Stone_Campfire</targetDefName>
+    <minimumTier>0</minimumTier>
+    <addHousing>false</addHousing>
+    <note>без корпуса</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_056</defName>
+    <label>dark firepit</label>
+    <packageId>vanillaexpanded.vfecore</packageId>
+    <targetDefName>Stone_DarklightCampfire</targetDefName>
+    <minimumTier>0</minimumTier>
+    <addHousing>false</addHousing>
+    <note>без корпуса</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_057</defName>
+    <label>autofarmer</label>
+    <packageId>vanillaexpanded.vfefactory</packageId>
+    <targetDefName>VFEFactory_Autofarmer</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_058</defName>
+    <label>autoloom</label>
+    <packageId>vanillaexpanded.vfefactory</packageId>
+    <targetDefName>VFEFactory_Autoloom</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_059</defName>
+    <label>automated alloy forge</label>
+    <packageId>vanillaexpanded.vfefactory</packageId>
+    <targetDefName>VFEFactory_AutomatedAlloyForge</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_060</defName>
+    <label>automated ammunition press</label>
+    <packageId>vanillaexpanded.vfefactory</packageId>
+    <targetDefName>VFEFactory_AutomatedAmmunitionPress</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_061</defName>
+    <label>automated assembler</label>
+    <packageId>vanillaexpanded.vfefactory</packageId>
+    <targetDefName>VFEFactory_AutomatedAssembler</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_062</defName>
+    <label>automated biofuel refinery</label>
+    <packageId>vanillaexpanded.vfefactory</packageId>
+    <targetDefName>VFEFactory_AutomatedBiofuelRefinery</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_063</defName>
+    <label>automated cannery</label>
+    <packageId>vanillaexpanded.vfefactory</packageId>
+    <targetDefName>VFEFactory_AutomatedCannery</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_064</defName>
+    <label>conveyor crematorium</label>
+    <packageId>vanillaexpanded.vfefactory</packageId>
+    <targetDefName>VFEFactory_AutomatedCrematorium</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_065</defName>
+    <label>automated distillery</label>
+    <packageId>vanillaexpanded.vfefactory</packageId>
+    <targetDefName>VFEFactory_AutomatedDistillery</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_066</defName>
+    <label>automated drill platform</label>
+    <packageId>vanillaexpanded.vfefactory</packageId>
+    <targetDefName>VFEFactory_AutomatedDrillPlatform</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_067</defName>
+    <label>automated machining bay</label>
+    <packageId>vanillaexpanded.vfefactory</packageId>
+    <targetDefName>VFEFactory_AutomatedMachiningBay</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_068</defName>
+    <label>automated masonry saw</label>
+    <packageId>vanillaexpanded.vfefactory</packageId>
+    <targetDefName>VFEFactory_AutomatedMasonrySaw</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_069</defName>
+    <label>automated mincer</label>
+    <packageId>vanillaexpanded.vfefactory</packageId>
+    <targetDefName>VFEFactory_AutomatedMincer</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_070</defName>
+    <label>automated smelter</label>
+    <packageId>vanillaexpanded.vfefactory</packageId>
+    <targetDefName>VFEFactory_AutomatedSmelter</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_071</defName>
+    <label>factory booster</label>
+    <packageId>vanillaexpanded.vfefactory</packageId>
+    <targetDefName>VFEFactory_Booster</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_072</defName>
+    <label>conveyor</label>
+    <packageId>vanillaexpanded.vfefactory</packageId>
+    <targetDefName>VFEFactory_Conveyor</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>false</addHousing>
+    <note>деталь T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_073</defName>
+    <label>conveyor oven</label>
+    <packageId>vanillaexpanded.vfefactory</packageId>
+    <targetDefName>VFEFactory_ConveyorOven</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_074</defName>
+    <label>Factory hopper</label>
+    <packageId>vanillaexpanded.vfefactory</packageId>
+    <targetDefName>VFEFactory_FactoryHopper</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_075</defName>
+    <label>factory heatsink</label>
+    <packageId>vanillaexpanded.vfefactory</packageId>
+    <targetDefName>VFEFactory_Heatsink</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_076</defName>
+    <label>medicine granulator</label>
+    <packageId>vanillaexpanded.vfefactory</packageId>
+    <targetDefName>VFEFactory_MedicineGranulator</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_077</defName>
+    <label>neutroamine synthesizer</label>
+    <packageId>vanillaexpanded.vfefactory</packageId>
+    <targetDefName>VFEFactory_NeutroamineSynthesizer</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_078</defName>
+    <label>underground conveyor entrance</label>
+    <packageId>vanillaexpanded.vfefactory</packageId>
+    <targetDefName>VFEFactory_UndergroundConveyorEntrance</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>false</addHousing>
+    <note>деталь T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_079</defName>
+    <label>underground conveyor exit</label>
+    <packageId>vanillaexpanded.vfefactory</packageId>
+    <targetDefName>VFEFactory_UndergroundConveyorExit</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>false</addHousing>
+    <note>деталь T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_080</defName>
+    <label>artificial ecosystem</label>
+    <packageId>vanillaexpanded.vfefarming</packageId>
+    <targetDefName>VFE_Ecosystem</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_081</defName>
+    <label>tilable artificial ecosystem</label>
+    <packageId>vanillaexpanded.vfefarming</packageId>
+    <targetDefName>VFE_Ecosystem_Tilable</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_082</defName>
+    <label>tilable hydroponics basin</label>
+    <packageId>vanillaexpanded.vfefarming</packageId>
+    <targetDefName>VFE_Hydroponics_Tilable</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_083</defName>
+    <label>planter box</label>
+    <packageId>vanillaexpanded.vfefarming</packageId>
+    <targetDefName>VFE_PlanterBox</targetDefName>
+    <minimumTier>0</minimumTier>
+    <addHousing>false</addHousing>
+    <note>без корпуса</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_084</defName>
+    <label>tilable planter box</label>
+    <packageId>vanillaexpanded.vfefarming</packageId>
+    <targetDefName>VFE_PlanterBox_Tilable</targetDefName>
+    <minimumTier>0</minimumTier>
+    <addHousing>false</addHousing>
+    <note>без корпуса</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_085</defName>
+    <label>assembly bench</label>
+    <packageId>vanillaexpanded.vfeproduction</packageId>
+    <targetDefName>VFE_ComponentFabricationBench</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_086</defName>
+    <label>fueled smelter</label>
+    <packageId>vanillaexpanded.vfeproduction</packageId>
+    <targetDefName>VFE_FueledSmelter</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_087</defName>
+    <label>electric butcher</label>
+    <packageId>vanillaexpanded.vfeproduction</packageId>
+    <targetDefName>VFE_TableButcherElectric</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_088</defName>
+    <label>electric drug lab</label>
+    <packageId>vanillaexpanded.vfeproduction</packageId>
+    <targetDefName>VFE_TableDrugLabElectric</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_089</defName>
+    <label>large machining table</label>
+    <packageId>vanillaexpanded.vfeproduction</packageId>
+    <targetDefName>VFE_TableMachiningLarge</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_090</defName>
+    <label>large electric smithy</label>
+    <packageId>vanillaexpanded.vfeproduction</packageId>
+    <targetDefName>VFE_TableSmithyLarge</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_091</defName>
+    <label>electric stonecutter's table</label>
+    <packageId>vanillaexpanded.vfeproduction</packageId>
+    <targetDefName>VFE_TableStonecutterElectric</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_092</defName>
+    <label>large stove</label>
+    <packageId>vanillaexpanded.vfeproduction</packageId>
+    <targetDefName>VFE_TableStoveLarge</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_093</defName>
+    <label>large tailoring table</label>
+    <packageId>vanillaexpanded.vfeproduction</packageId>
+    <targetDefName>VFE_TableTailorLarge</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_094</defName>
+    <label>vegetable milk extractor</label>
+    <packageId>vanillaexpanded.vplantsemore</packageId>
+    <targetDefName>VCE_VegMilkExtractor</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_095</defName>
+    <label>mobile chemfuel powered generator</label>
+    <packageId>aoba.fortress.industrial</packageId>
+    <targetDefName>FT_FuelGenerator</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_096</defName>
+    <label>facility conduit</label>
+    <packageId>aoba.fortress.industrial.citadel</packageId>
+    <targetDefName>FTC_PowerConduit</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>false</addHousing>
+    <note>деталь T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_097</defName>
+    <label>citadel chemfuel generator</label>
+    <packageId>aoba.fortress.industrial.citadel</packageId>
+    <targetDefName>FT_CitadelGenerator</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_098</defName>
+    <label>battery</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>Battery</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_099</defName>
+    <label>chemfuel powered generator</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>ChemfuelPoweredGenerator</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_100</defName>
+    <label>geothermal generator</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>GeothermalGenerator</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_101</defName>
+    <label>hidden conduit</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>HiddenConduit</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>false</addHousing>
+    <note>деталь T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_102</defName>
+    <label>power conduit</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>PowerConduit</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>false</addHousing>
+    <note>деталь T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_103</defName>
+    <label>power switch</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>PowerSwitch</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_104</defName>
+    <label>ship reactor</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>Ship_Reactor</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_105</defName>
+    <label>solar generator</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>SolarGenerator</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>false</addHousing>
+    <note>T1; ванильные затраты</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_106</defName>
+    <label>watermill generator</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>WatermillGenerator</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_107</defName>
+    <label>waterproof conduit</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>WaterproofConduit</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>false</addHousing>
+    <note>деталь T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_108</defName>
+    <label>wind turbine</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>WindTurbine</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_109</defName>
+    <label>wood-fired generator</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>WoodFiredGenerator</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_110</defName>
+    <label>toxifier generator</label>
+    <packageId>ludeon.rimworld.biotech</packageId>
+    <targetDefName>ToxifierGenerator</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_111</defName>
+    <label>windmill</label>
+    <packageId>oskarpotocki.vanillafactionsexpanded.settlersmodule</packageId>
+    <targetDefName>Windmill</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_112</defName>
+    <label>advanced battery</label>
+    <packageId>vanillaexpanded.vfepower</packageId>
+    <targetDefName>VFE_AdvancedBattery</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_113</defName>
+    <label>advanced solar generator</label>
+    <packageId>vanillaexpanded.vfepower</packageId>
+    <targetDefName>VFE_AdvancedSolarGenerator</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_114</defName>
+    <label>advanced watermill generator</label>
+    <packageId>vanillaexpanded.vfepower</packageId>
+    <targetDefName>VFE_AdvancedWatermillGenerator</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_115</defName>
+    <label>advanced wind turbine</label>
+    <packageId>vanillaexpanded.vfepower</packageId>
+    <targetDefName>VFE_AdvancedWindTurbine</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_116</defName>
+    <label>industrial chemfuel powered generator</label>
+    <packageId>vanillaexpanded.vfepower</packageId>
+    <targetDefName>VFE_IndustrialChemfuelPoweredGenerator</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_117</defName>
+    <label>industrial wood-fired generator</label>
+    <packageId>vanillaexpanded.vfepower</packageId>
+    <targetDefName>VFE_IndustrialWoodFiredGenerator</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_118</defName>
+    <label>large advanced battery</label>
+    <packageId>vanillaexpanded.vfepower</packageId>
+    <targetDefName>VFE_LargeAdvancedBattery</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_119</defName>
+    <label>large battery</label>
+    <packageId>vanillaexpanded.vfepower</packageId>
+    <targetDefName>VFE_LargeBattery</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_120</defName>
+    <label>portable chemfuel powered generator</label>
+    <packageId>vanillaexpanded.vfepower</packageId>
+    <targetDefName>VFE_PortableChemfuelPoweredGenerator</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_121</defName>
+    <label>portable wood-fired generator</label>
+    <packageId>vanillaexpanded.vfepower</packageId>
+    <targetDefName>VFE_PortableWoodFiredGenerator</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_122</defName>
+    <label>small battery</label>
+    <packageId>vanillaexpanded.vfepower</packageId>
+    <targetDefName>VFE_SmallBattery</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_123</defName>
+    <label>tidal generator</label>
+    <packageId>vanillaexpanded.vfepower</packageId>
+    <targetDefName>VFE_TidalGenerator</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_124</defName>
+    <label>advanced geothermal generator</label>
+    <packageId>vanillaexpanded.vfepower</packageId>
+    <targetDefName>VPE_AdvancedGeothermalGenerator</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_125</defName>
+    <label>nuclear reactor</label>
+    <packageId>vanillaexpanded.vfepower</packageId>
+    <targetDefName>VPE_NuclearGenerator</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_126</defName>
+    <label>atomic ARC</label>
+    <packageId>vanillaquestsexpanded.generator</packageId>
+    <targetDefName>VQE_Genetron_Atomic</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_127</defName>
+    <label>ARC</label>
+    <packageId>vanillaquestsexpanded.generator</packageId>
+    <targetDefName>VQE_Genetron_Basic</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_128</defName>
+    <label>chemfuel-boosted ARC</label>
+    <packageId>vanillaquestsexpanded.generator</packageId>
+    <targetDefName>VQE_Genetron_ChemfuelBoosted</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_129</defName>
+    <label>chemfuel-charged ARC</label>
+    <packageId>vanillaquestsexpanded.generator</packageId>
+    <targetDefName>VQE_Genetron_ChemfuelCharged</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_130</defName>
+    <label>chemfuel-fortified ARC</label>
+    <packageId>vanillaquestsexpanded.generator</packageId>
+    <targetDefName>VQE_Genetron_ChemfuelFortified</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_131</defName>
+    <label>chemfuel-powered ARC</label>
+    <packageId>vanillaquestsexpanded.generator</packageId>
+    <targetDefName>VQE_Genetron_ChemfuelPowered</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_132</defName>
+    <label>geothermal ARC</label>
+    <packageId>vanillaquestsexpanded.generator</packageId>
+    <targetDefName>VQE_Genetron_Geothermal</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_133</defName>
+    <label>heat-powered ARC</label>
+    <packageId>vanillaquestsexpanded.generator</packageId>
+    <targetDefName>VQE_Genetron_HeatPowered</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_134</defName>
+    <label>isotopic ARC</label>
+    <packageId>vanillaquestsexpanded.generator</packageId>
+    <targetDefName>VQE_Genetron_Isotopic</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_135</defName>
+    <label>nuclear ARC</label>
+    <packageId>vanillaquestsexpanded.generator</packageId>
+    <targetDefName>VQE_Genetron_Nuclear</targetDefName>
+    <minimumTier>4</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T4: Nuclear ARC 6x6, WorkToBuild 28000, источник с ядерным топливом и Genetron-компонентами; исходные особые ограничения сохранены.</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_136</defName>
+    <label>steam-powered ARC</label>
+    <packageId>vanillaquestsexpanded.generator</packageId>
+    <targetDefName>VQE_Genetron_SteamPowered</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_137</defName>
+    <label>thermal-vent ARC</label>
+    <packageId>vanillaquestsexpanded.generator</packageId>
+    <targetDefName>VQE_Genetron_ThermalVent</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_138</defName>
+    <label>uranium-powered ARC</label>
+    <packageId>vanillaquestsexpanded.generator</packageId>
+    <targetDefName>VQE_Genetron_UraniumPowered</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_139</defName>
+    <label>wood-blasting ARC</label>
+    <packageId>vanillaquestsexpanded.generator</packageId>
+    <targetDefName>VQE_Genetron_WoodBlasting</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_140</defName>
+    <label>wood-fired ARC</label>
+    <packageId>vanillaquestsexpanded.generator</packageId>
+    <targetDefName>VQE_Genetron_WoodFired</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_141</defName>
+    <label>wood-fueled ARC</label>
+    <packageId>vanillaquestsexpanded.generator</packageId>
+    <targetDefName>VQE_Genetron_WoodFueled</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_142</defName>
+    <label>wood-powered ARC</label>
+    <packageId>vanillaquestsexpanded.generator</packageId>
+    <targetDefName>VQE_Genetron_WoodPowered</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_143</defName>
+    <label>cooler</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>Cooler</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_144</defName>
+    <label>heater</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>Heater</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_145</defName>
+    <label>passive cooler</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>PassiveCooler</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_146</defName>
+    <label>vent</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>Vent</targetDefName>
+    <minimumTier>0</minimumTier>
+    <addHousing>false</addHousing>
+    <note>без корпуса</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_147</defName>
+    <label>over-wall cooler</label>
+    <packageId>memegoddess.replacestuff</packageId>
+    <targetDefName>Cooler_Over</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_148</defName>
+    <label>over-wall cooler (wide)</label>
+    <packageId>memegoddess.replacestuff</packageId>
+    <targetDefName>Cooler_Over2W</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_149</defName>
+    <label>over-wall vent</label>
+    <packageId>memegoddess.replacestuff</packageId>
+    <targetDefName>Vent_Over</targetDefName>
+    <minimumTier>0</minimumTier>
+    <addHousing>false</addHousing>
+    <note>без корпуса</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_150</defName>
+    <label>over-wall vent (wide)</label>
+    <packageId>memegoddess.replacestuff</packageId>
+    <targetDefName>Vent_Over2W</targetDefName>
+    <minimumTier>0</minimumTier>
+    <addHousing>false</addHousing>
+    <note>без корпуса</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_151</defName>
+    <label>chemboiler</label>
+    <packageId>oskarpotocki.vanillafactionsexpanded.settlersmodule</packageId>
+    <targetDefName>ChemBoiler</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_152</defName>
+    <label>heat stones</label>
+    <packageId>oskarpotocki.vfe.classical</packageId>
+    <targetDefName>VFEC_HeatStones</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_153</defName>
+    <label>large passive cooler</label>
+    <packageId>oskarpotocki.vfe.classical</packageId>
+    <targetDefName>VFEC_LargePassiveCooler</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_154</defName>
+    <label>corpse fridge</label>
+    <packageId>sbz.neatstoragefridge</packageId>
+    <targetDefName>sbz_CorpseFridge</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_155</defName>
+    <label>double chest fridge</label>
+    <packageId>sbz.neatstoragefridge</packageId>
+    <targetDefName>sbz_DoubleChestFridge</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_156</defName>
+    <label>double wall fridge</label>
+    <packageId>sbz.neatstoragefridge</packageId>
+    <targetDefName>sbz_DoubleWallFridge</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_157</defName>
+    <label>fridge</label>
+    <packageId>sbz.neatstoragefridge</packageId>
+    <targetDefName>sbz_Fridge</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_158</defName>
+    <label>large fridge</label>
+    <packageId>sbz.neatstoragefridge</packageId>
+    <targetDefName>sbz_LargeFridge</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_159</defName>
+    <label>single chest fridge</label>
+    <packageId>sbz.neatstoragefridge</packageId>
+    <targetDefName>sbz_SingleChestFridge</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_160</defName>
+    <label>single wall fridge</label>
+    <packageId>sbz.neatstoragefridge</packageId>
+    <targetDefName>sbz_SingleWallFridge</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_161</defName>
+    <label>surgical lamp</label>
+    <packageId>4loris4.morelinkables</packageId>
+    <targetDefName>SurgicalLamp</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_162</defName>
+    <label>scientist cabinet</label>
+    <packageId>4loris4.morelinkables</packageId>
+    <targetDefName>ToolCabinetC</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_163</defName>
+    <label>antenna tower</label>
+    <packageId>aoba.fortress.industrial</packageId>
+    <targetDefName>FT_AntennaTower</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_164</defName>
+    <label>ENIAC</label>
+    <packageId>aoba.fortress.industrial</packageId>
+    <targetDefName>FT_ENIAC</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_165</defName>
+    <label>hydrant</label>
+    <packageId>aoba.fortress.industrial</packageId>
+    <targetDefName>FT_FirefoamPopper</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_166</defName>
+    <label>radio terminal</label>
+    <packageId>aoba.fortress.industrial</packageId>
+    <targetDefName>FT_Radio</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_167</defName>
+    <label>high-energy signal decoy</label>
+    <packageId>aoba.fortress.industrial.citadel</packageId>
+    <targetDefName>FTC_EnegryDecoy</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_168</defName>
+    <label>infrasonic decoy</label>
+    <packageId>aoba.fortress.industrial.citadel</packageId>
+    <targetDefName>FTC_InfrasonicDecoy</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_169</defName>
+    <label>electromagnetic signal decoy</label>
+    <packageId>aoba.fortress.industrial.citadel</packageId>
+    <targetDefName>FTC_SignalDecoy</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_170</defName>
+    <label>double autodoor</label>
+    <packageId>gt.sam.basicdoubledoors</packageId>
+    <targetDefName>BDD_AutoDoor</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_171</defName>
+    <label>autodoor</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>Autodoor</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_172</defName>
+    <label>comms console</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>CommsConsole</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_173</defName>
+    <label>flatscreen television</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>FlatscreenTelevision</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_174</defName>
+    <label>flood light</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>FloodLight</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_175</defName>
+    <label>ground-penetrating scanner</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>GroundPenetratingScanner</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_176</defName>
+    <label>long-range mineral scanner</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>LongRangeMineralScanner</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_177</defName>
+    <label>megascreen television</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>MegascreenTelevision</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_178</defName>
+    <label>moisture pump</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>MoisturePump</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_179</defName>
+    <label>orbital trade beacon</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>OrbitalTradeBeacon</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_180</defName>
+    <label>plant pot</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>PlantPot</targetDefName>
+    <minimumTier>0</minimumTier>
+    <addHousing>false</addHousing>
+    <note>без корпуса</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_181</defName>
+    <label>pod launcher</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>PodLauncher</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_182</defName>
+    <label>ship structural beam</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>Ship_Beam</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_183</defName>
+    <label>ship computer core</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>Ship_ComputerCore</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_184</defName>
+    <label>ship cryptosleep casket</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>Ship_CryptosleepCasket</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_185</defName>
+    <label>ship engine</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>Ship_Engine</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_186</defName>
+    <label>sensor cluster</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>Ship_SensorCluster</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_187</defName>
+    <label>standing lamp</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>StandingLamp</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_188</defName>
+    <label>sun lamp</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>SunLamp</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_189</defName>
+    <label>torch lamp</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>TorchLamp</targetDefName>
+    <minimumTier>0</minimumTier>
+    <addHousing>false</addHousing>
+    <note>без корпуса</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_190</defName>
+    <label>wall torch lamp</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>TorchWallLamp</targetDefName>
+    <minimumTier>0</minimumTier>
+    <addHousing>false</addHousing>
+    <note>без корпуса</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_191</defName>
+    <label>tube television</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>TubeTelevision</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_192</defName>
+    <label>vitals monitor</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>VitalsMonitor</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_193</defName>
+    <label>wall lamp</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>WallLamp</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_194</defName>
+    <label>band node</label>
+    <packageId>ludeon.rimworld.biotech</packageId>
+    <targetDefName>BandNode</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_195</defName>
+    <label>mech recharger</label>
+    <packageId>ludeon.rimworld.biotech</packageId>
+    <targetDefName>BasicRecharger</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_196</defName>
+    <label>mechband antenna</label>
+    <packageId>ludeon.rimworld.biotech</packageId>
+    <targetDefName>BurnoutMechlinkBooster</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_197</defName>
+    <label>deathrest accelerator</label>
+    <packageId>ludeon.rimworld.biotech</packageId>
+    <targetDefName>DeathrestAccelerator</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_198</defName>
+    <label>deathrest casket</label>
+    <packageId>ludeon.rimworld.biotech</packageId>
+    <targetDefName>DeathrestCasket</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_199</defName>
+    <label>gene assembler</label>
+    <packageId>ludeon.rimworld.biotech</packageId>
+    <targetDefName>GeneAssembler</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_200</defName>
+    <label>gene bank</label>
+    <packageId>ludeon.rimworld.biotech</packageId>
+    <targetDefName>GeneBank</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_201</defName>
+    <label>gene extractor</label>
+    <packageId>ludeon.rimworld.biotech</packageId>
+    <targetDefName>GeneExtractor</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_202</defName>
+    <label>gene processor</label>
+    <packageId>ludeon.rimworld.biotech</packageId>
+    <targetDefName>GeneProcessor</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_203</defName>
+    <label>glucosoid pump</label>
+    <packageId>ludeon.rimworld.biotech</packageId>
+    <targetDefName>GlucosoidPump</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_204</defName>
+    <label>growth vat</label>
+    <packageId>ludeon.rimworld.biotech</packageId>
+    <targetDefName>GrowthVat</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_205</defName>
+    <label>hemogen amplifier</label>
+    <packageId>ludeon.rimworld.biotech</packageId>
+    <targetDefName>HemogenAmplifier</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_206</defName>
+    <label>hemopump</label>
+    <packageId>ludeon.rimworld.biotech</packageId>
+    <targetDefName>Hemopump</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_207</defName>
+    <label>mech booster</label>
+    <packageId>ludeon.rimworld.biotech</packageId>
+    <targetDefName>MechBooster</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_208</defName>
+    <label>mechband dish</label>
+    <packageId>ludeon.rimworld.biotech</packageId>
+    <targetDefName>MechbandDish</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_209</defName>
+    <label>pollution pump</label>
+    <packageId>ludeon.rimworld.biotech</packageId>
+    <targetDefName>PollutionPump</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_210</defName>
+    <label>psychofluid pump</label>
+    <packageId>ludeon.rimworld.biotech</packageId>
+    <targetDefName>PsychofluidPump</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_211</defName>
+    <label>large mech recharger</label>
+    <packageId>ludeon.rimworld.biotech</packageId>
+    <targetDefName>StandardRecharger</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_212</defName>
+    <label>subcore ripscanner</label>
+    <packageId>ludeon.rimworld.biotech</packageId>
+    <targetDefName>SubcoreRipscanner</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_213</defName>
+    <label>subcore softscanner</label>
+    <packageId>ludeon.rimworld.biotech</packageId>
+    <targetDefName>SubcoreSoftscanner</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_214</defName>
+    <label>wastepack atomizer</label>
+    <packageId>ludeon.rimworld.biotech</packageId>
+    <targetDefName>WastepackAtomizer</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_215</defName>
+    <label>autobong</label>
+    <packageId>ludeon.rimworld.ideology</packageId>
+    <targetDefName>Autobong</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_216</defName>
+    <label>biosculpter pod</label>
+    <packageId>ludeon.rimworld.ideology</packageId>
+    <targetDefName>BiosculpterPod</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_217</defName>
+    <label>darktorch</label>
+    <packageId>ludeon.rimworld.ideology</packageId>
+    <targetDefName>Darktorch</targetDefName>
+    <minimumTier>0</minimumTier>
+    <addHousing>false</addHousing>
+    <note>без корпуса</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_218</defName>
+    <label>fungus darktorch</label>
+    <packageId>ludeon.rimworld.ideology</packageId>
+    <targetDefName>DarktorchFungus</targetDefName>
+    <minimumTier>0</minimumTier>
+    <addHousing>false</addHousing>
+    <note>без корпуса</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_219</defName>
+    <label>lightball</label>
+    <packageId>ludeon.rimworld.ideology</packageId>
+    <targetDefName>LightBall</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_220</defName>
+    <label>loudspeaker</label>
+    <packageId>ludeon.rimworld.ideology</packageId>
+    <targetDefName>Loudspeaker</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_221</defName>
+    <label>neural supercharger</label>
+    <packageId>ludeon.rimworld.ideology</packageId>
+    <targetDefName>NeuralSupercharger</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_222</defName>
+    <label>bonsai pot</label>
+    <packageId>ludeon.rimworld.ideology</packageId>
+    <targetDefName>PlantPot_Bonsai</targetDefName>
+    <minimumTier>0</minimumTier>
+    <addHousing>false</addHousing>
+    <note>без корпуса</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_223</defName>
+    <label>sleep accelerator</label>
+    <packageId>ludeon.rimworld.ideology</packageId>
+    <targetDefName>SleepAccelerator</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_224</defName>
+    <label>brazier</label>
+    <packageId>ludeon.rimworld.royalty</packageId>
+    <targetDefName>Brazier</targetDefName>
+    <minimumTier>0</minimumTier>
+    <addHousing>false</addHousing>
+    <note>без корпуса</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_225</defName>
+    <label>darklight brazier</label>
+    <packageId>ludeon.rimworld.royalty</packageId>
+    <targetDefName>DarklightBrazier</targetDefName>
+    <minimumTier>0</minimumTier>
+    <addHousing>false</addHousing>
+    <note>без корпуса</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_226</defName>
+    <label>ship landing beacon</label>
+    <packageId>ludeon.rimworld.royalty</packageId>
+    <targetDefName>ShipLandingBeacon</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_227</defName>
+    <label>chemlamp</label>
+    <packageId>oskarpotocki.vanillafactionsexpanded.settlersmodule</packageId>
+    <targetDefName>Chemlamp</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_228</defName>
+    <label>chemlamp post</label>
+    <packageId>oskarpotocki.vanillafactionsexpanded.settlersmodule</packageId>
+    <targetDefName>ChemlampPost</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_229</defName>
+    <label>thermaebath</label>
+    <packageId>oskarpotocki.vfe.classical</packageId>
+    <targetDefName>VFEC_Thermaebath</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_230</defName>
+    <label>candelabra</label>
+    <packageId>oskarpotocki.vfe.empire</packageId>
+    <targetDefName>VFEE_Candelabra</targetDefName>
+    <minimumTier>0</minimumTier>
+    <addHousing>false</addHousing>
+    <note>без корпуса</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_231</defName>
+    <label>arcade machine</label>
+    <packageId>vanillaexpanded.vfecore</packageId>
+    <targetDefName>Joy_Arcade</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_232</defName>
+    <label>old computer</label>
+    <packageId>vanillaexpanded.vfecore</packageId>
+    <targetDefName>Joy_InudstrialComputer</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_233</defName>
+    <label>modern computer</label>
+    <packageId>vanillaexpanded.vfecore</packageId>
+    <targetDefName>Joy_ModernComputer</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_234</defName>
+    <label>outdoor lamp</label>
+    <packageId>vanillaexpanded.vfecore</packageId>
+    <targetDefName>Light_Streetlamp</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_235</defName>
+    <label>industrial radio</label>
+    <packageId>vanillaexpanded.vfecore</packageId>
+    <targetDefName>Radio_Industrial</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_236</defName>
+    <label>longwave radio</label>
+    <packageId>vanillaexpanded.vfecore</packageId>
+    <targetDefName>Radio_Spacer</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_237</defName>
+    <label>desk lamp</label>
+    <packageId>vanillaexpanded.vfecore</packageId>
+    <targetDefName>VFE_DeskLamp</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_238</defName>
+    <label>floor lamp</label>
+    <packageId>vanillaexpanded.vfecore</packageId>
+    <targetDefName>VFE_FloorLamp</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_239</defName>
+    <label>long plant pot</label>
+    <packageId>vanillaexpanded.vfecore</packageId>
+    <targetDefName>VFE_LongPlantPot</targetDefName>
+    <minimumTier>0</minimumTier>
+    <addHousing>false</addHousing>
+    <note>без корпуса</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_240</defName>
+    <label>royal standing lamp</label>
+    <packageId>vanillaexpanded.vfecore</packageId>
+    <targetDefName>VFE_RoyalLamp</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_241</defName>
+    <label>sprinkler</label>
+    <packageId>vanillaexpanded.vfefarming</packageId>
+    <targetDefName>VFE_Sprinkler</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_242</defName>
+    <label>vitals centre</label>
+    <packageId>vanillaexpanded.vfemedical</packageId>
+    <targetDefName>Facility_VitalsCentre</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_243</defName>
+    <label>mechanite repair shelf</label>
+    <packageId>vanillaexpanded.vfespacer</packageId>
+    <targetDefName>Shelf_RepairRack</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_244</defName>
+    <label>illuminated dresser</label>
+    <packageId>vanillaexpanded.vfespacer</packageId>
+    <targetDefName>Table_IlluminatedDresser</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_245</defName>
+    <label>illuminated end table</label>
+    <packageId>vanillaexpanded.vfespacer</packageId>
+    <targetDefName>Table_IlluminatedEndTable</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_246</defName>
+    <label>interactive table (1x1)</label>
+    <packageId>vanillaexpanded.vfespacer</packageId>
+    <targetDefName>Table_interactive_1x1c</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_247</defName>
+    <label>interactive table (2x2)</label>
+    <packageId>vanillaexpanded.vfespacer</packageId>
+    <targetDefName>Table_interactive_2x2c</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_248</defName>
+    <label>hyperscreen television</label>
+    <packageId>vanillaexpanded.vfespacer</packageId>
+    <targetDefName>UltrascreenTV</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_249</defName>
+    <label>air purifier</label>
+    <packageId>vanillaexpanded.vfespacer</packageId>
+    <targetDefName>VFES_AirPurifier</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_250</defName>
+    <label>illuminated wardrobe</label>
+    <packageId>vanillaexpanded.vfespacer</packageId>
+    <targetDefName>VFES_Table_IlluminatedWardrobe</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_251</defName>
+    <label>television speaker</label>
+    <packageId>vanillaexpanded.vfespacer</packageId>
+    <targetDefName>VFES_TelevisionSpeaker</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_252</defName>
+    <label>wall-mounted television</label>
+    <packageId>vanillaexpanded.vfespacer</packageId>
+    <targetDefName>VFES_WallMountedTelevision</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_253</defName>
+    <label>nutrient paste dripper</label>
+    <packageId>vanillaexpanded.vnutriente</packageId>
+    <targetDefName>VNPE_NutrientPasteDripper</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_254</defName>
+    <label>nutrient paste feeder</label>
+    <packageId>vanillaexpanded.vnutriente</packageId>
+    <targetDefName>VNPE_NutrientPasteFeeder</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_255</defName>
+    <label>nutrient paste grinder</label>
+    <packageId>vanillaexpanded.vnutriente</packageId>
+    <targetDefName>VNPE_NutrientPasteGrinder</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_256</defName>
+    <label>nutrient paste pipe</label>
+    <packageId>vanillaexpanded.vnutriente</packageId>
+    <targetDefName>VNPE_NutrientPastePipe</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>false</addHousing>
+    <note>деталь T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_257</defName>
+    <label>nutrient paste tap</label>
+    <packageId>vanillaexpanded.vnutriente</packageId>
+    <targetDefName>VNPE_NutrientPasteTap</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_258</defName>
+    <label>nutrient paste valve</label>
+    <packageId>vanillaexpanded.vnutriente</packageId>
+    <targetDefName>VNPE_NutrientPasteValve</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_259</defName>
+    <label>nutrient paste vat</label>
+    <packageId>vanillaexpanded.vnutriente</packageId>
+    <targetDefName>VNPE_NutrientPasteVat</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_260</defName>
+    <label>hidden nutrient paste pipe</label>
+    <packageId>vanillaexpanded.vnutriente</packageId>
+    <targetDefName>VNPE_UndergroundNutrientPastePipe</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>false</addHousing>
+    <note>деталь T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_261</defName>
+    <label>autocannon</label>
+    <packageId>aoba.fortress.industrial</packageId>
+    <targetDefName>FT_AutoCannon</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_262</defName>
+    <label>quad machine gun</label>
+    <packageId>aoba.fortress.industrial</packageId>
+    <targetDefName>FT_Maxim4M</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_263</defName>
+    <label>recoilless gun</label>
+    <packageId>aoba.fortress.industrial</packageId>
+    <targetDefName>FT_RecoillessGun</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_264</defName>
+    <label>anti-air gun</label>
+    <packageId>aoba.fortress.industrial</packageId>
+    <targetDefName>FT_TurretAA</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_265</defName>
+    <label>anti-tank gun</label>
+    <packageId>aoba.fortress.industrial</packageId>
+    <targetDefName>FT_TurretAT</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_266</defName>
+    <label>field cannon</label>
+    <packageId>aoba.fortress.industrial</packageId>
+    <targetDefName>FT_TurretEmpero</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_267</defName>
+    <label>multi-barrel mortar launcher</label>
+    <packageId>aoba.fortress.industrial</packageId>
+    <targetDefName>FT_TurretHexMortar</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_268</defName>
+    <label>field howitzer</label>
+    <packageId>aoba.fortress.industrial</packageId>
+    <targetDefName>FT_TurretPrince</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_269</defName>
+    <label>quad anti-air gun</label>
+    <packageId>aoba.fortress.industrial</packageId>
+    <targetDefName>FT_TurretQuadAA</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_270</defName>
+    <label>auto-turret bunker</label>
+    <packageId>aoba.fortress.industrial</packageId>
+    <targetDefName>FT_Turret_BunkerC</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_271</defName>
+    <label>auto-turret military sandbag nest</label>
+    <packageId>aoba.fortress.industrial</packageId>
+    <targetDefName>FT_Turret_BunkerF</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_272</defName>
+    <label>auto-turret sandbag nest</label>
+    <packageId>aoba.fortress.industrial</packageId>
+    <targetDefName>FT_Turret_BunkerL</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_273</defName>
+    <label>auto-turret bunker</label>
+    <packageId>aoba.fortress.industrial</packageId>
+    <targetDefName>FT_Turret_BunkerM</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_274</defName>
+    <label>infantry mortar</label>
+    <packageId>aoba.fortress.industrial</packageId>
+    <targetDefName>FT_Turret_Mortar</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_275</defName>
+    <label>Tank Bunker</label>
+    <packageId>aoba.fortress.industrial.citadel</packageId>
+    <targetDefName>FTC_AntiTank_Turret</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_276</defName>
+    <label>autocannon bunker</label>
+    <packageId>aoba.fortress.industrial.citadel</packageId>
+    <targetDefName>FTC_Autocannon_Bunker</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_277</defName>
+    <label>autocannon turret</label>
+    <packageId>aoba.fortress.industrial.citadel</packageId>
+    <targetDefName>FTC_Autocannon_Turret</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_278</defName>
+    <label>coastal batterey</label>
+    <packageId>aoba.fortress.industrial.citadel</packageId>
+    <targetDefName>FTC_Batterey_Turret</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_279</defName>
+    <label>quad machinegun bunker</label>
+    <packageId>aoba.fortress.industrial.citadel</packageId>
+    <targetDefName>FTC_Bunker_Turret</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_280</defName>
+    <label>multi-railed rocket launcher</label>
+    <packageId>aoba.fortress.industrial.citadel</packageId>
+    <targetDefName>FTC_Katyusha_Turret</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_281</defName>
+    <label>mortar bunker</label>
+    <packageId>aoba.fortress.industrial.citadel</packageId>
+    <targetDefName>FTC_Mortar_Bunker</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_282</defName>
+    <label>Twin Heavy flak gun</label>
+    <packageId>aoba.fortress.industrial.citadel</packageId>
+    <targetDefName>FTC_TurretTwinHeavyFlak</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_283</defName>
+    <label>machinegun turret</label>
+    <packageId>aoba.fortress.industrial.citadel</packageId>
+    <targetDefName>FTC_TwinMG_Turret</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_284</defName>
+    <label>ATgun bunker</label>
+    <packageId>aoba.fortress.industrial.citadel</packageId>
+    <targetDefName>FTC_Wall_AT</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_285</defName>
+    <label>flamethrower bunker</label>
+    <packageId>aoba.fortress.industrial.citadel</packageId>
+    <targetDefName>FTC_Wall_Flame</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_286</defName>
+    <label>howitzer bunker</label>
+    <packageId>aoba.fortress.industrial.citadel</packageId>
+    <targetDefName>FTC_Wall_Howitzer</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_287</defName>
+    <label>machinegun bunker</label>
+    <packageId>aoba.fortress.industrial.citadel</packageId>
+    <targetDefName>FTC_Wall_MG</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_288</defName>
+    <label>autocannon turret</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>Turret_Autocannon</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_289</defName>
+    <label>foam turret</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>Turret_FoamTurret</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_290</defName>
+    <label>mini-turret</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>Turret_MiniTurret</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_291</defName>
+    <label>mortar</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>Turret_Mortar</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_292</defName>
+    <label>rocketswarm launcher</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>Turret_RocketswarmLauncher</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_293</defName>
+    <label>uranium slug turret</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>Turret_Sniper</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_294</defName>
+    <label>gatling gun turret</label>
+    <packageId>oskarpotocki.vanillafactionsexpanded.settlersmodule</packageId>
+    <targetDefName>Turret_GatlingGun</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_295</defName>
+    <label>scorpion turret</label>
+    <packageId>oskarpotocki.vfe.classical</packageId>
+    <targetDefName>VFEC_Turret_Scorpion</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_296</defName>
+    <label>kontarion</label>
+    <packageId>oskarpotocki.vfe.deserters</packageId>
+    <targetDefName>VFED_Turret_Kontarion</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_297</defName>
+    <label>onager</label>
+    <packageId>oskarpotocki.vfe.deserters</packageId>
+    <targetDefName>VFED_Turret_Onager</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_298</defName>
+    <label>palintone</label>
+    <packageId>oskarpotocki.vfe.deserters</packageId>
+    <targetDefName>VFED_Turret_Palintone</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_299</defName>
+    <label>cannon</label>
+    <packageId>oskarpotocki.vfe.pirates</packageId>
+    <targetDefName>VFEP_Turret_Cannon</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_300</defName>
+    <label>field gun</label>
+    <packageId>oskarpotocki.vfe.pirates</packageId>
+    <targetDefName>VFEP_Turret_FieldGun</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_301</defName>
+    <label>charge complex</label>
+    <packageId>vanillaexpanded.vfesecurity</packageId>
+    <targetDefName>VFES_Complex_Charge</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_302</defName>
+    <label>graser cannon complex</label>
+    <packageId>vanillaexpanded.vfesecurity</packageId>
+    <targetDefName>VFES_Complex_GraserCannon</targetDefName>
+    <minimumTier>4</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T4; корпус T4</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_303</defName>
+    <label>HMG complex</label>
+    <packageId>vanillaexpanded.vfesecurity</packageId>
+    <targetDefName>VFES_Complex_Hmg</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_304</defName>
+    <label>minigun complex</label>
+    <packageId>vanillaexpanded.vfesecurity</packageId>
+    <targetDefName>VFES_Complex_Minigun</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_305</defName>
+    <label>concealed barrier</label>
+    <packageId>vanillaexpanded.vfesecurity</packageId>
+    <targetDefName>VFES_ConcealedBarrier</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_306</defName>
+    <label>large repulsor</label>
+    <packageId>vanillaexpanded.vfesecurity</packageId>
+    <targetDefName>VFES_LargeRepulsor</targetDefName>
+    <minimumTier>4</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T4; корпус T4</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_307</defName>
+    <label>small repulsor</label>
+    <packageId>vanillaexpanded.vfesecurity</packageId>
+    <targetDefName>VFES_SmallRepulsor</targetDefName>
+    <minimumTier>4</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T4; корпус T4</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_308</defName>
+    <label>anti-air turret</label>
+    <packageId>vanillaexpanded.vfesecurity</packageId>
+    <targetDefName>VFES_Turret_AntiAir</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_309</defName>
+    <label>armored turret</label>
+    <packageId>vanillaexpanded.vfesecurity</packageId>
+    <targetDefName>VFES_Turret_ArmoredTurret</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_310</defName>
+    <label>artillery</label>
+    <packageId>vanillaexpanded.vfesecurity</packageId>
+    <targetDefName>VFES_Turret_Artillery</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_311</defName>
+    <label>double autocannon turret</label>
+    <packageId>vanillaexpanded.vfesecurity</packageId>
+    <targetDefName>VFES_Turret_AutocannonDouble</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_312</defName>
+    <label>automated mortar</label>
+    <packageId>vanillaexpanded.vfesecurity</packageId>
+    <targetDefName>VFES_Turret_AutomatedMortar</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_313</defName>
+    <label>ballista</label>
+    <packageId>vanillaexpanded.vfesecurity</packageId>
+    <targetDefName>VFES_Turret_Ballista</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_314</defName>
+    <label>catapult</label>
+    <packageId>vanillaexpanded.vfesecurity</packageId>
+    <targetDefName>VFES_Turret_Catapult</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T1; корпус T1</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_315</defName>
+    <label>charge railgun</label>
+    <packageId>vanillaexpanded.vfesecurity</packageId>
+    <targetDefName>VFES_Turret_ChargeRailgun</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_316</defName>
+    <label>charge turret</label>
+    <packageId>vanillaexpanded.vfesecurity</packageId>
+    <targetDefName>VFES_Turret_ChargeTurret</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_317</defName>
+    <label>concealed turret</label>
+    <packageId>vanillaexpanded.vfesecurity</packageId>
+    <targetDefName>VFES_Turret_Concealed</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_318</defName>
+    <label>flamer turret</label>
+    <packageId>vanillaexpanded.vfesecurity</packageId>
+    <targetDefName>VFES_Turret_Flame</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_319</defName>
+    <label>military turret</label>
+    <packageId>vanillaexpanded.vfesecurity</packageId>
+    <targetDefName>VFES_Turret_MilitaryTurret</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_320</defName>
+    <label>minigun turret</label>
+    <packageId>vanillaexpanded.vfesecurity</packageId>
+    <targetDefName>VFES_Turret_Minigun</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_321</defName>
+    <label>non-lethal turret</label>
+    <packageId>vanillaexpanded.vfesecurity</packageId>
+    <targetDefName>VFES_Turret_NonLethalTurret</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_322</defName>
+    <label>searchlight</label>
+    <packageId>vanillaexpanded.vfesecurity</packageId>
+    <targetDefName>VFES_Turret_Searchlight</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_323</defName>
+    <label>shotgun turret</label>
+    <packageId>vanillaexpanded.vfesecurity</packageId>
+    <targetDefName>VFES_Turret_ShotgunTurret</targetDefName>
+    <minimumTier>2</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T2; корпус T2</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_324</defName>
+    <label>tesla blaster</label>
+    <packageId>vanillaexpanded.vfesecurity</packageId>
+    <targetDefName>VFES_Turret_TeslaBlaster</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>T3; корпус T3</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_325</defName>
+    <label>advanced multi-analyzer</label>
+    <packageId>4loris4.morelinkables</packageId>
+    <targetDefName>AdvancedMultiAnalyzer</targetDefName>
+    <minimumTier>0</minimumTier>
+    <addHousing>false</addHousing>
+    <note>—</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_326</defName>
+    <label>hi-tech research bench</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>HiTechResearchBench</targetDefName>
+    <minimumTier>0</minimumTier>
+    <addHousing>false</addHousing>
+    <note>—</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_327</defName>
+    <label>multi-analyzer</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>MultiAnalyzer</targetDefName>
+    <minimumTier>0</minimumTier>
+    <addHousing>false</addHousing>
+    <note>—</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_G01_328</defName>
+    <label>simple research bench</label>
+    <packageId>ludeon.rimworld</packageId>
+    <targetDefName>SimpleResearchBench</targetDefName>
+    <minimumTier>0</minimumTier>
+    <addHousing>false</addHousing>
+    <note>—</note>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_Grechka_StorageController</defName>
+    <label>Grechka_StorageController</label>
+    <packageId>grechka.storage</packageId>
+    <targetDefName>Grechka_StorageController</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>Принятая стоимость Storage в профиле World</note>
+    <replacementCost>
+      <li>
+        <thingDefName>Grechka_ComponentT3_Item</thingDefName>
+        <count>4</count>
+      </li>
+      <li>
+        <thingDefName>Plasteel</thingDefName>
+        <count>100</count>
+      </li>
+      <li>
+        <thingDefName>Grechka_QuartzProcessor</thingDefName>
+        <count>8</count>
+      </li>
+      <li>
+        <thingDefName>Grechka_SilverProcessor</thingDefName>
+        <count>4</count>
+      </li>
+      <li>
+        <thingDefName>Grechka_GoldProcessor</thingDefName>
+        <count>4</count>
+      </li>
+    </replacementCost>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_Grechka_DiskRack</defName>
+    <label>Grechka_DiskRack</label>
+    <packageId>grechka.storage</packageId>
+    <targetDefName>Grechka_DiskRack</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>Принятая стоимость Storage в профиле World</note>
+    <replacementCost>
+      <li>
+        <thingDefName>Grechka_ComponentT3_Item</thingDefName>
+        <count>2</count>
+      </li>
+      <li>
+        <thingDefName>Steel</thingDefName>
+        <count>120</count>
+      </li>
+      <li>
+        <thingDefName>Grechka_QuartzProcessor</thingDefName>
+        <count>4</count>
+      </li>
+      <li>
+        <thingDefName>Grechka_SilverProcessor</thingDefName>
+        <count>2</count>
+      </li>
+      <li>
+        <thingDefName>Grechka_GoldProcessor</thingDefName>
+        <count>2</count>
+      </li>
+    </replacementCost>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_Grechka_Inscriber</defName>
+    <label>Grechka_Inscriber</label>
+    <packageId>grechka.storage</packageId>
+    <targetDefName>Grechka_Inscriber</targetDefName>
+    <minimumTier>1</minimumTier>
+    <addHousing>true</addHousing>
+    <note>Принятая стоимость Storage в профиле World</note>
+    <replacementCost>
+      <li>
+        <thingDefName>Steel</thingDefName>
+        <count>80</count>
+      </li>
+      <li>
+        <thingDefName>ComponentIndustrial</thingDefName>
+        <count>5</count>
+      </li>
+      <li>
+        <thingDefName>Grechka_Quartz</thingDefName>
+        <count>10</count>
+      </li>
+    </replacementCost>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_Grechka_StorageCrafterT3_Building</defName>
+    <label>Grechka_StorageCrafterT3_Building</label>
+    <packageId>grechka.storage</packageId>
+    <targetDefName>Grechka_StorageCrafterT3_Building</targetDefName>
+    <minimumTier>3</minimumTier>
+    <addHousing>true</addHousing>
+    <note>Крафтер: корпус и компоненты своего тира, без роботов-уборщиков/переносчиков</note>
+    <replacementCost>
+      <li>
+        <thingDefName>Steel</thingDefName>
+        <count>180</count>
+      </li>
+      <li>
+        <thingDefName>Plasteel</thingDefName>
+        <count>90</count>
+      </li>
+      <li>
+        <thingDefName>Grechka_ComponentT3_Item</thingDefName>
+        <count>12</count>
+      </li>
+      <li>
+        <thingDefName>Grechka_GoldProcessor</thingDefName>
+        <count>9</count>
+      </li>
+      <li>
+        <thingDefName>Grechka_CertusQuartz</thingDefName>
+        <count>30</count>
+      </li>
+    </replacementCost>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_Grechka_StorageCrafterT4_Building</defName>
+    <label>Grechka_StorageCrafterT4_Building</label>
+    <packageId>grechka.storage</packageId>
+    <targetDefName>Grechka_StorageCrafterT4_Building</targetDefName>
+    <minimumTier>4</minimumTier>
+    <addHousing>true</addHousing>
+    <note>Крафтер: корпус и компоненты своего тира, без роботов-уборщиков/переносчиков</note>
+    <replacementCost>
+      <li>
+        <thingDefName>Steel</thingDefName>
+        <count>240</count>
+      </li>
+      <li>
+        <thingDefName>Plasteel</thingDefName>
+        <count>120</count>
+      </li>
+      <li>
+        <thingDefName>Grechka_ComponentT4_Item</thingDefName>
+        <count>16</count>
+      </li>
+      <li>
+        <thingDefName>Grechka_GoldProcessor</thingDefName>
+        <count>12</count>
+      </li>
+      <li>
+        <thingDefName>Grechka_CertusQuartz</thingDefName>
+        <count>40</count>
+      </li>
+    </replacementCost>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+  <Grechka.WorldIntegration.MachineProfileRuleDef>
+    <defName>GrechkaWorld_Grechka_StorageCrafterT5_Building</defName>
+    <label>Grechka_StorageCrafterT5_Building</label>
+    <packageId>grechka.storage</packageId>
+    <targetDefName>Grechka_StorageCrafterT5_Building</targetDefName>
+    <minimumTier>5</minimumTier>
+    <addHousing>true</addHousing>
+    <note>Крафтер: корпус и компоненты своего тира, без роботов-уборщиков/переносчиков</note>
+    <replacementCost>
+      <li>
+        <thingDefName>Steel</thingDefName>
+        <count>300</count>
+      </li>
+      <li>
+        <thingDefName>Plasteel</thingDefName>
+        <count>150</count>
+      </li>
+      <li>
+        <thingDefName>Grechka_ComponentT5_Item</thingDefName>
+        <count>20</count>
+      </li>
+      <li>
+        <thingDefName>Grechka_GoldProcessor</thingDefName>
+        <count>15</count>
+      </li>
+      <li>
+        <thingDefName>Grechka_CertusQuartz</thingDefName>
+        <count>50</count>
+      </li>
+    </replacementCost>
+  </Grechka.WorldIntegration.MachineProfileRuleDef>
+</Defs>

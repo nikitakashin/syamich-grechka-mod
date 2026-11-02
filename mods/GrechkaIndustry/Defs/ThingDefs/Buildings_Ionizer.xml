@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_IonizerT3_Building</defName>
@@ -17,8 +17,10 @@
     <rotatable>false</rotatable>
     <size>(1,1)</size>
     <tickerType>Rare</tickerType>
-    <minifiedDef>MinifiedThing</minifiedDef>
-    <thingCategories><li>BuildingsProduction</li></thingCategories>
+    <minifiedDef>Grechka_PackedIonizerT3_Item</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
     <statBases>
       <WorkToBuild>4500</WorkToBuild>
       <MaxHitPoints>260</MaxHitPoints>
@@ -32,16 +34,20 @@
       <Grechka_Mechanites>20</Grechka_Mechanites>
     </costList>
     <comps>
-      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Forbiddable" />
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>1000</basePowerConsumption>
         <shortCircuitInRain>false</shortCircuitInRain>
       </li>
-      <li Class="CompProperties_Flickable"/>
-      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
       <li Class="Grechka.Industry.CompProperties_RoomIonizer">
         <cleaningLayersPerCycle>8</cleaningLayersPerCycle>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
+        <targetDefName>Grechka_IonizerT4_Building</targetDefName>
+        <costDescription>установленное устройство, 10 компонентов T4, 100 пластали и 8 субстрата</costDescription>
       </li>
     </comps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>

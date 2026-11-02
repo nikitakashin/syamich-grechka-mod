@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_MechaponicsT4_Building</defName>
+    <label>мехапоника T4</label>
+    <description>Рост ×20, 3000 Вт, без света и раствора. Посев и сбор выполняют пешки.</description>
+    <thingClass>Grechka.Industry.Building_Mechaponics</thingClass>
+    <graphicData>
+      <texPath>Buildings/MechaponicsT4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.25,1.25)</drawSize>
+    </graphicData>
+    <noRightClickDraftAttack>true</noRightClickDraftAttack>
+    <altitudeLayer>LowPlant</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <fillPercent>0.3</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <castEdgeShadows>false</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <size>(1,1)</size>
+    <tickerType>Rare</tickerType>
+    <minifiedDef>Grechka_PackedMechaponicsT4_Item</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>3500</WorkToBuild>
+      <MaxHitPoints>240</MaxHitPoints>
+      <Mass>12</Mass>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <fertility>1</fertility>
+    <building>
+      <defaultPlantToGrow>Plant_Rice</defaultPlantToGrow>
+      <sowTag>Ground</sowTag>
+      <buildingTags>
+        <li>Production</li>
+      </buildingTags>
+    </building>
+    <modExtensions>
+      <li Class="Grechka.Industry.MechaponicsProperties">
+        <growthMultiplier>20</growthMultiplier>
+      </li>
+    </modExtensions>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>3000</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
+        <targetDefName>Grechka_MechaponicsT5_Building</targetDefName>
+        <costDescription>установленное устройство, 10 компонентов T5, 160 пластали и 24 концентрата</costDescription>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Production</designationCategory>
+    <designatorDropdown>Grechka_MechaponicsGroup</designatorDropdown>
+    <uiOrder>2521</uiOrder>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <constructEffect>ConstructMetal</constructEffect>
+    <costList>
+      <Grechka_PackedMechaponicsT3_Item>1</Grechka_PackedMechaponicsT3_Item>
+      <Grechka_ComponentT4_Item>10</Grechka_ComponentT4_Item>
+      <Plasteel>100</Plasteel>
+      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+    </costList>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_MechaponicsT5_Building</defName>
+    <label>мехапоника T5</label>
+    <description>Рост ×50, 10000 Вт, без света и раствора. Посев и сбор выполняют пешки.</description>
+    <thingClass>Grechka.Industry.Building_Mechaponics</thingClass>
+    <graphicData>
+      <texPath>Buildings/MechaponicsT5</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.25,1.25)</drawSize>
+    </graphicData>
+    <noRightClickDraftAttack>true</noRightClickDraftAttack>
+    <altitudeLayer>LowPlant</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <fillPercent>0.3</fillPercent>
+    <canOverlapZones>false</canOverlapZones>
+    <castEdgeShadows>false</castEdgeShadows>
+    <rotatable>false</rotatable>
+    <size>(1,1)</size>
+    <tickerType>Rare</tickerType>
+    <minifiedDef>Grechka_PackedMechaponicsT5_Item</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>3500</WorkToBuild>
+      <MaxHitPoints>240</MaxHitPoints>
+      <Mass>12</Mass>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <fertility>1</fertility>
+    <building>
+      <defaultPlantToGrow>Plant_Rice</defaultPlantToGrow>
+      <sowTag>Ground</sowTag>
+      <buildingTags>
+        <li>Production</li>
+      </buildingTags>
+    </building>
+    <modExtensions>
+      <li Class="Grechka.Industry.MechaponicsProperties">
+        <growthMultiplier>50</growthMultiplier>
+      </li>
+    </modExtensions>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>10000</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Production</designationCategory>
+    <designatorDropdown>Grechka_MechaponicsGroup</designatorDropdown>
+    <uiOrder>2521</uiOrder>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <constructEffect>ConstructMetal</constructEffect>
+    <costList>
+      <Grechka_PackedMechaponicsT4_Item>1</Grechka_PackedMechaponicsT4_Item>
+      <Grechka_ComponentT5_Item>10</Grechka_ComponentT5_Item>
+      <Plasteel>160</Plasteel>
+      <Grechka_GrechkaConcentrate>24</Grechka_GrechkaConcentrate>
+    </costList>
+  </ThingDef>
+</Defs>

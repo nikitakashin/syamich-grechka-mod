@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <SitePartDef>
+    <defName>Grechka_CertusMeteor</defName>
+    <label>метеорит certus</label>
+    <description>Упавший метеорит с certus-рудой и переносимыми источниками кристаллов.</description>
+    <workerClass>Grechka.Storage.SitePartWorker_CertusMeteor</workerClass>
+    <siteTexture>World/WorldObjects/AbandonedSettlement</siteTexture>
+    <requiresFaction>false</requiresFaction>
+    <wantsThreatPoints>false</wantsThreatPoints>
+    <considerEnteringAsAttack>false</considerEnteringAsAttack>
+    <approachOrderString>Посетить метеорит</approachOrderString>
+    <approachingReportString>Посещение метеорита</approachingReportString>
+    <arrivedLetter>Караван достиг метеорита certus.</arrivedLetter>
+    <arrivedLetterLabelPart>Метеорит certus</arrivedLetterLabelPart>
+  </SitePartDef>
+  <IncidentDef>
+    <defName>Grechka_CertusMeteorEvent</defName>
+    <label>метеорит certus</label>
+    <workerClass>Grechka.Storage.IncidentWorker_CertusMeteor</workerClass>
+    <category>Misc</category>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
+    <baseChance>0.8</baseChance>
+    <minRefireDays>15</minRefireDays>
+    <letterLabel>Метеорит certus</letterLabel>
+    <letterText>Обнаружено место падения метеорита certus.</letterText>
+    <letterDef>PositiveEvent</letterDef>
+  </IncidentDef>
+</Defs>

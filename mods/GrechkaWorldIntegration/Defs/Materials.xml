@@ -1,0 +1,790 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <Grechka.WorldIntegration.MaterialGroupDef>
+    <defName>GrechkaMaterial_steel</defName>
+    <label>steel</label>
+    <form>metal</form>
+    <members>
+      <li>
+        <packageId>ludeon.rimworld</packageId>
+        <thingDefName>Steel</thingDefName>
+      </li>
+    </members>
+  </Grechka.WorldIntegration.MaterialGroupDef>
+  <Grechka.WorldIntegration.MaterialGroupDef>
+    <defName>GrechkaMaterial_plasteel</defName>
+    <label>plasteel</label>
+    <form>alloy</form>
+    <members>
+      <li>
+        <packageId>ludeon.rimworld</packageId>
+        <thingDefName>Plasteel</thingDefName>
+      </li>
+    </members>
+  </Grechka.WorldIntegration.MaterialGroupDef>
+  <Grechka.WorldIntegration.MaterialGroupDef>
+    <defName>GrechkaMaterial_gold</defName>
+    <label>gold</label>
+    <form>metal</form>
+    <members>
+      <li>
+        <packageId>ludeon.rimworld</packageId>
+        <thingDefName>Gold</thingDefName>
+      </li>
+    </members>
+  </Grechka.WorldIntegration.MaterialGroupDef>
+  <Grechka.WorldIntegration.MaterialGroupDef>
+    <defName>GrechkaMaterial_silver</defName>
+    <label>silver</label>
+    <form>metal</form>
+    <members>
+      <li>
+        <packageId>ludeon.rimworld</packageId>
+        <thingDefName>Silver</thingDefName>
+      </li>
+    </members>
+  </Grechka.WorldIntegration.MaterialGroupDef>
+  <Grechka.WorldIntegration.MaterialGroupDef>
+    <defName>GrechkaMaterial_uranium</defName>
+    <label>uranium</label>
+    <form>metal</form>
+    <members>
+      <li>
+        <packageId>ludeon.rimworld</packageId>
+        <thingDefName>Uranium</thingDefName>
+      </li>
+    </members>
+  </Grechka.WorldIntegration.MaterialGroupDef>
+  <Grechka.WorldIntegration.MaterialGroupDef>
+    <defName>GrechkaMaterial_quartz</defName>
+    <label>quartz</label>
+    <form>crystal</form>
+    <members>
+      <li>
+        <packageId>grechka.storage</packageId>
+        <thingDefName>Grechka_Quartz</thingDefName>
+      </li>
+    </members>
+  </Grechka.WorldIntegration.MaterialGroupDef>
+  <Grechka.WorldIntegration.MaterialGroupDef>
+    <defName>GrechkaMaterial_certus</defName>
+    <label>certus</label>
+    <form>crystal</form>
+    <members>
+      <li>
+        <packageId>grechka.storage</packageId>
+        <thingDefName>Grechka_CertusQuartz</thingDefName>
+      </li>
+    </members>
+  </Grechka.WorldIntegration.MaterialGroupDef>
+  <Grechka.WorldIntegration.MaterialGroupDef>
+    <defName>GrechkaMaterial_component_t1</defName>
+    <label>component_t1</label>
+    <form>component</form>
+    <members>
+      <li>
+        <packageId>ludeon.rimworld</packageId>
+        <thingDefName>ComponentIndustrial</thingDefName>
+      </li>
+    </members>
+  </Grechka.WorldIntegration.MaterialGroupDef>
+  <Grechka.WorldIntegration.MaterialGroupDef>
+    <defName>GrechkaMaterial_component_t2</defName>
+    <label>component_t2</label>
+    <form>component</form>
+    <members>
+      <li>
+        <packageId>ludeon.rimworld</packageId>
+        <thingDefName>ComponentSpacer</thingDefName>
+      </li>
+    </members>
+  </Grechka.WorldIntegration.MaterialGroupDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeArchoSubstrate_1</defName>
+    <label>словарь: Grechka_MakeArchoSubstrate</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeArchoSubstrate</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_uranium</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeArchoSubstrate_2</defName>
+    <label>словарь: Grechka_MakeArchoSubstrate</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeArchoSubstrate</recipeDefName>
+    <ingredientIndex>2</ingredientIndex>
+    <materialGroup>GrechkaMaterial_plasteel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeGrechkaConcentrate_1</defName>
+    <label>словарь: Grechka_MakeGrechkaConcentrate</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeGrechkaConcentrate</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_uranium</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeComponentT4_1</defName>
+    <label>словарь: Grechka_MakeComponentT4</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeComponentT4</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_plasteel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeHousingT4_1</defName>
+    <label>словарь: Grechka_MakeHousingT4</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeHousingT4</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_plasteel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_UpgradeAssemblyBenchT4_0</defName>
+    <label>словарь: Grechka_UpgradeAssemblyBenchT4</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_UpgradeAssemblyBenchT4</recipeDefName>
+    <ingredientIndex>0</ingredientIndex>
+    <materialGroup>GrechkaMaterial_plasteel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeComponentT5_1</defName>
+    <label>словарь: Grechka_MakeComponentT5</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeComponentT5</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_plasteel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeHousingT5_1</defName>
+    <label>словарь: Grechka_MakeHousingT5</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeHousingT5</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_plasteel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_UpgradeAssemblyBenchT5_0</defName>
+    <label>словарь: Grechka_UpgradeAssemblyBenchT5</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_UpgradeAssemblyBenchT5</recipeDefName>
+    <ingredientIndex>0</ingredientIndex>
+    <materialGroup>GrechkaMaterial_plasteel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_UpgradeMatterRecyclerT5_1</defName>
+    <label>словарь: Grechka_UpgradeMatterRecyclerT5</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_UpgradeMatterRecyclerT5</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_plasteel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_UpgradeMatterSynthesizerT5_1</defName>
+    <label>словарь: Grechka_UpgradeMatterSynthesizerT5</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_UpgradeMatterSynthesizerT5</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_plasteel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeComponentT3_0</defName>
+    <label>словарь: Grechka_MakeComponentT3</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeComponentT3</recipeDefName>
+    <ingredientIndex>0</ingredientIndex>
+    <materialGroup>GrechkaMaterial_component_t2</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeComponentT3_1</defName>
+    <label>словарь: Grechka_MakeComponentT3</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeComponentT3</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_plasteel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeComponentT3_2</defName>
+    <label>словарь: Grechka_MakeComponentT3</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeComponentT3</recipeDefName>
+    <ingredientIndex>2</ingredientIndex>
+    <materialGroup>GrechkaMaterial_uranium</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeHousingT3_1</defName>
+    <label>словарь: Grechka_MakeHousingT3</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeHousingT3</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_plasteel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_UpgradeAssemblyBenchT3_0</defName>
+    <label>словарь: Grechka_UpgradeAssemblyBenchT3</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_UpgradeAssemblyBenchT3</recipeDefName>
+    <ingredientIndex>0</ingredientIndex>
+    <materialGroup>GrechkaMaterial_plasteel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_UpgradeAssemblyBenchT3_3</defName>
+    <label>словарь: Grechka_UpgradeAssemblyBenchT3</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_UpgradeAssemblyBenchT3</recipeDefName>
+    <ingredientIndex>3</ingredientIndex>
+    <materialGroup>GrechkaMaterial_uranium</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeSolarCellT2_0</defName>
+    <label>словарь: Grechka_MakeSolarCellT2</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeSolarCellT2</recipeDefName>
+    <ingredientIndex>0</ingredientIndex>
+    <materialGroup>GrechkaMaterial_component_t1</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeSolarCellT2_1</defName>
+    <label>словарь: Grechka_MakeSolarCellT2</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeSolarCellT2</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_silver</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeSolarCellT2_2</defName>
+    <label>словарь: Grechka_MakeSolarCellT2</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeSolarCellT2</recipeDefName>
+    <ingredientIndex>2</ingredientIndex>
+    <materialGroup>GrechkaMaterial_gold</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeSolarS1_2</defName>
+    <label>словарь: Grechka_MakeSolarS1</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeSolarS1</recipeDefName>
+    <ingredientIndex>2</ingredientIndex>
+    <materialGroup>GrechkaMaterial_component_t2</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeSolarS2_2</defName>
+    <label>словарь: Grechka_MakeSolarS2</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeSolarS2</recipeDefName>
+    <ingredientIndex>2</ingredientIndex>
+    <materialGroup>GrechkaMaterial_component_t2</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeSolarS2_4</defName>
+    <label>словарь: Grechka_MakeSolarS2</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeSolarS2</recipeDefName>
+    <ingredientIndex>4</ingredientIndex>
+    <materialGroup>GrechkaMaterial_plasteel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeSolarS4_4</defName>
+    <label>словарь: Grechka_MakeSolarS4</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeSolarS4</recipeDefName>
+    <ingredientIndex>4</ingredientIndex>
+    <materialGroup>GrechkaMaterial_plasteel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeComponentByHandT1_0</defName>
+    <label>словарь: Grechka_MakeComponentByHandT1</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeComponentByHandT1</recipeDefName>
+    <ingredientIndex>0</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeHousingT1_0</defName>
+    <label>словарь: Grechka_MakeHousingT1</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeHousingT1</recipeDefName>
+    <ingredientIndex>0</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeHousingT1_1</defName>
+    <label>словарь: Grechka_MakeHousingT1</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeHousingT1</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_component_t1</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeComponentBatchT1_0</defName>
+    <label>словарь: Grechka_MakeComponentBatchT1</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeComponentBatchT1</recipeDefName>
+    <ingredientIndex>0</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeHousingT2_1</defName>
+    <label>словарь: Grechka_MakeHousingT2</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeHousingT2</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeHousingT2_2</defName>
+    <label>словарь: Grechka_MakeHousingT2</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeHousingT2</recipeDefName>
+    <ingredientIndex>2</ingredientIndex>
+    <materialGroup>GrechkaMaterial_plasteel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeHousingT2_3</defName>
+    <label>словарь: Grechka_MakeHousingT2</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeHousingT2</recipeDefName>
+    <ingredientIndex>3</ingredientIndex>
+    <materialGroup>GrechkaMaterial_component_t2</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_UpgradeAssemblyBenchT2_0</defName>
+    <label>словарь: Grechka_UpgradeAssemblyBenchT2</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_UpgradeAssemblyBenchT2</recipeDefName>
+    <ingredientIndex>0</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_UpgradeAssemblyBenchT2_1</defName>
+    <label>словарь: Grechka_UpgradeAssemblyBenchT2</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_UpgradeAssemblyBenchT2</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_plasteel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_UpgradeAssemblyBenchT2_2</defName>
+    <label>словарь: Grechka_UpgradeAssemblyBenchT2</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_UpgradeAssemblyBenchT2</recipeDefName>
+    <ingredientIndex>2</ingredientIndex>
+    <materialGroup>GrechkaMaterial_component_t1</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_UpgradeAssemblyBenchT2_3</defName>
+    <label>словарь: Grechka_UpgradeAssemblyBenchT2</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_UpgradeAssemblyBenchT2</recipeDefName>
+    <ingredientIndex>3</ingredientIndex>
+    <materialGroup>GrechkaMaterial_component_t2</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeSolarStorageT3_4</defName>
+    <label>словарь: Grechka_MakeSolarStorageT3</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeSolarStorageT3</recipeDefName>
+    <ingredientIndex>4</ingredientIndex>
+    <materialGroup>GrechkaMaterial_certus</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeSolarStorageT4_4</defName>
+    <label>словарь: Grechka_MakeSolarStorageT4</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeSolarStorageT4</recipeDefName>
+    <ingredientIndex>4</ingredientIndex>
+    <materialGroup>GrechkaMaterial_certus</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeSolarStorageT5_4</defName>
+    <label>словарь: Grechka_MakeSolarStorageT5</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeSolarStorageT5</recipeDefName>
+    <ingredientIndex>4</ingredientIndex>
+    <materialGroup>GrechkaMaterial_certus</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeSolarFortressT2_2</defName>
+    <label>словарь: Grechka_MakeSolarFortressT2</label>
+    <packageId>grechka.industry</packageId>
+    <recipeDefName>Grechka_MakeSolarFortressT2</recipeDefName>
+    <ingredientIndex>2</ingredientIndex>
+    <materialGroup>GrechkaMaterial_component_t2</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeDataCore_1K_0</defName>
+    <label>словарь: Grechka_MakeDataCore_1K</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeDataCore_1K</recipeDefName>
+    <ingredientIndex>0</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeDisk_1K_1</defName>
+    <label>словарь: Grechka_MakeDisk_1K</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeDisk_1K</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeFrozenDisk_1K_1</defName>
+    <label>словарь: Grechka_MakeFrozenDisk_1K</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeFrozenDisk_1K</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeFrozenDisk_1K_3</defName>
+    <label>словарь: Grechka_MakeFrozenDisk_1K</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeFrozenDisk_1K</recipeDefName>
+    <ingredientIndex>3</ingredientIndex>
+    <materialGroup>GrechkaMaterial_uranium</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeDisk_4K_1</defName>
+    <label>словарь: Grechka_MakeDisk_4K</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeDisk_4K</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeFrozenDisk_4K_1</defName>
+    <label>словарь: Grechka_MakeFrozenDisk_4K</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeFrozenDisk_4K</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeFrozenDisk_4K_3</defName>
+    <label>словарь: Grechka_MakeFrozenDisk_4K</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeFrozenDisk_4K</recipeDefName>
+    <ingredientIndex>3</ingredientIndex>
+    <materialGroup>GrechkaMaterial_uranium</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeDisk_16K_1</defName>
+    <label>словарь: Grechka_MakeDisk_16K</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeDisk_16K</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeFrozenDisk_16K_1</defName>
+    <label>словарь: Grechka_MakeFrozenDisk_16K</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeFrozenDisk_16K</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeFrozenDisk_16K_3</defName>
+    <label>словарь: Grechka_MakeFrozenDisk_16K</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeFrozenDisk_16K</recipeDefName>
+    <ingredientIndex>3</ingredientIndex>
+    <materialGroup>GrechkaMaterial_uranium</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeDisk_64K_1</defName>
+    <label>словарь: Grechka_MakeDisk_64K</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeDisk_64K</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeFrozenDisk_64K_1</defName>
+    <label>словарь: Grechka_MakeFrozenDisk_64K</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeFrozenDisk_64K</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeFrozenDisk_64K_3</defName>
+    <label>словарь: Grechka_MakeFrozenDisk_64K</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeFrozenDisk_64K</recipeDefName>
+    <ingredientIndex>3</ingredientIndex>
+    <materialGroup>GrechkaMaterial_uranium</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeDisk_256K_1</defName>
+    <label>словарь: Grechka_MakeDisk_256K</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeDisk_256K</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeFrozenDisk_256K_1</defName>
+    <label>словарь: Grechka_MakeFrozenDisk_256K</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeFrozenDisk_256K</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeFrozenDisk_256K_3</defName>
+    <label>словарь: Grechka_MakeFrozenDisk_256K</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeFrozenDisk_256K</recipeDefName>
+    <ingredientIndex>3</ingredientIndex>
+    <materialGroup>GrechkaMaterial_uranium</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeDisk_512K_1</defName>
+    <label>словарь: Grechka_MakeDisk_512K</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeDisk_512K</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeFrozenDisk_512K_1</defName>
+    <label>словарь: Grechka_MakeFrozenDisk_512K</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeFrozenDisk_512K</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeFrozenDisk_512K_3</defName>
+    <label>словарь: Grechka_MakeFrozenDisk_512K</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeFrozenDisk_512K</recipeDefName>
+    <ingredientIndex>3</ingredientIndex>
+    <materialGroup>GrechkaMaterial_uranium</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeDisk_1M_1</defName>
+    <label>словарь: Grechka_MakeDisk_1M</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeDisk_1M</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeFrozenDisk_1M_1</defName>
+    <label>словарь: Grechka_MakeFrozenDisk_1M</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeFrozenDisk_1M</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeFrozenDisk_1M_3</defName>
+    <label>словарь: Grechka_MakeFrozenDisk_1M</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeFrozenDisk_1M</recipeDefName>
+    <ingredientIndex>3</ingredientIndex>
+    <materialGroup>GrechkaMaterial_uranium</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeDisk_2M_1</defName>
+    <label>словарь: Grechka_MakeDisk_2M</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeDisk_2M</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeFrozenDisk_2M_1</defName>
+    <label>словарь: Grechka_MakeFrozenDisk_2M</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeFrozenDisk_2M</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeFrozenDisk_2M_3</defName>
+    <label>словарь: Grechka_MakeFrozenDisk_2M</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeFrozenDisk_2M</recipeDefName>
+    <ingredientIndex>3</ingredientIndex>
+    <materialGroup>GrechkaMaterial_uranium</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeDisk_4M_1</defName>
+    <label>словарь: Grechka_MakeDisk_4M</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeDisk_4M</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeFrozenDisk_4M_1</defName>
+    <label>словарь: Grechka_MakeFrozenDisk_4M</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeFrozenDisk_4M</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeFrozenDisk_4M_3</defName>
+    <label>словарь: Grechka_MakeFrozenDisk_4M</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeFrozenDisk_4M</recipeDefName>
+    <ingredientIndex>3</ingredientIndex>
+    <materialGroup>GrechkaMaterial_uranium</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeDisk_8M_1</defName>
+    <label>словарь: Grechka_MakeDisk_8M</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeDisk_8M</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeFrozenDisk_8M_1</defName>
+    <label>словарь: Grechka_MakeFrozenDisk_8M</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeFrozenDisk_8M</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeFrozenDisk_8M_3</defName>
+    <label>словарь: Grechka_MakeFrozenDisk_8M</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeFrozenDisk_8M</recipeDefName>
+    <ingredientIndex>3</ingredientIndex>
+    <materialGroup>GrechkaMaterial_uranium</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeDisk_16M_1</defName>
+    <label>словарь: Grechka_MakeDisk_16M</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeDisk_16M</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeFrozenDisk_16M_1</defName>
+    <label>словарь: Grechka_MakeFrozenDisk_16M</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeFrozenDisk_16M</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeFrozenDisk_16M_3</defName>
+    <label>словарь: Grechka_MakeFrozenDisk_16M</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeFrozenDisk_16M</recipeDefName>
+    <ingredientIndex>3</ingredientIndex>
+    <materialGroup>GrechkaMaterial_uranium</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeDisk_64M_1</defName>
+    <label>словарь: Grechka_MakeDisk_64M</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeDisk_64M</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeFrozenDisk_64M_1</defName>
+    <label>словарь: Grechka_MakeFrozenDisk_64M</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeFrozenDisk_64M</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeFrozenDisk_64M_3</defName>
+    <label>словарь: Grechka_MakeFrozenDisk_64M</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeFrozenDisk_64M</recipeDefName>
+    <ingredientIndex>3</ingredientIndex>
+    <materialGroup>GrechkaMaterial_uranium</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeDisk_256M_1</defName>
+    <label>словарь: Grechka_MakeDisk_256M</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeDisk_256M</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeFrozenDisk_256M_1</defName>
+    <label>словарь: Grechka_MakeFrozenDisk_256M</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeFrozenDisk_256M</recipeDefName>
+    <ingredientIndex>1</ingredientIndex>
+    <materialGroup>GrechkaMaterial_steel</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeFrozenDisk_256M_3</defName>
+    <label>словарь: Grechka_MakeFrozenDisk_256M</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeFrozenDisk_256M</recipeDefName>
+    <ingredientIndex>3</ingredientIndex>
+    <materialGroup>GrechkaMaterial_uranium</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_CrushQuartz_0</defName>
+    <label>словарь: Grechka_CrushQuartz</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_CrushQuartz</recipeDefName>
+    <ingredientIndex>0</ingredientIndex>
+    <materialGroup>GrechkaMaterial_quartz</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeQuartzCircuit_0</defName>
+    <label>словарь: Grechka_MakeQuartzCircuit</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeQuartzCircuit</recipeDefName>
+    <ingredientIndex>0</ingredientIndex>
+    <materialGroup>GrechkaMaterial_quartz</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeQuartzProcessor_2</defName>
+    <label>словарь: Grechka_MakeQuartzProcessor</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeQuartzProcessor</recipeDefName>
+    <ingredientIndex>2</ingredientIndex>
+    <materialGroup>GrechkaMaterial_component_t1</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeSilverCircuit_0</defName>
+    <label>словарь: Grechka_MakeSilverCircuit</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeSilverCircuit</recipeDefName>
+    <ingredientIndex>0</ingredientIndex>
+    <materialGroup>GrechkaMaterial_silver</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeSilverProcessor_2</defName>
+    <label>словарь: Grechka_MakeSilverProcessor</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeSilverProcessor</recipeDefName>
+    <ingredientIndex>2</ingredientIndex>
+    <materialGroup>GrechkaMaterial_component_t1</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeGoldCircuit_0</defName>
+    <label>словарь: Grechka_MakeGoldCircuit</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeGoldCircuit</recipeDefName>
+    <ingredientIndex>0</ingredientIndex>
+    <materialGroup>GrechkaMaterial_gold</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+  <Grechka.WorldIntegration.RecipeMaterialRuleDef>
+    <defName>GrechkaWorld_Material_Grechka_MakeGoldProcessor_2</defName>
+    <label>словарь: Grechka_MakeGoldProcessor</label>
+    <packageId>grechka.storage</packageId>
+    <recipeDefName>Grechka_MakeGoldProcessor</recipeDefName>
+    <ingredientIndex>2</ingredientIndex>
+    <materialGroup>GrechkaMaterial_component_t1</materialGroup>
+  </Grechka.WorldIntegration.RecipeMaterialRuleDef>
+</Defs>

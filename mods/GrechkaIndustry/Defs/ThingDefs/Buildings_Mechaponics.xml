@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_MechaponicsT3_Building</defName>
@@ -20,8 +20,10 @@
     <rotatable>false</rotatable>
     <size>(1,1)</size>
     <tickerType>Rare</tickerType>
-    <minifiedDef>MinifiedThing</minifiedDef>
-    <thingCategories><li>BuildingsProduction</li></thingCategories>
+    <minifiedDef>Grechka_PackedMechaponicsT3_Item</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
     <statBases>
       <WorkToBuild>3500</WorkToBuild>
       <MaxHitPoints>240</MaxHitPoints>
@@ -38,20 +40,28 @@
     <building>
       <defaultPlantToGrow>Plant_Rice</defaultPlantToGrow>
       <sowTag>Ground</sowTag>
-      <buildingTags><li>Production</li></buildingTags>
+      <buildingTags>
+        <li>Production</li>
+      </buildingTags>
     </building>
     <modExtensions>
-      <li Class="Grechka.Industry.MechaponicsProperties"><growthMultiplier>5</growthMultiplier></li>
+      <li Class="Grechka.Industry.MechaponicsProperties">
+        <growthMultiplier>5</growthMultiplier>
+      </li>
     </modExtensions>
     <comps>
-      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Forbiddable" />
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>500</basePowerConsumption>
         <shortCircuitInRain>false</shortCircuitInRain>
       </li>
-      <li Class="CompProperties_Flickable"/>
-      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
+        <targetDefName>Grechka_MechaponicsT4_Building</targetDefName>
+        <costDescription>установленное устройство, 10 компонентов T4, 100 пластали и 8 субстрата</costDescription>
+      </li>
     </comps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <designationCategory>Production</designationCategory>

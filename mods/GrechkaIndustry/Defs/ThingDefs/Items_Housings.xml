@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_HousingT1_Item</defName>
@@ -19,10 +19,13 @@
       <Flammability>0.2</Flammability>
       <DeteriorationRate>2</DeteriorationRate>
     </statBases>
-    <thingCategories><li>Manufactured</li></thingCategories>
-    <tradeTags><li>ExoticMisc</li></tradeTags>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
   </ThingDef>
-
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_HousingT2_Item</defName>
     <label>продвинутый корпус</label>
@@ -42,7 +45,11 @@
       <Flammability>0.1</Flammability>
       <DeteriorationRate>2</DeteriorationRate>
     </statBases>
-    <thingCategories><li>Manufactured</li></thingCategories>
-    <tradeTags><li>ExoticMisc</li></tradeTags>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
   </ThingDef>
 </Defs>

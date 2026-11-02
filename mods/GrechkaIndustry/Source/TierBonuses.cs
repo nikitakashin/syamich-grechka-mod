@@ -35,13 +35,12 @@ namespace Grechka.Industry
         // therefore award one extra item, even across save/load boundaries.
         public int TakeExtra(RecipeDef recipe, Thing product)
         {
-            if (recipe == null || product == null || product.def.stackLimit <= 1 || Props.outputBonus <= 0f)
+            if (recipe == null || product == null || Props.outputBonus <= 0f)
                 return 0;
             string key = recipe.defName + "/" + product.def.defName;
             float carried = outputCarry.TryGetValue(key, out float previous) ? previous : 0f;
             float total = carried + product.stackCount * Props.outputBonus;
-            int extra = Math.Min((int)Math.Floor(total + 0.00001f),
-                Math.Max(0, product.def.stackLimit - product.stackCount));
+            int extra = (int)Math.Floor(total + 0.00001f);
             outputCarry[key] = total - extra;
             return extra;
         }
@@ -78,11 +77,30 @@ namespace Grechka.Industry
         {
             foreach (Thing product in original)
             {
-                int extra = bonus.TakeExtra(recipe, product);
-                if (extra > 0) product.stackCount += extra;
-                // Existing T2 recipes all fit one stack. Later tiers will need
-                // a general extra-stack path for products with low stack limits.
-                yield return product;
+                Thing inner = product is MinifiedThing packed ? packed.InnerThing : product;
+                // Only explicit fresh products receive replicas. A special recipe
+                // returning a pawn, corpse or an existing container does not.
+                bool explicitProduct = inner != null && recipe.products != null
+                    && recipe.products.Exists(p => p.thingDef == inner.def);
+                int extra = explicitProduct ? bonus.TakeExtra(recipe, product) : 0;
+                if (product.def.stackLimit > 1)
+                {
+                    product.stackCount += extra;
+                    while (product.stackCount > product.def.stackLimit)
+                        yield return product.SplitOff(product.def.stackLimit);
+                    yield return product;
+                }
+                else
+                {
+                    yield return product;
+                    for (int i = 0; i < extra; i++)
+                    {
+                        Thing created = ThingMaker.MakeThing(inner.def, inner.Stuff);
+                        if (inner.TryGetQuality(out QualityCategory quality))
+                            created.TryGetComp<CompQuality>()?.SetQuality(quality, ArtGenerationContext.Colony);
+                        yield return product is MinifiedThing ? created.MakeMinified() : created;
+                    }
+                }
             }
         }
     }

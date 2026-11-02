@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using RimWorld;
 using Verse;
+using UnityEngine;
 
 namespace Grechka.Storage
 {
@@ -65,6 +66,18 @@ namespace Grechka.Storage
     public sealed class Building_DiskRack : Building, IThingHolder
     {
         public const int Slots = 10;
+        private readonly Graphic[] stateGraphics = new Graphic[3];
+        public override Graphic Graphic
+        {
+            get
+            {
+                int state = disks.Count == 0 ? 0 : disks.Count >= Slots ? 2 : 1;
+                return stateGraphics[state] ??= GraphicDatabase.Get<Graphic_Single>(
+                    "Buildings/Map/StorageDiskBlock/StorageDiskBlock_" + new[] { "Empty", "Partial", "Full" }[state],
+                    ShaderDatabase.Cutout, Vector2.one, Color.white);
+            }
+        }
+        private void RefreshDiskGraphic() { if (Spawned) Map.mapDrawer.MapMeshDirty(Position, MapMeshFlagDefOf.Buildings); }
         private ThingOwner<Thing> disks;
         private List<StorageDisk> installRequests = new List<StorageDisk>();
         private List<StorageDisk> removeRequests = new List<StorageDisk>();
@@ -91,7 +104,7 @@ namespace Grechka.Storage
             if (!HasSlot || disk?.holdingOwner == null || disks.Contains(disk)) return false;
             disk.SettleRot();
             bool moved = disk.holdingOwner.TryTransferToContainer(disk, disks, false);
-            if (moved) installRequests.Remove(disk);
+            if (moved) { installRequests.Remove(disk); disk.SealedContents = false; RefreshDiskGraphic(); }
             return moved;
         }
         public bool Remove(StorageDisk disk, ThingOwner destination)
@@ -99,7 +112,7 @@ namespace Grechka.Storage
             if (!disks.Contains(disk)) return false;
             disk.SettleRot();
             bool moved = disks.TryTransferToContainer(disk, destination, false);
-            if (moved) removeRequests.Remove(disk);
+            if (moved) { removeRequests.Remove(disk); RefreshDiskGraphic(); }
             return moved;
         }
         public void RequestInstall(StorageDisk disk) { if (disk != null && !installRequests.Contains(disk)) installRequests.Add(disk); }

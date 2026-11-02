@@ -1,0 +1,297 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingDef ParentName="BenchBase">
+    <defName>Grechka_MatterRecyclerT4_Building</defName>
+    <label>генератор материи T4</label>
+    <description>Генератор материи T4. Потребляет 8,000,000 Вт. Задания выполняет пешка или подключённый крафтер. Цена материи определяется рыночной стоимостью предмета без торговых наценок. Контейнеры, живые существа и уникальное состояние не копируются.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Buildings/Map/MatterRecyclerT4/MatterRecyclerT4</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <statBases>
+      <WorkToBuild>6500</WorkToBuild>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>0.3</Flammability>
+      <WorkTableWorkSpeedFactor>15</WorkTableWorkSpeedFactor>
+      <Mass>30</Mass>
+    </statBases>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <designationCategory>Production</designationCategory>
+    <designatorDropdown>Grechka_MatterRecyclerGroup</designatorDropdown>
+    <uiOrder>2514</uiOrder>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <workTableRoomRole>Workshop</workTableRoomRole>
+      <workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
+    </building>
+    <comps>
+      <li Class="Grechka.Industry.CompProperties_TierBonuses">
+        <inputDiscount>0.35</inputDiscount>
+        <outputBonus>0.5</outputBonus>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>8000000</basePowerConsumption>
+        <shortCircuitInRain>true</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="Grechka.Industry.CompProperties_AssemblyUpgrade">
+        <targetBenchName>Grechka_MatterRecyclerT5_Building</targetBenchName>
+        <upgradeRecipeName>Grechka_UpgradeMatterRecyclerT5</upgradeRecipeName>
+        <upgradeLabel>Улучшить до T5</upgradeLabel>
+        <upgradeDescription>Сохранить установку и задания. Добавить 32 компонента T5, 240 пластали, 48 концентрата.</upgradeDescription>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <recipes>
+      </recipes>
+    <costList>
+      <Grechka_HousingT4_Item>2</Grechka_HousingT4_Item>
+      <Grechka_ComponentT4_Item>16</Grechka_ComponentT4_Item>
+      <Plasteel>200</Plasteel>
+      <Uranium>100</Uranium>
+    </costList>
+    <minifiedDef>Grechka_PackedMatterRecyclerT4_Item</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <uiIconPath>Buildings/MatterRecyclerT4</uiIconPath>
+  </ThingDef>
+  <ThingDef ParentName="BenchBase">
+    <defName>Grechka_MatterRecyclerT5_Building</defName>
+    <label>генератор материи T5</label>
+    <description>Генератор материи T5. Потребляет 30,000,000 Вт. Задания выполняет пешка или подключённый крафтер. Цена материи определяется рыночной стоимостью предмета без торговых наценок. Контейнеры, живые существа и уникальное состояние не копируются.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Buildings/MatterRecyclerT5</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <statBases>
+      <WorkToBuild>6500</WorkToBuild>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>0.3</Flammability>
+      <WorkTableWorkSpeedFactor>60</WorkTableWorkSpeedFactor>
+      <Mass>30</Mass>
+    </statBases>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <designationCategory>Production</designationCategory>
+    <designatorDropdown>Grechka_MatterRecyclerGroup</designatorDropdown>
+    <uiOrder>2514</uiOrder>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <workTableRoomRole>Workshop</workTableRoomRole>
+      <workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
+    </building>
+    <comps>
+      <li Class="Grechka.Industry.CompProperties_TierBonuses">
+        <inputDiscount>0.5</inputDiscount>
+        <outputBonus>1</outputBonus>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>30000000</basePowerConsumption>
+        <shortCircuitInRain>true</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="Grechka.Industry.CompProperties_OperationalGraphics">
+        <offPath>Buildings/Map/States/MatterRecyclerT5/MatterRecyclerT5_Off</offPath>
+        <idlePath>Buildings/Map/States/MatterRecyclerT5/MatterRecyclerT5_Idle</idlePath>
+        <activePath>Buildings/Map/States/MatterRecyclerT5/MatterRecyclerT5_Active</activePath>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <recipes />
+    <costList>
+      <Grechka_HousingT5_Item>2</Grechka_HousingT5_Item>
+      <Grechka_ComponentT5_Item>16</Grechka_ComponentT5_Item>
+      <Plasteel>200</Plasteel>
+      <Uranium>100</Uranium>
+    </costList>
+    <minifiedDef>Grechka_PackedMatterRecyclerT5_Item</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BenchBase">
+    <defName>Grechka_MatterSynthesizerT4_Building</defName>
+    <label>синтезатор материи T4</label>
+    <description>Синтезатор материи T4. Потребляет 12,000,000 Вт. Задания выполняет пешка или подключённый крафтер. Цена материи определяется рыночной стоимостью предмета без торговых наценок. Контейнеры, живые существа и уникальное состояние не копируются.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Buildings/MatterSynthesizerT4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <statBases>
+      <WorkToBuild>6500</WorkToBuild>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>0.3</Flammability>
+      <WorkTableWorkSpeedFactor>15</WorkTableWorkSpeedFactor>
+      <Mass>30</Mass>
+    </statBases>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <designationCategory>Production</designationCategory>
+    <designatorDropdown>Grechka_MatterSynthesizerGroup</designatorDropdown>
+    <uiOrder>2514</uiOrder>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <workTableRoomRole>Workshop</workTableRoomRole>
+      <workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
+    </building>
+    <comps>
+      <li Class="Grechka.Industry.CompProperties_TierBonuses">
+        <inputDiscount>0.35</inputDiscount>
+        <outputBonus>0.5</outputBonus>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>12000000</basePowerConsumption>
+        <shortCircuitInRain>true</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="Grechka.Industry.CompProperties_AssemblyUpgrade">
+        <targetBenchName>Grechka_MatterSynthesizerT5_Building</targetBenchName>
+        <upgradeRecipeName>Grechka_UpgradeMatterSynthesizerT5</upgradeRecipeName>
+        <upgradeLabel>Улучшить до T5</upgradeLabel>
+        <upgradeDescription>Сохранить установку и задания. Добавить 32 компонента T5, 240 пластали, 48 концентрата.</upgradeDescription>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_OperationalGraphics">
+        <offPath>Buildings/Map/States/MatterSynthesizerT4/MatterSynthesizerT4_Off</offPath>
+        <idlePath>Buildings/Map/States/MatterSynthesizerT4/MatterSynthesizerT4_Idle</idlePath>
+        <activePath>Buildings/Map/States/MatterSynthesizerT4/MatterSynthesizerT4_Active</activePath>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <recipes>
+      </recipes>
+    <costList>
+      <Grechka_HousingT4_Item>2</Grechka_HousingT4_Item>
+      <Grechka_ComponentT4_Item>16</Grechka_ComponentT4_Item>
+      <Plasteel>200</Plasteel>
+      <Uranium>100</Uranium>
+    </costList>
+    <minifiedDef>Grechka_PackedMatterSynthesizerT4_Item</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="BenchBase">
+    <defName>Grechka_MatterSynthesizerT5_Building</defName>
+    <label>синтезатор материи T5</label>
+    <description>Синтезатор материи T5. Потребляет 60,000,000 Вт. Задания выполняет пешка или подключённый крафтер. Цена материи определяется рыночной стоимостью предмета без торговых наценок. Контейнеры, живые существа и уникальное состояние не копируются.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <tickerType>Normal</tickerType>
+    <graphicData>
+      <texPath>Buildings/MatterSynthesizerT5</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <statBases>
+      <WorkToBuild>6500</WorkToBuild>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Flammability>0.3</Flammability>
+      <WorkTableWorkSpeedFactor>60</WorkTableWorkSpeedFactor>
+      <Mass>30</Mass>
+    </statBases>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <designationCategory>Production</designationCategory>
+    <designatorDropdown>Grechka_MatterSynthesizerGroup</designatorDropdown>
+    <uiOrder>2514</uiOrder>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <workTableRoomRole>Workshop</workTableRoomRole>
+      <workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
+    </building>
+    <comps>
+      <li Class="Grechka.Industry.CompProperties_TierBonuses">
+        <inputDiscount>0.5</inputDiscount>
+        <outputBonus>1</outputBonus>
+      </li>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>60000000</basePowerConsumption>
+        <shortCircuitInRain>true</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="Grechka.Industry.CompProperties_OperationalGraphics">
+        <offPath>Buildings/Map/States/MatterSynthesizerT5/MatterSynthesizerT5_Off</offPath>
+        <idlePath>Buildings/Map/States/MatterSynthesizerT5/MatterSynthesizerT5_Idle</idlePath>
+        <activePath>Buildings/Map/States/MatterSynthesizerT5/MatterSynthesizerT5_Active</activePath>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <recipes />
+    <costList>
+      <Grechka_HousingT5_Item>2</Grechka_HousingT5_Item>
+      <Grechka_ComponentT5_Item>16</Grechka_ComponentT5_Item>
+      <Plasteel>200</Plasteel>
+      <Uranium>100</Uranium>
+    </costList>
+    <minifiedDef>Grechka_PackedMatterSynthesizerT5_Item</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+  </ThingDef>
+</Defs>

@@ -1,8 +1,21 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <ModMetaData>
-  <name>Grechka Storage</name><author>Grechka World</author><packageId>grechka.storage</packageId>
-  <supportedVersions><li>1.7</li></supportedVersions>
-  <description>Кварцевая сеть и цифровой склад в контроллере. 26 съёмных дисков от 1K до 256M, постоянная заморозка, физическая переноска пешками и оптимизация раскладки. Самостоятельный путь без Industry; автокрафт пока в разработке.</description>
-  <modDependencies><li><packageId>brrainz.harmony</packageId><displayName>Harmony</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl></li></modDependencies>
-  <loadAfter><li>brrainz.harmony</li></loadAfter><modVersion>0.2.0</modVersion>
+  <name>Grechka Storage</name>
+  <author>Grechka World</author>
+  <packageId>grechka.storage</packageId>
+  <supportedVersions>
+    <li>1.7</li>
+  </supportedVersions>
+  <description>Кварцевая сигнальная сеть без каналов, мировой certus-метеорит и ферма, 26 дисков до 256M, постоянная заморозка, физическая переноска пешками, автокрафт на соседних станках и интеграция Factory. Предварительная версия: общий игровой прогон ещё предстоит.</description>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+  </loadAfter>
+  <modVersion>0.3.0</modVersion>
 </ModMetaData>

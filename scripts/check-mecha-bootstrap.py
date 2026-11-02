@@ -30,12 +30,28 @@ for name, node in defs.items():
     if node.findtext("passability") == "Impassable" and node.findtext("designationCategory"):
         require(float(node.findtext("fillPercent", "0")) >= 1,
                 "impassable player buildings must block sight/shots: " + name)
+providers = {}
+for provider in root.parent.iterdir():
+    if provider == root or not (provider / "Defs").is_dir():
+        continue
+    package = ET.parse(provider / "About/About.xml").findtext("packageId")
+    for path in (provider / "Defs").rglob("*.xml"):
+        for node in ET.parse(path).getroot():
+            if node.findtext("defName"):
+                providers[node.findtext("defName")] = package
+
+def validate_refs(node, required=()):
+    required = required + tuple(p.strip().lower() for p in node.get("MayRequire", "").split(",") if p.strip())
+    for candidate in (node.tag, (node.text or "").strip()):
+        if re.fullmatch(r"Grechka_[A-Za-z0-9_]+", candidate):
+            require(candidate in defs or providers.get(candidate) in required,
+                    "Unresolved internal/optional def reference: " + candidate)
+    for child in node:
+        validate_refs(child, required)
+
 for folder in (root / "Defs", root / "Patches"):
     for path in folder.rglob("*.xml"):
-        for node in ET.parse(path).iter():
-            for candidate in (node.tag, (node.text or "").strip()):
-                if re.fullmatch(r"Grechka_[A-Za-z0-9_]+", candidate):
-                    require(candidate in defs, "Unresolved internal def reference: " + candidate)
+        validate_refs(ET.parse(path).getroot())
 
 extractor = defs["Grechka_MechaniteExtractorT3_Building"]
 cost = {li.tag: int(li.text) for li in extractor.findall("./costList/*")}

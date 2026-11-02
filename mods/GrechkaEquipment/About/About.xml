@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ModMetaData>
+  <name>Grechka Equipment</name>
+  <author>Grechka World</author>
+  <packageId>grechka.equipment</packageId>
+  <supportedVersions>
+    <li>1.7</li>
+  </supportedVersions>
+  <description>Броня T3–T5, криовинтовка, самостоятельные боевые дроны, человеческая бионика 300/600%, совместимые чипы и рейд чипированных нудистов.</description>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+    </li>
+    <li>
+      <packageId>grechka.industry</packageId>
+      <displayName>Grechka Industry</displayName>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>grechka.industry</li>
+  </loadAfter>
+  <modVersion>0.1.0</modVersion>
+</ModMetaData>

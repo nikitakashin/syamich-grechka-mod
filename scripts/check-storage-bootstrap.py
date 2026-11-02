@@ -91,61 +91,27 @@ require(cost(cable) == {"Grechka_Quartz": 1, "Steel": 1}
         and cable.findtext("./comps/li[@Class='Grechka.Storage.CompProperties_SignalNode']/cable") == "true",
         "Signal cable must coexist under buildings without joining the electrical grid or ticking")
 
-patch = ET.parse(repo / "mods/GrechkaWorldIntegration/Patches/StorageController.xml").getroot()
-outer = patch.find("Operation")
-inner = outer.find("match")
-sequence = inner.find("match")
-operations = sequence.findall("./operations/li")
-replace = operations[0]
-require(outer.get("Class") == inner.get("Class") == "PatchOperationFindMod"
-        and outer.findtext("./mods/li") == "Grechka Storage"
-        and inner.findtext("./mods/li") == "Grechka Industry"
-        and sequence.get("Class") == "PatchOperationSequence" and len(operations) == 3
-        and replace.get("Class") == "PatchOperationReplace"
-        and replace.findtext("xpath") == '/Defs/ThingDef[defName="Grechka_StorageController"]/costList',
-        "World controller patch must require both optional content modules")
-world = cost(replace.find("value"))
+profile_rules = ET.parse(repo / "mods/GrechkaWorldIntegration/Defs/MachineProfile.xml").getroot()
+storage_rules = {d.findtext("targetDefName"): d for d in profile_rules if d.findtext("packageId") == "grechka.storage"}
+require(ET.parse(repo / "mods/GrechkaWorldIntegration/Patches/StorageController.xml").getroot().find("Operation") is None,
+        "World prices must not be applied unconditionally to old saves")
+def profile_price(name):
+    rule = storage_rules[name]
+    require(rule.findtext("addHousing") == "true", "Storage profile lost its housing gate")
+    result = {c.findtext("thingDefName"): int(c.findtext("count")) for c in rule.findall("replacementCost/li")}
+    result["Grechka_HousingT" + rule.findtext("minimumTier") + "_Item"] = 1
+    return result
+world = profile_price("Grechka_StorageController")
 require(world == {"Grechka_HousingT3_Item": 1, "Grechka_ComponentT3_Item": 4, "Plasteel": 100,
                   "Grechka_QuartzProcessor": 8, "Grechka_SilverProcessor": 4, "Grechka_GoldProcessor": 4},
         "World controller must use the T3 Industry route and all three processors")
-require(operations[1].findtext("xpath") == '/Defs/ThingDef[defName="Grechka_Inscriber"]/costList'
-        and cost(operations[1].find("value")) == {"Grechka_HousingT1_Item": 1, "Steel": 80,
-                                                "ComponentIndustrial": 5, "Grechka_Quartz": 10},
-        "World inscriber must use a reachable T1 housing without demanding its own processors")
-
-def profile_costs(installed):
-    targets = {node.findtext("defName"): copy.deepcopy(node) for node in (controller, inscriber, defs["Grechka_DiskRack"])}
-    def apply(operation):
-        kind = operation.get("Class")
-        if kind == "PatchOperationFindMod":
-            branch = "match" if any(li.text in installed for li in operation.findall("./mods/li")) else "nomatch"
-            selected = operation.find(branch)
-            if selected is not None:
-                apply(selected)
-        elif kind == "PatchOperationSequence":
-            for child in operation.findall("./operations/li"):
-                apply(child)
-        elif kind == "PatchOperationReplace":
-            name = re.fullmatch(r'/Defs/ThingDef\[defName="([^"]+)"\]/costList', operation.findtext("xpath")).group(1)
-            target = targets[name]
-            target.remove(target.find("costList"))
-            target.append(copy.deepcopy(operation.find("./value/costList")))
-        else:
-            raise AssertionError("Unsupported profile patch: " + str(kind))
-    if "Grechka World Integration" in installed:
-        apply(outer)
-    return {name: cost(node) for name, node in targets.items()}
-
-for industry, integration in [(False, False), (True, False), (False, True), (True, True)]:
-    installed = {"Grechka Storage"}
-    if industry:
-        installed.add("Grechka Industry")
-    if integration:
-        installed.add("Grechka World Integration")
-    result = profile_costs(installed)
-    require(result["Grechka_StorageController"] == (world if industry and integration else standalone)
-            and ("Grechka_HousingT1_Item" in result["Grechka_Inscriber"]) == (industry and integration),
-            "Optional-mod patch traversal changes standalone recipes incorrectly")
+require(profile_price("Grechka_Inscriber") == {"Grechka_HousingT1_Item": 1, "Steel": 80,
+                                             "ComponentIndustrial": 5, "Grechka_Quartz": 10},
+        "World inscriber needs reachable T1 housing without demanding its own processors")
+for industry, integration, approved in [(False,False,False),(True,False,True),(False,True,True),(True,True,False),(True,True,True)]:
+    effective = world if industry and integration and approved else standalone
+    require(("Grechka_HousingT3_Item" in effective) == (industry and integration and approved),
+            "Profile prices require Industry, Integration and per-save explicit/new-game approval")
 
 about = ET.parse(root / "About/About.xml").getroot()
 require([li.findtext("packageId") for li in about.findall("./modDependencies/li")] == ["brrainz.harmony"],
@@ -190,6 +156,8 @@ for node in defs.values():
                         for li in node.findall("./ingredients/li/filter/thingDefs/li")),
                 "A recipe could consume a loaded disk and destroy its contents: " + node.findtext("defName"))
 rack = defs["Grechka_DiskRack"]
+require(all(node.findtext("size") == "(1,1)" and node.findtext("./graphicData/drawSize") == "(1,1)"
+            for node in (controller, rack)), "Controller and disk rack must both occupy and draw one cell")
 require(controller.findtext("thingClass") == "Grechka.Storage.Building_StorageController"
         and rack.findtext("thingClass") == "Grechka.Storage.Building_DiskRack"
         and rack.findtext("./comps/li[@Class='CompProperties_Power']/basePowerConsumption") == "120"
@@ -197,9 +165,10 @@ require(controller.findtext("thingClass") == "Grechka.Storage.Building_StorageCo
         and rack.findtext("minifiedDef") == controller.findtext("minifiedDef") == "Grechka_PackedStorageDevice"
         and defs["Grechka_PackedStorageDevice"].findtext("thingClass") == "Grechka.Storage.MinifiedStorageDevice",
         "Disk rack and its loaded minified wrapper must preserve the accepted protection")
-require(operations[2].findtext("xpath") == '/Defs/ThingDef[defName="Grechka_DiskRack"]/costList'
-        and cost(operations[2].find("value"))["Grechka_HousingT3_Item"] == 1,
-        "World rack must use its T3 housing")
+require(profile_price("Grechka_DiskRack") == {"Grechka_HousingT3_Item": 1, "Grechka_ComponentT3_Item": 2,
+        "Steel": 120, "Grechka_QuartzProcessor": 4, "Grechka_SilverProcessor": 2, "Grechka_GoldProcessor": 2},
+        "World rack must preserve its complete T3 price")
+
 for name in ("Grechka_ImportStorage", "Grechka_ExportStorage", "Grechka_RemoveDisk", "Grechka_StorageHauling"):
     require(name in defs, "Physical pawn transfer job is missing: " + name)
 print("Grechka Storage startup, 26 physical disks, protected rack and optional World recipes: OK")

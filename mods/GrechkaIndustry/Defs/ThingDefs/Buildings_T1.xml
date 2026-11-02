@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <ThingDef ParentName="BenchBase">
     <defName>Grechka_AssemblyBenchT1_Building</defName>
@@ -7,7 +7,6 @@
     <thingClass>Building_WorkTable</thingClass>
     <tickerType>Normal</tickerType>
     <graphicData>
-      <!-- Временная ванильная графика для рабочего прототипа T1. -->
       <texPath>Things/Building/Production/TableSculpting</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>CutoutComplex</shaderType>
@@ -35,7 +34,9 @@
     <hasInteractionCell>true</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
-    <inspectorTabs><li>ITab_Bills</li></inspectorTabs>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
     <recipes>
       <li>Grechka_MakeComponentBatchT1</li>
       <li>Make_ComponentSpacer</li>
@@ -43,14 +44,17 @@
       <li>Grechka_UpgradeAssemblyBenchT2</li>
     </recipes>
     <comps>
-      <li Class="Grechka.Industry.CompProperties_AssemblyUpgrade"/>
+      <li Class="Grechka.Industry.CompProperties_AssemblyUpgrade" />
     </comps>
     <building>
       <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
       <workTableRoomRole>Workshop</workTableRoomRole>
       <workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
     </building>
-    <placeWorkers><li>PlaceWorker_PreventInteractionSpotOverlap</li></placeWorkers>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
     <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+    <minifiedDef>MinifiedThing</minifiedDef>
   </ThingDef>
 </Defs>

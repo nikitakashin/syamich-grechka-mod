@@ -55,3 +55,19 @@ Check(lastDirty.SetEquals(new[] { 30, 31 }) && lighting.IsEmpty && !lighting.Con
     "Removing the last appliance removes light and redraws the formerly lit cells");
 lastDirty.Add(99);
 Check(!lighting.Contains(99), "A caller cannot mutate the snapshot used by render readers");
+
+
+Check(MatterEconomy.SynthesisCost(13.01, 10) == 131 && MatterEconomy.SynthesisCost(double.NaN, 10) == 0,
+    "Matter synthesis rounds up and rejects undefined free recipes");
+foreach (double price in new[] { 1.9, 10, 100, 1300, 34000 })
+{
+    int cost = (int)Math.Ceiling(MatterEconomy.SynthesisCost(price, 10) * .5);
+    int returned = MatterEconomy.RecycleYield(price * 2, 10, .05) * 2;
+    Check(returned <= cost, "T5 discounts and double outputs cannot create a positive matter cycle at value " + price);
+}
+Check(MatterEconomy.Work(1, 1000, 100, 1000, 15) == 90000,
+    "Matter work enforces the larger energy budget at configured speed");
+Check(MatterEconomy.Work(1000, 1, 100, 1000, 15) == 100000,
+    "Matter work keeps the processing time when energy would finish earlier");
+Check(MatterEconomy.RecycleYield(50, 10, .05) < MatterEconomy.RecycleYield(100, 10, .05),
+    "A lower real input value cannot improve recycling output");

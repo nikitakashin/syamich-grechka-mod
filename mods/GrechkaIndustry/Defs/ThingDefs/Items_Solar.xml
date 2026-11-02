@@ -1,30 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Defs>
-  <!-- MinifiedThing keeps the original building as InnerThing, including damage. -->
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedSolarS0_Item</defName>
     <label>упакованная солнечная панель</label>
     <description>Целиком снятая ванильная солнечная панель. Её можно снова установить или использовать в следующей ступени солнечной линии.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>SolarGenerator</building>
+      </li>
+    </modExtensions>
   </ThingDef>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedSolarS1_Item</defName>
     <label>упакованная усиленная солнечная панель</label>
     <description>Усиленная панель S1 для установки на карте или дальнейшей сборки.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_SolarS1_Building</building>
+      </li>
+    </modExtensions>
   </ThingDef>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedSolarS2_Item</defName>
     <label>упакованная многослойная солнечная панель</label>
     <description>Целиком снятая панель S2 для установки или дальнейшей сборки.</description>
+    <modExtensions>
+      <li Class="Grechka.Industry.PackedBuildingProperties">
+        <building>Grechka_SolarS2_Building</building>
+      </li>
+    </modExtensions>
   </ThingDef>
-
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_SolarCellT2_Item</defName>
     <label>улучшенный фотоэлемент</label>
     <description>Фотоэлемент второго тира для усиленных солнечных панелей.</description>
     <graphicData>
-      <!-- Временный ванильный образ до собственной текстуры T2. -->
-      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+      <texPath>Items/SolarCellT2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Standard_Drop</soundDrop>
@@ -37,7 +49,11 @@
       <Flammability>0.2</Flammability>
       <DeteriorationRate>2</DeteriorationRate>
     </statBases>
-    <thingCategories><li>Manufactured</li></thingCategories>
-    <tradeTags><li>ExoticMisc</li></tradeTags>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
   </ThingDef>
 </Defs>

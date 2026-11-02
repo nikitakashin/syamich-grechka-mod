@@ -1,0 +1,1898 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockT1_Item</defName>
+    <label>лаки-блок T1</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>450</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>general.t1</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockResourcesT1_Item</defName>
+    <label>лаки-блок «Сырьё» T1</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockResourcesT1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>450</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>resources.t1</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockIndustryT1_Item</defName>
+    <label>лаки-блок «Промышленность» T1</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockIndustry</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>450</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>industry.t1</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockEnergyT1_Item</defName>
+    <label>лаки-блок «Энергетика» T1</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT1</texPath>
+      <color>(0.75,0.75,0.75)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>450</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>energy.t1</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockMedicalT1_Item</defName>
+    <label>лаки-блок «Медицина» T1</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockMedical</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>450</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>medical.t1</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockCombatT1_Item</defName>
+    <label>лаки-блок «Арсенал» T1</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockCombat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>450</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>combat.t1</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockFarmT1_Item</defName>
+    <label>лаки-блок «Фермерский» T1</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT1</texPath>
+      <color>(0.75,0.75,0.75)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>450</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>farm.t1</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockZooT1_Item</defName>
+    <label>лаки-блок «Зоопарк» T1</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT1</texPath>
+      <color>(0.75,0.75,0.75)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>450</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>zoo.t1</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockMechsT1_Item</defName>
+    <label>лаки-блок «Мехи повсюду» T1</label>
+    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT1</texPath>
+      <color>(0.75,0.75,0.75)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>450</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>mechs.t1</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockChaosT1_Item</defName>
+    <label>лаки-блок «Гречневое безумие» T1</label>
+    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT1</texPath>
+      <color>(0.75,0.75,0.75)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>450</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>chaos.t1</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase" MayRequire="grechka.storage">
+    <defName>Grechka_LuckyBlockStorageT1_Item</defName>
+    <label>лаки-блок «Цифровой» T1</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockStorage</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>450</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>storage.t1</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockT2_Item</defName>
+    <label>лаки-блок T2</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>2200</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>general.t2</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockResourcesT2_Item</defName>
+    <label>лаки-блок «Сырьё» T2</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockResourcesT2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>2200</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>resources.t2</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockIndustryT2_Item</defName>
+    <label>лаки-блок «Промышленность» T2</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockIndustry</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>2200</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>industry.t2</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockEnergyT2_Item</defName>
+    <label>лаки-блок «Энергетика» T2</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT2</texPath>
+      <color>(0.4,0.4,0.4)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>2200</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>energy.t2</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockMedicalT2_Item</defName>
+    <label>лаки-блок «Медицина» T2</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockMedical</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>2200</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>medical.t2</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockCombatT2_Item</defName>
+    <label>лаки-блок «Арсенал» T2</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockCombat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>2200</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>combat.t2</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockFarmT2_Item</defName>
+    <label>лаки-блок «Фермерский» T2</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT2</texPath>
+      <color>(0.4,0.4,0.4)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>2200</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>farm.t2</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockZooT2_Item</defName>
+    <label>лаки-блок «Зоопарк» T2</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT2</texPath>
+      <color>(0.4,0.4,0.4)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>2200</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>zoo.t2</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockMechsT2_Item</defName>
+    <label>лаки-блок «Мехи повсюду» T2</label>
+    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT2</texPath>
+      <color>(0.4,0.4,0.4)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>2200</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>mechs.t2</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockChaosT2_Item</defName>
+    <label>лаки-блок «Гречневое безумие» T2</label>
+    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT2</texPath>
+      <color>(0.4,0.4,0.4)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>2200</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>chaos.t2</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase" MayRequire="grechka.storage">
+    <defName>Grechka_LuckyBlockStorageT2_Item</defName>
+    <label>лаки-блок «Цифровой» T2</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockStorage</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>2200</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>storage.t2</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockT3_Item</defName>
+    <label>лаки-блок T3</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>9500</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>general.t3</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockResourcesT3_Item</defName>
+    <label>лаки-блок «Сырьё» T3</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockResourcesT3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>9500</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>resources.t3</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockIndustryT3_Item</defName>
+    <label>лаки-блок «Промышленность» T3</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockIndustry</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>9500</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>industry.t3</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockEnergyT3_Item</defName>
+    <label>лаки-блок «Энергетика» T3</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT3</texPath>
+      <color>(0.25,0.8,1)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>9500</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>energy.t3</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockMedicalT3_Item</defName>
+    <label>лаки-блок «Медицина» T3</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockMedical</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>9500</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>medical.t3</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockCombatT3_Item</defName>
+    <label>лаки-блок «Арсенал» T3</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockCombat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>9500</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>combat.t3</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockFarmT3_Item</defName>
+    <label>лаки-блок «Фермерский» T3</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT3</texPath>
+      <color>(0.25,0.8,1)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>9500</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>farm.t3</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockZooT3_Item</defName>
+    <label>лаки-блок «Зоопарк» T3</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT3</texPath>
+      <color>(0.25,0.8,1)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>9500</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>zoo.t3</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockMechsT3_Item</defName>
+    <label>лаки-блок «Мехи повсюду» T3</label>
+    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT3</texPath>
+      <color>(0.25,0.8,1)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>9500</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>mechs.t3</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockChaosT3_Item</defName>
+    <label>лаки-блок «Гречневое безумие» T3</label>
+    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT3</texPath>
+      <color>(0.25,0.8,1)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>9500</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>chaos.t3</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase" MayRequire="grechka.storage">
+    <defName>Grechka_LuckyBlockStorageT3_Item</defName>
+    <label>лаки-блок «Цифровой» T3</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockStorage</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>9500</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>storage.t3</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockT4_Item</defName>
+    <label>лаки-блок T4</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>32000</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>general.t4</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockResourcesT4_Item</defName>
+    <label>лаки-блок «Сырьё» T4</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockResourcesT4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>32000</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>resources.t4</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockIndustryT4_Item</defName>
+    <label>лаки-блок «Промышленность» T4</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockIndustry</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>32000</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>industry.t4</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockEnergyT4_Item</defName>
+    <label>лаки-блок «Энергетика» T4</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT4</texPath>
+      <color>(0.3,1,0.4)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>32000</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>energy.t4</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockMedicalT4_Item</defName>
+    <label>лаки-блок «Медицина» T4</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockMedical</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>32000</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>medical.t4</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockCombatT4_Item</defName>
+    <label>лаки-блок «Арсенал» T4</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockCombat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>32000</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>combat.t4</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockFarmT4_Item</defName>
+    <label>лаки-блок «Фермерский» T4</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT4</texPath>
+      <color>(0.3,1,0.4)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>32000</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>farm.t4</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockZooT4_Item</defName>
+    <label>лаки-блок «Зоопарк» T4</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT4</texPath>
+      <color>(0.3,1,0.4)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>32000</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>zoo.t4</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockMechsT4_Item</defName>
+    <label>лаки-блок «Мехи повсюду» T4</label>
+    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT4</texPath>
+      <color>(0.3,1,0.4)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>32000</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>mechs.t4</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockChaosT4_Item</defName>
+    <label>лаки-блок «Гречневое безумие» T4</label>
+    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT4</texPath>
+      <color>(0.3,1,0.4)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>32000</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>chaos.t4</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase" MayRequire="grechka.storage">
+    <defName>Grechka_LuckyBlockStorageT4_Item</defName>
+    <label>лаки-блок «Цифровой» T4</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockStorage</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>32000</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>storage.t4</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockT5_Item</defName>
+    <label>лаки-блок T5</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT5</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>150000</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>general.t5</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockResourcesT5_Item</defName>
+    <label>лаки-блок «Сырьё» T5</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockResourcesT5</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>150000</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>resources.t5</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockIndustryT5_Item</defName>
+    <label>лаки-блок «Промышленность» T5</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockIndustry</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>150000</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>industry.t5</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockEnergyT5_Item</defName>
+    <label>лаки-блок «Энергетика» T5</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT5</texPath>
+      <color>(0.55,0.3,0.15)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>150000</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>energy.t5</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockMedicalT5_Item</defName>
+    <label>лаки-блок «Медицина» T5</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockMedical</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>150000</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>medical.t5</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockCombatT5_Item</defName>
+    <label>лаки-блок «Арсенал» T5</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockCombat</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>150000</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>combat.t5</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockFarmT5_Item</defName>
+    <label>лаки-блок «Фермерский» T5</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT5</texPath>
+      <color>(0.55,0.3,0.15)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>150000</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>farm.t5</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockZooT5_Item</defName>
+    <label>лаки-блок «Зоопарк» T5</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT5</texPath>
+      <color>(0.55,0.3,0.15)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>150000</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>zoo.t5</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockMechsT5_Item</defName>
+    <label>лаки-блок «Мехи повсюду» T5</label>
+    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT5</texPath>
+      <color>(0.55,0.3,0.15)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>150000</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>mechs.t5</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_LuckyBlockChaosT5_Item</defName>
+    <label>лаки-блок «Гречневое безумие» T5</label>
+    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockT5</texPath>
+      <color>(0.55,0.3,0.15)</color>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>150000</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>chaos.t5</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase" MayRequire="grechka.storage">
+    <defName>Grechka_LuckyBlockStorageT5_Item</defName>
+    <label>лаки-блок «Цифровой» T5</label>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
+    <stackLimit>1</stackLimit>
+    <tickerType>Never</tickerType>
+    <graphicData>
+      <texPath>Items/LuckyBlockStorage</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.7,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <MarketValue>150000</MarketValue>
+      <Mass>1</Mass>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeTags>
+      <li>GrechkaLuckyBlocks</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="Grechka.LuckyBlocks.LuckyProperties">
+        <pool>storage.t5</pool>
+      </li>
+    </modExtensions>
+  </ThingDef>
+</Defs>

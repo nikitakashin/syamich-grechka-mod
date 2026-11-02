@@ -65,12 +65,12 @@ namespace Grechka.Quests
             Widgets.Label(new Rect(rect.x, rect.y + 255, rect.width, 30), "Папка экспорта (пусто — папка Grechka Quests по умолчанию)");
             Settings.exportFolder = Widgets.TextField(new Rect(rect.x, rect.y + 288, rect.width, 32), Settings.exportFolder ?? "", 1024);
             Widgets.Label(new Rect(rect.x, rect.y + 335, rect.width, 30), "Начальная книга для новых колоний");
-            string startLabel = string.IsNullOrEmpty(Settings.startingPack) ? "Пример из мода" : Path.GetFileName(Settings.startingPack);
+            string startLabel = string.IsNullOrEmpty(Settings.startingPack) ? "Автовыбор: Grechka World / пример" : Path.GetFileName(Settings.startingPack);
             if (Widgets.ButtonText(new Rect(rect.x, rect.y + 369, Math.Min(rect.width, 400), 36), startLabel))
             {
                 try
                 {
-                    var choices = new List<FloatMenuOption> { new FloatMenuOption("Пример из мода", () => Settings.startingPack = "") };
+                    var choices = new List<FloatMenuOption> { new FloatMenuOption("Автовыбор: Grechka World / пример", () => Settings.startingPack = "") };
                     choices.AddRange(PackFiles.List().Select(path => new FloatMenuOption(Path.GetFileName(path), () => Settings.startingPack = path)));
                     Find.WindowStack.Add(new FloatMenu(choices));
                 }
@@ -106,7 +106,7 @@ namespace Grechka.Quests
                 string configured = GrechkaMod.Settings?.startingPack;
                 if (!string.IsNullOrWhiteSpace(configured)) return configured;
                 if (string.IsNullOrEmpty(GrechkaMod.Root)) throw new InvalidOperationException("Не найдена папка Grechka Quests.");
-                return Path.Combine(GrechkaMod.Root, "QuestPacks", "grechka-starter.json");
+                return Path.Combine(GrechkaMod.Root, "QuestPacks", ModsConfig.IsActive("grechka.world.integration") ? "grechka-world.json" : "grechka-starter.json");
             }
         }
         public static void EnsureFolder() { Directory.CreateDirectory(Folder); }
@@ -204,7 +204,7 @@ namespace Grechka.Quests
         public void RecordVerifiedMachineOutput(string kind, Thing machine, ThingDef product, ThingDef stuff, string quality, int amount)
         {
             if (LoadError != null || Pack == null || !HasColony || machine == null || !machine.Spawned
-                || machine.Map == null || !machine.Map.IsPlayerHome
+                || machine.Map == null
                 || machine.Faction != Faction.OfPlayer || product == null || amount <= 0) return;
             Progress.RecordEvent(Pack, kind, product.defName, stuff?.defName, quality, amount, true, CanonicalThingName);
         }
@@ -233,6 +233,7 @@ namespace Grechka.Quests
         public QuestGame(Game game)
         {
             IndustryEventAdapter.TryInstall();
+            StorageEventAdapter.TryInstall();
             FactoryEventAdapter.TryInstall();
             FactoryAutofarmerAdapter.TryInstall();
             AdditionalHarvestAdapter.TryInstall();

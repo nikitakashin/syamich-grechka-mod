@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef><defName>Grechka_DeliverFactoryUpgrade</defName><driverClass>Grechka.WorldIntegration.JobDriver_DeliverFactoryUpgrade</driverClass><reportString>Переносит материалы для улучшения TargetA.</reportString><playerInterruptible>true</playerInterruptible></JobDef>
+  <JobDef><defName>Grechka_WorkFactoryUpgrade</defName><driverClass>Grechka.WorldIntegration.JobDriver_WorkFactoryUpgrade</driverClass><reportString>Улучшает TargetA.</reportString><playerInterruptible>true</playerInterruptible></JobDef>
+  <WorkGiverDef><defName>Grechka_FactoryUpgradeWork</defName><label>улучшать фабрики</label><giverClass>Grechka.WorldIntegration.WorkGiver_FactoryUpgrade</giverClass><workType>Construction</workType><verb>улучшать</verb><gerund>улучшает фабрику</gerund><priorityInType>95</priorityInType><requiredCapacities><li>Manipulation</li></requiredCapacities></WorkGiverDef>
+</Defs>

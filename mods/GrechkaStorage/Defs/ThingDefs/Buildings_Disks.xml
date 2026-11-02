@@ -10,7 +10,7 @@
     <label>дисковый блок Storage</label>
     <description>Блок для десяти съёмных дисков. Подключается кварцевым кабелем к контроллеру и питается обычной электросетью, 120 Вт. Защищён от огня и повреждений; может быть украден. При переносе диски сохраняются внутри, при разборке извлекаются целыми.</description>
     <thingClass>Grechka.Storage.Building_DiskRack</thingClass>
-    <size>(2,2)</size>
+    <size>(1,1)</size>
     <rotatable>false</rotatable>
     <passability>Impassable</passability>
     <fillPercent>1</fillPercent>
@@ -19,7 +19,7 @@
     <graphicData>
       <texPath>Buildings/StorageDiskBlock</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(2,2)</drawSize>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <minifiedDef>Grechka_PackedStorageDevice</minifiedDef>
     <thingCategories>

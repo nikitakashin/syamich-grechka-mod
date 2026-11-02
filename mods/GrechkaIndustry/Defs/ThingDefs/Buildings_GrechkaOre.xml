@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingDef ParentName="RockBase">
+    <defName>Grechka_MineableGrechka</defName>
+    <label>гречневая жила</label>
+    <description>Редкая технологическая гречневая руда для промышленности T5.</description>
+    <graphicData Inherit="False">
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Rock</li>
+        <li>MapEdge</li>
+      </linkFlags>
+      <color>(128,122,116)</color>
+      <colorTwo>(150,97,47)</colorTwo>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <uiIconPath>Buildings/Natural/GrechkaOreSource</uiIconPath>
+    <statBases>
+      <MaxHitPoints>2200</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Grechka_GrechkaOre</mineableThing>
+      <mineableYield>25</mineableYield>
+      <mineableScatterCommonality>0.12</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>8~20</mineableScatterLumpSizeRange>
+      <veinMineable>true</veinMineable>
+    </building>
+  </ThingDef>
+</Defs>

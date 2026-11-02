@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Grechka_CryoRifle</defName>
+    <label>гречневая криовинтовка «Метель»</label>
+    <description>Гречневый криоизлучатель: очередь 10 пуль по 100 базового урона, дальность 70 клеток. Попадания обновляют трёхсекундное замедление без бесконечного накопления.</description>
+    <graphicData>
+      <texPath>Items/CryoRifle</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>70000</WorkToMake>
+      <Mass>5</Mass>
+      <AccuracyTouch>0.85</AccuracyTouch>
+      <AccuracyShort>0.95</AccuracyShort>
+      <AccuracyMedium>0.9</AccuracyMedium>
+      <AccuracyLong>0.85</AccuracyLong>
+      <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Plasteel>120</Plasteel>
+      <Grechka_ComponentT5_Item>8</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>40</Grechka_GrechkaConcentrate>
+      <Gold>30</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSkill>Crafting</workSkill>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>FabricationBench</li>
+        <li>Grechka_AssemblyBenchT5_Building</li>
+      </recipeUsers>
+    </recipeMaker>
+    <techLevel>Archotech</techLevel>
+    <tradeTags>
+      <li>WeaponRanged</li>
+    </tradeTags>
+    <weaponTags>
+      <li>GrechkaCryo</li>
+    </weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Grechka_CryoBullet</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>70</range>
+        <burstShotCount>10</burstShotCount>
+        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>6</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Grechka_CryoBullet</defName>
+    <label>криоснаряд</label>
+    <thingClass>Grechka.Equipment.CryoBullet</thingClass>
+    <graphicData>
+      <texPath>Projectiles/CryoBullet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Grechka_CryogenicDamage</damageDef>
+      <damageAmountBase>100</damageAmountBase>
+      <armorPenetrationBase>1.2</armorPenetrationBase>
+      <speed>100</speed>
+    </projectile>
+  </ThingDef>
+  <HediffDef>
+    <defName>Grechka_CryoSlow</defName>
+    <label>криозамедление</label>
+    <description>Иней сковывает движение. Повторное попадание обновляет длительность, но не усиливает эффект.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>true</isBad>
+    <maxSeverity>1</maxSeverity>
+    <initialSeverity>1</initialSeverity>
+    <stages>
+      <li>
+        <statFactors>
+          <MoveSpeed>0.5</MoveSpeed>
+        </statFactors>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>180</disappearsAfterTicks>
+      </li>
+    </comps>
+  </HediffDef>
+  <DamageDef ParentName="Bullet">
+    <defName>Grechka_CryogenicDamage</defName>
+    <label>криогенный урон</label>
+    <hediff>Frostbite</hediff>
+    <deathMessage>{0} погибает от криогенных снарядов.</deathMessage>
+  </DamageDef>
+</Defs>

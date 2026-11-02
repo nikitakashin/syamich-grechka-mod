@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <DesignatorDropdownGroupDef>
+    <defName>Grechka_StorageCrafters</defName>
+    <label>крафтер Storage</label>
+  </DesignatorDropdownGroupDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_StorageCrafterT3_Building</defName>
+    <label>крафтер Storage T3</label>
+    <description>Стационарный исполнитель для четырёх соседних станков. Один цикл за раз, по кругу; снабжение из дисков и возврат продукции автоматически. Скорость исполнителя ×1, квалификация 12, мощность 500 Вт.</description>
+    <thingClass>Grechka.Storage.Building_StorageCrafter</thingClass>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <tickerType>Rare</tickerType>
+    <passability>Impassable</passability>
+    <fillPercent>1</fillPercent>
+    <altitudeLayer>Building</altitudeLayer>
+    <graphicData>
+      <texPath>Buildings/Map/StorageCrafter/StorageCrafter</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToBuild>18000</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>180</Steel>
+      <Plasteel>90</Plasteel>
+      <ComponentSpacer>12</ComponentSpacer>
+      <Grechka_GoldProcessor>9</Grechka_GoldProcessor>
+      <Grechka_CertusQuartz>30</Grechka_CertusQuartz>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>500</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+    </comps>
+    <modExtensions>
+      <li Class="Grechka.Storage.CrafterProperties">
+        <skill>12</skill>
+        <speed>1</speed>
+      </li>
+    </modExtensions>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Grechka_StorageCategory</designationCategory>
+    <designatorDropdown>Grechka_StorageCrafters</designatorDropdown>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <uiIconPath>Buildings/StorageCrafter</uiIconPath>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_StorageCrafterT4_Building</defName>
+    <label>крафтер Storage T4</label>
+    <description>Стационарный исполнитель для четырёх соседних станков. Один цикл за раз, по кругу; снабжение из дисков и возврат продукции автоматически. Скорость исполнителя ×3, квалификация 16, мощность 2000 Вт.</description>
+    <thingClass>Grechka.Storage.Building_StorageCrafter</thingClass>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <tickerType>Rare</tickerType>
+    <passability>Impassable</passability>
+    <fillPercent>1</fillPercent>
+    <altitudeLayer>Building</altitudeLayer>
+    <graphicData>
+      <texPath>Buildings/Map/StorageCrafter/StorageCrafter</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToBuild>24000</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>240</Steel>
+      <Plasteel>120</Plasteel>
+      <ComponentSpacer>16</ComponentSpacer>
+      <Grechka_GoldProcessor>12</Grechka_GoldProcessor>
+      <Grechka_CertusQuartz>40</Grechka_CertusQuartz>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>2000</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+    </comps>
+    <modExtensions>
+      <li Class="Grechka.Storage.CrafterProperties">
+        <skill>16</skill>
+        <speed>3</speed>
+      </li>
+    </modExtensions>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Grechka_StorageCategory</designationCategory>
+    <designatorDropdown>Grechka_StorageCrafters</designatorDropdown>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <uiIconPath>Buildings/StorageCrafter</uiIconPath>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_StorageCrafterT5_Building</defName>
+    <label>крафтер Storage T5</label>
+    <description>Стационарный исполнитель для четырёх соседних станков. Один цикл за раз, по кругу; снабжение из дисков и возврат продукции автоматически. Скорость исполнителя ×8, квалификация 20, мощность 8000 Вт.</description>
+    <thingClass>Grechka.Storage.Building_StorageCrafter</thingClass>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <tickerType>Rare</tickerType>
+    <passability>Impassable</passability>
+    <fillPercent>1</fillPercent>
+    <altitudeLayer>Building</altitudeLayer>
+    <graphicData>
+      <texPath>Buildings/Map/StorageCrafter/StorageCrafter</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <WorkToBuild>30000</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>300</Steel>
+      <Plasteel>150</Plasteel>
+      <ComponentSpacer>20</ComponentSpacer>
+      <Grechka_GoldProcessor>15</Grechka_GoldProcessor>
+      <Grechka_CertusQuartz>50</Grechka_CertusQuartz>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>8000</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+    </comps>
+    <modExtensions>
+      <li Class="Grechka.Storage.CrafterProperties">
+        <skill>20</skill>
+        <speed>8</speed>
+      </li>
+    </modExtensions>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Grechka_StorageCategory</designationCategory>
+    <designatorDropdown>Grechka_StorageCrafters</designatorDropdown>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <uiIconPath>Buildings/StorageCrafter</uiIconPath>
+  </ThingDef>
+</Defs>

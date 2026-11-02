@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <ThingDef ParentName="BenchBase">
     <defName>Grechka_AssemblyBenchT2_Building</defName>
@@ -7,7 +7,6 @@
     <thingClass>Building_WorkTable</thingClass>
     <tickerType>Normal</tickerType>
     <graphicData>
-      <!-- Временная ванильная графика до двухслойной графики семейства. -->
       <texPath>Things/Building/Production/TableSmithingElectric</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(3.5,1.5)</drawSize>
@@ -35,7 +34,9 @@
     <hasInteractionCell>true</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
-    <inspectorTabs><li>ITab_Bills</li></inspectorTabs>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
     <recipes>
       <li>Grechka_MakeComponentBatchT1</li>
       <li>Make_ComponentSpacer</li>
@@ -68,10 +69,13 @@
         <basePowerConsumption>350</basePowerConsumption>
         <shortCircuitInRain>true</shortCircuitInRain>
       </li>
-      <li Class="CompProperties_Flickable"/>
-      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
     </comps>
-    <placeWorkers><li>PlaceWorker_PreventInteractionSpotOverlap</li></placeWorkers>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <minifiedDef>MinifiedThing</minifiedDef>
   </ThingDef>
 </Defs>

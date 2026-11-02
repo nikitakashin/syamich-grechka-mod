@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.IO;
 using System.Reflection;
 using HarmonyLib;
 using RimWorld;
@@ -21,32 +22,55 @@ namespace Grechka.WorldIntegration
         public override void DoSettingsWindowContents(Rect rect)
         {
             Widgets.Label(new Rect(rect.x, rect.y, rect.width, 80),
-                "В новой игре все исследования завершаются автоматически. Для существующего сохранения правила нужно применить явно.");
-
+                "Grechka World: корпуса машин, явный словарь материалов и завершённые исследования. Новая колония получает текущий профиль; старые и новые добавленные правила применяются вручную с резервной копией.");
+            if (Widgets.ButtonText(new Rect(rect.x, rect.y + 86, 320, 34), "Отчёт правил и материалов"))
+                Find.WindowStack.Add(new WorldProfileReportWindow());
             if (Current.ProgramState != ProgramState.Playing || Current.Game == null || Find.ResearchManager == null)
             {
-                Widgets.Label(new Rect(rect.x, rect.y + 90, rect.width, 35), "Загрузите колонию, чтобы применить правила к старому сохранению.");
+                Widgets.Label(new Rect(rect.x, rect.y + 132, rect.width, 50), "Загрузите колонию для явного применения профиля.");
                 return;
             }
-
-            int unfinished = ResearchRules.UnfinishedCount();
-            Widgets.Label(new Rect(rect.x, rect.y + 90, rect.width, 35), "Незавершённых исследований: " + unfinished);
-            if (unfinished <= 0) return;
-            if (Widgets.ButtonText(new Rect(rect.x, rect.y + 134, Math.Min(rect.width, 360), 38),
-                "Применить правила к этой колонии"))
-            {
+            WorldProfileState state = Current.Game.GetComponent<WorldProfileState>();
+            Widgets.Label(new Rect(rect.x, rect.y + 132, rect.width, 55),
+                "Исследований осталось: " + ResearchRules.UnfinishedCount() + ". Машин профиля: " + WorldProfile.AppliedTiers.Count
+                + ". Последняя копия: " + (state.lastBackup ?? "ещё не создавалась"));
+            if (Widgets.ButtonText(new Rect(rect.x, rect.y + 198, Math.Min(rect.width, 440), 38), "Применить текущие правила с резервной копией"))
                 Find.WindowStack.Add(Dialog_MessageBox.CreateConfirmation(
-                    "Завершить все " + unfinished + " исследований в текущем сохранении? Это действие изменит прогресс колонии после следующего сохранения.",
-                    () =>
+                    "Создать отдельное сохранение, затем применить текущие правила корпусов/материалов и завершить исследования? Существующие предметы не преобразуются и не удаляются.",
+                    () => LongEventHandler.QueueLongEvent(() =>
                     {
+                        string backup = "Grechka-before-profile-" + DateTime.Now.ToString("yyyyMMdd-HHmmss") + "-" + Guid.NewGuid().ToString("N").Substring(0, 6);
+                        GameDataSaveLoader.SaveGame(backup);
+                        string backupPath = GenFilePaths.FilePathForSavedGame(backup);
+                        // SaveGame logs and swallows exceptions. Never apply when its backup failed.
+                        if (!File.Exists(backupPath) || new FileInfo(backupPath).Length == 0)
+                            throw new IOException("Резервная копия не создана; правила не изменены.");
+                        state.lastBackup = backup;
+                        WorldProfile.Apply(state, true);
                         ResearchRules.Result result = ResearchRules.ApplyAll();
-                        Messages.Message(result.remaining == 0 && result.errors == 0
-                            ? "Grechka World: все исследования завершены."
-                            : "Grechka World: осталось незавершённых исследований: " + result.remaining
-                                + "; ошибок при применении: " + result.errors + ". Подробности в журнале.",
-                            result.remaining == 0 && result.errors == 0 ? MessageTypeDefOf.PositiveEvent : MessageTypeDefOf.NegativeEvent);
-                    }));
-            }
+                        Messages.Message("Grechka World: профиль применён. Копия: " + backup
+                            + ". Незавершённых исследований: " + result.remaining + ".", MessageTypeDefOf.TaskCompletion);
+                    }, "SavingLongEvent", false, error => Log.Error("[Grechka World] Профиль не завершён: " + error))));
+        }
+    }
+
+    public sealed class WorldProfileReportWindow : Window
+    {
+        private Vector2 scroll;
+        public WorldProfileReportWindow() { doCloseButton = true; doCloseX = true; absorbInputAroundWindow = true; }
+        public override Vector2 InitialSize => new Vector2(900, 700);
+        public override void DoWindowContents(Rect inRect)
+        {
+            Widgets.Label(new Rect(0, 0, inRect.width, 30), "Grechka World — применённые правила");
+            var lines = WorldProfile.Report.ToList();
+            foreach (MaterialGroupDef group in DefDatabase<MaterialGroupDef>.AllDefsListForReading)
+                lines.Add(group.defName + " [" + group.form + "]: " + string.Join(", ", MaterialDictionary.Resolve(group).Select(d => d.defName)));
+            string text = string.Join("\n", lines);
+            Rect viewport = new Rect(0, 36, inRect.width, inRect.height - 88);
+            Rect content = new Rect(0, 0, viewport.width - 22, Math.Max(viewport.height, Text.CalcHeight(text, viewport.width - 22)));
+            Widgets.BeginScrollView(viewport, ref scroll, content);
+            Widgets.Label(content, text);
+            Widgets.EndScrollView();
         }
     }
 

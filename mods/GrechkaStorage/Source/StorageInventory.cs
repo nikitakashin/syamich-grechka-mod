@@ -14,10 +14,13 @@ namespace Grechka.Storage
         public static IEnumerable<Thing> HeldContents(Thing carrier)
         {
             Thing inner = carrier?.GetInnerIfMinified();
-            if (inner is StorageDisk disk)
+            foreach (Thing item in FactoryCraftMap.HeldContents(carrier)) yield return item;
+            if (inner is StorageDisk disk && !disk.SealedContents)
             {
                 foreach (Thing item in disk.Items) yield return item;
             }
+            else if (inner is Building_StorageCrafter crafter)
+            { foreach (Thing item in crafter.Contents) yield return item; }
             else if (inner is Building_DiskRack rack)
             {
                 foreach (StorageDisk installed in rack.Disks)
@@ -42,6 +45,7 @@ namespace Grechka.Storage
                 carrierDefs = all.Where(d => d.thingClass != null && (typeof(StorageDisk).IsAssignableFrom(d.thingClass)
                     || typeof(Building_DiskRack).IsAssignableFrom(d.thingClass)
                     || typeof(Building_StorageController).IsAssignableFrom(d.thingClass)
+                    || typeof(Building_StorageCrafter).IsAssignableFrom(d.thingClass)
                     || d.defName == "Grechka_PackedStorageDevice")).ToList();
             }
             foreach (ThingDef def in carrierDefs)

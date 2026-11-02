@@ -7,6 +7,7 @@ namespace Grechka.Storage
 {
     public sealed class Building_QuartzCable : Building
     {
+        public override void PreApplyDamage(ref DamageInfo dinfo, out bool absorbed) { absorbed = true; }
         private static int visibilityFrame = -1;
         private static bool visible;
         protected override void DrawAt(Vector3 drawLoc, bool flip = false)

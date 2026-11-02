@@ -269,8 +269,10 @@ namespace Grechka.Quests
                         detailScroll = Vector2.zero;
                     }
                     ThingDef chapterIcon = string.IsNullOrEmpty(chapter.icon) ? null : QuestGame.ResolveThingDef(chapter.icon);
+                    bool hasChapterIcon = chapterIcon != null || QuestArt.Get(chapter.icon) != null;
                     if (chapterIcon != null) Widgets.ThingIcon(new Rect(button.x + 3, button.y + 4, 30, 30), chapterIcon);
-                    Widgets.Label(new Rect(button.x + (chapterIcon == null ? 5 : 36), button.y + 8, button.width - (chapterIcon == null ? 10 : 41), 30), chapter.title + progress);
+                    else QuestArt.Draw(new Rect(button.x + 3, button.y + 4, 30, 30), chapter.icon);
+                    Widgets.Label(new Rect(button.x + (!hasChapterIcon ? 5 : 36), button.y + 8, button.width - (!hasChapterIcon ? 10 : 41), 30), chapter.title + progress);
                     if (tab == 0 && quests.Any(game.CanClaim)) QuestBadge.Draw(new Rect(button.xMax - 22, button.y, 20, 20));
                     y += 45;
                 }
@@ -358,8 +360,10 @@ namespace Grechka.Quests
                     string iconId = !string.IsNullOrEmpty(q.icon) ? q.icon : q.objectives.FirstOrDefault(o => o.type != "manual")?.target;
                     ThingDef iconDef = string.IsNullOrEmpty(iconId) ? null : QuestGame.ResolveThingDef(iconId);
                     float iconSize = Mathf.Min(40 * zoom, node.height - 6);
+                    bool hasIcon = iconDef != null || QuestArt.Get(iconId) != null;
                     if (iconDef != null && iconSize > 5) Widgets.ThingIcon(new Rect(node.x + 3, node.y + 3, iconSize, iconSize), iconDef);
-                    float textX = iconDef == null ? node.x + 5 : node.x + iconSize + 6;
+                    else if (iconSize > 5) QuestArt.Draw(new Rect(node.x + 3, node.y + 3, iconSize, iconSize), iconId);
+                    float textX = !hasIcon ? node.x + 5 : node.x + iconSize + 6;
                     Widgets.Label(new Rect(textX, node.y + 4, Math.Max(0, node.xMax - textX - 13), Math.Max(0, node.height - 6)), q.title);
                     if (tab == 1) Widgets.DrawBoxSolid(new Rect(node.xMax - 11, node.center.y - 5, 10, 10), Color.white);
                     else if (game.CanClaim(q)) QuestBadge.Draw(new Rect(node.xMax - 22, node.y, 20, 20));
@@ -738,7 +742,7 @@ namespace Grechka.Quests
                 if (Widgets.ButtonText(new Rect(w - 80, y - 38, 80, 30), "Удалить")) remove = c;
                 c.description = Field(ref y, w, "Описание главы", c.description ?? "", 1000);
                 if (Widgets.ButtonText(new Rect(0, y, Math.Max(100, w - 150), 30), "Иконка: " + (string.IsNullOrEmpty(c.icon) ? "не выбрана" : DefLabel(c.icon))))
-                    PickIcon(d => c.icon = d.defName);
+                    PickIcon(id => c.icon = id);
                 int index = draft.chapters.IndexOf(c);
                 if (Widgets.ButtonText(new Rect(w - 145, y, 70, 30), "Вверх") && index > 0)
                 { draft.chapters.RemoveAt(index); draft.chapters.Insert(index - 1, c); break; }
@@ -755,7 +759,7 @@ namespace Grechka.Quests
             q.title = Field(ref y, w, "Название задания", q.title);
             Label(ref y, w, "ID: " + q.id, 30);
             if (Widgets.ButtonText(new Rect(0, y, w, 30), "Иконка: " + (string.IsNullOrEmpty(q.icon) ? "автоматическая" : DefLabel(q.icon))))
-                PickIcon(d => q.icon = d.defName);
+                PickIcon(id => q.icon = id);
             y += 40;
             string chapter = draft.chapters.FirstOrDefault(c => c.id == q.chapter)?.title ?? "Выбрать главу";
             if (Widgets.ButtonText(new Rect(0, y, w, 30), "Глава: " + chapter)) Find.WindowStack.Add(new FloatMenu(draft.chapters.Select(c => new FloatMenuOption(c.title, () => q.chapter = c.id)).ToList()));
@@ -951,11 +955,12 @@ namespace Grechka.Quests
                     }))));
             Find.WindowStack.Add(new FloatMenu(choices));
         }
-        static void PickIcon(Action<ThingDef> choose)
+        static void PickIcon(Action<string> choose)
         {
             var defs = DefDatabase<ThingDef>.AllDefsListForReading.Where(d => d.label != null &&
                 (d.category == ThingCategory.Item || (d.category == ThingCategory.Building && d.designationCategory != null)));
-            var choices = defs.OrderBy(d => d.label).Select(d => new Choice(d.LabelCap.ToString(), d.defName + " · " + (d.modContentPack?.Name ?? "Core"), () => choose(d))).ToList();
+            var choices = defs.OrderBy(d => d.label).Select(d => new Choice(d.LabelCap.ToString(), d.defName + " · " + (d.modContentPack?.Name ?? "Core"), () => choose(d.defName))).ToList();
+            choices.InsertRange(0, QuestArt.Ids.Select(id => new Choice(id, "Grechka · встроенная иконка", () => choose(id))));
             Find.WindowStack.Add(new ChoiceWindow("Выберите иконку", choices));
         }
         static void PickDef(bool building, bool reward, Action<ThingDef> choose)

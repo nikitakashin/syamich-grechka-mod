@@ -4,10 +4,10 @@
   <author>Grechka World</author>
   <packageId>grechka.world.integration</packageId>
   <supportedVersions><li>1.7</li></supportedVersions>
-  <description>Явно включаемые правила сборки Grechka World. В новой игре завершает все исследования базовой игры, DLC и установленных модов и скрывает стандартную вкладку исследований. В старом сохранении правила применяются только вручную.</description>
+  <description>Явно включаемые правила сборки Grechka World. В новой игре завершает все исследования базовой игры, DLC и установленных модов и скрывает стандартную вкладку исследований. Корпуса, тиры станков и словарь эквивалентных материалов применяются по явному каталогу. В старом сохранении правила применяются только вручную с резервной копией.</description>
   <modDependencies>
     <li><packageId>brrainz.harmony</packageId><displayName>Harmony</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl></li>
   </modDependencies>
-  <loadAfter><li>brrainz.harmony</li><li>grechka.industry</li><li>grechka.storage</li></loadAfter>
+  <loadAfter><li>brrainz.harmony</li><li>grechka.industry</li><li>grechka.storage</li><li>grechka.equipment</li></loadAfter>
   <modVersion>0.1.0</modVersion>
 </ModMetaData>

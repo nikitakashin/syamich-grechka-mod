@@ -2771,7 +2771,9 @@
       "1.7"
     ],
     "dependencies": [],
-    "after": [],
+    "after": [
+      "brrainz.harmony"
+    ],
     "before": [],
     "incompatible": [],
     "source": "local",
@@ -2802,10 +2804,10 @@
     "before": [],
     "incompatible": [],
     "source": "local",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "order": 88,
     "group": "Grechka Mod",
-    "summary": "Компоненты, корпуса, верстаки T1–T3, механиты, мехапоника, комнатный ионизатор и солнечные S1–S4.",
+    "summary": "Промышленность T1–T5, механиты, архо-технологии, материя и гречневая энергетика. Общая игровая приёмка ожидается.",
     "url": "",
     "repositoryPath": "mods/GrechkaIndustry"
   },
@@ -2831,12 +2833,78 @@
     ],
     "incompatible": [],
     "source": "local",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "order": 89,
     "group": "Grechka Mod",
-    "summary": "Кварцевая сеть, процессоры и цифровой склад: 26 дисков 1K–256M, постоянная заморозка, переноска пешками и оптимизация. Автокрафт ещё в разработке.",
+    "summary": "Цифровой склад, certus-ферма, подземная сеть, диски и автокрафт. Общая игровая приёмка ожидается.",
     "url": "",
     "repositoryPath": "mods/GrechkaStorage"
+  },
+  {
+    "id": "local:grechka.equipment",
+    "name": "Grechka Equipment",
+    "package": "grechka.equipment",
+    "versions": [
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": ""
+      },
+      {
+        "package": "grechka.industry",
+        "name": "Grechka Industry",
+        "url": ""
+      }
+    ],
+    "after": [
+      "brrainz.harmony",
+      "grechka.industry"
+    ],
+    "before": [
+      "grechka.world.integration"
+    ],
+    "incompatible": [],
+    "source": "local",
+    "version": "0.1.0",
+    "order": 90,
+    "group": "Grechka Mod",
+    "summary": "Броня T3–T5, дроны, криовинтовка, бионика 300/600%, чипы и событие рейда.",
+    "url": "",
+    "repositoryPath": "mods/GrechkaEquipment"
+  },
+  {
+    "id": "local:grechka.luckyblocks",
+    "name": "Grechka Lucky Blocks",
+    "package": "grechka.luckyblocks",
+    "versions": [
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": ""
+      }
+    ],
+    "after": [
+      "brrainz.harmony",
+      "grechka.industry",
+      "grechka.storage"
+    ],
+    "before": [
+      "grechka.world.integration"
+    ],
+    "incompatible": [],
+    "source": "local",
+    "version": "0.1.0",
+    "order": 91,
+    "group": "Grechka Mod",
+    "summary": "Пять тиров и тематические лаки-блоки с переносимыми JSON-пулами.",
+    "url": "",
+    "repositoryPath": "mods/GrechkaLuckyBlocks"
   },
   {
     "id": "local:grechka.world.integration",
@@ -2855,15 +2923,16 @@
     "after": [
       "brrainz.harmony",
       "grechka.industry",
-      "grechka.storage"
+      "grechka.storage",
+      "grechka.equipment"
     ],
     "before": [],
     "incompatible": [],
     "source": "local",
     "version": "0.1.0",
-    "order": 90,
+    "order": 92,
     "group": "Grechka Mod",
-    "summary": "Правила Grechka World: все исследования новой игры завершены, стандартная вкладка скрыта; старые сейвы применяются вручную.",
+    "summary": "Правила Grechka World: открытые исследования, явный каталог корпусов и тиров, улучшения машин, словарь материалов; старый мир применяется вручную с копией.",
     "url": "",
     "repositoryPath": "mods/GrechkaWorldIntegration"
   }

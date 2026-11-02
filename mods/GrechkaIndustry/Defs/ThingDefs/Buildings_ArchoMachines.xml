@@ -1,0 +1,477 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_SuppressionEmitterT4_Building</defName>
+    <label>облучатель подавления T4</label>
+    <description>Облучатель подавления T4. Действует в радиусе 20 клеток. Несколько устройств одной роли не складываются; используется сильнейшее.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Buildings/SuppressionEmitterT4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.25,1.25)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <fillPercent>0.3</fillPercent>
+    <rotatable>false</rotatable>
+    <size>(1,1)</size>
+    <tickerType>Normal</tickerType>
+    <minifiedDef>Grechka_PackedSuppressionEmitterT4_Item</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>4500</WorkToBuild>
+      <MaxHitPoints>260</MaxHitPoints>
+      <Mass>15</Mass>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>15000</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="Grechka.Industry.CompProperties_ArchoEmitter">
+        <role>Suppression</role>
+        <tier>4</tier>
+        <radius>20</radius>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
+        <targetDefName>Grechka_SuppressionEmitterT5_Building</targetDefName>
+        <costDescription>установленное устройство, 10 компонентов T5, 160 пластали и 24 концентрата</costDescription>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_OperationalGraphics">
+        <offPath>Buildings/Map/States/SuppressionEmitterT4/SuppressionEmitterT4_Off</offPath>
+        <idlePath>Buildings/Map/States/SuppressionEmitterT4/SuppressionEmitterT4_Idle</idlePath>
+        <activePath>Buildings/Map/States/SuppressionEmitterT4/SuppressionEmitterT4_Active</activePath>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Production</designationCategory>
+    <designatorDropdown>Grechka_SuppressionEmitterGroup</designatorDropdown>
+    <uiOrder>2522</uiOrder>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <constructEffect>ConstructMetal</constructEffect>
+    <costList>
+      <Grechka_HousingT4_Item>1</Grechka_HousingT4_Item>
+      <Grechka_ComponentT4_Item>8</Grechka_ComponentT4_Item>
+      <Plasteel>100</Plasteel>
+    </costList>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_SuppressionEmitterT5_Building</defName>
+    <label>облучатель подавления T5</label>
+    <description>Облучатель подавления T5. Действует в радиусе 32 клеток. Несколько устройств одной роли не складываются; используется сильнейшее.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Buildings/SuppressionEmitterT5</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.25,1.25)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <fillPercent>0.3</fillPercent>
+    <rotatable>false</rotatable>
+    <size>(1,1)</size>
+    <tickerType>Normal</tickerType>
+    <minifiedDef>Grechka_PackedSuppressionEmitterT5_Item</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>4500</WorkToBuild>
+      <MaxHitPoints>260</MaxHitPoints>
+      <Mass>15</Mass>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>60000</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="Grechka.Industry.CompProperties_ArchoEmitter">
+        <role>Suppression</role>
+        <tier>5</tier>
+        <radius>32</radius>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_OperationalGraphics">
+        <offPath>Buildings/Map/States/SuppressionEmitterT5/SuppressionEmitterT5_Off</offPath>
+        <idlePath>Buildings/Map/States/SuppressionEmitterT5/SuppressionEmitterT5_Idle</idlePath>
+        <activePath>Buildings/Map/States/SuppressionEmitterT5/SuppressionEmitterT5_Active</activePath>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Production</designationCategory>
+    <designatorDropdown>Grechka_SuppressionEmitterGroup</designatorDropdown>
+    <uiOrder>2522</uiOrder>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <constructEffect>ConstructMetal</constructEffect>
+    <costList>
+      <Grechka_PackedSuppressionEmitterT4_Item>1</Grechka_PackedSuppressionEmitterT4_Item>
+      <Grechka_ComponentT5_Item>10</Grechka_ComponentT5_Item>
+      <Plasteel>160</Plasteel>
+      <Grechka_GrechkaConcentrate>24</Grechka_GrechkaConcentrate>
+    </costList>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_AccelerationEmitterT4_Building</defName>
+    <label>облучатель ускорения T4</label>
+    <description>Облучатель ускорения T4. Действует в радиусе 20 клеток. Несколько устройств одной роли не складываются; используется сильнейшее.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Buildings/AccelerationEmitterT4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.25,1.25)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <fillPercent>0.3</fillPercent>
+    <rotatable>false</rotatable>
+    <size>(1,1)</size>
+    <tickerType>Normal</tickerType>
+    <minifiedDef>Grechka_PackedAccelerationEmitterT4_Item</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>4500</WorkToBuild>
+      <MaxHitPoints>260</MaxHitPoints>
+      <Mass>15</Mass>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>15000</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="Grechka.Industry.CompProperties_ArchoEmitter">
+        <role>Acceleration</role>
+        <tier>4</tier>
+        <radius>20</radius>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
+        <targetDefName>Grechka_AccelerationEmitterT5_Building</targetDefName>
+        <costDescription>установленное устройство, 10 компонентов T5, 160 пластали и 24 концентрата</costDescription>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_OperationalGraphics">
+        <offPath>Buildings/Map/States/AccelerationEmitterT4/AccelerationEmitterT4_Off</offPath>
+        <idlePath>Buildings/Map/States/AccelerationEmitterT4/AccelerationEmitterT4_Idle</idlePath>
+        <activePath>Buildings/Map/States/AccelerationEmitterT4/AccelerationEmitterT4_Active</activePath>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Production</designationCategory>
+    <designatorDropdown>Grechka_AccelerationEmitterGroup</designatorDropdown>
+    <uiOrder>2522</uiOrder>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <constructEffect>ConstructMetal</constructEffect>
+    <costList>
+      <Grechka_HousingT4_Item>1</Grechka_HousingT4_Item>
+      <Grechka_ComponentT4_Item>8</Grechka_ComponentT4_Item>
+      <Plasteel>100</Plasteel>
+    </costList>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_AccelerationEmitterT5_Building</defName>
+    <label>облучатель ускорения T5</label>
+    <description>Облучатель ускорения T5. Действует в радиусе 32 клеток. Несколько устройств одной роли не складываются; используется сильнейшее.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Buildings/AccelerationEmitterT5</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.25,1.25)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <fillPercent>0.3</fillPercent>
+    <rotatable>false</rotatable>
+    <size>(1,1)</size>
+    <tickerType>Normal</tickerType>
+    <minifiedDef>Grechka_PackedAccelerationEmitterT5_Item</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>4500</WorkToBuild>
+      <MaxHitPoints>260</MaxHitPoints>
+      <Mass>15</Mass>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>60000</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="Grechka.Industry.CompProperties_ArchoEmitter">
+        <role>Acceleration</role>
+        <tier>5</tier>
+        <radius>32</radius>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_OperationalGraphics">
+        <offPath>Buildings/Map/States/AccelerationEmitterT5/AccelerationEmitterT5_Off</offPath>
+        <idlePath>Buildings/Map/States/AccelerationEmitterT5/AccelerationEmitterT5_Idle</idlePath>
+        <activePath>Buildings/Map/States/AccelerationEmitterT5/AccelerationEmitterT5_Active</activePath>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Production</designationCategory>
+    <designatorDropdown>Grechka_AccelerationEmitterGroup</designatorDropdown>
+    <uiOrder>2522</uiOrder>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <constructEffect>ConstructMetal</constructEffect>
+    <costList>
+      <Grechka_PackedAccelerationEmitterT4_Item>1</Grechka_PackedAccelerationEmitterT4_Item>
+      <Grechka_ComponentT5_Item>10</Grechka_ComponentT5_Item>
+      <Plasteel>160</Plasteel>
+      <Grechka_GrechkaConcentrate>24</Grechka_GrechkaConcentrate>
+    </costList>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_WellbeingEmitterT4_Building</defName>
+    <label>облучатель тонизирования T4</label>
+    <description>Облучатель тонизирования T4. Действует в радиусе 20 клеток. Несколько устройств одной роли не складываются; используется сильнейшее.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Buildings/WellbeingEmitterT4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.25,1.25)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <fillPercent>0.3</fillPercent>
+    <rotatable>false</rotatable>
+    <size>(1,1)</size>
+    <tickerType>Normal</tickerType>
+    <minifiedDef>Grechka_PackedWellbeingEmitterT4_Item</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>4500</WorkToBuild>
+      <MaxHitPoints>260</MaxHitPoints>
+      <Mass>15</Mass>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>15000</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="Grechka.Industry.CompProperties_ArchoEmitter">
+        <role>Wellbeing</role>
+        <tier>4</tier>
+        <radius>20</radius>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
+        <targetDefName>Grechka_WellbeingEmitterT5_Building</targetDefName>
+        <costDescription>установленное устройство, 10 компонентов T5, 160 пластали и 24 концентрата</costDescription>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_OperationalGraphics">
+        <offPath>Buildings/Map/States/WellbeingEmitterT4/WellbeingEmitterT4_Off</offPath>
+        <idlePath>Buildings/Map/States/WellbeingEmitterT4/WellbeingEmitterT4_Idle</idlePath>
+        <activePath>Buildings/Map/States/WellbeingEmitterT4/WellbeingEmitterT4_Active</activePath>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Production</designationCategory>
+    <designatorDropdown>Grechka_WellbeingEmitterGroup</designatorDropdown>
+    <uiOrder>2522</uiOrder>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <constructEffect>ConstructMetal</constructEffect>
+    <costList>
+      <Grechka_HousingT4_Item>1</Grechka_HousingT4_Item>
+      <Grechka_ComponentT4_Item>8</Grechka_ComponentT4_Item>
+      <Plasteel>100</Plasteel>
+    </costList>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_WellbeingEmitterT5_Building</defName>
+    <label>облучатель тонизирования T5</label>
+    <description>Облучатель тонизирования T5. Действует в радиусе 32 клеток. Несколько устройств одной роли не складываются; используется сильнейшее.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Buildings/WellbeingEmitterT5</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.25,1.25)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <fillPercent>0.3</fillPercent>
+    <rotatable>false</rotatable>
+    <size>(1,1)</size>
+    <tickerType>Normal</tickerType>
+    <minifiedDef>Grechka_PackedWellbeingEmitterT5_Item</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>4500</WorkToBuild>
+      <MaxHitPoints>260</MaxHitPoints>
+      <Mass>15</Mass>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>60000</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="Grechka.Industry.CompProperties_ArchoEmitter">
+        <role>Wellbeing</role>
+        <tier>5</tier>
+        <radius>32</radius>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_OperationalGraphics">
+        <offPath>Buildings/Map/States/WellbeingEmitterT5/WellbeingEmitterT5_Off</offPath>
+        <idlePath>Buildings/Map/States/WellbeingEmitterT5/WellbeingEmitterT5_Idle</idlePath>
+        <activePath>Buildings/Map/States/WellbeingEmitterT5/WellbeingEmitterT5_Active</activePath>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Production</designationCategory>
+    <designatorDropdown>Grechka_WellbeingEmitterGroup</designatorDropdown>
+    <uiOrder>2522</uiOrder>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <constructEffect>ConstructMetal</constructEffect>
+    <costList>
+      <Grechka_PackedWellbeingEmitterT4_Item>1</Grechka_PackedWellbeingEmitterT4_Item>
+      <Grechka_ComponentT5_Item>10</Grechka_ComponentT5_Item>
+      <Plasteel>160</Plasteel>
+      <Grechka_GrechkaConcentrate>24</Grechka_GrechkaConcentrate>
+    </costList>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_ArchoGeneratorT4_Building</defName>
+    <label>архо-генератор T4</label>
+    <description>Архо-генератор T4. Постоянная генерация без топлива.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Buildings/ArchotechGeneratorT4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.25,1.25)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <fillPercent>0.3</fillPercent>
+    <rotatable>false</rotatable>
+    <size>(1,1)</size>
+    <tickerType>Normal</tickerType>
+    <minifiedDef>Grechka_PackedArchoGeneratorT4_Item</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>4500</WorkToBuild>
+      <MaxHitPoints>260</MaxHitPoints>
+      <Mass>15</Mass>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-100000</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
+        <targetDefName>Grechka_ArchoGeneratorT5_Building</targetDefName>
+        <costDescription>установленное устройство, 10 компонентов T5, 160 пластали и 24 концентрата</costDescription>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <designatorDropdown>Grechka_ArchoGeneratorGroup</designatorDropdown>
+    <uiOrder>2522</uiOrder>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <constructEffect>ConstructMetal</constructEffect>
+    <costList>
+      <Grechka_HousingT4_Item>1</Grechka_HousingT4_Item>
+      <Grechka_ComponentT4_Item>8</Grechka_ComponentT4_Item>
+      <Plasteel>100</Plasteel>
+    </costList>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_ArchoGeneratorT5_Building</defName>
+    <label>архо-генератор T5</label>
+    <description>Архо-генератор T5. Постоянная генерация без топлива.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Buildings/ArchotechGeneratorT4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.25,1.25)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <fillPercent>0.3</fillPercent>
+    <rotatable>false</rotatable>
+    <size>(1,1)</size>
+    <tickerType>Normal</tickerType>
+    <minifiedDef>Grechka_PackedArchoGeneratorT5_Item</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>4500</WorkToBuild>
+      <MaxHitPoints>260</MaxHitPoints>
+      <Mass>15</Mass>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerPlant</compClass>
+        <basePowerConsumption>-1000000</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <transmitsPower>true</transmitsPower>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Power</designationCategory>
+    <designatorDropdown>Grechka_ArchoGeneratorGroup</designatorDropdown>
+    <uiOrder>2522</uiOrder>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <constructEffect>ConstructMetal</constructEffect>
+    <costList>
+      <Grechka_PackedArchoGeneratorT4_Item>1</Grechka_PackedArchoGeneratorT4_Item>
+      <Grechka_ComponentT5_Item>10</Grechka_ComponentT5_Item>
+      <Plasteel>160</Plasteel>
+      <Grechka_GrechkaConcentrate>24</Grechka_GrechkaConcentrate>
+    </costList>
+  </ThingDef>
+</Defs>

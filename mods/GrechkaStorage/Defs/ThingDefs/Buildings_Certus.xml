@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>Grechka_CertusQuartz</defName>
+    <label>certus-кварц</label>
+    <description>Резонансный кристалл из метеорита. Источники роста позволяют выращивать его дома.</description>
+    <graphicData>
+      <texPath>Items/CertusQuartz</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>12</MarketValue>
+      <Mass>0.1</Mass>
+    </statBases>
+    <stackLimit>75</stackLimit>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+  </ThingDef>
+  <ThingDef ParentName="RockBase">
+    <defName>Grechka_MineableCertus</defName>
+    <label>certus-порода</label>
+    <description>Кристаллическая порода метеорита.</description>
+    <graphicData Inherit="False">
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <linkType>CornerFiller</linkType>
+      <linkFlags>
+        <li>Rock</li>
+        <li>MapEdge</li>
+      </linkFlags>
+      <color>(128,122,116)</color>
+      <colorTwo>(100,190,245)</colorTwo>
+    </graphicData>
+    <uiIconPath>Buildings/Natural/CertusOreSource</uiIconPath>
+    <statBases>
+      <MaxHitPoints>2200</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>Grechka_CertusQuartz</mineableThing>
+      <mineableYield>15</mineableYield>
+      <mineableScatterCommonality>0</mineableScatterCommonality>
+      <veinMineable>true</veinMineable>
+    </building>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_CertusSource</defName>
+    <label>источник certus</label>
+    <description>Переносимый природный источник. Каждые шесть часов выращивает 4 кристалла. Каждый запитанный соседний ускоритель добавляет ещё одну базовую скорость, до четырёх ускорителей.</description>
+    <thingClass>Building</thingClass>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <tickerType>Rare</tickerType>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.5</fillPercent>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Buildings/CertusGrowthSource</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <MarketValue>1800</MarketValue>
+      <Mass>12</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="Grechka.Storage.CompProperties_CertusSource" />
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_CertusAccelerator</defName>
+    <label>ускоритель certus</label>
+    <description>Ускоряет рост непосредственно соседних источников по четырём сторонам. Потребляет 250 Вт.</description>
+    <thingClass>Building</thingClass>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.5</fillPercent>
+    <graphicData>
+      <texPath>Buildings/Map/CertusGrowthAccelerator/CertusGrowthAccelerator</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>1800</WorkToBuild>
+      <Mass>8</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <Grechka_QuartzProcessor>2</Grechka_QuartzProcessor>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>250</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Grechka_StorageCategory</designationCategory>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <uiIconPath>Buildings/CertusGrowthAccelerator</uiIconPath>
+  </ThingDef>
+</Defs>

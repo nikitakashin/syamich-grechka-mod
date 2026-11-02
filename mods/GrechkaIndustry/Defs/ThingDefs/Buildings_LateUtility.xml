@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_IonizerT4_Building</defName>
+    <label>комнатный ионизатор T4</label>
+    <description>Усиленное оборудование T4. Освещает всю закрытую комнату и убирает грязь. Без суммирования одинаковых эффектов.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Buildings/IonizerT3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.25,1.25)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <fillPercent>0.3</fillPercent>
+    <rotatable>false</rotatable>
+    <size>(1,1)</size>
+    <tickerType>Rare</tickerType>
+    <minifiedDef>Grechka_PackedIonizerT4_Item</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>4500</WorkToBuild>
+      <MaxHitPoints>260</MaxHitPoints>
+      <Mass>15</Mass>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>3300</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="Grechka.Industry.CompProperties_RoomIonizer">
+        <cleaningLayersPerCycle>32</cleaningLayersPerCycle>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
+        <targetDefName>Grechka_IonizerT5_Building</targetDefName>
+        <costDescription>установленное устройство, 10 компонентов T5, 160 пластали и 24 концентрата</costDescription>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Production</designationCategory>
+    <designatorDropdown>Grechka_IonizerGroup</designatorDropdown>
+    <uiOrder>2522</uiOrder>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <constructEffect>ConstructMetal</constructEffect>
+    <costList>
+      <Grechka_PackedIonizerT3_Item>1</Grechka_PackedIonizerT3_Item>
+      <Grechka_ComponentT4_Item>10</Grechka_ComponentT4_Item>
+      <Plasteel>100</Plasteel>
+      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+    </costList>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_IonizerT5_Building</defName>
+    <label>комнатный ионизатор T5</label>
+    <description>Усиленное оборудование T5. Освещает всю закрытую комнату и убирает грязь. Без суммирования одинаковых эффектов.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Buildings/IonizerT3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.25,1.25)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <fillPercent>0.3</fillPercent>
+    <rotatable>false</rotatable>
+    <size>(1,1)</size>
+    <tickerType>Rare</tickerType>
+    <minifiedDef>Grechka_PackedIonizerT5_Item</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>4500</WorkToBuild>
+      <MaxHitPoints>260</MaxHitPoints>
+      <Mass>15</Mass>
+      <Flammability>0.2</Flammability>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>13300</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="Grechka.Industry.CompProperties_RoomIonizer">
+        <cleaningLayersPerCycle>128</cleaningLayersPerCycle>
+      </li>
+    </comps>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <designationCategory>Production</designationCategory>
+    <designatorDropdown>Grechka_IonizerGroup</designatorDropdown>
+    <uiOrder>2522</uiOrder>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <constructEffect>ConstructMetal</constructEffect>
+    <costList>
+      <Grechka_PackedIonizerT4_Item>1</Grechka_PackedIonizerT4_Item>
+      <Grechka_ComponentT5_Item>10</Grechka_ComponentT5_Item>
+      <Plasteel>160</Plasteel>
+      <Grechka_GrechkaConcentrate>24</Grechka_GrechkaConcentrate>
+    </costList>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_MechaniteExtractorT4_Building</defName>
+    <label>экстрактор механитов T4</label>
+    <description>Усиленное оборудование T4. Извлекает механиты без газа. Прогресс сохраняется без питания.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Buildings/MechaniteExtractorT3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <tickerType>Normal</tickerType>
+    <minifiedDef>Grechka_PackedMechaniteExtractorT4_Item</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <fillPercent>1</fillPercent>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToBuild>6000</WorkToBuild>
+      <MaxHitPoints>360</MaxHitPoints>
+      <Flammability>0.3</Flammability>
+      <Mass>45</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>6700</basePowerConsumption>
+        <shortCircuitInRain>true</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Glower">
+        <glowRadius>4</glowRadius>
+        <glowColor>(70,150,255,0)</glowColor>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_MechaniteExtractor">
+        <product>Grechka_Mechanites</product>
+        <cycleTicks>834</cycleTicks>
+        <batchCount>8</batchCount>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
+        <targetDefName>Grechka_MechaniteExtractorT5_Building</targetDefName>
+        <costDescription>установленное устройство, 10 компонентов T5, 160 пластали и 24 концентрата</costDescription>
+      </li>
+    </comps>
+    <designationCategory>Production</designationCategory>
+    <uiOrder>2520</uiOrder>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <constructEffect>ConstructMetal</constructEffect>
+    <costList>
+      <Grechka_PackedMechaniteExtractorT3_Item>1</Grechka_PackedMechaniteExtractorT3_Item>
+      <Grechka_ComponentT4_Item>10</Grechka_ComponentT4_Item>
+      <Plasteel>100</Plasteel>
+      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+    </costList>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_MechaniteExtractorT5_Building</defName>
+    <label>экстрактор механитов T5</label>
+    <description>Усиленное оборудование T5. Извлекает механиты без газа. Прогресс сохраняется без питания.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Buildings/MechaniteExtractorT3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <tickerType>Normal</tickerType>
+    <minifiedDef>Grechka_PackedMechaniteExtractorT5_Item</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <fillPercent>1</fillPercent>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToBuild>6000</WorkToBuild>
+      <MaxHitPoints>360</MaxHitPoints>
+      <Flammability>0.3</Flammability>
+      <Mass>45</Mass>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>26700</basePowerConsumption>
+        <shortCircuitInRain>true</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Glower">
+        <glowRadius>4</glowRadius>
+        <glowColor>(70,150,255,0)</glowColor>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_MechaniteExtractor">
+        <product>Grechka_Mechanites</product>
+        <cycleTicks>209</cycleTicks>
+        <batchCount>10</batchCount>
+      </li>
+    </comps>
+    <designationCategory>Production</designationCategory>
+    <uiOrder>2520</uiOrder>
+    <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    <constructEffect>ConstructMetal</constructEffect>
+    <costList>
+      <Grechka_PackedMechaniteExtractorT4_Item>1</Grechka_PackedMechaniteExtractorT4_Item>
+      <Grechka_ComponentT5_Item>10</Grechka_ComponentT5_Item>
+      <Plasteel>160</Plasteel>
+      <Grechka_GrechkaConcentrate>24</Grechka_GrechkaConcentrate>
+    </costList>
+  </ThingDef>
+</Defs>
