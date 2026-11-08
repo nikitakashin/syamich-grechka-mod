@@ -79,9 +79,9 @@ namespace Grechka.Storage
         public override AcceptanceReport AllowsPlacing(BuildableDef def, IntVec3 loc, Rot4 rot, Map map,
             Thing thingToIgnore = null, Thing thing = null)
         {
-            if (!loc.InBounds(map)) return new AcceptanceReport("За пределами карты.");
+            if (!loc.InBounds(map)) return new AcceptanceReport(StorageText.Get("GrechkaStorage_Text126"));
             return loc.GetThingList(map).Any(t => t != thingToIgnore && StoragePlacement.NodeProperties(t.def)?.cable == true)
-                ? new AcceptanceReport("Здесь уже есть кварцевый кабель или его чертёж.") : AcceptanceReport.WasAccepted;
+                ? new AcceptanceReport(StorageText.Get("GrechkaStorage_Text127")) : AcceptanceReport.WasAccepted;
         }
     }
 }

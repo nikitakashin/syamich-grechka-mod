@@ -11,10 +11,10 @@ namespace Grechka.Quests
         {
             error = null;
             if (pack == null || child == null || predecessor == null || !pack.quests.Contains(child) || !pack.quests.Contains(predecessor))
-                error = "Оба задания должны принадлежать книге.";
-            else if (child.id == predecessor.id) error = "Нельзя связать задание с самим собой.";
-            else if (child.requires.Contains(predecessor.id)) error = "Эта связь уже существует.";
-            else if (child.requires.Count >= 100) error = "Максимум 100 предшественников.";
+                error = QuestText.Get("GrechkaQuests_03e3e9f6924e", "Оба задания должны принадлежать книге.");
+            else if (child.id == predecessor.id) error = QuestText.Get("GrechkaQuests_cf5cdfeb5ffd", "Нельзя связать задание с самим собой.");
+            else if (child.requires.Contains(predecessor.id)) error = QuestText.Get("GrechkaQuests_02b8fd9551ec", "Эта связь уже существует.");
+            else if (child.requires.Count >= 100) error = QuestText.Get("GrechkaQuests_f39eca6321e6", "Максимум 100 предшественников.");
             else
             {
                 var byId = pack.quests.GroupBy(q => q.id).ToDictionary(g => g.Key, g => g.First());
@@ -23,7 +23,7 @@ namespace Grechka.Quests
                 while (todo.Count > 0)
                 {
                     string id = todo.Pop();
-                    if (id == child.id) { error = "Эта связь создаст цикл."; break; }
+                    if (id == child.id) { error = QuestText.Get("GrechkaQuests_d72190be5794", "Эта связь создаст цикл."); break; }
                     Quest item;
                     if (visited.Add(id) && byId.TryGetValue(id, out item))
                         foreach (string required in item.requires) todo.Push(required);
@@ -60,16 +60,16 @@ namespace Grechka.Quests
         {
             var ids = new HashSet<string>(questIds ?? Enumerable.Empty<string>());
             var original = pack.quests.Where(q => ids.Contains(q.id)).ToList();
-            if (original.Count == 0 || original.Count != ids.Count) throw new InvalidOperationException("Выберите существующие задания книги.");
-            if (pack.quests.Count + original.Count > 500) throw new InvalidOperationException("Лимит: 500 заданий.");
-            if (destinationChapter != null && !pack.chapters.Any(c => c.id == destinationChapter)) throw new InvalidOperationException("Глава не найдена.");
+            if (original.Count == 0 || original.Count != ids.Count) throw new InvalidOperationException(QuestText.Get("GrechkaQuests_f6b2f475b0c7", "Выберите существующие задания книги."));
+            if (pack.quests.Count + original.Count > 500) throw new InvalidOperationException(QuestText.Get("GrechkaQuests_8210d9d1210a", "Лимит: 500 заданий."));
+            if (destinationChapter != null && !pack.chapters.Any(c => c.id == destinationChapter)) throw new InvalidOperationException(QuestText.Get("GrechkaQuests_78aa5d16dd7e", "Глава не найдена."));
             var newIds = original.ToDictionary(q => q.id, q => PackCodec.NewId("quest."));
             var copies = new List<Quest>();
             foreach (Quest source in original)
             {
                 var copy = new Quest {
                     id = newIds[source.id], chapter = destinationChapter ?? source.chapter,
-                    title = source.title + " (копия)", description = source.description, icon = source.icon,
+                    title = source.title + QuestText.Get("GrechkaQuests_cf8ecce177df", " (копия)"), description = source.description, icon = source.icon,
                     graphX = Math.Min(100000f, source.graphX + 35f), graphY = Math.Min(100000f, source.graphY + 35f), graphPositioned = source.graphPositioned,
                     requires = source.requires.Where(newIds.ContainsKey).Select(id => newIds[id]).ToList(),
                     objectives = source.objectives.Select(o => new Objective { id = PackCodec.NewId("goal."), type = o.type, target = o.target, variants = new List<string>(o.variants), stuff = o.stuff, minQuality = o.minQuality, count = o.count, text = o.text }).ToList(),
@@ -92,11 +92,11 @@ namespace Grechka.Quests
 
         public static Chapter CopyChapter(QuestPack pack, Chapter source)
         {
-            if (source == null || !pack.chapters.Contains(source)) throw new InvalidOperationException("Глава не найдена.");
-            if (pack.chapters.Count >= 100) throw new InvalidOperationException("Лимит: 100 глав.");
+            if (source == null || !pack.chapters.Contains(source)) throw new InvalidOperationException(QuestText.Get("GrechkaQuests_78aa5d16dd7e", "Глава не найдена."));
+            if (pack.chapters.Count >= 100) throw new InvalidOperationException(QuestText.Get("GrechkaQuests_e719c846a94c", "Лимит: 100 глав."));
             var ids = pack.quests.Where(q => q.chapter == source.id).Select(q => q.id).ToList();
-            if (pack.quests.Count + ids.Count > 500) throw new InvalidOperationException("Лимит: 500 заданий.");
-            var chapter = new Chapter { id = PackCodec.NewId("chapter."), title = source.title + " (копия)", description = source.description, icon = source.icon };
+            if (pack.quests.Count + ids.Count > 500) throw new InvalidOperationException(QuestText.Get("GrechkaQuests_8210d9d1210a", "Лимит: 500 заданий."));
+            var chapter = new Chapter { id = PackCodec.NewId("chapter."), title = source.title + QuestText.Get("GrechkaQuests_cf8ecce177df", " (копия)"), description = source.description, icon = source.icon };
             if (chapter.title.Length > 200) chapter.title = chapter.title.Substring(0, 200);
             pack.chapters.Add(chapter);
             try { if (ids.Count > 0) CopySelected(pack, ids, chapter.id); }
@@ -106,7 +106,7 @@ namespace Grechka.Quests
 
         public static void RemoveQuest(QuestPack pack, Quest quest)
         {
-            if (!pack.quests.Remove(quest)) throw new InvalidOperationException("Задание не найдено.");
+            if (!pack.quests.Remove(quest)) throw new InvalidOperationException(QuestText.Get("GrechkaQuests_72fafafe4304", "Задание не найдено."));
             foreach (Quest other in pack.quests) other.requires.RemoveAll(id => id == quest.id);
         }
     }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <GrechkaCameraPlus_Intro>Расширенный зум камеры карты. Управление: обычное колесо мыши и клавиши приближения/отдаления.</GrechkaCameraPlus_Intro>
+  <GrechkaCameraPlus_Closer>Приближение относительно ванильного предела: ×{0}</GrechkaCameraPlus_Closer>
+  <GrechkaCameraPlus_Farther>Отдаление относительно ванильного предела: ×{0}</GrechkaCameraPlus_Farther>
+  <GrechkaCameraPlus_Help>Изменения действуют сразу после возвращения на карту. Значение ×1 возвращает соответствующий ванильный предел. Камера глобального мира не изменяется. При сильном отдалении на экране больше объектов, что может снизить FPS.</GrechkaCameraPlus_Help>
+  <GrechkaCameraPlus_Reset>Вернуть значения по умолчанию (×4 / ×4)</GrechkaCameraPlus_Reset>
+</LanguageData>

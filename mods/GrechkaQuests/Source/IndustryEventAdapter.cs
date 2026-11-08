@@ -16,7 +16,7 @@ namespace Grechka.Quests
             EventInfo produced = source?.GetEvent("OutputProduced", BindingFlags.Public | BindingFlags.Static);
             if (produced == null || produced.EventHandlerType != typeof(Action<Thing, ThingDef, int>))
             {
-                Log.Warning("[Grechka Quests] Industry: событие выпуска не найдено; адаптер отключён.");
+                Log.Warning(QuestText.Get("GrechkaQuests_84ba34a3b40a", "[Grechka Quests] Industry: событие выпуска не найдено; адаптер отключён."));
                 return;
             }
             try
@@ -26,7 +26,7 @@ namespace Grechka.Quests
             }
             catch (Exception error)
             {
-                Log.Warning("[Grechka Quests] Industry: адаптер выпуска не подключён: " + error.Message);
+                Log.Warning(QuestText.Get("GrechkaQuests_2e6f3ea6ae78", "[Grechka Quests] Industry: адаптер выпуска не подключён: ") + error.Message);
             }
         }
 

@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Grechka_RescueDroneStationT1_Dock.label>док дрона-МЧСника T1</Grechka_RescueDroneStationT1_Dock.label>
+  <Grechka_RescueDroneStationT1_Dock.description>Зарядная и ремонтная станция с дроном «МЧСник» T1. Дрон входит в комплект станции.</Grechka_RescueDroneStationT1_Dock.description>
+  <Grechka_RescueDroneStationT2_Dock.label>док дрона-МЧСника T2</Grechka_RescueDroneStationT2_Dock.label>
+  <Grechka_RescueDroneStationT2_Dock.description>Зарядная и ремонтная станция с дроном «МЧСник» T2. Дрон входит в комплект станции.</Grechka_RescueDroneStationT2_Dock.description>
+  <Grechka_RescueDroneStationT3_Dock.label>док дрона-МЧСника T3</Grechka_RescueDroneStationT3_Dock.label>
+  <Grechka_RescueDroneStationT3_Dock.description>Зарядная и ремонтная станция с дроном «МЧСник» T3. Дрон входит в комплект станции.</Grechka_RescueDroneStationT3_Dock.description>
+  <Grechka_RescueDroneStationT4_Dock.label>док дрона-МЧСника T4</Grechka_RescueDroneStationT4_Dock.label>
+  <Grechka_RescueDroneStationT4_Dock.description>Зарядная и ремонтная станция с дроном «МЧСник» T4. Дрон входит в комплект станции.</Grechka_RescueDroneStationT4_Dock.description>
+  <Grechka_RescueDroneStationT5_Dock.label>док дрона-МЧСника T5</Grechka_RescueDroneStationT5_Dock.label>
+  <Grechka_RescueDroneStationT5_Dock.description>Зарядная и ремонтная станция с дроном «МЧСник» T5. Дрон входит в комплект станции.</Grechka_RescueDroneStationT5_Dock.description>
+  <Grechka_WarriorDroneStationT1_Dock.label>док дрона-воина T1</Grechka_WarriorDroneStationT1_Dock.label>
+  <Grechka_WarriorDroneStationT1_Dock.description>Зарядная и ремонтная станция с дроном «воин» T1. Дрон входит в комплект станции.</Grechka_WarriorDroneStationT1_Dock.description>
+  <Grechka_WarriorDroneStationT2_Dock.label>док дрона-воина T2</Grechka_WarriorDroneStationT2_Dock.label>
+  <Grechka_WarriorDroneStationT2_Dock.description>Зарядная и ремонтная станция с дроном «воин» T2. Дрон входит в комплект станции.</Grechka_WarriorDroneStationT2_Dock.description>
+  <Grechka_WarriorDroneStationT3_Dock.label>док дрона-воина T3</Grechka_WarriorDroneStationT3_Dock.label>
+  <Grechka_WarriorDroneStationT3_Dock.description>Зарядная и ремонтная станция с дроном «воин» T3. Дрон входит в комплект станции.</Grechka_WarriorDroneStationT3_Dock.description>
+  <Grechka_WarriorDroneStationT4_Dock.label>док дрона-воина T4</Grechka_WarriorDroneStationT4_Dock.label>
+  <Grechka_WarriorDroneStationT4_Dock.description>Зарядная и ремонтная станция с дроном «воин» T4. Дрон входит в комплект станции.</Grechka_WarriorDroneStationT4_Dock.description>
+  <Grechka_WarriorDroneStationT5_Dock.label>док дрона-воина T5</Grechka_WarriorDroneStationT5_Dock.label>
+  <Grechka_WarriorDroneStationT5_Dock.description>Зарядная и ремонтная станция с дроном «воин» T5. Дрон входит в комплект станции.</Grechka_WarriorDroneStationT5_Dock.description>
+  <Grechka_RescueDroneT1_Unit.label>дрон-МЧСник T1</Grechka_RescueDroneT1_Unit.label>
+  <Grechka_RescueDroneT1_Unit.description>Негорючий спасательный дрон. Переносит своих раненых в медицинские кровати и тушит пожары пеной по площади. По переключателю берёт раненых врагов в плен при наличии тюремных мест. Ради спасения своего оставляет переносимого врага.</Grechka_RescueDroneT1_Unit.description>
+  <Grechka_RescueDroneT1_Unit.tools.0.label>ударный манипулятор</Grechka_RescueDroneT1_Unit.tools.0.label>
+  <Grechka_RescueDroneT2_Unit.label>дрон-МЧСник T2</Grechka_RescueDroneT2_Unit.label>
+  <Grechka_RescueDroneT2_Unit.description>Негорючий спасательный дрон. Переносит своих раненых в медицинские кровати и тушит пожары пеной по площади. По переключателю берёт раненых врагов в плен при наличии тюремных мест. Ради спасения своего оставляет переносимого врага.</Grechka_RescueDroneT2_Unit.description>
+  <Grechka_RescueDroneT2_Unit.tools.0.label>ударный манипулятор</Grechka_RescueDroneT2_Unit.tools.0.label>
+  <Grechka_RescueDroneT3_Unit.label>дрон-МЧСник T3</Grechka_RescueDroneT3_Unit.label>
+  <Grechka_RescueDroneT3_Unit.description>Негорючий спасательный дрон. Переносит своих раненых в медицинские кровати и тушит пожары пеной по площади. По переключателю берёт раненых врагов в плен при наличии тюремных мест. Ради спасения своего оставляет переносимого врага.</Grechka_RescueDroneT3_Unit.description>
+  <Grechka_RescueDroneT3_Unit.tools.0.label>ударный манипулятор</Grechka_RescueDroneT3_Unit.tools.0.label>
+  <Grechka_RescueDroneT4_Unit.label>дрон-МЧСник T4</Grechka_RescueDroneT4_Unit.label>
+  <Grechka_RescueDroneT4_Unit.description>Негорючий спасательный дрон. Переносит своих раненых в медицинские кровати и тушит пожары пеной по площади. По переключателю берёт раненых врагов в плен при наличии тюремных мест. Ради спасения своего оставляет переносимого врага.</Grechka_RescueDroneT4_Unit.description>
+  <Grechka_RescueDroneT4_Unit.tools.0.label>ударный манипулятор</Grechka_RescueDroneT4_Unit.tools.0.label>
+  <Grechka_RescueDroneT5_Unit.label>дрон-МЧСник T5</Grechka_RescueDroneT5_Unit.label>
+  <Grechka_RescueDroneT5_Unit.description>Негорючий спасательный дрон. Переносит своих раненых в медицинские кровати и тушит пожары пеной по площади. По переключателю берёт раненых врагов в плен при наличии тюремных мест. Ради спасения своего оставляет переносимого врага.</Grechka_RescueDroneT5_Unit.description>
+  <Grechka_RescueDroneT5_Unit.tools.0.label>ударный манипулятор</Grechka_RescueDroneT5_Unit.tools.0.label>
+  <Grechka_WarriorDroneT1_Unit.label>дрон-воин T1</Grechka_WarriorDroneT1_Unit.label>
+  <Grechka_WarriorDroneT1_Unit.description>Негорючий боевой дрон ближнего боя с огромным запасом здоровья. Патрулирует домашнюю территорию и защищает колонию от нападающих. При 30% здоровья отступает к своему доку на ремонт.</Grechka_WarriorDroneT1_Unit.description>
+  <Grechka_WarriorDroneT1_Unit.tools.0.label>ударный манипулятор</Grechka_WarriorDroneT1_Unit.tools.0.label>
+  <Grechka_WarriorDroneT2_Unit.label>дрон-воин T2</Grechka_WarriorDroneT2_Unit.label>
+  <Grechka_WarriorDroneT2_Unit.description>Негорючий боевой дрон ближнего боя с огромным запасом здоровья. Патрулирует домашнюю территорию и защищает колонию от нападающих. При 30% здоровья отступает к своему доку на ремонт.</Grechka_WarriorDroneT2_Unit.description>
+  <Grechka_WarriorDroneT2_Unit.tools.0.label>ударный манипулятор</Grechka_WarriorDroneT2_Unit.tools.0.label>
+  <Grechka_WarriorDroneT3_Unit.label>дрон-воин T3</Grechka_WarriorDroneT3_Unit.label>
+  <Grechka_WarriorDroneT3_Unit.description>Негорючий боевой дрон ближнего боя с огромным запасом здоровья. Патрулирует домашнюю территорию и защищает колонию от нападающих. При 30% здоровья отступает к своему доку на ремонт.</Grechka_WarriorDroneT3_Unit.description>
+  <Grechka_WarriorDroneT3_Unit.tools.0.label>ударный манипулятор</Grechka_WarriorDroneT3_Unit.tools.0.label>
+  <Grechka_WarriorDroneT4_Unit.label>дрон-воин T4</Grechka_WarriorDroneT4_Unit.label>
+  <Grechka_WarriorDroneT4_Unit.description>Негорючий боевой дрон ближнего боя с огромным запасом здоровья. Патрулирует домашнюю территорию и защищает колонию от нападающих. При 30% здоровья отступает к своему доку на ремонт.</Grechka_WarriorDroneT4_Unit.description>
+  <Grechka_WarriorDroneT4_Unit.tools.0.label>ударный манипулятор</Grechka_WarriorDroneT4_Unit.tools.0.label>
+  <Grechka_WarriorDroneT5_Unit.label>дрон-воин T5</Grechka_WarriorDroneT5_Unit.label>
+  <Grechka_WarriorDroneT5_Unit.description>Негорючий боевой дрон ближнего боя с огромным запасом здоровья. Патрулирует домашнюю территорию и защищает колонию от нападающих. При 30% здоровья отступает к своему доку на ремонт.</Grechka_WarriorDroneT5_Unit.description>
+  <Grechka_WarriorDroneT5_Unit.tools.0.label>ударный манипулятор</Grechka_WarriorDroneT5_Unit.tools.0.label>
+</LanguageData>

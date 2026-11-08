@@ -6,6 +6,13 @@ using HarmonyLib;
 using RimWorld;
 using Verse;
 
+// Point the renderer at the installed shader sources before enabling genuine main-thread lookups.
+var shaders = Path.Combine(Environment.GetEnvironmentVariable("RIMWORLD_MANAGED_DIR")!, "Rendering", "Shaders");
+AccessTools.Method(Type.GetType("Waylith.Rendering.ShaderSourceLoader, Waylith", true), "SetOverrideShaderDirectories")
+    .Invoke(null, new object[] { new[] { shaders } });
+// The desktop game sets this during UnityData.CopyUnityData. The isolated test driver is the main thread.
+AccessTools.Field(typeof(UnityData), "mainThreadId").SetValue(null, Environment.CurrentManagedThreadId);
+
 static void Check(bool ok,string label){if(!ok)throw new Exception(label);Console.WriteLine("PASS "+label);}
 ModContentPack Pack(string id){var pack=(ModContentPack)RuntimeHelpers.GetUninitializedObject(typeof(ModContentPack));AccessTools.Field(typeof(ModContentPack),"packageIdPlayerFacingInt").SetValue(pack,id);return pack;}
 ThingDef Thing(string id,ModContentPack pack){var d=new ThingDef {defName=id,label=id,modContentPack=pack,category=ThingCategory.Item,stackLimit=75};DefDatabase<ThingDef>.Add(d);return d;}
@@ -48,11 +55,16 @@ DefDatabase<MachineProfileRuleDef>.Add(new MachineProfileRuleDef{defName="new_ru
 Check(newMachine.costList.Count==1,"A newly added machine rule waits for explicit approval in an existing save");
 WorldProfile.RestoreBaseline();Check(machine.costList.Count==1 && !recipe.allowMixingIngredients && !count.filter.Allows(copperB),"Returning to another unapproved game restores baseline defs");
 var harmony=new Harmony("grechka.world.isolated-check");
+if (AccessTools.TypeByName("VanillaFurnitureExpandedFactory.ResultWorker_Metals") == null)
+{
+    Check(!FactoryDrillSelectionHook.Prepare() && !FactoryDrillCountHook.Prepare(),
+        "Factory drill expansion remains optional when Factory is absent");
+}
 foreach(Type hook in new[]{typeof(ProfileVariantXmlHook),typeof(ProfileVariantVisibilityHook),typeof(ProfileVariantPlacementHook),typeof(ProfileUpgradeAvailabilityHook),typeof(ProfileUpgradeCompletionHook),typeof(ProfileIngredientDiscountHook),typeof(ProfileProductBonusHook),typeof(ProfilePowerHook)})
     harmony.CreateClassProcessor(hook).Patch();
 Check(true,"All world variant hooks bind to actual RimWorld 1.7 signatures");
 var xml=new XmlDocument();
-xml.LoadXml("<Defs><ThingDef Name='FixtureBench' Abstract='True'><thingClass>Building_WorkTable</thingClass><tickerType>Normal</tickerType><size>(2,1)</size><costList><Steel>30</Steel></costList></ThingDef><ThingDef ParentName='FixtureBench'><defName>FixtureBenchReal</defName><label>fixture bench</label></ThingDef><Grechka.WorldIntegration.MachineProfileRuleDef><defName>fixture_variant_rule</defName><packageId>ludeon.rimworld</packageId><targetDefName>FixtureBenchReal</targetDefName><minimumTier>2</minimumTier><addHousing>true</addHousing></Grechka.WorldIntegration.MachineProfileRuleDef></Defs>");
+xml.LoadXml("<Defs><ThingDef Name='FixtureBench' Abstract='True'><thingClass>Building_WorkTable</thingClass><designationCategory>Production</designationCategory><tickerType>Normal</tickerType><size>(2,1)</size><costList><Steel>30</Steel></costList></ThingDef><ThingDef ParentName='FixtureBench'><defName>FixtureBenchReal</defName><label>fixture bench</label></ThingDef><Grechka.WorldIntegration.MachineProfileRuleDef><defName>fixture_variant_rule</defName><packageId>ludeon.rimworld</packageId><targetDefName>FixtureBenchReal</targetDefName><minimumTier>2</minimumTier><addHousing>true</addHousing></Grechka.WorldIntegration.MachineProfileRuleDef></Defs>");
 var owners=new Dictionary<XmlNode,LoadableXmlAsset>();
 LoadableXmlAsset Owner(ModContentPack pack){var asset=(LoadableXmlAsset)RuntimeHelpers.GetUninitializedObject(typeof(LoadableXmlAsset));AccessTools.Field(typeof(LoadableXmlAsset),"mod").SetValue(asset,pack);return asset;}
 foreach(XmlNode node in xml.DocumentElement.ChildNodes)owners[node]=Owner(core);
@@ -78,6 +90,8 @@ var resolved=XmlInheritance.GetResolvedNodeFor(clone);
 Check(resolved.SelectSingleNode("thingClass").InnerText=="Building_WorkTable"&&resolved.SelectSingleNode("size").InnerText=="(2,1)","Native XML inheritance preserves machine class and footprint");
 Check(resolved.SelectNodes("comps/li[@Class='Grechka.WorldIntegration.CompProperties_ProfileUpgrade']").Count==1,"Variant inherits exactly one upgrade/bonus component");
 Check(resolved.SelectSingleNode("designatorDropdown").InnerText=="GrechkaWorld_Group_FixtureBenchReal","Tier machines share one native build dropdown");
+Check(resolved.SelectSingleNode("designationCategory").InnerText == "Production",
+    "Vanilla bench tiers share the original Production entry without an entry in the Grechka workshop");
 var upgradeRecipe=xml.DocumentElement.SelectSingleNode("RecipeDef[defName='GrechkaWorld_Upgrade_FixtureBenchReal_T3']");
 Check(upgradeRecipe.SelectNodes("ingredients/li").Count==1&&upgradeRecipe.SelectSingleNode("ingredients/li/filter/thingDefs/li").InnerText=="Steel","In-place upgrade credits the previous housing rather than consuming it twice");
 WorldProfile.AppliedTiers.Clear();
@@ -90,12 +104,24 @@ void AddXml(string text,ModContentPack pack)
 {
     var d=new XmlDocument();d.LoadXml(text);var node=xml.ImportNode(d.DocumentElement,true);xml.DocumentElement.AppendChild(node);owners[node]=Owner(pack);
 }
-AddXml("<ThingDef Name='FactoryFixtureBase' Abstract='True'><thingClass>Building</thingClass><comps><li Class='PipeSystem.CompProperties_AdvancedResourceProcessor'/></comps></ThingDef>",core);
+AddXml("<ThingDef Name='FactoryFixtureBase' Abstract='True'><designationCategory>FixtureFactories</designationCategory><thingClass>Building</thingClass><comps><li Class='PipeSystem.CompProperties_AdvancedResourceProcessor'/></comps></ThingDef>",core);
 AddXml("<ThingDef ParentName='FactoryFixtureBase'><defName>FixtureFactory</defName><label>factory fixture</label><comps><li Class='CompProperties_Flickable'/></comps></ThingDef>",core);
 AddXml("<Grechka.WorldIntegration.MachineProfileRuleDef><defName>fixture_factory_rule</defName><packageId>ludeon.rimworld</packageId><targetDefName>FixtureFactory</targetDefName><minimumTier>3</minimumTier><addHousing>true</addHousing></Grechka.WorldIntegration.MachineProfileRuleDef>",core);
 ProfileVariantXmlHook.EntriesFromXml(xml,owners);
 Check(ProfileVariants.Entries.Values.Count(e=>e.sourceName=="FixtureFactory")==3,"Native Factory processor inherited through base comps produces T3–T5 direct variants");
 Check(ProfileVariants.Entries["GrechkaWorld_FixtureFactory_T5_Building"].worktable==false&&xml.DocumentElement.SelectSingleNode("RecipeDef[defName='GrechkaWorld_Upgrade_FixtureFactory_T4']")==null,"Factory variants do not receive a fake BillStack upgrade recipe");
+XmlInheritance.Clear();
+foreach (XmlNode node in xml.DocumentElement.ChildNodes)
+    XmlInheritance.TryRegister(node, owners[node].mod);
+XmlInheritance.Resolve();
+foreach (var entry in ProfileVariants.Entries.Values.Where(e => e.sourceName == "FixtureFactory"))
+{
+    var node = xml.DocumentElement.SelectSingleNode("ThingDef[defName='" + entry.name + "']");
+    var factory = XmlInheritance.GetResolvedNodeFor(node);
+    Check(factory.SelectSingleNode("designationCategory")?.InnerText == "FixtureFactories"
+        && factory.SelectSingleNode("designatorDropdown")?.InnerText == "GrechkaWorld_Group_FixtureFactory",
+        entry.name + " stays in the source mod's custom tab and tier dropdown");
+}
 Check(WorldProfile.OriginalDefName(new ThingDef{defName="GrechkaWorld_FixtureFactory_T5_Building"})=="FixtureFactory","Optional quest adapters can resolve a generated variant to its original machine");
 StatDefOf.WorkTableWorkSpeedFactor=new StatDef{defName="FixtureWorkTableSpeed",defaultBaseValue=1,workerClass=typeof(StatWorker)};
 var realBench=Thing("FixtureBenchReal",core);realBench.thingClass=typeof(Building_WorkTable);realBench.category=ThingCategory.Building;
@@ -133,4 +159,9 @@ WorldProfile.RestoreBaseline();
 Check(realBench.statBases.Single(s=>s.stat==StatDefOf.WorkTableWorkSpeedFactor).value==1.25f,"Switching to an unapproved world restores original work speed");
 SpecialRecipeChecks.Run(core,steel);
 UtilityChecks.Run();
+TierArtworkChecks.Run(core);
+TierArtworkThreadChecks.Run();
+DifficultyCostChecks.Run(core, industry);
+HopperChecks.Run(core, industry);
+BalanceApprovalChecks.Run(core);
 Console.WriteLine("World profile checks complete. No game process or real save used.");

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Grechka_CaravanDroneT1_Unit.label>караванный дрон T1</Grechka_CaravanDroneT1_Unit.label>
+  <Grechka_CaravanDroneT1_Unit.description>Негорючий караванный дрон T1. На базе выполняет обычную переноску, в караване перевозит до 50 кг. Получает энергию из еды; полный биозаряд хранит 2 единицы питательности и расходуется за сутки. Дома может заряжаться от собственного дока. При пустом заряде прекращает обычную работу, не уничтожается и сохраняет груз.</Grechka_CaravanDroneT1_Unit.description>
+  <Grechka_CaravanDroneStationT1_Dock.label>док караванного дрона T1</Grechka_CaravanDroneStationT1_Dock.label>
+  <Grechka_CaravanDroneStationT1_Dock.description>Зарядная и ремонтная станция с караванным дроном T1. На базе он носит вещи, в пути преобразует еду в энергию и перевозит до 50 кг. Ушедший в караван дрон остаётся связан с этим доком.</Grechka_CaravanDroneStationT1_Dock.description>
+  <Grechka_CaravanDroneT2_Unit.label>караванный дрон T2</Grechka_CaravanDroneT2_Unit.label>
+  <Grechka_CaravanDroneT2_Unit.description>Негорючий караванный дрон T2. На базе выполняет обычную переноску, в караване перевозит до 100 кг. Получает энергию из еды; полный биозаряд хранит 2 единицы питательности и расходуется за сутки. Дома может заряжаться от собственного дока. При пустом заряде прекращает обычную работу, не уничтожается и сохраняет груз.</Grechka_CaravanDroneT2_Unit.description>
+  <Grechka_CaravanDroneStationT2_Dock.label>док караванного дрона T2</Grechka_CaravanDroneStationT2_Dock.label>
+  <Grechka_CaravanDroneStationT2_Dock.description>Зарядная и ремонтная станция с караванным дроном T2. На базе он носит вещи, в пути преобразует еду в энергию и перевозит до 100 кг. Ушедший в караван дрон остаётся связан с этим доком.</Grechka_CaravanDroneStationT2_Dock.description>
+  <Grechka_CaravanDroneT3_Unit.label>караванный дрон T3</Grechka_CaravanDroneT3_Unit.label>
+  <Grechka_CaravanDroneT3_Unit.description>Негорючий караванный дрон T3. На базе выполняет обычную переноску, в караване перевозит до 150 кг. Получает энергию из еды; полный биозаряд хранит 2 единицы питательности и расходуется за сутки. Дома может заряжаться от собственного дока. При пустом заряде прекращает обычную работу, не уничтожается и сохраняет груз.</Grechka_CaravanDroneT3_Unit.description>
+  <Grechka_CaravanDroneStationT3_Dock.label>док караванного дрона T3</Grechka_CaravanDroneStationT3_Dock.label>
+  <Grechka_CaravanDroneStationT3_Dock.description>Зарядная и ремонтная станция с караванным дроном T3. На базе он носит вещи, в пути преобразует еду в энергию и перевозит до 150 кг. Ушедший в караван дрон остаётся связан с этим доком.</Grechka_CaravanDroneStationT3_Dock.description>
+  <Grechka_CaravanDroneT4_Unit.label>караванный дрон T4</Grechka_CaravanDroneT4_Unit.label>
+  <Grechka_CaravanDroneT4_Unit.description>Негорючий караванный дрон T4. На базе выполняет обычную переноску, в караване перевозит до 200 кг. Получает энергию из еды; полный биозаряд хранит 2 единицы питательности и расходуется за сутки. Дома может заряжаться от собственного дока. При пустом заряде прекращает обычную работу, не уничтожается и сохраняет груз.</Grechka_CaravanDroneT4_Unit.description>
+  <Grechka_CaravanDroneStationT4_Dock.label>док караванного дрона T4</Grechka_CaravanDroneStationT4_Dock.label>
+  <Grechka_CaravanDroneStationT4_Dock.description>Зарядная и ремонтная станция с караванным дроном T4. На базе он носит вещи, в пути преобразует еду в энергию и перевозит до 200 кг. Ушедший в караван дрон остаётся связан с этим доком.</Grechka_CaravanDroneStationT4_Dock.description>
+  <Grechka_CaravanDroneT5_Unit.label>караванный дрон T5</Grechka_CaravanDroneT5_Unit.label>
+  <Grechka_CaravanDroneT5_Unit.description>Негорючий караванный дрон T5. На базе выполняет обычную переноску, в караване перевозит до 250 кг. Получает энергию из еды; полный биозаряд хранит 2 единицы питательности и расходуется за сутки. Дома может заряжаться от собственного дока. При пустом заряде прекращает обычную работу, не уничтожается и сохраняет груз.</Grechka_CaravanDroneT5_Unit.description>
+  <Grechka_CaravanDroneStationT5_Dock.label>док караванного дрона T5</Grechka_CaravanDroneStationT5_Dock.label>
+  <Grechka_CaravanDroneStationT5_Dock.description>Зарядная и ремонтная станция с караванным дроном T5. На базе он носит вещи, в пути преобразует еду в энергию и перевозит до 250 кг. Ушедший в караван дрон остаётся связан с этим доком.</Grechka_CaravanDroneStationT5_Dock.description>
+</LanguageData>

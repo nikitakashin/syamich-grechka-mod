@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <ThingDef ParentName="RockBase">
     <defName>Grechka_MineableQuartz</defName>
@@ -9,7 +9,10 @@
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <linkType>CornerFiller</linkType>
-      <linkFlags><li>Rock</li><li>MapEdge</li></linkFlags>
+      <linkFlags>
+        <li>Rock</li>
+        <li>MapEdge</li>
+      </linkFlags>
       <color>(128,122,116)</color>
       <colorTwo>(237,231,216)</colorTwo>
       <drawSize>(1,1)</drawSize>

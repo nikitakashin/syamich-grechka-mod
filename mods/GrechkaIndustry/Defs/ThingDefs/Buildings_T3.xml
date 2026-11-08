@@ -7,17 +7,17 @@
     <thingClass>Building_WorkTable</thingClass>
     <tickerType>Normal</tickerType>
     <graphicData>
-      <texPath>Things/Building/Production/TableSmithingElectric</texPath>
+      <texPath>Buildings/Map/AssemblyBenchT3/AssemblyBenchT3</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(3.5,1.5)</drawSize>
-      <color>(0.4,0.8,1)</color>
     </graphicData>
+    <uiIconPath>Buildings/Map/AssemblyBenchT3/AssemblyBenchT3_north</uiIconPath>
     <size>(3,1)</size>
     <costList>
       <Grechka_HousingT3_Item>1</Grechka_HousingT3_Item>
-      <Grechka_ComponentT3_Item>6</Grechka_ComponentT3_Item>
-      <Plasteel>100</Plasteel>
-      <Uranium>40</Uranium>
+      <Grechka_ComponentT3_Item>2</Grechka_ComponentT3_Item>
+      <Plasteel>40</Plasteel>
+      <Uranium>10</Uranium>
     </costList>
     <statBases>
       <WorkToBuild>6500</WorkToBuild>
@@ -27,7 +27,7 @@
     </statBases>
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
-    <designationCategory>Production</designationCategory>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
     <designatorDropdown>Grechka_AssemblyBenchGroup</designatorDropdown>
     <uiOrder>2512</uiOrder>
     <passability>PassThroughOnly</passability>
@@ -41,6 +41,7 @@
     <recipes>
       <li>Grechka_MakeComponentBatchT1</li>
       <li>Make_ComponentSpacer</li>
+      <li>Grechka_MakeHousingT1</li>
       <li>Grechka_MakeHousingT2</li>
       <li>Grechka_MakeSolarCellT2</li>
       <li>Grechka_MakeSolarS1</li>
@@ -57,6 +58,11 @@
       <workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
     </building>
     <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
       <li Class="Grechka.Industry.CompProperties_TierBonuses">
         <inputDiscount>0.2</inputDiscount>
         <outputBonus>0.2</outputBonus>
@@ -72,10 +78,11 @@
         <upgradeRecipeName>Grechka_UpgradeAssemblyBenchT4</upgradeRecipeName>
         <targetBenchName>Grechka_AssemblyBenchT4_Building</targetBenchName>
         <upgradeLabel>Улучшить до T4</upgradeLabel>
-        <upgradeDescription>Использовать корпус T3 и добавить 200 пластали, 14 компонентов T4 и 8 субстрата.</upgradeDescription>
+        <upgradeDescription>Пешка улучшит этот верстак на месте. Установленный корпус и подходящие материалы уже зачтены в цене. Задания, дробный бонус выпуска и относительная прочность сохраняются.</upgradeDescription>
       </li>
     </comps>
     <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>

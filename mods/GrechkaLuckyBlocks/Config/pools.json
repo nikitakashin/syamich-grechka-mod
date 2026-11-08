@@ -136,6 +136,30 @@
               "count": 4
             }
           ]
+        },
+        {
+          "id": "pharmacy.t1",
+          "weight": 3,
+          "effect": "items",
+          "pawnKind": "",
+          "pawnCount": 1,
+          "requiredMods": [
+            "grechka.pharmacy"
+          ],
+          "items": [
+            {
+              "def": "GrechkaPharmacy_HemostaticT1_Item",
+              "count": 4,
+              "stuff": "",
+              "quality": ""
+            },
+            {
+              "def": "GrechkaPharmacy_AnalgesicT1_Item",
+              "count": 4,
+              "stuff": "",
+              "quality": ""
+            }
+          ]
         }
       ]
     },
@@ -357,11 +381,11 @@
           "items": [
             {
               "def": "Plasteel",
-              "count": 60
+              "count": 20
             },
             {
               "def": "ComponentSpacer",
-              "count": 5
+              "count": 2
             }
           ],
           "requiredMods": []
@@ -405,11 +429,11 @@
           "items": [
             {
               "def": "Plasteel",
-              "count": 60
+              "count": 20
             },
             {
               "def": "ComponentSpacer",
-              "count": 5
+              "count": 2
             }
           ]
         },
@@ -483,6 +507,36 @@
             {
               "def": "MedicineUltratech",
               "count": 8
+            }
+          ]
+        },
+        {
+          "id": "pharmacy.t2",
+          "weight": 3,
+          "effect": "items",
+          "pawnKind": "",
+          "pawnCount": 1,
+          "requiredMods": [
+            "grechka.pharmacy"
+          ],
+          "items": [
+            {
+              "def": "GrechkaPharmacy_ImmunoT2_Item",
+              "count": 4,
+              "stuff": "",
+              "quality": ""
+            },
+            {
+              "def": "GrechkaPharmacy_RecoveryT2_Item",
+              "count": 4,
+              "stuff": "",
+              "quality": ""
+            },
+            {
+              "def": "GrechkaPharmacy_DetoxT2_Item",
+              "count": 2,
+              "stuff": "",
+              "quality": ""
             }
           ]
         }
@@ -706,11 +760,11 @@
           "items": [
             {
               "def": "Grechka_ComponentT3_Item",
-              "count": 6
+              "count": 2
             },
             {
               "def": "Grechka_Mechanites",
-              "count": 60
+              "count": 20
             }
           ],
           "requiredMods": [
@@ -724,11 +778,11 @@
           "items": [
             {
               "def": "ComponentSpacer",
-              "count": 12
+              "count": 3
             },
             {
               "def": "Plasteel",
-              "count": 120
+              "count": 30
             }
           ]
         }
@@ -771,11 +825,11 @@
           "items": [
             {
               "def": "Grechka_ComponentT3_Item",
-              "count": 6
+              "count": 2
             },
             {
               "def": "Grechka_Mechanites",
-              "count": 60
+              "count": 20
             }
           ]
         },
@@ -849,6 +903,36 @@
             {
               "def": "MedicineUltratech",
               "count": 12
+            }
+          ]
+        },
+        {
+          "id": "pharmacy.t3",
+          "weight": 3,
+          "effect": "items",
+          "pawnKind": "",
+          "pawnCount": 1,
+          "requiredMods": [
+            "grechka.pharmacy"
+          ],
+          "items": [
+            {
+              "def": "GrechkaPharmacy_MechaniteRegenT3_Item",
+              "count": 3,
+              "stuff": "",
+              "quality": ""
+            },
+            {
+              "def": "GrechkaPharmacy_CombatStimT3_Item",
+              "count": 2,
+              "stuff": "",
+              "quality": ""
+            },
+            {
+              "def": "GrechkaPharmacy_WorkStimT3_Item",
+              "count": 2,
+              "stuff": "",
+              "quality": ""
             }
           ]
         }
@@ -1072,11 +1156,11 @@
           "items": [
             {
               "def": "Grechka_ComponentT4_Item",
-              "count": 4
+              "count": 2
             },
             {
               "def": "Grechka_ArchoSubstrate",
-              "count": 20
+              "count": 8
             }
           ],
           "requiredMods": [
@@ -1090,11 +1174,11 @@
           "items": [
             {
               "def": "ComponentSpacer",
-              "count": 20
+              "count": 4
             },
             {
-              "def": "Gold",
-              "count": 150
+              "def": "Plasteel",
+              "count": 40
             }
           ]
         }
@@ -1137,11 +1221,11 @@
           "items": [
             {
               "def": "Grechka_ComponentT4_Item",
-              "count": 4
+              "count": 2
             },
             {
               "def": "Grechka_ArchoSubstrate",
-              "count": 20
+              "count": 8
             }
           ]
         },
@@ -1215,6 +1299,30 @@
             {
               "def": "MedicineUltratech",
               "count": 16
+            }
+          ]
+        },
+        {
+          "id": "pharmacy.t4",
+          "weight": 3,
+          "effect": "items",
+          "pawnKind": "",
+          "pawnCount": 1,
+          "requiredMods": [
+            "grechka.pharmacy"
+          ],
+          "items": [
+            {
+              "def": "GrechkaPharmacy_ScarSerumT4_Item",
+              "count": 2,
+              "stuff": "",
+              "quality": ""
+            },
+            {
+              "def": "GrechkaPharmacy_LimbSerumT4_Item",
+              "count": 1,
+              "stuff": "",
+              "quality": ""
             }
           ]
         }
@@ -1438,11 +1546,11 @@
           "items": [
             {
               "def": "Grechka_ComponentT5_Item",
-              "count": 4
+              "count": 2
             },
             {
               "def": "Grechka_GrechkaConcentrate",
-              "count": 30
+              "count": 12
             }
           ],
           "requiredMods": [
@@ -1456,11 +1564,11 @@
           "items": [
             {
               "def": "ComponentSpacer",
-              "count": 40
+              "count": 5
             },
             {
               "def": "Plasteel",
-              "count": 300
+              "count": 50
             }
           ]
         }
@@ -1503,11 +1611,11 @@
           "items": [
             {
               "def": "Grechka_ComponentT5_Item",
-              "count": 4
+              "count": 2
             },
             {
               "def": "Grechka_GrechkaConcentrate",
-              "count": 30
+              "count": 12
             }
           ]
         },
@@ -1581,6 +1689,30 @@
             {
               "def": "MedicineUltratech",
               "count": 20
+            }
+          ]
+        },
+        {
+          "id": "pharmacy.t5",
+          "weight": 3,
+          "effect": "items",
+          "pawnKind": "",
+          "pawnCount": 1,
+          "requiredMods": [
+            "grechka.pharmacy"
+          ],
+          "items": [
+            {
+              "def": "GrechkaPharmacy_GrechkaSerumT5_Item",
+              "count": 1,
+              "stuff": "",
+              "quality": ""
+            },
+            {
+              "def": "GrechkaPharmacy_YouthSerumT5_Item",
+              "count": 1,
+              "stuff": "",
+              "quality": ""
             }
           ]
         }

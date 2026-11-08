@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Grechka_SterileMechaniteFloor.label>sterile mechanite tile</Grechka_SterileMechaniteFloor.label>
+  <Grechka_SterileMechaniteFloor.description>Sterile white panels with silver joints. Sealed mechanites automatically remove one layer of ordinary dirt, blood or vomit from each covered cell every 10 game seconds. No power or consumables are needed. Inherent cleanliness is +0.8; a room's cleanliness depends on its entire floor area and remaining filth.</Grechka_SterileMechaniteFloor.description>
+  <Grechka_PalaceDiamondFloor.label>palace diamond mosaic</Grechka_PalaceDiamondFloor.label>
+  <Grechka_PalaceDiamondFloor.description>An exquisite ivory marble mosaic with gold inlay and brilliant diamonds for palatial bedrooms and throne rooms. Counts as fine flooring for royal titles. Sealed mechanites remove one layer of ordinary dirt, blood or vomit from each covered cell every 5 game seconds. No power or consumables are needed. Inherent cleanliness is +1. Other title requirements still apply.</Grechka_PalaceDiamondFloor.description>
+</LanguageData>

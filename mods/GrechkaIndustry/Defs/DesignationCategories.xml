@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <DesignationCategoryDef>
+    <defName>Grechka_IndustryCategory</defName>
+    <label>Гречка</label>
+    <order>79</order>
+    <showPowerGrid>true</showPowerGrid>
+    <specialDesignatorClasses />
+  </DesignationCategoryDef>
+  <DesignationCategoryDef>
+    <defName>Grechka_SolarCategory</defName>
+    <label>Солнечные панели</label>
+    <order>80</order>
+    <showPowerGrid>true</showPowerGrid>
+    <specialDesignatorClasses />
+  </DesignationCategoryDef>
+</Defs>

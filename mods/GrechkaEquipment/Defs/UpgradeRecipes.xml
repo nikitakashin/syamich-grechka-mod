@@ -3,7 +3,7 @@
   <RecipeDef>
     <defName>Grechka_UpgradeArmorT4</defName>
     <label>улучшить броню до T4</label>
-    <description>Предыдущий комплект расходуется. Пласталь и синтеткань корпуса засчитываются; нужны только компоненты и материал новой ступени. Качество результата определяется обычной работой мастера.</description>
+    <description>Предыдущий комплект и его электроника используются в улучшении. Добавьте только пласталь и материал новой ступени. Одна вещь превращается в одну новую; бонус выпуска к улучшению не применяется. Качество определяет работа мастера.</description>
     <jobString>Улучшение оснащения.</jobString>
     <workAmount>30000</workAmount>
     <workSkill>Crafting</workSkill>
@@ -25,10 +25,10 @@
       <li>
         <filter>
           <thingDefs>
-            <li>Grechka_ComponentT4_Item</li>
+            <li>Plasteel</li>
           </thingDefs>
         </filter>
-        <count>8</count>
+        <count>24</count>
       </li>
       <li>
         <filter>
@@ -36,13 +36,13 @@
             <li>Grechka_ArchoSubstrate</li>
           </thingDefs>
         </filter>
-        <count>30</count>
+        <count>38</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
         <li>Grechka_ArmorT3_Item</li>
-        <li>Grechka_ComponentT4_Item</li>
+        <li>Plasteel</li>
         <li>Grechka_ArchoSubstrate</li>
       </thingDefs>
     </fixedIngredientFilter>
@@ -53,11 +53,12 @@
       <li>FabricationBench</li>
       <li>Grechka_AssemblyBenchT4_Building</li>
     </recipeUsers>
+    <workerClass>Grechka.Equipment.RecipeWorker_EquipmentUpgrade</workerClass>
   </RecipeDef>
   <RecipeDef>
     <defName>Grechka_UpgradeHelmetT4</defName>
     <label>улучшить шлем до T4</label>
-    <description>Предыдущий комплект расходуется. Пласталь и синтеткань корпуса засчитываются; нужны только компоненты и материал новой ступени. Качество результата определяется обычной работой мастера.</description>
+    <description>Предыдущий комплект и его электроника используются в улучшении. Добавьте только пласталь и материал новой ступени. Одна вещь превращается в одну новую; бонус выпуска к улучшению не применяется. Качество определяет работа мастера.</description>
     <jobString>Улучшение оснащения.</jobString>
     <workAmount>30000</workAmount>
     <workSkill>Crafting</workSkill>
@@ -79,10 +80,10 @@
       <li>
         <filter>
           <thingDefs>
-            <li>Grechka_ComponentT4_Item</li>
+            <li>Plasteel</li>
           </thingDefs>
         </filter>
-        <count>3</count>
+        <count>8</count>
       </li>
       <li>
         <filter>
@@ -90,13 +91,13 @@
             <li>Grechka_ArchoSubstrate</li>
           </thingDefs>
         </filter>
-        <count>12</count>
+        <count>14</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
         <li>Grechka_HelmetT3_Item</li>
-        <li>Grechka_ComponentT4_Item</li>
+        <li>Plasteel</li>
         <li>Grechka_ArchoSubstrate</li>
       </thingDefs>
     </fixedIngredientFilter>
@@ -107,11 +108,12 @@
       <li>FabricationBench</li>
       <li>Grechka_AssemblyBenchT4_Building</li>
     </recipeUsers>
+    <workerClass>Grechka.Equipment.RecipeWorker_EquipmentUpgrade</workerClass>
   </RecipeDef>
   <RecipeDef>
     <defName>Grechka_UpgradeArmorT5</defName>
     <label>улучшить броню до T5</label>
-    <description>Предыдущий комплект расходуется. Пласталь и синтеткань корпуса засчитываются; нужны только компоненты и материал новой ступени. Качество результата определяется обычной работой мастера.</description>
+    <description>Предыдущий комплект и его электроника используются в улучшении. Добавьте только пласталь и материал новой ступени. Одна вещь превращается в одну новую; бонус выпуска к улучшению не применяется. Качество определяет работа мастера.</description>
     <jobString>Улучшение оснащения.</jobString>
     <workAmount>30000</workAmount>
     <workSkill>Crafting</workSkill>
@@ -133,10 +135,10 @@
       <li>
         <filter>
           <thingDefs>
-            <li>Grechka_ComponentT5_Item</li>
+            <li>Plasteel</li>
           </thingDefs>
         </filter>
-        <count>8</count>
+        <count>36</count>
       </li>
       <li>
         <filter>
@@ -144,13 +146,13 @@
             <li>Grechka_GrechkaConcentrate</li>
           </thingDefs>
         </filter>
-        <count>30</count>
+        <count>44</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
         <li>Grechka_ArmorT4_Item</li>
-        <li>Grechka_ComponentT5_Item</li>
+        <li>Plasteel</li>
         <li>Grechka_GrechkaConcentrate</li>
       </thingDefs>
     </fixedIngredientFilter>
@@ -161,11 +163,12 @@
       <li>FabricationBench</li>
       <li>Grechka_AssemblyBenchT5_Building</li>
     </recipeUsers>
+    <workerClass>Grechka.Equipment.RecipeWorker_EquipmentUpgrade</workerClass>
   </RecipeDef>
   <RecipeDef>
     <defName>Grechka_UpgradeHelmetT5</defName>
     <label>улучшить шлем до T5</label>
-    <description>Предыдущий комплект расходуется. Пласталь и синтеткань корпуса засчитываются; нужны только компоненты и материал новой ступени. Качество результата определяется обычной работой мастера.</description>
+    <description>Предыдущий комплект и его электроника используются в улучшении. Добавьте только пласталь и материал новой ступени. Одна вещь превращается в одну новую; бонус выпуска к улучшению не применяется. Качество определяет работа мастера.</description>
     <jobString>Улучшение оснащения.</jobString>
     <workAmount>30000</workAmount>
     <workSkill>Crafting</workSkill>
@@ -187,10 +190,10 @@
       <li>
         <filter>
           <thingDefs>
-            <li>Grechka_ComponentT5_Item</li>
+            <li>Plasteel</li>
           </thingDefs>
         </filter>
-        <count>3</count>
+        <count>12</count>
       </li>
       <li>
         <filter>
@@ -198,13 +201,13 @@
             <li>Grechka_GrechkaConcentrate</li>
           </thingDefs>
         </filter>
-        <count>12</count>
+        <count>16</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
         <li>Grechka_HelmetT4_Item</li>
-        <li>Grechka_ComponentT5_Item</li>
+        <li>Plasteel</li>
         <li>Grechka_GrechkaConcentrate</li>
       </thingDefs>
     </fixedIngredientFilter>
@@ -215,5 +218,6 @@
       <li>FabricationBench</li>
       <li>Grechka_AssemblyBenchT5_Building</li>
     </recipeUsers>
+    <workerClass>Grechka.Equipment.RecipeWorker_EquipmentUpgrade</workerClass>
   </RecipeDef>
 </Defs>

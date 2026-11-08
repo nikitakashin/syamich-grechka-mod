@@ -388,9 +388,27 @@ Check("Def aliases preserve saved event counters and do not multiply equivalent 
 Check("Bundled World book validates without rewriting starter IDs", () => {
     string worldPath=Path.Combine(Path.GetDirectoryName(args[0]), "grechka-world.json");
     var world=PackCodec.Decode(File.ReadAllText(worldPath));
-    if(world.id!="grechka.world" || world.chapters.Count!=10 || world.quests.Count!=39) throw new Exception("Incomplete World book");
+    if(world.id!="grechka.world" || world.chapters.Count<20 || world.quests.Count<150) throw new Exception("Incomplete World book");
     if(PackCodec.Encode(world)!=PackCodec.Encode(PackCodec.Decode(PackCodec.Encode(world)))) throw new Exception("World round trip mismatch");
     if(world.quests.First(q=>q.id=="t1.bench").requires.Single()!="t1.housing") throw new Exception("Bootstrap chain reversed");
     if(Fresh().id!="grechka.starter" || Fresh().quests[0].id!="start.steel") throw new Exception("Starter identity changed");
+});
+Check("Every bundled World quest requires actual gameplay and has a reward", () => {
+    var world=PackCodec.Decode(File.ReadAllText(Path.Combine(Path.GetDirectoryName(args[0]), "grechka-world.json")));
+    foreach(var quest in world.quests)
+        if(quest.objectives.Count==0 || quest.objectives.Any(o=>o.type=="manual") || (quest.rewards.Count==0 && quest.alternatives.Count==0))
+            throw new Exception("Empty, manual or unrewarded shipped quest: "+quest.id);
+});
+Check("Replacing a reading checkbox preserves claimed rewards without accepting old manual progress", () => {
+    var old=Fresh();var quest=old.quests[0];quest.objectives=new(){new Objective{id="reading",type="manual",target="",count=1}};
+    var state=new QuestProgress(null,null);state.Observe(old,quest,quest.objectives[0],1,true);
+    var history=new BookHistory(null,null);history.Seed(old,state.CopyAchieved());
+    var next=PackCodec.Clone(old);var revised=next.quests[0];
+    revised.objectives=new(){new Objective{id="result.v2",type="produce",target="ComponentIndustrial",count=1}};
+    if(history.Conflicts(next).Count!=0 || state.ObjectivesComplete(next,revised))throw new Exception("Reading accepted as production");
+    history.Remember(next);
+    state.RecordClaim(old,quest,null);
+    var restored=new QuestProgress(state.CopyAchieved(),state.CopyClaimed(),null,null,state.CopyEventCounts(),state.CopyEventSignatures());
+    if(!restored.Claimed(next,revised) || restored.PlanClaimAll(next,true,null).Contains(revised.id))throw new Exception("Old reward can be claimed again");
 });
 Console.WriteLine($"{passed} checks passed.");

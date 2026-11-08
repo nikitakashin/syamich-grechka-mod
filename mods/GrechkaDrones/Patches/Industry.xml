@@ -1,0 +1,517 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName='Grechka_HousingT1_Item']</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_RescueDroneStationT1_Dock']/costList</xpath>
+          <value>
+            <costList>
+              <Grechka_HousingT1_Item>1</Grechka_HousingT1_Item>
+              <Steel>60</Steel>
+              <ComponentIndustrial>2</ComponentIndustrial>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_RescueDroneStationT1_Dock']/robotRepairCosts</xpath>
+          <value>
+            <robotRepairCosts>
+              <Steel>8</Steel>
+              <ComponentIndustrial>1</ComponentIndustrial>
+            </robotRepairCosts>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_RescueDroneStationT1_Dock']/recipeMaker/recipeUsers</xpath>
+          <value>
+            <recipeUsers>
+              <li>Grechka_AssemblyBenchT1_Building</li>
+            </recipeUsers>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_RescueDroneStationT1_Dock']/recipeMaker/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites />
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_RescueDroneStationT2_Dock']/costList</xpath>
+          <value>
+            <costList>
+              <Grechka_HousingT2_Item>1</Grechka_HousingT2_Item>
+              <Steel>80</Steel>
+              <Plasteel>10</Plasteel>
+              <ComponentSpacer>1</ComponentSpacer>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_RescueDroneStationT2_Dock']/robotRepairCosts</xpath>
+          <value>
+            <robotRepairCosts>
+              <Steel>11</Steel>
+              <ComponentSpacer>1</ComponentSpacer>
+            </robotRepairCosts>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_RescueDroneStationT2_Dock']/recipeMaker/recipeUsers</xpath>
+          <value>
+            <recipeUsers>
+              <li>Grechka_AssemblyBenchT2_Building</li>
+            </recipeUsers>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_RescueDroneStationT2_Dock']/recipeMaker/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites />
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_RescueDroneStationT3_Dock']/costList</xpath>
+          <value>
+            <costList>
+              <Grechka_HousingT3_Item>1</Grechka_HousingT3_Item>
+              <Steel>100</Steel>
+              <Plasteel>20</Plasteel>
+              <Grechka_ComponentT3_Item>2</Grechka_ComponentT3_Item>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_RescueDroneStationT3_Dock']/robotRepairCosts</xpath>
+          <value>
+            <robotRepairCosts>
+              <Steel>14</Steel>
+              <Grechka_ComponentT3_Item>1</Grechka_ComponentT3_Item>
+            </robotRepairCosts>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_RescueDroneStationT3_Dock']/recipeMaker/recipeUsers</xpath>
+          <value>
+            <recipeUsers>
+              <li>Grechka_AssemblyBenchT3_Building</li>
+            </recipeUsers>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_RescueDroneStationT3_Dock']/recipeMaker/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites />
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_RescueDroneStationT4_Dock']/costList</xpath>
+          <value>
+            <costList>
+              <Grechka_HousingT4_Item>1</Grechka_HousingT4_Item>
+              <Steel>120</Steel>
+              <Plasteel>30</Plasteel>
+              <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_RescueDroneStationT4_Dock']/robotRepairCosts</xpath>
+          <value>
+            <robotRepairCosts>
+              <Steel>17</Steel>
+              <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+            </robotRepairCosts>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_RescueDroneStationT4_Dock']/recipeMaker/recipeUsers</xpath>
+          <value>
+            <recipeUsers>
+              <li>Grechka_AssemblyBenchT4_Building</li>
+            </recipeUsers>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_RescueDroneStationT4_Dock']/recipeMaker/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites />
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_RescueDroneStationT5_Dock']/costList</xpath>
+          <value>
+            <costList>
+              <Grechka_HousingT5_Item>1</Grechka_HousingT5_Item>
+              <Steel>140</Steel>
+              <Plasteel>40</Plasteel>
+              <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_RescueDroneStationT5_Dock']/robotRepairCosts</xpath>
+          <value>
+            <robotRepairCosts>
+              <Steel>20</Steel>
+              <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+            </robotRepairCosts>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_RescueDroneStationT5_Dock']/recipeMaker/recipeUsers</xpath>
+          <value>
+            <recipeUsers>
+              <li>Grechka_AssemblyBenchT5_Building</li>
+            </recipeUsers>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_RescueDroneStationT5_Dock']/recipeMaker/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites />
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_WarriorDroneStationT1_Dock']/costList</xpath>
+          <value>
+            <costList>
+              <Grechka_HousingT1_Item>1</Grechka_HousingT1_Item>
+              <Steel>60</Steel>
+              <ComponentIndustrial>2</ComponentIndustrial>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_WarriorDroneStationT1_Dock']/robotRepairCosts</xpath>
+          <value>
+            <robotRepairCosts>
+              <Steel>8</Steel>
+              <ComponentIndustrial>1</ComponentIndustrial>
+            </robotRepairCosts>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_WarriorDroneStationT1_Dock']/recipeMaker/recipeUsers</xpath>
+          <value>
+            <recipeUsers>
+              <li>Grechka_AssemblyBenchT1_Building</li>
+            </recipeUsers>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_WarriorDroneStationT1_Dock']/recipeMaker/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites />
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_WarriorDroneStationT2_Dock']/costList</xpath>
+          <value>
+            <costList>
+              <Grechka_HousingT2_Item>1</Grechka_HousingT2_Item>
+              <Steel>80</Steel>
+              <Plasteel>10</Plasteel>
+              <ComponentSpacer>1</ComponentSpacer>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_WarriorDroneStationT2_Dock']/robotRepairCosts</xpath>
+          <value>
+            <robotRepairCosts>
+              <Steel>11</Steel>
+              <ComponentSpacer>1</ComponentSpacer>
+            </robotRepairCosts>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_WarriorDroneStationT2_Dock']/recipeMaker/recipeUsers</xpath>
+          <value>
+            <recipeUsers>
+              <li>Grechka_AssemblyBenchT2_Building</li>
+            </recipeUsers>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_WarriorDroneStationT2_Dock']/recipeMaker/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites />
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_WarriorDroneStationT3_Dock']/costList</xpath>
+          <value>
+            <costList>
+              <Grechka_HousingT3_Item>1</Grechka_HousingT3_Item>
+              <Steel>100</Steel>
+              <Plasteel>20</Plasteel>
+              <Grechka_ComponentT3_Item>2</Grechka_ComponentT3_Item>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_WarriorDroneStationT3_Dock']/robotRepairCosts</xpath>
+          <value>
+            <robotRepairCosts>
+              <Steel>14</Steel>
+              <Grechka_ComponentT3_Item>1</Grechka_ComponentT3_Item>
+            </robotRepairCosts>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_WarriorDroneStationT3_Dock']/recipeMaker/recipeUsers</xpath>
+          <value>
+            <recipeUsers>
+              <li>Grechka_AssemblyBenchT3_Building</li>
+            </recipeUsers>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_WarriorDroneStationT3_Dock']/recipeMaker/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites />
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_WarriorDroneStationT4_Dock']/costList</xpath>
+          <value>
+            <costList>
+              <Grechka_HousingT4_Item>1</Grechka_HousingT4_Item>
+              <Steel>120</Steel>
+              <Plasteel>30</Plasteel>
+              <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_WarriorDroneStationT4_Dock']/robotRepairCosts</xpath>
+          <value>
+            <robotRepairCosts>
+              <Steel>17</Steel>
+              <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+            </robotRepairCosts>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_WarriorDroneStationT4_Dock']/recipeMaker/recipeUsers</xpath>
+          <value>
+            <recipeUsers>
+              <li>Grechka_AssemblyBenchT4_Building</li>
+            </recipeUsers>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_WarriorDroneStationT4_Dock']/recipeMaker/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites />
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_WarriorDroneStationT5_Dock']/costList</xpath>
+          <value>
+            <costList>
+              <Grechka_HousingT5_Item>1</Grechka_HousingT5_Item>
+              <Steel>140</Steel>
+              <Plasteel>40</Plasteel>
+              <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_WarriorDroneStationT5_Dock']/robotRepairCosts</xpath>
+          <value>
+            <robotRepairCosts>
+              <Steel>20</Steel>
+              <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+            </robotRepairCosts>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_WarriorDroneStationT5_Dock']/recipeMaker/recipeUsers</xpath>
+          <value>
+            <recipeUsers>
+              <li>Grechka_AssemblyBenchT5_Building</li>
+            </recipeUsers>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_WarriorDroneStationT5_Dock']/recipeMaker/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites />
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_CaravanDroneStationT1_Dock']/costList</xpath>
+          <value>
+            <costList>
+              <Grechka_HousingT1_Item>1</Grechka_HousingT1_Item>
+              <Steel>60</Steel>
+              <ComponentIndustrial>2</ComponentIndustrial>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_CaravanDroneStationT1_Dock']/robotRepairCosts</xpath>
+          <value>
+            <robotRepairCosts>
+              <Steel>8</Steel>
+              <ComponentIndustrial>1</ComponentIndustrial>
+            </robotRepairCosts>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_CaravanDroneStationT1_Dock']/recipeMaker/recipeUsers</xpath>
+          <value>
+            <recipeUsers>
+              <li>Grechka_AssemblyBenchT1_Building</li>
+            </recipeUsers>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_CaravanDroneStationT1_Dock']/recipeMaker/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites />
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_CaravanDroneStationT2_Dock']/costList</xpath>
+          <value>
+            <costList>
+              <Grechka_HousingT2_Item>1</Grechka_HousingT2_Item>
+              <Steel>80</Steel>
+              <Plasteel>10</Plasteel>
+              <ComponentSpacer>1</ComponentSpacer>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_CaravanDroneStationT2_Dock']/robotRepairCosts</xpath>
+          <value>
+            <robotRepairCosts>
+              <Steel>11</Steel>
+              <ComponentSpacer>1</ComponentSpacer>
+            </robotRepairCosts>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_CaravanDroneStationT2_Dock']/recipeMaker/recipeUsers</xpath>
+          <value>
+            <recipeUsers>
+              <li>Grechka_AssemblyBenchT2_Building</li>
+            </recipeUsers>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_CaravanDroneStationT2_Dock']/recipeMaker/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites />
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_CaravanDroneStationT3_Dock']/costList</xpath>
+          <value>
+            <costList>
+              <Grechka_HousingT3_Item>1</Grechka_HousingT3_Item>
+              <Steel>100</Steel>
+              <Plasteel>20</Plasteel>
+              <Grechka_ComponentT3_Item>2</Grechka_ComponentT3_Item>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_CaravanDroneStationT3_Dock']/robotRepairCosts</xpath>
+          <value>
+            <robotRepairCosts>
+              <Steel>14</Steel>
+              <Grechka_ComponentT3_Item>1</Grechka_ComponentT3_Item>
+            </robotRepairCosts>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_CaravanDroneStationT3_Dock']/recipeMaker/recipeUsers</xpath>
+          <value>
+            <recipeUsers>
+              <li>Grechka_AssemblyBenchT3_Building</li>
+            </recipeUsers>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_CaravanDroneStationT3_Dock']/recipeMaker/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites />
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_CaravanDroneStationT4_Dock']/costList</xpath>
+          <value>
+            <costList>
+              <Grechka_HousingT4_Item>1</Grechka_HousingT4_Item>
+              <Steel>120</Steel>
+              <Plasteel>30</Plasteel>
+              <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_CaravanDroneStationT4_Dock']/robotRepairCosts</xpath>
+          <value>
+            <robotRepairCosts>
+              <Steel>17</Steel>
+              <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+            </robotRepairCosts>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_CaravanDroneStationT4_Dock']/recipeMaker/recipeUsers</xpath>
+          <value>
+            <recipeUsers>
+              <li>Grechka_AssemblyBenchT4_Building</li>
+            </recipeUsers>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_CaravanDroneStationT4_Dock']/recipeMaker/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites />
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_CaravanDroneStationT5_Dock']/costList</xpath>
+          <value>
+            <costList>
+              <Grechka_HousingT5_Item>1</Grechka_HousingT5_Item>
+              <Steel>140</Steel>
+              <Plasteel>40</Plasteel>
+              <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
+            </costList>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_CaravanDroneStationT5_Dock']/robotRepairCosts</xpath>
+          <value>
+            <robotRepairCosts>
+              <Steel>20</Steel>
+              <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+            </robotRepairCosts>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_CaravanDroneStationT5_Dock']/recipeMaker/recipeUsers</xpath>
+          <value>
+            <recipeUsers>
+              <li>Grechka_AssemblyBenchT5_Building</li>
+            </recipeUsers>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingDef[defName='Grechka_CaravanDroneStationT5_Dock']/recipeMaker/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites />
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

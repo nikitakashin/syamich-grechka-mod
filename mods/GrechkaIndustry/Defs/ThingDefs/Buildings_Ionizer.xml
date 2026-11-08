@@ -29,9 +29,9 @@
     </statBases>
     <costList>
       <Grechka_HousingT3_Item>1</Grechka_HousingT3_Item>
-      <Grechka_ComponentT3_Item>4</Grechka_ComponentT3_Item>
-      <Plasteel>40</Plasteel>
-      <Grechka_Mechanites>20</Grechka_Mechanites>
+      <Grechka_ComponentT3_Item>2</Grechka_ComponentT3_Item>
+      <Plasteel>20</Plasteel>
+      <Grechka_Mechanites>10</Grechka_Mechanites>
     </costList>
     <comps>
       <li Class="CompProperties_Forbiddable" />
@@ -47,11 +47,16 @@
       </li>
       <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
         <targetDefName>Grechka_IonizerT4_Building</targetDefName>
-        <costDescription>установленное устройство, 10 компонентов T4, 100 пластали и 8 субстрата</costDescription>
+        <costDescription>предыдущее устройство целиком и дополнительные материалы следующей ступени; установленный корпус уже учтён</costDescription>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_OperationalGraphics">
+        <offPath>Buildings/Map/States/IonizerT3/IonizerT3_Off</offPath>
+        <idlePath>Buildings/Map/States/IonizerT3/IonizerT3_Idle</idlePath>
+        <activePath>Buildings/Map/States/IonizerT3/IonizerT3_Active</activePath>
       </li>
     </comps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <designationCategory>Production</designationCategory>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
     <designatorDropdown>Grechka_IonizerGroup</designatorDropdown>
     <uiOrder>2522</uiOrder>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>

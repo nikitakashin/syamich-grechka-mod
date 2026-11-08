@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaPawn_Mills_Worker.label>Seven Mills Union worker</GrechkaPawn_Mills_Worker.label>
+  <GrechkaPawn_Mills_Guard.label>Seven Mills Union guard</GrechkaPawn_Mills_Guard.label>
+  <GrechkaPawn_Mills_Master.label>Seven Mills Union master</GrechkaPawn_Mills_Master.label>
+  <GrechkaPawn_Mills_Leader.label>Seven Mills Union leader</GrechkaPawn_Mills_Leader.label>
+  <GrechkaPawn_Mills_Trader.label>Seven Mills Union trader</GrechkaPawn_Mills_Trader.label>
+  <GrechkaPawn_Rescue_Worker.label>Zero Shift worker</GrechkaPawn_Rescue_Worker.label>
+  <GrechkaPawn_Rescue_Guard.label>Zero Shift guard</GrechkaPawn_Rescue_Guard.label>
+  <GrechkaPawn_Rescue_Master.label>Zero Shift master</GrechkaPawn_Rescue_Master.label>
+  <GrechkaPawn_Rescue_Leader.label>Zero Shift leader</GrechkaPawn_Rescue_Leader.label>
+  <GrechkaPawn_Rescue_Trader.label>Zero Shift trader</GrechkaPawn_Rescue_Trader.label>
+  <GrechkaPawn_Artel_Worker.label>Last Nut Artel worker</GrechkaPawn_Artel_Worker.label>
+  <GrechkaPawn_Artel_Guard.label>Last Nut Artel guard</GrechkaPawn_Artel_Guard.label>
+  <GrechkaPawn_Artel_Master.label>Last Nut Artel master</GrechkaPawn_Artel_Master.label>
+  <GrechkaPawn_Artel_Leader.label>Last Nut Artel leader</GrechkaPawn_Artel_Leader.label>
+  <GrechkaPawn_Artel_Trader.label>Last Nut Artel trader</GrechkaPawn_Artel_Trader.label>
+  <GrechkaPawn_Bare_Worker.label>Barefoot Hundred worker</GrechkaPawn_Bare_Worker.label>
+  <GrechkaPawn_Bare_Guard.label>Barefoot Hundred guard</GrechkaPawn_Bare_Guard.label>
+  <GrechkaPawn_Bare_Master.label>Barefoot Hundred master</GrechkaPawn_Bare_Master.label>
+  <GrechkaPawn_Bare_Leader.label>Barefoot Hundred leader</GrechkaPawn_Bare_Leader.label>
+  <GrechkaPawn_Bare_Trader.label>Barefoot Hundred trader</GrechkaPawn_Bare_Trader.label>
+  <GrechkaPawn_Post_Worker.label>Bureau of Unopened Parcels worker</GrechkaPawn_Post_Worker.label>
+  <GrechkaPawn_Post_Guard.label>Bureau of Unopened Parcels guard</GrechkaPawn_Post_Guard.label>
+  <GrechkaPawn_Post_Master.label>Bureau of Unopened Parcels master</GrechkaPawn_Post_Master.label>
+  <GrechkaPawn_Post_Leader.label>Bureau of Unopened Parcels leader</GrechkaPawn_Post_Leader.label>
+  <GrechkaPawn_Post_Trader.label>Bureau of Unopened Parcels trader</GrechkaPawn_Post_Trader.label>
+</LanguageData>

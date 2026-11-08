@@ -5,8 +5,10 @@
     <label>архо-субстрат</label>
     <description>Архо-субстрат. Материал поздней промышленности Grechka.</description>
     <graphicData>
-      <texPath>Items/ArchotechComponent</texPath>
+      <texPath>Items/ArchoSubstrate</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <stackLimit>200</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
@@ -23,14 +25,17 @@
     <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>
+    <uiIconPath>Items/ArchoSubstrate</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_GrechkaOre</defName>
     <label>гречневая руда</label>
     <description>Гречневая руда. Материал поздней промышленности Grechka.</description>
     <graphicData>
-      <texPath>Buildings/Natural/GrechkaOreSource</texPath>
+      <texPath>Items/GrechkaOre</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <stackLimit>200</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
@@ -47,6 +52,7 @@
     <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>
+    <uiIconPath>Items/GrechkaOre</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_GrechkaConcentrate</defName>
@@ -77,8 +83,10 @@
     <label>универсальная материя</label>
     <description>Универсальная материя. Материал поздней промышленности Grechka.</description>
     <graphicData>
-      <texPath>Items/GrechkaConcentrate</texPath>
+      <texPath>Items/Matter</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <stackLimit>10000</stackLimit>
     <healthAffectsPrice>false</healthAffectsPrice>
@@ -95,6 +103,7 @@
     <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>
+    <uiIconPath>Items/Matter</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_ComponentT4_Item</defName>
@@ -108,7 +117,7 @@
     <healthAffectsPrice>false</healthAffectsPrice>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <MarketValue>7000</MarketValue>
+      <MarketValue>1500</MarketValue>
       <Mass>0.8</Mass>
       <Flammability>0</Flammability>
       <DeteriorationRate>2</DeteriorationRate>
@@ -132,7 +141,7 @@
     <healthAffectsPrice>false</healthAffectsPrice>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <MarketValue>34000</MarketValue>
+      <MarketValue>3000</MarketValue>
       <Mass>0.8</Mass>
       <Flammability>0</Flammability>
       <DeteriorationRate>2</DeteriorationRate>
@@ -156,7 +165,7 @@
     <healthAffectsPrice>false</healthAffectsPrice>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <MarketValue>80000</MarketValue>
+      <MarketValue>9000</MarketValue>
       <Mass>18</Mass>
       <Flammability>0</Flammability>
       <DeteriorationRate>2</DeteriorationRate>
@@ -180,7 +189,7 @@
     <healthAffectsPrice>false</healthAffectsPrice>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
-      <MarketValue>380000</MarketValue>
+      <MarketValue>18000</MarketValue>
       <Mass>18</Mass>
       <Flammability>0</Flammability>
       <DeteriorationRate>2</DeteriorationRate>

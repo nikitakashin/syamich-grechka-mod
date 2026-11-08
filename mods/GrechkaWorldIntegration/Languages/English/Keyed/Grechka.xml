@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaWorldIntegration_612fba43775b>Graphics can only be prepared on the main thread</GrechkaWorldIntegration_612fba43775b>
+  <GrechkaWorldIntegration_f44e79ed8807>source, tier or applied profile does not match</GrechkaWorldIntegration_f44e79ed8807>
+  <GrechkaWorldIntegration_3d1f3680ec10>path is outside the targeted TierSprites contract</GrechkaWorldIntegration_3d1f3680ec10>
+  <GrechkaWorldIntegration_2782147b6efd>custom rendering requires a separate adapter</GrechkaWorldIntegration_2782147b6efd>
+  <GrechkaWorldIntegration_103ace0bbdaf>incomplete PNG set. Original graphics preserved</GrechkaWorldIntegration_103ace0bbdaf>
+  <GrechkaWorldIntegration_cb2bf0b7a02a>graphics loading failed. Original restored: </GrechkaWorldIntegration_cb2bf0b7a02a>
+  <GrechkaWorldIntegration_231347d8fac7>Graphics has duplicate bindings for </GrechkaWorldIntegration_231347d8fac7>
+  <GrechkaWorldIntegration_a32e0f503e68>. Original preserved.</GrechkaWorldIntegration_a32e0f503e68>
+  <GrechkaWorldIntegration_734e11a1f21e>Graphics </GrechkaWorldIntegration_734e11a1f21e>
+  <GrechkaWorldIntegration_b5e53db9cf59>: source is missing</GrechkaWorldIntegration_b5e53db9cf59>
+  <GrechkaWorldIntegration_5356d44c4c84>recipe, ingredient position or available material is missing</GrechkaWorldIntegration_5356d44c4c84>
+  <GrechkaWorldIntegration_6e0e1c1d9ff3>unsupported ingredient unit: </GrechkaWorldIntegration_6e0e1c1d9ff3>
+  <GrechkaWorldIntegration_ae1fef0a2fb7>the original filter is empty</GrechkaWorldIntegration_ae1fef0a2fb7>
+  <GrechkaWorldIntegration_ed9cca862246>different physical units require separate forms or recipes</GrechkaWorldIntegration_ed9cca862246>
+  <GrechkaWorldIntegration_9b9fdcfe0d7d>The profile has not been applied to this colony yet. Original costs and materials are preserved.</GrechkaWorldIntegration_9b9fdcfe0d7d>
+  <GrechkaWorldIntegration_f7189d87e985>: using original behavior. Previous variants are retained for old saves</GrechkaWorldIntegration_f7189d87e985>
+  <GrechkaWorldIntegration_86fca31dd7c4>: source is missing</GrechkaWorldIntegration_86fca31dd7c4>
+  <GrechkaWorldIntegration_716ee9cebafa>: explicit application of the new rule is required</GrechkaWorldIntegration_716ee9cebafa>
+  <GrechkaWorldIntegration_476b62b92f2f>: Industry or housing is missing. Original cost preserved</GrechkaWorldIntegration_476b62b92f2f>
+  <GrechkaWorldIntegration_9c81309268b0>: cost material is missing. Original cost preserved</GrechkaWorldIntegration_9c81309268b0>
+  <GrechkaWorldIntegration_9efbd0388542> + 1 housing T</GrechkaWorldIntegration_9efbd0388542>
+  <GrechkaWorldIntegration_3654d1a8d30f>: original cost. </GrechkaWorldIntegration_3654d1a8d30f>
+  <GrechkaWorldIntegration_f23b4e8d9e0e>: recipe or group is missing</GrechkaWorldIntegration_f23b4e8d9e0e>
+  <GrechkaWorldIntegration_c43ef190d9f6>: explicit application required</GrechkaWorldIntegration_c43ef190d9f6>
+  <GrechkaWorldIntegration_3f66c9d84cf2>allowed </GrechkaWorldIntegration_3f66c9d84cf2>
+  <GrechkaWorldIntegration_586870b0b280>not applied: </GrechkaWorldIntegration_586870b0b280>
+  <GrechkaWorldIntegration_8c9f3d7d8335>[Grechka World] Profile: </GrechkaWorldIntegration_8c9f3d7d8335>
+  <GrechkaWorldIntegration_dec7488fd72a> machines with minimum tier. Detailed report in settings.</GrechkaWorldIntegration_dec7488fd72a>
+  <GrechkaWorldIntegration_42d6a97215d6>Finish material payment</GrechkaWorldIntegration_42d6a97215d6>
+  <GrechkaWorldIntegration_82d998ae2a80>Cancel upgrade</GrechkaWorldIntegration_82d998ae2a80>
+  <GrechkaWorldIntegration_5596baf68f49>Finish consuming retained materials for the already upgraded machine.</GrechkaWorldIntegration_5596baf68f49>
+  <GrechkaWorldIntegration_7146b1cba941>Return delivered materials next to the machine.</GrechkaWorldIntegration_7146b1cba941>
+  <GrechkaWorldIntegration_392bededaba5>Upgrade to T</GrechkaWorldIntegration_392bededaba5>
+  <GrechkaWorldIntegration_b4939dc26eee>A pawn will bring the additional materials and perform 4000 units of construction work. The previous-tier housing counts towards the cost. Finish the current batch and empty the internal containers.
+</GrechkaWorldIntegration_b4939dc26eee>
+  <GrechkaWorldIntegration_4c9025be0c8d>No recipe for the next housing</GrechkaWorldIntegration_4c9025be0c8d>
+  <GrechkaWorldIntegration_5b0413d994b4>Upgrade: </GrechkaWorldIntegration_5b0413d994b4>
+  <GrechkaWorldIntegration_44451ecf7070>requires </GrechkaWorldIntegration_44451ecf7070>
+  <GrechkaWorldIntegration_b66a61548456>work remaining </GrechkaWorldIntegration_b66a61548456>
+  <GrechkaWorldIntegration_355c0d15c28d>The factory type has changed. Upgrade paused</GrechkaWorldIntegration_355c0d15c28d>
+  <GrechkaWorldIntegration_4c5487fe9857>Upgrade failed. The original factory and materials were preserved</GrechkaWorldIntegration_4c5487fe9857>
+  <GrechkaWorldIntegration_d3cfbf414b70>Upgrade completed. Material consumption paused</GrechkaWorldIntegration_d3cfbf414b70>
+  <GrechkaWorldIntegration_a100b80d323d>Switch off the active searchlight</GrechkaWorldIntegration_a100b80d323d>
+  <GrechkaWorldIntegration_d70709676225>Wait for the turret burst to finish</GrechkaWorldIntegration_d70709676225>
+  <GrechkaWorldIntegration_5855b8353f80>Finish the warcasket operation</GrechkaWorldIntegration_5855b8353f80>
+  <GrechkaWorldIntegration_e8fac71eb272>Empty the storage first</GrechkaWorldIntegration_e8fac71eb272>
+  <GrechkaWorldIntegration_cf0bf3a3379e>Empty the machine contents</GrechkaWorldIntegration_cf0bf3a3379e>
+  <GrechkaWorldIntegration_a393b6cc155e>Finish the autofarmer operation and unload the harvest</GrechkaWorldIntegration_a393b6cc155e>
+  <GrechkaWorldIntegration_bb94969daca1>Finish the current automated batch</GrechkaWorldIntegration_bb94969daca1>
+  <GrechkaWorldIntegration_867c381e1e8a>Finish the current factory batch</GrechkaWorldIntegration_867c381e1e8a>
+  <GrechkaWorldIntegration_3d792257e41b>Wait for genepack loading to finish</GrechkaWorldIntegration_3d792257e41b>
+  <GrechkaWorldIntegration_7288d8fa58c5>Empty the factory internal container</GrechkaWorldIntegration_7288d8fa58c5>
+  <GrechkaWorldIntegration_4dc34041f85e> • speed ×</GrechkaWorldIntegration_4dc34041f85e>
+  <GrechkaWorldIntegration_aa2dc98e87d8>, input −</GrechkaWorldIntegration_aa2dc98e87d8>
+  <GrechkaWorldIntegration_bf266285ec80>, output +</GrechkaWorldIntegration_bf266285ec80>
+  <GrechkaWorldIntegration_75f3dec4f377> • faster device operation.</GrechkaWorldIntegration_75f3dec4f377>
+  <GrechkaWorldIntegration_4ed65b1894f6> • housing and upgrades. Original device stats preserved.</GrechkaWorldIntegration_4ed65b1894f6>
+  <GrechkaWorldIntegration_ba704a00a6bf>Machine variants: </GrechkaWorldIntegration_ba704a00a6bf>
+  <GrechkaWorldIntegration_89d1c68752eb> applied.</GrechkaWorldIntegration_89d1c68752eb>
+  <GrechkaWorldIntegration_c06d4b9349df>This legacy variant is retained for loading old colonies.</GrechkaWorldIntegration_c06d4b9349df>
+  <GrechkaWorldIntegration_992255432d82>Apply the Grechka World profile in the mod settings first.</GrechkaWorldIntegration_992255432d82>
+  <GrechkaWorldIntegration_f4918772c9e0>Create an upgrade bill. The previous machine and housing count towards the cost. A pawn will bring only the additional materials.</GrechkaWorldIntegration_f4918772c9e0>
+  <GrechkaWorldIntegration_54522b09cc40>[Grechka World] Upgrade postponed. Original machine and bills preserved: </GrechkaWorldIntegration_54522b09cc40>
+  <GrechkaWorldIntegration_02a251680dcd>incomplete or unknown set of operating states</GrechkaWorldIntegration_02a251680dcd>
+  <GrechkaWorldIntegration_2b74ee1ff61c>compatible PipeSystem state source not found</GrechkaWorldIntegration_2b74ee1ff61c>
+  <GrechkaWorldIntegration_17543b7a088a>missing state frames for </GrechkaWorldIntegration_17543b7a088a>
+  <GrechkaWorldIntegration_0fd8cb357129>Enable research (vanilla progression)</GrechkaWorldIntegration_0fd8cb357129>
+  <GrechkaWorldIntegration_5ddf440e1562>Enabled. Base game, DLC and mod research works normally. Grechka content is unlocked in a separate tree by tier. </GrechkaWorldIntegration_5ddf440e1562>
+  <GrechkaWorldIntegration_b5c93418ad15>Disabled. All research is completed in a new colony. Research already completed in a save is preserved. </GrechkaWorldIntegration_b5c93418ad15>
+  <GrechkaWorldIntegration_5a5243d14a2e>Enable this mode before creating a colony for a full research playthrough. In an existing colony, disabling the mode immediately removes Grechka tree requirements from buildings and recipes.</GrechkaWorldIntegration_5a5243d14a2e>
+  <GrechkaWorldIntegration_ea8b4e4df140>Rules and materials report</GrechkaWorldIntegration_ea8b4e4df140>
+  <GrechkaWorldIntegration_62f1501f8552>Load a colony to apply the profile explicitly.</GrechkaWorldIntegration_62f1501f8552>
+  <GrechkaWorldIntegration_c03eda2493bd>Research remaining: </GrechkaWorldIntegration_c03eda2493bd>
+  <GrechkaWorldIntegration_bcc95c9caa30>. Profile machines: </GrechkaWorldIntegration_bcc95c9caa30>
+  <GrechkaWorldIntegration_78d6dc563572>. Last backup: </GrechkaWorldIntegration_78d6dc563572>
+  <GrechkaWorldIntegration_5a2b62c9f339>not yet created</GrechkaWorldIntegration_5a2b62c9f339>
+  <GrechkaWorldIntegration_b44fd7897452>Apply current rules with a backup</GrechkaWorldIntegration_b44fd7897452>
+  <GrechkaWorldIntegration_edea9a333fc8>Create a separate save, then apply the current housing and material rules? </GrechkaWorldIntegration_edea9a333fc8>
+  <GrechkaWorldIntegration_b08d40f6b1ce>Research progress will be preserved.</GrechkaWorldIntegration_b08d40f6b1ce>
+  <GrechkaWorldIntegration_c5d17a274e4a>All research will be completed.</GrechkaWorldIntegration_c5d17a274e4a>
+  <GrechkaWorldIntegration_cdf852d6ec17> Existing items will be preserved.</GrechkaWorldIntegration_cdf852d6ec17>
+  <GrechkaWorldIntegration_d142c17d2622>The backup was not created. Rules were preserved.</GrechkaWorldIntegration_d142c17d2622>
+  <GrechkaWorldIntegration_7639ca6b48ce>Grechka World profile applied. Backup: </GrechkaWorldIntegration_7639ca6b48ce>
+  <GrechkaWorldIntegration_ef4720713b50>. Unfinished research: </GrechkaWorldIntegration_ef4720713b50>
+  <GrechkaWorldIntegration_6450872dc979>[Grechka World] Profile was not completed: </GrechkaWorldIntegration_6450872dc979>
+  <GrechkaWorldIntegration_d571bbdb3c91>Grechka World applied rules</GrechkaWorldIntegration_d571bbdb3c91>
+  <GrechkaWorldIntegration_521426dd531a>ResearchManager has not been created yet.</GrechkaWorldIntegration_521426dd531a>
+  <GrechkaWorldIntegration_f4ac5186740c> (still unfinished)</GrechkaWorldIntegration_f4ac5186740c>
+  <GrechkaWorldIntegration_ccc87bcd3ae6>[Grechka World Integration] Unfinished after application: </GrechkaWorldIntegration_ccc87bcd3ae6>
+  <GrechkaWorldIntegration_cca16310493d>. Errors: </GrechkaWorldIntegration_cca16310493d>
+  <GrechkaWorldIntegration_8c58d44c61a9>. Additional errors: </GrechkaWorldIntegration_8c58d44c61a9>
+  <GrechkaWorldIntegration_29dad5caaeac>[Grechka World Integration] All research completed. Newly completed: </GrechkaWorldIntegration_29dad5caaeac>
+  <GrechkaWorldIntegration_LegacyVariant>{0} (legacy T{1})</GrechkaWorldIntegration_LegacyVariant>
+  <GrechkaWorldIntegration_TierVariant>{0} (T{1})</GrechkaWorldIntegration_TierVariant>
+  <GrechkaWorldIntegration_UpgradeRecipe>upgrade this machine to T{0}</GrechkaWorldIntegration_UpgradeRecipe>
+  <GrechkaWorldIntegration_UpgradeRecipeDescription>Upgrade in place. The previous-tier housing and original machine count towards the cost. Material, hit points, fuel and bills are preserved.</GrechkaWorldIntegration_UpgradeRecipeDescription>
+  <GrechkaWorldIntegration_UpgradeJob>Upgrading machine.</GrechkaWorldIntegration_UpgradeJob>
+</LanguageData>

@@ -26,6 +26,9 @@ namespace Grechka.Storage
         public long UsedBytes { get; private set; }
         public int Types { get { return counts.Count; } }
         public long ItemCount { get { return counts.Values.Sum(); } }
+        // The 63-type limit alone does not fill a disk: existing types can still grow.
+        // Even the last allocated byte may have unused item slots.
+        public bool IsFull => counts.Count > 0 && counts.Keys.All(key => MaxAccept(key) == 0);
         public DiskSpace(long capacity)
         {
             if (capacity < 128 || capacity % 128 != 0 || capacity > 256L * 1024 * 1024)

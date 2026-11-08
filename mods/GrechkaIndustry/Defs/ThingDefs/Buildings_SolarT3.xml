@@ -3,11 +3,11 @@
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_SolarS3_Building</defName>
     <label>механитная солнечная панель</label>
-    <description>Механитная ступень S3 солнечной линии. Производит до 72 000 Вт при достаточном солнечном освещении; ночью не работает. Собирается из 3 панелей предыдущей ступени и деталей T3.</description>
+    <description>Механитная ступень S3 солнечной линии. Производит до 72 000 Вт при достаточном солнечном освещении; ночью не работает. Переоснащается из одной панели предыдущей ступени; её корпус учитывается.</description>
     <thingClass>Building</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
-      <texPath>Buildings/SolarPanelT3</texPath>
+      <texPath>Buildings/Solar/Main/SolarS3_Mechanite</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(4,4)</drawSize>
       <shadowData>
@@ -38,15 +38,16 @@
       <destroySound>BuildingDestroyed_Metal_Big</destroySound>
     </building>
     <costList>
-      <Grechka_PackedSolarS2_Item>3</Grechka_PackedSolarS2_Item>
-      <Grechka_HousingT3_Item>1</Grechka_HousingT3_Item>
-      <Grechka_ComponentT3_Item>8</Grechka_ComponentT3_Item>
+      <Grechka_PackedSolarS2_Item>1</Grechka_PackedSolarS2_Item>
+      <Grechka_ComponentT3_Item>2</Grechka_ComponentT3_Item>
       <Grechka_SolarCellT3_Item>16</Grechka_SolarCellT3_Item>
+      <Plasteel>20</Plasteel>
+      <Grechka_Mechanites>10</Grechka_Mechanites>
     </costList>
     <comps>
       <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
         <targetDefName>Grechka_SolarS4_Building</targetDefName>
-        <costDescription>эта панель S3 и ещё 5 панелей S3, 2 корпуса T3, 16 меха-компонентов, 64 фотоэлемента T3 и 100 пластали</costDescription>
+        <costDescription>предыдущее устройство целиком и дополнительные материалы следующей ступени; установленный корпус уже учтён</costDescription>
       </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerPlantSolar</compClass>
@@ -66,20 +67,19 @@
     <thingCategories>
       <li>BuildingsSpecial</li>
     </thingCategories>
-    <designationCategory>Power</designationCategory>
-    <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
-    <uiOrder>2103</uiOrder>
+    <designationCategory>Grechka_SolarCategory</designationCategory>
+    <uiOrder>40</uiOrder>
     <constructEffect>ConstructMetal</constructEffect>
     <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
   </ThingDef>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_SolarS4_Building</defName>
     <label>механитная солнечная матрица</label>
-    <description>Механитная ступень S4 солнечной линии. Производит до 576 000 Вт при достаточном солнечном освещении; ночью не работает. Собирается из 6 панелей предыдущей ступени и деталей T3.</description>
+    <description>Механитная ступень S4 солнечной линии. Производит до 576 000 Вт при достаточном солнечном освещении; ночью не работает. Переоснащается из одной панели предыдущей ступени; её корпус учитывается.</description>
     <thingClass>Building</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
-      <texPath>Buildings/SolarPanelT3</texPath>
+      <texPath>Buildings/Solar/Main/SolarS4_MechaniteMatrix</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(4,4)</drawSize>
       <shadowData>
@@ -110,11 +110,10 @@
       <destroySound>BuildingDestroyed_Metal_Big</destroySound>
     </building>
     <costList>
-      <Grechka_PackedSolarS3_Item>6</Grechka_PackedSolarS3_Item>
-      <Grechka_HousingT3_Item>2</Grechka_HousingT3_Item>
-      <Grechka_ComponentT3_Item>16</Grechka_ComponentT3_Item>
-      <Grechka_SolarCellT3_Item>64</Grechka_SolarCellT3_Item>
-      <Plasteel>100</Plasteel>
+      <Grechka_PackedSolarS3_Item>1</Grechka_PackedSolarS3_Item>
+      <Grechka_ComponentT3_Item>2</Grechka_ComponentT3_Item>
+      <Grechka_SolarCellT3_Item>24</Grechka_SolarCellT3_Item>
+      <Plasteel>40</Plasteel>
     </costList>
     <comps>
       <li Class="CompProperties_Power">
@@ -132,16 +131,15 @@
       </li>
       <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
         <targetDefName>Grechka_SolarS5_Building</targetDefName>
-        <costDescription>6 панелей S4, 2 корпуса T4, 16 компонентов T4, 64 фотоэлемента T4; установленная панель засчитывается</costDescription>
+        <costDescription>предыдущее устройство целиком и дополнительные материалы следующей ступени; установленный корпус уже учтён</costDescription>
       </li>
     </comps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <thingCategories>
       <li>BuildingsSpecial</li>
     </thingCategories>
-    <designationCategory>Power</designationCategory>
-    <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
-    <uiOrder>2104</uiOrder>
+    <designationCategory>Grechka_SolarCategory</designationCategory>
+    <uiOrder>90</uiOrder>
     <constructEffect>ConstructMetal</constructEffect>
     <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
   </ThingDef>

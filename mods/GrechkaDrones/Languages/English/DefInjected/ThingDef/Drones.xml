@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Grechka_RescueDroneT1_Unit.label>rescue drone T1</Grechka_RescueDroneT1_Unit.label>
+  <Grechka_RescueDroneT1_Unit.description>A fireproof rescue drone. Carries injured allies to medical beds and extinguishes fires with area-effect foam. When enabled, captures downed enemies if prison beds are available. Drops a carried enemy to rescue an ally.</Grechka_RescueDroneT1_Unit.description>
+  <Grechka_RescueDroneT1_Unit.tools.0.label>striking manipulator</Grechka_RescueDroneT1_Unit.tools.0.label>
+  <Grechka_RescueDroneT2_Unit.label>rescue drone T2</Grechka_RescueDroneT2_Unit.label>
+  <Grechka_RescueDroneT2_Unit.description>A fireproof rescue drone. Carries injured allies to medical beds and extinguishes fires with area-effect foam. When enabled, captures downed enemies if prison beds are available. Drops a carried enemy to rescue an ally.</Grechka_RescueDroneT2_Unit.description>
+  <Grechka_RescueDroneT2_Unit.tools.0.label>striking manipulator</Grechka_RescueDroneT2_Unit.tools.0.label>
+  <Grechka_RescueDroneT3_Unit.label>rescue drone T3</Grechka_RescueDroneT3_Unit.label>
+  <Grechka_RescueDroneT3_Unit.description>A fireproof rescue drone. Carries injured allies to medical beds and extinguishes fires with area-effect foam. When enabled, captures downed enemies if prison beds are available. Drops a carried enemy to rescue an ally.</Grechka_RescueDroneT3_Unit.description>
+  <Grechka_RescueDroneT3_Unit.tools.0.label>striking manipulator</Grechka_RescueDroneT3_Unit.tools.0.label>
+  <Grechka_RescueDroneT4_Unit.label>rescue drone T4</Grechka_RescueDroneT4_Unit.label>
+  <Grechka_RescueDroneT4_Unit.description>A fireproof rescue drone. Carries injured allies to medical beds and extinguishes fires with area-effect foam. When enabled, captures downed enemies if prison beds are available. Drops a carried enemy to rescue an ally.</Grechka_RescueDroneT4_Unit.description>
+  <Grechka_RescueDroneT4_Unit.tools.0.label>striking manipulator</Grechka_RescueDroneT4_Unit.tools.0.label>
+  <Grechka_RescueDroneT5_Unit.label>rescue drone T5</Grechka_RescueDroneT5_Unit.label>
+  <Grechka_RescueDroneT5_Unit.description>A fireproof rescue drone. Carries injured allies to medical beds and extinguishes fires with area-effect foam. When enabled, captures downed enemies if prison beds are available. Drops a carried enemy to rescue an ally.</Grechka_RescueDroneT5_Unit.description>
+  <Grechka_RescueDroneT5_Unit.tools.0.label>striking manipulator</Grechka_RescueDroneT5_Unit.tools.0.label>
+  <Grechka_WarriorDroneT1_Unit.label>warrior drone T1</Grechka_WarriorDroneT1_Unit.label>
+  <Grechka_WarriorDroneT1_Unit.description>A fireproof melee combat drone with a large health pool. Patrols the home area and defends the colony from attackers. Retreats to its dock for repairs at 30% health.</Grechka_WarriorDroneT1_Unit.description>
+  <Grechka_WarriorDroneT1_Unit.tools.0.label>striking manipulator</Grechka_WarriorDroneT1_Unit.tools.0.label>
+  <Grechka_WarriorDroneT2_Unit.label>warrior drone T2</Grechka_WarriorDroneT2_Unit.label>
+  <Grechka_WarriorDroneT2_Unit.description>A fireproof melee combat drone with a large health pool. Patrols the home area and defends the colony from attackers. Retreats to its dock for repairs at 30% health.</Grechka_WarriorDroneT2_Unit.description>
+  <Grechka_WarriorDroneT2_Unit.tools.0.label>striking manipulator</Grechka_WarriorDroneT2_Unit.tools.0.label>
+  <Grechka_WarriorDroneT3_Unit.label>warrior drone T3</Grechka_WarriorDroneT3_Unit.label>
+  <Grechka_WarriorDroneT3_Unit.description>A fireproof melee combat drone with a large health pool. Patrols the home area and defends the colony from attackers. Retreats to its dock for repairs at 30% health.</Grechka_WarriorDroneT3_Unit.description>
+  <Grechka_WarriorDroneT3_Unit.tools.0.label>striking manipulator</Grechka_WarriorDroneT3_Unit.tools.0.label>
+  <Grechka_WarriorDroneT4_Unit.label>warrior drone T4</Grechka_WarriorDroneT4_Unit.label>
+  <Grechka_WarriorDroneT4_Unit.description>A fireproof melee combat drone with a large health pool. Patrols the home area and defends the colony from attackers. Retreats to its dock for repairs at 30% health.</Grechka_WarriorDroneT4_Unit.description>
+  <Grechka_WarriorDroneT4_Unit.tools.0.label>striking manipulator</Grechka_WarriorDroneT4_Unit.tools.0.label>
+  <Grechka_WarriorDroneT5_Unit.label>warrior drone T5</Grechka_WarriorDroneT5_Unit.label>
+  <Grechka_WarriorDroneT5_Unit.description>A fireproof melee combat drone with a large health pool. Patrols the home area and defends the colony from attackers. Retreats to its dock for repairs at 30% health.</Grechka_WarriorDroneT5_Unit.description>
+  <Grechka_WarriorDroneT5_Unit.tools.0.label>striking manipulator</Grechka_WarriorDroneT5_Unit.tools.0.label>
+  <Grechka_RescueDroneStationT1_Dock.label>rescue drone dock T1</Grechka_RescueDroneStationT1_Dock.label>
+  <Grechka_RescueDroneStationT1_Dock.description>A charging and repair station with a rescue drone T1. The drone is included with the station.</Grechka_RescueDroneStationT1_Dock.description>
+  <Grechka_RescueDroneStationT2_Dock.label>rescue drone dock T2</Grechka_RescueDroneStationT2_Dock.label>
+  <Grechka_RescueDroneStationT2_Dock.description>A charging and repair station with a rescue drone T2. The drone is included with the station.</Grechka_RescueDroneStationT2_Dock.description>
+  <Grechka_RescueDroneStationT3_Dock.label>rescue drone dock T3</Grechka_RescueDroneStationT3_Dock.label>
+  <Grechka_RescueDroneStationT3_Dock.description>A charging and repair station with a rescue drone T3. The drone is included with the station.</Grechka_RescueDroneStationT3_Dock.description>
+  <Grechka_RescueDroneStationT4_Dock.label>rescue drone dock T4</Grechka_RescueDroneStationT4_Dock.label>
+  <Grechka_RescueDroneStationT4_Dock.description>A charging and repair station with a rescue drone T4. The drone is included with the station.</Grechka_RescueDroneStationT4_Dock.description>
+  <Grechka_RescueDroneStationT5_Dock.label>rescue drone dock T5</Grechka_RescueDroneStationT5_Dock.label>
+  <Grechka_RescueDroneStationT5_Dock.description>A charging and repair station with a rescue drone T5. The drone is included with the station.</Grechka_RescueDroneStationT5_Dock.description>
+  <Grechka_WarriorDroneStationT1_Dock.label>warrior drone dock T1</Grechka_WarriorDroneStationT1_Dock.label>
+  <Grechka_WarriorDroneStationT1_Dock.description>A charging and repair station with a warrior drone T1. The drone is included with the station.</Grechka_WarriorDroneStationT1_Dock.description>
+  <Grechka_WarriorDroneStationT2_Dock.label>warrior drone dock T2</Grechka_WarriorDroneStationT2_Dock.label>
+  <Grechka_WarriorDroneStationT2_Dock.description>A charging and repair station with a warrior drone T2. The drone is included with the station.</Grechka_WarriorDroneStationT2_Dock.description>
+  <Grechka_WarriorDroneStationT3_Dock.label>warrior drone dock T3</Grechka_WarriorDroneStationT3_Dock.label>
+  <Grechka_WarriorDroneStationT3_Dock.description>A charging and repair station with a warrior drone T3. The drone is included with the station.</Grechka_WarriorDroneStationT3_Dock.description>
+  <Grechka_WarriorDroneStationT4_Dock.label>warrior drone dock T4</Grechka_WarriorDroneStationT4_Dock.label>
+  <Grechka_WarriorDroneStationT4_Dock.description>A charging and repair station with a warrior drone T4. The drone is included with the station.</Grechka_WarriorDroneStationT4_Dock.description>
+  <Grechka_WarriorDroneStationT5_Dock.label>warrior drone dock T5</Grechka_WarriorDroneStationT5_Dock.label>
+  <Grechka_WarriorDroneStationT5_Dock.description>A charging and repair station with a warrior drone T5. The drone is included with the station.</Grechka_WarriorDroneStationT5_Dock.description>
+</LanguageData>

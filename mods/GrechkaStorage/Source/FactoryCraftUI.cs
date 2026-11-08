@@ -18,9 +18,9 @@ namespace Grechka.Storage
         public override void DoWindowContents(Rect rect)
         {
             Widgets.Label(new Rect(0, 0, rect.width, 50), recipe.Title);
-            Widgets.Label(new Rect(0, 55, rect.width, 55), maintain ? "Поддерживать на дисках не меньше:" : recipe.Primary == null || recipe.NetOutput ? "Число штатных производственных циклов:" : "Изготовить единиц первого продукта:");
+            Widgets.Label(new Rect(0, 55, rect.width, 55), maintain ? StorageText.Get("GrechkaStorage_Text128") : recipe.Primary == null || recipe.NetOutput ? StorageText.Get("GrechkaStorage_Text129") : StorageText.Get("GrechkaStorage_Text130"));
             Widgets.TextFieldNumeric(new Rect(0, 110, rect.width, 32), ref count, ref buffer, 1, 1000000);
-            if (Widgets.ButtonText(new Rect(rect.width - 140, 160, 140, 32), "Добавить"))
+            if (Widgets.ButtonText(new Rect(rect.width - 140, 160, 140, 32), StorageText.Get("GrechkaStorage_Text131")))
             { if (controller.Spawned) manager.Add(controller, recipe, count, maintain); Close(); }
         }
     }

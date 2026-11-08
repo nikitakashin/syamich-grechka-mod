@@ -41,8 +41,8 @@ namespace Grechka.Industry
         {
             var result = new StringBuilder(base.GetInspectString());
             if (result.Length > 0) result.AppendLine();
-            result.Append(Powered ? "Мехапоника: рост ×" + GrowthMultiplier.ToString("0.##")
-                : "Мехапоника: рост приостановлен");
+            result.Append(Powered ? IndustryText.Get("GrechkaIndustry_e039ffb8b453", "Mechaponics growth ×") + GrowthMultiplier.ToString("0.##")
+                : IndustryText.Get("GrechkaIndustry_a3ff1280eb4b", "Mechaponics growth paused"));
             return result.ToString();
         }
 
@@ -92,8 +92,8 @@ namespace Grechka.Industry
         {
             Building_Mechaponics basin = Building_Mechaponics.For(__instance);
             if (basin != null)
-                __result += basin.Powered ? "\nМехапоника: ×" + basin.GrowthMultiplier.ToString("0.##")
-                    : "\nМехапоника: нет питания или устройство отключено";
+                __result += basin.Powered ? IndustryText.Get("GrechkaIndustry_27973df0c9f9", "\nMechaponics ×") + basin.GrowthMultiplier.ToString("0.##")
+                    : IndustryText.Get("GrechkaIndustry_14d9dd5218a6", "\nMechaponics has no power or is switched off");
         }
     }
 }

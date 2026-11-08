@@ -7,7 +7,7 @@
     <thingClass>Building</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
-      <texPath>Buildings/SolarPanelT2</texPath>
+      <texPath>Buildings/Solar/Main/SolarS1_Reinforced</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(4,4)</drawSize>
       <shadowData>
@@ -40,13 +40,13 @@
     <costList>
       <Grechka_PackedSolarS0_Item>1</Grechka_PackedSolarS0_Item>
       <Grechka_HousingT2_Item>1</Grechka_HousingT2_Item>
-      <ComponentSpacer>4</ComponentSpacer>
+      <ComponentSpacer>2</ComponentSpacer>
       <Grechka_SolarCellT2_Item>8</Grechka_SolarCellT2_Item>
     </costList>
     <comps>
       <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
         <targetDefName>Grechka_SolarS2_Building</targetDefName>
-        <costDescription>2 снятые панели S1, 1 корпус T2, 8 продвинутых компонентов, 24 фотоэлемента T2 и 20 пластали</costDescription>
+        <costDescription>предыдущее устройство целиком и дополнительные материалы следующей ступени; установленный корпус уже учтён</costDescription>
       </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerPlantSolar</compClass>
@@ -66,9 +66,8 @@
     <thingCategories>
       <li>BuildingsSpecial</li>
     </thingCategories>
-    <designationCategory>Power</designationCategory>
-    <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
-    <uiOrder>2101</uiOrder>
+    <designationCategory>Grechka_SolarCategory</designationCategory>
+    <uiOrder>10</uiOrder>
     <constructEffect>ConstructMetal</constructEffect>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
   </ThingDef>
@@ -79,7 +78,7 @@
     <thingClass>Building</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
-      <texPath>Buildings/SolarPanelT2</texPath>
+      <texPath>Buildings/Solar/Main/SolarS2_Multilayer</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(4,4)</drawSize>
       <shadowData>
@@ -110,16 +109,15 @@
       <destroySound>BuildingDestroyed_Metal_Big</destroySound>
     </building>
     <costList>
-      <Grechka_PackedSolarS1_Item>2</Grechka_PackedSolarS1_Item>
-      <Grechka_HousingT2_Item>1</Grechka_HousingT2_Item>
-      <ComponentSpacer>8</ComponentSpacer>
-      <Grechka_SolarCellT2_Item>24</Grechka_SolarCellT2_Item>
+      <Grechka_PackedSolarS1_Item>1</Grechka_PackedSolarS1_Item>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Grechka_SolarCellT2_Item>16</Grechka_SolarCellT2_Item>
       <Plasteel>20</Plasteel>
     </costList>
     <comps>
       <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
         <targetDefName>Grechka_SolarS3_Building</targetDefName>
-        <costDescription>эта панель S2 и ещё 2 панели S2, 1 корпус T3, 8 меха-компонентов и 16 фотоэлементов T3</costDescription>
+        <costDescription>предыдущее устройство целиком и дополнительные материалы следующей ступени; установленный корпус уже учтён</costDescription>
       </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerPlantSolar</compClass>
@@ -139,9 +137,8 @@
     <thingCategories>
       <li>BuildingsSpecial</li>
     </thingCategories>
-    <designationCategory>Power</designationCategory>
-    <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
-    <uiOrder>2102</uiOrder>
+    <designationCategory>Grechka_SolarCategory</designationCategory>
+    <uiOrder>20</uiOrder>
     <constructEffect>ConstructMetal</constructEffect>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
   </ThingDef>

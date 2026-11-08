@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaTranslationsRus.CutPlants.Name>Вырубка растений перед строительством</GrechkaTranslationsRus.CutPlants.Name>
+  <GrechkaTranslationsRus.Inventory.Sample>Пример настройки</GrechkaTranslationsRus.Inventory.Sample>
+  <GrechkaTranslationsRus.Mood.GenderTip>Показывать значок пола поселенца на полоске настроения.</GrechkaTranslationsRus.Mood.GenderTip>
+  <GrechkaTranslationsRus.Mood.Milliseconds>мс</GrechkaTranslationsRus.Mood.Milliseconds>
+  <GrechkaTranslationsRus.Mood.ShowAge>Показывать возраст (нужны альтернативные подписи)</GrechkaTranslationsRus.Mood.ShowAge>
+  <GrechkaTranslationsRus.Mood.ShowAgeTip>Показывать возраст поселенца рядом с его именем.</GrechkaTranslationsRus.Mood.ShowAgeTip>
+</LanguageData>

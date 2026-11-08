@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RecipeDef>
+    <defName>GrechkaPharmacy_MakeUltratechMedicine</defName>
+    <label>make glitterworld medicine</label>
+    <description>Synthesize advanced tending medicine to supply high-tier treatments without relying on traders.</description>
+    <jobString>Synthesizing glitterworld medicine.</jobString>
+    <workAmount>5000</workAmount>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <workSkill>Intellectual</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <ingredients>
+      <li><filter><thingDefs><li>MedicineIndustrial</li></thingDefs></filter><count>2</count></li>
+      <li><filter><thingDefs><li>Neutroamine</li></thingDefs></filter><count>4</count></li>
+      <!-- Gold smallVolume: 0.1 recipe units is one physical gold. -->
+      <li><filter><thingDefs><li>Gold</li></thingDefs></filter><count>0.1</count></li>
+    </ingredients>
+    <fixedIngredientFilter><thingDefs><li>MedicineIndustrial</li><li>Neutroamine</li><li>Gold</li></thingDefs></fixedIngredientFilter>
+    <products><MedicineUltratech>1</MedicineUltratech></products>
+    <skillRequirements><Intellectual>12</Intellectual></skillRequirements>
+    <recipeUsers><li>GrechkaPharmacy_ReactorT4_Building</li><li>GrechkaPharmacy_ReactorT5_Building</li></recipeUsers>
+    <researchPrerequisites><li>GrechkaPharmacy_ResearchT4</li></researchPrerequisites>
+  </RecipeDef>
+</Defs>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Grechka_SingleRifleT2_Item.label>гречневая винтовка T2 «Оса»</Grechka_SingleRifleT2_Item.label>
+  <Grechka_SingleRifleT2_Item.description>Промышленная винтовка с одиночным огнём. Один выстрел наносит 30 базового урона; дальность — 32 клетки.</Grechka_SingleRifleT2_Item.description>
+  <Grechka_RifleBulletT2_Item.label>пуля гречневой винтовки T2</Grechka_RifleBulletT2_Item.label>
+  <Grechka_BurstLauncherT4_Item.label>гречневый гранатомёт T4 «Гром»</Grechka_BurstLauncherT4_Item.label>
+  <Grechka_BurstLauncherT4_Item.description>Гранатомёт прямого огня. Выпускает очередь из трёх разрывных снарядов по 50 базового урона. Снаряды летят быстро и прямо, как пули, и взрываются при попадании без задержки. Радиус каждого взрыва — 1,9 клетки; дальность — 40 клеток. Взрывы могут задеть союзников.</Grechka_BurstLauncherT4_Item.description>
+  <Grechka_ExplosiveBulletT4_Item.label>разрывной снаряд T4</Grechka_ExplosiveBulletT4_Item.label>
+</LanguageData>

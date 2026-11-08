@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <GrechkaWorld_DrillSteel.label>добывать сталь</GrechkaWorld_DrillSteel.label>
+  <GrechkaWorld_DrillSteel.labelOverride>добывать сталь</GrechkaWorld_DrillSteel.labelOverride>
+  <GrechkaWorld_DrillSteel.description>Постоянная направленная добыча: сталь. Разрешите этот ресурс в фильтре выходного Factory-хоппера. Тир повышает скорость и выход. Готовая партия ждёт, если места недостаточно.</GrechkaWorld_DrillSteel.description>
+  <GrechkaWorld_DrillPlasteel.label>добывать пласталь</GrechkaWorld_DrillPlasteel.label>
+  <GrechkaWorld_DrillPlasteel.labelOverride>добывать пласталь</GrechkaWorld_DrillPlasteel.labelOverride>
+  <GrechkaWorld_DrillPlasteel.description>Постоянная направленная добыча: пласталь. Разрешите этот ресурс в фильтре выходного Factory-хоппера. Тир повышает скорость и выход. Готовая партия ждёт, если места недостаточно.</GrechkaWorld_DrillPlasteel.description>
+  <GrechkaWorld_DrillUranium.label>добывать уран</GrechkaWorld_DrillUranium.label>
+  <GrechkaWorld_DrillUranium.labelOverride>добывать уран</GrechkaWorld_DrillUranium.labelOverride>
+  <GrechkaWorld_DrillUranium.description>Постоянная направленная добыча: уран. Разрешите этот ресурс в фильтре выходного Factory-хоппера. Тир повышает скорость и выход. Готовая партия ждёт, если места недостаточно.</GrechkaWorld_DrillUranium.description>
+</LanguageData>

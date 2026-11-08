@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaLuckyBlocks_Text001>Сохранённый исход превышает 2 МБ.</GrechkaLuckyBlocks_Text001>
+  <GrechkaLuckyBlocks_Text002>Конфиг превышает 2 МБ.</GrechkaLuckyBlocks_Text002>
+  <GrechkaLuckyBlocks_Text003>Нужен schemaVersion 1.</GrechkaLuckyBlocks_Text003>
+  <GrechkaLuckyBlocks_Text004>Шанс рейдера: 0–1.</GrechkaLuckyBlocks_Text004>
+  <GrechkaLuckyBlocks_Text005>Нужны пять неотрицательных весов тиров с конечной положительной суммой.</GrechkaLuckyBlocks_Text005>
+  <GrechkaLuckyBlocks_Text006>Нужно 1–200 пулов.</GrechkaLuckyBlocks_Text006>
+  <GrechkaLuckyBlocks_Text007>Повторный/некорректный ID пула.</GrechkaLuckyBlocks_Text007>
+  <GrechkaLuckyBlocks_Text008>: нужно 1–200 исходов.</GrechkaLuckyBlocks_Text008>
+  <GrechkaLuckyBlocks_Text009>: некорректный ID исхода.</GrechkaLuckyBlocks_Text009>
+  <GrechkaLuckyBlocks_Text010>: неверный вес.</GrechkaLuckyBlocks_Text010>
+  <GrechkaLuckyBlocks_Text011>: неизвестный эффект.</GrechkaLuckyBlocks_Text011>
+  <GrechkaLuckyBlocks_Text012>: неверные requiredMods.</GrechkaLuckyBlocks_Text012>
+  <GrechkaLuckyBlocks_Text013>: неверный список предметов.</GrechkaLuckyBlocks_Text013>
+  <GrechkaLuckyBlocks_Text014>: пустая награда.</GrechkaLuckyBlocks_Text014>
+  <GrechkaLuckyBlocks_Text015>: нужно 1–100 пешек существующего вида.</GrechkaLuckyBlocks_Text015>
+  <GrechkaLuckyBlocks_Text016>: неверный предмет/материал/качество.</GrechkaLuckyBlocks_Text016>
+  <GrechkaLuckyBlocks_Text017>Некорректная выборка.</GrechkaLuckyBlocks_Text017>
+  <GrechkaLuckyBlocks_Text018>Некорректный вес.</GrechkaLuckyBlocks_Text018>
+  <GrechkaLuckyBlocks_Text019>Пустой пул.</GrechkaLuckyBlocks_Text019>
+  <GrechkaLuckyBlocks_Text020>Конфиг не загружен: </GrechkaLuckyBlocks_Text020>
+  <GrechkaLuckyBlocks_Text021>Пулы наград (JSON). Правьте веса, предметы, число животных и шанс блока у рейдера. Применение проверяет конфиг; недоступные опциональные исходы пропускаются.</GrechkaLuckyBlocks_Text021>
+  <GrechkaLuckyBlocks_Text022>Применить</GrechkaLuckyBlocks_Text022>
+  <GrechkaLuckyBlocks_Text023>Нет доступных исходов: </GrechkaLuckyBlocks_Text023>
+  <GrechkaLuckyBlocks_Text024>Конфиг применён.</GrechkaLuckyBlocks_Text024>
+  <GrechkaLuckyBlocks_Text025>Экспорт</GrechkaLuckyBlocks_Text025>
+  <GrechkaLuckyBlocks_Text026>Импорт</GrechkaLuckyBlocks_Text026>
+  <GrechkaLuckyBlocks_Text027>Положите JSON в </GrechkaLuckyBlocks_Text027>
+  <GrechkaLuckyBlocks_Text028>Файл больше 2 МБ.</GrechkaLuckyBlocks_Text028>
+  <GrechkaLuckyBlocks_Text029>Импортирован черновик. Нажмите Применить.</GrechkaLuckyBlocks_Text029>
+  <GrechkaLuckyBlocks_Text030>Нет исхода.</GrechkaLuckyBlocks_Text030>
+  <GrechkaLuckyBlocks_Text031>Нужен мод </GrechkaLuckyBlocks_Text031>
+  <GrechkaLuckyBlocks_Text032>Нет предмета </GrechkaLuckyBlocks_Text032>
+  <GrechkaLuckyBlocks_Text033>Неверный материал </GrechkaLuckyBlocks_Text033>
+  <GrechkaLuckyBlocks_Text034>Предмет не сделан из материала: </GrechkaLuckyBlocks_Text034>
+  <GrechkaLuckyBlocks_Text035>У предмета нет качества: </GrechkaLuckyBlocks_Text035>
+  <GrechkaLuckyBlocks_Text036>Нет вида пешки </GrechkaLuckyBlocks_Text036>
+  <GrechkaLuckyBlocks_Text037>Нужен вид животного.</GrechkaLuckyBlocks_Text037>
+  <GrechkaLuckyBlocks_Text038>Недоступны механоиды.</GrechkaLuckyBlocks_Text038>
+  <GrechkaLuckyBlocks_Text039>Повреждено сохранённое состояние открытия; блок и оставшиеся вещи сохранены.</GrechkaLuckyBlocks_Text039>
+  <GrechkaLuckyBlocks_Text040>У незавершённого открытия отсутствует сохранённый исход; повторный выбор заблокирован.</GrechkaLuckyBlocks_Text040>
+  <GrechkaLuckyBlocks_Text041>Нет доступных исходов в настройках Lucky Blocks.</GrechkaLuckyBlocks_Text041>
+  <GrechkaLuckyBlocks_Text042>Открыть: </GrechkaLuckyBlocks_Text042>
+  <GrechkaLuckyBlocks_Text043>Открыть: недоступно</GrechkaLuckyBlocks_Text043>
+  <GrechkaLuckyBlocks_Text044>Открыть лаки-блок</GrechkaLuckyBlocks_Text044>
+  <GrechkaLuckyBlocks_Text045>Не удалось сохранить результат.</GrechkaLuckyBlocks_Text045>
+  <GrechkaLuckyBlocks_Text046>Не удалось сохранить пешку.</GrechkaLuckyBlocks_Text046>
+  <GrechkaLuckyBlocks_Text047>Часть результата осталась в блоке: освободите место рядом и откройте его снова.</GrechkaLuckyBlocks_Text047>
+  <GrechkaLuckyBlocks_Text048>[Grechka Lucky Blocks] Результат сохранён в блоке: </GrechkaLuckyBlocks_Text048>
+  <GrechkaLuckyBlocks_Text049>Не удалось завершить открытие. Блок и выбранный результат сохранены.</GrechkaLuckyBlocks_Text049>
+</LanguageData>

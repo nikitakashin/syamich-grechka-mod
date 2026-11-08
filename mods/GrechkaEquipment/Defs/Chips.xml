@@ -5,21 +5,23 @@
     <label>чип «берсерк» T4</label>
     <description>Мозговой имплант. Разные семейства совместимы; другой тир этого семейства заменяется с возвратом старого чипа.</description>
     <graphicData>
-      <texPath>Items/MythicBrainT4</texPath>
+      <texPath>Items/CombatChipT4</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <thingCategories>
       <li>BodyPartsBionic</li>
     </thingCategories>
     <statBases>
       <WorkToMake>18000</WorkToMake>
-      <MarketValue>4000</MarketValue>
+      <MarketValue>1000</MarketValue>
       <Mass>0.1</Mass>
     </statBases>
     <costList>
-      <Gold>10</Gold>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>5</Grechka_ArchoSubstrate>
+      <Gold>5</Gold>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -35,10 +37,12 @@
       </recipeUsers>
     </recipeMaker>
     <techLevel>Archotech</techLevel>
+    <uiIconPath>Items/CombatChipT4</uiIconPath>
   </ThingDef>
   <HediffDef ParentName="ImplantHediffBase">
     <defName>Grechka_CombatChipT4_Hediff</defName>
     <label>чип «берсерк» T4</label>
+    <description>Подавляет боль и обычные срывы из-за настроения. Скорость движения +2, уклонение в ближнем бою +10 процентных пунктов, урон ближнего боя ×1,5. Разные семейства чипов совместимы; установка другого тира этого семейства возвращает прежний чип предметом.</description>
     <spawnThingOnRemoved>Grechka_CombatChipT4_Item</spawnThingOnRemoved>
     <modExtensions>
       <li Class="Grechka.Equipment.ImplantFamily">
@@ -98,21 +102,23 @@
     <label>чип «берсерк» T5</label>
     <description>Мозговой имплант. Разные семейства совместимы; другой тир этого семейства заменяется с возвратом старого чипа.</description>
     <graphicData>
-      <texPath>Items/GrechkaBrainT5</texPath>
+      <texPath>Items/CombatChipT5</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <thingCategories>
       <li>BodyPartsBionic</li>
     </thingCategories>
     <statBases>
       <WorkToMake>18000</WorkToMake>
-      <MarketValue>12000</MarketValue>
+      <MarketValue>1800</MarketValue>
       <Mass>0.1</Mass>
     </statBases>
     <costList>
-      <Gold>10</Gold>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>5</Grechka_GrechkaConcentrate>
+      <Gold>5</Gold>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -128,10 +134,12 @@
       </recipeUsers>
     </recipeMaker>
     <techLevel>Archotech</techLevel>
+    <uiIconPath>Items/CombatChipT5</uiIconPath>
   </ThingDef>
   <HediffDef ParentName="ImplantHediffBase">
     <defName>Grechka_CombatChipT5_Hediff</defName>
     <label>чип «берсерк» T5</label>
+    <description>Подавляет боль и обычные срывы из-за настроения. Скорость движения +4, уклонение в ближнем бою +20 процентных пунктов, урон ближнего боя ×2. Разные семейства чипов совместимы; установка другого тира этого семейства возвращает прежний чип предметом.</description>
     <spawnThingOnRemoved>Grechka_CombatChipT5_Item</spawnThingOnRemoved>
     <modExtensions>
       <li Class="Grechka.Equipment.ImplantFamily">
@@ -191,21 +199,23 @@
     <label>чип «стальной разум» T4</label>
     <description>Мозговой имплант. Разные семейства совместимы; другой тир этого семейства заменяется с возвратом старого чипа.</description>
     <graphicData>
-      <texPath>Items/MythicBrainT4</texPath>
+      <texPath>Items/StabilityChipT4</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <thingCategories>
       <li>BodyPartsBionic</li>
     </thingCategories>
     <statBases>
       <WorkToMake>18000</WorkToMake>
-      <MarketValue>4000</MarketValue>
+      <MarketValue>1000</MarketValue>
       <Mass>0.1</Mass>
     </statBases>
     <costList>
-      <Gold>10</Gold>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>5</Grechka_ArchoSubstrate>
+      <Gold>5</Gold>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -221,10 +231,12 @@
       </recipeUsers>
     </recipeMaker>
     <techLevel>Archotech</techLevel>
+    <uiIconPath>Items/StabilityChipT4</uiIconPath>
   </ThingDef>
   <HediffDef ParentName="ImplantHediffBase">
     <defName>Grechka_StabilityChipT4_Hediff</defName>
     <label>чип «стальной разум» T4</label>
+    <description>Предотвращает обычные психические срывы из-за настроения. Сюжетные и принудительно вызванные психические состояния не отменяет. Разные семейства чипов совместимы; установка другого тира этого семейства возвращает прежний чип предметом.</description>
     <spawnThingOnRemoved>Grechka_StabilityChipT4_Item</spawnThingOnRemoved>
     <modExtensions>
       <li Class="Grechka.Equipment.ImplantFamily">
@@ -275,21 +287,23 @@
     <label>чип «стальной разум» T5</label>
     <description>Мозговой имплант. Разные семейства совместимы; другой тир этого семейства заменяется с возвратом старого чипа.</description>
     <graphicData>
-      <texPath>Items/GrechkaBrainT5</texPath>
+      <texPath>Items/StabilityChipT5</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <thingCategories>
       <li>BodyPartsBionic</li>
     </thingCategories>
     <statBases>
       <WorkToMake>18000</WorkToMake>
-      <MarketValue>12000</MarketValue>
+      <MarketValue>1800</MarketValue>
       <Mass>0.1</Mass>
     </statBases>
     <costList>
-      <Gold>10</Gold>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>5</Grechka_GrechkaConcentrate>
+      <Gold>5</Gold>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -305,10 +319,12 @@
       </recipeUsers>
     </recipeMaker>
     <techLevel>Archotech</techLevel>
+    <uiIconPath>Items/StabilityChipT5</uiIconPath>
   </ThingDef>
   <HediffDef ParentName="ImplantHediffBase">
     <defName>Grechka_StabilityChipT5_Hediff</defName>
     <label>чип «стальной разум» T5</label>
+    <description>Предотвращает обычные психические срывы из-за настроения. Сюжетные и принудительно вызванные психические состояния не отменяет. Разные семейства чипов совместимы; установка другого тира этого семейства возвращает прежний чип предметом.</description>
     <spawnThingOnRemoved>Grechka_StabilityChipT5_Item</spawnThingOnRemoved>
     <modExtensions>
       <li Class="Grechka.Equipment.ImplantFamily">
@@ -359,21 +375,23 @@
     <label>чип «ремесленник» T4</label>
     <description>Мозговой имплант. Разные семейства совместимы; другой тир этого семейства заменяется с возвратом старого чипа.</description>
     <graphicData>
-      <texPath>Items/MythicBrainT4</texPath>
+      <texPath>Items/CraftChipT4</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <thingCategories>
       <li>BodyPartsBionic</li>
     </thingCategories>
     <statBases>
       <WorkToMake>18000</WorkToMake>
-      <MarketValue>4000</MarketValue>
+      <MarketValue>1000</MarketValue>
       <Mass>0.1</Mass>
     </statBases>
     <costList>
-      <Gold>10</Gold>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>5</Grechka_ArchoSubstrate>
+      <Gold>5</Gold>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -389,10 +407,12 @@
       </recipeUsers>
     </recipeMaker>
     <techLevel>Archotech</techLevel>
+    <uiIconPath>Items/CraftChipT4</uiIconPath>
   </ThingDef>
   <HediffDef ParentName="ImplantHediffBase">
     <defName>Grechka_CraftChipT4_Hediff</defName>
     <label>чип «ремесленник» T4</label>
+    <description>Ускоряет общую работу носителя в 1,5 раза. Разные семейства чипов совместимы; установка другого тира этого семейства возвращает прежний чип предметом.</description>
     <spawnThingOnRemoved>Grechka_CraftChipT4_Item</spawnThingOnRemoved>
     <modExtensions>
       <li Class="Grechka.Equipment.ImplantFamily">
@@ -447,21 +467,23 @@
     <label>чип «ремесленник» T5</label>
     <description>Мозговой имплант. Разные семейства совместимы; другой тир этого семейства заменяется с возвратом старого чипа.</description>
     <graphicData>
-      <texPath>Items/GrechkaBrainT5</texPath>
+      <texPath>Items/CraftChipT5</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <thingCategories>
       <li>BodyPartsBionic</li>
     </thingCategories>
     <statBases>
       <WorkToMake>18000</WorkToMake>
-      <MarketValue>12000</MarketValue>
+      <MarketValue>1800</MarketValue>
       <Mass>0.1</Mass>
     </statBases>
     <costList>
-      <Gold>10</Gold>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>5</Grechka_GrechkaConcentrate>
+      <Gold>5</Gold>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -477,10 +499,12 @@
       </recipeUsers>
     </recipeMaker>
     <techLevel>Archotech</techLevel>
+    <uiIconPath>Items/CraftChipT5</uiIconPath>
   </ThingDef>
   <HediffDef ParentName="ImplantHediffBase">
     <defName>Grechka_CraftChipT5_Hediff</defName>
     <label>чип «ремесленник» T5</label>
+    <description>Ускоряет общую работу носителя в 2 раза. Разные семейства чипов совместимы; установка другого тира этого семейства возвращает прежний чип предметом.</description>
     <spawnThingOnRemoved>Grechka_CraftChipT5_Item</spawnThingOnRemoved>
     <modExtensions>
       <li Class="Grechka.Equipment.ImplantFamily">
@@ -535,21 +559,23 @@
     <label>чип «следопыт» T4</label>
     <description>Мозговой имплант. Разные семейства совместимы; другой тир этого семейства заменяется с возвратом старого чипа.</description>
     <graphicData>
-      <texPath>Items/MythicBrainT4</texPath>
+      <texPath>Items/MovementChipT4</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <thingCategories>
       <li>BodyPartsBionic</li>
     </thingCategories>
     <statBases>
       <WorkToMake>18000</WorkToMake>
-      <MarketValue>4000</MarketValue>
+      <MarketValue>1000</MarketValue>
       <Mass>0.1</Mass>
     </statBases>
     <costList>
-      <Gold>10</Gold>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>5</Grechka_ArchoSubstrate>
+      <Gold>5</Gold>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -565,10 +591,12 @@
       </recipeUsers>
     </recipeMaker>
     <techLevel>Archotech</techLevel>
+    <uiIconPath>Items/MovementChipT4</uiIconPath>
   </ThingDef>
   <HediffDef ParentName="ImplantHediffBase">
     <defName>Grechka_MovementChipT4_Hediff</defName>
     <label>чип «следопыт» T4</label>
+    <description>Повышает скорость движения на 1 и снижает расход отдыха на 25%. Разные семейства чипов совместимы; установка другого тира этого семейства возвращает прежний чип предметом.</description>
     <spawnThingOnRemoved>Grechka_MovementChipT4_Item</spawnThingOnRemoved>
     <modExtensions>
       <li Class="Grechka.Equipment.ImplantFamily">
@@ -624,21 +652,23 @@
     <label>чип «следопыт» T5</label>
     <description>Мозговой имплант. Разные семейства совместимы; другой тир этого семейства заменяется с возвратом старого чипа.</description>
     <graphicData>
-      <texPath>Items/GrechkaBrainT5</texPath>
+      <texPath>Items/MovementChipT5</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <thingCategories>
       <li>BodyPartsBionic</li>
     </thingCategories>
     <statBases>
       <WorkToMake>18000</WorkToMake>
-      <MarketValue>12000</MarketValue>
+      <MarketValue>1800</MarketValue>
       <Mass>0.1</Mass>
     </statBases>
     <costList>
-      <Gold>10</Gold>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>5</Grechka_GrechkaConcentrate>
+      <Gold>5</Gold>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -654,10 +684,12 @@
       </recipeUsers>
     </recipeMaker>
     <techLevel>Archotech</techLevel>
+    <uiIconPath>Items/MovementChipT5</uiIconPath>
   </ThingDef>
   <HediffDef ParentName="ImplantHediffBase">
     <defName>Grechka_MovementChipT5_Hediff</defName>
     <label>чип «следопыт» T5</label>
+    <description>Повышает скорость движения на 2 и снижает расход отдыха на 50%. Разные семейства чипов совместимы; установка другого тира этого семейства возвращает прежний чип предметом.</description>
     <spawnThingOnRemoved>Grechka_MovementChipT5_Item</spawnThingOnRemoved>
     <modExtensions>
       <li Class="Grechka.Equipment.ImplantFamily">
@@ -713,21 +745,23 @@
     <label>чип «тонизатор» T4</label>
     <description>Мозговой имплант. Разные семейства совместимы; другой тир этого семейства заменяется с возвратом старого чипа.</description>
     <graphicData>
-      <texPath>Items/MythicBrainT4</texPath>
+      <texPath>Items/TonicChipT4</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <thingCategories>
       <li>BodyPartsBionic</li>
     </thingCategories>
     <statBases>
       <WorkToMake>18000</WorkToMake>
-      <MarketValue>4000</MarketValue>
+      <MarketValue>1000</MarketValue>
       <Mass>0.1</Mass>
     </statBases>
     <costList>
-      <Gold>10</Gold>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>5</Grechka_ArchoSubstrate>
+      <Gold>5</Gold>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -743,10 +777,12 @@
       </recipeUsers>
     </recipeMaker>
     <techLevel>Archotech</techLevel>
+    <uiIconPath>Items/TonicChipT4</uiIconPath>
   </ThingDef>
   <HediffDef ParentName="ImplantHediffBase">
     <defName>Grechka_TonicChipT4_Hediff</defName>
     <label>чип «тонизатор» T4</label>
+    <description>Снижает скорость наступления голода и расход отдыха на 50%. Разные семейства чипов совместимы; установка другого тира этого семейства возвращает прежний чип предметом.</description>
     <spawnThingOnRemoved>Grechka_TonicChipT4_Item</spawnThingOnRemoved>
     <modExtensions>
       <li Class="Grechka.Equipment.ImplantFamily">
@@ -800,21 +836,23 @@
     <label>чип «тонизатор» T5</label>
     <description>Мозговой имплант. Разные семейства совместимы; другой тир этого семейства заменяется с возвратом старого чипа.</description>
     <graphicData>
-      <texPath>Items/GrechkaBrainT5</texPath>
+      <texPath>Items/TonicChipT5</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <thingCategories>
       <li>BodyPartsBionic</li>
     </thingCategories>
     <statBases>
       <WorkToMake>18000</WorkToMake>
-      <MarketValue>12000</MarketValue>
+      <MarketValue>1800</MarketValue>
       <Mass>0.1</Mass>
     </statBases>
     <costList>
-      <Gold>10</Gold>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>5</Grechka_GrechkaConcentrate>
+      <Gold>5</Gold>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -830,10 +868,12 @@
       </recipeUsers>
     </recipeMaker>
     <techLevel>Archotech</techLevel>
+    <uiIconPath>Items/TonicChipT5</uiIconPath>
   </ThingDef>
   <HediffDef ParentName="ImplantHediffBase">
     <defName>Grechka_TonicChipT5_Hediff</defName>
     <label>чип «тонизатор» T5</label>
+    <description>Снижает скорость наступления голода и расход отдыха на 75%. Разные семейства чипов совместимы; установка другого тира этого семейства возвращает прежний чип предметом.</description>
     <spawnThingOnRemoved>Grechka_TonicChipT5_Item</spawnThingOnRemoved>
     <modExtensions>
       <li Class="Grechka.Equipment.ImplantFamily">
@@ -895,13 +935,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>18000</WorkToMake>
-      <MarketValue>12000</MarketValue>
+      <MarketValue>1800</MarketValue>
       <Mass>0.1</Mass>
     </statBases>
     <costList>
-      <Gold>10</Gold>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>5</Grechka_GrechkaConcentrate>
+      <Gold>5</Gold>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -921,6 +961,7 @@
   <HediffDef ParentName="ImplantHediffBase">
     <defName>Grechka_BrainChipT5_Hediff</defName>
     <label>чип «гречневый разум» T5</label>
+    <description>Повышает сознание на 100 процентных пунктов и даёт +16 к настроению, пока чип установлен. Разные семейства чипов совместимы; установка другого тира этого семейства возвращает прежний чип предметом.</description>
     <spawnThingOnRemoved>Grechka_BrainChipT5_Item</spawnThingOnRemoved>
     <modExtensions>
       <li Class="Grechka.Equipment.ImplantFamily">

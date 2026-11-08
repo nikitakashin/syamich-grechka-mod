@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ModMetaData>
+  <name>Grechka Pharmacy</name>
+  <author>Grechka World</author>
+  <packageId>grechka.pharmacy</packageId>
+  <supportedVersions>
+    <li>1.7</li>
+  </supportedVersions>
+  <modVersion>0.2.0</modVersion>
+  <description>12 препаратов T1–T5: полевая помощь, иммунитет, восстановление, лечение обычной зависимости, боевой и рабочий стимуляторы, удаление шрамов, восстановление конечности и омоложение. Три фармреактора T3–T5. Grechka Industry необязателен: при его наличии используются механиты, архо-субстрат, гречневый концентрат и корпуса. Требуется Harmony. Игровая приёмка и балансировка впереди. С Grechka Treasures и Grechka Tweaks доступны пять нейротренеров: один, два, три огня, розовый талант и фиолетовое призвание. Тренер навсегда меняет интерес случайного доступного навыка без огня.</description>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>grechka.industry</li>
+  </loadAfter>
+</ModMetaData>

@@ -7,6 +7,7 @@
     <graphicData>
       <texPath>Items/CertusQuartz</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,0.937452)</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>12</MarketValue>
@@ -48,7 +49,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_CertusSource</defName>
     <label>источник certus</label>
-    <description>Переносимый природный источник. Каждые шесть часов выращивает 4 кристалла. Каждый запитанный соседний ускоритель добавляет ещё одну базовую скорость, до четырёх ускорителей.</description>
+    <description>Переносимый природный источник с пятью стадиями роста. За шесть часов выращивает 4 кристалла, затем ждёт сбора пешкой с работой «Растениеводство». После сбора начинается новый цикл. Каждый запитанный соседний ускоритель добавляет ещё одну базовую скорость, до четырёх ускорителей. Источник можно убрать и перевезти без потери прогресса.</description>
     <thingClass>Building</thingClass>
     <size>(1,1)</size>
     <rotatable>false</rotatable>
@@ -57,6 +58,11 @@
     <passability>PassThroughOnly</passability>
     <fillPercent>0.5</fillPercent>
     <minifiedDef>MinifiedThing</minifiedDef>
+    <building>
+      <alwaysUninstallable>true</alwaysUninstallable>
+      <uninstallWork>600</uninstallWork>
+      <deconstructible>false</deconstructible>
+    </building>
     <thingCategories>
       <li>BuildingsProduction</li>
     </thingCategories>
@@ -97,11 +103,15 @@
       <Flammability>0</Flammability>
     </statBases>
     <costList>
-      <Steel>50</Steel>
-      <ComponentIndustrial>3</ComponentIndustrial>
-      <Grechka_QuartzProcessor>2</Grechka_QuartzProcessor>
+      <Steel>30</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+      <Grechka_QuartzProcessor>1</Grechka_QuartzProcessor>
     </costList>
     <comps>
+      <li Class="Grechka.Storage.CompProperties_StorageMachineArt">
+        <texture>Buildings/Map/States/CertusGrowthAccelerator/CertusGrowthAccelerator</texture>
+        <certusAccelerator>true</certusAccelerator>
+      </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>250</basePowerConsumption>
@@ -110,7 +120,7 @@
       <li Class="CompProperties_Flickable" />
     </comps>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <designationCategory>Grechka_StorageCategory</designationCategory>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
     <minifiedDef>MinifiedThing</minifiedDef>
     <thingCategories>
       <li>BuildingsProduction</li>

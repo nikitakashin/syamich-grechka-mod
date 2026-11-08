@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedStorageDevice</defName>
@@ -32,11 +32,11 @@
       <Flammability>0</Flammability>
     </statBases>
     <costList>
-      <Steel>120</Steel>
-      <ComponentSpacer>4</ComponentSpacer>
-      <Grechka_QuartzProcessor>4</Grechka_QuartzProcessor>
-      <Grechka_SilverProcessor>2</Grechka_SilverProcessor>
-      <Grechka_GoldProcessor>2</Grechka_GoldProcessor>
+      <Steel>60</Steel>
+      <ComponentSpacer>1</ComponentSpacer>
+      <Grechka_QuartzProcessor>2</Grechka_QuartzProcessor>
+      <Grechka_SilverProcessor>1</Grechka_SilverProcessor>
+      <Grechka_GoldProcessor>1</Grechka_GoldProcessor>
     </costList>
     <comps>
       <li Class="CompProperties_Power">
@@ -46,7 +46,7 @@
       </li>
     </comps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <designationCategory>Grechka_StorageCategory</designationCategory>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
     <uiOrder>11</uiOrder>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <constructEffect>ConstructMetal</constructEffect>

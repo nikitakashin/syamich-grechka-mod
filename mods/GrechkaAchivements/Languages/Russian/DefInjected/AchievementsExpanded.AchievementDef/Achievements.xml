@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaAchivements_Workbench.label>Завод на троих</GrechkaAchivements_Workbench.label>
+  <GrechkaAchivements_Workbench.description>Постройте базовый сборочный верстак T1.</GrechkaAchivements_Workbench.description>
+  <GrechkaAchivements_Housing.label>Всё поместится</GrechkaAchivements_Housing.label>
+  <GrechkaAchivements_Housing.description>Изготовьте продвинутый корпус T2.</GrechkaAchivements_Housing.description>
+  <GrechkaAchivements_Mechanites.label>Карманный рой</GrechkaAchivements_Mechanites.label>
+  <GrechkaAchivements_Mechanites.description>Накопите 100 механитов.</GrechkaAchivements_Mechanites.description>
+  <GrechkaAchivements_Matter.label>Вещество без формы</GrechkaAchivements_Matter.label>
+  <GrechkaAchivements_Matter.description>Накопите 100 единиц материи.</GrechkaAchivements_Matter.description>
+  <GrechkaAchivements_Controller.label>Есть контакт</GrechkaAchivements_Controller.label>
+  <GrechkaAchivements_Controller.description>Постройте контроллер сети Storage.</GrechkaAchivements_Controller.description>
+  <GrechkaAchivements_FirstDisk.label>Сохранить как…</GrechkaAchivements_FirstDisk.label>
+  <GrechkaAchivements_FirstDisk.description>Изготовьте диск хранения 1K.</GrechkaAchivements_FirstDisk.description>
+  <GrechkaAchivements_Certus.label>Кристальный запас</GrechkaAchivements_Certus.label>
+  <GrechkaAchivements_Certus.description>Накопите 64 единицы certus-кварца.</GrechkaAchivements_Certus.description>
+  <GrechkaAchivements_Archive.label>Архив планеты</GrechkaAchivements_Archive.label>
+  <GrechkaAchivements_Archive.description>Получите диск хранения 256M.</GrechkaAchivements_Archive.description>
+  <GrechkaAchivements_Rescue.label>Дежурная смена</GrechkaAchivements_Rescue.label>
+  <GrechkaAchivements_Rescue.description>Установите док дрона-МЧСника T1.</GrechkaAchivements_Rescue.description>
+  <GrechkaAchivements_Guard.label>Пятый на страже</GrechkaAchivements_Guard.label>
+  <GrechkaAchivements_Guard.description>Установите док дрона-воина T5.</GrechkaAchivements_Guard.description>
+  <GrechkaAchivements_Blizzard.label>Прогноз на вечер</GrechkaAchivements_Blizzard.label>
+  <GrechkaAchivements_Blizzard.description>Изготовьте криовинтовку «Метель».</GrechkaAchivements_Blizzard.description>
+  <GrechkaAchivements_Heart.label>Гречка в крови</GrechkaAchivements_Heart.label>
+  <GrechkaAchivements_Heart.description>Установите пешке гречневое бионическое сердце T5.</GrechkaAchivements_Heart.description>
+  <GrechkaAchivements_Lucky.label>Что в коробке?</GrechkaAchivements_Lucky.label>
+  <GrechkaAchivements_Lucky.description>Полностью откройте любой лаки-блок Grechka.</GrechkaAchivements_Lucky.description>
+  <GrechkaAchivements_Chaos.label>Крышку держи крепче</GrechkaAchivements_Chaos.label>
+  <GrechkaAchivements_Chaos.description>Полностью откройте лаки-блок «Хаос» T5.</GrechkaAchivements_Chaos.description>
+  <GrechkaAchivements_Rice.label>Весенняя посевная</GrechkaAchivements_Rice.label>
+  <GrechkaAchivements_Rice.description>Посейте рис на покрытии «Ферма» в своём поселении.</GrechkaAchivements_Rice.description>
+  <GrechkaAchivements_Reward.label>Под расписку</GrechkaAchivements_Reward.label>
+  <GrechkaAchivements_Reward.description>Заберите награду за любое задание в активной книге Grechka Quests.</GrechkaAchivements_Reward.description>
+  <GrechkaAchivements_Mechanites5.label>Рой в пробирке · 5</GrechkaAchivements_Mechanites5.label>
+  <GrechkaAchivements_Mechanites5.description>Произведите 5 механитов.</GrechkaAchivements_Mechanites5.description>
+  <GrechkaAchivements_Mechanites25.label>Рой в пробирке · 25</GrechkaAchivements_Mechanites25.label>
+  <GrechkaAchivements_Mechanites25.description>Произведите 25 механитов.</GrechkaAchivements_Mechanites25.description>
+  <GrechkaAchivements_Mechanites50.label>Рой в пробирке · 50</GrechkaAchivements_Mechanites50.label>
+  <GrechkaAchivements_Mechanites50.description>Произведите 50 механитов.</GrechkaAchivements_Mechanites50.description>
+  <GrechkaAchivements_Mechanites100.label>Рой в пробирке · 100</GrechkaAchivements_Mechanites100.label>
+  <GrechkaAchivements_Mechanites100.description>Произведите 100 механитов.</GrechkaAchivements_Mechanites100.description>
+  <GrechkaAchivements_Mechanites500.label>Рой в пробирке · 500</GrechkaAchivements_Mechanites500.label>
+  <GrechkaAchivements_Mechanites500.description>Произведите 500 механитов.</GrechkaAchivements_Mechanites500.description>
+  <GrechkaAchivements_Mechanites1000.label>Рой в пробирке · 1000</GrechkaAchivements_Mechanites1000.label>
+  <GrechkaAchivements_Mechanites1000.description>Произведите 1000 механитов.</GrechkaAchivements_Mechanites1000.description>
+  <GrechkaAchivements_Silicon5.label>Кремниевая плавка · 5</GrechkaAchivements_Silicon5.label>
+  <GrechkaAchivements_Silicon5.description>Выплавьте 5 единиц кремния.</GrechkaAchivements_Silicon5.description>
+  <GrechkaAchivements_Silicon25.label>Кремниевая плавка · 25</GrechkaAchivements_Silicon25.label>
+  <GrechkaAchivements_Silicon25.description>Выплавьте 25 единиц кремния.</GrechkaAchivements_Silicon25.description>
+  <GrechkaAchivements_Silicon50.label>Кремниевая плавка · 50</GrechkaAchivements_Silicon50.label>
+  <GrechkaAchivements_Silicon50.description>Выплавьте 50 единиц кремния.</GrechkaAchivements_Silicon50.description>
+  <GrechkaAchivements_Silicon100.label>Кремниевая плавка · 100</GrechkaAchivements_Silicon100.label>
+  <GrechkaAchivements_Silicon100.description>Выплавьте 100 единиц кремния.</GrechkaAchivements_Silicon100.description>
+  <GrechkaAchivements_Silicon500.label>Кремниевая плавка · 500</GrechkaAchivements_Silicon500.label>
+  <GrechkaAchivements_Silicon500.description>Выплавьте 500 единиц кремния.</GrechkaAchivements_Silicon500.description>
+  <GrechkaAchivements_Silicon1000.label>Кремниевая плавка · 1000</GrechkaAchivements_Silicon1000.label>
+  <GrechkaAchivements_Silicon1000.description>Выплавьте 1000 единиц кремния.</GrechkaAchivements_Silicon1000.description>
+  <GrechkaAchivements_Processors5.label>Микроэлектроника · 5</GrechkaAchivements_Processors5.label>
+  <GrechkaAchivements_Processors5.description>Соберите 5 процессоров Storage. Кварцевые, серебряные и золотые считаются вместе.</GrechkaAchivements_Processors5.description>
+  <GrechkaAchivements_Processors25.label>Микроэлектроника · 25</GrechkaAchivements_Processors25.label>
+  <GrechkaAchivements_Processors25.description>Соберите 25 процессоров Storage. Кварцевые, серебряные и золотые считаются вместе.</GrechkaAchivements_Processors25.description>
+  <GrechkaAchivements_Processors50.label>Микроэлектроника · 50</GrechkaAchivements_Processors50.label>
+  <GrechkaAchivements_Processors50.description>Соберите 50 процессоров Storage. Кварцевые, серебряные и золотые считаются вместе.</GrechkaAchivements_Processors50.description>
+  <GrechkaAchivements_Processors100.label>Микроэлектроника · 100</GrechkaAchivements_Processors100.label>
+  <GrechkaAchivements_Processors100.description>Соберите 100 процессоров Storage. Кварцевые, серебряные и золотые считаются вместе.</GrechkaAchivements_Processors100.description>
+  <GrechkaAchivements_Blocks5.label>Вскрытие покажет · 5</GrechkaAchivements_Blocks5.label>
+  <GrechkaAchivements_Blocks5.description>Полностью откройте 5 лаки-блоков Grechka любых типов и тиров.</GrechkaAchivements_Blocks5.description>
+  <GrechkaAchivements_Blocks25.label>Вскрытие покажет · 25</GrechkaAchivements_Blocks25.label>
+  <GrechkaAchivements_Blocks25.description>Полностью откройте 25 лаки-блоков Grechka любых типов и тиров.</GrechkaAchivements_Blocks25.description>
+  <GrechkaAchivements_Blocks50.label>Вскрытие покажет · 50</GrechkaAchivements_Blocks50.label>
+  <GrechkaAchivements_Blocks50.description>Полностью откройте 50 лаки-блоков Grechka любых типов и тиров.</GrechkaAchivements_Blocks50.description>
+  <GrechkaAchivements_Quests5.label>Книга дел · 5</GrechkaAchivements_Quests5.label>
+  <GrechkaAchivements_Quests5.description>Заберите награды за 5 разных заданий Grechka Quests в этой колонии.</GrechkaAchivements_Quests5.description>
+  <GrechkaAchivements_Quests25.label>Книга дел · 25</GrechkaAchivements_Quests25.label>
+  <GrechkaAchivements_Quests25.description>Заберите награды за 25 разных заданий Grechka Quests в этой колонии.</GrechkaAchivements_Quests25.description>
+  <GrechkaAchivements_Quests50.label>Книга дел · 50</GrechkaAchivements_Quests50.label>
+  <GrechkaAchivements_Quests50.description>Заберите награды за 50 разных заданий Grechka Quests в этой колонии.</GrechkaAchivements_Quests50.description>
+  <GrechkaAchivements_Quests100.label>Книга дел · 100</GrechkaAchivements_Quests100.label>
+  <GrechkaAchivements_Quests100.description>Заберите награды за 100 разных заданий Grechka Quests в этой колонии.</GrechkaAchivements_Quests100.description>
+  <GrechkaAchivements_Housings5.label>Корпусный цех · 5</GrechkaAchivements_Housings5.label>
+  <GrechkaAchivements_Housings5.description>Изготовьте 5 промышленных корпусов. Все пять тиров считаются вместе.</GrechkaAchivements_Housings5.description>
+  <GrechkaAchivements_Housings25.label>Корпусный цех · 25</GrechkaAchivements_Housings25.label>
+  <GrechkaAchivements_Housings25.description>Изготовьте 25 промышленных корпусов. Все пять тиров считаются вместе.</GrechkaAchivements_Housings25.description>
+  <GrechkaAchivements_Housings50.label>Корпусный цех · 50</GrechkaAchivements_Housings50.label>
+  <GrechkaAchivements_Housings50.description>Изготовьте 50 промышленных корпусов. Все пять тиров считаются вместе.</GrechkaAchivements_Housings50.description>
+</LanguageData>

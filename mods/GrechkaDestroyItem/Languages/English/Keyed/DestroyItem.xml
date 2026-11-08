@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaDestroy_Order>Destroy</GrechkaDestroy_Order>
+  <GrechkaDestroy_OrderDesc>Order a pawn to disintegrate this entire item stack or corpse in 2 seconds. Nothing is recovered, including equipment on a corpse and the contents of packed items. The worker suffers −3 mood for 6 hours; repeating the task refreshes this penalty without stacking it.</GrechkaDestroy_OrderDesc>
+  <GrechkaDestroy_Cancel>Cancel destroy</GrechkaDestroy_Cancel>
+  <GrechkaDestroy_CancelDesc>Cancel disintegration. The item remains intact until a pawn completes the task.</GrechkaDestroy_CancelDesc>
+  <GrechkaDestroy_Prioritize>Disintegrate {0}</GrechkaDestroy_Prioritize>
+  <GrechkaDestroy_Unavailable>cannot reach or reserve target</GrechkaDestroy_Unavailable>
+</LanguageData>

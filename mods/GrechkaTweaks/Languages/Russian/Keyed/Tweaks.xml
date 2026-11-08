@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaTweaks_Grade0>Антисклонность</GrechkaTweaks_Grade0>
+  <GrechkaTweaks_Grade1>Без интереса</GrechkaTweaks_Grade1>
+  <GrechkaTweaks_Grade2>Интерес</GrechkaTweaks_Grade2>
+  <GrechkaTweaks_Grade3>Страсть</GrechkaTweaks_Grade3>
+  <GrechkaTweaks_Grade4>Сильная страсть</GrechkaTweaks_Grade4>
+  <GrechkaTweaks_Grade5>Талант</GrechkaTweaks_Grade5>
+  <GrechkaTweaks_Grade6>Призвание</GrechkaTweaks_Grade6>
+  <GrechkaTweaks_Training>Выученный уровень {0}, врождённая поправка {1}</GrechkaTweaks_Training>
+  <GrechkaTweaks_Rate>{0} ×{1}. Текущая скорость обучения {2}.</GrechkaTweaks_Rate>
+  <GrechkaTweaks_Max>Достигнут {0}-й уровень</GrechkaTweaks_Max>
+  <GrechkaTweaks_Experience>{0} / {1} опыта</GrechkaTweaks_Experience>
+  <GrechkaTweaks_Team>Лучший уровень — {0}. Наибольший интерес — {1} ({2}).</GrechkaTweaks_Team>
+  <GrechkaTweaks_StackSize>Размер стопки</GrechkaTweaks_StackSize>
+  <GrechkaTweaks_StackHelp>Для складируемых предметов. Диапазон {0}–{1}. Новое значение применяется при закрытии настроек. Уже собранные большие стопки сохраняют своё количество.</GrechkaTweaks_StackHelp>
+  <GrechkaTweaks_ResetStack>Вернуть {0}</GrechkaTweaks_ResetStack>
+  <GrechkaTweaks_TrainerInvalidPawn>Тренер подходит только живой пешке с человеческими навыками.</GrechkaTweaks_TrainerInvalidPawn>
+  <GrechkaTweaks_TrainerNoSkill>Нет доступных навыков без интереса.</GrechkaTweaks_TrainerNoSkill>
+  <GrechkaTweaks_TrainerApplied>{0}: навык «{1}» получает интерес «{2}».</GrechkaTweaks_TrainerApplied>
+  <GrechkaTweaks_MufflerRadius>Радиус: {0} кл.</GrechkaTweaks_MufflerRadius>
+  <GrechkaTweaks_MufflerRadiusHelp>Выбрать радиус подавления от {0} до {1} клеток. Зона действует через стены и глушит все звуки с источником внутри неё.</GrechkaTweaks_MufflerRadiusHelp>
+  <GrechkaTweaks_MufflerActive>Подавление звука включено</GrechkaTweaks_MufflerActive>
+  <GrechkaTweaks_MufflerInactive>Подавление звука выключено</GrechkaTweaks_MufflerInactive>
+</LanguageData>

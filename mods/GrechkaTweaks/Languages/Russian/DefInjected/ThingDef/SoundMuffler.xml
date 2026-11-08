@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Grechka_SoundMuffler_Building.label>глушитель звука</Grechka_SoundMuffler_Building.label>
+  <Grechka_SoundMuffler_Building.description>Подавляет звуки всех источников на карте в выбранном радиусе: шум машин, выстрелы, шаги, голоса и другие местные эффекты. Действует через стены. Радиус настраивается отдельно у каждого устройства от 1 до 30 клеток, по умолчанию 12. Требует 50 Вт; при отключении питания, выключении или поломке звуки возвращаются. Музыка, интерфейс и звуки без источника на карте сохраняются.</Grechka_SoundMuffler_Building.description>
+</LanguageData>

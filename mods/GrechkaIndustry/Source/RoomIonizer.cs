@@ -17,7 +17,7 @@ namespace Grechka.Industry
         {
             foreach (string error in base.ConfigErrors(parentDef)) yield return error;
             if (cleaningLayersPerCycle <= 0 || cleaningLayersPerCycle > 256)
-                yield return "Ionizer cleaning budget must be between 1 and 256 layers per cycle.";
+                yield return IndustryText.Get("GrechkaIndustry_IonizerBudget", "Ionizer cleaning budget must be between 1 and 256 layers per cycle.");
         }
     }
 
@@ -56,10 +56,10 @@ namespace Grechka.Industry
 
         public override string CompInspectStringExtra()
         {
-            if (!Powered) return "Ионизатор: выключен или нет питания";
+            if (!Powered) return IndustryText.Get("GrechkaIndustry_eddf53e5a2fb", "Ionizer is switched off or unpowered");
             Room room = parent.GetRoom();
-            return IonizerMap.EligibleRoom(room) ? "Освещает и очищает всю комнату: " + room.CellCount + " клеток"
-                : "Ионизатору нужна закрытая комната";
+            return IonizerMap.EligibleRoom(room) ? IndustryText.Get("GrechkaIndustry_1eea1717956d", "Lighting and cleaning the entire room. Cells covered: ") + room.CellCount + IndustryText.Get("GrechkaIndustry_eff4f301fa12", " cells")
+                : IndustryText.Get("GrechkaIndustry_4c39231095b5", "The ionizer requires an enclosed room");
         }
     }
 

@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Grechka_DroneFoam.reportString>Extinguishing fire with foam.</Grechka_DroneFoam.reportString>
+  <Grechka_DroneRetreat.reportString>Returning to its dock.</Grechka_DroneRetreat.reportString>
+  <Grechka_DroneRescueFloor.reportString>Carrying TargetA to safety.</Grechka_DroneRescueFloor.reportString>
+</LanguageData>

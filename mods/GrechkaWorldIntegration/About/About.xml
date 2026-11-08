@@ -4,10 +4,10 @@
   <author>Grechka World</author>
   <packageId>grechka.world.integration</packageId>
   <supportedVersions><li>1.7</li></supportedVersions>
-  <description>Явно включаемые правила сборки Grechka World. В новой игре завершает все исследования базовой игры, DLC и установленных модов и скрывает стандартную вкладку исследований. Корпуса, тиры станков и словарь эквивалентных материалов применяются по явному каталогу. В старом сохранении правила применяются только вручную с резервной копией.</description>
+  <description>Правила сборки Grechka World. В настройках можно включить ванильную прогрессию исследований: обычная вкладка игры и отдельное дерево Grechka для промышленности, энергетики, хранения, оснащения и дронов. По умолчанию в новой игре все исследования завершены и вкладка скрыта. Уже изученное не сбрасывается. Корпуса, тиры станков и словарь материалов применяются по явному каталогу; в старом сохранении — вручную с резервной копией.</description>
   <modDependencies>
     <li><packageId>brrainz.harmony</packageId><displayName>Harmony</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl></li>
   </modDependencies>
-  <loadAfter><li>brrainz.harmony</li><li>grechka.industry</li><li>grechka.storage</li><li>grechka.equipment</li></loadAfter>
+  <loadAfter><li>brrainz.harmony</li><li>grechka.industry</li><li>grechka.storage</li><li>grechka.equipment</li><li>grechka.drones</li><li>grechka.pharmacy</li><li>alaestor.miscrobots.plusplus</li></loadAfter>
   <modVersion>0.1.0</modVersion>
 </ModMetaData>

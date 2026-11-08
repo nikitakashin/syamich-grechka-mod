@@ -1,0 +1,578 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <PawnKindDef ParentName="VillagerBase">
+    <defName>GrechkaPawn_Mills_Worker</defName>
+    <label>работник — Союз семи мельниц</label>
+    <defaultFactionDef>GrechkaFaction_Mills</defaultFactionDef>
+    <combatPower>65</combatPower>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <techHediffsChance>0</techHediffsChance>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <apparelColor>(0.65, 0.48, 0.20)</apparelColor>
+    <modExtensions>
+      <li Class="Grechka.Factions.MemberProfile">
+        <group>Mills</group>
+        <implantCount>1</implantCount>
+        <specialties>
+          <li>Crafting</li>
+          <li>Construction</li>
+        </specialties>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+  <PawnKindDef ParentName="GuardBase">
+    <defName>GrechkaPawn_Mills_Guard</defName>
+    <label>охранник — Союз семи мельниц</label>
+    <defaultFactionDef>GrechkaFaction_Mills</defaultFactionDef>
+    <combatPower>95</combatPower>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <techHediffsChance>0</techHediffsChance>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <apparelColor>(0.65, 0.48, 0.20)</apparelColor>
+    <modExtensions>
+      <li Class="Grechka.Factions.MemberProfile">
+        <group>Mills</group>
+        <implantCount>1</implantCount>
+        <specialties>
+          <li>Shooting</li>
+          <li>Melee</li>
+        </specialties>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+  <PawnKindDef ParentName="GuardBase">
+    <defName>GrechkaPawn_Mills_Master</defName>
+    <label>мастер — Союз семи мельниц</label>
+    <defaultFactionDef>GrechkaFaction_Mills</defaultFactionDef>
+    <combatPower>110</combatPower>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <techHediffsChance>0</techHediffsChance>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <apparelColor>(0.65, 0.48, 0.20)</apparelColor>
+    <modExtensions>
+      <li Class="Grechka.Factions.MemberProfile">
+        <group>Mills</group>
+        <implantCount>2</implantCount>
+        <specialties>
+          <li>Crafting</li>
+          <li>Construction</li>
+        </specialties>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+  <PawnKindDef ParentName="CouncilmanBase">
+    <defName>GrechkaPawn_Mills_Leader</defName>
+    <label>бригадир — Союз семи мельниц</label>
+    <defaultFactionDef>GrechkaFaction_Mills</defaultFactionDef>
+    <combatPower>120</combatPower>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <techHediffsChance>0</techHediffsChance>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <apparelColor>(0.65, 0.48, 0.20)</apparelColor>
+    <modExtensions>
+      <li Class="Grechka.Factions.MemberProfile">
+        <group>Mills</group>
+        <implantCount>3</implantCount>
+        <specialties>
+          <li>Social</li>
+          <li>Construction</li>
+        </specialties>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+  <PawnKindDef ParentName="TraderBase">
+    <defName>GrechkaPawn_Mills_Trader</defName>
+    <label>торговец — Союз семи мельниц</label>
+    <defaultFactionDef>GrechkaFaction_Mills</defaultFactionDef>
+    <combatPower>65</combatPower>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <techHediffsChance>0</techHediffsChance>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <apparelColor>(0.65, 0.48, 0.20)</apparelColor>
+    <modExtensions>
+      <li Class="Grechka.Factions.MemberProfile">
+        <group>Mills</group>
+        <implantCount>1</implantCount>
+        <specialties>
+          <li>Social</li>
+          <li>Crafting</li>
+        </specialties>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+  <PawnKindDef ParentName="VillagerBase">
+    <defName>GrechkaPawn_Rescue_Worker</defName>
+    <label>работник — Нулевая смена</label>
+    <defaultFactionDef>GrechkaFaction_Rescue</defaultFactionDef>
+    <combatPower>65</combatPower>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <techHediffsChance>0</techHediffsChance>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <apparelColor>(0.95, 0.38, 0.12)</apparelColor>
+    <modExtensions>
+      <li Class="Grechka.Factions.MemberProfile">
+        <group>Rescue</group>
+        <implantCount>1</implantCount>
+        <specialties>
+          <li>Crafting</li>
+          <li>Construction</li>
+        </specialties>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+  <PawnKindDef ParentName="GuardBase">
+    <defName>GrechkaPawn_Rescue_Guard</defName>
+    <label>охранник — Нулевая смена</label>
+    <defaultFactionDef>GrechkaFaction_Rescue</defaultFactionDef>
+    <combatPower>95</combatPower>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <techHediffsChance>0</techHediffsChance>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <apparelColor>(0.95, 0.38, 0.12)</apparelColor>
+    <modExtensions>
+      <li Class="Grechka.Factions.MemberProfile">
+        <group>Rescue</group>
+        <implantCount>1</implantCount>
+        <specialties>
+          <li>Shooting</li>
+          <li>Melee</li>
+        </specialties>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+  <PawnKindDef ParentName="GuardBase">
+    <defName>GrechkaPawn_Rescue_Master</defName>
+    <label>мастер — Нулевая смена</label>
+    <defaultFactionDef>GrechkaFaction_Rescue</defaultFactionDef>
+    <combatPower>110</combatPower>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <techHediffsChance>0</techHediffsChance>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <apparelColor>(0.95, 0.38, 0.12)</apparelColor>
+    <modExtensions>
+      <li Class="Grechka.Factions.MemberProfile">
+        <group>Rescue</group>
+        <implantCount>2</implantCount>
+        <specialties>
+          <li>Crafting</li>
+          <li>Construction</li>
+        </specialties>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+  <PawnKindDef ParentName="CouncilmanBase">
+    <defName>GrechkaPawn_Rescue_Leader</defName>
+    <label>бригадир — Нулевая смена</label>
+    <defaultFactionDef>GrechkaFaction_Rescue</defaultFactionDef>
+    <combatPower>120</combatPower>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <techHediffsChance>0</techHediffsChance>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <apparelColor>(0.95, 0.38, 0.12)</apparelColor>
+    <modExtensions>
+      <li Class="Grechka.Factions.MemberProfile">
+        <group>Rescue</group>
+        <implantCount>3</implantCount>
+        <specialties>
+          <li>Social</li>
+          <li>Construction</li>
+        </specialties>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+  <PawnKindDef ParentName="TraderBase">
+    <defName>GrechkaPawn_Rescue_Trader</defName>
+    <label>торговец — Нулевая смена</label>
+    <defaultFactionDef>GrechkaFaction_Rescue</defaultFactionDef>
+    <combatPower>65</combatPower>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <techHediffsChance>0</techHediffsChance>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <apparelColor>(0.95, 0.38, 0.12)</apparelColor>
+    <modExtensions>
+      <li Class="Grechka.Factions.MemberProfile">
+        <group>Rescue</group>
+        <implantCount>1</implantCount>
+        <specialties>
+          <li>Social</li>
+          <li>Crafting</li>
+        </specialties>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+  <PawnKindDef ParentName="VillagerBase">
+    <defName>GrechkaPawn_Artel_Worker</defName>
+    <label>работник — Артель последней гайки</label>
+    <defaultFactionDef>GrechkaFaction_Artel</defaultFactionDef>
+    <combatPower>400</combatPower>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <techHediffsChance>0</techHediffsChance>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <apparelColor>(0.20, 0.65, 0.62)</apparelColor>
+    <requiredWorkTags>AllWork</requiredWorkTags>
+    <modExtensions>
+      <li Class="Grechka.Factions.MemberProfile">
+        <group>Artel</group>
+        <implantCount>1</implantCount>
+        <specialties>
+          <li>Crafting</li>
+          <li>Construction</li>
+        </specialties>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+  <PawnKindDef ParentName="GuardBase">
+    <defName>GrechkaPawn_Artel_Guard</defName>
+    <label>охранник — Артель последней гайки</label>
+    <defaultFactionDef>GrechkaFaction_Artel</defaultFactionDef>
+    <combatPower>600</combatPower>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <techHediffsChance>0</techHediffsChance>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <apparelColor>(0.20, 0.65, 0.62)</apparelColor>
+    <requiredWorkTags>AllWork</requiredWorkTags>
+    <modExtensions>
+      <li Class="Grechka.Factions.MemberProfile">
+        <group>Artel</group>
+        <implantCount>1</implantCount>
+        <specialties>
+          <li>Shooting</li>
+          <li>Melee</li>
+        </specialties>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+  <PawnKindDef ParentName="GuardBase">
+    <defName>GrechkaPawn_Artel_Master</defName>
+    <label>мастер — Артель последней гайки</label>
+    <defaultFactionDef>GrechkaFaction_Artel</defaultFactionDef>
+    <combatPower>750</combatPower>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <techHediffsChance>0</techHediffsChance>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <apparelColor>(0.20, 0.65, 0.62)</apparelColor>
+    <requiredWorkTags>AllWork</requiredWorkTags>
+    <modExtensions>
+      <li Class="Grechka.Factions.MemberProfile">
+        <group>Artel</group>
+        <implantCount>2</implantCount>
+        <specialties>
+          <li>Crafting</li>
+          <li>Construction</li>
+        </specialties>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+  <PawnKindDef ParentName="CouncilmanBase">
+    <defName>GrechkaPawn_Artel_Leader</defName>
+    <label>бригадир — Артель последней гайки</label>
+    <defaultFactionDef>GrechkaFaction_Artel</defaultFactionDef>
+    <combatPower>1000</combatPower>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <techHediffsChance>0</techHediffsChance>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <apparelColor>(0.20, 0.65, 0.62)</apparelColor>
+    <requiredWorkTags>AllWork</requiredWorkTags>
+    <modExtensions>
+      <li Class="Grechka.Factions.MemberProfile">
+        <group>Artel</group>
+        <implantCount>3</implantCount>
+        <specialties>
+          <li>Social</li>
+          <li>Construction</li>
+        </specialties>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+  <PawnKindDef ParentName="TraderBase">
+    <defName>GrechkaPawn_Artel_Trader</defName>
+    <label>торговец — Артель последней гайки</label>
+    <defaultFactionDef>GrechkaFaction_Artel</defaultFactionDef>
+    <combatPower>400</combatPower>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <techHediffsChance>0</techHediffsChance>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <apparelColor>(0.20, 0.65, 0.62)</apparelColor>
+    <requiredWorkTags>AllWork</requiredWorkTags>
+    <modExtensions>
+      <li Class="Grechka.Factions.MemberProfile">
+        <group>Artel</group>
+        <implantCount>1</implantCount>
+        <specialties>
+          <li>Social</li>
+          <li>Crafting</li>
+        </specialties>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+  <PawnKindDef ParentName="VillagerBase">
+    <defName>GrechkaPawn_Bare_Worker</defName>
+    <label>работник — Босая сотня</label>
+    <defaultFactionDef>GrechkaFaction_Bare</defaultFactionDef>
+    <combatPower>65</combatPower>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <techHediffsChance>0</techHediffsChance>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <apparelColor>(0.75, 0.15, 0.20)</apparelColor>
+    <nakedChance>1</nakedChance>
+    <apparelRequired Inherit="False" />
+    <apparelMoney>0~0</apparelMoney>
+    <apparelTags Inherit="False" />
+    <weaponTags Inherit="False">
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+    <weaponMoney>500~1500</weaponMoney>
+    <isFighter>true</isFighter>
+    <modExtensions>
+      <li Class="Grechka.Factions.MemberProfile">
+        <group>Bare</group>
+        <implantCount>1</implantCount>
+        <specialties>
+          <li>Crafting</li>
+          <li>Construction</li>
+        </specialties>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+  <PawnKindDef ParentName="GuardBase">
+    <defName>GrechkaPawn_Bare_Guard</defName>
+    <label>охранник — Босая сотня</label>
+    <defaultFactionDef>GrechkaFaction_Bare</defaultFactionDef>
+    <combatPower>180</combatPower>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <techHediffsChance>0</techHediffsChance>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <apparelColor>(0.75, 0.15, 0.20)</apparelColor>
+    <nakedChance>1</nakedChance>
+    <apparelRequired Inherit="False" />
+    <apparelMoney>0~0</apparelMoney>
+    <apparelTags Inherit="False" />
+    <weaponTags Inherit="False">
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+    <weaponMoney>500~1500</weaponMoney>
+    <isFighter>true</isFighter>
+    <modExtensions>
+      <li Class="Grechka.Factions.MemberProfile">
+        <group>Bare</group>
+        <implantCount>1</implantCount>
+        <specialties>
+          <li>Shooting</li>
+          <li>Melee</li>
+        </specialties>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+  <PawnKindDef ParentName="GuardBase">
+    <defName>GrechkaPawn_Bare_Master</defName>
+    <label>мастер — Босая сотня</label>
+    <defaultFactionDef>GrechkaFaction_Bare</defaultFactionDef>
+    <combatPower>220</combatPower>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <techHediffsChance>0</techHediffsChance>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <apparelColor>(0.75, 0.15, 0.20)</apparelColor>
+    <nakedChance>1</nakedChance>
+    <apparelRequired Inherit="False" />
+    <apparelMoney>0~0</apparelMoney>
+    <apparelTags Inherit="False" />
+    <weaponTags Inherit="False">
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+    <weaponMoney>500~1500</weaponMoney>
+    <isFighter>true</isFighter>
+    <modExtensions>
+      <li Class="Grechka.Factions.MemberProfile">
+        <group>Bare</group>
+        <implantCount>2</implantCount>
+        <specialties>
+          <li>Crafting</li>
+          <li>Construction</li>
+        </specialties>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+  <PawnKindDef ParentName="CouncilmanBase">
+    <defName>GrechkaPawn_Bare_Leader</defName>
+    <label>бригадир — Босая сотня</label>
+    <defaultFactionDef>GrechkaFaction_Bare</defaultFactionDef>
+    <combatPower>260</combatPower>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <techHediffsChance>0</techHediffsChance>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <apparelColor>(0.75, 0.15, 0.20)</apparelColor>
+    <nakedChance>1</nakedChance>
+    <apparelRequired Inherit="False" />
+    <apparelMoney>0~0</apparelMoney>
+    <apparelTags Inherit="False" />
+    <weaponTags Inherit="False">
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+    <weaponMoney>500~1500</weaponMoney>
+    <isFighter>true</isFighter>
+    <modExtensions>
+      <li Class="Grechka.Factions.MemberProfile">
+        <group>Bare</group>
+        <implantCount>3</implantCount>
+        <specialties>
+          <li>Social</li>
+          <li>Construction</li>
+        </specialties>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+  <PawnKindDef ParentName="TraderBase">
+    <defName>GrechkaPawn_Bare_Trader</defName>
+    <label>торговец — Босая сотня</label>
+    <defaultFactionDef>GrechkaFaction_Bare</defaultFactionDef>
+    <combatPower>65</combatPower>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <techHediffsChance>0</techHediffsChance>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <apparelColor>(0.75, 0.15, 0.20)</apparelColor>
+    <nakedChance>1</nakedChance>
+    <apparelRequired Inherit="False" />
+    <apparelMoney>0~0</apparelMoney>
+    <apparelTags Inherit="False" />
+    <weaponTags Inherit="False">
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+    <weaponMoney>500~1500</weaponMoney>
+    <isFighter>true</isFighter>
+    <modExtensions>
+      <li Class="Grechka.Factions.MemberProfile">
+        <group>Bare</group>
+        <implantCount>1</implantCount>
+        <specialties>
+          <li>Social</li>
+          <li>Crafting</li>
+        </specialties>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+  <PawnKindDef ParentName="VillagerBase">
+    <defName>GrechkaPawn_Post_Worker</defName>
+    <label>работник — Бюро невскрытых посылок</label>
+    <defaultFactionDef>GrechkaFaction_Post</defaultFactionDef>
+    <combatPower>65</combatPower>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <techHediffsChance>0</techHediffsChance>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <apparelColor>(0.40, 0.35, 0.75)</apparelColor>
+    <modExtensions>
+      <li Class="Grechka.Factions.MemberProfile">
+        <group>Post</group>
+        <implantCount>1</implantCount>
+        <specialties>
+          <li>Crafting</li>
+          <li>Construction</li>
+        </specialties>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+  <PawnKindDef ParentName="GuardBase">
+    <defName>GrechkaPawn_Post_Guard</defName>
+    <label>охранник — Бюро невскрытых посылок</label>
+    <defaultFactionDef>GrechkaFaction_Post</defaultFactionDef>
+    <combatPower>95</combatPower>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <techHediffsChance>0</techHediffsChance>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <apparelColor>(0.40, 0.35, 0.75)</apparelColor>
+    <modExtensions>
+      <li Class="Grechka.Factions.MemberProfile">
+        <group>Post</group>
+        <implantCount>1</implantCount>
+        <specialties>
+          <li>Shooting</li>
+          <li>Melee</li>
+        </specialties>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+  <PawnKindDef ParentName="GuardBase">
+    <defName>GrechkaPawn_Post_Master</defName>
+    <label>мастер — Бюро невскрытых посылок</label>
+    <defaultFactionDef>GrechkaFaction_Post</defaultFactionDef>
+    <combatPower>110</combatPower>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <techHediffsChance>0</techHediffsChance>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <apparelColor>(0.40, 0.35, 0.75)</apparelColor>
+    <modExtensions>
+      <li Class="Grechka.Factions.MemberProfile">
+        <group>Post</group>
+        <implantCount>2</implantCount>
+        <specialties>
+          <li>Crafting</li>
+          <li>Construction</li>
+        </specialties>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+  <PawnKindDef ParentName="CouncilmanBase">
+    <defName>GrechkaPawn_Post_Leader</defName>
+    <label>бригадир — Бюро невскрытых посылок</label>
+    <defaultFactionDef>GrechkaFaction_Post</defaultFactionDef>
+    <combatPower>120</combatPower>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <techHediffsChance>0</techHediffsChance>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <apparelColor>(0.40, 0.35, 0.75)</apparelColor>
+    <modExtensions>
+      <li Class="Grechka.Factions.MemberProfile">
+        <group>Post</group>
+        <implantCount>3</implantCount>
+        <specialties>
+          <li>Social</li>
+          <li>Construction</li>
+        </specialties>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+  <PawnKindDef ParentName="TraderBase">
+    <defName>GrechkaPawn_Post_Trader</defName>
+    <label>торговец — Бюро невскрытых посылок</label>
+    <defaultFactionDef>GrechkaFaction_Post</defaultFactionDef>
+    <combatPower>65</combatPower>
+    <minGenerationAge>25</minGenerationAge>
+    <maxGenerationAge>55</maxGenerationAge>
+    <techHediffsChance>0</techHediffsChance>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <apparelColor>(0.40, 0.35, 0.75)</apparelColor>
+    <modExtensions>
+      <li Class="Grechka.Factions.MemberProfile">
+        <group>Post</group>
+        <implantCount>1</implantCount>
+        <specialties>
+          <li>Social</li>
+          <li>Crafting</li>
+        </specialties>
+      </li>
+    </modExtensions>
+  </PawnKindDef>
+</Defs>

@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using RimWorld;
 using RimWorld.Planet;
+using UnityEngine;
 using Verse;
 
 namespace Grechka.Storage
@@ -19,11 +20,36 @@ namespace Grechka.Storage
     {
         private int progress;
         private int pending;
+        readonly Graphic[] graphics = new Graphic[5];
+        int previousStage = -1;
+        internal bool Growing => parent.Spawned && pending == 0;
+        public bool ReadyToHarvest => pending > 0;
+        public int GrowthStage => CertusGrowthStages.Select(progress, Props.cycleTicks, pending);
         private CompProperties_CertusSource Props => (CompProperties_CertusSource)props;
+        internal Graphic CurrentGraphic => graphics[GrowthStage] ??= GraphicDatabase.Get<Graphic_Single>(
+            "Buildings/Map/CertusGrowthSource/CertusGrowthSource_" + GrowthStage,
+            ShaderDatabase.Cutout, parent.def.graphicData.drawSize, Color.white);
         public override void PostExposeData()
         {
             Scribe_Values.Look(ref progress, "certusGrowth");
             Scribe_Values.Look(ref pending, "certusPending");
+        }
+        public override void PostSpawnSetup(bool respawningAfterLoad)
+        {
+            base.PostSpawnSetup(respawningAfterLoad);
+            Refresh();
+        }
+        internal void Mature()
+        {
+            progress = 0;
+            pending = Props.yield;
+            Refresh();
+        }
+        void Refresh()
+        {
+            if (!parent.Spawned || previousStage == GrowthStage) return;
+            previousStage = GrowthStage;
+            parent.Map.mapDrawer.MapMeshDirty(parent.Position, MapMeshFlagDefOf.Buildings);
         }
         public override void CompTickRare()
         {
@@ -34,11 +60,16 @@ namespace Grechka.Storage
                     .SelectMany(c => c.GetThingList(parent.Map)).OfType<Building>()
                     .Count(b => b.def.defName == "Grechka_CertusAccelerator" && DeviceStatus.Ready(b));
                 progress += 250 * (1 + Math.Min(4, accelerators));
-                if (progress >= Props.cycleTicks) { progress -= Props.cycleTicks; pending = Props.yield; }
+                if (progress >= Props.cycleTicks) Mature();
             }
-            if (pending == 0) return;
+            Refresh();
+        }
+        // Called only at the end of a pawn's reserved harvest job. Keep unplaced output ripe.
+        internal int Harvest()
+        {
+            if (!parent.Spawned || pending == 0) return 0;
             ThingDef product = DefDatabase<ThingDef>.GetNamed("Grechka_CertusQuartz");
-            if (!CompSpawner.TryFindSpawnCell(parent, product, pending, out IntVec3 cell)) return;
+            if (!CompSpawner.TryFindSpawnCell(parent, product, pending, out IntVec3 cell)) return 0;
             Thing crystal = ThingMaker.MakeThing(product); crystal.stackCount = pending;
             int delivered = 0;
             GenPlace.TryPlaceThing(crystal, cell, parent.Map, ThingPlaceMode.Direct, (thing, amount) =>
@@ -48,9 +79,12 @@ namespace Grechka.Storage
             });
             pending -= Math.Min(pending, delivered);
             if (!crystal.Destroyed && !crystal.Spawned) crystal.Destroy();
+            if (pending == 0) progress = 0;
+            Refresh();
+            return delivered;
         }
-        public override string CompInspectStringExtra() => pending > 0 ? "Кристаллы готовы: " + pending
-            : "Рост certus: " + ((float)progress / Props.cycleTicks).ToString("P0");
+        public override string CompInspectStringExtra() => pending > 0 ? StorageText.Get("GrechkaStorage_Text105") + pending
+            : StorageText.Get("GrechkaStorage_Text106") + ((float)progress / Props.cycleTicks).ToString("P0");
     }
 
     public sealed class IncidentWorker_CertusMeteor : IncidentWorker
@@ -63,7 +97,7 @@ namespace Grechka.Storage
             if (!TileFinder.TryFindNewSiteTile(out PlanetTile tile, 3, 12)) return false;
             Site site = SiteMaker.MakeSite(DefDatabase<SitePartDef>.GetNamed("Grechka_CertusMeteor"), tile, null);
             Find.WorldObjects.Add(site);
-            Find.LetterStack.ReceiveLetter("Метеорит certus", "Караван заметил кристаллический метеорит. На месте можно добыть certus-кварц и забрать источники роста для собственной фермы.", LetterDefOf.PositiveEvent, site);
+            Find.LetterStack.ReceiveLetter(StorageText.Get("GrechkaStorage_Text107"), StorageText.Get("GrechkaStorage_Text108"), LetterDefOf.PositiveEvent, site);
             return true;
         }
     }
@@ -73,19 +107,7 @@ namespace Grechka.Storage
         public override void PostMapGenerate(Map map)
         {
             base.PostMapGenerate(map);
-            IntVec3 center = CellFinder.RandomClosewalkCellNear(map.Center, map, 20);
-            ThingDef ore = DefDatabase<ThingDef>.GetNamed("Grechka_MineableCertus");
-            foreach (IntVec3 cell in GenRadial.RadialCellsAround(center, 4, true).Where(c => c.InBounds(map)
-                && c.Standable(map) && c.GetEdifice(map) == null).Take(24))
-                GenSpawn.Spawn(ore, cell, map);
-            for (int i = 0; i < 3; i++)
-            {
-                IntVec3 cell = CellFinder.RandomClosewalkCellNear(center, map, 9);
-                if (cell.GetEdifice(map) != null) continue;
-                Building source = (Building)ThingMaker.MakeThing(DefDatabase<ThingDef>.GetNamed("Grechka_CertusSource"));
-                source.SetFaction(Faction.OfPlayer);
-                GenSpawn.Spawn(source, cell, map);
-            }
+            CertusMeteorGenerator.Generate(map);
         }
     }
 }

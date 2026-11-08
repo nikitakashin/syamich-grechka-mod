@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaTreasures_TreasureSitePart.label>тайник сокровищ</GrechkaTreasures_TreasureSitePart.label>
+  <GrechkaTreasures_TreasureSitePart.description>Подготовленная карта руин, хранилища или лагеря. Встречаются охрана, скрытые комнаты, ловушки и ложные сундуки. Осматривайте предупреждения и вывозите добычу до ухода.</GrechkaTreasures_TreasureSitePart.description>
+  <GrechkaTreasures_TreasureSitePart.approachOrderString>Исследовать сокровищницу</GrechkaTreasures_TreasureSitePart.approachOrderString>
+  <GrechkaTreasures_TreasureSitePart.approachingReportString>Исследование сокровищницы</GrechkaTreasures_TreasureSitePart.approachingReportString>
+  <GrechkaTreasures_TreasureSitePart.arrivedLetter>Караван прибыл на место. Внимательно осмотрите руины: ценные вещи могут оказаться приманкой, а обходные проходы — безопаснее парадного входа.</GrechkaTreasures_TreasureSitePart.arrivedLetter>
+  <GrechkaTreasures_TreasureSitePart.arrivedLetterLabelPart>Сокровищница</GrechkaTreasures_TreasureSitePart.arrivedLetterLabelPart>
+</LanguageData>

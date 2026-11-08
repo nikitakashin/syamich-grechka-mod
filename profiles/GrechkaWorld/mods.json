@@ -84,6 +84,25 @@
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3222246658"
   },
   {
+    "id": "3528086894",
+    "name": "Power Tab 2 - Fixed Fork (1.6/1.7)",
+    "package": "owlchemist.powertab.forked.runningbugs",
+    "versions": [
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [],
+    "after": [],
+    "before": [],
+    "incompatible": [],
+    "group": "Управление",
+    "summary": "Вкладка состояния электросети: генерация, потребление и аккумуляторы.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3528086894",
+    "order": 4
+  },
+  {
     "id": "3033901359",
     "name": "Adaptive Storage Framework",
     "package": "adaptive.storage.framework",
@@ -109,7 +128,7 @@
     ],
     "incompatible": [],
     "originalNumber": 4,
-    "order": 4,
+    "order": 5,
     "group": "Основа",
     "summary": "Многопредметные склады и визуализация содержимого.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3033901359"
@@ -136,7 +155,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 5,
-    "order": 5,
+    "order": 6,
     "group": "Хранение",
     "summary": "Компактные холодильники и морозильники.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3486264784"
@@ -163,7 +182,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 6,
-    "order": 6,
+    "order": 7,
     "group": "Хранение",
     "summary": "Разные вместительные склады и контейнеры.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3416243474"
@@ -192,7 +211,7 @@
       "xggji1.patchesforworkbenchshelf"
     ],
     "originalNumber": 7,
-    "order": 7,
+    "order": 8,
     "group": "Хранение",
     "summary": "Хранение материалов непосредственно у рабочих столов.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3484671309"
@@ -227,7 +246,7 @@
       "daniledman.hardworkinganimals"
     ],
     "originalNumber": 8,
-    "order": 8,
+    "order": 9,
     "group": "Природа",
     "summary": "Исправления и настройки поведения животных.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1098354593"
@@ -246,7 +265,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 9,
-    "order": 9,
+    "order": 10,
     "group": "Строительство",
     "summary": "Простые двустворчатые двери.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3223646936"
@@ -276,7 +295,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 10,
-    "order": 10,
+    "order": 11,
     "group": "Интерфейс",
     "summary": "Понятное сравнение модов при загрузке сохранений.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1872244972"
@@ -314,7 +333,7 @@
     ],
     "incompatible": [],
     "originalNumber": 11,
-    "order": 11,
+    "order": 12,
     "group": "Основа",
     "summary": "Общие системы размеров тел и генетики.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2925432336"
@@ -343,7 +362,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 19,
-    "order": 12,
+    "order": 13,
     "group": "Управление",
     "summary": "Строительство с материалами из инвентаря.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3534185281"
@@ -381,7 +400,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 22,
-    "order": 13,
+    "order": 14,
     "group": "Управление",
     "summary": "Редактирование и настройка персонажей.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1874644848"
@@ -413,7 +432,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 23,
-    "order": 14,
+    "order": 15,
     "group": "Управление",
     "summary": "Подготовка заросших клеток перед строительством.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3286376165"
@@ -442,7 +461,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 24,
-    "order": 15,
+    "order": 16,
     "group": "Управление",
     "summary": "Фигурные инструменты разметки и строительства.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1235181370"
@@ -466,7 +485,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 28,
-    "order": 16,
+    "order": 17,
     "group": "Интерфейс",
     "summary": "Удобные меню приказов, рецептов и строительства.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1446523594"
@@ -490,7 +509,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 29,
-    "order": 17,
+    "order": 18,
     "group": "Интерфейс",
     "summary": "Миникарта колонии и заметные события.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1662119905"
@@ -519,7 +538,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 34,
-    "order": 18,
+    "order": 19,
     "group": "Основа",
     "summary": "Библиотека функций укреплений и модов AOBA.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3498575851"
@@ -549,7 +568,7 @@
     ],
     "incompatible": [],
     "originalNumber": 37,
-    "order": 19,
+    "order": 20,
     "group": "Мир",
     "summary": "Каньоны, острова и другие формы рельефа.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2773943594"
@@ -578,7 +597,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 42,
-    "order": 20,
+    "order": 21,
     "group": "Интерфейс",
     "summary": "Предпросмотр карты до выбора места поселения.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2800857642"
@@ -596,7 +615,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 43,
-    "order": 21,
+    "order": 22,
     "group": "Основа",
     "summary": "Общая библиотека интерфейсных модов.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3773448562"
@@ -626,10 +645,40 @@
     ],
     "incompatible": [],
     "originalNumber": 44,
-    "order": 22,
+    "order": 23,
     "group": "Автоматизация",
     "summary": "Роботы для переноски вещей и уборки.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=724602224"
+  },
+  {
+    "id": "3253308913",
+    "name": "Misc. Robots++",
+    "package": "alaestor.miscrobots.plusplus",
+    "versions": [
+      "1.0",
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      "haplo.miscellaneous.robots",
+      "brrainz.harmony"
+    ],
+    "after": [
+      "haplo.miscellaneous.robots",
+      "brrainz.harmony"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": null,
+    "order": 24,
+    "group": "Автоматизация",
+    "summary": "Семь специализаций роботов T1–T5 через корпуса Grechka на собственных сборочных верстаках; матрицы и отдельный верстак скрыты.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3253308913"
   },
   {
     "id": "717575199",
@@ -654,7 +703,7 @@
       "haplo.miscellaneous.trainingnotask"
     ],
     "originalNumber": 45,
-    "order": 23,
+    "order": 25,
     "group": "Колонисты",
     "summary": "Тренировка стрельбы и ближнего боя.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=717575199"
@@ -686,7 +735,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 47,
-    "order": 24,
+    "order": 26,
     "group": "Интерфейс",
     "summary": "Более удобное управление производственными заданиями.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3520130671"
@@ -714,7 +763,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 48,
-    "order": 25,
+    "order": 27,
     "group": "Интерфейс",
     "summary": "Более удобная вкладка здоровья.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3328729902"
@@ -746,7 +795,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 49,
-    "order": 26,
+    "order": 28,
     "group": "Интерфейс",
     "summary": "Более удобный инвентарь колонистов.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3609897594"
@@ -779,7 +828,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 50,
-    "order": 27,
+    "order": 29,
     "group": "Управление",
     "summary": "Подробное планирование будущих построек.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2877392159"
@@ -815,10 +864,69 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 51,
-    "order": 28,
+    "order": 30,
     "group": "Интерфейс",
     "summary": "Цветовые обозначения качества вещей.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3513846773"
+  },
+  {
+    "id": "3829549663",
+    "name": "Pick Up and Haul - Continued",
+    "package": "zzyxzz.pickupandhaulreworked",
+    "versions": [
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      }
+    ],
+    "after": [
+      "brrainz.harmony"
+    ],
+    "before": [],
+    "incompatible": [
+      "Mehni.PickUpAndHaul"
+    ],
+    "group": "Удобство",
+    "summary": "Пешки собирают несколько предметов в инвентарь и переносят за один рейс.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3829549663",
+    "order": 31
+  },
+  {
+    "id": "2006605356",
+    "name": "CM Color Coded Mood Bar [1.1+]",
+    "package": "crashm.colorcodedmoodbar.11",
+    "versions": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6",
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      }
+    ],
+    "after": [
+      "DerekBickley.LTOColonyGroupsFinal",
+      "SaucyPigeon.PawnBadge",
+      "Dark.JobInBar"
+    ],
+    "before": [],
+    "incompatible": [],
+    "group": "Интерфейс",
+    "summary": "Цветные шкалы настроения и значки состояния колонистов.",
+    "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2006605356",
+    "order": 32
   },
   {
     "id": "1552146295",
@@ -845,7 +953,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 52,
-    "order": 29,
+    "order": 33,
     "group": "Мир",
     "summary": "Руины построек других игроков для исследования.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1552146295"
@@ -877,7 +985,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 53,
-    "order": 30,
+    "order": 34,
     "group": "Интерфейс",
     "summary": "Иконки предметов в списках рецептов.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2904906618"
@@ -901,7 +1009,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 59,
-    "order": 31,
+    "order": 35,
     "group": "Фракции и задания",
     "summary": "Фракция диких бойцов и её вооружение.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=736207111"
@@ -922,7 +1030,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 62,
-    "order": 32,
+    "order": 36,
     "group": "Фракции и задания",
     "summary": "Контракты и награды за поимку целей.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2676828755"
@@ -951,7 +1059,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 63,
-    "order": 33,
+    "order": 37,
     "group": "Медицина",
     "summary": "Удобное управление лекарствами и лечением.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3526251680"
@@ -980,7 +1088,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 64,
-    "order": 34,
+    "order": 38,
     "group": "Управление",
     "summary": "Строительство с учётом проходов и доступности.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2202185773"
@@ -1010,7 +1118,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 65,
-    "order": 35,
+    "order": 39,
     "group": "Управление",
     "summary": "Безопасный порядок разборки и добычи.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3261302741"
@@ -1050,7 +1158,7 @@
       "hatena.rangeanimalframework"
     ],
     "originalNumber": 68,
-    "order": 36,
+    "order": 40,
     "group": "Основа",
     "summary": "Общие системы модов Vanilla Expanded.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2023507013"
@@ -1082,7 +1190,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 78,
-    "order": 37,
+    "order": 41,
     "group": "Колонисты",
     "summary": "Достижения и отслеживание игровых целей.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2288125657"
@@ -1114,7 +1222,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 84,
-    "order": 38,
+    "order": 42,
     "group": "Колонисты",
     "summary": "Одежда и аксессуары с полезными свойствами.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1814987817"
@@ -1146,7 +1254,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 85,
-    "order": 39,
+    "order": 43,
     "group": "Колонисты",
     "summary": "Одежда и аксессуары с полезными свойствами.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2521176396"
@@ -1178,7 +1286,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 88,
-    "order": 40,
+    "order": 44,
     "group": "Колонисты",
     "summary": "Дополнительные предыстории персонажей.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2861806869"
@@ -1205,7 +1313,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 89,
-    "order": 41,
+    "order": 45,
     "group": "Мир",
     "summary": "Более разнообразные базы и поселения фракций.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3209927822"
@@ -1237,7 +1345,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 90,
-    "order": 42,
+    "order": 46,
     "group": "Колонисты",
     "summary": "Книги и обучение через чтение.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2193152410"
@@ -1270,7 +1378,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 93,
-    "order": 43,
+    "order": 47,
     "group": "Еда и напитки",
     "summary": "Новые блюда, ингредиенты и кулинарные процессы.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2134308519"
@@ -1306,7 +1414,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 94,
-    "order": 44,
+    "order": 48,
     "group": "Еда и напитки",
     "summary": "Кондитерское производство и сладости для настроения.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3590516685"
@@ -1344,7 +1452,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 96,
-    "order": 45,
+    "order": 49,
     "group": "Еда и напитки",
     "summary": "Приготовление больших порций тушёных блюд.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2134312965"
@@ -1376,7 +1484,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 97,
-    "order": 46,
+    "order": 50,
     "group": "Мир",
     "summary": "Новые происшествия, события и угрозы.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1938420742"
@@ -1410,7 +1518,7 @@
     ],
     "incompatible": [],
     "originalNumber": 98,
-    "order": 47,
+    "order": 51,
     "group": "Фракции и задания",
     "summary": "Античные фракции, сенаторы и механики развития.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2787850474"
@@ -1447,7 +1555,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 99,
-    "order": 48,
+    "order": 52,
     "group": "Фракции и задания",
     "summary": "Расширение Империи, титулов и дворцовой жизни.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2938820380"
@@ -1490,7 +1598,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 100,
-    "order": 49,
+    "order": 53,
     "group": "Фракции и задания",
     "summary": "Дезертиры, борьба с Империей и тайные операции.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3025493377"
@@ -1522,7 +1630,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 103,
-    "order": 50,
+    "order": 54,
     "group": "Фракции и задания",
     "summary": "Поселенцы Дикого Запада, фракции и оборудование.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2052918119"
@@ -1555,7 +1663,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 105,
-    "order": 51,
+    "order": 55,
     "group": "Земледелие",
     "summary": "Рыболовство и разные виды рыбы.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1914064942"
@@ -1608,7 +1716,7 @@
       "archangel.replantsptrees"
     ],
     "originalNumber": 107,
-    "order": 52,
+    "order": 56,
     "group": "Природа",
     "summary": "Переработка растительности и природного окружения.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2260097569"
@@ -1642,7 +1750,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 109,
-    "order": 53,
+    "order": 57,
     "group": "Еда и напитки",
     "summary": "Суши и блюда из рыбы.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2158539170"
@@ -1675,7 +1783,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 110,
-    "order": 54,
+    "order": 58,
     "group": "Земледелие",
     "summary": "Сокровища и находки во время рыбалки.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2468543398"
@@ -1713,7 +1821,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 112,
-    "order": 55,
+    "order": 59,
     "group": "Строительство",
     "summary": "Мебель, отдых и обустройство колонии.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1718190143"
@@ -1740,7 +1848,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 113,
-    "order": 56,
+    "order": 60,
     "group": "Строительство",
     "summary": "Архитектурные элементы и варианты построек.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2608762624"
@@ -1772,7 +1880,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 114,
-    "order": 57,
+    "order": 61,
     "group": "Строительство",
     "summary": "Скульптуры и художественное оформление.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1968134023"
@@ -1803,7 +1911,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 115,
-    "order": 58,
+    "order": 62,
     "group": "Автоматизация",
     "summary": "Автоматизированные фабрики и производственная логистика.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3686924415"
@@ -1842,7 +1950,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 116,
-    "order": 59,
+    "order": 63,
     "group": "Земледелие",
     "summary": "Сельскохозяйственные постройки и оборудование.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1957158779"
@@ -1874,7 +1982,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 117,
-    "order": 60,
+    "order": 64,
     "group": "Медицина",
     "summary": "Медицинская мебель и оснащение больницы.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1718191613"
@@ -1906,7 +2014,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 118,
-    "order": 61,
+    "order": 65,
     "group": "Энергетика",
     "summary": "Дополнительные генераторы и системы питания.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2062943477"
@@ -1935,7 +2043,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 120,
-    "order": 62,
+    "order": 66,
     "group": "Производство",
     "summary": "Дополнительные производственные столы и оборудование.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1880253632"
@@ -1967,7 +2075,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 121,
-    "order": 63,
+    "order": 67,
     "group": "Строительство",
     "summary": "Декорации и предметы обстановки.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2102143149"
@@ -2002,7 +2110,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 122,
-    "order": 64,
+    "order": 68,
     "group": "Вооружение",
     "summary": "Оборонительные постройки, укрепления и ловушки.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1845154007"
@@ -2042,7 +2150,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 123,
-    "order": 65,
+    "order": 69,
     "group": "Строительство",
     "summary": "Промышленные укрепления и оборонительные сооружения.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2561619583"
@@ -2073,7 +2181,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 124,
-    "order": 66,
+    "order": 70,
     "group": "Строительство",
     "summary": "Продвинутая тяжёлая фортификация.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2887532326"
@@ -2105,7 +2213,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 125,
-    "order": 67,
+    "order": 71,
     "group": "Высокие технологии",
     "summary": "Высокотехнологичная мебель и оборудование.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2028381079"
@@ -2134,7 +2242,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 127,
-    "order": 68,
+    "order": 72,
     "group": "Производство",
     "summary": "Дополнительное оборудование для улучшения станков.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1103809207"
@@ -2161,7 +2269,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 130,
-    "order": 69,
+    "order": 73,
     "group": "Идеология",
     "summary": "Идеологическая одежда и головные уборы.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2567387768"
@@ -2193,7 +2301,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 135,
-    "order": 70,
+    "order": 74,
     "group": "Автоматизация",
     "summary": "Пищевая паста, резервуары и трубопроводная раздача.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2920385763"
@@ -2225,7 +2333,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 141,
-    "order": 71,
+    "order": 75,
     "group": "Земледелие",
     "summary": "Дополнительные сельскохозяйственные культуры.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2134308522"
@@ -2263,7 +2371,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 142,
-    "order": 72,
+    "order": 76,
     "group": "Земледелие",
     "summary": "Дополнительные полезные растения и продукты.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2748889667"
@@ -2296,7 +2404,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 143,
-    "order": 73,
+    "order": 77,
     "group": "Земледелие",
     "summary": "Грибы и их выращивание.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3006389281"
@@ -2328,7 +2436,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 144,
-    "order": 74,
+    "order": 78,
     "group": "Земледелие",
     "summary": "Декоративные суккуленты.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2198652536"
@@ -2368,7 +2476,7 @@
     ],
     "incompatible": [],
     "originalNumber": 146,
-    "order": 75,
+    "order": 79,
     "group": "Псионика и магия",
     "summary": "Школы псионики, уровни и новые способности.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2842502659"
@@ -2410,7 +2518,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 149,
-    "order": 76,
+    "order": 80,
     "group": "Псионика и магия",
     "summary": "Гемогенная школа псионических способностей.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2990596478"
@@ -2447,7 +2555,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 150,
-    "order": 77,
+    "order": 81,
     "group": "Псионика и магия",
     "summary": "Псионические способности управления марионетками.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3033779606"
@@ -2490,7 +2598,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 151,
-    "order": 78,
+    "order": 82,
     "group": "Фракции и задания",
     "summary": "Древние хранилища, суперсолдаты и эксперименты.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3618306875"
@@ -2522,7 +2630,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 152,
-    "order": 79,
+    "order": 83,
     "group": "Фракции и задания",
     "summary": "Поиск древней кузницы и уникального вооружения.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3461526070"
@@ -2554,7 +2662,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 154,
-    "order": 80,
+    "order": 84,
     "group": "Фракции и задания",
     "summary": "Цепочка экспедиций к мощному генератору.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3411401573"
@@ -2603,7 +2711,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 157,
-    "order": 81,
+    "order": 85,
     "group": "Биотехнологии",
     "summary": "Гены, ксенотипы и различия размеров существ.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2920751126"
@@ -2635,7 +2743,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 180,
-    "order": 82,
+    "order": 86,
     "group": "Колонисты",
     "summary": "Дополнительные черты характера и особенности колонистов.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2296404655"
@@ -2670,7 +2778,7 @@
       "n7huntsman.combatshields"
     ],
     "originalNumber": 186,
-    "order": 83,
+    "order": 87,
     "group": "Фракции и задания",
     "summary": "Пираты, наёмники, боевые костюмы и рейды.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2723801948"
@@ -2702,7 +2810,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 196,
-    "order": 84,
+    "order": 88,
     "group": "Вооружение",
     "summary": "Нелетальное оружие для захвата целей.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2454918354"
@@ -2726,7 +2834,7 @@
     "before": [],
     "incompatible": [],
     "originalNumber": 206,
-    "order": 85,
+    "order": 89,
     "group": "Земледелие",
     "summary": "Дополнительные овощи и сельскохозяйственные культуры.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=2007063278"
@@ -2758,10 +2866,150 @@
       "gloomy.furniture.continued"
     ],
     "originalNumber": 215,
-    "order": 86,
+    "order": 90,
     "group": "Управление",
     "summary": "Замена материалов построек без ручной разборки.",
     "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3526354009"
+  },
+  {
+    "id": "local:grechka.translations.rus",
+    "name": "Grechka Translations Rus",
+    "package": "grechka.translations.rus",
+    "versions": [
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      }
+    ],
+    "after": [
+      "brrainz.harmony",
+      "ilyvion.loadingprogress",
+      "ludeon.rimworld",
+      "ludeon.rimworld.royalty",
+      "ludeon.rimworld.ideology",
+      "ludeon.rimworld.biotech",
+      "savestoragesettings.kv.rw.fishtmp",
+      "owlchemist.powertab.forked.runningbugs",
+      "adaptive.storage.framework",
+      "sbz.neatstoragefridge",
+      "sbz.neatstorage",
+      "sbz.neatstorageworkbenchshelf",
+      "oblitus.animalslogic",
+      "gt.sam.basicdoubledoors",
+      "madeline.modmismatchformatter",
+      "redmattis.betterprerequisites",
+      "memegoddess.buildfrominventory",
+      "void.charactereditor",
+      "mlie.cutplantsbeforebuilding",
+      "merthsoft.designatorshapes",
+      "dubwise.dubsmintmenus",
+      "dubwise.dubsmintminimap",
+      "aoba.framework",
+      "m00nl1ght.geologicallandforms",
+      "m00nl1ght.mappreview",
+      "andromeda.milkyway",
+      "haplo.miscellaneous.robots",
+      "alaestor.miscrobots.plusplus",
+      "haplo.miscellaneous.training",
+      "andromeda.nicebilltab",
+      "andromeda.nicehealthtab",
+      "andromeda.niceinventorytab",
+      "scherub.planningextended",
+      "dawnsglow.qualcolor",
+      "zzyxzz.pickupandhaulreworked",
+      "crashm.colorcodedmoodbar.11",
+      "woolstrand.realruins",
+      "mlie.recipeicons",
+      "rimsenal.feral",
+      "pb3n.simplewarrants",
+      "memegoddess.smartmedicine",
+      "dhultgren.smarterconstruction",
+      "mlie.smarterdeconstructionandmining",
+      "oskarpotocki.vanillafactionsexpanded.core",
+      "vanillaexpanded.achievements",
+      "vanillaexpanded.vappe",
+      "vanillaexpanded.vaeaccessories",
+      "vanillaexpanded.vanillabackstoriesexpanded",
+      "vanillaexpanded.basegeneration",
+      "vanillaexpanded.vbookse",
+      "vanillaexpanded.vcooke",
+      "vanillaexpanded.vcookebakery",
+      "vanillaexpanded.vcookestews",
+      "vanillaexpanded.vee",
+      "oskarpotocki.vfe.classical",
+      "oskarpotocki.vfe.empire",
+      "oskarpotocki.vfe.deserters",
+      "oskarpotocki.vanillafactionsexpanded.settlersmodule",
+      "vanillaexpanded.vcef",
+      "regrowth.botr.core",
+      "vanillaexpanded.vcookesushi",
+      "vanillaexpanded.vcefaddon",
+      "vanillaexpanded.vfecore",
+      "vanillaexpanded.vfearchitect",
+      "vanillaexpanded.vfeart",
+      "vanillaexpanded.vfefactory",
+      "vanillaexpanded.vfefarming",
+      "vanillaexpanded.vfemedical",
+      "vanillaexpanded.vfepower",
+      "vanillaexpanded.vfeproduction",
+      "vanillaexpanded.vfepropsanddecor",
+      "vanillaexpanded.vfesecurity",
+      "aoba.fortress.industrial",
+      "aoba.fortress.industrial.citadel",
+      "vanillaexpanded.vfespacer",
+      "4loris4.morelinkables",
+      "vanillaexpanded.viehar",
+      "vanillaexpanded.vnutriente",
+      "vanillaexpanded.vplantse",
+      "vanillaexpanded.vplantsemore",
+      "vanillaexpanded.vplantsemushrooms",
+      "vanillaexpanded.vplantsesucculents",
+      "vanillaexpanded.vpsycastse",
+      "vanillaexpanded.vpe.hemosage",
+      "vanillaexpanded.vpe.puppeteer",
+      "vanillaquestsexpanded.ancients",
+      "vanillaquestsexpanded.cryptoforge",
+      "vanillaquestsexpanded.generator",
+      "redmattis.bigsmall.core",
+      "vanillaexpanded.vanillatraitsexpanded",
+      "oskarpotocki.vfe.pirates",
+      "vanillaexpanded.vwenl",
+      "dismarzero.vgp.vgpmoreveggies",
+      "memegoddess.replacestuff"
+    ],
+    "before": [
+      "grechka.quests",
+      "grechka.industry",
+      "grechka.storage",
+      "grechka.equipment",
+      "grechka.luckyblocks",
+      "grechka.drones",
+      "grechka.pharmacy",
+      "grechka.treasures",
+      "grechka.world.integration",
+      "grechka.cameraplus",
+      "grechka.speedplus",
+      "grechka.traders",
+      "grechka.destroyitem",
+      "grechka.kite",
+      "grechka.farms",
+      "grechka.tweaks",
+      "grechka.achivements",
+      "grechka.factions",
+      "grechka.patch.realruinsrobots"
+    ],
+    "incompatible": [],
+    "source": "local",
+    "version": "0.1.0",
+    "group": "Русские переводы",
+    "summary": "Отдельные русские локали и адаптер текстов настроек 1.7. Исходные моды не изменяются. Сторонние каталоги хранятся локально и не публикуются.",
+    "url": "",
+    "repositoryPath": "mods/GrechkaTranslationsRus",
+    "order": 91
   },
   {
     "id": "local:grechka.quests",
@@ -2778,7 +3026,7 @@
     "incompatible": [],
     "source": "local",
     "version": "0.1.0",
-    "order": 87,
+    "order": 92,
     "group": "Grechka Mod",
     "summary": "Книга квестов с редактором, наградами и импортом/экспортом JSON; первая версия.",
     "url": "",
@@ -2805,7 +3053,7 @@
     "incompatible": [],
     "source": "local",
     "version": "0.2.0",
-    "order": 88,
+    "order": 93,
     "group": "Grechka Mod",
     "summary": "Промышленность T1–T5, механиты, архо-технологии, материя и гречневая энергетика. Общая игровая приёмка ожидается.",
     "url": "",
@@ -2834,7 +3082,7 @@
     "incompatible": [],
     "source": "local",
     "version": "0.3.0",
-    "order": 89,
+    "order": 94,
     "group": "Grechka Mod",
     "summary": "Цифровой склад, certus-ферма, подземная сеть, диски и автокрафт. Общая игровая приёмка ожидается.",
     "url": "",
@@ -2869,7 +3117,7 @@
     "incompatible": [],
     "source": "local",
     "version": "0.1.0",
-    "order": 90,
+    "order": 95,
     "group": "Grechka Mod",
     "summary": "Броня T3–T5, дроны, криовинтовка, бионика 300/600%, чипы и событие рейда.",
     "url": "",
@@ -2900,11 +3148,101 @@
     "incompatible": [],
     "source": "local",
     "version": "0.1.0",
-    "order": 91,
+    "order": 96,
     "group": "Grechka Mod",
     "summary": "Пять тиров и тематические лаки-блоки с переносимыми JSON-пулами.",
     "url": "",
     "repositoryPath": "mods/GrechkaLuckyBlocks"
+  },
+  {
+    "id": "local:grechka.drones",
+    "name": "Grechka Drones",
+    "package": "grechka.drones",
+    "versions": [
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony"
+      },
+      {
+        "package": "haplo.miscellaneous.robots",
+        "name": "Misc. Robots"
+      }
+    ],
+    "after": [
+      "brrainz.harmony",
+      "haplo.miscellaneous.robots",
+      "grechka.industry"
+    ],
+    "before": [],
+    "incompatible": [],
+    "order": 97,
+    "group": "Grechka Mod",
+    "summary": "МЧСники с пеной и спасением своих; мили-воины с патрулём, большим здоровьем и отступлением в док. T1–T5. Игровая приёмка ожидается.",
+    "url": "",
+    "source": "local",
+    "repositoryPath": "mods/GrechkaDrones"
+  },
+  {
+    "id": "local:grechka.pharmacy",
+    "name": "Grechka Pharmacy",
+    "package": "grechka.pharmacy",
+    "versions": [
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": ""
+      }
+    ],
+    "after": [
+      "brrainz.harmony",
+      "grechka.industry"
+    ],
+    "before": [],
+    "incompatible": [],
+    "source": "local",
+    "version": "0.2.0",
+    "order": 98,
+    "group": "Grechka Mod",
+    "summary": "Фармацевтика T1–T5 и пять нейротренеров интереса при наличии Treasures и Tweaks. Industry необязателен.",
+    "url": "",
+    "repositoryPath": "mods/GrechkaPharmacy"
+  },
+  {
+    "id": "local:grechka.treasures",
+    "name": "Grechka Treasures",
+    "package": "grechka.treasures",
+    "versions": [
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": ""
+      }
+    ],
+    "after": [
+      "brrainz.harmony",
+      "grechka.industry",
+      "grechka.storage"
+    ],
+    "before": [
+      "grechka.world.integration"
+    ],
+    "incompatible": [],
+    "source": "local",
+    "version": "0.1.0",
+    "order": 99,
+    "group": "Grechka Mod",
+    "summary": "Драгоценные камни, огранка, роскошное оружие/декор и подготовленные карты сокровищниц. Игровая приёмка ожидается.",
+    "url": "",
+    "repositoryPath": "mods/GrechkaTreasures"
   },
   {
     "id": "local:grechka.world.integration",
@@ -2924,16 +3262,323 @@
       "brrainz.harmony",
       "grechka.industry",
       "grechka.storage",
-      "grechka.equipment"
+      "grechka.equipment",
+      "grechka.drones",
+      "grechka.pharmacy"
     ],
     "before": [],
     "incompatible": [],
     "source": "local",
     "version": "0.1.0",
-    "order": 92,
+    "order": 100,
     "group": "Grechka Mod",
     "summary": "Правила Grechka World: открытые исследования, явный каталог корпусов и тиров, улучшения машин, словарь материалов; старый мир применяется вручную с копией.",
     "url": "",
     "repositoryPath": "mods/GrechkaWorldIntegration"
+  },
+  {
+    "id": "local:grechka.cameraplus",
+    "name": "Grechka Camera Plus",
+    "package": "grechka.cameraplus",
+    "versions": [
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      }
+    ],
+    "after": [
+      "brrainz.harmony"
+    ],
+    "before": [],
+    "incompatible": [],
+    "source": "local",
+    "version": "0.1.0",
+    "order": 101,
+    "group": "Grechka Mod",
+    "summary": "Расширенный зум камеры карты: приближение и отдаление до ×10 относительно ванильных пределов, по умолчанию ×4 / ×4.",
+    "url": "",
+    "repositoryPath": "mods/GrechkaCameraPlus"
+  },
+  {
+    "id": "local:grechka.speedplus",
+    "name": "Grechka Speed Plus",
+    "package": "grechka.speedplus",
+    "versions": [
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      }
+    ],
+    "after": [
+      "brrainz.harmony"
+    ],
+    "before": [],
+    "incompatible": [],
+    "source": "local",
+    "version": "0.1.1",
+    "order": 102,
+    "group": "Grechka Mod",
+    "summary": "Четвёртая кнопка ультраскорости: ×15 при загруженной карте, ×150 без карт; горячая клавиша 4.",
+    "url": "",
+    "repositoryPath": "mods/GrechkaSpeedPlus"
+  },
+  {
+    "id": "local:grechka.traders",
+    "name": "Grechka Traders",
+    "package": "grechka.traders",
+    "versions": [
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony"
+      }
+    ],
+    "after": [
+      "brrainz.harmony",
+      "grechka.world.integration",
+      "grechka.pharmacy"
+    ],
+    "before": [],
+    "incompatible": [],
+    "originalNumber": 95,
+    "order": 103,
+    "group": "Grechka Mod",
+    "summary": "Частота торговли, рабы и 16 специализированных поставщиков со скидками.",
+    "url": "",
+    "source": "local",
+    "repositoryPath": "mods/GrechkaTraders"
+  },
+  {
+    "id": "local:grechka.destroyitem",
+    "name": "Grechka Destroy Item",
+    "package": "grechka.destroyitem",
+    "versions": [
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony"
+      }
+    ],
+    "after": [
+      "brrainz.harmony"
+    ],
+    "before": [],
+    "incompatible": [],
+    "source": "local",
+    "version": "0.1.0",
+    "order": 104,
+    "group": "Grechka Mod",
+    "summary": "Приказ Destroy для предметов и трупов: дезинтеграция всего стака, −3 настроения на 6 часов без накопления.",
+    "url": "",
+    "repositoryPath": "mods/GrechkaDestroyItem"
+  },
+  {
+    "id": "local:grechka.kite",
+    "name": "Grechka Kite",
+    "package": "grechka.kite",
+    "versions": [
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      }
+    ],
+    "after": [
+      "brrainz.harmony"
+    ],
+    "before": [],
+    "incompatible": [
+      "roolo.runandgun",
+      "memegoddess.runandgun",
+      "owlchemist.tactiowl"
+    ],
+    "source": "local",
+    "version": "0.1.0",
+    "order": 105,
+    "group": "Grechka Mod",
+    "summary": "Стрельба на ходу; галка для врагов включена по умолчанию. Игровая приёмка ожидается.",
+    "url": "",
+    "repositoryPath": "mods/GrechkaKite"
+  },
+  {
+    "id": "local:grechka.farms",
+    "name": "Grechka Farms",
+    "package": "grechka.farms",
+    "versions": [
+      "1.7"
+    ],
+    "dependencies": [],
+    "after": [
+      "grechka.industry",
+      "grechka.storage",
+      "grechka.quests"
+    ],
+    "before": [],
+    "incompatible": [],
+    "source": "local",
+    "version": "0.1.0",
+    "order": 106,
+    "group": "Grechka Mod",
+    "summary": "Покрытие «Ферма»: 228% плодородности с ползунком, быстрое строительство без навыков. Игровая приёмка ожидается.",
+    "url": "",
+    "repositoryPath": "mods/GrechkaFarms"
+  },
+  {
+    "id": "local:grechka.tweaks",
+    "name": "Grechka Tweaks",
+    "package": "grechka.tweaks",
+    "versions": [
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      }
+    ],
+    "after": [
+      "brrainz.harmony",
+      "void.charactereditor",
+      "edb.preparecarefully",
+      "rimworldist.edb.preparecarefully"
+    ],
+    "before": [],
+    "incompatible": [],
+    "source": "local",
+    "version": "0.3.0",
+    "order": 107,
+    "group": "Grechka Mod",
+    "summary": "Опыт торговли и сна, семь ступеней интереса, мастерство до 200, адаптеры редакторов, стопки по 750 и эффекты пяти нейротренеров Pharmacy + Treasures.",
+    "url": "",
+    "repositoryPath": "mods/GrechkaTweaks"
+  },
+  {
+    "id": "local:grechka.achivements",
+    "name": "Grechka Achivements",
+    "package": "grechka.achivements",
+    "versions": [
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "vanillaexpanded.achievements",
+        "name": "Vanilla Achievements Expanded",
+        "url": "steam://url/CommunityFilePage/2288125657"
+      },
+      {
+        "package": "grechka.quests",
+        "name": "Grechka Quests",
+        "url": ""
+      }
+    ],
+    "after": [
+      "vanillaexpanded.achievements",
+      "grechka.quests",
+      "grechka.industry",
+      "grechka.storage",
+      "grechka.drones",
+      "grechka.equipment",
+      "grechka.luckyblocks",
+      "grechka.farms"
+    ],
+    "before": [],
+    "incompatible": [],
+    "source": "local",
+    "version": "0.2.0",
+    "order": 108,
+    "group": "Grechka Mod",
+    "summary": "42 достижения Grechka для Vanilla Achievements Expanded. Включает 26 количественных достижений за выпуск продукции, открытие лаки-блоков и получение квестовых наград.",
+    "url": "",
+    "repositoryPath": "mods/GrechkaAchivements"
+  },
+  {
+    "id": "local:grechka.factions",
+    "name": "Grechka Factions",
+    "package": "grechka.factions",
+    "versions": [
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": ""
+      },
+      {
+        "package": "grechka.equipment",
+        "name": "Grechka Equipment",
+        "url": ""
+      },
+      {
+        "package": "grechka.luckyblocks",
+        "name": "Grechka Lucky Blocks",
+        "url": ""
+      }
+    ],
+    "after": [
+      "brrainz.harmony",
+      "grechka.equipment",
+      "grechka.luckyblocks",
+      "grechka.traders"
+    ],
+    "before": [],
+    "incompatible": [],
+    "source": "local",
+    "version": "0.1.0",
+    "order": 109,
+    "group": "Grechka Mod",
+    "summary": "Пять фракций. Артель с навыками 16–20 и гречка-бионикой T5, чипированная Босая сотня, мельники, медики и курьеры с лаки-блоками.",
+    "url": "",
+    "repositoryPath": "mods/GrechkaFactions"
+  },
+  {
+    "id": "local:grechka.patch.realruinsrobots",
+    "name": "Grechka Patch - Real Ruins and Robots++ fix",
+    "package": "grechka.patch.realruinsrobots",
+    "versions": [
+      "1.7"
+    ],
+    "dependencies": [
+      {
+        "package": "brrainz.harmony",
+        "name": "Harmony",
+        "url": "steam://url/CommunityFilePage/2009463077"
+      },
+      {
+        "package": "woolstrand.realruins",
+        "name": "Real Ruins",
+        "url": "steam://url/CommunityFilePage/1552146295"
+      }
+    ],
+    "after": [
+      "brrainz.harmony",
+      "woolstrand.realruins",
+      "alaestor.miscrobots.plusplus"
+    ],
+    "before": [],
+    "incompatible": [],
+    "source": "local",
+    "version": "0.1.0",
+    "order": 110,
+    "group": "Grechka Mod",
+    "summary": "Исправляет зависание на экране «Генерация карты», когда Real Ruins набирает охрану из рабочих роботов Misc. Robots++ с нулевой боевой силой. Патч исключает таких роботов из выбора охраны и сохраняет штатный расчёт её численности.",
+    "url": "",
+    "repositoryPath": "mods/GrechkaRealRuinsRobotsFix"
   }
 ]

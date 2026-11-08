@@ -20,8 +20,8 @@ namespace Grechka.Industry
     {
         public string upgradeRecipeName = "Grechka_UpgradeAssemblyBenchT2";
         public string targetBenchName = "Grechka_AssemblyBenchT2_Building";
-        public string upgradeLabel = "Улучшить до T2";
-        public string upgradeDescription = "Пешка улучшит этот верстак на месте. Требуется: 120 стали, 20 пластали, 4 компонента и 6 продвинутых компонентов. Вложенный корпус T1 засчитывается. Производственные задания и прочность сохраняются. Новому верстаку потребуется 350 Вт.";
+        [MustTranslate] public string upgradeLabel = "Улучшить до T2";
+        [MustTranslate] public string upgradeDescription = "Пешка улучшит этот верстак на месте. Установленный корпус и подходящие материалы уже зачтены в цене. Задания, дробный бонус выпуска и относительная прочность сохраняются.";
         public CompProperties_AssemblyUpgrade() { compClass = typeof(CompAssemblyUpgrade); }
     }
 
@@ -44,7 +44,8 @@ namespace Grechka.Industry
         public override IEnumerable<Gizmo> CompGetGizmosExtra()
         {
             Building_WorkTable bench = Bench;
-            if (bench == null || bench.Faction != Faction.OfPlayer || ready || HasUpgradeBill(bench)) yield break;
+            if (bench == null || bench.Faction != Faction.OfPlayer || ready || HasUpgradeBill(bench)
+                || DefDatabase<RecipeDef>.GetNamedSilentFail(Props.upgradeRecipeName)?.AvailableNow != true) yield break;
 
             yield return new Command_Action
             {
@@ -65,7 +66,7 @@ namespace Grechka.Industry
         {
             Building_WorkTable bench = Bench;
             RecipeDef recipe = DefDatabase<RecipeDef>.GetNamedSilentFail(Props.upgradeRecipeName);
-            if (bench == null || !bench.Spawned || ready || HasUpgradeBill(bench) || recipe == null) return;
+            if (bench == null || !bench.Spawned || ready || HasUpgradeBill(bench) || recipe == null || !recipe.AvailableNow) return;
 
             var bill = new Bill_Production(recipe, null);
             bill.repeatMode = BillRepeatModeDefOf.RepeatCount;
@@ -87,7 +88,7 @@ namespace Grechka.Industry
             catch (Exception error)
             {
                 nextAttemptTick = Find.TickManager.TicksGame + 250;
-                Log.Error("[Grechka Industry] Не удалось завершить улучшение верстака: " + error);
+                Log.Error(IndustryText.Get("GrechkaIndustry_ac199f7978a8", "[Grechka Industry] Failed to complete bench upgrade: ") + error);
             }
         }
 
@@ -95,7 +96,7 @@ namespace Grechka.Industry
         {
             Building_WorkTable oldBench = Bench;
             ThingDef targetDef = DefDatabase<ThingDef>.GetNamedSilentFail(Props.targetBenchName);
-            if (oldBench == null || targetDef == null) throw new InvalidOperationException("Не найден целевой верстак.");
+            if (oldBench == null || targetDef == null) throw new InvalidOperationException(IndustryText.Get("GrechkaIndustry_bfce43b7166c", "Target bench not found."));
 
             Map map = oldBench.Map;
             IntVec3 position = oldBench.Position;

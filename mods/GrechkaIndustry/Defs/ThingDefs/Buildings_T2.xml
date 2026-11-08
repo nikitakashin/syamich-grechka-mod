@@ -7,14 +7,15 @@
     <thingClass>Building_WorkTable</thingClass>
     <tickerType>Normal</tickerType>
     <graphicData>
-      <texPath>Things/Building/Production/TableSmithingElectric</texPath>
+      <texPath>Buildings/Map/AssemblyBenchT2/AssemblyBenchT2</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <drawSize>(3.5,1.5)</drawSize>
+      <color>(1,1,1)</color>
     </graphicData>
     <size>(3,1)</size>
     <costList>
-      <Steel>80</Steel>
-      <ComponentIndustrial>4</ComponentIndustrial>
+      <Steel>60</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
       <ComponentSpacer>2</ComponentSpacer>
       <Grechka_HousingT2_Item>1</Grechka_HousingT2_Item>
     </costList>
@@ -26,7 +27,7 @@
     </statBases>
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
-    <designationCategory>Production</designationCategory>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
     <designatorDropdown>Grechka_AssemblyBenchGroup</designatorDropdown>
     <uiOrder>2511</uiOrder>
     <passability>PassThroughOnly</passability>
@@ -40,6 +41,7 @@
     <recipes>
       <li>Grechka_MakeComponentBatchT1</li>
       <li>Make_ComponentSpacer</li>
+      <li>Grechka_MakeHousingT1</li>
       <li>Grechka_MakeHousingT2</li>
       <li>Grechka_MakeSolarCellT2</li>
       <li>Grechka_MakeSolarS1</li>
@@ -54,11 +56,16 @@
       <workTableNotInRoomRoleFactor>0.8</workTableNotInRoomRoleFactor>
     </building>
     <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
       <li Class="Grechka.Industry.CompProperties_AssemblyUpgrade">
         <upgradeRecipeName>Grechka_UpgradeAssemblyBenchT3</upgradeRecipeName>
         <targetBenchName>Grechka_AssemblyBenchT3_Building</targetBenchName>
         <upgradeLabel>Улучшить до T3</upgradeLabel>
-        <upgradeDescription>Улучшить на месте: 160 пластали, 14 меха-компонентов, 20 механитов и 40 урана. Установленный корпус T2 засчитывается один раз. Счета, дробный бонус выпуска и относительная прочность сохраняются. Потребление T3 — 840 Вт.</upgradeDescription>
+        <upgradeDescription>Пешка улучшит этот верстак на месте. Установленный корпус и подходящие материалы уже зачтены в цене. Задания, дробный бонус выпуска и относительная прочность сохраняются.</upgradeDescription>
       </li>
       <li Class="Grechka.Industry.CompProperties_TierBonuses">
         <inputDiscount>0.1</inputDiscount>
@@ -73,9 +80,11 @@
       <li Class="CompProperties_Breakdownable" />
     </comps>
     <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>
     </placeWorkers>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     <minifiedDef>MinifiedThing</minifiedDef>
+    <uiIconPath>Buildings/Map/AssemblyBenchT2/AssemblyBenchT2_north</uiIconPath>
   </ThingDef>
 </Defs>

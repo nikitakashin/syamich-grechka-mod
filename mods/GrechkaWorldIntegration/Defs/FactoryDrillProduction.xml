@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PipeSystem.ProcessDef MayRequire="vanillaexpanded.vfefactory">
+    <defName>GrechkaWorld_DrillSteel</defName>
+    <label>extract steel</label>
+    <labelOverride>extract steel</labelOverride>
+    <description>Continuous targeted steel extraction. The output factory hopper must allow steel.</description>
+    <priorityInBillList>11</priorityInBillList>
+    <spawnOnInteractionCell>true</spawnOnInteractionCell>
+    <ticks>6000</ticks>
+    <results><li><thing>Steel</thing><count>20</count></li></results>
+    <isFactoryProcess>true</isFactoryProcess>
+    <autoExtract>true</autoExtract>
+    <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+    <sustainerWhenWorking>true</sustainerWhenWorking>
+    <sustainerDef>VFEFactory_AutomatedDrillSustainer</sustainerDef>
+    <effecterWhenWorking>true</effecterWhenWorking>
+    <effecterDef>Drill</effecterDef>
+    <worksInSpace>false</worksInSpace>
+    <maxOutputCount>75</maxOutputCount>
+  </PipeSystem.ProcessDef>
+  <PipeSystem.ProcessDef MayRequire="vanillaexpanded.vfefactory">
+    <defName>GrechkaWorld_DrillPlasteel</defName>
+    <label>extract plasteel</label>
+    <labelOverride>extract plasteel</labelOverride>
+    <description>Continuous targeted plasteel extraction. The output factory hopper must allow plasteel.</description>
+    <priorityInBillList>12</priorityInBillList>
+    <spawnOnInteractionCell>true</spawnOnInteractionCell>
+    <ticks>20000</ticks>
+    <results><li><thing>Plasteel</thing><count>5</count></li></results>
+    <isFactoryProcess>true</isFactoryProcess>
+    <autoExtract>true</autoExtract>
+    <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+    <sustainerWhenWorking>true</sustainerWhenWorking>
+    <sustainerDef>VFEFactory_AutomatedDrillSustainer</sustainerDef>
+    <effecterWhenWorking>true</effecterWhenWorking>
+    <effecterDef>Drill</effecterDef>
+    <worksInSpace>false</worksInSpace>
+    <maxOutputCount>75</maxOutputCount>
+  </PipeSystem.ProcessDef>
+  <PipeSystem.ProcessDef MayRequire="vanillaexpanded.vfefactory">
+    <defName>GrechkaWorld_DrillUranium</defName>
+    <label>extract uranium</label>
+    <labelOverride>extract uranium</labelOverride>
+    <description>Continuous targeted uranium extraction. The output factory hopper must allow uranium.</description>
+    <priorityInBillList>13</priorityInBillList>
+    <spawnOnInteractionCell>true</spawnOnInteractionCell>
+    <ticks>20000</ticks>
+    <results><li><thing>Uranium</thing><count>5</count></li></results>
+    <isFactoryProcess>true</isFactoryProcess>
+    <autoExtract>true</autoExtract>
+    <onlyGrabAndOutputToFactoryHoppers>true</onlyGrabAndOutputToFactoryHoppers>
+    <sustainerWhenWorking>true</sustainerWhenWorking>
+    <sustainerDef>VFEFactory_AutomatedDrillSustainer</sustainerDef>
+    <effecterWhenWorking>true</effecterWhenWorking>
+    <effecterDef>Drill</effecterDef>
+    <worksInSpace>false</worksInSpace>
+    <maxOutputCount>75</maxOutputCount>
+  </PipeSystem.ProcessDef>
+</Defs>

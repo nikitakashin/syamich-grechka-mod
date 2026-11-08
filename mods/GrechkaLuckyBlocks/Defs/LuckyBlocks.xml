@@ -3,7 +3,11 @@
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockT1_Item</defName>
     <label>лаки-блок T1</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• сталь ×150 + компонент ×8
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
@@ -24,20 +28,24 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
       <li Class="Grechka.LuckyBlocks.LuckyProperties">
         <pool>general.t1</pool>
+        <priceFromPool>false</priceFromPool>
       </li>
     </modExtensions>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockResourcesT1_Item</defName>
     <label>лаки-блок «Сырьё» T1</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• сталь ×150
+• древесина ×250
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
@@ -58,8 +66,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -71,14 +77,20 @@
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockIndustryT1_Item</defName>
     <label>лаки-блок «Промышленность» T1</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• сталь ×150 + компонент ×8
+• компонент ×8 + пласталь ×20
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockIndustry</texPath>
+      <texPath>Items/LuckyBlockIndustryT1</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
     </graphicData>
     <statBases>
       <MarketValue>450</MarketValue>
@@ -92,8 +104,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -101,19 +111,24 @@
         <pool>industry.t1</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockIndustryT1</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockEnergyT1_Item</defName>
     <label>лаки-блок «Энергетика» T1</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• компонент ×6 + сталь ×120
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockT1</texPath>
-      <color>(0.75,0.75,0.75)</color>
+      <texPath>Items/LuckyBlockEnergyT1</texPath>
+      <color>(1,1,1)</color>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>450</MarketValue>
@@ -127,8 +142,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -136,18 +149,26 @@
         <pool>energy.t1</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockEnergyT1</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockMedicalT1_Item</defName>
     <label>лаки-блок «Медицина» T1</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• медикаменты ×12
+• передовые медикаменты ×4
+• повязка «Последний шанс» ×4 + полевое обезболивающее ×4 (нужен Grechka Pharmacy)
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockMedical</texPath>
+      <texPath>Items/LuckyBlockMedicalT1</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
     </graphicData>
     <statBases>
       <MarketValue>450</MarketValue>
@@ -161,8 +182,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -170,18 +189,25 @@
         <pool>medical.t1</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockMedicalT1</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockCombatT1_Item</defName>
     <label>лаки-блок «Арсенал» T1</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• автомат (качество: хорошее) ×1
+• бронежилет ×1
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockCombat</texPath>
+      <texPath>Items/LuckyBlockCombatT1</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
     </graphicData>
     <statBases>
       <MarketValue>450</MarketValue>
@@ -195,8 +221,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -204,19 +228,25 @@
         <pool>combat.t1</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockCombatT1</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockFarmT1_Item</defName>
     <label>лаки-блок «Фермерский» T1</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• рис ×200
+• сухой паёк ×10
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockT1</texPath>
-      <color>(0.75,0.75,0.75)</color>
+      <texPath>Items/LuckyBlockFarmT1</texPath>
+      <color>(1,1,1)</color>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>450</MarketValue>
@@ -230,8 +260,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -239,19 +267,25 @@
         <pool>farm.t1</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockFarmT1</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockZooT1_Item</defName>
     <label>лаки-блок «Зоопарк» T1</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• кошка ×100
+• курица ×6
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockT1</texPath>
-      <color>(0.75,0.75,0.75)</color>
+      <texPath>Items/LuckyBlockZooT1</texPath>
+      <color>(1,1,1)</color>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>450</MarketValue>
@@ -265,8 +299,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -274,19 +306,26 @@
         <pool>zoo.t1</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockZooT1</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockMechsT1_Item</defName>
     <label>лаки-блок «Мехи повсюду» T1</label>
-    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• сталь ×250 + компонент ×10
+• враждебные механоиды: жнец ×4
+• враждебные механоиды: жнец ×12
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockT1</texPath>
-      <color>(0.75,0.75,0.75)</color>
+      <texPath>Items/LuckyBlockMechsT1</texPath>
+      <color>(1,1,1)</color>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>450</MarketValue>
@@ -300,8 +339,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -309,19 +346,28 @@
         <pool>mechs.t1</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockMechsT1</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockChaosT1_Item</defName>
     <label>лаки-блок «Гречневое безумие» T1</label>
-    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• сталь ×1000
+• кошка ×100
+• враждебные механоиды: жнец ×4
+• энерговинтовка (качество: шедевр) ×1
+• простое блюдо ×1 + картофель ×500
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockT1</texPath>
-      <color>(0.75,0.75,0.75)</color>
+      <texPath>Items/LuckyBlockChaosT1</texPath>
+      <color>(1,1,1)</color>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>450</MarketValue>
@@ -335,8 +381,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -344,18 +388,25 @@
         <pool>chaos.t1</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockChaosT1</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase" MayRequire="grechka.storage">
     <defName>Grechka_LuckyBlockStorageT1_Item</defName>
     <label>лаки-блок «Цифровой» T1</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• кварцевый процессор ×4 + серебряный процессор ×2 (нужен Grechka Storage)
+• диск хранения 1K ×1 (нужен Grechka Storage)
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockStorage</texPath>
+      <texPath>Items/LuckyBlockStorageT1</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
     </graphicData>
     <statBases>
       <MarketValue>450</MarketValue>
@@ -369,8 +420,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -378,11 +427,16 @@
         <pool>storage.t1</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockStorageT1</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockT2_Item</defName>
     <label>лаки-блок T2</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• пласталь ×60 + продвинутый компонент ×5
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
@@ -403,20 +457,24 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
       <li Class="Grechka.LuckyBlocks.LuckyProperties">
         <pool>general.t2</pool>
+        <priceFromPool>false</priceFromPool>
       </li>
     </modExtensions>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockResourcesT2_Item</defName>
     <label>лаки-блок «Сырьё» T2</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• сталь ×300
+• древесина ×500
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
@@ -437,8 +495,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -450,14 +506,20 @@
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockIndustryT2_Item</defName>
     <label>лаки-блок «Промышленность» T2</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• пласталь ×60 + продвинутый компонент ×5
+• компонент ×16 + пласталь ×40
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockIndustry</texPath>
+      <texPath>Items/LuckyBlockIndustryT2</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
     </graphicData>
     <statBases>
       <MarketValue>2200</MarketValue>
@@ -471,8 +533,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -480,19 +540,25 @@
         <pool>industry.t2</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockIndustryT2</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockEnergyT2_Item</defName>
     <label>лаки-блок «Энергетика» T2</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• компонент ×12 + сталь ×240
+• улучшенный фотоэлемент ×6 (нужен Grechka Industry)
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockT2</texPath>
-      <color>(0.4,0.4,0.4)</color>
+      <texPath>Items/LuckyBlockEnergyT2</texPath>
+      <color>(1,1,1)</color>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>2200</MarketValue>
@@ -506,8 +572,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -515,18 +579,26 @@
         <pool>energy.t2</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockEnergyT2</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockMedicalT2_Item</defName>
     <label>лаки-блок «Медицина» T2</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• медикаменты ×24
+• передовые медикаменты ×8
+• иммунный препарат ×4 + восстановительный раствор ×4 + курс «Чистый лист» ×2 (нужен Grechka Pharmacy)
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockMedical</texPath>
+      <texPath>Items/LuckyBlockMedicalT2</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
     </graphicData>
     <statBases>
       <MarketValue>2200</MarketValue>
@@ -540,8 +612,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -549,18 +619,25 @@
         <pool>medical.t2</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockMedicalT2</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockCombatT2_Item</defName>
     <label>лаки-блок «Арсенал» T2</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• автомат (качество: хорошее) ×1
+• бронежилет ×1
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockCombat</texPath>
+      <texPath>Items/LuckyBlockCombatT2</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
     </graphicData>
     <statBases>
       <MarketValue>2200</MarketValue>
@@ -574,8 +651,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -583,19 +658,25 @@
         <pool>combat.t2</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockCombatT2</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockFarmT2_Item</defName>
     <label>лаки-блок «Фермерский» T2</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• рис ×400
+• сухой паёк ×20
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockT2</texPath>
-      <color>(0.4,0.4,0.4)</color>
+      <texPath>Items/LuckyBlockFarmT2</texPath>
+      <color>(1,1,1)</color>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>2200</MarketValue>
@@ -609,8 +690,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -618,19 +697,25 @@
         <pool>farm.t2</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockFarmT2</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockZooT2_Item</defName>
     <label>лаки-блок «Зоопарк» T2</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• кошка ×100
+• курица ×6
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockT2</texPath>
-      <color>(0.4,0.4,0.4)</color>
+      <texPath>Items/LuckyBlockZooT2</texPath>
+      <color>(1,1,1)</color>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>2200</MarketValue>
@@ -644,8 +729,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -653,19 +736,26 @@
         <pool>zoo.t2</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockZooT2</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockMechsT2_Item</defName>
     <label>лаки-блок «Мехи повсюду» T2</label>
-    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• сталь ×500 + компонент ×20
+• враждебные механоиды: жнец ×4
+• враждебные механоиды: жнец ×12
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockT2</texPath>
-      <color>(0.4,0.4,0.4)</color>
+      <texPath>Items/LuckyBlockMechsT2</texPath>
+      <color>(1,1,1)</color>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>2200</MarketValue>
@@ -679,8 +769,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -688,19 +776,28 @@
         <pool>mechs.t2</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockMechsT2</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockChaosT2_Item</defName>
     <label>лаки-блок «Гречневое безумие» T2</label>
-    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• сталь ×2000
+• кошка ×100
+• враждебные механоиды: жнец ×4
+• энерговинтовка (качество: шедевр) ×1
+• простое блюдо ×1 + картофель ×500
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockT2</texPath>
-      <color>(0.4,0.4,0.4)</color>
+      <texPath>Items/LuckyBlockChaosT2</texPath>
+      <color>(1,1,1)</color>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>2200</MarketValue>
@@ -714,8 +811,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -723,18 +818,25 @@
         <pool>chaos.t2</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockChaosT2</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase" MayRequire="grechka.storage">
     <defName>Grechka_LuckyBlockStorageT2_Item</defName>
     <label>лаки-блок «Цифровой» T2</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• кварцевый процессор ×8 + серебряный процессор ×4 (нужен Grechka Storage)
+• диск хранения 4K ×1 (нужен Grechka Storage)
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockStorage</texPath>
+      <texPath>Items/LuckyBlockStorageT2</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
     </graphicData>
     <statBases>
       <MarketValue>2200</MarketValue>
@@ -748,8 +850,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -757,11 +857,17 @@
         <pool>storage.t2</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockStorageT2</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockT3_Item</defName>
     <label>лаки-блок T3</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• меха-компонент ×6 + механиты ×60 (нужен Grechka Industry)
+• продвинутый компонент ×12 + пласталь ×120
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
@@ -771,7 +877,7 @@
       <drawSize>(0.7,0.7)</drawSize>
     </graphicData>
     <statBases>
-      <MarketValue>9500</MarketValue>
+      <MarketValue>3000</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -782,20 +888,24 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
       <li Class="Grechka.LuckyBlocks.LuckyProperties">
         <pool>general.t3</pool>
+        <priceFromPool>false</priceFromPool>
       </li>
     </modExtensions>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockResourcesT3_Item</defName>
     <label>лаки-блок «Сырьё» T3</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• сталь ×450
+• древесина ×750
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
@@ -816,8 +926,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -829,14 +937,20 @@
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockIndustryT3_Item</defName>
     <label>лаки-блок «Промышленность» T3</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• меха-компонент ×6 + механиты ×60 (нужен Grechka Industry)
+• компонент ×24 + пласталь ×60
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockIndustry</texPath>
+      <texPath>Items/LuckyBlockIndustryT3</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
     </graphicData>
     <statBases>
       <MarketValue>9500</MarketValue>
@@ -850,8 +964,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -859,19 +971,25 @@
         <pool>industry.t3</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockIndustryT3</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockEnergyT3_Item</defName>
     <label>лаки-блок «Энергетика» T3</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• компонент ×18 + сталь ×360
+• механитный фотоэлемент ×9 (нужен Grechka Industry)
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockT3</texPath>
-      <color>(0.25,0.8,1)</color>
+      <texPath>Items/LuckyBlockEnergyT3</texPath>
+      <color>(1,1,1)</color>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>9500</MarketValue>
@@ -885,8 +1003,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -894,18 +1010,26 @@
         <pool>energy.t3</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockEnergyT3</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockMedicalT3_Item</defName>
     <label>лаки-блок «Медицина» T3</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• медикаменты ×36
+• передовые медикаменты ×12
+• инъектор «Живая ткань» ×3 + инъектор «Красная линия» ×2 + концентрат «Вторая смена» ×2 (нужен Grechka Pharmacy)
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockMedical</texPath>
+      <texPath>Items/LuckyBlockMedicalT3</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
     </graphicData>
     <statBases>
       <MarketValue>9500</MarketValue>
@@ -919,8 +1043,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -928,18 +1050,25 @@
         <pool>medical.t3</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockMedicalT3</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockCombatT3_Item</defName>
     <label>лаки-блок «Арсенал» T3</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• автомат (качество: отличное) ×1
+• бронежилет ×1
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockCombat</texPath>
+      <texPath>Items/LuckyBlockCombatT3</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
     </graphicData>
     <statBases>
       <MarketValue>9500</MarketValue>
@@ -953,8 +1082,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -962,19 +1089,25 @@
         <pool>combat.t3</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockCombatT3</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockFarmT3_Item</defName>
     <label>лаки-блок «Фермерский» T3</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• рис ×600
+• сухой паёк ×30
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockT3</texPath>
-      <color>(0.25,0.8,1)</color>
+      <texPath>Items/LuckyBlockFarmT3</texPath>
+      <color>(1,1,1)</color>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>9500</MarketValue>
@@ -988,8 +1121,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -997,19 +1128,25 @@
         <pool>farm.t3</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockFarmT3</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockZooT3_Item</defName>
     <label>лаки-блок «Зоопарк» T3</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• кошка ×100
+• курица ×6
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockT3</texPath>
-      <color>(0.25,0.8,1)</color>
+      <texPath>Items/LuckyBlockZooT3</texPath>
+      <color>(1,1,1)</color>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>9500</MarketValue>
@@ -1023,8 +1160,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -1032,19 +1167,26 @@
         <pool>zoo.t3</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockZooT3</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockMechsT3_Item</defName>
     <label>лаки-блок «Мехи повсюду» T3</label>
-    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• сталь ×750 + компонент ×30
+• враждебные механоиды: жнец ×4
+• враждебные механоиды: жнец ×12
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockT3</texPath>
-      <color>(0.25,0.8,1)</color>
+      <texPath>Items/LuckyBlockMechsT3</texPath>
+      <color>(1,1,1)</color>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>9500</MarketValue>
@@ -1058,8 +1200,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -1067,19 +1207,28 @@
         <pool>mechs.t3</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockMechsT3</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockChaosT3_Item</defName>
     <label>лаки-блок «Гречневое безумие» T3</label>
-    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• сталь ×3000
+• кошка ×100
+• враждебные механоиды: жнец ×4
+• энерговинтовка (качество: шедевр) ×1
+• простое блюдо ×1 + картофель ×500
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockT3</texPath>
-      <color>(0.25,0.8,1)</color>
+      <texPath>Items/LuckyBlockChaosT3</texPath>
+      <color>(1,1,1)</color>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>9500</MarketValue>
@@ -1093,8 +1242,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -1102,18 +1249,25 @@
         <pool>chaos.t3</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockChaosT3</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase" MayRequire="grechka.storage">
     <defName>Grechka_LuckyBlockStorageT3_Item</defName>
     <label>лаки-блок «Цифровой» T3</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• кварцевый процессор ×12 + серебряный процессор ×6 (нужен Grechka Storage)
+• диск хранения 16K ×1 (нужен Grechka Storage)
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockStorage</texPath>
+      <texPath>Items/LuckyBlockStorageT3</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
     </graphicData>
     <statBases>
       <MarketValue>9500</MarketValue>
@@ -1127,8 +1281,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -1136,11 +1288,17 @@
         <pool>storage.t3</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockStorageT3</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockT4_Item</defName>
     <label>лаки-блок T4</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• архо-компонент ×4 + архо-субстрат ×20 (нужен Grechka Industry)
+• продвинутый компонент ×20 + золото ×150
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
@@ -1150,7 +1308,7 @@
       <drawSize>(0.7,0.7)</drawSize>
     </graphicData>
     <statBases>
-      <MarketValue>32000</MarketValue>
+      <MarketValue>6000</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -1161,20 +1319,24 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
       <li Class="Grechka.LuckyBlocks.LuckyProperties">
         <pool>general.t4</pool>
+        <priceFromPool>false</priceFromPool>
       </li>
     </modExtensions>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockResourcesT4_Item</defName>
     <label>лаки-блок «Сырьё» T4</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• сталь ×600
+• древесина ×1000
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
@@ -1195,8 +1357,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -1208,14 +1368,20 @@
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockIndustryT4_Item</defName>
     <label>лаки-блок «Промышленность» T4</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• архо-компонент ×4 + архо-субстрат ×20 (нужен Grechka Industry)
+• компонент ×32 + пласталь ×80
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockIndustry</texPath>
+      <texPath>Items/LuckyBlockIndustryT4</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
     </graphicData>
     <statBases>
       <MarketValue>32000</MarketValue>
@@ -1229,8 +1395,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -1238,19 +1402,25 @@
         <pool>industry.t4</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockIndustryT4</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockEnergyT4_Item</defName>
     <label>лаки-блок «Энергетика» T4</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• компонент ×24 + сталь ×480
+• механитный фотоэлемент ×12 (нужен Grechka Industry)
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockT4</texPath>
-      <color>(0.3,1,0.4)</color>
+      <texPath>Items/LuckyBlockEnergyT4</texPath>
+      <color>(1,1,1)</color>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>32000</MarketValue>
@@ -1264,8 +1434,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -1273,18 +1441,26 @@
         <pool>energy.t4</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockEnergyT4</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockMedicalT4_Item</defName>
     <label>лаки-блок «Медицина» T4</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• медикаменты ×48
+• передовые медикаменты ×16
+• сыворотка удаления шрамов ×2 + сыворотка регенерации конечности ×1 (нужен Grechka Pharmacy)
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockMedical</texPath>
+      <texPath>Items/LuckyBlockMedicalT4</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
     </graphicData>
     <statBases>
       <MarketValue>32000</MarketValue>
@@ -1298,8 +1474,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -1307,18 +1481,25 @@
         <pool>medical.t4</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockMedicalT4</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockCombatT4_Item</defName>
     <label>лаки-блок «Арсенал» T4</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• автомат (качество: отличное) ×1
+• бронежилет ×1
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockCombat</texPath>
+      <texPath>Items/LuckyBlockCombatT4</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
     </graphicData>
     <statBases>
       <MarketValue>32000</MarketValue>
@@ -1332,8 +1513,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -1341,19 +1520,25 @@
         <pool>combat.t4</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockCombatT4</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockFarmT4_Item</defName>
     <label>лаки-блок «Фермерский» T4</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• рис ×800
+• сухой паёк ×40
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockT4</texPath>
-      <color>(0.3,1,0.4)</color>
+      <texPath>Items/LuckyBlockFarmT4</texPath>
+      <color>(1,1,1)</color>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>32000</MarketValue>
@@ -1367,8 +1552,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -1376,19 +1559,25 @@
         <pool>farm.t4</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockFarmT4</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockZooT4_Item</defName>
     <label>лаки-блок «Зоопарк» T4</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• кошка ×100
+• курица ×6
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockT4</texPath>
-      <color>(0.3,1,0.4)</color>
+      <texPath>Items/LuckyBlockZooT4</texPath>
+      <color>(1,1,1)</color>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>32000</MarketValue>
@@ -1402,8 +1591,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -1411,19 +1598,26 @@
         <pool>zoo.t4</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockZooT4</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockMechsT4_Item</defName>
     <label>лаки-блок «Мехи повсюду» T4</label>
-    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• сталь ×1000 + компонент ×40
+• враждебные механоиды: жнец ×4
+• враждебные механоиды: жнец ×12
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockT4</texPath>
-      <color>(0.3,1,0.4)</color>
+      <texPath>Items/LuckyBlockMechsT4</texPath>
+      <color>(1,1,1)</color>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>32000</MarketValue>
@@ -1437,8 +1631,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -1446,19 +1638,28 @@
         <pool>mechs.t4</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockMechsT4</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockChaosT4_Item</defName>
     <label>лаки-блок «Гречневое безумие» T4</label>
-    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• сталь ×4000
+• кошка ×100
+• враждебные механоиды: жнец ×4
+• энерговинтовка (качество: шедевр) ×1
+• простое блюдо ×1 + картофель ×500
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockT4</texPath>
-      <color>(0.3,1,0.4)</color>
+      <texPath>Items/LuckyBlockChaosT4</texPath>
+      <color>(1,1,1)</color>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>32000</MarketValue>
@@ -1472,8 +1673,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -1481,18 +1680,25 @@
         <pool>chaos.t4</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockChaosT4</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase" MayRequire="grechka.storage">
     <defName>Grechka_LuckyBlockStorageT4_Item</defName>
     <label>лаки-блок «Цифровой» T4</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• кварцевый процессор ×16 + серебряный процессор ×8 (нужен Grechka Storage)
+• диск хранения 64K ×1 (нужен Grechka Storage)
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockStorage</texPath>
+      <texPath>Items/LuckyBlockStorageT4</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
     </graphicData>
     <statBases>
       <MarketValue>32000</MarketValue>
@@ -1506,8 +1712,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -1515,11 +1719,17 @@
         <pool>storage.t4</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockStorageT4</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockT5_Item</defName>
     <label>лаки-блок T5</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• гречневый компонент ×4 + гречневый концентрат ×30 (нужен Grechka Industry)
+• продвинутый компонент ×40 + пласталь ×300
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
@@ -1529,7 +1739,7 @@
       <drawSize>(0.7,0.7)</drawSize>
     </graphicData>
     <statBases>
-      <MarketValue>150000</MarketValue>
+      <MarketValue>12000</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -1540,20 +1750,24 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
       <li Class="Grechka.LuckyBlocks.LuckyProperties">
         <pool>general.t5</pool>
+        <priceFromPool>false</priceFromPool>
       </li>
     </modExtensions>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockResourcesT5_Item</defName>
     <label>лаки-блок «Сырьё» T5</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• сталь ×750
+• древесина ×1250
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
@@ -1574,8 +1788,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -1587,14 +1799,20 @@
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockIndustryT5_Item</defName>
     <label>лаки-блок «Промышленность» T5</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• гречневый компонент ×4 + гречневый концентрат ×30 (нужен Grechka Industry)
+• компонент ×40 + пласталь ×100
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockIndustry</texPath>
+      <texPath>Items/LuckyBlockIndustryT5</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
     </graphicData>
     <statBases>
       <MarketValue>150000</MarketValue>
@@ -1608,8 +1826,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -1617,19 +1833,25 @@
         <pool>industry.t5</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockIndustryT5</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockEnergyT5_Item</defName>
     <label>лаки-блок «Энергетика» T5</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• компонент ×30 + сталь ×600
+• механитный фотоэлемент ×15 (нужен Grechka Industry)
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockT5</texPath>
-      <color>(0.55,0.3,0.15)</color>
+      <texPath>Items/LuckyBlockEnergyT5</texPath>
+      <color>(1,1,1)</color>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>150000</MarketValue>
@@ -1643,8 +1865,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -1652,18 +1872,26 @@
         <pool>energy.t5</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockEnergyT5</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockMedicalT5_Item</defName>
     <label>лаки-блок «Медицина» T5</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• медикаменты ×60
+• передовые медикаменты ×20
+• гречневая сыворотка регенерации ×1 + сыворотка омоложения ×1 (нужен Grechka Pharmacy)
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockMedical</texPath>
+      <texPath>Items/LuckyBlockMedicalT5</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
     </graphicData>
     <statBases>
       <MarketValue>150000</MarketValue>
@@ -1677,8 +1905,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -1686,18 +1912,25 @@
         <pool>medical.t5</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockMedicalT5</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockCombatT5_Item</defName>
     <label>лаки-блок «Арсенал» T5</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• автомат (качество: отличное) ×1
+• бронежилет ×1
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockCombat</texPath>
+      <texPath>Items/LuckyBlockCombatT5</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
     </graphicData>
     <statBases>
       <MarketValue>150000</MarketValue>
@@ -1711,8 +1944,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -1720,19 +1951,25 @@
         <pool>combat.t5</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockCombatT5</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockFarmT5_Item</defName>
     <label>лаки-блок «Фермерский» T5</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• рис ×1000
+• сухой паёк ×50
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockT5</texPath>
-      <color>(0.55,0.3,0.15)</color>
+      <texPath>Items/LuckyBlockFarmT5</texPath>
+      <color>(1,1,1)</color>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>150000</MarketValue>
@@ -1746,8 +1983,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -1755,19 +1990,25 @@
         <pool>farm.t5</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockFarmT5</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockZooT5_Item</defName>
     <label>лаки-блок «Зоопарк» T5</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• кошка ×100
+• курица ×6
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockT5</texPath>
-      <color>(0.55,0.3,0.15)</color>
+      <texPath>Items/LuckyBlockZooT5</texPath>
+      <color>(1,1,1)</color>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>150000</MarketValue>
@@ -1781,8 +2022,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -1790,19 +2029,26 @@
         <pool>zoo.t5</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockZooT5</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockMechsT5_Item</defName>
     <label>лаки-блок «Мехи повсюду» T5</label>
-    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• сталь ×1250 + компонент ×50
+• враждебные механоиды: жнец ×4
+• враждебные механоиды: жнец ×12
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockT5</texPath>
-      <color>(0.55,0.3,0.15)</color>
+      <texPath>Items/LuckyBlockMechsT5</texPath>
+      <color>(1,1,1)</color>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>150000</MarketValue>
@@ -1816,8 +2062,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -1825,19 +2069,28 @@
         <pool>mechs.t5</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockMechsT5</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_LuckyBlockChaosT5_Item</defName>
     <label>лаки-блок «Гречневое безумие» T5</label>
-    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• сталь ×5000
+• кошка ×100
+• враждебные механоиды: жнец ×4
+• энерговинтовка (качество: шедевр) ×1
+• простое блюдо ×1 + картофель ×500
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockT5</texPath>
-      <color>(0.55,0.3,0.15)</color>
+      <texPath>Items/LuckyBlockChaosT5</texPath>
+      <color>(1,1,1)</color>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <statBases>
       <MarketValue>150000</MarketValue>
@@ -1851,8 +2104,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -1860,18 +2111,25 @@
         <pool>chaos.t5</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockChaosT5</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase" MayRequire="grechka.storage">
     <defName>Grechka_LuckyBlockStorageT5_Item</defName>
     <label>лаки-блок «Цифровой» T5</label>
-    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.</description>
+    <description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
+
+Возможное содержимое при стандартных настройках (один из вариантов):
+• кварцевый процессор ×20 + серебряный процессор ×10 (нужен Grechka Storage)
+• диск хранения 256K ×1 (нужен Grechka Storage)
+Недоступные награды исключаются. Состав можно изменить в настройках мода.</description>
     <thingClass>Grechka.LuckyBlocks.LuckyBlock</thingClass>
     <stackLimit>1</stackLimit>
     <tickerType>Never</tickerType>
     <graphicData>
-      <texPath>Items/LuckyBlockStorage</texPath>
+      <texPath>Items/LuckyBlockStorageT5</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(0.7,0.7)</drawSize>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
     </graphicData>
     <statBases>
       <MarketValue>150000</MarketValue>
@@ -1885,8 +2143,6 @@
     </thingCategories>
     <tradeTags>
       <li>ExoticMisc</li>
-    </tradeTags>
-    <tradeTags>
       <li>GrechkaLuckyBlocks</li>
     </tradeTags>
     <modExtensions>
@@ -1894,5 +2150,6 @@
         <pool>storage.t5</pool>
       </li>
     </modExtensions>
+    <uiIconPath>Items/LuckyBlockStorageT5</uiIconPath>
   </ThingDef>
 </Defs>

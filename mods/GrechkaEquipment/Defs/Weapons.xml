@@ -7,6 +7,7 @@
     <graphicData>
       <texPath>Items/CryoRifle</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,0.399899)</drawSize>
     </graphicData>
     <statBases>
       <WorkToMake>70000</WorkToMake>
@@ -18,10 +19,10 @@
       <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
     </statBases>
     <costList>
-      <Plasteel>120</Plasteel>
-      <Grechka_ComponentT5_Item>8</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>40</Grechka_GrechkaConcentrate>
-      <Gold>30</Gold>
+      <Plasteel>100</Plasteel>
+      <Grechka_ComponentT5_Item>4</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>20</Grechka_GrechkaConcentrate>
+      <Gold>20</Gold>
     </costList>
     <recipeMaker Inherit="False">
       <workSkill>Crafting</workSkill>
@@ -43,7 +44,7 @@
     </weaponTags>
     <verbs>
       <li>
-        <verbClass>Verb_Shoot</verbClass>
+        <verbClass>Grechka.Equipment.Verb_CryoShoot</verbClass>
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Grechka_CryoBullet</defaultProjectile>
         <warmupTime>1</warmupTime>
@@ -52,7 +53,7 @@
         <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
         <soundCast>Shot_ChargeRifle</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
-        <muzzleFlashScale>6</muzzleFlashScale>
+        <muzzleFlashScale>0</muzzleFlashScale>
       </li>
     </verbs>
   </ThingDef>
@@ -75,7 +76,7 @@
     <defName>Grechka_CryoSlow</defName>
     <label>криозамедление</label>
     <description>Иней сковывает движение. Повторное попадание обновляет длительность, но не усиливает эффект.</description>
-    <hediffClass>HediffWithComps</hediffClass>
+    <hediffClass>Grechka.Equipment.Hediff_CryoSlow</hediffClass>
     <isBad>true</isBad>
     <maxSeverity>1</maxSeverity>
     <initialSeverity>1</initialSeverity>

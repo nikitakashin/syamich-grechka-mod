@@ -9,6 +9,7 @@
     <li>ludeon.rimworld.ideology</li>
     <li>ludeon.rimworld.biotech</li>
     <li>savestoragesettings.kv.rw.fishtmp</li>
+    <li>owlchemist.powertab.forked.runningbugs</li>
     <li>adaptive.storage.framework</li>
     <li>sbz.neatstoragefridge</li>
     <li>sbz.neatstorage</li>
@@ -28,12 +29,15 @@
     <li>m00nl1ght.mappreview</li>
     <li>andromeda.milkyway</li>
     <li>haplo.miscellaneous.robots</li>
+    <li>alaestor.miscrobots.plusplus</li>
     <li>haplo.miscellaneous.training</li>
     <li>andromeda.nicebilltab</li>
     <li>andromeda.nicehealthtab</li>
     <li>andromeda.niceinventorytab</li>
     <li>scherub.planningextended</li>
     <li>dawnsglow.qualcolor</li>
+    <li>zzyxzz.pickupandhaulreworked</li>
+    <li>crashm.colorcodedmoodbar.11</li>
     <li>woolstrand.realruins</li>
     <li>mlie.recipeicons</li>
     <li>rimsenal.feral</li>
@@ -92,12 +96,26 @@
     <li>vanillaexpanded.vwenl</li>
     <li>dismarzero.vgp.vgpmoreveggies</li>
     <li>memegoddess.replacestuff</li>
+    <li>grechka.translations.rus</li>
     <li>grechka.quests</li>
     <li>grechka.industry</li>
     <li>grechka.storage</li>
     <li>grechka.equipment</li>
     <li>grechka.luckyblocks</li>
+    <li>grechka.drones</li>
+    <li>grechka.pharmacy</li>
+    <li>grechka.treasures</li>
     <li>grechka.world.integration</li>
+    <li>grechka.cameraplus</li>
+    <li>grechka.speedplus</li>
+    <li>grechka.traders</li>
+    <li>grechka.destroyitem</li>
+    <li>grechka.kite</li>
+    <li>grechka.farms</li>
+    <li>grechka.tweaks</li>
+    <li>grechka.achivements</li>
+    <li>grechka.factions</li>
+    <li>grechka.patch.realruinsrobots</li>
   </activeMods>
   <knownExpansions>
     <li>ludeon.rimworld.royalty</li>

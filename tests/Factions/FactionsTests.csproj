@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>disable</Nullable><EnableNETAnalyzers>false</EnableNETAnalyzers><NuGetAudit>false</NuGetAudit></PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp"><HintPath>$(RIMWORLD_MANAGED_DIR)/Assembly-CSharp.dll</HintPath></Reference>
+    <Reference Include="UnityStubs"><HintPath>$(RIMWORLD_MANAGED_DIR)/UnityStubs.dll</HintPath></Reference>
+    <Reference Include="Waylith"><HintPath>$(RIMWORLD_MANAGED_DIR)/Waylith.dll</HintPath></Reference>
+    <Reference Include="0Harmony"><HintPath>$(HARMONY_ASSEMBLY)</HintPath></Reference>
+    <ProjectReference Include="../../mods/GrechkaFactions/Source/GrechkaFactions.csproj" />
+  </ItemGroup>
+</Project>

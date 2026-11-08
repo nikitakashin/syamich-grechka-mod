@@ -17,7 +17,7 @@ namespace Grechka.Quests
             books = savedBooks == null ? new Dictionary<string, string>() : new Dictionary<string, string>(savedBooks);
             definitions = savedDefinitions == null ? new Dictionary<string, string>() : new Dictionary<string, string>(savedDefinitions);
             foreach (var pair in books)
-                if (PackCodec.Decode(pair.Value).id != pair.Key) throw new FormatException("ID сохранённой книги не совпадает с её содержимым: " + pair.Key);
+                if (PackCodec.Decode(pair.Value).id != pair.Key) throw new FormatException(QuestText.Get("GrechkaQuests_3b2ab84d9a1a", "ID сохранённой книги не совпадает с её содержимым: ") + pair.Key);
         }
 
         // Seed old saves from what is genuinely known. Achieved signatures take precedence
@@ -43,7 +43,7 @@ namespace Grechka.Quests
                 {
                     string key = PackCodec.ObjectiveKey(candidate.id, quest.id, goal.id), previous;
                     if (definitions.TryGetValue(key, out previous) && previous != QuestProgress.Signature(goal))
-                        conflicts.Add(quest.title + " / " + goal.id);
+                        conflicts.Add(QuestText.Content(quest.title) + " / " + goal.id);
                 }
             return conflicts;
         }
@@ -51,7 +51,7 @@ namespace Grechka.Quests
         public void Remember(QuestPack candidate)
         {
             var conflicts = Conflicts(candidate);
-            if (conflicts.Count != 0) throw new InvalidOperationException("Смысл цели изменён с прежним ID: " + string.Join(", ", conflicts.Take(5)) + ". Назначьте ей новый ID в редакторе.");
+            if (conflicts.Count != 0) throw new InvalidOperationException(QuestText.Get("GrechkaQuests_e5a800354d13", "Смысл цели изменён с прежним ID: ") + string.Join(", ", conflicts.Take(5)) + QuestText.Get("GrechkaQuests_11eea5b09a37", ". Назначьте ей новый ID в редакторе."));
             foreach (Quest quest in candidate.quests)
                 foreach (Objective goal in quest.objectives)
                     definitions[PackCodec.ObjectiveKey(candidate.id, quest.id, goal.id)] = QuestProgress.Signature(goal);
@@ -75,10 +75,10 @@ namespace Grechka.Quests
             foreach (Quest q in old.Values)
                 foreach (string parent in q.requires)
                     if (!next.ContainsKey(q.id) || !next[q.id].requires.Contains(parent))
-                        removedLinks.Add(q.title + " ← " + (old.ContainsKey(parent) ? old[parent].title : parent));
-            string title = same ? "Обновить книгу «" + after.title + "»?" : "Заменить книгу «" + (before?.title ?? "") + "» на «" + after.title + "»?";
-            string links = removedLinks.Count == 0 ? "Удалённых связей нет." : "Удалённые связи: " + string.Join("; ", removedLinks.Take(8)) + (removedLinks.Count > 8 ? " и ещё " + (removedLinks.Count - 8) : "") + ".";
-            return title + "\nЗаданий: добавлено " + added + ", изменено " + changed + ", удалено " + removed + ". Удалено или заменено целей: " + replaced + ".\n" + links;
+                        removedLinks.Add(QuestText.Content(q.title) + " ← " + (old.ContainsKey(parent) ? QuestText.Content(old[parent].title) : parent));
+            string title = same ? QuestText.Get("GrechkaQuests_baeb677169a2", "Обновить книгу «") + QuestText.Content(after.title) + "»?" : QuestText.Get("GrechkaQuests_d97fc1baa61a", "Заменить книгу «") + QuestText.Content(before?.title ?? "") + QuestText.Get("GrechkaQuests_390490b366fa", "» на «") + QuestText.Content(after.title) + "»?";
+            string links = removedLinks.Count == 0 ? QuestText.Get("GrechkaQuests_d4084173d241", "Удалённых связей нет.") : QuestText.Get("GrechkaQuests_3bdb05807148", "Удалённые связи: ") + string.Join("; ", removedLinks.Take(8)) + (removedLinks.Count > 8 ? QuestText.Get("GrechkaQuests_dba0256a8f97", " и ещё ") + (removedLinks.Count - 8) : "") + ".";
+            return title + QuestText.Get("GrechkaQuests_5e94e791d455", "\nЗаданий: добавлено ") + added + QuestText.Get("GrechkaQuests_f8ae281176e2", ", изменено ") + changed + QuestText.Get("GrechkaQuests_ed56d9d96b8d", ", удалено ") + removed + QuestText.Get("GrechkaQuests_a67afb9a5623", ". Удалено или заменено целей: ") + replaced + ".\n" + links;
         }
     }
 }

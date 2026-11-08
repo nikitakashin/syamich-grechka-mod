@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>Grechka_HarvestCertus</defName>
+    <driverClass>Grechka.Storage.JobDriver_HarvestCertus</driverClass>
+    <reportString>собирает кристаллы certus.</reportString>
+  </JobDef>
+  <WorkGiverDef>
+    <defName>Grechka_CertusHarvestWork</defName>
+    <label>собирать кристаллы certus</label>
+    <giverClass>Grechka.Storage.WorkGiver_HarvestCertus</giverClass>
+    <workType>Growing</workType>
+    <priorityInType>95</priorityInType>
+    <verb>собрать кристаллы certus</verb>
+    <gerund>собирает кристаллы certus</gerund>
+    <requiredCapacities><li>Manipulation</li></requiredCapacities>
+  </WorkGiverDef>
+</Defs>

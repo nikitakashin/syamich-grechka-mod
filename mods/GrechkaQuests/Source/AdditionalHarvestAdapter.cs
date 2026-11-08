@@ -48,7 +48,7 @@ namespace Grechka.Quests
                 || cut == null || !typeof(Toil).IsAssignableFrom(cut.FieldType)
                 || actor == null || !typeof(Pawn).IsAssignableFrom(actor.FieldType))
             {
-                Log.Warning("[Grechka Quests] Источник дополнительных продуктов урожая не найден в этой версии игры.");
+                Log.Warning(QuestText.Get("GrechkaQuests_7a6cfc3a879d", "[Grechka Quests] Источник дополнительных продуктов урожая не найден в этой версии игры."));
                 return;
             }
             try
@@ -65,7 +65,7 @@ namespace Grechka.Quests
             }
             catch (Exception e)
             {
-                Log.Error("[Grechka Quests] Не удалось подключить дополнительные продукты урожая: " + e);
+                Log.Error(QuestText.Get("GrechkaQuests_3ff0ea9edcb7", "[Grechka Quests] Не удалось подключить дополнительные продукты урожая: ") + e);
             }
         }
 

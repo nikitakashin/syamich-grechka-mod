@@ -1,0 +1,534 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingCategoryDef>
+    <defName>GrechkaPharmacy_Preparations</defName>
+    <label>pharmaceutical preparations</label>
+    <parent>Drugs</parent>
+  </ThingCategoryDef>
+  <ThingDef ParentName="DrugPillBase">
+    <defName>GrechkaPharmacy_HemostaticT1_Item</defName>
+    <label>Last chance dressing</label>
+    <description>Reduces all bleeding by 85% for 3 hours. Does not replace lost blood or heal wounds.</description>
+    <rotatable>false</rotatable>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <techLevel>Neolithic</techLevel>
+    <graphicData>
+      <texPath>Items/HemostaticT1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconPath>Items/HemostaticT1</uiIconPath>
+    <statBases>
+      <MarketValue>28</MarketValue>
+      <Mass>0.05</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <stackLimit>75</stackLimit>
+    <thingCategories Inherit="false">
+      <li>GrechkaPharmacy_Preparations</li>
+    </thingCategories>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <ingestCommandString>Apply {0}</ingestCommandString>
+      <ingestReportString>Applying {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <outcomeDoers>
+        <li Class="Grechka.Pharmacy.IngestionOutcomeDoer_Pharmacy">
+          <action>effect</action>
+          <effect>GrechkaPharmacy_HemostaticEffect</effect>
+          <durationTicks>7500</durationTicks>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>2100</listOrder>
+        <overdoseSeverityOffset>0~0</overdoseSeverityOffset>
+        <largeOverdoseChance>0</largeOverdoseChance>
+        <addictiveness>0</addictiveness>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="DrugPillBase">
+    <defName>GrechkaPharmacy_AnalgesicT1_Item</defName>
+    <label>Field analgesic</label>
+    <description>Reduces pain by 55% for 6 hours. Pain relief does not prevent lethal injuries.</description>
+    <rotatable>false</rotatable>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <techLevel>Neolithic</techLevel>
+    <graphicData>
+      <texPath>Items/AnalgesicT1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconPath>Items/AnalgesicT1</uiIconPath>
+    <statBases>
+      <MarketValue>24</MarketValue>
+      <Mass>0.05</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <stackLimit>75</stackLimit>
+    <thingCategories Inherit="false">
+      <li>GrechkaPharmacy_Preparations</li>
+    </thingCategories>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <ingestCommandString>Apply {0}</ingestCommandString>
+      <ingestReportString>Applying {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <outcomeDoers>
+        <li Class="Grechka.Pharmacy.IngestionOutcomeDoer_Pharmacy">
+          <action>effect</action>
+          <effect>GrechkaPharmacy_AnalgesicEffect</effect>
+          <durationTicks>15000</durationTicks>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>2100</listOrder>
+        <overdoseSeverityOffset>0~0</overdoseSeverityOffset>
+        <largeOverdoseChance>0</largeOverdoseChance>
+        <addictiveness>0</addictiveness>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="DrugPillBase">
+    <defName>GrechkaPharmacy_ImmunoT2_Item</defName>
+    <label>Immune support</label>
+    <description>Increases immunity gain speed by 50% for one day. Supports treatment of existing diseases, without granting immunity to new infections.</description>
+    <rotatable>false</rotatable>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Items/ImmunoT2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconPath>Items/ImmunoT2</uiIconPath>
+    <statBases>
+      <MarketValue>65</MarketValue>
+      <Mass>0.05</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <stackLimit>75</stackLimit>
+    <thingCategories Inherit="false">
+      <li>GrechkaPharmacy_Preparations</li>
+    </thingCategories>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <ingestCommandString>Apply {0}</ingestCommandString>
+      <ingestReportString>Applying {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <outcomeDoers>
+        <li Class="Grechka.Pharmacy.IngestionOutcomeDoer_Pharmacy">
+          <action>effect</action>
+          <effect>GrechkaPharmacy_ImmunoEffect</effect>
+          <durationTicks>60000</durationTicks>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>2200</listOrder>
+        <overdoseSeverityOffset>0~0</overdoseSeverityOffset>
+        <largeOverdoseChance>0</largeOverdoseChance>
+        <addictiveness>0</addictiveness>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="DrugPillBase">
+    <defName>GrechkaPharmacy_RecoveryT2_Item</defName>
+    <label>Recovery solution</label>
+    <description>Multiplies natural healing by 1.75 for one day, with 20% more hunger. Does not restore missing body parts.</description>
+    <rotatable>false</rotatable>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Items/RecoveryT2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconPath>Items/RecoveryT2</uiIconPath>
+    <statBases>
+      <MarketValue>75</MarketValue>
+      <Mass>0.05</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <stackLimit>75</stackLimit>
+    <thingCategories Inherit="false">
+      <li>GrechkaPharmacy_Preparations</li>
+    </thingCategories>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <ingestCommandString>Apply {0}</ingestCommandString>
+      <ingestReportString>Applying {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <outcomeDoers>
+        <li Class="Grechka.Pharmacy.IngestionOutcomeDoer_Pharmacy">
+          <action>effect</action>
+          <effect>GrechkaPharmacy_RecoveryEffect</effect>
+          <durationTicks>60000</durationTicks>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>2200</listOrder>
+        <overdoseSeverityOffset>0~0</overdoseSeverityOffset>
+        <largeOverdoseChance>0</largeOverdoseChance>
+        <addictiveness>0</addictiveness>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="DrugPillBase">
+    <defName>GrechkaPharmacy_DetoxT2_Item</defName>
+    <label>Clean slate course</label>
+    <description>Treats one ordinary chemical addiction over one day. Does not cure luciferium dependency, genetic dependencies or drug tolerance. Repeated doses refresh the course without stacking its speed.</description>
+    <rotatable>false</rotatable>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <techLevel>Industrial</techLevel>
+    <graphicData>
+      <texPath>Items/DetoxT2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconPath>Items/DetoxT2</uiIconPath>
+    <statBases>
+      <MarketValue>100</MarketValue>
+      <Mass>0.05</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <stackLimit>75</stackLimit>
+    <thingCategories Inherit="false">
+      <li>GrechkaPharmacy_Preparations</li>
+    </thingCategories>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <ingestCommandString>Apply {0}</ingestCommandString>
+      <ingestReportString>Applying {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <outcomeDoers>
+        <li Class="Grechka.Pharmacy.IngestionOutcomeDoer_Pharmacy">
+          <action>detox</action>
+          <effect>GrechkaPharmacy_DetoxCourse</effect>
+          <durationTicks>60000</durationTicks>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>2200</listOrder>
+        <overdoseSeverityOffset>0~0</overdoseSeverityOffset>
+        <largeOverdoseChance>0</largeOverdoseChance>
+        <addictiveness>0</addictiveness>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="DrugPillBase">
+    <defName>GrechkaPharmacy_MechaniteRegenT3_Item</defName>
+    <label>Living tissue injector</label>
+    <description>A one-day course repairs fresh wounds, up to 2 injury points per hour. Does not heal scars, missing parts or implants.</description>
+    <rotatable>false</rotatable>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Items/MechaniteRegenT3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconPath>Items/MechaniteRegenT3</uiIconPath>
+    <statBases>
+      <MarketValue>240</MarketValue>
+      <Mass>0.05</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <stackLimit>75</stackLimit>
+    <thingCategories Inherit="false">
+      <li>GrechkaPharmacy_Preparations</li>
+    </thingCategories>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <ingestCommandString>Apply {0}</ingestCommandString>
+      <ingestReportString>Applying {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <outcomeDoers>
+        <li Class="Grechka.Pharmacy.IngestionOutcomeDoer_Pharmacy">
+          <action>regeneration</action>
+          <effect>GrechkaPharmacy_MechaniteRegenCourse</effect>
+          <durationTicks>60000</durationTicks>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>2300</listOrder>
+        <overdoseSeverityOffset>0~0</overdoseSeverityOffset>
+        <largeOverdoseChance>0</largeOverdoseChance>
+        <addictiveness>0</addictiveness>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="DrugPillBase">
+    <defName>GrechkaPharmacy_CombatStimT3_Item</defName>
+    <label>Red line injector</label>
+    <description>For 8 hours: movement +25%, shooting accuracy factor +10%, pain -70%. Followed by 6 hours of fatigue. Repeated doses refresh, rather than stack, the effect.</description>
+    <rotatable>false</rotatable>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Items/CombatStimT3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconPath>Items/CombatStimT3</uiIconPath>
+    <statBases>
+      <MarketValue>160</MarketValue>
+      <Mass>0.05</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <stackLimit>75</stackLimit>
+    <thingCategories Inherit="false">
+      <li>GrechkaPharmacy_Preparations</li>
+    </thingCategories>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <ingestCommandString>Apply {0}</ingestCommandString>
+      <ingestReportString>Applying {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <outcomeDoers>
+        <li Class="Grechka.Pharmacy.IngestionOutcomeDoer_Pharmacy">
+          <action>effect</action>
+          <effect>GrechkaPharmacy_CombatEffect</effect>
+          <durationTicks>20000</durationTicks>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>2300</listOrder>
+        <overdoseSeverityOffset>0~0</overdoseSeverityOffset>
+        <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+        <largeOverdoseChance>0</largeOverdoseChance>
+        <addictiveness>0</addictiveness>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="DrugPillBase">
+    <defName>GrechkaPharmacy_WorkStimT3_Item</defName>
+    <label>Second shift concentrate</label>
+    <description>For one day: global work speed +35%, rest consumption halved. Followed by 6 hours of fatigue. Repeated doses refresh the same effect.</description>
+    <rotatable>false</rotatable>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Items/WorkStimT3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconPath>Items/WorkStimT3</uiIconPath>
+    <statBases>
+      <MarketValue>140</MarketValue>
+      <Mass>0.05</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <stackLimit>75</stackLimit>
+    <thingCategories Inherit="false">
+      <li>GrechkaPharmacy_Preparations</li>
+    </thingCategories>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <ingestCommandString>Apply {0}</ingestCommandString>
+      <ingestReportString>Applying {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <outcomeDoers>
+        <li Class="Grechka.Pharmacy.IngestionOutcomeDoer_Pharmacy">
+          <action>effect</action>
+          <effect>GrechkaPharmacy_WorkEffect</effect>
+          <durationTicks>60000</durationTicks>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>2300</listOrder>
+        <overdoseSeverityOffset>0~0</overdoseSeverityOffset>
+        <largeOverdoseChance>0</largeOverdoseChance>
+        <addictiveness>0</addictiveness>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="DrugPillBase">
+    <defName>GrechkaPharmacy_ScarSerumT4_Item</defName>
+    <label>Scar repair serum</label>
+    <description>Heals one permanent injury in natural tissue, then supports recovery for one day. Preserves implants and special psychic sacrifices.</description>
+    <rotatable>false</rotatable>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <techLevel>Ultra</techLevel>
+    <graphicData>
+      <texPath>Items/ScarSerumT4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconPath>Items/ScarSerumT4</uiIconPath>
+    <statBases>
+      <MarketValue>1400</MarketValue>
+      <Mass>0.05</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <stackLimit>75</stackLimit>
+    <thingCategories Inherit="false">
+      <li>GrechkaPharmacy_Preparations</li>
+    </thingCategories>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <ingestCommandString>Apply {0}</ingestCommandString>
+      <ingestReportString>Applying {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <outcomeDoers>
+        <li Class="Grechka.Pharmacy.IngestionOutcomeDoer_Pharmacy">
+          <action>scar</action>
+          <effect>GrechkaPharmacy_RecoveryEffect</effect>
+          <durationTicks>60000</durationTicks>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>2400</listOrder>
+        <overdoseSeverityOffset>0~0</overdoseSeverityOffset>
+        <largeOverdoseChance>0</largeOverdoseChance>
+        <addictiveness>0</addictiveness>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="DrugPillBase">
+    <defName>GrechkaPharmacy_LimbSerumT4_Item</defName>
+    <label>Limb regeneration serum</label>
+    <description>Restores one missing natural limb on an intact natural parent, then supports recovery for one day. Cannot restore the head or torso, replace implants, or reverse psychic sacrifices.</description>
+    <rotatable>false</rotatable>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <techLevel>Ultra</techLevel>
+    <graphicData>
+      <texPath>Items/LimbSerumT4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconPath>Items/LimbSerumT4</uiIconPath>
+    <statBases>
+      <MarketValue>2200</MarketValue>
+      <Mass>0.05</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <stackLimit>75</stackLimit>
+    <thingCategories Inherit="false">
+      <li>GrechkaPharmacy_Preparations</li>
+    </thingCategories>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <ingestCommandString>Apply {0}</ingestCommandString>
+      <ingestReportString>Applying {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <outcomeDoers>
+        <li Class="Grechka.Pharmacy.IngestionOutcomeDoer_Pharmacy">
+          <action>limb</action>
+          <effect>GrechkaPharmacy_RecoveryEffect</effect>
+          <durationTicks>60000</durationTicks>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>2400</listOrder>
+        <overdoseSeverityOffset>0~0</overdoseSeverityOffset>
+        <largeOverdoseChance>0</largeOverdoseChance>
+        <addictiveness>0</addictiveness>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="DrugPillBase">
+    <defName>GrechkaPharmacy_GrechkaSerumT5_Item</defName>
+    <label>Grechka regeneration serum</label>
+    <description>A one-day course repairs fresh injuries and one old scar or supported chronic condition in natural tissue. Preserves implants, genes, pregnancy and special psychic states. Does not resurrect or regrow missing parts; use the limb serum for that.</description>
+    <rotatable>false</rotatable>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <techLevel>Archotech</techLevel>
+    <graphicData>
+      <texPath>Items/GrechkaSerumT5</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconPath>Items/GrechkaSerumT5</uiIconPath>
+    <statBases>
+      <MarketValue>5800</MarketValue>
+      <Mass>0.05</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <stackLimit>75</stackLimit>
+    <thingCategories Inherit="false">
+      <li>GrechkaPharmacy_Preparations</li>
+    </thingCategories>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <ingestCommandString>Apply {0}</ingestCommandString>
+      <ingestReportString>Applying {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <outcomeDoers>
+        <li Class="Grechka.Pharmacy.IngestionOutcomeDoer_Pharmacy">
+          <action>comprehensive</action>
+          <effect>GrechkaPharmacy_GrechkaCourse</effect>
+          <durationTicks>60000</durationTicks>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>2500</listOrder>
+        <overdoseSeverityOffset>0~0</overdoseSeverityOffset>
+        <largeOverdoseChance>0</largeOverdoseChance>
+        <addictiveness>0</addictiveness>
+      </li>
+    </comps>
+  </ThingDef>
+  <ThingDef ParentName="DrugPillBase">
+    <defName>GrechkaPharmacy_YouthSerumT5_Item</defName>
+    <label>Youth renewal serum</label>
+    <description>Reduces human biological age by five years, down to a minimum of 25 years. Chronological age is unchanged. Has no effect on younger patients.</description>
+    <rotatable>false</rotatable>
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <techLevel>Archotech</techLevel>
+    <graphicData>
+      <texPath>Items/YouthSerumT5</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconPath>Items/YouthSerumT5</uiIconPath>
+    <statBases>
+      <MarketValue>6500</MarketValue>
+      <Mass>0.05</Mass>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <stackLimit>75</stackLimit>
+    <thingCategories Inherit="false">
+      <li>GrechkaPharmacy_Preparations</li>
+    </thingCategories>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <ingestCommandString>Apply {0}</ingestCommandString>
+      <ingestReportString>Applying {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <outcomeDoers>
+        <li Class="Grechka.Pharmacy.IngestionOutcomeDoer_Pharmacy">
+          <action>youth</action>
+          <durationTicks>0</durationTicks>
+          <amount>5</amount>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>2500</listOrder>
+        <overdoseSeverityOffset>0~0</overdoseSeverityOffset>
+        <largeOverdoseChance>0</largeOverdoseChance>
+        <addictiveness>0</addictiveness>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

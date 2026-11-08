@@ -29,34 +29,34 @@ namespace Grechka.Storage
         }
         public static string Problem(Thing thing)
         {
-            if (thing == null || thing.Destroyed || thing.stackCount <= 0) return "Предмет недоступен";
-            if (thing is StorageDisk) return "Диски устанавливаются отдельно в дисковый блок";
+            if (thing == null || thing.Destroyed || thing.stackCount <= 0) return StorageText.Get("GrechkaStorage_Text137");
+            if (thing is StorageDisk) return StorageText.Get("GrechkaStorage_Text138");
             if (thing.def.category != ThingCategory.Item || thing is Pawn || thing is Corpse || thing is UnfinishedThing)
-                return "Этот объект нельзя хранить на диске";
+                return StorageText.Get("GrechkaStorage_Text139");
             if (thing is MinifiedThing minified)
             {
-                if (minified.InnerThing == null) return "Пустая упаковка";
+                if (minified.InnerThing == null) return StorageText.Get("GrechkaStorage_Text140");
                 if (HasContents(minified.InnerThing))
-                    return "Сначала извлеките содержимое упакованного контейнера";
+                    return StorageText.Get("GrechkaStorage_Text141");
                 if ((minified.InnerThing as ThingWithComps)?.GetComp<CompExplosive>() != null)
-                    return "Опасное устройство требует отдельного адаптера";
+                    return StorageText.Get("GrechkaStorage_Text142");
                 return null;
             }
             Type type = thing.GetType();
             if (type != typeof(Thing) && type != typeof(ThingWithComps) && !(thing is Apparel))
-                return "Особый тип предмета требует адаптера: " + type.Name;
-            if (HasContents(thing)) return "Сначала извлеките содержимое вложенного контейнера";
-            if (thing is IThingHolder) return "Вложенные контейнеры не поддерживаются";
+                return StorageText.Get("GrechkaStorage_Text143") + type.Name;
+            if (HasContents(thing)) return StorageText.Get("GrechkaStorage_Text144");
+            if (thing is IThingHolder) return StorageText.Get("GrechkaStorage_Text145");
             if (!(thing is ThingWithComps withComps)) return null;
             foreach (ThingComp comp in withComps.AllComps)
             {
-                if (comp is CompExplosive) return "Взрывоопасный предмет нельзя поместить на диск";
-                if (comp is CompRottable && comp.GetType() != typeof(CompRottable)) return "Особая порча требует отдельного адаптера";
+                if (comp is CompExplosive) return StorageText.Get("GrechkaStorage_Text146");
+                if (comp is CompRottable && comp.GetType() != typeof(CompRottable)) return StorageText.Get("GrechkaStorage_Text147");
                 if (comp is CompRottable || comp is CompEquippable) continue;
                 Type c = comp.GetType();
                 if (new[] { nameof(ThingComp.CompTick), nameof(ThingComp.CompTickRare), nameof(ThingComp.CompTickLong), nameof(ThingComp.CompTickInterval) }
                     .Any(name => c.GetMethod(name, name == nameof(ThingComp.CompTickInterval) ? new[] { typeof(int) } : Type.EmptyTypes)?.DeclaringType != typeof(ThingComp)))
-                    return "Активный компонент требует адаптера: " + c.Name;
+                    return StorageText.Get("GrechkaStorage_Text148") + c.Name;
             }
             return null;
         }
@@ -200,9 +200,9 @@ namespace Grechka.Storage
         }
         public override string GetInspectString()
         {
-            return base.GetInspectString() + (SealedContents ? "\nАрхив расхитителей: состав откроется после установки в блок" : "") + "\nПредметов: " + Space.ItemCount.ToString("N0")
-                + "; типов: " + Space.Types + "/63\nПамять: " + Space.UsedBytes.ToString("N0") + "/" + Capacity.ToString("N0")
-                + " байт" + (Frozen ? "\nПостоянная заморозка" : "\nОбычная порча по окружающей температуре");
+            return base.GetInspectString() + (SealedContents ? StorageText.Get("GrechkaStorage_Text149") : "") + StorageText.Get("GrechkaStorage_Text150") + Space.ItemCount.ToString("N0")
+                + StorageText.Get("GrechkaStorage_Text151") + Space.Types + StorageText.Get("GrechkaStorage_Text152") + Space.UsedBytes.ToString("N0") + "/" + Capacity.ToString("N0")
+                + StorageText.Get("GrechkaStorage_Text029") + (Frozen ? StorageText.Get("GrechkaStorage_Text153") : StorageText.Get("GrechkaStorage_Text154"));
         }
         public override void Destroy(DestroyMode mode = DestroyMode.Vanish)
         {

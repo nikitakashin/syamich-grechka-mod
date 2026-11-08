@@ -1,0 +1,433 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaQuests_04b2d3dc1854>[Grechka Quests] Could not verify deep drill output source; adapter skipped.</GrechkaQuests_04b2d3dc1854>
+  <GrechkaQuests_8d3a96aae3eb>[Grechka Quests] PipeSystem: item output signature changed; tracking disabled.</GrechkaQuests_8d3a96aae3eb>
+  <GrechkaQuests_8d76df7bc000>[Grechka Quests] Could not connect PipeSystem: </GrechkaQuests_8d76df7bc000>
+  <GrechkaQuests_84ba34a3b40a>[Grechka Quests] Industry: output event missing; adapter disabled.</GrechkaQuests_84ba34a3b40a>
+  <GrechkaQuests_2e6f3ea6ae78>[Grechka Quests] Industry: output adapter failed: </GrechkaQuests_2e6f3ea6ae78>
+  <GrechkaQuests_3b2ab84d9a1a>Saved book ID does not match its contents: </GrechkaQuests_3b2ab84d9a1a>
+  <GrechkaQuests_e5a800354d13>Objective meaning changed while keeping its ID: </GrechkaQuests_e5a800354d13>
+  <GrechkaQuests_11eea5b09a37>. Assign a new ID in the editor.</GrechkaQuests_11eea5b09a37>
+  <GrechkaQuests_baeb677169a2>Update book “</GrechkaQuests_baeb677169a2>
+  <GrechkaQuests_d97fc1baa61a>Replace book “</GrechkaQuests_d97fc1baa61a>
+  <GrechkaQuests_390490b366fa>” with “</GrechkaQuests_390490b366fa>
+  <GrechkaQuests_d4084173d241>No removed links.</GrechkaQuests_d4084173d241>
+  <GrechkaQuests_3bdb05807148>Removed links: </GrechkaQuests_3bdb05807148>
+  <GrechkaQuests_dba0256a8f97> and another </GrechkaQuests_dba0256a8f97>
+  <GrechkaQuests_5e94e791d455>
+Quests added: </GrechkaQuests_5e94e791d455>
+  <GrechkaQuests_f8ae281176e2>, changed: </GrechkaQuests_f8ae281176e2>
+  <GrechkaQuests_ed56d9d96b8d>, removed: </GrechkaQuests_ed56d9d96b8d>
+  <GrechkaQuests_a67afb9a5623>. Objectives removed or replaced: </GrechkaQuests_a67afb9a5623>
+  <GrechkaQuests_c243dab177c7>Quest book hotkey</GrechkaQuests_c243dab177c7>
+  <GrechkaQuests_149414eaef85>Press a key…</GrechkaQuests_149414eaef85>
+  <GrechkaQuests_055aaf2e685e>Click the button and press a new key. Escape cancels the change.</GrechkaQuests_055aaf2e685e>
+  <GrechkaQuests_37482b822841>⚠ Possible conflict: </GrechkaQuests_37482b822841>
+  <GrechkaQuests_e4ea9dbb57e9>The same key is assigned to: </GrechkaQuests_e4ea9dbb57e9>
+  <GrechkaQuests_bdca5b6ebe24>Author mode</GrechkaQuests_bdca5b6ebe24>
+  <GrechkaQuests_c84bf4274b37>Opens the editor and book transfer tools. Changes are saved in a separate draft.</GrechkaQuests_c84bf4274b37>
+  <GrechkaQuests_a65070699ec9>Export folder (leave empty for the default Grechka Quests folder)</GrechkaQuests_a65070699ec9>
+  <GrechkaQuests_ec295bfbea4d>Starting book for new colonies</GrechkaQuests_ec295bfbea4d>
+  <GrechkaQuests_5b18f0b7e224>Automatic: Grechka World / example</GrechkaQuests_5b18f0b7e224>
+  <GrechkaQuests_4e267f5dcf91>[Grechka Quests] Could not list books: </GrechkaQuests_4e267f5dcf91>
+  <GrechkaQuests_dcea121caa04>This choice affects new colonies only. Existing saves keep their own book.</GrechkaQuests_dcea121caa04>
+  <GrechkaQuests_ebfeacfe7817>Grechka Quests folder not found.</GrechkaQuests_ebfeacfe7817>
+  <GrechkaQuests_59f3b7e37210>File exceeds 2 MB.</GrechkaQuests_59f3b7e37210>
+  <GrechkaQuests_4e8acf2024ad>Pack exceeds 2 MB.</GrechkaQuests_4e8acf2024ad>
+  <GrechkaQuests_d15e5a658897>No world is loaded yet.</GrechkaQuests_d15e5a658897>
+  <GrechkaQuests_7b66101eb942>Invalid saved colony ID for drafts.</GrechkaQuests_7b66101eb942>
+  <GrechkaQuests_9a9f681a8352>Could not read quest progress: </GrechkaQuests_9a9f681a8352>
+  <GrechkaQuests_d80fb592ee0e>Could not read the pack from the save: </GrechkaQuests_d80fb592ee0e>
+  <GrechkaQuests_a0886a2f080e>My quests</GrechkaQuests_a0886a2f080e>
+  <GrechkaQuests_10d015d0dd69>Could not load the selected starting book: </GrechkaQuests_10d015d0dd69>
+  <GrechkaQuests_b30e4b5d7ad6>[Grechka Quests] Graph view settings were corrupted and reset; quest history was preserved.</GrechkaQuests_b30e4b5d7ad6>
+  <GrechkaQuests_9b70a5dafc7a>. Assign a new ID in the editor.</GrechkaQuests_9b70a5dafc7a>
+  <GrechkaQuests_d6737e77ef48>Kills and slaughter by your pawns, animals, mechs or combat buildings. A confirmed source of lethal damage is required; found corpses and deaths without a source do not count. Locked quests also accumulate progress.</GrechkaQuests_d6737e77ef48>
+  <GrechkaQuests_e74a2d2bfbef>Standard recipes and nutrient paste dispensing</GrechkaQuests_e74a2d2bfbef>
+  <GrechkaQuests_4f22bdae560d>Mining vanilla veins</GrechkaQuests_4f22bdae560d>
+  <GrechkaQuests_bffec34584ab> and deep drills</GrechkaQuests_bffec34584ab>
+  <GrechkaQuests_46130a979cb2>; deep drills are not connected</GrechkaQuests_46130a979cb2>
+  <GrechkaQuests_96621a560eb2>Standard plant harvesting</GrechkaQuests_96621a560eb2>
+  <GrechkaQuests_3130a0fef56c> and additional harvest products</GrechkaQuests_3130a0fef56c>
+  <GrechkaQuests_20a54c472113>; additional products are not connected</GrechkaQuests_20a54c472113>
+  <GrechkaQuests_6a3541bf9dcf>; physical PipeSystem output</GrechkaQuests_6a3541bf9dcf>
+  <GrechkaQuests_a65c6644ce0a>. VFE Factory is installed, but its adapter failed to connect.</GrechkaQuests_a65c6644ce0a>
+  <GrechkaQuests_133628e01618>; VFE Factory autofarmer.</GrechkaQuests_133628e01618>
+  <GrechkaQuests_f36fa7614ce1>; VFE Factory drill.</GrechkaQuests_f36fa7614ce1>
+  <GrechkaQuests_a2e30137e537>; VFE Factory item processes.</GrechkaQuests_a2e30137e537>
+  <GrechkaQuests_cdf63c6811c6>Missing item/building: </GrechkaQuests_cdf63c6811c6>
+  <GrechkaQuests_5cb782c82b35>Building target is not a building: </GrechkaQuests_5cb782c82b35>
+  <GrechkaQuests_47c2d607aef1>Kill target is not a living creature: </GrechkaQuests_47c2d607aef1>
+  <GrechkaQuests_f57c46873562>Kill objectives do not support material or quality.</GrechkaQuests_f57c46873562>
+  <GrechkaQuests_426cd1c00422>Target is not an item: </GrechkaQuests_426cd1c00422>
+  <GrechkaQuests_3f55436c66f4>Incompatible target material: </GrechkaQuests_3f55436c66f4>
+  <GrechkaQuests_02230355ac38>Target has no quality: </GrechkaQuests_02230355ac38>
+  <GrechkaQuests_21a5fb13777b>Missing reward item: </GrechkaQuests_21a5fb13777b>
+  <GrechkaQuests_9a9fb31ea4c5>Reward must be a regular item: </GrechkaQuests_9a9fb31ea4c5>
+  <GrechkaQuests_eb0ffdfec947>Incompatible reward material: </GrechkaQuests_eb0ffdfec947>
+  <GrechkaQuests_00221498d32c>Material not found for </GrechkaQuests_00221498d32c>
+  <GrechkaQuests_71f7d327fbeb>This reward has no quality: </GrechkaQuests_71f7d327fbeb>
+  <GrechkaQuests_c843d9b158e5>In your loaded transport pods</GrechkaQuests_c843d9b158e5>
+  <GrechkaQuests_85d9ef5c381c>In your transport pods in flight</GrechkaQuests_85d9ef5c381c>
+  <GrechkaQuests_38e1b6cb6d22>In your descending transport pods</GrechkaQuests_38e1b6cb6d22>
+  <GrechkaQuests_341069227753>On home maps</GrechkaQuests_341069227753>
+  <GrechkaQuests_af4e6cda578d>In Grechka Storage</GrechkaQuests_af4e6cda578d>
+  <GrechkaQuests_3c457181a95c>Carried by your pawns on maps</GrechkaQuests_3c457181a95c>
+  <GrechkaQuests_2457966c92a8>In your caravans</GrechkaQuests_2457966c92a8>
+  <GrechkaQuests_731c3711ff2a>Create a colony</GrechkaQuests_731c3711ff2a>
+  <GrechkaQuests_07a327c972bd>Reward unavailable or already claimed.</GrechkaQuests_07a327c972bd>
+  <GrechkaQuests_83247b030b1b>No available rewards.</GrechkaQuests_83247b030b1b>
+  <GrechkaQuests_18d653e7fa41>Too many stacks in one quest (limit 500).</GrechkaQuests_18d653e7fa41>
+  <GrechkaQuests_b6ac6a94a51a>Could not prepare rewards: </GrechkaQuests_b6ac6a94a51a>
+  <GrechkaQuests_a8b376254710>[Grechka Quests] Error creating pods: </GrechkaQuests_a8b376254710>
+  <GrechkaQuests_8fff9941d5fd>Quests claimed: </GrechkaQuests_8fff9941d5fd>
+  <GrechkaQuests_8f6c6f85dbde>Part of the current reward may have been sent; claiming again is blocked.</GrechkaQuests_8f6c6f85dbde>
+  <GrechkaQuests_ca95d9432a6c>Could not send the current reward: </GrechkaQuests_ca95d9432a6c>
+  <GrechkaQuests_7a6cfc3a879d>[Grechka Quests] Additional harvest product source missing in this game version.</GrechkaQuests_7a6cfc3a879d>
+  <GrechkaQuests_3ff0ea9edcb7>[Grechka Quests] Could not connect additional harvest products: </GrechkaQuests_3ff0ea9edcb7>
+  <GrechkaQuests_d9dd9b88dcec>Could not save the quest draft. Check the game log and GrechkaQuests folder.</GrechkaQuests_d9dd9b88dcec>
+  <GrechkaQuests_aca831ee4bad>Restored a separate draft “</GrechkaQuests_aca831ee4bad>
+  <GrechkaQuests_83b46bfa6a87>”. Active colony book: “</GrechkaQuests_83b46bfa6a87>
+  <GrechkaQuests_0e4ec4905e7c>”. The draft was not applied automatically.</GrechkaQuests_0e4ec4905e7c>
+  <GrechkaQuests_a6f33ec6f51f>Editing a copy of the active book; changes are saved separately.</GrechkaQuests_a6f33ec6f51f>
+  <GrechkaQuests_5317d622ce49>Draft could not be read and will not be overwritten: </GrechkaQuests_5317d622ce49>
+  <GrechkaQuests_939bc56fe00f>. You can restore a backup in the files tab.</GrechkaQuests_939bc56fe00f>
+  <GrechkaQuests_39e2764385f2>Cannot open draft history: </GrechkaQuests_39e2764385f2>
+  <GrechkaQuests_5d2835e21753>Draft not saved: </GrechkaQuests_5d2835e21753>
+  <GrechkaQuests_511ac64159bc>Check numeric fields: positive whole numbers are required.</GrechkaQuests_511ac64159bc>
+  <GrechkaQuests_ce20199a61d6>Corrupted file is unknown; check access to the draft folder.</GrechkaQuests_ce20199a61d6>
+  <GrechkaQuests_dd8880cc03de>Corrupted file saved separately; started a draft from the active book.</GrechkaQuests_dd8880cc03de>
+  <GrechkaQuests_a267711b04c1>Draft restored from the active colony book.</GrechkaQuests_a267711b04c1>
+  <GrechkaQuests_a6182365e5a7>Draft restored from backup; corrupted file saved separately.</GrechkaQuests_a6182365e5a7>
+  <GrechkaQuests_37eceb9f52a5>Error: </GrechkaQuests_37eceb9f52a5>
+  <GrechkaQuests_9b16ddfd2662>Load a colony to work with quests.</GrechkaQuests_9b16ddfd2662>
+  <GrechkaQuests_dbf132de1b6d>Book</GrechkaQuests_dbf132de1b6d>
+  <GrechkaQuests_119d528f623e>Editor</GrechkaQuests_119d528f623e>
+  <GrechkaQuests_965587e9f297>Import / export</GrechkaQuests_965587e9f297>
+  <GrechkaQuests_7445c6f3b8f7>Claim all</GrechkaQuests_7445c6f3b8f7>
+  <GrechkaQuests_6a6cddddc562>Draft history error: </GrechkaQuests_6a6cddddc562>
+  <GrechkaQuests_95e16b1cf050>Search quest titles and descriptions</GrechkaQuests_95e16b1cf050>
+  <GrechkaQuests_017f4052e4ff>+ Quest</GrechkaQuests_017f4052e4ff>
+  <GrechkaQuests_2f28392d2a82>Chapters</GrechkaQuests_2f28392d2a82>
+  <GrechkaQuests_3e3f2f08de0d>Remove link</GrechkaQuests_3e3f2f08de0d>
+  <GrechkaQuests_2685f28c8d34>Objectives complete: </GrechkaQuests_2685f28c8d34>
+  <GrechkaQuests_86a68248dc75> · Rewards: </GrechkaQuests_86a68248dc75>
+  <GrechkaQuests_9f449ad07fe5>Quests in chapter: </GrechkaQuests_9f449ad07fe5>
+  <GrechkaQuests_4187dccf94ef>Add a chapter in the editor.</GrechkaQuests_4187dccf94ef>
+  <GrechkaQuests_5dccf645fbce>Drag to the next quest to create a link</GrechkaQuests_5dccf645fbce>
+  <GrechkaQuests_f27a15f94fd4>Reward claimed</GrechkaQuests_f27a15f94fd4>
+  <GrechkaQuests_c48aa4188b7d>Reward ready</GrechkaQuests_c48aa4188b7d>
+  <GrechkaQuests_7aaf6df87e72>Claim predecessor rewards first</GrechkaQuests_7aaf6df87e72>
+  <GrechkaQuests_7bd286e6556c>Objectives complete</GrechkaQuests_7bd286e6556c>
+  <GrechkaQuests_590e5be43f6b>In progress</GrechkaQuests_590e5be43f6b>
+  <GrechkaQuests_7634f2cb75c4>Right-click: create quest</GrechkaQuests_7634f2cb75c4>
+  <GrechkaQuests_1a1c4c3ff7b3>This chapter has no quests yet.</GrechkaQuests_1a1c4c3ff7b3>
+  <GrechkaQuests_6e7ffbb60db1>Duplicate quest</GrechkaQuests_6e7ffbb60db1>
+  <GrechkaQuests_c3baaca6a979>Copy selected (</GrechkaQuests_c3baaca6a979>
+  <GrechkaQuests_e49eaaa488ad>Delete quest</GrechkaQuests_e49eaaa488ad>
+  <GrechkaQuests_69ef9a087543>Create quest</GrechkaQuests_69ef9a087543>
+  <GrechkaQuests_7d32d61f2226>Link selected. Click “Remove link”.</GrechkaQuests_7d32d61f2226>
+  <GrechkaQuests_712860885352>Link created.</GrechkaQuests_712860885352>
+  <GrechkaQuests_4ff12f6241a5>Link not created: select a second quest.</GrechkaQuests_4ff12f6241a5>
+  <GrechkaQuests_8210d9d1210a>Limit: 500 quests.</GrechkaQuests_8210d9d1210a>
+  <GrechkaQuests_c169018fb461>Link removed.</GrechkaQuests_c169018fb461>
+  <GrechkaQuests_ccd078300be5>Copy created with new IDs and internal links.</GrechkaQuests_ccd078300be5>
+  <GrechkaQuests_05313ea5f998>. Objective items remain yours.</GrechkaQuests_05313ea5f998>
+  <GrechkaQuests_5774b9e5bdb3>[missing: </GrechkaQuests_5774b9e5bdb3>
+  <GrechkaQuests_0f59b87638ab>awful</GrechkaQuests_0f59b87638ab>
+  <GrechkaQuests_57253f66a1ce>poor</GrechkaQuests_57253f66a1ce>
+  <GrechkaQuests_0024c6ce960f>normal</GrechkaQuests_0024c6ce960f>
+  <GrechkaQuests_1cd5f8d70605>good</GrechkaQuests_1cd5f8d70605>
+  <GrechkaQuests_0967e1aca5e1>excellent</GrechkaQuests_0967e1aca5e1>
+  <GrechkaQuests_fe988821c3d0>masterwork</GrechkaQuests_fe988821c3d0>
+  <GrechkaQuests_72915114127a>legendary</GrechkaQuests_72915114127a>
+  <GrechkaQuests_e7ac87608ab9>Manual objective</GrechkaQuests_e7ac87608ab9>
+  <GrechkaQuests_8c5cc1b4abbf>Build: </GrechkaQuests_8c5cc1b4abbf>
+  <GrechkaQuests_a4b9c57f231d>Produce: </GrechkaQuests_a4b9c57f231d>
+  <GrechkaQuests_4e940f3a951e>Mine: </GrechkaQuests_4e940f3a951e>
+  <GrechkaQuests_2d8662bf063c>Harvest: </GrechkaQuests_2d8662bf063c>
+  <GrechkaQuests_f5441a4fc197>Kill or slaughter: </GrechkaQuests_f5441a4fc197>
+  <GrechkaQuests_361deb1c3839>Have: </GrechkaQuests_361deb1c3839>
+  <GrechkaQuests_e15f960d93eb>Apply</GrechkaQuests_e15f960d93eb>
+  <GrechkaQuests_1cfc390905c4>
+Event objectives: </GrechkaQuests_1cfc390905c4>
+  <GrechkaQuests_29b09f035039>. Standard sources are connected; custom processes require adapters.</GrechkaQuests_29b09f035039>
+  <GrechkaQuests_1f79f6f01ea5>Applied. Save the game to record progress; export JSON to transfer it. </GrechkaQuests_1f79f6f01ea5>
+  <GrechkaQuests_9fdd5b0ba528>From active book</GrechkaQuests_9fdd5b0ba528>
+  <GrechkaQuests_81b60bf0ac9b>Start the draft again from the active book? Current unapplied edits will be backed up, and the corrupted file saved separately.</GrechkaQuests_81b60bf0ac9b>
+  <GrechkaQuests_7838feeb116d>← Undo</GrechkaQuests_7838feeb116d>
+  <GrechkaQuests_672972818e48>Redo →</GrechkaQuests_672972818e48>
+  <GrechkaQuests_dcbc3fd5f524>Validate book</GrechkaQuests_dcbc3fd5f524>
+  <GrechkaQuests_32060a34f5be>Preview</GrechkaQuests_32060a34f5be>
+  <GrechkaQuests_ac4d2ceed8f6>Numeric fields</GrechkaQuests_ac4d2ceed8f6>
+  <GrechkaQuests_b5c45fbe4822>Check the event source for this modded machine: </GrechkaQuests_b5c45fbe4822>
+  <GrechkaQuests_cffb1f8368ba>No errors found</GrechkaQuests_cffb1f8368ba>
+  <GrechkaQuests_26f00066a243>Format and available definitions checked</GrechkaQuests_26f00066a243>
+  <GrechkaQuests_2dfa0207e372>Book validation</GrechkaQuests_2dfa0207e372>
+  <GrechkaQuests_dc147f37319f>Edit history unavailable.</GrechkaQuests_dc147f37319f>
+  <GrechkaQuests_56ee2655e2ab>Nothing to redo.</GrechkaQuests_56ee2655e2ab>
+  <GrechkaQuests_d6707aea72e7>Nothing to undo.</GrechkaQuests_d6707aea72e7>
+  <GrechkaQuests_3c6058b817d8>Edit redone in the draft.</GrechkaQuests_3c6058b817d8>
+  <GrechkaQuests_1746ac60161d>Edit undone in the draft.</GrechkaQuests_1746ac60161d>
+  <GrechkaQuests_8d08c0bd64f1>Item references are available.</GrechkaQuests_8d08c0bd64f1>
+  <GrechkaQuests_02166534630f>Compatibility problems: </GrechkaQuests_02166534630f>
+  <GrechkaQuests_244a4f31fc86>Book title</GrechkaQuests_244a4f31fc86>
+  <GrechkaQuests_bac2cc54582f>Pack ID: </GrechkaQuests_bac2cc54582f>
+  <GrechkaQuests_c0833c147c31>Stable IDs preserve completion and reward history on reimport. For an independent book, use “New book” in the files tab.</GrechkaQuests_c0833c147c31>
+  <GrechkaQuests_7153fa98ed30>Chapter · </GrechkaQuests_7153fa98ed30>
+  <GrechkaQuests_6bdb0526f5aa>Copy</GrechkaQuests_6bdb0526f5aa>
+  <GrechkaQuests_6cec098425e7>Chapter copied with new IDs and internal links.</GrechkaQuests_6cec098425e7>
+  <GrechkaQuests_be99b1361201>Delete</GrechkaQuests_be99b1361201>
+  <GrechkaQuests_40c302a3732f>Chapter description</GrechkaQuests_40c302a3732f>
+  <GrechkaQuests_5b9fd04c2eea>Icon: </GrechkaQuests_5b9fd04c2eea>
+  <GrechkaQuests_5bb7aeb89a5a>not selected</GrechkaQuests_5bb7aeb89a5a>
+  <GrechkaQuests_3f151d97646a>Up</GrechkaQuests_3f151d97646a>
+  <GrechkaQuests_0ab592e07dee>Down</GrechkaQuests_0ab592e07dee>
+  <GrechkaQuests_fede6bf71417>+ Chapter</GrechkaQuests_fede6bf71417>
+  <GrechkaQuests_ee4d74b27d47>New chapter</GrechkaQuests_ee4d74b27d47>
+  <GrechkaQuests_c204007ca197>Quest title</GrechkaQuests_c204007ca197>
+  <GrechkaQuests_88f3e93de88a>automatic</GrechkaQuests_88f3e93de88a>
+  <GrechkaQuests_bf312ad49ff8>Select chapter</GrechkaQuests_bf312ad49ff8>
+  <GrechkaQuests_afa00e6527cb>Chapter: </GrechkaQuests_afa00e6527cb>
+  <GrechkaQuests_b3680f2cba5f>Description</GrechkaQuests_b3680f2cba5f>
+  <GrechkaQuests_ff6dfee98e81>Predecessor quests (all listed)</GrechkaQuests_ff6dfee98e81>
+  <GrechkaQuests_07cb65087477>Remove</GrechkaQuests_07cb65087477>
+  <GrechkaQuests_7e1c88ee1f61>+ Predecessor quest</GrechkaQuests_7e1c88ee1f61>
+  <GrechkaQuests_0c14805d3694>Select a quest</GrechkaQuests_0c14805d3694>
+  <GrechkaQuests_3b6d8ddf20c0>No available quests. Create another one first.</GrechkaQuests_3b6d8ddf20c0>
+  <GrechkaQuests_e64dc5942e9e>Objectives — consume nothing</GrechkaQuests_e64dc5942e9e>
+  <GrechkaQuests_8edc91bb702c>Have an item</GrechkaQuests_8edc91bb702c>
+  <GrechkaQuests_2163e8ff5f5a>Have a building</GrechkaQuests_2163e8ff5f5a>
+  <GrechkaQuests_b7404d6d9ba7>Produce</GrechkaQuests_b7404d6d9ba7>
+  <GrechkaQuests_96fc5b936c1d>Mine</GrechkaQuests_96fc5b936c1d>
+  <GrechkaQuests_906be2792204>Harvest</GrechkaQuests_906be2792204>
+  <GrechkaQuests_ec89da0c31c3>Kill or slaughter</GrechkaQuests_ec89da0c31c3>
+  <GrechkaQuests_fc875330d19a>Manual check</GrechkaQuests_fc875330d19a>
+  <GrechkaQuests_d8648c2e6ab4>New ID</GrechkaQuests_d8648c2e6ab4>
+  <GrechkaQuests_0479eac08e94>Assign a new ID to the objective? This creates a new challenge: its previous completion stays in history but will not transfer to the new objective.</GrechkaQuests_0479eac08e94>
+  <GrechkaQuests_671e30713c51>or </GrechkaQuests_671e30713c51>
+  <GrechkaQuests_ab18abdd5071>+ Allowed variant</GrechkaQuests_ab18abdd5071>
+  <GrechkaQuests_7401beaf57ff>This variant is already included.</GrechkaQuests_7401beaf57ff>
+  <GrechkaQuests_149e3d5b66a9>Material: </GrechkaQuests_149e3d5b66a9>
+  <GrechkaQuests_9ff894fa2d06>any</GrechkaQuests_9ff894fa2d06>
+  <GrechkaQuests_5eede88fcfe5>Any</GrechkaQuests_5eede88fcfe5>
+  <GrechkaQuests_1831b9788471>Objective material</GrechkaQuests_1831b9788471>
+  <GrechkaQuests_95a11d8e2899>Minimum quality: </GrechkaQuests_95a11d8e2899>
+  <GrechkaQuests_2fef9bf5fdab>any</GrechkaQuests_2fef9bf5fdab>
+  <GrechkaQuests_9a30bb73d386>Any</GrechkaQuests_9a30bb73d386>
+  <GrechkaQuests_7a7eef319f69>Custom label (optional)</GrechkaQuests_7a7eef319f69>
+  <GrechkaQuests_af144f4f41ee>+ Objective</GrechkaQuests_af144f4f41ee>
+  <GrechkaQuests_4d4349d031cf>Guaranteed item rewards</GrechkaQuests_4d4349d031cf>
+  <GrechkaQuests_d88e0b6143a2>Alternative sets — the player receives exactly one</GrechkaQuests_d88e0b6143a2>
+  <GrechkaQuests_c9eb348f52b2>Set title</GrechkaQuests_c9eb348f52b2>
+  <GrechkaQuests_ad7097b26dc5>+ Alternative set</GrechkaQuests_ad7097b26dc5>
+  <GrechkaQuests_c6b82561f0b1>Quest copied with a new ID, without links or reward history.</GrechkaQuests_c6b82561f0b1>
+  <GrechkaQuests_fe7ef244bbd0>default</GrechkaQuests_fe7ef244bbd0>
+  <GrechkaQuests_fd0560ebbf83>Default</GrechkaQuests_fd0560ebbf83>
+  <GrechkaQuests_96d950d1b42d>Reward material</GrechkaQuests_96d950d1b42d>
+  <GrechkaQuests_d48fb87eba0e>Quality: </GrechkaQuests_d48fb87eba0e>
+  <GrechkaQuests_2f88b89396bf>+ Reward</GrechkaQuests_2f88b89396bf>
+  <GrechkaQuests_d746c6040ab7>No linked successor quests.</GrechkaQuests_d746c6040ab7>
+  <GrechkaQuests_c463518b6bb5>Links to these quests will be removed: </GrechkaQuests_c463518b6bb5>
+  <GrechkaQuests_238179e65ab4>. The quests themselves will remain.</GrechkaQuests_238179e65ab4>
+  <GrechkaQuests_e5e1e8cf4876>Delete “</GrechkaQuests_e5e1e8cf4876>
+  <GrechkaQuests_744df93bfe92>” from the draft? </GrechkaQuests_744df93bfe92>
+  <GrechkaQuests_f6d62809b3b9> Reward history will remain in the save.</GrechkaQuests_f6d62809b3b9>
+  <GrechkaQuests_1f1e2ccb20dc>Delete empty chapter “</GrechkaQuests_1f1e2ccb20dc>
+  <GrechkaQuests_edc92b3efaf2>Move quests to “</GrechkaQuests_edc92b3efaf2>
+  <GrechkaQuests_4a2440ea9580>Move </GrechkaQuests_4a2440ea9580>
+  <GrechkaQuests_2f1bf0c6e707> quests and delete chapter “</GrechkaQuests_2f1bf0c6e707>
+  <GrechkaQuests_6b40394f3dd4>”? IDs and links will be preserved.</GrechkaQuests_6b40394f3dd4>
+  <GrechkaQuests_5512767edf2a>Delete chapter with its quests</GrechkaQuests_5512767edf2a>
+  <GrechkaQuests_002a48d03e7f>Delete chapter “</GrechkaQuests_002a48d03e7f>
+  <GrechkaQuests_a2e56cf1f06b>” and quests: </GrechkaQuests_a2e56cf1f06b>
+  <GrechkaQuests_0f314aede865>No external links.</GrechkaQuests_0f314aede865>
+  <GrechkaQuests_9d25a20182a2>Links will be removed from: </GrechkaQuests_9d25a20182a2>
+  <GrechkaQuests_07e9cbb5392b>. These quests will remain.</GrechkaQuests_07e9cbb5392b>
+  <GrechkaQuests_c27bc098af68>Grechka · built-in icon</GrechkaQuests_c27bc098af68>
+  <GrechkaQuests_b9032bb3b45f>Select an icon</GrechkaQuests_b9032bb3b45f>
+  <GrechkaQuests_bdc8dbc2fc49>Select an animal, human or mech</GrechkaQuests_bdc8dbc2fc49>
+  <GrechkaQuests_2877d37e284d>Select an </GrechkaQuests_2877d37e284d>
+  <GrechkaQuests_9552f1770669>building</GrechkaQuests_9552f1770669>
+  <GrechkaQuests_d76943589150>item</GrechkaQuests_d76943589150>
+  <GrechkaQuests_585fb37abc44>Export contains draft definitions without colony progress. Import replaces the draft; then click “Apply to this colony”. Reimporting the same IDs does not reset rewards.</GrechkaQuests_585fb37abc44>
+  <GrechkaQuests_5dadbd9317ca>Export JSON</GrechkaQuests_5dadbd9317ca>
+  <GrechkaQuests_74b29de477d6>Export: </GrechkaQuests_74b29de477d6>
+  <GrechkaQuests_0c05eada321b>Refresh files</GrechkaQuests_0c05eada321b>
+  <GrechkaQuests_875b0b9be28e>New book</GrechkaQuests_875b0b9be28e>
+  <GrechkaQuests_e5fc1b0d3d57>Create an empty draft with a new ID? The current draft will be saved separately; the active colony book will stay as it is.</GrechkaQuests_e5fc1b0d3d57>
+  <GrechkaQuests_bda3827616ab>New book created in the draft.</GrechkaQuests_bda3827616ab>
+  <GrechkaQuests_33d62695895e>Books from this colony</GrechkaQuests_33d62695895e>
+  <GrechkaQuests_220f10e02d3e>Saved books</GrechkaQuests_220f10e02d3e>
+  <GrechkaQuests_4876dc347fe9>Restore from backup</GrechkaQuests_4876dc347fe9>
+  <GrechkaQuests_87262be79fd5>Restore the last valid backup? The corrupted file will be saved separately.</GrechkaQuests_87262be79fd5>
+  <GrechkaQuests_7b931b140ac7>Start from active book</GrechkaQuests_7b931b140ac7>
+  <GrechkaQuests_6ccc3e4d9dae>Save the corrupted file separately and start a draft from the active book?</GrechkaQuests_6ccc3e4d9dae>
+  <GrechkaQuests_409e988c261b>Exchange folder: </GrechkaQuests_409e988c261b>
+  <GrechkaQuests_5c652774014c> · legacy export</GrechkaQuests_5c652774014c>
+  <GrechkaQuests_d9d30d541b3d> · mod example</GrechkaQuests_d9d30d541b3d>
+  <GrechkaQuests_6e5142c48f0b>Import</GrechkaQuests_6e5142c48f0b>
+  <GrechkaQuests_afc29ad61804>Or paste JSON here:</GrechkaQuests_afc29ad61804>
+  <GrechkaQuests_01a236d180f4>Import from text</GrechkaQuests_01a236d180f4>
+  <GrechkaQuests_7807e73086ba>Replace the draft with pack “</GrechkaQuests_7807e73086ba>
+  <GrechkaQuests_afdc988c2409> quests)?</GrechkaQuests_afdc988c2409>
+  <GrechkaQuests_10dfaee5c8d5>Imported into the draft. </GrechkaQuests_10dfaee5c8d5>
+  <GrechkaQuests_869213e94951> Open the editor and apply to activate it.</GrechkaQuests_869213e94951>
+  <GrechkaQuests_6e9fcad262ed>Select one set in each quest. Items and quantities are shown below.</GrechkaQuests_6e9fcad262ed>
+  <GrechkaQuests_f5a3a3032915>Claim selected</GrechkaQuests_f5a3a3032915>
+  <GrechkaQuests_9ecf847b5748>Reward error: </GrechkaQuests_9ecf847b5748>
+  <GrechkaQuests_8fbe9b75cbdf>Cancel</GrechkaQuests_8fbe9b75cbdf>
+  <GrechkaQuests_27bca309f5f8>Confirm</GrechkaQuests_27bca309f5f8>
+  <GrechkaQuests_084ca714da2f>My quest book</GrechkaQuests_084ca714da2f>
+  <GrechkaQuests_4af5d2efadd7>Beginning</GrechkaQuests_4af5d2efadd7>
+  <GrechkaQuests_f50b5aa81f4e>New quest</GrechkaQuests_f50b5aa81f4e>
+  <GrechkaQuests_ae4abc4399aa>Reward set</GrechkaQuests_ae4abc4399aa>
+  <GrechkaQuests_f6f8106a8c6e>JSON exceeds 2 MB.</GrechkaQuests_f6f8106a8c6e>
+  <GrechkaQuests_63702c1e2904>Pack is empty.</GrechkaQuests_63702c1e2904>
+  <GrechkaQuests_e7a00b01f4ad>Only schemaVersion = 1 is supported.</GrechkaQuests_e7a00b01f4ad>
+  <GrechkaQuests_5ec7dfecc054>Invalid pack ID: use Latin letters, digits, dots, hyphens and underscores.</GrechkaQuests_5ec7dfecc054>
+  <GrechkaQuests_1d2ffd9fb1c6>Pack title: 1–200 characters.</GrechkaQuests_1d2ffd9fb1c6>
+  <GrechkaQuests_f72a14b3b0ee>chapters and quests must be arrays.</GrechkaQuests_f72a14b3b0ee>
+  <GrechkaQuests_89775cc69147>Maximum 100 chapters and 500 quests.</GrechkaQuests_89775cc69147>
+  <GrechkaQuests_75a9be96e07c>Invalid or duplicate chapter ID.</GrechkaQuests_75a9be96e07c>
+  <GrechkaQuests_229918c12431>Chapter title: 1–200 characters.</GrechkaQuests_229918c12431>
+  <GrechkaQuests_a4cf89841c39>Invalid chapter description or icon.</GrechkaQuests_a4cf89841c39>
+  <GrechkaQuests_343176d92b3d>Empty quest.</GrechkaQuests_343176d92b3d>
+  <GrechkaQuests_bf3fe263c776>Invalid or duplicate quest ID: </GrechkaQuests_bf3fe263c776>
+  <GrechkaQuests_6b2ed7ee8c83>Quest title: 1–200 characters.</GrechkaQuests_6b2ed7ee8c83>
+  <GrechkaQuests_efabd656d0f9>Description too long: </GrechkaQuests_efabd656d0f9>
+  <GrechkaQuests_9efecdea3caf>Invalid quest icon or position: </GrechkaQuests_9efecdea3caf>
+  <GrechkaQuests_81129a5ddce9>Chapter not found: </GrechkaQuests_81129a5ddce9>
+  <GrechkaQuests_f398d0f74dfb>Quest arrays cannot be null: </GrechkaQuests_f398d0f74dfb>
+  <GrechkaQuests_74af91495830>Quest limits: 30 objectives, 30 rewards, 30 alternatives and 100 dependencies.</GrechkaQuests_74af91495830>
+  <GrechkaQuests_a91ba753fd61>Empty objective.</GrechkaQuests_a91ba753fd61>
+  <GrechkaQuests_8e4a6644ba90>Duplicate or invalid objective ID: </GrechkaQuests_8e4a6644ba90>
+  <GrechkaQuests_378e6d010a65>Unknown objective type: </GrechkaQuests_378e6d010a65>
+  <GrechkaQuests_7b6ec4c15105>. Turning in items is not supported.</GrechkaQuests_7b6ec4c15105>
+  <GrechkaQuests_e0355611eb6c>Specify objective defName: </GrechkaQuests_e0355611eb6c>
+  <GrechkaQuests_905d81d7bdf8>Invalid objective variant list: </GrechkaQuests_905d81d7bdf8>
+  <GrechkaQuests_7b864aee08c2>Invalid objective filter: </GrechkaQuests_7b864aee08c2>
+  <GrechkaQuests_488ab6a5150f>Kill objectives do not support material or quality: </GrechkaQuests_488ab6a5150f>
+  <GrechkaQuests_cf3e1957f18d>Manual objectives do not support item filters: </GrechkaQuests_cf3e1957f18d>
+  <GrechkaQuests_217bc5503ee7>Objective count: 1–1000000.</GrechkaQuests_217bc5503ee7>
+  <GrechkaQuests_f874d7ef92e3>Objective label is too long.</GrechkaQuests_f874d7ef92e3>
+  <GrechkaQuests_6d6b744278f3>Invalid or duplicate reward set ID: </GrechkaQuests_6d6b744278f3>
+  <GrechkaQuests_afa715e74d36>Reward set requires a title and 1–30 items: </GrechkaQuests_afa715e74d36>
+  <GrechkaQuests_8693b0b9fa58>Duplicate dependencies: </GrechkaQuests_8693b0b9fa58>
+  <GrechkaQuests_5786165d2d07>Dependency not found: </GrechkaQuests_5786165d2d07>
+  <GrechkaQuests_906385c193d8> for </GrechkaQuests_906385c193d8>
+  <GrechkaQuests_78404892c58f>Quest dependency cycle.</GrechkaQuests_78404892c58f>
+  <GrechkaQuests_2837a2512779>Invalid reward: </GrechkaQuests_2837a2512779>
+  <GrechkaQuests_997e6e2ed87d>Objective not found in preview.</GrechkaQuests_997e6e2ed87d>
+  <GrechkaQuests_3914dc442fbd>Quest not found in preview.</GrechkaQuests_3914dc442fbd>
+  <GrechkaQuests_cc6b25d83fb2>Preview: test playthrough without items or colony changes</GrechkaQuests_cc6b25d83fb2>
+  <GrechkaQuests_73c0190bc4cd>Claim all in test</GrechkaQuests_73c0190bc4cd>
+  <GrechkaQuests_748194705e61>Reset test</GrechkaQuests_748194705e61>
+  <GrechkaQuests_1845f0c5ba74>Test playthrough reset.</GrechkaQuests_1845f0c5ba74>
+  <GrechkaQuests_b2df79bd4d5a>No ready test rewards.</GrechkaQuests_b2df79bd4d5a>
+  <GrechkaQuests_2c606ca17c47>Quests claimed in test: </GrechkaQuests_2c606ca17c47>
+  <GrechkaQuests_c70016ff6221>. No items created.</GrechkaQuests_c70016ff6221>
+  <GrechkaQuests_a5bc7763e7e3>Select a quest on the graph.</GrechkaQuests_a5bc7763e7e3>
+  <GrechkaQuests_20ab8c0ad034>Reward locked until predecessor rewards are claimed.</GrechkaQuests_20ab8c0ad034>
+  <GrechkaQuests_84c1ae31dc34>Complete in test</GrechkaQuests_84c1ae31dc34>
+  <GrechkaQuests_f87ce00f6c56>Guaranteed rewards: </GrechkaQuests_f87ce00f6c56>
+  <GrechkaQuests_dc9337ff5b42>none</GrechkaQuests_dc9337ff5b42>
+  <GrechkaQuests_3ca09a72a4bb>Select a test reward</GrechkaQuests_3ca09a72a4bb>
+  <GrechkaQuests_753687d509d9>Reward claimed in test.</GrechkaQuests_753687d509d9>
+  <GrechkaQuests_94932ac57c75>Claim in test</GrechkaQuests_94932ac57c75>
+  <GrechkaQuests_a9222d499723>Test reward marked. No items created.</GrechkaQuests_a9222d499723>
+  <GrechkaQuests_d3e115af9e44>Have</GrechkaQuests_d3e115af9e44>
+  <GrechkaQuests_77ad8130c298>Build</GrechkaQuests_77ad8130c298>
+  <GrechkaQuests_c26ebde0601b>Harvest</GrechkaQuests_c26ebde0601b>
+  <GrechkaQuests_bf3ee4a1c224>Select test rewards. Nothing is marked until confirmation; no items are created.</GrechkaQuests_bf3ee4a1c224>
+  <GrechkaQuests_683d1d96f1d8>Select a set</GrechkaQuests_683d1d96f1d8>
+  <GrechkaQuests_98760bbe154b>[Grechka Quests] Storage: output adapter failed: </GrechkaQuests_98760bbe154b>
+  <GrechkaQuests_2eb9d5fabd66>Incomplete event objective data.</GrechkaQuests_2eb9d5fabd66>
+  <GrechkaQuests_4f6c86ea6531>Unsupported progress version: </GrechkaQuests_4f6c86ea6531>
+  <GrechkaQuests_11502022f31b>Incomplete progress data.</GrechkaQuests_11502022f31b>
+  <GrechkaQuests_ca2ddf7750c1>Invalid or duplicate progress keys.</GrechkaQuests_ca2ddf7750c1>
+  <GrechkaQuests_d1d5dc8dd95d>Incomplete event counters.</GrechkaQuests_d1d5dc8dd95d>
+  <GrechkaQuests_43806287b2fa>Invalid event counters.</GrechkaQuests_43806287b2fa>
+  <GrechkaQuests_4acd53a591cd>The book changed. Open reward selection again.</GrechkaQuests_4acd53a591cd>
+  <GrechkaQuests_3b7f30889c7e>Selection belongs to another quest.</GrechkaQuests_3b7f30889c7e>
+  <GrechkaQuests_2d8c5db4d4cf>Quest state changed. Open reward claiming again.</GrechkaQuests_2d8c5db4d4cf>
+  <GrechkaQuests_11c4a721f130>Select a reward set for “</GrechkaQuests_11c4a721f130>
+  <GrechkaQuests_912cf6bfac83>Quest “</GrechkaQuests_912cf6bfac83>
+  <GrechkaQuests_5991199c8022>” has no alternative rewards.</GrechkaQuests_5991199c8022>
+  <GrechkaQuests_03e3e9f6924e>Both quests must belong to the book.</GrechkaQuests_03e3e9f6924e>
+  <GrechkaQuests_cf5cdfeb5ffd>Cannot link a quest to itself.</GrechkaQuests_cf5cdfeb5ffd>
+  <GrechkaQuests_02b8fd9551ec>This link already exists.</GrechkaQuests_02b8fd9551ec>
+  <GrechkaQuests_f39eca6321e6>Maximum 100 predecessors.</GrechkaQuests_f39eca6321e6>
+  <GrechkaQuests_d72190be5794>This link would create a cycle.</GrechkaQuests_d72190be5794>
+  <GrechkaQuests_f6b2f475b0c7>Select existing quests from the book.</GrechkaQuests_f6b2f475b0c7>
+  <GrechkaQuests_78aa5d16dd7e>Chapter not found.</GrechkaQuests_78aa5d16dd7e>
+  <GrechkaQuests_cf8ecce177df> (copy)</GrechkaQuests_cf8ecce177df>
+  <GrechkaQuests_e719c846a94c>Limit: 100 chapters.</GrechkaQuests_e719c846a94c>
+  <GrechkaQuests_72fafafe4304>Quest not found.</GrechkaQuests_72fafafe4304>
+  <GrechkaQuests_2e289228cd02>World has no saved identifier for its draft.</GrechkaQuests_2e289228cd02>
+  <GrechkaQuests_0abf31d32179>Invalid colony ID for draft.</GrechkaQuests_0abf31d32179>
+  <GrechkaQuests_4b39616c8dad>Invalid book ID for draft.</GrechkaQuests_4b39616c8dad>
+  <GrechkaQuests_2cada3e8f5d3>Draft exceeds 4 MB.</GrechkaQuests_2cada3e8f5d3>
+  <GrechkaQuests_40841a1df8da>Draft exceeds 4 MB or is empty.</GrechkaQuests_40841a1df8da>
+  <GrechkaQuests_5bae1a4aee2f>Unknown version or corrupted draft.</GrechkaQuests_5bae1a4aee2f>
+  <GrechkaQuests_61c5a885667c>Corrupted draft structure.</GrechkaQuests_61c5a885667c>
+  <GrechkaQuests_856095f12803>Incomplete draft structure.</GrechkaQuests_856095f12803>
+  <GrechkaQuests_4c64c053232c>Corrupted numeric draft fields.</GrechkaQuests_4c64c053232c>
+  <GrechkaQuests_9612ab200361>Book ID in draft does not match its filename.</GrechkaQuests_9612ab200361>
+  <GrechkaQuests_3b7029a21e9e>Saved draft ID does not match.</GrechkaQuests_3b7029a21e9e>
+  <GrechkaQuests_7146ea7c5183>Could not identify this colony’s corrupted draft.</GrechkaQuests_7146ea7c5183>
+  <GrechkaQuests_ae528ec52f76>Invalid draft filename.</GrechkaQuests_ae528ec52f76>
+  <GrechkaQuests_90ebb67fc68c>Corrupted draft no longer found.</GrechkaQuests_90ebb67fc68c>
+  <GrechkaQuests_cc902eb85f3c>No draft backups found.</GrechkaQuests_cc902eb85f3c>
+  <GrechkaQuests_90cc260a16ac>No valid backup found for this book.</GrechkaQuests_90cc260a16ac>
+  <GrechkaQuests_6aba5ed89654>[Grechka Quests] Could not check for a book update: </GrechkaQuests_6aba5ed89654>
+  <GrechkaQuests_40b8d82562c5>Install the book from the current mod version? Personal edits to the active book will be replaced; a copy will be saved in exports. Claimed reward history is preserved.
+
+</GrechkaQuests_40b8d82562c5>
+  <GrechkaQuests_78a628111356>Book updated. Save the game. Previous book: </GrechkaQuests_78a628111356>
+  <GrechkaQuests_9ff41361456d>Entire branch</GrechkaQuests_9ff41361456d>
+  <GrechkaQuests_c0cf6ef79774> rewards claimed</GrechkaQuests_c0cf6ef79774>
+  <GrechkaQuests_68bc148453cb>Click a node — quest   ·   Drag background — pan   ·   Scroll — zoom</GrechkaQuests_68bc148453cb>
+  <GrechkaQuests_634f20ae7645>‹  Chapters</GrechkaQuests_634f20ae7645>
+  <GrechkaQuests_6d88f7b0f0b1>Find a quest, item or machine</GrechkaQuests_6d88f7b0f0b1>
+  <GrechkaQuests_4e5d5fa12f43>Update book</GrechkaQuests_4e5d5fa12f43>
+  <GrechkaQuests_480fae1c4bc9>Nothing found</GrechkaQuests_480fae1c4bc9>
+  <GrechkaQuests_03cc1c2d5ac2>Tasks</GrechkaQuests_03cc1c2d5ac2>
+  <GrechkaQuests_8de848092baa>Rewards</GrechkaQuests_8de848092baa>
+  <GrechkaQuests_cab03bf682bb>Read and confirm</GrechkaQuests_cab03bf682bb>
+  <GrechkaQuests_21bb95294ce2>Read</GrechkaQuests_21bb95294ce2>
+  <GrechkaQuests_2a7a3d00e878>Claim</GrechkaQuests_2a7a3d00e878>
+  <GrechkaQuests_ef05d57959cf>Done</GrechkaQuests_ef05d57959cf>
+  <GrechkaQuests_fad2f82e70fb>Click</GrechkaQuests_fad2f82e70fb>
+  <GrechkaQuests_5117ea64c733>
+Material: </GrechkaQuests_5117ea64c733>
+  <GrechkaQuests_f694fc107254>
+Quality: </GrechkaQuests_f694fc107254>
+  <GrechkaQuests_76ee8db52447>Read the description and complete the quest.</GrechkaQuests_76ee8db52447>
+  <GrechkaQuests_7742302e10a7>Learning milestone without an item reward</GrechkaQuests_7742302e10a7>
+  <GrechkaQuests_37602fe01312>Choose: </GrechkaQuests_37602fe01312>
+  <GrechkaQuests_8be2bbf39a83>Complete</GrechkaQuests_8be2bbf39a83>
+  <GrechkaQuests_ba790e7bdf84>Claim reward</GrechkaQuests_ba790e7bdf84>
+  <GrechkaQuests_77ed2aa1801c>Reward unlocks after predecessor quests. Objectives are already being tracked.</GrechkaQuests_77ed2aa1801c>
+  <GrechkaQuests_cba06045865f>Complete the tasks above. Items remain yours.</GrechkaQuests_cba06045865f>
+  <GrechkaQuests_848aa87a96e2>Predecessor quests</GrechkaQuests_848aa87a96e2>
+  <GrechkaQuests_7c2850eb8763>An old save contains unclaimed rewards: </GrechkaQuests_7c2850eb8763>
+  <GrechkaQuests_4bbb2394051c> stacks. History is preserved for migration; automatic delivery is disabled.</GrechkaQuests_4bbb2394051c>
+  <GrechkaQuests_5de224f7f08a>Counts completed player buildings on home maps.</GrechkaQuests_5de224f7f08a>
+  <GrechkaQuests_2ec7caeafb1f>Counts items on home maps and carried by your pawns, including caravans.</GrechkaQuests_2ec7caeafb1f>
+  <GrechkaQuests_e707b8c74130>
+
+Allowed variants:
+</GrechkaQuests_e707b8c74130>
+  <GrechkaQuests_eb694fd4f929>
+
+Counted: </GrechkaQuests_eb694fd4f929>
+  <GrechkaQuests_476d5c9a669e>. Events from before the objective was connected cannot be restored from current stocks.</GrechkaQuests_476d5c9a669e>
+  <GrechkaQuests_dd7084e36a35>[Grechka Quests] VFE Factory: autofarmer changed; harvest tracking disabled.</GrechkaQuests_dd7084e36a35>
+  <GrechkaQuests_965b3dc209bf>[Grechka Quests] Could not connect VFE Factory autofarmer: </GrechkaQuests_965b3dc209bf>
+  <GrechkaQuests_e105ce914be9>[Grechka Quests] VFE Factory: PipeSystem signature changed; factory output tracking disabled.</GrechkaQuests_e105ce914be9>
+  <GrechkaQuests_7bd64be0ba20>[Grechka Quests] Could not connect VFE Factory: </GrechkaQuests_7bd64be0ba20>
+  <GrechkaQuests_45eaba2d918e>Reward delivery location</GrechkaQuests_45eaba2d918e>
+  <GrechkaQuests_44f9ab839479>Set the arrival location for quest rewards. A new marker moves the previous one on this map.</GrechkaQuests_44f9ab839479>
+  <GrechkaQuests_a468f89a4520>Marker is only available on a colony map.</GrechkaQuests_a468f89a4520>
+</LanguageData>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Grechka_CaravanDroneT1_Unit.label>caravan drone T1</Grechka_CaravanDroneT1_Unit.label>
+  <Grechka_CaravanDroneT1_Unit.description>Fireproof caravan hauling drone T1. Carries up to 50 kg and performs ordinary hauling at the colony. Converts food to energy: 2 nutrition stores one day of activity. Can also charge at its own powered dock. A flat battery stops ordinary work without destroying the drone or cargo.</Grechka_CaravanDroneT1_Unit.description>
+  <Grechka_CaravanDroneStationT1_Dock.label>caravan drone dock T1</Grechka_CaravanDroneStationT1_Dock.label>
+  <Grechka_CaravanDroneStationT1_Dock.description>Charging and repair dock with a caravan drone T1. The drone hauls at the colony and carries up to 50 kg in caravans, using food as fuel. A travelling drone remains linked to this dock.</Grechka_CaravanDroneStationT1_Dock.description>
+  <Grechka_CaravanDroneT2_Unit.label>caravan drone T2</Grechka_CaravanDroneT2_Unit.label>
+  <Grechka_CaravanDroneT2_Unit.description>Fireproof caravan hauling drone T2. Carries up to 100 kg and performs ordinary hauling at the colony. Converts food to energy: 2 nutrition stores one day of activity. Can also charge at its own powered dock. A flat battery stops ordinary work without destroying the drone or cargo.</Grechka_CaravanDroneT2_Unit.description>
+  <Grechka_CaravanDroneStationT2_Dock.label>caravan drone dock T2</Grechka_CaravanDroneStationT2_Dock.label>
+  <Grechka_CaravanDroneStationT2_Dock.description>Charging and repair dock with a caravan drone T2. The drone hauls at the colony and carries up to 100 kg in caravans, using food as fuel. A travelling drone remains linked to this dock.</Grechka_CaravanDroneStationT2_Dock.description>
+  <Grechka_CaravanDroneT3_Unit.label>caravan drone T3</Grechka_CaravanDroneT3_Unit.label>
+  <Grechka_CaravanDroneT3_Unit.description>Fireproof caravan hauling drone T3. Carries up to 150 kg and performs ordinary hauling at the colony. Converts food to energy: 2 nutrition stores one day of activity. Can also charge at its own powered dock. A flat battery stops ordinary work without destroying the drone or cargo.</Grechka_CaravanDroneT3_Unit.description>
+  <Grechka_CaravanDroneStationT3_Dock.label>caravan drone dock T3</Grechka_CaravanDroneStationT3_Dock.label>
+  <Grechka_CaravanDroneStationT3_Dock.description>Charging and repair dock with a caravan drone T3. The drone hauls at the colony and carries up to 150 kg in caravans, using food as fuel. A travelling drone remains linked to this dock.</Grechka_CaravanDroneStationT3_Dock.description>
+  <Grechka_CaravanDroneT4_Unit.label>caravan drone T4</Grechka_CaravanDroneT4_Unit.label>
+  <Grechka_CaravanDroneT4_Unit.description>Fireproof caravan hauling drone T4. Carries up to 200 kg and performs ordinary hauling at the colony. Converts food to energy: 2 nutrition stores one day of activity. Can also charge at its own powered dock. A flat battery stops ordinary work without destroying the drone or cargo.</Grechka_CaravanDroneT4_Unit.description>
+  <Grechka_CaravanDroneStationT4_Dock.label>caravan drone dock T4</Grechka_CaravanDroneStationT4_Dock.label>
+  <Grechka_CaravanDroneStationT4_Dock.description>Charging and repair dock with a caravan drone T4. The drone hauls at the colony and carries up to 200 kg in caravans, using food as fuel. A travelling drone remains linked to this dock.</Grechka_CaravanDroneStationT4_Dock.description>
+  <Grechka_CaravanDroneT5_Unit.label>caravan drone T5</Grechka_CaravanDroneT5_Unit.label>
+  <Grechka_CaravanDroneT5_Unit.description>Fireproof caravan hauling drone T5. Carries up to 250 kg and performs ordinary hauling at the colony. Converts food to energy: 2 nutrition stores one day of activity. Can also charge at its own powered dock. A flat battery stops ordinary work without destroying the drone or cargo.</Grechka_CaravanDroneT5_Unit.description>
+  <Grechka_CaravanDroneStationT5_Dock.label>caravan drone dock T5</Grechka_CaravanDroneStationT5_Dock.label>
+  <Grechka_CaravanDroneStationT5_Dock.description>Charging and repair dock with a caravan drone T5. The drone hauls at the colony and carries up to 250 kg in caravans, using food as fuel. A travelling drone remains linked to this dock.</Grechka_CaravanDroneStationT5_Dock.description>
+</LanguageData>

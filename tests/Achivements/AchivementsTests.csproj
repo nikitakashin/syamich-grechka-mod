@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings><EnableNETAnalyzers>false</EnableNETAnalyzers><NuGetAudit>false</NuGetAudit>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="../../mods/GrechkaAchivements/Source/GrechkaAchivements.csproj" />
+    <ProjectReference Include="../../mods/GrechkaLuckyBlocks/Source/GrechkaLuckyBlocks.csproj" />
+    <Reference Include="AchievementsExpanded"><HintPath>$(ACHIEVEMENTS_ASSEMBLY)</HintPath></Reference>
+    <Reference Include="Assembly-CSharp"><HintPath>$(RIMWORLD_MANAGED_DIR)/Assembly-CSharp.dll</HintPath></Reference>
+    <Reference Include="UnityStubs"><HintPath>$(RIMWORLD_MANAGED_DIR)/UnityStubs.dll</HintPath></Reference>
+    <Reference Include="0Harmony"><HintPath>$(HARMONY_ASSEMBLY)</HintPath></Reference>
+  </ItemGroup>
+</Project>

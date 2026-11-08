@@ -1,0 +1,320 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <Grechka.Traders.SpecialistDef>
+    <defName>GrechkaTrader_Industry</defName>
+    <label>Grechka industrial guild</label>
+    <description>Grechka materials, tier components, housings and portable industrial equipment.</description>
+    <packageIds>
+      <li>grechka.industry</li>
+    </packageIds>
+    <extraThingDefs>
+      <li>Steel</li>
+      <li>ComponentIndustrial</li>
+      <li>ComponentSpacer</li>
+      <li>Plasteel</li>
+      <li>Uranium</li>
+      <li>Gold</li>
+    </extraThingDefs>
+    <offers>14</offers>
+    <discount>0.15</discount>
+    <caravan>true</caravan>
+    <orbital>true</orbital>
+  </Grechka.Traders.SpecialistDef>
+  <Grechka.Traders.SpecialistDef>
+    <defName>GrechkaTrader_Storage</defName>
+    <label>Grechka digital caravan</label>
+    <description>Quartz electronics, memory cells, storage disks and portable storage devices.</description>
+    <packageIds>
+      <li>grechka.storage</li>
+    </packageIds>
+    <extraThingDefs>
+      <li>Silver</li>
+      <li>Gold</li>
+    </extraThingDefs>
+    <offers>14</offers>
+    <discount>0.15</discount>
+    <caravan>true</caravan>
+    <orbital>true</orbital>
+  </Grechka.Traders.SpecialistDef>
+  <Grechka.Traders.SpecialistDef>
+    <defName>GrechkaTrader_Equipment</defName>
+    <label>Grechka arsenal</label>
+    <description>Grechka weapons, armor, utility drones, implants and body replacements.</description>
+    <packageIds>
+      <li>grechka.equipment</li>
+    </packageIds>
+    <extraThingDefs>
+      <li>MedicineIndustrial</li>
+      <li>Plasteel</li>
+    </extraThingDefs>
+    <offers>14</offers>
+    <discount>0.15</discount>
+    <caravan>true</caravan>
+    <orbital>true</orbital>
+  </Grechka.Traders.SpecialistDef>
+  <Grechka.Traders.SpecialistDef>
+    <defName>GrechkaTrader_LuckyBlocks</defName>
+    <label>Grechka lucky dealer</label>
+    <description>Grechka lucky blocks from different tiers and thematic collections.</description>
+    <packageIds>
+      <li>grechka.luckyblocks</li>
+    </packageIds>
+    <offers>12</offers>
+    <discount>0.15</discount>
+    <caravan>true</caravan>
+    <orbital>true</orbital>
+  </Grechka.Traders.SpecialistDef>
+  <Grechka.Traders.SpecialistDef>
+    <defName>GrechkaTrader_Automation</defName>
+    <label>Factory and power syndicate</label>
+    <description>Portable factory machines, power equipment, production workstations and ARC components.</description>
+    <packageIds>
+      <li>vanillaexpanded.vfefactory</li>
+      <li>vanillaexpanded.vfepower</li>
+      <li>vanillaexpanded.vfeproduction</li>
+      <li>vanillaquestsexpanded.generator</li>
+    </packageIds>
+    <extraThingDefs>
+      <li>Steel</li>
+      <li>ComponentIndustrial</li>
+      <li>ComponentSpacer</li>
+      <li>Chemfuel</li>
+      <li>Uranium</li>
+    </extraThingDefs>
+    <offers>16</offers>
+    <discount>0.15</discount>
+    <caravan>true</caravan>
+    <orbital>true</orbital>
+  </Grechka.Traders.SpecialistDef>
+  <Grechka.Traders.SpecialistDef>
+    <defName>GrechkaTrader_Robotics</defName>
+    <label>Robotics service caravan</label>
+    <description>Cleaning and hauling robot base stations with maintenance supplies.</description>
+    <packageIds>
+      <li>haplo.miscellaneous.robots</li>
+      <li>grechka.drones</li>
+    </packageIds>
+    <extraThingDefs>
+      <li>Steel</li>
+      <li>ComponentIndustrial</li>
+      <li>Plasteel</li>
+    </extraThingDefs>
+    <offers>8</offers>
+    <discount>0.15</discount>
+    <caravan>true</caravan>
+    <orbital>true</orbital>
+  </Grechka.Traders.SpecialistDef>
+  <Grechka.Traders.SpecialistDef>
+    <defName>GrechkaTrader_Medical</defName>
+    <label>Frontier medical supplier</label>
+    <description>Portable medical furniture and surgical equipment, plus medicine and treatment supplies.</description>
+    <packageIds>
+      <li>vanillaexpanded.vfemedical</li>
+      <li>grechka.pharmacy</li>
+      <li>4loris4.morelinkables</li>
+    </packageIds>
+    <extraThingDefs>
+      <li>MedicineIndustrial</li>
+      <li>MedicineUltratech</li>
+      <li>MedicineHerbal</li>
+      <li>Neutroamine</li>
+    </extraThingDefs>
+    <offers>12</offers>
+    <discount>0.15</discount>
+    <caravan>true</caravan>
+    <orbital>true</orbital>
+  </Grechka.Traders.SpecialistDef>
+  <Grechka.Traders.SpecialistDef>
+    <defName>GrechkaTrader_Gourmet</defName>
+    <label>Rim gourmet caravan</label>
+    <description>Expanded cooking ingredients, canned food, pastries, stews, sushi and fish.</description>
+    <packageIds>
+      <li>vanillaexpanded.vcooke</li>
+      <li>vanillaexpanded.vcookebakery</li>
+      <li>vanillaexpanded.vcookestews</li>
+      <li>vanillaexpanded.vcookesushi</li>
+      <li>vanillaexpanded.vcef</li>
+      <li>vanillaexpanded.vcefaddon</li>
+    </packageIds>
+    <extraThingDefs>
+      <li>MealSurvivalPack</li>
+      <li>Chocolate</li>
+    </extraThingDefs>
+    <offers>18</offers>
+    <discount>0.15</discount>
+    <caravan>true</caravan>
+    <orbital>true</orbital>
+  </Grechka.Traders.SpecialistDef>
+  <Grechka.Traders.SpecialistDef>
+    <defName>GrechkaTrader_Agronomy</defName>
+    <label>Frontier agronomists</label>
+    <description>Expanded fruit, vegetables, mushrooms, agricultural equipment and nutrient paste machinery.</description>
+    <packageIds>
+      <li>vanillaexpanded.vplantse</li>
+      <li>vanillaexpanded.vplantsemore</li>
+      <li>vanillaexpanded.vplantsemushrooms</li>
+      <li>vanillaexpanded.vplantsesucculents</li>
+      <li>vanillaexpanded.vfefarming</li>
+      <li>vanillaexpanded.vnutriente</li>
+      <li>dismarzero.vgp.vgpmoreveggies</li>
+      <li>regrowth.botr.core</li>
+    </packageIds>
+    <extraThingDefs>
+      <li>Hay</li>
+      <li>WoodLog</li>
+      <li>Cloth</li>
+    </extraThingDefs>
+    <offers>16</offers>
+    <discount>0.15</discount>
+    <caravan>true</caravan>
+    <orbital>true</orbital>
+  </Grechka.Traders.SpecialistDef>
+  <Grechka.Traders.SpecialistDef>
+    <defName>GrechkaTrader_Books</defName>
+    <label>Wandering bookseller</label>
+    <description>Newspapers, writing furniture and books for a colony library.</description>
+    <packageIds>
+      <li>vanillaexpanded.vbookse</li>
+    </packageIds>
+    <extraThingDefs>
+      <li>Novel</li>
+      <li>TextBook</li>
+    </extraThingDefs>
+    <offers>10</offers>
+    <discount>0.15</discount>
+    <caravan>true</caravan>
+    <orbital>true</orbital>
+  </Grechka.Traders.SpecialistDef>
+  <Grechka.Traders.SpecialistDef>
+    <defName>GrechkaTrader_Defence</defName>
+    <label>Frontier military engineers</label>
+    <description>Fortification materials, portable defenses, non-lethal weapons and salvaged feral equipment.</description>
+    <packageIds>
+      <li>vanillaexpanded.vfesecurity</li>
+      <li>aoba.fortress.industrial</li>
+      <li>aoba.fortress.industrial.citadel</li>
+      <li>vanillaexpanded.vwenl</li>
+      <li>rimsenal.feral</li>
+    </packageIds>
+    <extraThingDefs>
+      <li>Steel</li>
+      <li>Plasteel</li>
+      <li>ComponentIndustrial</li>
+      <li>Shell_HighExplosive</li>
+    </extraThingDefs>
+    <offers>16</offers>
+    <discount>0.15</discount>
+    <caravan>true</caravan>
+    <orbital>true</orbital>
+  </Grechka.Traders.SpecialistDef>
+  <Grechka.Traders.SpecialistDef>
+    <defName>GrechkaTrader_Imperial</defName>
+    <label>Imperial luxury supplier</label>
+    <description>Imperial clothing, weapons, aperitifs, portable luxury furniture and Treasures gemstones.</description>
+    <packageIds>
+      <li>oskarpotocki.vfe.empire</li>
+      <li>oskarpotocki.vfe.classical</li>
+    </packageIds>
+    <curatedPackageIds>
+      <li>grechka.treasures</li>
+    </curatedPackageIds>
+    <extraThingDefs>
+      <li>Gold</li>
+      <li>Jade</li>
+      <li>Hyperweave</li>
+    </extraThingDefs>
+    <offers>12</offers>
+    <discount>0.15</discount>
+    <caravan>true</caravan>
+    <orbital>true</orbital>
+  </Grechka.Traders.SpecialistDef>
+  <Grechka.Traders.SpecialistDef>
+    <defName>GrechkaTrader_Smugglers</defName>
+    <label>Black-market salvagers</label>
+    <description>Tradable deserter equipment, pirate arms, recovered ancient cryptotech and treasure maps.</description>
+    <packageIds>
+      <li>oskarpotocki.vfe.deserters</li>
+      <li>oskarpotocki.vfe.pirates</li>
+      <li>vanillaquestsexpanded.ancients</li>
+      <li>vanillaquestsexpanded.cryptoforge</li>
+    </packageIds>
+    <curatedPackageIds>
+      <li>grechka.treasures</li>
+    </curatedPackageIds>
+    <extraThingDefs>
+      <li>Plasteel</li>
+      <li>ComponentSpacer</li>
+      <li>MedicineUltratech</li>
+    </extraThingDefs>
+    <offers>14</offers>
+    <discount>0.15</discount>
+    <caravan>true</caravan>
+    <orbital>true</orbital>
+  </Grechka.Traders.SpecialistDef>
+  <Grechka.Traders.SpecialistDef>
+    <defName>GrechkaTrader_Psycasts</defName>
+    <label>Eltex curator</label>
+    <description>Eltex, psychic clothing and eltex melee weapons.</description>
+    <packageIds>
+      <li>vanillaexpanded.vpsycastse</li>
+      <li>vanillaexpanded.vpe.hemosage</li>
+      <li>vanillaexpanded.vpe.puppeteer</li>
+    </packageIds>
+    <extraThingDefs>
+      <li>Gold</li>
+      <li>Jade</li>
+    </extraThingDefs>
+    <offers>10</offers>
+    <discount>0.15</discount>
+    <caravan>true</caravan>
+    <orbital>true</orbital>
+  </Grechka.Traders.SpecialistDef>
+  <Grechka.Traders.SpecialistDef>
+    <defName>GrechkaTrader_Interiors</defName>
+    <label>Colony interior designers</label>
+    <description>Portable furniture, art, decorative objects, Treasures gemstone sculptures and spacer comforts.</description>
+    <packageIds>
+      <li>vanillaexpanded.vfecore</li>
+      <li>vanillaexpanded.vfeart</li>
+      <li>vanillaexpanded.vfearchitect</li>
+      <li>vanillaexpanded.vfepropsanddecor</li>
+      <li>vanillaexpanded.vfespacer</li>
+      <li>sbz.neatstoragefridge</li>
+      <li>sbz.neatstorage</li>
+      <li>sbz.neatstorageworkbenchshelf</li>
+      <li>haplo.miscellaneous.training</li>
+    </packageIds>
+    <curatedPackageIds>
+      <li>grechka.treasures</li>
+    </curatedPackageIds>
+    <extraThingDefs>
+      <li>Cloth</li>
+      <li>DevilstrandCloth</li>
+      <li>Dye</li>
+    </extraThingDefs>
+    <offers>16</offers>
+    <discount>0.15</discount>
+    <caravan>true</caravan>
+    <orbital>true</orbital>
+  </Grechka.Traders.SpecialistDef>
+  <Grechka.Traders.SpecialistDef>
+    <defName>GrechkaTrader_Outfitter</defName>
+    <label>Rim outfitter</label>
+    <description>Expanded clothing, professional uniforms, backpacks and wearable accessories.</description>
+    <packageIds>
+      <li>vanillaexpanded.vappe</li>
+      <li>vanillaexpanded.vaeaccessories</li>
+      <li>vanillaexpanded.viehar</li>
+    </packageIds>
+    <extraThingDefs>
+      <li>Cloth</li>
+      <li>Synthread</li>
+      <li>Hyperweave</li>
+      <li>DevilstrandCloth</li>
+    </extraThingDefs>
+    <offers>16</offers>
+    <discount>0.15</discount>
+    <caravan>true</caravan>
+    <orbital>true</orbital>
+  </Grechka.Traders.SpecialistDef>
+</Defs>

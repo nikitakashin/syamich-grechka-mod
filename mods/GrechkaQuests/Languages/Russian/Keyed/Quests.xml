@@ -1,0 +1,433 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaQuests_04b2d3dc1854>[Grechka Quests] Не удалось подтвердить источник выхода глубинной буровой; адаптер пропущен.</GrechkaQuests_04b2d3dc1854>
+  <GrechkaQuests_8d3a96aae3eb>[Grechka Quests] PipeSystem: сигнатура вывода предмета изменилась; учёт отключён.</GrechkaQuests_8d3a96aae3eb>
+  <GrechkaQuests_8d76df7bc000>[Grechka Quests] Не удалось подключить PipeSystem: </GrechkaQuests_8d76df7bc000>
+  <GrechkaQuests_84ba34a3b40a>[Grechka Quests] Industry: событие выпуска не найдено; адаптер отключён.</GrechkaQuests_84ba34a3b40a>
+  <GrechkaQuests_2e6f3ea6ae78>[Grechka Quests] Industry: адаптер выпуска не подключён: </GrechkaQuests_2e6f3ea6ae78>
+  <GrechkaQuests_3b2ab84d9a1a>ID сохранённой книги не совпадает с её содержимым: </GrechkaQuests_3b2ab84d9a1a>
+  <GrechkaQuests_e5a800354d13>Смысл цели изменён с прежним ID: </GrechkaQuests_e5a800354d13>
+  <GrechkaQuests_11eea5b09a37>. Назначьте ей новый ID в редакторе.</GrechkaQuests_11eea5b09a37>
+  <GrechkaQuests_baeb677169a2>Обновить книгу «</GrechkaQuests_baeb677169a2>
+  <GrechkaQuests_d97fc1baa61a>Заменить книгу «</GrechkaQuests_d97fc1baa61a>
+  <GrechkaQuests_390490b366fa>» на «</GrechkaQuests_390490b366fa>
+  <GrechkaQuests_d4084173d241>Удалённых связей нет.</GrechkaQuests_d4084173d241>
+  <GrechkaQuests_3bdb05807148>Удалённые связи: </GrechkaQuests_3bdb05807148>
+  <GrechkaQuests_dba0256a8f97> и ещё </GrechkaQuests_dba0256a8f97>
+  <GrechkaQuests_5e94e791d455>
+Заданий: добавлено </GrechkaQuests_5e94e791d455>
+  <GrechkaQuests_f8ae281176e2>, изменено </GrechkaQuests_f8ae281176e2>
+  <GrechkaQuests_ed56d9d96b8d>, удалено </GrechkaQuests_ed56d9d96b8d>
+  <GrechkaQuests_a67afb9a5623>. Удалено или заменено целей: </GrechkaQuests_a67afb9a5623>
+  <GrechkaQuests_c243dab177c7>Клавиша открытия книги квестов</GrechkaQuests_c243dab177c7>
+  <GrechkaQuests_149414eaef85>Нажмите клавишу…</GrechkaQuests_149414eaef85>
+  <GrechkaQuests_055aaf2e685e>Нажмите кнопку и новую клавишу. Escape отменяет изменение.</GrechkaQuests_055aaf2e685e>
+  <GrechkaQuests_37482b822841>⚠ Возможный конфликт: </GrechkaQuests_37482b822841>
+  <GrechkaQuests_e4ea9dbb57e9>Та же клавиша назначена: </GrechkaQuests_e4ea9dbb57e9>
+  <GrechkaQuests_bdca5b6ebe24>Режим автора</GrechkaQuests_bdca5b6ebe24>
+  <GrechkaQuests_c84bf4274b37>Открывает редактор и перенос книг. Изменения сохраняются в отдельный черновик.</GrechkaQuests_c84bf4274b37>
+  <GrechkaQuests_a65070699ec9>Папка экспорта (пусто — папка Grechka Quests по умолчанию)</GrechkaQuests_a65070699ec9>
+  <GrechkaQuests_ec295bfbea4d>Начальная книга для новых колоний</GrechkaQuests_ec295bfbea4d>
+  <GrechkaQuests_5b18f0b7e224>Автовыбор: Grechka World / пример</GrechkaQuests_5b18f0b7e224>
+  <GrechkaQuests_4e267f5dcf91>[Grechka Quests] Не удалось получить список книг: </GrechkaQuests_4e267f5dcf91>
+  <GrechkaQuests_dcea121caa04>Выбор влияет только на новые колонии. Существующие сохранения сохраняют свою книгу.</GrechkaQuests_dcea121caa04>
+  <GrechkaQuests_ebfeacfe7817>Не найдена папка Grechka Quests.</GrechkaQuests_ebfeacfe7817>
+  <GrechkaQuests_59f3b7e37210>Файл больше 2 МБ.</GrechkaQuests_59f3b7e37210>
+  <GrechkaQuests_4e8acf2024ad>Пакет больше 2 МБ.</GrechkaQuests_4e8acf2024ad>
+  <GrechkaQuests_d15e5a658897>Мир ещё не загружен.</GrechkaQuests_d15e5a658897>
+  <GrechkaQuests_7b66101eb942>Некорректный сохранённый ID колонии для черновиков.</GrechkaQuests_7b66101eb942>
+  <GrechkaQuests_9a9f681a8352>Не удалось прочитать прогресс заданий: </GrechkaQuests_9a9f681a8352>
+  <GrechkaQuests_d80fb592ee0e>Не удалось прочитать пакет из сохранения: </GrechkaQuests_d80fb592ee0e>
+  <GrechkaQuests_a0886a2f080e>Мои квесты</GrechkaQuests_a0886a2f080e>
+  <GrechkaQuests_10d015d0dd69>Не удалось загрузить выбранную стартовую книгу: </GrechkaQuests_10d015d0dd69>
+  <GrechkaQuests_b30e4b5d7ad6>[Grechka Quests] Настройки вида графа повреждены и сброшены; история квестов не затронута.</GrechkaQuests_b30e4b5d7ad6>
+  <GrechkaQuests_9b70a5dafc7a>. Назначьте новый ID в редакторе.</GrechkaQuests_9b70a5dafc7a>
+  <GrechkaQuests_d6737e77ef48>Убийства и забой своими пешками, животными, мехами или своими боевыми постройками. Нужен подтверждённый источник смертельного урона; найденные трупы и смерти без источника не считаются. Закрытые задания тоже накапливаются.</GrechkaQuests_d6737e77ef48>
+  <GrechkaQuests_e74a2d2bfbef>Стандартные рецепты и выдача питательной пасты</GrechkaQuests_e74a2d2bfbef>
+  <GrechkaQuests_4f22bdae560d>Добыча ванильных жил</GrechkaQuests_4f22bdae560d>
+  <GrechkaQuests_bffec34584ab> и глубинных буровых</GrechkaQuests_bffec34584ab>
+  <GrechkaQuests_46130a979cb2>; глубинные буровые не подключены</GrechkaQuests_46130a979cb2>
+  <GrechkaQuests_96621a560eb2>Стандартный сбор растений</GrechkaQuests_96621a560eb2>
+  <GrechkaQuests_3130a0fef56c> и дополнительные продукты урожая</GrechkaQuests_3130a0fef56c>
+  <GrechkaQuests_20a54c472113>; дополнительные продукты не подключены</GrechkaQuests_20a54c472113>
+  <GrechkaQuests_6a3541bf9dcf>; физический выход PipeSystem</GrechkaQuests_6a3541bf9dcf>
+  <GrechkaQuests_a65c6644ce0a>. VFE Factory установлен, но его адаптер не подключился.</GrechkaQuests_a65c6644ce0a>
+  <GrechkaQuests_133628e01618>; автоферма VFE Factory.</GrechkaQuests_133628e01618>
+  <GrechkaQuests_f36fa7614ce1>; буровая VFE Factory.</GrechkaQuests_f36fa7614ce1>
+  <GrechkaQuests_a2e30137e537>; предметные процессы VFE Factory.</GrechkaQuests_a2e30137e537>
+  <GrechkaQuests_cdf63c6811c6>Нет предмета/постройки: </GrechkaQuests_cdf63c6811c6>
+  <GrechkaQuests_5cb782c82b35>Цель постройки не является зданием: </GrechkaQuests_5cb782c82b35>
+  <GrechkaQuests_47c2d607aef1>Цель убийств не является живым существом: </GrechkaQuests_47c2d607aef1>
+  <GrechkaQuests_f57c46873562>У цели убийств нет материала или качества.</GrechkaQuests_f57c46873562>
+  <GrechkaQuests_426cd1c00422>Цель не является предметом: </GrechkaQuests_426cd1c00422>
+  <GrechkaQuests_3f55436c66f4>Неподходящий материал цели: </GrechkaQuests_3f55436c66f4>
+  <GrechkaQuests_02230355ac38>У цели нет качества: </GrechkaQuests_02230355ac38>
+  <GrechkaQuests_21a5fb13777b>Нет предмета награды: </GrechkaQuests_21a5fb13777b>
+  <GrechkaQuests_9a9fb31ea4c5>Награда должна быть обычным предметом: </GrechkaQuests_9a9fb31ea4c5>
+  <GrechkaQuests_eb0ffdfec947>Неподходящий материал награды: </GrechkaQuests_eb0ffdfec947>
+  <GrechkaQuests_00221498d32c>Не найден материал для </GrechkaQuests_00221498d32c>
+  <GrechkaQuests_71f7d327fbeb>У этой награды нет качества: </GrechkaQuests_71f7d327fbeb>
+  <GrechkaQuests_c843d9b158e5>В своих загруженных капсулах</GrechkaQuests_c843d9b158e5>
+  <GrechkaQuests_85d9ef5c381c>В своих капсулах в пути</GrechkaQuests_85d9ef5c381c>
+  <GrechkaQuests_38e1b6cb6d22>В своих капсулах при снижении</GrechkaQuests_38e1b6cb6d22>
+  <GrechkaQuests_341069227753>На домашних картах</GrechkaQuests_341069227753>
+  <GrechkaQuests_af4e6cda578d>В Grechka Storage</GrechkaQuests_af4e6cda578d>
+  <GrechkaQuests_3c457181a95c>У своих пешек на картах</GrechkaQuests_3c457181a95c>
+  <GrechkaQuests_2457966c92a8>В своих караванах</GrechkaQuests_2457966c92a8>
+  <GrechkaQuests_731c3711ff2a>Создайте колонию</GrechkaQuests_731c3711ff2a>
+  <GrechkaQuests_07a327c972bd>Награда недоступна или уже получена.</GrechkaQuests_07a327c972bd>
+  <GrechkaQuests_83247b030b1b>Нет доступных наград.</GrechkaQuests_83247b030b1b>
+  <GrechkaQuests_18d653e7fa41>Слишком много стопок в одном задании (лимит 500).</GrechkaQuests_18d653e7fa41>
+  <GrechkaQuests_b6ac6a94a51a>Не удалось подготовить награды: </GrechkaQuests_b6ac6a94a51a>
+  <GrechkaQuests_a8b376254710>[Grechka Quests] Ошибка создания капсул: </GrechkaQuests_a8b376254710>
+  <GrechkaQuests_8fff9941d5fd>Получено заданий: </GrechkaQuests_8fff9941d5fd>
+  <GrechkaQuests_8f6c6f85dbde>Часть текущей награды могла быть отправлена; повторная выдача заблокирована.</GrechkaQuests_8f6c6f85dbde>
+  <GrechkaQuests_ca95d9432a6c>Не удалось отправить текущую награду: </GrechkaQuests_ca95d9432a6c>
+  <GrechkaQuests_7a6cfc3a879d>[Grechka Quests] Источник дополнительных продуктов урожая не найден в этой версии игры.</GrechkaQuests_7a6cfc3a879d>
+  <GrechkaQuests_3ff0ea9edcb7>[Grechka Quests] Не удалось подключить дополнительные продукты урожая: </GrechkaQuests_3ff0ea9edcb7>
+  <GrechkaQuests_d9dd9b88dcec>Черновик квестов не удалось сохранить. Проверьте журнал игры и папку GrechkaQuests.</GrechkaQuests_d9dd9b88dcec>
+  <GrechkaQuests_aca831ee4bad>Восстановлен отдельный черновик «</GrechkaQuests_aca831ee4bad>
+  <GrechkaQuests_83b46bfa6a87>». Активная книга колонии: «</GrechkaQuests_83b46bfa6a87>
+  <GrechkaQuests_0e4ec4905e7c>». Черновик не применён автоматически.</GrechkaQuests_0e4ec4905e7c>
+  <GrechkaQuests_a6f33ec6f51f>Редактируется копия активной книги; изменения сохраняются отдельно.</GrechkaQuests_a6f33ec6f51f>
+  <GrechkaQuests_5317d622ce49>Черновик не прочитан и не будет перезаписан: </GrechkaQuests_5317d622ce49>
+  <GrechkaQuests_939bc56fe00f>. Во вкладке файлов можно восстановить резервную копию.</GrechkaQuests_939bc56fe00f>
+  <GrechkaQuests_39e2764385f2>Нельзя открыть историю черновика: </GrechkaQuests_39e2764385f2>
+  <GrechkaQuests_5d2835e21753>Черновик не сохранён: </GrechkaQuests_5d2835e21753>
+  <GrechkaQuests_511ac64159bc>Проверьте числовые поля: нужны положительные целые числа.</GrechkaQuests_511ac64159bc>
+  <GrechkaQuests_ce20199a61d6>Повреждённый файл не определён; проверьте доступ к папке черновиков.</GrechkaQuests_ce20199a61d6>
+  <GrechkaQuests_dd8880cc03de>Повреждённый файл сохранён отдельно, начат черновик активной книги.</GrechkaQuests_dd8880cc03de>
+  <GrechkaQuests_a267711b04c1>Черновик восстановлен из активной книги колонии.</GrechkaQuests_a267711b04c1>
+  <GrechkaQuests_a6182365e5a7>Черновик восстановлен из резервной копии; повреждённый файл сохранён отдельно.</GrechkaQuests_a6182365e5a7>
+  <GrechkaQuests_37eceb9f52a5>Ошибка: </GrechkaQuests_37eceb9f52a5>
+  <GrechkaQuests_9b16ddfd2662>Откройте колонию, чтобы работать с квестами.</GrechkaQuests_9b16ddfd2662>
+  <GrechkaQuests_dbf132de1b6d>Книга</GrechkaQuests_dbf132de1b6d>
+  <GrechkaQuests_119d528f623e>Редактор</GrechkaQuests_119d528f623e>
+  <GrechkaQuests_965587e9f297>Импорт / экспорт</GrechkaQuests_965587e9f297>
+  <GrechkaQuests_7445c6f3b8f7>Забрать всё</GrechkaQuests_7445c6f3b8f7>
+  <GrechkaQuests_6a6cddddc562>Ошибка истории черновика: </GrechkaQuests_6a6cddddc562>
+  <GrechkaQuests_95e16b1cf050>Поиск по названию и описанию задания</GrechkaQuests_95e16b1cf050>
+  <GrechkaQuests_017f4052e4ff>+ Квест</GrechkaQuests_017f4052e4ff>
+  <GrechkaQuests_2f28392d2a82>Главы</GrechkaQuests_2f28392d2a82>
+  <GrechkaQuests_3e3f2f08de0d>Удалить связь</GrechkaQuests_3e3f2f08de0d>
+  <GrechkaQuests_2685f28c8d34>Цели выполнены: </GrechkaQuests_2685f28c8d34>
+  <GrechkaQuests_86a68248dc75> · Награды: </GrechkaQuests_86a68248dc75>
+  <GrechkaQuests_9f449ad07fe5>Заданий в главе: </GrechkaQuests_9f449ad07fe5>
+  <GrechkaQuests_4187dccf94ef>Добавьте главу в редакторе.</GrechkaQuests_4187dccf94ef>
+  <GrechkaQuests_5dccf645fbce>Потяните к следующему заданию, чтобы создать связь</GrechkaQuests_5dccf645fbce>
+  <GrechkaQuests_f27a15f94fd4>Награда получена</GrechkaQuests_f27a15f94fd4>
+  <GrechkaQuests_c48aa4188b7d>Награда готова</GrechkaQuests_c48aa4188b7d>
+  <GrechkaQuests_7aaf6df87e72>Сначала получите награды предшественников</GrechkaQuests_7aaf6df87e72>
+  <GrechkaQuests_7bd286e6556c>Цели выполнены</GrechkaQuests_7bd286e6556c>
+  <GrechkaQuests_590e5be43f6b>В процессе</GrechkaQuests_590e5be43f6b>
+  <GrechkaQuests_7634f2cb75c4>ПКМ: создать квест</GrechkaQuests_7634f2cb75c4>
+  <GrechkaQuests_1a1c4c3ff7b3>В этой главе пока нет заданий.</GrechkaQuests_1a1c4c3ff7b3>
+  <GrechkaQuests_6e7ffbb60db1>Дублировать задание</GrechkaQuests_6e7ffbb60db1>
+  <GrechkaQuests_c3baaca6a979>Копировать выделенные (</GrechkaQuests_c3baaca6a979>
+  <GrechkaQuests_e49eaaa488ad>Удалить задание</GrechkaQuests_e49eaaa488ad>
+  <GrechkaQuests_69ef9a087543>Создать квест</GrechkaQuests_69ef9a087543>
+  <GrechkaQuests_7d32d61f2226>Связь выделена. Нажмите «Удалить связь».</GrechkaQuests_7d32d61f2226>
+  <GrechkaQuests_712860885352>Связь создана.</GrechkaQuests_712860885352>
+  <GrechkaQuests_4ff12f6241a5>Связь не создана: выберите второе задание.</GrechkaQuests_4ff12f6241a5>
+  <GrechkaQuests_8210d9d1210a>Лимит: 500 заданий.</GrechkaQuests_8210d9d1210a>
+  <GrechkaQuests_c169018fb461>Связь удалена.</GrechkaQuests_c169018fb461>
+  <GrechkaQuests_ccd078300be5>Копия создана с новыми ID и внутренними связями.</GrechkaQuests_ccd078300be5>
+  <GrechkaQuests_05313ea5f998>. Предметы целей остаются у вас.</GrechkaQuests_05313ea5f998>
+  <GrechkaQuests_5774b9e5bdb3>[нет: </GrechkaQuests_5774b9e5bdb3>
+  <GrechkaQuests_0f59b87638ab>ужасное</GrechkaQuests_0f59b87638ab>
+  <GrechkaQuests_57253f66a1ce>плохое</GrechkaQuests_57253f66a1ce>
+  <GrechkaQuests_0024c6ce960f>обычное</GrechkaQuests_0024c6ce960f>
+  <GrechkaQuests_1cd5f8d70605>хорошее</GrechkaQuests_1cd5f8d70605>
+  <GrechkaQuests_0967e1aca5e1>отличное</GrechkaQuests_0967e1aca5e1>
+  <GrechkaQuests_fe988821c3d0>шедевр</GrechkaQuests_fe988821c3d0>
+  <GrechkaQuests_72915114127a>легендарное</GrechkaQuests_72915114127a>
+  <GrechkaQuests_e7ac87608ab9>Ручная цель</GrechkaQuests_e7ac87608ab9>
+  <GrechkaQuests_8c5cc1b4abbf>Построить: </GrechkaQuests_8c5cc1b4abbf>
+  <GrechkaQuests_a4b9c57f231d>Произвести: </GrechkaQuests_a4b9c57f231d>
+  <GrechkaQuests_4e940f3a951e>Добыть: </GrechkaQuests_4e940f3a951e>
+  <GrechkaQuests_2d8662bf063c>Собрать урожай: </GrechkaQuests_2d8662bf063c>
+  <GrechkaQuests_f5441a4fc197>Убить или забить: </GrechkaQuests_f5441a4fc197>
+  <GrechkaQuests_361deb1c3839>Иметь: </GrechkaQuests_361deb1c3839>
+  <GrechkaQuests_e15f960d93eb>Применить</GrechkaQuests_e15f960d93eb>
+  <GrechkaQuests_1cfc390905c4>
+Событийных целей: </GrechkaQuests_1cfc390905c4>
+  <GrechkaQuests_29b09f035039>. Стандартные источники подключены; нестандартным процессам нужны адаптеры.</GrechkaQuests_29b09f035039>
+  <GrechkaQuests_1f79f6f01ea5>Применено. Сохраните игру для записи прогресса; экспортируйте JSON для переноса. </GrechkaQuests_1f79f6f01ea5>
+  <GrechkaQuests_9fdd5b0ba528>Из активной книги</GrechkaQuests_9fdd5b0ba528>
+  <GrechkaQuests_81b60bf0ac9b>Начать черновик заново из активной книги? Текущие неприменённые правки сохраняются в резервной копии, повреждённый файл — отдельно.</GrechkaQuests_81b60bf0ac9b>
+  <GrechkaQuests_7838feeb116d>← Отменить</GrechkaQuests_7838feeb116d>
+  <GrechkaQuests_672972818e48>Повторить →</GrechkaQuests_672972818e48>
+  <GrechkaQuests_dcbc3fd5f524>Проверить книгу</GrechkaQuests_dcbc3fd5f524>
+  <GrechkaQuests_32060a34f5be>Предпросмотр</GrechkaQuests_32060a34f5be>
+  <GrechkaQuests_ac4d2ceed8f6>Числовые поля</GrechkaQuests_ac4d2ceed8f6>
+  <GrechkaQuests_b5c45fbe4822>Проверьте источник события для модовой машины: </GrechkaQuests_b5c45fbe4822>
+  <GrechkaQuests_cffb1f8368ba>Ошибок не найдено</GrechkaQuests_cffb1f8368ba>
+  <GrechkaQuests_26f00066a243>Проверены формат и доступные определения</GrechkaQuests_26f00066a243>
+  <GrechkaQuests_2dfa0207e372>Проверка книги</GrechkaQuests_2dfa0207e372>
+  <GrechkaQuests_dc147f37319f>История правок недоступна.</GrechkaQuests_dc147f37319f>
+  <GrechkaQuests_56ee2655e2ab>Нечего повторять.</GrechkaQuests_56ee2655e2ab>
+  <GrechkaQuests_d6707aea72e7>Нечего отменять.</GrechkaQuests_d6707aea72e7>
+  <GrechkaQuests_3c6058b817d8>Правка повторена в черновике.</GrechkaQuests_3c6058b817d8>
+  <GrechkaQuests_1746ac60161d>Правка отменена в черновике.</GrechkaQuests_1746ac60161d>
+  <GrechkaQuests_8d08c0bd64f1>Ссылки на предметы доступны.</GrechkaQuests_8d08c0bd64f1>
+  <GrechkaQuests_02166534630f>Проблемы совместимости: </GrechkaQuests_02166534630f>
+  <GrechkaQuests_244a4f31fc86>Название книги</GrechkaQuests_244a4f31fc86>
+  <GrechkaQuests_bac2cc54582f>ID пакета: </GrechkaQuests_bac2cc54582f>
+  <GrechkaQuests_c0833c147c31>Постоянные ID сохраняют историю выполнения и наград при повторном импорте. Для независимой книги используйте «Новая книга» во вкладке файлов.</GrechkaQuests_c0833c147c31>
+  <GrechkaQuests_7153fa98ed30>Глава · </GrechkaQuests_7153fa98ed30>
+  <GrechkaQuests_6bdb0526f5aa>Копия</GrechkaQuests_6bdb0526f5aa>
+  <GrechkaQuests_6cec098425e7>Глава скопирована с новыми ID и внутренними связями.</GrechkaQuests_6cec098425e7>
+  <GrechkaQuests_be99b1361201>Удалить</GrechkaQuests_be99b1361201>
+  <GrechkaQuests_40c302a3732f>Описание главы</GrechkaQuests_40c302a3732f>
+  <GrechkaQuests_5b9fd04c2eea>Иконка: </GrechkaQuests_5b9fd04c2eea>
+  <GrechkaQuests_5bb7aeb89a5a>не выбрана</GrechkaQuests_5bb7aeb89a5a>
+  <GrechkaQuests_3f151d97646a>Вверх</GrechkaQuests_3f151d97646a>
+  <GrechkaQuests_0ab592e07dee>Вниз</GrechkaQuests_0ab592e07dee>
+  <GrechkaQuests_fede6bf71417>+ Глава</GrechkaQuests_fede6bf71417>
+  <GrechkaQuests_ee4d74b27d47>Новая глава</GrechkaQuests_ee4d74b27d47>
+  <GrechkaQuests_c204007ca197>Название задания</GrechkaQuests_c204007ca197>
+  <GrechkaQuests_88f3e93de88a>автоматическая</GrechkaQuests_88f3e93de88a>
+  <GrechkaQuests_bf312ad49ff8>Выбрать главу</GrechkaQuests_bf312ad49ff8>
+  <GrechkaQuests_afa00e6527cb>Глава: </GrechkaQuests_afa00e6527cb>
+  <GrechkaQuests_b3680f2cba5f>Описание</GrechkaQuests_b3680f2cba5f>
+  <GrechkaQuests_ff6dfee98e81>Предыдущие задания (все перечисленные)</GrechkaQuests_ff6dfee98e81>
+  <GrechkaQuests_07cb65087477>Убрать</GrechkaQuests_07cb65087477>
+  <GrechkaQuests_7e1c88ee1f61>+ Предыдущее задание</GrechkaQuests_7e1c88ee1f61>
+  <GrechkaQuests_0c14805d3694>Выберите задание</GrechkaQuests_0c14805d3694>
+  <GrechkaQuests_3b6d8ddf20c0>Нет доступных заданий. Сначала создайте ещё одно.</GrechkaQuests_3b6d8ddf20c0>
+  <GrechkaQuests_e64dc5942e9e>Цели — ничего не расходуют</GrechkaQuests_e64dc5942e9e>
+  <GrechkaQuests_8edc91bb702c>Иметь предмет</GrechkaQuests_8edc91bb702c>
+  <GrechkaQuests_2163e8ff5f5a>Иметь постройку</GrechkaQuests_2163e8ff5f5a>
+  <GrechkaQuests_b7404d6d9ba7>Произвести</GrechkaQuests_b7404d6d9ba7>
+  <GrechkaQuests_96fc5b936c1d>Добыть</GrechkaQuests_96fc5b936c1d>
+  <GrechkaQuests_906be2792204>Собрать урожай</GrechkaQuests_906be2792204>
+  <GrechkaQuests_ec89da0c31c3>Убить или забить</GrechkaQuests_ec89da0c31c3>
+  <GrechkaQuests_fc875330d19a>Ручная отметка</GrechkaQuests_fc875330d19a>
+  <GrechkaQuests_d8648c2e6ab4>Новый ID</GrechkaQuests_d8648c2e6ab4>
+  <GrechkaQuests_0479eac08e94>Назначить цели новый ID? Это новое испытание: её прежняя отметка останется в истории, но не перейдёт на новую цель.</GrechkaQuests_0479eac08e94>
+  <GrechkaQuests_671e30713c51>или </GrechkaQuests_671e30713c51>
+  <GrechkaQuests_ab18abdd5071>+ Допустимый вариант</GrechkaQuests_ab18abdd5071>
+  <GrechkaQuests_7401beaf57ff>Этот вариант уже добавлен.</GrechkaQuests_7401beaf57ff>
+  <GrechkaQuests_149e3d5b66a9>Материал: </GrechkaQuests_149e3d5b66a9>
+  <GrechkaQuests_9ff894fa2d06>любой</GrechkaQuests_9ff894fa2d06>
+  <GrechkaQuests_5eede88fcfe5>Любой</GrechkaQuests_5eede88fcfe5>
+  <GrechkaQuests_1831b9788471>Материал цели</GrechkaQuests_1831b9788471>
+  <GrechkaQuests_95a11d8e2899>Качество не ниже: </GrechkaQuests_95a11d8e2899>
+  <GrechkaQuests_2fef9bf5fdab>любое</GrechkaQuests_2fef9bf5fdab>
+  <GrechkaQuests_9a30bb73d386>Любое</GrechkaQuests_9a30bb73d386>
+  <GrechkaQuests_7a7eef319f69>Своя подпись (необязательно)</GrechkaQuests_7a7eef319f69>
+  <GrechkaQuests_af144f4f41ee>+ Цель</GrechkaQuests_af144f4f41ee>
+  <GrechkaQuests_4d4349d031cf>Гарантированные предметные награды</GrechkaQuests_4d4349d031cf>
+  <GrechkaQuests_d88e0b6143a2>Наборы на выбор — игрок получит ровно один</GrechkaQuests_d88e0b6143a2>
+  <GrechkaQuests_c9eb348f52b2>Название набора</GrechkaQuests_c9eb348f52b2>
+  <GrechkaQuests_ad7097b26dc5>+ Набор на выбор</GrechkaQuests_ad7097b26dc5>
+  <GrechkaQuests_c6b82561f0b1>Задание скопировано с новым ID, без связей и истории наград.</GrechkaQuests_c6b82561f0b1>
+  <GrechkaQuests_fe7ef244bbd0>по умолчанию</GrechkaQuests_fe7ef244bbd0>
+  <GrechkaQuests_fd0560ebbf83>По умолчанию</GrechkaQuests_fd0560ebbf83>
+  <GrechkaQuests_96d950d1b42d>Материал награды</GrechkaQuests_96d950d1b42d>
+  <GrechkaQuests_d48fb87eba0e>Качество: </GrechkaQuests_d48fb87eba0e>
+  <GrechkaQuests_2f88b89396bf>+ Награда</GrechkaQuests_2f88b89396bf>
+  <GrechkaQuests_d746c6040ab7>Связанных последующих заданий нет.</GrechkaQuests_d746c6040ab7>
+  <GrechkaQuests_c463518b6bb5>Будут удалены связи с заданиями: </GrechkaQuests_c463518b6bb5>
+  <GrechkaQuests_238179e65ab4>. Сами задания останутся.</GrechkaQuests_238179e65ab4>
+  <GrechkaQuests_e5e1e8cf4876>Удалить «</GrechkaQuests_e5e1e8cf4876>
+  <GrechkaQuests_744df93bfe92>» из черновика? </GrechkaQuests_744df93bfe92>
+  <GrechkaQuests_f6d62809b3b9> История наград останется в сохранении.</GrechkaQuests_f6d62809b3b9>
+  <GrechkaQuests_1f1e2ccb20dc>Удалить пустую главу «</GrechkaQuests_1f1e2ccb20dc>
+  <GrechkaQuests_edc92b3efaf2>Перенести задания в «</GrechkaQuests_edc92b3efaf2>
+  <GrechkaQuests_4a2440ea9580>Перенести </GrechkaQuests_4a2440ea9580>
+  <GrechkaQuests_2f1bf0c6e707> заданий и удалить главу «</GrechkaQuests_2f1bf0c6e707>
+  <GrechkaQuests_6b40394f3dd4>»? ID и связи сохранятся.</GrechkaQuests_6b40394f3dd4>
+  <GrechkaQuests_5512767edf2a>Удалить главу вместе с заданиями</GrechkaQuests_5512767edf2a>
+  <GrechkaQuests_002a48d03e7f>Удалить главу «</GrechkaQuests_002a48d03e7f>
+  <GrechkaQuests_a2e56cf1f06b>» и заданий: </GrechkaQuests_a2e56cf1f06b>
+  <GrechkaQuests_0f314aede865>Внешних связей нет.</GrechkaQuests_0f314aede865>
+  <GrechkaQuests_9d25a20182a2>Будут удалены связи с: </GrechkaQuests_9d25a20182a2>
+  <GrechkaQuests_07e9cbb5392b>. Эти задания останутся.</GrechkaQuests_07e9cbb5392b>
+  <GrechkaQuests_c27bc098af68>Grechka · встроенная иконка</GrechkaQuests_c27bc098af68>
+  <GrechkaQuests_b9032bb3b45f>Выберите иконку</GrechkaQuests_b9032bb3b45f>
+  <GrechkaQuests_bdc8dbc2fc49>Выберите животное, человека или меха</GrechkaQuests_bdc8dbc2fc49>
+  <GrechkaQuests_2877d37e284d>Выберите </GrechkaQuests_2877d37e284d>
+  <GrechkaQuests_9552f1770669>постройку</GrechkaQuests_9552f1770669>
+  <GrechkaQuests_d76943589150>предмет</GrechkaQuests_d76943589150>
+  <GrechkaQuests_585fb37abc44>Экспорт содержит черновик определений, без прогресса колонии. Импорт заменяет черновик; затем нажмите «Применить к этой колонии». Повторный импорт тех же ID не сбрасывает награды.</GrechkaQuests_585fb37abc44>
+  <GrechkaQuests_5dadbd9317ca>Экспортировать JSON</GrechkaQuests_5dadbd9317ca>
+  <GrechkaQuests_74b29de477d6>Экспорт: </GrechkaQuests_74b29de477d6>
+  <GrechkaQuests_0c05eada321b>Обновить файлы</GrechkaQuests_0c05eada321b>
+  <GrechkaQuests_875b0b9be28e>Новая книга</GrechkaQuests_875b0b9be28e>
+  <GrechkaQuests_e5fc1b0d3d57>Создать пустой черновик с новым ID? Текущий черновик сохранится отдельно; активная книга колонии не изменится.</GrechkaQuests_e5fc1b0d3d57>
+  <GrechkaQuests_bda3827616ab>Новая книга создана в черновике.</GrechkaQuests_bda3827616ab>
+  <GrechkaQuests_33d62695895e>Книги из этой колонии</GrechkaQuests_33d62695895e>
+  <GrechkaQuests_220f10e02d3e>Сохранённые книги</GrechkaQuests_220f10e02d3e>
+  <GrechkaQuests_4876dc347fe9>Восстановить из копии</GrechkaQuests_4876dc347fe9>
+  <GrechkaQuests_87262be79fd5>Восстановить последнюю исправную копию? Повреждённый файл сохранится отдельно.</GrechkaQuests_87262be79fd5>
+  <GrechkaQuests_7b931b140ac7>Начать из активной книги</GrechkaQuests_7b931b140ac7>
+  <GrechkaQuests_6ccc3e4d9dae>Сохранить повреждённый файл отдельно и начать черновик из активной книги?</GrechkaQuests_6ccc3e4d9dae>
+  <GrechkaQuests_409e988c261b>Папка обмена: </GrechkaQuests_409e988c261b>
+  <GrechkaQuests_5c652774014c> · старый экспорт</GrechkaQuests_5c652774014c>
+  <GrechkaQuests_d9d30d541b3d> · пример мода</GrechkaQuests_d9d30d541b3d>
+  <GrechkaQuests_6e5142c48f0b>Импорт</GrechkaQuests_6e5142c48f0b>
+  <GrechkaQuests_afc29ad61804>Или вставьте JSON сюда:</GrechkaQuests_afc29ad61804>
+  <GrechkaQuests_01a236d180f4>Импортировать из текста</GrechkaQuests_01a236d180f4>
+  <GrechkaQuests_7807e73086ba>Заменить черновик пакетом «</GrechkaQuests_7807e73086ba>
+  <GrechkaQuests_afdc988c2409> заданий)?</GrechkaQuests_afdc988c2409>
+  <GrechkaQuests_10dfaee5c8d5>Импортировано в черновик. </GrechkaQuests_10dfaee5c8d5>
+  <GrechkaQuests_869213e94951> Для активации откройте редактор и примените.</GrechkaQuests_869213e94951>
+  <GrechkaQuests_6e9fcad262ed>Выберите один набор в каждом задании. Предметы и их количество показаны ниже.</GrechkaQuests_6e9fcad262ed>
+  <GrechkaQuests_f5a3a3032915>Получить выбранное</GrechkaQuests_f5a3a3032915>
+  <GrechkaQuests_9ecf847b5748>Ошибка выдачи: </GrechkaQuests_9ecf847b5748>
+  <GrechkaQuests_8fbe9b75cbdf>Отмена</GrechkaQuests_8fbe9b75cbdf>
+  <GrechkaQuests_27bca309f5f8>Подтвердить</GrechkaQuests_27bca309f5f8>
+  <GrechkaQuests_084ca714da2f>Моя книга квестов</GrechkaQuests_084ca714da2f>
+  <GrechkaQuests_4af5d2efadd7>Начало</GrechkaQuests_4af5d2efadd7>
+  <GrechkaQuests_f50b5aa81f4e>Новое задание</GrechkaQuests_f50b5aa81f4e>
+  <GrechkaQuests_ae4abc4399aa>Набор наград</GrechkaQuests_ae4abc4399aa>
+  <GrechkaQuests_f6f8106a8c6e>Размер JSON превышает 2 МБ.</GrechkaQuests_f6f8106a8c6e>
+  <GrechkaQuests_63702c1e2904>Пакет пуст.</GrechkaQuests_63702c1e2904>
+  <GrechkaQuests_e7a00b01f4ad>Поддерживается schemaVersion = 1.</GrechkaQuests_e7a00b01f4ad>
+  <GrechkaQuests_5ec7dfecc054>Некорректный ID пакета: латиница, цифры, точка, дефис, подчёркивание.</GrechkaQuests_5ec7dfecc054>
+  <GrechkaQuests_1d2ffd9fb1c6>Название пакета: от 1 до 200 символов.</GrechkaQuests_1d2ffd9fb1c6>
+  <GrechkaQuests_f72a14b3b0ee>chapters и quests должны быть массивами.</GrechkaQuests_f72a14b3b0ee>
+  <GrechkaQuests_89775cc69147>Максимум 100 глав и 500 заданий.</GrechkaQuests_89775cc69147>
+  <GrechkaQuests_75a9be96e07c>Некорректный или повторяющийся ID главы.</GrechkaQuests_75a9be96e07c>
+  <GrechkaQuests_229918c12431>Название главы: 1–200 символов.</GrechkaQuests_229918c12431>
+  <GrechkaQuests_a4cf89841c39>Некорректное описание или иконка главы.</GrechkaQuests_a4cf89841c39>
+  <GrechkaQuests_343176d92b3d>Пустое задание.</GrechkaQuests_343176d92b3d>
+  <GrechkaQuests_bf3fe263c776>Некорректный или повторный ID задания: </GrechkaQuests_bf3fe263c776>
+  <GrechkaQuests_6b2ed7ee8c83>Название задания: 1–200 символов.</GrechkaQuests_6b2ed7ee8c83>
+  <GrechkaQuests_efabd656d0f9>Описание слишком длинное: </GrechkaQuests_efabd656d0f9>
+  <GrechkaQuests_9efecdea3caf>Некорректная иконка или положение задания: </GrechkaQuests_9efecdea3caf>
+  <GrechkaQuests_81129a5ddce9>Не найдена глава: </GrechkaQuests_81129a5ddce9>
+  <GrechkaQuests_f398d0f74dfb>Массивы задания не могут быть null: </GrechkaQuests_f398d0f74dfb>
+  <GrechkaQuests_74af91495830>Лимиты задания: до 30 целей, 30 наград, 30 вариантов выбора и 100 зависимостей.</GrechkaQuests_74af91495830>
+  <GrechkaQuests_a91ba753fd61>Пустая цель.</GrechkaQuests_a91ba753fd61>
+  <GrechkaQuests_8e4a6644ba90>Повторный или некорректный ID цели: </GrechkaQuests_8e4a6644ba90>
+  <GrechkaQuests_378e6d010a65>Неизвестный тип цели: </GrechkaQuests_378e6d010a65>
+  <GrechkaQuests_7b6ec4c15105>. Сдача предметов не поддерживается.</GrechkaQuests_7b6ec4c15105>
+  <GrechkaQuests_e0355611eb6c>Укажите defName цели: </GrechkaQuests_e0355611eb6c>
+  <GrechkaQuests_905d81d7bdf8>Некорректный список вариантов цели: </GrechkaQuests_905d81d7bdf8>
+  <GrechkaQuests_7b864aee08c2>Некорректный фильтр цели: </GrechkaQuests_7b864aee08c2>
+  <GrechkaQuests_488ab6a5150f>Цель убийств не поддерживает материал или качество: </GrechkaQuests_488ab6a5150f>
+  <GrechkaQuests_cf3e1957f18d>Ручная цель не поддерживает предметные фильтры: </GrechkaQuests_cf3e1957f18d>
+  <GrechkaQuests_217bc5503ee7>Количество цели: 1–1000000.</GrechkaQuests_217bc5503ee7>
+  <GrechkaQuests_f874d7ef92e3>Подпись цели слишком длинная.</GrechkaQuests_f874d7ef92e3>
+  <GrechkaQuests_6d6b744278f3>Некорректный или повторяющийся ID набора наград: </GrechkaQuests_6d6b744278f3>
+  <GrechkaQuests_afa715e74d36>Набор наград должен иметь название и от 1 до 30 предметов: </GrechkaQuests_afa715e74d36>
+  <GrechkaQuests_8693b0b9fa58>Повторяющиеся зависимости: </GrechkaQuests_8693b0b9fa58>
+  <GrechkaQuests_5786165d2d07>Не найдена зависимость </GrechkaQuests_5786165d2d07>
+  <GrechkaQuests_906385c193d8> у </GrechkaQuests_906385c193d8>
+  <GrechkaQuests_78404892c58f>Цикл зависимостей заданий.</GrechkaQuests_78404892c58f>
+  <GrechkaQuests_2837a2512779>Некорректная награда: </GrechkaQuests_2837a2512779>
+  <GrechkaQuests_997e6e2ed87d>Цель не найдена в предпросмотре.</GrechkaQuests_997e6e2ed87d>
+  <GrechkaQuests_3914dc442fbd>Задание не найдено в предпросмотре.</GrechkaQuests_3914dc442fbd>
+  <GrechkaQuests_cc6b25d83fb2>Предпросмотр: тестовое прохождение без предметов и изменений колонии</GrechkaQuests_cc6b25d83fb2>
+  <GrechkaQuests_73c0190bc4cd>Забрать всё в тесте</GrechkaQuests_73c0190bc4cd>
+  <GrechkaQuests_748194705e61>Сбросить тест</GrechkaQuests_748194705e61>
+  <GrechkaQuests_1845f0c5ba74>Тестовое прохождение сброшено.</GrechkaQuests_1845f0c5ba74>
+  <GrechkaQuests_b2df79bd4d5a>Нет готовых тестовых наград.</GrechkaQuests_b2df79bd4d5a>
+  <GrechkaQuests_2c606ca17c47>Получено в тесте заданий: </GrechkaQuests_2c606ca17c47>
+  <GrechkaQuests_c70016ff6221>. Предметы не созданы.</GrechkaQuests_c70016ff6221>
+  <GrechkaQuests_a5bc7763e7e3>Выберите задание на графе.</GrechkaQuests_a5bc7763e7e3>
+  <GrechkaQuests_20ab8c0ad034>Награда закрыта до получения наград предшественников.</GrechkaQuests_20ab8c0ad034>
+  <GrechkaQuests_84c1ae31dc34>Выполнить в тесте</GrechkaQuests_84c1ae31dc34>
+  <GrechkaQuests_f87ce00f6c56>Гарантированные награды: </GrechkaQuests_f87ce00f6c56>
+  <GrechkaQuests_dc9337ff5b42>нет</GrechkaQuests_dc9337ff5b42>
+  <GrechkaQuests_3ca09a72a4bb>Выберите тестовую награду</GrechkaQuests_3ca09a72a4bb>
+  <GrechkaQuests_753687d509d9>Награда получена в тесте.</GrechkaQuests_753687d509d9>
+  <GrechkaQuests_94932ac57c75>Получить в тесте</GrechkaQuests_94932ac57c75>
+  <GrechkaQuests_a9222d499723>Тестовая награда отмечена. Предметы не созданы.</GrechkaQuests_a9222d499723>
+  <GrechkaQuests_d3e115af9e44>Иметь</GrechkaQuests_d3e115af9e44>
+  <GrechkaQuests_77ad8130c298>Построить</GrechkaQuests_77ad8130c298>
+  <GrechkaQuests_c26ebde0601b>Собрать</GrechkaQuests_c26ebde0601b>
+  <GrechkaQuests_bf3ee4a1c224>Выберите тестовые награды. До подтверждения ничего не отмечается; предметы не создаются.</GrechkaQuests_bf3ee4a1c224>
+  <GrechkaQuests_683d1d96f1d8>Выберите набор</GrechkaQuests_683d1d96f1d8>
+  <GrechkaQuests_98760bbe154b>[Grechka Quests] Storage: адаптер выпуска не подключён: </GrechkaQuests_98760bbe154b>
+  <GrechkaQuests_2eb9d5fabd66>Неполные данные событийных целей.</GrechkaQuests_2eb9d5fabd66>
+  <GrechkaQuests_4f6c86ea6531>Неподдерживаемая версия прогресса: </GrechkaQuests_4f6c86ea6531>
+  <GrechkaQuests_11502022f31b>Неполные данные прогресса.</GrechkaQuests_11502022f31b>
+  <GrechkaQuests_ca2ddf7750c1>Некорректные или повторяющиеся ключи прогресса.</GrechkaQuests_ca2ddf7750c1>
+  <GrechkaQuests_d1d5dc8dd95d>Неполные счётчики событий.</GrechkaQuests_d1d5dc8dd95d>
+  <GrechkaQuests_43806287b2fa>Некорректные счётчики событий.</GrechkaQuests_43806287b2fa>
+  <GrechkaQuests_4acd53a591cd>Книга изменилась. Откройте выбор наград заново.</GrechkaQuests_4acd53a591cd>
+  <GrechkaQuests_3b7f30889c7e>Выбор относится к другому заданию.</GrechkaQuests_3b7f30889c7e>
+  <GrechkaQuests_2d8c5db4d4cf>Состояние заданий изменилось. Откройте получение наград заново.</GrechkaQuests_2d8c5db4d4cf>
+  <GrechkaQuests_11c4a721f130>Выберите набор наград для «</GrechkaQuests_11c4a721f130>
+  <GrechkaQuests_912cf6bfac83>У задания «</GrechkaQuests_912cf6bfac83>
+  <GrechkaQuests_5991199c8022>» нет выбора наград.</GrechkaQuests_5991199c8022>
+  <GrechkaQuests_03e3e9f6924e>Оба задания должны принадлежать книге.</GrechkaQuests_03e3e9f6924e>
+  <GrechkaQuests_cf5cdfeb5ffd>Нельзя связать задание с самим собой.</GrechkaQuests_cf5cdfeb5ffd>
+  <GrechkaQuests_02b8fd9551ec>Эта связь уже существует.</GrechkaQuests_02b8fd9551ec>
+  <GrechkaQuests_f39eca6321e6>Максимум 100 предшественников.</GrechkaQuests_f39eca6321e6>
+  <GrechkaQuests_d72190be5794>Эта связь создаст цикл.</GrechkaQuests_d72190be5794>
+  <GrechkaQuests_f6b2f475b0c7>Выберите существующие задания книги.</GrechkaQuests_f6b2f475b0c7>
+  <GrechkaQuests_78aa5d16dd7e>Глава не найдена.</GrechkaQuests_78aa5d16dd7e>
+  <GrechkaQuests_cf8ecce177df> (копия)</GrechkaQuests_cf8ecce177df>
+  <GrechkaQuests_e719c846a94c>Лимит: 100 глав.</GrechkaQuests_e719c846a94c>
+  <GrechkaQuests_72fafafe4304>Задание не найдено.</GrechkaQuests_72fafafe4304>
+  <GrechkaQuests_2e289228cd02>У мира нет сохранённого идентификатора для черновика.</GrechkaQuests_2e289228cd02>
+  <GrechkaQuests_0abf31d32179>Некорректный ID колонии для черновика.</GrechkaQuests_0abf31d32179>
+  <GrechkaQuests_4b39616c8dad>Некорректный ID книги для черновика.</GrechkaQuests_4b39616c8dad>
+  <GrechkaQuests_2cada3e8f5d3>Черновик превышает 4 МБ.</GrechkaQuests_2cada3e8f5d3>
+  <GrechkaQuests_40841a1df8da>Черновик превышает 4 МБ или пуст.</GrechkaQuests_40841a1df8da>
+  <GrechkaQuests_5bae1a4aee2f>Неизвестная версия или повреждённый черновик.</GrechkaQuests_5bae1a4aee2f>
+  <GrechkaQuests_61c5a885667c>Повреждена структура черновика.</GrechkaQuests_61c5a885667c>
+  <GrechkaQuests_856095f12803>Неполная структура черновика.</GrechkaQuests_856095f12803>
+  <GrechkaQuests_4c64c053232c>Повреждены числовые поля черновика.</GrechkaQuests_4c64c053232c>
+  <GrechkaQuests_9612ab200361>ID книги в черновике не соответствует имени файла.</GrechkaQuests_9612ab200361>
+  <GrechkaQuests_3b7029a21e9e>ID сохранённого черновика не совпадает.</GrechkaQuests_3b7029a21e9e>
+  <GrechkaQuests_7146ea7c5183>Не удалось определить повреждённый черновик этой колонии.</GrechkaQuests_7146ea7c5183>
+  <GrechkaQuests_ae528ec52f76>Некорректное имя черновика.</GrechkaQuests_ae528ec52f76>
+  <GrechkaQuests_90ebb67fc68c>Повреждённый черновик больше не найден.</GrechkaQuests_90ebb67fc68c>
+  <GrechkaQuests_cc902eb85f3c>Резервные копии черновика не найдены.</GrechkaQuests_cc902eb85f3c>
+  <GrechkaQuests_90cc260a16ac>Исправная резервная копия этой книги не найдена.</GrechkaQuests_90cc260a16ac>
+  <GrechkaQuests_6aba5ed89654>[Grechka Quests] Не удалось проверить обновление книги: </GrechkaQuests_6aba5ed89654>
+  <GrechkaQuests_40b8d82562c5>Установить книгу из текущей версии мода? Личные правки активной книги будут заменены; её копия сохранится в экспортах. История полученных наград сохраняется.
+
+</GrechkaQuests_40b8d82562c5>
+  <GrechkaQuests_78a628111356>Книга обновлена. Сохраните игру. Предыдущая книга: </GrechkaQuests_78a628111356>
+  <GrechkaQuests_9ff41361456d>Вся ветка</GrechkaQuests_9ff41361456d>
+  <GrechkaQuests_c0cf6ef79774> наград получено</GrechkaQuests_c0cf6ef79774>
+  <GrechkaQuests_68bc148453cb>ЛКМ по узлу — задание   ·   Потяните фон — перемещение   ·   Колесо — масштаб</GrechkaQuests_68bc148453cb>
+  <GrechkaQuests_634f20ae7645>‹  Главы</GrechkaQuests_634f20ae7645>
+  <GrechkaQuests_6d88f7b0f0b1>Найти квест, предмет или машину</GrechkaQuests_6d88f7b0f0b1>
+  <GrechkaQuests_4e5d5fa12f43>Обновить книгу</GrechkaQuests_4e5d5fa12f43>
+  <GrechkaQuests_480fae1c4bc9>Ничего не найдено</GrechkaQuests_480fae1c4bc9>
+  <GrechkaQuests_03cc1c2d5ac2>Задачи</GrechkaQuests_03cc1c2d5ac2>
+  <GrechkaQuests_8de848092baa>Награды</GrechkaQuests_8de848092baa>
+  <GrechkaQuests_cab03bf682bb>Прочитать и подтвердить</GrechkaQuests_cab03bf682bb>
+  <GrechkaQuests_21bb95294ce2>Прочитать</GrechkaQuests_21bb95294ce2>
+  <GrechkaQuests_2a7a3d00e878>Получить</GrechkaQuests_2a7a3d00e878>
+  <GrechkaQuests_ef05d57959cf>Готово</GrechkaQuests_ef05d57959cf>
+  <GrechkaQuests_fad2f82e70fb>Нажмите</GrechkaQuests_fad2f82e70fb>
+  <GrechkaQuests_5117ea64c733>
+Материал: </GrechkaQuests_5117ea64c733>
+  <GrechkaQuests_f694fc107254>
+Качество: </GrechkaQuests_f694fc107254>
+  <GrechkaQuests_76ee8db52447>Прочитайте описание и завершите задание.</GrechkaQuests_76ee8db52447>
+  <GrechkaQuests_7742302e10a7>Учебная веха без предметной награды</GrechkaQuests_7742302e10a7>
+  <GrechkaQuests_37602fe01312>На выбор: </GrechkaQuests_37602fe01312>
+  <GrechkaQuests_8be2bbf39a83>Завершить</GrechkaQuests_8be2bbf39a83>
+  <GrechkaQuests_ba790e7bdf84>Получить награду</GrechkaQuests_ba790e7bdf84>
+  <GrechkaQuests_77ed2aa1801c>Награда откроется после предыдущих заданий. Цели уже учитываются.</GrechkaQuests_77ed2aa1801c>
+  <GrechkaQuests_cba06045865f>Выполните задачи выше. Предметы останутся у вас.</GrechkaQuests_cba06045865f>
+  <GrechkaQuests_848aa87a96e2>Предыдущие задания</GrechkaQuests_848aa87a96e2>
+  <GrechkaQuests_7c2850eb8763>В старом сохранении остались невыданные награды: </GrechkaQuests_7c2850eb8763>
+  <GrechkaQuests_4bbb2394051c> стопок. История сохранена для переноса; автоматическая выдача отключена.</GrechkaQuests_4bbb2394051c>
+  <GrechkaQuests_5de224f7f08a>Учитываются готовые свои постройки на домашних картах.</GrechkaQuests_5de224f7f08a>
+  <GrechkaQuests_2ec7caeafb1f>Учитываются вещи на домашних картах и у своих пешек, включая караваны.</GrechkaQuests_2ec7caeafb1f>
+  <GrechkaQuests_e707b8c74130>
+
+Допустимые варианты:
+</GrechkaQuests_e707b8c74130>
+  <GrechkaQuests_eb694fd4f929>
+
+Учтено: </GrechkaQuests_eb694fd4f929>
+  <GrechkaQuests_476d5c9a669e>. Старые события до подключения цели не восстанавливаются по текущим запасам.</GrechkaQuests_476d5c9a669e>
+  <GrechkaQuests_dd7084e36a35>[Grechka Quests] VFE Factory: автоферма изменилась; учёт её урожая отключён.</GrechkaQuests_dd7084e36a35>
+  <GrechkaQuests_965b3dc209bf>[Grechka Quests] Не удалось подключить автоферму VFE Factory: </GrechkaQuests_965b3dc209bf>
+  <GrechkaQuests_e105ce914be9>[Grechka Quests] VFE Factory: сигнатура PipeSystem изменилась; учёт фабричного выпуска отключён.</GrechkaQuests_e105ce914be9>
+  <GrechkaQuests_7bd64be0ba20>[Grechka Quests] Не удалось подключить VFE Factory: </GrechkaQuests_7bd64be0ba20>
+  <GrechkaQuests_45eaba2d918e>Место выдачи наград</GrechkaQuests_45eaba2d918e>
+  <GrechkaQuests_44f9ab839479>Указать место прибытия квестовых наград. Новая метка перемещает предыдущую на этой карте.</GrechkaQuests_44f9ab839479>
+  <GrechkaQuests_a468f89a4520>Метка доступна на карте колонии.</GrechkaQuests_a468f89a4520>
+</LanguageData>

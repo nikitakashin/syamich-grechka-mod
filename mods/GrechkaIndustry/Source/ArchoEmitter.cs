@@ -41,7 +41,7 @@ namespace Grechka.Industry
         { base.PostSpawnSetup(respawningAfterLoad); parent.Map.GetComponent<ArchoEmitterMap>().Register(this); }
         public override void PostDeSpawn(Map map, DestroyMode mode = DestroyMode.Vanish)
         { map.GetComponent<ArchoEmitterMap>().Unregister(this); base.PostDeSpawn(map, mode); }
-        public override string CompInspectStringExtra() => "Радиус: " + Settings.radius + "; " + (Active ? "работает" : "отключён");
+        public override string CompInspectStringExtra() => IndustryText.Get("GrechkaIndustry_7a0e4324377b", "Radius: ") + Settings.radius + "; " + (Active ? IndustryText.Get("GrechkaIndustry_c01295237efa", "active") : IndustryText.Get("GrechkaIndustry_f2d86ccb744a", "disabled"));
     }
     public sealed class ArchoEmitterMap : MapComponent
     {

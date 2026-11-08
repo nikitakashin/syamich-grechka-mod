@@ -67,7 +67,7 @@ namespace Grechka.WorldIntegration
         public bool HasAll => Costs() is List<ThingDefCountClass> costs && costs.All(c => Need(c.thingDef) == 0);
         public bool Queue()
         {
-            if (requested || Target == null || Costs() == null || !WorldProfile.IsApplied(parent.def) || !WorldProfile.IsApplied(Target)) return false;
+            if (requested || Target == null || !ResearchTree.IsResearched(Target) || Costs() == null || !WorldProfile.IsApplied(parent.def) || !WorldProfile.IsApplied(Target)) return false;
             lockedTarget = Target; lockedCosts = Costs().Select(c => new ThingDefCountClass(c.thingDef, c.count)).ToList();
             requested = true; workLeft = 4000; fault = null; return true;
         }
@@ -88,15 +88,15 @@ namespace Grechka.WorldIntegration
         {
             if (parent.Faction != Faction.OfPlayer || !parent.Spawned) yield break;
             if (requested)
-                yield return new Command_Action { defaultLabel = applied ? "Завершить оплату" : "Отменить улучшение", defaultDesc = applied ? "Завершить расход сохранённых материалов уже улучшенной машины." : "Вернуть принесённые материалы рядом с машиной.", icon = TexCommand.ClearPrioritizedWork, action = () => Cancel() };
-            else if (Entry != null && Entry.tier < 5 && WorldProfile.IsApplied(parent.def))
-                yield return new Command_Action { defaultLabel = "Улучшить до T" + (Entry.tier + 1), defaultDesc = "Пешка принесёт добавочные материалы и выполнит 4000 единиц строительной работы. Корпус предыдущего тира засчитывается. Завершите текущую партию и освободите внутренние контейнеры.\n" + string.Join("; ", Costs()?.Select(c => c.Summary) ?? new[] { "Нет рецепта следующего корпуса" }), icon = TexCommand.Install, action = () => Queue() };
+                yield return new Command_Action { defaultLabel = applied ? WorldText.Get("GrechkaWorldIntegration_42d6a97215d6", "Finish material payment") : WorldText.Get("GrechkaWorldIntegration_82d998ae2a80", "Cancel upgrade"), defaultDesc = applied ? WorldText.Get("GrechkaWorldIntegration_5596baf68f49", "Finish consuming retained materials for the already upgraded machine.") : WorldText.Get("GrechkaWorldIntegration_7146b1cba941", "Return delivered materials next to the machine."), icon = TexCommand.ClearPrioritizedWork, action = () => Cancel() };
+            else if (Entry != null && Entry.tier < 5 && WorldProfile.IsApplied(parent.def) && ResearchTree.IsResearched(Target))
+                yield return new Command_Action { defaultLabel = WorldText.Get("GrechkaWorldIntegration_392bededaba5", "Upgrade to T") + (Entry.tier + 1), defaultDesc = WorldText.Get("GrechkaWorldIntegration_b4939dc26eee", "A pawn will bring the additional materials and perform 4000 units of construction work. The previous-tier housing counts towards the cost. Finish the current batch and empty the internal containers.\n") + string.Join("; ", Costs()?.Select(c => c.Summary) ?? new[] { WorldText.Get("GrechkaWorldIntegration_4c9025be0c8d", "No recipe for the next housing") }), icon = TexCommand.Install, action = () => Queue() };
         }
         public override string CompInspectStringExtra()
         {
             if (!requested) return null;
             string missing = string.Join(", ", (Costs() ?? new()).Where(c => Need(c.thingDef) > 0).Select(c => c.thingDef.LabelCap + " ×" + Need(c.thingDef)));
-            return "Улучшение: " + (fault ?? (missing.Length > 0 ? "нужны " + missing : FactoryUpgradeSafety.Problem(parent) ?? "работы осталось " + Math.Ceiling(workLeft)));
+            return WorldText.Get("GrechkaWorldIntegration_5b0413d994b4", "Upgrade: ") + (WorldText.Fault(fault) ?? (missing.Length > 0 ? WorldText.Get("GrechkaWorldIntegration_44451ecf7070", "requires ") + missing : FactoryUpgradeSafety.Problem(parent) ?? WorldText.Get("GrechkaWorldIntegration_b66a61548456", "work remaining ") + Math.Ceiling(workLeft)));
         }
         public bool Work(Pawn pawn)
         {
@@ -112,7 +112,7 @@ namespace Grechka.WorldIntegration
             if (applied) return FinishPayment();
             ThingDef next = Target;
             if (!requested || !HasAll || next == null || !parent.Spawned || FactoryUpgradeSafety.Problem(parent) != null) return false;
-            if (!FactoryUpgradeSafety.Compatible(parent, next)) { fault = "Изменился тип фабрики; улучшение приостановлено"; return false; }
+            if (!FactoryUpgradeSafety.Compatible(parent, next)) { fault = "GrechkaWorldIntegration_355c0d15c28d"; return false; }
             ThingDef old = parent.def; var oldProps = parent.AllComps.Select(c => c.props).ToList();
             var barrelField = parent.GetType().FullName == "VFED.Building_TurretGunBarrels" ? AccessTools.Field(parent.GetType(), "barrelIndex") : null;
             object barrelIndex = barrelField?.GetValue(parent);
@@ -141,7 +141,7 @@ namespace Grechka.WorldIntegration
                 WorldProfile.InvalidateThingStats(parent);
                 if (!parent.Spawned) GenSpawn.Spawn(parent, pos, map, rotation, WipeMode.Vanish, true, false);
                 RestoreTurret();
-                parent.HitPoints = hp; fault = "Ошибка улучшения; исходная фабрика и материалы сохранены";
+                parent.HitPoints = hp; fault = "GrechkaWorldIntegration_4c5487fe9857";
                 Log.Error("[Grechka World] Factory upgrade rollback: " + error); return false;
             }
             return FinishPayment();
@@ -149,7 +149,7 @@ namespace Grechka.WorldIntegration
         private bool FinishPayment()
         {
             try { Supplies.ClearAndDestroyContents(); requested = applied = false; lockedCosts = null; lockedTarget = null; workLeft = 4000; fault = null; return true; }
-            catch (Exception error) { fault = "Улучшение выполнено, расход материалов приостановлен"; Log.Error("[Grechka World] Upgrade payment retained: " + error); return false; }
+            catch (Exception error) { fault = "GrechkaWorldIntegration_d3cfbf414b70"; Log.Error("[Grechka World] Upgrade payment retained: " + error); return false; }
         }
         public override void CompTick() { if (applied && Find.TickManager.TicksGame % 250 == 0) FinishPayment(); }
         public override void CompTickRare() { if (applied) FinishPayment(); }
@@ -167,28 +167,28 @@ namespace Grechka.WorldIntegration
         internal static object Get(object o, string name) => o == null ? null : AccessTools.Property(o.GetType(), name)?.GetValue(o) ?? AccessTools.Field(o.GetType(), name)?.GetValue(o);
         static IEnumerable<object> List(object o) => o is IEnumerable list ? list.Cast<object>() : Enumerable.Empty<object>();
         public static IEnumerable<object> Processes(ThingWithComps building) => building.AllComps.Where(c => c.GetType().FullName == "PipeSystem.CompAdvancedResourceProcessor").SelectMany(c => List(Get(Get(c, "ProcessStack"), "Processes")));
-        public static bool BatchInProgress(object process) => Get(process, "PickUpReady") is true || Get(process, "spawning") is true
+        public static bool BatchInProgress(object process) => Get(process, "PickUpReady") is true || Get(process, "currentResult") is int index && index > 0
             || Get(process, "Progress") is float progress && progress > 0
             || List(Get(process, "IngredientsOwners")).Any(o => Get(o, "Count") is int count && count > 0 || Get(o, "BeingFilled") is true);
         public static string Problem(ThingWithComps building)
         {
-            if (building.GetType().FullName == "VFESecurity.Building_TurretSearchlight" && Get(building, "CurrentTarget") is LocalTargetInfo searchTarget && searchTarget.IsValid) return "Выключите активный прожектор";
-            if (building is Building_TurretGun turret && (Get(turret, "WarmingUp") is true || turret.AttackVerb?.state == VerbState.Bursting)) return "Дождитесь завершения очереди турели";
-            if (building.GetType().FullName == "VFEPirates.Building_WarcasketFoundry" && (Get(building, "occupant") != null || Get(building, "curWarcasketProject") != null)) return "Завершите операцию в саркофаге";
-            if (building is Building_Storage && building.Spawned && building.OccupiedRect().Cells.Any(c => c.InBounds(building.Map) && c.GetThingList(building.Map).Any(t => t != building && t.def.category == ThingCategory.Item))) return "Сначала освободите хранилище";
-            if (building is IThingHolder rootHolder && rootHolder.GetDirectlyHeldThings()?.Count > 0) return "Освободите содержимое машины";
+            if (building.GetType().FullName == "VFESecurity.Building_TurretSearchlight" && Get(building, "CurrentTarget") is LocalTargetInfo searchTarget && searchTarget.IsValid) return WorldText.Get("GrechkaWorldIntegration_a100b80d323d", "Switch off the active searchlight");
+            if (building is Building_TurretGun turret && (Get(turret, "WarmingUp") is true || turret.AttackVerb?.state == VerbState.Bursting)) return WorldText.Get("GrechkaWorldIntegration_d70709676225", "Wait for the turret burst to finish");
+            if (building.GetType().FullName == "VFEPirates.Building_WarcasketFoundry" && (Get(building, "occupant") != null || Get(building, "curWarcasketProject") != null)) return WorldText.Get("GrechkaWorldIntegration_5855b8353f80", "Finish the warcasket operation");
+            if (building is Building_Storage && building.Spawned && building.OccupiedRect().Cells.Any(c => c.InBounds(building.Map) && c.GetThingList(building.Map).Any(t => t != building && t.def.category == ThingCategory.Item))) return WorldText.Get("GrechkaWorldIntegration_e8fac71eb272", "Empty the storage first");
+            if (building is IThingHolder rootHolder && rootHolder.GetDirectlyHeldThings()?.Count > 0) return WorldText.Get("GrechkaWorldIntegration_cf0bf3a3379e", "Empty the machine contents");
             if (building.GetType().FullName == "VanillaFurnitureExpandedFactory.Building_Autofarmer" &&
-                (Convert.ToInt32(Get(building, "state") ?? 0) != 0 || List(Get(building, "harvestStorageThings")).Any())) return "Завершите работу автофермы и выгрузите урожай";
-            if (building.GetType().Name == "Building_WorkTableAutonomous" && (Get(building, "prepared") is true || Get(building, "activeBill") != null)) return "Завершите текущую автоматическую партию";
+                (Convert.ToInt32(Get(building, "state") ?? 0) != 0 || List(Get(building, "harvestStorageThings")).Any())) return WorldText.Get("GrechkaWorldIntegration_a393b6cc155e", "Finish the autofarmer operation and unload the harvest");
+            if (building.GetType().Name == "Building_WorkTableAutonomous" && (Get(building, "prepared") is true || Get(building, "activeBill") != null)) return WorldText.Get("GrechkaWorldIntegration_bb94969daca1", "Finish the current automated batch");
             foreach (var check in AdditionalChecks) { string reason = check(building); if (reason != null) return reason; }
             foreach (object p in Processes(building))
                 if (Get(p, "IsRunning") is true || BatchInProgress(p))
-                    return "Завершите текущую партию фабрики";
+                    return WorldText.Get("GrechkaWorldIntegration_867c381e1e8a", "Finish the current factory batch");
             foreach (ThingComp comp in building.AllComps)
             {
-                if (comp.GetType().FullName == "RimWorld.CompGenepackContainer" && List(Get(comp, "leftToLoad")).Any()) return "Дождитесь загрузки генпаков";
+                if (comp.GetType().FullName == "RimWorld.CompGenepackContainer" && List(Get(comp, "leftToLoad")).Any()) return WorldText.Get("GrechkaWorldIntegration_3d792257e41b", "Wait for genepack loading to finish");
                 if (comp is IThingHolder holder && comp is not CompFactoryUpgrade && holder.GetDirectlyHeldThings()?.Count > 0)
-                    return "Освободите внутренний контейнер фабрики";
+                    return WorldText.Get("GrechkaWorldIntegration_7288d8fa58c5", "Empty the factory internal container");
             }
             return null;
         }

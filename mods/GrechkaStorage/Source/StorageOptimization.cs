@@ -9,10 +9,10 @@ namespace Grechka.Storage
     {
         public static string Optimize(Building_StorageController controller)
         {
-            if (!controller.Online()) return "Нет работающего подключения.";
-            if (controller.HasRecovery) return "Сначала освободите буфер восстановления.";
+            if (!controller.Online()) return StorageText.Get("GrechkaStorage_Text119");
+            if (controller.HasRecovery) return StorageText.Get("GrechkaStorage_Text120");
             List<StorageDisk> disks = controller.ActiveDisks();
-            if (disks.Count < 2) return "Для распределения нужны хотя бы два доступных диска.";
+            if (disks.Count < 2) return StorageText.Get("GrechkaStorage_Text121");
             foreach (StorageDisk disk in disks) disk.SettleRot();
             var targets = disks.Select(d => new DiskPlanTarget { Id = d.thingIDNumber, Capacity = d.Capacity, Frozen = d.Frozen }).ToList();
             var groups = disks.SelectMany(d => d.Items.Select(t => new DiskPlanGroup
@@ -20,7 +20,7 @@ namespace Grechka.Storage
                 .GroupBy(g => (g.Key, g.Frozen)).Select(g => new DiskPlanGroup
                     { Key = g.Key.Key, Frozen = g.Key.Frozen, Count = g.Sum(v => v.Count) }).ToList();
             if (!DiskPlanner.TryPlan(targets, groups, out List<DiskPlanMove> plan))
-                return "Не удалось подобрать полную раскладку. Текущее содержимое сохранено.";
+                return StorageText.Get("GrechkaStorage_Text122");
 
             StorageBuffer Stage(bool frozen) { return frozen ? controller.ColdRecovery : controller.Recovery; }
             controller.Recovery.SettleRot(); controller.ColdRecovery.SettleRot();
@@ -73,14 +73,14 @@ namespace Grechka.Storage
                 }
                 catch (Exception restoreError) { Log.Error("[Grechka Storage] Recovery buffer retained: " + restoreError); }
                 return controller.HasRecovery
-                    ? "Операция остановлена. Остаток сохранён в буфере восстановления; заморозка сохранена."
-                    : "Операция отменена, предметы возвращены на исходные диски.";
+                    ? StorageText.Get("GrechkaStorage_Text123")
+                    : StorageText.Get("GrechkaStorage_Text124");
             }
             // Compaction is optional after the lossless layout has committed.
             foreach (StorageDisk disk in disks)
                 foreach (Thing thing in disk.Items.ToList())
                     if (!thing.Destroyed) disk.Compact(thing);
-            return "Предметы распределены по дискам. Свежесть, свойства и холод сохранены.";
+            return StorageText.Get("GrechkaStorage_Text125");
         }
         public static long RestoreRecovery(Building_StorageController controller)
         {

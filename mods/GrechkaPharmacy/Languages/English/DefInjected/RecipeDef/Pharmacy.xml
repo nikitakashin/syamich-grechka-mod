@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaPharmacy_MakeHemostaticT1.label>make Last chance dressing</GrechkaPharmacy_MakeHemostaticT1.label>
+  <GrechkaPharmacy_MakeHemostaticT1.description>Produce pharmaceutical preparations.</GrechkaPharmacy_MakeHemostaticT1.description>
+  <GrechkaPharmacy_MakeHemostaticT1.jobString>Making pharmaceutical preparations.</GrechkaPharmacy_MakeHemostaticT1.jobString>
+  <GrechkaPharmacy_MakeAnalgesicT1.label>make Field analgesic</GrechkaPharmacy_MakeAnalgesicT1.label>
+  <GrechkaPharmacy_MakeAnalgesicT1.description>Produce pharmaceutical preparations.</GrechkaPharmacy_MakeAnalgesicT1.description>
+  <GrechkaPharmacy_MakeAnalgesicT1.jobString>Making pharmaceutical preparations.</GrechkaPharmacy_MakeAnalgesicT1.jobString>
+  <GrechkaPharmacy_MakeImmunoT2.label>make Immune support</GrechkaPharmacy_MakeImmunoT2.label>
+  <GrechkaPharmacy_MakeImmunoT2.description>Produce pharmaceutical preparations.</GrechkaPharmacy_MakeImmunoT2.description>
+  <GrechkaPharmacy_MakeImmunoT2.jobString>Making pharmaceutical preparations.</GrechkaPharmacy_MakeImmunoT2.jobString>
+  <GrechkaPharmacy_MakeRecoveryT2.label>make Recovery solution</GrechkaPharmacy_MakeRecoveryT2.label>
+  <GrechkaPharmacy_MakeRecoveryT2.description>Produce pharmaceutical preparations.</GrechkaPharmacy_MakeRecoveryT2.description>
+  <GrechkaPharmacy_MakeRecoveryT2.jobString>Making pharmaceutical preparations.</GrechkaPharmacy_MakeRecoveryT2.jobString>
+  <GrechkaPharmacy_MakeDetoxT2.label>make Clean slate course</GrechkaPharmacy_MakeDetoxT2.label>
+  <GrechkaPharmacy_MakeDetoxT2.description>Produce pharmaceutical preparations.</GrechkaPharmacy_MakeDetoxT2.description>
+  <GrechkaPharmacy_MakeDetoxT2.jobString>Making pharmaceutical preparations.</GrechkaPharmacy_MakeDetoxT2.jobString>
+  <GrechkaPharmacy_MakeMechaniteRegenT3.label>make Living tissue injector</GrechkaPharmacy_MakeMechaniteRegenT3.label>
+  <GrechkaPharmacy_MakeMechaniteRegenT3.description>Produce pharmaceutical preparations.</GrechkaPharmacy_MakeMechaniteRegenT3.description>
+  <GrechkaPharmacy_MakeMechaniteRegenT3.jobString>Making pharmaceutical preparations.</GrechkaPharmacy_MakeMechaniteRegenT3.jobString>
+  <GrechkaPharmacy_MakeCombatStimT3.label>make Red line injector</GrechkaPharmacy_MakeCombatStimT3.label>
+  <GrechkaPharmacy_MakeCombatStimT3.description>Produce pharmaceutical preparations.</GrechkaPharmacy_MakeCombatStimT3.description>
+  <GrechkaPharmacy_MakeCombatStimT3.jobString>Making pharmaceutical preparations.</GrechkaPharmacy_MakeCombatStimT3.jobString>
+  <GrechkaPharmacy_MakeWorkStimT3.label>make Second shift concentrate</GrechkaPharmacy_MakeWorkStimT3.label>
+  <GrechkaPharmacy_MakeWorkStimT3.description>Produce pharmaceutical preparations.</GrechkaPharmacy_MakeWorkStimT3.description>
+  <GrechkaPharmacy_MakeWorkStimT3.jobString>Making pharmaceutical preparations.</GrechkaPharmacy_MakeWorkStimT3.jobString>
+  <GrechkaPharmacy_MakeScarSerumT4.label>make Scar repair serum</GrechkaPharmacy_MakeScarSerumT4.label>
+  <GrechkaPharmacy_MakeScarSerumT4.description>Produce pharmaceutical preparations.</GrechkaPharmacy_MakeScarSerumT4.description>
+  <GrechkaPharmacy_MakeScarSerumT4.jobString>Making pharmaceutical preparations.</GrechkaPharmacy_MakeScarSerumT4.jobString>
+  <GrechkaPharmacy_MakeLimbSerumT4.label>make Limb regeneration serum</GrechkaPharmacy_MakeLimbSerumT4.label>
+  <GrechkaPharmacy_MakeLimbSerumT4.description>Produce pharmaceutical preparations.</GrechkaPharmacy_MakeLimbSerumT4.description>
+  <GrechkaPharmacy_MakeLimbSerumT4.jobString>Making pharmaceutical preparations.</GrechkaPharmacy_MakeLimbSerumT4.jobString>
+  <GrechkaPharmacy_MakeGrechkaSerumT5.label>make Grechka regeneration serum</GrechkaPharmacy_MakeGrechkaSerumT5.label>
+  <GrechkaPharmacy_MakeGrechkaSerumT5.description>Produce pharmaceutical preparations.</GrechkaPharmacy_MakeGrechkaSerumT5.description>
+  <GrechkaPharmacy_MakeGrechkaSerumT5.jobString>Making pharmaceutical preparations.</GrechkaPharmacy_MakeGrechkaSerumT5.jobString>
+  <GrechkaPharmacy_MakeYouthSerumT5.label>make Youth renewal serum</GrechkaPharmacy_MakeYouthSerumT5.label>
+  <GrechkaPharmacy_MakeYouthSerumT5.description>Produce pharmaceutical preparations.</GrechkaPharmacy_MakeYouthSerumT5.description>
+  <GrechkaPharmacy_MakeYouthSerumT5.jobString>Making pharmaceutical preparations.</GrechkaPharmacy_MakeYouthSerumT5.jobString>
+  <GrechkaPharmacy_MakeUltratechMedicine.label>make glitterworld medicine</GrechkaPharmacy_MakeUltratechMedicine.label>
+  <GrechkaPharmacy_MakeUltratechMedicine.description>Synthesize advanced tending medicine to supply high-tier treatments without relying on traders.</GrechkaPharmacy_MakeUltratechMedicine.description>
+  <GrechkaPharmacy_MakeUltratechMedicine.jobString>Synthesizing glitterworld medicine.</GrechkaPharmacy_MakeUltratechMedicine.jobString>
+</LanguageData>

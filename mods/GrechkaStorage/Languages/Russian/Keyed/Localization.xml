@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaStorage_Text001>Количество, максимум </GrechkaStorage_Text001>
+  <GrechkaStorage_Text002>Подтвердить</GrechkaStorage_Text002>
+  <GrechkaStorage_Text003>Добавить предметы с карты — переноску выполняют пешки</GrechkaStorage_Text003>
+  <GrechkaStorage_Text004>Перенести найденное</GrechkaStorage_Text004>
+  <GrechkaStorage_Text005>Перенести…</GrechkaStorage_Text005>
+  <GrechkaStorage_Text006>Недоступно</GrechkaStorage_Text006>
+  <GrechkaStorage_Text007>Добавить с карты…</GrechkaStorage_Text007>
+  <GrechkaStorage_Text008>Оптимизировать</GrechkaStorage_Text008>
+  <GrechkaStorage_Text009>Вернуть буфер в сеть</GrechkaStorage_Text009>
+  <GrechkaStorage_Text010>Доступно в дисках: </GrechkaStorage_Text010>
+  <GrechkaStorage_Text011>   |   В буфере выдачи: </GrechkaStorage_Text011>
+  <GrechkaStorage_Text012>В буферах крафтеров: </GrechkaStorage_Text012>
+  <GrechkaStorage_Text013>Здесь входы, уже забранные с дисков, и готовые результаты, ожидающие возврата. Они не входят в доступный остаток дисков. Материалы внутри штатного процесса фабрики учитываются самой фабрикой.</GrechkaStorage_Text013>
+  <GrechkaStorage_Text014>Всё</GrechkaStorage_Text014>
+  <GrechkaStorage_Text015>Еда</GrechkaStorage_Text015>
+  <GrechkaStorage_Text016>Снаряжение</GrechkaStorage_Text016>
+  <GrechkaStorage_Text017>Прочее</GrechkaStorage_Text017>
+  <GrechkaStorage_Text018>Буфер восстановления</GrechkaStorage_Text018>
+  <GrechkaStorage_Text019>Выдать…</GrechkaStorage_Text019>
+  <GrechkaStorage_Text020>Буфер выдачи заполнен. Дождитесь переноски пешками.</GrechkaStorage_Text020>
+  <GrechkaStorage_Text021>Предмет недоступен или буфер заполнен.</GrechkaStorage_Text021>
+  <GrechkaStorage_Text022>Подключите дисковый блок кварцевым кабелем.</GrechkaStorage_Text022>
+  <GrechkaStorage_Text023> (нет доступа к сети)</GrechkaStorage_Text023>
+  <GrechkaStorage_Text024>Установить диск…</GrechkaStorage_Text024>
+  <GrechkaStorage_Text025> — предметов: </GrechkaStorage_Text025>
+  <GrechkaStorage_Text026>На карте нет доступных дисков</GrechkaStorage_Text026>
+  <GrechkaStorage_Text027>; типов </GrechkaStorage_Text027>
+  <GrechkaStorage_Text028> шт.; </GrechkaStorage_Text028>
+  <GrechkaStorage_Text029> байт</GrechkaStorage_Text029>
+  <GrechkaStorage_Text030>Диск заполнен: новые предметы не помещаются. Извлечение доступно.</GrechkaStorage_Text030>
+  <GrechkaStorage_Text031>Все 63 типа заняты. Уже записанные типы ещё можно добавлять.</GrechkaStorage_Text031>
+  <GrechkaStorage_Text032>Отменить</GrechkaStorage_Text032>
+  <GrechkaStorage_Text033>Извлечь</GrechkaStorage_Text033>
+  <GrechkaStorage_Text034>Пешки с включённой переноской выполняют ввод и выдачу. Диски устанавливаются и извлекаются у самого блока.</GrechkaStorage_Text034>
+  <GrechkaStorage_Text035> — переносится</GrechkaStorage_Text035>
+  <GrechkaStorage_Text036>Блок недоступен.</GrechkaStorage_Text036>
+  <GrechkaStorage_Text037>Контроллеров в сети: </GrechkaStorage_Text037>
+  <GrechkaStorage_Text038>; включено: </GrechkaStorage_Text038>
+  <GrechkaStorage_Text039>
+Сеть недоступна: нет работающего контроллера</GrechkaStorage_Text039>
+  <GrechkaStorage_Text040>
+Сигнальная сеть доступна</GrechkaStorage_Text040>
+  <GrechkaStorage_Text041>Открыть сеть</GrechkaStorage_Text041>
+  <GrechkaStorage_Text042>Подключённые устройства и состояние сигнальной сети.</GrechkaStorage_Text042>
+  <GrechkaStorage_Text043>Не установлено</GrechkaStorage_Text043>
+  <GrechkaStorage_Text044>Не принадлежит колонии</GrechkaStorage_Text044>
+  <GrechkaStorage_Text045>Поломка</GrechkaStorage_Text045>
+  <GrechkaStorage_Text046>Выключено</GrechkaStorage_Text046>
+  <GrechkaStorage_Text047>Оглушено</GrechkaStorage_Text047>
+  <GrechkaStorage_Text048>Нет питания</GrechkaStorage_Text048>
+  <GrechkaStorage_Text049>Контроллер больше недоступен колонии.</GrechkaStorage_Text049>
+  <GrechkaStorage_Text050>Сеть доступна</GrechkaStorage_Text050>
+  <GrechkaStorage_Text051>Нет работающего контроллера</GrechkaStorage_Text051>
+  <GrechkaStorage_Text052>   |   Контроллеров: </GrechkaStorage_Text052>
+  <GrechkaStorage_Text053>   |   Кабелей: </GrechkaStorage_Text053>
+  <GrechkaStorage_Text054>   |   Устройств: </GrechkaStorage_Text054>
+  <GrechkaStorage_Text055>Склад</GrechkaStorage_Text055>
+  <GrechkaStorage_Text056>Диски</GrechkaStorage_Text056>
+  <GrechkaStorage_Text057>Устройства</GrechkaStorage_Text057>
+  <GrechkaStorage_Text058>Переносы</GrechkaStorage_Text058>
+  <GrechkaStorage_Text059>Автокрафт</GrechkaStorage_Text059>
+  <GrechkaStorage_Text060>Контроллер обновляется до нового формата.</GrechkaStorage_Text060>
+  <GrechkaStorage_Text061>Другая сигнальная ветка</GrechkaStorage_Text061>
+  <GrechkaStorage_Text062>Доступно</GrechkaStorage_Text062>
+  <GrechkaStorage_Text063>Сеть выключена</GrechkaStorage_Text063>
+  <GrechkaStorage_Text064>Устройство касается нескольких отдельных веток и обслуживается другой. Соедините ветки кабелем, чтобы получить общую сеть.</GrechkaStorage_Text064>
+  <GrechkaStorage_Text065>Показать</GrechkaStorage_Text065>
+  <GrechkaStorage_Text066>Каталог рецептов</GrechkaStorage_Text066>
+  <GrechkaStorage_Text067>Заказы и минимумы</GrechkaStorage_Text067>
+  <GrechkaStorage_Text068>Остатки фабрик</GrechkaStorage_Text068>
+  <GrechkaStorage_Text069>выбранная вещь</GrechkaStorage_Text069>
+  <GrechkaStorage_Text070> — минимум </GrechkaStorage_Text070>
+  <GrechkaStorage_Text071> — осталось </GrechkaStorage_Text071>
+  <GrechkaStorage_Text072> циклов</GrechkaStorage_Text072>
+  <GrechkaStorage_Text073> шт.</GrechkaStorage_Text073>
+  <GrechkaStorage_Text074>Нет активных заказов по этому поиску. Выберите рецепт в каталоге.</GrechkaStorage_Text074>
+  <GrechkaStorage_Text075>Выключить</GrechkaStorage_Text075>
+  <GrechkaStorage_Text076>Доступные автокрафты подключённых станков и фабрик. Шаблоны не нужны.</GrechkaStorage_Text076>
+  <GrechkaStorage_Text077>Рецепты не найдены. Подключите крафтер к сети и поставьте вплотную к производственной машине.</GrechkaStorage_Text077>
+  <GrechkaStorage_Text078>Результат зависит от выбранной вещи. Один цикл.</GrechkaStorage_Text078>
+  <GrechkaStorage_Text079>Выбрать вещь…</GrechkaStorage_Text079>
+  <GrechkaStorage_Text080>Нет доступного станка или крафтера</GrechkaStorage_Text080>
+  <GrechkaStorage_Text081> · ингредиенты доступны</GrechkaStorage_Text081>
+  <GrechkaStorage_Text082>
+Станок: </GrechkaStorage_Text082>
+  <GrechkaStorage_Text083>Заказать…</GrechkaStorage_Text083>
+  <GrechkaStorage_Text084>Минимум…</GrechkaStorage_Text084>
+  <GrechkaStorage_Text085> · заказ в циклах</GrechkaStorage_Text085>
+  <GrechkaStorage_Text086> · заказ в штуках</GrechkaStorage_Text086>
+  <GrechkaStorage_Text087>PipeSystem не установлен</GrechkaStorage_Text087>
+  <GrechkaStorage_Text088>Версия PipeSystem не поддержана: сигнатуры изменились</GrechkaStorage_Text088>
+  <GrechkaStorage_Text089>PipeSystem: штатные процессы и физические выходы</GrechkaStorage_Text089>
+  <GrechkaStorage_Text090>Ошибка подключения Factory: </GrechkaStorage_Text090>
+  <GrechkaStorage_Text091>Нужно исследование</GrechkaStorage_Text091>
+  <GrechkaStorage_Text092>У процесса нет результата</GrechkaStorage_Text092>
+  <GrechkaStorage_Text093>Не удалось проверить условия: </GrechkaStorage_Text093>
+  <GrechkaStorage_Text094>Ожидание</GrechkaStorage_Text094>
+  <GrechkaStorage_Text095>Оставленная штатная партия завершится без новых запусков</GrechkaStorage_Text095>
+  <GrechkaStorage_Text096>Штатный процесс не активировался</GrechkaStorage_Text096>
+  <GrechkaStorage_Text097>Фабрика выполняет штатный процесс</GrechkaStorage_Text097>
+  <GrechkaStorage_Text098>Ошибка Factory: </GrechkaStorage_Text098>
+  <GrechkaStorage_Text099>Схема ингредиентов Factory изменилась; подача остановлена</GrechkaStorage_Text099>
+  <GrechkaStorage_Text100>Не хватает: </GrechkaStorage_Text100>
+  <GrechkaStorage_Text101>ингредиента</GrechkaStorage_Text101>
+  <GrechkaStorage_Text102>Резервирование прервано; исходные вещи сохранены</GrechkaStorage_Text102>
+  <GrechkaStorage_Text103>Подача приостановлена: </GrechkaStorage_Text103>
+  <GrechkaStorage_Text104>Сначала освободите место для выгрузки фабричного буфера.</GrechkaStorage_Text104>
+  <GrechkaStorage_Text105>Кристаллы готовы к сбору: </GrechkaStorage_Text105>
+  <GrechkaStorage_Text106>Рост certus: </GrechkaStorage_Text106>
+  <GrechkaStorage_Text107>Метеорит certus</GrechkaStorage_Text107>
+  <GrechkaStorage_Text108>Караван заметил кристаллический метеорит. На месте можно добыть certus-кварц и забрать источники роста для собственной фермы.</GrechkaStorage_Text108>
+  <GrechkaStorage_Text109>Не хватает одного материала: </GrechkaStorage_Text109>
+  <GrechkaStorage_Text110>Ожидание промежуточного изделия</GrechkaStorage_Text110>
+  <GrechkaStorage_Text111>Производство</GrechkaStorage_Text111>
+  <GrechkaStorage_Text112>Недостаточная квалификация крафтера</GrechkaStorage_Text112>
+  <GrechkaStorage_Text113>Ошибка рецепта: содержимое сохранено</GrechkaStorage_Text113>
+  <GrechkaStorage_Text114>Ожидание заказа</GrechkaStorage_Text114>
+  <GrechkaStorage_Text115>Ожидание места на дисках</GrechkaStorage_Text115>
+  <GrechkaStorage_Text116>: осталось работы </GrechkaStorage_Text116>
+  <GrechkaStorage_Text117>Вернуть содержимое</GrechkaStorage_Text117>
+  <GrechkaStorage_Text118>Остановить текущую партию и выгрузить сохранившиеся вещи рядом.</GrechkaStorage_Text118>
+  <GrechkaStorage_Text119>Нет работающего подключения.</GrechkaStorage_Text119>
+  <GrechkaStorage_Text120>Сначала освободите буфер восстановления.</GrechkaStorage_Text120>
+  <GrechkaStorage_Text121>Для распределения нужны хотя бы два доступных диска.</GrechkaStorage_Text121>
+  <GrechkaStorage_Text122>Не удалось подобрать полную раскладку. Текущее содержимое сохранено.</GrechkaStorage_Text122>
+  <GrechkaStorage_Text123>Операция остановлена. Остаток сохранён в буфере восстановления; заморозка сохранена.</GrechkaStorage_Text123>
+  <GrechkaStorage_Text124>Операция отменена, предметы возвращены на исходные диски.</GrechkaStorage_Text124>
+  <GrechkaStorage_Text125>Предметы распределены по дискам. Свежесть, свойства и холод сохранены.</GrechkaStorage_Text125>
+  <GrechkaStorage_Text126>За пределами карты.</GrechkaStorage_Text126>
+  <GrechkaStorage_Text127>Здесь уже есть кварцевый кабель или его чертёж.</GrechkaStorage_Text127>
+  <GrechkaStorage_Text128>Поддерживать на дисках не меньше:</GrechkaStorage_Text128>
+  <GrechkaStorage_Text129>Число штатных производственных циклов:</GrechkaStorage_Text129>
+  <GrechkaStorage_Text130>Изготовить единиц первого продукта:</GrechkaStorage_Text130>
+  <GrechkaStorage_Text131>Добавить</GrechkaStorage_Text131>
+  <GrechkaStorage_Text132>
+Диски: </GrechkaStorage_Text132>
+  <GrechkaStorage_Text133>Установка и извлечение дисков пешками.</GrechkaStorage_Text133>
+  <GrechkaStorage_Text134>Освободите место для извлечения дисков перед разборкой.</GrechkaStorage_Text134>
+  <GrechkaStorage_Text135>Сначала извлеките вещи из буфера восстановления.</GrechkaStorage_Text135>
+  <GrechkaStorage_Text136>Сначала освободите буфер выдачи контроллера.</GrechkaStorage_Text136>
+  <GrechkaStorage_Text137>Предмет недоступен</GrechkaStorage_Text137>
+  <GrechkaStorage_Text138>Диски устанавливаются отдельно в дисковый блок</GrechkaStorage_Text138>
+  <GrechkaStorage_Text139>Этот объект нельзя хранить на диске</GrechkaStorage_Text139>
+  <GrechkaStorage_Text140>Пустая упаковка</GrechkaStorage_Text140>
+  <GrechkaStorage_Text141>Сначала извлеките содержимое упакованного контейнера</GrechkaStorage_Text141>
+  <GrechkaStorage_Text142>Опасное устройство требует отдельного адаптера</GrechkaStorage_Text142>
+  <GrechkaStorage_Text143>Особый тип предмета требует адаптера: </GrechkaStorage_Text143>
+  <GrechkaStorage_Text144>Сначала извлеките содержимое вложенного контейнера</GrechkaStorage_Text144>
+  <GrechkaStorage_Text145>Вложенные контейнеры не поддерживаются</GrechkaStorage_Text145>
+  <GrechkaStorage_Text146>Взрывоопасный предмет нельзя поместить на диск</GrechkaStorage_Text146>
+  <GrechkaStorage_Text147>Особая порча требует отдельного адаптера</GrechkaStorage_Text147>
+  <GrechkaStorage_Text148>Активный компонент требует адаптера: </GrechkaStorage_Text148>
+  <GrechkaStorage_Text149>
+Архив расхитителей: состав откроется после установки в блок</GrechkaStorage_Text149>
+  <GrechkaStorage_Text150>
+Предметов: </GrechkaStorage_Text150>
+  <GrechkaStorage_Text151>; типов: </GrechkaStorage_Text151>
+  <GrechkaStorage_Text152>/63
+Память: </GrechkaStorage_Text152>
+  <GrechkaStorage_Text153>
+Постоянная заморозка</GrechkaStorage_Text153>
+  <GrechkaStorage_Text154>
+Обычная порча по окружающей температуре</GrechkaStorage_Text154>
+  <GrechkaStorage_Text155>Выбранная вещь будет израсходована. Результат зависит от её материала и рецепта. Другие вещи автоматически подбираться не будут.</GrechkaStorage_Text155>
+  <GrechkaStorage_Text156>Подходящих вещей не найдено. Проверьте поиск или положите сырьё на диск и откройте выбор снова.</GrechkaStorage_Text156>
+  <GrechkaStorage_Text157>Будет списано: </GrechkaStorage_Text157>
+  <GrechkaStorage_Text158>Переработать</GrechkaStorage_Text158>
+  <GrechkaStorage_Text159>Вещь уже заказана, перемещена или недоступна. Выберите её на диске заново.</GrechkaStorage_Text159>
+  <GrechkaStorage_Text160>Предмет не подходит для этого рецепта</GrechkaStorage_Text160>
+  <GrechkaStorage_Text161>Выбранная вещь больше не доступна на дисках</GrechkaStorage_Text161>
+  <GrechkaStorage_Text162>Количество выбранного стека изменилось. Отмените заказ и выберите вещь заново.</GrechkaStorage_Text162>
+</LanguageData>

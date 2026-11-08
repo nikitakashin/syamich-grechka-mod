@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/Grechka.Traders.SpecialistDef[defName='GrechkaTrader_Imperial']/extraThingDefs</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/Grechka.Traders.SpecialistDef[defName='GrechkaTrader_Imperial']/extraThingDefs</xpath>
+      <value>
+        <li>GrechkaTreasures_DiamondRaw</li>
+        <li>GrechkaTreasures_DiamondCut</li>
+        <li>GrechkaTreasures_DiamondMonolith</li>
+        <li>GrechkaTreasures_RubyRaw</li>
+        <li>GrechkaTreasures_RubyCut</li>
+        <li>GrechkaTreasures_RubyMonolith</li>
+        <li>GrechkaTreasures_SapphireRaw</li>
+        <li>GrechkaTreasures_SapphireCut</li>
+        <li>GrechkaTreasures_SapphireMonolith</li>
+        <li>GrechkaTreasures_EmeraldRaw</li>
+        <li>GrechkaTreasures_EmeraldCut</li>
+        <li>GrechkaTreasures_EmeraldMonolith</li>
+        <li>GrechkaTreasures_AmethystRaw</li>
+        <li>GrechkaTreasures_AmethystCut</li>
+        <li>GrechkaTreasures_AmethystMonolith</li>
+        <li>GrechkaTreasures_TopazRaw</li>
+        <li>GrechkaTreasures_TopazCut</li>
+        <li>GrechkaTreasures_TopazMonolith</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/Grechka.Traders.SpecialistDef[defName='GrechkaTrader_Interiors']/extraThingDefs</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/Grechka.Traders.SpecialistDef[defName='GrechkaTrader_Interiors']/extraThingDefs</xpath>
+      <value>
+        <li>GrechkaTreasures_DiamondStatue</li>
+        <li>GrechkaTreasures_DiamondVase</li>
+        <li>GrechkaTreasures_RubyStatue</li>
+        <li>GrechkaTreasures_RubyVase</li>
+        <li>GrechkaTreasures_SapphireStatue</li>
+        <li>GrechkaTreasures_SapphireVase</li>
+        <li>GrechkaTreasures_EmeraldStatue</li>
+        <li>GrechkaTreasures_EmeraldVase</li>
+        <li>GrechkaTreasures_AmethystStatue</li>
+        <li>GrechkaTreasures_AmethystVase</li>
+        <li>GrechkaTreasures_TopazStatue</li>
+        <li>GrechkaTreasures_TopazVase</li>
+      </value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/Grechka.Traders.SpecialistDef[defName='GrechkaTrader_Smugglers']/extraThingDefs</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/Grechka.Traders.SpecialistDef[defName='GrechkaTrader_Smugglers']/extraThingDefs</xpath>
+      <value>
+        <li>GrechkaTreasures_TreasureMap</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

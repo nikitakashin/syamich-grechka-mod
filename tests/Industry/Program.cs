@@ -71,3 +71,29 @@ Check(MatterEconomy.Work(1000, 1, 100, 1000, 15) == 100000,
     "Matter work keeps the processing time when energy would finish earlier");
 Check(MatterEconomy.RecycleYield(50, 10, .05) < MatterEconomy.RecycleYield(100, 10, .05),
     "A lower real input value cannot improve recycling output");
+Check(MatterEconomy.SynthesisCost(-5,-10)==0 && MatterEconomy.RecycleYield(-5,-10,.05)==0,
+    "Two invalid negative inputs cannot multiply into a valid conversion");
+foreach(double bad in new[]{double.NaN,double.PositiveInfinity,0,-1})
+    Check(MatterEconomy.Work(bad,1000,1,1000,1)==float.MaxValue
+        && MatterEconomy.Work(1,1000,1,1000,bad)==float.MaxValue,
+        "Invalid conversion clock fails closed: "+bad);
+Check(MatterEconomy.Work(1,1e15,1,1,1)>=6e16,
+    "Large finite electrical budgets are not silently truncated at one trillion work");
+foreach(double value in new[]{.0001,.001,.01,.1,1,1.9,10,34000})
+ foreach(double discount in new[]{.35,.5})
+ {
+    int batch=MatterEconomy.RecycleBatch(value,10,.05,discount);
+    Check(batch>0 && MatterEconomy.RecycleYield(value*Math.Ceiling(batch*(1-discount)),10,.05)>0,
+        "Cheap item recycling has a real nonzero post-discount yield: "+value+" / "+discount);
+ }
+Check(MatterEconomy.RecycleBatch(double.Epsilon,10,.05,.5)==0
+    && MatterEconomy.RecycleBatch(1e50,10,.05,.5)==0,
+    "Unrepresentable recycling batches fail promptly without overflowing or looping");
+for(int priceStep=1;priceStep<=10000;priceStep++)
+{
+    double price=priceStep/100d;
+    int spent=(int)Math.Ceiling(MatterEconomy.SynthesisCost(price,10)*.5);
+    int recovered=2*MatterEconomy.RecycleYield(price*2,10,.06249);
+    if(recovered>spent) throw new Exception("Direct T5 matter arbitrage at "+price);
+}
+Check(true,"10,000 price points below the strict configured efficiency boundary cannot create direct T5 matter arbitrage");

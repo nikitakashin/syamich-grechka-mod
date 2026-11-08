@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaTreasures_TreasureMap.label>карта сокровищ</GrechkaTreasures_TreasureMap.label>
+  <GrechkaTreasures_TreasureMap.description>Старые координаты и сведения о драгоценностях. Положите карту на землю и прикажите колонисту расшифровать её правой кнопкой мыши. Карта расходуется только после успешного обнаружения места. Одновременно доступны четыре экспедиции; при невозможности найти место карта остаётся целой.</GrechkaTreasures_TreasureMap.description>
+  <GrechkaTreasures_TreasureChest.label>запечатанный сундук</GrechkaTreasures_TreasureChest.label>
+  <GrechkaTreasures_TreasureChest.description>Тяжёлый старый сундук. Прикажите колонисту вскрыть его правой кнопкой мыши. Добыча физически хранится внутри и появляется рядом после вскрытия. Разрушение также освобождает уцелевшее содержимое.</GrechkaTreasures_TreasureChest.description>
+  <GrechkaTreasures_DecoyChest.label>подозрительный позолоченный сундук</GrechkaTreasures_DecoyChest.label>
+  <GrechkaTreasures_DecoyChest.description>Слишком яркая позолота отслаивается, а рядом видны свежие следы. Возможно, это дешёвая приманка. Внутри может оказаться обычный металл вместо обещанных драгоценностей.</GrechkaTreasures_DecoyChest.description>
+  <GrechkaTreasures_WarningSign.label>следы прежней экспедиции</GrechkaTreasures_WarningSign.label>
+  <GrechkaTreasures_WarningSign.description>Записка, отметки на металле и остатки проводки. Выберите объект и прочитайте подсказку в сведениях: она помогает заметить ловушки и найти настоящую добычу.</GrechkaTreasures_WarningSign.description>
+</LanguageData>

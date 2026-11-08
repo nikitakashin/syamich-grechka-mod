@@ -1,0 +1,521 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <RecipeDef>
+    <defName>GrechkaTreasures_CutAnyGem</defName>
+    <label>огранить любые камни</label>
+    <description>Ограняет один любой необработанный драгоценный камень в один огранённый камень того же вида. Разрешённые виды можно выбрать в фильтре задания. Монолиты распиливаются отдельными заданиями.</description>
+    <jobString>Обрабатывает драгоценный камень.</jobString>
+    <workAmount>2400</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>GrechkaTreasures_Jewelcraft</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GrechkaTreasures_DiamondRaw</li>
+            <li>GrechkaTreasures_RubyRaw</li>
+            <li>GrechkaTreasures_SapphireRaw</li>
+            <li>GrechkaTreasures_EmeraldRaw</li>
+            <li>GrechkaTreasures_AmethystRaw</li>
+            <li>GrechkaTreasures_TopazRaw</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>GrechkaTreasures_DiamondRaw</li>
+        <li>GrechkaTreasures_RubyRaw</li>
+        <li>GrechkaTreasures_SapphireRaw</li>
+        <li>GrechkaTreasures_EmeraldRaw</li>
+        <li>GrechkaTreasures_AmethystRaw</li>
+        <li>GrechkaTreasures_TopazRaw</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products />
+    <recipeUsers>
+      <li>GrechkaTreasures_JewelersBench</li>
+    </recipeUsers>
+    <workerClass>Grechka.Treasures.RecipeWorker_CutAnyGem</workerClass>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>GrechkaTreasures_CutDiamond</defName>
+    <label>огранить алмаз</label>
+    <description>Огранка одного природного камня в один ювелирный камень.</description>
+    <jobString>Обрабатывает драгоценный камень.</jobString>
+    <workAmount>2400</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>GrechkaTreasures_Jewelcraft</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GrechkaTreasures_DiamondRaw</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>GrechkaTreasures_DiamondRaw</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <GrechkaTreasures_DiamondCut>1</GrechkaTreasures_DiamondCut>
+    </products>
+    <recipeUsers>
+      <li>GrechkaTreasures_JewelersBench</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>GrechkaTreasures_SawMonolithDiamond</defName>
+    <label>распилить монолит: алмаз</label>
+    <description>Обработка камня на ювелирном верстаке. При распиле монолита получается 30 огранённых камней.</description>
+    <jobString>Обрабатывает драгоценный камень.</jobString>
+    <workAmount>24000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>GrechkaTreasures_Jewelcraft</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GrechkaTreasures_DiamondMonolith</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>GrechkaTreasures_DiamondMonolith</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <GrechkaTreasures_DiamondCut>30</GrechkaTreasures_DiamondCut>
+    </products>
+    <recipeUsers>
+      <li>GrechkaTreasures_JewelersBench</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>GrechkaTreasures_CutRuby</defName>
+    <label>огранить рубин</label>
+    <description>Огранка одного природного камня в один ювелирный камень.</description>
+    <jobString>Обрабатывает драгоценный камень.</jobString>
+    <workAmount>2400</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>GrechkaTreasures_Jewelcraft</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GrechkaTreasures_RubyRaw</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>GrechkaTreasures_RubyRaw</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <GrechkaTreasures_RubyCut>1</GrechkaTreasures_RubyCut>
+    </products>
+    <recipeUsers>
+      <li>GrechkaTreasures_JewelersBench</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>GrechkaTreasures_SawMonolithRuby</defName>
+    <label>распилить монолит: рубин</label>
+    <description>Обработка камня на ювелирном верстаке. При распиле монолита получается 30 огранённых камней.</description>
+    <jobString>Обрабатывает драгоценный камень.</jobString>
+    <workAmount>24000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>GrechkaTreasures_Jewelcraft</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GrechkaTreasures_RubyMonolith</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>GrechkaTreasures_RubyMonolith</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <GrechkaTreasures_RubyCut>30</GrechkaTreasures_RubyCut>
+    </products>
+    <recipeUsers>
+      <li>GrechkaTreasures_JewelersBench</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>GrechkaTreasures_CutSapphire</defName>
+    <label>огранить сапфир</label>
+    <description>Огранка одного природного камня в один ювелирный камень.</description>
+    <jobString>Обрабатывает драгоценный камень.</jobString>
+    <workAmount>2400</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>GrechkaTreasures_Jewelcraft</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GrechkaTreasures_SapphireRaw</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>GrechkaTreasures_SapphireRaw</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <GrechkaTreasures_SapphireCut>1</GrechkaTreasures_SapphireCut>
+    </products>
+    <recipeUsers>
+      <li>GrechkaTreasures_JewelersBench</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>GrechkaTreasures_SawMonolithSapphire</defName>
+    <label>распилить монолит: сапфир</label>
+    <description>Обработка камня на ювелирном верстаке. При распиле монолита получается 30 огранённых камней.</description>
+    <jobString>Обрабатывает драгоценный камень.</jobString>
+    <workAmount>24000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>GrechkaTreasures_Jewelcraft</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GrechkaTreasures_SapphireMonolith</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>GrechkaTreasures_SapphireMonolith</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <GrechkaTreasures_SapphireCut>30</GrechkaTreasures_SapphireCut>
+    </products>
+    <recipeUsers>
+      <li>GrechkaTreasures_JewelersBench</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>GrechkaTreasures_CutEmerald</defName>
+    <label>огранить изумруд</label>
+    <description>Огранка одного природного камня в один ювелирный камень.</description>
+    <jobString>Обрабатывает драгоценный камень.</jobString>
+    <workAmount>2400</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>GrechkaTreasures_Jewelcraft</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GrechkaTreasures_EmeraldRaw</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>GrechkaTreasures_EmeraldRaw</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <GrechkaTreasures_EmeraldCut>1</GrechkaTreasures_EmeraldCut>
+    </products>
+    <recipeUsers>
+      <li>GrechkaTreasures_JewelersBench</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>GrechkaTreasures_SawMonolithEmerald</defName>
+    <label>распилить монолит: изумруд</label>
+    <description>Обработка камня на ювелирном верстаке. При распиле монолита получается 30 огранённых камней.</description>
+    <jobString>Обрабатывает драгоценный камень.</jobString>
+    <workAmount>24000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>GrechkaTreasures_Jewelcraft</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GrechkaTreasures_EmeraldMonolith</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>GrechkaTreasures_EmeraldMonolith</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <GrechkaTreasures_EmeraldCut>30</GrechkaTreasures_EmeraldCut>
+    </products>
+    <recipeUsers>
+      <li>GrechkaTreasures_JewelersBench</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>GrechkaTreasures_CutAmethyst</defName>
+    <label>огранить аметист</label>
+    <description>Огранка одного природного камня в один ювелирный камень.</description>
+    <jobString>Обрабатывает драгоценный камень.</jobString>
+    <workAmount>2400</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>GrechkaTreasures_Jewelcraft</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GrechkaTreasures_AmethystRaw</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>GrechkaTreasures_AmethystRaw</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <GrechkaTreasures_AmethystCut>1</GrechkaTreasures_AmethystCut>
+    </products>
+    <recipeUsers>
+      <li>GrechkaTreasures_JewelersBench</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>GrechkaTreasures_SawMonolithAmethyst</defName>
+    <label>распилить монолит: аметист</label>
+    <description>Обработка камня на ювелирном верстаке. При распиле монолита получается 30 огранённых камней.</description>
+    <jobString>Обрабатывает драгоценный камень.</jobString>
+    <workAmount>24000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>GrechkaTreasures_Jewelcraft</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GrechkaTreasures_AmethystMonolith</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>GrechkaTreasures_AmethystMonolith</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <GrechkaTreasures_AmethystCut>30</GrechkaTreasures_AmethystCut>
+    </products>
+    <recipeUsers>
+      <li>GrechkaTreasures_JewelersBench</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>GrechkaTreasures_CutTopaz</defName>
+    <label>огранить топаз</label>
+    <description>Огранка одного природного камня в один ювелирный камень.</description>
+    <jobString>Обрабатывает драгоценный камень.</jobString>
+    <workAmount>2400</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>GrechkaTreasures_Jewelcraft</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GrechkaTreasures_TopazRaw</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>GrechkaTreasures_TopazRaw</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <GrechkaTreasures_TopazCut>1</GrechkaTreasures_TopazCut>
+    </products>
+    <recipeUsers>
+      <li>GrechkaTreasures_JewelersBench</li>
+    </recipeUsers>
+  </RecipeDef>
+  <RecipeDef>
+    <defName>GrechkaTreasures_SawMonolithTopaz</defName>
+    <label>распилить монолит: топаз</label>
+    <description>Обработка камня на ювелирном верстаке. При распиле монолита получается 30 огранённых камней.</description>
+    <jobString>Обрабатывает драгоценный камень.</jobString>
+    <workAmount>24000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <workSkill>Crafting</workSkill>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>GrechkaTreasures_Jewelcraft</researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GrechkaTreasures_TopazMonolith</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>GrechkaTreasures_TopazMonolith</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <GrechkaTreasures_TopazCut>30</GrechkaTreasures_TopazCut>
+    </products>
+    <recipeUsers>
+      <li>GrechkaTreasures_JewelersBench</li>
+    </recipeUsers>
+  </RecipeDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>GrechkaTreasures_JewelersBench</defName>
+    <label>ювелирный верстак</label>
+    <description>Ручная огранка драгоценных камней, распил монолитов и изготовление ювелирного оружия и резного декора. Не требует электричества.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <graphicData>
+      <texPath>Buildings/JewelersBench</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,2)</drawSize>
+    </graphicData>
+    <size>(3,1)</size>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <statBases>
+      <MaxHitPoints>220</MaxHitPoints>
+      <WorkToBuild>2400</WorkToBuild>
+      <Mass>30</Mass>
+      <Flammability>0.2</Flammability>
+      <WorkTableWorkSpeedFactor>1</WorkTableWorkSpeedFactor>
+    </statBases>
+    <costList>
+      <Steel>100</Steel>
+      <WoodLog>60</WoodLog>
+    </costList>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <building>
+      <isEdifice>true</isEdifice>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <WorkGiverDef>
+    <defName>GrechkaTreasures_DoBillsJeweler</defName>
+    <label>заниматься ювелирным делом</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>80</priorityInType>
+    <fixedBillGiverDefs>
+      <li>GrechkaTreasures_JewelersBench</li>
+    </fixedBillGiverDefs>
+    <verb>заниматься ювелирным делом</verb>
+    <gerund>занимается ювелирным делом</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+</Defs>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaTrader_Industry_Caravan.label>Гречневый промышленный союз</GrechkaTrader_Industry_Caravan.label>
+  <GrechkaTrader_Industry_Orbital.label>Гречневый промышленный союз (орбитальный)</GrechkaTrader_Industry_Orbital.label>
+  <GrechkaTrader_Storage_Caravan.label>Гречневый цифровой караван</GrechkaTrader_Storage_Caravan.label>
+  <GrechkaTrader_Storage_Orbital.label>Гречневый цифровой караван (орбитальный)</GrechkaTrader_Storage_Orbital.label>
+  <GrechkaTrader_Equipment_Caravan.label>Гречневый арсенал</GrechkaTrader_Equipment_Caravan.label>
+  <GrechkaTrader_Equipment_Orbital.label>Гречневый арсенал (орбитальный)</GrechkaTrader_Equipment_Orbital.label>
+  <GrechkaTrader_LuckyBlocks_Caravan.label>Гречневый торговец удачей</GrechkaTrader_LuckyBlocks_Caravan.label>
+  <GrechkaTrader_LuckyBlocks_Orbital.label>Гречневый торговец удачей (орбитальный)</GrechkaTrader_LuckyBlocks_Orbital.label>
+  <GrechkaTrader_Automation_Caravan.label>Фабрично-энергетический синдикат</GrechkaTrader_Automation_Caravan.label>
+  <GrechkaTrader_Automation_Orbital.label>Фабрично-энергетический синдикат (орбитальный)</GrechkaTrader_Automation_Orbital.label>
+  <GrechkaTrader_Robotics_Caravan.label>Караван робототехнического сервиса</GrechkaTrader_Robotics_Caravan.label>
+  <GrechkaTrader_Robotics_Orbital.label>Караван робототехнического сервиса (орбитальный)</GrechkaTrader_Robotics_Orbital.label>
+  <GrechkaTrader_Medical_Caravan.label>Пограничный медснаб</GrechkaTrader_Medical_Caravan.label>
+  <GrechkaTrader_Medical_Orbital.label>Пограничный медснаб (орбитальный)</GrechkaTrader_Medical_Orbital.label>
+  <GrechkaTrader_Gourmet_Caravan.label>Гастрономический караван Рима</GrechkaTrader_Gourmet_Caravan.label>
+  <GrechkaTrader_Gourmet_Orbital.label>Гастрономический караван Рима (орбитальный)</GrechkaTrader_Gourmet_Orbital.label>
+  <GrechkaTrader_Agronomy_Caravan.label>Агрономы фронтира</GrechkaTrader_Agronomy_Caravan.label>
+  <GrechkaTrader_Agronomy_Orbital.label>Агрономы фронтира (орбитальный)</GrechkaTrader_Agronomy_Orbital.label>
+  <GrechkaTrader_Books_Caravan.label>Странствующий книготорговец</GrechkaTrader_Books_Caravan.label>
+  <GrechkaTrader_Books_Orbital.label>Странствующий книготорговец (орбитальный)</GrechkaTrader_Books_Orbital.label>
+  <GrechkaTrader_Defence_Caravan.label>Военные инженеры фронтира</GrechkaTrader_Defence_Caravan.label>
+  <GrechkaTrader_Defence_Orbital.label>Военные инженеры фронтира (орбитальный)</GrechkaTrader_Defence_Orbital.label>
+  <GrechkaTrader_Imperial_Caravan.label>Имперский поставщик роскоши</GrechkaTrader_Imperial_Caravan.label>
+  <GrechkaTrader_Imperial_Orbital.label>Имперский поставщик роскоши (орбитальный)</GrechkaTrader_Imperial_Orbital.label>
+  <GrechkaTrader_Smugglers_Caravan.label>Контрабандисты древних арсеналов</GrechkaTrader_Smugglers_Caravan.label>
+  <GrechkaTrader_Smugglers_Orbital.label>Контрабандисты древних арсеналов (орбитальный)</GrechkaTrader_Smugglers_Orbital.label>
+  <GrechkaTrader_Psycasts_Caravan.label>Элтексовый куратор</GrechkaTrader_Psycasts_Caravan.label>
+  <GrechkaTrader_Psycasts_Orbital.label>Элтексовый куратор (орбитальный)</GrechkaTrader_Psycasts_Orbital.label>
+  <GrechkaTrader_Interiors_Caravan.label>Дизайнеры колониального интерьера</GrechkaTrader_Interiors_Caravan.label>
+  <GrechkaTrader_Interiors_Orbital.label>Дизайнеры колониального интерьера (орбитальный)</GrechkaTrader_Interiors_Orbital.label>
+  <GrechkaTrader_Outfitter_Caravan.label>Ателье пограничных миров</GrechkaTrader_Outfitter_Caravan.label>
+  <GrechkaTrader_Outfitter_Orbital.label>Ателье пограничных миров (орбитальный)</GrechkaTrader_Outfitter_Orbital.label>
+</LanguageData>

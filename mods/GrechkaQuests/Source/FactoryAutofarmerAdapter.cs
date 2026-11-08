@@ -33,7 +33,7 @@ namespace Grechka.Quests
             if (row == null || row.ReturnType != typeof(void) || yield == null || yield.ReturnType != typeof(int)
                 || storage == null || !typeof(IEnumerable<Thing>).IsAssignableFrom(storage.FieldType))
             {
-                Log.Warning("[Grechka Quests] VFE Factory: автоферма изменилась; учёт её урожая отключён.");
+                Log.Warning(QuestText.Get("GrechkaQuests_dd7084e36a35", "[Grechka Quests] VFE Factory: автоферма изменилась; учёт её урожая отключён."));
                 return;
             }
 
@@ -50,7 +50,7 @@ namespace Grechka.Quests
             }
             catch (Exception e)
             {
-                Log.Error("[Grechka Quests] Не удалось подключить автоферму VFE Factory: " + e);
+                Log.Error(QuestText.Get("GrechkaQuests_965b3dc209bf", "[Grechka Quests] Не удалось подключить автоферму VFE Factory: ") + e);
             }
         }
 

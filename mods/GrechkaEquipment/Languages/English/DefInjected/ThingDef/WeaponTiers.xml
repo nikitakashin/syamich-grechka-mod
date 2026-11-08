@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Grechka_SingleRifleT2_Item.label>grechka rifle T2 "Wasp"</Grechka_SingleRifleT2_Item.label>
+  <Grechka_SingleRifleT2_Item.description>An industrial single-shot rifle. Each shot deals 30 base damage, with a range of 32 cells.</Grechka_SingleRifleT2_Item.description>
+  <Grechka_RifleBulletT2_Item.label>grechka rifle T2 bullet</Grechka_RifleBulletT2_Item.label>
+  <Grechka_BurstLauncherT4_Item.label>grechka launcher T4 "Thunder"</Grechka_BurstLauncherT4_Item.label>
+  <Grechka_BurstLauncherT4_Item.description>A direct-fire grenade launcher firing bursts of three explosive rounds with 50 base damage each. The rounds travel fast and straight like bullets and explode immediately on impact. Each blast has a radius of 1.9 cells; weapon range is 40 cells. Explosions can hit allies.</Grechka_BurstLauncherT4_Item.description>
+  <Grechka_ExplosiveBulletT4_Item.label>T4 explosive round</Grechka_ExplosiveBulletT4_Item.label>
+</LanguageData>

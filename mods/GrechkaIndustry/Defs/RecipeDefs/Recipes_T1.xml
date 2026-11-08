@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <RecipeDef>
     <defName>Grechka_MakeComponentByHandT1</defName>
@@ -10,13 +10,29 @@
     <soundWorking>Recipe_Machining</soundWorking>
     <workAmount>10000</workAmount>
     <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-    <ingredients><li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>12</count></li></ingredients>
-    <fixedIngredientFilter><thingDefs><li>Steel</li></thingDefs></fixedIngredientFilter>
-    <products><ComponentIndustrial>1</ComponentIndustrial></products>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>12</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </products>
     <workSkill>Crafting</workSkill>
-    <skillRequirements><Crafting>3</Crafting></skillRequirements>
+    <skillRequirements>
+      <Crafting>3</Crafting>
+    </skillRequirements>
   </RecipeDef>
-
   <RecipeDef>
     <defName>Grechka_MakeHousingT1</defName>
     <label>собрать базовый корпус</label>
@@ -25,17 +41,39 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
-    <workAmount>12000</workAmount>
+    <workAmount>4000</workAmount>
     <ingredients>
-      <li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>80</count></li>
-      <li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>4</count></li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
     </ingredients>
-    <fixedIngredientFilter><thingDefs><li>Steel</li><li>ComponentIndustrial</li></thingDefs></fixedIngredientFilter>
-    <products><Grechka_HousingT1_Item>1</Grechka_HousingT1_Item></products>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+        <li>ComponentIndustrial</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Grechka_HousingT1_Item>1</Grechka_HousingT1_Item>
+    </products>
     <workSkill>Crafting</workSkill>
-    <skillRequirements><Crafting>4</Crafting></skillRequirements>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
   </RecipeDef>
-
   <RecipeDef>
     <defName>Grechka_MakeComponentBatchT1</defName>
     <label>собрать компоненты серией ×5</label>
@@ -44,15 +82,31 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
-    <workAmount>20000</workAmount>
+    <workAmount>8000</workAmount>
     <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-    <ingredients><li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>60</count></li></ingredients>
-    <fixedIngredientFilter><thingDefs><li>Steel</li></thingDefs></fixedIngredientFilter>
-    <products><ComponentIndustrial>5</ComponentIndustrial></products>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>60</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </products>
     <workSkill>Crafting</workSkill>
-    <skillRequirements><Crafting>4</Crafting></skillRequirements>
+    <skillRequirements>
+      <Crafting>4</Crafting>
+    </skillRequirements>
   </RecipeDef>
-
   <RecipeDef>
     <defName>Grechka_MakeHousingT2</defName>
     <label>собрать продвинутый корпус</label>
@@ -61,21 +115,57 @@
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>Cook</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
-    <workAmount>20000</workAmount>
+    <workAmount>6000</workAmount>
     <ingredients>
-      <li><filter><thingDefs><li>Grechka_HousingT1_Item</li></thingDefs></filter><count>1</count></li>
-      <li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>40</count></li>
-      <li><filter><thingDefs><li>Plasteel</li></thingDefs></filter><count>20</count></li>
-      <li><filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter><count>4</count></li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_HousingT1_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
     </ingredients>
     <fixedIngredientFilter>
-      <thingDefs><li>Grechka_HousingT1_Item</li><li>Steel</li><li>Plasteel</li><li>ComponentSpacer</li></thingDefs>
+      <thingDefs>
+        <li>Grechka_HousingT1_Item</li>
+        <li>Steel</li>
+        <li>Plasteel</li>
+        <li>ComponentSpacer</li>
+      </thingDefs>
     </fixedIngredientFilter>
-    <products><Grechka_HousingT2_Item>1</Grechka_HousingT2_Item></products>
+    <products>
+      <Grechka_HousingT2_Item>1</Grechka_HousingT2_Item>
+    </products>
     <workSkill>Crafting</workSkill>
-    <skillRequirements><Crafting>6</Crafting></skillRequirements>
+    <skillRequirements>
+      <Crafting>6</Crafting>
+    </skillRequirements>
   </RecipeDef>
-
   <RecipeDef>
     <defName>Grechka_UpgradeAssemblyBenchT2</defName>
     <label>улучшить сборочный верстак до T2</label>
@@ -86,15 +176,41 @@
     <soundWorking>Recipe_Machining</soundWorking>
     <workAmount>4000</workAmount>
     <ingredients>
-      <li><filter><thingDefs><li>Steel</li></thingDefs></filter><count>120</count></li>
-      <li><filter><thingDefs><li>Plasteel</li></thingDefs></filter><count>20</count></li>
-      <li><filter><thingDefs><li>ComponentIndustrial</li></thingDefs></filter><count>4</count></li>
-      <li><filter><thingDefs><li>ComponentSpacer</li></thingDefs></filter><count>6</count></li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
     </ingredients>
     <fixedIngredientFilter>
-      <thingDefs><li>Steel</li><li>Plasteel</li><li>ComponentIndustrial</li><li>ComponentSpacer</li></thingDefs>
+      <thingDefs>
+        <li>Steel</li>
+        <li>ComponentSpacer</li>
+        <li>Plasteel</li>
+      </thingDefs>
     </fixedIngredientFilter>
     <workSkill>Crafting</workSkill>
-    <skillRequirements><Crafting>6</Crafting></skillRequirements>
+    <skillRequirements>
+      <Crafting>6</Crafting>
+    </skillRequirements>
   </RecipeDef>
 </Defs>

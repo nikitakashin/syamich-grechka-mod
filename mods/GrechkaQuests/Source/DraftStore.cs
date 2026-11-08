@@ -31,7 +31,7 @@ namespace Grechka.Quests
         // from persisted world identity so a crash before the next save does not orphan drafts.
         public static string OwnerForWorld(string seed, int persistentRandomValue)
         {
-            if (string.IsNullOrEmpty(seed)) throw new FormatException("У мира нет сохранённого идентификатора для черновика.");
+            if (string.IsNullOrEmpty(seed)) throw new FormatException(QuestText.Get("GrechkaQuests_2e289228cd02", "У мира нет сохранённого идентификатора для черновика."));
             byte[] hash = SHA256.HashData(Encoding.UTF8.GetBytes("grechka-draft-v1\n" + seed + "\n" + persistentRandomValue));
             var bytes = new byte[16];
             Array.Copy(hash, bytes, bytes.Length);
@@ -41,11 +41,11 @@ namespace Grechka.Quests
         static void CheckOwner(string owner)
         {
             Guid id;
-            if (!Guid.TryParseExact(owner, "N", out id)) throw new FormatException("Некорректный ID колонии для черновика.");
+            if (!Guid.TryParseExact(owner, "N", out id)) throw new FormatException(QuestText.Get("GrechkaQuests_0abf31d32179", "Некорректный ID колонии для черновика."));
         }
         static string BookName(string id)
         {
-            if (!PackCodec.ValidId(id)) throw new FormatException("Некорректный ID книги для черновика.");
+            if (!PackCodec.ValidId(id)) throw new FormatException(QuestText.Get("GrechkaQuests_4b39616c8dad", "Некорректный ID книги для черновика."));
             return Convert.ToHexString(SHA256.HashData(Encoding.UTF8.GetBytes(id)));
         }
         string DraftFolder(string owner) { CheckOwner(owner); return Path.Combine(root, "Drafts", owner); }
@@ -56,13 +56,13 @@ namespace Grechka.Quests
         {
             CheckStructure(draft);
             string json = JsonSerializer.Serialize(draft, Options);
-            if (Encoding.UTF8.GetByteCount(json) > MaxDraftBytes) throw new FormatException("Черновик превышает 4 МБ.");
+            if (Encoding.UTF8.GetByteCount(json) > MaxDraftBytes) throw new FormatException(QuestText.Get("GrechkaQuests_2cada3e8f5d3", "Черновик превышает 4 МБ."));
             return json;
         }
 
         public static DraftDocument Decode(string json)
         {
-            if (json == null || Encoding.UTF8.GetByteCount(json) > MaxDraftBytes) throw new FormatException("Черновик превышает 4 МБ или пуст.");
+            if (json == null || Encoding.UTF8.GetByteCount(json) > MaxDraftBytes) throw new FormatException(QuestText.Get("GrechkaQuests_40841a1df8da", "Черновик превышает 4 МБ или пуст."));
             var draft = JsonSerializer.Deserialize<DraftDocument>(json, Options);
             CheckStructure(draft);
             return draft;
@@ -71,10 +71,10 @@ namespace Grechka.Quests
         static void CheckStructure(DraftDocument d)
         {
             if (d == null || d.version != 1 || d.pack == null || d.pack.schemaVersion != 1 || !PackCodec.ValidId(d.pack.id))
-                throw new FormatException("Неизвестная версия или повреждённый черновик.");
+                throw new FormatException(QuestText.Get("GrechkaQuests_5bae1a4aee2f", "Неизвестная версия или повреждённый черновик."));
             if (d.numberBuffers == null || d.numberBuffers.Count > 20000 || d.pack.chapters == null || d.pack.quests == null
                 || d.pack.chapters.Count > 100 || d.pack.quests.Count > 500)
-                throw new FormatException("Повреждена структура черновика.");
+                throw new FormatException(QuestText.Get("GrechkaQuests_61c5a885667c", "Повреждена структура черновика."));
             if (d.pack.chapters.Any(c => c == null || c.id == null || c.title == null)
                 || d.pack.quests.Any(q => q == null || q.id == null || q.chapter == null || q.title == null || q.description == null
                     || q.requires == null || q.objectives == null || q.rewards == null || q.alternatives == null || q.requires.Any(x => x == null)
@@ -82,14 +82,14 @@ namespace Grechka.Quests
                     || q.rewards.Any(x => x == null || x.def == null || x.stuff == null)
                     || q.alternatives.Any(a => a == null || a.id == null || a.title == null || a.items == null
                         || a.items.Any(x => x == null || x.def == null || x.stuff == null))))
-                throw new FormatException("Неполная структура черновика.");
+                throw new FormatException(QuestText.Get("GrechkaQuests_856095f12803", "Неполная структура черновика."));
             if (d.numberBuffers.Any(x => x.Key == null || x.Value == null || x.Key.Length > 256 || x.Value.Length > 64))
-                throw new FormatException("Повреждены числовые поля черновика.");
+                throw new FormatException(QuestText.Get("GrechkaQuests_4c64c053232c", "Повреждены числовые поля черновика."));
         }
 
         static string ReadBounded(string path)
         {
-            if (new FileInfo(path).Length > MaxDraftBytes) throw new FormatException("Черновик превышает 4 МБ.");
+            if (new FileInfo(path).Length > MaxDraftBytes) throw new FormatException(QuestText.Get("GrechkaQuests_2cada3e8f5d3", "Черновик превышает 4 МБ."));
             return File.ReadAllText(path, Encoding.UTF8);
         }
 
@@ -101,7 +101,7 @@ namespace Grechka.Quests
             if (path == null) return null;
             var draft = Decode(ReadBounded(path));
             if (!string.Equals(Path.GetFileNameWithoutExtension(path), BookName(draft.pack.id), StringComparison.Ordinal))
-                throw new FormatException("ID книги в черновике не соответствует имени файла.");
+                throw new FormatException(QuestText.Get("GrechkaQuests_9612ab200361", "ID книги в черновике не соответствует имени файла."));
             return draft;
         }
 
@@ -116,7 +116,7 @@ namespace Grechka.Quests
             {
                 previous = ReadBounded(path);
                 var existing = Decode(previous);
-                if (existing.pack.id != document.pack.id) throw new FormatException("ID сохранённого черновика не совпадает.");
+                if (existing.pack.id != document.pack.id) throw new FormatException(QuestText.Get("GrechkaQuests_3b7029a21e9e", "ID сохранённого черновика не совпадает."));
                 if (previous == json) return;
                 string backupFolder = BackupFolder(owner, BookName(document.pack.id));
                 Directory.CreateDirectory(backupFolder);
@@ -154,10 +154,10 @@ namespace Grechka.Quests
         {
             string folder = DraftFolder(owner);
             if (string.IsNullOrEmpty(damagedPath) || Path.GetDirectoryName(Path.GetFullPath(damagedPath)) != Path.GetFullPath(folder))
-                throw new FormatException("Не удалось определить повреждённый черновик этой колонии.");
+                throw new FormatException(QuestText.Get("GrechkaQuests_7146ea7c5183", "Не удалось определить повреждённый черновик этой колонии."));
             string name = Path.GetFileNameWithoutExtension(damagedPath);
             if (name.Length != 64 || name.Any(c => !Uri.IsHexDigit(c)) || !string.Equals(Path.GetExtension(damagedPath), ".json", StringComparison.OrdinalIgnoreCase))
-                throw new FormatException("Некорректное имя черновика.");
+                throw new FormatException(QuestText.Get("GrechkaQuests_ae528ec52f76", "Некорректное имя черновика."));
             return name;
         }
 
@@ -167,7 +167,7 @@ namespace Grechka.Quests
             string name = CheckDamagedPath(owner, damagedPath);
             string json = Encode(replacement);
             string target = DraftPath(owner, replacement.pack.id);
-            if (!File.Exists(damagedPath)) throw new FileNotFoundException("Повреждённый черновик больше не найден.");
+            if (!File.Exists(damagedPath)) throw new FileNotFoundException(QuestText.Get("GrechkaQuests_90ebb67fc68c", "Повреждённый черновик больше не найден."));
             if (string.Equals(BookName(replacement.pack.id), name, StringComparison.OrdinalIgnoreCase))
             {
                 File.Copy(damagedPath, damagedPath + ".damaged-" + Guid.NewGuid().ToString("N"), false);
@@ -186,7 +186,7 @@ namespace Grechka.Quests
         {
             string name = CheckDamagedPath(owner, damagedPath);
             string backups = BackupFolder(owner, name);
-            if (!Directory.Exists(backups)) throw new FileNotFoundException("Резервные копии черновика не найдены.");
+            if (!Directory.Exists(backups)) throw new FileNotFoundException(QuestText.Get("GrechkaQuests_cc902eb85f3c", "Резервные копии черновика не найдены."));
             foreach (string path in Directory.GetFiles(backups, "*.json").OrderByDescending(Path.GetFileName, StringComparer.Ordinal))
             {
                 DraftDocument recovered;
@@ -198,7 +198,7 @@ namespace Grechka.Quests
                 AtomicWrite(damagedPath, json);
                 return recovered;
             }
-            throw new FormatException("Исправная резервная копия этой книги не найдена.");
+            throw new FormatException(QuestText.Get("GrechkaQuests_90cc260a16ac", "Исправная резервная копия этой книги не найдена."));
         }
     }
 }

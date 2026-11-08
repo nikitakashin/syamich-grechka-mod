@@ -5,6 +5,7 @@ from pathlib import Path
 import copy
 import json
 import re
+import struct
 import sys
 import xml.etree.ElementTree as ET
 
@@ -28,6 +29,12 @@ for path in (root / "Defs").rglob("*.xml"):
             if node.get("ParentName") == "BuildingBase" and node.findtext("minifiedDef"):
                 require(node.findtext("./statBases/Mass") and node.findtext("./thingCategories/li"),
                         "Portable building requires mass/category: " + name)
+# The standalone category is supplied by a conditional XML patch rather than a duplicate Def.
+fallback = ET.parse(root / "Patches/ArchitectCategory.xml").find("Operation/nomatch/value/DesignationCategoryDef")
+require(fallback is not None and fallback.findtext("defName") == "Grechka_IndustryCategory",
+        "Standalone Storage must supply the shared Architect category")
+require(fallback.findtext("defName") not in defs, "Shared Architect category must not be duplicated")
+defs[fallback.findtext("defName")] = fallback
 for node in defs.values():
     require(not node.findall("researchPrerequisite") and not node.findall("researchPrerequisites"),
             "Storage startup cannot depend on a new research gate")
@@ -57,7 +64,7 @@ require(inputs(defs["Grechka_CrushQuartz"]) == {"Grechka_Quartz": Decimal(5)}
 
 inscriber = defs["Grechka_Inscriber"]
 available = {li.text for li in inscriber.findall("./recipes/li")}
-require(cost(inscriber) == {"Steel": 80, "ComponentIndustrial": 5, "Grechka_Quartz": 10}
+require(cost(inscriber) == {"Steel": 40, "ComponentIndustrial": 2, "Grechka_Quartz": 5}
         and inscriber.findtext("./comps/li[@Class='CompProperties_Power']/basePowerConsumption") == "200",
         "First inscriber must be built without its own processors")
 require(inputs(defs["Grechka_MakeSiliconSubstrate"]) == {"Grechka_Silicon": Decimal(5)}
@@ -70,14 +77,14 @@ for kind, material, amount in [("Quartz", "Grechka_Quartz", "1"), ("Silver", "Si
     require(inputs(circuit) == {material: Decimal(amount), "Grechka_SiliconSubstrate": Decimal(1)}
             and inputs(processor) == {f"Grechka_{kind}Circuit": Decimal(1), "Grechka_PrintedSilicon": Decimal(1), "ComponentIndustrial": Decimal(1)}
             and circuit.findtext(f"./products/Grechka_{kind}Circuit") == "1"
-            and processor.findtext(f"./products/Grechka_{kind}Processor") == "1"
+            and processor.findtext(f"./products/Grechka_{kind}Processor") == "2"
             and {circuit.findtext("defName"), processor.findtext("defName")} <= available,
             f"{kind} circuit/processor path must be complete without templates or presses")
 
 cable = defs["Grechka_QuartzCable"]
 controller = defs["Grechka_StorageController"]
-standalone = {"Steel": 150, "ComponentSpacer": 6, "Grechka_QuartzProcessor": 8,
-              "Grechka_SilverProcessor": 4, "Grechka_GoldProcessor": 4}
+standalone = {"Steel": 80, "ComponentSpacer": 2, "Grechka_QuartzProcessor": 2,
+              "Grechka_SilverProcessor": 1, "Grechka_GoldProcessor": 1}
 require(cost(controller) == standalone
         and controller.findtext("./comps/li[@Class='Grechka.Storage.CompProperties_SignalNode']/controller") == "true"
         and controller.findtext("./comps/li[@Class='CompProperties_Power']/basePowerConsumption") == "400",
@@ -102,11 +109,11 @@ def profile_price(name):
     result["Grechka_HousingT" + rule.findtext("minimumTier") + "_Item"] = 1
     return result
 world = profile_price("Grechka_StorageController")
-require(world == {"Grechka_HousingT3_Item": 1, "Grechka_ComponentT3_Item": 4, "Plasteel": 100,
-                  "Grechka_QuartzProcessor": 8, "Grechka_SilverProcessor": 4, "Grechka_GoldProcessor": 4},
+require(world == {"Grechka_HousingT3_Item": 1, "Grechka_ComponentT3_Item": 1, "Steel": 80,
+                  "Grechka_QuartzProcessor": 2, "Grechka_SilverProcessor": 1, "Grechka_GoldProcessor": 1},
         "World controller must use the T3 Industry route and all three processors")
-require(profile_price("Grechka_Inscriber") == {"Grechka_HousingT1_Item": 1, "Steel": 80,
-                                             "ComponentIndustrial": 5, "Grechka_Quartz": 10},
+require(profile_price("Grechka_Inscriber") == {"Grechka_HousingT1_Item": 1, "Steel": 40,
+                                             "ComponentIndustrial": 2, "Grechka_Quartz": 5},
         "World inscriber needs reachable T1 housing without demanding its own processors")
 for industry, integration, approved in [(False,False,False),(True,False,True),(False,True,True),(True,True,False),(True,True,True)]:
     effective = world if industry and integration and approved else standalone
@@ -125,6 +132,23 @@ require(len([e for e in manifest if e.get("package") == "grechka.storage" and e.
         "Storage module installer entry is missing")
 for name in ["StorageController", "Natural/QuartzOreSource"]:
     require((root / "Textures/Buildings" / (name + ".png")).is_file(), "Prepared building texture missing: " + name)
+source = defs["Grechka_CertusSource"]
+require(source.findtext("minifiedDef") == "MinifiedThing"
+        and source.findtext("./building/alwaysUninstallable") == "true"
+        and source.findtext("./building/deconstructible") == "false",
+        "Crystal source must be removable intact rather than dismantled")
+require(defs["Grechka_CertusHarvestWork"].findtext("workType") == "Growing"
+        and defs["Grechka_CertusHarvestWork"].findtext("giverClass") == "Grechka.Storage.WorkGiver_HarvestCertus"
+        and defs["Grechka_HarvestCertus"].findtext("driverClass") == "Grechka.Storage.JobDriver_HarvestCertus",
+        "Ripe crystals must have a registered pawn harvest job")
+for stage in range(5):
+    frame = root / f"Textures/Buildings/Map/CertusGrowthSource/CertusGrowthSource_{stage}.png"
+    data = frame.read_bytes()
+    require(data[:8] == b'\x89PNG\r\n\x1a\n' and struct.unpack('>II', data[16:24]) == (256, 256)
+            and data[25] == 6, "Crystal growth stage must be a 256x256 RGBA PNG: " + str(stage))
+require((root / "Textures/Buildings/Map/CertusGrowthSource/CertusGrowthSource_4.png").read_bytes()
+        == (root / "Textures/Buildings/CertusGrowthSource.png").read_bytes(),
+        "Mature crystal stage must preserve the user's original texture")
 for name in ["SiliconSubstrate", "PrintedSilicon", "QuartzCircuit", "SilverCircuit", "GoldCircuit", "QuartzProcessor", "SilverProcessor", "GoldProcessor"]:
     require((root / "Textures/Items" / (name + ".png")).is_file(), "Prepared processor texture missing: " + name)
 sizes = [("1K", 1024), ("4K", 4096), ("16K", 16384), ("64K", 65536), ("256K", 262144),
@@ -165,8 +189,8 @@ require(controller.findtext("thingClass") == "Grechka.Storage.Building_StorageCo
         and rack.findtext("minifiedDef") == controller.findtext("minifiedDef") == "Grechka_PackedStorageDevice"
         and defs["Grechka_PackedStorageDevice"].findtext("thingClass") == "Grechka.Storage.MinifiedStorageDevice",
         "Disk rack and its loaded minified wrapper must preserve the accepted protection")
-require(profile_price("Grechka_DiskRack") == {"Grechka_HousingT3_Item": 1, "Grechka_ComponentT3_Item": 2,
-        "Steel": 120, "Grechka_QuartzProcessor": 4, "Grechka_SilverProcessor": 2, "Grechka_GoldProcessor": 2},
+require(profile_price("Grechka_DiskRack") == {"Grechka_HousingT3_Item": 1,
+        "Steel": 60, "Grechka_QuartzProcessor": 2, "Grechka_SilverProcessor": 1},
         "World rack must preserve its complete T3 price")
 
 for name in ("Grechka_ImportStorage", "Grechka_ExportStorage", "Grechka_RemoveDisk", "Grechka_StorageHauling"):

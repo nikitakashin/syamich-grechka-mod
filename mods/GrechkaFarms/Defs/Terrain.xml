@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Grechka_Farm</defName>
+    <label>ферма</label>
+    <description>Подготовленная плодородная земля для выращивания растений. Быстро обустраивается без материалов и требований к навыкам. Плодородность задаётся в настройках Grechka Farms.</description>
+    <texturePath>Terrain/Surfaces/SoilRich</texturePath>
+    <pollutedTexturePath>Terrain/Surfaces/SoilRichPolluted</pollutedTexturePath>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionSoil</pollutionOverlayTexturePath>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>350</renderPrecedence>
+    <categoryType>Soil</categoryType>
+    <tags><li>Soil</li></tags>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <uiOrder>6000</uiOrder>
+    <fertility>2.28</fertility>
+    <pathCost>2</pathCost>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <constructionSkillPrerequisite>0</constructionSkillPrerequisite>
+    <artisticSkillPrerequisite>0</artisticSkillPrerequisite>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <affordances>
+      <li>GrowSoil</li>
+    </affordances>
+    <statBases>
+      <WorkToBuild>30</WorkToBuild>
+      <Beauty>-1</Beauty>
+      <Cleanliness>-1</Cleanliness>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList />
+    <researchPrerequisites />
+  </TerrainDef>
+</Defs>

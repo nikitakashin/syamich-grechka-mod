@@ -21,12 +21,12 @@ namespace Grechka.Quests
         public bool Ready(Quest quest) { return progress.Ready(Pack, quest, true); }
         public void Mark(Quest quest, Objective objective)
         {
-            if (!Pack.quests.Contains(quest) || !quest.objectives.Contains(objective)) throw new InvalidOperationException("Цель не найдена в предпросмотре.");
+            if (!Pack.quests.Contains(quest) || !quest.objectives.Contains(objective)) throw new InvalidOperationException(QuestText.Get("GrechkaQuests_997e6e2ed87d", "Цель не найдена в предпросмотре."));
             progress.Observe(Pack, quest, objective, objective.count, true);
         }
         public string Claim(Quest quest, string choice)
         {
-            if (!Pack.quests.Contains(quest)) return "Задание не найдено в предпросмотре.";
+            if (!Pack.quests.Contains(quest)) return QuestText.Get("GrechkaQuests_3914dc442fbd", "Задание не найдено в предпросмотре.");
             var plan = new QuestClaimPlan(PackCodec.Encode(Pack), new[] { quest.id });
             var choices = new Dictionary<string, string>();
             if (choice != null) choices.Add(quest.id, choice);

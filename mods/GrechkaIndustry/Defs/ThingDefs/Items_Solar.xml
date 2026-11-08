@@ -2,6 +2,7 @@
 <Defs>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedSolarS0_Item</defName>
+    <uiIconPath>Things/Building/Power/SolarCollector</uiIconPath>
     <label>упакованная солнечная панель</label>
     <description>Целиком снятая ванильная солнечная панель. Её можно снова установить или использовать в следующей ступени солнечной линии.</description>
     <modExtensions>
@@ -12,6 +13,7 @@
   </ThingDef>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedSolarS1_Item</defName>
+    <uiIconPath>Buildings/Solar/Main/SolarS1_Reinforced</uiIconPath>
     <label>упакованная усиленная солнечная панель</label>
     <description>Усиленная панель S1 для установки на карте или дальнейшей сборки.</description>
     <modExtensions>
@@ -22,6 +24,7 @@
   </ThingDef>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedSolarS2_Item</defName>
+    <uiIconPath>Buildings/Solar/Main/SolarS2_Multilayer</uiIconPath>
     <label>упакованная многослойная солнечная панель</label>
     <description>Целиком снятая панель S2 для установки или дальнейшей сборки.</description>
     <modExtensions>

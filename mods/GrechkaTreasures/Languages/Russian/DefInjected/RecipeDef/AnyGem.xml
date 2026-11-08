@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <GrechkaTreasures_CutAnyGem.label>огранить любые камни</GrechkaTreasures_CutAnyGem.label>
+  <GrechkaTreasures_CutAnyGem.description>Ограняет один любой необработанный драгоценный камень в один огранённый камень того же вида. Разрешённые виды можно выбрать в фильтре задания. Монолиты распиливаются отдельными заданиями.</GrechkaTreasures_CutAnyGem.description>
+  <GrechkaTreasures_CutAnyGem.jobString>Обрабатывает драгоценный камень.</GrechkaTreasures_CutAnyGem.jobString>
+</LanguageData>

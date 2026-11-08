@@ -1,14 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Patch>
-  <!-- Vanilla gold count 0.3 means three physical gold (smallVolume = 0.1). -->
   <Operation Class="PatchOperationSequence">
     <operations>
       <li Class="PatchOperationReplace">
         <xpath>/Defs/RecipeDef[defName="Make_ComponentSpacer"]/ingredients/li[filter/thingDefs/li="ComponentIndustrial"]/count</xpath>
-        <value><count>2</count></value>
+        <value>
+          <count>1</count>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/RecipeDef[defName="Make_ComponentSpacer"]/ingredients/li[filter/thingDefs/li="Steel"]/count</xpath>
+        <value>
+          <count>12</count>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/RecipeDef[defName="Make_ComponentSpacer"]/ingredients/li[filter/thingDefs/li="Plasteel"]/count</xpath>
+        <value>
+          <count>5</count>
+        </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/RecipeDef[defName="Make_ComponentSpacer"]/ingredients/li[filter/thingDefs/li="Gold"]/count</xpath>
+        <value>
+          <count>0.2</count>
+        </value>
       </li>
       <li Class="PatchOperationRemove">
         <xpath>/Defs/RecipeDef[defName="Make_ComponentSpacer"]/researchPrerequisite</xpath>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/RecipeDef[defName="Make_ComponentSpacer"]/workAmount</xpath>
+        <value>
+          <workAmount>6000</workAmount>
+        </value>
       </li>
     </operations>
   </Operation>

@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Grechka_CertusMeteor.label>certus meteorite</Grechka_CertusMeteor.label>
+  <Grechka_CertusMeteor.description>A fallen meteorite containing certus ore and portable crystal growth sources.</Grechka_CertusMeteor.description>
+  <Grechka_CertusMeteor.approachOrderString>Visit meteorite</Grechka_CertusMeteor.approachOrderString>
+  <Grechka_CertusMeteor.approachingReportString>Visiting meteorite</Grechka_CertusMeteor.approachingReportString>
+  <Grechka_CertusMeteor.arrivedLetter>The caravan has reached the certus meteorite.</Grechka_CertusMeteor.arrivedLetter>
+  <Grechka_CertusMeteor.arrivedLetterLabelPart>Certus meteorite</Grechka_CertusMeteor.arrivedLetterLabelPart>
+</LanguageData>

@@ -1,0 +1,423 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot" ParentName="Grechka_DroneBase">
+    <defName>Grechka_RescueDroneT1_Unit</defName>
+    <label>дрон-МЧСник T1</label>
+    <description>Негорючий спасательный дрон. Переносит своих раненых в медицинские кровати и тушит пожары пеной по площади. По переключателю берёт раненых врагов в плен при наличии тюремных мест. Ради спасения своего оставляет переносимого врага.</description>
+    <uiIconPath>Drones/Rescue/T1/RescueT1_south</uiIconPath>
+    <statBases>
+      <MarketValue>500</MarketValue>
+      <MoveSpeed>5</MoveSpeed>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+    </statBases>
+    <race>
+      <baseHealthScale>1</baseHealthScale>
+    </race>
+    <tools Inherit="False">
+      <li>
+        <label>ударный манипулятор</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <chanceFactor>1</chanceFactor>
+      </li>
+    </tools>
+    <robotSkills>
+      <li>
+        <skillDef>Melee</skillDef>
+        <level>4</level>
+      </li>
+    </robotSkills>
+    <modExtensions>
+      <li Class="Grechka.Drones.DroneProperties">
+        <role>Rescue</role>
+        <tier>1</tier>
+        <foamRadius>3</foamRadius>
+        <foamCooldownTicks>300</foamCooldownTicks>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot" ParentName="Grechka_DroneBase">
+    <defName>Grechka_RescueDroneT2_Unit</defName>
+    <label>дрон-МЧСник T2</label>
+    <description>Негорючий спасательный дрон. Переносит своих раненых в медицинские кровати и тушит пожары пеной по площади. По переключателю берёт раненых врагов в плен при наличии тюремных мест. Ради спасения своего оставляет переносимого врага.</description>
+    <uiIconPath>Drones/Rescue/T2/RescueT2_south</uiIconPath>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <MoveSpeed>5.5</MoveSpeed>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+    </statBases>
+    <race>
+      <baseHealthScale>1.5</baseHealthScale>
+    </race>
+    <tools Inherit="False">
+      <li>
+        <label>ударный манипулятор</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <chanceFactor>1</chanceFactor>
+      </li>
+    </tools>
+    <robotSkills>
+      <li>
+        <skillDef>Melee</skillDef>
+        <level>5</level>
+      </li>
+    </robotSkills>
+    <modExtensions>
+      <li Class="Grechka.Drones.DroneProperties">
+        <role>Rescue</role>
+        <tier>2</tier>
+        <foamRadius>3.5</foamRadius>
+        <foamCooldownTicks>270</foamCooldownTicks>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot" ParentName="Grechka_DroneBase">
+    <defName>Grechka_RescueDroneT3_Unit</defName>
+    <label>дрон-МЧСник T3</label>
+    <description>Негорючий спасательный дрон. Переносит своих раненых в медицинские кровати и тушит пожары пеной по площади. По переключателю берёт раненых врагов в плен при наличии тюремных мест. Ради спасения своего оставляет переносимого врага.</description>
+    <uiIconPath>Drones/Rescue/T3/RescueT3_south</uiIconPath>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <MoveSpeed>6</MoveSpeed>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+    </statBases>
+    <race>
+      <baseHealthScale>2</baseHealthScale>
+    </race>
+    <tools Inherit="False">
+      <li>
+        <label>ударный манипулятор</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <chanceFactor>1</chanceFactor>
+      </li>
+    </tools>
+    <robotSkills>
+      <li>
+        <skillDef>Melee</skillDef>
+        <level>6</level>
+      </li>
+    </robotSkills>
+    <modExtensions>
+      <li Class="Grechka.Drones.DroneProperties">
+        <role>Rescue</role>
+        <tier>3</tier>
+        <foamRadius>4</foamRadius>
+        <foamCooldownTicks>240</foamCooldownTicks>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot" ParentName="Grechka_DroneBase">
+    <defName>Grechka_RescueDroneT4_Unit</defName>
+    <label>дрон-МЧСник T4</label>
+    <description>Негорючий спасательный дрон. Переносит своих раненых в медицинские кровати и тушит пожары пеной по площади. По переключателю берёт раненых врагов в плен при наличии тюремных мест. Ради спасения своего оставляет переносимого врага.</description>
+    <uiIconPath>Drones/Rescue/T4/RescueT4_south</uiIconPath>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <MoveSpeed>6.5</MoveSpeed>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+    </statBases>
+    <race>
+      <baseHealthScale>3</baseHealthScale>
+    </race>
+    <tools Inherit="False">
+      <li>
+        <label>ударный манипулятор</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <chanceFactor>1</chanceFactor>
+      </li>
+    </tools>
+    <robotSkills>
+      <li>
+        <skillDef>Melee</skillDef>
+        <level>7</level>
+      </li>
+    </robotSkills>
+    <modExtensions>
+      <li Class="Grechka.Drones.DroneProperties">
+        <role>Rescue</role>
+        <tier>4</tier>
+        <foamRadius>4.5</foamRadius>
+        <foamCooldownTicks>210</foamCooldownTicks>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot" ParentName="Grechka_DroneBase">
+    <defName>Grechka_RescueDroneT5_Unit</defName>
+    <label>дрон-МЧСник T5</label>
+    <description>Негорючий спасательный дрон. Переносит своих раненых в медицинские кровати и тушит пожары пеной по площади. По переключателю берёт раненых врагов в плен при наличии тюремных мест. Ради спасения своего оставляет переносимого врага.</description>
+    <uiIconPath>Drones/Rescue/T5/RescueT5_south</uiIconPath>
+    <statBases>
+      <MarketValue>2500</MarketValue>
+      <MoveSpeed>7</MoveSpeed>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+    </statBases>
+    <race>
+      <baseHealthScale>4.5</baseHealthScale>
+    </race>
+    <tools Inherit="False">
+      <li>
+        <label>ударный манипулятор</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <chanceFactor>1</chanceFactor>
+      </li>
+    </tools>
+    <robotSkills>
+      <li>
+        <skillDef>Melee</skillDef>
+        <level>8</level>
+      </li>
+    </robotSkills>
+    <modExtensions>
+      <li Class="Grechka.Drones.DroneProperties">
+        <role>Rescue</role>
+        <tier>5</tier>
+        <foamRadius>5</foamRadius>
+        <foamCooldownTicks>180</foamCooldownTicks>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot" ParentName="Grechka_DroneBase">
+    <defName>Grechka_WarriorDroneT1_Unit</defName>
+    <label>дрон-воин T1</label>
+    <description>Негорючий боевой дрон ближнего боя с огромным запасом здоровья. Патрулирует домашнюю территорию и защищает колонию от нападающих. При 30% здоровья отступает к своему доку на ремонт.</description>
+    <uiIconPath>Drones/Warrior/T1/WarriorT1_south</uiIconPath>
+    <statBases>
+      <MarketValue>500</MarketValue>
+      <MoveSpeed>4.5</MoveSpeed>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+    </statBases>
+    <race>
+      <baseHealthScale>10</baseHealthScale>
+    </race>
+    <tools Inherit="False">
+      <li>
+        <label>ударный манипулятор</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>10</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <chanceFactor>1</chanceFactor>
+      </li>
+    </tools>
+    <robotSkills>
+      <li>
+        <skillDef>Melee</skillDef>
+        <level>10</level>
+      </li>
+    </robotSkills>
+    <modExtensions>
+      <li Class="Grechka.Drones.DroneProperties">
+        <role>Warrior</role>
+        <tier>1</tier>
+        <foamRadius>3</foamRadius>
+        <foamCooldownTicks>300</foamCooldownTicks>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot" ParentName="Grechka_DroneBase">
+    <defName>Grechka_WarriorDroneT2_Unit</defName>
+    <label>дрон-воин T2</label>
+    <description>Негорючий боевой дрон ближнего боя с огромным запасом здоровья. Патрулирует домашнюю территорию и защищает колонию от нападающих. При 30% здоровья отступает к своему доку на ремонт.</description>
+    <uiIconPath>Drones/Warrior/T2/WarriorT2_south</uiIconPath>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <MoveSpeed>4.8</MoveSpeed>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+    </statBases>
+    <race>
+      <baseHealthScale>16</baseHealthScale>
+    </race>
+    <tools Inherit="False">
+      <li>
+        <label>ударный манипулятор</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>14</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <chanceFactor>1</chanceFactor>
+      </li>
+    </tools>
+    <robotSkills>
+      <li>
+        <skillDef>Melee</skillDef>
+        <level>12</level>
+      </li>
+    </robotSkills>
+    <modExtensions>
+      <li Class="Grechka.Drones.DroneProperties">
+        <role>Warrior</role>
+        <tier>2</tier>
+        <foamRadius>3.5</foamRadius>
+        <foamCooldownTicks>270</foamCooldownTicks>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot" ParentName="Grechka_DroneBase">
+    <defName>Grechka_WarriorDroneT3_Unit</defName>
+    <label>дрон-воин T3</label>
+    <description>Негорючий боевой дрон ближнего боя с огромным запасом здоровья. Патрулирует домашнюю территорию и защищает колонию от нападающих. При 30% здоровья отступает к своему доку на ремонт.</description>
+    <uiIconPath>Drones/Warrior/T3/WarriorT3_south</uiIconPath>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <MoveSpeed>5.2</MoveSpeed>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+    </statBases>
+    <race>
+      <baseHealthScale>24</baseHealthScale>
+    </race>
+    <tools Inherit="False">
+      <li>
+        <label>ударный манипулятор</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>18</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <chanceFactor>1</chanceFactor>
+      </li>
+    </tools>
+    <robotSkills>
+      <li>
+        <skillDef>Melee</skillDef>
+        <level>14</level>
+      </li>
+    </robotSkills>
+    <modExtensions>
+      <li Class="Grechka.Drones.DroneProperties">
+        <role>Warrior</role>
+        <tier>3</tier>
+        <foamRadius>4</foamRadius>
+        <foamCooldownTicks>240</foamCooldownTicks>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot" ParentName="Grechka_DroneBase">
+    <defName>Grechka_WarriorDroneT4_Unit</defName>
+    <label>дрон-воин T4</label>
+    <description>Негорючий боевой дрон ближнего боя с огромным запасом здоровья. Патрулирует домашнюю территорию и защищает колонию от нападающих. При 30% здоровья отступает к своему доку на ремонт.</description>
+    <uiIconPath>Drones/Warrior/T4/WarriorT4_south</uiIconPath>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <MoveSpeed>5.6</MoveSpeed>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>0.95</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.65</ArmorRating_Blunt>
+    </statBases>
+    <race>
+      <baseHealthScale>36</baseHealthScale>
+    </race>
+    <tools Inherit="False">
+      <li>
+        <label>ударный манипулятор</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <chanceFactor>1</chanceFactor>
+      </li>
+    </tools>
+    <robotSkills>
+      <li>
+        <skillDef>Melee</skillDef>
+        <level>16</level>
+      </li>
+    </robotSkills>
+    <modExtensions>
+      <li Class="Grechka.Drones.DroneProperties">
+        <role>Warrior</role>
+        <tier>4</tier>
+        <foamRadius>4.5</foamRadius>
+        <foamCooldownTicks>210</foamCooldownTicks>
+      </li>
+    </modExtensions>
+  </ThingDef>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot" ParentName="Grechka_DroneBase">
+    <defName>Grechka_WarriorDroneT5_Unit</defName>
+    <label>дрон-воин T5</label>
+    <description>Негорючий боевой дрон ближнего боя с огромным запасом здоровья. Патрулирует домашнюю территорию и защищает колонию от нападающих. При 30% здоровья отступает к своему доку на ремонт.</description>
+    <uiIconPath>Drones/Warrior/T5/WarriorT5_south</uiIconPath>
+    <statBases>
+      <MarketValue>2500</MarketValue>
+      <MoveSpeed>6</MoveSpeed>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+    </statBases>
+    <race>
+      <baseHealthScale>55</baseHealthScale>
+    </race>
+    <tools Inherit="False">
+      <li>
+        <label>ударный манипулятор</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>30</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <chanceFactor>1</chanceFactor>
+      </li>
+    </tools>
+    <robotSkills>
+      <li>
+        <skillDef>Melee</skillDef>
+        <level>18</level>
+      </li>
+    </robotSkills>
+    <modExtensions>
+      <li Class="Grechka.Drones.DroneProperties">
+        <role>Warrior</role>
+        <tier>5</tier>
+        <foamRadius>5</foamRadius>
+        <foamCooldownTicks>180</foamCooldownTicks>
+      </li>
+    </modExtensions>
+  </ThingDef>
+</Defs>

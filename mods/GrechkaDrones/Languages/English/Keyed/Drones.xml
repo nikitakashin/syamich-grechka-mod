@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <GrechkaDrones_Capture>Capture enemies</GrechkaDrones_Capture>
+  <GrechkaDrones_CaptureDesc>Carry downed enemies to available prison beds. Always rescue your own first, dropping a carried enemy if necessary.</GrechkaDrones_CaptureDesc>
+  <GrechkaDrones_Cargo>Cargo capacity: {0} kg</GrechkaDrones_Cargo>
+  <GrechkaDrones_BioEnergy>Bioenergy</GrechkaDrones_BioEnergy>
+  <GrechkaDrones_BioEnergyTip>Bioenergy: {0}. A full battery stores 2 nutrition for one day of activity. Refuel with food or charge at a powered dock. Resting in a caravan does not recharge the battery.</GrechkaDrones_BioEnergyTip>
+</LanguageData>

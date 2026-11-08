@@ -28,7 +28,10 @@ namespace Grechka.WorldIntegration
         public static readonly float[] Discount = { 0, 0, .1f, .2f, .35f, .5f };
         public static readonly float[] Output = { 0, 0, .1f, .2f, .5f, 1 };
         public static VariantEntry Entry(ThingDef def) => def != null && Entries.TryGetValue(def.defName, out VariantEntry value) ? value : null;
+        public static bool IsRetired(VariantEntry entry) => !string.IsNullOrEmpty(entry?.ruleName)
+            && DefDatabase<MachineProfileRuleDef>.GetNamedSilentFail(entry.ruleName)?.retired == true;
         public static bool IsUpgrade(RecipeDef recipe) => recipe?.defName.StartsWith("GrechkaWorld_Upgrade_", StringComparison.Ordinal) == true;
+        public static bool IsEquipmentUpgrade(RecipeDef recipe) => recipe?.workerClass?.FullName == "Grechka.Equipment.RecipeWorker_EquipmentUpgrade";
         private static List<StatModifier> CopyStats(List<StatModifier> source) => source?.Select(s => new StatModifier { stat = s.stat, value = s.value }).ToList() ?? new List<StatModifier>();
 
         public static void Apply(WorldProfileState state, bool approve)
@@ -39,6 +42,7 @@ namespace Grechka.WorldIntegration
                 ThingDef original = DefDatabase<ThingDef>.GetNamedSilentFail(entry.sourceName);
                 MachineProfileRuleDef rule = DefDatabase<MachineProfileRuleDef>.GetNamedSilentFail(entry.ruleName);
                 if (def == null || original == null || rule == null) continue;
+                if (rule.retired) continue;
                 if (!stats.ContainsKey(def)) stats[def] = CopyStats(stats.TryGetValue(original, out List<StatModifier> originalStats) ? originalStats : original.statBases);
                 def.statBases = CopyStats(stats[def]);
                 if (entry.name != entry.sourceName)
@@ -49,6 +53,7 @@ namespace Grechka.WorldIntegration
                     if (!state.approvedMachines.Contains(key) || !WorldProfile.IsApplied(original) || housing == null) continue;
                     def.costList = WorldProfile.BaselineCosts(original);
                     def.costList.Add(new ThingDefCountClass(housing, 1));
+                    WorldProfile.ApplyDifficultyHousing(def, original, housing);
                     WorldProfile.AppliedTiers[def.defName] = entry.tier;
                     if(entry.worktable || typeof(IBillGiver).IsAssignableFrom(original.thingClass))
                     {
@@ -65,7 +70,7 @@ namespace Grechka.WorldIntegration
                 else speed.value *= Speed[entry.tier];
             }
             StatDefOf.WorkTableWorkSpeedFactor?.Worker.DeleteStatCache();
-            WorldProfile.Report.Add("Варианты станков: " + Entries.Values.Count(e => e.name != e.sourceName && WorldProfile.AppliedTiers.ContainsKey(e.name)) + " применено.");
+            WorldProfile.Report.Add(WorldText.Get("GrechkaWorldIntegration_ba704a00a6bf", "Machine variants: ") + Entries.Values.Count(e => e.name != e.sourceName && WorldProfile.AppliedTiers.ContainsKey(e.name)) + WorldText.Get("GrechkaWorldIntegration_89d1c68752eb", " applied."));
         }
 
         public static void Restore()
@@ -76,7 +81,11 @@ namespace Grechka.WorldIntegration
             {
                 ThingDef def = DefDatabase<ThingDef>.GetNamedSilentFail(entry.name);
                 ThingDef original = DefDatabase<ThingDef>.GetNamedSilentFail(entry.sourceName);
-                if (def != null && original != null) def.costList = WorldProfile.BaselineCosts(original);
+                if (def != null && original != null)
+                {
+                    def.costList = WorldProfile.BaselineCosts(original);
+                    def.costListForDifficulty = WorldProfile.BaselineDifficultyCosts(original);
+                }
             }
         }
     }
@@ -88,6 +97,7 @@ namespace Grechka.WorldIntegration
         public static void Prefix(XmlDocument xmlDoc, Dictionary<XmlNode, LoadableXmlAsset> assetlookup)
         {
             EntriesFromXml(xmlDoc, assetlookup);
+            ResearchTree.ApplyXml(xmlDoc, assetlookup);
         }
         public static void EntriesFromXml(XmlDocument document, Dictionary<XmlNode, LoadableXmlAsset> owners)
         {
@@ -150,6 +160,20 @@ namespace Grechka.WorldIntegration
                 string ruleName = rule.SelectSingleNode("defName").InnerText;
                 string baseName = original.Attributes?["Name"]?.Value;
                 if (baseName == null) { baseName = "GrechkaWorld_Base_" + source; ((XmlElement)original).SetAttribute("Name", baseName); named[baseName] = original; }
+                if (rule.SelectSingleNode("retired")?.InnerText == "true")
+                {
+                    // Keep historical ThingDef names loadable, without altering or offering the vanilla original.
+                    for (int tier = minimum + 1; tier <= 5; tier++)
+                    {
+                        string name = "GrechkaWorld_" + source + "_T" + tier + "_Building";
+                        ProfileVariants.Entries[name] = new VariantEntry { sourceName = source, name = name, ruleName = ruleName, tier = tier, minimum = minimum };
+                        if (root.SelectSingleNode("ThingDef[defName='" + name + "']") != null) continue;
+                        var clone = document.CreateElement("ThingDef"); clone.SetAttribute("ParentName", baseName);
+                        Set(clone, "defName", name); Set(clone, "label", Inherited(original, "label") + " (legacy T" + tier + ")");
+                        root.AppendChild(clone); owners[clone] = owner;
+                    }
+                    continue;
+                }
                 string groupName = "GrechkaWorld_Group_" + source;
                 if (root.SelectSingleNode("DesignatorDropdownGroupDef[defName='" + groupName + "']") == null)
                 { var group = document.CreateElement("DesignatorDropdownGroupDef"); Set(group,"defName",groupName);root.AppendChild(group);owners[group]=owner; }
@@ -177,15 +201,16 @@ namespace Grechka.WorldIntegration
                     if(tier>minimum && root.SelectSingleNode("ThingDef[defName='"+name+"']")==null)
                     {
                         var clone=document.CreateElement("ThingDef");clone.SetAttribute("ParentName",baseName);Set(clone,"defName",name);Set(clone,"label",Inherited(original,"label")+" (T"+tier+")");
+                        // Inherit the source machine's Architect category and tier dropdown together.
                         root.AppendChild(clone);owners[clone]=owner;
                     }
                     if(tier>=5||!worktable)continue;
                     string housing="Grechka_HousingT"+(tier+1)+"_Item";
                     XmlNode housingRecipe=root.SelectNodes("RecipeDef").Cast<XmlNode>().FirstOrDefault(r=>r.SelectSingleNode("products/"+housing)!=null);
                     if(housingRecipe==null || root.SelectSingleNode("RecipeDef[defName='GrechkaWorld_Upgrade_"+source+"_T"+(tier+1)+"']")!=null)continue;
-                    var upgrade=document.CreateElement("RecipeDef");Set(upgrade,"defName","GrechkaWorld_Upgrade_"+source+"_T"+(tier+1));Set(upgrade,"label","улучшить этот станок до T"+(tier+1));
-                    Set(upgrade,"description","Улучшение на месте. Корпус предыдущего тира и исходная машина засчитываются. Сохраняются материал, прочность, топливо и задания.");
-                    Set(upgrade,"jobString","Улучшение станка.");Set(upgrade,"workAmount","4000");Set(upgrade,"workSpeedStat","GeneralLaborSpeed");Set(upgrade,"workSkill","Crafting");
+                    var upgrade=document.CreateElement("RecipeDef");Set(upgrade,"defName","GrechkaWorld_Upgrade_"+source+"_T"+(tier+1));Set(upgrade,"label","upgrade this machine to T"+(tier+1));
+                    Set(upgrade,"description","Upgrade in place. The previous-tier housing and original machine count towards the cost. Material, hit points, fuel and bills are preserved.");
+                    Set(upgrade,"jobString","Upgrading machine.");Set(upgrade,"workAmount","4000");Set(upgrade,"workSpeedStat","GeneralLaborSpeed");Set(upgrade,"workSkill","Crafting");
                     XmlNode ingredients=upgrade.AppendChild(document.CreateElement("ingredients"));XmlNode fixedFilter=upgrade.AppendChild(document.CreateElement("fixedIngredientFilter"));XmlNode allowed=fixedFilter.AppendChild(document.CreateElement("thingDefs"));
                     foreach(XmlNode ingredient in housingRecipe.SelectNodes("ingredients/li"))
                     {
@@ -206,6 +231,8 @@ namespace Grechka.WorldIntegration
         public static void Postfix(Designator_Build __instance, ref bool __result)
         {
             var def=__instance.PlacingDef as ThingDef;VariantEntry entry=ProfileVariants.Entry(def);
+            if (entry != null && entry.name != entry.sourceName && ProfileVariants.IsRetired(entry))
+            { __result = false; return; }
             if(entry!=null&&entry.name!=entry.sourceName&&!WorldProfile.IsApplied(def))__result=false;
         }
     }
@@ -217,8 +244,10 @@ namespace Grechka.WorldIntegration
         {
             ThingDef def = __instance.PlacingDef as ThingDef;
             VariantEntry entry = ProfileVariants.Entry(def);
+            if (entry != null && entry.name != entry.sourceName && ProfileVariants.IsRetired(entry))
+            { __result = WorldText.Get("GrechkaWorldIntegration_c06d4b9349df", "This legacy variant is retained for loading old colonies."); return false; }
             if (entry == null || entry.name == entry.sourceName || WorldProfile.IsApplied(def)) return true;
-            __result = "Сначала примените профиль Grechka World в настройках мода.";
+            __result = WorldText.Get("GrechkaWorldIntegration_992255432d82", "Apply the Grechka World profile in the mod settings first.");
             return false;
         }
     }
@@ -258,7 +287,7 @@ namespace Grechka.WorldIntegration
             VariantEntry entry=Entry;Building_WorkTable bench=parent as Building_WorkTable;
             if(entry==null||entry.tier>=5||ready||bench==null||!WorldProfile.IsApplied(parent.def))yield break;
             RecipeDef recipe=DefDatabase<RecipeDef>.GetNamedSilentFail(entry.UpgradeRecipe);if(recipe==null||!recipe.AvailableNow||bench.BillStack.Bills.Any(b=>b.recipe==recipe))yield break;
-            yield return new Command_Action{defaultLabel="Улучшить до T"+(entry.tier+1),defaultDesc="Создать задание улучшения. Предыдущая машина и корпус засчитываются; пешка принесёт только добавочные материалы.",icon=TexCommand.Install,action=()=>{var bill=new Bill_Production(recipe,null){repeatMode=BillRepeatModeDefOf.RepeatCount,repeatCount=1};bench.BillStack.AddBill(bill);}};
+            yield return new Command_Action{defaultLabel=WorldText.Get("GrechkaWorldIntegration_392bededaba5", "Upgrade to T")+(entry.tier+1),defaultDesc=WorldText.Get("GrechkaWorldIntegration_f4918772c9e0", "Create an upgrade bill. The previous machine and housing count towards the cost. A pawn will bring only the additional materials."),icon=TexCommand.Install,action=()=>{var bill=new Bill_Production(recipe,null){repeatMode=BillRepeatModeDefOf.RepeatCount,repeatCount=1};bench.BillStack.AddBill(bill);}};
         }
         public override void CompTick(){TryUpgrade();}
         public override void CompTickRare(){TryUpgrade();}
@@ -291,7 +320,7 @@ namespace Grechka.WorldIntegration
                 AccessTools.Field(typeof(Thing),"graphicInt")?.SetValue(old,null);
                 if(!old.Spawned)GenSpawn.Spawn(old,pos,map,rot,WipeMode.Vanish,true,false);
                 old.HitPoints=oldHp;
-                Log.Error("[Grechka World] Улучшение отложено, исходная машина и задания сохранены: "+ex);
+                Log.Error(WorldText.Get("GrechkaWorldIntegration_54522b09cc40", "[Grechka World] Upgrade postponed. Original machine and bills preserved: ")+ex);
             }
         }
     }
@@ -302,13 +331,13 @@ namespace Grechka.WorldIntegration
 
     [HarmonyPatch(typeof(RecipeWorker),nameof(RecipeWorker.GetIngredientCount))]
     public static class ProfileIngredientDiscountHook
-    {public static void Postfix(Bill bill,ref float __result){var machine=bill?.billStack?.billGiver as ThingWithComps;int tier=WorldProfile.GetTier(machine);if(tier>1&&machine?.GetComp<CompProfileUpgrade>()!=null&&!ProfileVariants.IsUpgrade(bill.recipe))__result*=1-ProfileVariants.Discount[tier];}}
+    {public static void Postfix(Bill bill,ref float __result){var machine=bill?.billStack?.billGiver as ThingWithComps;int tier=WorldProfile.GetTier(machine);if(tier>1&&machine?.GetComp<CompProfileUpgrade>()!=null&&!ProfileVariants.IsUpgrade(bill.recipe)&&!ProfileVariants.IsEquipmentUpgrade(bill.recipe))__result*=1-ProfileVariants.Discount[tier];}}
 
     [HarmonyPatch(typeof(GenRecipe),nameof(GenRecipe.MakeRecipeProducts))]
     public static class ProfileProductBonusHook
     {
         public static void Postfix(RecipeDef recipeDef,IBillGiver billGiver,ref IEnumerable<Thing> __result)
-        {var comp=(billGiver as ThingWithComps)?.GetComp<CompProfileUpgrade>();if(comp!=null&&__result!=null)__result=Products(__result,recipeDef,comp);}
+        {var comp=(billGiver as ThingWithComps)?.GetComp<CompProfileUpgrade>();if(comp!=null&&__result!=null&&!ProfileVariants.IsEquipmentUpgrade(recipeDef))__result=Products(__result,recipeDef,comp);}
         private static IEnumerable<Thing> Products(IEnumerable<Thing> original,RecipeDef recipe,CompProfileUpgrade comp)
         {
             foreach(Thing product in original)

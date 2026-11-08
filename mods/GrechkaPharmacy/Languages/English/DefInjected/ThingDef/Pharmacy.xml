@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaPharmacy_HemostaticT1_Item.label>Last chance dressing</GrechkaPharmacy_HemostaticT1_Item.label>
+  <GrechkaPharmacy_HemostaticT1_Item.description>Reduces all bleeding by 85% for 3 hours. Does not replace lost blood or heal wounds.</GrechkaPharmacy_HemostaticT1_Item.description>
+  <GrechkaPharmacy_HemostaticT1_Item.ingestible.ingestCommandString>Apply {0}</GrechkaPharmacy_HemostaticT1_Item.ingestible.ingestCommandString>
+  <GrechkaPharmacy_HemostaticT1_Item.ingestible.ingestReportString>Applying {0}.</GrechkaPharmacy_HemostaticT1_Item.ingestible.ingestReportString>
+  <GrechkaPharmacy_AnalgesicT1_Item.label>Field analgesic</GrechkaPharmacy_AnalgesicT1_Item.label>
+  <GrechkaPharmacy_AnalgesicT1_Item.description>Reduces pain by 55% for 6 hours. Pain relief does not prevent lethal injuries.</GrechkaPharmacy_AnalgesicT1_Item.description>
+  <GrechkaPharmacy_AnalgesicT1_Item.ingestible.ingestCommandString>Apply {0}</GrechkaPharmacy_AnalgesicT1_Item.ingestible.ingestCommandString>
+  <GrechkaPharmacy_AnalgesicT1_Item.ingestible.ingestReportString>Applying {0}.</GrechkaPharmacy_AnalgesicT1_Item.ingestible.ingestReportString>
+  <GrechkaPharmacy_ImmunoT2_Item.label>Immune support</GrechkaPharmacy_ImmunoT2_Item.label>
+  <GrechkaPharmacy_ImmunoT2_Item.description>Increases immunity gain speed by 50% for one day. Supports treatment of existing diseases, without granting immunity to new infections.</GrechkaPharmacy_ImmunoT2_Item.description>
+  <GrechkaPharmacy_ImmunoT2_Item.ingestible.ingestCommandString>Apply {0}</GrechkaPharmacy_ImmunoT2_Item.ingestible.ingestCommandString>
+  <GrechkaPharmacy_ImmunoT2_Item.ingestible.ingestReportString>Applying {0}.</GrechkaPharmacy_ImmunoT2_Item.ingestible.ingestReportString>
+  <GrechkaPharmacy_RecoveryT2_Item.label>Recovery solution</GrechkaPharmacy_RecoveryT2_Item.label>
+  <GrechkaPharmacy_RecoveryT2_Item.description>Multiplies natural healing by 1.75 for one day, with 20% more hunger. Does not restore missing body parts.</GrechkaPharmacy_RecoveryT2_Item.description>
+  <GrechkaPharmacy_RecoveryT2_Item.ingestible.ingestCommandString>Apply {0}</GrechkaPharmacy_RecoveryT2_Item.ingestible.ingestCommandString>
+  <GrechkaPharmacy_RecoveryT2_Item.ingestible.ingestReportString>Applying {0}.</GrechkaPharmacy_RecoveryT2_Item.ingestible.ingestReportString>
+  <GrechkaPharmacy_DetoxT2_Item.label>Clean slate course</GrechkaPharmacy_DetoxT2_Item.label>
+  <GrechkaPharmacy_DetoxT2_Item.description>Treats one ordinary chemical addiction over one day. Does not cure luciferium dependency, genetic dependencies or drug tolerance. Repeated doses refresh the course without stacking its speed.</GrechkaPharmacy_DetoxT2_Item.description>
+  <GrechkaPharmacy_DetoxT2_Item.ingestible.ingestCommandString>Apply {0}</GrechkaPharmacy_DetoxT2_Item.ingestible.ingestCommandString>
+  <GrechkaPharmacy_DetoxT2_Item.ingestible.ingestReportString>Applying {0}.</GrechkaPharmacy_DetoxT2_Item.ingestible.ingestReportString>
+  <GrechkaPharmacy_MechaniteRegenT3_Item.label>Living tissue injector</GrechkaPharmacy_MechaniteRegenT3_Item.label>
+  <GrechkaPharmacy_MechaniteRegenT3_Item.description>A one-day course repairs fresh wounds, up to 2 injury points per hour. Does not heal scars, missing parts or implants.</GrechkaPharmacy_MechaniteRegenT3_Item.description>
+  <GrechkaPharmacy_MechaniteRegenT3_Item.ingestible.ingestCommandString>Apply {0}</GrechkaPharmacy_MechaniteRegenT3_Item.ingestible.ingestCommandString>
+  <GrechkaPharmacy_MechaniteRegenT3_Item.ingestible.ingestReportString>Applying {0}.</GrechkaPharmacy_MechaniteRegenT3_Item.ingestible.ingestReportString>
+  <GrechkaPharmacy_CombatStimT3_Item.label>Red line injector</GrechkaPharmacy_CombatStimT3_Item.label>
+  <GrechkaPharmacy_CombatStimT3_Item.description>For 8 hours: movement +25%, shooting accuracy factor +10%, pain -70%. Followed by 6 hours of fatigue. Repeated doses refresh, rather than stack, the effect.</GrechkaPharmacy_CombatStimT3_Item.description>
+  <GrechkaPharmacy_CombatStimT3_Item.ingestible.ingestCommandString>Apply {0}</GrechkaPharmacy_CombatStimT3_Item.ingestible.ingestCommandString>
+  <GrechkaPharmacy_CombatStimT3_Item.ingestible.ingestReportString>Applying {0}.</GrechkaPharmacy_CombatStimT3_Item.ingestible.ingestReportString>
+  <GrechkaPharmacy_WorkStimT3_Item.label>Second shift concentrate</GrechkaPharmacy_WorkStimT3_Item.label>
+  <GrechkaPharmacy_WorkStimT3_Item.description>For one day: global work speed +35%, rest consumption halved. Followed by 6 hours of fatigue. Repeated doses refresh the same effect.</GrechkaPharmacy_WorkStimT3_Item.description>
+  <GrechkaPharmacy_WorkStimT3_Item.ingestible.ingestCommandString>Apply {0}</GrechkaPharmacy_WorkStimT3_Item.ingestible.ingestCommandString>
+  <GrechkaPharmacy_WorkStimT3_Item.ingestible.ingestReportString>Applying {0}.</GrechkaPharmacy_WorkStimT3_Item.ingestible.ingestReportString>
+  <GrechkaPharmacy_ScarSerumT4_Item.label>Scar repair serum</GrechkaPharmacy_ScarSerumT4_Item.label>
+  <GrechkaPharmacy_ScarSerumT4_Item.description>Heals one permanent injury in natural tissue, then supports recovery for one day. Preserves implants and special psychic sacrifices.</GrechkaPharmacy_ScarSerumT4_Item.description>
+  <GrechkaPharmacy_ScarSerumT4_Item.ingestible.ingestCommandString>Apply {0}</GrechkaPharmacy_ScarSerumT4_Item.ingestible.ingestCommandString>
+  <GrechkaPharmacy_ScarSerumT4_Item.ingestible.ingestReportString>Applying {0}.</GrechkaPharmacy_ScarSerumT4_Item.ingestible.ingestReportString>
+  <GrechkaPharmacy_LimbSerumT4_Item.label>Limb regeneration serum</GrechkaPharmacy_LimbSerumT4_Item.label>
+  <GrechkaPharmacy_LimbSerumT4_Item.description>Restores one missing natural limb on an intact natural parent, then supports recovery for one day. Cannot restore the head or torso, replace implants, or reverse psychic sacrifices.</GrechkaPharmacy_LimbSerumT4_Item.description>
+  <GrechkaPharmacy_LimbSerumT4_Item.ingestible.ingestCommandString>Apply {0}</GrechkaPharmacy_LimbSerumT4_Item.ingestible.ingestCommandString>
+  <GrechkaPharmacy_LimbSerumT4_Item.ingestible.ingestReportString>Applying {0}.</GrechkaPharmacy_LimbSerumT4_Item.ingestible.ingestReportString>
+  <GrechkaPharmacy_GrechkaSerumT5_Item.label>Grechka regeneration serum</GrechkaPharmacy_GrechkaSerumT5_Item.label>
+  <GrechkaPharmacy_GrechkaSerumT5_Item.description>A one-day course repairs fresh injuries and one old scar or supported chronic condition in natural tissue. Preserves implants, genes, pregnancy and special psychic states. Does not resurrect or regrow missing parts; use the limb serum for that.</GrechkaPharmacy_GrechkaSerumT5_Item.description>
+  <GrechkaPharmacy_GrechkaSerumT5_Item.ingestible.ingestCommandString>Apply {0}</GrechkaPharmacy_GrechkaSerumT5_Item.ingestible.ingestCommandString>
+  <GrechkaPharmacy_GrechkaSerumT5_Item.ingestible.ingestReportString>Applying {0}.</GrechkaPharmacy_GrechkaSerumT5_Item.ingestible.ingestReportString>
+  <GrechkaPharmacy_YouthSerumT5_Item.label>Youth renewal serum</GrechkaPharmacy_YouthSerumT5_Item.label>
+  <GrechkaPharmacy_YouthSerumT5_Item.description>Reduces human biological age by five years, down to a minimum of 25 years. Chronological age is unchanged. Has no effect on younger patients.</GrechkaPharmacy_YouthSerumT5_Item.description>
+  <GrechkaPharmacy_YouthSerumT5_Item.ingestible.ingestCommandString>Apply {0}</GrechkaPharmacy_YouthSerumT5_Item.ingestible.ingestCommandString>
+  <GrechkaPharmacy_YouthSerumT5_Item.ingestible.ingestReportString>Applying {0}.</GrechkaPharmacy_YouthSerumT5_Item.ingestible.ingestReportString>
+  <GrechkaPharmacy_ReactorT3_Building.label>pharmaceutical reactor T3</GrechkaPharmacy_ReactorT3_Building.label>
+  <GrechkaPharmacy_ReactorT3_Building.description>Produces preparations up to tier 3. Requires a worker and power. Work speed x5.</GrechkaPharmacy_ReactorT3_Building.description>
+  <GrechkaPharmacy_ReactorT4_Building.label>pharmaceutical reactor T4</GrechkaPharmacy_ReactorT4_Building.label>
+  <GrechkaPharmacy_ReactorT4_Building.description>Produces preparations up to tier 4. Requires a worker and power. Work speed x12.</GrechkaPharmacy_ReactorT4_Building.description>
+  <GrechkaPharmacy_ReactorT5_Building.label>pharmaceutical reactor T5</GrechkaPharmacy_ReactorT5_Building.label>
+  <GrechkaPharmacy_ReactorT5_Building.description>Produces preparations up to tier 5. Requires a worker and power. Work speed x25.</GrechkaPharmacy_ReactorT5_Building.description>
+</LanguageData>

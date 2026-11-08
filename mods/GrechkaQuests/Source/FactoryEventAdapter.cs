@@ -32,7 +32,7 @@ namespace Grechka.Quests
             if (spawn == null || spawn.ReturnType != typeof(bool) || getCount == null || getCount.ReturnType != typeof(int)
                 || parent == null || !typeof(Thing).IsAssignableFrom(parent.FieldType))
             {
-                Log.Warning("[Grechka Quests] VFE Factory: сигнатура PipeSystem изменилась; учёт фабричного выпуска отключён.");
+                Log.Warning(QuestText.Get("GrechkaQuests_e105ce914be9", "[Grechka Quests] VFE Factory: сигнатура PipeSystem изменилась; учёт фабричного выпуска отключён."));
                 return;
             }
 
@@ -50,7 +50,7 @@ namespace Grechka.Quests
             }
             catch (Exception e)
             {
-                Log.Error("[Grechka Quests] Не удалось подключить VFE Factory: " + e);
+                Log.Error(QuestText.Get("GrechkaQuests_7bd64be0ba20", "[Grechka Quests] Не удалось подключить VFE Factory: ") + e);
             }
         }
 

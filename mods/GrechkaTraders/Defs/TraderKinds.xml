@@ -1,0 +1,659 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Industry_Caravan</defName>
+    <label>Grechka industrial guild</label>
+    <orbital>false</orbital>
+    <commonality>0.15</commonality>
+    <requestable>true</requestable>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Industry</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Industry</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Industry_Orbital</defName>
+    <label>Grechka industrial guild (orbital)</label>
+    <orbital>true</orbital>
+    <commonality>0.15</commonality>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Industry</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Industry</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Storage_Caravan</defName>
+    <label>Grechka digital caravan</label>
+    <orbital>false</orbital>
+    <commonality>0.15</commonality>
+    <requestable>true</requestable>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Storage</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Storage</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Storage_Orbital</defName>
+    <label>Grechka digital caravan (orbital)</label>
+    <orbital>true</orbital>
+    <commonality>0.15</commonality>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Storage</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Storage</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Equipment_Caravan</defName>
+    <label>Grechka arsenal</label>
+    <orbital>false</orbital>
+    <commonality>0.15</commonality>
+    <requestable>true</requestable>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Equipment</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Equipment</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Equipment_Orbital</defName>
+    <label>Grechka arsenal (orbital)</label>
+    <orbital>true</orbital>
+    <commonality>0.15</commonality>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Equipment</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Equipment</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_LuckyBlocks_Caravan</defName>
+    <label>Grechka lucky dealer</label>
+    <orbital>false</orbital>
+    <commonality>0.15</commonality>
+    <requestable>true</requestable>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_LuckyBlocks</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_LuckyBlocks</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_LuckyBlocks_Orbital</defName>
+    <label>Grechka lucky dealer (orbital)</label>
+    <orbital>true</orbital>
+    <commonality>0.15</commonality>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_LuckyBlocks</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_LuckyBlocks</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Automation_Caravan</defName>
+    <label>Factory and power syndicate</label>
+    <orbital>false</orbital>
+    <commonality>0.15</commonality>
+    <requestable>true</requestable>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Automation</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Automation</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Automation_Orbital</defName>
+    <label>Factory and power syndicate (orbital)</label>
+    <orbital>true</orbital>
+    <commonality>0.15</commonality>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Automation</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Automation</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Robotics_Caravan</defName>
+    <label>Robotics service caravan</label>
+    <orbital>false</orbital>
+    <commonality>0.15</commonality>
+    <requestable>true</requestable>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Robotics</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Robotics</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Robotics_Orbital</defName>
+    <label>Robotics service caravan (orbital)</label>
+    <orbital>true</orbital>
+    <commonality>0.15</commonality>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Robotics</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Robotics</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Medical_Caravan</defName>
+    <label>Frontier medical supplier</label>
+    <orbital>false</orbital>
+    <commonality>0.15</commonality>
+    <requestable>true</requestable>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Medical</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Medical</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Medical_Orbital</defName>
+    <label>Frontier medical supplier (orbital)</label>
+    <orbital>true</orbital>
+    <commonality>0.15</commonality>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Medical</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Medical</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Gourmet_Caravan</defName>
+    <label>Rim gourmet caravan</label>
+    <orbital>false</orbital>
+    <commonality>0.15</commonality>
+    <requestable>true</requestable>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Gourmet</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Gourmet</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Gourmet_Orbital</defName>
+    <label>Rim gourmet caravan (orbital)</label>
+    <orbital>true</orbital>
+    <commonality>0.15</commonality>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Gourmet</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Gourmet</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Agronomy_Caravan</defName>
+    <label>Frontier agronomists</label>
+    <orbital>false</orbital>
+    <commonality>0.15</commonality>
+    <requestable>true</requestable>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Agronomy</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Agronomy</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Agronomy_Orbital</defName>
+    <label>Frontier agronomists (orbital)</label>
+    <orbital>true</orbital>
+    <commonality>0.15</commonality>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Agronomy</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Agronomy</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Books_Caravan</defName>
+    <label>Wandering bookseller</label>
+    <orbital>false</orbital>
+    <commonality>0.15</commonality>
+    <requestable>true</requestable>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Books</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Books</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Books_Orbital</defName>
+    <label>Wandering bookseller (orbital)</label>
+    <orbital>true</orbital>
+    <commonality>0.15</commonality>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Books</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Books</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Defence_Caravan</defName>
+    <label>Frontier military engineers</label>
+    <orbital>false</orbital>
+    <commonality>0.15</commonality>
+    <requestable>true</requestable>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Defence</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Defence</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Defence_Orbital</defName>
+    <label>Frontier military engineers (orbital)</label>
+    <orbital>true</orbital>
+    <commonality>0.15</commonality>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Defence</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Defence</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Imperial_Caravan</defName>
+    <label>Imperial luxury supplier</label>
+    <orbital>false</orbital>
+    <commonality>0.15</commonality>
+    <requestable>true</requestable>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Imperial</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Imperial</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Imperial_Orbital</defName>
+    <label>Imperial luxury supplier (orbital)</label>
+    <orbital>true</orbital>
+    <commonality>0.15</commonality>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Imperial</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Imperial</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Smugglers_Caravan</defName>
+    <label>Black-market salvagers</label>
+    <orbital>false</orbital>
+    <commonality>0.15</commonality>
+    <requestable>true</requestable>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Smugglers</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Smugglers</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Smugglers_Orbital</defName>
+    <label>Black-market salvagers (orbital)</label>
+    <orbital>true</orbital>
+    <commonality>0.15</commonality>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Smugglers</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Smugglers</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Psycasts_Caravan</defName>
+    <label>Eltex curator</label>
+    <orbital>false</orbital>
+    <commonality>0.15</commonality>
+    <requestable>true</requestable>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Psycasts</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Psycasts</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Psycasts_Orbital</defName>
+    <label>Eltex curator (orbital)</label>
+    <orbital>true</orbital>
+    <commonality>0.15</commonality>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Psycasts</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Psycasts</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Interiors_Caravan</defName>
+    <label>Colony interior designers</label>
+    <orbital>false</orbital>
+    <commonality>0.15</commonality>
+    <requestable>true</requestable>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Interiors</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Interiors</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Interiors_Orbital</defName>
+    <label>Colony interior designers (orbital)</label>
+    <orbital>true</orbital>
+    <commonality>0.15</commonality>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Interiors</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Interiors</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Outfitter_Caravan</defName>
+    <label>Rim outfitter</label>
+    <orbital>false</orbital>
+    <commonality>0.15</commonality>
+    <requestable>true</requestable>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Outfitter</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Outfitter</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaTrader_Outfitter_Orbital</defName>
+    <label>Rim outfitter (orbital)</label>
+    <orbital>true</orbital>
+    <commonality>0.15</commonality>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>3500~7000</countRange>
+      </li>
+      <li Class="Grechka.Traders.StockGenerator_Specialist">
+        <specialist>GrechkaTrader_Outfitter</specialist>
+      </li>
+    </stockGenerators>
+    <modExtensions>
+      <li Class="Grechka.Traders.SpecialistExtension">
+        <specialist>GrechkaTrader_Outfitter</specialist>
+      </li>
+    </modExtensions>
+  </TraderKindDef>
+</Defs>

@@ -1,16 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_DataCore_1K_Item</defName>
     <label>ячейка памяти 1K</label>
     <description>Пустая аппаратная ячейка для диска 1K. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+      <texPath>Items/DataCores/DataCore_1K</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <stackLimit>75</stackLimit>
     <statBases>
-      <MarketValue>230</MarketValue>
+      <MarketValue>90</MarketValue>
       <Mass>0.3</Mass>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -22,6 +24,7 @@
     <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>
+    <uiIconPath>Items/DataCores/DataCore_1K</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_Disk_1K_Item</defName>
@@ -42,7 +45,7 @@
       </li>
     </modExtensions>
     <statBases>
-      <MarketValue>330</MarketValue>
+      <MarketValue>130</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -74,7 +77,7 @@
       </li>
     </modExtensions>
     <statBases>
-      <MarketValue>580</MarketValue>
+      <MarketValue>240</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -92,12 +95,14 @@
     <label>ячейка памяти 4K</label>
     <description>Пустая аппаратная ячейка для диска 4K. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+      <texPath>Items/DataCores/DataCore_4K</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <stackLimit>75</stackLimit>
     <statBases>
-      <MarketValue>890</MarketValue>
+      <MarketValue>240</MarketValue>
       <Mass>0.3</Mass>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -109,6 +114,7 @@
     <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>
+    <uiIconPath>Items/DataCores/DataCore_4K</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_Disk_4K_Item</defName>
@@ -129,7 +135,7 @@
       </li>
     </modExtensions>
     <statBases>
-      <MarketValue>990</MarketValue>
+      <MarketValue>280</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -161,7 +167,7 @@
       </li>
     </modExtensions>
     <statBases>
-      <MarketValue>1240</MarketValue>
+      <MarketValue>390</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -179,12 +185,14 @@
     <label>ячейка памяти 16K</label>
     <description>Пустая аппаратная ячейка для диска 16K. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+      <texPath>Items/DataCores/DataCore_16K</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <stackLimit>75</stackLimit>
     <statBases>
-      <MarketValue>2870</MarketValue>
+      <MarketValue>540</MarketValue>
       <Mass>0.3</Mass>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -196,6 +204,7 @@
     <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>
+    <uiIconPath>Items/DataCores/DataCore_16K</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_Disk_16K_Item</defName>
@@ -216,7 +225,7 @@
       </li>
     </modExtensions>
     <statBases>
-      <MarketValue>2970</MarketValue>
+      <MarketValue>580</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -248,7 +257,7 @@
       </li>
     </modExtensions>
     <statBases>
-      <MarketValue>3220</MarketValue>
+      <MarketValue>690</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -266,12 +275,14 @@
     <label>ячейка памяти 64K</label>
     <description>Пустая аппаратная ячейка для диска 64K. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+      <texPath>Items/DataCores/DataCore_64K</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <stackLimit>75</stackLimit>
     <statBases>
-      <MarketValue>8810</MarketValue>
+      <MarketValue>1140</MarketValue>
       <Mass>0.3</Mass>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -283,6 +294,7 @@
     <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>
+    <uiIconPath>Items/DataCores/DataCore_64K</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_Disk_64K_Item</defName>
@@ -303,7 +315,7 @@
       </li>
     </modExtensions>
     <statBases>
-      <MarketValue>8910</MarketValue>
+      <MarketValue>1180</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -335,7 +347,7 @@
       </li>
     </modExtensions>
     <statBases>
-      <MarketValue>9160</MarketValue>
+      <MarketValue>1290</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -353,12 +365,14 @@
     <label>ячейка памяти 256K</label>
     <description>Пустая аппаратная ячейка для диска 256K. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+      <texPath>Items/DataCores/DataCore_256K</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <stackLimit>75</stackLimit>
     <statBases>
-      <MarketValue>26630</MarketValue>
+      <MarketValue>2340</MarketValue>
       <Mass>0.3</Mass>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -370,6 +384,7 @@
     <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>
+    <uiIconPath>Items/DataCores/DataCore_256K</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_Disk_256K_Item</defName>
@@ -390,7 +405,7 @@
       </li>
     </modExtensions>
     <statBases>
-      <MarketValue>26730</MarketValue>
+      <MarketValue>2380</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -422,7 +437,7 @@
       </li>
     </modExtensions>
     <statBases>
-      <MarketValue>26980</MarketValue>
+      <MarketValue>2490</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -440,12 +455,14 @@
     <label>ячейка памяти 512K</label>
     <description>Пустая аппаратная ячейка для диска 512K. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+      <texPath>Items/DataCores/DataCore_512K</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <stackLimit>75</stackLimit>
     <statBases>
-      <MarketValue>53460</MarketValue>
+      <MarketValue>4800</MarketValue>
       <Mass>0.3</Mass>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -457,6 +474,7 @@
     <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>
+    <uiIconPath>Items/DataCores/DataCore_512K</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_Disk_512K_Item</defName>
@@ -477,7 +495,7 @@
       </li>
     </modExtensions>
     <statBases>
-      <MarketValue>53560</MarketValue>
+      <MarketValue>4840</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -509,7 +527,7 @@
       </li>
     </modExtensions>
     <statBases>
-      <MarketValue>53810</MarketValue>
+      <MarketValue>4950</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -527,12 +545,14 @@
     <label>ячейка памяти 1M</label>
     <description>Пустая аппаратная ячейка для диска 1M. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+      <texPath>Items/DataCores/DataCore_1M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <stackLimit>75</stackLimit>
     <statBases>
-      <MarketValue>107320</MarketValue>
+      <MarketValue>9720</MarketValue>
       <Mass>0.3</Mass>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -544,6 +564,7 @@
     <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>
+    <uiIconPath>Items/DataCores/DataCore_1M</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_Disk_1M_Item</defName>
@@ -564,7 +585,7 @@
       </li>
     </modExtensions>
     <statBases>
-      <MarketValue>107420</MarketValue>
+      <MarketValue>9760</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -596,7 +617,7 @@
       </li>
     </modExtensions>
     <statBases>
-      <MarketValue>107670</MarketValue>
+      <MarketValue>9870</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -614,12 +635,14 @@
     <label>ячейка памяти 2M</label>
     <description>Пустая аппаратная ячейка для диска 2M. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+      <texPath>Items/DataCores/DataCore_2M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <stackLimit>75</stackLimit>
     <statBases>
-      <MarketValue>215040</MarketValue>
+      <MarketValue>19560</MarketValue>
       <Mass>0.3</Mass>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -631,6 +654,7 @@
     <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>
+    <uiIconPath>Items/DataCores/DataCore_2M</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_Disk_2M_Item</defName>
@@ -651,7 +675,7 @@
       </li>
     </modExtensions>
     <statBases>
-      <MarketValue>215140</MarketValue>
+      <MarketValue>19600</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -683,7 +707,7 @@
       </li>
     </modExtensions>
     <statBases>
-      <MarketValue>215390</MarketValue>
+      <MarketValue>19710</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -701,12 +725,14 @@
     <label>ячейка памяти 4M</label>
     <description>Пустая аппаратная ячейка для диска 4M. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+      <texPath>Items/DataCores/DataCore_4M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <stackLimit>75</stackLimit>
     <statBases>
-      <MarketValue>430480</MarketValue>
+      <MarketValue>39240</MarketValue>
       <Mass>0.3</Mass>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -718,6 +744,7 @@
     <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>
+    <uiIconPath>Items/DataCores/DataCore_4M</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_Disk_4M_Item</defName>
@@ -738,7 +765,7 @@
       </li>
     </modExtensions>
     <statBases>
-      <MarketValue>430580</MarketValue>
+      <MarketValue>39280</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -770,7 +797,7 @@
       </li>
     </modExtensions>
     <statBases>
-      <MarketValue>430830</MarketValue>
+      <MarketValue>39390</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -788,12 +815,14 @@
     <label>ячейка памяти 8M</label>
     <description>Пустая аппаратная ячейка для диска 8M. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+      <texPath>Items/DataCores/DataCore_8M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <stackLimit>75</stackLimit>
     <statBases>
-      <MarketValue>861360</MarketValue>
+      <MarketValue>78600</MarketValue>
       <Mass>0.3</Mass>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -805,6 +834,7 @@
     <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>
+    <uiIconPath>Items/DataCores/DataCore_8M</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_Disk_8M_Item</defName>
@@ -825,7 +855,7 @@
       </li>
     </modExtensions>
     <statBases>
-      <MarketValue>861460</MarketValue>
+      <MarketValue>78640</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -857,7 +887,7 @@
       </li>
     </modExtensions>
     <statBases>
-      <MarketValue>861710</MarketValue>
+      <MarketValue>78750</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -875,12 +905,14 @@
     <label>ячейка памяти 16M</label>
     <description>Пустая аппаратная ячейка для диска 16M. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+      <texPath>Items/DataCores/DataCore_16M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <stackLimit>75</stackLimit>
     <statBases>
-      <MarketValue>1723120</MarketValue>
+      <MarketValue>157320</MarketValue>
       <Mass>0.3</Mass>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -892,6 +924,7 @@
     <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>
+    <uiIconPath>Items/DataCores/DataCore_16M</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_Disk_16M_Item</defName>
@@ -912,7 +945,7 @@
       </li>
     </modExtensions>
     <statBases>
-      <MarketValue>1723220</MarketValue>
+      <MarketValue>157360</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -944,7 +977,7 @@
       </li>
     </modExtensions>
     <statBases>
-      <MarketValue>1723470</MarketValue>
+      <MarketValue>157470</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -962,12 +995,14 @@
     <label>ячейка памяти 64M</label>
     <description>Пустая аппаратная ячейка для диска 64M. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+      <texPath>Items/DataCores/DataCore_64M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <stackLimit>75</stackLimit>
     <statBases>
-      <MarketValue>5169760</MarketValue>
+      <MarketValue>314760</MarketValue>
       <Mass>0.3</Mass>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -979,6 +1014,7 @@
     <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>
+    <uiIconPath>Items/DataCores/DataCore_64M</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_Disk_64M_Item</defName>
@@ -999,7 +1035,7 @@
       </li>
     </modExtensions>
     <statBases>
-      <MarketValue>5169860</MarketValue>
+      <MarketValue>314800</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -1031,7 +1067,7 @@
       </li>
     </modExtensions>
     <statBases>
-      <MarketValue>5170110</MarketValue>
+      <MarketValue>314910</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -1049,12 +1085,14 @@
     <label>ячейка памяти 256M</label>
     <description>Пустая аппаратная ячейка для диска 256M. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/ComponentSpacer</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
+      <texPath>Items/DataCores/DataCore_256M</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <stackLimit>75</stackLimit>
     <statBases>
-      <MarketValue>15509680</MarketValue>
+      <MarketValue>629640</MarketValue>
       <Mass>0.3</Mass>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -1066,6 +1104,7 @@
     <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>
+    <uiIconPath>Items/DataCores/DataCore_256M</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_Disk_256M_Item</defName>
@@ -1086,7 +1125,7 @@
       </li>
     </modExtensions>
     <statBases>
-      <MarketValue>15509780</MarketValue>
+      <MarketValue>629680</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0</Flammability>
@@ -1118,7 +1157,7 @@
       </li>
     </modExtensions>
     <statBases>
-      <MarketValue>15510030</MarketValue>
+      <MarketValue>629790</MarketValue>
       <Mass>1</Mass>
       <MaxHitPoints>120</MaxHitPoints>
       <Flammability>0</Flammability>

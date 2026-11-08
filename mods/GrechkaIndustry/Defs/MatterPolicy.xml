@@ -6,5 +6,16 @@
     <recycleEnergyPerValue>1000000</recycleEnergyPerValue><recycleWorkPerValue>600</recycleWorkPerValue>
     <synthesisEnergyPerMatter>200000</synthesisEnergyPerMatter><synthesisWorkPerMatter>120</synthesisWorkPerMatter>
   </Grechka.Industry.MatterPolicyDef>
-  <StatDef><defName>Grechka_MatterFixedWorkSpeed</defName><label>скорость преобразования материи</label><description>Фиксированная скорость обеспечивает реальную оплату энергии и времени.</description><defaultBaseValue>1</defaultBaseValue><minValue>1</minValue><maxValue>1</maxValue><toStringStyle>PercentZero</toStringStyle><showOnPawns>false</showOnPawns></StatDef>
+  <StatDef>
+    <defName>Grechka_MatterFixedWorkSpeed</defName>
+    <label>скорость преобразования материи</label>
+    <description>Фиксированная скорость обеспечивает реальную оплату энергии и времени.</description>
+    <category>Building</category>
+    <alwaysHide>true</alwaysHide>
+    <defaultBaseValue>1</defaultBaseValue>
+    <minValue>1</minValue>
+    <maxValue>1</maxValue>
+    <toStringStyle>PercentZero</toStringStyle>
+    <showOnPawns>false</showOnPawns>
+  </StatDef>
 </Defs>

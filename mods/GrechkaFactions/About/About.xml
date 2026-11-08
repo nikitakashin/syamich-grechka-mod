@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ModMetaData>
+  <name>Grechka Factions</name>
+  <author>Grechka World</author>
+  <packageId>grechka.factions</packageId>
+  <modVersion>0.1.0</modVersion>
+  <description>Пять фракций для Grechka World со своими пешками, караванами, поселениями и боевыми группами.
+
+СОЮЗ СЕМИ МЕЛЬНИЦ
+Мельники и земледельцы. Хорошо выращивают и готовят еду, торгуют продовольствием и тканью.
+
+НУЛЕВАЯ СМЕНА
+Наследники аварийной бригады. Опытные медики, поставщики лекарств и нейтроамина.
+
+АРТЕЛЬ ПОСЛЕДНЕЙ ГАЙКИ
+Каждый человек имеет интеллект 16–20, два профильных навыка 16–20 и настоящую гречка-бионику T5 с эффективностью 600%. Мастера получают два импланта, бригадиры — три. Торгуют компонентами, пласталью и бионикой. Навыки и импланты остаются у завербованных пленных.
+
+БОСАЯ СОТНЯ
+Обнажённые бойцы ближнего боя с боевыми и двигательными чипами T5. Изначально враждебны, допускают примирение.
+
+БЮРО НЕВСКРЫТЫХ ПОСЫЛОК
+Курьеры с настоящими лаки-блоками T1–T3 в инвентаре. Торговые караваны предлагают отдельный ассортимент посылок.
+
+При создании мира каждая фракция добавляется один раз. Состав можно изменить в выборе фракций. Для существующих миров автоматическое добавление не предусмотрено.
+
+Требуются Harmony, Grechka Equipment и Grechka Lucky Blocks. Equipment также требует Grechka Industry.
+
+Версия 0.1.0. Игровая приёмка и балансировка продолжаются.</description>
+  <supportedVersions>
+    <li>1.7</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>grechka.equipment</packageId>
+      <displayName>Grechka Equipment</displayName>
+      <downloadUrl>https://github.com/nikitakashin/syamich-grechka-mod</downloadUrl>
+    </li>
+    <li>
+      <packageId>grechka.luckyblocks</packageId>
+      <displayName>Grechka Lucky Blocks</displayName>
+      <downloadUrl>https://github.com/nikitakashin/syamich-grechka-mod</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>grechka.equipment</li>
+    <li>grechka.luckyblocks</li>
+    <li>grechka.traders</li>
+  </loadAfter>
+</ModMetaData>

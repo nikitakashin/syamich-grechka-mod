@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaTrader_Industry_Caravan.label>Grechka industrial guild</GrechkaTrader_Industry_Caravan.label>
+  <GrechkaTrader_Industry_Orbital.label>Grechka industrial guild (orbital)</GrechkaTrader_Industry_Orbital.label>
+  <GrechkaTrader_Storage_Caravan.label>Grechka digital caravan</GrechkaTrader_Storage_Caravan.label>
+  <GrechkaTrader_Storage_Orbital.label>Grechka digital caravan (orbital)</GrechkaTrader_Storage_Orbital.label>
+  <GrechkaTrader_Equipment_Caravan.label>Grechka arsenal</GrechkaTrader_Equipment_Caravan.label>
+  <GrechkaTrader_Equipment_Orbital.label>Grechka arsenal (orbital)</GrechkaTrader_Equipment_Orbital.label>
+  <GrechkaTrader_LuckyBlocks_Caravan.label>Grechka lucky dealer</GrechkaTrader_LuckyBlocks_Caravan.label>
+  <GrechkaTrader_LuckyBlocks_Orbital.label>Grechka lucky dealer (orbital)</GrechkaTrader_LuckyBlocks_Orbital.label>
+  <GrechkaTrader_Automation_Caravan.label>Factory and power syndicate</GrechkaTrader_Automation_Caravan.label>
+  <GrechkaTrader_Automation_Orbital.label>Factory and power syndicate (orbital)</GrechkaTrader_Automation_Orbital.label>
+  <GrechkaTrader_Robotics_Caravan.label>Robotics service caravan</GrechkaTrader_Robotics_Caravan.label>
+  <GrechkaTrader_Robotics_Orbital.label>Robotics service caravan (orbital)</GrechkaTrader_Robotics_Orbital.label>
+  <GrechkaTrader_Medical_Caravan.label>Frontier medical supplier</GrechkaTrader_Medical_Caravan.label>
+  <GrechkaTrader_Medical_Orbital.label>Frontier medical supplier (orbital)</GrechkaTrader_Medical_Orbital.label>
+  <GrechkaTrader_Gourmet_Caravan.label>Rim gourmet caravan</GrechkaTrader_Gourmet_Caravan.label>
+  <GrechkaTrader_Gourmet_Orbital.label>Rim gourmet caravan (orbital)</GrechkaTrader_Gourmet_Orbital.label>
+  <GrechkaTrader_Agronomy_Caravan.label>Frontier agronomists</GrechkaTrader_Agronomy_Caravan.label>
+  <GrechkaTrader_Agronomy_Orbital.label>Frontier agronomists (orbital)</GrechkaTrader_Agronomy_Orbital.label>
+  <GrechkaTrader_Books_Caravan.label>Wandering bookseller</GrechkaTrader_Books_Caravan.label>
+  <GrechkaTrader_Books_Orbital.label>Wandering bookseller (orbital)</GrechkaTrader_Books_Orbital.label>
+  <GrechkaTrader_Defence_Caravan.label>Frontier military engineers</GrechkaTrader_Defence_Caravan.label>
+  <GrechkaTrader_Defence_Orbital.label>Frontier military engineers (orbital)</GrechkaTrader_Defence_Orbital.label>
+  <GrechkaTrader_Imperial_Caravan.label>Imperial luxury supplier</GrechkaTrader_Imperial_Caravan.label>
+  <GrechkaTrader_Imperial_Orbital.label>Imperial luxury supplier (orbital)</GrechkaTrader_Imperial_Orbital.label>
+  <GrechkaTrader_Smugglers_Caravan.label>Black-market salvagers</GrechkaTrader_Smugglers_Caravan.label>
+  <GrechkaTrader_Smugglers_Orbital.label>Black-market salvagers (orbital)</GrechkaTrader_Smugglers_Orbital.label>
+  <GrechkaTrader_Psycasts_Caravan.label>Eltex curator</GrechkaTrader_Psycasts_Caravan.label>
+  <GrechkaTrader_Psycasts_Orbital.label>Eltex curator (orbital)</GrechkaTrader_Psycasts_Orbital.label>
+  <GrechkaTrader_Interiors_Caravan.label>Colony interior designers</GrechkaTrader_Interiors_Caravan.label>
+  <GrechkaTrader_Interiors_Orbital.label>Colony interior designers (orbital)</GrechkaTrader_Interiors_Orbital.label>
+  <GrechkaTrader_Outfitter_Caravan.label>Rim outfitter</GrechkaTrader_Outfitter_Caravan.label>
+  <GrechkaTrader_Outfitter_Orbital.label>Rim outfitter (orbital)</GrechkaTrader_Outfitter_Orbital.label>
+</LanguageData>

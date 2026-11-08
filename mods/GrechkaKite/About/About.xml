@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Grechka Kite</name>
+  <author>Grechka World</author>
+  <packageId>grechka.kite</packageId>
+  <modVersion>0.1.0</modVersion>
+  <supportedVersions><li>1.7</li></supportedVersions>
+  <description>Мобилизованные колонисты с включённым «Огнём по готовности» могут стрелять по врагам прямо во время движения. Дальность, видимость, время прицеливания и паузы между очередями зависят от оружия по обычным правилам игры. Оружие с ручной активацией требует команды игрока. Враги по умолчанию тоже стреляют на ходу. Это можно отключить в настройках. Требуется Harmony. Несовместим с RunAndGun и Tacticowl.</description>
+  <modDependencies><li><packageId>brrainz.harmony</packageId><displayName>Harmony</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl></li></modDependencies>
+  <loadAfter><li>brrainz.harmony</li></loadAfter>
+  <incompatibleWith><li>roolo.runandgun</li><li>memegoddess.runandgun</li><li>owlchemist.tactiowl</li></incompatibleWith>
+</ModMetaData>

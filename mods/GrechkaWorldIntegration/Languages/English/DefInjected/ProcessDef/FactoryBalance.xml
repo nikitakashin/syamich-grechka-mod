@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <GrechkaWorld_DrillSteel.label>extract steel</GrechkaWorld_DrillSteel.label>
+  <GrechkaWorld_DrillSteel.labelOverride>extract steel</GrechkaWorld_DrillSteel.labelOverride>
+  <GrechkaWorld_DrillSteel.description>Continuous targeted steel extraction. Allow this resource in the output factory hopper. Higher tiers increase speed and yield. A completed batch waits if there is not enough space.</GrechkaWorld_DrillSteel.description>
+  <GrechkaWorld_DrillPlasteel.label>extract plasteel</GrechkaWorld_DrillPlasteel.label>
+  <GrechkaWorld_DrillPlasteel.labelOverride>extract plasteel</GrechkaWorld_DrillPlasteel.labelOverride>
+  <GrechkaWorld_DrillPlasteel.description>Continuous targeted plasteel extraction. Allow this resource in the output factory hopper. Higher tiers increase speed and yield. A completed batch waits if there is not enough space.</GrechkaWorld_DrillPlasteel.description>
+  <GrechkaWorld_DrillUranium.label>extract uranium</GrechkaWorld_DrillUranium.label>
+  <GrechkaWorld_DrillUranium.labelOverride>extract uranium</GrechkaWorld_DrillUranium.labelOverride>
+  <GrechkaWorld_DrillUranium.description>Continuous targeted uranium extraction. Allow this resource in the output factory hopper. Higher tiers increase speed and yield. A completed batch waits if there is not enough space.</GrechkaWorld_DrillUranium.description>
+</LanguageData>

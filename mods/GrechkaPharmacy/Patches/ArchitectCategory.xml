@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Share the Grechka tab and retain a standalone fallback without Industry. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/DesignationCategoryDef[defName='Grechka_IndustryCategory']</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs</xpath>
+      <value>
+        <DesignationCategoryDef>
+          <defName>Grechka_IndustryCategory</defName>
+          <label>Гречка</label>
+          <order>79</order>
+          <showPowerGrid>true</showPowerGrid>
+          <specialDesignatorClasses />
+        </DesignationCategoryDef>
+      </value>
+    </nomatch>
+  </Operation>
+</Patch>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <DesignatorDropdownGroupDef>
+    <defName>Grechka_CompositeFloors</defName>
+    <label>polished composite</label>
+  </DesignatorDropdownGroupDef>
+  <TerrainDef ParentName="FloorBase" Name="Grechka_CompositeFloorBase" Abstract="True">
+    <description>Attractive polished stone composite for affordable living spaces. Each tile requires four stone blocks of the selected type and one steel. All stone variants have the same properties.</description>
+    <texturePath>Terrain/GrechkaComposite</texturePath>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>360</renderPrecedence>
+    <designationCategory>Floors</designationCategory>
+    <designatorDropdown>Grechka_CompositeFloors</designatorDropdown>
+    <uiOrder>6100</uiOrder>
+    <pathCost>0</pathCost>
+    <statBases>
+      <WorkToBuild>350</WorkToBuild>
+      <Beauty>3</Beauty>
+      <Cleanliness>0</Cleanliness>
+      <Flammability>0</Flammability>
+    </statBases>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Grechka_SterileMechaniteFloor</defName>
+    <label>sterile mechanite tile</label>
+    <description>Sterile white panels with silver joints. Sealed mechanites automatically remove one layer of ordinary filth from each covered cell every 10 game seconds, without power or consumables. Inherent cleanliness is +0.8; a room's cleanliness depends on its entire floor area and remaining filth.</description>
+    <texturePath>Terrain/GrechkaSterile</texturePath>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>361</renderPrecedence>
+    <designationCategory>Floors</designationCategory>
+    <uiOrder>6101</uiOrder>
+    <pathCost>0</pathCost>
+    <statBases>
+      <WorkToBuild>1600</WorkToBuild>
+      <Beauty>1</Beauty>
+      <Cleanliness>0.8</Cleanliness>
+      <CleaningTimeFactor>0.6</CleaningTimeFactor>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList><Steel>3</Steel><Silver>5</Silver><Grechka_Mechanites>1</Grechka_Mechanites></costList>
+    <researchPrerequisites><li MayRequire="grechka.world.integration">Grechka_Research_MechaT3</li></researchPrerequisites>
+    <modExtensions><li Class="Grechka.Industry.SelfCleaningFloorProperties"><intervalTicks>600</intervalTicks></li></modExtensions>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase" MayRequire="grechka.treasures">
+    <defName>Grechka_PalaceDiamondFloor</defName>
+    <label>palace diamond mosaic</label>
+    <description>An exquisite ivory marble mosaic with gold inlay and brilliant diamonds for palatial bedrooms and throne rooms. Counts as fine flooring for royal titles. Sealed mechanites remove one layer of ordinary filth from each covered cell every 5 game seconds, without power or consumables. Inherent cleanliness is +1. Other title requirements still apply.</description>
+    <texturePath>Terrain/GrechkaPalace</texturePath>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>362</renderPrecedence>
+    <designationCategory>Floors</designationCategory>
+    <uiOrder>6102</uiOrder>
+    <pathCost>0</pathCost>
+    <tags><li>FineFloor</li></tags>
+    <statBases>
+      <WorkToBuild>4000</WorkToBuild>
+      <Beauty>15</Beauty>
+      <Cleanliness>1</Cleanliness>
+      <CleaningTimeFactor>0.6</CleaningTimeFactor>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList><BlocksMarble>6</BlocksMarble><Gold>10</Gold><Plasteel>2</Plasteel><GrechkaTreasures_DiamondCut>1</GrechkaTreasures_DiamondCut><Grechka_Mechanites>2</Grechka_Mechanites></costList>
+    <researchPrerequisites><li MayRequire="grechka.world.integration">Grechka_Research_MechaT3</li></researchPrerequisites>
+    <modExtensions><li Class="Grechka.Industry.SelfCleaningFloorProperties"><intervalTicks>300</intervalTicks></li></modExtensions>
+  </TerrainDef>
+</Defs>

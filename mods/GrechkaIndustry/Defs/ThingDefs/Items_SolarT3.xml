@@ -2,6 +2,7 @@
 <Defs>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedSolarS3_Item</defName>
+    <uiIconPath>Buildings/Solar/Main/SolarS3_Mechanite</uiIconPath>
     <label>упакованная механитная солнечная панель</label>
     <description>Целиком снятая панель S3 для повторной установки или дальнейшей сборки.</description>
     <modExtensions>
@@ -12,6 +13,7 @@
   </ThingDef>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedSolarS4_Item</defName>
+    <uiIconPath>Buildings/Solar/Main/SolarS4_MechaniteMatrix</uiIconPath>
     <label>упакованная механитная солнечная матрица</label>
     <description>Целиком снятая панель S4 для повторной установки или дальнейшей сборки.</description>
     <modExtensions>

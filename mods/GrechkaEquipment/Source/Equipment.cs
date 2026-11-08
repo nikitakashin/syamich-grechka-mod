@@ -28,6 +28,17 @@ namespace Grechka.Equipment
             return !string.IsNullOrEmpty(family) && family == b.GetModExtension<ImplantFamily>()?.family;
         }
         public static bool Stable(Pawn pawn) => pawn?.health?.hediffSet.hediffs.Any(h => h.def.GetModExtension<ImplantFamily>()?.stableMind == true) == true;
+        public static bool HasFamily(Pawn pawn, HediffDef implant, BodyPartRecord part)
+            => pawn.health.hediffSet.hediffs.Any(h => h.Part == part && (h.def == implant || SameFamily(h.def, implant)));
+        public static bool CanInstall(Pawn pawn, RecipeDef recipe, BodyPartRecord part)
+        {
+            if (part == null || !recipe.appliedOnFixedBodyParts.Contains(part.def)
+                || pawn.health.hediffSet.AncestorHasDirectlyAddedParts(part)
+                || pawn.health.hediffSet.hediffs.Any(h => h.Part == part && h.def == recipe.addsHediff)) return false;
+            for (BodyPartRecord ancestor = part; ancestor != null; ancestor = ancestor.parent)
+                if (pawn.health.hediffSet.PartIsMissing(ancestor)) return false;
+            return true;
+        }
     }
 
     // Only the ordinary mood lottery is blocked; scripted mental states remain available.
@@ -47,18 +58,18 @@ namespace Grechka.Equipment
         public override IEnumerable<BodyPartRecord> GetPartsToApplyOn(Pawn pawn, RecipeDef recipe)
         {
             foreach (BodyPartRecord part in pawn.health.hediffSet.GetNotMissingParts())
-                if (recipe.appliedOnFixedBodyParts.Contains(part.def) &&
-                    !pawn.health.hediffSet.hediffs.Any(h => h.Part == part && h.def == recipe.addsHediff) &&
-                    !pawn.health.hediffSet.AncestorHasDirectlyAddedParts(part)) yield return part;
+                if (ImplantRules.CanInstall(pawn, recipe, part)) yield return part;
         }
         public override void ApplyOnPawn(Pawn pawn, BodyPartRecord part, Pawn surgeon, List<Thing> ingredients, Bill bill)
         {
-            if (part == null || pawn.health.hediffSet.PartIsMissing(part)) return;
-            if (pawn.health.hediffSet.hediffs.Any(h => h.Part == part && h.def == recipe.addsHediff)) return;
+            // Another queued operation may have replaced the parent since this bill was selected.
+            if (!ImplantRules.CanInstall(pawn, recipe, part)) return;
             if (surgeon != null && CheckSurgeryFail(surgeon, pawn, ingredients, part, bill)) return;
             List<Hediff> old = pawn.health.hediffSet.hediffs.Where(h => h.Part == part && ImplantRules.SameFamily(h.def, recipe.addsHediff)).ToList();
             // Add first: reconstructing a vital part must never transiently remove its support.
             pawn.health.AddHediff(recipe.addsHediff, part);
+            // If a compatibility hook rejected installation, do not remove the old implant.
+            if (!pawn.health.hediffSet.hediffs.Any(h => h.Part == part && h.def == recipe.addsHediff)) return;
             foreach (Hediff hediff in old)
             {
                 pawn.health.RemoveHediff(hediff);
@@ -109,7 +120,10 @@ namespace Grechka.Equipment
     {
         protected override void Impact(Thing hitThing, bool blockedByShield = false)
         {
+            Map map = Map;
+            UnityEngine.Vector3 position = ExactPosition;
             base.Impact(hitThing, blockedByShield);
+            if (!blockedByShield) EquipmentEffects.Flash("Grechka_CryoImpactFlash", position, map, 1f);
             Pawn pawn = hitThing as Pawn;
             if (blockedByShield || pawn == null || pawn.Dead) return;
             HediffDef chill = DefDatabase<HediffDef>.GetNamed("Grechka_CryoSlow");
@@ -132,6 +146,7 @@ namespace Grechka.Equipment
         public int burstRemaining;
         public Thing target;
         public bool enabled = true;
+        internal bool CanTickOn(Map map) => !Destroyed && Wearer?.Spawned == true && Wearer.Map == map;
         public override void ExposeData()
         {
             base.ExposeData();
@@ -144,7 +159,7 @@ namespace Grechka.Equipment
         {
             foreach (Gizmo gizmo in base.GetWornGizmos()) yield return gizmo;
             if (Wearer?.Faction == Faction.OfPlayer) yield return new Command_Toggle {
-                defaultLabel = "Огонь дрона", defaultDesc = "Самостоятельно атаковать видимых врагов. Дрон не атакует мирных животных и союзников.",
+                defaultLabel = "GrechkaEquipment_Text001".Translate().ToString(), defaultDesc = "GrechkaEquipment_Text002".Translate().ToString(),
                 isActive = () => enabled, toggleAction = () => { enabled = !enabled; target = null; burstRemaining = 0; }
             };
         }
@@ -189,7 +204,9 @@ namespace Grechka.Equipment
                     if (pawn.apparel != null) foreach (Apparel apparel in pawn.apparel.WornApparel)
                         if (apparel is CombatDrone drone) drones.Add(drone);
             }
-            for (int i = 0; i < drones.Count; i++) if (!drones[i].Destroyed) drones[i].DroneTick(tick);
+            // A wearer can change maps between cache refreshes. The previous map
+            // must not advance its burst or spawn projectiles into the new map.
+            for (int i = 0; i < drones.Count; i++) if (drones[i].CanTickOn(map)) drones[i].DroneTick(tick);
         }
     }
 
@@ -207,10 +224,10 @@ namespace Grechka.Equipment
                 pawn.apparel?.DestroyAll();
                 pawn.equipment?.DestroyAllEquipment();
                 BodyPartRecord brain = pawn.health.hediffSet.GetBrain();
-                if (brain != null && !pawn.health.hediffSet.HasHediff(chip)) pawn.health.AddHediff(chip, brain);
+                if (brain != null && !ImplantRules.HasFamily(pawn, chip, brain)) pawn.health.AddHediff(chip, brain);
             }
         }
-        protected override string GetLetterLabel(IncidentParms parms) => "Рейд чипированных нудистов";
-        protected override string GetLetterText(IncidentParms parms, List<Pawn> pawns) => "К колонии приближаются чипированные бойцы. На них нет брони, зато боевые импланты подавляют боль и резко ускоряют движение и удары.\n\n" + base.GetLetterText(parms, pawns);
+        protected override string GetLetterLabel(IncidentParms parms) => "GrechkaEquipment_Text003".Translate().ToString();
+        protected override string GetLetterText(IncidentParms parms, List<Pawn> pawns) => "GrechkaEquipment_Text004".Translate().ToString() + base.GetLetterText(parms, pawns);
     }
 }

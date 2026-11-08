@@ -13,13 +13,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -99,13 +99,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -185,13 +185,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -271,13 +271,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -357,13 +357,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -443,13 +443,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -529,13 +529,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -615,13 +615,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -701,13 +701,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -787,13 +787,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -873,13 +873,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -959,13 +959,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -1045,13 +1045,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -1131,13 +1131,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -1218,13 +1218,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -1304,13 +1304,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -1390,13 +1390,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -1476,13 +1476,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -1562,13 +1562,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -1648,13 +1648,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -1734,13 +1734,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -1820,13 +1820,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -1906,13 +1906,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -1992,13 +1992,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -2079,13 +2079,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -2165,13 +2165,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -2252,13 +2252,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -2339,13 +2339,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -2426,13 +2426,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -2513,13 +2513,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -2600,13 +2600,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -2687,13 +2687,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>5000</MarketValue>
+      <MarketValue>1200</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>4</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -2774,13 +2774,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -2860,13 +2860,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -2946,13 +2946,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -3032,13 +3032,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -3118,13 +3118,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -3204,13 +3204,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -3290,13 +3290,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -3376,13 +3376,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -3462,13 +3462,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -3548,13 +3548,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -3634,13 +3634,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -3720,13 +3720,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -3806,13 +3806,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -3892,13 +3892,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -3979,13 +3979,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -4065,13 +4065,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -4151,13 +4151,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -4237,13 +4237,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -4323,13 +4323,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -4409,13 +4409,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -4495,13 +4495,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -4581,13 +4581,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -4667,13 +4667,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -4753,13 +4753,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -4840,13 +4840,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -4926,13 +4926,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -5013,13 +5013,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -5100,13 +5100,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -5187,13 +5187,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -5274,13 +5274,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -5361,13 +5361,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -5448,13 +5448,13 @@
     </thingCategories>
     <statBases>
       <WorkToMake>24000</WorkToMake>
-      <MarketValue>15000</MarketValue>
+      <MarketValue>2400</MarketValue>
       <Mass>0.5</Mass>
     </statBases>
     <costList>
-      <Plasteel>20</Plasteel>
-      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
+      <Plasteel>12</Plasteel>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>4</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>

@@ -1,0 +1,465 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Install_Grechka_CombatChipT4.label>install: berserker chip T4</Install_Grechka_CombatChipT4.label>
+  <Install_Grechka_CombatChipT4.description>Install berserker chip T4. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_CombatChipT4.description>
+  <Install_Grechka_CombatChipT4.jobString>Installing an implant.</Install_Grechka_CombatChipT4.jobString>
+  <Remove_Grechka_CombatChipT4.label>remove: berserker chip T4</Remove_Grechka_CombatChipT4.label>
+  <Remove_Grechka_CombatChipT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_CombatChipT4.description>
+  <Remove_Grechka_CombatChipT4.jobString>Removing an implant.</Remove_Grechka_CombatChipT4.jobString>
+  <Install_Grechka_CombatChipT5.label>install: berserker chip T5</Install_Grechka_CombatChipT5.label>
+  <Install_Grechka_CombatChipT5.description>Install berserker chip T5. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_CombatChipT5.description>
+  <Install_Grechka_CombatChipT5.jobString>Installing an implant.</Install_Grechka_CombatChipT5.jobString>
+  <Remove_Grechka_CombatChipT5.label>remove: berserker chip T5</Remove_Grechka_CombatChipT5.label>
+  <Remove_Grechka_CombatChipT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_CombatChipT5.description>
+  <Remove_Grechka_CombatChipT5.jobString>Removing an implant.</Remove_Grechka_CombatChipT5.jobString>
+  <Install_Grechka_StabilityChipT4.label>install: iron mind chip T4</Install_Grechka_StabilityChipT4.label>
+  <Install_Grechka_StabilityChipT4.description>Install iron mind chip T4. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_StabilityChipT4.description>
+  <Install_Grechka_StabilityChipT4.jobString>Installing an implant.</Install_Grechka_StabilityChipT4.jobString>
+  <Remove_Grechka_StabilityChipT4.label>remove: iron mind chip T4</Remove_Grechka_StabilityChipT4.label>
+  <Remove_Grechka_StabilityChipT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_StabilityChipT4.description>
+  <Remove_Grechka_StabilityChipT4.jobString>Removing an implant.</Remove_Grechka_StabilityChipT4.jobString>
+  <Install_Grechka_StabilityChipT5.label>install: iron mind chip T5</Install_Grechka_StabilityChipT5.label>
+  <Install_Grechka_StabilityChipT5.description>Install iron mind chip T5. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_StabilityChipT5.description>
+  <Install_Grechka_StabilityChipT5.jobString>Installing an implant.</Install_Grechka_StabilityChipT5.jobString>
+  <Remove_Grechka_StabilityChipT5.label>remove: iron mind chip T5</Remove_Grechka_StabilityChipT5.label>
+  <Remove_Grechka_StabilityChipT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_StabilityChipT5.description>
+  <Remove_Grechka_StabilityChipT5.jobString>Removing an implant.</Remove_Grechka_StabilityChipT5.jobString>
+  <Install_Grechka_CraftChipT4.label>install: artisan chip T4</Install_Grechka_CraftChipT4.label>
+  <Install_Grechka_CraftChipT4.description>Install artisan chip T4. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_CraftChipT4.description>
+  <Install_Grechka_CraftChipT4.jobString>Installing an implant.</Install_Grechka_CraftChipT4.jobString>
+  <Remove_Grechka_CraftChipT4.label>remove: artisan chip T4</Remove_Grechka_CraftChipT4.label>
+  <Remove_Grechka_CraftChipT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_CraftChipT4.description>
+  <Remove_Grechka_CraftChipT4.jobString>Removing an implant.</Remove_Grechka_CraftChipT4.jobString>
+  <Install_Grechka_CraftChipT5.label>install: artisan chip T5</Install_Grechka_CraftChipT5.label>
+  <Install_Grechka_CraftChipT5.description>Install artisan chip T5. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_CraftChipT5.description>
+  <Install_Grechka_CraftChipT5.jobString>Installing an implant.</Install_Grechka_CraftChipT5.jobString>
+  <Remove_Grechka_CraftChipT5.label>remove: artisan chip T5</Remove_Grechka_CraftChipT5.label>
+  <Remove_Grechka_CraftChipT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_CraftChipT5.description>
+  <Remove_Grechka_CraftChipT5.jobString>Removing an implant.</Remove_Grechka_CraftChipT5.jobString>
+  <Install_Grechka_MovementChipT4.label>install: pathfinder chip T4</Install_Grechka_MovementChipT4.label>
+  <Install_Grechka_MovementChipT4.description>Install pathfinder chip T4. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MovementChipT4.description>
+  <Install_Grechka_MovementChipT4.jobString>Installing an implant.</Install_Grechka_MovementChipT4.jobString>
+  <Remove_Grechka_MovementChipT4.label>remove: pathfinder chip T4</Remove_Grechka_MovementChipT4.label>
+  <Remove_Grechka_MovementChipT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MovementChipT4.description>
+  <Remove_Grechka_MovementChipT4.jobString>Removing an implant.</Remove_Grechka_MovementChipT4.jobString>
+  <Install_Grechka_MovementChipT5.label>install: pathfinder chip T5</Install_Grechka_MovementChipT5.label>
+  <Install_Grechka_MovementChipT5.description>Install pathfinder chip T5. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MovementChipT5.description>
+  <Install_Grechka_MovementChipT5.jobString>Installing an implant.</Install_Grechka_MovementChipT5.jobString>
+  <Remove_Grechka_MovementChipT5.label>remove: pathfinder chip T5</Remove_Grechka_MovementChipT5.label>
+  <Remove_Grechka_MovementChipT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MovementChipT5.description>
+  <Remove_Grechka_MovementChipT5.jobString>Removing an implant.</Remove_Grechka_MovementChipT5.jobString>
+  <Install_Grechka_TonicChipT4.label>install: vigor chip T4</Install_Grechka_TonicChipT4.label>
+  <Install_Grechka_TonicChipT4.description>Install vigor chip T4. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_TonicChipT4.description>
+  <Install_Grechka_TonicChipT4.jobString>Installing an implant.</Install_Grechka_TonicChipT4.jobString>
+  <Remove_Grechka_TonicChipT4.label>remove: vigor chip T4</Remove_Grechka_TonicChipT4.label>
+  <Remove_Grechka_TonicChipT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_TonicChipT4.description>
+  <Remove_Grechka_TonicChipT4.jobString>Removing an implant.</Remove_Grechka_TonicChipT4.jobString>
+  <Install_Grechka_TonicChipT5.label>install: vigor chip T5</Install_Grechka_TonicChipT5.label>
+  <Install_Grechka_TonicChipT5.description>Install vigor chip T5. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_TonicChipT5.description>
+  <Install_Grechka_TonicChipT5.jobString>Installing an implant.</Install_Grechka_TonicChipT5.jobString>
+  <Remove_Grechka_TonicChipT5.label>remove: vigor chip T5</Remove_Grechka_TonicChipT5.label>
+  <Remove_Grechka_TonicChipT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_TonicChipT5.description>
+  <Remove_Grechka_TonicChipT5.jobString>Removing an implant.</Remove_Grechka_TonicChipT5.jobString>
+  <Install_Grechka_BrainChipT5.label>install: grechka mind chip T5</Install_Grechka_BrainChipT5.label>
+  <Install_Grechka_BrainChipT5.description>Install grechka mind chip T5. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_BrainChipT5.description>
+  <Install_Grechka_BrainChipT5.jobString>Installing an implant.</Install_Grechka_BrainChipT5.jobString>
+  <Remove_Grechka_BrainChipT5.label>remove: grechka mind chip T5</Remove_Grechka_BrainChipT5.label>
+  <Remove_Grechka_BrainChipT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_BrainChipT5.description>
+  <Remove_Grechka_BrainChipT5.jobString>Removing an implant.</Remove_Grechka_BrainChipT5.jobString>
+  <Install_Grechka_MythicEyeT4.label>install: mythical bionics: eye</Install_Grechka_MythicEyeT4.label>
+  <Install_Grechka_MythicEyeT4.description>Install mythical bionics: eye. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicEyeT4.description>
+  <Install_Grechka_MythicEyeT4.jobString>Installing an implant.</Install_Grechka_MythicEyeT4.jobString>
+  <Remove_Grechka_MythicEyeT4.label>remove: mythical bionics: eye</Remove_Grechka_MythicEyeT4.label>
+  <Remove_Grechka_MythicEyeT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicEyeT4.description>
+  <Remove_Grechka_MythicEyeT4.jobString>Removing an implant.</Remove_Grechka_MythicEyeT4.jobString>
+  <Install_Grechka_MythicEarT4.label>install: mythical bionics: ear</Install_Grechka_MythicEarT4.label>
+  <Install_Grechka_MythicEarT4.description>Install mythical bionics: ear. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicEarT4.description>
+  <Install_Grechka_MythicEarT4.jobString>Installing an implant.</Install_Grechka_MythicEarT4.jobString>
+  <Remove_Grechka_MythicEarT4.label>remove: mythical bionics: ear</Remove_Grechka_MythicEarT4.label>
+  <Remove_Grechka_MythicEarT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicEarT4.description>
+  <Remove_Grechka_MythicEarT4.jobString>Removing an implant.</Remove_Grechka_MythicEarT4.jobString>
+  <Install_Grechka_MythicHeartT4.label>install: mythical bionics: heart</Install_Grechka_MythicHeartT4.label>
+  <Install_Grechka_MythicHeartT4.description>Install mythical bionics: heart. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicHeartT4.description>
+  <Install_Grechka_MythicHeartT4.jobString>Installing an implant.</Install_Grechka_MythicHeartT4.jobString>
+  <Remove_Grechka_MythicHeartT4.label>remove: mythical bionics: heart</Remove_Grechka_MythicHeartT4.label>
+  <Remove_Grechka_MythicHeartT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicHeartT4.description>
+  <Remove_Grechka_MythicHeartT4.jobString>Removing an implant.</Remove_Grechka_MythicHeartT4.jobString>
+  <Install_Grechka_MythicLiverT4.label>install: mythical bionics: liver</Install_Grechka_MythicLiverT4.label>
+  <Install_Grechka_MythicLiverT4.description>Install mythical bionics: liver. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicLiverT4.description>
+  <Install_Grechka_MythicLiverT4.jobString>Installing an implant.</Install_Grechka_MythicLiverT4.jobString>
+  <Remove_Grechka_MythicLiverT4.label>remove: mythical bionics: liver</Remove_Grechka_MythicLiverT4.label>
+  <Remove_Grechka_MythicLiverT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicLiverT4.description>
+  <Remove_Grechka_MythicLiverT4.jobString>Removing an implant.</Remove_Grechka_MythicLiverT4.jobString>
+  <Install_Grechka_MythicStomachT4.label>install: mythical bionics: stomach</Install_Grechka_MythicStomachT4.label>
+  <Install_Grechka_MythicStomachT4.description>Install mythical bionics: stomach. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicStomachT4.description>
+  <Install_Grechka_MythicStomachT4.jobString>Installing an implant.</Install_Grechka_MythicStomachT4.jobString>
+  <Remove_Grechka_MythicStomachT4.label>remove: mythical bionics: stomach</Remove_Grechka_MythicStomachT4.label>
+  <Remove_Grechka_MythicStomachT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicStomachT4.description>
+  <Remove_Grechka_MythicStomachT4.jobString>Removing an implant.</Remove_Grechka_MythicStomachT4.jobString>
+  <Install_Grechka_MythicLungT4.label>install: mythical bionics: lung</Install_Grechka_MythicLungT4.label>
+  <Install_Grechka_MythicLungT4.description>Install mythical bionics: lung. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicLungT4.description>
+  <Install_Grechka_MythicLungT4.jobString>Installing an implant.</Install_Grechka_MythicLungT4.jobString>
+  <Remove_Grechka_MythicLungT4.label>remove: mythical bionics: lung</Remove_Grechka_MythicLungT4.label>
+  <Remove_Grechka_MythicLungT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicLungT4.description>
+  <Remove_Grechka_MythicLungT4.jobString>Removing an implant.</Remove_Grechka_MythicLungT4.jobString>
+  <Install_Grechka_MythicKidneyT4.label>install: mythical bionics: kidney</Install_Grechka_MythicKidneyT4.label>
+  <Install_Grechka_MythicKidneyT4.description>Install mythical bionics: kidney. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicKidneyT4.description>
+  <Install_Grechka_MythicKidneyT4.jobString>Installing an implant.</Install_Grechka_MythicKidneyT4.jobString>
+  <Remove_Grechka_MythicKidneyT4.label>remove: mythical bionics: kidney</Remove_Grechka_MythicKidneyT4.label>
+  <Remove_Grechka_MythicKidneyT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicKidneyT4.description>
+  <Remove_Grechka_MythicKidneyT4.jobString>Removing an implant.</Remove_Grechka_MythicKidneyT4.jobString>
+  <Install_Grechka_MythicArmT4.label>install: mythical bionics: arm</Install_Grechka_MythicArmT4.label>
+  <Install_Grechka_MythicArmT4.description>Install mythical bionics: arm. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicArmT4.description>
+  <Install_Grechka_MythicArmT4.jobString>Installing an implant.</Install_Grechka_MythicArmT4.jobString>
+  <Remove_Grechka_MythicArmT4.label>remove: mythical bionics: arm</Remove_Grechka_MythicArmT4.label>
+  <Remove_Grechka_MythicArmT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicArmT4.description>
+  <Remove_Grechka_MythicArmT4.jobString>Removing an implant.</Remove_Grechka_MythicArmT4.jobString>
+  <Install_Grechka_MythicHandT4.label>install: mythical bionics: hand</Install_Grechka_MythicHandT4.label>
+  <Install_Grechka_MythicHandT4.description>Install mythical bionics: hand. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicHandT4.description>
+  <Install_Grechka_MythicHandT4.jobString>Installing an implant.</Install_Grechka_MythicHandT4.jobString>
+  <Remove_Grechka_MythicHandT4.label>remove: mythical bionics: hand</Remove_Grechka_MythicHandT4.label>
+  <Remove_Grechka_MythicHandT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicHandT4.description>
+  <Remove_Grechka_MythicHandT4.jobString>Removing an implant.</Remove_Grechka_MythicHandT4.jobString>
+  <Install_Grechka_MythicFingerT4.label>install: mythical bionics: finger</Install_Grechka_MythicFingerT4.label>
+  <Install_Grechka_MythicFingerT4.description>Install mythical bionics: finger. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicFingerT4.description>
+  <Install_Grechka_MythicFingerT4.jobString>Installing an implant.</Install_Grechka_MythicFingerT4.jobString>
+  <Remove_Grechka_MythicFingerT4.label>remove: mythical bionics: finger</Remove_Grechka_MythicFingerT4.label>
+  <Remove_Grechka_MythicFingerT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicFingerT4.description>
+  <Remove_Grechka_MythicFingerT4.jobString>Removing an implant.</Remove_Grechka_MythicFingerT4.jobString>
+  <Install_Grechka_MythicLegT4.label>install: mythical bionics: leg</Install_Grechka_MythicLegT4.label>
+  <Install_Grechka_MythicLegT4.description>Install mythical bionics: leg. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicLegT4.description>
+  <Install_Grechka_MythicLegT4.jobString>Installing an implant.</Install_Grechka_MythicLegT4.jobString>
+  <Remove_Grechka_MythicLegT4.label>remove: mythical bionics: leg</Remove_Grechka_MythicLegT4.label>
+  <Remove_Grechka_MythicLegT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicLegT4.description>
+  <Remove_Grechka_MythicLegT4.jobString>Removing an implant.</Remove_Grechka_MythicLegT4.jobString>
+  <Install_Grechka_MythicFootT4.label>install: mythical bionics: foot</Install_Grechka_MythicFootT4.label>
+  <Install_Grechka_MythicFootT4.description>Install mythical bionics: foot. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicFootT4.description>
+  <Install_Grechka_MythicFootT4.jobString>Installing an implant.</Install_Grechka_MythicFootT4.jobString>
+  <Remove_Grechka_MythicFootT4.label>remove: mythical bionics: foot</Remove_Grechka_MythicFootT4.label>
+  <Remove_Grechka_MythicFootT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicFootT4.description>
+  <Remove_Grechka_MythicFootT4.jobString>Removing an implant.</Remove_Grechka_MythicFootT4.jobString>
+  <Install_Grechka_MythicToeT4.label>install: mythical bionics: toe</Install_Grechka_MythicToeT4.label>
+  <Install_Grechka_MythicToeT4.description>Install mythical bionics: toe. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicToeT4.description>
+  <Install_Grechka_MythicToeT4.jobString>Installing an implant.</Install_Grechka_MythicToeT4.jobString>
+  <Remove_Grechka_MythicToeT4.label>remove: mythical bionics: toe</Remove_Grechka_MythicToeT4.label>
+  <Remove_Grechka_MythicToeT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicToeT4.description>
+  <Remove_Grechka_MythicToeT4.jobString>Removing an implant.</Remove_Grechka_MythicToeT4.jobString>
+  <Install_Grechka_MythicShoulderT4.label>install: mythical bionics: shoulder</Install_Grechka_MythicShoulderT4.label>
+  <Install_Grechka_MythicShoulderT4.description>Install mythical bionics: shoulder. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicShoulderT4.description>
+  <Install_Grechka_MythicShoulderT4.jobString>Installing an implant.</Install_Grechka_MythicShoulderT4.jobString>
+  <Remove_Grechka_MythicShoulderT4.label>remove: mythical bionics: shoulder</Remove_Grechka_MythicShoulderT4.label>
+  <Remove_Grechka_MythicShoulderT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicShoulderT4.description>
+  <Remove_Grechka_MythicShoulderT4.jobString>Removing an implant.</Remove_Grechka_MythicShoulderT4.jobString>
+  <Install_Grechka_MythicClavicleT4.label>install: mythical bionics: clavicle</Install_Grechka_MythicClavicleT4.label>
+  <Install_Grechka_MythicClavicleT4.description>Install mythical bionics: clavicle. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicClavicleT4.description>
+  <Install_Grechka_MythicClavicleT4.jobString>Installing an implant.</Install_Grechka_MythicClavicleT4.jobString>
+  <Remove_Grechka_MythicClavicleT4.label>remove: mythical bionics: clavicle</Remove_Grechka_MythicClavicleT4.label>
+  <Remove_Grechka_MythicClavicleT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicClavicleT4.description>
+  <Remove_Grechka_MythicClavicleT4.jobString>Removing an implant.</Remove_Grechka_MythicClavicleT4.jobString>
+  <Install_Grechka_MythicHumerusT4.label>install: mythical bionics: humerus</Install_Grechka_MythicHumerusT4.label>
+  <Install_Grechka_MythicHumerusT4.description>Install mythical bionics: humerus. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicHumerusT4.description>
+  <Install_Grechka_MythicHumerusT4.jobString>Installing an implant.</Install_Grechka_MythicHumerusT4.jobString>
+  <Remove_Grechka_MythicHumerusT4.label>remove: mythical bionics: humerus</Remove_Grechka_MythicHumerusT4.label>
+  <Remove_Grechka_MythicHumerusT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicHumerusT4.description>
+  <Remove_Grechka_MythicHumerusT4.jobString>Removing an implant.</Remove_Grechka_MythicHumerusT4.jobString>
+  <Install_Grechka_MythicRadiusT4.label>install: mythical bionics: radius</Install_Grechka_MythicRadiusT4.label>
+  <Install_Grechka_MythicRadiusT4.description>Install mythical bionics: radius. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicRadiusT4.description>
+  <Install_Grechka_MythicRadiusT4.jobString>Installing an implant.</Install_Grechka_MythicRadiusT4.jobString>
+  <Remove_Grechka_MythicRadiusT4.label>remove: mythical bionics: radius</Remove_Grechka_MythicRadiusT4.label>
+  <Remove_Grechka_MythicRadiusT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicRadiusT4.description>
+  <Remove_Grechka_MythicRadiusT4.jobString>Removing an implant.</Remove_Grechka_MythicRadiusT4.jobString>
+  <Install_Grechka_MythicFemurT4.label>install: mythical bionics: femur</Install_Grechka_MythicFemurT4.label>
+  <Install_Grechka_MythicFemurT4.description>Install mythical bionics: femur. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicFemurT4.description>
+  <Install_Grechka_MythicFemurT4.jobString>Installing an implant.</Install_Grechka_MythicFemurT4.jobString>
+  <Remove_Grechka_MythicFemurT4.label>remove: mythical bionics: femur</Remove_Grechka_MythicFemurT4.label>
+  <Remove_Grechka_MythicFemurT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicFemurT4.description>
+  <Remove_Grechka_MythicFemurT4.jobString>Removing an implant.</Remove_Grechka_MythicFemurT4.jobString>
+  <Install_Grechka_MythicTibiaT4.label>install: mythical bionics: tibia</Install_Grechka_MythicTibiaT4.label>
+  <Install_Grechka_MythicTibiaT4.description>Install mythical bionics: tibia. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicTibiaT4.description>
+  <Install_Grechka_MythicTibiaT4.jobString>Installing an implant.</Install_Grechka_MythicTibiaT4.jobString>
+  <Remove_Grechka_MythicTibiaT4.label>remove: mythical bionics: tibia</Remove_Grechka_MythicTibiaT4.label>
+  <Remove_Grechka_MythicTibiaT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicTibiaT4.description>
+  <Remove_Grechka_MythicTibiaT4.jobString>Removing an implant.</Remove_Grechka_MythicTibiaT4.jobString>
+  <Install_Grechka_MythicSpineT4.label>install: mythical bionics: spine</Install_Grechka_MythicSpineT4.label>
+  <Install_Grechka_MythicSpineT4.description>Install mythical bionics: spine. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicSpineT4.description>
+  <Install_Grechka_MythicSpineT4.jobString>Installing an implant.</Install_Grechka_MythicSpineT4.jobString>
+  <Remove_Grechka_MythicSpineT4.label>remove: mythical bionics: spine</Remove_Grechka_MythicSpineT4.label>
+  <Remove_Grechka_MythicSpineT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicSpineT4.description>
+  <Remove_Grechka_MythicSpineT4.jobString>Removing an implant.</Remove_Grechka_MythicSpineT4.jobString>
+  <Install_Grechka_MythicNoseT4.label>install: mythical bionics: nose</Install_Grechka_MythicNoseT4.label>
+  <Install_Grechka_MythicNoseT4.description>Install mythical bionics: nose. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicNoseT4.description>
+  <Install_Grechka_MythicNoseT4.jobString>Installing an implant.</Install_Grechka_MythicNoseT4.jobString>
+  <Remove_Grechka_MythicNoseT4.label>remove: mythical bionics: nose</Remove_Grechka_MythicNoseT4.label>
+  <Remove_Grechka_MythicNoseT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicNoseT4.description>
+  <Remove_Grechka_MythicNoseT4.jobString>Removing an implant.</Remove_Grechka_MythicNoseT4.jobString>
+  <Install_Grechka_MythicJawT4.label>install: mythical bionics: jaw</Install_Grechka_MythicJawT4.label>
+  <Install_Grechka_MythicJawT4.description>Install mythical bionics: jaw. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicJawT4.description>
+  <Install_Grechka_MythicJawT4.jobString>Installing an implant.</Install_Grechka_MythicJawT4.jobString>
+  <Remove_Grechka_MythicJawT4.label>remove: mythical bionics: jaw</Remove_Grechka_MythicJawT4.label>
+  <Remove_Grechka_MythicJawT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicJawT4.description>
+  <Remove_Grechka_MythicJawT4.jobString>Removing an implant.</Remove_Grechka_MythicJawT4.jobString>
+  <Install_Grechka_MythicTongueT4.label>install: mythical bionics: tongue</Install_Grechka_MythicTongueT4.label>
+  <Install_Grechka_MythicTongueT4.description>Install mythical bionics: tongue. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicTongueT4.description>
+  <Install_Grechka_MythicTongueT4.jobString>Installing an implant.</Install_Grechka_MythicTongueT4.jobString>
+  <Remove_Grechka_MythicTongueT4.label>remove: mythical bionics: tongue</Remove_Grechka_MythicTongueT4.label>
+  <Remove_Grechka_MythicTongueT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicTongueT4.description>
+  <Remove_Grechka_MythicTongueT4.jobString>Removing an implant.</Remove_Grechka_MythicTongueT4.jobString>
+  <Install_Grechka_MythicRibcageT4.label>install: mythical bionics: ribcage</Install_Grechka_MythicRibcageT4.label>
+  <Install_Grechka_MythicRibcageT4.description>Install mythical bionics: ribcage. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicRibcageT4.description>
+  <Install_Grechka_MythicRibcageT4.jobString>Installing an implant.</Install_Grechka_MythicRibcageT4.jobString>
+  <Remove_Grechka_MythicRibcageT4.label>remove: mythical bionics: ribcage</Remove_Grechka_MythicRibcageT4.label>
+  <Remove_Grechka_MythicRibcageT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicRibcageT4.description>
+  <Remove_Grechka_MythicRibcageT4.jobString>Removing an implant.</Remove_Grechka_MythicRibcageT4.jobString>
+  <Install_Grechka_MythicSternumT4.label>install: mythical bionics: sternum</Install_Grechka_MythicSternumT4.label>
+  <Install_Grechka_MythicSternumT4.description>Install mythical bionics: sternum. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicSternumT4.description>
+  <Install_Grechka_MythicSternumT4.jobString>Installing an implant.</Install_Grechka_MythicSternumT4.jobString>
+  <Remove_Grechka_MythicSternumT4.label>remove: mythical bionics: sternum</Remove_Grechka_MythicSternumT4.label>
+  <Remove_Grechka_MythicSternumT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicSternumT4.description>
+  <Remove_Grechka_MythicSternumT4.jobString>Removing an implant.</Remove_Grechka_MythicSternumT4.jobString>
+  <Install_Grechka_MythicPelvisT4.label>install: mythical bionics: pelvis</Install_Grechka_MythicPelvisT4.label>
+  <Install_Grechka_MythicPelvisT4.description>Install mythical bionics: pelvis. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicPelvisT4.description>
+  <Install_Grechka_MythicPelvisT4.jobString>Installing an implant.</Install_Grechka_MythicPelvisT4.jobString>
+  <Remove_Grechka_MythicPelvisT4.label>remove: mythical bionics: pelvis</Remove_Grechka_MythicPelvisT4.label>
+  <Remove_Grechka_MythicPelvisT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicPelvisT4.description>
+  <Remove_Grechka_MythicPelvisT4.jobString>Removing an implant.</Remove_Grechka_MythicPelvisT4.jobString>
+  <Install_Grechka_MythicSkullT4.label>install: mythical bionics: skull</Install_Grechka_MythicSkullT4.label>
+  <Install_Grechka_MythicSkullT4.description>Install mythical bionics: skull. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicSkullT4.description>
+  <Install_Grechka_MythicSkullT4.jobString>Installing an implant.</Install_Grechka_MythicSkullT4.jobString>
+  <Remove_Grechka_MythicSkullT4.label>remove: mythical bionics: skull</Remove_Grechka_MythicSkullT4.label>
+  <Remove_Grechka_MythicSkullT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicSkullT4.description>
+  <Remove_Grechka_MythicSkullT4.jobString>Removing an implant.</Remove_Grechka_MythicSkullT4.jobString>
+  <Install_Grechka_MythicTorsoT4.label>install: mythical bionics: torso</Install_Grechka_MythicTorsoT4.label>
+  <Install_Grechka_MythicTorsoT4.description>Install mythical bionics: torso. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicTorsoT4.description>
+  <Install_Grechka_MythicTorsoT4.jobString>Installing an implant.</Install_Grechka_MythicTorsoT4.jobString>
+  <Remove_Grechka_MythicTorsoT4.label>remove: mythical bionics: torso</Remove_Grechka_MythicTorsoT4.label>
+  <Remove_Grechka_MythicTorsoT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicTorsoT4.description>
+  <Remove_Grechka_MythicTorsoT4.jobString>Removing an implant.</Remove_Grechka_MythicTorsoT4.jobString>
+  <Install_Grechka_MythicNeckT4.label>install: mythical bionics: neck</Install_Grechka_MythicNeckT4.label>
+  <Install_Grechka_MythicNeckT4.description>Install mythical bionics: neck. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicNeckT4.description>
+  <Install_Grechka_MythicNeckT4.jobString>Installing an implant.</Install_Grechka_MythicNeckT4.jobString>
+  <Remove_Grechka_MythicNeckT4.label>remove: mythical bionics: neck</Remove_Grechka_MythicNeckT4.label>
+  <Remove_Grechka_MythicNeckT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicNeckT4.description>
+  <Remove_Grechka_MythicNeckT4.jobString>Removing an implant.</Remove_Grechka_MythicNeckT4.jobString>
+  <Install_Grechka_MythicHeadT4.label>install: mythical bionics: head</Install_Grechka_MythicHeadT4.label>
+  <Install_Grechka_MythicHeadT4.description>Install mythical bionics: head. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicHeadT4.description>
+  <Install_Grechka_MythicHeadT4.jobString>Installing an implant.</Install_Grechka_MythicHeadT4.jobString>
+  <Remove_Grechka_MythicHeadT4.label>remove: mythical bionics: head</Remove_Grechka_MythicHeadT4.label>
+  <Remove_Grechka_MythicHeadT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicHeadT4.description>
+  <Remove_Grechka_MythicHeadT4.jobString>Removing an implant.</Remove_Grechka_MythicHeadT4.jobString>
+  <Install_Grechka_MythicWaistT4.label>install: mythical bionics: lower back</Install_Grechka_MythicWaistT4.label>
+  <Install_Grechka_MythicWaistT4.description>Install mythical bionics: lower back. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicWaistT4.description>
+  <Install_Grechka_MythicWaistT4.jobString>Installing an implant.</Install_Grechka_MythicWaistT4.jobString>
+  <Remove_Grechka_MythicWaistT4.label>remove: mythical bionics: lower back</Remove_Grechka_MythicWaistT4.label>
+  <Remove_Grechka_MythicWaistT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicWaistT4.description>
+  <Remove_Grechka_MythicWaistT4.jobString>Removing an implant.</Remove_Grechka_MythicWaistT4.jobString>
+  <Install_Grechka_MythicBrainT4.label>install: mythical bionics: brain</Install_Grechka_MythicBrainT4.label>
+  <Install_Grechka_MythicBrainT4.description>Install mythical bionics: brain. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_MythicBrainT4.description>
+  <Install_Grechka_MythicBrainT4.jobString>Installing an implant.</Install_Grechka_MythicBrainT4.jobString>
+  <Remove_Grechka_MythicBrainT4.label>remove: mythical bionics: brain</Remove_Grechka_MythicBrainT4.label>
+  <Remove_Grechka_MythicBrainT4.description>Remove the implant and return it as a reusable item.</Remove_Grechka_MythicBrainT4.description>
+  <Remove_Grechka_MythicBrainT4.jobString>Removing an implant.</Remove_Grechka_MythicBrainT4.jobString>
+  <Install_Grechka_GrechkaEyeT5.label>install: grechka bionics: eye</Install_Grechka_GrechkaEyeT5.label>
+  <Install_Grechka_GrechkaEyeT5.description>Install grechka bionics: eye. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaEyeT5.description>
+  <Install_Grechka_GrechkaEyeT5.jobString>Installing an implant.</Install_Grechka_GrechkaEyeT5.jobString>
+  <Remove_Grechka_GrechkaEyeT5.label>remove: grechka bionics: eye</Remove_Grechka_GrechkaEyeT5.label>
+  <Remove_Grechka_GrechkaEyeT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaEyeT5.description>
+  <Remove_Grechka_GrechkaEyeT5.jobString>Removing an implant.</Remove_Grechka_GrechkaEyeT5.jobString>
+  <Install_Grechka_GrechkaEarT5.label>install: grechka bionics: ear</Install_Grechka_GrechkaEarT5.label>
+  <Install_Grechka_GrechkaEarT5.description>Install grechka bionics: ear. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaEarT5.description>
+  <Install_Grechka_GrechkaEarT5.jobString>Installing an implant.</Install_Grechka_GrechkaEarT5.jobString>
+  <Remove_Grechka_GrechkaEarT5.label>remove: grechka bionics: ear</Remove_Grechka_GrechkaEarT5.label>
+  <Remove_Grechka_GrechkaEarT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaEarT5.description>
+  <Remove_Grechka_GrechkaEarT5.jobString>Removing an implant.</Remove_Grechka_GrechkaEarT5.jobString>
+  <Install_Grechka_GrechkaHeartT5.label>install: grechka bionics: heart</Install_Grechka_GrechkaHeartT5.label>
+  <Install_Grechka_GrechkaHeartT5.description>Install grechka bionics: heart. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaHeartT5.description>
+  <Install_Grechka_GrechkaHeartT5.jobString>Installing an implant.</Install_Grechka_GrechkaHeartT5.jobString>
+  <Remove_Grechka_GrechkaHeartT5.label>remove: grechka bionics: heart</Remove_Grechka_GrechkaHeartT5.label>
+  <Remove_Grechka_GrechkaHeartT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaHeartT5.description>
+  <Remove_Grechka_GrechkaHeartT5.jobString>Removing an implant.</Remove_Grechka_GrechkaHeartT5.jobString>
+  <Install_Grechka_GrechkaLiverT5.label>install: grechka bionics: liver</Install_Grechka_GrechkaLiverT5.label>
+  <Install_Grechka_GrechkaLiverT5.description>Install grechka bionics: liver. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaLiverT5.description>
+  <Install_Grechka_GrechkaLiverT5.jobString>Installing an implant.</Install_Grechka_GrechkaLiverT5.jobString>
+  <Remove_Grechka_GrechkaLiverT5.label>remove: grechka bionics: liver</Remove_Grechka_GrechkaLiverT5.label>
+  <Remove_Grechka_GrechkaLiverT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaLiverT5.description>
+  <Remove_Grechka_GrechkaLiverT5.jobString>Removing an implant.</Remove_Grechka_GrechkaLiverT5.jobString>
+  <Install_Grechka_GrechkaStomachT5.label>install: grechka bionics: stomach</Install_Grechka_GrechkaStomachT5.label>
+  <Install_Grechka_GrechkaStomachT5.description>Install grechka bionics: stomach. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaStomachT5.description>
+  <Install_Grechka_GrechkaStomachT5.jobString>Installing an implant.</Install_Grechka_GrechkaStomachT5.jobString>
+  <Remove_Grechka_GrechkaStomachT5.label>remove: grechka bionics: stomach</Remove_Grechka_GrechkaStomachT5.label>
+  <Remove_Grechka_GrechkaStomachT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaStomachT5.description>
+  <Remove_Grechka_GrechkaStomachT5.jobString>Removing an implant.</Remove_Grechka_GrechkaStomachT5.jobString>
+  <Install_Grechka_GrechkaLungT5.label>install: grechka bionics: lung</Install_Grechka_GrechkaLungT5.label>
+  <Install_Grechka_GrechkaLungT5.description>Install grechka bionics: lung. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaLungT5.description>
+  <Install_Grechka_GrechkaLungT5.jobString>Installing an implant.</Install_Grechka_GrechkaLungT5.jobString>
+  <Remove_Grechka_GrechkaLungT5.label>remove: grechka bionics: lung</Remove_Grechka_GrechkaLungT5.label>
+  <Remove_Grechka_GrechkaLungT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaLungT5.description>
+  <Remove_Grechka_GrechkaLungT5.jobString>Removing an implant.</Remove_Grechka_GrechkaLungT5.jobString>
+  <Install_Grechka_GrechkaKidneyT5.label>install: grechka bionics: kidney</Install_Grechka_GrechkaKidneyT5.label>
+  <Install_Grechka_GrechkaKidneyT5.description>Install grechka bionics: kidney. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaKidneyT5.description>
+  <Install_Grechka_GrechkaKidneyT5.jobString>Installing an implant.</Install_Grechka_GrechkaKidneyT5.jobString>
+  <Remove_Grechka_GrechkaKidneyT5.label>remove: grechka bionics: kidney</Remove_Grechka_GrechkaKidneyT5.label>
+  <Remove_Grechka_GrechkaKidneyT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaKidneyT5.description>
+  <Remove_Grechka_GrechkaKidneyT5.jobString>Removing an implant.</Remove_Grechka_GrechkaKidneyT5.jobString>
+  <Install_Grechka_GrechkaArmT5.label>install: grechka bionics: arm</Install_Grechka_GrechkaArmT5.label>
+  <Install_Grechka_GrechkaArmT5.description>Install grechka bionics: arm. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaArmT5.description>
+  <Install_Grechka_GrechkaArmT5.jobString>Installing an implant.</Install_Grechka_GrechkaArmT5.jobString>
+  <Remove_Grechka_GrechkaArmT5.label>remove: grechka bionics: arm</Remove_Grechka_GrechkaArmT5.label>
+  <Remove_Grechka_GrechkaArmT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaArmT5.description>
+  <Remove_Grechka_GrechkaArmT5.jobString>Removing an implant.</Remove_Grechka_GrechkaArmT5.jobString>
+  <Install_Grechka_GrechkaHandT5.label>install: grechka bionics: hand</Install_Grechka_GrechkaHandT5.label>
+  <Install_Grechka_GrechkaHandT5.description>Install grechka bionics: hand. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaHandT5.description>
+  <Install_Grechka_GrechkaHandT5.jobString>Installing an implant.</Install_Grechka_GrechkaHandT5.jobString>
+  <Remove_Grechka_GrechkaHandT5.label>remove: grechka bionics: hand</Remove_Grechka_GrechkaHandT5.label>
+  <Remove_Grechka_GrechkaHandT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaHandT5.description>
+  <Remove_Grechka_GrechkaHandT5.jobString>Removing an implant.</Remove_Grechka_GrechkaHandT5.jobString>
+  <Install_Grechka_GrechkaFingerT5.label>install: grechka bionics: finger</Install_Grechka_GrechkaFingerT5.label>
+  <Install_Grechka_GrechkaFingerT5.description>Install grechka bionics: finger. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaFingerT5.description>
+  <Install_Grechka_GrechkaFingerT5.jobString>Installing an implant.</Install_Grechka_GrechkaFingerT5.jobString>
+  <Remove_Grechka_GrechkaFingerT5.label>remove: grechka bionics: finger</Remove_Grechka_GrechkaFingerT5.label>
+  <Remove_Grechka_GrechkaFingerT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaFingerT5.description>
+  <Remove_Grechka_GrechkaFingerT5.jobString>Removing an implant.</Remove_Grechka_GrechkaFingerT5.jobString>
+  <Install_Grechka_GrechkaLegT5.label>install: grechka bionics: leg</Install_Grechka_GrechkaLegT5.label>
+  <Install_Grechka_GrechkaLegT5.description>Install grechka bionics: leg. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaLegT5.description>
+  <Install_Grechka_GrechkaLegT5.jobString>Installing an implant.</Install_Grechka_GrechkaLegT5.jobString>
+  <Remove_Grechka_GrechkaLegT5.label>remove: grechka bionics: leg</Remove_Grechka_GrechkaLegT5.label>
+  <Remove_Grechka_GrechkaLegT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaLegT5.description>
+  <Remove_Grechka_GrechkaLegT5.jobString>Removing an implant.</Remove_Grechka_GrechkaLegT5.jobString>
+  <Install_Grechka_GrechkaFootT5.label>install: grechka bionics: foot</Install_Grechka_GrechkaFootT5.label>
+  <Install_Grechka_GrechkaFootT5.description>Install grechka bionics: foot. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaFootT5.description>
+  <Install_Grechka_GrechkaFootT5.jobString>Installing an implant.</Install_Grechka_GrechkaFootT5.jobString>
+  <Remove_Grechka_GrechkaFootT5.label>remove: grechka bionics: foot</Remove_Grechka_GrechkaFootT5.label>
+  <Remove_Grechka_GrechkaFootT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaFootT5.description>
+  <Remove_Grechka_GrechkaFootT5.jobString>Removing an implant.</Remove_Grechka_GrechkaFootT5.jobString>
+  <Install_Grechka_GrechkaToeT5.label>install: grechka bionics: toe</Install_Grechka_GrechkaToeT5.label>
+  <Install_Grechka_GrechkaToeT5.description>Install grechka bionics: toe. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaToeT5.description>
+  <Install_Grechka_GrechkaToeT5.jobString>Installing an implant.</Install_Grechka_GrechkaToeT5.jobString>
+  <Remove_Grechka_GrechkaToeT5.label>remove: grechka bionics: toe</Remove_Grechka_GrechkaToeT5.label>
+  <Remove_Grechka_GrechkaToeT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaToeT5.description>
+  <Remove_Grechka_GrechkaToeT5.jobString>Removing an implant.</Remove_Grechka_GrechkaToeT5.jobString>
+  <Install_Grechka_GrechkaShoulderT5.label>install: grechka bionics: shoulder</Install_Grechka_GrechkaShoulderT5.label>
+  <Install_Grechka_GrechkaShoulderT5.description>Install grechka bionics: shoulder. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaShoulderT5.description>
+  <Install_Grechka_GrechkaShoulderT5.jobString>Installing an implant.</Install_Grechka_GrechkaShoulderT5.jobString>
+  <Remove_Grechka_GrechkaShoulderT5.label>remove: grechka bionics: shoulder</Remove_Grechka_GrechkaShoulderT5.label>
+  <Remove_Grechka_GrechkaShoulderT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaShoulderT5.description>
+  <Remove_Grechka_GrechkaShoulderT5.jobString>Removing an implant.</Remove_Grechka_GrechkaShoulderT5.jobString>
+  <Install_Grechka_GrechkaClavicleT5.label>install: grechka bionics: clavicle</Install_Grechka_GrechkaClavicleT5.label>
+  <Install_Grechka_GrechkaClavicleT5.description>Install grechka bionics: clavicle. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaClavicleT5.description>
+  <Install_Grechka_GrechkaClavicleT5.jobString>Installing an implant.</Install_Grechka_GrechkaClavicleT5.jobString>
+  <Remove_Grechka_GrechkaClavicleT5.label>remove: grechka bionics: clavicle</Remove_Grechka_GrechkaClavicleT5.label>
+  <Remove_Grechka_GrechkaClavicleT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaClavicleT5.description>
+  <Remove_Grechka_GrechkaClavicleT5.jobString>Removing an implant.</Remove_Grechka_GrechkaClavicleT5.jobString>
+  <Install_Grechka_GrechkaHumerusT5.label>install: grechka bionics: humerus</Install_Grechka_GrechkaHumerusT5.label>
+  <Install_Grechka_GrechkaHumerusT5.description>Install grechka bionics: humerus. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaHumerusT5.description>
+  <Install_Grechka_GrechkaHumerusT5.jobString>Installing an implant.</Install_Grechka_GrechkaHumerusT5.jobString>
+  <Remove_Grechka_GrechkaHumerusT5.label>remove: grechka bionics: humerus</Remove_Grechka_GrechkaHumerusT5.label>
+  <Remove_Grechka_GrechkaHumerusT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaHumerusT5.description>
+  <Remove_Grechka_GrechkaHumerusT5.jobString>Removing an implant.</Remove_Grechka_GrechkaHumerusT5.jobString>
+  <Install_Grechka_GrechkaRadiusT5.label>install: grechka bionics: radius</Install_Grechka_GrechkaRadiusT5.label>
+  <Install_Grechka_GrechkaRadiusT5.description>Install grechka bionics: radius. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaRadiusT5.description>
+  <Install_Grechka_GrechkaRadiusT5.jobString>Installing an implant.</Install_Grechka_GrechkaRadiusT5.jobString>
+  <Remove_Grechka_GrechkaRadiusT5.label>remove: grechka bionics: radius</Remove_Grechka_GrechkaRadiusT5.label>
+  <Remove_Grechka_GrechkaRadiusT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaRadiusT5.description>
+  <Remove_Grechka_GrechkaRadiusT5.jobString>Removing an implant.</Remove_Grechka_GrechkaRadiusT5.jobString>
+  <Install_Grechka_GrechkaFemurT5.label>install: grechka bionics: femur</Install_Grechka_GrechkaFemurT5.label>
+  <Install_Grechka_GrechkaFemurT5.description>Install grechka bionics: femur. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaFemurT5.description>
+  <Install_Grechka_GrechkaFemurT5.jobString>Installing an implant.</Install_Grechka_GrechkaFemurT5.jobString>
+  <Remove_Grechka_GrechkaFemurT5.label>remove: grechka bionics: femur</Remove_Grechka_GrechkaFemurT5.label>
+  <Remove_Grechka_GrechkaFemurT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaFemurT5.description>
+  <Remove_Grechka_GrechkaFemurT5.jobString>Removing an implant.</Remove_Grechka_GrechkaFemurT5.jobString>
+  <Install_Grechka_GrechkaTibiaT5.label>install: grechka bionics: tibia</Install_Grechka_GrechkaTibiaT5.label>
+  <Install_Grechka_GrechkaTibiaT5.description>Install grechka bionics: tibia. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaTibiaT5.description>
+  <Install_Grechka_GrechkaTibiaT5.jobString>Installing an implant.</Install_Grechka_GrechkaTibiaT5.jobString>
+  <Remove_Grechka_GrechkaTibiaT5.label>remove: grechka bionics: tibia</Remove_Grechka_GrechkaTibiaT5.label>
+  <Remove_Grechka_GrechkaTibiaT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaTibiaT5.description>
+  <Remove_Grechka_GrechkaTibiaT5.jobString>Removing an implant.</Remove_Grechka_GrechkaTibiaT5.jobString>
+  <Install_Grechka_GrechkaSpineT5.label>install: grechka bionics: spine</Install_Grechka_GrechkaSpineT5.label>
+  <Install_Grechka_GrechkaSpineT5.description>Install grechka bionics: spine. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaSpineT5.description>
+  <Install_Grechka_GrechkaSpineT5.jobString>Installing an implant.</Install_Grechka_GrechkaSpineT5.jobString>
+  <Remove_Grechka_GrechkaSpineT5.label>remove: grechka bionics: spine</Remove_Grechka_GrechkaSpineT5.label>
+  <Remove_Grechka_GrechkaSpineT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaSpineT5.description>
+  <Remove_Grechka_GrechkaSpineT5.jobString>Removing an implant.</Remove_Grechka_GrechkaSpineT5.jobString>
+  <Install_Grechka_GrechkaNoseT5.label>install: grechka bionics: nose</Install_Grechka_GrechkaNoseT5.label>
+  <Install_Grechka_GrechkaNoseT5.description>Install grechka bionics: nose. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaNoseT5.description>
+  <Install_Grechka_GrechkaNoseT5.jobString>Installing an implant.</Install_Grechka_GrechkaNoseT5.jobString>
+  <Remove_Grechka_GrechkaNoseT5.label>remove: grechka bionics: nose</Remove_Grechka_GrechkaNoseT5.label>
+  <Remove_Grechka_GrechkaNoseT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaNoseT5.description>
+  <Remove_Grechka_GrechkaNoseT5.jobString>Removing an implant.</Remove_Grechka_GrechkaNoseT5.jobString>
+  <Install_Grechka_GrechkaJawT5.label>install: grechka bionics: jaw</Install_Grechka_GrechkaJawT5.label>
+  <Install_Grechka_GrechkaJawT5.description>Install grechka bionics: jaw. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaJawT5.description>
+  <Install_Grechka_GrechkaJawT5.jobString>Installing an implant.</Install_Grechka_GrechkaJawT5.jobString>
+  <Remove_Grechka_GrechkaJawT5.label>remove: grechka bionics: jaw</Remove_Grechka_GrechkaJawT5.label>
+  <Remove_Grechka_GrechkaJawT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaJawT5.description>
+  <Remove_Grechka_GrechkaJawT5.jobString>Removing an implant.</Remove_Grechka_GrechkaJawT5.jobString>
+  <Install_Grechka_GrechkaTongueT5.label>install: grechka bionics: tongue</Install_Grechka_GrechkaTongueT5.label>
+  <Install_Grechka_GrechkaTongueT5.description>Install grechka bionics: tongue. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaTongueT5.description>
+  <Install_Grechka_GrechkaTongueT5.jobString>Installing an implant.</Install_Grechka_GrechkaTongueT5.jobString>
+  <Remove_Grechka_GrechkaTongueT5.label>remove: grechka bionics: tongue</Remove_Grechka_GrechkaTongueT5.label>
+  <Remove_Grechka_GrechkaTongueT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaTongueT5.description>
+  <Remove_Grechka_GrechkaTongueT5.jobString>Removing an implant.</Remove_Grechka_GrechkaTongueT5.jobString>
+  <Install_Grechka_GrechkaRibcageT5.label>install: grechka bionics: ribcage</Install_Grechka_GrechkaRibcageT5.label>
+  <Install_Grechka_GrechkaRibcageT5.description>Install grechka bionics: ribcage. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaRibcageT5.description>
+  <Install_Grechka_GrechkaRibcageT5.jobString>Installing an implant.</Install_Grechka_GrechkaRibcageT5.jobString>
+  <Remove_Grechka_GrechkaRibcageT5.label>remove: grechka bionics: ribcage</Remove_Grechka_GrechkaRibcageT5.label>
+  <Remove_Grechka_GrechkaRibcageT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaRibcageT5.description>
+  <Remove_Grechka_GrechkaRibcageT5.jobString>Removing an implant.</Remove_Grechka_GrechkaRibcageT5.jobString>
+  <Install_Grechka_GrechkaSternumT5.label>install: grechka bionics: sternum</Install_Grechka_GrechkaSternumT5.label>
+  <Install_Grechka_GrechkaSternumT5.description>Install grechka bionics: sternum. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaSternumT5.description>
+  <Install_Grechka_GrechkaSternumT5.jobString>Installing an implant.</Install_Grechka_GrechkaSternumT5.jobString>
+  <Remove_Grechka_GrechkaSternumT5.label>remove: grechka bionics: sternum</Remove_Grechka_GrechkaSternumT5.label>
+  <Remove_Grechka_GrechkaSternumT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaSternumT5.description>
+  <Remove_Grechka_GrechkaSternumT5.jobString>Removing an implant.</Remove_Grechka_GrechkaSternumT5.jobString>
+  <Install_Grechka_GrechkaPelvisT5.label>install: grechka bionics: pelvis</Install_Grechka_GrechkaPelvisT5.label>
+  <Install_Grechka_GrechkaPelvisT5.description>Install grechka bionics: pelvis. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaPelvisT5.description>
+  <Install_Grechka_GrechkaPelvisT5.jobString>Installing an implant.</Install_Grechka_GrechkaPelvisT5.jobString>
+  <Remove_Grechka_GrechkaPelvisT5.label>remove: grechka bionics: pelvis</Remove_Grechka_GrechkaPelvisT5.label>
+  <Remove_Grechka_GrechkaPelvisT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaPelvisT5.description>
+  <Remove_Grechka_GrechkaPelvisT5.jobString>Removing an implant.</Remove_Grechka_GrechkaPelvisT5.jobString>
+  <Install_Grechka_GrechkaSkullT5.label>install: grechka bionics: skull</Install_Grechka_GrechkaSkullT5.label>
+  <Install_Grechka_GrechkaSkullT5.description>Install grechka bionics: skull. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaSkullT5.description>
+  <Install_Grechka_GrechkaSkullT5.jobString>Installing an implant.</Install_Grechka_GrechkaSkullT5.jobString>
+  <Remove_Grechka_GrechkaSkullT5.label>remove: grechka bionics: skull</Remove_Grechka_GrechkaSkullT5.label>
+  <Remove_Grechka_GrechkaSkullT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaSkullT5.description>
+  <Remove_Grechka_GrechkaSkullT5.jobString>Removing an implant.</Remove_Grechka_GrechkaSkullT5.jobString>
+  <Install_Grechka_GrechkaTorsoT5.label>install: grechka bionics: torso</Install_Grechka_GrechkaTorsoT5.label>
+  <Install_Grechka_GrechkaTorsoT5.description>Install grechka bionics: torso. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaTorsoT5.description>
+  <Install_Grechka_GrechkaTorsoT5.jobString>Installing an implant.</Install_Grechka_GrechkaTorsoT5.jobString>
+  <Remove_Grechka_GrechkaTorsoT5.label>remove: grechka bionics: torso</Remove_Grechka_GrechkaTorsoT5.label>
+  <Remove_Grechka_GrechkaTorsoT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaTorsoT5.description>
+  <Remove_Grechka_GrechkaTorsoT5.jobString>Removing an implant.</Remove_Grechka_GrechkaTorsoT5.jobString>
+  <Install_Grechka_GrechkaNeckT5.label>install: grechka bionics: neck</Install_Grechka_GrechkaNeckT5.label>
+  <Install_Grechka_GrechkaNeckT5.description>Install grechka bionics: neck. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaNeckT5.description>
+  <Install_Grechka_GrechkaNeckT5.jobString>Installing an implant.</Install_Grechka_GrechkaNeckT5.jobString>
+  <Remove_Grechka_GrechkaNeckT5.label>remove: grechka bionics: neck</Remove_Grechka_GrechkaNeckT5.label>
+  <Remove_Grechka_GrechkaNeckT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaNeckT5.description>
+  <Remove_Grechka_GrechkaNeckT5.jobString>Removing an implant.</Remove_Grechka_GrechkaNeckT5.jobString>
+  <Install_Grechka_GrechkaHeadT5.label>install: grechka bionics: head</Install_Grechka_GrechkaHeadT5.label>
+  <Install_Grechka_GrechkaHeadT5.description>Install grechka bionics: head. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaHeadT5.description>
+  <Install_Grechka_GrechkaHeadT5.jobString>Installing an implant.</Install_Grechka_GrechkaHeadT5.jobString>
+  <Remove_Grechka_GrechkaHeadT5.label>remove: grechka bionics: head</Remove_Grechka_GrechkaHeadT5.label>
+  <Remove_Grechka_GrechkaHeadT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaHeadT5.description>
+  <Remove_Grechka_GrechkaHeadT5.jobString>Removing an implant.</Remove_Grechka_GrechkaHeadT5.jobString>
+  <Install_Grechka_GrechkaWaistT5.label>install: grechka bionics: lower back</Install_Grechka_GrechkaWaistT5.label>
+  <Install_Grechka_GrechkaWaistT5.description>Install grechka bionics: lower back. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaWaistT5.description>
+  <Install_Grechka_GrechkaWaistT5.jobString>Installing an implant.</Install_Grechka_GrechkaWaistT5.jobString>
+  <Remove_Grechka_GrechkaWaistT5.label>remove: grechka bionics: lower back</Remove_Grechka_GrechkaWaistT5.label>
+  <Remove_Grechka_GrechkaWaistT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaWaistT5.description>
+  <Remove_Grechka_GrechkaWaistT5.jobString>Removing an implant.</Remove_Grechka_GrechkaWaistT5.jobString>
+  <Install_Grechka_GrechkaBrainT5.label>install: grechka bionics: brain</Install_Grechka_GrechkaBrainT5.label>
+  <Install_Grechka_GrechkaBrainT5.description>Install grechka bionics: brain. Requires the natural parent body part. A matching old implant is returned as an item.</Install_Grechka_GrechkaBrainT5.description>
+  <Install_Grechka_GrechkaBrainT5.jobString>Installing an implant.</Install_Grechka_GrechkaBrainT5.jobString>
+  <Remove_Grechka_GrechkaBrainT5.label>remove: grechka bionics: brain</Remove_Grechka_GrechkaBrainT5.label>
+  <Remove_Grechka_GrechkaBrainT5.description>Remove the implant and return it as a reusable item.</Remove_Grechka_GrechkaBrainT5.description>
+  <Remove_Grechka_GrechkaBrainT5.jobString>Removing an implant.</Remove_Grechka_GrechkaBrainT5.jobString>
+  <Grechka_UpgradeArmorT4.label>upgrade armor to T4</Grechka_UpgradeArmorT4.label>
+  <Grechka_UpgradeArmorT4.description>The previous item and its electronics are credited in full. Add only plasteel and the new tier material. One item becomes one upgraded item; production bonuses do not duplicate upgrades. Quality is determined by the crafter.</Grechka_UpgradeArmorT4.description>
+  <Grechka_UpgradeArmorT4.jobString>Upgrading equipment.</Grechka_UpgradeArmorT4.jobString>
+  <Grechka_UpgradeHelmetT4.label>upgrade helmet to T4</Grechka_UpgradeHelmetT4.label>
+  <Grechka_UpgradeHelmetT4.description>The previous item and its electronics are credited in full. Add only plasteel and the new tier material. One item becomes one upgraded item; production bonuses do not duplicate upgrades. Quality is determined by the crafter.</Grechka_UpgradeHelmetT4.description>
+  <Grechka_UpgradeHelmetT4.jobString>Upgrading equipment.</Grechka_UpgradeHelmetT4.jobString>
+  <Grechka_UpgradeArmorT5.label>upgrade armor to T5</Grechka_UpgradeArmorT5.label>
+  <Grechka_UpgradeArmorT5.description>The previous item and its electronics are credited in full. Add only plasteel and the new tier material. One item becomes one upgraded item; production bonuses do not duplicate upgrades. Quality is determined by the crafter.</Grechka_UpgradeArmorT5.description>
+  <Grechka_UpgradeArmorT5.jobString>Upgrading equipment.</Grechka_UpgradeArmorT5.jobString>
+  <Grechka_UpgradeHelmetT5.label>upgrade helmet to T5</Grechka_UpgradeHelmetT5.label>
+  <Grechka_UpgradeHelmetT5.description>The previous item and its electronics are credited in full. Add only plasteel and the new tier material. One item becomes one upgraded item; production bonuses do not duplicate upgrades. Quality is determined by the crafter.</Grechka_UpgradeHelmetT5.description>
+  <Grechka_UpgradeHelmetT5.jobString>Upgrading equipment.</Grechka_UpgradeHelmetT5.jobString>
+</LanguageData>

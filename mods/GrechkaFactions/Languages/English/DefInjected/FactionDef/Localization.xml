@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaFaction_Mills.label>Seven Mills Union</GrechkaFaction_Mills.label>
+  <GrechkaFaction_Mills.description>Millers scattered across seven villages after the great grain elevator burned. They trade food and cloth and defend their caravans.</GrechkaFaction_Mills.description>
+  <GrechkaFaction_Mills.pawnSingular>Seven Mills Union member</GrechkaFaction_Mills.pawnSingular>
+  <GrechkaFaction_Mills.pawnsPlural>Seven Mills Union members</GrechkaFaction_Mills.pawnsPlural>
+  <GrechkaFaction_Mills.leaderTitle>representative</GrechkaFaction_Mills.leaderTitle>
+  <GrechkaFaction_Rescue.label>Zero Shift</GrechkaFaction_Rescue.label>
+  <GrechkaFaction_Rescue.description>Descendants of the grain elevator emergency crew. Their caravans include skilled medics and their settlements supply medicine.</GrechkaFaction_Rescue.description>
+  <GrechkaFaction_Rescue.pawnSingular>Zero Shift member</GrechkaFaction_Rescue.pawnSingular>
+  <GrechkaFaction_Rescue.pawnsPlural>Zero Shift members</GrechkaFaction_Rescue.pawnsPlural>
+  <GrechkaFaction_Rescue.leaderTitle>representative</GrechkaFaction_Rescue.leaderTitle>
+  <GrechkaFaction_Artel.label>Last Nut Artel</GrechkaFaction_Artel.label>
+  <GrechkaFaction_Artel.description>A small guild of master technicians. Every human member has intellectual skill 16–20, two professional skills 16–20 and T5 Grechka bionics. Masters have two replacements and foremen have three. Captives retain their implants when recruited.</GrechkaFaction_Artel.description>
+  <GrechkaFaction_Artel.pawnSingular>Last Nut Artel member</GrechkaFaction_Artel.pawnSingular>
+  <GrechkaFaction_Artel.pawnsPlural>Last Nut Artel members</GrechkaFaction_Artel.pawnsPlural>
+  <GrechkaFaction_Artel.leaderTitle>foreman</GrechkaFaction_Artel.leaderTitle>
+  <GrechkaFaction_Bare.label>Barefoot Hundred</GrechkaFaction_Bare.label>
+  <GrechkaFaction_Bare.description>War bands with T5 combat and movement chips. They fight naked and favor melee. Initially hostile, but peace can be negotiated.</GrechkaFaction_Bare.description>
+  <GrechkaFaction_Bare.pawnSingular>Barefoot Hundred member</GrechkaFaction_Bare.pawnSingular>
+  <GrechkaFaction_Bare.pawnsPlural>Barefoot Hundred members</GrechkaFaction_Bare.pawnsPlural>
+  <GrechkaFaction_Bare.leaderTitle>representative</GrechkaFaction_Bare.leaderTitle>
+  <GrechkaFaction_Post.label>Bureau of Unopened Parcels</GrechkaFaction_Post.label>
+  <GrechkaFaction_Post.description>Couriers of a postal service that outlived its state. Every courier carries a real T1–T3 lucky block which can be recovered as ordinary loot.</GrechkaFaction_Post.description>
+  <GrechkaFaction_Post.pawnSingular>Bureau of Unopened Parcels member</GrechkaFaction_Post.pawnSingular>
+  <GrechkaFaction_Post.pawnsPlural>Bureau of Unopened Parcels members</GrechkaFaction_Post.pawnsPlural>
+  <GrechkaFaction_Post.leaderTitle>representative</GrechkaFaction_Post.leaderTitle>
+  <GrechkaFaction_Mills.fixedName>Seven Mills Union</GrechkaFaction_Mills.fixedName>
+  <GrechkaFaction_Rescue.fixedName>Zero Shift</GrechkaFaction_Rescue.fixedName>
+  <GrechkaFaction_Artel.fixedName>Last Nut Artel</GrechkaFaction_Artel.fixedName>
+  <GrechkaFaction_Bare.fixedName>Barefoot Hundred</GrechkaFaction_Bare.fixedName>
+  <GrechkaFaction_Post.fixedName>Bureau of Unopened Parcels</GrechkaFaction_Post.fixedName>
+</LanguageData>

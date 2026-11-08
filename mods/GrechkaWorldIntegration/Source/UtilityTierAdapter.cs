@@ -96,12 +96,12 @@ namespace Grechka.WorldIntegration
             VariantEntry entry = ProfileVariants.Entry(parent.def);
             if (tier == 0 || entry == null) return null;
             if (entry.worktable || entry.factory)
-                return "Grechka: T" + tier + " • скорость ×" + ProfileVariants.Speed[tier]
-                    + ", вход −" + Math.Round(ProfileVariants.Discount[tier] * 100) + "%"
-                    + ", выход +" + Math.Round(ProfileVariants.Output[tier] * 100) + "%";
+                return "Grechka: T" + tier + WorldText.Get("GrechkaWorldIntegration_4dc34041f85e", " • speed ×") + ProfileVariants.Speed[tier]
+                    + WorldText.Get("GrechkaWorldIntegration_aa2dc98e87d8", ", input −") + Math.Round(ProfileVariants.Discount[tier] * 100) + "%"
+                    + WorldText.Get("GrechkaWorldIntegration_bf266285ec80", ", output +") + Math.Round(ProfileVariants.Output[tier] * 100) + "%";
             if (SpecialTierAdapter.HasPowerBenefit(parent.def))
-                return "Grechka: T" + tier + " • ускоренная работа устройства.";
-            return "Grechka: T" + tier + " • корпус и улучшение; исходные характеристики устройства сохранены.";
+                return "Grechka: T" + tier + WorldText.Get("GrechkaWorldIntegration_75f3dec4f377", " • faster device operation.");
+            return "Grechka: T" + tier + WorldText.Get("GrechkaWorldIntegration_4ed65b1894f6", " • housing and upgrades. Original device stats preserved.");
         }
     }
 }

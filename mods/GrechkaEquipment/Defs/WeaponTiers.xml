@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Grechka_SingleRifleT2_Item</defName>
+    <label>гречневая винтовка T2 «Оса»</label>
+    <description>Промышленная винтовка с одиночным огнём. Один выстрел наносит 30 базового урона; дальность — 32 клетки.</description>
+    <graphicData>
+      <texPath>Items/SingleRifleT2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.15,0.768)</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>18000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.8</AccuracyTouch>
+      <AccuracyShort>0.9</AccuracyShort>
+      <AccuracyMedium>0.8</AccuracyMedium>
+      <AccuracyLong>0.65</AccuracyLong>
+      <RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSkill>Crafting</workSkill>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements><Crafting>4</Crafting></skillRequirements>
+      <recipeUsers>
+        <li>Grechka_AssemblyBenchT2_Building</li>
+        <li>Grechka_AssemblyBenchT3_Building</li>
+        <li>Grechka_AssemblyBenchT4_Building</li>
+        <li>Grechka_AssemblyBenchT5_Building</li>
+      </recipeUsers>
+    </recipeMaker>
+    <techLevel>Industrial</techLevel>
+    <weaponTags><li>GrechkaRifleT2</li></weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Grechka_RifleBulletT2_Item</defaultProjectile>
+        <warmupTime>0.6</warmupTime>
+        <range>32</range>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>0.8</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Grechka_RifleBulletT2_Item</defName>
+    <label>пуля гречневой винтовки T2</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+      <armorPenetrationBase>0.25</armorPenetrationBase>
+      <speed>100</speed>
+      <arcHeightFactor>0</arcHeightFactor>
+      <flyOverhead>false</flyOverhead>
+    </projectile>
+  </ThingDef>
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>Grechka_BurstLauncherT4_Item</defName>
+    <label>гречневый гранатомёт T4 «Гром»</label>
+    <description>Гранатомёт прямого огня. Выпускает очередь из трёх разрывных снарядов по 50 базового урона. Снаряды летят быстро и прямо, как пули, и взрываются при попадании без задержки. Радиус каждого взрыва — 1,9 клетки; дальность — 40 клеток. Взрывы могут задеть союзников.</description>
+    <graphicData>
+      <texPath>Items/BurstLauncherT4</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.4,0.7)</drawSize>
+    </graphicData>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <Mass>5.5</Mass>
+      <AccuracyTouch>0.65</AccuracyTouch>
+      <AccuracyShort>0.85</AccuracyShort>
+      <AccuracyMedium>0.8</AccuracyMedium>
+      <AccuracyLong>0.65</AccuracyLong>
+      <RangedWeapon_Cooldown>2.4</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>60</Plasteel>
+      <Grechka_ComponentT4_Item>3</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>10</Grechka_ArchoSubstrate>
+      <Chemfuel>20</Chemfuel>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSkill>Crafting</workSkill>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Machining</soundWorking>
+      <skillRequirements><Crafting>8</Crafting></skillRequirements>
+      <recipeUsers>
+        <li>Grechka_AssemblyBenchT4_Building</li>
+        <li>Grechka_AssemblyBenchT5_Building</li>
+      </recipeUsers>
+    </recipeMaker>
+    <techLevel>Spacer</techLevel>
+    <weaponTags><li>GrechkaLauncherT4</li></weaponTags>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Grechka_ExplosiveBulletT4_Item</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>40</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>Shot_ChargeRifle</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>1.2</muzzleFlashScale>
+      </li>
+    </verbs>
+  </ThingDef>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Grechka_ExplosiveBulletT4_Item</defName>
+    <label>разрывной снаряд T4</label>
+    <thingClass>Projectile_Explosive</thingClass>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(255,190,90)</color>
+    </graphicData>
+    <projectile>
+      <damageDef>Bomb</damageDef>
+      <damageAmountBase>50</damageAmountBase>
+      <armorPenetrationBase>0.2</armorPenetrationBase>
+      <explosionRadius>1.9</explosionRadius>
+      <explosionDelay>0</explosionDelay>
+      <explosionDamageFalloff>false</explosionDamageFalloff>
+      <speed>100</speed>
+      <arcHeightFactor>0</arcHeightFactor>
+      <flyOverhead>false</flyOverhead>
+    </projectile>
+  </ThingDef>
+</Defs>

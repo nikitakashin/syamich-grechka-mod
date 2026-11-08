@@ -3,5 +3,6 @@
   <ItemGroup>
     <Compile Include="../../mods/GrechkaStorage/Source/SignalTopology.cs" Link="SignalTopology.cs" />
     <Compile Include="../../mods/GrechkaStorage/Source/DiskSpace.cs" Link="DiskSpace.cs" />
+    <Compile Include="../../mods/GrechkaStorage/Source/CertusMeteorLayout.cs" Link="CertusMeteorLayout.cs" />
   </ItemGroup>
 </Project>

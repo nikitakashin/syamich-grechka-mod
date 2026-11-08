@@ -241,6 +241,8 @@ try
 finally { if (File.Exists(path)) File.Delete(path); }
 cold.Destroy(DestroyMode.Vanish);
 Check(meal.Destroyed && !holder.Contents.Contains(cold), "Destroying a disk destroys its actual contents exactly once");
+CertusChecks.Run(Check);
+MeteorChecks.Run(Check);
 Console.WriteLine("Isolated library checks only; no RimWorld process was launched or controlled.");
 
 sealed class TestHolder : IThingHolder

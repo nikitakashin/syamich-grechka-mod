@@ -1,0 +1,502 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <AchievementsExpanded.AchievementTabDef>
+    <defName>GrechkaAchivements_Tab</defName>
+    <label>Гречка</label>
+    <order>30</order>
+  </AchievementsExpanded.AchievementTabDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.industry">
+    <defName>GrechkaAchivements_Workbench</defName>
+    <label>Завод на троих</label>
+    <description>Постройте базовый сборочный верстак T1.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="AchievementsExpanded.BuildingTracker">
+      <def>Grechka_AssemblyBenchT1_Building</def>
+      <count>1</count>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Workbench</texPath>
+    <points>5</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.industry">
+    <defName>GrechkaAchivements_Housing</defName>
+    <label>Всё поместится</label>
+    <description>Изготовьте продвинутый корпус T2.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="AchievementsExpanded.ItemCraftTracker">
+      <def>Grechka_HousingT2_Item</def>
+      <count>1</count>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Housing</texPath>
+    <points>10</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.industry">
+    <defName>GrechkaAchivements_Mechanites</defName>
+    <label>Карманный рой</label>
+    <description>Накопите 100 механитов.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="AchievementsExpanded.ItemTracker">
+      <def>Grechka_Mechanites</def>
+      <count>100</count>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Mechanites</texPath>
+    <points>15</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.industry">
+    <defName>GrechkaAchivements_Matter</defName>
+    <label>Вещество без формы</label>
+    <description>Накопите 100 единиц материи.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="AchievementsExpanded.ItemTracker">
+      <def>Grechka_Matter</def>
+      <count>100</count>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Matter</texPath>
+    <points>25</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.storage">
+    <defName>GrechkaAchivements_Controller</defName>
+    <label>Есть контакт</label>
+    <description>Постройте контроллер сети Storage.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="AchievementsExpanded.BuildingTracker">
+      <def>Grechka_StorageController</def>
+      <count>1</count>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Controller</texPath>
+    <points>5</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.storage">
+    <defName>GrechkaAchivements_FirstDisk</defName>
+    <label>Сохранить как…</label>
+    <description>Изготовьте диск хранения 1K.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="AchievementsExpanded.ItemCraftTracker">
+      <def>Grechka_Disk_1K_Item</def>
+      <count>1</count>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/FirstDisk</texPath>
+    <points>10</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.storage">
+    <defName>GrechkaAchivements_Certus</defName>
+    <label>Кристальный запас</label>
+    <description>Накопите 64 единицы certus-кварца.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="AchievementsExpanded.ItemTracker">
+      <def>Grechka_CertusQuartz</def>
+      <count>64</count>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Certus</texPath>
+    <points>15</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.storage">
+    <defName>GrechkaAchivements_Archive</defName>
+    <label>Архив планеты</label>
+    <description>Получите диск хранения 256M.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="AchievementsExpanded.ItemTracker">
+      <def>Grechka_Disk_256M_Item</def>
+      <count>1</count>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Archive</texPath>
+    <points>50</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.drones">
+    <defName>GrechkaAchivements_Rescue</defName>
+    <label>Дежурная смена</label>
+    <description>Установите док дрона-МЧСника T1.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="AchievementsExpanded.BuildingTracker">
+      <def>Grechka_RescueDroneStationT1_Dock</def>
+      <count>1</count>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Rescue</texPath>
+    <points>10</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.drones">
+    <defName>GrechkaAchivements_Guard</defName>
+    <label>Пятый на страже</label>
+    <description>Установите док дрона-воина T5.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="AchievementsExpanded.BuildingTracker">
+      <def>Grechka_WarriorDroneStationT5_Dock</def>
+      <count>1</count>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Guard</texPath>
+    <points>35</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.equipment">
+    <defName>GrechkaAchivements_Blizzard</defName>
+    <label>Прогноз на вечер</label>
+    <description>Изготовьте криовинтовку «Метель».</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="AchievementsExpanded.ItemCraftTracker">
+      <def>Grechka_CryoRifle</def>
+      <count>1</count>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Blizzard</texPath>
+    <points>25</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.equipment">
+    <defName>GrechkaAchivements_Heart</defName>
+    <label>Гречка в крови</label>
+    <description>Установите пешке гречневое бионическое сердце T5.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="AchievementsExpanded.HediffTracker">
+      <def>Grechka_GrechkaHeartT5_Hediff</def>
+      <count>1</count>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Heart</texPath>
+    <points>35</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.luckyblocks">
+    <defName>GrechkaAchivements_Lucky</defName>
+    <label>Что в коробке?</label>
+    <description>Полностью откройте любой лаки-блок Grechka.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.OpenBlockTracker" />
+    <texPath>UI/GrechkaAchivements/Lucky</texPath>
+    <points>5</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.luckyblocks">
+    <defName>GrechkaAchivements_Chaos</defName>
+    <label>Крышку держи крепче</label>
+    <description>Полностью откройте лаки-блок «Хаос» T5.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.OpenBlockTracker">
+      <block>Grechka_LuckyBlockChaosT5_Item</block>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Chaos</texPath>
+    <points>35</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.farms">
+    <defName>GrechkaAchivements_Rice</defName>
+    <label>Весенняя посевная</label>
+    <description>Посейте рис на покрытии «Ферма» в своём поселении.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.FarmTracker" />
+    <texPath>UI/GrechkaAchivements/Rice</texPath>
+    <points>5</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.quests">
+    <defName>GrechkaAchivements_Reward</defName>
+    <label>Под расписку</label>
+    <description>Заберите награду за любое задание в активной книге Grechka Quests.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.QuestRewardTracker" />
+    <texPath>UI/GrechkaAchivements/Reward</texPath>
+    <points>5</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.industry">
+    <defName>GrechkaAchivements_Mechanites5</defName>
+    <label>Рой в пробирке · 5</label>
+    <description>Произведите 5 механитов.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.MilestoneTracker">
+      <series>Mechanites</series>
+      <target>5</target>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Mechanites5</texPath>
+    <points>5</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.industry">
+    <defName>GrechkaAchivements_Mechanites25</defName>
+    <label>Рой в пробирке · 25</label>
+    <description>Произведите 25 механитов.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.MilestoneTracker">
+      <series>Mechanites</series>
+      <target>25</target>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Mechanites25</texPath>
+    <points>5</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.industry">
+    <defName>GrechkaAchivements_Mechanites50</defName>
+    <label>Рой в пробирке · 50</label>
+    <description>Произведите 50 механитов.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.MilestoneTracker">
+      <series>Mechanites</series>
+      <target>50</target>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Mechanites50</texPath>
+    <points>10</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.industry">
+    <defName>GrechkaAchivements_Mechanites100</defName>
+    <label>Рой в пробирке · 100</label>
+    <description>Произведите 100 механитов.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.MilestoneTracker">
+      <series>Mechanites</series>
+      <target>100</target>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Mechanites100</texPath>
+    <points>10</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.industry">
+    <defName>GrechkaAchivements_Mechanites500</defName>
+    <label>Рой в пробирке · 500</label>
+    <description>Произведите 500 механитов.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.MilestoneTracker">
+      <series>Mechanites</series>
+      <target>500</target>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Mechanites500</texPath>
+    <points>15</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.industry">
+    <defName>GrechkaAchivements_Mechanites1000</defName>
+    <label>Рой в пробирке · 1000</label>
+    <description>Произведите 1000 механитов.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.MilestoneTracker">
+      <series>Mechanites</series>
+      <target>1000</target>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Mechanites1000</texPath>
+    <points>20</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.storage">
+    <defName>GrechkaAchivements_Silicon5</defName>
+    <label>Кремниевая плавка · 5</label>
+    <description>Выплавьте 5 единиц кремния.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.MilestoneTracker">
+      <series>Silicon</series>
+      <target>5</target>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Silicon5</texPath>
+    <points>5</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.storage">
+    <defName>GrechkaAchivements_Silicon25</defName>
+    <label>Кремниевая плавка · 25</label>
+    <description>Выплавьте 25 единиц кремния.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.MilestoneTracker">
+      <series>Silicon</series>
+      <target>25</target>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Silicon25</texPath>
+    <points>5</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.storage">
+    <defName>GrechkaAchivements_Silicon50</defName>
+    <label>Кремниевая плавка · 50</label>
+    <description>Выплавьте 50 единиц кремния.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.MilestoneTracker">
+      <series>Silicon</series>
+      <target>50</target>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Silicon50</texPath>
+    <points>10</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.storage">
+    <defName>GrechkaAchivements_Silicon100</defName>
+    <label>Кремниевая плавка · 100</label>
+    <description>Выплавьте 100 единиц кремния.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.MilestoneTracker">
+      <series>Silicon</series>
+      <target>100</target>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Silicon100</texPath>
+    <points>10</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.storage">
+    <defName>GrechkaAchivements_Silicon500</defName>
+    <label>Кремниевая плавка · 500</label>
+    <description>Выплавьте 500 единиц кремния.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.MilestoneTracker">
+      <series>Silicon</series>
+      <target>500</target>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Silicon500</texPath>
+    <points>15</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.storage">
+    <defName>GrechkaAchivements_Silicon1000</defName>
+    <label>Кремниевая плавка · 1000</label>
+    <description>Выплавьте 1000 единиц кремния.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.MilestoneTracker">
+      <series>Silicon</series>
+      <target>1000</target>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Silicon1000</texPath>
+    <points>20</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.storage">
+    <defName>GrechkaAchivements_Processors5</defName>
+    <label>Микроэлектроника · 5</label>
+    <description>Соберите 5 процессоров Storage. Кварцевые, серебряные и золотые считаются вместе.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.MilestoneTracker">
+      <series>Processors</series>
+      <target>5</target>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Processors5</texPath>
+    <points>5</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.storage">
+    <defName>GrechkaAchivements_Processors25</defName>
+    <label>Микроэлектроника · 25</label>
+    <description>Соберите 25 процессоров Storage. Кварцевые, серебряные и золотые считаются вместе.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.MilestoneTracker">
+      <series>Processors</series>
+      <target>25</target>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Processors25</texPath>
+    <points>5</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.storage">
+    <defName>GrechkaAchivements_Processors50</defName>
+    <label>Микроэлектроника · 50</label>
+    <description>Соберите 50 процессоров Storage. Кварцевые, серебряные и золотые считаются вместе.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.MilestoneTracker">
+      <series>Processors</series>
+      <target>50</target>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Processors50</texPath>
+    <points>10</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.storage">
+    <defName>GrechkaAchivements_Processors100</defName>
+    <label>Микроэлектроника · 100</label>
+    <description>Соберите 100 процессоров Storage. Кварцевые, серебряные и золотые считаются вместе.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.MilestoneTracker">
+      <series>Processors</series>
+      <target>100</target>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Processors100</texPath>
+    <points>10</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.luckyblocks">
+    <defName>GrechkaAchivements_Blocks5</defName>
+    <label>Вскрытие покажет · 5</label>
+    <description>Полностью откройте 5 лаки-блоков Grechka любых типов и тиров.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.MilestoneTracker">
+      <series>Blocks</series>
+      <target>5</target>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Blocks5</texPath>
+    <points>5</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.luckyblocks">
+    <defName>GrechkaAchivements_Blocks25</defName>
+    <label>Вскрытие покажет · 25</label>
+    <description>Полностью откройте 25 лаки-блоков Grechka любых типов и тиров.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.MilestoneTracker">
+      <series>Blocks</series>
+      <target>25</target>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Blocks25</texPath>
+    <points>5</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.luckyblocks">
+    <defName>GrechkaAchivements_Blocks50</defName>
+    <label>Вскрытие покажет · 50</label>
+    <description>Полностью откройте 50 лаки-блоков Grechka любых типов и тиров.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.MilestoneTracker">
+      <series>Blocks</series>
+      <target>50</target>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Blocks50</texPath>
+    <points>10</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.quests">
+    <defName>GrechkaAchivements_Quests5</defName>
+    <label>Книга дел · 5</label>
+    <description>Заберите награды за 5 разных заданий Grechka Quests в этой колонии.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.MilestoneTracker">
+      <series>Quests</series>
+      <target>5</target>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Quests5</texPath>
+    <points>5</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.quests">
+    <defName>GrechkaAchivements_Quests25</defName>
+    <label>Книга дел · 25</label>
+    <description>Заберите награды за 25 разных заданий Grechka Quests в этой колонии.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.MilestoneTracker">
+      <series>Quests</series>
+      <target>25</target>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Quests25</texPath>
+    <points>5</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.quests">
+    <defName>GrechkaAchivements_Quests50</defName>
+    <label>Книга дел · 50</label>
+    <description>Заберите награды за 50 разных заданий Grechka Quests в этой колонии.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.MilestoneTracker">
+      <series>Quests</series>
+      <target>50</target>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Quests50</texPath>
+    <points>10</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.quests">
+    <defName>GrechkaAchivements_Quests100</defName>
+    <label>Книга дел · 100</label>
+    <description>Заберите награды за 100 разных заданий Grechka Quests в этой колонии.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.MilestoneTracker">
+      <series>Quests</series>
+      <target>100</target>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Quests100</texPath>
+    <points>10</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.industry">
+    <defName>GrechkaAchivements_Housings5</defName>
+    <label>Корпусный цех · 5</label>
+    <description>Изготовьте 5 промышленных корпусов. Все пять тиров считаются вместе.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.MilestoneTracker">
+      <series>Housings</series>
+      <target>5</target>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Housings5</texPath>
+    <points>5</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.industry">
+    <defName>GrechkaAchivements_Housings25</defName>
+    <label>Корпусный цех · 25</label>
+    <description>Изготовьте 25 промышленных корпусов. Все пять тиров считаются вместе.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.MilestoneTracker">
+      <series>Housings</series>
+      <target>25</target>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Housings25</texPath>
+    <points>5</points>
+  </AchievementsExpanded.AchievementDef>
+  <AchievementsExpanded.AchievementDef MayRequire="grechka.industry">
+    <defName>GrechkaAchivements_Housings50</defName>
+    <label>Корпусный цех · 50</label>
+    <description>Изготовьте 50 промышленных корпусов. Все пять тиров считаются вместе.</description>
+    <tab>GrechkaAchivements_Tab</tab>
+    <tracker Class="Grechka.Achivements.MilestoneTracker">
+      <series>Housings</series>
+      <target>50</target>
+    </tracker>
+    <texPath>UI/GrechkaAchivements/Housings50</texPath>
+    <points>10</points>
+  </AchievementsExpanded.AchievementDef>
+</Defs>

@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaWorldIntegration_612fba43775b>Графику можно подготовить только на главном потоке</GrechkaWorldIntegration_612fba43775b>
+  <GrechkaWorldIntegration_f44e79ed8807>не совпали источник, тир или применённый профиль</GrechkaWorldIntegration_f44e79ed8807>
+  <GrechkaWorldIntegration_3d1f3680ec10>путь вне адресного TierSprites-контракта</GrechkaWorldIntegration_3d1f3680ec10>
+  <GrechkaWorldIntegration_2782147b6efd>особый рендер требует отдельного адаптера</GrechkaWorldIntegration_2782147b6efd>
+  <GrechkaWorldIntegration_103ace0bbdaf>неполный набор PNG; исходная графика сохранена</GrechkaWorldIntegration_103ace0bbdaf>
+  <GrechkaWorldIntegration_cb2bf0b7a02a>ошибка загрузки графики; исходная восстановлена: </GrechkaWorldIntegration_cb2bf0b7a02a>
+  <GrechkaWorldIntegration_231347d8fac7>Графика: дубли привязки </GrechkaWorldIntegration_231347d8fac7>
+  <GrechkaWorldIntegration_a32e0f503e68>; оригинал сохранён.</GrechkaWorldIntegration_a32e0f503e68>
+  <GrechkaWorldIntegration_734e11a1f21e>Графика </GrechkaWorldIntegration_734e11a1f21e>
+  <GrechkaWorldIntegration_b5e53db9cf59>: не указан источник</GrechkaWorldIntegration_b5e53db9cf59>
+  <GrechkaWorldIntegration_5356d44c4c84>нет рецепта, позиции или доступного материала</GrechkaWorldIntegration_5356d44c4c84>
+  <GrechkaWorldIntegration_6e0e1c1d9ff3>неподдерживаемая единица ингредиента: </GrechkaWorldIntegration_6e0e1c1d9ff3>
+  <GrechkaWorldIntegration_ae1fef0a2fb7>исходный фильтр пуст</GrechkaWorldIntegration_ae1fef0a2fb7>
+  <GrechkaWorldIntegration_ed9cca862246>разная физическая единица: требуются отдельные формы/рецепты</GrechkaWorldIntegration_ed9cca862246>
+  <GrechkaWorldIntegration_9b9fdcfe0d7d>Профиль этой колонии ещё не применён. Исходные стоимости и материалы сохранены.</GrechkaWorldIntegration_9b9fdcfe0d7d>
+  <GrechkaWorldIntegration_f7189d87e985>: оставлен ванильным; прежние варианты только для старых сохранений</GrechkaWorldIntegration_f7189d87e985>
+  <GrechkaWorldIntegration_86fca31dd7c4>: источник отсутствует</GrechkaWorldIntegration_86fca31dd7c4>
+  <GrechkaWorldIntegration_716ee9cebafa>: требуется явное применение нового правила</GrechkaWorldIntegration_716ee9cebafa>
+  <GrechkaWorldIntegration_476b62b92f2f>: Industry/корпус отсутствует, исходная цена сохранена</GrechkaWorldIntegration_476b62b92f2f>
+  <GrechkaWorldIntegration_9c81309268b0>: материал цены отсутствует, исходная цена сохранена</GrechkaWorldIntegration_9c81309268b0>
+  <GrechkaWorldIntegration_9efbd0388542> + 1 корпус T</GrechkaWorldIntegration_9efbd0388542>
+  <GrechkaWorldIntegration_3654d1a8d30f>: исходная стоимость; </GrechkaWorldIntegration_3654d1a8d30f>
+  <GrechkaWorldIntegration_f23b4e8d9e0e>: рецепт/группа отсутствует</GrechkaWorldIntegration_f23b4e8d9e0e>
+  <GrechkaWorldIntegration_c43ef190d9f6>: требуется явное применение</GrechkaWorldIntegration_c43ef190d9f6>
+  <GrechkaWorldIntegration_3f66c9d84cf2>разрешены </GrechkaWorldIntegration_3f66c9d84cf2>
+  <GrechkaWorldIntegration_586870b0b280>не применено: </GrechkaWorldIntegration_586870b0b280>
+  <GrechkaWorldIntegration_8c9f3d7d8335>[Grechka World] Профиль: </GrechkaWorldIntegration_8c9f3d7d8335>
+  <GrechkaWorldIntegration_dec7488fd72a> машин с минимальным тиром; подробный отчёт в настройках.</GrechkaWorldIntegration_dec7488fd72a>
+  <GrechkaWorldIntegration_42d6a97215d6>Завершить оплату</GrechkaWorldIntegration_42d6a97215d6>
+  <GrechkaWorldIntegration_82d998ae2a80>Отменить улучшение</GrechkaWorldIntegration_82d998ae2a80>
+  <GrechkaWorldIntegration_5596baf68f49>Завершить расход сохранённых материалов уже улучшенной машины.</GrechkaWorldIntegration_5596baf68f49>
+  <GrechkaWorldIntegration_7146b1cba941>Вернуть принесённые материалы рядом с машиной.</GrechkaWorldIntegration_7146b1cba941>
+  <GrechkaWorldIntegration_392bededaba5>Улучшить до T</GrechkaWorldIntegration_392bededaba5>
+  <GrechkaWorldIntegration_b4939dc26eee>Пешка принесёт добавочные материалы и выполнит 4000 единиц строительной работы. Корпус предыдущего тира засчитывается. Завершите текущую партию и освободите внутренние контейнеры.
+</GrechkaWorldIntegration_b4939dc26eee>
+  <GrechkaWorldIntegration_4c9025be0c8d>Нет рецепта следующего корпуса</GrechkaWorldIntegration_4c9025be0c8d>
+  <GrechkaWorldIntegration_5b0413d994b4>Улучшение: </GrechkaWorldIntegration_5b0413d994b4>
+  <GrechkaWorldIntegration_44451ecf7070>нужны </GrechkaWorldIntegration_44451ecf7070>
+  <GrechkaWorldIntegration_b66a61548456>работы осталось </GrechkaWorldIntegration_b66a61548456>
+  <GrechkaWorldIntegration_355c0d15c28d>Изменился тип фабрики; улучшение приостановлено</GrechkaWorldIntegration_355c0d15c28d>
+  <GrechkaWorldIntegration_4c5487fe9857>Ошибка улучшения; исходная фабрика и материалы сохранены</GrechkaWorldIntegration_4c5487fe9857>
+  <GrechkaWorldIntegration_d3cfbf414b70>Улучшение выполнено, расход материалов приостановлен</GrechkaWorldIntegration_d3cfbf414b70>
+  <GrechkaWorldIntegration_a100b80d323d>Выключите активный прожектор</GrechkaWorldIntegration_a100b80d323d>
+  <GrechkaWorldIntegration_d70709676225>Дождитесь завершения очереди турели</GrechkaWorldIntegration_d70709676225>
+  <GrechkaWorldIntegration_5855b8353f80>Завершите операцию в саркофаге</GrechkaWorldIntegration_5855b8353f80>
+  <GrechkaWorldIntegration_e8fac71eb272>Сначала освободите хранилище</GrechkaWorldIntegration_e8fac71eb272>
+  <GrechkaWorldIntegration_cf0bf3a3379e>Освободите содержимое машины</GrechkaWorldIntegration_cf0bf3a3379e>
+  <GrechkaWorldIntegration_a393b6cc155e>Завершите работу автофермы и выгрузите урожай</GrechkaWorldIntegration_a393b6cc155e>
+  <GrechkaWorldIntegration_bb94969daca1>Завершите текущую автоматическую партию</GrechkaWorldIntegration_bb94969daca1>
+  <GrechkaWorldIntegration_867c381e1e8a>Завершите текущую партию фабрики</GrechkaWorldIntegration_867c381e1e8a>
+  <GrechkaWorldIntegration_3d792257e41b>Дождитесь загрузки генпаков</GrechkaWorldIntegration_3d792257e41b>
+  <GrechkaWorldIntegration_7288d8fa58c5>Освободите внутренний контейнер фабрики</GrechkaWorldIntegration_7288d8fa58c5>
+  <GrechkaWorldIntegration_4dc34041f85e> • скорость ×</GrechkaWorldIntegration_4dc34041f85e>
+  <GrechkaWorldIntegration_aa2dc98e87d8>, вход −</GrechkaWorldIntegration_aa2dc98e87d8>
+  <GrechkaWorldIntegration_bf266285ec80>, выход +</GrechkaWorldIntegration_bf266285ec80>
+  <GrechkaWorldIntegration_75f3dec4f377> • ускоренная работа устройства.</GrechkaWorldIntegration_75f3dec4f377>
+  <GrechkaWorldIntegration_4ed65b1894f6> • корпус и улучшение; исходные характеристики устройства сохранены.</GrechkaWorldIntegration_4ed65b1894f6>
+  <GrechkaWorldIntegration_ba704a00a6bf>Варианты станков: </GrechkaWorldIntegration_ba704a00a6bf>
+  <GrechkaWorldIntegration_89d1c68752eb> применено.</GrechkaWorldIntegration_89d1c68752eb>
+  <GrechkaWorldIntegration_c06d4b9349df>Этот устаревший вариант сохранён только для загрузки старой колонии.</GrechkaWorldIntegration_c06d4b9349df>
+  <GrechkaWorldIntegration_992255432d82>Сначала примените профиль Grechka World в настройках мода.</GrechkaWorldIntegration_992255432d82>
+  <GrechkaWorldIntegration_f4918772c9e0>Создать задание улучшения. Предыдущая машина и корпус засчитываются; пешка принесёт только добавочные материалы.</GrechkaWorldIntegration_f4918772c9e0>
+  <GrechkaWorldIntegration_54522b09cc40>[Grechka World] Улучшение отложено, исходная машина и задания сохранены: </GrechkaWorldIntegration_54522b09cc40>
+  <GrechkaWorldIntegration_02a251680dcd>неполный или неизвестный комплект рабочих состояний</GrechkaWorldIntegration_02a251680dcd>
+  <GrechkaWorldIntegration_2b74ee1ff61c>не найден совместимый источник состояния PipeSystem</GrechkaWorldIntegration_2b74ee1ff61c>
+  <GrechkaWorldIntegration_17543b7a088a>не хватает кадров состояния </GrechkaWorldIntegration_17543b7a088a>
+  <GrechkaWorldIntegration_0fd8cb357129>Включить исследования (ванильная прогрессия)</GrechkaWorldIntegration_0fd8cb357129>
+  <GrechkaWorldIntegration_5ddf440e1562>Включено: обычные исследования игры, DLC и модов; контент Grechka открывается в отдельном дереве по тирам. </GrechkaWorldIntegration_5ddf440e1562>
+  <GrechkaWorldIntegration_b5c93418ad15>Выключено: в новой колонии все исследования завершены. Уже изученное в сохранении не сбрасывается. </GrechkaWorldIntegration_b5c93418ad15>
+  <GrechkaWorldIntegration_5a5243d14a2e>Для полной игры с исследованиями включите режим перед созданием колонии. В существующей колонии выключенный режим сразу снимает требования дерева Grechka с построек и рецептов.</GrechkaWorldIntegration_5a5243d14a2e>
+  <GrechkaWorldIntegration_ea8b4e4df140>Отчёт правил и материалов</GrechkaWorldIntegration_ea8b4e4df140>
+  <GrechkaWorldIntegration_62f1501f8552>Загрузите колонию для явного применения профиля.</GrechkaWorldIntegration_62f1501f8552>
+  <GrechkaWorldIntegration_c03eda2493bd>Исследований осталось: </GrechkaWorldIntegration_c03eda2493bd>
+  <GrechkaWorldIntegration_bcc95c9caa30>. Машин профиля: </GrechkaWorldIntegration_bcc95c9caa30>
+  <GrechkaWorldIntegration_78d6dc563572>. Последняя копия: </GrechkaWorldIntegration_78d6dc563572>
+  <GrechkaWorldIntegration_5a2b62c9f339>ещё не создавалась</GrechkaWorldIntegration_5a2b62c9f339>
+  <GrechkaWorldIntegration_b44fd7897452>Применить текущие правила с резервной копией</GrechkaWorldIntegration_b44fd7897452>
+  <GrechkaWorldIntegration_edea9a333fc8>Создать отдельное сохранение, затем применить текущие правила корпусов/материалов? </GrechkaWorldIntegration_edea9a333fc8>
+  <GrechkaWorldIntegration_b08d40f6b1ce>Прогресс исследований сохранится.</GrechkaWorldIntegration_b08d40f6b1ce>
+  <GrechkaWorldIntegration_c5d17a274e4a>Все исследования будут завершены.</GrechkaWorldIntegration_c5d17a274e4a>
+  <GrechkaWorldIntegration_cdf852d6ec17> Существующие предметы не преобразуются и не удаляются.</GrechkaWorldIntegration_cdf852d6ec17>
+  <GrechkaWorldIntegration_d142c17d2622>Резервная копия не создана; правила не изменены.</GrechkaWorldIntegration_d142c17d2622>
+  <GrechkaWorldIntegration_7639ca6b48ce>Grechka World: профиль применён. Копия: </GrechkaWorldIntegration_7639ca6b48ce>
+  <GrechkaWorldIntegration_ef4720713b50>. Незавершённых исследований: </GrechkaWorldIntegration_ef4720713b50>
+  <GrechkaWorldIntegration_6450872dc979>[Grechka World] Профиль не завершён: </GrechkaWorldIntegration_6450872dc979>
+  <GrechkaWorldIntegration_d571bbdb3c91>Grechka World — применённые правила</GrechkaWorldIntegration_d571bbdb3c91>
+  <GrechkaWorldIntegration_521426dd531a>ResearchManager ещё не создан.</GrechkaWorldIntegration_521426dd531a>
+  <GrechkaWorldIntegration_f4ac5186740c> (осталось незавершённым)</GrechkaWorldIntegration_f4ac5186740c>
+  <GrechkaWorldIntegration_ccc87bcd3ae6>[Grechka World Integration] После применения незавершённых: </GrechkaWorldIntegration_ccc87bcd3ae6>
+  <GrechkaWorldIntegration_cca16310493d>. Ошибки: </GrechkaWorldIntegration_cca16310493d>
+  <GrechkaWorldIntegration_8c58d44c61a9>; и ещё </GrechkaWorldIntegration_8c58d44c61a9>
+  <GrechkaWorldIntegration_29dad5caaeac>[Grechka World Integration] Завершены все исследования; новых: </GrechkaWorldIntegration_29dad5caaeac>
+  <GrechkaWorldIntegration_LegacyVariant>{0} (устаревший T{1})</GrechkaWorldIntegration_LegacyVariant>
+  <GrechkaWorldIntegration_TierVariant>{0} (T{1})</GrechkaWorldIntegration_TierVariant>
+  <GrechkaWorldIntegration_UpgradeRecipe>улучшить этот станок до T{0}</GrechkaWorldIntegration_UpgradeRecipe>
+  <GrechkaWorldIntegration_UpgradeRecipeDescription>Улучшение на месте. Корпус предыдущего тира и исходная машина засчитываются. Сохраняются материал, прочность, топливо и задания.</GrechkaWorldIntegration_UpgradeRecipeDescription>
+  <GrechkaWorldIntegration_UpgradeJob>Улучшение станка.</GrechkaWorldIntegration_UpgradeJob>
+</LanguageData>

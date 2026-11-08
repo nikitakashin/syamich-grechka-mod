@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Grechka_MakeDataCore_1K.label>собрать ячейку памяти 1K</Grechka_MakeDataCore_1K.label>
+  <Grechka_MakeDataCore_1K.jobString>Собирает детали диска.</Grechka_MakeDataCore_1K.jobString>
+  <Grechka_MakeDisk_1K.label>собрать диск хранения 1K</Grechka_MakeDisk_1K.label>
+  <Grechka_MakeDisk_1K.jobString>Собирает детали диска.</Grechka_MakeDisk_1K.jobString>
+  <Grechka_MakeFrozenDisk_1K.label>собрать замораживающий диск 1K</Grechka_MakeFrozenDisk_1K.label>
+  <Grechka_MakeFrozenDisk_1K.jobString>Собирает детали диска.</Grechka_MakeFrozenDisk_1K.jobString>
+  <Grechka_MakeDataCore_4K.label>собрать ячейку памяти 4K</Grechka_MakeDataCore_4K.label>
+  <Grechka_MakeDataCore_4K.jobString>Собирает детали диска.</Grechka_MakeDataCore_4K.jobString>
+  <Grechka_MakeDisk_4K.label>собрать диск хранения 4K</Grechka_MakeDisk_4K.label>
+  <Grechka_MakeDisk_4K.jobString>Собирает детали диска.</Grechka_MakeDisk_4K.jobString>
+  <Grechka_MakeFrozenDisk_4K.label>собрать замораживающий диск 4K</Grechka_MakeFrozenDisk_4K.label>
+  <Grechka_MakeFrozenDisk_4K.jobString>Собирает детали диска.</Grechka_MakeFrozenDisk_4K.jobString>
+  <Grechka_MakeDataCore_16K.label>собрать ячейку памяти 16K</Grechka_MakeDataCore_16K.label>
+  <Grechka_MakeDataCore_16K.jobString>Собирает детали диска.</Grechka_MakeDataCore_16K.jobString>
+  <Grechka_MakeDisk_16K.label>собрать диск хранения 16K</Grechka_MakeDisk_16K.label>
+  <Grechka_MakeDisk_16K.jobString>Собирает детали диска.</Grechka_MakeDisk_16K.jobString>
+  <Grechka_MakeFrozenDisk_16K.label>собрать замораживающий диск 16K</Grechka_MakeFrozenDisk_16K.label>
+  <Grechka_MakeFrozenDisk_16K.jobString>Собирает детали диска.</Grechka_MakeFrozenDisk_16K.jobString>
+  <Grechka_MakeDataCore_64K.label>собрать ячейку памяти 64K</Grechka_MakeDataCore_64K.label>
+  <Grechka_MakeDataCore_64K.jobString>Собирает детали диска.</Grechka_MakeDataCore_64K.jobString>
+  <Grechka_MakeDisk_64K.label>собрать диск хранения 64K</Grechka_MakeDisk_64K.label>
+  <Grechka_MakeDisk_64K.jobString>Собирает детали диска.</Grechka_MakeDisk_64K.jobString>
+  <Grechka_MakeFrozenDisk_64K.label>собрать замораживающий диск 64K</Grechka_MakeFrozenDisk_64K.label>
+  <Grechka_MakeFrozenDisk_64K.jobString>Собирает детали диска.</Grechka_MakeFrozenDisk_64K.jobString>
+  <Grechka_MakeDataCore_256K.label>собрать ячейку памяти 256K</Grechka_MakeDataCore_256K.label>
+  <Grechka_MakeDataCore_256K.jobString>Собирает детали диска.</Grechka_MakeDataCore_256K.jobString>
+  <Grechka_MakeDisk_256K.label>собрать диск хранения 256K</Grechka_MakeDisk_256K.label>
+  <Grechka_MakeDisk_256K.jobString>Собирает детали диска.</Grechka_MakeDisk_256K.jobString>
+  <Grechka_MakeFrozenDisk_256K.label>собрать замораживающий диск 256K</Grechka_MakeFrozenDisk_256K.label>
+  <Grechka_MakeFrozenDisk_256K.jobString>Собирает детали диска.</Grechka_MakeFrozenDisk_256K.jobString>
+  <Grechka_MakeDataCore_512K.label>собрать ячейку памяти 512K</Grechka_MakeDataCore_512K.label>
+  <Grechka_MakeDataCore_512K.jobString>Собирает детали диска.</Grechka_MakeDataCore_512K.jobString>
+  <Grechka_MakeDisk_512K.label>собрать диск хранения 512K</Grechka_MakeDisk_512K.label>
+  <Grechka_MakeDisk_512K.jobString>Собирает детали диска.</Grechka_MakeDisk_512K.jobString>
+  <Grechka_MakeFrozenDisk_512K.label>собрать замораживающий диск 512K</Grechka_MakeFrozenDisk_512K.label>
+  <Grechka_MakeFrozenDisk_512K.jobString>Собирает детали диска.</Grechka_MakeFrozenDisk_512K.jobString>
+  <Grechka_MakeDataCore_1M.label>собрать ячейку памяти 1M</Grechka_MakeDataCore_1M.label>
+  <Grechka_MakeDataCore_1M.jobString>Собирает детали диска.</Grechka_MakeDataCore_1M.jobString>
+  <Grechka_MakeDisk_1M.label>собрать диск хранения 1M</Grechka_MakeDisk_1M.label>
+  <Grechka_MakeDisk_1M.jobString>Собирает детали диска.</Grechka_MakeDisk_1M.jobString>
+  <Grechka_MakeFrozenDisk_1M.label>собрать замораживающий диск 1M</Grechka_MakeFrozenDisk_1M.label>
+  <Grechka_MakeFrozenDisk_1M.jobString>Собирает детали диска.</Grechka_MakeFrozenDisk_1M.jobString>
+  <Grechka_MakeDataCore_2M.label>собрать ячейку памяти 2M</Grechka_MakeDataCore_2M.label>
+  <Grechka_MakeDataCore_2M.jobString>Собирает детали диска.</Grechka_MakeDataCore_2M.jobString>
+  <Grechka_MakeDisk_2M.label>собрать диск хранения 2M</Grechka_MakeDisk_2M.label>
+  <Grechka_MakeDisk_2M.jobString>Собирает детали диска.</Grechka_MakeDisk_2M.jobString>
+  <Grechka_MakeFrozenDisk_2M.label>собрать замораживающий диск 2M</Grechka_MakeFrozenDisk_2M.label>
+  <Grechka_MakeFrozenDisk_2M.jobString>Собирает детали диска.</Grechka_MakeFrozenDisk_2M.jobString>
+  <Grechka_MakeDataCore_4M.label>собрать ячейку памяти 4M</Grechka_MakeDataCore_4M.label>
+  <Grechka_MakeDataCore_4M.jobString>Собирает детали диска.</Grechka_MakeDataCore_4M.jobString>
+  <Grechka_MakeDisk_4M.label>собрать диск хранения 4M</Grechka_MakeDisk_4M.label>
+  <Grechka_MakeDisk_4M.jobString>Собирает детали диска.</Grechka_MakeDisk_4M.jobString>
+  <Grechka_MakeFrozenDisk_4M.label>собрать замораживающий диск 4M</Grechka_MakeFrozenDisk_4M.label>
+  <Grechka_MakeFrozenDisk_4M.jobString>Собирает детали диска.</Grechka_MakeFrozenDisk_4M.jobString>
+  <Grechka_MakeDataCore_8M.label>собрать ячейку памяти 8M</Grechka_MakeDataCore_8M.label>
+  <Grechka_MakeDataCore_8M.jobString>Собирает детали диска.</Grechka_MakeDataCore_8M.jobString>
+  <Grechka_MakeDisk_8M.label>собрать диск хранения 8M</Grechka_MakeDisk_8M.label>
+  <Grechka_MakeDisk_8M.jobString>Собирает детали диска.</Grechka_MakeDisk_8M.jobString>
+  <Grechka_MakeFrozenDisk_8M.label>собрать замораживающий диск 8M</Grechka_MakeFrozenDisk_8M.label>
+  <Grechka_MakeFrozenDisk_8M.jobString>Собирает детали диска.</Grechka_MakeFrozenDisk_8M.jobString>
+  <Grechka_MakeDataCore_16M.label>собрать ячейку памяти 16M</Grechka_MakeDataCore_16M.label>
+  <Grechka_MakeDataCore_16M.jobString>Собирает детали диска.</Grechka_MakeDataCore_16M.jobString>
+  <Grechka_MakeDisk_16M.label>собрать диск хранения 16M</Grechka_MakeDisk_16M.label>
+  <Grechka_MakeDisk_16M.jobString>Собирает детали диска.</Grechka_MakeDisk_16M.jobString>
+  <Grechka_MakeFrozenDisk_16M.label>собрать замораживающий диск 16M</Grechka_MakeFrozenDisk_16M.label>
+  <Grechka_MakeFrozenDisk_16M.jobString>Собирает детали диска.</Grechka_MakeFrozenDisk_16M.jobString>
+  <Grechka_MakeDataCore_64M.label>собрать ячейку памяти 64M</Grechka_MakeDataCore_64M.label>
+  <Grechka_MakeDataCore_64M.jobString>Собирает детали диска.</Grechka_MakeDataCore_64M.jobString>
+  <Grechka_MakeDisk_64M.label>собрать диск хранения 64M</Grechka_MakeDisk_64M.label>
+  <Grechka_MakeDisk_64M.jobString>Собирает детали диска.</Grechka_MakeDisk_64M.jobString>
+  <Grechka_MakeFrozenDisk_64M.label>собрать замораживающий диск 64M</Grechka_MakeFrozenDisk_64M.label>
+  <Grechka_MakeFrozenDisk_64M.jobString>Собирает детали диска.</Grechka_MakeFrozenDisk_64M.jobString>
+  <Grechka_MakeDataCore_256M.label>собрать ячейку памяти 256M</Grechka_MakeDataCore_256M.label>
+  <Grechka_MakeDataCore_256M.jobString>Собирает детали диска.</Grechka_MakeDataCore_256M.jobString>
+  <Grechka_MakeDisk_256M.label>собрать диск хранения 256M</Grechka_MakeDisk_256M.label>
+  <Grechka_MakeDisk_256M.jobString>Собирает детали диска.</Grechka_MakeDisk_256M.jobString>
+  <Grechka_MakeFrozenDisk_256M.label>собрать замораживающий диск 256M</Grechka_MakeFrozenDisk_256M.label>
+  <Grechka_MakeFrozenDisk_256M.jobString>Собирает детали диска.</Grechka_MakeFrozenDisk_256M.jobString>
+  <Grechka_CrushQuartz.label>измельчить кварц ×5</Grechka_CrushQuartz.label>
+  <Grechka_CrushQuartz.jobString>Собирает детали Storage.</Grechka_CrushQuartz.jobString>
+  <Grechka_SmeltSilicon.label>получить кремний ×5</Grechka_SmeltSilicon.label>
+  <Grechka_SmeltSilicon.jobString>Собирает детали Storage.</Grechka_SmeltSilicon.jobString>
+  <Grechka_MakeSiliconSubstrate.label>сделать кремниевые подложки ×5</Grechka_MakeSiliconSubstrate.label>
+  <Grechka_MakeSiliconSubstrate.jobString>Собирает детали Storage.</Grechka_MakeSiliconSubstrate.jobString>
+  <Grechka_MakePrintedSilicon.label>напечатать кремниевый элемент</Grechka_MakePrintedSilicon.label>
+  <Grechka_MakePrintedSilicon.jobString>Собирает детали Storage.</Grechka_MakePrintedSilicon.jobString>
+  <Grechka_MakeQuartzCircuit.label>напечатать кварцевую схему</Grechka_MakeQuartzCircuit.label>
+  <Grechka_MakeQuartzCircuit.jobString>Собирает детали Storage.</Grechka_MakeQuartzCircuit.jobString>
+  <Grechka_MakeQuartzProcessor.label>собрать кварцевый процессор ×2</Grechka_MakeQuartzProcessor.label>
+  <Grechka_MakeQuartzProcessor.jobString>Собирает детали Storage.</Grechka_MakeQuartzProcessor.jobString>
+  <Grechka_MakeSilverCircuit.label>напечатать серебряную схему</Grechka_MakeSilverCircuit.label>
+  <Grechka_MakeSilverCircuit.jobString>Собирает детали Storage.</Grechka_MakeSilverCircuit.jobString>
+  <Grechka_MakeSilverProcessor.label>собрать серебряный процессор ×2</Grechka_MakeSilverProcessor.label>
+  <Grechka_MakeSilverProcessor.jobString>Собирает детали Storage.</Grechka_MakeSilverProcessor.jobString>
+  <Grechka_MakeGoldCircuit.label>напечатать золотую схему</Grechka_MakeGoldCircuit.label>
+  <Grechka_MakeGoldCircuit.jobString>Собирает детали Storage.</Grechka_MakeGoldCircuit.jobString>
+  <Grechka_MakeGoldProcessor.label>собрать золотой процессор ×2</Grechka_MakeGoldProcessor.label>
+  <Grechka_MakeGoldProcessor.jobString>Собирает детали Storage.</Grechka_MakeGoldProcessor.jobString>
+</LanguageData>

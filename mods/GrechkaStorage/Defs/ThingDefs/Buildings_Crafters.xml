@@ -26,13 +26,16 @@
       <Flammability>0</Flammability>
     </statBases>
     <costList>
-      <Steel>180</Steel>
-      <Plasteel>90</Plasteel>
-      <ComponentSpacer>12</ComponentSpacer>
-      <Grechka_GoldProcessor>9</Grechka_GoldProcessor>
-      <Grechka_CertusQuartz>30</Grechka_CertusQuartz>
+      <Steel>80</Steel>
+      <Plasteel>20</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Grechka_GoldProcessor>2</Grechka_GoldProcessor>
+      <Grechka_CertusQuartz>10</Grechka_CertusQuartz>
     </costList>
     <comps>
+      <li Class="Grechka.Storage.CompProperties_StorageMachineArt">
+        <texture>Buildings/Map/States/StorageCrafter/StorageCrafter</texture>
+      </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>500</basePowerConsumption>
@@ -48,7 +51,7 @@
       </li>
     </modExtensions>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <designationCategory>Grechka_StorageCategory</designationCategory>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
     <designatorDropdown>Grechka_StorageCrafters</designatorDropdown>
     <minifiedDef>MinifiedThing</minifiedDef>
     <thingCategories>
@@ -68,8 +71,9 @@
     <fillPercent>1</fillPercent>
     <altitudeLayer>Building</altitudeLayer>
     <graphicData>
-      <texPath>Buildings/Map/StorageCrafter/StorageCrafter</texPath>
+      <texPath>Buildings/Map/StorageCrafterT4/StorageCrafterT4</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
+      <color>(1,1,1)</color>
     </graphicData>
     <statBases>
       <MaxHitPoints>400</MaxHitPoints>
@@ -78,13 +82,16 @@
       <Flammability>0</Flammability>
     </statBases>
     <costList>
-      <Steel>240</Steel>
-      <Plasteel>120</Plasteel>
-      <ComponentSpacer>16</ComponentSpacer>
-      <Grechka_GoldProcessor>12</Grechka_GoldProcessor>
-      <Grechka_CertusQuartz>40</Grechka_CertusQuartz>
+      <Steel>100</Steel>
+      <Plasteel>30</Plasteel>
+      <ComponentSpacer>3</ComponentSpacer>
+      <Grechka_GoldProcessor>3</Grechka_GoldProcessor>
+      <Grechka_CertusQuartz>15</Grechka_CertusQuartz>
     </costList>
     <comps>
+      <li Class="Grechka.Storage.CompProperties_StorageMachineArt">
+        <texture>Buildings/Map/States/StorageCrafterT4/StorageCrafterT4</texture>
+      </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>2000</basePowerConsumption>
@@ -100,13 +107,13 @@
       </li>
     </modExtensions>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <designationCategory>Grechka_StorageCategory</designationCategory>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
     <designatorDropdown>Grechka_StorageCrafters</designatorDropdown>
     <minifiedDef>MinifiedThing</minifiedDef>
     <thingCategories>
       <li>BuildingsProduction</li>
     </thingCategories>
-    <uiIconPath>Buildings/StorageCrafter</uiIconPath>
+    <uiIconPath>Buildings/StorageCrafterT4</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_StorageCrafterT5_Building</defName>
@@ -120,8 +127,9 @@
     <fillPercent>1</fillPercent>
     <altitudeLayer>Building</altitudeLayer>
     <graphicData>
-      <texPath>Buildings/Map/StorageCrafter/StorageCrafter</texPath>
+      <texPath>Buildings/Map/StorageCrafterT5/StorageCrafterT5</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
+      <color>(1,1,1)</color>
     </graphicData>
     <statBases>
       <MaxHitPoints>400</MaxHitPoints>
@@ -130,13 +138,16 @@
       <Flammability>0</Flammability>
     </statBases>
     <costList>
-      <Steel>300</Steel>
-      <Plasteel>150</Plasteel>
-      <ComponentSpacer>20</ComponentSpacer>
-      <Grechka_GoldProcessor>15</Grechka_GoldProcessor>
-      <Grechka_CertusQuartz>50</Grechka_CertusQuartz>
+      <Steel>120</Steel>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>4</ComponentSpacer>
+      <Grechka_GoldProcessor>4</Grechka_GoldProcessor>
+      <Grechka_CertusQuartz>20</Grechka_CertusQuartz>
     </costList>
     <comps>
+      <li Class="Grechka.Storage.CompProperties_StorageMachineArt">
+        <texture>Buildings/Map/States/StorageCrafterT5/StorageCrafterT5</texture>
+      </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>8000</basePowerConsumption>
@@ -152,12 +163,12 @@
       </li>
     </modExtensions>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <designationCategory>Grechka_StorageCategory</designationCategory>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
     <designatorDropdown>Grechka_StorageCrafters</designatorDropdown>
     <minifiedDef>MinifiedThing</minifiedDef>
     <thingCategories>
       <li>BuildingsProduction</li>
     </thingCategories>
-    <uiIconPath>Buildings/StorageCrafter</uiIconPath>
+    <uiIconPath>Buildings/StorageCrafterT5</uiIconPath>
   </ThingDef>
 </Defs>

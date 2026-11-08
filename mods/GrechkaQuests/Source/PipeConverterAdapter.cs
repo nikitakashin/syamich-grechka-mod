@@ -41,7 +41,7 @@ namespace Grechka.Quests
                 || !typeof(ThingDef).IsAssignableFrom(product.FieldType) || props == null
                 || !converterProps.IsAssignableFrom(props.PropertyType))
             {
-                Log.Warning("[Grechka Quests] PipeSystem: сигнатура вывода предмета изменилась; учёт отключён.");
+                Log.Warning(QuestText.Get("GrechkaQuests_8d3a96aae3eb", "[Grechka Quests] PipeSystem: сигнатура вывода предмета изменилась; учёт отключён."));
                 return;
             }
             try
@@ -54,7 +54,7 @@ namespace Grechka.Quests
             }
             catch (Exception e)
             {
-                Log.Error("[Grechka Quests] Не удалось подключить PipeSystem: " + e);
+                Log.Error(QuestText.Get("GrechkaQuests_8d76df7bc000", "[Grechka Quests] Не удалось подключить PipeSystem: ") + e);
             }
         }
 

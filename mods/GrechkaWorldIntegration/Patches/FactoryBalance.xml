@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="VFEFactory_AutomatedDrillPlatform"]/comps/li[@Class="PipeSystem.CompProperties_AdvancedResourceProcessor"]/processes</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/ThingDef[defName="VFEFactory_AutomatedDrillPlatform"]/comps/li[@Class="PipeSystem.CompProperties_AdvancedResourceProcessor"]/processes</xpath>
+      <value><li>GrechkaWorld_DrillSteel</li><li>GrechkaWorld_DrillPlasteel</li><li>GrechkaWorld_DrillUranium</li></value>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Grechka_MakeComponentT3"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/PipeSystem.ProcessDef[defName="VFEFactory_AssembleAdvancedComponent"]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationReplace">
+            <xpath>Defs/PipeSystem.ProcessDef[defName="VFEFactory_AssembleAdvancedComponent"]/ticks</xpath>
+            <value><ticks>12000</ticks></value>
+          </li>
+          <li Class="PatchOperationReplace">
+            <xpath>Defs/PipeSystem.ProcessDef[defName="VFEFactory_AssembleAdvancedComponent"]/ingredients</xpath>
+            <value><ingredients><li><thing>Steel</thing><countNeeded>12</countNeeded></li><li><thing>ComponentIndustrial</thing><countNeeded>1</countNeeded></li><li><thing>Plasteel</thing><countNeeded>5</countNeeded></li><li><thing>Gold</thing><countNeeded>2</countNeeded></li></ingredients></value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/PipeSystem.ProcessDef[defName="VFEFactory_AssembleAdvancedComponent"]</xpath>
+            <value><modExtensions><li Class="Grechka.WorldIntegration.FactoryProcessBalanceProperties"><refreshFixedInputs>true</refreshFixedInputs><previousTicks>40000</previousTicks></li></modExtensions></value>
+          </li>
+        </operations>
+      </match>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="Grechka_MakeComponentT3"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>Defs/PipeSystem.ProcessDef[defName="VFEFactory_AssembleComponent"]</xpath>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationReplace">
+            <xpath>Defs/PipeSystem.ProcessDef[defName="VFEFactory_AssembleComponent"]/ticks</xpath>
+            <value><ticks>4000</ticks></value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>Defs/PipeSystem.ProcessDef[defName="VFEFactory_AssembleComponent"]</xpath>
+            <value><modExtensions><li Class="Grechka.WorldIntegration.FactoryProcessBalanceProperties"><refreshFixedInputs>true</refreshFixedInputs><previousTicks>20000</previousTicks></li></modExtensions></value>
+          </li>
+        </operations>
+      </match>
+    </match>
+  </Operation>
+</Patch>

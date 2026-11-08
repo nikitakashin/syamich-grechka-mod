@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Grechka Speed Plus</name>
+  <author>Grechka World</author>
+  <packageId>grechka.speedplus</packageId>
+  <supportedVersions><li>1.7</li></supportedVersions>
+  <description>Добавляет четвёртую кнопку скорости с четырьмя треугольниками после третьей. Штатная ультраскорость: ×15 при загруженной карте, ×150 без карт; быстрее третьей кнопки. Фактическая частота зависит от производительности колонии. Горячая клавиша по умолчанию — 4, её можно изменить в настройках управления. Пауза и принудительное замедление при опасности сохраняются. Требует только Harmony.</description>
+  <modDependencies>
+    <li><packageId>brrainz.harmony</packageId><displayName>Harmony</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl></li>
+  </modDependencies>
+  <loadAfter><li>brrainz.harmony</li></loadAfter>
+  <modVersion>0.1.1</modVersion>
+</ModMetaData>

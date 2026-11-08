@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaTreasures_TreasureMap.label>treasure map</GrechkaTreasures_TreasureMap.label>
+  <GrechkaTreasures_TreasureMap.description>Old coordinates and rumors of gemstones. Place the map on the ground, then select a colonist and right-click it to decipher. Consumed only when a new site is successfully found. Up to four expeditions may be active at once.</GrechkaTreasures_TreasureMap.description>
+  <GrechkaTreasures_TreasureChest.label>sealed treasure chest</GrechkaTreasures_TreasureChest.label>
+  <GrechkaTreasures_TreasureChest.description>A heavy old chest. Select a colonist and right-click to open it. Its physical contents are stored inside and placed nearby when opened. Destroying it also releases surviving contents.</GrechkaTreasures_TreasureChest.description>
+  <GrechkaTreasures_DecoyChest.label>suspicious gilded chest</GrechkaTreasures_DecoyChest.label>
+  <GrechkaTreasures_DecoyChest.description>Its suspiciously bright gilding is peeling, with fresh footprints nearby. It may be a cheap decoy containing ordinary metal instead of promised gemstones.</GrechkaTreasures_DecoyChest.description>
+  <GrechkaTreasures_WarningSign.label>traces of an earlier expedition</GrechkaTreasures_WarningSign.label>
+  <GrechkaTreasures_WarningSign.description>A note, marks on metal and scraps of wiring. Select this object and read its inspection text for clues to traps and genuine treasure.</GrechkaTreasures_WarningSign.description>
+</LanguageData>

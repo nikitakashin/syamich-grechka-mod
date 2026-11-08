@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaIndustry_7a0e4324377b>Радиус: </GrechkaIndustry_7a0e4324377b>
+  <GrechkaIndustry_c01295237efa>работает</GrechkaIndustry_c01295237efa>
+  <GrechkaIndustry_f2d86ccb744a>отключён</GrechkaIndustry_f2d86ccb744a>
+  <GrechkaIndustry_6909f4187d98>[Grechka Industry] Ошибка подписчика выпуска: </GrechkaIndustry_6909f4187d98>
+  <GrechkaIndustry_ddf3510dc180>Готово к выгрузке: </GrechkaIndustry_ddf3510dc180>
+  <GrechkaIndustry_3fa9b7d153ee> механитов</GrechkaIndustry_3fa9b7d153ee>
+  <GrechkaIndustry_1d35ff9e7950>Извлечение: </GrechkaIndustry_1d35ff9e7950>
+  <GrechkaIndustry_1aa28673118c>Извлечение приостановлено: </GrechkaIndustry_1aa28673118c>
+  <GrechkaIndustry_1d7f4fb22aa0>[Grechka Industry] Некорректные константы материи; рецепты не созданы.</GrechkaIndustry_1d7f4fb22aa0>
+  <GrechkaIndustry_2493ed5a52c6>[Grechka Industry] Материя: пропущен </GrechkaIndustry_2493ed5a52c6>
+  <GrechkaIndustry_da283b60afc2>. Результат новый, обычного качества; содержимое контейнеров и уникальное состояние не копируются.</GrechkaIndustry_da283b60afc2>
+  <GrechkaIndustry_8fbd4d2be5a9>[Grechka Industry] Достигнут безопасный предел 60000 RecipeDef. Оставшиеся рецепты материи не созданы: слишком много вариантов материалов в сборке.</GrechkaIndustry_8fbd4d2be5a9>
+  <GrechkaIndustry_d19e03356c37>[Grechka Industry] Материя: непредставимый размер партии для </GrechkaIndustry_d19e03356c37>
+  <GrechkaIndustry_1e1bdf9ead8f>[Grechka Industry] Материя: непредставимый бюджет переработки </GrechkaIndustry_1e1bdf9ead8f>
+  <GrechkaIndustry_100794a50088>материя из: </GrechkaIndustry_100794a50088>
+  <GrechkaIndustry_672acf4bea2a>[Grechka Industry] Материя: непредставимый бюджет синтеза </GrechkaIndustry_672acf4bea2a>
+  <GrechkaIndustry_f78d5b0df7d8>синтез: </GrechkaIndustry_f78d5b0df7d8>
+  <GrechkaIndustry_7cc02bc655cd>Улучшить до </GrechkaIndustry_7cc02bc655cd>
+  <GrechkaIndustry_1f423d1791c2>Снимет это устройство целиком и поставит чертёж следующей ступени на том же месте. Стоимость: </GrechkaIndustry_1f423d1791c2>
+  <GrechkaIndustry_f878119dcf1a>. Пока строится новое устройство, старое работать не будет.</GrechkaIndustry_f878119dcf1a>
+  <GrechkaIndustry_fa748223b51a>Здесь нельзя поставить следующее устройство: </GrechkaIndustry_fa748223b51a>
+  <GrechkaIndustry_0535fa03e514>Не удалось снять устройство целиком.</GrechkaIndustry_0535fa03e514>
+  <GrechkaIndustry_1290fafdb3c2>Чертёж </GrechkaIndustry_1290fafdb3c2>
+  <GrechkaIndustry_62224fbdda5a> не был создан.</GrechkaIndustry_62224fbdda5a>
+  <GrechkaIndustry_b52c94091685>[Grechka Industry] Не удалось поставить чертёж улучшения панели: </GrechkaIndustry_b52c94091685>
+  <GrechkaIndustry_31c93a2136e2>[Grechka Industry] Не удалось поставить чертёж возврата S0: </GrechkaIndustry_31c93a2136e2>
+  <GrechkaIndustry_a037b8b54564>Чертёж улучшения не создан. Снятое устройство сохранено для повторной установки.</GrechkaIndustry_a037b8b54564>
+  <GrechkaIndustry_ac199f7978a8>[Grechka Industry] Не удалось завершить улучшение верстака: </GrechkaIndustry_ac199f7978a8>
+  <GrechkaIndustry_bfce43b7166c>Не найден целевой верстак.</GrechkaIndustry_bfce43b7166c>
+  <GrechkaIndustry_eddf53e5a2fb>Ионизатор: выключен или нет питания</GrechkaIndustry_eddf53e5a2fb>
+  <GrechkaIndustry_1eea1717956d>Освещает и очищает всю комнату: </GrechkaIndustry_1eea1717956d>
+  <GrechkaIndustry_eff4f301fa12> клеток</GrechkaIndustry_eff4f301fa12>
+  <GrechkaIndustry_4c39231095b5>Ионизатору нужна закрытая комната</GrechkaIndustry_4c39231095b5>
+  <GrechkaIndustry_e039ffb8b453>Мехапоника: рост ×</GrechkaIndustry_e039ffb8b453>
+  <GrechkaIndustry_a3ff1280eb4b>Мехапоника: рост приостановлен</GrechkaIndustry_a3ff1280eb4b>
+  <GrechkaIndustry_27973df0c9f9>
+Мехапоника: ×</GrechkaIndustry_27973df0c9f9>
+  <GrechkaIndustry_14d9dd5218a6>
+Мехапоника: нет питания или устройство отключено</GrechkaIndustry_14d9dd5218a6>
+  <GrechkaIndustry_IonizerBudget>Бюджет уборки ионизатора должен составлять от 1 до 256 слоёв за цикл.</GrechkaIndustry_IonizerBudget>
+  <GrechkaIndustry_MatterConstants>Константы материи должны быть конечными и положительными. recycleEfficiency должен быть меньше 0.0625 с бонусами T5.</GrechkaIndustry_MatterConstants>
+  <GrechkaIndustry_ExtractorProduct>Не указан продукт экстрактора.</GrechkaIndustry_ExtractorProduct>
+  <GrechkaIndustry_ExtractorCycle>Цикл и количество экстрактора должны быть положительными, а партия должна помещаться в одну стопку.</GrechkaIndustry_ExtractorCycle>
+  <GrechkaIndustry_RecycleUnverified>Переработка приостановлена: производственная стоимость этого предмета пока не проверена. Материалы сохранены; отмените заказ или незавершённое изделие, чтобы вернуть их.</GrechkaIndustry_RecycleUnverified>
+  <GrechkaIndustry_RecycleInsufficient>Стоимость этой партии меньше единицы материи. Её ингредиенты не израсходованы.</GrechkaIndustry_RecycleInsufficient>
+</LanguageData>

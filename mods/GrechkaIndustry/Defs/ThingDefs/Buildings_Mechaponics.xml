@@ -60,11 +60,16 @@
       <li Class="CompProperties_Breakdownable" />
       <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
         <targetDefName>Grechka_MechaponicsT4_Building</targetDefName>
-        <costDescription>установленное устройство, 10 компонентов T4, 100 пластали и 8 субстрата</costDescription>
+        <costDescription>предыдущее устройство целиком и дополнительные материалы следующей ступени; установленный корпус уже учтён</costDescription>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_OperationalGraphics">
+        <offPath>Buildings/Map/States/MechaponicsT3/MechaponicsT3_Off</offPath>
+        <idlePath>Buildings/Map/States/MechaponicsT3/MechaponicsT3_Idle</idlePath>
+        <activePath>Buildings/Map/States/MechaponicsT3/MechaponicsT3_Active</activePath>
       </li>
     </comps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <designationCategory>Production</designationCategory>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
     <designatorDropdown>Grechka_MechaponicsGroup</designatorDropdown>
     <uiOrder>2521</uiOrder>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>

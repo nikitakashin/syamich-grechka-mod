@@ -55,7 +55,7 @@ for folder in (root / "Defs", root / "Patches"):
 
 extractor = defs["Grechka_MechaniteExtractorT3_Building"]
 cost = {li.tag: int(li.text) for li in extractor.findall("./costList/*")}
-require(cost == {"Grechka_HousingT2_Item": 1, "ComponentSpacer": 8, "Plasteel": 40, "Uranium": 20},
+require(cost == {"Grechka_HousingT2_Item": 1, "ComponentSpacer": 2, "Plasteel": 20, "Uranium": 10},
         "first extractor must be reachable with T2 materials, without its own product")
 require(extractor.findtext("tickerType") == "Normal"
         and extractor.findtext("./comps/li[@Class='CompProperties_Power']/basePowerConsumption") == "2000",
@@ -66,9 +66,9 @@ require(producer is not None and producer.findtext("product") == "Grechka_Mechan
         "extractor startup balance or product is missing")
 component = defs["Grechka_MakeComponentT3"]
 housing = defs["Grechka_MakeHousingT3"]
-require(inputs(component) == {"ComponentSpacer": 4, "Plasteel": 20, "Uranium": 10, "Grechka_Mechanites": 25}
+require(inputs(component) == {"ComponentSpacer": 1, "Plasteel": 8, "Uranium": 4, "Grechka_Mechanites": 10}
         and component.findtext("./products/Grechka_ComponentT3_Item") == "1", "accepted T3 component route changed")
-require(inputs(housing) == {"Grechka_HousingT2_Item": 1, "Plasteel": 60, "Grechka_ComponentT3_Item": 8, "Grechka_Mechanites": 20}
+require(inputs(housing) == {"Grechka_HousingT2_Item": 1, "Plasteel": 20, "Grechka_ComponentT3_Item": 2, "Grechka_Mechanites": 10}
         and housing.findtext("./products/Grechka_HousingT3_Item") == "1", "T3 housing chain is broken")
 available = {li.text for li in defs["Grechka_AssemblyBenchT2_Building"].findall("./recipes/li")}
 require({"Grechka_MakeComponentT3", "Grechka_MakeHousingT3"} <= available,
@@ -88,6 +88,9 @@ expected = {li.tag: int(li.text) for li in bench.findall("./costList/*") if li.t
 for name, count in inputs(housing).items():
     if name != "Grechka_HousingT2_Item":
         expected[name] = expected.get(name, 0) + count
+for n in defs["Grechka_AssemblyBenchT2_Building"].findall("costList/*"):
+    if n.tag in expected: expected[n.tag] -= int(n.text)
+expected = {k: v for k, v in expected.items() if v > 0}
 require(inputs(upgrade) == expected and "Grechka_UpgradeAssemblyBenchT3" in available,
         "T2 to T3 upgrade must credit its installed housing once")
 require(defs["Grechka_AssemblyBenchT2_Building"].findtext(
@@ -118,7 +121,7 @@ require(ionizer.findtext("size") == "(1,1)"
         and ionizer.find("./comps/li[@Class='CompProperties_Glower']") is None,
         "ionizer must use the whole-room service instead of a limited-radius vanilla lamp")
 require({li.tag: int(li.text) for li in ionizer.findall("./costList/*")}
-        == {"Grechka_HousingT3_Item": 1, "Grechka_ComponentT3_Item": 4, "Plasteel": 40, "Grechka_Mechanites": 20}
+        == {"Grechka_HousingT3_Item": 1, "Grechka_ComponentT3_Item": 2, "Plasteel": 20, "Grechka_Mechanites": 10}
         and ionizer.findtext("designatorDropdown") == "Grechka_IonizerGroup"
         and not ionizer.findall("researchPrerequisites"),
         "ionizer must be reachable with the available T3 parts without a research gate")

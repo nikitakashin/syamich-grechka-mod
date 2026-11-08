@@ -56,10 +56,10 @@
       </defaultOutfitTags>
     </apparel>
     <costList>
-      <Plasteel>100</Plasteel>
-      <Synthread>40</Synthread>
-      <Grechka_ComponentT3_Item>8</Grechka_ComponentT3_Item>
-      <Grechka_Mechanites>30</Grechka_Mechanites>
+      <Plasteel>60</Plasteel>
+      <Synthread>30</Synthread>
+      <Grechka_ComponentT3_Item>3</Grechka_ComponentT3_Item>
+      <Grechka_Mechanites>20</Grechka_Mechanites>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -108,10 +108,10 @@
       </defaultOutfitTags>
     </apparel>
     <costList>
-      <Plasteel>40</Plasteel>
+      <Plasteel>25</Plasteel>
       <Synthread>10</Synthread>
-      <Grechka_ComponentT3_Item>3</Grechka_ComponentT3_Item>
-      <Grechka_Mechanites>12</Grechka_Mechanites>
+      <Grechka_ComponentT3_Item>1</Grechka_ComponentT3_Item>
+      <Grechka_Mechanites>8</Grechka_Mechanites>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -135,6 +135,7 @@
     <graphicData>
       <texPath>Items/ArmorT4</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,0.986540)</drawSize>
     </graphicData>
     <statBases>
       <MaxHitPoints>1400</MaxHitPoints>
@@ -168,10 +169,10 @@
       </defaultOutfitTags>
     </apparel>
     <costList>
-      <Plasteel>100</Plasteel>
-      <Synthread>40</Synthread>
-      <Grechka_ComponentT4_Item>8</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>30</Grechka_ArchoSubstrate>
+      <Plasteel>60</Plasteel>
+      <Synthread>30</Synthread>
+      <Grechka_ComponentT4_Item>3</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>20</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -195,6 +196,7 @@
     <graphicData>
       <texPath>Items/HelmetT4</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,0.986540)</drawSize>
     </graphicData>
     <statBases>
       <MaxHitPoints>1400</MaxHitPoints>
@@ -220,10 +222,10 @@
       </defaultOutfitTags>
     </apparel>
     <costList>
-      <Plasteel>40</Plasteel>
+      <Plasteel>25</Plasteel>
       <Synthread>10</Synthread>
-      <Grechka_ComponentT4_Item>3</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>12</Grechka_ArchoSubstrate>
+      <Grechka_ComponentT4_Item>1</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -247,6 +249,7 @@
     <graphicData>
       <texPath>Items/ArmorT5</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,0.913872)</drawSize>
     </graphicData>
     <statBases>
       <MaxHitPoints>2100</MaxHitPoints>
@@ -280,10 +283,10 @@
       </defaultOutfitTags>
     </apparel>
     <costList>
-      <Plasteel>100</Plasteel>
-      <Synthread>40</Synthread>
-      <Grechka_ComponentT5_Item>8</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>30</Grechka_GrechkaConcentrate>
+      <Plasteel>60</Plasteel>
+      <Synthread>30</Synthread>
+      <Grechka_ComponentT5_Item>3</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>20</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -332,10 +335,10 @@
       </defaultOutfitTags>
     </apparel>
     <costList>
-      <Plasteel>40</Plasteel>
+      <Plasteel>25</Plasteel>
       <Synthread>10</Synthread>
-      <Grechka_ComponentT5_Item>3</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>12</Grechka_GrechkaConcentrate>
+      <Grechka_ComponentT5_Item>1</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -364,6 +367,7 @@
     <graphicData>
       <texPath>Items/GoldenWings</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,0.500000)</drawSize>
     </graphicData>
     <statBases>
       <Mass>1</Mass>
@@ -409,6 +413,7 @@
     <graphicData>
       <texPath>Items/CombatDroneT4</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,0.666667)</drawSize>
     </graphicData>
     <statBases>
       <Mass>2</Mass>
@@ -447,9 +452,9 @@
       </li>
     </modExtensions>
     <costList>
-      <Plasteel>60</Plasteel>
-      <Grechka_ComponentT4_Item>6</Grechka_ComponentT4_Item>
-      <Grechka_ArchoSubstrate>20</Grechka_ArchoSubstrate>
+      <Plasteel>40</Plasteel>
+      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
+      <Grechka_ArchoSubstrate>10</Grechka_ArchoSubstrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -494,6 +499,7 @@
     <graphicData>
       <texPath>Items/CombatDroneT5</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,0.913872)</drawSize>
     </graphicData>
     <statBases>
       <Mass>2</Mass>
@@ -532,9 +538,9 @@
       </li>
     </modExtensions>
     <costList>
-      <Plasteel>60</Plasteel>
-      <Grechka_ComponentT5_Item>6</Grechka_ComponentT5_Item>
-      <Grechka_GrechkaConcentrate>20</Grechka_GrechkaConcentrate>
+      <Plasteel>40</Plasteel>
+      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
+      <Grechka_GrechkaConcentrate>10</Grechka_GrechkaConcentrate>
     </costList>
     <recipeMaker>
       <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -553,10 +559,12 @@
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
     <defName>Grechka_DroneBulletT5_Item</defName>
+    <thingClass>Grechka.Equipment.DroneBulletT5</thingClass>
     <label>выстрел дрона T5</label>
     <graphicData>
-      <texPath>Projectiles/DroneProjectileT4</texPath>
+      <texPath>Projectiles/DroneProjectileT5</texPath>
       <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
@@ -570,5 +578,6 @@
         </li>
       </extraDamages>
     </projectile>
+    <uiIconPath>Projectiles/DroneProjectileT5</uiIconPath>
   </ThingDef>
 </Defs>

@@ -14,8 +14,10 @@ namespace Grechka.WorldIntegration
         public string targetDefName;
         public int minimumTier;
         public bool addHousing;
-        public string note;
+        public bool retired;
+        [MustTranslate] public string note;
         public List<NamedCost> replacementCost;
+        public List<string> previousSignatures;
         public string Signature => packageId.ToLowerInvariant() + "/" + targetDefName + "/" + minimumTier + "/" + addHousing
             + (replacementCost == null ? "" : "/" + string.Join(";", replacementCost.Select(c => c.thingDefName + "=" + c.count)));
     }
@@ -66,16 +68,16 @@ namespace Grechka.WorldIntegration
         {
             error = null;
             if (recipe == null || index < 0 || index >= recipe.ingredients.Count || members == null || members.Count == 0)
-            { error = "нет рецепта, позиции или доступного материала"; return false; }
+            { error = WorldText.Get("GrechkaWorldIntegration_5356d44c4c84", "recipe, ingredient position or available material is missing"); return false; }
             // Count recipes can mix 40+60 physical units. Nutrition/value recipes need their own adapter.
             if (!(recipe.IngredientValueGetter is IngredientValueGetter_Volume))
-            { error = "неподдерживаемая единица ингредиента: " + recipe.IngredientValueGetter.GetType().Name; return false; }
+            { error = WorldText.Get("GrechkaWorldIntegration_6e0e1c1d9ff3", "unsupported ingredient unit: ") + recipe.IngredientValueGetter.GetType().Name; return false; }
             IngredientCount ingredient = recipe.ingredients[index];
             ThingDef old = ingredient.filter.AllowedThingDefs.FirstOrDefault();
-            if (old == null) { error = "исходный фильтр пуст"; return false; }
+            if (old == null) { error = WorldText.Get("GrechkaWorldIntegration_ae1fef0a2fb7", "the original filter is empty"); return false; }
             float value = recipe.IngredientValueGetter.ValuePerUnitOf(old);
             if (members.Any(d => Math.Abs(recipe.IngredientValueGetter.ValuePerUnitOf(d) - value) > 0.00001f))
-            { error = "разная физическая единица: требуются отдельные формы/рецепты"; return false; }
+            { error = WorldText.Get("GrechkaWorldIntegration_ed9cca862246", "different physical units require separate forms or recipes"); return false; }
             var filter = new ThingFilter();
             foreach (ThingDef member in members)
             {
@@ -101,6 +103,7 @@ namespace Grechka.WorldIntegration
             public List<ThingFilter> filters;
         }
         private static readonly Dictionary<ThingDef, List<ThingDefCountClass>> costs = new Dictionary<ThingDef, List<ThingDefCountClass>>();
+        private static readonly Dictionary<ThingDef, CostListForDifficulty> difficultyCosts = new Dictionary<ThingDef, CostListForDifficulty>();
         private static readonly List<RecipeBaseline> recipes = new List<RecipeBaseline>();
         public static readonly List<string> Report = new List<string>();
         public static readonly Dictionary<string, int> AppliedTiers = new Dictionary<string, int>();
@@ -120,13 +123,20 @@ namespace Grechka.WorldIntegration
         private static ThingFilter Copy(ThingFilter source) { var copy = new ThingFilter(); if (source != null) copy.CopyAllowancesFrom(source); return copy; }
         private static List<ThingDefCountClass> Copy(List<ThingDefCountClass> source)
             => source?.Select(x => new ThingDefCountClass(x.thingDef, x.count)).ToList() ?? new List<ThingDefCountClass>();
+        private static CostListForDifficulty CopyDifficultyCost(CostListForDifficulty source)
+            => source == null ? null : new CostListForDifficulty { difficultyVar = source.difficultyVar,
+                invert = source.invert, costStuffCount = source.costStuffCount, costList = Copy(source.costList) };
 
         public static void Capture()
         {
             foreach (MachineProfileRuleDef rule in DefDatabase<MachineProfileRuleDef>.AllDefsListForReading)
             {
                 ThingDef def = DefDatabase<ThingDef>.GetNamedSilentFail(rule.targetDefName);
-                if (MaterialDictionary.BelongsTo(def, rule.packageId) && !costs.ContainsKey(def)) costs.Add(def, Copy(def.costList));
+                if (MaterialDictionary.BelongsTo(def, rule.packageId) && !costs.ContainsKey(def))
+                {
+                    costs.Add(def, Copy(def.costList));
+                    difficultyCosts.Add(def, CopyDifficultyCost(def.costListForDifficulty));
+                }
             }
             foreach (RecipeMaterialRuleDef rule in DefDatabase<RecipeMaterialRuleDef>.AllDefsListForReading)
             {
@@ -139,10 +149,29 @@ namespace Grechka.WorldIntegration
         }
 
         public static List<ThingDefCountClass> BaselineCosts(ThingDef def) => Copy(costs.TryGetValue(def, out var saved) ? saved : def.costList);
+        public static CostListForDifficulty BaselineDifficultyCosts(ThingDef def)
+            => CopyDifficultyCost(difficultyCosts.TryGetValue(def, out var saved) ? saved : def.costListForDifficulty);
+
+        // BuildableDef.CostList chooses this branch instead of costList when its
+        // difficulty condition applies. Keep both prices tiered without flattening
+        // the native barrel/stuff rules or sharing mutable costs between variants.
+        public static void ApplyDifficultyHousing(ThingDef target, ThingDef original, ThingDef housing)
+        {
+            target.costListForDifficulty = BaselineDifficultyCosts(original);
+            if (target.costListForDifficulty != null
+                && !target.costListForDifficulty.costList.Any(c => c.thingDef == housing))
+                target.costListForDifficulty.costList.Add(new ThingDefCountClass(housing, 1));
+        }
 
         public static void RestoreBaseline()
         {
-            foreach (var pair in costs) pair.Key.costList = Copy(pair.Value);
+            TierRecipeInheritance.Clear();
+            TierArtwork.Restore();
+            foreach (var pair in costs)
+            {
+                pair.Key.costList = Copy(pair.Value);
+                pair.Key.costListForDifficulty = BaselineDifficultyCosts(pair.Key);
+            }
             foreach (RecipeBaseline baseline in recipes)
             {
                 baseline.recipe.fixedIngredientFilter = Copy(baseline.fixedFilter);
@@ -152,16 +181,19 @@ namespace Grechka.WorldIntegration
             }
             ProfileVariants.Restore(); CostListCalculator.Reset(); AppliedTiers.Clear(); Report.Clear();
             FamilyWorkDiscovery.Refresh();
+            RefreshRelatedMarketValues();
         }
 
         public static void Apply(WorldProfileState state, bool acceptCurrent)
         {
+            if (state.ownerGame != null && !ReferenceEquals(state.ownerGame, Current.Game)) return;
+            ResearchTree.SyncRequirements();
             RestoreBaseline();
             if (acceptCurrent)
             {
                 state.approvedMachines.Clear(); state.approvedMaterials.Clear(); state.approvedRecipes.Clear();
                 foreach (MachineProfileRuleDef rule in DefDatabase<MachineProfileRuleDef>.AllDefsListForReading)
-                    if (MaterialDictionary.BelongsTo(DefDatabase<ThingDef>.GetNamedSilentFail(rule.targetDefName), rule.packageId)
+                    if (!rule.retired && MaterialDictionary.BelongsTo(DefDatabase<ThingDef>.GetNamedSilentFail(rule.targetDefName), rule.packageId)
                         && (!rule.addHousing || MaterialDictionary.BelongsTo(DefDatabase<ThingDef>.GetNamedSilentFail("Grechka_HousingT" + rule.minimumTier + "_Item"), "grechka.industry"))
                         && (rule.replacementCost == null || rule.replacementCost.All(c => DefDatabase<ThingDef>.GetNamedSilentFail(c.thingDefName) != null))) state.approvedMachines.Add(rule.Signature);
                 foreach (MaterialGroupDef group in DefDatabase<MaterialGroupDef>.AllDefsListForReading)
@@ -171,25 +203,28 @@ namespace Grechka.WorldIntegration
                     if (MaterialDictionary.BelongsTo(DefDatabase<RecipeDef>.GetNamedSilentFail(rule.recipeDefName), rule.packageId)) state.approvedRecipes.Add(RecipeKey(rule));
                 state.applied = true;
             }
-            if (!state.applied) { Report.Add("Профиль этой колонии ещё не применён. Исходные стоимости и материалы сохранены."); return; }
+            if (!state.applied) { Report.Add(WorldText.Get("GrechkaWorldIntegration_9b9fdcfe0d7d", "The profile has not been applied to this colony yet. Original costs and materials are preserved.")); return; }
+            MigrateBalanceApprovals(state);
             var accepted = new HashSet<string>(state.approvedMachines);
             foreach (MachineProfileRuleDef rule in DefDatabase<MachineProfileRuleDef>.AllDefsListForReading)
             {
+                if (rule.retired) { Report.Add(rule.defName + WorldText.Get("GrechkaWorldIntegration_f7189d87e985", ": using original behavior. Previous variants are retained for old saves")); continue; }
                 ThingDef def = DefDatabase<ThingDef>.GetNamedSilentFail(rule.targetDefName);
-                if (!MaterialDictionary.BelongsTo(def, rule.packageId)) { Report.Add(rule.defName + ": источник отсутствует"); continue; }
-                if (!accepted.Contains(rule.Signature)) { Report.Add(rule.defName + ": требуется явное применение нового правила"); continue; }
+                if (!MaterialDictionary.BelongsTo(def, rule.packageId)) { Report.Add(rule.defName + WorldText.Get("GrechkaWorldIntegration_86fca31dd7c4", ": source is missing")); continue; }
+                if (!accepted.Contains(rule.Signature)) { Report.Add(rule.defName + WorldText.Get("GrechkaWorldIntegration_716ee9cebafa", ": explicit application of the new rule is required")); continue; }
                 if (rule.addHousing)
                 {
                     ThingDef housing = DefDatabase<ThingDef>.GetNamedSilentFail("Grechka_HousingT" + rule.minimumTier + "_Item");
-                    if (housing == null) { Report.Add(rule.defName + ": Industry/корпус отсутствует, исходная цена сохранена"); continue; }
+                    if (housing == null) { Report.Add(rule.defName + WorldText.Get("GrechkaWorldIntegration_476b62b92f2f", ": Industry or housing is missing. Original cost preserved")); continue; }
                     if (rule.replacementCost != null && rule.replacementCost.Any(c => DefDatabase<ThingDef>.GetNamedSilentFail(c.thingDefName) == null))
-                    { Report.Add(rule.defName + ": материал цены отсутствует, исходная цена сохранена"); continue; }
+                    { Report.Add(rule.defName + WorldText.Get("GrechkaWorldIntegration_9c81309268b0", ": cost material is missing. Original cost preserved")); continue; }
                     def.costList = rule.replacementCost == null ? Copy(costs[def]) : rule.replacementCost
                         .Select(c => new ThingDefCountClass(DefDatabase<ThingDef>.GetNamed(c.thingDefName), c.count)).ToList();
                     if (!def.costList.Any(c => c.thingDef == housing)) def.costList.Add(new ThingDefCountClass(housing, 1));
-                    Report.Add(rule.defName + ": " + def.defName + " + 1 корпус T" + rule.minimumTier);
+                    ApplyDifficultyHousing(def, def, housing);
+                    Report.Add(rule.defName + ": " + def.defName + WorldText.Get("GrechkaWorldIntegration_9efbd0388542", " + 1 housing T") + rule.minimumTier);
                 }
-                else Report.Add(rule.defName + ": исходная стоимость; " + rule.note);
+                else Report.Add(rule.defName + WorldText.Get("GrechkaWorldIntegration_3654d1a8d30f", ": original cost. ") + rule.note);
                 if (rule.minimumTier > 0) AppliedTiers[def.defName] = rule.minimumTier;
             }
             var materialApproval = new HashSet<string>(state.approvedMaterials);
@@ -197,20 +232,53 @@ namespace Grechka.WorldIntegration
             {
                 RecipeDef recipe = DefDatabase<RecipeDef>.GetNamedSilentFail(rule.recipeDefName);
                 MaterialGroupDef group = DefDatabase<MaterialGroupDef>.GetNamedSilentFail(rule.materialGroup);
-                if (!MaterialDictionary.BelongsTo(recipe, rule.packageId) || group == null) { Report.Add(rule.defName + ": рецепт/группа отсутствует"); continue; }
-                if (!state.approvedRecipes.Contains(RecipeKey(rule))) { Report.Add(rule.defName + ": требуется явное применение"); continue; }
+                if (!MaterialDictionary.BelongsTo(recipe, rule.packageId) || group == null) { Report.Add(rule.defName + WorldText.Get("GrechkaWorldIntegration_f23b4e8d9e0e", ": recipe or group is missing")); continue; }
+                if (!state.approvedRecipes.Contains(RecipeKey(rule))) { Report.Add(rule.defName + WorldText.Get("GrechkaWorldIntegration_c43ef190d9f6", ": explicit application required")); continue; }
                 string error;
                 var members = MaterialDictionary.Resolve(group, materialApproval);
                 Report.Add(rule.defName + ": " + (MaterialDictionary.Apply(recipe, rule.ingredientIndex, members, out error)
-                    ? "разрешены " + string.Join(", ", members.Select(m => m.defName)) : "не применено: " + error));
+                    ? WorldText.Get("GrechkaWorldIntegration_3f66c9d84cf2", "allowed ") + string.Join(", ", members.Select(m => m.defName)) : WorldText.Get("GrechkaWorldIntegration_586870b0b280", "not applied: ") + error));
             }
             ProfileVariants.Apply(state, acceptCurrent);
+            TierArtwork.Apply();
             FamilyWorkDiscovery.Refresh();
             CostListCalculator.Reset();
-            Log.Message("[Grechka World] Профиль: " + AppliedTiers.Count + " машин с минимальным тиром; подробный отчёт в настройках.");
+            RefreshRelatedMarketValues();
+            Log.Message(WorldText.Get("GrechkaWorldIntegration_8c9f3d7d8335", "[Grechka World] Profile: ") + AppliedTiers.Count + WorldText.Get("GrechkaWorldIntegration_dec7488fd72a", " machines with minimum tier. Detailed report in settings."));
         }
 
         private static string RecipeKey(RecipeMaterialRuleDef r) => r.packageId + "/" + r.recipeDefName + "/" + r.ingredientIndex + "/" + r.materialGroup;
+
+        private static void RefreshRelatedMarketValues()
+        {
+            Type matter = AccessTools.TypeByName("Grechka.Industry.MatterCraftValue");
+            if (matter != null) AccessTools.Method(matter, "Invalidate")?.Invoke(null, null);
+            Type market = AccessTools.TypeByName("Grechka.LuckyBlocks.LuckyMarketValues");
+            if (market == null) return;
+            try { AccessTools.Method(market, "Refresh")?.Invoke(null, null); }
+            catch (Exception error) { Log.Warning("[Grechka World] Optional reward price refresh deferred: " + error.GetBaseException().Message); }
+        }
+
+        // Only exact, explicitly listed prior prices inherit the existing approval.
+        // Unknown/new rules still require the normal explicit profile application.
+        internal static void MigrateBalanceApprovals(WorldProfileState state)
+        {
+            if (!state.applied) return;
+            foreach (MachineProfileRuleDef rule in DefDatabase<MachineProfileRuleDef>.AllDefsListForReading)
+            {
+                if (rule.retired || rule.previousSignatures == null
+                    || !MaterialDictionary.BelongsTo(DefDatabase<ThingDef>.GetNamedSilentFail(rule.targetDefName), rule.packageId)
+                    || rule.replacementCost?.Any(c => DefDatabase<ThingDef>.GetNamedSilentFail(c.thingDefName) == null) == true) continue;
+                foreach (string previous in rule.previousSignatures)
+                    for (int tier = 0; tier <= 5; tier++)
+                    {
+                        string suffix = tier == 0 ? "" : "/variantT" + tier;
+                        string current = rule.Signature + suffix;
+                        if (state.approvedMachines.Contains(previous + suffix) && !state.approvedMachines.Contains(current))
+                            state.approvedMachines.Add(current);
+                    }
+            }
+        }
     }
 
     public sealed class WorldProfileState : GameComponent
@@ -220,7 +288,8 @@ namespace Grechka.WorldIntegration
         public List<string> approvedMachines = new List<string>();
         public List<string> approvedMaterials = new List<string>();
         public List<string> approvedRecipes = new List<string>();
-        public WorldProfileState(Game game) { WorldProfile.RestoreBaseline(); }
+        internal readonly Game ownerGame;
+        public WorldProfileState(Game game) { ownerGame = game; WorldProfile.RestoreBaseline(); }
         public override void ExposeData()
         {
             Scribe_Values.Look(ref applied, "grechkaWorldApplied");

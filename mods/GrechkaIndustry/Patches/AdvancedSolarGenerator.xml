@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Hide construction commands while keeping existing buildings and tier IDs loadable. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="VFE_AdvancedSolarGenerator"]</xpath>
+    <match Class="PatchOperationConditional">
+      <xpath>/Defs/ThingDef[defName="VFE_AdvancedSolarGenerator"]/designationCategory</xpath>
+      <match Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="VFE_AdvancedSolarGenerator"]/designationCategory</xpath>
+        <value><designationCategory IsNull="True" /></value>
+      </match>
+      <nomatch Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="VFE_AdvancedSolarGenerator"]</xpath>
+        <value><designationCategory IsNull="True" /></value>
+      </nomatch>
+    </match>
+  </Operation>
+</Patch>

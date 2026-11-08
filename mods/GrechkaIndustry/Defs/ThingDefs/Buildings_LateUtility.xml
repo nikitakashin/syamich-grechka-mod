@@ -6,9 +6,10 @@
     <description>Усиленное оборудование T4. Освещает всю закрытую комнату и убирает грязь. Без суммирования одинаковых эффектов.</description>
     <thingClass>Building</thingClass>
     <graphicData>
-      <texPath>Buildings/IonizerT3</texPath>
+      <texPath>Buildings/IonizerT4</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1.25,1.25)</drawSize>
+      <color>(1,1,1)</color>
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
@@ -41,21 +42,27 @@
       </li>
       <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
         <targetDefName>Grechka_IonizerT5_Building</targetDefName>
-        <costDescription>установленное устройство, 10 компонентов T5, 160 пластали и 24 концентрата</costDescription>
+        <costDescription>предыдущее устройство целиком и дополнительные материалы следующей ступени; установленный корпус уже учтён</costDescription>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_OperationalGraphics">
+        <offPath>Buildings/Map/States/IonizerT4/IonizerT4_Off</offPath>
+        <idlePath>Buildings/Map/States/IonizerT4/IonizerT4_Idle</idlePath>
+        <activePath>Buildings/Map/States/IonizerT4/IonizerT4_Active</activePath>
       </li>
     </comps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <designationCategory>Production</designationCategory>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
     <designatorDropdown>Grechka_IonizerGroup</designatorDropdown>
     <uiOrder>2522</uiOrder>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <constructEffect>ConstructMetal</constructEffect>
     <costList>
       <Grechka_PackedIonizerT3_Item>1</Grechka_PackedIonizerT3_Item>
-      <Grechka_ComponentT4_Item>10</Grechka_ComponentT4_Item>
-      <Plasteel>100</Plasteel>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
+      <Plasteel>40</Plasteel>
+      <Grechka_ArchoSubstrate>6</Grechka_ArchoSubstrate>
     </costList>
+    <uiIconPath>Buildings/IonizerT4</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_IonizerT5_Building</defName>
@@ -63,9 +70,10 @@
     <description>Усиленное оборудование T5. Освещает всю закрытую комнату и убирает грязь. Без суммирования одинаковых эффектов.</description>
     <thingClass>Building</thingClass>
     <graphicData>
-      <texPath>Buildings/IonizerT3</texPath>
+      <texPath>Buildings/IonizerT5</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(1.25,1.25)</drawSize>
+      <color>(1,1,1)</color>
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
@@ -96,19 +104,25 @@
       <li Class="Grechka.Industry.CompProperties_RoomIonizer">
         <cleaningLayersPerCycle>128</cleaningLayersPerCycle>
       </li>
+      <li Class="Grechka.Industry.CompProperties_OperationalGraphics">
+        <offPath>Buildings/Map/States/IonizerT5/IonizerT5_Off</offPath>
+        <idlePath>Buildings/Map/States/IonizerT5/IonizerT5_Idle</idlePath>
+        <activePath>Buildings/Map/States/IonizerT5/IonizerT5_Active</activePath>
+      </li>
     </comps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <designationCategory>Production</designationCategory>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
     <designatorDropdown>Grechka_IonizerGroup</designatorDropdown>
     <uiOrder>2522</uiOrder>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <constructEffect>ConstructMetal</constructEffect>
     <costList>
       <Grechka_PackedIonizerT4_Item>1</Grechka_PackedIonizerT4_Item>
-      <Grechka_ComponentT5_Item>10</Grechka_ComponentT5_Item>
-      <Plasteel>160</Plasteel>
-      <Grechka_GrechkaConcentrate>24</Grechka_GrechkaConcentrate>
+      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
+      <Plasteel>60</Plasteel>
+      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
     </costList>
+    <uiIconPath>Buildings/IonizerT5</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_MechaniteExtractorT4_Building</defName>
@@ -116,9 +130,10 @@
     <description>Усиленное оборудование T4. Извлекает механиты без газа. Прогресс сохраняется без питания.</description>
     <thingClass>Building</thingClass>
     <graphicData>
-      <texPath>Buildings/MechaniteExtractorT3</texPath>
+      <texPath>Buildings/MechaniteExtractorT4</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
+      <color>(1,1,1)</color>
     </graphicData>
     <size>(2,2)</size>
     <tickerType>Normal</tickerType>
@@ -156,19 +171,26 @@
       </li>
       <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
         <targetDefName>Grechka_MechaniteExtractorT5_Building</targetDefName>
-        <costDescription>установленное устройство, 10 компонентов T5, 160 пластали и 24 концентрата</costDescription>
+        <costDescription>предыдущее устройство целиком и дополнительные материалы следующей ступени; установленный корпус уже учтён</costDescription>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_OperationalGraphics">
+        <offPath>Buildings/Map/States/MechaniteExtractorT4/MechaniteExtractorT4_Off</offPath>
+        <idlePath>Buildings/Map/States/MechaniteExtractorT4/MechaniteExtractorT4_Idle</idlePath>
+        <activePath>Buildings/Map/States/MechaniteExtractorT4/MechaniteExtractorT4_Active</activePath>
       </li>
     </comps>
-    <designationCategory>Production</designationCategory>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>Grechka_MechaniteExtractorGroup</designatorDropdown>
     <uiOrder>2520</uiOrder>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <constructEffect>ConstructMetal</constructEffect>
     <costList>
       <Grechka_PackedMechaniteExtractorT3_Item>1</Grechka_PackedMechaniteExtractorT3_Item>
-      <Grechka_ComponentT4_Item>10</Grechka_ComponentT4_Item>
-      <Plasteel>100</Plasteel>
-      <Grechka_ArchoSubstrate>8</Grechka_ArchoSubstrate>
+      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
+      <Plasteel>40</Plasteel>
+      <Grechka_ArchoSubstrate>6</Grechka_ArchoSubstrate>
     </costList>
+    <uiIconPath>Buildings/MechaniteExtractorT4</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_MechaniteExtractorT5_Building</defName>
@@ -176,9 +198,10 @@
     <description>Усиленное оборудование T5. Извлекает механиты без газа. Прогресс сохраняется без питания.</description>
     <thingClass>Building</thingClass>
     <graphicData>
-      <texPath>Buildings/MechaniteExtractorT3</texPath>
+      <texPath>Buildings/MechaniteExtractorT5</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2,2)</drawSize>
+      <color>(1,1,1)</color>
     </graphicData>
     <size>(2,2)</size>
     <tickerType>Normal</tickerType>
@@ -214,16 +237,23 @@
         <cycleTicks>209</cycleTicks>
         <batchCount>10</batchCount>
       </li>
+      <li Class="Grechka.Industry.CompProperties_OperationalGraphics">
+        <offPath>Buildings/Map/States/MechaniteExtractorT5/MechaniteExtractorT5_Off</offPath>
+        <idlePath>Buildings/Map/States/MechaniteExtractorT5/MechaniteExtractorT5_Idle</idlePath>
+        <activePath>Buildings/Map/States/MechaniteExtractorT5/MechaniteExtractorT5_Active</activePath>
+      </li>
     </comps>
-    <designationCategory>Production</designationCategory>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>Grechka_MechaniteExtractorGroup</designatorDropdown>
     <uiOrder>2520</uiOrder>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <constructEffect>ConstructMetal</constructEffect>
     <costList>
       <Grechka_PackedMechaniteExtractorT4_Item>1</Grechka_PackedMechaniteExtractorT4_Item>
-      <Grechka_ComponentT5_Item>10</Grechka_ComponentT5_Item>
-      <Plasteel>160</Plasteel>
-      <Grechka_GrechkaConcentrate>24</Grechka_GrechkaConcentrate>
+      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
+      <Plasteel>60</Plasteel>
+      <Grechka_GrechkaConcentrate>8</Grechka_GrechkaConcentrate>
     </costList>
+    <uiIconPath>Buildings/MechaniteExtractorT5</uiIconPath>
   </ThingDef>
 </Defs>

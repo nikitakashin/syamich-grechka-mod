@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <GrechkaFarms_Fertility>Плодородность покрытия «Ферма»: {0}%</GrechkaFarms_Fertility>
+  <GrechkaFarms_Help>Изменение сразу применяется ко всем клеткам фермы, включая уже построенные. По умолчанию — 228%. Строительство быстрое, без материалов, исследований и требований к навыкам. После укладки создайте обычную зону выращивания. Свет, температура и загрязнение действуют по обычным правилам игры.</GrechkaFarms_Help>
+  <GrechkaFarms_Reset>Вернуть 228%</GrechkaFarms_Reset>
+</LanguageData>

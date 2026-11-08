@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <GrechkaTraders_FrequencyHelp>Natural arrivals: ×1 = vanilla, ×0 = disabled, up to ×5. Existing traders and requested/quest caravans are unaffected. Results depend on the storyteller, factions and arrival conditions.</GrechkaTraders_FrequencyHelp>
+  <GrechkaTraders_Orbital>Orbital traders: ×{0}</GrechkaTraders_Orbital>
+  <GrechkaTraders_Caravans>Trade caravans: ×{0}</GrechkaTraders_Caravans>
+  <GrechkaTraders_CustomSlaves>Override slave numbers in slaver caravans</GrechkaTraders_CustomSlaves>
+  <GrechkaTraders_Slaves>Slaves per caravan: {0}</GrechkaTraders_Slaves>
+  <GrechkaTraders_SlaveHelp>Applies to newly generated caravans that already sell slaves. Does not add slaves to other traders or override faction ideology. Orbital and settlement stock stay unchanged.</GrechkaTraders_SlaveHelp>
+  <GrechkaTraders_Specialists>Enable specialist traders</GrechkaTraders_Specialists>
+  <GrechkaTraders_Discount>Discount on specialist mod goods: {0}%</GrechkaTraders_Discount>
+  <GrechkaTraders_DiscountHelp>Default: 15%, adjustable from 0 to 30%. Applies when buying goods from the specialist’s mods, including packed buildings. Vanilla supporting supplies have regular prices.</GrechkaTraders_DiscountHelp>
+  <GrechkaTraders_Reset>Restore defaults</GrechkaTraders_Reset>
+  <GrechkaTraders_AppliedDiscount>Specialist discount: −{0}%</GrechkaTraders_AppliedDiscount>
+</LanguageData>

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Grechka_ArchoAcceleration.label>archotech acceleration</Grechka_ArchoAcceleration.label>
+  <Grechka_ArchoAcceleration.description>The archotech emitter field temporarily speeds up movement and work. The effect is sustained while the pawn remains within range of an active device.</Grechka_ArchoAcceleration.description>
+  <Grechka_ArchoSuppression.label>archotech suppression</Grechka_ArchoSuppression.label>
+  <Grechka_ArchoSuppression.description>The archotech emitter field temporarily slows movement and reduces attack accuracy. The effect fades after leaving its range.</Grechka_ArchoSuppression.description>
+</LanguageData>

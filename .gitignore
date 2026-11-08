@@ -19,3 +19,6 @@ work/
 # Local project documentation
 /internal docs/
 /AGENTS.md
+
+# Private third-party language catalogues prepared for the local translation adapter.
+/mods/GrechkaTranslationsRus/Translations/

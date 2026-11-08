@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <CutPlantsBeforeBuilding.AutoDesignatePlantsCutModeToggleButton>Переключить автоматическое назначение вырубки ({0})\nТекущий режим: {1}</CutPlantsBeforeBuilding.AutoDesignatePlantsCutModeToggleButton>
+  <CutPlantsBeforeBuilding.CurrentModVersion>Установленная версия мода: {0}</CutPlantsBeforeBuilding.CurrentModVersion>
+  <CutPlantsBeforeBuilding.DefaultMode>Включать вырубку растений по умолчанию</CutPlantsBeforeBuilding.DefaultMode>
+  <CutPlantsBeforeBuilding.DefaultModeTT>Включать автоматическое назначение вырубки при каждом запуске игры.</CutPlantsBeforeBuilding.DefaultModeTT>
+  <CutPlantsBeforeBuilding.DigUp>По возможности выкапывать растения</CutPlantsBeforeBuilding.DigUp>
+  <CutPlantsBeforeBuilding.DigUpTT>Если растение можно выкопать, назначать выкапывание вместо срубания.</CutPlantsBeforeBuilding.DigUpTT>
+  <CutPlantsBeforeBuilding.ModeOFF>выключено</CutPlantsBeforeBuilding.ModeOFF>
+  <CutPlantsBeforeBuilding.ModeON>включено</CutPlantsBeforeBuilding.ModeON>
+  <CutPlantsBeforeBuilding.NoInfo>Не сообщать о пропущенных растениях</CutPlantsBeforeBuilding.NoInfo>
+  <CutPlantsBeforeBuilding.NoInfoTT>Не выводить сообщение, если особое дерево, например дерево анимы, пропущено при назначении вырубки.</CutPlantsBeforeBuilding.NoInfoTT>
+  <CutPlantsBeforeBuilding.OnlyCutters>Мешающие растения рубят только назначенные работники</CutPlantsBeforeBuilding.OnlyCutters>
+  <CutPlantsBeforeBuilding.OnlyCuttersTT>Если включено, мешающие строительству растения рубят только поселенцы, которым разрешена работа «Вырубка растений».</CutPlantsBeforeBuilding.OnlyCuttersTT>
+  <CutPlantsBeforeBuilding.SpecialTree>{0} не назначено к вырубке: это особое дерево.</CutPlantsBeforeBuilding.SpecialTree>
+</LanguageData>

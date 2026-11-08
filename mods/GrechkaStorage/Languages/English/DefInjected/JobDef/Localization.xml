@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Grechka_ImportStorage.reportString>Hauling TargetA to Storage.</Grechka_ImportStorage.reportString>
+  <Grechka_ExportStorage.reportString>Withdrawing items from Storage.</Grechka_ExportStorage.reportString>
+  <Grechka_RemoveDisk.reportString>Removing a disk from TargetA.</Grechka_RemoveDisk.reportString>
+</LanguageData>

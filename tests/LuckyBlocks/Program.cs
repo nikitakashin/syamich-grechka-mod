@@ -15,5 +15,13 @@ Check("General tiers never contain hostile/animal effects",()=>{if(Fresh().pools
 Check("100 cats stays exactly 100",()=>{var cats=Fresh().pools.SelectMany(p=>p.outcomes).Where(o=>o.pawnKind=="Cat").ToList();if(cats.Count==0||cats.Any(o=>o.pawnCount!=100))throw new Exception();});
 Check("Every general and thematic tier is present",()=>{var c=Fresh();foreach(var theme in new[]{"general","resources","industry","energy","medical","combat","farm","zoo","mechs","chaos","storage"})for(int t=1;t<=5;t++)if(!c.pools.Any(p=>p.id==theme+".t"+t))throw new Exception();});
 Check("Outcome snapshot preserves all reward details",()=>{var o=Fresh().pools.SelectMany(p=>p.outcomes).First(o=>o.items.Any(i=>i.quality!=""));var copy=LuckyCodec.DecodeOutcome(LuckyCodec.EncodeOutcome(o));if(LuckyCodec.EncodeOutcome(copy)!=LuckyCodec.EncodeOutcome(o))throw new Exception();});
+Check("Saved outcome is validated before resuming materialization",()=>{
+ foreach(string json in new[]{"null", "{\"id\":\"bad\",\"items\":[{\"def\":\"Steel\",\"count\":-1}]}",
+  "{\"id\":\"bad\",\"effect\":\"animals\",\"pawnKind\":\"Cat\",\"pawnCount\":101}",
+  "{\"id\":\"bad\",\"effect\":\"execute\",\"pawnKind\":\"Cat\"}", "{\"id\":\"bad\",\"requiredMods\":null}"}) {
+  bool rejected=false;try{LuckyCodec.DecodeOutcome(json);}catch(FormatException){rejected=true;}if(!rejected)throw new Exception("Invalid saved outcome accepted: "+json);
+ }
+});
+Check("Overflowing raid weights cannot escape validation into raid generation",()=>{Reject(c=>c.raiderTierWeights=new(){double.MaxValue,double.MaxValue,1,1,1});});
 Check("Unmapped JSON keys are rejected",()=>{try {LuckyCodec.Decode(source.Replace("\"schemaVersion\": 1","\"schemaVersion\": 1, \"runScript\": \"no\""));}catch(JsonException){return;}throw new Exception();});
 Console.WriteLine($"Lucky Blocks: {checks} configuration checks passed.");

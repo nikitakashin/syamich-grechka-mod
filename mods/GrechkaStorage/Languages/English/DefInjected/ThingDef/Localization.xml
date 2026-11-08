@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Grechka_QuartzCable.label>underground quartz cable</Grechka_QuartzCable.label>
+  <Grechka_QuartzCable.description>Connects devices to the Storage controller underground. Cannot be damaged or burned and is normally hidden. Can run under buildings and ordinary power conduits. Does not transmit electricity. Signal lines appear when selecting the network or its construction tool.</Grechka_QuartzCable.description>
+  <Grechka_StorageController.label>Storage controller</Grechka_StorageController.label>
+  <Grechka_StorageController.description>An access point for the quartz signal network. Shows connected devices and their status. Multiple controllers on one network provide the same access. Consumes 400 W. Signal cable does not replace a power connection.</Grechka_StorageController.description>
+  <Grechka_Inscriber.label>electric inscriber</Grechka_Inscriber.label>
+  <Grechka_Inscriber.description>Prints silicon elements and quartz, silver and gold circuits, and assembles processors. All recipes are available without presses. Requires 200 W.</Grechka_Inscriber.description>
+  <Grechka_Quartz.label>quartz</Grechka_Quartz.label>
+  <Grechka_Quartz.description>Crystals from quartz veins. Used in signal cables and silicon parts.</Grechka_Quartz.description>
+  <Grechka_QuartzDust.label>quartz dust</Grechka_QuartzDust.label>
+  <Grechka_QuartzDust.description>Ground quartz for refining silicon in an electric smelter.</Grechka_QuartzDust.description>
+  <Grechka_Silicon.label>silicon</Grechka_Silicon.label>
+  <Grechka_Silicon.description>A prepared semiconductor for silicon wafers.</Grechka_Silicon.description>
+  <Grechka_SiliconSubstrate.label>silicon wafer</Grechka_SiliconSubstrate.label>
+  <Grechka_SiliconSubstrate.description>A wafer for printed circuits and silicon processor parts.</Grechka_SiliconSubstrate.description>
+  <Grechka_PrintedSilicon.label>printed silicon element</Grechka_PrintedSilicon.label>
+  <Grechka_PrintedSilicon.description>A common part for quartz, silver and gold processors.</Grechka_PrintedSilicon.description>
+  <Grechka_QuartzCircuit.label>printed quartz circuit</Grechka_QuartzCircuit.label>
+  <Grechka_QuartzCircuit.description>A quartz circuit for processor assembly.</Grechka_QuartzCircuit.description>
+  <Grechka_SilverCircuit.label>printed silver circuit</Grechka_SilverCircuit.label>
+  <Grechka_SilverCircuit.description>A silver circuit for processor assembly.</Grechka_SilverCircuit.description>
+  <Grechka_GoldCircuit.label>printed gold circuit</Grechka_GoldCircuit.label>
+  <Grechka_GoldCircuit.description>A gold circuit for processor assembly.</Grechka_GoldCircuit.description>
+  <Grechka_QuartzProcessor.label>quartz processor</Grechka_QuartzProcessor.label>
+  <Grechka_QuartzProcessor.description>A processor for the quartz signal network.</Grechka_QuartzProcessor.description>
+  <Grechka_SilverProcessor.label>silver processor</Grechka_SilverProcessor.label>
+  <Grechka_SilverProcessor.description>A control processor for Storage devices.</Grechka_SilverProcessor.description>
+  <Grechka_GoldProcessor.label>gold processor</Grechka_GoldProcessor.label>
+  <Grechka_GoldProcessor.description>A computing processor for Storage devices.</Grechka_GoldProcessor.description>
+  <Grechka_StorageCrafterT3_Building.label>Storage crafter T3</Grechka_StorageCrafterT3_Building.label>
+  <Grechka_StorageCrafterT3_Building.description>A stationary worker for four adjacent workbenches. Runs one cycle at a time in rotation. Automatically retrieves ingredients from disks and returns products. Worker speed ×1, skill 12, power 500 W.</Grechka_StorageCrafterT3_Building.description>
+  <Grechka_StorageCrafterT4_Building.label>Storage crafter T4</Grechka_StorageCrafterT4_Building.label>
+  <Grechka_StorageCrafterT4_Building.description>A stationary worker for four adjacent workbenches. Runs one cycle at a time in rotation. Automatically retrieves ingredients from disks and returns products. Worker speed ×3, skill 16, power 2000 W.</Grechka_StorageCrafterT4_Building.description>
+  <Grechka_StorageCrafterT5_Building.label>Storage crafter T5</Grechka_StorageCrafterT5_Building.label>
+  <Grechka_StorageCrafterT5_Building.description>A stationary worker for four adjacent workbenches. Runs one cycle at a time in rotation. Automatically retrieves ingredients from disks and returns products. Worker speed ×8, skill 20, power 8000 W.</Grechka_StorageCrafterT5_Building.description>
+  <Grechka_CertusQuartz.label>certus quartz</Grechka_CertusQuartz.label>
+  <Grechka_CertusQuartz.description>A resonant crystal from a meteorite. Growth sources let you grow it at home.</Grechka_CertusQuartz.description>
+  <Grechka_MineableCertus.label>certus rock</Grechka_MineableCertus.label>
+  <Grechka_MineableCertus.description>Crystalline meteorite rock.</Grechka_MineableCertus.description>
+  <Grechka_CertusSource.label>certus source</Grechka_CertusSource.label>
+  <Grechka_CertusSource.description>A portable natural source with five growth stages. Grows 4 crystals in six hours, then waits for a pawn assigned to Growing to harvest them. Harvesting starts a new cycle. Each powered cardinally adjacent accelerator adds one base growth rate, up to four accelerators. Uninstall and transport the source without losing growth progress.</Grechka_CertusSource.description>
+  <Grechka_CertusAccelerator.label>certus accelerator</Grechka_CertusAccelerator.label>
+  <Grechka_CertusAccelerator.description>Accelerates growth in sources directly adjacent on the four cardinal sides. Consumes 250 W.</Grechka_CertusAccelerator.description>
+  <Grechka_PackedStorageDevice.label>minified Storage device</Grechka_PackedStorageDevice.label>
+  <Grechka_DiskRack.label>Storage disk rack</Grechka_DiskRack.label>
+  <Grechka_DiskRack.description>A rack for ten removable disks. Connects to the controller with quartz cable and uses 120 W from the ordinary power grid. Protected against fire and damage, but can be stolen. Disks remain inside when moved and are removed intact when deconstructed.</Grechka_DiskRack.description>
+  <Grechka_DataCore_1K_Item.label>memory cell 1K</Grechka_DataCore_1K_Item.label>
+  <Grechka_DataCore_1K_Item.description>An empty hardware cell for a disk of size 1K. Contains no items. Used to assemble disks and the next size of cell.</Grechka_DataCore_1K_Item.description>
+  <Grechka_Disk_1K_Item.label>storage disk 1K</Grechka_Disk_1K_Item.label>
+  <Grechka_Disk_1K_Item.description>A removable disk with 63 item types and 1024 bytes of capacity. Preserves individual item properties. Food spoils at ambient temperature. Destroying the disk destroys its contents.</Grechka_Disk_1K_Item.description>
+  <Grechka_FrozenDisk_1K_Item.label>freezing disk 1K</Grechka_FrozenDisk_1K_Item.label>
+  <Grechka_FrozenDisk_1K_Item.description>A removable disk with 63 item types and 1024 bytes of capacity. Preserves individual item properties. Permanent freezing works even outside the network and in caravans. Destroying the disk destroys its contents.</Grechka_FrozenDisk_1K_Item.description>
+  <Grechka_DataCore_4K_Item.label>memory cell 4K</Grechka_DataCore_4K_Item.label>
+  <Grechka_DataCore_4K_Item.description>An empty hardware cell for a disk of size 4K. Contains no items. Used to assemble disks and the next size of cell.</Grechka_DataCore_4K_Item.description>
+  <Grechka_Disk_4K_Item.label>storage disk 4K</Grechka_Disk_4K_Item.label>
+  <Grechka_Disk_4K_Item.description>A removable disk with 63 item types and 4096 bytes of capacity. Preserves individual item properties. Food spoils at ambient temperature. Destroying the disk destroys its contents.</Grechka_Disk_4K_Item.description>
+  <Grechka_FrozenDisk_4K_Item.label>freezing disk 4K</Grechka_FrozenDisk_4K_Item.label>
+  <Grechka_FrozenDisk_4K_Item.description>A removable disk with 63 item types and 4096 bytes of capacity. Preserves individual item properties. Permanent freezing works even outside the network and in caravans. Destroying the disk destroys its contents.</Grechka_FrozenDisk_4K_Item.description>
+  <Grechka_DataCore_16K_Item.label>memory cell 16K</Grechka_DataCore_16K_Item.label>
+  <Grechka_DataCore_16K_Item.description>An empty hardware cell for a disk of size 16K. Contains no items. Used to assemble disks and the next size of cell.</Grechka_DataCore_16K_Item.description>
+  <Grechka_Disk_16K_Item.label>storage disk 16K</Grechka_Disk_16K_Item.label>
+  <Grechka_Disk_16K_Item.description>A removable disk with 63 item types and 16384 bytes of capacity. Preserves individual item properties. Food spoils at ambient temperature. Destroying the disk destroys its contents.</Grechka_Disk_16K_Item.description>
+  <Grechka_FrozenDisk_16K_Item.label>freezing disk 16K</Grechka_FrozenDisk_16K_Item.label>
+  <Grechka_FrozenDisk_16K_Item.description>A removable disk with 63 item types and 16384 bytes of capacity. Preserves individual item properties. Permanent freezing works even outside the network and in caravans. Destroying the disk destroys its contents.</Grechka_FrozenDisk_16K_Item.description>
+  <Grechka_DataCore_64K_Item.label>memory cell 64K</Grechka_DataCore_64K_Item.label>
+  <Grechka_DataCore_64K_Item.description>An empty hardware cell for a disk of size 64K. Contains no items. Used to assemble disks and the next size of cell.</Grechka_DataCore_64K_Item.description>
+  <Grechka_Disk_64K_Item.label>storage disk 64K</Grechka_Disk_64K_Item.label>
+  <Grechka_Disk_64K_Item.description>A removable disk with 63 item types and 65536 bytes of capacity. Preserves individual item properties. Food spoils at ambient temperature. Destroying the disk destroys its contents.</Grechka_Disk_64K_Item.description>
+  <Grechka_FrozenDisk_64K_Item.label>freezing disk 64K</Grechka_FrozenDisk_64K_Item.label>
+  <Grechka_FrozenDisk_64K_Item.description>A removable disk with 63 item types and 65536 bytes of capacity. Preserves individual item properties. Permanent freezing works even outside the network and in caravans. Destroying the disk destroys its contents.</Grechka_FrozenDisk_64K_Item.description>
+  <Grechka_DataCore_256K_Item.label>memory cell 256K</Grechka_DataCore_256K_Item.label>
+  <Grechka_DataCore_256K_Item.description>An empty hardware cell for a disk of size 256K. Contains no items. Used to assemble disks and the next size of cell.</Grechka_DataCore_256K_Item.description>
+  <Grechka_Disk_256K_Item.label>storage disk 256K</Grechka_Disk_256K_Item.label>
+  <Grechka_Disk_256K_Item.description>A removable disk with 63 item types and 262144 bytes of capacity. Preserves individual item properties. Food spoils at ambient temperature. Destroying the disk destroys its contents.</Grechka_Disk_256K_Item.description>
+  <Grechka_FrozenDisk_256K_Item.label>freezing disk 256K</Grechka_FrozenDisk_256K_Item.label>
+  <Grechka_FrozenDisk_256K_Item.description>A removable disk with 63 item types and 262144 bytes of capacity. Preserves individual item properties. Permanent freezing works even outside the network and in caravans. Destroying the disk destroys its contents.</Grechka_FrozenDisk_256K_Item.description>
+  <Grechka_DataCore_512K_Item.label>memory cell 512K</Grechka_DataCore_512K_Item.label>
+  <Grechka_DataCore_512K_Item.description>An empty hardware cell for a disk of size 512K. Contains no items. Used to assemble disks and the next size of cell.</Grechka_DataCore_512K_Item.description>
+  <Grechka_Disk_512K_Item.label>storage disk 512K</Grechka_Disk_512K_Item.label>
+  <Grechka_Disk_512K_Item.description>A removable disk with 63 item types and 524288 bytes of capacity. Preserves individual item properties. Food spoils at ambient temperature. Destroying the disk destroys its contents.</Grechka_Disk_512K_Item.description>
+  <Grechka_FrozenDisk_512K_Item.label>freezing disk 512K</Grechka_FrozenDisk_512K_Item.label>
+  <Grechka_FrozenDisk_512K_Item.description>A removable disk with 63 item types and 524288 bytes of capacity. Preserves individual item properties. Permanent freezing works even outside the network and in caravans. Destroying the disk destroys its contents.</Grechka_FrozenDisk_512K_Item.description>
+  <Grechka_DataCore_1M_Item.label>memory cell 1M</Grechka_DataCore_1M_Item.label>
+  <Grechka_DataCore_1M_Item.description>An empty hardware cell for a disk of size 1M. Contains no items. Used to assemble disks and the next size of cell.</Grechka_DataCore_1M_Item.description>
+  <Grechka_Disk_1M_Item.label>storage disk 1M</Grechka_Disk_1M_Item.label>
+  <Grechka_Disk_1M_Item.description>A removable disk with 63 item types and 1048576 bytes of capacity. Preserves individual item properties. Food spoils at ambient temperature. Destroying the disk destroys its contents.</Grechka_Disk_1M_Item.description>
+  <Grechka_FrozenDisk_1M_Item.label>freezing disk 1M</Grechka_FrozenDisk_1M_Item.label>
+  <Grechka_FrozenDisk_1M_Item.description>A removable disk with 63 item types and 1048576 bytes of capacity. Preserves individual item properties. Permanent freezing works even outside the network and in caravans. Destroying the disk destroys its contents.</Grechka_FrozenDisk_1M_Item.description>
+  <Grechka_DataCore_2M_Item.label>memory cell 2M</Grechka_DataCore_2M_Item.label>
+  <Grechka_DataCore_2M_Item.description>An empty hardware cell for a disk of size 2M. Contains no items. Used to assemble disks and the next size of cell.</Grechka_DataCore_2M_Item.description>
+  <Grechka_Disk_2M_Item.label>storage disk 2M</Grechka_Disk_2M_Item.label>
+  <Grechka_Disk_2M_Item.description>A removable disk with 63 item types and 2097152 bytes of capacity. Preserves individual item properties. Food spoils at ambient temperature. Destroying the disk destroys its contents.</Grechka_Disk_2M_Item.description>
+  <Grechka_FrozenDisk_2M_Item.label>freezing disk 2M</Grechka_FrozenDisk_2M_Item.label>
+  <Grechka_FrozenDisk_2M_Item.description>A removable disk with 63 item types and 2097152 bytes of capacity. Preserves individual item properties. Permanent freezing works even outside the network and in caravans. Destroying the disk destroys its contents.</Grechka_FrozenDisk_2M_Item.description>
+  <Grechka_DataCore_4M_Item.label>memory cell 4M</Grechka_DataCore_4M_Item.label>
+  <Grechka_DataCore_4M_Item.description>An empty hardware cell for a disk of size 4M. Contains no items. Used to assemble disks and the next size of cell.</Grechka_DataCore_4M_Item.description>
+  <Grechka_Disk_4M_Item.label>storage disk 4M</Grechka_Disk_4M_Item.label>
+  <Grechka_Disk_4M_Item.description>A removable disk with 63 item types and 4194304 bytes of capacity. Preserves individual item properties. Food spoils at ambient temperature. Destroying the disk destroys its contents.</Grechka_Disk_4M_Item.description>
+  <Grechka_FrozenDisk_4M_Item.label>freezing disk 4M</Grechka_FrozenDisk_4M_Item.label>
+  <Grechka_FrozenDisk_4M_Item.description>A removable disk with 63 item types and 4194304 bytes of capacity. Preserves individual item properties. Permanent freezing works even outside the network and in caravans. Destroying the disk destroys its contents.</Grechka_FrozenDisk_4M_Item.description>
+  <Grechka_DataCore_8M_Item.label>memory cell 8M</Grechka_DataCore_8M_Item.label>
+  <Grechka_DataCore_8M_Item.description>An empty hardware cell for a disk of size 8M. Contains no items. Used to assemble disks and the next size of cell.</Grechka_DataCore_8M_Item.description>
+  <Grechka_Disk_8M_Item.label>storage disk 8M</Grechka_Disk_8M_Item.label>
+  <Grechka_Disk_8M_Item.description>A removable disk with 63 item types and 8388608 bytes of capacity. Preserves individual item properties. Food spoils at ambient temperature. Destroying the disk destroys its contents.</Grechka_Disk_8M_Item.description>
+  <Grechka_FrozenDisk_8M_Item.label>freezing disk 8M</Grechka_FrozenDisk_8M_Item.label>
+  <Grechka_FrozenDisk_8M_Item.description>A removable disk with 63 item types and 8388608 bytes of capacity. Preserves individual item properties. Permanent freezing works even outside the network and in caravans. Destroying the disk destroys its contents.</Grechka_FrozenDisk_8M_Item.description>
+  <Grechka_DataCore_16M_Item.label>memory cell 16M</Grechka_DataCore_16M_Item.label>
+  <Grechka_DataCore_16M_Item.description>An empty hardware cell for a disk of size 16M. Contains no items. Used to assemble disks and the next size of cell.</Grechka_DataCore_16M_Item.description>
+  <Grechka_Disk_16M_Item.label>storage disk 16M</Grechka_Disk_16M_Item.label>
+  <Grechka_Disk_16M_Item.description>A removable disk with 63 item types and 16777216 bytes of capacity. Preserves individual item properties. Food spoils at ambient temperature. Destroying the disk destroys its contents.</Grechka_Disk_16M_Item.description>
+  <Grechka_FrozenDisk_16M_Item.label>freezing disk 16M</Grechka_FrozenDisk_16M_Item.label>
+  <Grechka_FrozenDisk_16M_Item.description>A removable disk with 63 item types and 16777216 bytes of capacity. Preserves individual item properties. Permanent freezing works even outside the network and in caravans. Destroying the disk destroys its contents.</Grechka_FrozenDisk_16M_Item.description>
+  <Grechka_DataCore_64M_Item.label>memory cell 64M</Grechka_DataCore_64M_Item.label>
+  <Grechka_DataCore_64M_Item.description>An empty hardware cell for a disk of size 64M. Contains no items. Used to assemble disks and the next size of cell.</Grechka_DataCore_64M_Item.description>
+  <Grechka_Disk_64M_Item.label>storage disk 64M</Grechka_Disk_64M_Item.label>
+  <Grechka_Disk_64M_Item.description>A removable disk with 63 item types and 67108864 bytes of capacity. Preserves individual item properties. Food spoils at ambient temperature. Destroying the disk destroys its contents.</Grechka_Disk_64M_Item.description>
+  <Grechka_FrozenDisk_64M_Item.label>freezing disk 64M</Grechka_FrozenDisk_64M_Item.label>
+  <Grechka_FrozenDisk_64M_Item.description>A removable disk with 63 item types and 67108864 bytes of capacity. Preserves individual item properties. Permanent freezing works even outside the network and in caravans. Destroying the disk destroys its contents.</Grechka_FrozenDisk_64M_Item.description>
+  <Grechka_DataCore_256M_Item.label>memory cell 256M</Grechka_DataCore_256M_Item.label>
+  <Grechka_DataCore_256M_Item.description>An empty hardware cell for a disk of size 256M. Contains no items. Used to assemble disks and the next size of cell.</Grechka_DataCore_256M_Item.description>
+  <Grechka_Disk_256M_Item.label>storage disk 256M</Grechka_Disk_256M_Item.label>
+  <Grechka_Disk_256M_Item.description>A removable disk with 63 item types and 268435456 bytes of capacity. Preserves individual item properties. Food spoils at ambient temperature. Destroying the disk destroys its contents.</Grechka_Disk_256M_Item.description>
+  <Grechka_FrozenDisk_256M_Item.label>freezing disk 256M</Grechka_FrozenDisk_256M_Item.label>
+  <Grechka_FrozenDisk_256M_Item.description>A removable disk with 63 item types and 268435456 bytes of capacity. Preserves individual item properties. Permanent freezing works even outside the network and in caravans. Destroying the disk destroys its contents.</Grechka_FrozenDisk_256M_Item.description>
+  <Grechka_MineableQuartz.label>quartz vein</Grechka_MineableQuartz.label>
+  <Grechka_MineableQuartz.description>Rock containing quartz crystals.</Grechka_MineableQuartz.description>
+</LanguageData>

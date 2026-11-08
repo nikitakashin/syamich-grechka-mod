@@ -1,0 +1,609 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>GrechkaTreasures_DiamondRaw</defName>
+    <label>необработанный алмаз</label>
+    <description>Природный драгоценный камень. Ограните его на ювелирном верстаке для изготовления оружия и роскоши.</description>
+    <graphicData>
+      <texPath>Items/DiamondRaw</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MarketValue>108.0</MarketValue>
+      <Mass>0.06</Mass>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>2</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeability>All</tradeability>
+    <techLevel>Medieval</techLevel>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>GrechkaTreasures_DiamondCut</defName>
+    <label>бриллиант</label>
+    <description>Огранённый драгоценный камень. Используется в ювелирном оружии, декоре и дорогой мебели.</description>
+    <graphicData>
+      <texPath>Items/DiamondCut</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MarketValue>240</MarketValue>
+      <Mass>0.04</Mass>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>8</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeability>All</tradeability>
+    <techLevel>Medieval</techLevel>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>GrechkaTreasures_DiamondMonolith</defName>
+    <label>алмазный монолит</label>
+    <description>Редкий цельный кристалл для резной статуи. Добывается в экспедициях и продаётся торговцами редкостями. На ювелирном верстаке его можно распилить на 30 огранённых камней.</description>
+    <graphicData>
+      <texPath>Items/DiamondMonolith</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>1</stackLimit>
+    <statBases>
+      <MarketValue>6000</MarketValue>
+      <Mass>45</Mass>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>45</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeability>All</tradeability>
+    <techLevel>Medieval</techLevel>
+  </ThingDef>
+  <ThingDef ParentName="RockBase">
+    <defName>GrechkaTreasures_DiamondOre</defName>
+    <label>жила: алмаз</label>
+    <description>Редкая жила с необработанными драгоценными камнями. Добывается обычной работой шахтёра.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(89,83,68)</color>
+      <colorTwo>(210,240,255)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1800</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>GrechkaTreasures_DiamondRaw</mineableThing>
+      <mineableYield>3</mineableYield>
+      <mineableScatterCommonality>0.008</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>2~5</mineableScatterLumpSizeRange>
+      <veinMineable>true</veinMineable>
+    </building>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>GrechkaTreasures_RubyRaw</defName>
+    <label>необработанный рубин</label>
+    <description>Природный драгоценный камень. Ограните его на ювелирном верстаке для изготовления оружия и роскоши.</description>
+    <graphicData>
+      <texPath>Items/RubyRaw</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MarketValue>81.0</MarketValue>
+      <Mass>0.06</Mass>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>2</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeability>All</tradeability>
+    <techLevel>Medieval</techLevel>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>GrechkaTreasures_RubyCut</defName>
+    <label>рубин</label>
+    <description>Огранённый драгоценный камень. Используется в ювелирном оружии, декоре и дорогой мебели.</description>
+    <graphicData>
+      <texPath>Items/RubyCut</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MarketValue>180</MarketValue>
+      <Mass>0.04</Mass>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>8</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeability>All</tradeability>
+    <techLevel>Medieval</techLevel>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>GrechkaTreasures_RubyMonolith</defName>
+    <label>рубиновый монолит</label>
+    <description>Редкий цельный кристалл для резной статуи. Добывается в экспедициях и продаётся торговцами редкостями. На ювелирном верстаке его можно распилить на 30 огранённых камней.</description>
+    <graphicData>
+      <texPath>Items/RubyMonolith</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>1</stackLimit>
+    <statBases>
+      <MarketValue>4500</MarketValue>
+      <Mass>45</Mass>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>45</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeability>All</tradeability>
+    <techLevel>Medieval</techLevel>
+  </ThingDef>
+  <ThingDef ParentName="RockBase">
+    <defName>GrechkaTreasures_RubyOre</defName>
+    <label>жила: рубин</label>
+    <description>Редкая жила с необработанными драгоценными камнями. Добывается обычной работой шахтёра.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(89,83,68)</color>
+      <colorTwo>(220,40,55)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1800</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>GrechkaTreasures_RubyRaw</mineableThing>
+      <mineableYield>3</mineableYield>
+      <mineableScatterCommonality>0.012</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>2~5</mineableScatterLumpSizeRange>
+      <veinMineable>true</veinMineable>
+    </building>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>GrechkaTreasures_SapphireRaw</defName>
+    <label>необработанный сапфир</label>
+    <description>Природный драгоценный камень. Ограните его на ювелирном верстаке для изготовления оружия и роскоши.</description>
+    <graphicData>
+      <texPath>Items/SapphireRaw</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MarketValue>76.5</MarketValue>
+      <Mass>0.06</Mass>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>2</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeability>All</tradeability>
+    <techLevel>Medieval</techLevel>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>GrechkaTreasures_SapphireCut</defName>
+    <label>сапфир</label>
+    <description>Огранённый драгоценный камень. Используется в ювелирном оружии, декоре и дорогой мебели.</description>
+    <graphicData>
+      <texPath>Items/SapphireCut</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MarketValue>170</MarketValue>
+      <Mass>0.04</Mass>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>8</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeability>All</tradeability>
+    <techLevel>Medieval</techLevel>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>GrechkaTreasures_SapphireMonolith</defName>
+    <label>сапфировый монолит</label>
+    <description>Редкий цельный кристалл для резной статуи. Добывается в экспедициях и продаётся торговцами редкостями. На ювелирном верстаке его можно распилить на 30 огранённых камней.</description>
+    <graphicData>
+      <texPath>Items/SapphireMonolith</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>1</stackLimit>
+    <statBases>
+      <MarketValue>4250</MarketValue>
+      <Mass>45</Mass>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>45</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeability>All</tradeability>
+    <techLevel>Medieval</techLevel>
+  </ThingDef>
+  <ThingDef ParentName="RockBase">
+    <defName>GrechkaTreasures_SapphireOre</defName>
+    <label>жила: сапфир</label>
+    <description>Редкая жила с необработанными драгоценными камнями. Добывается обычной работой шахтёра.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(89,83,68)</color>
+      <colorTwo>(50,100,240)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1800</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>GrechkaTreasures_SapphireRaw</mineableThing>
+      <mineableYield>3</mineableYield>
+      <mineableScatterCommonality>0.012</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>2~5</mineableScatterLumpSizeRange>
+      <veinMineable>true</veinMineable>
+    </building>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>GrechkaTreasures_EmeraldRaw</defName>
+    <label>необработанный изумруд</label>
+    <description>Природный драгоценный камень. Ограните его на ювелирном верстаке для изготовления оружия и роскоши.</description>
+    <graphicData>
+      <texPath>Items/EmeraldRaw</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MarketValue>85.5</MarketValue>
+      <Mass>0.06</Mass>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>2</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeability>All</tradeability>
+    <techLevel>Medieval</techLevel>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>GrechkaTreasures_EmeraldCut</defName>
+    <label>изумруд</label>
+    <description>Огранённый драгоценный камень. Используется в ювелирном оружии, декоре и дорогой мебели.</description>
+    <graphicData>
+      <texPath>Items/EmeraldCut</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MarketValue>190</MarketValue>
+      <Mass>0.04</Mass>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>8</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeability>All</tradeability>
+    <techLevel>Medieval</techLevel>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>GrechkaTreasures_EmeraldMonolith</defName>
+    <label>изумрудный монолит</label>
+    <description>Редкий цельный кристалл для резной статуи. Добывается в экспедициях и продаётся торговцами редкостями. На ювелирном верстаке его можно распилить на 30 огранённых камней.</description>
+    <graphicData>
+      <texPath>Items/EmeraldMonolith</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>1</stackLimit>
+    <statBases>
+      <MarketValue>4750</MarketValue>
+      <Mass>45</Mass>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>45</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeability>All</tradeability>
+    <techLevel>Medieval</techLevel>
+  </ThingDef>
+  <ThingDef ParentName="RockBase">
+    <defName>GrechkaTreasures_EmeraldOre</defName>
+    <label>жила: изумруд</label>
+    <description>Редкая жила с необработанными драгоценными камнями. Добывается обычной работой шахтёра.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(89,83,68)</color>
+      <colorTwo>(40,210,100)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1800</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>GrechkaTreasures_EmeraldRaw</mineableThing>
+      <mineableYield>3</mineableYield>
+      <mineableScatterCommonality>0.012</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>2~5</mineableScatterLumpSizeRange>
+      <veinMineable>true</veinMineable>
+    </building>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>GrechkaTreasures_AmethystRaw</defName>
+    <label>необработанный аметист</label>
+    <description>Природный драгоценный камень. Ограните его на ювелирном верстаке для изготовления оружия и роскоши.</description>
+    <graphicData>
+      <texPath>Items/AmethystRaw</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MarketValue>45.0</MarketValue>
+      <Mass>0.06</Mass>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>2</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeability>All</tradeability>
+    <techLevel>Medieval</techLevel>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>GrechkaTreasures_AmethystCut</defName>
+    <label>аметист</label>
+    <description>Огранённый драгоценный камень. Используется в ювелирном оружии, декоре и дорогой мебели.</description>
+    <graphicData>
+      <texPath>Items/AmethystCut</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MarketValue>100</MarketValue>
+      <Mass>0.04</Mass>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>8</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeability>All</tradeability>
+    <techLevel>Medieval</techLevel>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>GrechkaTreasures_AmethystMonolith</defName>
+    <label>аметистовый монолит</label>
+    <description>Редкий цельный кристалл для резной статуи. Добывается в экспедициях и продаётся торговцами редкостями. На ювелирном верстаке его можно распилить на 30 огранённых камней.</description>
+    <graphicData>
+      <texPath>Items/AmethystMonolith</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>1</stackLimit>
+    <statBases>
+      <MarketValue>2500</MarketValue>
+      <Mass>45</Mass>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>45</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeability>All</tradeability>
+    <techLevel>Medieval</techLevel>
+  </ThingDef>
+  <ThingDef ParentName="RockBase">
+    <defName>GrechkaTreasures_AmethystOre</defName>
+    <label>жила: аметист</label>
+    <description>Редкая жила с необработанными драгоценными камнями. Добывается обычной работой шахтёра.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(89,83,68)</color>
+      <colorTwo>(170,80,225)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1800</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>GrechkaTreasures_AmethystRaw</mineableThing>
+      <mineableYield>3</mineableYield>
+      <mineableScatterCommonality>0.012</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>2~5</mineableScatterLumpSizeRange>
+      <veinMineable>true</veinMineable>
+    </building>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>GrechkaTreasures_TopazRaw</defName>
+    <label>необработанный топаз</label>
+    <description>Природный драгоценный камень. Ограните его на ювелирном верстаке для изготовления оружия и роскоши.</description>
+    <graphicData>
+      <texPath>Items/TopazRaw</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MarketValue>38.25</MarketValue>
+      <Mass>0.06</Mass>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>2</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeability>All</tradeability>
+    <techLevel>Medieval</techLevel>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>GrechkaTreasures_TopazCut</defName>
+    <label>топаз</label>
+    <description>Огранённый драгоценный камень. Используется в ювелирном оружии, декоре и дорогой мебели.</description>
+    <graphicData>
+      <texPath>Items/TopazCut</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>100</stackLimit>
+    <statBases>
+      <MarketValue>85</MarketValue>
+      <Mass>0.04</Mass>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>8</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeability>All</tradeability>
+    <techLevel>Medieval</techLevel>
+  </ThingDef>
+  <ThingDef ParentName="ResourceBase">
+    <defName>GrechkaTreasures_TopazMonolith</defName>
+    <label>топазовый монолит</label>
+    <description>Редкий цельный кристалл для резной статуи. Добывается в экспедициях и продаётся торговцами редкостями. На ювелирном верстаке его можно распилить на 30 огранённых камней.</description>
+    <graphicData>
+      <texPath>Items/TopazMonolith</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>1</stackLimit>
+    <statBases>
+      <MarketValue>2125</MarketValue>
+      <Mass>45</Mass>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>45</Beauty>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <tradeability>All</tradeability>
+    <techLevel>Medieval</techLevel>
+  </ThingDef>
+  <ThingDef ParentName="RockBase">
+    <defName>GrechkaTreasures_TopazOre</defName>
+    <label>жила: топаз</label>
+    <description>Редкая жила с необработанными драгоценными камнями. Добывается обычной работой шахтёра.</description>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockFlecked_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <color>(89,83,68)</color>
+      <colorTwo>(245,170,45)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1800</MaxHitPoints>
+    </statBases>
+    <building>
+      <isResourceRock>true</isResourceRock>
+      <mineableThing>GrechkaTreasures_TopazRaw</mineableThing>
+      <mineableYield>3</mineableYield>
+      <mineableScatterCommonality>0.012</mineableScatterCommonality>
+      <mineableScatterLumpSizeRange>2~5</mineableScatterLumpSizeRange>
+      <veinMineable>true</veinMineable>
+    </building>
+  </ThingDef>
+</Defs>

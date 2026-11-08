@@ -10,10 +10,23 @@ using Verse;
 
 namespace Grechka.WorldIntegration
 {
+    public sealed class GrechkaWorldSettings : ModSettings
+    {
+        public bool enableResearch;
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Values.Look(ref enableResearch, "enableResearch", false);
+        }
+    }
+
     public sealed class GrechkaWorldIntegrationMod : Mod
     {
+        public static GrechkaWorldSettings Settings;
+        public static bool ResearchEnabled => Settings?.enableResearch ?? false;
         public GrechkaWorldIntegrationMod(ModContentPack content) : base(content)
         {
+            Settings = GetSettings<GrechkaWorldSettings>();
             new Harmony("grechka.world.integration.research").PatchAll(typeof(GrechkaWorldIntegrationMod).Assembly);
         }
 
@@ -21,22 +34,35 @@ namespace Grechka.WorldIntegration
 
         public override void DoSettingsWindowContents(Rect rect)
         {
-            Widgets.Label(new Rect(rect.x, rect.y, rect.width, 80),
-                "Grechka World: корпуса машин, явный словарь материалов и завершённые исследования. Новая колония получает текущий профиль; старые и новые добавленные правила применяются вручную с резервной копией.");
-            if (Widgets.ButtonText(new Rect(rect.x, rect.y + 86, 320, 34), "Отчёт правил и материалов"))
+            bool wasEnabled = ResearchEnabled;
+            Widgets.CheckboxLabeled(new Rect(rect.x, rect.y, rect.width, 30), WorldText.Get("GrechkaWorldIntegration_0fd8cb357129", "Enable research (vanilla progression)"), ref Settings.enableResearch);
+            if (wasEnabled != ResearchEnabled)
+            {
+                ResearchTree.SyncRequirements();
+                ResearchTree.SyncResearchButton();
+            }
+            string description = WorldText.Get("GrechkaWorldIntegration_5ddf440e1562", "Enabled. Base game, DLC and mod research works normally. Grechka content is unlocked in a separate tree by tier. ")
+                + WorldText.Get("GrechkaWorldIntegration_b5c93418ad15", "Disabled. All research is completed in a new colony. Research already completed in a save is preserved. ")
+                + WorldText.Get("GrechkaWorldIntegration_5a5243d14a2e", "Enable this mode before creating a colony for a full research playthrough. In an existing colony, disabling the mode immediately removes Grechka tree requirements from buildings and recipes.");
+            float height = Text.CalcHeight(description, rect.width);
+            Widgets.Label(new Rect(rect.x, rect.y + 38, rect.width, height), description);
+            float y = rect.y + 50 + height;
+            if (Widgets.ButtonText(new Rect(rect.x, y, Math.Min(rect.width, 320), 34), WorldText.Get("GrechkaWorldIntegration_ea8b4e4df140", "Rules and materials report")))
                 Find.WindowStack.Add(new WorldProfileReportWindow());
             if (Current.ProgramState != ProgramState.Playing || Current.Game == null || Find.ResearchManager == null)
             {
-                Widgets.Label(new Rect(rect.x, rect.y + 132, rect.width, 50), "Загрузите колонию для явного применения профиля.");
+                Widgets.Label(new Rect(rect.x, y + 48, rect.width, 50), WorldText.Get("GrechkaWorldIntegration_62f1501f8552", "Load a colony to apply the profile explicitly."));
                 return;
             }
             WorldProfileState state = Current.Game.GetComponent<WorldProfileState>();
-            Widgets.Label(new Rect(rect.x, rect.y + 132, rect.width, 55),
-                "Исследований осталось: " + ResearchRules.UnfinishedCount() + ". Машин профиля: " + WorldProfile.AppliedTiers.Count
-                + ". Последняя копия: " + (state.lastBackup ?? "ещё не создавалась"));
-            if (Widgets.ButtonText(new Rect(rect.x, rect.y + 198, Math.Min(rect.width, 440), 38), "Применить текущие правила с резервной копией"))
+            Widgets.Label(new Rect(rect.x, y + 48, rect.width, 55),
+                WorldText.Get("GrechkaWorldIntegration_c03eda2493bd", "Research remaining: ") + ResearchRules.UnfinishedCount() + WorldText.Get("GrechkaWorldIntegration_bcc95c9caa30", ". Profile machines: ") + WorldProfile.AppliedTiers.Count
+                + WorldText.Get("GrechkaWorldIntegration_78d6dc563572", ". Last backup: ") + (state.lastBackup ?? WorldText.Get("GrechkaWorldIntegration_5a2b62c9f339", "not yet created")));
+            if (Widgets.ButtonText(new Rect(rect.x, y + 114, Math.Min(rect.width, 440), 38), WorldText.Get("GrechkaWorldIntegration_b44fd7897452", "Apply current rules with a backup")))
                 Find.WindowStack.Add(Dialog_MessageBox.CreateConfirmation(
-                    "Создать отдельное сохранение, затем применить текущие правила корпусов/материалов и завершить исследования? Существующие предметы не преобразуются и не удаляются.",
+                    WorldText.Get("GrechkaWorldIntegration_edea9a333fc8", "Create a separate save, then apply the current housing and material rules? ")
+                    + (ResearchEnabled ? WorldText.Get("GrechkaWorldIntegration_b08d40f6b1ce", "Research progress will be preserved.") : WorldText.Get("GrechkaWorldIntegration_c5d17a274e4a", "All research will be completed."))
+                    + WorldText.Get("GrechkaWorldIntegration_cdf852d6ec17", " Existing items will be preserved."),
                     () => LongEventHandler.QueueLongEvent(() =>
                     {
                         string backup = "Grechka-before-profile-" + DateTime.Now.ToString("yyyyMMdd-HHmmss") + "-" + Guid.NewGuid().ToString("N").Substring(0, 6);
@@ -44,13 +70,13 @@ namespace Grechka.WorldIntegration
                         string backupPath = GenFilePaths.FilePathForSavedGame(backup);
                         // SaveGame logs and swallows exceptions. Never apply when its backup failed.
                         if (!File.Exists(backupPath) || new FileInfo(backupPath).Length == 0)
-                            throw new IOException("Резервная копия не создана; правила не изменены.");
+                            throw new IOException(WorldText.Get("GrechkaWorldIntegration_d142c17d2622", "The backup was not created. Rules were preserved."));
                         state.lastBackup = backup;
                         WorldProfile.Apply(state, true);
-                        ResearchRules.Result result = ResearchRules.ApplyAll();
-                        Messages.Message("Grechka World: профиль применён. Копия: " + backup
-                            + ". Незавершённых исследований: " + result.remaining + ".", MessageTypeDefOf.TaskCompletion);
-                    }, "SavingLongEvent", false, error => Log.Error("[Grechka World] Профиль не завершён: " + error))));
+                        int remaining = ResearchEnabled ? ResearchRules.UnfinishedCount() : ResearchRules.ApplyAll().remaining;
+                        Messages.Message(WorldText.Get("GrechkaWorldIntegration_7639ca6b48ce", "Grechka World profile applied. Backup: ") + backup
+                            + WorldText.Get("GrechkaWorldIntegration_ef4720713b50", ". Unfinished research: ") + remaining + ".", MessageTypeDefOf.TaskCompletion);
+                    }, "SavingLongEvent", false, error => Log.Error(WorldText.Get("GrechkaWorldIntegration_6450872dc979", "[Grechka World] Profile was not completed: ") + error))));
         }
     }
 
@@ -61,7 +87,7 @@ namespace Grechka.WorldIntegration
         public override Vector2 InitialSize => new Vector2(900, 700);
         public override void DoWindowContents(Rect inRect)
         {
-            Widgets.Label(new Rect(0, 0, inRect.width, 30), "Grechka World — применённые правила");
+            Widgets.Label(new Rect(0, 0, inRect.width, 30), WorldText.Get("GrechkaWorldIntegration_d571bbdb3c91", "Grechka World applied rules"));
             var lines = WorldProfile.Report.ToList();
             foreach (MaterialGroupDef group in DefDatabase<MaterialGroupDef>.AllDefsListForReading)
                 lines.Add(group.defName + " [" + group.form + "]: " + string.Join(", ", MaterialDictionary.Resolve(group).Select(d => d.defName)));
@@ -93,7 +119,7 @@ namespace Grechka.WorldIntegration
         internal static Result ApplyAll()
         {
             ResearchManager manager = Find.ResearchManager;
-            if (manager == null) throw new InvalidOperationException("ResearchManager ещё не создан.");
+            if (manager == null) throw new InvalidOperationException(WorldText.Get("GrechkaWorldIntegration_521426dd531a", "ResearchManager has not been created yet."));
 
             int before = UnfinishedCount();
             var failed = new List<string>();
@@ -105,18 +131,18 @@ namespace Grechka.WorldIntegration
                 try
                 {
                     manager.FinishProject(project, false, null, false);
-                    if (!project.IsFinished) failed.Add(project.defName + " (осталось незавершённым)");
+                    if (!project.IsFinished) failed.Add(project.defName + WorldText.Get("GrechkaWorldIntegration_f4ac5186740c", " (still unfinished)"));
                 }
                 catch (Exception error) { failed.Add(project.defName + " (" + error.Message + ")"); }
             }
 
             int remaining = UnfinishedCount();
             if (failed.Count > 0 || remaining > 0)
-                Log.Error("[Grechka World Integration] После применения незавершённых: " + remaining
-                    + ". Ошибки: " + string.Join("; ", failed.Take(20))
-                    + (failed.Count > 20 ? "; и ещё " + (failed.Count - 20) : ""));
+                Log.Error(WorldText.Get("GrechkaWorldIntegration_ccc87bcd3ae6", "[Grechka World Integration] Unfinished after application: ") + remaining
+                    + WorldText.Get("GrechkaWorldIntegration_cca16310493d", ". Errors: ") + string.Join("; ", failed.Take(20))
+                    + (failed.Count > 20 ? WorldText.Get("GrechkaWorldIntegration_8c58d44c61a9", ". Additional errors: ") + (failed.Count - 20) : ""));
             else
-                Log.Message("[Grechka World Integration] Завершены все исследования; новых: " + (before - remaining) + ".");
+                Log.Message(WorldText.Get("GrechkaWorldIntegration_29dad5caaeac", "[Grechka World Integration] All research completed. Newly completed: ") + (before - remaining) + ".");
             return new Result(before - remaining, remaining, failed.Count);
         }
     }
@@ -131,13 +157,13 @@ namespace Grechka.WorldIntegration
             return AccessTools.Method(AccessTools.TypeByName("ResearchUtility"), "ApplyPlayerStartingResearch");
         }
 
-        static void Postfix() { ResearchRules.ApplyAll(); }
+        static void Postfix() { if (!GrechkaWorldIntegrationMod.ResearchEnabled) ResearchRules.ApplyAll(); }
     }
 
     // Hide the built-in tab even when an old saved keybinding still points to F6.
     [HarmonyPatch(typeof(MainTabsRoot), "SetCurrentTab", new Type[] { typeof(MainButtonDef), typeof(bool) })]
     internal static class ResearchTabGuard
     {
-        static bool Prefix(MainButtonDef __0) { return __0 == null || __0.defName != "Research"; }
+        static bool Prefix(MainButtonDef __0) { return GrechkaWorldIntegrationMod.ResearchEnabled || __0 == null || __0.defName != "Research"; }
     }
 }

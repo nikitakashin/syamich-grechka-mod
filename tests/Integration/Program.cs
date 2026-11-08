@@ -5,7 +5,10 @@ using HarmonyLib;
 using Verse;
 using RimWorld;
 var modules = new[] { "GrechkaIndustry", "GrechkaStorage", "GrechkaEquipment", "GrechkaLuckyBlocks", "GrechkaQuests", "GrechkaWorldIntegration" };
-var assemblies = modules.Select(Assembly.Load).Prepend(typeof(ThingDef).Assembly).ToArray();
+var optional = new List<Assembly>();
+string pipes = Environment.GetEnvironmentVariable("PIPESYSTEM_ASSEMBLY");
+if (!string.IsNullOrEmpty(pipes) && File.Exists(pipes)) optional.Add(Assembly.LoadFrom(pipes));
+var assemblies = modules.Select(Assembly.Load).Prepend(typeof(ThingDef).Assembly).Concat(optional).Distinct().ToArray();
 Type Resolve(string name) => assemblies.SelectMany(a => a.GetTypes()).FirstOrDefault(t => t.FullName == name || t.Name == name);
 void Schema(XElement node, Type type, bool root = false)
 {
@@ -47,7 +50,9 @@ foreach (string module in modules)
     foreach (string file in Directory.GetFiles(Path.Combine(root, "mods", module, "Defs"), "*.xml", SearchOption.AllDirectories))
     foreach (XElement node in XDocument.Load(file).Root.Elements())
     {
-        Type type = Resolve(node.Name.LocalName) ?? throw new Exception("Unknown Def type: " + node.Name + " in " + file);
+        Type type = Resolve(node.Name.LocalName);
+        if (type == null && node.Attribute("MayRequire") != null) continue;
+        if (type == null) throw new Exception("Unknown required Def type: " + node.Name + " in " + file);
         try { Schema(node, type, true); }
         catch (Exception error) { throw new Exception(file + ": " + error.Message, error); }
         string name = (string)node.Element("defName");

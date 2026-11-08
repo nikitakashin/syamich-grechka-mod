@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Grechka_CertusMeteor.label>метеорит certus</Grechka_CertusMeteor.label>
+  <Grechka_CertusMeteor.description>Упавший метеорит с certus-рудой и переносимыми источниками кристаллов.</Grechka_CertusMeteor.description>
+  <Grechka_CertusMeteor.approachOrderString>Посетить метеорит</Grechka_CertusMeteor.approachOrderString>
+  <Grechka_CertusMeteor.approachingReportString>Посещение метеорита</Grechka_CertusMeteor.approachingReportString>
+  <Grechka_CertusMeteor.arrivedLetter>Караван достиг метеорита certus.</Grechka_CertusMeteor.arrivedLetter>
+  <Grechka_CertusMeteor.arrivedLetterLabelPart>Метеорит certus</Grechka_CertusMeteor.arrivedLetterLabelPart>
+</LanguageData>

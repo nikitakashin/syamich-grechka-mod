@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Grechka_ArchoAcceleration.label>архо-ускорение</Grechka_ArchoAcceleration.label>
+  <Grechka_ArchoAcceleration.description>Поле архо-облучателя временно ускоряет движение и работу. Эффект поддерживается, пока пешка находится в радиусе работающего устройства.</Grechka_ArchoAcceleration.description>
+  <Grechka_ArchoSuppression.label>архо-подавление</Grechka_ArchoSuppression.label>
+  <Grechka_ArchoSuppression.description>Поле архо-облучателя временно замедляет движение и снижает точность атак. Эффект ослабевает после выхода из зоны облучения.</Grechka_ArchoSuppression.description>
+</LanguageData>

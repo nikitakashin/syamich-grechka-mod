@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Grechka_MechaniteExtractorGroup.label>экстрактор механитов</Grechka_MechaniteExtractorGroup.label>
+  <Grechka_AssemblyBenchGroup.label>сборочный верстак</Grechka_AssemblyBenchGroup.label>
+  <Grechka_SolarPanelGroup.label>солнечная панель</Grechka_SolarPanelGroup.label>
+  <Grechka_MechaponicsGroup.label>мехапоника</Grechka_MechaponicsGroup.label>
+  <Grechka_IonizerGroup.label>комнатный ионизатор</Grechka_IonizerGroup.label>
+  <Grechka_SuppressionEmitterGroup.label>облучатель подавления</Grechka_SuppressionEmitterGroup.label>
+  <Grechka_AccelerationEmitterGroup.label>облучатель ускорения</Grechka_AccelerationEmitterGroup.label>
+  <Grechka_WellbeingEmitterGroup.label>облучатель тонизирования</Grechka_WellbeingEmitterGroup.label>
+  <Grechka_ArchoGeneratorGroup.label>архо-генератор</Grechka_ArchoGeneratorGroup.label>
+  <Grechka_MatterRecyclerGroup.label>генератор материи</Grechka_MatterRecyclerGroup.label>
+  <Grechka_MatterSynthesizerGroup.label>синтезатор материи</Grechka_MatterSynthesizerGroup.label>
+</LanguageData>

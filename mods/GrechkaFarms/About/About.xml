@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Grechka Farms</name>
+  <author>Grechka World</author>
+  <packageId>grechka.farms</packageId>
+  <modVersion>0.1.0</modVersion>
+  <supportedVersions><li>1.7</li></supportedVersions>
+  <description>Во вкладке «Гречка» можно уложить покрытие «Ферма» и разбить на нём зону посева. Строительство занимает мало времени и доступно с начала игры без материалов и требований к навыкам. По умолчанию плодородность составляет 228%. В настройках её можно менять от 100 до 1000%. Новое значение действует и на уже уложенные клетки. Мод работает самостоятельно.</description>
+  <loadAfter><li>grechka.industry</li><li>grechka.storage</li><li>grechka.quests</li></loadAfter>
+</ModMetaData>

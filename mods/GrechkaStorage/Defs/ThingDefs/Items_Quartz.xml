@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_Quartz</defName>
@@ -219,7 +219,7 @@
     <stackLimit>100</stackLimit>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
-      <MarketValue>55</MarketValue>
+      <MarketValue>35</MarketValue>
       <Mass>0.15</Mass>
       <Flammability>0</Flammability>
       <DeteriorationRate>1</DeteriorationRate>
@@ -245,7 +245,7 @@
     <stackLimit>100</stackLimit>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
-      <MarketValue>75</MarketValue>
+      <MarketValue>45</MarketValue>
       <Mass>0.15</Mass>
       <Flammability>0</Flammability>
       <DeteriorationRate>1</DeteriorationRate>
@@ -271,7 +271,7 @@
     <stackLimit>100</stackLimit>
     <statBases>
       <MaxHitPoints>80</MaxHitPoints>
-      <MarketValue>100</MarketValue>
+      <MarketValue>60</MarketValue>
       <Mass>0.15</Mass>
       <Flammability>0</Flammability>
       <DeteriorationRate>1</DeteriorationRate>

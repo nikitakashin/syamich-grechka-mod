@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Grechka Destroy Item</name>
+  <author>Grechka World</author>
+  <packageId>grechka.destroyitem</packageId>
+  <modVersion>0.1.0</modVersion>
+  <supportedVersions><li>1.7</li></supportedVersions>
+  <description>Приказ Destroy помечает предмет или труп для уничтожения. За две секунды работы пешка уничтожает всю стопку без возврата материалов. Вместе с трупом пропадает его экипировка, а вместе с упакованной вещью — её содержимое. До завершения приказ можно отменить. Чтобы назначить исполнителя сразу, выберите пешку и нажмите правой кнопкой на цель. Исполнитель получает −3 к настроению на 6 игровых часов. Повторное уничтожение обновляет длительность штрафа.</description>
+  <modDependencies><li><packageId>brrainz.harmony</packageId><displayName>Harmony</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl></li></modDependencies>
+  <loadAfter><li>brrainz.harmony</li></loadAfter>
+</ModMetaData>

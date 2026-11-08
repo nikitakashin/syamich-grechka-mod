@@ -46,6 +46,7 @@ namespace Grechka.WorldIntegration
         {
             if (!Available || owners.GetValue(process) is not IList inputs) return;
             FactoryBatchState state = State(process);
+            FactoryProcessBalance.RefreshIdleInputs(process, inputs, state);
             if (setup || state.baseline.Count != inputs.Count)
             {
                 state.baseline.Clear();

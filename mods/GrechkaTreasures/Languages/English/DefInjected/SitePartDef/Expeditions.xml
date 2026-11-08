@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaTreasures_TreasureSitePart.label>treasure cache</GrechkaTreasures_TreasureSitePart.label>
+  <GrechkaTreasures_TreasureSitePart.description>A prepared map of ruins, a vault or a looter camp. Guards, hidden rooms, traps and decoys may be present. Inspect clues and take your loot before leaving.</GrechkaTreasures_TreasureSitePart.description>
+  <GrechkaTreasures_TreasureSitePart.approachOrderString>Explore treasure site</GrechkaTreasures_TreasureSitePart.approachOrderString>
+  <GrechkaTreasures_TreasureSitePart.approachingReportString>Exploring treasure site</GrechkaTreasures_TreasureSitePart.approachingReportString>
+  <GrechkaTreasures_TreasureSitePart.arrivedLetter>Your caravan has arrived. Inspect the ruins carefully: valuable objects can be decoys, and side passages may be safer than the main entrance.</GrechkaTreasures_TreasureSitePart.arrivedLetter>
+  <GrechkaTreasures_TreasureSitePart.arrivedLetterLabelPart>Treasure site</GrechkaTreasures_TreasureSitePart.arrivedLetterLabelPart>
+</LanguageData>

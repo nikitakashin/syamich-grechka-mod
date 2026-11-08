@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <DesignationDef>
+    <defName>Grechka_DestroyItem</defName>
+    <texturePath>UI/Designators/Deconstruct</texturePath>
+    <targetType>Thing</targetType>
+    <designateCancelable>true</designateCancelable>
+  </DesignationDef>
+  <JobDef>
+    <defName>Grechka_DestroyItem</defName>
+    <driverClass>Grechka.DestroyItem.JobDriver_DestroyItem</driverClass>
+    <reportString>disintegrating TargetA.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+  <WorkGiverDef>
+    <defName>Grechka_DestroyItem</defName>
+    <label>disintegrate designated items</label>
+    <giverClass>Grechka.DestroyItem.WorkGiver_DestroyItem</giverClass>
+    <workType>BasicWorker</workType>
+    <priorityInType>10</priorityInType>
+    <verb>disintegrate</verb>
+    <gerund>disintegrating</gerund>
+    <scanThings>true</scanThings>
+  </WorkGiverDef>
+  <ThoughtDef>
+    <defName>Grechka_DestroyedItem</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>0.25</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li><label>disintegrated something</label><description>I erased something from existence. It leaves an unpleasant feeling.</description><baseMoodEffect>-3</baseMoodEffect></li>
+    </stages>
+  </ThoughtDef>
+</Defs>

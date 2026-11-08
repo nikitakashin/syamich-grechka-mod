@@ -24,12 +24,12 @@ namespace Grechka.Quests
             this.eventCounts = eventCounts == null ? new Dictionary<string, int>() : new Dictionary<string, int>(eventCounts);
             this.eventSignatures = eventSignatures == null ? new Dictionary<string, string>() : new Dictionary<string, string>(eventSignatures);
             if (this.eventCounts.Count != this.eventSignatures.Count || this.eventCounts.Any(pair => pair.Value < 0 || !this.eventSignatures.ContainsKey(pair.Key)))
-                throw new FormatException("Неполные данные событийных целей.");
+                throw new FormatException(QuestText.Get("GrechkaQuests_2eb9d5fabd66", "Неполные данные событийных целей."));
         }
 
         public static void ValidateProgressVersion(int version)
         {
-            if (version < 0 || version > 1) throw new FormatException("Неподдерживаемая версия прогресса: " + version);
+            if (version < 0 || version > 1) throw new FormatException(QuestText.Get("GrechkaQuests_4f6c86ea6531", "Неподдерживаемая версия прогресса: ") + version);
         }
 
         // Decode paired values conservatively: malformed data is an error, not an empty history.
@@ -37,12 +37,12 @@ namespace Grechka.Quests
         {
             if (keys == null && values == null) return new Dictionary<string, string>();
             if (keys == null || values == null || keys.Count != values.Count)
-                throw new FormatException("Неполные данные прогресса.");
+                throw new FormatException(QuestText.Get("GrechkaQuests_11502022f31b", "Неполные данные прогресса."));
             var result = new Dictionary<string, string>();
             for (int i = 0; i < keys.Count; i++)
             {
                 if (string.IsNullOrEmpty(keys[i]) || values[i] == null || result.ContainsKey(keys[i]))
-                    throw new FormatException("Некорректные или повторяющиеся ключи прогресса.");
+                    throw new FormatException(QuestText.Get("GrechkaQuests_ca2ddf7750c1", "Некорректные или повторяющиеся ключи прогресса."));
                 result.Add(keys[i], values[i]);
             }
             return result;
@@ -50,11 +50,11 @@ namespace Grechka.Quests
         public static Dictionary<string, int> ReadCounts(IList<string> keys, IList<int> values)
         {
             if (keys == null && values == null) return new Dictionary<string, int>();
-            if (keys == null || values == null || keys.Count != values.Count) throw new FormatException("Неполные счётчики событий.");
+            if (keys == null || values == null || keys.Count != values.Count) throw new FormatException(QuestText.Get("GrechkaQuests_d1d5dc8dd95d", "Неполные счётчики событий."));
             var result = new Dictionary<string, int>();
             for (int i = 0; i < keys.Count; i++)
             {
-                if (string.IsNullOrEmpty(keys[i]) || values[i] < 0 || result.ContainsKey(keys[i])) throw new FormatException("Некорректные счётчики событий.");
+                if (string.IsNullOrEmpty(keys[i]) || values[i] < 0 || result.ContainsKey(keys[i])) throw new FormatException(QuestText.Get("GrechkaQuests_43806287b2fa", "Некорректные счётчики событий."));
                 result.Add(keys[i], values[i]);
             }
             return result;
@@ -92,12 +92,12 @@ namespace Grechka.Quests
             return eventSignatures.TryGetValue(key, out signature) && signature == Signature(goal) && eventCounts.TryGetValue(key, out count) ? count : 0;
         }
 
-        // Only a verified source of completed output may call this. Moving, buying or
+        // Only verified completed output or a player-caused death may call this. Moving, buying or
         // receiving an existing Thing must never be reported as a production event.
         public void RecordEvent(QuestPack pack, string type, string def, string stuff, string quality, int amount, bool hasColony,
             Func<string, string> canonicalize = null)
         {
-            if (!hasColony || amount <= 0 || (type != "produce" && type != "mine" && type != "harvest")) return;
+            if (!hasColony || amount <= 0 || (type != "produce" && type != "mine" && type != "harvest" && type != "kill")) return;
             foreach (Quest quest in pack.quests)
                 foreach (Objective goal in quest.objectives)
                 {
@@ -179,24 +179,24 @@ namespace Grechka.Quests
         // Recheck the captured plan before creating anything. Never expand it with newly met goals.
         public string ValidatePlan(QuestPack pack, QuestClaimPlan plan, IDictionary<string, string> choices, bool hasColony, Func<Quest, bool> compatible)
         {
-            if (!hasColony) return "Создайте колонию";
-            if (plan == null || plan.bookSnapshot != PackCodec.Encode(pack)) return "Книга изменилась. Откройте выбор наград заново.";
-            if (plan.questIds.Count == 0 || plan.questIds.Count != plan.questIds.Distinct().Count()) return "Нет доступных наград.";
+            if (!hasColony) return QuestText.Get("GrechkaQuests_731c3711ff2a", "Создайте колонию");
+            if (plan == null || plan.bookSnapshot != PackCodec.Encode(pack)) return QuestText.Get("GrechkaQuests_4acd53a591cd", "Книга изменилась. Откройте выбор наград заново.");
+            if (plan.questIds.Count == 0 || plan.questIds.Count != plan.questIds.Distinct().Count()) return QuestText.Get("GrechkaQuests_83247b030b1b", "Нет доступных наград.");
             var available = new HashSet<string>(claimed);
             var included = new HashSet<string>(plan.questIds);
-            if (choices != null && choices.Keys.Any(id => !included.Contains(id))) return "Выбор относится к другому заданию.";
+            if (choices != null && choices.Keys.Any(id => !included.Contains(id))) return QuestText.Get("GrechkaQuests_3b7f30889c7e", "Выбор относится к другому заданию.");
             foreach (string id in plan.questIds)
             {
                 Quest q = pack.quests.FirstOrDefault(item => item.id == id);
                 if (q == null || Claimed(pack, q) || !ObjectivesComplete(pack, q) || (compatible != null && !compatible(q))
                     || !q.requires.All(parent => available.Contains(PackCodec.Key(pack.id, parent))))
-                    return "Состояние заданий изменилось. Откройте получение наград заново.";
+                    return QuestText.Get("GrechkaQuests_2d8c5db4d4cf", "Состояние заданий изменилось. Откройте получение наград заново.");
                 bool hasChoice = choices != null && choices.ContainsKey(q.id);
                 if (q.alternatives.Count > 0)
                 {
-                    if (!hasChoice || !q.alternatives.Any(option => option.id == choices[q.id])) return "Выберите набор наград для «" + q.title + "».";
+                    if (!hasChoice || !q.alternatives.Any(option => option.id == choices[q.id])) return QuestText.Get("GrechkaQuests_11c4a721f130", "Выберите набор наград для «") + q.title + "».";
                 }
-                else if (hasChoice) return "У задания «" + q.title + "» нет выбора наград.";
+                else if (hasChoice) return QuestText.Get("GrechkaQuests_912cf6bfac83", "У задания «") + q.title + QuestText.Get("GrechkaQuests_5991199c8022", "» нет выбора наград.");
                 available.Add(PackCodec.Key(pack.id, q.id));
             }
             return null;
@@ -218,6 +218,7 @@ namespace Grechka.Quests
             foreach (var pair in achieved) result[pair.Key] = pair.Value;
             return result;
         }
+        public int ClaimedCount => claimed.Count;
         public List<string> CopyClaimed() { return claimed.ToList(); }
         public Dictionary<string, string> CopyRewardChoices() { return new Dictionary<string, string>(rewardChoices); }
         public string ChosenReward(QuestPack pack, Quest quest)

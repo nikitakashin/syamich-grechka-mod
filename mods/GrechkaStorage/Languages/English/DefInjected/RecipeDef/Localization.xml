@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Grechka_MakeDataCore_1K.label>assemble memory cell 1K</Grechka_MakeDataCore_1K.label>
+  <Grechka_MakeDataCore_1K.jobString>Assembling disk parts.</Grechka_MakeDataCore_1K.jobString>
+  <Grechka_MakeDisk_1K.label>assemble storage disk 1K</Grechka_MakeDisk_1K.label>
+  <Grechka_MakeDisk_1K.jobString>Assembling disk parts.</Grechka_MakeDisk_1K.jobString>
+  <Grechka_MakeFrozenDisk_1K.label>assemble freezing disk 1K</Grechka_MakeFrozenDisk_1K.label>
+  <Grechka_MakeFrozenDisk_1K.jobString>Assembling disk parts.</Grechka_MakeFrozenDisk_1K.jobString>
+  <Grechka_MakeDataCore_4K.label>assemble memory cell 4K</Grechka_MakeDataCore_4K.label>
+  <Grechka_MakeDataCore_4K.jobString>Assembling disk parts.</Grechka_MakeDataCore_4K.jobString>
+  <Grechka_MakeDisk_4K.label>assemble storage disk 4K</Grechka_MakeDisk_4K.label>
+  <Grechka_MakeDisk_4K.jobString>Assembling disk parts.</Grechka_MakeDisk_4K.jobString>
+  <Grechka_MakeFrozenDisk_4K.label>assemble freezing disk 4K</Grechka_MakeFrozenDisk_4K.label>
+  <Grechka_MakeFrozenDisk_4K.jobString>Assembling disk parts.</Grechka_MakeFrozenDisk_4K.jobString>
+  <Grechka_MakeDataCore_16K.label>assemble memory cell 16K</Grechka_MakeDataCore_16K.label>
+  <Grechka_MakeDataCore_16K.jobString>Assembling disk parts.</Grechka_MakeDataCore_16K.jobString>
+  <Grechka_MakeDisk_16K.label>assemble storage disk 16K</Grechka_MakeDisk_16K.label>
+  <Grechka_MakeDisk_16K.jobString>Assembling disk parts.</Grechka_MakeDisk_16K.jobString>
+  <Grechka_MakeFrozenDisk_16K.label>assemble freezing disk 16K</Grechka_MakeFrozenDisk_16K.label>
+  <Grechka_MakeFrozenDisk_16K.jobString>Assembling disk parts.</Grechka_MakeFrozenDisk_16K.jobString>
+  <Grechka_MakeDataCore_64K.label>assemble memory cell 64K</Grechka_MakeDataCore_64K.label>
+  <Grechka_MakeDataCore_64K.jobString>Assembling disk parts.</Grechka_MakeDataCore_64K.jobString>
+  <Grechka_MakeDisk_64K.label>assemble storage disk 64K</Grechka_MakeDisk_64K.label>
+  <Grechka_MakeDisk_64K.jobString>Assembling disk parts.</Grechka_MakeDisk_64K.jobString>
+  <Grechka_MakeFrozenDisk_64K.label>assemble freezing disk 64K</Grechka_MakeFrozenDisk_64K.label>
+  <Grechka_MakeFrozenDisk_64K.jobString>Assembling disk parts.</Grechka_MakeFrozenDisk_64K.jobString>
+  <Grechka_MakeDataCore_256K.label>assemble memory cell 256K</Grechka_MakeDataCore_256K.label>
+  <Grechka_MakeDataCore_256K.jobString>Assembling disk parts.</Grechka_MakeDataCore_256K.jobString>
+  <Grechka_MakeDisk_256K.label>assemble storage disk 256K</Grechka_MakeDisk_256K.label>
+  <Grechka_MakeDisk_256K.jobString>Assembling disk parts.</Grechka_MakeDisk_256K.jobString>
+  <Grechka_MakeFrozenDisk_256K.label>assemble freezing disk 256K</Grechka_MakeFrozenDisk_256K.label>
+  <Grechka_MakeFrozenDisk_256K.jobString>Assembling disk parts.</Grechka_MakeFrozenDisk_256K.jobString>
+  <Grechka_MakeDataCore_512K.label>assemble memory cell 512K</Grechka_MakeDataCore_512K.label>
+  <Grechka_MakeDataCore_512K.jobString>Assembling disk parts.</Grechka_MakeDataCore_512K.jobString>
+  <Grechka_MakeDisk_512K.label>assemble storage disk 512K</Grechka_MakeDisk_512K.label>
+  <Grechka_MakeDisk_512K.jobString>Assembling disk parts.</Grechka_MakeDisk_512K.jobString>
+  <Grechka_MakeFrozenDisk_512K.label>assemble freezing disk 512K</Grechka_MakeFrozenDisk_512K.label>
+  <Grechka_MakeFrozenDisk_512K.jobString>Assembling disk parts.</Grechka_MakeFrozenDisk_512K.jobString>
+  <Grechka_MakeDataCore_1M.label>assemble memory cell 1M</Grechka_MakeDataCore_1M.label>
+  <Grechka_MakeDataCore_1M.jobString>Assembling disk parts.</Grechka_MakeDataCore_1M.jobString>
+  <Grechka_MakeDisk_1M.label>assemble storage disk 1M</Grechka_MakeDisk_1M.label>
+  <Grechka_MakeDisk_1M.jobString>Assembling disk parts.</Grechka_MakeDisk_1M.jobString>
+  <Grechka_MakeFrozenDisk_1M.label>assemble freezing disk 1M</Grechka_MakeFrozenDisk_1M.label>
+  <Grechka_MakeFrozenDisk_1M.jobString>Assembling disk parts.</Grechka_MakeFrozenDisk_1M.jobString>
+  <Grechka_MakeDataCore_2M.label>assemble memory cell 2M</Grechka_MakeDataCore_2M.label>
+  <Grechka_MakeDataCore_2M.jobString>Assembling disk parts.</Grechka_MakeDataCore_2M.jobString>
+  <Grechka_MakeDisk_2M.label>assemble storage disk 2M</Grechka_MakeDisk_2M.label>
+  <Grechka_MakeDisk_2M.jobString>Assembling disk parts.</Grechka_MakeDisk_2M.jobString>
+  <Grechka_MakeFrozenDisk_2M.label>assemble freezing disk 2M</Grechka_MakeFrozenDisk_2M.label>
+  <Grechka_MakeFrozenDisk_2M.jobString>Assembling disk parts.</Grechka_MakeFrozenDisk_2M.jobString>
+  <Grechka_MakeDataCore_4M.label>assemble memory cell 4M</Grechka_MakeDataCore_4M.label>
+  <Grechka_MakeDataCore_4M.jobString>Assembling disk parts.</Grechka_MakeDataCore_4M.jobString>
+  <Grechka_MakeDisk_4M.label>assemble storage disk 4M</Grechka_MakeDisk_4M.label>
+  <Grechka_MakeDisk_4M.jobString>Assembling disk parts.</Grechka_MakeDisk_4M.jobString>
+  <Grechka_MakeFrozenDisk_4M.label>assemble freezing disk 4M</Grechka_MakeFrozenDisk_4M.label>
+  <Grechka_MakeFrozenDisk_4M.jobString>Assembling disk parts.</Grechka_MakeFrozenDisk_4M.jobString>
+  <Grechka_MakeDataCore_8M.label>assemble memory cell 8M</Grechka_MakeDataCore_8M.label>
+  <Grechka_MakeDataCore_8M.jobString>Assembling disk parts.</Grechka_MakeDataCore_8M.jobString>
+  <Grechka_MakeDisk_8M.label>assemble storage disk 8M</Grechka_MakeDisk_8M.label>
+  <Grechka_MakeDisk_8M.jobString>Assembling disk parts.</Grechka_MakeDisk_8M.jobString>
+  <Grechka_MakeFrozenDisk_8M.label>assemble freezing disk 8M</Grechka_MakeFrozenDisk_8M.label>
+  <Grechka_MakeFrozenDisk_8M.jobString>Assembling disk parts.</Grechka_MakeFrozenDisk_8M.jobString>
+  <Grechka_MakeDataCore_16M.label>assemble memory cell 16M</Grechka_MakeDataCore_16M.label>
+  <Grechka_MakeDataCore_16M.jobString>Assembling disk parts.</Grechka_MakeDataCore_16M.jobString>
+  <Grechka_MakeDisk_16M.label>assemble storage disk 16M</Grechka_MakeDisk_16M.label>
+  <Grechka_MakeDisk_16M.jobString>Assembling disk parts.</Grechka_MakeDisk_16M.jobString>
+  <Grechka_MakeFrozenDisk_16M.label>assemble freezing disk 16M</Grechka_MakeFrozenDisk_16M.label>
+  <Grechka_MakeFrozenDisk_16M.jobString>Assembling disk parts.</Grechka_MakeFrozenDisk_16M.jobString>
+  <Grechka_MakeDataCore_64M.label>assemble memory cell 64M</Grechka_MakeDataCore_64M.label>
+  <Grechka_MakeDataCore_64M.jobString>Assembling disk parts.</Grechka_MakeDataCore_64M.jobString>
+  <Grechka_MakeDisk_64M.label>assemble storage disk 64M</Grechka_MakeDisk_64M.label>
+  <Grechka_MakeDisk_64M.jobString>Assembling disk parts.</Grechka_MakeDisk_64M.jobString>
+  <Grechka_MakeFrozenDisk_64M.label>assemble freezing disk 64M</Grechka_MakeFrozenDisk_64M.label>
+  <Grechka_MakeFrozenDisk_64M.jobString>Assembling disk parts.</Grechka_MakeFrozenDisk_64M.jobString>
+  <Grechka_MakeDataCore_256M.label>assemble memory cell 256M</Grechka_MakeDataCore_256M.label>
+  <Grechka_MakeDataCore_256M.jobString>Assembling disk parts.</Grechka_MakeDataCore_256M.jobString>
+  <Grechka_MakeDisk_256M.label>assemble storage disk 256M</Grechka_MakeDisk_256M.label>
+  <Grechka_MakeDisk_256M.jobString>Assembling disk parts.</Grechka_MakeDisk_256M.jobString>
+  <Grechka_MakeFrozenDisk_256M.label>assemble freezing disk 256M</Grechka_MakeFrozenDisk_256M.label>
+  <Grechka_MakeFrozenDisk_256M.jobString>Assembling disk parts.</Grechka_MakeFrozenDisk_256M.jobString>
+  <Grechka_CrushQuartz.label>grind quartz ×5</Grechka_CrushQuartz.label>
+  <Grechka_CrushQuartz.jobString>Assembling Storage parts.</Grechka_CrushQuartz.jobString>
+  <Grechka_SmeltSilicon.label>refine silicon ×5</Grechka_SmeltSilicon.label>
+  <Grechka_SmeltSilicon.jobString>Assembling Storage parts.</Grechka_SmeltSilicon.jobString>
+  <Grechka_MakeSiliconSubstrate.label>make silicon wafers ×5</Grechka_MakeSiliconSubstrate.label>
+  <Grechka_MakeSiliconSubstrate.jobString>Assembling Storage parts.</Grechka_MakeSiliconSubstrate.jobString>
+  <Grechka_MakePrintedSilicon.label>print silicon element</Grechka_MakePrintedSilicon.label>
+  <Grechka_MakePrintedSilicon.jobString>Assembling Storage parts.</Grechka_MakePrintedSilicon.jobString>
+  <Grechka_MakeQuartzCircuit.label>print quartz circuit</Grechka_MakeQuartzCircuit.label>
+  <Grechka_MakeQuartzCircuit.jobString>Assembling Storage parts.</Grechka_MakeQuartzCircuit.jobString>
+  <Grechka_MakeQuartzProcessor.label>assemble quartz processor ×2</Grechka_MakeQuartzProcessor.label>
+  <Grechka_MakeQuartzProcessor.jobString>Assembling Storage parts.</Grechka_MakeQuartzProcessor.jobString>
+  <Grechka_MakeSilverCircuit.label>print silver circuit</Grechka_MakeSilverCircuit.label>
+  <Grechka_MakeSilverCircuit.jobString>Assembling Storage parts.</Grechka_MakeSilverCircuit.jobString>
+  <Grechka_MakeSilverProcessor.label>assemble silver processor ×2</Grechka_MakeSilverProcessor.label>
+  <Grechka_MakeSilverProcessor.jobString>Assembling Storage parts.</Grechka_MakeSilverProcessor.jobString>
+  <Grechka_MakeGoldCircuit.label>print gold circuit</Grechka_MakeGoldCircuit.label>
+  <Grechka_MakeGoldCircuit.jobString>Assembling Storage parts.</Grechka_MakeGoldCircuit.jobString>
+  <Grechka_MakeGoldProcessor.label>assemble gold processor ×2</Grechka_MakeGoldProcessor.label>
+  <Grechka_MakeGoldProcessor.jobString>Assembling Storage parts.</Grechka_MakeGoldProcessor.jobString>
+</LanguageData>

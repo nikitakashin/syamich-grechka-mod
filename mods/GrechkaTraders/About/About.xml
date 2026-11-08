@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Grechka Traders</name>
+  <author>Grechka World</author>
+  <packageId>grechka.traders</packageId>
+  <supportedVersions><li>1.7</li></supportedVersions>
+  <description>Настраиваемая частота орбитальных торговцев и торговых караванов, количество рабов в караванах работорговцев и 16 тематических поставщиков для модов Grechka World. Поставщики появляются только с подходящими активными модами и предлагают скидку на их товары. По умолчанию частота и количество рабов остаются штатными. Требует Harmony; остальные моды необязательны.</description>
+  <modDependencies><li><packageId>brrainz.harmony</packageId><displayName>Harmony</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl></li></modDependencies>
+  <loadAfter><li>brrainz.harmony</li><li>grechka.world.integration</li><li>grechka.industry</li><li>grechka.storage</li><li>grechka.equipment</li><li>grechka.luckyblocks</li><li>grechka.pharmacy</li></loadAfter>
+  <modVersion>0.1.0</modVersion>
+</ModMetaData>

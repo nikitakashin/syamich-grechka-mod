@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <OutputPath>../Assemblies</OutputPath>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <NuGetAudit>false</NuGetAudit>
+    <EnableNETAnalyzers>false</EnableNETAnalyzers>
+    <GameManagedDir Condition="'$(GameManagedDir)' == ''">$(RIMWORLD_MANAGED_DIR)</GameManagedDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp"><HintPath>$(GameManagedDir)/Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityStubs"><HintPath>$(GameManagedDir)/UnityStubs.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="AchievementsExpanded"><HintPath>$(ACHIEVEMENTS_ASSEMBLY)</HintPath><Private>false</Private></Reference>
+    <ProjectReference Include="../../GrechkaQuests/Source/GrechkaQuests.csproj" Private="false" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaPharmacy_HemostaticEffect.label>hemostatic dressing</GrechkaPharmacy_HemostaticEffect.label>
+  <GrechkaPharmacy_HemostaticEffect.description>Hemostatic dressing. See the preparation for its effect and duration.</GrechkaPharmacy_HemostaticEffect.description>
+  <GrechkaPharmacy_AnalgesicEffect.label>field analgesia</GrechkaPharmacy_AnalgesicEffect.label>
+  <GrechkaPharmacy_AnalgesicEffect.description>Field analgesia. See the preparation for its effect and duration.</GrechkaPharmacy_AnalgesicEffect.description>
+  <GrechkaPharmacy_ImmunoEffect.label>immune support</GrechkaPharmacy_ImmunoEffect.label>
+  <GrechkaPharmacy_ImmunoEffect.description>Immune support. See the preparation for its effect and duration.</GrechkaPharmacy_ImmunoEffect.description>
+  <GrechkaPharmacy_RecoveryEffect.label>recovery support</GrechkaPharmacy_RecoveryEffect.label>
+  <GrechkaPharmacy_RecoveryEffect.description>Recovery support. See the preparation for its effect and duration.</GrechkaPharmacy_RecoveryEffect.description>
+  <GrechkaPharmacy_DetoxCourse.label>clean slate treatment</GrechkaPharmacy_DetoxCourse.label>
+  <GrechkaPharmacy_DetoxCourse.description>Clean slate treatment. See the preparation for its effect and duration.</GrechkaPharmacy_DetoxCourse.description>
+  <GrechkaPharmacy_MechaniteRegenCourse.label>mechanite regeneration</GrechkaPharmacy_MechaniteRegenCourse.label>
+  <GrechkaPharmacy_MechaniteRegenCourse.description>Mechanite regeneration. See the preparation for its effect and duration.</GrechkaPharmacy_MechaniteRegenCourse.description>
+  <GrechkaPharmacy_CombatEffect.label>red line stimulant</GrechkaPharmacy_CombatEffect.label>
+  <GrechkaPharmacy_CombatEffect.description>Red line stimulant. See the preparation for its effect and duration.</GrechkaPharmacy_CombatEffect.description>
+  <GrechkaPharmacy_WorkEffect.label>second shift stimulant</GrechkaPharmacy_WorkEffect.label>
+  <GrechkaPharmacy_WorkEffect.description>Second shift stimulant. See the preparation for its effect and duration.</GrechkaPharmacy_WorkEffect.description>
+  <GrechkaPharmacy_GrechkaCourse.label>Grechka regeneration</GrechkaPharmacy_GrechkaCourse.label>
+  <GrechkaPharmacy_GrechkaCourse.description>Grechka regeneration. See the preparation for its effect and duration.</GrechkaPharmacy_GrechkaCourse.description>
+  <GrechkaPharmacy_FatigueEffect.label>stimulant fatigue</GrechkaPharmacy_FatigueEffect.label>
+  <GrechkaPharmacy_FatigueEffect.description>Stimulant fatigue. See the preparation for its effect and duration.</GrechkaPharmacy_FatigueEffect.description>
+</LanguageData>

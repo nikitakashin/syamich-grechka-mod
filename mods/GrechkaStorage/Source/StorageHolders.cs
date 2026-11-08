@@ -119,12 +119,12 @@ namespace Grechka.Storage
         public void RequestRemove(StorageDisk disk) { if (disks.Contains(disk) && !removeRequests.Contains(disk)) removeRequests.Add(disk); }
         public void CancelRequests(StorageDisk disk) { installRequests.Remove(disk); removeRequests.Remove(disk); }
         public override void PreApplyDamage(ref DamageInfo dinfo, out bool absorbed) { absorbed = true; }
-        public override string GetInspectString() { return base.GetInspectString() + "\nДиски: " + disks.Count + "/" + Slots; }
+        public override string GetInspectString() { return base.GetInspectString() + StorageText.Get("GrechkaStorage_Text132") + disks.Count + "/" + Slots; }
         public override IEnumerable<Gizmo> GetGizmos()
         {
             foreach (Gizmo gizmo in base.GetGizmos()) yield return gizmo;
             if (!Spawned || Faction != Faction.OfPlayer) yield break;
-            yield return new Command_Action { defaultLabel = "Диски", defaultDesc = "Установка и извлечение дисков пешками.",
+            yield return new Command_Action { defaultLabel = StorageText.Get("GrechkaStorage_Text056"), defaultDesc = StorageText.Get("GrechkaStorage_Text133"),
                 icon = def.uiIcon, action = () => Find.WindowStack.Add(new Window_DiskRack(this)) };
         }
         public override void Destroy(DestroyMode mode = DestroyMode.Vanish)
@@ -134,7 +134,7 @@ namespace Grechka.Storage
             {
                 if (!Spawned || !disks.TryDropAll(Position, Map, ThingPlaceMode.Near))
                 {
-                    Messages.Message("Освободите место для извлечения дисков перед разборкой.", MessageTypeDefOf.RejectInput);
+                    Messages.Message(StorageText.Get("GrechkaStorage_Text134"), MessageTypeDefOf.RejectInput);
                     return;
                 }
             }
@@ -290,11 +290,11 @@ namespace Grechka.Storage
             if (Destroyed) return;
             if (mode == DestroyMode.Deconstruct && HasRecovery)
             {
-                Messages.Message("Сначала извлеките вещи из буфера восстановления.", MessageTypeDefOf.RejectInput); return;
+                Messages.Message(StorageText.Get("GrechkaStorage_Text135"), MessageTypeDefOf.RejectInput); return;
             }
             if (mode != DestroyMode.Vanish && output.Contents.Any && (!Spawned || !output.Contents.TryDropAll(Position, Map, ThingPlaceMode.Near)))
             {
-                Messages.Message("Сначала освободите буфер выдачи контроллера.", MessageTypeDefOf.RejectInput); return;
+                Messages.Message(StorageText.Get("GrechkaStorage_Text136"), MessageTypeDefOf.RejectInput); return;
             }
             output.Contents.ClearAndDestroyContents(mode); recovery.Contents.ClearAndDestroyContents(mode); coldRecovery.Contents.ClearAndDestroyContents(mode);
             base.Destroy(mode);

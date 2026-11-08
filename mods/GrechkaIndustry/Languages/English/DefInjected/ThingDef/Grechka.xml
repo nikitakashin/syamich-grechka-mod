@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Grechka_SolarStorageT3_Building.label>quartz panel</Grechka_SolarStorageT3_Building.label>
+  <Grechka_SolarStorageT3_Building.description>Quartz panel: 180,000 W during the day, 0% power at night. Themed branch available with grechka.storage installed.</Grechka_SolarStorageT3_Building.description>
+  <Grechka_SolarStorageT3_Building.comps.3.costDescription>the previous device intact and additional materials for the next stage; the installed housing is already credited</Grechka_SolarStorageT3_Building.comps.3.costDescription>
+  <Grechka_PackedSolarStorageT3_Item.label>packed quartz panel</Grechka_PackedSolarStorageT3_Item.label>
+  <Grechka_PackedSolarStorageT3_Item.description>An intact device for installation or upgrading.</Grechka_PackedSolarStorageT3_Item.description>
+  <Grechka_SolarStorageT4_Building.label>resonance panel</Grechka_SolarStorageT4_Building.label>
+  <Grechka_SolarStorageT4_Building.description>Resonance panel: 2,200,000 W during the day, 50% power at night. Themed branch available with grechka.storage installed.</Grechka_SolarStorageT4_Building.description>
+  <Grechka_SolarStorageT4_Building.comps.3.costDescription>the previous device intact and additional materials for the next stage; the installed housing is already credited</Grechka_SolarStorageT4_Building.comps.3.costDescription>
+  <Grechka_PackedSolarStorageT4_Item.label>packed resonance panel</Grechka_PackedSolarStorageT4_Item.label>
+  <Grechka_PackedSolarStorageT4_Item.description>An intact device for installation or upgrading.</Grechka_PackedSolarStorageT4_Item.description>
+  <Grechka_SolarStorageT5_Building.label>network solar panel</Grechka_SolarStorageT5_Building.label>
+  <Grechka_SolarStorageT5_Building.description>Network solar panel: 40,000,000 W during the day, 100% power at night. Themed branch available with grechka.storage installed.</Grechka_SolarStorageT5_Building.description>
+  <Grechka_PackedSolarStorageT5_Item.label>packed network solar panel</Grechka_PackedSolarStorageT5_Item.label>
+  <Grechka_PackedSolarStorageT5_Item.description>An intact device for installation or upgrading.</Grechka_PackedSolarStorageT5_Item.description>
+  <Grechka_SolarEltexT3_Building.label>eltex resonator</Grechka_SolarEltexT3_Building.label>
+  <Grechka_SolarEltexT3_Building.description>Eltex resonator: 160,000 W during the day, 25% power at night. Themed branch available with vanillaexpanded.vpsycastse installed.</Grechka_SolarEltexT3_Building.description>
+  <Grechka_SolarEltexT3_Building.comps.3.costDescription>the previous device intact and additional materials for the next stage; the installed housing is already credited</Grechka_SolarEltexT3_Building.comps.3.costDescription>
+  <Grechka_PackedSolarEltexT3_Item.label>packed eltex resonator</Grechka_PackedSolarEltexT3_Item.label>
+  <Grechka_PackedSolarEltexT3_Item.description>An intact device for installation or upgrading.</Grechka_PackedSolarEltexT3_Item.description>
+  <Grechka_SolarEltexT4_Building.label>psychic solar panel</Grechka_SolarEltexT4_Building.label>
+  <Grechka_SolarEltexT4_Building.description>Psychic solar panel: 2,000,000 W during the day, 75% power at night. Themed branch available with vanillaexpanded.vpsycastse installed.</Grechka_SolarEltexT4_Building.description>
+  <Grechka_SolarEltexT4_Building.comps.3.costDescription>the previous device intact and additional materials for the next stage; the installed housing is already credited</Grechka_SolarEltexT4_Building.comps.3.costDescription>
+  <Grechka_PackedSolarEltexT4_Item.label>packed psychic solar panel</Grechka_PackedSolarEltexT4_Item.label>
+  <Grechka_PackedSolarEltexT4_Item.description>An intact device for installation or upgrading.</Grechka_PackedSolarEltexT4_Item.description>
+  <Grechka_SolarEltexT5_Building.label>psychic solar array</Grechka_SolarEltexT5_Building.label>
+  <Grechka_SolarEltexT5_Building.description>Psychic solar array: 38,000,000 W during the day, 100% power at night. Themed branch available with vanillaexpanded.vpsycastse installed.</Grechka_SolarEltexT5_Building.description>
+  <Grechka_PackedSolarEltexT5_Item.label>packed psychic solar array</Grechka_PackedSolarEltexT5_Item.label>
+  <Grechka_PackedSolarEltexT5_Item.description>An intact device for installation or upgrading.</Grechka_PackedSolarEltexT5_Item.description>
+  <Grechka_SolarFortressT2_Building.label>armored panel</Grechka_SolarFortressT2_Building.label>
+  <Grechka_SolarFortressT2_Building.description>Armored panel: 24,000 W during the day, 0% power at night. Themed branch available with aoba.fortress.industrial installed.</Grechka_SolarFortressT2_Building.description>
+  <Grechka_SolarFortressT2_Building.comps.3.costDescription>the previous device intact and additional materials for the next stage; the installed housing is already credited</Grechka_SolarFortressT2_Building.comps.3.costDescription>
+  <Grechka_PackedSolarFortressT2_Item.label>packed armored panel</Grechka_PackedSolarFortressT2_Item.label>
+  <Grechka_PackedSolarFortressT2_Item.description>An intact device for installation or upgrading.</Grechka_PackedSolarFortressT2_Item.description>
+  <Grechka_SolarFortressT3_Building.label>fortress panel</Grechka_SolarFortressT3_Building.label>
+  <Grechka_SolarFortressT3_Building.description>Fortress panel: 200,000 W during the day, 0% power at night. Themed branch available with aoba.fortress.industrial installed.</Grechka_SolarFortressT3_Building.description>
+  <Grechka_SolarFortressT3_Building.comps.3.costDescription>the previous device intact and additional materials for the next stage; the installed housing is already credited</Grechka_SolarFortressT3_Building.comps.3.costDescription>
+  <Grechka_PackedSolarFortressT3_Item.label>packed fortress panel</Grechka_PackedSolarFortressT3_Item.label>
+  <Grechka_PackedSolarFortressT3_Item.description>An intact device for installation or upgrading.</Grechka_PackedSolarFortressT3_Item.description>
+  <Grechka_SolarFortressT4_Building.label>archotech fortress panel</Grechka_SolarFortressT4_Building.label>
+  <Grechka_SolarFortressT4_Building.description>Archotech fortress panel: 2,100,000 W during the day, 25% power at night. Themed branch available with aoba.fortress.industrial installed.</Grechka_SolarFortressT4_Building.description>
+  <Grechka_SolarFortressT4_Building.comps.3.costDescription>the previous device intact and additional materials for the next stage; the installed housing is already credited</Grechka_SolarFortressT4_Building.comps.3.costDescription>
+  <Grechka_PackedSolarFortressT4_Item.label>packed archotech fortress panel</Grechka_PackedSolarFortressT4_Item.label>
+  <Grechka_PackedSolarFortressT4_Item.description>An intact device for installation or upgrading.</Grechka_PackedSolarFortressT4_Item.description>
+  <Grechka_SolarFortressT5_Building.label>grechka fortress panel</Grechka_SolarFortressT5_Building.label>
+  <Grechka_SolarFortressT5_Building.description>Grechka fortress panel: 39,000,000 W during the day, 100% power at night. Themed branch available with aoba.fortress.industrial installed.</Grechka_SolarFortressT5_Building.description>
+  <Grechka_PackedSolarFortressT5_Item.label>packed grechka fortress panel</Grechka_PackedSolarFortressT5_Item.label>
+  <Grechka_PackedSolarFortressT5_Item.description>An intact device for installation or upgrading.</Grechka_PackedSolarFortressT5_Item.description>
+  <Grechka_SolarBiotechT3_Building.label>sun-tracking panel</Grechka_SolarBiotechT3_Building.label>
+  <Grechka_SolarBiotechT3_Building.description>Sun-tracking panel: 180,000 W during the day, 0% power at night. Themed branch available with Ludeon.RimWorld.Biotech installed.</Grechka_SolarBiotechT3_Building.description>
+  <Grechka_SolarBiotechT3_Building.comps.3.costDescription>the previous device intact and additional materials for the next stage; the installed housing is already credited</Grechka_SolarBiotechT3_Building.comps.3.costDescription>
+  <Grechka_PackedSolarBiotechT3_Item.label>packed sun-tracking panel</Grechka_PackedSolarBiotechT3_Item.label>
+  <Grechka_PackedSolarBiotechT3_Item.description>An intact device for installation or upgrading.</Grechka_PackedSolarBiotechT3_Item.description>
+  <Grechka_SolarBiotechT4_Building.label>neural solar panel</Grechka_SolarBiotechT4_Building.label>
+  <Grechka_SolarBiotechT4_Building.description>Neural solar panel: 2,500,000 W during the day, 25% power at night. Themed branch available with Ludeon.RimWorld.Biotech installed.</Grechka_SolarBiotechT4_Building.description>
+  <Grechka_SolarBiotechT4_Building.comps.3.costDescription>the previous device intact and additional materials for the next stage; the installed housing is already credited</Grechka_SolarBiotechT4_Building.comps.3.costDescription>
+  <Grechka_PackedSolarBiotechT4_Item.label>packed neural solar panel</Grechka_PackedSolarBiotechT4_Item.label>
+  <Grechka_PackedSolarBiotechT4_Item.description>An intact device for installation or upgrading.</Grechka_PackedSolarBiotechT4_Item.description>
+  <Grechka_SolarBiotechT5_Building.label>swarm panel</Grechka_SolarBiotechT5_Building.label>
+  <Grechka_SolarBiotechT5_Building.description>Swarm panel: 42,000,000 W during the day, 50% power at night. Themed branch available with Ludeon.RimWorld.Biotech installed.</Grechka_SolarBiotechT5_Building.description>
+  <Grechka_PackedSolarBiotechT5_Item.label>packed swarm panel</Grechka_PackedSolarBiotechT5_Item.label>
+  <Grechka_PackedSolarBiotechT5_Item.description>An intact device for installation or upgrading.</Grechka_PackedSolarBiotechT5_Item.description>
+  <Grechka_AssemblyBenchT1_Building.label>basic assembly bench</Grechka_AssemblyBenchT1_Building.label>
+  <Grechka_AssemblyBenchT1_Building.description>The first production machine in Grechka Industry. Speeds up industrial component production. Requires a basic housing to build.</Grechka_AssemblyBenchT1_Building.description>
+  <Grechka_AssemblyBenchT1_Building.comps.1.upgradeLabel>Upgrade to T2</Grechka_AssemblyBenchT1_Building.comps.1.upgradeLabel>
+  <Grechka_AssemblyBenchT1_Building.comps.1.upgradeDescription>A pawn upgrades this device in place. Its installed housing and matching materials are already credited. Bills, fractional output carry and relative hit points are preserved.</Grechka_AssemblyBenchT1_Building.comps.1.upgradeDescription>
+  <Grechka_AssemblyBenchT2_Building.label>advanced assembly bench</Grechka_AssemblyBenchT2_Building.label>
+  <Grechka_AssemblyBenchT2_Building.description>A second-tier electric assembly bench. Requires an advanced housing made at the basic bench to build.</Grechka_AssemblyBenchT2_Building.description>
+  <Grechka_AssemblyBenchT2_Building.comps.1.upgradeLabel>Upgrade to T3</Grechka_AssemblyBenchT2_Building.comps.1.upgradeLabel>
+  <Grechka_AssemblyBenchT2_Building.comps.1.upgradeDescription>A pawn upgrades this device in place. Its installed housing and matching materials are already credited. Bills, fractional output carry and relative hit points are preserved.</Grechka_AssemblyBenchT2_Building.comps.1.upgradeDescription>
+  <Grechka_AssemblyBenchT3_Building.label>mecha-assembly bench</Grechka_AssemblyBenchT3_Building.label>
+  <Grechka_AssemblyBenchT3_Building.description>A third-tier assembly bench. Speed ×5, ingredient discount 20%, accumulating bonus to ordinary output 20%. Requires 840 W.</Grechka_AssemblyBenchT3_Building.description>
+  <Grechka_AssemblyBenchT3_Building.comps.5.upgradeLabel>Upgrade to T4</Grechka_AssemblyBenchT3_Building.comps.5.upgradeLabel>
+  <Grechka_AssemblyBenchT3_Building.comps.5.upgradeDescription>A pawn upgrades this device in place. Its installed housing and matching materials are already credited. Bills, fractional output carry and relative hit points are preserved.</Grechka_AssemblyBenchT3_Building.comps.5.upgradeDescription>
+  <Grechka_IonizerT4_Building.label>room ionizer T4</Grechka_IonizerT4_Building.label>
+  <Grechka_IonizerT4_Building.description>Enhanced T4 equipment. Lights the entire enclosed room and removes filth. Identical effects do not stack.</Grechka_IonizerT4_Building.description>
+  <Grechka_IonizerT4_Building.comps.5.costDescription>the previous device intact and additional materials for the next stage; the installed housing is already credited</Grechka_IonizerT4_Building.comps.5.costDescription>
+  <Grechka_IonizerT5_Building.label>room ionizer T5</Grechka_IonizerT5_Building.label>
+  <Grechka_IonizerT5_Building.description>Enhanced T5 equipment. Lights the entire enclosed room and removes filth. Identical effects do not stack.</Grechka_IonizerT5_Building.description>
+  <Grechka_MechaniteExtractorT4_Building.label>mechanite extractor T4</Grechka_MechaniteExtractorT4_Building.label>
+  <Grechka_MechaniteExtractorT4_Building.description>Enhanced T4 equipment. Extracts mechanites without gas. Progress is preserved without power.</Grechka_MechaniteExtractorT4_Building.description>
+  <Grechka_MechaniteExtractorT4_Building.comps.5.costDescription>the previous device intact and additional materials for the next stage; the installed housing is already credited</Grechka_MechaniteExtractorT4_Building.comps.5.costDescription>
+  <Grechka_MechaniteExtractorT5_Building.label>mechanite extractor T5</Grechka_MechaniteExtractorT5_Building.label>
+  <Grechka_MechaniteExtractorT5_Building.description>Enhanced T5 equipment. Extracts mechanites without gas. Progress is preserved without power.</Grechka_MechaniteExtractorT5_Building.description>
+  <Grechka_IonizerT3_Building.label>room ionizer T3</Grechka_IonizerT3_Building.label>
+  <Grechka_IonizerT3_Building.description>The mechanite ionizer lights an entire enclosed room and automatically removes ordinary dirt, blood and vomit. Consumes 1000 W and removes up to eight layers of filth every 250 ticks. Does not serve adjacent rooms through walls or work outdoors. Lighting and cleaning stop when switched off or broken. Multiple ionizers in the same room do not stack.</Grechka_IonizerT3_Building.description>
+  <Grechka_IonizerT3_Building.comps.5.costDescription>the previous device intact and additional materials for the next stage; the installed housing is already credited</Grechka_IonizerT3_Building.comps.5.costDescription>
+  <Grechka_AssemblyBenchT4_Building.label>assembly bench T4</Grechka_AssemblyBenchT4_Building.label>
+  <Grechka_AssemblyBenchT4_Building.description>Tier 4. Speed ×15, ingredient discount 35%, output bonus 50%. Consumes 2800 W.</Grechka_AssemblyBenchT4_Building.description>
+  <Grechka_AssemblyBenchT4_Building.comps.5.upgradeLabel>Upgrade to T5</Grechka_AssemblyBenchT4_Building.comps.5.upgradeLabel>
+  <Grechka_AssemblyBenchT4_Building.comps.5.upgradeDescription>A pawn upgrades this device in place. Its installed housing and matching materials are already credited. Bills, fractional output carry and relative hit points are preserved.</Grechka_AssemblyBenchT4_Building.comps.5.upgradeDescription>
+  <Grechka_AssemblyBenchT5_Building.label>assembly bench T5</Grechka_AssemblyBenchT5_Building.label>
+  <Grechka_AssemblyBenchT5_Building.description>Tier 5. Speed ×60, ingredient discount 50%, output bonus 100%. Consumes 11200 W.</Grechka_AssemblyBenchT5_Building.description>
+  <Grechka_MatterRecyclerT4_Building.label>matter recycler T4</Grechka_MatterRecyclerT4_Building.label>
+  <Grechka_MatterRecyclerT4_Building.description>Matter recycler T4. Consumes 8,000,000 W. Bills are performed by a pawn or a connected crafter. Matter cost is based on the item market value without trade markups. Containers, living creatures and unique state are not copied.</Grechka_MatterRecyclerT4_Building.description>
+  <Grechka_MatterRecyclerT4_Building.comps.6.upgradeLabel>Upgrade to T5</Grechka_MatterRecyclerT4_Building.comps.6.upgradeLabel>
+  <Grechka_MatterRecyclerT4_Building.comps.6.upgradeDescription>A pawn upgrades this device in place. Its installed housing and matching materials are already credited. Bills, fractional output carry and relative hit points are preserved.</Grechka_MatterRecyclerT4_Building.comps.6.upgradeDescription>
+  <Grechka_MatterRecyclerT5_Building.label>matter recycler T5</Grechka_MatterRecyclerT5_Building.label>
+  <Grechka_MatterRecyclerT5_Building.description>Matter recycler T5. Consumes 30,000,000 W. Bills are performed by a pawn or a connected crafter. Matter cost is based on the item market value without trade markups. Containers, living creatures and unique state are not copied.</Grechka_MatterRecyclerT5_Building.description>
+  <Grechka_MatterSynthesizerT4_Building.label>matter synthesizer T4</Grechka_MatterSynthesizerT4_Building.label>
+  <Grechka_MatterSynthesizerT4_Building.description>Matter synthesizer T4. Consumes 12,000,000 W. Bills are performed by a pawn or a connected crafter. Matter cost is based on the item market value without trade markups. Containers, living creatures and unique state are not copied.</Grechka_MatterSynthesizerT4_Building.description>
+  <Grechka_MatterSynthesizerT4_Building.comps.5.upgradeLabel>Upgrade to T5</Grechka_MatterSynthesizerT4_Building.comps.5.upgradeLabel>
+  <Grechka_MatterSynthesizerT4_Building.comps.5.upgradeDescription>A pawn upgrades this device in place. Its installed housing and matching materials are already credited. Bills, fractional output carry and relative hit points are preserved.</Grechka_MatterSynthesizerT4_Building.comps.5.upgradeDescription>
+  <Grechka_MatterSynthesizerT5_Building.label>matter synthesizer T5</Grechka_MatterSynthesizerT5_Building.label>
+  <Grechka_MatterSynthesizerT5_Building.description>Matter synthesizer T5. Consumes 60,000,000 W. Bills are performed by a pawn or a connected crafter. Matter cost is based on the item market value without trade markups. Containers, living creatures and unique state are not copied.</Grechka_MatterSynthesizerT5_Building.description>
+  <Grechka_SolarS3_Building.label>mechanite solar panel</Grechka_SolarS3_Building.label>
+  <Grechka_SolarS3_Building.description>Mechanite stage S3: up to 72 000 W by day. Upgrades one previous-stage panel and credits its installed housing.</Grechka_SolarS3_Building.description>
+  <Grechka_SolarS3_Building.comps.0.costDescription>the previous device intact and additional materials for the next stage; the installed housing is already credited</Grechka_SolarS3_Building.comps.0.costDescription>
+  <Grechka_SolarS4_Building.label>mechanite solar array</Grechka_SolarS4_Building.label>
+  <Grechka_SolarS4_Building.description>Mechanite stage S4: up to 576 000 W by day. Upgrades one previous-stage panel and credits its installed housing.</Grechka_SolarS4_Building.description>
+  <Grechka_SolarS4_Building.comps.3.costDescription>the previous device intact and additional materials for the next stage; the installed housing is already credited</Grechka_SolarS4_Building.comps.3.costDescription>
+  <Grechka_ArchoSubstrate.label>archotech substrate</Grechka_ArchoSubstrate.label>
+  <Grechka_ArchoSubstrate.description>Archotech substrate. A material for late-game Grechka industry.</Grechka_ArchoSubstrate.description>
+  <Grechka_GrechkaOre.label>grechka ore</Grechka_GrechkaOre.label>
+  <Grechka_GrechkaOre.description>Grechka ore. A material for late-game Grechka industry.</Grechka_GrechkaOre.description>
+  <Grechka_GrechkaConcentrate.label>grechka concentrate</Grechka_GrechkaConcentrate.label>
+  <Grechka_GrechkaConcentrate.description>Grechka concentrate. A material for late-game Grechka industry.</Grechka_GrechkaConcentrate.description>
+  <Grechka_Matter.label>universal matter</Grechka_Matter.label>
+  <Grechka_Matter.description>Universal matter. A material for late-game Grechka industry.</Grechka_Matter.description>
+  <Grechka_ComponentT4_Item.label>archotech component</Grechka_ComponentT4_Item.label>
+  <Grechka_ComponentT4_Item.description>Archotech component. A material for late-game Grechka industry.</Grechka_ComponentT4_Item.description>
+  <Grechka_ComponentT5_Item.label>grechka component</Grechka_ComponentT5_Item.label>
+  <Grechka_ComponentT5_Item.description>Grechka component. A material for late-game Grechka industry.</Grechka_ComponentT5_Item.description>
+  <Grechka_HousingT4_Item.label>archotech housing</Grechka_HousingT4_Item.label>
+  <Grechka_HousingT4_Item.description>Archotech housing. A material for late-game Grechka industry.</Grechka_HousingT4_Item.description>
+  <Grechka_HousingT5_Item.label>grechka housing</Grechka_HousingT5_Item.label>
+  <Grechka_HousingT5_Item.description>Grechka housing. A material for late-game Grechka industry.</Grechka_HousingT5_Item.description>
+  <Grechka_SolarCellT4_Item.label>archotech solar cell</Grechka_SolarCellT4_Item.label>
+  <Grechka_SolarCellT4_Item.description>Archotech solar cell. A material for late-game Grechka industry.</Grechka_SolarCellT4_Item.description>
+  <Grechka_SolarCellT5_Item.label>grechka solar cell</Grechka_SolarCellT5_Item.label>
+  <Grechka_SolarCellT5_Item.description>Grechka solar cell. A material for late-game Grechka industry.</Grechka_SolarCellT5_Item.description>
+  <Grechka_PackedSolarS0_Item.label>packed solar panel</Grechka_PackedSolarS0_Item.label>
+  <Grechka_PackedSolarS0_Item.description>An intact uninstalled vanilla solar panel. Can be reinstalled or used for the next solar technology stage.</Grechka_PackedSolarS0_Item.description>
+  <Grechka_PackedSolarS1_Item.label>packed reinforced solar panel</Grechka_PackedSolarS1_Item.label>
+  <Grechka_PackedSolarS1_Item.description>A reinforced S1 panel for map installation or further assembly.</Grechka_PackedSolarS1_Item.description>
+  <Grechka_PackedSolarS2_Item.label>packed multilayer solar panel</Grechka_PackedSolarS2_Item.label>
+  <Grechka_PackedSolarS2_Item.description>An intact uninstalled S2 panel for reinstallation or further assembly.</Grechka_PackedSolarS2_Item.description>
+  <Grechka_SolarCellT2_Item.label>improved solar cell</Grechka_SolarCellT2_Item.label>
+  <Grechka_SolarCellT2_Item.description>A second-tier solar cell for reinforced solar panels.</Grechka_SolarCellT2_Item.description>
+  <Grechka_SolarS1_Building.label>reinforced solar panel</Grechka_SolarS1_Building.label>
+  <Grechka_SolarS1_Building.description>The next stage after a standard solar panel. Produces up to 6000 W in sufficient sunlight. Does not operate at night.</Grechka_SolarS1_Building.description>
+  <Grechka_SolarS1_Building.comps.0.costDescription>the previous device intact and additional materials for the next stage; the installed housing is already credited</Grechka_SolarS1_Building.comps.0.costDescription>
+  <Grechka_SolarS2_Building.label>multilayer solar panel</Grechka_SolarS2_Building.label>
+  <Grechka_SolarS2_Building.description>The second industrial stage of solar technology. Produces up to 18000 W in sufficient sunlight. Does not operate at night.</Grechka_SolarS2_Building.description>
+  <Grechka_SolarS2_Building.comps.0.costDescription>the previous device intact and additional materials for the next stage; the installed housing is already credited</Grechka_SolarS2_Building.comps.0.costDescription>
+  <Grechka_PackedMechaponicsT3_Item.label>packed mechaponics T3</Grechka_PackedMechaponicsT3_Item.label>
+  <Grechka_PackedMechaponicsT3_Item.description>Equipment for transport, trading and reinstallation.</Grechka_PackedMechaponicsT3_Item.description>
+  <Grechka_PackedMechaponicsT4_Item.label>packed mechaponics T4</Grechka_PackedMechaponicsT4_Item.label>
+  <Grechka_PackedMechaponicsT4_Item.description>Equipment for transport, trading and reinstallation.</Grechka_PackedMechaponicsT4_Item.description>
+  <Grechka_PackedMechaponicsT5_Item.label>packed mechaponics T5</Grechka_PackedMechaponicsT5_Item.label>
+  <Grechka_PackedMechaponicsT5_Item.description>Equipment for transport, trading and reinstallation.</Grechka_PackedMechaponicsT5_Item.description>
+  <Grechka_PackedIonizerT3_Item.label>packed room ionizer T3</Grechka_PackedIonizerT3_Item.label>
+  <Grechka_PackedIonizerT3_Item.description>Equipment for transport, trading and reinstallation.</Grechka_PackedIonizerT3_Item.description>
+  <Grechka_PackedIonizerT4_Item.label>packed room ionizer T4</Grechka_PackedIonizerT4_Item.label>
+  <Grechka_PackedIonizerT4_Item.description>Equipment for transport, trading and reinstallation.</Grechka_PackedIonizerT4_Item.description>
+  <Grechka_PackedIonizerT5_Item.label>packed room ionizer T5</Grechka_PackedIonizerT5_Item.label>
+  <Grechka_PackedIonizerT5_Item.description>Equipment for transport, trading and reinstallation.</Grechka_PackedIonizerT5_Item.description>
+  <Grechka_PackedMechaniteExtractorT3_Item.label>packed interdimensional mechanite extractor</Grechka_PackedMechaniteExtractorT3_Item.label>
+  <Grechka_PackedMechaniteExtractorT3_Item.description>Equipment for transport, trading and reinstallation.</Grechka_PackedMechaniteExtractorT3_Item.description>
+  <Grechka_PackedMechaniteExtractorT4_Item.label>packed mechanite extractor T4</Grechka_PackedMechaniteExtractorT4_Item.label>
+  <Grechka_PackedMechaniteExtractorT4_Item.description>Equipment for transport, trading and reinstallation.</Grechka_PackedMechaniteExtractorT4_Item.description>
+  <Grechka_PackedMechaniteExtractorT5_Item.label>packed mechanite extractor T5</Grechka_PackedMechaniteExtractorT5_Item.label>
+  <Grechka_PackedMechaniteExtractorT5_Item.description>Equipment for transport, trading and reinstallation.</Grechka_PackedMechaniteExtractorT5_Item.description>
+  <Grechka_PackedSuppressionEmitterT4_Item.label>packed suppression emitter T4</Grechka_PackedSuppressionEmitterT4_Item.label>
+  <Grechka_PackedSuppressionEmitterT4_Item.description>Equipment for transport, trading and reinstallation.</Grechka_PackedSuppressionEmitterT4_Item.description>
+  <Grechka_PackedSuppressionEmitterT5_Item.label>packed suppression emitter T5</Grechka_PackedSuppressionEmitterT5_Item.label>
+  <Grechka_PackedSuppressionEmitterT5_Item.description>Equipment for transport, trading and reinstallation.</Grechka_PackedSuppressionEmitterT5_Item.description>
+  <Grechka_PackedAccelerationEmitterT4_Item.label>packed acceleration emitter T4</Grechka_PackedAccelerationEmitterT4_Item.label>
+  <Grechka_PackedAccelerationEmitterT4_Item.description>Equipment for transport, trading and reinstallation.</Grechka_PackedAccelerationEmitterT4_Item.description>
+  <Grechka_PackedAccelerationEmitterT5_Item.label>packed acceleration emitter T5</Grechka_PackedAccelerationEmitterT5_Item.label>
+  <Grechka_PackedAccelerationEmitterT5_Item.description>Equipment for transport, trading and reinstallation.</Grechka_PackedAccelerationEmitterT5_Item.description>
+  <Grechka_PackedWellbeingEmitterT4_Item.label>packed invigoration emitter T4</Grechka_PackedWellbeingEmitterT4_Item.label>
+  <Grechka_PackedWellbeingEmitterT4_Item.description>Equipment for transport, trading and reinstallation.</Grechka_PackedWellbeingEmitterT4_Item.description>
+  <Grechka_PackedWellbeingEmitterT5_Item.label>packed invigoration emitter T5</Grechka_PackedWellbeingEmitterT5_Item.label>
+  <Grechka_PackedWellbeingEmitterT5_Item.description>Equipment for transport, trading and reinstallation.</Grechka_PackedWellbeingEmitterT5_Item.description>
+  <Grechka_PackedArchoGeneratorT4_Item.label>packed archotech generator T4</Grechka_PackedArchoGeneratorT4_Item.label>
+  <Grechka_PackedArchoGeneratorT4_Item.description>Equipment for transport, trading and reinstallation.</Grechka_PackedArchoGeneratorT4_Item.description>
+  <Grechka_PackedArchoGeneratorT5_Item.label>packed archotech generator T5</Grechka_PackedArchoGeneratorT5_Item.label>
+  <Grechka_PackedArchoGeneratorT5_Item.description>Equipment for transport, trading and reinstallation.</Grechka_PackedArchoGeneratorT5_Item.description>
+  <Grechka_PackedMatterRecyclerT4_Item.label>packed matter recycler T4</Grechka_PackedMatterRecyclerT4_Item.label>
+  <Grechka_PackedMatterRecyclerT4_Item.description>Equipment for transport, trading and reinstallation.</Grechka_PackedMatterRecyclerT4_Item.description>
+  <Grechka_PackedMatterRecyclerT5_Item.label>packed matter recycler T5</Grechka_PackedMatterRecyclerT5_Item.label>
+  <Grechka_PackedMatterRecyclerT5_Item.description>Equipment for transport, trading and reinstallation.</Grechka_PackedMatterRecyclerT5_Item.description>
+  <Grechka_PackedMatterSynthesizerT4_Item.label>packed matter synthesizer T4</Grechka_PackedMatterSynthesizerT4_Item.label>
+  <Grechka_PackedMatterSynthesizerT4_Item.description>Equipment for transport, trading and reinstallation.</Grechka_PackedMatterSynthesizerT4_Item.description>
+  <Grechka_PackedMatterSynthesizerT5_Item.label>packed matter synthesizer T5</Grechka_PackedMatterSynthesizerT5_Item.label>
+  <Grechka_PackedMatterSynthesizerT5_Item.description>Equipment for transport, trading and reinstallation.</Grechka_PackedMatterSynthesizerT5_Item.description>
+  <Grechka_HousingT1_Item.label>basic housing</Grechka_HousingT1_Item.label>
+  <Grechka_HousingT1_Item.description>A light-gray housing for early industrial machines. Assembled by hand from steel and industrial components.</Grechka_HousingT1_Item.description>
+  <Grechka_HousingT2_Item.label>advanced housing</Grechka_HousingT2_Item.label>
+  <Grechka_HousingT2_Item.description>A dark-gray housing for the second industrial tier. Assembled at the basic bench from the previous housing, plasteel and advanced components.</Grechka_HousingT2_Item.description>
+  <Grechka_Mechanites.label>mechanites</Grechka_Mechanites.label>
+  <Grechka_Mechanites.description>Microscopic machines extracted from a parallel dimension. The main raw material for T3 mecha-technologies.</Grechka_Mechanites.description>
+  <Grechka_ComponentT3_Item.label>mecha-component</Grechka_ComponentT3_Item.label>
+  <Grechka_ComponentT3_Item.description>A third-tier component with active mechanites. Required for T3 mecha-machines and housings.</Grechka_ComponentT3_Item.description>
+  <Grechka_HousingT3_Item.label>mecha-housing</Grechka_HousingT3_Item.label>
+  <Grechka_HousingT3_Item.description>A light-blue housing for the third industrial tier with mechanite assemblies.</Grechka_HousingT3_Item.description>
+  <Grechka_MechaponicsT3_Building.label>mechaponics T3</Grechka_MechaponicsT3_Building.label>
+  <Grechka_MechaponicsT3_Building.description>A single-cell mechanite farm. With 500 W of power, the plant needs no light and grows five times faster than its normal rate at the same temperature and other conditions. Normal sowing and harvesting are required. Growth pauses without power. Power loss itself does not damage the plant. No nutrient solution is needed.</Grechka_MechaponicsT3_Building.description>
+  <Grechka_MechaponicsT3_Building.comps.4.costDescription>the previous device intact and additional materials for the next stage; the installed housing is already credited</Grechka_MechaponicsT3_Building.comps.4.costDescription>
+  <Grechka_MechaniteExtractorT3_Building.label>interdimensional mechanite extractor</Grechka_MechaniteExtractorT3_Building.label>
+  <Grechka_MechaniteExtractorT3_Building.description>An electric device that extracts mechanites from a parallel dimension without gas or reagents. The bootstrap recipe uses available T2 materials. Finished batches wait for free space. Progress is preserved during power loss.</Grechka_MechaniteExtractorT3_Building.description>
+  <Grechka_MechaniteExtractorT3_Building.comps.5.costDescription>the previous device intact and additional materials for the next stage; the installed housing is already credited</Grechka_MechaniteExtractorT3_Building.comps.5.costDescription>
+  <Grechka_PackedSolarS5_Item.label>packed solar panel S5</Grechka_PackedSolarS5_Item.label>
+  <Grechka_PackedSolarS5_Item.description>An intact uninstalled solar panel for installation or upgrading.</Grechka_PackedSolarS5_Item.description>
+  <Grechka_PackedSolarS6_Item.label>packed solar panel S6</Grechka_PackedSolarS6_Item.label>
+  <Grechka_PackedSolarS6_Item.description>An intact uninstalled solar panel for installation or upgrading.</Grechka_PackedSolarS6_Item.description>
+  <Grechka_MineableGrechka.label>grechka ore vein</Grechka_MineableGrechka.label>
+  <Grechka_MineableGrechka.description>Rare technological grechka ore for T5 industry.</Grechka_MineableGrechka.description>
+  <Grechka_SolarS5_Building.label>archotech solar panel</Grechka_SolarS5_Building.label>
+  <Grechka_SolarS5_Building.description>Solar stage S5: 4,608,000 W. Retains 25% power at night.</Grechka_SolarS5_Building.description>
+  <Grechka_SolarS5_Building.comps.3.costDescription>the previous device intact and additional materials for the next stage; the installed housing is already credited</Grechka_SolarS5_Building.comps.3.costDescription>
+  <Grechka_SolarS6_Building.label>grechka sun</Grechka_SolarS6_Building.label>
+  <Grechka_SolarS6_Building.description>Solar stage S6: 55,296,000 W. Operates at full power around the clock.</Grechka_SolarS6_Building.description>
+  <Grechka_SuppressionEmitterT4_Building.label>suppression emitter T4</Grechka_SuppressionEmitterT4_Building.label>
+  <Grechka_SuppressionEmitterT4_Building.description>Suppression emitter T4. Range 20 cells. Devices with the same role do not stack. The strongest effect applies.</Grechka_SuppressionEmitterT4_Building.description>
+  <Grechka_SuppressionEmitterT4_Building.comps.5.costDescription>the previous device intact and additional materials for the next stage; the installed housing is already credited</Grechka_SuppressionEmitterT4_Building.comps.5.costDescription>
+  <Grechka_SuppressionEmitterT5_Building.label>suppression emitter T5</Grechka_SuppressionEmitterT5_Building.label>
+  <Grechka_SuppressionEmitterT5_Building.description>Suppression emitter T5. Range 32 cells. Devices with the same role do not stack. The strongest effect applies.</Grechka_SuppressionEmitterT5_Building.description>
+  <Grechka_AccelerationEmitterT4_Building.label>acceleration emitter T4</Grechka_AccelerationEmitterT4_Building.label>
+  <Grechka_AccelerationEmitterT4_Building.description>Acceleration emitter T4. Range 20 cells. Devices with the same role do not stack. The strongest effect applies.</Grechka_AccelerationEmitterT4_Building.description>
+  <Grechka_AccelerationEmitterT4_Building.comps.5.costDescription>the previous device intact and additional materials for the next stage; the installed housing is already credited</Grechka_AccelerationEmitterT4_Building.comps.5.costDescription>
+  <Grechka_AccelerationEmitterT5_Building.label>acceleration emitter T5</Grechka_AccelerationEmitterT5_Building.label>
+  <Grechka_AccelerationEmitterT5_Building.description>Acceleration emitter T5. Range 32 cells. Devices with the same role do not stack. The strongest effect applies.</Grechka_AccelerationEmitterT5_Building.description>
+  <Grechka_WellbeingEmitterT4_Building.label>invigoration emitter T4</Grechka_WellbeingEmitterT4_Building.label>
+  <Grechka_WellbeingEmitterT4_Building.description>Invigoration emitter T4. Range 20 cells. Devices with the same role do not stack. The strongest effect applies.</Grechka_WellbeingEmitterT4_Building.description>
+  <Grechka_WellbeingEmitterT4_Building.comps.5.costDescription>the previous device intact and additional materials for the next stage; the installed housing is already credited</Grechka_WellbeingEmitterT4_Building.comps.5.costDescription>
+  <Grechka_WellbeingEmitterT5_Building.label>invigoration emitter T5</Grechka_WellbeingEmitterT5_Building.label>
+  <Grechka_WellbeingEmitterT5_Building.description>Invigoration emitter T5. Range 32 cells. Devices with the same role do not stack. The strongest effect applies.</Grechka_WellbeingEmitterT5_Building.description>
+  <Grechka_ArchoGeneratorT4_Building.label>archotech generator T4</Grechka_ArchoGeneratorT4_Building.label>
+  <Grechka_ArchoGeneratorT4_Building.description>Archotech generator T4. Continuous fuel-free power generation.</Grechka_ArchoGeneratorT4_Building.description>
+  <Grechka_ArchoGeneratorT4_Building.comps.4.costDescription>the previous device intact and additional materials for the next stage; the installed housing is already credited</Grechka_ArchoGeneratorT4_Building.comps.4.costDescription>
+  <Grechka_ArchoGeneratorT5_Building.label>archotech generator T5</Grechka_ArchoGeneratorT5_Building.label>
+  <Grechka_ArchoGeneratorT5_Building.description>Archotech generator T5. Continuous fuel-free power generation.</Grechka_ArchoGeneratorT5_Building.description>
+  <Grechka_PackedSolarS3_Item.label>packed mechanite solar panel</Grechka_PackedSolarS3_Item.label>
+  <Grechka_PackedSolarS3_Item.description>An intact uninstalled S3 panel for reinstallation or further assembly.</Grechka_PackedSolarS3_Item.description>
+  <Grechka_PackedSolarS4_Item.label>packed mechanite solar array</Grechka_PackedSolarS4_Item.label>
+  <Grechka_PackedSolarS4_Item.description>An intact uninstalled S4 panel for reinstallation or further assembly.</Grechka_PackedSolarS4_Item.description>
+  <Grechka_SolarCellT3_Item.label>mechanite solar cell</Grechka_SolarCellT3_Item.label>
+  <Grechka_SolarCellT3_Item.description>A third-tier solar cell. Previous solar cells are enhanced with mechanites. Used in mechanite solar panels and arrays.</Grechka_SolarCellT3_Item.description>
+  <Grechka_MechaponicsT4_Building.label>mechaponics T4</Grechka_MechaponicsT4_Building.label>
+  <Grechka_MechaponicsT4_Building.description>Growth ×20, 3000 W. No light or nutrient solution required. Pawns sow and harvest.</Grechka_MechaponicsT4_Building.description>
+  <Grechka_MechaponicsT4_Building.comps.4.costDescription>the previous device intact and additional materials for the next stage; the installed housing is already credited</Grechka_MechaponicsT4_Building.comps.4.costDescription>
+  <Grechka_MechaponicsT5_Building.label>mechaponics T5</Grechka_MechaponicsT5_Building.label>
+  <Grechka_MechaponicsT5_Building.description>Growth ×50, 10000 W. No light or nutrient solution required. Pawns sow and harvest.</Grechka_MechaponicsT5_Building.description>
+</LanguageData>

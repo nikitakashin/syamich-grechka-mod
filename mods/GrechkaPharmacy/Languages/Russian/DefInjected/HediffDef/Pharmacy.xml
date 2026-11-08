@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaPharmacy_HemostaticEffect.label>гемостатическая повязка</GrechkaPharmacy_HemostaticEffect.label>
+  <GrechkaPharmacy_HemostaticEffect.description>Гемостатическая повязка. Эффект и длительность указаны у препарата.</GrechkaPharmacy_HemostaticEffect.description>
+  <GrechkaPharmacy_AnalgesicEffect.label>полевое обезболивание</GrechkaPharmacy_AnalgesicEffect.label>
+  <GrechkaPharmacy_AnalgesicEffect.description>Полевое обезболивание. Эффект и длительность указаны у препарата.</GrechkaPharmacy_AnalgesicEffect.description>
+  <GrechkaPharmacy_ImmunoEffect.label>поддержка иммунитета</GrechkaPharmacy_ImmunoEffect.label>
+  <GrechkaPharmacy_ImmunoEffect.description>Поддержка иммунитета. Эффект и длительность указаны у препарата.</GrechkaPharmacy_ImmunoEffect.description>
+  <GrechkaPharmacy_RecoveryEffect.label>усиленное восстановление</GrechkaPharmacy_RecoveryEffect.label>
+  <GrechkaPharmacy_RecoveryEffect.description>Усиленное восстановление. Эффект и длительность указаны у препарата.</GrechkaPharmacy_RecoveryEffect.description>
+  <GrechkaPharmacy_DetoxCourse.label>курс «Чистый лист»</GrechkaPharmacy_DetoxCourse.label>
+  <GrechkaPharmacy_DetoxCourse.description>Курс «чистый лист». Эффект и длительность указаны у препарата.</GrechkaPharmacy_DetoxCourse.description>
+  <GrechkaPharmacy_MechaniteRegenCourse.label>механитная регенерация</GrechkaPharmacy_MechaniteRegenCourse.label>
+  <GrechkaPharmacy_MechaniteRegenCourse.description>Механитная регенерация. Эффект и длительность указаны у препарата.</GrechkaPharmacy_MechaniteRegenCourse.description>
+  <GrechkaPharmacy_CombatEffect.label>стимулятор «Красная линия»</GrechkaPharmacy_CombatEffect.label>
+  <GrechkaPharmacy_CombatEffect.description>Стимулятор «красная линия». Эффект и длительность указаны у препарата.</GrechkaPharmacy_CombatEffect.description>
+  <GrechkaPharmacy_WorkEffect.label>стимулятор «Вторая смена»</GrechkaPharmacy_WorkEffect.label>
+  <GrechkaPharmacy_WorkEffect.description>Стимулятор «вторая смена». Эффект и длительность указаны у препарата.</GrechkaPharmacy_WorkEffect.description>
+  <GrechkaPharmacy_GrechkaCourse.label>гречневая регенерация</GrechkaPharmacy_GrechkaCourse.label>
+  <GrechkaPharmacy_GrechkaCourse.description>Гречневая регенерация. Эффект и длительность указаны у препарата.</GrechkaPharmacy_GrechkaCourse.description>
+  <GrechkaPharmacy_FatigueEffect.label>усталость после стимулятора</GrechkaPharmacy_FatigueEffect.label>
+  <GrechkaPharmacy_FatigueEffect.description>Усталость после стимулятора. Эффект и длительность указаны у препарата.</GrechkaPharmacy_FatigueEffect.description>
+</LanguageData>

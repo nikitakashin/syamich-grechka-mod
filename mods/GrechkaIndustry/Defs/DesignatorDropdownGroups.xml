@@ -1,6 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <DesignatorDropdownGroupDef>
+    <defName>Grechka_MechaniteExtractorGroup</defName>
+    <label>экстрактор механитов</label>
+  </DesignatorDropdownGroupDef>
+  <DesignatorDropdownGroupDef>
     <defName>Grechka_AssemblyBenchGroup</defName>
     <label>сборочный верстак</label>
   </DesignatorDropdownGroupDef>

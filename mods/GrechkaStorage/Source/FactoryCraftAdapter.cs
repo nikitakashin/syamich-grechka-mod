@@ -17,7 +17,7 @@ namespace Grechka.Storage
         internal static readonly Type ProcessType = AccessTools.TypeByName("PipeSystem.Process");
         internal static readonly Type ResultType = AccessTools.TypeByName("PipeSystem.ProcessDef+Result");
         internal static bool Installed;
-        public static string Status { get; private set; } = "PipeSystem не установлен";
+        public static string Status { get; private set; } = StorageText.Get("GrechkaStorage_Text087");
         [ThreadStatic] static Capture attempt;
         sealed class Capture { internal FactoryTask task; internal int amount; internal List<(Thing thing, int count)> placements = new List<(Thing, int)>(); }
         static FactoryCraftAdapter()
@@ -29,7 +29,7 @@ namespace Grechka.Storage
                 MethodInfo count = AccessTools.Method(ResultType, "GetCount", new[] { ProcessType });
                 MethodInfo reset = AccessTools.Method(ProcessType, "ResetProcess", new[] { typeof(bool) });
                 MethodInfo hopper = AccessTools.Method(ProcessType, "FactoryHopperDetected");
-                if (spawn == null || count == null || reset == null || hopper == null) { Status = "Версия PipeSystem не поддержана: сигнатуры изменились"; return; }
+                if (spawn == null || count == null || reset == null || hopper == null) { Status = StorageText.Get("GrechkaStorage_Text088"); return; }
                 var harmony = new Harmony("grechka.storage.factory");
                 harmony.Patch(spawn, prefix: new HarmonyMethod(typeof(FactoryCraftAdapter), nameof(Begin)), postfix: new HarmonyMethod(typeof(FactoryCraftAdapter), nameof(End)) { after = new[] { "grechka.quests.factory" } }, finalizer: new HarmonyMethod(typeof(FactoryCraftAdapter), nameof(FinalizeAttempt)));
                 MethodInfo placement = AccessTools.Method(typeof(GenPlace), nameof(GenPlace.TryPlaceThing), new[] { typeof(Thing), typeof(IntVec3), typeof(Map), typeof(ThingPlaceMode), typeof(Thing).MakeByRefType(), typeof(Action<Thing, int>), typeof(Predicate<IntVec3>), typeof(Rot4?), typeof(int) });
@@ -37,9 +37,9 @@ namespace Grechka.Storage
                 harmony.Patch(count, postfix: new HarmonyMethod(typeof(FactoryCraftAdapter), nameof(Count)) { priority = Priority.Last });
                 harmony.Patch(reset, postfix: new HarmonyMethod(typeof(FactoryCraftAdapter), nameof(Reset)));
                 harmony.Patch(hopper, prefix: new HarmonyMethod(typeof(FactoryCraftAdapter), nameof(HasInterface)));
-                Installed = true; Status = "PipeSystem: штатные процессы и физические выходы";
+                Installed = true; Status = StorageText.Get("GrechkaStorage_Text089");
             }
-            catch (Exception e) { Status = "Ошибка подключения Factory: " + e.Message; Log.Error("[Storage] " + Status); }
+            catch (Exception e) { Status = StorageText.Get("GrechkaStorage_Text090") + e.Message; Log.Error("[Storage] " + Status); }
         }
         internal static object Get(object instance, string name)
         {
@@ -65,10 +65,10 @@ namespace Grechka.Storage
                 {
                     MethodInfo visible = AccessTools.Method(comp.GetType(), "<get_ProcessesOptions>b__47_0");
                     if (visible != null && !(bool)visible.Invoke(comp, new[] { process })) continue;
-                    if (List(Get(process, "researchPrerequisites")).OfType<ResearchProjectDef>().Any(r => !r.IsFinished)) reason = "Нужно исследование";
-                    if (!List(Get(process, "results")).Any()) reason = "У процесса нет результата";
+                    if (List(Get(process, "researchPrerequisites")).OfType<ResearchProjectDef>().Any(r => !r.IsFinished)) reason = StorageText.Get("GrechkaStorage_Text091");
+                    if (!List(Get(process, "results")).Any()) reason = StorageText.Get("GrechkaStorage_Text092");
                 }
-                catch (Exception e) { reason = "Не удалось проверить условия: " + e.GetBaseException().Message; }
+                catch (Exception e) { reason = StorageText.Get("GrechkaStorage_Text093") + e.GetBaseException().Message; }
                 var first = List(Get(process, "results")).FirstOrDefault();
                 var primary = Get<ThingDef>(first, "thing");
                 bool dynamic = Get<Type>(first, "workerClass") != null;
@@ -164,7 +164,7 @@ namespace Grechka.Storage
         public ThingDef Product;
         public bool Maintain, Cancelled, CountCycles;
         public Building_StorageController Controller;
-        public string Status = "Ожидание";
+        public string Status = StorageText.Get("GrechkaStorage_Text094");
         public void ExposeData()
         {
             Scribe_Values.Look(ref ParentKey, "parent"); Scribe_Collections.Look(ref Ancestors, "ancestors", LookMode.Value); Scribe_References.Look(ref Anchor, "anchor"); Ancestors ??= new List<string>();
@@ -181,7 +181,7 @@ namespace Grechka.Storage
         public Building_StorageCrafter Crafter;
         public Building_StorageController Controller;
         public bool Finished, Fed, Faulted, Completed, Accounted;
-        public int Produced;
+        public long Produced;
         public StorageBuffer Buffer;
         public FactoryTask() { Buffer = new StorageBuffer(this); }
         public IThingHolder ParentHolder => Crafter;
@@ -252,7 +252,7 @@ namespace Grechka.Storage
             var added = new FactoryOrder { Anchor = map.GetComponent<CraftMap>().Crafters.FirstOrDefault(c => c.Spawned && map.GetComponent<CraftMap>().SameNetwork(controller, c.Controller())), Id = nextId++, Controller = controller, ProcessName = recipe.Def.defName, Title = recipe.Title,
                 Remaining = Math.Min(1000000, count), Maintain = maintain, Product = recipe.Primary, CountCycles = recipe.Primary == null || recipe.NetOutput }; orders.Add(added); return added;
         }
-        public void Cancel(FactoryOrder order) { order.Cancelled = true; CraftDependencies.Cancel(map, "f:" + order.Id); order.Status = "Оставленная штатная партия завершится без новых запусков"; if (!tasks.Any(t => t.OrderId == order.Id)) orders.Remove(order); }
+        public void Cancel(FactoryOrder order) { order.Cancelled = true; CraftDependencies.Cancel(map, "f:" + order.Id); order.Status = StorageText.Get("GrechkaStorage_Text095"); if (!tasks.Any(t => t.OrderId == order.Id)) orders.Remove(order); }
         public static bool Busy(Building_StorageCrafter crafter) => crafter?.Map?.GetComponent<FactoryCraftMap>().tasks.Any(t => t.Crafter == crafter && !t.Fed && !t.Finished && !t.Faulted) == true;
         public bool TryStart(Building_StorageCrafter crafter, ThingWithComps building)
         {
@@ -274,7 +274,7 @@ namespace Grechka.Storage
                     {
                         FactoryCraftAdapter.Call(stack, "AddProcess", recipe.Def, machine, BillRepeatModeDefOf.RepeatCount, 1, QualityCategory.Normal);
                         object process = FactoryCraftAdapter.Get(comp, "Process");
-                        if (process == null) { order.Status = "Штатный процесс не активировался"; return false; }
+                        if (process == null) { order.Status = StorageText.Get("GrechkaStorage_Text096"); return false; }
                         var task = new FactoryTask { Crafter = crafter, Machine = machine, Controller = controller, OrderId = order.Id, ProcessId = FactoryCraftAdapter.Get<string>(process, "id") };
                         order.Anchor = crafter; tasks.Add(task); task.Buffer.Register();
                         if (!Feed(task, process, out string reason))
@@ -284,9 +284,9 @@ namespace Grechka.Storage
                             if (!task.Faulted) { task.Finished = true; FactoryCraftAdapter.Call(stack, "Delete", process); Flush(task); }
                             return false;
                         }
-                        order.Status = "Фабрика выполняет штатный процесс"; return true;
+                        order.Status = StorageText.Get("GrechkaStorage_Text097"); return true;
                     }
-                    catch (Exception e) { order.Status = "Ошибка Factory: " + e.GetBaseException().Message; Log.Error("[Storage Factory] " + e); return false; }
+                    catch (Exception e) { order.Status = StorageText.Get("GrechkaStorage_Text098") + e.GetBaseException().Message; Log.Error("[Storage Factory] " + e); return false; }
                 }
             return false;
         }
@@ -295,51 +295,43 @@ namespace Grechka.Storage
             var defs = FactoryCraftAdapter.List(FactoryCraftAdapter.Get(FactoryCraftAdapter.Get(process, "Def"), "ingredients")).ToList();
             var owners = FactoryCraftAdapter.List(FactoryCraftAdapter.Get(process, "IngredientsOwners")).ToList();
             var available = task.Controller.ActiveDisks().SelectMany(d => d.Items.Select(item => (disk: d, item))).ToList();
-            var left = available.ToDictionary(x => x.item, x => x.item.stackCount);
-            var selections = new List<(StorageDisk disk, Thing item, int count)>();
-            ThingDef sameKind = null;
-            bool mixing = FactoryCraftAdapter.Get<bool>(FactoryCraftAdapter.Get(process, "Def"), "disallowMixing");
-            for (int i = 0; i < owners.Count && i < defs.Count; i++)
+            bool disallowMixing = FactoryCraftAdapter.Get<bool>(FactoryCraftAdapter.Get(process, "Def"), "disallowMixing");
+            var selections = FactoryInputPlanner.Select(defs, owners, available, disallowMixing, out int missing, out int need);
+            if (selections == null)
             {
-                if (FactoryCraftAdapter.Get(owners[i], "PipeNetDef") != null) continue; // Native pipe network supplies fluid; never invent items for it.
-                int need = FactoryCraftAdapter.Get<int>(owners[i], "Required");
-                foreach (var candidate in available)
+                if (missing < 0) { problem = StorageText.Get("GrechkaStorage_Text099"); return false; }
+                FactoryOrder order = Find(task.OrderId);
+                if (order != null)
                 {
-                    if (need <= 0) break;
-                    if (left[candidate.item] <= 0 || !FactoryCraftAdapter.Allowed(defs[i], candidate.item, mixing ? sameKind : null)) continue;
-                    int count = Math.Min(need, left[candidate.item]); selections.Add((candidate.disk, candidate.item, count)); left[candidate.item] -= count; need -= count;
-                    if (mixing && FactoryCraftAdapter.Get(defs[i], "thingCategory") != null) sameKind ??= candidate.item.def;
+                    var ancestors = new List<string>(order.Ancestors) { "f:" + order.ProcessName };
+                    ThingDef exact = FactoryCraftAdapter.Get<ThingDef>(defs[missing], "thing");
+                    ThingCategoryDef category = FactoryCraftAdapter.Get<ThingCategoryDef>(defs[missing], "thingCategory");
+                    IEnumerable<ThingDef> choices = exact != null ? new[] { exact } : DefDatabase<ThingDef>.AllDefs.Where(d => category != null && d.IsWithinCategory(category));
+                    foreach (ThingDef wanted in choices.Where(d => !FactoryCraftAdapter.List(FactoryCraftAdapter.Get(defs[missing], "disallowedThingDefs")).Contains(d)).OrderBy(d => d.defName))
+                        if (CraftDependencies.Request(map, task.Controller, wanted, need, "f:" + order.Id, ancestors)) break;
                 }
-                if (need > 0) {
-                    FactoryOrder order = Find(task.OrderId);
-                    if (order != null)
-                    {
-                        var ancestors = new List<string>(order.Ancestors) { "f:" + order.ProcessName };
-                        ThingDef exact = FactoryCraftAdapter.Get<ThingDef>(defs[i], "thing");
-                        ThingCategoryDef category = FactoryCraftAdapter.Get<ThingCategoryDef>(defs[i], "thingCategory");
-                        IEnumerable<ThingDef> choices = exact != null ? new[] { exact } : DefDatabase<ThingDef>.AllDefs.Where(d => category != null && d.IsWithinCategory(category));
-                        foreach (ThingDef wanted in choices.Where(d => !FactoryCraftAdapter.List(FactoryCraftAdapter.Get(defs[i], "disallowedThingDefs")).Contains(d)).OrderBy(d => d.defName))
-                            if (CraftDependencies.Request(map, task.Controller, wanted, need, "f:" + order.Id, ancestors)) break;
-                    }
-                    problem = "Не хватает: " + (FactoryCraftAdapter.Get<ThingDef>(defs[i], "thing")?.LabelCap.ToString() ?? FactoryCraftAdapter.Get<ThingCategoryDef>(defs[i], "thingCategory")?.LabelCap.ToString() ?? "ингредиента") + " ×" + need; return false; }
+                problem = StorageText.Get("GrechkaStorage_Text100") + (FactoryCraftAdapter.Get<ThingDef>(defs[missing], "thing")?.LabelCap.ToString()
+                    ?? FactoryCraftAdapter.Get<ThingCategoryDef>(defs[missing], "thingCategory")?.LabelCap.ToString() ?? StorageText.Get("GrechkaStorage_Text101")) + " ×" + need;
+                return false;
             }
             foreach (var part in selections)
-                if (part.disk.Withdraw(part.item, part.count, task.Buffer.Contents) != part.count) { problem = "Резервирование прервано; исходные вещи сохранены"; return false; }
+                if (part.disk.Withdraw(part.item, part.count, task.Buffer.Contents) != part.count) { problem = StorageText.Get("GrechkaStorage_Text102"); return false; }
             try
             {
                 object manager = FactoryCraftAdapter.Get(process, "advancedProcessorsManager");
                 object comp = FactoryCraftAdapter.Comp(task.Machine);
                 foreach (Thing item in task.Buffer.Contents.ToList()) FactoryCraftAdapter.Call(manager, "AddIngredient", comp, item);
-                task.Fed = true; problem = null; return true;
+                task.Fed = true; if (selections.Count > 0) CompStorageMachineArt.Worked(task.Crafter, 250);
+                problem = null; return true;
             }
-            catch (Exception e) { task.Faulted = true; problem = "Подача приостановлена: " + e.GetBaseException().Message; return false; }
+            catch (Exception e) { task.Faulted = true; problem = StorageText.Get("GrechkaStorage_Text103") + e.GetBaseException().Message; return false; }
         }
         void Flush(FactoryTask task)
         {
             if (!task.InterfaceReady) return;
             foreach (Thing item in task.Buffer.Contents.ToList())
                 foreach (StorageDisk disk in task.Controller.ActiveDisks())
-                { if (item.Destroyed || item.holdingOwner != task.Buffer.Contents) break; disk.Accept(item, item.stackCount); }
+                { if (item.Destroyed || item.holdingOwner != task.Buffer.Contents) break; if (disk.Accept(item, item.stackCount) > 0) CompStorageMachineArt.Worked(task.Crafter, 250); }
         }
         public override void MapComponentTick()
         {
@@ -365,7 +357,7 @@ namespace Grechka.Storage
                 {
                     if (order != null && !order.Maintain)
                     {
-                        order.Remaining = Math.Max(0, order.Remaining - (order.CountCycles ? task.Completed ? 1 : 0 : task.Produced));
+                        order.Remaining = (int)Math.Max(0L, (long)order.Remaining - (order.CountCycles ? task.Completed ? 1 : 0 : task.Produced));
                         if (order.Remaining == 0 || order.Cancelled) { CraftDependencies.Cancel(map, "f:" + order.Id); orders.Remove(order); }
                     }
                     task.Accounted = true;
@@ -382,7 +374,7 @@ namespace Grechka.Storage
             bool success = true;
             foreach (FactoryTask task in manager.tasks.Where(t => t.Crafter == crafter))
                 if (task.Buffer.Contents.Any && !task.Buffer.Contents.TryDropAll(crafter.Position, crafter.Map, ThingPlaceMode.Near)) success = false;
-            if (!success) Messages.Message("Сначала освободите место для выгрузки фабричного буфера.", crafter, MessageTypeDefOf.RejectInput, false);
+            if (!success) Messages.Message(StorageText.Get("GrechkaStorage_Text104"), crafter, MessageTypeDefOf.RejectInput, false);
             return success;
         }
         public void Recover(Building_StorageController controller)

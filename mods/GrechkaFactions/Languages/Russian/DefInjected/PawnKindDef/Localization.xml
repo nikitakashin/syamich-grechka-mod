@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaPawn_Mills_Worker.label>работник — Союз семи мельниц</GrechkaPawn_Mills_Worker.label>
+  <GrechkaPawn_Mills_Guard.label>охранник — Союз семи мельниц</GrechkaPawn_Mills_Guard.label>
+  <GrechkaPawn_Mills_Master.label>мастер — Союз семи мельниц</GrechkaPawn_Mills_Master.label>
+  <GrechkaPawn_Mills_Leader.label>бригадир — Союз семи мельниц</GrechkaPawn_Mills_Leader.label>
+  <GrechkaPawn_Mills_Trader.label>торговец — Союз семи мельниц</GrechkaPawn_Mills_Trader.label>
+  <GrechkaPawn_Rescue_Worker.label>работник — Нулевая смена</GrechkaPawn_Rescue_Worker.label>
+  <GrechkaPawn_Rescue_Guard.label>охранник — Нулевая смена</GrechkaPawn_Rescue_Guard.label>
+  <GrechkaPawn_Rescue_Master.label>мастер — Нулевая смена</GrechkaPawn_Rescue_Master.label>
+  <GrechkaPawn_Rescue_Leader.label>бригадир — Нулевая смена</GrechkaPawn_Rescue_Leader.label>
+  <GrechkaPawn_Rescue_Trader.label>торговец — Нулевая смена</GrechkaPawn_Rescue_Trader.label>
+  <GrechkaPawn_Artel_Worker.label>работник — Артель последней гайки</GrechkaPawn_Artel_Worker.label>
+  <GrechkaPawn_Artel_Guard.label>охранник — Артель последней гайки</GrechkaPawn_Artel_Guard.label>
+  <GrechkaPawn_Artel_Master.label>мастер — Артель последней гайки</GrechkaPawn_Artel_Master.label>
+  <GrechkaPawn_Artel_Leader.label>бригадир — Артель последней гайки</GrechkaPawn_Artel_Leader.label>
+  <GrechkaPawn_Artel_Trader.label>торговец — Артель последней гайки</GrechkaPawn_Artel_Trader.label>
+  <GrechkaPawn_Bare_Worker.label>работник — Босая сотня</GrechkaPawn_Bare_Worker.label>
+  <GrechkaPawn_Bare_Guard.label>охранник — Босая сотня</GrechkaPawn_Bare_Guard.label>
+  <GrechkaPawn_Bare_Master.label>мастер — Босая сотня</GrechkaPawn_Bare_Master.label>
+  <GrechkaPawn_Bare_Leader.label>бригадир — Босая сотня</GrechkaPawn_Bare_Leader.label>
+  <GrechkaPawn_Bare_Trader.label>торговец — Босая сотня</GrechkaPawn_Bare_Trader.label>
+  <GrechkaPawn_Post_Worker.label>работник — Бюро невскрытых посылок</GrechkaPawn_Post_Worker.label>
+  <GrechkaPawn_Post_Guard.label>охранник — Бюро невскрытых посылок</GrechkaPawn_Post_Guard.label>
+  <GrechkaPawn_Post_Master.label>мастер — Бюро невскрытых посылок</GrechkaPawn_Post_Master.label>
+  <GrechkaPawn_Post_Leader.label>бригадир — Бюро невскрытых посылок</GrechkaPawn_Post_Leader.label>
+  <GrechkaPawn_Post_Trader.label>торговец — Бюро невскрытых посылок</GrechkaPawn_Post_Trader.label>
+</LanguageData>

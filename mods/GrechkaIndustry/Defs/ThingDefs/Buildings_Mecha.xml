@@ -29,9 +29,9 @@
     </statBases>
     <costList>
       <Grechka_HousingT2_Item>1</Grechka_HousingT2_Item>
-      <ComponentSpacer>8</ComponentSpacer>
-      <Plasteel>40</Plasteel>
-      <Uranium>20</Uranium>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Plasteel>20</Plasteel>
+      <Uranium>10</Uranium>
     </costList>
     <comps>
       <li Class="CompProperties_Power">
@@ -52,10 +52,16 @@
       </li>
       <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
         <targetDefName>Grechka_MechaniteExtractorT4_Building</targetDefName>
-        <costDescription>установленное устройство, 10 компонентов T4, 100 пластали и 8 субстрата</costDescription>
+        <costDescription>предыдущее устройство целиком и дополнительные материалы следующей ступени; установленный корпус уже учтён</costDescription>
+      </li>
+      <li Class="Grechka.Industry.CompProperties_OperationalGraphics">
+        <offPath>Buildings/Map/States/MechaniteExtractorT3/MechaniteExtractorT3_Off</offPath>
+        <idlePath>Buildings/Map/States/MechaniteExtractorT3/MechaniteExtractorT3_Idle</idlePath>
+        <activePath>Buildings/Map/States/MechaniteExtractorT3/MechaniteExtractorT3_Active</activePath>
       </li>
     </comps>
-    <designationCategory>Production</designationCategory>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>Grechka_MechaniteExtractorGroup</designatorDropdown>
     <uiOrder>2520</uiOrder>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <constructEffect>ConstructMetal</constructEffect>

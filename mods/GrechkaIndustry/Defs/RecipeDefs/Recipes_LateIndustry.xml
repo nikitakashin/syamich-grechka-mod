@@ -109,7 +109,7 @@
     <jobString>собрать компонент T4.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <workSkill>Crafting</workSkill>
-    <workAmount>40000</workAmount>
+    <workAmount>10000</workAmount>
     <effectWorking>ConstructMetal</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
     <allowMixingIngredients>true</allowMixingIngredients>
@@ -120,7 +120,7 @@
             <li>Grechka_ComponentT3_Item</li>
           </thingDefs>
         </filter>
-        <count>4</count>
+        <count>1</count>
       </li>
       <li>
         <filter>
@@ -128,7 +128,7 @@
             <li>Plasteel</li>
           </thingDefs>
         </filter>
-        <count>40</count>
+        <count>8</count>
       </li>
       <li>
         <filter>
@@ -136,7 +136,7 @@
             <li>Grechka_ArchoSubstrate</li>
           </thingDefs>
         </filter>
-        <count>8</count>
+        <count>6</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -165,7 +165,7 @@
     <jobString>собрать корпус T4.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <workSkill>Crafting</workSkill>
-    <workAmount>60000</workAmount>
+    <workAmount>10000</workAmount>
     <effectWorking>ConstructMetal</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
     <allowMixingIngredients>true</allowMixingIngredients>
@@ -184,7 +184,7 @@
             <li>Plasteel</li>
           </thingDefs>
         </filter>
-        <count>80</count>
+        <count>30</count>
       </li>
       <li>
         <filter>
@@ -192,7 +192,7 @@
             <li>Grechka_ComponentT4_Item</li>
           </thingDefs>
         </filter>
-        <count>8</count>
+        <count>2</count>
       </li>
       <li>
         <filter>
@@ -200,7 +200,7 @@
             <li>Grechka_ArchoSubstrate</li>
           </thingDefs>
         </filter>
-        <count>8</count>
+        <count>10</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -241,7 +241,7 @@
             <li>Grechka_SolarCellT3_Item</li>
           </thingDefs>
         </filter>
-        <count>4</count>
+        <count>8</count>
       </li>
       <li>
         <filter>
@@ -268,7 +268,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Grechka_SolarCellT4_Item>2</Grechka_SolarCellT4_Item>
+      <Grechka_SolarCellT4_Item>8</Grechka_SolarCellT4_Item>
     </products>
     <recipeUsers>
       <li>Grechka_AssemblyBenchT4_Building</li>
@@ -293,18 +293,18 @@
       <li>
         <filter>
           <thingDefs>
-            <li>Plasteel</li>
+            <li>Grechka_ComponentT4_Item</li>
           </thingDefs>
         </filter>
-        <count>200</count>
+        <count>4</count>
       </li>
       <li>
         <filter>
           <thingDefs>
-            <li>Grechka_ComponentT4_Item</li>
+            <li>Plasteel</li>
           </thingDefs>
         </filter>
-        <count>14</count>
+        <count>50</count>
       </li>
       <li>
         <filter>
@@ -312,13 +312,13 @@
             <li>Grechka_ArchoSubstrate</li>
           </thingDefs>
         </filter>
-        <count>8</count>
+        <count>10</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>Plasteel</li>
         <li>Grechka_ComponentT4_Item</li>
+        <li>Plasteel</li>
         <li>Grechka_ArchoSubstrate</li>
       </thingDefs>
     </fixedIngredientFilter>
@@ -336,7 +336,7 @@
     <jobString>собрать компонент T5.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <workSkill>Crafting</workSkill>
-    <workAmount>60000</workAmount>
+    <workAmount>14000</workAmount>
     <effectWorking>ConstructMetal</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
     <allowMixingIngredients>true</allowMixingIngredients>
@@ -347,7 +347,7 @@
             <li>Grechka_ComponentT4_Item</li>
           </thingDefs>
         </filter>
-        <count>4</count>
+        <count>1</count>
       </li>
       <li>
         <filter>
@@ -355,7 +355,7 @@
             <li>Plasteel</li>
           </thingDefs>
         </filter>
-        <count>80</count>
+        <count>12</count>
       </li>
       <li>
         <filter>
@@ -363,7 +363,7 @@
             <li>Grechka_GrechkaConcentrate</li>
           </thingDefs>
         </filter>
-        <count>32</count>
+        <count>8</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -391,7 +391,7 @@
     <jobString>собрать корпус T5.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <workSkill>Crafting</workSkill>
-    <workAmount>60000</workAmount>
+    <workAmount>12000</workAmount>
     <effectWorking>ConstructMetal</effectWorking>
     <soundWorking>Recipe_Machining</soundWorking>
     <allowMixingIngredients>true</allowMixingIngredients>
@@ -410,7 +410,7 @@
             <li>Plasteel</li>
           </thingDefs>
         </filter>
-        <count>120</count>
+        <count>40</count>
       </li>
       <li>
         <filter>
@@ -418,7 +418,7 @@
             <li>Grechka_ComponentT5_Item</li>
           </thingDefs>
         </filter>
-        <count>8</count>
+        <count>2</count>
       </li>
       <li>
         <filter>
@@ -426,7 +426,7 @@
             <li>Grechka_GrechkaConcentrate</li>
           </thingDefs>
         </filter>
-        <count>24</count>
+        <count>10</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
@@ -466,7 +466,7 @@
             <li>Grechka_SolarCellT4_Item</li>
           </thingDefs>
         </filter>
-        <count>4</count>
+        <count>8</count>
       </li>
       <li>
         <filter>
@@ -493,7 +493,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Grechka_SolarCellT5_Item>2</Grechka_SolarCellT5_Item>
+      <Grechka_SolarCellT5_Item>8</Grechka_SolarCellT5_Item>
     </products>
     <recipeUsers>
       <li>Grechka_AssemblyBenchT5_Building</li>
@@ -517,18 +517,18 @@
       <li>
         <filter>
           <thingDefs>
-            <li>Plasteel</li>
+            <li>Grechka_ComponentT5_Item</li>
           </thingDefs>
         </filter>
-        <count>280</count>
+        <count>4</count>
       </li>
       <li>
         <filter>
           <thingDefs>
-            <li>Grechka_ComponentT5_Item</li>
+            <li>Plasteel</li>
           </thingDefs>
         </filter>
-        <count>14</count>
+        <count>60</count>
       </li>
       <li>
         <filter>
@@ -536,13 +536,13 @@
             <li>Grechka_GrechkaConcentrate</li>
           </thingDefs>
         </filter>
-        <count>24</count>
+        <count>10</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>Plasteel</li>
         <li>Grechka_ComponentT5_Item</li>
+        <li>Plasteel</li>
         <li>Grechka_GrechkaConcentrate</li>
       </thingDefs>
     </fixedIngredientFilter>

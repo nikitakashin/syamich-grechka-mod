@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Grechka_CryoSlow.label>криозамедление</Grechka_CryoSlow.label>
+  <Grechka_CryoSlow.description>Иней сковывает движение. Повторное попадание обновляет длительность, но не усиливает эффект.</Grechka_CryoSlow.description>
+  <Grechka_CombatChipT4_Hediff.label>чип «берсерк» T4</Grechka_CombatChipT4_Hediff.label>
+  <Grechka_CombatChipT4_Hediff.description>Подавляет боль и обычные срывы из-за настроения. Скорость движения +2, уклонение в ближнем бою +10 процентных пунктов, урон ближнего боя ×1,5. Разные семейства чипов совместимы; установка другого тира этого семейства возвращает прежний чип предметом.</Grechka_CombatChipT4_Hediff.description>
+  <Grechka_CombatChipT5_Hediff.label>чип «берсерк» T5</Grechka_CombatChipT5_Hediff.label>
+  <Grechka_CombatChipT5_Hediff.description>Подавляет боль и обычные срывы из-за настроения. Скорость движения +4, уклонение в ближнем бою +20 процентных пунктов, урон ближнего боя ×2. Разные семейства чипов совместимы; установка другого тира этого семейства возвращает прежний чип предметом.</Grechka_CombatChipT5_Hediff.description>
+  <Grechka_StabilityChipT4_Hediff.label>чип «стальной разум» T4</Grechka_StabilityChipT4_Hediff.label>
+  <Grechka_StabilityChipT4_Hediff.description>Предотвращает обычные психические срывы из-за настроения. Сюжетные и принудительно вызванные психические состояния не отменяет. Разные семейства чипов совместимы; установка другого тира этого семейства возвращает прежний чип предметом.</Grechka_StabilityChipT4_Hediff.description>
+  <Grechka_StabilityChipT5_Hediff.label>чип «стальной разум» T5</Grechka_StabilityChipT5_Hediff.label>
+  <Grechka_StabilityChipT5_Hediff.description>Предотвращает обычные психические срывы из-за настроения. Сюжетные и принудительно вызванные психические состояния не отменяет. Разные семейства чипов совместимы; установка другого тира этого семейства возвращает прежний чип предметом.</Grechka_StabilityChipT5_Hediff.description>
+  <Grechka_CraftChipT4_Hediff.label>чип «ремесленник» T4</Grechka_CraftChipT4_Hediff.label>
+  <Grechka_CraftChipT4_Hediff.description>Ускоряет общую работу носителя в 1,5 раза. Разные семейства чипов совместимы; установка другого тира этого семейства возвращает прежний чип предметом.</Grechka_CraftChipT4_Hediff.description>
+  <Grechka_CraftChipT5_Hediff.label>чип «ремесленник» T5</Grechka_CraftChipT5_Hediff.label>
+  <Grechka_CraftChipT5_Hediff.description>Ускоряет общую работу носителя в 2 раза. Разные семейства чипов совместимы; установка другого тира этого семейства возвращает прежний чип предметом.</Grechka_CraftChipT5_Hediff.description>
+  <Grechka_MovementChipT4_Hediff.label>чип «следопыт» T4</Grechka_MovementChipT4_Hediff.label>
+  <Grechka_MovementChipT4_Hediff.description>Повышает скорость движения на 1 и снижает расход отдыха на 25%. Разные семейства чипов совместимы; установка другого тира этого семейства возвращает прежний чип предметом.</Grechka_MovementChipT4_Hediff.description>
+  <Grechka_MovementChipT5_Hediff.label>чип «следопыт» T5</Grechka_MovementChipT5_Hediff.label>
+  <Grechka_MovementChipT5_Hediff.description>Повышает скорость движения на 2 и снижает расход отдыха на 50%. Разные семейства чипов совместимы; установка другого тира этого семейства возвращает прежний чип предметом.</Grechka_MovementChipT5_Hediff.description>
+  <Grechka_TonicChipT4_Hediff.label>чип «тонизатор» T4</Grechka_TonicChipT4_Hediff.label>
+  <Grechka_TonicChipT4_Hediff.description>Снижает скорость наступления голода и расход отдыха на 50%. Разные семейства чипов совместимы; установка другого тира этого семейства возвращает прежний чип предметом.</Grechka_TonicChipT4_Hediff.description>
+  <Grechka_TonicChipT5_Hediff.label>чип «тонизатор» T5</Grechka_TonicChipT5_Hediff.label>
+  <Grechka_TonicChipT5_Hediff.description>Снижает скорость наступления голода и расход отдыха на 75%. Разные семейства чипов совместимы; установка другого тира этого семейства возвращает прежний чип предметом.</Grechka_TonicChipT5_Hediff.description>
+  <Grechka_BrainChipT5_Hediff.label>чип «гречневый разум» T5</Grechka_BrainChipT5_Hediff.label>
+  <Grechka_BrainChipT5_Hediff.description>Повышает сознание на 100 процентных пунктов и даёт +16 к настроению, пока чип установлен. Разные семейства чипов совместимы; установка другого тира этого семейства возвращает прежний чип предметом.</Grechka_BrainChipT5_Hediff.description>
+  <Grechka_MythicEyeT4_Hediff.label>мифическая бионика: глаз</Grechka_MythicEyeT4_Hediff.label>
+  <Grechka_MythicEyeT4_Hediff.description>Эффективность части 300%.</Grechka_MythicEyeT4_Hediff.description>
+  <Grechka_MythicEarT4_Hediff.label>мифическая бионика: ухо</Grechka_MythicEarT4_Hediff.label>
+  <Grechka_MythicEarT4_Hediff.description>Эффективность части 300%.</Grechka_MythicEarT4_Hediff.description>
+  <Grechka_MythicHeartT4_Hediff.label>мифическая бионика: сердце</Grechka_MythicHeartT4_Hediff.label>
+  <Grechka_MythicHeartT4_Hediff.description>Эффективность части 300%.</Grechka_MythicHeartT4_Hediff.description>
+  <Grechka_MythicLiverT4_Hediff.label>мифическая бионика: печень</Grechka_MythicLiverT4_Hediff.label>
+  <Grechka_MythicLiverT4_Hediff.description>Эффективность части 300%.</Grechka_MythicLiverT4_Hediff.description>
+  <Grechka_MythicStomachT4_Hediff.label>мифическая бионика: желудок</Grechka_MythicStomachT4_Hediff.label>
+  <Grechka_MythicStomachT4_Hediff.description>Эффективность части 300%.</Grechka_MythicStomachT4_Hediff.description>
+  <Grechka_MythicLungT4_Hediff.label>мифическая бионика: лёгкое</Grechka_MythicLungT4_Hediff.label>
+  <Grechka_MythicLungT4_Hediff.description>Эффективность части 300%.</Grechka_MythicLungT4_Hediff.description>
+  <Grechka_MythicKidneyT4_Hediff.label>мифическая бионика: почка</Grechka_MythicKidneyT4_Hediff.label>
+  <Grechka_MythicKidneyT4_Hediff.description>Эффективность части 300%.</Grechka_MythicKidneyT4_Hediff.description>
+  <Grechka_MythicArmT4_Hediff.label>мифическая бионика: рука</Grechka_MythicArmT4_Hediff.label>
+  <Grechka_MythicArmT4_Hediff.description>Эффективность части 300%.</Grechka_MythicArmT4_Hediff.description>
+  <Grechka_MythicHandT4_Hediff.label>мифическая бионика: кисть</Grechka_MythicHandT4_Hediff.label>
+  <Grechka_MythicHandT4_Hediff.description>Эффективность части 300%.</Grechka_MythicHandT4_Hediff.description>
+  <Grechka_MythicFingerT4_Hediff.label>мифическая бионика: палец руки</Grechka_MythicFingerT4_Hediff.label>
+  <Grechka_MythicFingerT4_Hediff.description>Эффективность части 300%.</Grechka_MythicFingerT4_Hediff.description>
+  <Grechka_MythicLegT4_Hediff.label>мифическая бионика: нога</Grechka_MythicLegT4_Hediff.label>
+  <Grechka_MythicLegT4_Hediff.description>Эффективность части 300%.</Grechka_MythicLegT4_Hediff.description>
+  <Grechka_MythicFootT4_Hediff.label>мифическая бионика: стопа</Grechka_MythicFootT4_Hediff.label>
+  <Grechka_MythicFootT4_Hediff.description>Эффективность части 300%.</Grechka_MythicFootT4_Hediff.description>
+  <Grechka_MythicToeT4_Hediff.label>мифическая бионика: палец ноги</Grechka_MythicToeT4_Hediff.label>
+  <Grechka_MythicToeT4_Hediff.description>Эффективность части 300%.</Grechka_MythicToeT4_Hediff.description>
+  <Grechka_MythicShoulderT4_Hediff.label>мифическая бионика: плечо</Grechka_MythicShoulderT4_Hediff.label>
+  <Grechka_MythicShoulderT4_Hediff.description>Эффективность части 300%.</Grechka_MythicShoulderT4_Hediff.description>
+  <Grechka_MythicClavicleT4_Hediff.label>мифическая бионика: ключица</Grechka_MythicClavicleT4_Hediff.label>
+  <Grechka_MythicClavicleT4_Hediff.description>Эффективность части 300%.</Grechka_MythicClavicleT4_Hediff.description>
+  <Grechka_MythicHumerusT4_Hediff.label>мифическая бионика: плечевая кость</Grechka_MythicHumerusT4_Hediff.label>
+  <Grechka_MythicHumerusT4_Hediff.description>Эффективность части 300%.</Grechka_MythicHumerusT4_Hediff.description>
+  <Grechka_MythicRadiusT4_Hediff.label>мифическая бионика: лучевая кость</Grechka_MythicRadiusT4_Hediff.label>
+  <Grechka_MythicRadiusT4_Hediff.description>Эффективность части 300%.</Grechka_MythicRadiusT4_Hediff.description>
+  <Grechka_MythicFemurT4_Hediff.label>мифическая бионика: бедренная кость</Grechka_MythicFemurT4_Hediff.label>
+  <Grechka_MythicFemurT4_Hediff.description>Эффективность части 300%.</Grechka_MythicFemurT4_Hediff.description>
+  <Grechka_MythicTibiaT4_Hediff.label>мифическая бионика: большеберцовая кость</Grechka_MythicTibiaT4_Hediff.label>
+  <Grechka_MythicTibiaT4_Hediff.description>Эффективность части 300%.</Grechka_MythicTibiaT4_Hediff.description>
+  <Grechka_MythicSpineT4_Hediff.label>мифическая бионика: позвоночник</Grechka_MythicSpineT4_Hediff.label>
+  <Grechka_MythicSpineT4_Hediff.description>Эффективность части 300%.</Grechka_MythicSpineT4_Hediff.description>
+  <Grechka_MythicNoseT4_Hediff.label>мифическая бионика: нос</Grechka_MythicNoseT4_Hediff.label>
+  <Grechka_MythicNoseT4_Hediff.description>Эффективность части 300%.</Grechka_MythicNoseT4_Hediff.description>
+  <Grechka_MythicJawT4_Hediff.label>мифическая бионика: челюсть</Grechka_MythicJawT4_Hediff.label>
+  <Grechka_MythicJawT4_Hediff.description>Эффективность части 300%.</Grechka_MythicJawT4_Hediff.description>
+  <Grechka_MythicTongueT4_Hediff.label>мифическая бионика: язык</Grechka_MythicTongueT4_Hediff.label>
+  <Grechka_MythicTongueT4_Hediff.description>Эффективность части 300%.</Grechka_MythicTongueT4_Hediff.description>
+  <Grechka_MythicRibcageT4_Hediff.label>мифическая бионика: грудная клетка</Grechka_MythicRibcageT4_Hediff.label>
+  <Grechka_MythicRibcageT4_Hediff.description>Эффективность части 300%.</Grechka_MythicRibcageT4_Hediff.description>
+  <Grechka_MythicSternumT4_Hediff.label>мифическая бионика: грудина</Grechka_MythicSternumT4_Hediff.label>
+  <Grechka_MythicSternumT4_Hediff.description>Эффективность части 300%.</Grechka_MythicSternumT4_Hediff.description>
+  <Grechka_MythicPelvisT4_Hediff.label>мифическая бионика: таз</Grechka_MythicPelvisT4_Hediff.label>
+  <Grechka_MythicPelvisT4_Hediff.description>Эффективность части 300%.</Grechka_MythicPelvisT4_Hediff.description>
+  <Grechka_MythicSkullT4_Hediff.label>мифическая бионика: череп</Grechka_MythicSkullT4_Hediff.label>
+  <Grechka_MythicSkullT4_Hediff.description>Эффективность части 300%.</Grechka_MythicSkullT4_Hediff.description>
+  <Grechka_MythicTorsoT4_Hediff.label>мифическая бионика: торс</Grechka_MythicTorsoT4_Hediff.label>
+  <Grechka_MythicTorsoT4_Hediff.description>Эффективность части 300%.</Grechka_MythicTorsoT4_Hediff.description>
+  <Grechka_MythicNeckT4_Hediff.label>мифическая бионика: шея</Grechka_MythicNeckT4_Hediff.label>
+  <Grechka_MythicNeckT4_Hediff.description>Эффективность части 300%.</Grechka_MythicNeckT4_Hediff.description>
+  <Grechka_MythicHeadT4_Hediff.label>мифическая бионика: голова</Grechka_MythicHeadT4_Hediff.label>
+  <Grechka_MythicHeadT4_Hediff.description>Эффективность части 300%.</Grechka_MythicHeadT4_Hediff.description>
+  <Grechka_MythicWaistT4_Hediff.label>мифическая бионика: поясница</Grechka_MythicWaistT4_Hediff.label>
+  <Grechka_MythicWaistT4_Hediff.description>Эффективность части 300%.</Grechka_MythicWaistT4_Hediff.description>
+  <Grechka_MythicBrainT4_Hediff.label>мифическая бионика: мозг</Grechka_MythicBrainT4_Hediff.label>
+  <Grechka_MythicBrainT4_Hediff.description>Эффективность части 300%.</Grechka_MythicBrainT4_Hediff.description>
+  <Grechka_GrechkaEyeT5_Hediff.label>гречневая бионика: глаз</Grechka_GrechkaEyeT5_Hediff.label>
+  <Grechka_GrechkaEyeT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaEyeT5_Hediff.description>
+  <Grechka_GrechkaEarT5_Hediff.label>гречневая бионика: ухо</Grechka_GrechkaEarT5_Hediff.label>
+  <Grechka_GrechkaEarT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaEarT5_Hediff.description>
+  <Grechka_GrechkaHeartT5_Hediff.label>гречневая бионика: сердце</Grechka_GrechkaHeartT5_Hediff.label>
+  <Grechka_GrechkaHeartT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaHeartT5_Hediff.description>
+  <Grechka_GrechkaLiverT5_Hediff.label>гречневая бионика: печень</Grechka_GrechkaLiverT5_Hediff.label>
+  <Grechka_GrechkaLiverT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaLiverT5_Hediff.description>
+  <Grechka_GrechkaStomachT5_Hediff.label>гречневая бионика: желудок</Grechka_GrechkaStomachT5_Hediff.label>
+  <Grechka_GrechkaStomachT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaStomachT5_Hediff.description>
+  <Grechka_GrechkaLungT5_Hediff.label>гречневая бионика: лёгкое</Grechka_GrechkaLungT5_Hediff.label>
+  <Grechka_GrechkaLungT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaLungT5_Hediff.description>
+  <Grechka_GrechkaKidneyT5_Hediff.label>гречневая бионика: почка</Grechka_GrechkaKidneyT5_Hediff.label>
+  <Grechka_GrechkaKidneyT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaKidneyT5_Hediff.description>
+  <Grechka_GrechkaArmT5_Hediff.label>гречневая бионика: рука</Grechka_GrechkaArmT5_Hediff.label>
+  <Grechka_GrechkaArmT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaArmT5_Hediff.description>
+  <Grechka_GrechkaHandT5_Hediff.label>гречневая бионика: кисть</Grechka_GrechkaHandT5_Hediff.label>
+  <Grechka_GrechkaHandT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaHandT5_Hediff.description>
+  <Grechka_GrechkaFingerT5_Hediff.label>гречневая бионика: палец руки</Grechka_GrechkaFingerT5_Hediff.label>
+  <Grechka_GrechkaFingerT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaFingerT5_Hediff.description>
+  <Grechka_GrechkaLegT5_Hediff.label>гречневая бионика: нога</Grechka_GrechkaLegT5_Hediff.label>
+  <Grechka_GrechkaLegT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaLegT5_Hediff.description>
+  <Grechka_GrechkaFootT5_Hediff.label>гречневая бионика: стопа</Grechka_GrechkaFootT5_Hediff.label>
+  <Grechka_GrechkaFootT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaFootT5_Hediff.description>
+  <Grechka_GrechkaToeT5_Hediff.label>гречневая бионика: палец ноги</Grechka_GrechkaToeT5_Hediff.label>
+  <Grechka_GrechkaToeT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaToeT5_Hediff.description>
+  <Grechka_GrechkaShoulderT5_Hediff.label>гречневая бионика: плечо</Grechka_GrechkaShoulderT5_Hediff.label>
+  <Grechka_GrechkaShoulderT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaShoulderT5_Hediff.description>
+  <Grechka_GrechkaClavicleT5_Hediff.label>гречневая бионика: ключица</Grechka_GrechkaClavicleT5_Hediff.label>
+  <Grechka_GrechkaClavicleT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaClavicleT5_Hediff.description>
+  <Grechka_GrechkaHumerusT5_Hediff.label>гречневая бионика: плечевая кость</Grechka_GrechkaHumerusT5_Hediff.label>
+  <Grechka_GrechkaHumerusT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaHumerusT5_Hediff.description>
+  <Grechka_GrechkaRadiusT5_Hediff.label>гречневая бионика: лучевая кость</Grechka_GrechkaRadiusT5_Hediff.label>
+  <Grechka_GrechkaRadiusT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaRadiusT5_Hediff.description>
+  <Grechka_GrechkaFemurT5_Hediff.label>гречневая бионика: бедренная кость</Grechka_GrechkaFemurT5_Hediff.label>
+  <Grechka_GrechkaFemurT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaFemurT5_Hediff.description>
+  <Grechka_GrechkaTibiaT5_Hediff.label>гречневая бионика: большеберцовая кость</Grechka_GrechkaTibiaT5_Hediff.label>
+  <Grechka_GrechkaTibiaT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaTibiaT5_Hediff.description>
+  <Grechka_GrechkaSpineT5_Hediff.label>гречневая бионика: позвоночник</Grechka_GrechkaSpineT5_Hediff.label>
+  <Grechka_GrechkaSpineT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaSpineT5_Hediff.description>
+  <Grechka_GrechkaNoseT5_Hediff.label>гречневая бионика: нос</Grechka_GrechkaNoseT5_Hediff.label>
+  <Grechka_GrechkaNoseT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaNoseT5_Hediff.description>
+  <Grechka_GrechkaJawT5_Hediff.label>гречневая бионика: челюсть</Grechka_GrechkaJawT5_Hediff.label>
+  <Grechka_GrechkaJawT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaJawT5_Hediff.description>
+  <Grechka_GrechkaTongueT5_Hediff.label>гречневая бионика: язык</Grechka_GrechkaTongueT5_Hediff.label>
+  <Grechka_GrechkaTongueT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaTongueT5_Hediff.description>
+  <Grechka_GrechkaRibcageT5_Hediff.label>гречневая бионика: грудная клетка</Grechka_GrechkaRibcageT5_Hediff.label>
+  <Grechka_GrechkaRibcageT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaRibcageT5_Hediff.description>
+  <Grechka_GrechkaSternumT5_Hediff.label>гречневая бионика: грудина</Grechka_GrechkaSternumT5_Hediff.label>
+  <Grechka_GrechkaSternumT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaSternumT5_Hediff.description>
+  <Grechka_GrechkaPelvisT5_Hediff.label>гречневая бионика: таз</Grechka_GrechkaPelvisT5_Hediff.label>
+  <Grechka_GrechkaPelvisT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaPelvisT5_Hediff.description>
+  <Grechka_GrechkaSkullT5_Hediff.label>гречневая бионика: череп</Grechka_GrechkaSkullT5_Hediff.label>
+  <Grechka_GrechkaSkullT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaSkullT5_Hediff.description>
+  <Grechka_GrechkaTorsoT5_Hediff.label>гречневая бионика: торс</Grechka_GrechkaTorsoT5_Hediff.label>
+  <Grechka_GrechkaTorsoT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaTorsoT5_Hediff.description>
+  <Grechka_GrechkaNeckT5_Hediff.label>гречневая бионика: шея</Grechka_GrechkaNeckT5_Hediff.label>
+  <Grechka_GrechkaNeckT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaNeckT5_Hediff.description>
+  <Grechka_GrechkaHeadT5_Hediff.label>гречневая бионика: голова</Grechka_GrechkaHeadT5_Hediff.label>
+  <Grechka_GrechkaHeadT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaHeadT5_Hediff.description>
+  <Grechka_GrechkaWaistT5_Hediff.label>гречневая бионика: поясница</Grechka_GrechkaWaistT5_Hediff.label>
+  <Grechka_GrechkaWaistT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaWaistT5_Hediff.description>
+  <Grechka_GrechkaBrainT5_Hediff.label>гречневая бионика: мозг</Grechka_GrechkaBrainT5_Hediff.label>
+  <Grechka_GrechkaBrainT5_Hediff.description>Эффективность части 600%.</Grechka_GrechkaBrainT5_Hediff.description>
+</LanguageData>

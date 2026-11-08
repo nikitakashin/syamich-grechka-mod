@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaPharmacy_TrainerInterest_Item.label>interest neurotrainer</GrechkaPharmacy_TrainerInterest_Item.label>
+  <GrechkaPharmacy_TrainerInterest_Item.description>A single-use neurotrainer. Permanently gives one interest flame to one randomly chosen enabled skill with no interest. Skill level and experience stay unchanged. Aversions, existing flames and disabled skills are excluded. If no skill qualifies, use is blocked and the trainer is preserved.</GrechkaPharmacy_TrainerInterest_Item.description>
+  <GrechkaPharmacy_TrainerInterest_Item.comps.1.useLabel>Use {0_label}</GrechkaPharmacy_TrainerInterest_Item.comps.1.useLabel>
+  <GrechkaPharmacy_TrainerPassion_Item.label>passion neurotrainer</GrechkaPharmacy_TrainerPassion_Item.label>
+  <GrechkaPharmacy_TrainerPassion_Item.description>A single-use neurotrainer. Permanently gives two passion flames to one randomly chosen enabled skill with no interest. Skill level and experience stay unchanged. Aversions, existing flames and disabled skills are excluded. If no skill qualifies, use is blocked and the trainer is preserved.</GrechkaPharmacy_TrainerPassion_Item.description>
+  <GrechkaPharmacy_TrainerPassion_Item.comps.1.useLabel>Use {0_label}</GrechkaPharmacy_TrainerPassion_Item.comps.1.useLabel>
+  <GrechkaPharmacy_TrainerStrong_Item.label>strong passion neurotrainer</GrechkaPharmacy_TrainerStrong_Item.label>
+  <GrechkaPharmacy_TrainerStrong_Item.description>A single-use neurotrainer. Permanently gives three strong passion flames to one randomly chosen enabled skill with no interest. Skill level and experience stay unchanged. Aversions, existing flames and disabled skills are excluded. If no skill qualifies, use is blocked and the trainer is preserved.</GrechkaPharmacy_TrainerStrong_Item.description>
+  <GrechkaPharmacy_TrainerStrong_Item.comps.1.useLabel>Use {0_label}</GrechkaPharmacy_TrainerStrong_Item.comps.1.useLabel>
+  <GrechkaPharmacy_TrainerTalent_Item.label>talent neurotrainer</GrechkaPharmacy_TrainerTalent_Item.label>
+  <GrechkaPharmacy_TrainerTalent_Item.description>A single-use neurotrainer. Permanently gives a pink talent flame to one randomly chosen enabled skill with no interest. Skill level and experience stay unchanged. Aversions, existing flames and disabled skills are excluded. If no skill qualifies, use is blocked and the trainer is preserved.</GrechkaPharmacy_TrainerTalent_Item.description>
+  <GrechkaPharmacy_TrainerTalent_Item.comps.1.useLabel>Use {0_label}</GrechkaPharmacy_TrainerTalent_Item.comps.1.useLabel>
+  <GrechkaPharmacy_TrainerCalling_Item.label>calling neurotrainer</GrechkaPharmacy_TrainerCalling_Item.label>
+  <GrechkaPharmacy_TrainerCalling_Item.description>A single-use neurotrainer. Permanently gives a violet calling flame to one randomly chosen enabled skill with no interest. Skill level and experience stay unchanged. Aversions, existing flames and disabled skills are excluded. If no skill qualifies, use is blocked and the trainer is preserved.</GrechkaPharmacy_TrainerCalling_Item.description>
+  <GrechkaPharmacy_TrainerCalling_Item.comps.1.useLabel>Use {0_label}</GrechkaPharmacy_TrainerCalling_Item.comps.1.useLabel>
+</LanguageData>

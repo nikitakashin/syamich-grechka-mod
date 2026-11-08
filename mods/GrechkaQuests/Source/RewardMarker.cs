@@ -8,14 +8,14 @@ namespace Grechka.Quests
     {
         public Designator_RewardMarker()
         {
-            defaultLabel = "Место выдачи наград";
-            defaultDesc = "Указать место прибытия квестовых наград. Новая метка перемещает предыдущую на этой карте.";
+            defaultLabel = QuestText.Get("GrechkaQuests_45eaba2d918e", "Место выдачи наград");
+            defaultDesc = QuestText.Get("GrechkaQuests_44f9ab839479", "Указать место прибытия квестовых наград. Новая метка перемещает предыдущую на этой карте.");
             icon = ContentFinder<UnityEngine.Texture2D>.Get("Designations/Haul");
         }
 
         public override AcceptanceReport CanDesignateCell(IntVec3 cell)
         {
-            if (Map == null || !Map.IsPlayerHome) return "Метка доступна на карте колонии.";
+            if (Map == null || !Map.IsPlayerHome) return QuestText.Get("GrechkaQuests_a468f89a4520", "Метка доступна на карте колонии.");
             if (!cell.InBounds(Map)) return false;
             return true;
         }

@@ -4,6 +4,7 @@ using System.Runtime.CompilerServices;
 using Grechka.Storage;
 using HarmonyLib;
 using RimWorld;
+using RimWorld.Planet;
 using Verse;
 void Check(bool condition,string label){if(!condition)throw new Exception(label);Console.WriteLine("PASS "+label);}
 string pipePath=Environment.GetEnvironmentVariable("PIPESYSTEM_ASSEMBLY") ?? Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),"Library/Application Support/Steam/steamapps/workshop/content/294100/2023507013/1.7/Assemblies/PipeSystem.dll");
@@ -13,6 +14,7 @@ AccessTools.Field(typeof(Game),"maps").SetValue(game,new List<Map>());
 AccessTools.Field(typeof(Game),"components").SetValue(game,new List<GameComponent>{new StorageDiskClock(game)});
 AccessTools.Field(typeof(Game),"tickManager").SetValue(game,new TickManager());
 AccessTools.Field(typeof(Game),"uniqueIDsManager").SetValue(game,new UniqueIDsManager());
+var world=(World)RuntimeHelpers.GetUninitializedObject(typeof(World)); world.factionManager=new FactionManager(); AccessTools.Field(typeof(Game),"worldInt").SetValue(game,world);
 Current.Game=game;
 var prefs=AccessTools.Field(typeof(Prefs),"data");prefs.SetValue(null,Activator.CreateInstance(prefs.FieldType));
 var harmony=new Harmony("grechka.factory.isolated-tests");
@@ -53,6 +55,39 @@ try{
  Check(restored.ProcessId=="real-process-id"&&restored.Fed&&restored.Completed&&restored.Finished&&restored.Produced==10,"Native Scribe preserves completion ledger and process identity");
  Check(restored.Buffer.Contents.Sum(t=>t.stackCount)==10&&restored.Buffer.Contents.All(t=>ReferenceEquals(t.holdingOwner.Owner,restored.Buffer)),"Native Scribe restores actual buffered outputs exactly once");
 }finally{if(File.Exists(path))File.Delete(path);}
+// Large T5 output may exceed Int32 while each physical stack still fits it.
+task.Produced=2L*int.MaxValue;
+try{
+ Scribe.saver.InitSaving(path,"factoryLargeFixture");Scribe_Deep.Look(ref task,"task");Scribe.saver.FinalizeSaving();
+ FactoryTask restored=null;Scribe.loader.InitLoading(path);Scribe_Deep.Look(ref restored,"task");Scribe.loader.FinalizeLoading();
+ Check(restored.Produced==4294967294L,"Factory completion ledger preserves output above Int32 across native save/load");
+}finally{if(File.Exists(path))File.Delete(path);}
+// Actual native owner requirements, with selection performed before any disk withdrawal.
+var materialCategory=new ThingCategoryDef{defName="Grechka_FactoryMaterial"};
+var woodA=Fixture.Def("Grechka_FactoryWoodA",75);var woodB=Fixture.Def("Grechka_FactoryWoodB",75);
+woodA.thingCategories.Add(materialCategory);woodB.thingCategories.Add(materialCategory);
+object categoryIngredient=Activator.CreateInstance(ingredientType);
+AccessTools.Field(ingredientType,"thingCategory").SetValue(categoryIngredient,materialCategory);
+AccessTools.Field(ingredientType,"countNeeded").SetValue(categoryIngredient,5f);
+var categoryIngredients=(IList)Activator.CreateInstance(typeof(List<>).MakeGenericType(ingredientType)); categoryIngredients.Add(categoryIngredient);
+object categoryDef=Activator.CreateInstance(defType);AccessTools.Field(defType,"ingredients").SetValue(categoryDef,categoryIngredients);
+object categoryProcess=RuntimeHelpers.GetUninitializedObject(processType);AccessTools.Field(processType,"def").SetValue(categoryProcess,categoryDef);AccessTools.Method(processType,"Setup").Invoke(categoryProcess,null);
+var realOwners=((IEnumerable)AccessTools.Property(processType,"IngredientsOwners").GetValue(categoryProcess)).Cast<object>().ToList();
+var planner=AccessTools.Method(typeof(StorageDisk).Assembly.GetType("Grechka.Storage.FactoryInputPlanner"),"Select");
+List<(StorageDisk disk,Thing item,int count)> Plan(List<(StorageDisk disk,Thing item)> input,bool noMix,List<object> ownerList=null){
+ object[] args={new List<object>{categoryIngredient},ownerList??realOwners,input,noMix,-1,0};
+ return (List<(StorageDisk,Thing,int)>)planner.Invoke(null,args);
+}
+var small=Fixture.Create(woodA,2);var enough=Fixture.Create(woodB,5);
+var picked=Plan(new(){(null,small),(null,enough)},true);
+Check(picked!=null&&picked.Sum(t=>t.count)==5&&picked.All(t=>t.item==enough)&&small.stackCount==2&&enough.stackCount==5,
+ "Factory NoMix chooses the sufficient kind instead of locking onto the first small pile");
+var halfA=Fixture.Create(woodA,3);var halfB=Fixture.Create(woodB,3);
+Check(Plan(new(){(null,halfA),(null,halfB)},true)==null,"Factory NoMix cannot combine two individually insufficient material kinds");
+Check(Plan(new(){(null,halfA),(null,halfB)},false).Sum(t=>t.count)==5,"Mixing-enabled Factory still combines legal materials");
+var moreA=Fixture.Create(woodA,2);
+Check(Plan(new(){(null,halfA),(null,moreA)},true).Sum(t=>t.count)==5,"One Factory material kind can span several physical stacks");
+Check(Plan(new(){(null,enough)},true,new List<object>())==null,"Changed native owner schema fails before any partial ingredient transfer");
 Console.WriteLine("Isolated API/ownership checks; no running game controlled.");
 sealed class Holder:IThingHolder{
  public ThingOwner<Thing> Things;public Holder(){Things=new ThingOwner<Thing>(this,false);}public IThingHolder ParentHolder=>null;

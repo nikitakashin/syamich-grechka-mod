@@ -35,6 +35,11 @@ var steel=Fixture.Def("UpgradeSteel",typeof(ThingWithComps));var housing1=Fixtur
 IngredientCount I(ThingDef d,int n){var i=new IngredientCount();i.filter.SetAllow(d,true);i.SetBaseCount(n);return i;}
 var recipe=new RecipeDef{defName="MakeUpgradeHousing",ingredients=new(){I(housing1,1),I(steel,5)},products=new(){new ThingDefCountClass(housing2,1)}};AccessTools.Field(typeof(RecipeDef),"ingredientValueGetterClass").SetValue(recipe,typeof(IngredientValueGetter_Volume));DefDatabase<RecipeDef>.Add(recipe);
 Check(upgrade.Costs().Count==1&&upgrade.Costs().Single().thingDef==steel&&upgrade.Costs().Single().count==5,"Upgrade credits the previous housing and derives exact remaining materials");
+Current.Game.researchManager = new ResearchManager();
+var tierResearch = new ResearchProjectDef { defName = "FixtureTierResearch", baseCost = 100 };
+target.researchPrerequisites = new() { tierResearch };
+Check(!upgrade.Queue() && !upgrade.Requested && !upgrade.Supplies.Any, "Locked target research prevents direct factory upgrade without reserving or spending materials");
+((Dictionary<ResearchProjectDef,float>)AccessTools.Field(typeof(ResearchManager),"progress").GetValue(Find.ResearchManager))[tierResearch] = 100;
 Check(upgrade.Queue(),"Applied native family queues a real upgrade");
 recipe.ingredients[1].SetBaseCount(99);Check(upgrade.Costs().Single().count==5,"Queued upgrade freezes its cost against later recipe balance edits");recipe.ingredients[1].SetBaseCount(5);
 var source=new Holder();Thing material=Fixture.Create(steel,7);source.Things.TryAdd(material,false);
@@ -47,6 +52,7 @@ try{
  Check(restored.Value.Requested&&restored.Value.Supplies.Sum(t=>t.stackCount)==5&&restored.Value.Supplies.All(t=>ReferenceEquals(t.holdingOwner.Owner,restored.Value)),"Native Scribe retains requested upgrade and the actual paid materials owner");
 }finally{if(File.Exists(path))File.Delete(path);}
 var process=RuntimeHelpers.GetUninitializedObject(processType);AccessTools.Field(processType,"parent").SetValue(process,building);AccessTools.Field(processType,"suspended").SetValue(process,true);AccessTools.Field(processType,"id").SetValue(process,"preserved-process");
+AccessTools.Field(processType,"spawning").SetValue(process,true);
 var ownerType=pipes.GetType("PipeSystem.ThingAndResourceOwner");var owner=Activator.CreateInstance(ownerType);AccessTools.Field(ownerType,"count").SetValue(owner,3);var owners=(IList)Activator.CreateInstance(typeof(List<>).MakeGenericType(ownerType));owners.Add(owner);AccessTools.Field(processType,"ingredientsOwners").SetValue(process,owners);
 var processes=(IList)AccessTools.Field(stackType,"processes").GetValue(stack);processes.Add(process);
 Fixture.SpawnState(building,true);var complete=AccessTools.Method(typeof(CompFactoryUpgrade),"Complete");
@@ -57,6 +63,10 @@ Check(!FactoryUpgradeProcessPauseHook.Prefix(process,ref decision)&&!decision&&(
 AccessTools.Field(processType,"pickUpReady").SetValue(process,true);
 Check(FactoryUpgradeSafety.Problem(building)!=null,"Undelivered native result blocks upgrade");AccessTools.Field(processType,"pickUpReady").SetValue(process,false);
 Check(FactoryUpgradeSafety.Compatible(building,target)&&FactoryUpgradeSafety.Problem(building)==null,"Empty suspended native process permits upgrade");
+Check(!FactoryUpgradeSafety.BatchInProgress(process),"Native persistent spawning permission does not make an empty process permanently busy");
+AccessTools.Field(processType,"currentResult").SetValue(process,1);
+Check(FactoryUpgradeSafety.BatchInProgress(process)&&FactoryUpgradeSafety.Problem(building)!=null,"Partial result delivery blocks upgrade even with zero reported progress");
+AccessTools.Field(processType,"currentResult").SetValue(process,0);
 FactoryUpgradeSafety.SetDefinition(building,target);
 Check(ReferenceEquals(AccessTools.Field(compType,"processStack").GetValue(native),stack)&&ReferenceEquals(AccessTools.Field(processType,"parent").GetValue(process),building)&&ReferenceEquals(owners,AccessTools.Field(processType,"ingredientsOwners").GetValue(process)),"Definition change retains real process, native owner objects and parent identity");
 FactoryUpgradeSafety.SetDefinition(building,old);

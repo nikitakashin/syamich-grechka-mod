@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/WorkGiverDef[defName="DoBillsFabricationBench"]/fixedBillGiverDefs</xpath>
+    <value>
+      <li>Grechka_AssemblyBenchT1_Building</li>
+      <li>Grechka_AssemblyBenchT2_Building</li>
+      <li>Grechka_AssemblyBenchT3_Building</li>
+      <li>Grechka_AssemblyBenchT4_Building</li>
+      <li>Grechka_AssemblyBenchT5_Building</li>
+      <li>Grechka_MatterRecyclerT4_Building</li>
+      <li>Grechka_MatterRecyclerT5_Building</li>
+      <li>Grechka_MatterSynthesizerT4_Building</li>
+      <li>Grechka_MatterSynthesizerT5_Building</li>
+    </value>
+  </Operation>
+</Patch>

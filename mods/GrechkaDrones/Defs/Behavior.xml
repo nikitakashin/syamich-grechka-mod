@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThinkTreeDef>
+    <defName>Grechka_DroneMain</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Despawned</treeDef>
+        </li>
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Downed</treeDef>
+        </li>
+        <li Class="Grechka.Drones.JobGiver_DroneRecharge" />
+        <li Class="Grechka.Drones.JobGiver_Drone" />
+        <li Class="AIRobot.X2_JobGiver_RechargeEnergyIdle" />
+        <li Class="JobGiver_IdleForever" />
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+  <ThinkTreeDef>
+    <defName>Grechka_DroneConstant</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes />
+    </thinkRoot>
+  </ThinkTreeDef>
+  <JobDef>
+    <defName>Grechka_DroneFoam</defName>
+    <driverClass>Grechka.Drones.JobDriver_Foam</driverClass>
+    <reportString>Тушит пожар пеной.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+  <JobDef>
+    <defName>Grechka_DroneRetreat</defName>
+    <driverClass>Grechka.Drones.JobDriver_Retreat</driverClass>
+    <reportString>Возвращается к своему доку.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+  </JobDef>
+  <JobDef>
+    <defName>Grechka_DroneRescueFloor</defName>
+    <driverClass>Grechka.Drones.JobDriver_RescueFloor</driverClass>
+    <reportString>Выносит TargetA в безопасное место.</reportString>
+    <casualInterruptible>false</casualInterruptible>
+    <carryThingAfterJob>false</carryThingAfterJob>
+  </JobDef>
+  <ThinkTreeDef>
+    <defName>Grechka_CaravanDroneMain</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Despawned</treeDef>
+        </li>
+        <li Class="ThinkNode_Subtree">
+          <treeDef>Downed</treeDef>
+        </li>
+        <li Class="ThinkNode_QueuedJob" />
+        <li Class="ThinkNode_Tagger">
+          <tagToGive>DraftedOrder</tagToGive>
+          <subNodes>
+            <li Class="JobGiver_Orders" />
+          </subNodes>
+        </li>
+        <li Class="ThinkNode_Subtree">
+          <treeDef>LordDuty</treeDef>
+        </li>
+        <li Class="Grechka.Drones.JobGiver_CaravanRecharge" />
+        <li Class="JobGiver_GetFood" />
+        <li Class="Grechka.Drones.JobGiver_CaravanHaul" />
+        <li Class="JobGiver_WanderColony" />
+        <li Class="JobGiver_IdleForever" />
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+  <ThinkTreeDef>
+    <defName>Grechka_CaravanDroneConstant</defName>
+    <thinkRoot Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="ThinkNode_Subtree">
+          <treeDef>LordDutyConstant</treeDef>
+        </li>
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>
+</Defs>

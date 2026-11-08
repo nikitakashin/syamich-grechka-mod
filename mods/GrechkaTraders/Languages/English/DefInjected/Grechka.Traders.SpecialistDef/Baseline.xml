@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaTrader_Industry.label>Grechka industrial guild</GrechkaTrader_Industry.label>
+  <GrechkaTrader_Industry.description>Grechka materials, tier components, housings and portable industrial equipment.</GrechkaTrader_Industry.description>
+  <GrechkaTrader_Storage.label>Grechka digital caravan</GrechkaTrader_Storage.label>
+  <GrechkaTrader_Storage.description>Quartz electronics, memory cells, storage disks and portable storage devices.</GrechkaTrader_Storage.description>
+  <GrechkaTrader_Equipment.label>Grechka arsenal</GrechkaTrader_Equipment.label>
+  <GrechkaTrader_Equipment.description>Grechka weapons, armor, utility drones, implants and body replacements.</GrechkaTrader_Equipment.description>
+  <GrechkaTrader_LuckyBlocks.label>Grechka lucky dealer</GrechkaTrader_LuckyBlocks.label>
+  <GrechkaTrader_LuckyBlocks.description>Grechka lucky blocks from different tiers and thematic collections.</GrechkaTrader_LuckyBlocks.description>
+  <GrechkaTrader_Automation.label>Factory and power syndicate</GrechkaTrader_Automation.label>
+  <GrechkaTrader_Automation.description>Portable factory machines, power equipment, production workstations and ARC components.</GrechkaTrader_Automation.description>
+  <GrechkaTrader_Robotics.label>Robotics service caravan</GrechkaTrader_Robotics.label>
+  <GrechkaTrader_Robotics.description>Cleaning and hauling robot base stations with maintenance supplies.</GrechkaTrader_Robotics.description>
+  <GrechkaTrader_Medical.label>Frontier medical supplier</GrechkaTrader_Medical.label>
+  <GrechkaTrader_Medical.description>Portable medical furniture and surgical equipment, plus medicine and treatment supplies.</GrechkaTrader_Medical.description>
+  <GrechkaTrader_Gourmet.label>Rim gourmet caravan</GrechkaTrader_Gourmet.label>
+  <GrechkaTrader_Gourmet.description>Expanded cooking ingredients, canned food, pastries, stews, sushi and fish.</GrechkaTrader_Gourmet.description>
+  <GrechkaTrader_Agronomy.label>Frontier agronomists</GrechkaTrader_Agronomy.label>
+  <GrechkaTrader_Agronomy.description>Expanded fruit, vegetables, mushrooms, agricultural equipment and nutrient paste machinery.</GrechkaTrader_Agronomy.description>
+  <GrechkaTrader_Books.label>Wandering bookseller</GrechkaTrader_Books.label>
+  <GrechkaTrader_Books.description>Newspapers, writing furniture and books for a colony library.</GrechkaTrader_Books.description>
+  <GrechkaTrader_Defence.label>Frontier military engineers</GrechkaTrader_Defence.label>
+  <GrechkaTrader_Defence.description>Fortification materials, portable defenses, non-lethal weapons and salvaged feral equipment.</GrechkaTrader_Defence.description>
+  <GrechkaTrader_Imperial.label>Imperial luxury supplier</GrechkaTrader_Imperial.label>
+  <GrechkaTrader_Imperial.description>Imperial clothing, weapons, aperitifs, portable luxury furniture and Treasures gemstones.</GrechkaTrader_Imperial.description>
+  <GrechkaTrader_Smugglers.label>Black-market salvagers</GrechkaTrader_Smugglers.label>
+  <GrechkaTrader_Smugglers.description>Tradable deserter equipment, pirate arms, recovered ancient cryptotech and treasure maps.</GrechkaTrader_Smugglers.description>
+  <GrechkaTrader_Psycasts.label>Eltex curator</GrechkaTrader_Psycasts.label>
+  <GrechkaTrader_Psycasts.description>Eltex, psychic clothing and eltex melee weapons.</GrechkaTrader_Psycasts.description>
+  <GrechkaTrader_Interiors.label>Colony interior designers</GrechkaTrader_Interiors.label>
+  <GrechkaTrader_Interiors.description>Portable furniture, art, decorative objects, Treasures gemstone sculptures and spacer comforts.</GrechkaTrader_Interiors.description>
+  <GrechkaTrader_Outfitter.label>Rim outfitter</GrechkaTrader_Outfitter.label>
+  <GrechkaTrader_Outfitter.description>Expanded clothing, professional uniforms, backpacks and wearable accessories.</GrechkaTrader_Outfitter.description>
+</LanguageData>

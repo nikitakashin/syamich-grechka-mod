@@ -214,7 +214,8 @@
     <targetDefName>Hopper</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>обычный хоппер без тиров и корпуса; старые имена вариантов сохранены только для загрузки сохранений</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_025</defName>
@@ -664,7 +665,8 @@
     <targetDefName>VFEFactory_FactoryHopper</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>обычный хоппер без тиров и корпуса; старые имена вариантов сохранены только для загрузки сохранений</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_075</defName>
@@ -1969,7 +1971,8 @@
     <targetDefName>LightBall</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>ванильный дискошар; старые имена тирных вариантов сохранены только для загрузки сохранений</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_220</defName>
@@ -2962,26 +2965,29 @@
     <note>Принятая стоимость Storage в профиле World</note>
     <replacementCost>
       <li>
-        <thingDefName>Grechka_ComponentT3_Item</thingDefName>
-        <count>4</count>
+        <thingDefName>Steel</thingDefName>
+        <count>80</count>
       </li>
       <li>
-        <thingDefName>Plasteel</thingDefName>
-        <count>100</count>
+        <thingDefName>Grechka_ComponentT3_Item</thingDefName>
+        <count>1</count>
       </li>
       <li>
         <thingDefName>Grechka_QuartzProcessor</thingDefName>
-        <count>8</count>
+        <count>2</count>
       </li>
       <li>
         <thingDefName>Grechka_SilverProcessor</thingDefName>
-        <count>4</count>
+        <count>1</count>
       </li>
       <li>
         <thingDefName>Grechka_GoldProcessor</thingDefName>
-        <count>4</count>
+        <count>1</count>
       </li>
     </replacementCost>
+    <previousSignatures>
+      <li>grechka.storage/Grechka_StorageController/3/True/Grechka_ComponentT3_Item=4;Plasteel=100;Grechka_QuartzProcessor=8;Grechka_SilverProcessor=4;Grechka_GoldProcessor=4</li>
+    </previousSignatures>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_Grechka_DiskRack</defName>
@@ -2993,26 +2999,21 @@
     <note>Принятая стоимость Storage в профиле World</note>
     <replacementCost>
       <li>
-        <thingDefName>Grechka_ComponentT3_Item</thingDefName>
-        <count>2</count>
-      </li>
-      <li>
         <thingDefName>Steel</thingDefName>
-        <count>120</count>
+        <count>60</count>
       </li>
       <li>
         <thingDefName>Grechka_QuartzProcessor</thingDefName>
-        <count>4</count>
+        <count>2</count>
       </li>
       <li>
         <thingDefName>Grechka_SilverProcessor</thingDefName>
-        <count>2</count>
-      </li>
-      <li>
-        <thingDefName>Grechka_GoldProcessor</thingDefName>
-        <count>2</count>
+        <count>1</count>
       </li>
     </replacementCost>
+    <previousSignatures>
+      <li>grechka.storage/Grechka_DiskRack/3/True/Grechka_ComponentT3_Item=2;Steel=120;Grechka_QuartzProcessor=4;Grechka_SilverProcessor=2;Grechka_GoldProcessor=2</li>
+    </previousSignatures>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_Grechka_Inscriber</defName>
@@ -3025,17 +3026,20 @@
     <replacementCost>
       <li>
         <thingDefName>Steel</thingDefName>
-        <count>80</count>
+        <count>40</count>
       </li>
       <li>
         <thingDefName>ComponentIndustrial</thingDefName>
-        <count>5</count>
+        <count>2</count>
       </li>
       <li>
         <thingDefName>Grechka_Quartz</thingDefName>
-        <count>10</count>
+        <count>5</count>
       </li>
     </replacementCost>
+    <previousSignatures>
+      <li>grechka.storage/Grechka_Inscriber/1/True/Steel=80;ComponentIndustrial=5;Grechka_Quartz=10</li>
+    </previousSignatures>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_Grechka_StorageCrafterT3_Building</defName>
@@ -3048,25 +3052,28 @@
     <replacementCost>
       <li>
         <thingDefName>Steel</thingDefName>
-        <count>180</count>
+        <count>80</count>
       </li>
       <li>
         <thingDefName>Plasteel</thingDefName>
-        <count>90</count>
+        <count>20</count>
       </li>
       <li>
         <thingDefName>Grechka_ComponentT3_Item</thingDefName>
-        <count>12</count>
+        <count>2</count>
       </li>
       <li>
         <thingDefName>Grechka_GoldProcessor</thingDefName>
-        <count>9</count>
+        <count>2</count>
       </li>
       <li>
         <thingDefName>Grechka_CertusQuartz</thingDefName>
-        <count>30</count>
+        <count>10</count>
       </li>
     </replacementCost>
+    <previousSignatures>
+      <li>grechka.storage/Grechka_StorageCrafterT3_Building/3/True/Steel=180;Plasteel=90;Grechka_ComponentT3_Item=12;Grechka_GoldProcessor=9;Grechka_CertusQuartz=30</li>
+    </previousSignatures>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_Grechka_StorageCrafterT4_Building</defName>
@@ -3079,25 +3086,28 @@
     <replacementCost>
       <li>
         <thingDefName>Steel</thingDefName>
-        <count>240</count>
+        <count>100</count>
       </li>
       <li>
         <thingDefName>Plasteel</thingDefName>
-        <count>120</count>
+        <count>30</count>
       </li>
       <li>
         <thingDefName>Grechka_ComponentT4_Item</thingDefName>
-        <count>16</count>
+        <count>2</count>
       </li>
       <li>
         <thingDefName>Grechka_GoldProcessor</thingDefName>
-        <count>12</count>
+        <count>3</count>
       </li>
       <li>
         <thingDefName>Grechka_CertusQuartz</thingDefName>
-        <count>40</count>
+        <count>15</count>
       </li>
     </replacementCost>
+    <previousSignatures>
+      <li>grechka.storage/Grechka_StorageCrafterT4_Building/4/True/Steel=240;Plasteel=120;Grechka_ComponentT4_Item=16;Grechka_GoldProcessor=12;Grechka_CertusQuartz=40</li>
+    </previousSignatures>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_Grechka_StorageCrafterT5_Building</defName>
@@ -3110,24 +3120,27 @@
     <replacementCost>
       <li>
         <thingDefName>Steel</thingDefName>
-        <count>300</count>
+        <count>120</count>
       </li>
       <li>
         <thingDefName>Plasteel</thingDefName>
-        <count>150</count>
+        <count>40</count>
       </li>
       <li>
         <thingDefName>Grechka_ComponentT5_Item</thingDefName>
-        <count>20</count>
+        <count>2</count>
       </li>
       <li>
         <thingDefName>Grechka_GoldProcessor</thingDefName>
-        <count>15</count>
+        <count>4</count>
       </li>
       <li>
         <thingDefName>Grechka_CertusQuartz</thingDefName>
-        <count>50</count>
+        <count>20</count>
       </li>
     </replacementCost>
+    <previousSignatures>
+      <li>grechka.storage/Grechka_StorageCrafterT5_Building/5/True/Steel=300;Plasteel=150;Grechka_ComponentT5_Item=20;Grechka_GoldProcessor=15;Grechka_CertusQuartz=50</li>
+    </previousSignatures>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
 </Defs>

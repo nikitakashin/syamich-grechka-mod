@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationAdd">
-    <xpath>Defs/DesignationCategoryDef[defName="Misc"]/specialDesignatorClasses</xpath>
-    <value><li>Grechka.Quests.Designator_RewardMarker</li></value>
+  <!-- Quests also works without Industry or Storage; never create a duplicate category. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/DesignationCategoryDef[defName='Grechka_IndustryCategory']</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs</xpath>
+      <value>
+        <DesignationCategoryDef>
+          <defName>Grechka_IndustryCategory</defName>
+          <label>Гречка</label>
+          <order>79</order>
+          <showPowerGrid>true</showPowerGrid>
+          <specialDesignatorClasses />
+        </DesignationCategoryDef>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/DesignationCategoryDef[defName='Grechka_IndustryCategory']/specialDesignatorClasses/li[text()='Grechka.Quests.Designator_RewardMarker']</xpath>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/DesignationCategoryDef[defName='Grechka_IndustryCategory']/specialDesignatorClasses</xpath>
+      <value><li>Grechka.Quests.Designator_RewardMarker</li></value>
+    </nomatch>
   </Operation>
 </Patch>

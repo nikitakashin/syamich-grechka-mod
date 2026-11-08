@@ -3,7 +3,7 @@
   <RecipeDef>
     <defName>Grechka_MakeSolarS5</defName>
     <label>собрать солнечную панель S5</label>
-    <description>собрать солнечную панель S5. Все рецепты доступны без исследований.</description>
+    <description>Переоснастить одно целое снятое устройство предыдущей ступени. Установленный корпус уже учтён; требуются только новые детали и фотоэлементы. Результат выпускается упакованным для установки.</description>
     <jobString>собрать солнечную панель S5.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <workSkill>Crafting</workSkill>
@@ -19,15 +19,7 @@
             <li>Grechka_SolarS4_Building</li>
           </thingDefs>
         </filter>
-        <count>6</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Grechka_HousingT4_Item</li>
-          </thingDefs>
-        </filter>
-        <count>2</count>
+        <count>1</count>
       </li>
       <li>
         <filter>
@@ -35,7 +27,7 @@
             <li>Grechka_ComponentT4_Item</li>
           </thingDefs>
         </filter>
-        <count>16</count>
+        <count>2</count>
       </li>
       <li>
         <filter>
@@ -43,16 +35,33 @@
             <li>Grechka_SolarCellT4_Item</li>
           </thingDefs>
         </filter>
-        <count>64</count>
+        <count>24</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_ArchoSubstrate</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
         <li>Grechka_PackedSolarS4_Item</li>
-        <li>Grechka_HousingT4_Item</li>
+        <li>Grechka_SolarS4_Building</li>
         <li>Grechka_ComponentT4_Item</li>
         <li>Grechka_SolarCellT4_Item</li>
-        <li>Grechka_SolarS4_Building</li>
+        <li>Plasteel</li>
+        <li>Grechka_ArchoSubstrate</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
@@ -69,7 +78,7 @@
   <RecipeDef>
     <defName>Grechka_MakeSolarS6</defName>
     <label>собрать солнечную панель S6</label>
-    <description>собрать солнечную панель S6. Все рецепты доступны без исследований.</description>
+    <description>Переоснастить одно целое снятое устройство предыдущей ступени. Установленный корпус уже учтён; требуются только новые детали и фотоэлементы. Результат выпускается упакованным для установки.</description>
     <jobString>собрать солнечную панель S6.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <workSkill>Crafting</workSkill>
@@ -85,15 +94,7 @@
             <li>Grechka_SolarS5_Building</li>
           </thingDefs>
         </filter>
-        <count>8</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Grechka_HousingT5_Item</li>
-          </thingDefs>
-        </filter>
-        <count>4</count>
+        <count>1</count>
       </li>
       <li>
         <filter>
@@ -101,7 +102,7 @@
             <li>Grechka_ComponentT5_Item</li>
           </thingDefs>
         </filter>
-        <count>32</count>
+        <count>2</count>
       </li>
       <li>
         <filter>
@@ -109,16 +110,33 @@
             <li>Grechka_SolarCellT5_Item</li>
           </thingDefs>
         </filter>
-        <count>128</count>
+        <count>32</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>40</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_GrechkaConcentrate</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
         <li>Grechka_PackedSolarS5_Item</li>
-        <li>Grechka_HousingT5_Item</li>
+        <li>Grechka_SolarS5_Building</li>
         <li>Grechka_ComponentT5_Item</li>
         <li>Grechka_SolarCellT5_Item</li>
-        <li>Grechka_SolarS5_Building</li>
+        <li>Plasteel</li>
+        <li>Grechka_GrechkaConcentrate</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Grechka Treasures</name>
+  <author>Grechka World</author>
+  <packageId>grechka.treasures</packageId>
+  <supportedVersions><li>1.7</li></supportedVersions>
+  <modVersion>0.1.1</modVersion>
+  <description>Драгоценные камни, огранка, оружие и роскошный декор. Наводки ведут к заранее подготовленным сокровищницам: тайники, ловушки, рейдеры, обманки и настоящие драгоценности. Редкие жилы дают сырьё ювелиру, а крупные монолиты превращаются в цельные статуи. Самостоятельный мод для RimWorld 1.7; требуется Harmony.</description>
+  <modDependencies><li><packageId>brrainz.harmony</packageId><displayName>Harmony</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl></li></modDependencies>
+  <loadAfter><li>brrainz.harmony</li><li>grechka.industry</li><li>grechka.storage</li></loadAfter>
+  <loadBefore><li>grechka.world.integration</li></loadBefore>
+</ModMetaData>

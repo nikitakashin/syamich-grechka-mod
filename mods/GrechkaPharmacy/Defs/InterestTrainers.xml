@@ -1,0 +1,528 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingDef ParentName="ResourceBase" MayRequire="grechka.treasures,grechka.tweaks">
+    <defName>GrechkaPharmacy_TrainerInterest_Item</defName>
+    <label>interest neurotrainer</label>
+    <description>A single-use neurotrainer. Permanently gives one interest flame to one randomly chosen enabled skill with no interest. Skill level and experience stay unchanged. Aversions, existing flames and disabled skills are excluded. If no skill qualifies, use is blocked and the trainer is preserved.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <techLevel>Spacer</techLevel>
+    <rotatable>false</rotatable>
+    <stackLimit>10</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <graphicData>
+      <texPath>Items/TrainerInterest</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconPath>Items/TrainerInterest</uiIconPath>
+    <statBases>
+      <MarketValue>1800</MarketValue>
+      <Mass>0.2</Mass>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>NeurotrainersSkill</li>
+    </thingCategories>
+    <tradeability>All</tradeability>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>600</useDuration>
+        <showUseGizmo>true</showUseGizmo>
+      </li>
+      <li Class="Grechka.Tweaks.CompProperties_InterestTrainer">
+        <grade>2</grade>
+      </li>
+    </comps>
+  </ThingDef>
+  <RecipeDef MayRequire="grechka.treasures,grechka.tweaks">
+    <defName>GrechkaPharmacy_MakeTrainerInterest</defName>
+    <label>make interest neurotrainer</label>
+    <description>Synthesize a neurotrainer using pharmaceutical preparations and precious stones.</description>
+    <jobString>Synthesizing a neurotrainer.</jobString>
+    <workAmount>5000</workAmount>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <workSkill>Intellectual</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MedicineIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>8</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GrechkaTreasures_TopazCut</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GrechkaTreasures_SapphireCut</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>MedicineIndustrial</li>
+        <li>Neutroamine</li>
+        <li>GrechkaTreasures_TopazCut</li>
+        <li>GrechkaTreasures_SapphireCut</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <GrechkaPharmacy_TrainerInterest_Item>1</GrechkaPharmacy_TrainerInterest_Item>
+    </products>
+    <skillRequirements>
+      <Intellectual>8</Intellectual>
+    </skillRequirements>
+    <recipeUsers>
+      <li>DrugLab</li>
+      <li>GrechkaPharmacy_ReactorT3_Building</li>
+      <li>GrechkaPharmacy_ReactorT4_Building</li>
+      <li>GrechkaPharmacy_ReactorT5_Building</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>GrechkaPharmacy_ResearchT2</li>
+    </researchPrerequisites>
+  </RecipeDef>
+  <ThingDef ParentName="ResourceBase" MayRequire="grechka.treasures,grechka.tweaks">
+    <defName>GrechkaPharmacy_TrainerPassion_Item</defName>
+    <label>passion neurotrainer</label>
+    <description>A single-use neurotrainer. Permanently gives two passion flames to one randomly chosen enabled skill with no interest. Skill level and experience stay unchanged. Aversions, existing flames and disabled skills are excluded. If no skill qualifies, use is blocked and the trainer is preserved.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <techLevel>Spacer</techLevel>
+    <rotatable>false</rotatable>
+    <stackLimit>10</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <graphicData>
+      <texPath>Items/TrainerPassion</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconPath>Items/TrainerPassion</uiIconPath>
+    <statBases>
+      <MarketValue>4500</MarketValue>
+      <Mass>0.2</Mass>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>NeurotrainersSkill</li>
+    </thingCategories>
+    <tradeability>All</tradeability>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>600</useDuration>
+        <showUseGizmo>true</showUseGizmo>
+      </li>
+      <li Class="Grechka.Tweaks.CompProperties_InterestTrainer">
+        <grade>3</grade>
+      </li>
+    </comps>
+  </ThingDef>
+  <RecipeDef MayRequire="grechka.treasures,grechka.tweaks">
+    <defName>GrechkaPharmacy_MakeTrainerPassion</defName>
+    <label>make passion neurotrainer</label>
+    <description>Synthesize a neurotrainer using pharmaceutical preparations and precious stones.</description>
+    <jobString>Synthesizing a neurotrainer.</jobString>
+    <workAmount>10000</workAmount>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <workSkill>Intellectual</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GrechkaPharmacy_WorkStimT3_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>8</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GrechkaTreasures_RubyCut</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GrechkaTreasures_DiamondCut</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>GrechkaPharmacy_WorkStimT3_Item</li>
+        <li>Neutroamine</li>
+        <li>GrechkaTreasures_RubyCut</li>
+        <li>GrechkaTreasures_DiamondCut</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <GrechkaPharmacy_TrainerPassion_Item>1</GrechkaPharmacy_TrainerPassion_Item>
+    </products>
+    <skillRequirements>
+      <Intellectual>10</Intellectual>
+    </skillRequirements>
+    <recipeUsers>
+      <li>GrechkaPharmacy_ReactorT3_Building</li>
+      <li>GrechkaPharmacy_ReactorT4_Building</li>
+      <li>GrechkaPharmacy_ReactorT5_Building</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>GrechkaPharmacy_ResearchT3</li>
+    </researchPrerequisites>
+  </RecipeDef>
+  <ThingDef ParentName="ResourceBase" MayRequire="grechka.treasures,grechka.tweaks">
+    <defName>GrechkaPharmacy_TrainerStrong_Item</defName>
+    <label>strong passion neurotrainer</label>
+    <description>A single-use neurotrainer. Permanently gives three strong passion flames to one randomly chosen enabled skill with no interest. Skill level and experience stay unchanged. Aversions, existing flames and disabled skills are excluded. If no skill qualifies, use is blocked and the trainer is preserved.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <techLevel>Ultra</techLevel>
+    <rotatable>false</rotatable>
+    <stackLimit>10</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <graphicData>
+      <texPath>Items/TrainerStrong</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconPath>Items/TrainerStrong</uiIconPath>
+    <statBases>
+      <MarketValue>9000</MarketValue>
+      <Mass>0.2</Mass>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>NeurotrainersSkill</li>
+    </thingCategories>
+    <tradeability>All</tradeability>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>600</useDuration>
+        <showUseGizmo>true</showUseGizmo>
+      </li>
+      <li Class="Grechka.Tweaks.CompProperties_InterestTrainer">
+        <grade>4</grade>
+      </li>
+    </comps>
+  </ThingDef>
+  <RecipeDef MayRequire="grechka.treasures,grechka.tweaks">
+    <defName>GrechkaPharmacy_MakeTrainerStrong</defName>
+    <label>make strong passion neurotrainer</label>
+    <description>Synthesize a neurotrainer using pharmaceutical preparations and precious stones.</description>
+    <jobString>Synthesizing a neurotrainer.</jobString>
+    <workAmount>18000</workAmount>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <workSkill>Intellectual</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GrechkaPharmacy_ScarSerumT4_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>12</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GrechkaTreasures_EmeraldCut</li>
+          </thingDefs>
+        </filter>
+        <count>6</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GrechkaTreasures_DiamondCut</li>
+          </thingDefs>
+        </filter>
+        <count>4</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>GrechkaPharmacy_ScarSerumT4_Item</li>
+        <li>Neutroamine</li>
+        <li>GrechkaTreasures_EmeraldCut</li>
+        <li>GrechkaTreasures_DiamondCut</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <GrechkaPharmacy_TrainerStrong_Item>1</GrechkaPharmacy_TrainerStrong_Item>
+    </products>
+    <skillRequirements>
+      <Intellectual>12</Intellectual>
+    </skillRequirements>
+    <recipeUsers>
+      <li>GrechkaPharmacy_ReactorT4_Building</li>
+      <li>GrechkaPharmacy_ReactorT5_Building</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>GrechkaPharmacy_ResearchT4</li>
+    </researchPrerequisites>
+  </RecipeDef>
+  <ThingDef ParentName="ResourceBase" MayRequire="grechka.treasures,grechka.tweaks">
+    <defName>GrechkaPharmacy_TrainerTalent_Item</defName>
+    <label>talent neurotrainer</label>
+    <description>A single-use neurotrainer. Permanently gives a pink talent flame to one randomly chosen enabled skill with no interest. Skill level and experience stay unchanged. Aversions, existing flames and disabled skills are excluded. If no skill qualifies, use is blocked and the trainer is preserved.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <techLevel>Ultra</techLevel>
+    <rotatable>false</rotatable>
+    <stackLimit>10</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <graphicData>
+      <texPath>Items/TrainerTalent</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconPath>Items/TrainerTalent</uiIconPath>
+    <statBases>
+      <MarketValue>24000</MarketValue>
+      <Mass>0.2</Mass>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>NeurotrainersSkill</li>
+    </thingCategories>
+    <tradeability>All</tradeability>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>600</useDuration>
+        <showUseGizmo>true</showUseGizmo>
+      </li>
+      <li Class="Grechka.Tweaks.CompProperties_InterestTrainer">
+        <grade>5</grade>
+      </li>
+    </comps>
+  </ThingDef>
+  <RecipeDef MayRequire="grechka.treasures,grechka.tweaks">
+    <defName>GrechkaPharmacy_MakeTrainerTalent</defName>
+    <label>make talent neurotrainer</label>
+    <description>Synthesize a neurotrainer using pharmaceutical preparations and precious stones.</description>
+    <jobString>Synthesizing a neurotrainer.</jobString>
+    <workAmount>28000</workAmount>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <workSkill>Intellectual</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GrechkaPharmacy_GrechkaSerumT5_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GrechkaTreasures_AmethystMonolith</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GrechkaTreasures_RubyCut</li>
+          </thingDefs>
+        </filter>
+        <count>8</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>GrechkaPharmacy_GrechkaSerumT5_Item</li>
+        <li>Neutroamine</li>
+        <li>GrechkaTreasures_AmethystMonolith</li>
+        <li>GrechkaTreasures_RubyCut</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <GrechkaPharmacy_TrainerTalent_Item>1</GrechkaPharmacy_TrainerTalent_Item>
+    </products>
+    <skillRequirements>
+      <Intellectual>14</Intellectual>
+    </skillRequirements>
+    <recipeUsers>
+      <li>GrechkaPharmacy_ReactorT5_Building</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>GrechkaPharmacy_ResearchT5</li>
+    </researchPrerequisites>
+  </RecipeDef>
+  <ThingDef ParentName="ResourceBase" MayRequire="grechka.treasures,grechka.tweaks">
+    <defName>GrechkaPharmacy_TrainerCalling_Item</defName>
+    <label>calling neurotrainer</label>
+    <description>A single-use neurotrainer. Permanently gives a violet calling flame to one randomly chosen enabled skill with no interest. Skill level and experience stay unchanged. Aversions, existing flames and disabled skills are excluded. If no skill qualifies, use is blocked and the trainer is preserved.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <techLevel>Ultra</techLevel>
+    <rotatable>false</rotatable>
+    <stackLimit>10</stackLimit>
+    <useHitPoints>true</useHitPoints>
+    <graphicData>
+      <texPath>Items/TrainerCalling</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconPath>Items/TrainerCalling</uiIconPath>
+    <statBases>
+      <MarketValue>48000</MarketValue>
+      <Mass>0.2</Mass>
+      <MaxHitPoints>80</MaxHitPoints>
+      <Flammability>0.2</Flammability>
+      <DeteriorationRate>2</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>NeurotrainersSkill</li>
+    </thingCategories>
+    <tradeability>All</tradeability>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>600</useDuration>
+        <showUseGizmo>true</showUseGizmo>
+      </li>
+      <li Class="Grechka.Tweaks.CompProperties_InterestTrainer">
+        <grade>6</grade>
+      </li>
+    </comps>
+  </ThingDef>
+  <RecipeDef MayRequire="grechka.treasures,grechka.tweaks">
+    <defName>GrechkaPharmacy_MakeTrainerCalling</defName>
+    <label>make calling neurotrainer</label>
+    <description>Synthesize a neurotrainer using pharmaceutical preparations and precious stones.</description>
+    <jobString>Synthesizing a neurotrainer.</jobString>
+    <workAmount>40000</workAmount>
+    <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+    <workSkill>Intellectual</workSkill>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_Drug</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GrechkaPharmacy_YouthSerumT5_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GrechkaPharmacy_GrechkaSerumT5_Item</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Neutroamine</li>
+          </thingDefs>
+        </filter>
+        <count>30</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GrechkaTreasures_DiamondMonolith</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>GrechkaTreasures_AmethystMonolith</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>GrechkaPharmacy_YouthSerumT5_Item</li>
+        <li>GrechkaPharmacy_GrechkaSerumT5_Item</li>
+        <li>Neutroamine</li>
+        <li>GrechkaTreasures_DiamondMonolith</li>
+        <li>GrechkaTreasures_AmethystMonolith</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <GrechkaPharmacy_TrainerCalling_Item>1</GrechkaPharmacy_TrainerCalling_Item>
+    </products>
+    <skillRequirements>
+      <Intellectual>16</Intellectual>
+    </skillRequirements>
+    <recipeUsers>
+      <li>GrechkaPharmacy_ReactorT5_Building</li>
+    </recipeUsers>
+    <researchPrerequisites>
+      <li>GrechkaPharmacy_ResearchT5</li>
+    </researchPrerequisites>
+  </RecipeDef>
+</Defs>

@@ -54,7 +54,23 @@ AccessTools.Field(typeof(ThingWithComps),"comps").SetValue(table,new List<ThingC
 var carry=(Dictionary<string,float>)AccessTools.Field(compType,"outputCarry").GetValue(tier);carry[recipe.defName+"/"+food.defName]=.9f;
 recipe.products[0].count=1;
 var expected=AccessTools.Method(typeof(StorageDisk).Assembly.GetType("Grechka.Storage.CraftDependencies"),"Expected");
-Check((int)expected.Invoke(null,new object[]{recipe,table})==2&&carry.Values.Single()==.9f,"Pending output reads actual tier bonus and fractional carry without mutating it");
+Check((int)expected.Invoke(null,new object[]{recipe,table})==1&&carry.Values.Single()==.9f,"Pending output uses a conservative tier bonus without spending another variant fractional carry");
+// Production may update Industry carry while staging output; a failed consumption
+// must restore that state along with keeping unpaid products quarantined.
+var rollbackCrafter=new Building_StorageCrafter{def=crafterDef};
+AccessTools.Field(typeof(Building_StorageCrafter),"recipe").SetValue(rollbackCrafter,recipe);
+AccessTools.Field(typeof(Building_StorageCrafter),"table").SetValue(rollbackCrafter,table);
+var rollbackInput=(StorageBuffer)AccessTools.Field(typeof(Building_StorageCrafter),"buffer").GetValue(rollbackCrafter);
+rollbackInput.Contents.TryAdd(Fixture.Create(steel,1),false);
+var beforeCarry=new Dictionary<string,float>((Dictionary<string,float>)AccessTools.Field(compType,"outputCarry").GetValue(tier));
+Fixture.Consumed=1;
+Fixture.OnProducts=product=>AccessTools.Method(compType,"TakeExtra").Invoke(tier,new object[]{recipe,product});
+AccessTools.Method(typeof(Building_StorageCrafter),"Finish").Invoke(rollbackCrafter,null);
+Fixture.OnProducts=null;
+var afterCarry=(Dictionary<string,float>)AccessTools.Field(compType,"outputCarry").GetValue(tier);
+Check((bool)AccessTools.Field(typeof(Building_StorageCrafter),"faulted").GetValue(rollbackCrafter)
+ && afterCarry.Count==beforeCarry.Count && beforeCarry.All(p=>afterCarry.TryGetValue(p.Key,out float value)&&value==p.Value),
+ "Failed input consumption rolls back the actual Industry tier-carry mutation from staged products");
 var order=new CraftOrder{Id=91,ParentKey="f:77",Ancestors=new(){"f:ProcessA","v:RecipeB"},Recipe=recipe,Remaining=6};
 try{
  Scribe.saver.InitSaving(path,"fixture");Scribe_Deep.Look(ref order,"order");Scribe.saver.FinalizeSaving();
@@ -103,6 +119,69 @@ var select=AccessTools.Method(typeof(StorageDisk).Assembly.GetType("Grechka.Stor
 var selection=(List<(StorageDisk disk,Thing item,int count)>)select.Invoke(null,selectionArgs);
 Check(selection!=null&&selection.Sum(t=>t.count)==7&&ReferenceEquals(selectionArgs[6],wood),"Fixed metal and variable wooden material both selected; result explicitly keeps wood");
 
+void Inventory(params (ThingDef def,int count)[] items)
+{
+ Fixture.Disks.Clear();
+ foreach(var item in items)
+ {
+  var inventoryDisk=new StorageDisk{def=diskDef};var owner=new Holder();var thing=Fixture.Create(item.def,item.count);
+  owner.Things.TryAdd(thing,false);Check(inventoryDisk.Accept(thing,item.count)==item.count,"Fixture stores actual ingredient stack");Fixture.Disks.Add(inventoryDisk);
+ }
+}
+List<(StorageDisk disk,Thing item,int count)> Select(RecipeDef r,out object[] args)
+{
+ args=new object[]{controller,table,r,null,null,0d,null};
+ return (List<(StorageDisk disk,Thing item,int count)>)select.Invoke(null,args);
+}
+Inventory((steel,2),(wood,2),(otherWood,5));
+selection=Select(furnitureRecipe,out selectionArgs);
+Check(selection!=null&&ReferenceEquals(selectionArgs[6],otherWood)&&selection.All(t=>t.item.def!=wood),
+ "A small first material pile cannot block another material with enough stock for the whole item");
+Inventory((steel,2),(wood,3),(otherWood,3));
+furnitureRecipe.allowMixingIngredients=true;
+Check(Select(furnitureRecipe,out selectionArgs)==null&&(double)selectionArgs[5]==2,
+ "Made-from-stuff result refuses mixed wood types and reports the single-material deficit");
+
+var mixedRecipe=new RecipeDef{defName="Grechka_AutoMixRecipe",workerClass=typeof(RecipeWorker),ingredients=new(){variable},
+ products=new(){new ThingDefCountClass(food,1)},fixedIngredientFilter=new ThingFilter(),defaultIngredientFilter=new ThingFilter()};
+mixedRecipe.fixedIngredientFilter.SetAllow(wood,true);mixedRecipe.fixedIngredientFilter.SetAllow(otherWood,true);
+AccessTools.Field(typeof(RecipeDef),"ingredientValueGetterClass").SetValue(mixedRecipe,typeof(IngredientValueGetter_Volume));
+Check(Select(mixedRecipe,out _) == null,"Native allowMixingIngredients=false is respected even for a fixed product");
+mixedRecipe.allowMixingIngredients=true;
+selection=Select(mixedRecipe,out _);
+Check(selection!=null&&selection.Sum(t=>t.count)==5&&selection.Select(t=>t.item.def).Distinct().Count()==2,
+ "Native mixing-enabled recipe still combines actual stacks from different ingredient definitions");
+mixedRecipe.allowMixingIngredients=false;
+Inventory((wood,3),(wood,3));
+selection=Select(mixedRecipe,out _);
+Check(selection!=null&&selection.Sum(t=>t.count)==5&&selection.Count==2,
+ "NoMix may span two disks/stacks of the same ThingDef without overspending either stack");
+
+var invalidStuff=Fixture.Def("Grechka_AutoInvalidStuff",75);
+invalidStuff.stuffProps=new StuffProperties{categories=new(){new StuffCategoryDef{defName="Grechka_AutoWrongCategory"}}};
+variable.filter.SetAllow(invalidStuff,true);furnitureRecipe.fixedIngredientFilter.SetAllow(invalidStuff,true);
+Inventory((steel,2),(invalidStuff,10),(wood,5));
+selection=Select(furnitureRecipe,out selectionArgs);
+Check(selection!=null&&ReferenceEquals(selectionArgs[6],wood)&&selection.All(t=>t.item.def!=invalidStuff),
+ "Broad ingredient filters cannot manufacture an item from a material its native stuff categories reject");
+var secondPart=Fixture.Def("Grechka_AutoSecondPart",75);
+var partsIngredient=new IngredientCount();partsIngredient.SetBaseCount(2);partsIngredient.filter.SetAllow(food,true);partsIngredient.filter.SetAllow(secondPart,true);
+furnitureRecipe.ingredients.Add(partsIngredient);furnitureRecipe.fixedIngredientFilter.SetAllow(food,true);furnitureRecipe.fixedIngredientFilter.SetAllow(secondPart,true);
+Inventory((steel,2),(wood,5),(food,1),(secondPart,1));
+selection=Select(furnitureRecipe,out selectionArgs);
+Check(selection!=null&&selection.Sum(t=>t.count)==9&&ReferenceEquals(selectionArgs[6],wood),
+ "A separate mixable non-stuff ingredient stays valid in a made-from-stuff recipe");
+
+var supported=AccessTools.Method(typeof(StorageDisk).Assembly.GetType("Grechka.Storage.CraftRecipes"),"Supported");
+bool Supported(RecipeDef r)=>(bool)supported.Invoke(null,new object[]{r});
+var operation=new RecipeDef{defName="Grechka_AutoUnsafeOperation",workerClass=typeof(Recipe_Surgery),ingredients=new(),products=new(){new ThingDefCountClass(food,1)}};
+Check(!Supported(operation)&&Supported(mixedRecipe),"Production allowlist never turns pawn surgery into ordinary crafting, even with a fixed product");
+mixedRecipe.ignoreIngredientCountTakeEntireStacks=true;
+Check(!Supported(mixedRecipe),"Full-stack destruction recipes are rejected rather than silently executing partial-stack semantics");
+mixedRecipe.ignoreIngredientCountTakeEntireStacks=false;
+mixedRecipe.specialProducts=new(){SpecialProductType.Smelted};
+Check(!Supported(mixedRecipe),"Dynamic salvage output cannot masquerade as a predictable fixed-product recipe");
+
 Console.WriteLine("Autocraft fault injection / actual game ownership and Scribe checks; no game controlled.");
 sealed class Holder:IThingHolder{
  public ThingOwner<Thing> Things;public Holder(){Things=new ThingOwner<Thing>(this,false);}public IThingHolder ParentHolder=>null;
@@ -114,9 +193,9 @@ static class Fixture{
  public static bool GetCatalogue(ref CraftCatalogue __result){__result=Catalogue;return false;}
  public static bool FactoryCatalogue(ref IEnumerable<FactoryRecipe> __result){__result=FactoryRecipes;return false;}
  public static bool ActiveDisks(ref List<StorageDisk> __result){__result=Disks;return false;}
- public static bool FilterDef(ThingFilter __instance,Thing t,ref bool __result){__result=__instance.Allows(t.def);return false;} public static ThingDef Output;public static int Consumed;
+ public static bool FilterDef(ThingFilter __instance,Thing t,ref bool __result){__result=__instance.Allows(t.def);return false;} public static ThingDef Output;public static int Consumed; public static Action<Thing> OnProducts;
  public static bool Worker(ref Pawn __result){__result=null;return false;}
- public static bool Products(ref IEnumerable<Thing> __result){__result=new[]{Create(Output,10)};return false;}
+ public static bool Products(ref IEnumerable<Thing> __result){var product=Create(Output,10);OnProducts?.Invoke(product);__result=new[]{product};return false;}
  public static bool Consume(Thing ingredient){Consumed++;if(Consumed==2)throw new InvalidOperationException("injected consumption fault");ingredient.Destroy();return false;}
  public static bool Error(string text)=>!text.StartsWith("[Storage] Crafter paused");
  public static ThingDef Def(string name,int stack){var d=new ThingDef{defName=name,label=name,category=ThingCategory.Item,thingClass=typeof(ThingWithComps),stackLimit=stack,useHitPoints=false,comps=new(),thingCategories=new()};DefDatabase<ThingDef>.Add(d);return d;}

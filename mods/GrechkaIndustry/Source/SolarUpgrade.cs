@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Collections.Generic;
 using RimWorld;
 using UnityEngine;
@@ -9,7 +10,7 @@ namespace Grechka.Industry
     public sealed class CompProperties_SolarUpgrade : CompProperties
     {
         public string targetDefName;
-        public string costDescription;
+        [MustTranslate] public string costDescription;
         public CompProperties_SolarUpgrade() { compClass = typeof(CompSolarUpgrade); }
     }
 
@@ -24,13 +25,13 @@ namespace Grechka.Industry
             Building panel = parent as Building;
             if (panel == null || !panel.Spawned || panel.Faction != Faction.OfPlayer) yield break;
             ThingDef targetDef = DefDatabase<ThingDef>.GetNamedSilentFail(Props.targetDefName);
-            if (targetDef == null) yield break;
+            if (targetDef == null || targetDef.researchPrerequisites?.Any(r => !r.IsFinished) == true) yield break;
 
             yield return new Command_Action
             {
-                defaultLabel = "Улучшить до " + targetDef.label,
-                defaultDesc = "Снимет это устройство целиком и поставит чертёж следующей ступени на том же месте. Стоимость: "
-                    + Props.costDescription + ". Пока строится новое устройство, старое работать не будет.",
+                defaultLabel = IndustryText.Get("GrechkaIndustry_7cc02bc655cd", "Upgrade to ") + targetDef.label,
+                defaultDesc = IndustryText.Get("GrechkaIndustry_1f423d1791c2", "Uninstall this device intact and place a blueprint for the next stage at the same location. Cost: ")
+                    + Props.costDescription + IndustryText.Get("GrechkaIndustry_f878119dcf1a", ". The old device will stop working while the new one is being built."),
                 icon = TexCommand.Install,
                 action = StartUpgrade
             };
@@ -40,7 +41,8 @@ namespace Grechka.Industry
         {
             Building oldPanel = parent as Building;
             ThingDef targetDef = DefDatabase<ThingDef>.GetNamedSilentFail(Props.targetDefName);
-            if (oldPanel == null || !oldPanel.Spawned || targetDef == null) return;
+            if (oldPanel == null || !oldPanel.Spawned || targetDef == null
+                || targetDef.researchPrerequisites?.Any(r => !r.IsFinished) == true) return;
 
             Map map = oldPanel.Map;
             IntVec3 position = oldPanel.Position;
@@ -50,7 +52,7 @@ namespace Grechka.Industry
                 targetDef, position, rotation, map, false, oldPanel);
             if (!placement.Accepted)
             {
-                Messages.Message("Здесь нельзя поставить следующее устройство: " + placement.Reason,
+                Messages.Message(IndustryText.Get("GrechkaIndustry_fa748223b51a", "Cannot place the next device here: ") + placement.Reason,
                     MessageTypeDefOf.RejectInput);
                 return;
             }
@@ -58,7 +60,7 @@ namespace Grechka.Industry
             MinifiedThing packed = MinifyUtility.Uninstall(oldPanel);
             if (packed == null)
             {
-                Messages.Message("Не удалось снять устройство целиком.", MessageTypeDefOf.RejectInput);
+                Messages.Message(IndustryText.Get("GrechkaIndustry_0535fa03e514", "Could not uninstall the device intact."), MessageTypeDefOf.RejectInput);
                 return;
             }
 
@@ -66,17 +68,17 @@ namespace Grechka.Industry
             {
                 Blueprint_Build blueprint = GenConstruct.PlaceBlueprintForBuild(
                     targetDef, position, map, rotation, faction, null);
-                if (blueprint == null) throw new InvalidOperationException("Чертёж " + targetDef.defName + " не был создан.");
+                if (blueprint == null) throw new InvalidOperationException(IndustryText.Get("GrechkaIndustry_1290fafdb3c2", "Blueprint ") + targetDef.defName + IndustryText.Get("GrechkaIndustry_62224fbdda5a", " was not created."));
             }
             catch (Exception error)
             {
-                Log.Error("[Grechka Industry] Не удалось поставить чертёж улучшения панели: " + error);
+                Log.Error(IndustryText.Get("GrechkaIndustry_b52c94091685", "[Grechka Industry] Failed to place panel upgrade blueprint: ") + error);
                 try { GenConstruct.PlaceBlueprintForInstall(packed, position, map, rotation, faction); }
                 catch (Exception restoreError)
                 {
-                    Log.Error("[Grechka Industry] Не удалось поставить чертёж возврата S0: " + restoreError);
+                    Log.Error(IndustryText.Get("GrechkaIndustry_31c93a2136e2", "[Grechka Industry] Failed to place S0 restoration blueprint: ") + restoreError);
                 }
-                Messages.Message("Чертёж улучшения не создан. Снятое устройство сохранено для повторной установки.",
+                Messages.Message(IndustryText.Get("GrechkaIndustry_a037b8b54564", "The upgrade blueprint was not created. The uninstalled device has been preserved for reinstallation."),
                     MessageTypeDefOf.RejectInput);
             }
         }

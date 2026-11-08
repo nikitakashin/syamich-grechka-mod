@@ -77,7 +77,7 @@ internal static class UtilityChecks
         }
         for(int tier=1;tier<=5;tier++)Add("<ThingDef><defName>Grechka_HousingT"+tier+"_Item</defName></ThingDef>","grechka.industry");
         var rules=new XmlDocument();rules.Load("mods/GrechkaWorldIntegration/Defs/MachineProfile.xml");
-        int expected=0,variants=0,excluded=0;
+        int expected=0,variants=0,excluded=0,retired=0;
         foreach(XmlNode rule in rules.DocumentElement.ChildNodes)
         {
             string ruleName=rule.SelectSingleNode("defName")?.InnerText;if(ruleName?.StartsWith("GrechkaWorld_G01_")!=true)continue;
@@ -90,12 +90,20 @@ internal static class UtilityChecks
                 var c=document.CreateElement("li");c.SetAttribute("Class",compClass);node.SelectSingleNode("comps").AppendChild(c);
             }
             Add(rule.OuterXml,"grechka.world.integration");
-            if(rule.SelectSingleNode("addHousing")?.InnerText=="true"){expected++;variants+=6-int.Parse(rule.SelectSingleNode("minimumTier").InnerText);}else excluded++;
+            if(rule.SelectSingleNode("retired")?.InnerText=="true")
+            {
+                retired++;
+                variants+=5-int.Parse(rule.SelectSingleNode("minimumTier").InnerText);
+            }
+            else if(rule.SelectSingleNode("addHousing")?.InnerText=="true")
+            { expected++;variants+=6-int.Parse(rule.SelectSingleNode("minimumTier").InnerText); }
+            else excluded++;
         }
         ProfileVariantXmlHook.EntriesFromXml(document,owners);
         var families=ProfileVariants.Entries.Values.Select(e=>e.sourceName).Distinct().ToList();
-        Check(families.Count==expected,"Every one of "+expected+" housing-bearing G01 families has a concrete minimum–T5 variant route; "+excluded+" exclusions remain untouched");
+        Check(families.Count==expected+retired,"Every one of "+expected+" active housing-bearing G01 families has a concrete minimum–T5 variant route; "+retired+" retired family keeps legacy Def names; "+excluded+" exclusions remain untouched");
         Check(ProfileVariants.Entries.Count==variants,"G01 contains exactly "+variants+" generated-and-original tier forms without fictitious lower tiers");
+        Check(!ProfileVariants.Entries.ContainsKey("LightBall") && ProfileVariants.Entries.ContainsKey("GrechkaWorld_LightBall_T5_Building"),"LightBall remains vanilla while old tier names stay loadable");
         Check(ProfileVariants.Entries.Values.All(entry=>root.SelectSingleNode("ThingDef[defName='"+entry.name+"']")!=null),"Every reported catalogue route has an actual emitted ThingDef");
         Console.WriteLine("Coverage uses the local audited source-class catalogue, not a running game load.");
     }

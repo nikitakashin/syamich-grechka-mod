@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Grechka_QuartzCable.label>подземный кварцевый кабель</Grechka_QuartzCable.label>
+  <Grechka_QuartzCable.description>Соединяет устройства с контроллером Storage под землёй. Не получает урон, не горит и скрыт в обычном режиме. Прокладывается под зданиями и обычными электрокабелями; электричество не передаёт. Сигнальные линии видны при выборе сети или её строительного инструмента.</Grechka_QuartzCable.description>
+  <Grechka_StorageController.label>контроллер Storage</Grechka_StorageController.label>
+  <Grechka_StorageController.description>Точка доступа к кварцевой сигнальной сети. Показывает подключённые устройства и их состояние. Несколько контроллеров одной сети дают одинаковый доступ. Потребляет 400 Вт; сигнальный кабель не заменяет электрическое подключение.</Grechka_StorageController.description>
+  <Grechka_Inscriber.label>электрический высекатель</Grechka_Inscriber.label>
+  <Grechka_Inscriber.description>Печатает кремниевые элементы, кварцевые, серебряные и золотые схемы и собирает процессоры. Все рецепты доступны без прессов. Требует 200 Вт.</Grechka_Inscriber.description>
+  <Grechka_Quartz.label>кварц</Grechka_Quartz.label>
+  <Grechka_Quartz.description>Кристаллы из кварцевых жил. Основа сигнального кабеля и кремниевых деталей.</Grechka_Quartz.description>
+  <Grechka_QuartzDust.label>кварцевая пыль</Grechka_QuartzDust.label>
+  <Grechka_QuartzDust.description>Измельчённый кварц для получения кремния в электрической плавильне.</Grechka_QuartzDust.description>
+  <Grechka_Silicon.label>кремний</Grechka_Silicon.label>
+  <Grechka_Silicon.description>Подготовленный полупроводник для кремниевых подложек.</Grechka_Silicon.description>
+  <Grechka_SiliconSubstrate.label>кремниевая подложка</Grechka_SiliconSubstrate.label>
+  <Grechka_SiliconSubstrate.description>Подложка для печатных схем и кремниевых деталей процессора.</Grechka_SiliconSubstrate.description>
+  <Grechka_PrintedSilicon.label>печатный кремниевый элемент</Grechka_PrintedSilicon.label>
+  <Grechka_PrintedSilicon.description>Общая деталь кварцевого, серебряного и золотого процессоров.</Grechka_PrintedSilicon.description>
+  <Grechka_QuartzCircuit.label>печатная кварцевая схема</Grechka_QuartzCircuit.label>
+  <Grechka_QuartzCircuit.description>Кварцевая схема для сборки процессора.</Grechka_QuartzCircuit.description>
+  <Grechka_SilverCircuit.label>печатная серебряная схема</Grechka_SilverCircuit.label>
+  <Grechka_SilverCircuit.description>Серебряная схема для сборки процессора.</Grechka_SilverCircuit.description>
+  <Grechka_GoldCircuit.label>печатная золотая схема</Grechka_GoldCircuit.label>
+  <Grechka_GoldCircuit.description>Золотая схема для сборки процессора.</Grechka_GoldCircuit.description>
+  <Grechka_QuartzProcessor.label>кварцевый процессор</Grechka_QuartzProcessor.label>
+  <Grechka_QuartzProcessor.description>Процессор кварцевой сигнальной сети.</Grechka_QuartzProcessor.description>
+  <Grechka_SilverProcessor.label>серебряный процессор</Grechka_SilverProcessor.label>
+  <Grechka_SilverProcessor.description>Управляющий процессор устройств Storage.</Grechka_SilverProcessor.description>
+  <Grechka_GoldProcessor.label>золотой процессор</Grechka_GoldProcessor.label>
+  <Grechka_GoldProcessor.description>Вычислительный процессор устройств Storage.</Grechka_GoldProcessor.description>
+  <Grechka_StorageCrafterT3_Building.label>крафтер Storage T3</Grechka_StorageCrafterT3_Building.label>
+  <Grechka_StorageCrafterT3_Building.description>Стационарный исполнитель для четырёх соседних станков. Один цикл за раз, по кругу; снабжение из дисков и возврат продукции автоматически. Скорость исполнителя ×1, квалификация 12, мощность 500 Вт.</Grechka_StorageCrafterT3_Building.description>
+  <Grechka_StorageCrafterT4_Building.label>крафтер Storage T4</Grechka_StorageCrafterT4_Building.label>
+  <Grechka_StorageCrafterT4_Building.description>Стационарный исполнитель для четырёх соседних станков. Один цикл за раз, по кругу; снабжение из дисков и возврат продукции автоматически. Скорость исполнителя ×3, квалификация 16, мощность 2000 Вт.</Grechka_StorageCrafterT4_Building.description>
+  <Grechka_StorageCrafterT5_Building.label>крафтер Storage T5</Grechka_StorageCrafterT5_Building.label>
+  <Grechka_StorageCrafterT5_Building.description>Стационарный исполнитель для четырёх соседних станков. Один цикл за раз, по кругу; снабжение из дисков и возврат продукции автоматически. Скорость исполнителя ×8, квалификация 20, мощность 8000 Вт.</Grechka_StorageCrafterT5_Building.description>
+  <Grechka_CertusQuartz.label>certus-кварц</Grechka_CertusQuartz.label>
+  <Grechka_CertusQuartz.description>Резонансный кристалл из метеорита. Источники роста позволяют выращивать его дома.</Grechka_CertusQuartz.description>
+  <Grechka_MineableCertus.label>certus-порода</Grechka_MineableCertus.label>
+  <Grechka_MineableCertus.description>Кристаллическая порода метеорита.</Grechka_MineableCertus.description>
+  <Grechka_CertusSource.label>источник certus</Grechka_CertusSource.label>
+  <Grechka_CertusSource.description>Переносимый природный источник с пятью стадиями роста. За шесть часов выращивает 4 кристалла, затем ждёт сбора пешкой с работой «Растениеводство». После сбора начинается новый цикл. Каждый запитанный соседний ускоритель добавляет ещё одну базовую скорость, до четырёх ускорителей. Источник можно убрать и перевезти без потери прогресса.</Grechka_CertusSource.description>
+  <Grechka_CertusAccelerator.label>ускоритель certus</Grechka_CertusAccelerator.label>
+  <Grechka_CertusAccelerator.description>Ускоряет рост непосредственно соседних источников по четырём сторонам. Потребляет 250 Вт.</Grechka_CertusAccelerator.description>
+  <Grechka_PackedStorageDevice.label>упакованное устройство Storage</Grechka_PackedStorageDevice.label>
+  <Grechka_DiskRack.label>дисковый блок Storage</Grechka_DiskRack.label>
+  <Grechka_DiskRack.description>Блок для десяти съёмных дисков. Подключается кварцевым кабелем к контроллеру и питается обычной электросетью, 120 Вт. Защищён от огня и повреждений; может быть украден. При переносе диски сохраняются внутри, при разборке извлекаются целыми.</Grechka_DiskRack.description>
+  <Grechka_DataCore_1K_Item.label>ячейка памяти 1K</Grechka_DataCore_1K_Item.label>
+  <Grechka_DataCore_1K_Item.description>Пустая аппаратная ячейка для диска 1K. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</Grechka_DataCore_1K_Item.description>
+  <Grechka_Disk_1K_Item.label>диск хранения 1K</Grechka_Disk_1K_Item.label>
+  <Grechka_Disk_1K_Item.description>Съёмный диск: 63 типа, 1024 байт. Хранит свойства отдельных вещей. Пища портится по окружающей температуре. Уничтожение диска уничтожает его содержимое.</Grechka_Disk_1K_Item.description>
+  <Grechka_FrozenDisk_1K_Item.label>замораживающий диск 1K</Grechka_FrozenDisk_1K_Item.label>
+  <Grechka_FrozenDisk_1K_Item.description>Съёмный диск: 63 типа, 1024 байт. Хранит свойства отдельных вещей. Постоянная заморозка действует даже вне сети и в караване. Уничтожение диска уничтожает его содержимое.</Grechka_FrozenDisk_1K_Item.description>
+  <Grechka_DataCore_4K_Item.label>ячейка памяти 4K</Grechka_DataCore_4K_Item.label>
+  <Grechka_DataCore_4K_Item.description>Пустая аппаратная ячейка для диска 4K. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</Grechka_DataCore_4K_Item.description>
+  <Grechka_Disk_4K_Item.label>диск хранения 4K</Grechka_Disk_4K_Item.label>
+  <Grechka_Disk_4K_Item.description>Съёмный диск: 63 типа, 4096 байт. Хранит свойства отдельных вещей. Пища портится по окружающей температуре. Уничтожение диска уничтожает его содержимое.</Grechka_Disk_4K_Item.description>
+  <Grechka_FrozenDisk_4K_Item.label>замораживающий диск 4K</Grechka_FrozenDisk_4K_Item.label>
+  <Grechka_FrozenDisk_4K_Item.description>Съёмный диск: 63 типа, 4096 байт. Хранит свойства отдельных вещей. Постоянная заморозка действует даже вне сети и в караване. Уничтожение диска уничтожает его содержимое.</Grechka_FrozenDisk_4K_Item.description>
+  <Grechka_DataCore_16K_Item.label>ячейка памяти 16K</Grechka_DataCore_16K_Item.label>
+  <Grechka_DataCore_16K_Item.description>Пустая аппаратная ячейка для диска 16K. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</Grechka_DataCore_16K_Item.description>
+  <Grechka_Disk_16K_Item.label>диск хранения 16K</Grechka_Disk_16K_Item.label>
+  <Grechka_Disk_16K_Item.description>Съёмный диск: 63 типа, 16384 байт. Хранит свойства отдельных вещей. Пища портится по окружающей температуре. Уничтожение диска уничтожает его содержимое.</Grechka_Disk_16K_Item.description>
+  <Grechka_FrozenDisk_16K_Item.label>замораживающий диск 16K</Grechka_FrozenDisk_16K_Item.label>
+  <Grechka_FrozenDisk_16K_Item.description>Съёмный диск: 63 типа, 16384 байт. Хранит свойства отдельных вещей. Постоянная заморозка действует даже вне сети и в караване. Уничтожение диска уничтожает его содержимое.</Grechka_FrozenDisk_16K_Item.description>
+  <Grechka_DataCore_64K_Item.label>ячейка памяти 64K</Grechka_DataCore_64K_Item.label>
+  <Grechka_DataCore_64K_Item.description>Пустая аппаратная ячейка для диска 64K. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</Grechka_DataCore_64K_Item.description>
+  <Grechka_Disk_64K_Item.label>диск хранения 64K</Grechka_Disk_64K_Item.label>
+  <Grechka_Disk_64K_Item.description>Съёмный диск: 63 типа, 65536 байт. Хранит свойства отдельных вещей. Пища портится по окружающей температуре. Уничтожение диска уничтожает его содержимое.</Grechka_Disk_64K_Item.description>
+  <Grechka_FrozenDisk_64K_Item.label>замораживающий диск 64K</Grechka_FrozenDisk_64K_Item.label>
+  <Grechka_FrozenDisk_64K_Item.description>Съёмный диск: 63 типа, 65536 байт. Хранит свойства отдельных вещей. Постоянная заморозка действует даже вне сети и в караване. Уничтожение диска уничтожает его содержимое.</Grechka_FrozenDisk_64K_Item.description>
+  <Grechka_DataCore_256K_Item.label>ячейка памяти 256K</Grechka_DataCore_256K_Item.label>
+  <Grechka_DataCore_256K_Item.description>Пустая аппаратная ячейка для диска 256K. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</Grechka_DataCore_256K_Item.description>
+  <Grechka_Disk_256K_Item.label>диск хранения 256K</Grechka_Disk_256K_Item.label>
+  <Grechka_Disk_256K_Item.description>Съёмный диск: 63 типа, 262144 байт. Хранит свойства отдельных вещей. Пища портится по окружающей температуре. Уничтожение диска уничтожает его содержимое.</Grechka_Disk_256K_Item.description>
+  <Grechka_FrozenDisk_256K_Item.label>замораживающий диск 256K</Grechka_FrozenDisk_256K_Item.label>
+  <Grechka_FrozenDisk_256K_Item.description>Съёмный диск: 63 типа, 262144 байт. Хранит свойства отдельных вещей. Постоянная заморозка действует даже вне сети и в караване. Уничтожение диска уничтожает его содержимое.</Grechka_FrozenDisk_256K_Item.description>
+  <Grechka_DataCore_512K_Item.label>ячейка памяти 512K</Grechka_DataCore_512K_Item.label>
+  <Grechka_DataCore_512K_Item.description>Пустая аппаратная ячейка для диска 512K. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</Grechka_DataCore_512K_Item.description>
+  <Grechka_Disk_512K_Item.label>диск хранения 512K</Grechka_Disk_512K_Item.label>
+  <Grechka_Disk_512K_Item.description>Съёмный диск: 63 типа, 524288 байт. Хранит свойства отдельных вещей. Пища портится по окружающей температуре. Уничтожение диска уничтожает его содержимое.</Grechka_Disk_512K_Item.description>
+  <Grechka_FrozenDisk_512K_Item.label>замораживающий диск 512K</Grechka_FrozenDisk_512K_Item.label>
+  <Grechka_FrozenDisk_512K_Item.description>Съёмный диск: 63 типа, 524288 байт. Хранит свойства отдельных вещей. Постоянная заморозка действует даже вне сети и в караване. Уничтожение диска уничтожает его содержимое.</Grechka_FrozenDisk_512K_Item.description>
+  <Grechka_DataCore_1M_Item.label>ячейка памяти 1M</Grechka_DataCore_1M_Item.label>
+  <Grechka_DataCore_1M_Item.description>Пустая аппаратная ячейка для диска 1M. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</Grechka_DataCore_1M_Item.description>
+  <Grechka_Disk_1M_Item.label>диск хранения 1M</Grechka_Disk_1M_Item.label>
+  <Grechka_Disk_1M_Item.description>Съёмный диск: 63 типа, 1048576 байт. Хранит свойства отдельных вещей. Пища портится по окружающей температуре. Уничтожение диска уничтожает его содержимое.</Grechka_Disk_1M_Item.description>
+  <Grechka_FrozenDisk_1M_Item.label>замораживающий диск 1M</Grechka_FrozenDisk_1M_Item.label>
+  <Grechka_FrozenDisk_1M_Item.description>Съёмный диск: 63 типа, 1048576 байт. Хранит свойства отдельных вещей. Постоянная заморозка действует даже вне сети и в караване. Уничтожение диска уничтожает его содержимое.</Grechka_FrozenDisk_1M_Item.description>
+  <Grechka_DataCore_2M_Item.label>ячейка памяти 2M</Grechka_DataCore_2M_Item.label>
+  <Grechka_DataCore_2M_Item.description>Пустая аппаратная ячейка для диска 2M. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</Grechka_DataCore_2M_Item.description>
+  <Grechka_Disk_2M_Item.label>диск хранения 2M</Grechka_Disk_2M_Item.label>
+  <Grechka_Disk_2M_Item.description>Съёмный диск: 63 типа, 2097152 байт. Хранит свойства отдельных вещей. Пища портится по окружающей температуре. Уничтожение диска уничтожает его содержимое.</Grechka_Disk_2M_Item.description>
+  <Grechka_FrozenDisk_2M_Item.label>замораживающий диск 2M</Grechka_FrozenDisk_2M_Item.label>
+  <Grechka_FrozenDisk_2M_Item.description>Съёмный диск: 63 типа, 2097152 байт. Хранит свойства отдельных вещей. Постоянная заморозка действует даже вне сети и в караване. Уничтожение диска уничтожает его содержимое.</Grechka_FrozenDisk_2M_Item.description>
+  <Grechka_DataCore_4M_Item.label>ячейка памяти 4M</Grechka_DataCore_4M_Item.label>
+  <Grechka_DataCore_4M_Item.description>Пустая аппаратная ячейка для диска 4M. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</Grechka_DataCore_4M_Item.description>
+  <Grechka_Disk_4M_Item.label>диск хранения 4M</Grechka_Disk_4M_Item.label>
+  <Grechka_Disk_4M_Item.description>Съёмный диск: 63 типа, 4194304 байт. Хранит свойства отдельных вещей. Пища портится по окружающей температуре. Уничтожение диска уничтожает его содержимое.</Grechka_Disk_4M_Item.description>
+  <Grechka_FrozenDisk_4M_Item.label>замораживающий диск 4M</Grechka_FrozenDisk_4M_Item.label>
+  <Grechka_FrozenDisk_4M_Item.description>Съёмный диск: 63 типа, 4194304 байт. Хранит свойства отдельных вещей. Постоянная заморозка действует даже вне сети и в караване. Уничтожение диска уничтожает его содержимое.</Grechka_FrozenDisk_4M_Item.description>
+  <Grechka_DataCore_8M_Item.label>ячейка памяти 8M</Grechka_DataCore_8M_Item.label>
+  <Grechka_DataCore_8M_Item.description>Пустая аппаратная ячейка для диска 8M. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</Grechka_DataCore_8M_Item.description>
+  <Grechka_Disk_8M_Item.label>диск хранения 8M</Grechka_Disk_8M_Item.label>
+  <Grechka_Disk_8M_Item.description>Съёмный диск: 63 типа, 8388608 байт. Хранит свойства отдельных вещей. Пища портится по окружающей температуре. Уничтожение диска уничтожает его содержимое.</Grechka_Disk_8M_Item.description>
+  <Grechka_FrozenDisk_8M_Item.label>замораживающий диск 8M</Grechka_FrozenDisk_8M_Item.label>
+  <Grechka_FrozenDisk_8M_Item.description>Съёмный диск: 63 типа, 8388608 байт. Хранит свойства отдельных вещей. Постоянная заморозка действует даже вне сети и в караване. Уничтожение диска уничтожает его содержимое.</Grechka_FrozenDisk_8M_Item.description>
+  <Grechka_DataCore_16M_Item.label>ячейка памяти 16M</Grechka_DataCore_16M_Item.label>
+  <Grechka_DataCore_16M_Item.description>Пустая аппаратная ячейка для диска 16M. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</Grechka_DataCore_16M_Item.description>
+  <Grechka_Disk_16M_Item.label>диск хранения 16M</Grechka_Disk_16M_Item.label>
+  <Grechka_Disk_16M_Item.description>Съёмный диск: 63 типа, 16777216 байт. Хранит свойства отдельных вещей. Пища портится по окружающей температуре. Уничтожение диска уничтожает его содержимое.</Grechka_Disk_16M_Item.description>
+  <Grechka_FrozenDisk_16M_Item.label>замораживающий диск 16M</Grechka_FrozenDisk_16M_Item.label>
+  <Grechka_FrozenDisk_16M_Item.description>Съёмный диск: 63 типа, 16777216 байт. Хранит свойства отдельных вещей. Постоянная заморозка действует даже вне сети и в караване. Уничтожение диска уничтожает его содержимое.</Grechka_FrozenDisk_16M_Item.description>
+  <Grechka_DataCore_64M_Item.label>ячейка памяти 64M</Grechka_DataCore_64M_Item.label>
+  <Grechka_DataCore_64M_Item.description>Пустая аппаратная ячейка для диска 64M. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</Grechka_DataCore_64M_Item.description>
+  <Grechka_Disk_64M_Item.label>диск хранения 64M</Grechka_Disk_64M_Item.label>
+  <Grechka_Disk_64M_Item.description>Съёмный диск: 63 типа, 67108864 байт. Хранит свойства отдельных вещей. Пища портится по окружающей температуре. Уничтожение диска уничтожает его содержимое.</Grechka_Disk_64M_Item.description>
+  <Grechka_FrozenDisk_64M_Item.label>замораживающий диск 64M</Grechka_FrozenDisk_64M_Item.label>
+  <Grechka_FrozenDisk_64M_Item.description>Съёмный диск: 63 типа, 67108864 байт. Хранит свойства отдельных вещей. Постоянная заморозка действует даже вне сети и в караване. Уничтожение диска уничтожает его содержимое.</Grechka_FrozenDisk_64M_Item.description>
+  <Grechka_DataCore_256M_Item.label>ячейка памяти 256M</Grechka_DataCore_256M_Item.label>
+  <Grechka_DataCore_256M_Item.description>Пустая аппаратная ячейка для диска 256M. Не содержит предметов; используется при сборке дисков и ячеек следующего размера.</Grechka_DataCore_256M_Item.description>
+  <Grechka_Disk_256M_Item.label>диск хранения 256M</Grechka_Disk_256M_Item.label>
+  <Grechka_Disk_256M_Item.description>Съёмный диск: 63 типа, 268435456 байт. Хранит свойства отдельных вещей. Пища портится по окружающей температуре. Уничтожение диска уничтожает его содержимое.</Grechka_Disk_256M_Item.description>
+  <Grechka_FrozenDisk_256M_Item.label>замораживающий диск 256M</Grechka_FrozenDisk_256M_Item.label>
+  <Grechka_FrozenDisk_256M_Item.description>Съёмный диск: 63 типа, 268435456 байт. Хранит свойства отдельных вещей. Постоянная заморозка действует даже вне сети и в караване. Уничтожение диска уничтожает его содержимое.</Grechka_FrozenDisk_256M_Item.description>
+  <Grechka_MineableQuartz.label>кварцевая жила</Grechka_MineableQuartz.label>
+  <Grechka_MineableQuartz.description>Каменная порода с кристаллами кварца.</Grechka_MineableQuartz.description>
+</LanguageData>

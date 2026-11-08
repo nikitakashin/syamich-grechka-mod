@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Grechka Patch - Real Ruins and Robots++ fix</name>
+  <author>Grechka World</author>
+  <packageId>grechka.patch.realruinsrobots</packageId>
+  <modVersion>0.1.0</modVersion>
+  <supportedVersions><li>1.7</li></supportedVersions>
+  <description>Fixes a map generation hang when Real Ruins picks zero-combat-power workers from Misc. Robots++ as mechanoid guards. These workers can never fill the encounter’s points budget. The patch skips invalid candidates and lets Real Ruins finish the group using its own budget.
+
+Enable after Harmony, Real Ruins and, when installed, Misc. Robots++. Works as a standalone patch.
+
+Исправляет зависание на экране «Генерация карты», когда Real Ruins набирает охрану из рабочих роботов Misc. Robots++ с нулевой боевой силой. Патч исключает таких роботов из выбора охраны и сохраняет штатный расчёт её численности.</description>
+  <modDependencies>
+    <li><packageId>brrainz.harmony</packageId><displayName>Harmony</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl></li>
+    <li><packageId>woolstrand.realruins</packageId><displayName>Real Ruins</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/1552146295</steamWorkshopUrl></li>
+  </modDependencies>
+  <loadAfter><li>brrainz.harmony</li><li>woolstrand.realruins</li><li>alaestor.miscrobots.plusplus</li></loadAfter>
+</ModMetaData>

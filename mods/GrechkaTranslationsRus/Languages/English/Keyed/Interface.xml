@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaTranslationsRus.CutPlants.Name>Cut Plants Before Building</GrechkaTranslationsRus.CutPlants.Name>
+  <GrechkaTranslationsRus.Inventory.Sample>Sample setting</GrechkaTranslationsRus.Inventory.Sample>
+  <GrechkaTranslationsRus.Mood.GenderTip>This adds an icon to the mood bar items that shows the colonist's gender.</GrechkaTranslationsRus.Mood.GenderTip>
+  <GrechkaTranslationsRus.Mood.Milliseconds>ms</GrechkaTranslationsRus.Mood.Milliseconds>
+  <GrechkaTranslationsRus.Mood.ShowAge>Show Age (Requires Alternate Label)</GrechkaTranslationsRus.Mood.ShowAge>
+  <GrechkaTranslationsRus.Mood.ShowAgeTip>This will show the colonist's age in thier name label.</GrechkaTranslationsRus.Mood.ShowAgeTip>
+</LanguageData>

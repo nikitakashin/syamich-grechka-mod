@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <EnableNETAnalyzers>false</EnableNETAnalyzers>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../../mods/GrechkaQuests/Source/Domain.cs" Link="Domain.cs" />
+    <Compile Include="../../../mods/GrechkaQuests/Source/QuestPackText.cs" Link="QuestPackText.cs" />
+  </ItemGroup>
+</Project>

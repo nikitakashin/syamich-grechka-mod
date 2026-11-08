@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <RecipeDef>
     <defName>Grechka_MakeSolarCellT3</defName>
@@ -43,7 +43,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Grechka_SolarCellT3_Item>4</Grechka_SolarCellT3_Item>
+      <Grechka_SolarCellT3_Item>8</Grechka_SolarCellT3_Item>
     </products>
     <workSkill>Crafting</workSkill>
     <skillRequirements>
@@ -53,7 +53,7 @@
   <RecipeDef>
     <defName>Grechka_MakeSolarS3</defName>
     <label>собрать механитную солнечную панель</label>
-    <description>Объединить целые снятые панели предыдущей ступени с корпусами, компонентами и фотоэлементами T3. Результат выпускается упакованным для установки.</description>
+    <description>Переоснастить одно целое снятое устройство предыдущей ступени. Установленный корпус уже учтён; требуются только новые детали и фотоэлементы. Результат выпускается упакованным для установки.</description>
     <jobString>Собирает механитную солнечную панель.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>ConstructMetal</effectWorking>
@@ -68,14 +68,6 @@
             <li>Grechka_PackedSolarS2_Item</li>
           </thingDefs>
         </filter>
-        <count>3</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Grechka_HousingT3_Item</li>
-          </thingDefs>
-        </filter>
         <count>1</count>
       </li>
       <li>
@@ -84,7 +76,7 @@
             <li>Grechka_ComponentT3_Item</li>
           </thingDefs>
         </filter>
-        <count>8</count>
+        <count>2</count>
       </li>
       <li>
         <filter>
@@ -94,14 +86,31 @@
         </filter>
         <count>16</count>
       </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Grechka_Mechanites</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
         <li>Grechka_SolarS2_Building</li>
         <li>Grechka_PackedSolarS2_Item</li>
-        <li>Grechka_HousingT3_Item</li>
         <li>Grechka_ComponentT3_Item</li>
         <li>Grechka_SolarCellT3_Item</li>
+        <li>Plasteel</li>
+        <li>Grechka_Mechanites</li>
       </thingDefs>
     </fixedIngredientFilter>
     <products>
@@ -115,7 +124,7 @@
   <RecipeDef>
     <defName>Grechka_MakeSolarS4</defName>
     <label>собрать механитную солнечную матрицу</label>
-    <description>Объединить целые снятые панели предыдущей ступени с корпусами, компонентами и фотоэлементами T3. Результат выпускается упакованным для установки.</description>
+    <description>Переоснастить одно целое снятое устройство предыдущей ступени. Установленный корпус уже учтён; требуются только новые детали и фотоэлементы. Результат выпускается упакованным для установки.</description>
     <jobString>Собирает механитную солнечную панель.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <effectWorking>ConstructMetal</effectWorking>
@@ -130,15 +139,7 @@
             <li>Grechka_PackedSolarS3_Item</li>
           </thingDefs>
         </filter>
-        <count>6</count>
-      </li>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>Grechka_HousingT3_Item</li>
-          </thingDefs>
-        </filter>
-        <count>2</count>
+        <count>1</count>
       </li>
       <li>
         <filter>
@@ -146,7 +147,7 @@
             <li>Grechka_ComponentT3_Item</li>
           </thingDefs>
         </filter>
-        <count>16</count>
+        <count>2</count>
       </li>
       <li>
         <filter>
@@ -154,7 +155,7 @@
             <li>Grechka_SolarCellT3_Item</li>
           </thingDefs>
         </filter>
-        <count>64</count>
+        <count>24</count>
       </li>
       <li>
         <filter>
@@ -162,14 +163,13 @@
             <li>Plasteel</li>
           </thingDefs>
         </filter>
-        <count>100</count>
+        <count>40</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
         <li>Grechka_SolarS3_Building</li>
         <li>Grechka_PackedSolarS3_Item</li>
-        <li>Grechka_HousingT3_Item</li>
         <li>Grechka_ComponentT3_Item</li>
         <li>Grechka_SolarCellT3_Item</li>
         <li>Plasteel</li>

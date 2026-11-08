@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaPharmacy_TrainerInterest_Item.label>нейротренер интереса</GrechkaPharmacy_TrainerInterest_Item.label>
+  <GrechkaPharmacy_TrainerInterest_Item.description>Одноразовый нейротренер: навсегда даёт одинарный огонёк интереса одному случайному доступному навыку пешки без интереса. Уровень и опыт навыка не меняются. Не затрагивает антисклонность, имеющиеся огоньки и недоступные навыки. Если подходящего навыка нет, применение блокируется и тренер сохраняется.</GrechkaPharmacy_TrainerInterest_Item.description>
+  <GrechkaPharmacy_TrainerInterest_Item.comps.1.useLabel>Использовать {0_label}</GrechkaPharmacy_TrainerInterest_Item.comps.1.useLabel>
+  <GrechkaPharmacy_TrainerPassion_Item.label>нейротренер страсти</GrechkaPharmacy_TrainerPassion_Item.label>
+  <GrechkaPharmacy_TrainerPassion_Item.description>Одноразовый нейротренер: навсегда даёт двойной огонёк страсти одному случайному доступному навыку пешки без интереса. Уровень и опыт навыка не меняются. Не затрагивает антисклонность, имеющиеся огоньки и недоступные навыки. Если подходящего навыка нет, применение блокируется и тренер сохраняется.</GrechkaPharmacy_TrainerPassion_Item.description>
+  <GrechkaPharmacy_TrainerPassion_Item.comps.1.useLabel>Использовать {0_label}</GrechkaPharmacy_TrainerPassion_Item.comps.1.useLabel>
+  <GrechkaPharmacy_TrainerStrong_Item.label>нейротренер сильной страсти</GrechkaPharmacy_TrainerStrong_Item.label>
+  <GrechkaPharmacy_TrainerStrong_Item.description>Одноразовый нейротренер: навсегда даёт тройной огонёк сильной страсти одному случайному доступному навыку пешки без интереса. Уровень и опыт навыка не меняются. Не затрагивает антисклонность, имеющиеся огоньки и недоступные навыки. Если подходящего навыка нет, применение блокируется и тренер сохраняется.</GrechkaPharmacy_TrainerStrong_Item.description>
+  <GrechkaPharmacy_TrainerStrong_Item.comps.1.useLabel>Использовать {0_label}</GrechkaPharmacy_TrainerStrong_Item.comps.1.useLabel>
+  <GrechkaPharmacy_TrainerTalent_Item.label>нейротренер таланта</GrechkaPharmacy_TrainerTalent_Item.label>
+  <GrechkaPharmacy_TrainerTalent_Item.description>Одноразовый нейротренер: навсегда даёт розовый огонёк таланта одному случайному доступному навыку пешки без интереса. Уровень и опыт навыка не меняются. Не затрагивает антисклонность, имеющиеся огоньки и недоступные навыки. Если подходящего навыка нет, применение блокируется и тренер сохраняется.</GrechkaPharmacy_TrainerTalent_Item.description>
+  <GrechkaPharmacy_TrainerTalent_Item.comps.1.useLabel>Использовать {0_label}</GrechkaPharmacy_TrainerTalent_Item.comps.1.useLabel>
+  <GrechkaPharmacy_TrainerCalling_Item.label>нейротренер призвания</GrechkaPharmacy_TrainerCalling_Item.label>
+  <GrechkaPharmacy_TrainerCalling_Item.description>Одноразовый нейротренер: навсегда даёт фиолетовый огонёк призвания одному случайному доступному навыку пешки без интереса. Уровень и опыт навыка не меняются. Не затрагивает антисклонность, имеющиеся огоньки и недоступные навыки. Если подходящего навыка нет, применение блокируется и тренер сохраняется.</GrechkaPharmacy_TrainerCalling_Item.description>
+  <GrechkaPharmacy_TrainerCalling_Item.comps.1.useLabel>Использовать {0_label}</GrechkaPharmacy_TrainerCalling_Item.comps.1.useLabel>
+</LanguageData>

@@ -6,15 +6,17 @@
   <supportedVersions>
     <li>1.7</li>
   </supportedVersions>
-  <description>Броня T3–T5, криовинтовка, самостоятельные боевые дроны, человеческая бионика 300/600%, совместимые чипы и рейд чипированных нудистов.</description>
+  <description>Броня T3–T5, одиночная винтовка T2, гранатомёт прямого огня T4, криовинтовка T5, самостоятельные боевые дроны, человеческая бионика 300/600%, совместимые чипы и рейд чипированных нудистов.</description>
   <modDependencies>
     <li>
       <packageId>brrainz.harmony</packageId>
       <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
     </li>
     <li>
       <packageId>grechka.industry</packageId>
       <displayName>Grechka Industry</displayName>
+      <downloadUrl>https://github.com/nikitakashin/syamich-grechka-mod</downloadUrl>
     </li>
   </modDependencies>
   <loadAfter>

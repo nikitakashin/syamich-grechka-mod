@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Grechka_MakeSolarStorageT3.label>собрать: кварцевая панель</Grechka_MakeSolarStorageT3.label>
+  <Grechka_MakeSolarStorageT3.description>Переоснастить одно целое снятое устройство предыдущей ступени. Установленный корпус уже учтён; требуются только новые детали и фотоэлементы. Результат выпускается упакованным для установки.</Grechka_MakeSolarStorageT3.description>
+  <Grechka_MakeSolarStorageT3.jobString>собрать: кварцевая панель.</Grechka_MakeSolarStorageT3.jobString>
+  <Grechka_MakeSolarStorageT4.label>собрать: резонансная панель</Grechka_MakeSolarStorageT4.label>
+  <Grechka_MakeSolarStorageT4.description>Переоснастить одно целое снятое устройство предыдущей ступени. Установленный корпус уже учтён; требуются только новые детали и фотоэлементы. Результат выпускается упакованным для установки.</Grechka_MakeSolarStorageT4.description>
+  <Grechka_MakeSolarStorageT4.jobString>собрать: резонансная панель.</Grechka_MakeSolarStorageT4.jobString>
+  <Grechka_MakeSolarStorageT5.label>собрать: сетевая солнечная панель</Grechka_MakeSolarStorageT5.label>
+  <Grechka_MakeSolarStorageT5.description>Переоснастить одно целое снятое устройство предыдущей ступени. Установленный корпус уже учтён; требуются только новые детали и фотоэлементы. Результат выпускается упакованным для установки.</Grechka_MakeSolarStorageT5.description>
+  <Grechka_MakeSolarStorageT5.jobString>собрать: сетевая солнечная панель.</Grechka_MakeSolarStorageT5.jobString>
+  <Grechka_MakeSolarEltexT3.label>собрать: эльтекс-резонатор</Grechka_MakeSolarEltexT3.label>
+  <Grechka_MakeSolarEltexT3.description>Переоснастить одно целое снятое устройство предыдущей ступени. Установленный корпус уже учтён; требуются только новые детали и фотоэлементы. Результат выпускается упакованным для установки.</Grechka_MakeSolarEltexT3.description>
+  <Grechka_MakeSolarEltexT3.jobString>собрать: эльтекс-резонатор.</Grechka_MakeSolarEltexT3.jobString>
+  <Grechka_MakeSolarEltexT4.label>собрать: пси-солнечная панель</Grechka_MakeSolarEltexT4.label>
+  <Grechka_MakeSolarEltexT4.description>Переоснастить одно целое снятое устройство предыдущей ступени. Установленный корпус уже учтён; требуются только новые детали и фотоэлементы. Результат выпускается упакованным для установки.</Grechka_MakeSolarEltexT4.description>
+  <Grechka_MakeSolarEltexT4.jobString>собрать: пси-солнечная панель.</Grechka_MakeSolarEltexT4.jobString>
+  <Grechka_MakeSolarEltexT5.label>собрать: пси-солнечная матрица</Grechka_MakeSolarEltexT5.label>
+  <Grechka_MakeSolarEltexT5.description>Переоснастить одно целое снятое устройство предыдущей ступени. Установленный корпус уже учтён; требуются только новые детали и фотоэлементы. Результат выпускается упакованным для установки.</Grechka_MakeSolarEltexT5.description>
+  <Grechka_MakeSolarEltexT5.jobString>собрать: пси-солнечная матрица.</Grechka_MakeSolarEltexT5.jobString>
+  <Grechka_MakeSolarFortressT2.label>собрать: бронированная панель</Grechka_MakeSolarFortressT2.label>
+  <Grechka_MakeSolarFortressT2.description>Переоснастить одно целое снятое устройство предыдущей ступени. Установленный корпус уже учтён; требуются только новые детали и фотоэлементы. Результат выпускается упакованным для установки.</Grechka_MakeSolarFortressT2.description>
+  <Grechka_MakeSolarFortressT2.jobString>собрать: бронированная панель.</Grechka_MakeSolarFortressT2.jobString>
+  <Grechka_MakeSolarFortressT3.label>собрать: крепостная панель</Grechka_MakeSolarFortressT3.label>
+  <Grechka_MakeSolarFortressT3.description>Переоснастить одно целое снятое устройство предыдущей ступени. Установленный корпус уже учтён; требуются только новые детали и фотоэлементы. Результат выпускается упакованным для установки.</Grechka_MakeSolarFortressT3.description>
+  <Grechka_MakeSolarFortressT3.jobString>собрать: крепостная панель.</Grechka_MakeSolarFortressT3.jobString>
+  <Grechka_MakeSolarFortressT4.label>собрать: архо-крепостная панель</Grechka_MakeSolarFortressT4.label>
+  <Grechka_MakeSolarFortressT4.description>Переоснастить одно целое снятое устройство предыдущей ступени. Установленный корпус уже учтён; требуются только новые детали и фотоэлементы. Результат выпускается упакованным для установки.</Grechka_MakeSolarFortressT4.description>
+  <Grechka_MakeSolarFortressT4.jobString>собрать: архо-крепостная панель.</Grechka_MakeSolarFortressT4.jobString>
+  <Grechka_MakeSolarFortressT5.label>собрать: гречневая крепостная панель</Grechka_MakeSolarFortressT5.label>
+  <Grechka_MakeSolarFortressT5.description>Переоснастить одно целое снятое устройство предыдущей ступени. Установленный корпус уже учтён; требуются только новые детали и фотоэлементы. Результат выпускается упакованным для установки.</Grechka_MakeSolarFortressT5.description>
+  <Grechka_MakeSolarFortressT5.jobString>собрать: гречневая крепостная панель.</Grechka_MakeSolarFortressT5.jobString>
+  <Grechka_MakeSolarBiotechT3.label>собрать: самонаводящаяся панель</Grechka_MakeSolarBiotechT3.label>
+  <Grechka_MakeSolarBiotechT3.description>Переоснастить одно целое снятое устройство предыдущей ступени. Установленный корпус уже учтён; требуются только новые детали и фотоэлементы. Результат выпускается упакованным для установки.</Grechka_MakeSolarBiotechT3.description>
+  <Grechka_MakeSolarBiotechT3.jobString>собрать: самонаводящаяся панель.</Grechka_MakeSolarBiotechT3.jobString>
+  <Grechka_MakeSolarBiotechT4.label>собрать: нейросолнечная панель</Grechka_MakeSolarBiotechT4.label>
+  <Grechka_MakeSolarBiotechT4.description>Переоснастить одно целое снятое устройство предыдущей ступени. Установленный корпус уже учтён; требуются только новые детали и фотоэлементы. Результат выпускается упакованным для установки.</Grechka_MakeSolarBiotechT4.description>
+  <Grechka_MakeSolarBiotechT4.jobString>собрать: нейросолнечная панель.</Grechka_MakeSolarBiotechT4.jobString>
+  <Grechka_MakeSolarBiotechT5.label>собрать: роевая панель</Grechka_MakeSolarBiotechT5.label>
+  <Grechka_MakeSolarBiotechT5.description>Переоснастить одно целое снятое устройство предыдущей ступени. Установленный корпус уже учтён; требуются только новые детали и фотоэлементы. Результат выпускается упакованным для установки.</Grechka_MakeSolarBiotechT5.description>
+  <Grechka_MakeSolarBiotechT5.jobString>собрать: роевая панель.</Grechka_MakeSolarBiotechT5.jobString>
+  <Grechka_MakeSolarCellT2.label>собрать улучшенные фотоэлементы ×8</Grechka_MakeSolarCellT2.label>
+  <Grechka_MakeSolarCellT2.description>Собрать восемь фотоэлементов второго тира из компонентов и драгоценных металлов.</Grechka_MakeSolarCellT2.description>
+  <Grechka_MakeSolarCellT2.jobString>Собирает фотоэлементы.</Grechka_MakeSolarCellT2.jobString>
+  <Grechka_MakeSolarS1.label>собрать усиленную солнечную панель</Grechka_MakeSolarS1.label>
+  <Grechka_MakeSolarS1.description>Переоснастить целую снятую ванильную панель фотоэлементами и корпусом T2. Результат выпускается упакованным для установки на карте.</Grechka_MakeSolarS1.description>
+  <Grechka_MakeSolarS1.jobString>Собирает усиленную солнечную панель.</Grechka_MakeSolarS1.jobString>
+  <Grechka_MakeSolarS2.label>собрать многослойную солнечную панель</Grechka_MakeSolarS2.label>
+  <Grechka_MakeSolarS2.description>Переоснастить одно целое снятое устройство предыдущей ступени. Установленный корпус уже учтён; требуются только новые детали и фотоэлементы. Результат выпускается упакованным для установки.</Grechka_MakeSolarS2.description>
+  <Grechka_MakeSolarS2.jobString>Собирает многослойную солнечную панель.</Grechka_MakeSolarS2.jobString>
+  <Grechka_MakeComponentT3.label>собрать меха-компонент</Grechka_MakeComponentT3.label>
+  <Grechka_MakeComponentT3.description>Собрать компонент T3 из продвинутых компонентов, пластали, урана и механитов.</Grechka_MakeComponentT3.description>
+  <Grechka_MakeComponentT3.jobString>Собирает меха-компонент.</Grechka_MakeComponentT3.jobString>
+  <Grechka_MakeHousingT3.label>собрать меха-корпус</Grechka_MakeHousingT3.label>
+  <Grechka_MakeHousingT3.description>Собрать корпус T3 из предыдущего корпуса и механитных узлов.</Grechka_MakeHousingT3.description>
+  <Grechka_MakeHousingT3.jobString>Собирает меха-корпус.</Grechka_MakeHousingT3.jobString>
+  <Grechka_UpgradeAssemblyBenchT3.label>улучшить сборочный верстак до T3</Grechka_UpgradeAssemblyBenchT3.label>
+  <Grechka_UpgradeAssemblyBenchT3.description>Улучшить установленный T2 верстак. Его корпус T2 используется повторно, общая скидка производственного рецепта на улучшение не применяется.</Grechka_UpgradeAssemblyBenchT3.description>
+  <Grechka_UpgradeAssemblyBenchT3.jobString>Улучшает сборочный верстак до T3.</Grechka_UpgradeAssemblyBenchT3.jobString>
+  <Grechka_MakeArchoSubstrate.label>синтезировать архо-субстрат</Grechka_MakeArchoSubstrate.label>
+  <Grechka_MakeArchoSubstrate.description>синтезировать архо-субстрат. Все рецепты доступны без исследований.</Grechka_MakeArchoSubstrate.description>
+  <Grechka_MakeArchoSubstrate.jobString>синтезировать архо-субстрат.</Grechka_MakeArchoSubstrate.jobString>
+  <Grechka_MakeGrechkaConcentrate.label>подготовить гречневый концентрат</Grechka_MakeGrechkaConcentrate.label>
+  <Grechka_MakeGrechkaConcentrate.description>подготовить гречневый концентрат. Все рецепты доступны без исследований.</Grechka_MakeGrechkaConcentrate.description>
+  <Grechka_MakeGrechkaConcentrate.jobString>подготовить гречневый концентрат.</Grechka_MakeGrechkaConcentrate.jobString>
+  <Grechka_MakeComponentT4.label>собрать компонент T4</Grechka_MakeComponentT4.label>
+  <Grechka_MakeComponentT4.description>собрать компонент T4. Все рецепты доступны без исследований.</Grechka_MakeComponentT4.description>
+  <Grechka_MakeComponentT4.jobString>собрать компонент T4.</Grechka_MakeComponentT4.jobString>
+  <Grechka_MakeHousingT4.label>собрать корпус T4</Grechka_MakeHousingT4.label>
+  <Grechka_MakeHousingT4.description>собрать корпус T4. Все рецепты доступны без исследований.</Grechka_MakeHousingT4.description>
+  <Grechka_MakeHousingT4.jobString>собрать корпус T4.</Grechka_MakeHousingT4.jobString>
+  <Grechka_MakeSolarCellT4.label>собрать фотоэлемент T4</Grechka_MakeSolarCellT4.label>
+  <Grechka_MakeSolarCellT4.description>собрать фотоэлемент T4. Все рецепты доступны без исследований.</Grechka_MakeSolarCellT4.description>
+  <Grechka_MakeSolarCellT4.jobString>собрать фотоэлемент T4.</Grechka_MakeSolarCellT4.jobString>
+  <Grechka_UpgradeAssemblyBenchT4.label>улучшить сборочный верстак до T4</Grechka_UpgradeAssemblyBenchT4.label>
+  <Grechka_UpgradeAssemblyBenchT4.description>улучшить сборочный верстак до T4. Все рецепты доступны без исследований.</Grechka_UpgradeAssemblyBenchT4.description>
+  <Grechka_UpgradeAssemblyBenchT4.jobString>улучшить сборочный верстак до T4.</Grechka_UpgradeAssemblyBenchT4.jobString>
+  <Grechka_MakeComponentT5.label>собрать компонент T5</Grechka_MakeComponentT5.label>
+  <Grechka_MakeComponentT5.description>собрать компонент T5. Все рецепты доступны без исследований.</Grechka_MakeComponentT5.description>
+  <Grechka_MakeComponentT5.jobString>собрать компонент T5.</Grechka_MakeComponentT5.jobString>
+  <Grechka_MakeHousingT5.label>собрать корпус T5</Grechka_MakeHousingT5.label>
+  <Grechka_MakeHousingT5.description>собрать корпус T5. Все рецепты доступны без исследований.</Grechka_MakeHousingT5.description>
+  <Grechka_MakeHousingT5.jobString>собрать корпус T5.</Grechka_MakeHousingT5.jobString>
+  <Grechka_MakeSolarCellT5.label>собрать фотоэлемент T5</Grechka_MakeSolarCellT5.label>
+  <Grechka_MakeSolarCellT5.description>собрать фотоэлемент T5. Все рецепты доступны без исследований.</Grechka_MakeSolarCellT5.description>
+  <Grechka_MakeSolarCellT5.jobString>собрать фотоэлемент T5.</Grechka_MakeSolarCellT5.jobString>
+  <Grechka_UpgradeAssemblyBenchT5.label>улучшить сборочный верстак до T5</Grechka_UpgradeAssemblyBenchT5.label>
+  <Grechka_UpgradeAssemblyBenchT5.description>улучшить сборочный верстак до T5. Все рецепты доступны без исследований.</Grechka_UpgradeAssemblyBenchT5.description>
+  <Grechka_UpgradeAssemblyBenchT5.jobString>улучшить сборочный верстак до T5.</Grechka_UpgradeAssemblyBenchT5.jobString>
+  <Grechka_MakeComponentByHandT1.label>собрать компонент вручную</Grechka_MakeComponentByHandT1.label>
+  <Grechka_MakeComponentByHandT1.description>Медленно собрать один обычный компонент из 12 стали на ремесленном месте.</Grechka_MakeComponentByHandT1.description>
+  <Grechka_MakeComponentByHandT1.jobString>Собирает компонент вручную.</Grechka_MakeComponentByHandT1.jobString>
+  <Grechka_MakeHousingT1.label>собрать базовый корпус</Grechka_MakeHousingT1.label>
+  <Grechka_MakeHousingT1.description>Собрать светло-серый корпус T1 из стали и обычных компонентов.</Grechka_MakeHousingT1.description>
+  <Grechka_MakeHousingT1.jobString>Собирает базовый корпус.</Grechka_MakeHousingT1.jobString>
+  <Grechka_MakeComponentBatchT1.label>собрать компоненты серией ×5</Grechka_MakeComponentBatchT1.label>
+  <Grechka_MakeComponentBatchT1.description>На базовом сборочном верстаке превратить 60 стали в пять обычных компонентов.</Grechka_MakeComponentBatchT1.description>
+  <Grechka_MakeComponentBatchT1.jobString>Собирает серию компонентов.</Grechka_MakeComponentBatchT1.jobString>
+  <Grechka_MakeHousingT2.label>собрать продвинутый корпус</Grechka_MakeHousingT2.label>
+  <Grechka_MakeHousingT2.description>Собрать тёмно-серый корпус T2 на базовом сборочном верстаке.</Grechka_MakeHousingT2.description>
+  <Grechka_MakeHousingT2.jobString>Собирает продвинутый корпус.</Grechka_MakeHousingT2.jobString>
+  <Grechka_UpgradeAssemblyBenchT2.label>улучшить сборочный верстак до T2</Grechka_UpgradeAssemblyBenchT2.label>
+  <Grechka_UpgradeAssemblyBenchT2.description>Улучшить этот верстак на месте. Уже установленный корпус T1 используется повторно; нужны материалы корпуса T2 и остальная стоимость нового верстака.</Grechka_UpgradeAssemblyBenchT2.description>
+  <Grechka_UpgradeAssemblyBenchT2.jobString>Улучшает сборочный верстак до T2.</Grechka_UpgradeAssemblyBenchT2.jobString>
+  <Grechka_UpgradeMatterRecyclerT5.label>улучшить установку материи до T5</Grechka_UpgradeMatterRecyclerT5.label>
+  <Grechka_UpgradeMatterRecyclerT5.description>улучшить установку материи до T5. Все рецепты доступны без исследований.</Grechka_UpgradeMatterRecyclerT5.description>
+  <Grechka_UpgradeMatterRecyclerT5.jobString>улучшить установку материи до T5.</Grechka_UpgradeMatterRecyclerT5.jobString>
+  <Grechka_UpgradeMatterSynthesizerT5.label>улучшить установку материи до T5</Grechka_UpgradeMatterSynthesizerT5.label>
+  <Grechka_UpgradeMatterSynthesizerT5.description>улучшить установку материи до T5. Все рецепты доступны без исследований.</Grechka_UpgradeMatterSynthesizerT5.description>
+  <Grechka_UpgradeMatterSynthesizerT5.jobString>улучшить установку материи до T5.</Grechka_UpgradeMatterSynthesizerT5.jobString>
+  <Grechka_MakeSolarS5.label>собрать солнечную панель S5</Grechka_MakeSolarS5.label>
+  <Grechka_MakeSolarS5.description>Переоснастить одно целое снятое устройство предыдущей ступени. Установленный корпус уже учтён; требуются только новые детали и фотоэлементы. Результат выпускается упакованным для установки.</Grechka_MakeSolarS5.description>
+  <Grechka_MakeSolarS5.jobString>собрать солнечную панель S5.</Grechka_MakeSolarS5.jobString>
+  <Grechka_MakeSolarS6.label>собрать солнечную панель S6</Grechka_MakeSolarS6.label>
+  <Grechka_MakeSolarS6.description>Переоснастить одно целое снятое устройство предыдущей ступени. Установленный корпус уже учтён; требуются только новые детали и фотоэлементы. Результат выпускается упакованным для установки.</Grechka_MakeSolarS6.description>
+  <Grechka_MakeSolarS6.jobString>собрать солнечную панель S6.</Grechka_MakeSolarS6.jobString>
+  <Grechka_MakeSolarCellT3.label>собрать механитные фотоэлементы ×4</Grechka_MakeSolarCellT3.label>
+  <Grechka_MakeSolarCellT3.description>Усилить предыдущие фотоэлементы механитами и меха-компонентом.</Grechka_MakeSolarCellT3.description>
+  <Grechka_MakeSolarCellT3.jobString>Собирает фотоэлементы.</Grechka_MakeSolarCellT3.jobString>
+  <Grechka_MakeSolarS3.label>собрать механитную солнечную панель</Grechka_MakeSolarS3.label>
+  <Grechka_MakeSolarS3.description>Переоснастить одно целое снятое устройство предыдущей ступени. Установленный корпус уже учтён; требуются только новые детали и фотоэлементы. Результат выпускается упакованным для установки.</Grechka_MakeSolarS3.description>
+  <Grechka_MakeSolarS3.jobString>Собирает механитную солнечную панель.</Grechka_MakeSolarS3.jobString>
+  <Grechka_MakeSolarS4.label>собрать механитную солнечную матрицу</Grechka_MakeSolarS4.label>
+  <Grechka_MakeSolarS4.description>Переоснастить одно целое снятое устройство предыдущей ступени. Установленный корпус уже учтён; требуются только новые детали и фотоэлементы. Результат выпускается упакованным для установки.</Grechka_MakeSolarS4.description>
+  <Grechka_MakeSolarS4.jobString>Собирает механитную солнечную панель.</Grechka_MakeSolarS4.jobString>
+</LanguageData>

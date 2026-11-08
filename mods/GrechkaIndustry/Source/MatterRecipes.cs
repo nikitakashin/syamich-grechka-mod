@@ -16,7 +16,7 @@ namespace Grechka.Industry
         public float synthesisEnergyPerMatter = 200000;
         public float synthesisWorkPerMatter = 120;
         public bool Valid => float.IsFinite(matterPerValue) && matterPerValue > 0
-            && float.IsFinite(recycleEfficiency) && recycleEfficiency > 0 && recycleEfficiency <= .125f
+            && float.IsFinite(recycleEfficiency) && recycleEfficiency > 0 && recycleEfficiency < .0625f
             && float.IsFinite(recycleEnergyPerValue) && recycleEnergyPerValue > 0
             && float.IsFinite(recycleWorkPerValue) && recycleWorkPerValue > 0
             && float.IsFinite(synthesisEnergyPerMatter) && synthesisEnergyPerMatter > 0
@@ -24,7 +24,7 @@ namespace Grechka.Industry
         public override IEnumerable<string> ConfigErrors()
         {
             foreach (string error in base.ConfigErrors()) yield return error;
-            if (!Valid) yield return "Matter constants must be finite and positive; recycleEfficiency must not exceed 0.125 with T5 bonuses.";
+            if (!Valid) yield return IndustryText.Get("GrechkaIndustry_MatterConstants", "Matter constants must be finite and positive; recycleEfficiency must remain below 0.0625 with T5 bonuses.");
         }
     }
     public sealed class MatterRecipeProperties : DefModExtension
@@ -53,7 +53,8 @@ namespace Grechka.Industry
             MatterPolicyDef policy = DefDatabase<MatterPolicyDef>.GetNamedSilentFail("Grechka_MatterPolicy");
             ThingDef matter = DefDatabase<ThingDef>.GetNamedSilentFail("Grechka_Matter");
             if (policy == null || matter == null) return;
-            if (!policy.Valid) { Log.Error("[Grechka Industry] Некорректные константы материи; рецепты не созданы."); return; }
+            if (!policy.Valid) { Log.Error(IndustryText.Get("GrechkaIndustry_1d7f4fb22aa0", "[Grechka Industry] Invalid matter constants. Recipes were not created.")); return; }
+            MatterCraftValue.Rebuild();
             foreach (ThingDef def in DefDatabase<ThingDef>.AllDefsListForReading.OrderBy(d => d.defName).ToArray())
             {
                 if (hashLimitReported) break;
@@ -71,7 +72,7 @@ namespace Grechka.Industry
                     foreach (ThingDef stuff in materials)
                         AddSynthesis(def, stuff, matter, def.GetStatValueAbstract(StatDefOf.MarketValue, stuff), policy);
                 }
-                catch (Exception e) { Log.Warning("[Grechka Industry] Материя: пропущен " + def.defName + ": " + e.Message); }
+                catch (Exception e) { Log.Warning(IndustryText.Get("GrechkaIndustry_2493ed5a52c6", "[Grechka Industry] Matter skipped ") + def.defName + ": " + e.Message); }
             }
         }
         private static bool Supported(ThingDef def)
@@ -93,7 +94,7 @@ namespace Grechka.Industry
             ingredient.SetBaseCount(count * (input.smallVolume ? .1f : 1f));
             var recipe = new RecipeDef
             {
-                defName = name, label = label, description = label + ". Результат новый, обычного качества; содержимое контейнеров и уникальное состояние не копируются.",
+                defName = name, label = label, description = label + IndustryText.Get("GrechkaIndustry_da283b60afc2", ". Produces a new item of normal quality. Container contents and unique state are not copied."),
                 jobString = label, workAmount = work, workSkill = SkillDefOf.Crafting,
                 workSpeedStat = DefDatabase<StatDef>.GetNamed("Grechka_MatterFixedWorkSpeed"),
                 unfinishedThingDef = DefDatabase<ThingDef>.GetNamedSilentFail("UnfinishedComponent"), workTableSpeedStat = DefDatabase<StatDef>.GetNamed("Grechka_MatterFixedWorkSpeed"),
@@ -102,6 +103,20 @@ namespace Grechka.Industry
                 recipeUsers = new List<ThingDef> { DefDatabase<ThingDef>.GetNamed("Grechka_Matter" + (recycle ? "Recycler" : "Synthesizer") + "T" + tier + "_Building") },
                 modExtensions = new List<DefModExtension>()
             };
+            // Optional Grechka World tree. Generated matter recipes follow the same
+            // research as their machines and products; synthesis cannot skip a locked tier.
+            ResearchProjectDef research = DefDatabase<ResearchProjectDef>.GetNamedSilentFail("Grechka_Research_MatterT" + tier);
+            if (research != null)
+            {
+                recipe.researchPrerequisites = new List<ResearchProjectDef> { research };
+                if (!recycle)
+                {
+                    if (output.researchPrerequisites != null) recipe.researchPrerequisites.AddRange(output.researchPrerequisites);
+                    if (output.recipeMaker?.researchPrerequisite != null) recipe.researchPrerequisites.Add(output.recipeMaker.researchPrerequisite);
+                    if (output.recipeMaker?.researchPrerequisites != null) recipe.researchPrerequisites.AddRange(output.recipeMaker.researchPrerequisites);
+                    recipe.researchPrerequisites = recipe.researchPrerequisites.Distinct().ToList();
+                }
+            }
             recipe.fixedIngredientFilter.SetAllow(input, true);
             return recipe;
         }
@@ -115,13 +130,15 @@ namespace Grechka.Industry
             // Leave space for other mods adding late recipes, and never exhaust the ushort probe loop.
             if (taken.Count >= 60000)
             {
-                if (!hashLimitReported) Log.Error("[Grechka Industry] Достигнут безопасный предел 60000 RecipeDef. Оставшиеся рецепты материи не созданы: слишком много вариантов материалов в сборке.");
+                if (!hashLimitReported) Log.Error(IndustryText.Get("GrechkaIndustry_8fbd4d2be5a9", "[Grechka Industry] Safe limit of 60000 RecipeDefs reached. Remaining matter recipes were not created because the pack contains too many material variants."));
                 hashLimitReported = true;
                 return;
             }
             giveHash.Invoke(null, new object[] { recipe, typeof(RecipeDef), taken });
             DefGenerator.AddImpliedDef(recipe);
             recipe.ResolveReferences();
+            if (recipe.GetModExtension<MatterRecipeProperties>() != null) MatterCraftValue.GeneratedRecipeAdded();
+            else MatterCraftValue.Invalidate();
             foreach (ThingDef user in recipe.recipeUsers)
             {
                 AccessTools.Field(typeof(ThingDef), "allRecipesCached").SetValue(user, null);
@@ -129,15 +146,26 @@ namespace Grechka.Industry
         }
         private static void AddRecycle(ThingDef input, ThingDef matter, float value, MatterPolicyDef policy)
         {
-            int batch = Math.Min(100, Math.Max(1, (int)Math.Ceiling(20 / value)));
+            // Keep historical recipe identities even when their current production
+            // value cannot be proven. Availability and active-job guards pause
+            // these recipes before consuming any reserved/unfinished ingredients.
+            double preciseCap = MatterCraftValue.UnitValue(input, value);
+            float cap = (float)preciseCap;
+            if (cap > preciseCap) cap = MathF.BitDecrement(cap);
+            bool blocked = cap <= 0;
+            if (!blocked) value = cap;
             foreach (int tier in new[] { 4, 5 })
             {
+                int batch = MatterEconomy.RecycleBatch(value, policy.matterPerValue, policy.recycleEfficiency, tier == 4 ? .35 : .5);
+                if (batch == 0) { Log.Warning(IndustryText.Get("GrechkaIndustry_d19e03356c37", "[Grechka Industry] Matter batch size is unrepresentable for ") + input.defName); continue; }
                 float work = MatterEconomy.Work(policy.recycleWorkPerValue / (tier == 4 ? 15 : 60), policy.recycleEnergyPerValue,
                     value * batch, tier == 4 ? 8000000 : 30000000, 1);
-                var recipe = Base("Grechka_Recycle_T" + tier + "_" + input.defName, "материя из: " + input.label,
+                if (work == float.MaxValue) { Log.Warning(IndustryText.Get("GrechkaIndustry_1e1bdf9ead8f", "[Grechka Industry] Matter recycling budget is unrepresentable for ") + input.defName); continue; }
+                var recipe = Base("Grechka_Recycle_T" + tier + "_" + input.defName, IndustryText.Get("GrechkaIndustry_100794a50088", "matter from: ") + input.label,
                     input, batch, matter, Math.Max(1, MatterEconomy.RecycleYield(value * batch, policy.matterPerValue, policy.recycleEfficiency)), work, tier, true);
                 recipe.modExtensions.Add(new MatterRecipeProperties { recycle = true, output = matter,
                     factor = policy.matterPerValue, efficiency = policy.recycleEfficiency });
+                if (blocked) recipe.description += "\n" + MatterSafety.PauseReason;
                 Register(recipe);
             }
         }
@@ -149,8 +177,9 @@ namespace Grechka.Industry
             {
                 float work = MatterEconomy.Work(policy.synthesisWorkPerMatter / (tier == 4 ? 15 : 60), policy.synthesisEnergyPerMatter,
                     cost, tier == 4 ? 12000000 : 60000000, 1);
+                if (work == float.MaxValue) { Log.Warning(IndustryText.Get("GrechkaIndustry_672acf4bea2a", "[Grechka Industry] Matter synthesis budget is unrepresentable for ") + output.defName); continue; }
                 var recipe = Base("Grechka_Synthesize_T" + tier + "_" + output.defName + (stuff == null ? "" : "_" + stuff.defName),
-                    "синтез: " + output.label + (stuff == null ? "" : " (" + stuff.label + ")"), matter, cost, output, 1, work, tier, false);
+                    IndustryText.Get("GrechkaIndustry_f78d5b0df7d8", "synthesis: ") + output.label + (stuff == null ? "" : " (" + stuff.label + ")"), matter, cost, output, 1, work, tier, false);
                 recipe.modExtensions.Add(new MatterRecipeProperties { output = output, stuff = stuff });
                 Register(recipe);
             }
@@ -163,10 +192,13 @@ namespace Grechka.Industry
         {
             var props = recipeDef.GetModExtension<MatterRecipeProperties>();
             if (props == null) return true;
+            if (MatterSafety.Blocked(recipeDef)) throw new InvalidOperationException(MatterSafety.PauseReason);
             var snapshot = MatterSnapshots.For(recipeDef, worker);
             if (snapshot != null)
                 props = new MatterRecipeProperties { recycle = props.recycle, output = props.output, stuff = props.stuff,
                     factor = snapshot.factor, efficiency = snapshot.efficiency };
+            if (props.recycle && (!float.IsFinite(props.efficiency) || props.efficiency <= 0 || props.efficiency >= .0625f))
+                throw new InvalidOperationException(MatterSafety.PauseReason);
             __result = Products(props, ingredients);
             return false;
         }
@@ -175,8 +207,10 @@ namespace Grechka.Industry
             int count = 1;
             if (props.recycle)
             {
-                double value = ingredients.Sum(t => (double)t.MarketValue * t.stackCount);
+                double value = ingredients.Sum(MatterCraftValue.Value);
                 count = MatterEconomy.RecycleYield(value, props.factor, props.efficiency);
+                if (count <= 0) throw new InvalidOperationException(IndustryText.Get("GrechkaIndustry_RecycleInsufficient",
+                    "This batch is worth less than one unit of matter. Its ingredients have not been consumed."));
             }
             while (count > 0)
             {

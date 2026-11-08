@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaTreasures_CutDiamond.label>cut diamond</GrechkaTreasures_CutDiamond.label>
+  <GrechkaTreasures_CutDiamond.description>Cut one natural gemstone into one finished gemstone.</GrechkaTreasures_CutDiamond.description>
+  <GrechkaTreasures_CutDiamond.jobString>Working a gemstone.</GrechkaTreasures_CutDiamond.jobString>
+  <GrechkaTreasures_SawMonolithDiamond.label>saw diamond monolith</GrechkaTreasures_SawMonolithDiamond.label>
+  <GrechkaTreasures_SawMonolithDiamond.description>Saw one monolith into 30 cut gemstones.</GrechkaTreasures_SawMonolithDiamond.description>
+  <GrechkaTreasures_SawMonolithDiamond.jobString>Working a gemstone.</GrechkaTreasures_SawMonolithDiamond.jobString>
+  <GrechkaTreasures_CutRuby.label>cut ruby</GrechkaTreasures_CutRuby.label>
+  <GrechkaTreasures_CutRuby.description>Cut one natural gemstone into one finished gemstone.</GrechkaTreasures_CutRuby.description>
+  <GrechkaTreasures_CutRuby.jobString>Working a gemstone.</GrechkaTreasures_CutRuby.jobString>
+  <GrechkaTreasures_SawMonolithRuby.label>saw ruby monolith</GrechkaTreasures_SawMonolithRuby.label>
+  <GrechkaTreasures_SawMonolithRuby.description>Saw one monolith into 30 cut gemstones.</GrechkaTreasures_SawMonolithRuby.description>
+  <GrechkaTreasures_SawMonolithRuby.jobString>Working a gemstone.</GrechkaTreasures_SawMonolithRuby.jobString>
+  <GrechkaTreasures_CutSapphire.label>cut sapphire</GrechkaTreasures_CutSapphire.label>
+  <GrechkaTreasures_CutSapphire.description>Cut one natural gemstone into one finished gemstone.</GrechkaTreasures_CutSapphire.description>
+  <GrechkaTreasures_CutSapphire.jobString>Working a gemstone.</GrechkaTreasures_CutSapphire.jobString>
+  <GrechkaTreasures_SawMonolithSapphire.label>saw sapphire monolith</GrechkaTreasures_SawMonolithSapphire.label>
+  <GrechkaTreasures_SawMonolithSapphire.description>Saw one monolith into 30 cut gemstones.</GrechkaTreasures_SawMonolithSapphire.description>
+  <GrechkaTreasures_SawMonolithSapphire.jobString>Working a gemstone.</GrechkaTreasures_SawMonolithSapphire.jobString>
+  <GrechkaTreasures_CutEmerald.label>cut emerald</GrechkaTreasures_CutEmerald.label>
+  <GrechkaTreasures_CutEmerald.description>Cut one natural gemstone into one finished gemstone.</GrechkaTreasures_CutEmerald.description>
+  <GrechkaTreasures_CutEmerald.jobString>Working a gemstone.</GrechkaTreasures_CutEmerald.jobString>
+  <GrechkaTreasures_SawMonolithEmerald.label>saw emerald monolith</GrechkaTreasures_SawMonolithEmerald.label>
+  <GrechkaTreasures_SawMonolithEmerald.description>Saw one monolith into 30 cut gemstones.</GrechkaTreasures_SawMonolithEmerald.description>
+  <GrechkaTreasures_SawMonolithEmerald.jobString>Working a gemstone.</GrechkaTreasures_SawMonolithEmerald.jobString>
+  <GrechkaTreasures_CutAmethyst.label>cut amethyst</GrechkaTreasures_CutAmethyst.label>
+  <GrechkaTreasures_CutAmethyst.description>Cut one natural gemstone into one finished gemstone.</GrechkaTreasures_CutAmethyst.description>
+  <GrechkaTreasures_CutAmethyst.jobString>Working a gemstone.</GrechkaTreasures_CutAmethyst.jobString>
+  <GrechkaTreasures_SawMonolithAmethyst.label>saw amethyst monolith</GrechkaTreasures_SawMonolithAmethyst.label>
+  <GrechkaTreasures_SawMonolithAmethyst.description>Saw one monolith into 30 cut gemstones.</GrechkaTreasures_SawMonolithAmethyst.description>
+  <GrechkaTreasures_SawMonolithAmethyst.jobString>Working a gemstone.</GrechkaTreasures_SawMonolithAmethyst.jobString>
+  <GrechkaTreasures_CutTopaz.label>cut topaz</GrechkaTreasures_CutTopaz.label>
+  <GrechkaTreasures_CutTopaz.description>Cut one natural gemstone into one finished gemstone.</GrechkaTreasures_CutTopaz.description>
+  <GrechkaTreasures_CutTopaz.jobString>Working a gemstone.</GrechkaTreasures_CutTopaz.jobString>
+  <GrechkaTreasures_SawMonolithTopaz.label>saw topaz monolith</GrechkaTreasures_SawMonolithTopaz.label>
+  <GrechkaTreasures_SawMonolithTopaz.description>Saw one monolith into 30 cut gemstones.</GrechkaTreasures_SawMonolithTopaz.description>
+  <GrechkaTreasures_SawMonolithTopaz.jobString>Working a gemstone.</GrechkaTreasures_SawMonolithTopaz.jobString>
+</LanguageData>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <GrechkaCameraPlus_Intro>Extended map camera zoom. Use the usual mouse wheel and zoom keys.</GrechkaCameraPlus_Intro>
+  <GrechkaCameraPlus_Closer>Zoom in beyond the vanilla limit: ×{0}</GrechkaCameraPlus_Closer>
+  <GrechkaCameraPlus_Farther>Zoom out beyond the vanilla limit: ×{0}</GrechkaCameraPlus_Farther>
+  <GrechkaCameraPlus_Help>Changes apply when you return to the map. Set a factor to ×1 to restore that vanilla limit. The world camera is unchanged. Zooming far out displays more objects and may reduce FPS.</GrechkaCameraPlus_Help>
+  <GrechkaCameraPlus_Reset>Restore defaults (×4 / ×4)</GrechkaCameraPlus_Reset>
+</LanguageData>

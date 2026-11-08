@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>GrechkaFaction_Mills</defName>
+    <factionIconPath>UI/Factions/Mills</factionIconPath>
+    <label>Союз семи мельниц</label>
+    <description>Мельники расселились по семи посёлкам после пожара большого элеватора. Они торгуют продовольствием и тканью и защищают свои обозы.</description>
+    <basicMemberKind>GrechkaPawn_Mills_Worker</basicMemberKind>
+    <pawnSingular>Союз семи мельниц</pawnSingular>
+    <pawnsPlural>Союз семи мельниц</pawnsPlural>
+    <leaderTitle>представитель</leaderTitle>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart>
+    <startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <settlementGenerationWeight>0.7</settlementGenerationWeight>
+    <configurationListOrderPriority>100</configurationListOrderPriority>
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <naturalEnemy>false</naturalEnemy>
+    <techLevel>Industrial</techLevel>
+    <colorSpectrum>
+      <li>(0.65, 0.48, 0.20)</li>
+    </colorSpectrum>
+    <fixedLeaderKinds>
+      <li>GrechkaPawn_Mills_Leader</li>
+    </fixedLeaderKinds>
+    <caravanTraderKinds Inherit="False">
+      <li>GrechkaFactionTrader_Mills</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds Inherit="False">
+      <li>GrechkaFactionTrader_Mills</li>
+    </visitorTraderKinds>
+    <baseTraderKinds Inherit="False">
+      <li>GrechkaFactionTrader_Mills</li>
+    </baseTraderKinds>
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <GrechkaPawn_Mills_Worker>2</GrechkaPawn_Mills_Worker>
+          <GrechkaPawn_Mills_Guard>7</GrechkaPawn_Mills_Guard>
+          <GrechkaPawn_Mills_Master>2</GrechkaPawn_Mills_Master>
+          <GrechkaPawn_Mills_Leader>1</GrechkaPawn_Mills_Leader>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <GrechkaPawn_Mills_Worker>2</GrechkaPawn_Mills_Worker>
+          <GrechkaPawn_Mills_Guard>7</GrechkaPawn_Mills_Guard>
+          <GrechkaPawn_Mills_Master>2</GrechkaPawn_Mills_Master>
+          <GrechkaPawn_Mills_Leader>1</GrechkaPawn_Mills_Leader>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <GrechkaPawn_Mills_Trader>1</GrechkaPawn_Mills_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>4</Dromedary>
+          <Alpaca>2</Alpaca>
+        </carriers>
+        <guards>
+          <GrechkaPawn_Mills_Worker>2</GrechkaPawn_Mills_Worker>
+          <GrechkaPawn_Mills_Guard>7</GrechkaPawn_Mills_Guard>
+          <GrechkaPawn_Mills_Master>2</GrechkaPawn_Mills_Master>
+          <GrechkaPawn_Mills_Leader>1</GrechkaPawn_Mills_Leader>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <GrechkaPawn_Mills_Worker>2</GrechkaPawn_Mills_Worker>
+          <GrechkaPawn_Mills_Guard>7</GrechkaPawn_Mills_Guard>
+          <GrechkaPawn_Mills_Master>2</GrechkaPawn_Mills_Master>
+          <GrechkaPawn_Mills_Leader>1</GrechkaPawn_Mills_Leader>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <fixedName>Союз семи мельниц</fixedName>
+  </FactionDef>
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>GrechkaFaction_Rescue</defName>
+    <factionIconPath>UI/Factions/Rescue</factionIconPath>
+    <label>Нулевая смена</label>
+    <description>Потомки аварийной бригады элеватора. В их караванах служат опытные медики; поселения снабжают соседей лекарствами.</description>
+    <basicMemberKind>GrechkaPawn_Rescue_Worker</basicMemberKind>
+    <pawnSingular>Нулевая смена</pawnSingular>
+    <pawnsPlural>Нулевая смена</pawnsPlural>
+    <leaderTitle>представитель</leaderTitle>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart>
+    <startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <settlementGenerationWeight>0.7</settlementGenerationWeight>
+    <configurationListOrderPriority>101</configurationListOrderPriority>
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <naturalEnemy>false</naturalEnemy>
+    <techLevel>Industrial</techLevel>
+    <colorSpectrum>
+      <li>(0.95, 0.38, 0.12)</li>
+    </colorSpectrum>
+    <fixedLeaderKinds>
+      <li>GrechkaPawn_Rescue_Leader</li>
+    </fixedLeaderKinds>
+    <caravanTraderKinds Inherit="False">
+      <li>GrechkaFactionTrader_Rescue</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds Inherit="False">
+      <li>GrechkaFactionTrader_Rescue</li>
+    </visitorTraderKinds>
+    <baseTraderKinds Inherit="False">
+      <li>GrechkaFactionTrader_Rescue</li>
+    </baseTraderKinds>
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <GrechkaPawn_Rescue_Worker>2</GrechkaPawn_Rescue_Worker>
+          <GrechkaPawn_Rescue_Guard>7</GrechkaPawn_Rescue_Guard>
+          <GrechkaPawn_Rescue_Master>2</GrechkaPawn_Rescue_Master>
+          <GrechkaPawn_Rescue_Leader>1</GrechkaPawn_Rescue_Leader>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <GrechkaPawn_Rescue_Worker>2</GrechkaPawn_Rescue_Worker>
+          <GrechkaPawn_Rescue_Guard>7</GrechkaPawn_Rescue_Guard>
+          <GrechkaPawn_Rescue_Master>2</GrechkaPawn_Rescue_Master>
+          <GrechkaPawn_Rescue_Leader>1</GrechkaPawn_Rescue_Leader>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <GrechkaPawn_Rescue_Trader>1</GrechkaPawn_Rescue_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>4</Dromedary>
+          <Alpaca>2</Alpaca>
+        </carriers>
+        <guards>
+          <GrechkaPawn_Rescue_Worker>2</GrechkaPawn_Rescue_Worker>
+          <GrechkaPawn_Rescue_Guard>7</GrechkaPawn_Rescue_Guard>
+          <GrechkaPawn_Rescue_Master>2</GrechkaPawn_Rescue_Master>
+          <GrechkaPawn_Rescue_Leader>1</GrechkaPawn_Rescue_Leader>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <GrechkaPawn_Rescue_Worker>2</GrechkaPawn_Rescue_Worker>
+          <GrechkaPawn_Rescue_Guard>7</GrechkaPawn_Rescue_Guard>
+          <GrechkaPawn_Rescue_Master>2</GrechkaPawn_Rescue_Master>
+          <GrechkaPawn_Rescue_Leader>1</GrechkaPawn_Rescue_Leader>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <fixedName>Нулевая смена</fixedName>
+  </FactionDef>
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>GrechkaFaction_Artel</defName>
+    <factionIconPath>UI/Factions/Artel</factionIconPath>
+    <label>Артель последней гайки</label>
+    <description>Малая артель мастеров. Каждый человек имеет интеллект 16–20, два профильных навыка 16–20 и гречка-бионику T5. Мастера получают две замены, бригадир — три. Пленных можно завербовать вместе с их имплантами.</description>
+    <basicMemberKind>GrechkaPawn_Artel_Worker</basicMemberKind>
+    <pawnSingular>Артель последней гайки</pawnSingular>
+    <pawnsPlural>Артель последней гайки</pawnsPlural>
+    <leaderTitle>бригадир</leaderTitle>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart>
+    <startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <settlementGenerationWeight>0.3</settlementGenerationWeight>
+    <configurationListOrderPriority>102</configurationListOrderPriority>
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <naturalEnemy>false</naturalEnemy>
+    <techLevel>Spacer</techLevel>
+    <colorSpectrum>
+      <li>(0.20, 0.65, 0.62)</li>
+    </colorSpectrum>
+    <fixedLeaderKinds>
+      <li>GrechkaPawn_Artel_Leader</li>
+    </fixedLeaderKinds>
+    <caravanTraderKinds Inherit="False">
+      <li>GrechkaFactionTrader_Artel</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds Inherit="False">
+      <li>GrechkaFactionTrader_Artel</li>
+    </visitorTraderKinds>
+    <baseTraderKinds Inherit="False">
+      <li>GrechkaFactionTrader_Artel</li>
+    </baseTraderKinds>
+    <maxPawnCostPerTotalPointsCurve Inherit="False">
+      <points>
+        <li>(0, 500)</li>
+        <li>(1000, 800)</li>
+        <li>(5000, 3000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <GrechkaPawn_Artel_Worker>2</GrechkaPawn_Artel_Worker>
+          <GrechkaPawn_Artel_Guard>7</GrechkaPawn_Artel_Guard>
+          <GrechkaPawn_Artel_Master>2</GrechkaPawn_Artel_Master>
+          <GrechkaPawn_Artel_Leader>1</GrechkaPawn_Artel_Leader>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <GrechkaPawn_Artel_Worker>2</GrechkaPawn_Artel_Worker>
+          <GrechkaPawn_Artel_Guard>7</GrechkaPawn_Artel_Guard>
+          <GrechkaPawn_Artel_Master>2</GrechkaPawn_Artel_Master>
+          <GrechkaPawn_Artel_Leader>1</GrechkaPawn_Artel_Leader>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <GrechkaPawn_Artel_Trader>1</GrechkaPawn_Artel_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>4</Dromedary>
+          <Alpaca>2</Alpaca>
+        </carriers>
+        <guards>
+          <GrechkaPawn_Artel_Worker>2</GrechkaPawn_Artel_Worker>
+          <GrechkaPawn_Artel_Guard>7</GrechkaPawn_Artel_Guard>
+          <GrechkaPawn_Artel_Master>2</GrechkaPawn_Artel_Master>
+          <GrechkaPawn_Artel_Leader>1</GrechkaPawn_Artel_Leader>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <GrechkaPawn_Artel_Worker>2</GrechkaPawn_Artel_Worker>
+          <GrechkaPawn_Artel_Guard>7</GrechkaPawn_Artel_Guard>
+          <GrechkaPawn_Artel_Master>2</GrechkaPawn_Artel_Master>
+          <GrechkaPawn_Artel_Leader>1</GrechkaPawn_Artel_Leader>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <fixedName>Артель последней гайки</fixedName>
+  </FactionDef>
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>GrechkaFaction_Bare</defName>
+    <factionIconPath>UI/Factions/Bare</factionIconPath>
+    <label>Босая сотня</label>
+    <description>Воинские отряды с боевыми и двигательными чипами T5. Сражаются без одежды, предпочитают ближний бой. Изначально враждебны, но допускают примирение.</description>
+    <basicMemberKind>GrechkaPawn_Bare_Worker</basicMemberKind>
+    <pawnSingular>Босая сотня</pawnSingular>
+    <pawnsPlural>Босая сотня</pawnsPlural>
+    <leaderTitle>представитель</leaderTitle>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart>
+    <startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <settlementGenerationWeight>0.7</settlementGenerationWeight>
+    <configurationListOrderPriority>103</configurationListOrderPriority>
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <naturalEnemy>true</naturalEnemy>
+    <techLevel>Industrial</techLevel>
+    <colorSpectrum>
+      <li>(0.75, 0.15, 0.20)</li>
+    </colorSpectrum>
+    <fixedLeaderKinds>
+      <li>GrechkaPawn_Bare_Leader</li>
+    </fixedLeaderKinds>
+    <disallowedMemes Inherit="False" />
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+    </requiredMemes>
+    <caravanTraderKinds Inherit="False" />
+    <visitorTraderKinds Inherit="False" />
+    <baseTraderKinds Inherit="False" />
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <GrechkaPawn_Bare_Worker>2</GrechkaPawn_Bare_Worker>
+          <GrechkaPawn_Bare_Guard>7</GrechkaPawn_Bare_Guard>
+          <GrechkaPawn_Bare_Master>2</GrechkaPawn_Bare_Master>
+          <GrechkaPawn_Bare_Leader>1</GrechkaPawn_Bare_Leader>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <GrechkaPawn_Bare_Worker>2</GrechkaPawn_Bare_Worker>
+          <GrechkaPawn_Bare_Guard>7</GrechkaPawn_Bare_Guard>
+          <GrechkaPawn_Bare_Master>2</GrechkaPawn_Bare_Master>
+          <GrechkaPawn_Bare_Leader>1</GrechkaPawn_Bare_Leader>
+        </options>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <GrechkaPawn_Bare_Worker>2</GrechkaPawn_Bare_Worker>
+          <GrechkaPawn_Bare_Guard>7</GrechkaPawn_Bare_Guard>
+          <GrechkaPawn_Bare_Master>2</GrechkaPawn_Bare_Master>
+          <GrechkaPawn_Bare_Leader>1</GrechkaPawn_Bare_Leader>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <fixedName>Босая сотня</fixedName>
+  </FactionDef>
+  <FactionDef ParentName="OutlanderFactionBase">
+    <defName>GrechkaFaction_Post</defName>
+    <factionIconPath>UI/Factions/Post</factionIconPath>
+    <label>Бюро невскрытых посылок</label>
+    <description>Курьеры службы, пережившей своё государство. Каждый курьер несёт настоящий лаки-блок T1–T3; посылку можно забрать как обычный трофей.</description>
+    <basicMemberKind>GrechkaPawn_Post_Worker</basicMemberKind>
+    <pawnSingular>Бюро невскрытых посылок</pawnSingular>
+    <pawnsPlural>Бюро невскрытых посылок</pawnsPlural>
+    <leaderTitle>представитель</leaderTitle>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart>
+    <startingCountAtWorldCreation>1</startingCountAtWorldCreation>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <maxCountAtGameStart>1</maxCountAtGameStart>
+    <settlementGenerationWeight>0.3</settlementGenerationWeight>
+    <configurationListOrderPriority>104</configurationListOrderPriority>
+    <canSiege>false</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <naturalEnemy>false</naturalEnemy>
+    <techLevel>Industrial</techLevel>
+    <colorSpectrum>
+      <li>(0.40, 0.35, 0.75)</li>
+    </colorSpectrum>
+    <fixedLeaderKinds>
+      <li>GrechkaPawn_Post_Leader</li>
+    </fixedLeaderKinds>
+    <caravanTraderKinds Inherit="False">
+      <li>GrechkaFactionTrader_Post</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds Inherit="False">
+      <li>GrechkaFactionTrader_Post</li>
+    </visitorTraderKinds>
+    <baseTraderKinds Inherit="False">
+      <li>GrechkaFactionTrader_Post</li>
+    </baseTraderKinds>
+    <pawnGroupMakers Inherit="False">
+      <li>
+        <kindDef>Combat</kindDef>
+        <options>
+          <GrechkaPawn_Post_Worker>2</GrechkaPawn_Post_Worker>
+          <GrechkaPawn_Post_Guard>7</GrechkaPawn_Post_Guard>
+          <GrechkaPawn_Post_Master>2</GrechkaPawn_Post_Master>
+          <GrechkaPawn_Post_Leader>1</GrechkaPawn_Post_Leader>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <GrechkaPawn_Post_Worker>2</GrechkaPawn_Post_Worker>
+          <GrechkaPawn_Post_Guard>7</GrechkaPawn_Post_Guard>
+          <GrechkaPawn_Post_Master>2</GrechkaPawn_Post_Master>
+          <GrechkaPawn_Post_Leader>1</GrechkaPawn_Post_Leader>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <GrechkaPawn_Post_Trader>1</GrechkaPawn_Post_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>4</Dromedary>
+          <Alpaca>2</Alpaca>
+        </carriers>
+        <guards>
+          <GrechkaPawn_Post_Worker>2</GrechkaPawn_Post_Worker>
+          <GrechkaPawn_Post_Guard>7</GrechkaPawn_Post_Guard>
+          <GrechkaPawn_Post_Master>2</GrechkaPawn_Post_Master>
+          <GrechkaPawn_Post_Leader>1</GrechkaPawn_Post_Leader>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <GrechkaPawn_Post_Worker>2</GrechkaPawn_Post_Worker>
+          <GrechkaPawn_Post_Guard>7</GrechkaPawn_Post_Guard>
+          <GrechkaPawn_Post_Master>2</GrechkaPawn_Post_Master>
+          <GrechkaPawn_Post_Leader>1</GrechkaPawn_Post_Leader>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <fixedName>Бюро невскрытых посылок</fixedName>
+  </FactionDef>
+</Defs>

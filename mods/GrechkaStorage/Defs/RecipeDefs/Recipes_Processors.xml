@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <Defs>
   <RecipeDef>
     <defName>Grechka_CrushQuartz</defName>
@@ -173,7 +173,7 @@
   </RecipeDef>
   <RecipeDef>
     <defName>Grechka_MakeQuartzProcessor</defName>
-    <label>собрать кварцевый процессор</label>
+    <label>собрать кварцевый процессор ×2</label>
     <jobString>Собирает детали Storage.</jobString>
     <workAmount>1200</workAmount>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -213,7 +213,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Grechka_QuartzProcessor>1</Grechka_QuartzProcessor>
+      <Grechka_QuartzProcessor>2</Grechka_QuartzProcessor>
     </products>
     <workSkill>Crafting</workSkill>
     <skillRequirements>
@@ -262,7 +262,7 @@
   </RecipeDef>
   <RecipeDef>
     <defName>Grechka_MakeSilverProcessor</defName>
-    <label>собрать серебряный процессор</label>
+    <label>собрать серебряный процессор ×2</label>
     <jobString>Собирает детали Storage.</jobString>
     <workAmount>1200</workAmount>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -302,7 +302,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Grechka_SilverProcessor>1</Grechka_SilverProcessor>
+      <Grechka_SilverProcessor>2</Grechka_SilverProcessor>
     </products>
     <workSkill>Crafting</workSkill>
     <skillRequirements>
@@ -351,7 +351,7 @@
   </RecipeDef>
   <RecipeDef>
     <defName>Grechka_MakeGoldProcessor</defName>
-    <label>собрать золотой процессор</label>
+    <label>собрать золотой процессор ×2</label>
     <jobString>Собирает детали Storage.</jobString>
     <workAmount>1200</workAmount>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
@@ -391,7 +391,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <Grechka_GoldProcessor>1</Grechka_GoldProcessor>
+      <Grechka_GoldProcessor>2</Grechka_GoldProcessor>
     </products>
     <workSkill>Crafting</workSkill>
     <skillRequirements>

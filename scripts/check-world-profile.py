@@ -16,6 +16,7 @@ for name in ['Campfire','CraftingSpot','ButcherSpot','SolarGenerator','Vent','Pl
 assert rules['VFEFactory_ConveyorOven'].findtext('addHousing')=='true'
 for name in ['VFEC_Turret_Scorpion','VFES_Turret_Ballista','VFES_Turret_Catapult']:assert rules[name].findtext('minimumTier')=='1'
 assert rules['VQE_Genetron_Nuclear'].findtext('minimumTier')=='4'
+assert rules['LightBall'].findtext('retired')=='true','LightBall should remain vanilla; legacy Def names are retained for saves'
 assert not E.parse(root/'mods/GrechkaWorldIntegration/Patches/StorageController.xml').getroot().findall('Operation'),'Unconditional Storage cost patch returned'
 m=E.parse(root/'mods/GrechkaWorldIntegration/Defs/Materials.xml').getroot()
 groups={d.findtext('defName'):d for d in m if d.tag.endswith('MaterialGroupDef')}

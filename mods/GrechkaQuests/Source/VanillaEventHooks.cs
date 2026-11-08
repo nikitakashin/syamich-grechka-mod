@@ -19,9 +19,12 @@ namespace Grechka.Quests
             foreach (Thing output in __1)
             {
                 if (output == null || output.def == null || output.stackCount <= 0) continue;
-                CompQuality quality = output.TryGetComp<CompQuality>();
-                game.RecordVerifiedOutput("produce", __0, output.def, output.Stuff,
-                    quality == null ? null : quality.Quality.ToString(), output.stackCount);
+                // Recipes for robot docks return a minified building. Credit its
+                // actual definition once, only from this completed-recipe event.
+                Thing product = (output as MinifiedThing)?.InnerThing ?? output;
+                CompQuality quality = product.TryGetComp<CompQuality>();
+                game.RecordVerifiedOutput("produce", __0, product.def, product.Stuff,
+                    quality == null ? null : quality.Quality.ToString(), product.stackCount);
             }
         }
     }

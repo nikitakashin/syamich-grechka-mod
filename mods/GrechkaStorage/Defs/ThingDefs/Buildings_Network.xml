@@ -46,7 +46,7 @@
       </li>
     </comps>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <designationCategory>Grechka_StorageCategory</designationCategory>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
     <uiOrder>1</uiOrder>
     <clearBuildingArea>false</clearBuildingArea>
     <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
@@ -80,11 +80,11 @@
       <Flammability>0.2</Flammability>
     </statBases>
     <costList>
-      <Steel>150</Steel>
-      <ComponentSpacer>6</ComponentSpacer>
-      <Grechka_QuartzProcessor>8</Grechka_QuartzProcessor>
-      <Grechka_SilverProcessor>4</Grechka_SilverProcessor>
-      <Grechka_GoldProcessor>4</Grechka_GoldProcessor>
+      <Steel>80</Steel>
+      <ComponentSpacer>2</ComponentSpacer>
+      <Grechka_QuartzProcessor>2</Grechka_QuartzProcessor>
+      <Grechka_SilverProcessor>1</Grechka_SilverProcessor>
+      <Grechka_GoldProcessor>1</Grechka_GoldProcessor>
     </costList>
     <comps>
       <li Class="CompProperties_Forbiddable" />
@@ -100,7 +100,7 @@
       </li>
     </comps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
-    <designationCategory>Grechka_StorageCategory</designationCategory>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
     <uiOrder>10</uiOrder>
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <constructEffect>ConstructMetal</constructEffect>
@@ -120,7 +120,7 @@
     <graphicData>
       <texPath>Buildings/Map/ElectricInscriber/ElectricInscriber</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(3.5,1.5)</drawSize>
+      <drawSize>(1.4,1.4)</drawSize>
     </graphicData>
     <statBases>
       <MaxHitPoints>250</MaxHitPoints>
@@ -128,16 +128,16 @@
       <Flammability>0.3</Flammability>
     </statBases>
     <costList>
-      <Steel>80</Steel>
-      <ComponentIndustrial>5</ComponentIndustrial>
-      <Grechka_Quartz>10</Grechka_Quartz>
+      <Steel>40</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+      <Grechka_Quartz>5</Grechka_Quartz>
     </costList>
     <hasInteractionCell>true</hasInteractionCell>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <inspectorTabs>
       <li>ITab_Bills</li>
     </inspectorTabs>
-    <designationCategory>Grechka_StorageCategory</designationCategory>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
     <uiOrder>5</uiOrder>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     <constructEffect>ConstructMetal</constructEffect>
@@ -191,6 +191,9 @@
       <li>Grechka_MakeFrozenDisk_256M</li>
     </recipes>
     <comps>
+      <li Class="Grechka.Storage.CompProperties_StorageMachineArt">
+        <texture>Buildings/Map/States/ElectricInscriber/ElectricInscriber</texture>
+      </li>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>200</basePowerConsumption>

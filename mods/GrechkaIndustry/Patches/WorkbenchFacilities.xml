@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!-- Optional VFE Production facility; keep the native limits, offsets and power rules. -->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="VFE_FabricationCabinet"]</xpath>
+    <match Class="PatchOperationAdd">
+      <success>Always</success>
+      <xpath>/Defs/ThingDef[defName="Grechka_AssemblyBenchT1_Building" or defName="Grechka_AssemblyBenchT2_Building" or defName="Grechka_AssemblyBenchT3_Building" or defName="Grechka_AssemblyBenchT4_Building" or defName="Grechka_AssemblyBenchT5_Building"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities[not(li="VFE_FabricationCabinet")]</xpath>
+      <value>
+        <li>VFE_FabricationCabinet</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Grechka_SoundMuffler_Building.label>sound muffler</Grechka_SoundMuffler_Building.label>
+  <Grechka_SoundMuffler_Building.description>Suppresses sounds originating inside its radius: machinery, gunshots, footsteps, voices and other local effects. Works through walls. Each device has its own adjustable radius of 1 to 30 cells, default 12. Requires 50 W; sounds return when unpowered, switched off or broken down. Music, interface sounds and sounds without a map source are preserved.</Grechka_SoundMuffler_Building.description>
+</LanguageData>

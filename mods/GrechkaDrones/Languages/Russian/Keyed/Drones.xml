@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <GrechkaDrones_Capture>Брать в плен</GrechkaDrones_Capture>
+  <GrechkaDrones_CaptureDesc>Подбирать раненых врагов, если есть свободная тюремная кровать. Свои всегда в приоритете: ради их спасения дрон оставит переносимого врага на земле.</GrechkaDrones_CaptureDesc>
+  <GrechkaDrones_Cargo>Грузоподъёмность: {0} кг</GrechkaDrones_Cargo>
+  <GrechkaDrones_BioEnergy>Биозаряд</GrechkaDrones_BioEnergy>
+  <GrechkaDrones_BioEnergyTip>Биозаряд: {0}. Полный запас — 2 ед. питательности на сутки работы. Можно заправлять едой или заряжать от дока. Остановка каравана сама по себе не заряжает батарею.</GrechkaDrones_BioEnergyTip>
+</LanguageData>

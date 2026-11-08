@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <CutPlantsBeforeBuilding.AutoDesignatePlantsCutModeToggleButton>Toggle auto felling designation mode({0})\nCurrent ： mode {1}</CutPlantsBeforeBuilding.AutoDesignatePlantsCutModeToggleButton>
+  <CutPlantsBeforeBuilding.CurrentModVersion>Installed mod-version: {0}</CutPlantsBeforeBuilding.CurrentModVersion>
+  <CutPlantsBeforeBuilding.DefaultMode>Cut plants default on</CutPlantsBeforeBuilding.DefaultMode>
+  <CutPlantsBeforeBuilding.DefaultModeTT>Cut plants-option will be turned on each game start.</CutPlantsBeforeBuilding.DefaultModeTT>
+  <CutPlantsBeforeBuilding.DigUp>Dig up plants if possible</CutPlantsBeforeBuilding.DigUp>
+  <CutPlantsBeforeBuilding.DigUpTT>Instead of cutting, plants will be designated to be dug up if possible</CutPlantsBeforeBuilding.DigUpTT>
+  <CutPlantsBeforeBuilding.ModeOFF>off</CutPlantsBeforeBuilding.ModeOFF>
+  <CutPlantsBeforeBuilding.ModeON>on</CutPlantsBeforeBuilding.ModeON>
+  <CutPlantsBeforeBuilding.NoInfo>Dont inform of ignored plants</CutPlantsBeforeBuilding.NoInfo>
+  <CutPlantsBeforeBuilding.NoInfoTT>When skipping to mark special trees like the Anima tree, the game will not inform about it</CutPlantsBeforeBuilding.NoInfoTT>
+  <CutPlantsBeforeBuilding.OnlyCutters>Blocking plants can only be cut if allowed</CutPlantsBeforeBuilding.OnlyCutters>
+  <CutPlantsBeforeBuilding.OnlyCuttersTT>If enabled, only pawns that has plant cutting will cut down blocking plants</CutPlantsBeforeBuilding.OnlyCuttersTT>
+  <CutPlantsBeforeBuilding.SpecialTree>Will not mark {0} for cutting since its a special tree.</CutPlantsBeforeBuilding.SpecialTree>
+</LanguageData>

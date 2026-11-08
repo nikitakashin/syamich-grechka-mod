@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <GrechkaTraders_FrequencyHelp>Естественные прибытия: ×1 — штатная частота, ×0 — отключить, до ×5. Уже прибывшие торговцы и вызванные/квестовые караваны сохраняются. Итог зависит от рассказчика, фракций и условий прибытия.</GrechkaTraders_FrequencyHelp>
+  <GrechkaTraders_Orbital>Орбитальные торговцы: ×{0}</GrechkaTraders_Orbital>
+  <GrechkaTraders_Caravans>Торговые караваны: ×{0}</GrechkaTraders_Caravans>
+  <GrechkaTraders_CustomSlaves>Настроить количество рабов в караванах работорговцев</GrechkaTraders_CustomSlaves>
+  <GrechkaTraders_Slaves>Рабов в караване: {0}</GrechkaTraders_Slaves>
+  <GrechkaTraders_SlaveHelp>Применяется к новым караванам, уже торгующим рабами. Не добавляет рабов другим торговцам и сохраняет ограничения идеологии фракции. Корабли и поселения не затрагиваются.</GrechkaTraders_SlaveHelp>
+  <GrechkaTraders_Specialists>Включить специализированных торговцев</GrechkaTraders_Specialists>
+  <GrechkaTraders_Discount>Скидка на профильные модовые товары: {0}%</GrechkaTraders_Discount>
+  <GrechkaTraders_DiscountHelp>По умолчанию 15%, настройка от 0 до 30%. Действует при покупке товаров профильных модов, включая упакованные здания. Вспомогательные ванильные товары продаются по обычным ценам.</GrechkaTraders_DiscountHelp>
+  <GrechkaTraders_Reset>Вернуть настройки по умолчанию</GrechkaTraders_Reset>
+  <GrechkaTraders_AppliedDiscount>Скидка профильного поставщика: −{0}%</GrechkaTraders_AppliedDiscount>
+</LanguageData>

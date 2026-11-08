@@ -6,7 +6,6 @@
         <xpath>/Defs/ThingDef[defName="SolarGenerator"]</xpath>
         <value>
           <minifiedDef>Grechka_PackedSolarS0_Item</minifiedDef>
-          <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
           <thingCategories><li>BuildingsSpecial</li></thingCategories>
         </value>
       </li>
@@ -22,6 +21,27 @@
             <costDescription>1 снятая ванильная панель, 1 корпус T2, 4 продвинутых компонента и 8 фотоэлементов T2</costDescription>
           </li>
         </value>
+      </li>
+      <li Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[defName="SolarGenerator"]/designationCategory</xpath>
+        <value><designationCategory>Grechka_SolarCategory</designationCategory></value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="SolarGenerator"]/designatorDropdown</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="SolarGenerator"]/designatorDropdown</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="SolarGenerator"]/uiOrder</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/ThingDef[defName="SolarGenerator"]/uiOrder</xpath>
+          <value><uiOrder>0</uiOrder></value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="SolarGenerator"]</xpath>
+          <value><uiOrder>0</uiOrder></value>
+        </nomatch>
       </li>
     </operations>
   </Operation>

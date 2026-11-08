@@ -1,0 +1,2115 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <DesignatorDropdownGroupDef>
+    <defName>GrechkaTreasures_ObeliskGroup</defName>
+    <label>драгоценные обелиски</label>
+  </DesignatorDropdownGroupDef>
+  <DesignatorDropdownGroupDef>
+    <defName>GrechkaTreasures_ThroneGroup</defName>
+    <label>драгоценные троны</label>
+  </DesignatorDropdownGroupDef>
+  <DesignatorDropdownGroupDef>
+    <defName>GrechkaTreasures_TableGroup</defName>
+    <label>драгоценные столы</label>
+  </DesignatorDropdownGroupDef>
+  <DesignatorDropdownGroupDef>
+    <defName>GrechkaTreasures_BedGroup</defName>
+    <label>драгоценные кровати</label>
+  </DesignatorDropdownGroupDef>
+  <DesignatorDropdownGroupDef>
+    <defName>GrechkaTreasures_SarcophagusGroup</defName>
+    <label>драгоценные саркофаги</label>
+  </DesignatorDropdownGroupDef>
+  <DesignatorDropdownGroupDef>
+    <defName>GrechkaTreasures_LampGroup</defName>
+    <label>драгоценные светильники</label>
+  </DesignatorDropdownGroupDef>
+  <ThingDef ParentName="SculptureBase">
+    <defName>GrechkaTreasures_DiamondStatue</defName>
+    <label>алмазная статуя</label>
+    <description>Цельная резная статуя из редкого драгоценного монолита на золотом основании. Создаётся художником на ювелирном верстаке и устанавливается после изготовления.</description>
+    <graphicData>
+      <texPath>Buildings/DiamondStatue</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,3)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>330</MaxHitPoints>
+      <Mass>55</Mass>
+      <Beauty>500</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToMake>70000</WorkToMake>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_DiamondMonolith>1</GrechkaTreasures_DiamondMonolith>
+      <Gold>80</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Artistic</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Jewelcraft</researchPrerequisite>
+      <skillRequirements>
+        <Artistic>8</Artistic>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="SculptureBase">
+    <defName>GrechkaTreasures_DiamondVase</defName>
+    <label>алмазная ваза</label>
+    <description>Резная драгоценная ваза с золотой оправой. Создаётся художником на ювелирном верстаке.</description>
+    <graphicData>
+      <texPath>Buildings/DiamondVase</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1.4)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>154</MaxHitPoints>
+      <Mass>6</Mass>
+      <Beauty>130</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToMake>24000</WorkToMake>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_DiamondCut>8</GrechkaTreasures_DiamondCut>
+      <Gold>20</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Artistic</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Jewelcraft</researchPrerequisite>
+      <skillRequirements>
+        <Artistic>4</Artistic>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>GrechkaTreasures_DiamondObelisk</defName>
+    <label>алмазный обелиск</label>
+    <description>Высокий обелиск из огранённых камней и золота. Роскошный центр сада или сокровищницы.</description>
+    <graphicData>
+      <texPath>Buildings/DiamondObelisk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,3)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>330</MaxHitPoints>
+      <Mass>70</Mass>
+      <Beauty>400</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>40000</WorkToBuild>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_DiamondCut>40</GrechkaTreasures_DiamondCut>
+      <Gold>50</Gold>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_ObeliskGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <passability>PassThroughOnly</passability>
+    <pathCost>40</pathCost>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>GrechkaTreasures_DiamondThrone</defName>
+    <label>алмазный трон</label>
+    <description>Удобный драгоценный трон с золотым каркасом. Служит креслом у стола и рабочим сиденьем; не требует Royalty.</description>
+    <graphicData>
+      <texPath>Buildings/DiamondThrone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.5,2)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>330</MaxHitPoints>
+      <Mass>35</Mass>
+      <Beauty>140</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>26000</WorkToBuild>
+      <Comfort>1.05</Comfort>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_DiamondCut>18</GrechkaTreasures_DiamondCut>
+      <Gold>80</Gold>
+      <Cloth>20</Cloth>
+      <Steel>40</Steel>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_ThroneGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <passability>PassThroughOnly</passability>
+    <pathCost>40</pathCost>
+    <building>
+      <isSittable>true</isSittable>
+    </building>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="TableGatherSpotBase">
+    <defName>GrechkaTreasures_DiamondTable</defName>
+    <label>алмазный стол</label>
+    <description>Роскошный обеденный стол с драгоценной столешницей и золотым узором.</description>
+    <graphicData>
+      <texPath>Buildings/DiamondTable</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>330</MaxHitPoints>
+      <Mass>45</Mass>
+      <Beauty>160</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>22000</WorkToBuild>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_DiamondCut>20</GrechkaTreasures_DiamondCut>
+      <Gold>60</Gold>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_TableGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="ArtableBedBase">
+    <defName>GrechkaTreasures_DiamondBed</defName>
+    <label>алмазная кровать</label>
+    <description>Удобная кровать с мягким матрасом на драгоценном золотом каркасе.</description>
+    <graphicData>
+      <texPath>Buildings/DiamondBed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.5,2.5)</drawSize>
+    </graphicData>
+    <size>(1,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>330</MaxHitPoints>
+      <Mass>40</Mass>
+      <Beauty>150</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>28000</WorkToBuild>
+      <BedRestEffectiveness>1.15</BedRestEffectiveness>
+      <Comfort>1.1</Comfort>
+      <ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_DiamondCut>16</GrechkaTreasures_DiamondCut>
+      <Gold>50</Gold>
+      <Cloth>60</Cloth>
+      <Steel>40</Steel>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_BedGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <tickerType>Normal</tickerType>
+    <building>
+      <bed_showSleeperBody>false</bed_showSleeperBody>
+      <bed_healPerDay>4</bed_healPerDay>
+    </building>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>GrechkaTreasures_DiamondSarcophagus</defName>
+    <label>алмазный саркофаг</label>
+    <description>Резной драгоценный саркофаг для почётного погребения. Сохраняет останки и поддерживает назначение владельца.</description>
+    <graphicData>
+      <texPath>Buildings/DiamondSarcophagus</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.5,2.5)</drawSize>
+    </graphicData>
+    <size>(1,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>330</MaxHitPoints>
+      <Mass>65</Mass>
+      <Beauty>240</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>32000</WorkToBuild>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_DiamondCut>30</GrechkaTreasures_DiamondCut>
+      <Gold>60</Gold>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_SarcophagusGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <passability>PassThroughOnly</passability>
+    <pathCost>40</pathCost>
+    <thingClass>Building_Sarcophagus</thingClass>
+    <tickerType>Rare</tickerType>
+    <containedPawnsSelectable>true</containedPawnsSelectable>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+      <li>ITab_ContentsCasket</li>
+    </inspectorTabs>
+    <building>
+      <preventDeteriorationInside>true</preventDeteriorationInside>
+      <haulToContainerDuration>500</haulToContainerDuration>
+      <isEscapableContainer>true</isEscapableContainer>
+      <ai_chillDestination>false</ai_chillDestination>
+      <fullGraveGraphicData>
+        <texPath>Buildings/DiamondSarcophagus</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(1.5,2.5)</drawSize>
+      </fullGraveGraphicData>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Critical</priority>
+        <filter>
+          <categories>
+            <li>CorpsesHumanlike</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <comps>
+      <li Class="CompProperties_AssignableToPawn">
+        <compClass>CompAssignableToPawn_Grave</compClass>
+        <drawAssignmentOverlay>false</drawAssignmentOverlay>
+      </li>
+    </comps>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="LampBase">
+    <defName>GrechkaTreasures_DiamondLamp</defName>
+    <label>алмазный светильник</label>
+    <description>Электрический светильник с драгоценной линзой, освещающий комнату цветом камня. Потребляет 20 Вт.</description>
+    <graphicData>
+      <texPath>Buildings/DiamondLamp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1.5)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>330</MaxHitPoints>
+      <Mass>8</Mass>
+      <Beauty>65</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>5000</WorkToBuild>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_DiamondCut>6</GrechkaTreasures_DiamondCut>
+      <Gold>10</Gold>
+      <Steel>20</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_LampGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+      <li>Electricity</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>20</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(210,240,255,0)</glowColor>
+      </li>
+    </comps>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="SculptureBase">
+    <defName>GrechkaTreasures_RubyStatue</defName>
+    <label>рубиновая статуя</label>
+    <description>Цельная резная статуя из редкого драгоценного монолита на золотом основании. Создаётся художником на ювелирном верстаке и устанавливается после изготовления.</description>
+    <graphicData>
+      <texPath>Buildings/RubyStatue</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,3)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>55</Mass>
+      <Beauty>500</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToMake>70000</WorkToMake>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_RubyMonolith>1</GrechkaTreasures_RubyMonolith>
+      <Gold>80</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Artistic</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Jewelcraft</researchPrerequisite>
+      <skillRequirements>
+        <Artistic>8</Artistic>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="SculptureBase">
+    <defName>GrechkaTreasures_RubyVase</defName>
+    <label>рубиновая ваза</label>
+    <description>Резная драгоценная ваза с золотой оправой. Создаётся художником на ювелирном верстаке.</description>
+    <graphicData>
+      <texPath>Buildings/RubyVase</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1.4)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>140</MaxHitPoints>
+      <Mass>6</Mass>
+      <Beauty>130</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToMake>24000</WorkToMake>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_RubyCut>8</GrechkaTreasures_RubyCut>
+      <Gold>20</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Artistic</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Jewelcraft</researchPrerequisite>
+      <skillRequirements>
+        <Artistic>4</Artistic>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>GrechkaTreasures_RubyObelisk</defName>
+    <label>рубиновый обелиск</label>
+    <description>Высокий обелиск из огранённых камней и золота. Роскошный центр сада или сокровищницы.</description>
+    <graphicData>
+      <texPath>Buildings/RubyObelisk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,3)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>70</Mass>
+      <Beauty>400</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>40000</WorkToBuild>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_RubyCut>40</GrechkaTreasures_RubyCut>
+      <Gold>50</Gold>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_ObeliskGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <passability>PassThroughOnly</passability>
+    <pathCost>40</pathCost>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>GrechkaTreasures_RubyThrone</defName>
+    <label>рубиновый трон</label>
+    <description>Удобный драгоценный трон с золотым каркасом. Служит креслом у стола и рабочим сиденьем; не требует Royalty.</description>
+    <graphicData>
+      <texPath>Buildings/RubyThrone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.5,2)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>35</Mass>
+      <Beauty>140</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>26000</WorkToBuild>
+      <Comfort>1.05</Comfort>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_RubyCut>18</GrechkaTreasures_RubyCut>
+      <Gold>80</Gold>
+      <Cloth>20</Cloth>
+      <Steel>40</Steel>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_ThroneGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <passability>PassThroughOnly</passability>
+    <pathCost>40</pathCost>
+    <building>
+      <isSittable>true</isSittable>
+    </building>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="TableGatherSpotBase">
+    <defName>GrechkaTreasures_RubyTable</defName>
+    <label>рубиновый стол</label>
+    <description>Роскошный обеденный стол с драгоценной столешницей и золотым узором.</description>
+    <graphicData>
+      <texPath>Buildings/RubyTable</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>45</Mass>
+      <Beauty>160</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>22000</WorkToBuild>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_RubyCut>20</GrechkaTreasures_RubyCut>
+      <Gold>60</Gold>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_TableGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="ArtableBedBase">
+    <defName>GrechkaTreasures_RubyBed</defName>
+    <label>рубиновая кровать</label>
+    <description>Удобная кровать с мягким матрасом на драгоценном золотом каркасе.</description>
+    <graphicData>
+      <texPath>Buildings/RubyBed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.5,2.5)</drawSize>
+    </graphicData>
+    <size>(1,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>40</Mass>
+      <Beauty>150</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>28000</WorkToBuild>
+      <BedRestEffectiveness>1.15</BedRestEffectiveness>
+      <Comfort>1.1</Comfort>
+      <ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_RubyCut>16</GrechkaTreasures_RubyCut>
+      <Gold>50</Gold>
+      <Cloth>60</Cloth>
+      <Steel>40</Steel>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_BedGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <tickerType>Normal</tickerType>
+    <building>
+      <bed_showSleeperBody>false</bed_showSleeperBody>
+      <bed_healPerDay>4</bed_healPerDay>
+    </building>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>GrechkaTreasures_RubySarcophagus</defName>
+    <label>рубиновый саркофаг</label>
+    <description>Резной драгоценный саркофаг для почётного погребения. Сохраняет останки и поддерживает назначение владельца.</description>
+    <graphicData>
+      <texPath>Buildings/RubySarcophagus</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.5,2.5)</drawSize>
+    </graphicData>
+    <size>(1,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>65</Mass>
+      <Beauty>240</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>32000</WorkToBuild>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_RubyCut>30</GrechkaTreasures_RubyCut>
+      <Gold>60</Gold>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_SarcophagusGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <passability>PassThroughOnly</passability>
+    <pathCost>40</pathCost>
+    <thingClass>Building_Sarcophagus</thingClass>
+    <tickerType>Rare</tickerType>
+    <containedPawnsSelectable>true</containedPawnsSelectable>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+      <li>ITab_ContentsCasket</li>
+    </inspectorTabs>
+    <building>
+      <preventDeteriorationInside>true</preventDeteriorationInside>
+      <haulToContainerDuration>500</haulToContainerDuration>
+      <isEscapableContainer>true</isEscapableContainer>
+      <ai_chillDestination>false</ai_chillDestination>
+      <fullGraveGraphicData>
+        <texPath>Buildings/RubySarcophagus</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(1.5,2.5)</drawSize>
+      </fullGraveGraphicData>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Critical</priority>
+        <filter>
+          <categories>
+            <li>CorpsesHumanlike</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <comps>
+      <li Class="CompProperties_AssignableToPawn">
+        <compClass>CompAssignableToPawn_Grave</compClass>
+        <drawAssignmentOverlay>false</drawAssignmentOverlay>
+      </li>
+    </comps>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="LampBase">
+    <defName>GrechkaTreasures_RubyLamp</defName>
+    <label>рубиновый светильник</label>
+    <description>Электрический светильник с драгоценной линзой, освещающий комнату цветом камня. Потребляет 20 Вт.</description>
+    <graphicData>
+      <texPath>Buildings/RubyLamp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1.5)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>8</Mass>
+      <Beauty>65</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>5000</WorkToBuild>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_RubyCut>6</GrechkaTreasures_RubyCut>
+      <Gold>10</Gold>
+      <Steel>20</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_LampGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+      <li>Electricity</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>20</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(220,40,55,0)</glowColor>
+      </li>
+    </comps>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="SculptureBase">
+    <defName>GrechkaTreasures_SapphireStatue</defName>
+    <label>сапфировая статуя</label>
+    <description>Цельная резная статуя из редкого драгоценного монолита на золотом основании. Создаётся художником на ювелирном верстаке и устанавливается после изготовления.</description>
+    <graphicData>
+      <texPath>Buildings/SapphireStatue</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,3)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>540</MaxHitPoints>
+      <Mass>55</Mass>
+      <Beauty>500</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToMake>70000</WorkToMake>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_SapphireMonolith>1</GrechkaTreasures_SapphireMonolith>
+      <Gold>80</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Artistic</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Jewelcraft</researchPrerequisite>
+      <skillRequirements>
+        <Artistic>8</Artistic>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="SculptureBase">
+    <defName>GrechkaTreasures_SapphireVase</defName>
+    <label>сапфировая ваза</label>
+    <description>Резная драгоценная ваза с золотой оправой. Создаётся художником на ювелирном верстаке.</description>
+    <graphicData>
+      <texPath>Buildings/SapphireVase</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1.4)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>252</MaxHitPoints>
+      <Mass>6</Mass>
+      <Beauty>130</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToMake>24000</WorkToMake>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_SapphireCut>8</GrechkaTreasures_SapphireCut>
+      <Gold>20</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Artistic</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Jewelcraft</researchPrerequisite>
+      <skillRequirements>
+        <Artistic>4</Artistic>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>GrechkaTreasures_SapphireObelisk</defName>
+    <label>сапфировый обелиск</label>
+    <description>Высокий обелиск из огранённых камней и золота. Роскошный центр сада или сокровищницы.</description>
+    <graphicData>
+      <texPath>Buildings/SapphireObelisk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,3)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>540</MaxHitPoints>
+      <Mass>70</Mass>
+      <Beauty>400</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>40000</WorkToBuild>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_SapphireCut>40</GrechkaTreasures_SapphireCut>
+      <Gold>50</Gold>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_ObeliskGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <passability>PassThroughOnly</passability>
+    <pathCost>40</pathCost>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>GrechkaTreasures_SapphireThrone</defName>
+    <label>сапфировый трон</label>
+    <description>Удобный драгоценный трон с золотым каркасом. Служит креслом у стола и рабочим сиденьем; не требует Royalty.</description>
+    <graphicData>
+      <texPath>Buildings/SapphireThrone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.5,2)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>540</MaxHitPoints>
+      <Mass>35</Mass>
+      <Beauty>140</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>26000</WorkToBuild>
+      <Comfort>1.05</Comfort>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_SapphireCut>18</GrechkaTreasures_SapphireCut>
+      <Gold>80</Gold>
+      <Cloth>20</Cloth>
+      <Steel>40</Steel>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_ThroneGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <passability>PassThroughOnly</passability>
+    <pathCost>40</pathCost>
+    <building>
+      <isSittable>true</isSittable>
+    </building>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="TableGatherSpotBase">
+    <defName>GrechkaTreasures_SapphireTable</defName>
+    <label>сапфировый стол</label>
+    <description>Роскошный обеденный стол с драгоценной столешницей и золотым узором.</description>
+    <graphicData>
+      <texPath>Buildings/SapphireTable</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>540</MaxHitPoints>
+      <Mass>45</Mass>
+      <Beauty>160</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>22000</WorkToBuild>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_SapphireCut>20</GrechkaTreasures_SapphireCut>
+      <Gold>60</Gold>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_TableGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="ArtableBedBase">
+    <defName>GrechkaTreasures_SapphireBed</defName>
+    <label>сапфировая кровать</label>
+    <description>Удобная кровать с мягким матрасом на драгоценном золотом каркасе.</description>
+    <graphicData>
+      <texPath>Buildings/SapphireBed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.5,2.5)</drawSize>
+    </graphicData>
+    <size>(1,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>540</MaxHitPoints>
+      <Mass>40</Mass>
+      <Beauty>150</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>28000</WorkToBuild>
+      <BedRestEffectiveness>1.15</BedRestEffectiveness>
+      <Comfort>1.1</Comfort>
+      <ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_SapphireCut>16</GrechkaTreasures_SapphireCut>
+      <Gold>50</Gold>
+      <Cloth>60</Cloth>
+      <Steel>40</Steel>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_BedGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <tickerType>Normal</tickerType>
+    <building>
+      <bed_showSleeperBody>false</bed_showSleeperBody>
+      <bed_healPerDay>4</bed_healPerDay>
+    </building>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>GrechkaTreasures_SapphireSarcophagus</defName>
+    <label>сапфировый саркофаг</label>
+    <description>Резной драгоценный саркофаг для почётного погребения. Сохраняет останки и поддерживает назначение владельца.</description>
+    <graphicData>
+      <texPath>Buildings/SapphireSarcophagus</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.5,2.5)</drawSize>
+    </graphicData>
+    <size>(1,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>540</MaxHitPoints>
+      <Mass>65</Mass>
+      <Beauty>240</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>32000</WorkToBuild>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_SapphireCut>30</GrechkaTreasures_SapphireCut>
+      <Gold>60</Gold>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_SarcophagusGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <passability>PassThroughOnly</passability>
+    <pathCost>40</pathCost>
+    <thingClass>Building_Sarcophagus</thingClass>
+    <tickerType>Rare</tickerType>
+    <containedPawnsSelectable>true</containedPawnsSelectable>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+      <li>ITab_ContentsCasket</li>
+    </inspectorTabs>
+    <building>
+      <preventDeteriorationInside>true</preventDeteriorationInside>
+      <haulToContainerDuration>500</haulToContainerDuration>
+      <isEscapableContainer>true</isEscapableContainer>
+      <ai_chillDestination>false</ai_chillDestination>
+      <fullGraveGraphicData>
+        <texPath>Buildings/SapphireSarcophagus</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(1.5,2.5)</drawSize>
+      </fullGraveGraphicData>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Critical</priority>
+        <filter>
+          <categories>
+            <li>CorpsesHumanlike</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <comps>
+      <li Class="CompProperties_AssignableToPawn">
+        <compClass>CompAssignableToPawn_Grave</compClass>
+        <drawAssignmentOverlay>false</drawAssignmentOverlay>
+      </li>
+    </comps>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="LampBase">
+    <defName>GrechkaTreasures_SapphireLamp</defName>
+    <label>сапфировый светильник</label>
+    <description>Электрический светильник с драгоценной линзой, освещающий комнату цветом камня. Потребляет 20 Вт.</description>
+    <graphicData>
+      <texPath>Buildings/SapphireLamp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1.5)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>540</MaxHitPoints>
+      <Mass>8</Mass>
+      <Beauty>65</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>5000</WorkToBuild>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_SapphireCut>6</GrechkaTreasures_SapphireCut>
+      <Gold>10</Gold>
+      <Steel>20</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_LampGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+      <li>Electricity</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>20</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(50,100,240,0)</glowColor>
+      </li>
+    </comps>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="SculptureBase">
+    <defName>GrechkaTreasures_EmeraldStatue</defName>
+    <label>изумрудная статуя</label>
+    <description>Цельная резная статуя из редкого драгоценного монолита на золотом основании. Создаётся художником на ювелирном верстаке и устанавливается после изготовления.</description>
+    <graphicData>
+      <texPath>Buildings/EmeraldStatue</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,3)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>55</Mass>
+      <Beauty>650</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToMake>70000</WorkToMake>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_EmeraldMonolith>1</GrechkaTreasures_EmeraldMonolith>
+      <Gold>80</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Artistic</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Jewelcraft</researchPrerequisite>
+      <skillRequirements>
+        <Artistic>8</Artistic>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="SculptureBase">
+    <defName>GrechkaTreasures_EmeraldVase</defName>
+    <label>изумрудная ваза</label>
+    <description>Резная драгоценная ваза с золотой оправой. Создаётся художником на ювелирном верстаке.</description>
+    <graphicData>
+      <texPath>Buildings/EmeraldVase</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1.4)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>140</MaxHitPoints>
+      <Mass>6</Mass>
+      <Beauty>169</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToMake>24000</WorkToMake>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_EmeraldCut>8</GrechkaTreasures_EmeraldCut>
+      <Gold>20</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Artistic</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Jewelcraft</researchPrerequisite>
+      <skillRequirements>
+        <Artistic>4</Artistic>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>GrechkaTreasures_EmeraldObelisk</defName>
+    <label>изумрудный обелиск</label>
+    <description>Высокий обелиск из огранённых камней и золота. Роскошный центр сада или сокровищницы.</description>
+    <graphicData>
+      <texPath>Buildings/EmeraldObelisk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,3)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>70</Mass>
+      <Beauty>520</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>40000</WorkToBuild>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_EmeraldCut>40</GrechkaTreasures_EmeraldCut>
+      <Gold>50</Gold>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_ObeliskGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <passability>PassThroughOnly</passability>
+    <pathCost>40</pathCost>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>GrechkaTreasures_EmeraldThrone</defName>
+    <label>изумрудный трон</label>
+    <description>Удобный драгоценный трон с золотым каркасом. Служит креслом у стола и рабочим сиденьем; не требует Royalty.</description>
+    <graphicData>
+      <texPath>Buildings/EmeraldThrone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.5,2)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>35</Mass>
+      <Beauty>182</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>26000</WorkToBuild>
+      <Comfort>1.05</Comfort>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_EmeraldCut>18</GrechkaTreasures_EmeraldCut>
+      <Gold>80</Gold>
+      <Cloth>20</Cloth>
+      <Steel>40</Steel>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_ThroneGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <passability>PassThroughOnly</passability>
+    <pathCost>40</pathCost>
+    <building>
+      <isSittable>true</isSittable>
+    </building>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="TableGatherSpotBase">
+    <defName>GrechkaTreasures_EmeraldTable</defName>
+    <label>изумрудный стол</label>
+    <description>Роскошный обеденный стол с драгоценной столешницей и золотым узором.</description>
+    <graphicData>
+      <texPath>Buildings/EmeraldTable</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>45</Mass>
+      <Beauty>208</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>22000</WorkToBuild>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_EmeraldCut>20</GrechkaTreasures_EmeraldCut>
+      <Gold>60</Gold>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_TableGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="ArtableBedBase">
+    <defName>GrechkaTreasures_EmeraldBed</defName>
+    <label>изумрудная кровать</label>
+    <description>Удобная кровать с мягким матрасом на драгоценном золотом каркасе.</description>
+    <graphicData>
+      <texPath>Buildings/EmeraldBed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.5,2.5)</drawSize>
+    </graphicData>
+    <size>(1,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>40</Mass>
+      <Beauty>195</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>28000</WorkToBuild>
+      <BedRestEffectiveness>1.15</BedRestEffectiveness>
+      <Comfort>1.1</Comfort>
+      <ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_EmeraldCut>16</GrechkaTreasures_EmeraldCut>
+      <Gold>50</Gold>
+      <Cloth>60</Cloth>
+      <Steel>40</Steel>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_BedGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <tickerType>Normal</tickerType>
+    <building>
+      <bed_showSleeperBody>false</bed_showSleeperBody>
+      <bed_healPerDay>4</bed_healPerDay>
+    </building>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>GrechkaTreasures_EmeraldSarcophagus</defName>
+    <label>изумрудный саркофаг</label>
+    <description>Резной драгоценный саркофаг для почётного погребения. Сохраняет останки и поддерживает назначение владельца.</description>
+    <graphicData>
+      <texPath>Buildings/EmeraldSarcophagus</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.5,2.5)</drawSize>
+    </graphicData>
+    <size>(1,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>65</Mass>
+      <Beauty>312</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>32000</WorkToBuild>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_EmeraldCut>30</GrechkaTreasures_EmeraldCut>
+      <Gold>60</Gold>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_SarcophagusGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <passability>PassThroughOnly</passability>
+    <pathCost>40</pathCost>
+    <thingClass>Building_Sarcophagus</thingClass>
+    <tickerType>Rare</tickerType>
+    <containedPawnsSelectable>true</containedPawnsSelectable>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+      <li>ITab_ContentsCasket</li>
+    </inspectorTabs>
+    <building>
+      <preventDeteriorationInside>true</preventDeteriorationInside>
+      <haulToContainerDuration>500</haulToContainerDuration>
+      <isEscapableContainer>true</isEscapableContainer>
+      <ai_chillDestination>false</ai_chillDestination>
+      <fullGraveGraphicData>
+        <texPath>Buildings/EmeraldSarcophagus</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(1.5,2.5)</drawSize>
+      </fullGraveGraphicData>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Critical</priority>
+        <filter>
+          <categories>
+            <li>CorpsesHumanlike</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <comps>
+      <li Class="CompProperties_AssignableToPawn">
+        <compClass>CompAssignableToPawn_Grave</compClass>
+        <drawAssignmentOverlay>false</drawAssignmentOverlay>
+      </li>
+    </comps>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="LampBase">
+    <defName>GrechkaTreasures_EmeraldLamp</defName>
+    <label>изумрудный светильник</label>
+    <description>Электрический светильник с драгоценной линзой, освещающий комнату цветом камня. Потребляет 20 Вт.</description>
+    <graphicData>
+      <texPath>Buildings/EmeraldLamp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1.5)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>8</Mass>
+      <Beauty>84</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>5000</WorkToBuild>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_EmeraldCut>6</GrechkaTreasures_EmeraldCut>
+      <Gold>10</Gold>
+      <Steel>20</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_LampGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+      <li>Electricity</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>20</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(40,210,100,0)</glowColor>
+      </li>
+    </comps>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="SculptureBase">
+    <defName>GrechkaTreasures_AmethystStatue</defName>
+    <label>аметистовая статуя</label>
+    <description>Цельная резная статуя из редкого драгоценного монолита на золотом основании. Создаётся художником на ювелирном верстаке и устанавливается после изготовления.</description>
+    <graphicData>
+      <texPath>Buildings/AmethystStatue</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,3)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>55</Mass>
+      <Beauty>500</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToMake>70000</WorkToMake>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_AmethystMonolith>1</GrechkaTreasures_AmethystMonolith>
+      <Gold>80</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Artistic</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Jewelcraft</researchPrerequisite>
+      <skillRequirements>
+        <Artistic>8</Artistic>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="SculptureBase">
+    <defName>GrechkaTreasures_AmethystVase</defName>
+    <label>аметистовая ваза</label>
+    <description>Резная драгоценная ваза с золотой оправой. Создаётся художником на ювелирном верстаке.</description>
+    <graphicData>
+      <texPath>Buildings/AmethystVase</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1.4)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>140</MaxHitPoints>
+      <Mass>6</Mass>
+      <Beauty>130</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToMake>24000</WorkToMake>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_AmethystCut>8</GrechkaTreasures_AmethystCut>
+      <Gold>20</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Artistic</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Jewelcraft</researchPrerequisite>
+      <skillRequirements>
+        <Artistic>4</Artistic>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>GrechkaTreasures_AmethystObelisk</defName>
+    <label>аметистовый обелиск</label>
+    <description>Высокий обелиск из огранённых камней и золота. Роскошный центр сада или сокровищницы.</description>
+    <graphicData>
+      <texPath>Buildings/AmethystObelisk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,3)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>70</Mass>
+      <Beauty>400</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>40000</WorkToBuild>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_AmethystCut>40</GrechkaTreasures_AmethystCut>
+      <Gold>50</Gold>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_ObeliskGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <passability>PassThroughOnly</passability>
+    <pathCost>40</pathCost>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>GrechkaTreasures_AmethystThrone</defName>
+    <label>аметистовый трон</label>
+    <description>Удобный драгоценный трон с золотым каркасом. Служит креслом у стола и рабочим сиденьем; не требует Royalty.</description>
+    <graphicData>
+      <texPath>Buildings/AmethystThrone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.5,2)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>35</Mass>
+      <Beauty>140</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>26000</WorkToBuild>
+      <Comfort>1.05</Comfort>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_AmethystCut>18</GrechkaTreasures_AmethystCut>
+      <Gold>80</Gold>
+      <Cloth>20</Cloth>
+      <Steel>40</Steel>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_ThroneGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <passability>PassThroughOnly</passability>
+    <pathCost>40</pathCost>
+    <building>
+      <isSittable>true</isSittable>
+    </building>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="TableGatherSpotBase">
+    <defName>GrechkaTreasures_AmethystTable</defName>
+    <label>аметистовый стол</label>
+    <description>Роскошный обеденный стол с драгоценной столешницей и золотым узором.</description>
+    <graphicData>
+      <texPath>Buildings/AmethystTable</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>45</Mass>
+      <Beauty>160</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>22000</WorkToBuild>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_AmethystCut>20</GrechkaTreasures_AmethystCut>
+      <Gold>60</Gold>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_TableGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="ArtableBedBase">
+    <defName>GrechkaTreasures_AmethystBed</defName>
+    <label>аметистовая кровать</label>
+    <description>Удобная кровать с мягким матрасом на драгоценном золотом каркасе.</description>
+    <graphicData>
+      <texPath>Buildings/AmethystBed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.5,2.5)</drawSize>
+    </graphicData>
+    <size>(1,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>40</Mass>
+      <Beauty>150</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>28000</WorkToBuild>
+      <BedRestEffectiveness>1.15</BedRestEffectiveness>
+      <Comfort>1.1</Comfort>
+      <ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_AmethystCut>16</GrechkaTreasures_AmethystCut>
+      <Gold>50</Gold>
+      <Cloth>60</Cloth>
+      <Steel>40</Steel>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_BedGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <tickerType>Normal</tickerType>
+    <building>
+      <bed_showSleeperBody>false</bed_showSleeperBody>
+      <bed_healPerDay>4</bed_healPerDay>
+    </building>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>GrechkaTreasures_AmethystSarcophagus</defName>
+    <label>аметистовый саркофаг</label>
+    <description>Резной драгоценный саркофаг для почётного погребения. Сохраняет останки и поддерживает назначение владельца.</description>
+    <graphicData>
+      <texPath>Buildings/AmethystSarcophagus</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.5,2.5)</drawSize>
+    </graphicData>
+    <size>(1,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>65</Mass>
+      <Beauty>240</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>32000</WorkToBuild>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_AmethystCut>30</GrechkaTreasures_AmethystCut>
+      <Gold>60</Gold>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_SarcophagusGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <passability>PassThroughOnly</passability>
+    <pathCost>40</pathCost>
+    <thingClass>Building_Sarcophagus</thingClass>
+    <tickerType>Rare</tickerType>
+    <containedPawnsSelectable>true</containedPawnsSelectable>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+      <li>ITab_ContentsCasket</li>
+    </inspectorTabs>
+    <building>
+      <preventDeteriorationInside>true</preventDeteriorationInside>
+      <haulToContainerDuration>500</haulToContainerDuration>
+      <isEscapableContainer>true</isEscapableContainer>
+      <ai_chillDestination>false</ai_chillDestination>
+      <fullGraveGraphicData>
+        <texPath>Buildings/AmethystSarcophagus</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(1.5,2.5)</drawSize>
+      </fullGraveGraphicData>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Critical</priority>
+        <filter>
+          <categories>
+            <li>CorpsesHumanlike</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <comps>
+      <li Class="CompProperties_AssignableToPawn">
+        <compClass>CompAssignableToPawn_Grave</compClass>
+        <drawAssignmentOverlay>false</drawAssignmentOverlay>
+      </li>
+    </comps>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="LampBase">
+    <defName>GrechkaTreasures_AmethystLamp</defName>
+    <label>аметистовый светильник</label>
+    <description>Электрический светильник с драгоценной линзой, освещающий комнату цветом камня. Потребляет 20 Вт.</description>
+    <graphicData>
+      <texPath>Buildings/AmethystLamp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1.5)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Mass>8</Mass>
+      <Beauty>65</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>5000</WorkToBuild>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_AmethystCut>6</GrechkaTreasures_AmethystCut>
+      <Gold>10</Gold>
+      <Steel>20</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_LampGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+      <li>Electricity</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>20</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(170,80,225,0)</glowColor>
+      </li>
+    </comps>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="SculptureBase">
+    <defName>GrechkaTreasures_TopazStatue</defName>
+    <label>топазовая статуя</label>
+    <description>Цельная резная статуя из редкого драгоценного монолита на золотом основании. Создаётся художником на ювелирном верстаке и устанавливается после изготовления.</description>
+    <graphicData>
+      <texPath>Buildings/TopazStatue</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,3)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>360</MaxHitPoints>
+      <Mass>55</Mass>
+      <Beauty>500</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToMake>70000</WorkToMake>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_TopazMonolith>1</GrechkaTreasures_TopazMonolith>
+      <Gold>80</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Artistic</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Jewelcraft</researchPrerequisite>
+      <skillRequirements>
+        <Artistic>8</Artistic>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="SculptureBase">
+    <defName>GrechkaTreasures_TopazVase</defName>
+    <label>топазовая ваза</label>
+    <description>Резная драгоценная ваза с золотой оправой. Создаётся художником на ювелирном верстаке.</description>
+    <graphicData>
+      <texPath>Buildings/TopazVase</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1.4)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>168</MaxHitPoints>
+      <Mass>6</Mass>
+      <Beauty>130</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToMake>24000</WorkToMake>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_TopazCut>8</GrechkaTreasures_TopazCut>
+      <Gold>20</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Artistic</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Jewelcraft</researchPrerequisite>
+      <skillRequirements>
+        <Artistic>4</Artistic>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>GrechkaTreasures_TopazObelisk</defName>
+    <label>топазовый обелиск</label>
+    <description>Высокий обелиск из огранённых камней и золота. Роскошный центр сада или сокровищницы.</description>
+    <graphicData>
+      <texPath>Buildings/TopazObelisk</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,3)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>360</MaxHitPoints>
+      <Mass>70</Mass>
+      <Beauty>400</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>40000</WorkToBuild>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_TopazCut>40</GrechkaTreasures_TopazCut>
+      <Gold>50</Gold>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_ObeliskGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <passability>PassThroughOnly</passability>
+    <pathCost>40</pathCost>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="ArtableFurnitureBase">
+    <defName>GrechkaTreasures_TopazThrone</defName>
+    <label>топазовый трон</label>
+    <description>Удобный драгоценный трон с золотым каркасом. Служит креслом у стола и рабочим сиденьем; не требует Royalty.</description>
+    <graphicData>
+      <texPath>Buildings/TopazThrone</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.5,2)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>360</MaxHitPoints>
+      <Mass>35</Mass>
+      <Beauty>140</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>26000</WorkToBuild>
+      <Comfort>1.05</Comfort>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_TopazCut>18</GrechkaTreasures_TopazCut>
+      <Gold>80</Gold>
+      <Cloth>20</Cloth>
+      <Steel>40</Steel>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_ThroneGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <passability>PassThroughOnly</passability>
+    <pathCost>40</pathCost>
+    <building>
+      <isSittable>true</isSittable>
+    </building>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="TableGatherSpotBase">
+    <defName>GrechkaTreasures_TopazTable</defName>
+    <label>топазовый стол</label>
+    <description>Роскошный обеденный стол с драгоценной столешницей и золотым узором.</description>
+    <graphicData>
+      <texPath>Buildings/TopazTable</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <size>(2,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>360</MaxHitPoints>
+      <Mass>45</Mass>
+      <Beauty>160</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>22000</WorkToBuild>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_TopazCut>20</GrechkaTreasures_TopazCut>
+      <Gold>60</Gold>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_TableGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="ArtableBedBase">
+    <defName>GrechkaTreasures_TopazBed</defName>
+    <label>топазовая кровать</label>
+    <description>Удобная кровать с мягким матрасом на драгоценном золотом каркасе.</description>
+    <graphicData>
+      <texPath>Buildings/TopazBed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.5,2.5)</drawSize>
+    </graphicData>
+    <size>(1,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>360</MaxHitPoints>
+      <Mass>40</Mass>
+      <Beauty>150</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>28000</WorkToBuild>
+      <BedRestEffectiveness>1.15</BedRestEffectiveness>
+      <Comfort>1.1</Comfort>
+      <ImmunityGainSpeedFactor>1.07</ImmunityGainSpeedFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_TopazCut>16</GrechkaTreasures_TopazCut>
+      <Gold>50</Gold>
+      <Cloth>60</Cloth>
+      <Steel>40</Steel>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_BedGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <tickerType>Normal</tickerType>
+    <building>
+      <bed_showSleeperBody>false</bed_showSleeperBody>
+      <bed_healPerDay>4</bed_healPerDay>
+    </building>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>GrechkaTreasures_TopazSarcophagus</defName>
+    <label>топазовый саркофаг</label>
+    <description>Резной драгоценный саркофаг для почётного погребения. Сохраняет останки и поддерживает назначение владельца.</description>
+    <graphicData>
+      <texPath>Buildings/TopazSarcophagus</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.5,2.5)</drawSize>
+    </graphicData>
+    <size>(1,2)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>360</MaxHitPoints>
+      <Mass>65</Mass>
+      <Beauty>240</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>32000</WorkToBuild>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_TopazCut>30</GrechkaTreasures_TopazCut>
+      <Gold>60</Gold>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_SarcophagusGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <passability>PassThroughOnly</passability>
+    <pathCost>40</pathCost>
+    <thingClass>Building_Sarcophagus</thingClass>
+    <tickerType>Rare</tickerType>
+    <containedPawnsSelectable>true</containedPawnsSelectable>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+      <li>ITab_ContentsCasket</li>
+    </inspectorTabs>
+    <building>
+      <preventDeteriorationInside>true</preventDeteriorationInside>
+      <haulToContainerDuration>500</haulToContainerDuration>
+      <isEscapableContainer>true</isEscapableContainer>
+      <ai_chillDestination>false</ai_chillDestination>
+      <fullGraveGraphicData>
+        <texPath>Buildings/TopazSarcophagus</texPath>
+        <graphicClass>Graphic_Single</graphicClass>
+        <drawSize>(1.5,2.5)</drawSize>
+      </fullGraveGraphicData>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>Corpses</li>
+          </categories>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Critical</priority>
+        <filter>
+          <categories>
+            <li>CorpsesHumanlike</li>
+          </categories>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <comps>
+      <li Class="CompProperties_AssignableToPawn">
+        <compClass>CompAssignableToPawn_Grave</compClass>
+        <drawAssignmentOverlay>false</drawAssignmentOverlay>
+      </li>
+    </comps>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="LampBase">
+    <defName>GrechkaTreasures_TopazLamp</defName>
+    <label>топазовый светильник</label>
+    <description>Электрический светильник с драгоценной линзой, освещающий комнату цветом камня. Потребляет 20 Вт.</description>
+    <graphicData>
+      <texPath>Buildings/TopazLamp</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1.5)</drawSize>
+    </graphicData>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <techLevel>Medieval</techLevel>
+    <statBases>
+      <MaxHitPoints>360</MaxHitPoints>
+      <Mass>8</Mass>
+      <Beauty>65</Beauty>
+      <Flammability>0</Flammability>
+      <WorkToBuild>5000</WorkToBuild>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_TopazCut>6</GrechkaTreasures_TopazCut>
+      <Gold>10</Gold>
+      <Steel>20</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <designatorDropdown>GrechkaTreasures_LampGroup</designatorDropdown>
+    <researchPrerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+      <li>Electricity</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>20</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>10</glowRadius>
+        <glowColor>(245,170,45,0)</glowColor>
+      </li>
+    </comps>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+</Defs>

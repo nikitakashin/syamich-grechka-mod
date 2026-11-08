@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaIndustry_7a0e4324377b>Radius: </GrechkaIndustry_7a0e4324377b>
+  <GrechkaIndustry_c01295237efa>active</GrechkaIndustry_c01295237efa>
+  <GrechkaIndustry_f2d86ccb744a>disabled</GrechkaIndustry_f2d86ccb744a>
+  <GrechkaIndustry_6909f4187d98>[Grechka Industry] Output subscriber error: </GrechkaIndustry_6909f4187d98>
+  <GrechkaIndustry_ddf3510dc180>Ready to unload: </GrechkaIndustry_ddf3510dc180>
+  <GrechkaIndustry_3fa9b7d153ee> mechanites</GrechkaIndustry_3fa9b7d153ee>
+  <GrechkaIndustry_1d35ff9e7950>Extraction: </GrechkaIndustry_1d35ff9e7950>
+  <GrechkaIndustry_1aa28673118c>Extraction paused: </GrechkaIndustry_1aa28673118c>
+  <GrechkaIndustry_1d7f4fb22aa0>[Grechka Industry] Invalid matter constants. Recipes were not created.</GrechkaIndustry_1d7f4fb22aa0>
+  <GrechkaIndustry_2493ed5a52c6>[Grechka Industry] Matter skipped </GrechkaIndustry_2493ed5a52c6>
+  <GrechkaIndustry_da283b60afc2>. Produces a new item of normal quality. Container contents and unique state are not copied.</GrechkaIndustry_da283b60afc2>
+  <GrechkaIndustry_8fbd4d2be5a9>[Grechka Industry] Safe limit of 60000 RecipeDefs reached. Remaining matter recipes were not created because the pack contains too many material variants.</GrechkaIndustry_8fbd4d2be5a9>
+  <GrechkaIndustry_d19e03356c37>[Grechka Industry] Matter batch size is unrepresentable for </GrechkaIndustry_d19e03356c37>
+  <GrechkaIndustry_1e1bdf9ead8f>[Grechka Industry] Matter recycling budget is unrepresentable for </GrechkaIndustry_1e1bdf9ead8f>
+  <GrechkaIndustry_100794a50088>matter from: </GrechkaIndustry_100794a50088>
+  <GrechkaIndustry_672acf4bea2a>[Grechka Industry] Matter synthesis budget is unrepresentable for </GrechkaIndustry_672acf4bea2a>
+  <GrechkaIndustry_f78d5b0df7d8>synthesis: </GrechkaIndustry_f78d5b0df7d8>
+  <GrechkaIndustry_7cc02bc655cd>Upgrade to </GrechkaIndustry_7cc02bc655cd>
+  <GrechkaIndustry_1f423d1791c2>Uninstall this device intact and place a blueprint for the next stage at the same location. Cost: </GrechkaIndustry_1f423d1791c2>
+  <GrechkaIndustry_f878119dcf1a>. The old device will stop working while the new one is being built.</GrechkaIndustry_f878119dcf1a>
+  <GrechkaIndustry_fa748223b51a>Cannot place the next device here: </GrechkaIndustry_fa748223b51a>
+  <GrechkaIndustry_0535fa03e514>Could not uninstall the device intact.</GrechkaIndustry_0535fa03e514>
+  <GrechkaIndustry_1290fafdb3c2>Blueprint </GrechkaIndustry_1290fafdb3c2>
+  <GrechkaIndustry_62224fbdda5a> was not created.</GrechkaIndustry_62224fbdda5a>
+  <GrechkaIndustry_b52c94091685>[Grechka Industry] Failed to place panel upgrade blueprint: </GrechkaIndustry_b52c94091685>
+  <GrechkaIndustry_31c93a2136e2>[Grechka Industry] Failed to place S0 restoration blueprint: </GrechkaIndustry_31c93a2136e2>
+  <GrechkaIndustry_a037b8b54564>The upgrade blueprint was not created. The uninstalled device has been preserved for reinstallation.</GrechkaIndustry_a037b8b54564>
+  <GrechkaIndustry_ac199f7978a8>[Grechka Industry] Failed to complete bench upgrade: </GrechkaIndustry_ac199f7978a8>
+  <GrechkaIndustry_bfce43b7166c>Target bench not found.</GrechkaIndustry_bfce43b7166c>
+  <GrechkaIndustry_eddf53e5a2fb>Ionizer is switched off or unpowered</GrechkaIndustry_eddf53e5a2fb>
+  <GrechkaIndustry_1eea1717956d>Lighting and cleaning the entire room. Cells covered: </GrechkaIndustry_1eea1717956d>
+  <GrechkaIndustry_eff4f301fa12> cells</GrechkaIndustry_eff4f301fa12>
+  <GrechkaIndustry_4c39231095b5>The ionizer requires an enclosed room</GrechkaIndustry_4c39231095b5>
+  <GrechkaIndustry_e039ffb8b453>Mechaponics growth ×</GrechkaIndustry_e039ffb8b453>
+  <GrechkaIndustry_a3ff1280eb4b>Mechaponics growth paused</GrechkaIndustry_a3ff1280eb4b>
+  <GrechkaIndustry_27973df0c9f9>
+Mechaponics ×</GrechkaIndustry_27973df0c9f9>
+  <GrechkaIndustry_14d9dd5218a6>
+Mechaponics has no power or is switched off</GrechkaIndustry_14d9dd5218a6>
+  <GrechkaIndustry_IonizerBudget>Ionizer cleaning budget must be between 1 and 256 layers per cycle.</GrechkaIndustry_IonizerBudget>
+  <GrechkaIndustry_MatterConstants>Matter constants must be finite and positive; recycleEfficiency must remain below 0.0625 with T5 bonuses.</GrechkaIndustry_MatterConstants>
+  <GrechkaIndustry_ExtractorProduct>Extractor product is missing.</GrechkaIndustry_ExtractorProduct>
+  <GrechkaIndustry_ExtractorCycle>Extractor cycle/count must be positive and the batch must fit one stack.</GrechkaIndustry_ExtractorCycle>
+  <GrechkaIndustry_RecycleUnverified>Recycling is paused: this item's production value cannot yet be verified safely. Reserved materials are preserved; cancel the bill or unfinished item to recover them.</GrechkaIndustry_RecycleUnverified>
+  <GrechkaIndustry_RecycleInsufficient>This batch is worth less than one unit of matter. Its ingredients have not been consumed.</GrechkaIndustry_RecycleInsufficient>
+</LanguageData>

@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Grechka_CryoRifle.label>grechka cryorifle "Blizzard"</Grechka_CryoRifle.label>
+  <Grechka_CryoRifle.description>A grechka cryo-emitter firing bursts of 10 rounds with 100 base damage each and a range of 70 cells. Hits refresh a three-second slow without stacking indefinitely.</Grechka_CryoRifle.description>
+  <Grechka_CryoBullet.label>cryo projectile</Grechka_CryoBullet.label>
+  <Grechka_CombatChipT4_Item.label>berserker chip T4</Grechka_CombatChipT4_Item.label>
+  <Grechka_CombatChipT4_Item.description>A brain implant. Different chip families are compatible. Installing another tier from the same family returns the old chip.</Grechka_CombatChipT4_Item.description>
+  <Grechka_CombatChipT5_Item.label>berserker chip T5</Grechka_CombatChipT5_Item.label>
+  <Grechka_CombatChipT5_Item.description>A brain implant. Different chip families are compatible. Installing another tier from the same family returns the old chip.</Grechka_CombatChipT5_Item.description>
+  <Grechka_StabilityChipT4_Item.label>iron mind chip T4</Grechka_StabilityChipT4_Item.label>
+  <Grechka_StabilityChipT4_Item.description>A brain implant. Different chip families are compatible. Installing another tier from the same family returns the old chip.</Grechka_StabilityChipT4_Item.description>
+  <Grechka_StabilityChipT5_Item.label>iron mind chip T5</Grechka_StabilityChipT5_Item.label>
+  <Grechka_StabilityChipT5_Item.description>A brain implant. Different chip families are compatible. Installing another tier from the same family returns the old chip.</Grechka_StabilityChipT5_Item.description>
+  <Grechka_CraftChipT4_Item.label>artisan chip T4</Grechka_CraftChipT4_Item.label>
+  <Grechka_CraftChipT4_Item.description>A brain implant. Different chip families are compatible. Installing another tier from the same family returns the old chip.</Grechka_CraftChipT4_Item.description>
+  <Grechka_CraftChipT5_Item.label>artisan chip T5</Grechka_CraftChipT5_Item.label>
+  <Grechka_CraftChipT5_Item.description>A brain implant. Different chip families are compatible. Installing another tier from the same family returns the old chip.</Grechka_CraftChipT5_Item.description>
+  <Grechka_MovementChipT4_Item.label>pathfinder chip T4</Grechka_MovementChipT4_Item.label>
+  <Grechka_MovementChipT4_Item.description>A brain implant. Different chip families are compatible. Installing another tier from the same family returns the old chip.</Grechka_MovementChipT4_Item.description>
+  <Grechka_MovementChipT5_Item.label>pathfinder chip T5</Grechka_MovementChipT5_Item.label>
+  <Grechka_MovementChipT5_Item.description>A brain implant. Different chip families are compatible. Installing another tier from the same family returns the old chip.</Grechka_MovementChipT5_Item.description>
+  <Grechka_TonicChipT4_Item.label>vigor chip T4</Grechka_TonicChipT4_Item.label>
+  <Grechka_TonicChipT4_Item.description>A brain implant. Different chip families are compatible. Installing another tier from the same family returns the old chip.</Grechka_TonicChipT4_Item.description>
+  <Grechka_TonicChipT5_Item.label>vigor chip T5</Grechka_TonicChipT5_Item.label>
+  <Grechka_TonicChipT5_Item.description>A brain implant. Different chip families are compatible. Installing another tier from the same family returns the old chip.</Grechka_TonicChipT5_Item.description>
+  <Grechka_BrainChipT5_Item.label>grechka mind chip T5</Grechka_BrainChipT5_Item.label>
+  <Grechka_BrainChipT5_Item.description>A brain implant. Different chip families are compatible. Installing another tier from the same family returns the old chip.</Grechka_BrainChipT5_Item.description>
+  <Grechka_ArmorT3_Item.label>armor: mechanite legacy</Grechka_ArmorT3_Item.label>
+  <Grechka_ArmorT3_Item.description>Equipment T3. Armor against sharp / blunt / heat attacks: 150% / 80% / 105%.</Grechka_ArmorT3_Item.description>
+  <Grechka_HelmetT3_Item.label>helmet: mechanite legacy</Grechka_HelmetT3_Item.label>
+  <Grechka_HelmetT3_Item.description>Equipment T3. Armor against sharp / blunt / heat attacks: 150% / 80% / 105%.</Grechka_HelmetT3_Item.description>
+  <Grechka_ArmorT4_Item.label>armor: iridescent archo set</Grechka_ArmorT4_Item.label>
+  <Grechka_ArmorT4_Item.description>Equipment T4. Armor against sharp / blunt / heat attacks: 215% / 140% / 165%.</Grechka_ArmorT4_Item.description>
+  <Grechka_HelmetT4_Item.label>helmet: iridescent archo set</Grechka_HelmetT4_Item.label>
+  <Grechka_HelmetT4_Item.description>Equipment T4. Armor against sharp / blunt / heat attacks: 215% / 140% / 165%.</Grechka_HelmetT4_Item.description>
+  <Grechka_ArmorT5_Item.label>armor: golden grechka heroism</Grechka_ArmorT5_Item.label>
+  <Grechka_ArmorT5_Item.description>Equipment T5. Armor against sharp / blunt / heat attacks: 240% / 165% / 190%.</Grechka_ArmorT5_Item.description>
+  <Grechka_HelmetT5_Item.label>helmet: golden grechka heroism</Grechka_HelmetT5_Item.label>
+  <Grechka_HelmetT5_Item.description>Equipment T5. Armor against sharp / blunt / heat attacks: 240% / 165% / 190%.</Grechka_HelmetT5_Item.description>
+  <Grechka_GoldenWings.label>golden grechka wings</Grechka_GoldenWings.label>
+  <Grechka_GoldenWings.description>Decorative wings. Occupy a separate layer over armor. Do not grant flight or dashing.</Grechka_GoldenWings.description>
+  <Grechka_CombatDroneT4_Item.label>combat drone T4</Grechka_CombatDroneT4_Item.label>
+  <Grechka_CombatDroneT4_Item.description>An independent combat companion in the utility slot. Burst 3 × 12, range 24, EMP 5. Requires a living wearer on the map.</Grechka_CombatDroneT4_Item.description>
+  <Grechka_DroneBulletT4_Item.label>drone shot T4</Grechka_DroneBulletT4_Item.label>
+  <Grechka_CombatDroneT5_Item.label>combat drone T5</Grechka_CombatDroneT5_Item.label>
+  <Grechka_CombatDroneT5_Item.description>An independent combat companion in the utility slot. Burst 3 × 18, range 30, EMP 8. Requires a living wearer on the map.</Grechka_CombatDroneT5_Item.description>
+  <Grechka_DroneBulletT5_Item.label>drone shot T5</Grechka_DroneBulletT5_Item.label>
+  <Grechka_MythicEyeT4_Item.label>mythical bionics: eye</Grechka_MythicEyeT4_Item.label>
+  <Grechka_MythicEyeT4_Item.description>Bionics T4. Target body part efficiency: 300%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_MythicEyeT4_Item.description>
+  <Grechka_MythicEarT4_Item.label>mythical bionics: ear</Grechka_MythicEarT4_Item.label>
+  <Grechka_MythicEarT4_Item.description>Bionics T4. Target body part efficiency: 300%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_MythicEarT4_Item.description>
+  <Grechka_MythicHeartT4_Item.label>mythical bionics: heart</Grechka_MythicHeartT4_Item.label>
+  <Grechka_MythicHeartT4_Item.description>Bionics T4. Target body part efficiency: 300%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_MythicHeartT4_Item.description>
+  <Grechka_MythicLiverT4_Item.label>mythical bionics: liver</Grechka_MythicLiverT4_Item.label>
+  <Grechka_MythicLiverT4_Item.description>Bionics T4. Target body part efficiency: 300%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_MythicLiverT4_Item.description>
+  <Grechka_MythicStomachT4_Item.label>mythical bionics: stomach</Grechka_MythicStomachT4_Item.label>
+  <Grechka_MythicStomachT4_Item.description>Bionics T4. Target body part efficiency: 300%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_MythicStomachT4_Item.description>
+  <Grechka_MythicLungT4_Item.label>mythical bionics: lung</Grechka_MythicLungT4_Item.label>
+  <Grechka_MythicLungT4_Item.description>Bionics T4. Target body part efficiency: 300%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_MythicLungT4_Item.description>
+  <Grechka_MythicKidneyT4_Item.label>mythical bionics: kidney</Grechka_MythicKidneyT4_Item.label>
+  <Grechka_MythicKidneyT4_Item.description>Bionics T4. Target body part efficiency: 300%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_MythicKidneyT4_Item.description>
+  <Grechka_MythicArmT4_Item.label>mythical bionics: arm</Grechka_MythicArmT4_Item.label>
+  <Grechka_MythicArmT4_Item.description>Bionics T4. Target body part efficiency: 300%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_MythicArmT4_Item.description>
+  <Grechka_MythicHandT4_Item.label>mythical bionics: hand</Grechka_MythicHandT4_Item.label>
+  <Grechka_MythicHandT4_Item.description>Bionics T4. Target body part efficiency: 300%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_MythicHandT4_Item.description>
+  <Grechka_MythicFingerT4_Item.label>mythical bionics: finger</Grechka_MythicFingerT4_Item.label>
+  <Grechka_MythicFingerT4_Item.description>Bionics T4. Target body part efficiency: 300%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_MythicFingerT4_Item.description>
+  <Grechka_MythicLegT4_Item.label>mythical bionics: leg</Grechka_MythicLegT4_Item.label>
+  <Grechka_MythicLegT4_Item.description>Bionics T4. Target body part efficiency: 300%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_MythicLegT4_Item.description>
+  <Grechka_MythicFootT4_Item.label>mythical bionics: foot</Grechka_MythicFootT4_Item.label>
+  <Grechka_MythicFootT4_Item.description>Bionics T4. Target body part efficiency: 300%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_MythicFootT4_Item.description>
+  <Grechka_MythicToeT4_Item.label>mythical bionics: toe</Grechka_MythicToeT4_Item.label>
+  <Grechka_MythicToeT4_Item.description>Bionics T4. Target body part efficiency: 300%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_MythicToeT4_Item.description>
+  <Grechka_MythicShoulderT4_Item.label>mythical bionics: shoulder</Grechka_MythicShoulderT4_Item.label>
+  <Grechka_MythicShoulderT4_Item.description>Bionics T4. Target body part efficiency: 300%. Reconstruction preserves nested organs and chips. Requires an existing body part.</Grechka_MythicShoulderT4_Item.description>
+  <Grechka_MythicClavicleT4_Item.label>mythical bionics: clavicle</Grechka_MythicClavicleT4_Item.label>
+  <Grechka_MythicClavicleT4_Item.description>Bionics T4. Target body part efficiency: 300%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_MythicClavicleT4_Item.description>
+  <Grechka_MythicHumerusT4_Item.label>mythical bionics: humerus</Grechka_MythicHumerusT4_Item.label>
+  <Grechka_MythicHumerusT4_Item.description>Bionics T4. Target body part efficiency: 300%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_MythicHumerusT4_Item.description>
+  <Grechka_MythicRadiusT4_Item.label>mythical bionics: radius</Grechka_MythicRadiusT4_Item.label>
+  <Grechka_MythicRadiusT4_Item.description>Bionics T4. Target body part efficiency: 300%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_MythicRadiusT4_Item.description>
+  <Grechka_MythicFemurT4_Item.label>mythical bionics: femur</Grechka_MythicFemurT4_Item.label>
+  <Grechka_MythicFemurT4_Item.description>Bionics T4. Target body part efficiency: 300%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_MythicFemurT4_Item.description>
+  <Grechka_MythicTibiaT4_Item.label>mythical bionics: tibia</Grechka_MythicTibiaT4_Item.label>
+  <Grechka_MythicTibiaT4_Item.description>Bionics T4. Target body part efficiency: 300%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_MythicTibiaT4_Item.description>
+  <Grechka_MythicSpineT4_Item.label>mythical bionics: spine</Grechka_MythicSpineT4_Item.label>
+  <Grechka_MythicSpineT4_Item.description>Bionics T4. Target body part efficiency: 300%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_MythicSpineT4_Item.description>
+  <Grechka_MythicNoseT4_Item.label>mythical bionics: nose</Grechka_MythicNoseT4_Item.label>
+  <Grechka_MythicNoseT4_Item.description>Bionics T4. Target body part efficiency: 300%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_MythicNoseT4_Item.description>
+  <Grechka_MythicJawT4_Item.label>mythical bionics: jaw</Grechka_MythicJawT4_Item.label>
+  <Grechka_MythicJawT4_Item.description>Bionics T4. Target body part efficiency: 300%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_MythicJawT4_Item.description>
+  <Grechka_MythicTongueT4_Item.label>mythical bionics: tongue</Grechka_MythicTongueT4_Item.label>
+  <Grechka_MythicTongueT4_Item.description>Bionics T4. Target body part efficiency: 300%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_MythicTongueT4_Item.description>
+  <Grechka_MythicRibcageT4_Item.label>mythical bionics: ribcage</Grechka_MythicRibcageT4_Item.label>
+  <Grechka_MythicRibcageT4_Item.description>Bionics T4. Target body part efficiency: 300%. Reconstruction preserves nested organs and chips. Requires an existing body part.</Grechka_MythicRibcageT4_Item.description>
+  <Grechka_MythicSternumT4_Item.label>mythical bionics: sternum</Grechka_MythicSternumT4_Item.label>
+  <Grechka_MythicSternumT4_Item.description>Bionics T4. Target body part efficiency: 300%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_MythicSternumT4_Item.description>
+  <Grechka_MythicPelvisT4_Item.label>mythical bionics: pelvis</Grechka_MythicPelvisT4_Item.label>
+  <Grechka_MythicPelvisT4_Item.description>Bionics T4. Target body part efficiency: 300%. Reconstruction preserves nested organs and chips. Requires an existing body part.</Grechka_MythicPelvisT4_Item.description>
+  <Grechka_MythicSkullT4_Item.label>mythical bionics: skull</Grechka_MythicSkullT4_Item.label>
+  <Grechka_MythicSkullT4_Item.description>Bionics T4. Target body part efficiency: 300%. Reconstruction preserves nested organs and chips. Requires an existing body part.</Grechka_MythicSkullT4_Item.description>
+  <Grechka_MythicTorsoT4_Item.label>mythical bionics: torso</Grechka_MythicTorsoT4_Item.label>
+  <Grechka_MythicTorsoT4_Item.description>Bionics T4. Target body part efficiency: 300%. Reconstruction preserves nested organs and chips. Requires an existing body part.</Grechka_MythicTorsoT4_Item.description>
+  <Grechka_MythicNeckT4_Item.label>mythical bionics: neck</Grechka_MythicNeckT4_Item.label>
+  <Grechka_MythicNeckT4_Item.description>Bionics T4. Target body part efficiency: 300%. Reconstruction preserves nested organs and chips. Requires an existing body part.</Grechka_MythicNeckT4_Item.description>
+  <Grechka_MythicHeadT4_Item.label>mythical bionics: head</Grechka_MythicHeadT4_Item.label>
+  <Grechka_MythicHeadT4_Item.description>Bionics T4. Target body part efficiency: 300%. Reconstruction preserves nested organs and chips. Requires an existing body part.</Grechka_MythicHeadT4_Item.description>
+  <Grechka_MythicWaistT4_Item.label>mythical bionics: lower back</Grechka_MythicWaistT4_Item.label>
+  <Grechka_MythicWaistT4_Item.description>Bionics T4. Target body part efficiency: 300%. Reconstruction preserves nested organs and chips. Requires an existing body part.</Grechka_MythicWaistT4_Item.description>
+  <Grechka_MythicBrainT4_Item.label>mythical bionics: brain</Grechka_MythicBrainT4_Item.label>
+  <Grechka_MythicBrainT4_Item.description>Bionics T4. Target body part efficiency: 300%. Reconstruction preserves nested organs and chips. Requires an existing body part.</Grechka_MythicBrainT4_Item.description>
+  <Grechka_GrechkaEyeT5_Item.label>grechka bionics: eye</Grechka_GrechkaEyeT5_Item.label>
+  <Grechka_GrechkaEyeT5_Item.description>Bionics T5. Target body part efficiency: 600%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_GrechkaEyeT5_Item.description>
+  <Grechka_GrechkaEarT5_Item.label>grechka bionics: ear</Grechka_GrechkaEarT5_Item.label>
+  <Grechka_GrechkaEarT5_Item.description>Bionics T5. Target body part efficiency: 600%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_GrechkaEarT5_Item.description>
+  <Grechka_GrechkaHeartT5_Item.label>grechka bionics: heart</Grechka_GrechkaHeartT5_Item.label>
+  <Grechka_GrechkaHeartT5_Item.description>Bionics T5. Target body part efficiency: 600%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_GrechkaHeartT5_Item.description>
+  <Grechka_GrechkaLiverT5_Item.label>grechka bionics: liver</Grechka_GrechkaLiverT5_Item.label>
+  <Grechka_GrechkaLiverT5_Item.description>Bionics T5. Target body part efficiency: 600%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_GrechkaLiverT5_Item.description>
+  <Grechka_GrechkaStomachT5_Item.label>grechka bionics: stomach</Grechka_GrechkaStomachT5_Item.label>
+  <Grechka_GrechkaStomachT5_Item.description>Bionics T5. Target body part efficiency: 600%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_GrechkaStomachT5_Item.description>
+  <Grechka_GrechkaLungT5_Item.label>grechka bionics: lung</Grechka_GrechkaLungT5_Item.label>
+  <Grechka_GrechkaLungT5_Item.description>Bionics T5. Target body part efficiency: 600%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_GrechkaLungT5_Item.description>
+  <Grechka_GrechkaKidneyT5_Item.label>grechka bionics: kidney</Grechka_GrechkaKidneyT5_Item.label>
+  <Grechka_GrechkaKidneyT5_Item.description>Bionics T5. Target body part efficiency: 600%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_GrechkaKidneyT5_Item.description>
+  <Grechka_GrechkaArmT5_Item.label>grechka bionics: arm</Grechka_GrechkaArmT5_Item.label>
+  <Grechka_GrechkaArmT5_Item.description>Bionics T5. Target body part efficiency: 600%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_GrechkaArmT5_Item.description>
+  <Grechka_GrechkaHandT5_Item.label>grechka bionics: hand</Grechka_GrechkaHandT5_Item.label>
+  <Grechka_GrechkaHandT5_Item.description>Bionics T5. Target body part efficiency: 600%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_GrechkaHandT5_Item.description>
+  <Grechka_GrechkaFingerT5_Item.label>grechka bionics: finger</Grechka_GrechkaFingerT5_Item.label>
+  <Grechka_GrechkaFingerT5_Item.description>Bionics T5. Target body part efficiency: 600%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_GrechkaFingerT5_Item.description>
+  <Grechka_GrechkaLegT5_Item.label>grechka bionics: leg</Grechka_GrechkaLegT5_Item.label>
+  <Grechka_GrechkaLegT5_Item.description>Bionics T5. Target body part efficiency: 600%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_GrechkaLegT5_Item.description>
+  <Grechka_GrechkaFootT5_Item.label>grechka bionics: foot</Grechka_GrechkaFootT5_Item.label>
+  <Grechka_GrechkaFootT5_Item.description>Bionics T5. Target body part efficiency: 600%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_GrechkaFootT5_Item.description>
+  <Grechka_GrechkaToeT5_Item.label>grechka bionics: toe</Grechka_GrechkaToeT5_Item.label>
+  <Grechka_GrechkaToeT5_Item.description>Bionics T5. Target body part efficiency: 600%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_GrechkaToeT5_Item.description>
+  <Grechka_GrechkaShoulderT5_Item.label>grechka bionics: shoulder</Grechka_GrechkaShoulderT5_Item.label>
+  <Grechka_GrechkaShoulderT5_Item.description>Bionics T5. Target body part efficiency: 600%. Reconstruction preserves nested organs and chips. Requires an existing body part.</Grechka_GrechkaShoulderT5_Item.description>
+  <Grechka_GrechkaClavicleT5_Item.label>grechka bionics: clavicle</Grechka_GrechkaClavicleT5_Item.label>
+  <Grechka_GrechkaClavicleT5_Item.description>Bionics T5. Target body part efficiency: 600%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_GrechkaClavicleT5_Item.description>
+  <Grechka_GrechkaHumerusT5_Item.label>grechka bionics: humerus</Grechka_GrechkaHumerusT5_Item.label>
+  <Grechka_GrechkaHumerusT5_Item.description>Bionics T5. Target body part efficiency: 600%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_GrechkaHumerusT5_Item.description>
+  <Grechka_GrechkaRadiusT5_Item.label>grechka bionics: radius</Grechka_GrechkaRadiusT5_Item.label>
+  <Grechka_GrechkaRadiusT5_Item.description>Bionics T5. Target body part efficiency: 600%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_GrechkaRadiusT5_Item.description>
+  <Grechka_GrechkaFemurT5_Item.label>grechka bionics: femur</Grechka_GrechkaFemurT5_Item.label>
+  <Grechka_GrechkaFemurT5_Item.description>Bionics T5. Target body part efficiency: 600%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_GrechkaFemurT5_Item.description>
+  <Grechka_GrechkaTibiaT5_Item.label>grechka bionics: tibia</Grechka_GrechkaTibiaT5_Item.label>
+  <Grechka_GrechkaTibiaT5_Item.description>Bionics T5. Target body part efficiency: 600%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_GrechkaTibiaT5_Item.description>
+  <Grechka_GrechkaSpineT5_Item.label>grechka bionics: spine</Grechka_GrechkaSpineT5_Item.label>
+  <Grechka_GrechkaSpineT5_Item.description>Bionics T5. Target body part efficiency: 600%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_GrechkaSpineT5_Item.description>
+  <Grechka_GrechkaNoseT5_Item.label>grechka bionics: nose</Grechka_GrechkaNoseT5_Item.label>
+  <Grechka_GrechkaNoseT5_Item.description>Bionics T5. Target body part efficiency: 600%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_GrechkaNoseT5_Item.description>
+  <Grechka_GrechkaJawT5_Item.label>grechka bionics: jaw</Grechka_GrechkaJawT5_Item.label>
+  <Grechka_GrechkaJawT5_Item.description>Bionics T5. Target body part efficiency: 600%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_GrechkaJawT5_Item.description>
+  <Grechka_GrechkaTongueT5_Item.label>grechka bionics: tongue</Grechka_GrechkaTongueT5_Item.label>
+  <Grechka_GrechkaTongueT5_Item.description>Bionics T5. Target body part efficiency: 600%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_GrechkaTongueT5_Item.description>
+  <Grechka_GrechkaRibcageT5_Item.label>grechka bionics: ribcage</Grechka_GrechkaRibcageT5_Item.label>
+  <Grechka_GrechkaRibcageT5_Item.description>Bionics T5. Target body part efficiency: 600%. Reconstruction preserves nested organs and chips. Requires an existing body part.</Grechka_GrechkaRibcageT5_Item.description>
+  <Grechka_GrechkaSternumT5_Item.label>grechka bionics: sternum</Grechka_GrechkaSternumT5_Item.label>
+  <Grechka_GrechkaSternumT5_Item.description>Bionics T5. Target body part efficiency: 600%. Full replacement includes child body part functions. Separate nested implants do not stack.</Grechka_GrechkaSternumT5_Item.description>
+  <Grechka_GrechkaPelvisT5_Item.label>grechka bionics: pelvis</Grechka_GrechkaPelvisT5_Item.label>
+  <Grechka_GrechkaPelvisT5_Item.description>Bionics T5. Target body part efficiency: 600%. Reconstruction preserves nested organs and chips. Requires an existing body part.</Grechka_GrechkaPelvisT5_Item.description>
+  <Grechka_GrechkaSkullT5_Item.label>grechka bionics: skull</Grechka_GrechkaSkullT5_Item.label>
+  <Grechka_GrechkaSkullT5_Item.description>Bionics T5. Target body part efficiency: 600%. Reconstruction preserves nested organs and chips. Requires an existing body part.</Grechka_GrechkaSkullT5_Item.description>
+  <Grechka_GrechkaTorsoT5_Item.label>grechka bionics: torso</Grechka_GrechkaTorsoT5_Item.label>
+  <Grechka_GrechkaTorsoT5_Item.description>Bionics T5. Target body part efficiency: 600%. Reconstruction preserves nested organs and chips. Requires an existing body part.</Grechka_GrechkaTorsoT5_Item.description>
+  <Grechka_GrechkaNeckT5_Item.label>grechka bionics: neck</Grechka_GrechkaNeckT5_Item.label>
+  <Grechka_GrechkaNeckT5_Item.description>Bionics T5. Target body part efficiency: 600%. Reconstruction preserves nested organs and chips. Requires an existing body part.</Grechka_GrechkaNeckT5_Item.description>
+  <Grechka_GrechkaHeadT5_Item.label>grechka bionics: head</Grechka_GrechkaHeadT5_Item.label>
+  <Grechka_GrechkaHeadT5_Item.description>Bionics T5. Target body part efficiency: 600%. Reconstruction preserves nested organs and chips. Requires an existing body part.</Grechka_GrechkaHeadT5_Item.description>
+  <Grechka_GrechkaWaistT5_Item.label>grechka bionics: lower back</Grechka_GrechkaWaistT5_Item.label>
+  <Grechka_GrechkaWaistT5_Item.description>Bionics T5. Target body part efficiency: 600%. Reconstruction preserves nested organs and chips. Requires an existing body part.</Grechka_GrechkaWaistT5_Item.description>
+  <Grechka_GrechkaBrainT5_Item.label>grechka bionics: brain</Grechka_GrechkaBrainT5_Item.label>
+  <Grechka_GrechkaBrainT5_Item.description>Bionics T5. Target body part efficiency: 600%. Reconstruction preserves nested organs and chips. Requires an existing body part.</Grechka_GrechkaBrainT5_Item.description>
+</LanguageData>

@@ -1,0 +1,410 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Grechka_LuckyBlockT1_Item.label>lucky block T1</Grechka_LuckyBlockT1_Item.label>
+  <Grechka_LuckyBlockT1_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• steel ×150 + component ×8
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockT1_Item.description>
+  <Grechka_LuckyBlockResourcesT1_Item.label>lucky block "Resources" T1</Grechka_LuckyBlockResourcesT1_Item.label>
+  <Grechka_LuckyBlockResourcesT1_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• steel ×150
+• wood ×250
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockResourcesT1_Item.description>
+  <Grechka_LuckyBlockIndustryT1_Item.label>lucky block "Industry" T1</Grechka_LuckyBlockIndustryT1_Item.label>
+  <Grechka_LuckyBlockIndustryT1_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• steel ×150 + component ×8
+• component ×8 + plasteel ×20
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockIndustryT1_Item.description>
+  <Grechka_LuckyBlockEnergyT1_Item.label>lucky block "Power" T1</Grechka_LuckyBlockEnergyT1_Item.label>
+  <Grechka_LuckyBlockEnergyT1_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• component ×6 + steel ×120
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockEnergyT1_Item.description>
+  <Grechka_LuckyBlockMedicalT1_Item.label>lucky block "Medicine" T1</Grechka_LuckyBlockMedicalT1_Item.label>
+  <Grechka_LuckyBlockMedicalT1_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• medicine ×12
+• glitterworld medicine ×4
+• Last chance dressing ×4 + Field analgesic ×4 (requires Grechka Pharmacy)
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockMedicalT1_Item.description>
+  <Grechka_LuckyBlockCombatT1_Item.label>lucky block "Arsenal" T1</Grechka_LuckyBlockCombatT1_Item.label>
+  <Grechka_LuckyBlockCombatT1_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• assault rifle (good quality) ×1
+• flak vest ×1
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockCombatT1_Item.description>
+  <Grechka_LuckyBlockFarmT1_Item.label>lucky block "Farming" T1</Grechka_LuckyBlockFarmT1_Item.label>
+  <Grechka_LuckyBlockFarmT1_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• rice ×200
+• packaged survival meal ×10
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockFarmT1_Item.description>
+  <Grechka_LuckyBlockZooT1_Item.label>lucky block "Zoo" T1</Grechka_LuckyBlockZooT1_Item.label>
+  <Grechka_LuckyBlockZooT1_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• cat ×100
+• chicken ×6
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockZooT1_Item.description>
+  <Grechka_LuckyBlockMechsT1_Item.label>lucky block "Mechs Everywhere" T1</Grechka_LuckyBlockMechsT1_Item.label>
+  <Grechka_LuckyBlockMechsT1_Item.description>A dangerous themed reward that may contain hostile mechanoids! Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• steel ×250 + component ×10
+• hostile mechanoids: scyther ×4
+• hostile mechanoids: scyther ×12
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockMechsT1_Item.description>
+  <Grechka_LuckyBlockChaosT1_Item.label>lucky block "Grechka Madness" T1</Grechka_LuckyBlockChaosT1_Item.label>
+  <Grechka_LuckyBlockChaosT1_Item.description>A dangerous themed reward that may contain hostile mechanoids! Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• steel ×1000
+• cat ×100
+• hostile mechanoids: scyther ×4
+• charge rifle (masterwork quality) ×1
+• simple meal ×1 + potatoes ×500
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockChaosT1_Item.description>
+  <Grechka_LuckyBlockStorageT1_Item.label>lucky block "Digital" T1</Grechka_LuckyBlockStorageT1_Item.label>
+  <Grechka_LuckyBlockStorageT1_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• quartz processor ×4 + silver processor ×2 (requires Grechka Storage)
+• storage disk 1K ×1 (requires Grechka Storage)
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockStorageT1_Item.description>
+  <Grechka_LuckyBlockT2_Item.label>lucky block T2</Grechka_LuckyBlockT2_Item.label>
+  <Grechka_LuckyBlockT2_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• plasteel ×60 + advanced component ×5
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockT2_Item.description>
+  <Grechka_LuckyBlockResourcesT2_Item.label>lucky block "Resources" T2</Grechka_LuckyBlockResourcesT2_Item.label>
+  <Grechka_LuckyBlockResourcesT2_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• steel ×300
+• wood ×500
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockResourcesT2_Item.description>
+  <Grechka_LuckyBlockIndustryT2_Item.label>lucky block "Industry" T2</Grechka_LuckyBlockIndustryT2_Item.label>
+  <Grechka_LuckyBlockIndustryT2_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• plasteel ×60 + advanced component ×5
+• component ×16 + plasteel ×40
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockIndustryT2_Item.description>
+  <Grechka_LuckyBlockEnergyT2_Item.label>lucky block "Power" T2</Grechka_LuckyBlockEnergyT2_Item.label>
+  <Grechka_LuckyBlockEnergyT2_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• component ×12 + steel ×240
+• improved solar cell ×6 (requires Grechka Industry)
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockEnergyT2_Item.description>
+  <Grechka_LuckyBlockMedicalT2_Item.label>lucky block "Medicine" T2</Grechka_LuckyBlockMedicalT2_Item.label>
+  <Grechka_LuckyBlockMedicalT2_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• medicine ×24
+• glitterworld medicine ×8
+• Immune support ×4 + Recovery solution ×4 + Clean slate course ×2 (requires Grechka Pharmacy)
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockMedicalT2_Item.description>
+  <Grechka_LuckyBlockCombatT2_Item.label>lucky block "Arsenal" T2</Grechka_LuckyBlockCombatT2_Item.label>
+  <Grechka_LuckyBlockCombatT2_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• assault rifle (good quality) ×1
+• flak vest ×1
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockCombatT2_Item.description>
+  <Grechka_LuckyBlockFarmT2_Item.label>lucky block "Farming" T2</Grechka_LuckyBlockFarmT2_Item.label>
+  <Grechka_LuckyBlockFarmT2_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• rice ×400
+• packaged survival meal ×20
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockFarmT2_Item.description>
+  <Grechka_LuckyBlockZooT2_Item.label>lucky block "Zoo" T2</Grechka_LuckyBlockZooT2_Item.label>
+  <Grechka_LuckyBlockZooT2_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• cat ×100
+• chicken ×6
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockZooT2_Item.description>
+  <Grechka_LuckyBlockMechsT2_Item.label>lucky block "Mechs Everywhere" T2</Grechka_LuckyBlockMechsT2_Item.label>
+  <Grechka_LuckyBlockMechsT2_Item.description>A dangerous themed reward that may contain hostile mechanoids! Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• steel ×500 + component ×20
+• hostile mechanoids: scyther ×4
+• hostile mechanoids: scyther ×12
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockMechsT2_Item.description>
+  <Grechka_LuckyBlockChaosT2_Item.label>lucky block "Grechka Madness" T2</Grechka_LuckyBlockChaosT2_Item.label>
+  <Grechka_LuckyBlockChaosT2_Item.description>A dangerous themed reward that may contain hostile mechanoids! Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• steel ×2000
+• cat ×100
+• hostile mechanoids: scyther ×4
+• charge rifle (masterwork quality) ×1
+• simple meal ×1 + potatoes ×500
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockChaosT2_Item.description>
+  <Grechka_LuckyBlockStorageT2_Item.label>lucky block "Digital" T2</Grechka_LuckyBlockStorageT2_Item.label>
+  <Grechka_LuckyBlockStorageT2_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• quartz processor ×8 + silver processor ×4 (requires Grechka Storage)
+• storage disk 4K ×1 (requires Grechka Storage)
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockStorageT2_Item.description>
+  <Grechka_LuckyBlockT3_Item.label>lucky block T3</Grechka_LuckyBlockT3_Item.label>
+  <Grechka_LuckyBlockT3_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• mecha-component ×6 + mechanites ×60 (requires Grechka Industry)
+• advanced component ×12 + plasteel ×120
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockT3_Item.description>
+  <Grechka_LuckyBlockResourcesT3_Item.label>lucky block "Resources" T3</Grechka_LuckyBlockResourcesT3_Item.label>
+  <Grechka_LuckyBlockResourcesT3_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• steel ×450
+• wood ×750
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockResourcesT3_Item.description>
+  <Grechka_LuckyBlockIndustryT3_Item.label>lucky block "Industry" T3</Grechka_LuckyBlockIndustryT3_Item.label>
+  <Grechka_LuckyBlockIndustryT3_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• mecha-component ×6 + mechanites ×60 (requires Grechka Industry)
+• component ×24 + plasteel ×60
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockIndustryT3_Item.description>
+  <Grechka_LuckyBlockEnergyT3_Item.label>lucky block "Power" T3</Grechka_LuckyBlockEnergyT3_Item.label>
+  <Grechka_LuckyBlockEnergyT3_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• component ×18 + steel ×360
+• mechanite solar cell ×9 (requires Grechka Industry)
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockEnergyT3_Item.description>
+  <Grechka_LuckyBlockMedicalT3_Item.label>lucky block "Medicine" T3</Grechka_LuckyBlockMedicalT3_Item.label>
+  <Grechka_LuckyBlockMedicalT3_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• medicine ×36
+• glitterworld medicine ×12
+• Living tissue injector ×3 + Red line injector ×2 + Second shift concentrate ×2 (requires Grechka Pharmacy)
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockMedicalT3_Item.description>
+  <Grechka_LuckyBlockCombatT3_Item.label>lucky block "Arsenal" T3</Grechka_LuckyBlockCombatT3_Item.label>
+  <Grechka_LuckyBlockCombatT3_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• assault rifle (excellent quality) ×1
+• flak vest ×1
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockCombatT3_Item.description>
+  <Grechka_LuckyBlockFarmT3_Item.label>lucky block "Farming" T3</Grechka_LuckyBlockFarmT3_Item.label>
+  <Grechka_LuckyBlockFarmT3_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• rice ×600
+• packaged survival meal ×30
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockFarmT3_Item.description>
+  <Grechka_LuckyBlockZooT3_Item.label>lucky block "Zoo" T3</Grechka_LuckyBlockZooT3_Item.label>
+  <Grechka_LuckyBlockZooT3_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• cat ×100
+• chicken ×6
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockZooT3_Item.description>
+  <Grechka_LuckyBlockMechsT3_Item.label>lucky block "Mechs Everywhere" T3</Grechka_LuckyBlockMechsT3_Item.label>
+  <Grechka_LuckyBlockMechsT3_Item.description>A dangerous themed reward that may contain hostile mechanoids! Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• steel ×750 + component ×30
+• hostile mechanoids: scyther ×4
+• hostile mechanoids: scyther ×12
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockMechsT3_Item.description>
+  <Grechka_LuckyBlockChaosT3_Item.label>lucky block "Grechka Madness" T3</Grechka_LuckyBlockChaosT3_Item.label>
+  <Grechka_LuckyBlockChaosT3_Item.description>A dangerous themed reward that may contain hostile mechanoids! Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• steel ×3000
+• cat ×100
+• hostile mechanoids: scyther ×4
+• charge rifle (masterwork quality) ×1
+• simple meal ×1 + potatoes ×500
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockChaosT3_Item.description>
+  <Grechka_LuckyBlockStorageT3_Item.label>lucky block "Digital" T3</Grechka_LuckyBlockStorageT3_Item.label>
+  <Grechka_LuckyBlockStorageT3_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• quartz processor ×12 + silver processor ×6 (requires Grechka Storage)
+• storage disk 16K ×1 (requires Grechka Storage)
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockStorageT3_Item.description>
+  <Grechka_LuckyBlockT4_Item.label>lucky block T4</Grechka_LuckyBlockT4_Item.label>
+  <Grechka_LuckyBlockT4_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• archotech component ×4 + archotech substrate ×20 (requires Grechka Industry)
+• advanced component ×20 + gold ×150
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockT4_Item.description>
+  <Grechka_LuckyBlockResourcesT4_Item.label>lucky block "Resources" T4</Grechka_LuckyBlockResourcesT4_Item.label>
+  <Grechka_LuckyBlockResourcesT4_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• steel ×600
+• wood ×1000
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockResourcesT4_Item.description>
+  <Grechka_LuckyBlockIndustryT4_Item.label>lucky block "Industry" T4</Grechka_LuckyBlockIndustryT4_Item.label>
+  <Grechka_LuckyBlockIndustryT4_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• archotech component ×4 + archotech substrate ×20 (requires Grechka Industry)
+• component ×32 + plasteel ×80
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockIndustryT4_Item.description>
+  <Grechka_LuckyBlockEnergyT4_Item.label>lucky block "Power" T4</Grechka_LuckyBlockEnergyT4_Item.label>
+  <Grechka_LuckyBlockEnergyT4_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• component ×24 + steel ×480
+• mechanite solar cell ×12 (requires Grechka Industry)
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockEnergyT4_Item.description>
+  <Grechka_LuckyBlockMedicalT4_Item.label>lucky block "Medicine" T4</Grechka_LuckyBlockMedicalT4_Item.label>
+  <Grechka_LuckyBlockMedicalT4_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• medicine ×48
+• glitterworld medicine ×16
+• Scar repair serum ×2 + Limb regeneration serum ×1 (requires Grechka Pharmacy)
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockMedicalT4_Item.description>
+  <Grechka_LuckyBlockCombatT4_Item.label>lucky block "Arsenal" T4</Grechka_LuckyBlockCombatT4_Item.label>
+  <Grechka_LuckyBlockCombatT4_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• assault rifle (excellent quality) ×1
+• flak vest ×1
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockCombatT4_Item.description>
+  <Grechka_LuckyBlockFarmT4_Item.label>lucky block "Farming" T4</Grechka_LuckyBlockFarmT4_Item.label>
+  <Grechka_LuckyBlockFarmT4_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• rice ×800
+• packaged survival meal ×40
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockFarmT4_Item.description>
+  <Grechka_LuckyBlockZooT4_Item.label>lucky block "Zoo" T4</Grechka_LuckyBlockZooT4_Item.label>
+  <Grechka_LuckyBlockZooT4_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• cat ×100
+• chicken ×6
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockZooT4_Item.description>
+  <Grechka_LuckyBlockMechsT4_Item.label>lucky block "Mechs Everywhere" T4</Grechka_LuckyBlockMechsT4_Item.label>
+  <Grechka_LuckyBlockMechsT4_Item.description>A dangerous themed reward that may contain hostile mechanoids! Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• steel ×1000 + component ×40
+• hostile mechanoids: scyther ×4
+• hostile mechanoids: scyther ×12
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockMechsT4_Item.description>
+  <Grechka_LuckyBlockChaosT4_Item.label>lucky block "Grechka Madness" T4</Grechka_LuckyBlockChaosT4_Item.label>
+  <Grechka_LuckyBlockChaosT4_Item.description>A dangerous themed reward that may contain hostile mechanoids! Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• steel ×4000
+• cat ×100
+• hostile mechanoids: scyther ×4
+• charge rifle (masterwork quality) ×1
+• simple meal ×1 + potatoes ×500
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockChaosT4_Item.description>
+  <Grechka_LuckyBlockStorageT4_Item.label>lucky block "Digital" T4</Grechka_LuckyBlockStorageT4_Item.label>
+  <Grechka_LuckyBlockStorageT4_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• quartz processor ×16 + silver processor ×8 (requires Grechka Storage)
+• storage disk 64K ×1 (requires Grechka Storage)
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockStorageT4_Item.description>
+  <Grechka_LuckyBlockT5_Item.label>lucky block T5</Grechka_LuckyBlockT5_Item.label>
+  <Grechka_LuckyBlockT5_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• grechka component ×4 + grechka concentrate ×30 (requires Grechka Industry)
+• advanced component ×40 + plasteel ×300
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockT5_Item.description>
+  <Grechka_LuckyBlockResourcesT5_Item.label>lucky block "Resources" T5</Grechka_LuckyBlockResourcesT5_Item.label>
+  <Grechka_LuckyBlockResourcesT5_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• steel ×750
+• wood ×1250
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockResourcesT5_Item.description>
+  <Grechka_LuckyBlockIndustryT5_Item.label>lucky block "Industry" T5</Grechka_LuckyBlockIndustryT5_Item.label>
+  <Grechka_LuckyBlockIndustryT5_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• grechka component ×4 + grechka concentrate ×30 (requires Grechka Industry)
+• component ×40 + plasteel ×100
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockIndustryT5_Item.description>
+  <Grechka_LuckyBlockEnergyT5_Item.label>lucky block "Power" T5</Grechka_LuckyBlockEnergyT5_Item.label>
+  <Grechka_LuckyBlockEnergyT5_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• component ×30 + steel ×600
+• mechanite solar cell ×15 (requires Grechka Industry)
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockEnergyT5_Item.description>
+  <Grechka_LuckyBlockMedicalT5_Item.label>lucky block "Medicine" T5</Grechka_LuckyBlockMedicalT5_Item.label>
+  <Grechka_LuckyBlockMedicalT5_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• medicine ×60
+• glitterworld medicine ×20
+• Grechka regeneration serum ×1 + Youth renewal serum ×1 (requires Grechka Pharmacy)
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockMedicalT5_Item.description>
+  <Grechka_LuckyBlockCombatT5_Item.label>lucky block "Arsenal" T5</Grechka_LuckyBlockCombatT5_Item.label>
+  <Grechka_LuckyBlockCombatT5_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• assault rifle (excellent quality) ×1
+• flak vest ×1
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockCombatT5_Item.description>
+  <Grechka_LuckyBlockFarmT5_Item.label>lucky block "Farming" T5</Grechka_LuckyBlockFarmT5_Item.label>
+  <Grechka_LuckyBlockFarmT5_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• rice ×1000
+• packaged survival meal ×50
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockFarmT5_Item.description>
+  <Grechka_LuckyBlockZooT5_Item.label>lucky block "Zoo" T5</Grechka_LuckyBlockZooT5_Item.label>
+  <Grechka_LuckyBlockZooT5_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• cat ×100
+• chicken ×6
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockZooT5_Item.description>
+  <Grechka_LuckyBlockMechsT5_Item.label>lucky block "Mechs Everywhere" T5</Grechka_LuckyBlockMechsT5_Item.label>
+  <Grechka_LuckyBlockMechsT5_Item.description>A dangerous themed reward that may contain hostile mechanoids! Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• steel ×1250 + component ×50
+• hostile mechanoids: scyther ×4
+• hostile mechanoids: scyther ×12
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockMechsT5_Item.description>
+  <Grechka_LuckyBlockChaosT5_Item.label>lucky block "Grechka Madness" T5</Grechka_LuckyBlockChaosT5_Item.label>
+  <Grechka_LuckyBlockChaosT5_Item.description>A dangerous themed reward that may contain hostile mechanoids! Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• steel ×5000
+• cat ×100
+• hostile mechanoids: scyther ×4
+• charge rifle (masterwork quality) ×1
+• simple meal ×1 + potatoes ×500
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockChaosT5_Item.description>
+  <Grechka_LuckyBlockStorageT5_Item.label>lucky block "Digital" T5</Grechka_LuckyBlockStorageT5_Item.label>
+  <Grechka_LuckyBlockStorageT5_Item.description>Place the block on the map and right-click it to order a pawn to open it. The result will appear nearby. Blocks do not stack.
+
+Possible contents with default settings (one of the following):
+• quartz processor ×20 + silver processor ×10 (requires Grechka Storage)
+• storage disk 256K ×1 (requires Grechka Storage)
+Unavailable rewards are excluded. Contents can be changed in the mod settings.</Grechka_LuckyBlockStorageT5_Item.description>
+</LanguageData>

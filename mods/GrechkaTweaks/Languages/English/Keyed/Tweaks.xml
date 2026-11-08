@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaTweaks_Grade0>Aversion</GrechkaTweaks_Grade0>
+  <GrechkaTweaks_Grade1>No passion</GrechkaTweaks_Grade1>
+  <GrechkaTweaks_Grade2>Interest</GrechkaTweaks_Grade2>
+  <GrechkaTweaks_Grade3>Passion</GrechkaTweaks_Grade3>
+  <GrechkaTweaks_Grade4>Strong passion</GrechkaTweaks_Grade4>
+  <GrechkaTweaks_Grade5>Talent</GrechkaTweaks_Grade5>
+  <GrechkaTweaks_Grade6>Calling</GrechkaTweaks_Grade6>
+  <GrechkaTweaks_Training>Trained level {0}, aptitude {1}</GrechkaTweaks_Training>
+  <GrechkaTweaks_Rate>{0} ×{1}. Current learning rate {2}.</GrechkaTweaks_Rate>
+  <GrechkaTweaks_Max>Level {0} reached</GrechkaTweaks_Max>
+  <GrechkaTweaks_Experience>{0} / {1} XP</GrechkaTweaks_Experience>
+  <GrechkaTweaks_Team>Highest level — {0}. Strongest interest — {1} ({2}).</GrechkaTweaks_Team>
+  <GrechkaTweaks_StackSize>Stack size</GrechkaTweaks_StackSize>
+  <GrechkaTweaks_StackHelp>Applies to stackable items. Range {0}–{1}. Changes apply when you close settings. Existing larger stacks keep their contents.</GrechkaTweaks_StackHelp>
+  <GrechkaTweaks_ResetStack>Reset to {0}</GrechkaTweaks_ResetStack>
+  <GrechkaTweaks_TrainerInvalidPawn>Only a living humanlike pawn with skills can use this trainer.</GrechkaTweaks_TrainerInvalidPawn>
+  <GrechkaTweaks_TrainerNoSkill>No enabled skill without interest is available.</GrechkaTweaks_TrainerNoSkill>
+  <GrechkaTweaks_TrainerApplied>{0}: {1} gains {2}.</GrechkaTweaks_TrainerApplied>
+  <GrechkaTweaks_MufflerRadius>Radius: {0} cells</GrechkaTweaks_MufflerRadius>
+  <GrechkaTweaks_MufflerRadiusHelp>Set the suppression radius from {0} to {1} cells. The zone works through walls and mutes all sounds originating inside it.</GrechkaTweaks_MufflerRadiusHelp>
+  <GrechkaTweaks_MufflerActive>Sound suppression active</GrechkaTweaks_MufflerActive>
+  <GrechkaTweaks_MufflerInactive>Sound suppression inactive</GrechkaTweaks_MufflerInactive>
+</LanguageData>

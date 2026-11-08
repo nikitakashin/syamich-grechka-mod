@@ -23,16 +23,7 @@ require(any(item.findtext("packageId") == "brrainz.harmony"
             for item in about.findall("./modDependencies/li")), "Harmony dependency is missing")
 
 patch = ET.parse(mod / "Patches" / "ResearchTab.xml").getroot()
-operations = patch.findall("./Operation/operations/li")
-require(len(operations) == 2, "Research button needs visibility and key patches")
-require(operations[0].get("Class") == "PatchOperationAdd"
-        and operations[0].findtext("xpath") == '/Defs/MainButtonDef[defName="Research"]'
-        and operations[0].findtext("./value/buttonVisible") == "false",
-        "Research button is not hidden")
-require(operations[1].get("Class") == "PatchOperationReplace"
-        and operations[1].findtext("xpath") == '/Defs/MainButtonDef[defName="Research"]/defaultHotKey'
-        and operations[1].findtext("./value/defaultHotKey") == "None",
-        "Research default hotkey is not removed")
+require(not patch.findall("Operation"), "Research tab and F6 must remain available to the settings toggle")
 
 profile = root / "profiles" / "GrechkaWorld"
 active = [item.text for item in ET.parse(profile / "ModsConfig.xml").findall("./activeMods/li")]
@@ -56,4 +47,4 @@ require(len([r for r in rules if r.findtext("defName", "").startswith("GrechkaWo
         "The explicit G01 catalogue must retain all 328 source identities")
 require(not ET.parse(mod / "Patches/StorageController.xml").getroot().findall("Operation"),
         "Unconditional Storage pricing patch must not bypass per-save approval")
-print("Grechka World research profile, explicit G01 catalogue, menu patch and metadata: OK")
+print("Grechka World research toggle compatibility, explicit G01 catalogue and metadata: OK")

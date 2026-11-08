@@ -1,0 +1,629 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation" ParentName="Base_X2_AIRobotRechargeStation">
+    <defName>Grechka_RescueDroneStationT1_Dock</defName>
+    <thingClass>Grechka.Drones.DroneStation</thingClass>
+    <label>док дрона-МЧСника T1</label>
+    <description>Зарядная и ремонтная станция с дроном «МЧСник» T1. Дрон входит в комплект станции.</description>
+    <graphicData>
+      <texPath>Docks/Rescue/T1/RescueT1_Occupied</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
+    </graphicData>
+    <secondaryGraphicPath>Docks/Rescue/T1/RescueT1_Empty</secondaryGraphicPath>
+    <minifiedDef>AIRobot_MinifiedRechargeStation</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <fillPercent>0.25</fillPercent>
+    <spawnThingDef>Grechka_RescueDroneT1_Unit</spawnThingDef>
+    <rechargeEfficiency>1</rechargeEfficiency>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Beauty>0</Beauty>
+      <WorkToMake>6000</WorkToMake>
+      <MarketValue>900</MarketValue>
+      <Mass>15</Mass>
+      <SellPriceFactor>0.3</SellPriceFactor>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <robotRepairCosts>
+      <Steel>8</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </robotRepairCosts>
+    <comps Inherit="False">
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>250</basePowerConsumption>
+        <transmitsPower>false</transmitsPower>
+      </li>
+    </comps>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <researchPrerequisites>
+        <li>Fabrication</li>
+      </researchPrerequisites>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation" ParentName="Base_X2_AIRobotRechargeStation">
+    <defName>Grechka_RescueDroneStationT2_Dock</defName>
+    <thingClass>Grechka.Drones.DroneStation</thingClass>
+    <label>док дрона-МЧСника T2</label>
+    <description>Зарядная и ремонтная станция с дроном «МЧСник» T2. Дрон входит в комплект станции.</description>
+    <graphicData>
+      <texPath>Docks/Rescue/T2/RescueT2_Occupied</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
+    </graphicData>
+    <secondaryGraphicPath>Docks/Rescue/T2/RescueT2_Empty</secondaryGraphicPath>
+    <minifiedDef>AIRobot_MinifiedRechargeStation</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <fillPercent>0.25</fillPercent>
+    <spawnThingDef>Grechka_RescueDroneT2_Unit</spawnThingDef>
+    <rechargeEfficiency>1.2</rechargeEfficiency>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Beauty>0</Beauty>
+      <WorkToMake>7500</WorkToMake>
+      <MarketValue>1400</MarketValue>
+      <Mass>18</Mass>
+      <SellPriceFactor>0.3</SellPriceFactor>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>125</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <Plasteel>10</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <robotRepairCosts>
+      <Steel>11</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </robotRepairCosts>
+    <comps Inherit="False">
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>400</basePowerConsumption>
+        <transmitsPower>false</transmitsPower>
+      </li>
+    </comps>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisites>
+        <li>Fabrication</li>
+      </researchPrerequisites>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation" ParentName="Base_X2_AIRobotRechargeStation">
+    <defName>Grechka_RescueDroneStationT3_Dock</defName>
+    <thingClass>Grechka.Drones.DroneStation</thingClass>
+    <label>док дрона-МЧСника T3</label>
+    <description>Зарядная и ремонтная станция с дроном «МЧСник» T3. Дрон входит в комплект станции.</description>
+    <graphicData>
+      <texPath>Docks/Rescue/T3/RescueT3_Occupied</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
+    </graphicData>
+    <secondaryGraphicPath>Docks/Rescue/T3/RescueT3_Empty</secondaryGraphicPath>
+    <minifiedDef>AIRobot_MinifiedRechargeStation</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <fillPercent>0.25</fillPercent>
+    <spawnThingDef>Grechka_RescueDroneT3_Unit</spawnThingDef>
+    <rechargeEfficiency>1.5</rechargeEfficiency>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Beauty>0</Beauty>
+      <WorkToMake>9000</WorkToMake>
+      <MarketValue>2200</MarketValue>
+      <Mass>21</Mass>
+      <SellPriceFactor>0.3</SellPriceFactor>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <Plasteel>20</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <robotRepairCosts>
+      <Steel>14</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </robotRepairCosts>
+    <comps Inherit="False">
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>650</basePowerConsumption>
+        <transmitsPower>false</transmitsPower>
+      </li>
+    </comps>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+      <researchPrerequisites>
+        <li>Fabrication</li>
+      </researchPrerequisites>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation" ParentName="Base_X2_AIRobotRechargeStation">
+    <defName>Grechka_RescueDroneStationT4_Dock</defName>
+    <thingClass>Grechka.Drones.DroneStation</thingClass>
+    <label>док дрона-МЧСника T4</label>
+    <description>Зарядная и ремонтная станция с дроном «МЧСник» T4. Дрон входит в комплект станции.</description>
+    <graphicData>
+      <texPath>Docks/Rescue/T4/RescueT4_Occupied</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
+    </graphicData>
+    <secondaryGraphicPath>Docks/Rescue/T4/RescueT4_Empty</secondaryGraphicPath>
+    <minifiedDef>AIRobot_MinifiedRechargeStation</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <fillPercent>0.25</fillPercent>
+    <spawnThingDef>Grechka_RescueDroneT4_Unit</spawnThingDef>
+    <rechargeEfficiency>2</rechargeEfficiency>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Beauty>0</Beauty>
+      <WorkToMake>10500</WorkToMake>
+      <MarketValue>3200</MarketValue>
+      <Mass>24</Mass>
+      <SellPriceFactor>0.3</SellPriceFactor>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>175</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+      <Plasteel>30</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <robotRepairCosts>
+      <Steel>17</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </robotRepairCosts>
+    <comps Inherit="False">
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1000</basePowerConsumption>
+        <transmitsPower>false</transmitsPower>
+      </li>
+    </comps>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <researchPrerequisites>
+        <li>Fabrication</li>
+      </researchPrerequisites>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation" ParentName="Base_X2_AIRobotRechargeStation">
+    <defName>Grechka_RescueDroneStationT5_Dock</defName>
+    <thingClass>Grechka.Drones.DroneStation</thingClass>
+    <label>док дрона-МЧСника T5</label>
+    <description>Зарядная и ремонтная станция с дроном «МЧСник» T5. Дрон входит в комплект станции.</description>
+    <graphicData>
+      <texPath>Docks/Rescue/T5/RescueT5_Occupied</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
+    </graphicData>
+    <secondaryGraphicPath>Docks/Rescue/T5/RescueT5_Empty</secondaryGraphicPath>
+    <minifiedDef>AIRobot_MinifiedRechargeStation</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <fillPercent>0.25</fillPercent>
+    <spawnThingDef>Grechka_RescueDroneT5_Unit</spawnThingDef>
+    <rechargeEfficiency>3</rechargeEfficiency>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Beauty>0</Beauty>
+      <WorkToMake>12000</WorkToMake>
+      <MarketValue>4500</MarketValue>
+      <Mass>27</Mass>
+      <SellPriceFactor>0.3</SellPriceFactor>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>200</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <robotRepairCosts>
+      <Steel>20</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </robotRepairCosts>
+    <comps Inherit="False">
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1500</basePowerConsumption>
+        <transmitsPower>false</transmitsPower>
+      </li>
+    </comps>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>11</Crafting>
+      </skillRequirements>
+      <researchPrerequisites>
+        <li>Fabrication</li>
+      </researchPrerequisites>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation" ParentName="Base_X2_AIRobotRechargeStation">
+    <defName>Grechka_WarriorDroneStationT1_Dock</defName>
+    <thingClass>Grechka.Drones.DroneStation</thingClass>
+    <label>док дрона-воина T1</label>
+    <description>Зарядная и ремонтная станция с дроном «воин» T1. Дрон входит в комплект станции.</description>
+    <graphicData>
+      <texPath>Docks/Warrior/T1/WarriorT1_Occupied</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
+    </graphicData>
+    <secondaryGraphicPath>Docks/Warrior/T1/WarriorT1_Empty</secondaryGraphicPath>
+    <minifiedDef>AIRobot_MinifiedRechargeStation</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <fillPercent>0.25</fillPercent>
+    <spawnThingDef>Grechka_WarriorDroneT1_Unit</spawnThingDef>
+    <rechargeEfficiency>1</rechargeEfficiency>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Beauty>0</Beauty>
+      <WorkToMake>6000</WorkToMake>
+      <MarketValue>900</MarketValue>
+      <Mass>15</Mass>
+      <SellPriceFactor>0.3</SellPriceFactor>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <robotRepairCosts>
+      <Steel>8</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </robotRepairCosts>
+    <comps Inherit="False">
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>250</basePowerConsumption>
+        <transmitsPower>false</transmitsPower>
+      </li>
+    </comps>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <researchPrerequisites>
+        <li>Fabrication</li>
+      </researchPrerequisites>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation" ParentName="Base_X2_AIRobotRechargeStation">
+    <defName>Grechka_WarriorDroneStationT2_Dock</defName>
+    <thingClass>Grechka.Drones.DroneStation</thingClass>
+    <label>док дрона-воина T2</label>
+    <description>Зарядная и ремонтная станция с дроном «воин» T2. Дрон входит в комплект станции.</description>
+    <graphicData>
+      <texPath>Docks/Warrior/T2/WarriorT2_Occupied</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
+    </graphicData>
+    <secondaryGraphicPath>Docks/Warrior/T2/WarriorT2_Empty</secondaryGraphicPath>
+    <minifiedDef>AIRobot_MinifiedRechargeStation</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <fillPercent>0.25</fillPercent>
+    <spawnThingDef>Grechka_WarriorDroneT2_Unit</spawnThingDef>
+    <rechargeEfficiency>1.2</rechargeEfficiency>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Beauty>0</Beauty>
+      <WorkToMake>7500</WorkToMake>
+      <MarketValue>1400</MarketValue>
+      <Mass>18</Mass>
+      <SellPriceFactor>0.3</SellPriceFactor>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>125</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <Plasteel>10</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <robotRepairCosts>
+      <Steel>11</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </robotRepairCosts>
+    <comps Inherit="False">
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>400</basePowerConsumption>
+        <transmitsPower>false</transmitsPower>
+      </li>
+    </comps>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisites>
+        <li>Fabrication</li>
+      </researchPrerequisites>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation" ParentName="Base_X2_AIRobotRechargeStation">
+    <defName>Grechka_WarriorDroneStationT3_Dock</defName>
+    <thingClass>Grechka.Drones.DroneStation</thingClass>
+    <label>док дрона-воина T3</label>
+    <description>Зарядная и ремонтная станция с дроном «воин» T3. Дрон входит в комплект станции.</description>
+    <graphicData>
+      <texPath>Docks/Warrior/T3/WarriorT3_Occupied</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
+    </graphicData>
+    <secondaryGraphicPath>Docks/Warrior/T3/WarriorT3_Empty</secondaryGraphicPath>
+    <minifiedDef>AIRobot_MinifiedRechargeStation</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <fillPercent>0.25</fillPercent>
+    <spawnThingDef>Grechka_WarriorDroneT3_Unit</spawnThingDef>
+    <rechargeEfficiency>1.5</rechargeEfficiency>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Beauty>0</Beauty>
+      <WorkToMake>9000</WorkToMake>
+      <MarketValue>2200</MarketValue>
+      <Mass>21</Mass>
+      <SellPriceFactor>0.3</SellPriceFactor>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <Plasteel>20</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <robotRepairCosts>
+      <Steel>14</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </robotRepairCosts>
+    <comps Inherit="False">
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>650</basePowerConsumption>
+        <transmitsPower>false</transmitsPower>
+      </li>
+    </comps>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+      <researchPrerequisites>
+        <li>Fabrication</li>
+      </researchPrerequisites>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation" ParentName="Base_X2_AIRobotRechargeStation">
+    <defName>Grechka_WarriorDroneStationT4_Dock</defName>
+    <thingClass>Grechka.Drones.DroneStation</thingClass>
+    <label>док дрона-воина T4</label>
+    <description>Зарядная и ремонтная станция с дроном «воин» T4. Дрон входит в комплект станции.</description>
+    <graphicData>
+      <texPath>Docks/Warrior/T4/WarriorT4_Occupied</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
+    </graphicData>
+    <secondaryGraphicPath>Docks/Warrior/T4/WarriorT4_Empty</secondaryGraphicPath>
+    <minifiedDef>AIRobot_MinifiedRechargeStation</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <fillPercent>0.25</fillPercent>
+    <spawnThingDef>Grechka_WarriorDroneT4_Unit</spawnThingDef>
+    <rechargeEfficiency>2</rechargeEfficiency>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Beauty>0</Beauty>
+      <WorkToMake>10500</WorkToMake>
+      <MarketValue>3200</MarketValue>
+      <Mass>24</Mass>
+      <SellPriceFactor>0.3</SellPriceFactor>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>175</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+      <Plasteel>30</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <robotRepairCosts>
+      <Steel>17</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </robotRepairCosts>
+    <comps Inherit="False">
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1000</basePowerConsumption>
+        <transmitsPower>false</transmitsPower>
+      </li>
+    </comps>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <researchPrerequisites>
+        <li>Fabrication</li>
+      </researchPrerequisites>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation" ParentName="Base_X2_AIRobotRechargeStation">
+    <defName>Grechka_WarriorDroneStationT5_Dock</defName>
+    <thingClass>Grechka.Drones.DroneStation</thingClass>
+    <label>док дрона-воина T5</label>
+    <description>Зарядная и ремонтная станция с дроном «воин» T5. Дрон входит в комплект станции.</description>
+    <graphicData>
+      <texPath>Docks/Warrior/T5/WarriorT5_Occupied</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
+    </graphicData>
+    <secondaryGraphicPath>Docks/Warrior/T5/WarriorT5_Empty</secondaryGraphicPath>
+    <minifiedDef>AIRobot_MinifiedRechargeStation</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <fillPercent>0.25</fillPercent>
+    <spawnThingDef>Grechka_WarriorDroneT5_Unit</spawnThingDef>
+    <rechargeEfficiency>3</rechargeEfficiency>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Beauty>0</Beauty>
+      <WorkToMake>12000</WorkToMake>
+      <MarketValue>4500</MarketValue>
+      <Mass>27</Mass>
+      <SellPriceFactor>0.3</SellPriceFactor>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>200</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <robotRepairCosts>
+      <Steel>20</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </robotRepairCosts>
+    <comps Inherit="False">
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1500</basePowerConsumption>
+        <transmitsPower>false</transmitsPower>
+      </li>
+    </comps>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>11</Crafting>
+      </skillRequirements>
+      <researchPrerequisites>
+        <li>Fabrication</li>
+      </researchPrerequisites>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+</Defs>

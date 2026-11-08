@@ -1,0 +1,221 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaTreasures_DiamondRaw.label>необработанный алмаз</GrechkaTreasures_DiamondRaw.label>
+  <GrechkaTreasures_DiamondRaw.description>Природный драгоценный камень. Ограните его на ювелирном верстаке для изготовления оружия и роскоши.</GrechkaTreasures_DiamondRaw.description>
+  <GrechkaTreasures_DiamondCut.label>бриллиант</GrechkaTreasures_DiamondCut.label>
+  <GrechkaTreasures_DiamondCut.description>Огранённый драгоценный камень. Используется в ювелирном оружии, декоре и дорогой мебели.</GrechkaTreasures_DiamondCut.description>
+  <GrechkaTreasures_DiamondMonolith.label>алмазный монолит</GrechkaTreasures_DiamondMonolith.label>
+  <GrechkaTreasures_DiamondMonolith.description>Редкий цельный кристалл для резной статуи. Добывается в экспедициях и продаётся торговцами редкостями. На ювелирном верстаке его можно распилить на 30 огранённых камней.</GrechkaTreasures_DiamondMonolith.description>
+  <GrechkaTreasures_DiamondOre.label>жила: алмаз</GrechkaTreasures_DiamondOre.label>
+  <GrechkaTreasures_DiamondOre.description>Редкая жила с необработанными драгоценными камнями. Добывается обычной работой шахтёра.</GrechkaTreasures_DiamondOre.description>
+  <GrechkaTreasures_DiamondKnife.label>бриллиантовый нож</GrechkaTreasures_DiamondKnife.label>
+  <GrechkaTreasures_DiamondKnife.description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Алмазные грани особенно хорошо пробивают броню.</GrechkaTreasures_DiamondKnife.description>
+  <GrechkaTreasures_DiamondSword.label>бриллиантовый меч</GrechkaTreasures_DiamondSword.label>
+  <GrechkaTreasures_DiamondSword.description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Алмазные грани особенно хорошо пробивают броню.</GrechkaTreasures_DiamondSword.description>
+  <GrechkaTreasures_DiamondSpear.label>бриллиантовое копьё</GrechkaTreasures_DiamondSpear.label>
+  <GrechkaTreasures_DiamondSpear.description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Алмазные грани особенно хорошо пробивают броню.</GrechkaTreasures_DiamondSpear.description>
+  <GrechkaTreasures_DiamondMace.label>бриллиантовая булава</GrechkaTreasures_DiamondMace.label>
+  <GrechkaTreasures_DiamondMace.description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Алмазные грани особенно хорошо пробивают броню.</GrechkaTreasures_DiamondMace.description>
+  <GrechkaTreasures_RubyRaw.label>необработанный рубин</GrechkaTreasures_RubyRaw.label>
+  <GrechkaTreasures_RubyRaw.description>Природный драгоценный камень. Ограните его на ювелирном верстаке для изготовления оружия и роскоши.</GrechkaTreasures_RubyRaw.description>
+  <GrechkaTreasures_RubyCut.label>рубин</GrechkaTreasures_RubyCut.label>
+  <GrechkaTreasures_RubyCut.description>Огранённый драгоценный камень. Используется в ювелирном оружии, декоре и дорогой мебели.</GrechkaTreasures_RubyCut.description>
+  <GrechkaTreasures_RubyMonolith.label>рубиновый монолит</GrechkaTreasures_RubyMonolith.label>
+  <GrechkaTreasures_RubyMonolith.description>Редкий цельный кристалл для резной статуи. Добывается в экспедициях и продаётся торговцами редкостями. На ювелирном верстаке его можно распилить на 30 огранённых камней.</GrechkaTreasures_RubyMonolith.description>
+  <GrechkaTreasures_RubyOre.label>жила: рубин</GrechkaTreasures_RubyOre.label>
+  <GrechkaTreasures_RubyOre.description>Редкая жила с необработанными драгоценными камнями. Добывается обычной работой шахтёра.</GrechkaTreasures_RubyOre.description>
+  <GrechkaTreasures_RubyKnife.label>рубиновый нож</GrechkaTreasures_RubyKnife.label>
+  <GrechkaTreasures_RubyKnife.description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Рубиновая геометрия усиливает удар.</GrechkaTreasures_RubyKnife.description>
+  <GrechkaTreasures_RubySword.label>рубиновый меч</GrechkaTreasures_RubySword.label>
+  <GrechkaTreasures_RubySword.description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Рубиновая геометрия усиливает удар.</GrechkaTreasures_RubySword.description>
+  <GrechkaTreasures_RubySpear.label>рубиновое копьё</GrechkaTreasures_RubySpear.label>
+  <GrechkaTreasures_RubySpear.description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Рубиновая геометрия усиливает удар.</GrechkaTreasures_RubySpear.description>
+  <GrechkaTreasures_RubyMace.label>рубиновая булава</GrechkaTreasures_RubyMace.label>
+  <GrechkaTreasures_RubyMace.description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Рубиновая геометрия усиливает удар.</GrechkaTreasures_RubyMace.description>
+  <GrechkaTreasures_SapphireRaw.label>необработанный сапфир</GrechkaTreasures_SapphireRaw.label>
+  <GrechkaTreasures_SapphireRaw.description>Природный драгоценный камень. Ограните его на ювелирном верстаке для изготовления оружия и роскоши.</GrechkaTreasures_SapphireRaw.description>
+  <GrechkaTreasures_SapphireCut.label>сапфир</GrechkaTreasures_SapphireCut.label>
+  <GrechkaTreasures_SapphireCut.description>Огранённый драгоценный камень. Используется в ювелирном оружии, декоре и дорогой мебели.</GrechkaTreasures_SapphireCut.description>
+  <GrechkaTreasures_SapphireMonolith.label>сапфировый монолит</GrechkaTreasures_SapphireMonolith.label>
+  <GrechkaTreasures_SapphireMonolith.description>Редкий цельный кристалл для резной статуи. Добывается в экспедициях и продаётся торговцами редкостями. На ювелирном верстаке его можно распилить на 30 огранённых камней.</GrechkaTreasures_SapphireMonolith.description>
+  <GrechkaTreasures_SapphireOre.label>жила: сапфир</GrechkaTreasures_SapphireOre.label>
+  <GrechkaTreasures_SapphireOre.description>Редкая жила с необработанными драгоценными камнями. Добывается обычной работой шахтёра.</GrechkaTreasures_SapphireOre.description>
+  <GrechkaTreasures_SapphireKnife.label>сапфировый нож</GrechkaTreasures_SapphireKnife.label>
+  <GrechkaTreasures_SapphireKnife.description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Сапфировые вставки повышают прочность.</GrechkaTreasures_SapphireKnife.description>
+  <GrechkaTreasures_SapphireSword.label>сапфировый меч</GrechkaTreasures_SapphireSword.label>
+  <GrechkaTreasures_SapphireSword.description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Сапфировые вставки повышают прочность.</GrechkaTreasures_SapphireSword.description>
+  <GrechkaTreasures_SapphireSpear.label>сапфировое копьё</GrechkaTreasures_SapphireSpear.label>
+  <GrechkaTreasures_SapphireSpear.description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Сапфировые вставки повышают прочность.</GrechkaTreasures_SapphireSpear.description>
+  <GrechkaTreasures_SapphireMace.label>сапфировая булава</GrechkaTreasures_SapphireMace.label>
+  <GrechkaTreasures_SapphireMace.description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Сапфировые вставки повышают прочность.</GrechkaTreasures_SapphireMace.description>
+  <GrechkaTreasures_EmeraldRaw.label>необработанный изумруд</GrechkaTreasures_EmeraldRaw.label>
+  <GrechkaTreasures_EmeraldRaw.description>Природный драгоценный камень. Ограните его на ювелирном верстаке для изготовления оружия и роскоши.</GrechkaTreasures_EmeraldRaw.description>
+  <GrechkaTreasures_EmeraldCut.label>изумруд</GrechkaTreasures_EmeraldCut.label>
+  <GrechkaTreasures_EmeraldCut.description>Огранённый драгоценный камень. Используется в ювелирном оружии, декоре и дорогой мебели.</GrechkaTreasures_EmeraldCut.description>
+  <GrechkaTreasures_EmeraldMonolith.label>изумрудный монолит</GrechkaTreasures_EmeraldMonolith.label>
+  <GrechkaTreasures_EmeraldMonolith.description>Редкий цельный кристалл для резной статуи. Добывается в экспедициях и продаётся торговцами редкостями. На ювелирном верстаке его можно распилить на 30 огранённых камней.</GrechkaTreasures_EmeraldMonolith.description>
+  <GrechkaTreasures_EmeraldOre.label>жила: изумруд</GrechkaTreasures_EmeraldOre.label>
+  <GrechkaTreasures_EmeraldOre.description>Редкая жила с необработанными драгоценными камнями. Добывается обычной работой шахтёра.</GrechkaTreasures_EmeraldOre.description>
+  <GrechkaTreasures_EmeraldKnife.label>изумрудный нож</GrechkaTreasures_EmeraldKnife.label>
+  <GrechkaTreasures_EmeraldKnife.description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Изумрудная отделка особенно ценится коллекционерами.</GrechkaTreasures_EmeraldKnife.description>
+  <GrechkaTreasures_EmeraldSword.label>изумрудный меч</GrechkaTreasures_EmeraldSword.label>
+  <GrechkaTreasures_EmeraldSword.description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Изумрудная отделка особенно ценится коллекционерами.</GrechkaTreasures_EmeraldSword.description>
+  <GrechkaTreasures_EmeraldSpear.label>изумрудное копьё</GrechkaTreasures_EmeraldSpear.label>
+  <GrechkaTreasures_EmeraldSpear.description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Изумрудная отделка особенно ценится коллекционерами.</GrechkaTreasures_EmeraldSpear.description>
+  <GrechkaTreasures_EmeraldMace.label>изумрудная булава</GrechkaTreasures_EmeraldMace.label>
+  <GrechkaTreasures_EmeraldMace.description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Изумрудная отделка особенно ценится коллекционерами.</GrechkaTreasures_EmeraldMace.description>
+  <GrechkaTreasures_AmethystRaw.label>необработанный аметист</GrechkaTreasures_AmethystRaw.label>
+  <GrechkaTreasures_AmethystRaw.description>Природный драгоценный камень. Ограните его на ювелирном верстаке для изготовления оружия и роскоши.</GrechkaTreasures_AmethystRaw.description>
+  <GrechkaTreasures_AmethystCut.label>аметист</GrechkaTreasures_AmethystCut.label>
+  <GrechkaTreasures_AmethystCut.description>Огранённый драгоценный камень. Используется в ювелирном оружии, декоре и дорогой мебели.</GrechkaTreasures_AmethystCut.description>
+  <GrechkaTreasures_AmethystMonolith.label>аметистовый монолит</GrechkaTreasures_AmethystMonolith.label>
+  <GrechkaTreasures_AmethystMonolith.description>Редкий цельный кристалл для резной статуи. Добывается в экспедициях и продаётся торговцами редкостями. На ювелирном верстаке его можно распилить на 30 огранённых камней.</GrechkaTreasures_AmethystMonolith.description>
+  <GrechkaTreasures_AmethystOre.label>жила: аметист</GrechkaTreasures_AmethystOre.label>
+  <GrechkaTreasures_AmethystOre.description>Редкая жила с необработанными драгоценными камнями. Добывается обычной работой шахтёра.</GrechkaTreasures_AmethystOre.description>
+  <GrechkaTreasures_AmethystKnife.label>аметистовый нож</GrechkaTreasures_AmethystKnife.label>
+  <GrechkaTreasures_AmethystKnife.description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Аметистовые грани сочетают красоту и боевую эффективность.</GrechkaTreasures_AmethystKnife.description>
+  <GrechkaTreasures_AmethystSword.label>аметистовый меч</GrechkaTreasures_AmethystSword.label>
+  <GrechkaTreasures_AmethystSword.description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Аметистовые грани сочетают красоту и боевую эффективность.</GrechkaTreasures_AmethystSword.description>
+  <GrechkaTreasures_AmethystSpear.label>аметистовое копьё</GrechkaTreasures_AmethystSpear.label>
+  <GrechkaTreasures_AmethystSpear.description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Аметистовые грани сочетают красоту и боевую эффективность.</GrechkaTreasures_AmethystSpear.description>
+  <GrechkaTreasures_AmethystMace.label>аметистовая булава</GrechkaTreasures_AmethystMace.label>
+  <GrechkaTreasures_AmethystMace.description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Аметистовые грани сочетают красоту и боевую эффективность.</GrechkaTreasures_AmethystMace.description>
+  <GrechkaTreasures_TopazRaw.label>необработанный топаз</GrechkaTreasures_TopazRaw.label>
+  <GrechkaTreasures_TopazRaw.description>Природный драгоценный камень. Ограните его на ювелирном верстаке для изготовления оружия и роскоши.</GrechkaTreasures_TopazRaw.description>
+  <GrechkaTreasures_TopazCut.label>топаз</GrechkaTreasures_TopazCut.label>
+  <GrechkaTreasures_TopazCut.description>Огранённый драгоценный камень. Используется в ювелирном оружии, декоре и дорогой мебели.</GrechkaTreasures_TopazCut.description>
+  <GrechkaTreasures_TopazMonolith.label>топазовый монолит</GrechkaTreasures_TopazMonolith.label>
+  <GrechkaTreasures_TopazMonolith.description>Редкий цельный кристалл для резной статуи. Добывается в экспедициях и продаётся торговцами редкостями. На ювелирном верстаке его можно распилить на 30 огранённых камней.</GrechkaTreasures_TopazMonolith.description>
+  <GrechkaTreasures_TopazOre.label>жила: топаз</GrechkaTreasures_TopazOre.label>
+  <GrechkaTreasures_TopazOre.description>Редкая жила с необработанными драгоценными камнями. Добывается обычной работой шахтёра.</GrechkaTreasures_TopazOre.description>
+  <GrechkaTreasures_TopazKnife.label>топазовый нож</GrechkaTreasures_TopazKnife.label>
+  <GrechkaTreasures_TopazKnife.description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Топазовые вставки дают доступный и прочный драгоценный клинок.</GrechkaTreasures_TopazKnife.description>
+  <GrechkaTreasures_TopazSword.label>топазовый меч</GrechkaTreasures_TopazSword.label>
+  <GrechkaTreasures_TopazSword.description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Топазовые вставки дают доступный и прочный драгоценный клинок.</GrechkaTreasures_TopazSword.description>
+  <GrechkaTreasures_TopazSpear.label>топазовое копьё</GrechkaTreasures_TopazSpear.label>
+  <GrechkaTreasures_TopazSpear.description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Топазовые вставки дают доступный и прочный драгоценный клинок.</GrechkaTreasures_TopazSpear.description>
+  <GrechkaTreasures_TopazMace.label>топазовая булава</GrechkaTreasures_TopazMace.label>
+  <GrechkaTreasures_TopazMace.description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Топазовые вставки дают доступный и прочный драгоценный клинок.</GrechkaTreasures_TopazMace.description>
+  <GrechkaTreasures_JewelersBench.label>ювелирный верстак</GrechkaTreasures_JewelersBench.label>
+  <GrechkaTreasures_JewelersBench.description>Ручная огранка драгоценных камней, распил монолитов и изготовление ювелирного оружия и резного декора. Не требует электричества.</GrechkaTreasures_JewelersBench.description>
+  <GrechkaTreasures_DiamondStatue.label>алмазная статуя</GrechkaTreasures_DiamondStatue.label>
+  <GrechkaTreasures_DiamondStatue.description>Цельная резная статуя из редкого драгоценного монолита на золотом основании. Создаётся художником на ювелирном верстаке и устанавливается после изготовления.</GrechkaTreasures_DiamondStatue.description>
+  <GrechkaTreasures_DiamondVase.label>алмазная ваза</GrechkaTreasures_DiamondVase.label>
+  <GrechkaTreasures_DiamondVase.description>Резная драгоценная ваза с золотой оправой. Создаётся художником на ювелирном верстаке.</GrechkaTreasures_DiamondVase.description>
+  <GrechkaTreasures_DiamondObelisk.label>алмазный обелиск</GrechkaTreasures_DiamondObelisk.label>
+  <GrechkaTreasures_DiamondObelisk.description>Высокий обелиск из огранённых камней и золота. Роскошный центр сада или сокровищницы.</GrechkaTreasures_DiamondObelisk.description>
+  <GrechkaTreasures_DiamondThrone.label>алмазный трон</GrechkaTreasures_DiamondThrone.label>
+  <GrechkaTreasures_DiamondThrone.description>Удобный драгоценный трон с золотым каркасом. Служит креслом у стола и рабочим сиденьем; не требует Royalty.</GrechkaTreasures_DiamondThrone.description>
+  <GrechkaTreasures_DiamondTable.label>алмазный стол</GrechkaTreasures_DiamondTable.label>
+  <GrechkaTreasures_DiamondTable.description>Роскошный обеденный стол с драгоценной столешницей и золотым узором.</GrechkaTreasures_DiamondTable.description>
+  <GrechkaTreasures_DiamondBed.label>алмазная кровать</GrechkaTreasures_DiamondBed.label>
+  <GrechkaTreasures_DiamondBed.description>Удобная кровать с мягким матрасом на драгоценном золотом каркасе.</GrechkaTreasures_DiamondBed.description>
+  <GrechkaTreasures_DiamondSarcophagus.label>алмазный саркофаг</GrechkaTreasures_DiamondSarcophagus.label>
+  <GrechkaTreasures_DiamondSarcophagus.description>Резной драгоценный саркофаг для почётного погребения. Сохраняет останки и поддерживает назначение владельца.</GrechkaTreasures_DiamondSarcophagus.description>
+  <GrechkaTreasures_DiamondLamp.label>алмазный светильник</GrechkaTreasures_DiamondLamp.label>
+  <GrechkaTreasures_DiamondLamp.description>Электрический светильник с драгоценной линзой, освещающий комнату цветом камня. Потребляет 20 Вт.</GrechkaTreasures_DiamondLamp.description>
+  <GrechkaTreasures_RubyStatue.label>рубиновая статуя</GrechkaTreasures_RubyStatue.label>
+  <GrechkaTreasures_RubyStatue.description>Цельная резная статуя из редкого драгоценного монолита на золотом основании. Создаётся художником на ювелирном верстаке и устанавливается после изготовления.</GrechkaTreasures_RubyStatue.description>
+  <GrechkaTreasures_RubyVase.label>рубиновая ваза</GrechkaTreasures_RubyVase.label>
+  <GrechkaTreasures_RubyVase.description>Резная драгоценная ваза с золотой оправой. Создаётся художником на ювелирном верстаке.</GrechkaTreasures_RubyVase.description>
+  <GrechkaTreasures_RubyObelisk.label>рубиновый обелиск</GrechkaTreasures_RubyObelisk.label>
+  <GrechkaTreasures_RubyObelisk.description>Высокий обелиск из огранённых камней и золота. Роскошный центр сада или сокровищницы.</GrechkaTreasures_RubyObelisk.description>
+  <GrechkaTreasures_RubyThrone.label>рубиновый трон</GrechkaTreasures_RubyThrone.label>
+  <GrechkaTreasures_RubyThrone.description>Удобный драгоценный трон с золотым каркасом. Служит креслом у стола и рабочим сиденьем; не требует Royalty.</GrechkaTreasures_RubyThrone.description>
+  <GrechkaTreasures_RubyTable.label>рубиновый стол</GrechkaTreasures_RubyTable.label>
+  <GrechkaTreasures_RubyTable.description>Роскошный обеденный стол с драгоценной столешницей и золотым узором.</GrechkaTreasures_RubyTable.description>
+  <GrechkaTreasures_RubyBed.label>рубиновая кровать</GrechkaTreasures_RubyBed.label>
+  <GrechkaTreasures_RubyBed.description>Удобная кровать с мягким матрасом на драгоценном золотом каркасе.</GrechkaTreasures_RubyBed.description>
+  <GrechkaTreasures_RubySarcophagus.label>рубиновый саркофаг</GrechkaTreasures_RubySarcophagus.label>
+  <GrechkaTreasures_RubySarcophagus.description>Резной драгоценный саркофаг для почётного погребения. Сохраняет останки и поддерживает назначение владельца.</GrechkaTreasures_RubySarcophagus.description>
+  <GrechkaTreasures_RubyLamp.label>рубиновый светильник</GrechkaTreasures_RubyLamp.label>
+  <GrechkaTreasures_RubyLamp.description>Электрический светильник с драгоценной линзой, освещающий комнату цветом камня. Потребляет 20 Вт.</GrechkaTreasures_RubyLamp.description>
+  <GrechkaTreasures_SapphireStatue.label>сапфировая статуя</GrechkaTreasures_SapphireStatue.label>
+  <GrechkaTreasures_SapphireStatue.description>Цельная резная статуя из редкого драгоценного монолита на золотом основании. Создаётся художником на ювелирном верстаке и устанавливается после изготовления.</GrechkaTreasures_SapphireStatue.description>
+  <GrechkaTreasures_SapphireVase.label>сапфировая ваза</GrechkaTreasures_SapphireVase.label>
+  <GrechkaTreasures_SapphireVase.description>Резная драгоценная ваза с золотой оправой. Создаётся художником на ювелирном верстаке.</GrechkaTreasures_SapphireVase.description>
+  <GrechkaTreasures_SapphireObelisk.label>сапфировый обелиск</GrechkaTreasures_SapphireObelisk.label>
+  <GrechkaTreasures_SapphireObelisk.description>Высокий обелиск из огранённых камней и золота. Роскошный центр сада или сокровищницы.</GrechkaTreasures_SapphireObelisk.description>
+  <GrechkaTreasures_SapphireThrone.label>сапфировый трон</GrechkaTreasures_SapphireThrone.label>
+  <GrechkaTreasures_SapphireThrone.description>Удобный драгоценный трон с золотым каркасом. Служит креслом у стола и рабочим сиденьем; не требует Royalty.</GrechkaTreasures_SapphireThrone.description>
+  <GrechkaTreasures_SapphireTable.label>сапфировый стол</GrechkaTreasures_SapphireTable.label>
+  <GrechkaTreasures_SapphireTable.description>Роскошный обеденный стол с драгоценной столешницей и золотым узором.</GrechkaTreasures_SapphireTable.description>
+  <GrechkaTreasures_SapphireBed.label>сапфировая кровать</GrechkaTreasures_SapphireBed.label>
+  <GrechkaTreasures_SapphireBed.description>Удобная кровать с мягким матрасом на драгоценном золотом каркасе.</GrechkaTreasures_SapphireBed.description>
+  <GrechkaTreasures_SapphireSarcophagus.label>сапфировый саркофаг</GrechkaTreasures_SapphireSarcophagus.label>
+  <GrechkaTreasures_SapphireSarcophagus.description>Резной драгоценный саркофаг для почётного погребения. Сохраняет останки и поддерживает назначение владельца.</GrechkaTreasures_SapphireSarcophagus.description>
+  <GrechkaTreasures_SapphireLamp.label>сапфировый светильник</GrechkaTreasures_SapphireLamp.label>
+  <GrechkaTreasures_SapphireLamp.description>Электрический светильник с драгоценной линзой, освещающий комнату цветом камня. Потребляет 20 Вт.</GrechkaTreasures_SapphireLamp.description>
+  <GrechkaTreasures_EmeraldStatue.label>изумрудная статуя</GrechkaTreasures_EmeraldStatue.label>
+  <GrechkaTreasures_EmeraldStatue.description>Цельная резная статуя из редкого драгоценного монолита на золотом основании. Создаётся художником на ювелирном верстаке и устанавливается после изготовления.</GrechkaTreasures_EmeraldStatue.description>
+  <GrechkaTreasures_EmeraldVase.label>изумрудная ваза</GrechkaTreasures_EmeraldVase.label>
+  <GrechkaTreasures_EmeraldVase.description>Резная драгоценная ваза с золотой оправой. Создаётся художником на ювелирном верстаке.</GrechkaTreasures_EmeraldVase.description>
+  <GrechkaTreasures_EmeraldObelisk.label>изумрудный обелиск</GrechkaTreasures_EmeraldObelisk.label>
+  <GrechkaTreasures_EmeraldObelisk.description>Высокий обелиск из огранённых камней и золота. Роскошный центр сада или сокровищницы.</GrechkaTreasures_EmeraldObelisk.description>
+  <GrechkaTreasures_EmeraldThrone.label>изумрудный трон</GrechkaTreasures_EmeraldThrone.label>
+  <GrechkaTreasures_EmeraldThrone.description>Удобный драгоценный трон с золотым каркасом. Служит креслом у стола и рабочим сиденьем; не требует Royalty.</GrechkaTreasures_EmeraldThrone.description>
+  <GrechkaTreasures_EmeraldTable.label>изумрудный стол</GrechkaTreasures_EmeraldTable.label>
+  <GrechkaTreasures_EmeraldTable.description>Роскошный обеденный стол с драгоценной столешницей и золотым узором.</GrechkaTreasures_EmeraldTable.description>
+  <GrechkaTreasures_EmeraldBed.label>изумрудная кровать</GrechkaTreasures_EmeraldBed.label>
+  <GrechkaTreasures_EmeraldBed.description>Удобная кровать с мягким матрасом на драгоценном золотом каркасе.</GrechkaTreasures_EmeraldBed.description>
+  <GrechkaTreasures_EmeraldSarcophagus.label>изумрудный саркофаг</GrechkaTreasures_EmeraldSarcophagus.label>
+  <GrechkaTreasures_EmeraldSarcophagus.description>Резной драгоценный саркофаг для почётного погребения. Сохраняет останки и поддерживает назначение владельца.</GrechkaTreasures_EmeraldSarcophagus.description>
+  <GrechkaTreasures_EmeraldLamp.label>изумрудный светильник</GrechkaTreasures_EmeraldLamp.label>
+  <GrechkaTreasures_EmeraldLamp.description>Электрический светильник с драгоценной линзой, освещающий комнату цветом камня. Потребляет 20 Вт.</GrechkaTreasures_EmeraldLamp.description>
+  <GrechkaTreasures_AmethystStatue.label>аметистовая статуя</GrechkaTreasures_AmethystStatue.label>
+  <GrechkaTreasures_AmethystStatue.description>Цельная резная статуя из редкого драгоценного монолита на золотом основании. Создаётся художником на ювелирном верстаке и устанавливается после изготовления.</GrechkaTreasures_AmethystStatue.description>
+  <GrechkaTreasures_AmethystVase.label>аметистовая ваза</GrechkaTreasures_AmethystVase.label>
+  <GrechkaTreasures_AmethystVase.description>Резная драгоценная ваза с золотой оправой. Создаётся художником на ювелирном верстаке.</GrechkaTreasures_AmethystVase.description>
+  <GrechkaTreasures_AmethystObelisk.label>аметистовый обелиск</GrechkaTreasures_AmethystObelisk.label>
+  <GrechkaTreasures_AmethystObelisk.description>Высокий обелиск из огранённых камней и золота. Роскошный центр сада или сокровищницы.</GrechkaTreasures_AmethystObelisk.description>
+  <GrechkaTreasures_AmethystThrone.label>аметистовый трон</GrechkaTreasures_AmethystThrone.label>
+  <GrechkaTreasures_AmethystThrone.description>Удобный драгоценный трон с золотым каркасом. Служит креслом у стола и рабочим сиденьем; не требует Royalty.</GrechkaTreasures_AmethystThrone.description>
+  <GrechkaTreasures_AmethystTable.label>аметистовый стол</GrechkaTreasures_AmethystTable.label>
+  <GrechkaTreasures_AmethystTable.description>Роскошный обеденный стол с драгоценной столешницей и золотым узором.</GrechkaTreasures_AmethystTable.description>
+  <GrechkaTreasures_AmethystBed.label>аметистовая кровать</GrechkaTreasures_AmethystBed.label>
+  <GrechkaTreasures_AmethystBed.description>Удобная кровать с мягким матрасом на драгоценном золотом каркасе.</GrechkaTreasures_AmethystBed.description>
+  <GrechkaTreasures_AmethystSarcophagus.label>аметистовый саркофаг</GrechkaTreasures_AmethystSarcophagus.label>
+  <GrechkaTreasures_AmethystSarcophagus.description>Резной драгоценный саркофаг для почётного погребения. Сохраняет останки и поддерживает назначение владельца.</GrechkaTreasures_AmethystSarcophagus.description>
+  <GrechkaTreasures_AmethystLamp.label>аметистовый светильник</GrechkaTreasures_AmethystLamp.label>
+  <GrechkaTreasures_AmethystLamp.description>Электрический светильник с драгоценной линзой, освещающий комнату цветом камня. Потребляет 20 Вт.</GrechkaTreasures_AmethystLamp.description>
+  <GrechkaTreasures_TopazStatue.label>топазовая статуя</GrechkaTreasures_TopazStatue.label>
+  <GrechkaTreasures_TopazStatue.description>Цельная резная статуя из редкого драгоценного монолита на золотом основании. Создаётся художником на ювелирном верстаке и устанавливается после изготовления.</GrechkaTreasures_TopazStatue.description>
+  <GrechkaTreasures_TopazVase.label>топазовая ваза</GrechkaTreasures_TopazVase.label>
+  <GrechkaTreasures_TopazVase.description>Резная драгоценная ваза с золотой оправой. Создаётся художником на ювелирном верстаке.</GrechkaTreasures_TopazVase.description>
+  <GrechkaTreasures_TopazObelisk.label>топазовый обелиск</GrechkaTreasures_TopazObelisk.label>
+  <GrechkaTreasures_TopazObelisk.description>Высокий обелиск из огранённых камней и золота. Роскошный центр сада или сокровищницы.</GrechkaTreasures_TopazObelisk.description>
+  <GrechkaTreasures_TopazThrone.label>топазовый трон</GrechkaTreasures_TopazThrone.label>
+  <GrechkaTreasures_TopazThrone.description>Удобный драгоценный трон с золотым каркасом. Служит креслом у стола и рабочим сиденьем; не требует Royalty.</GrechkaTreasures_TopazThrone.description>
+  <GrechkaTreasures_TopazTable.label>топазовый стол</GrechkaTreasures_TopazTable.label>
+  <GrechkaTreasures_TopazTable.description>Роскошный обеденный стол с драгоценной столешницей и золотым узором.</GrechkaTreasures_TopazTable.description>
+  <GrechkaTreasures_TopazBed.label>топазовая кровать</GrechkaTreasures_TopazBed.label>
+  <GrechkaTreasures_TopazBed.description>Удобная кровать с мягким матрасом на драгоценном золотом каркасе.</GrechkaTreasures_TopazBed.description>
+  <GrechkaTreasures_TopazSarcophagus.label>топазовый саркофаг</GrechkaTreasures_TopazSarcophagus.label>
+  <GrechkaTreasures_TopazSarcophagus.description>Резной драгоценный саркофаг для почётного погребения. Сохраняет останки и поддерживает назначение владельца.</GrechkaTreasures_TopazSarcophagus.description>
+  <GrechkaTreasures_TopazLamp.label>топазовый светильник</GrechkaTreasures_TopazLamp.label>
+  <GrechkaTreasures_TopazLamp.description>Электрический светильник с драгоценной линзой, освещающий комнату цветом камня. Потребляет 20 Вт.</GrechkaTreasures_TopazLamp.description>
+  <GrechkaTreasures_DiamondKnife.tools.0.label>драгоценная грань</GrechkaTreasures_DiamondKnife.tools.0.label>
+  <GrechkaTreasures_DiamondSword.tools.0.label>драгоценная грань</GrechkaTreasures_DiamondSword.tools.0.label>
+  <GrechkaTreasures_DiamondSpear.tools.0.label>драгоценная грань</GrechkaTreasures_DiamondSpear.tools.0.label>
+  <GrechkaTreasures_DiamondMace.tools.0.label>драгоценная головка</GrechkaTreasures_DiamondMace.tools.0.label>
+  <GrechkaTreasures_RubyKnife.tools.0.label>драгоценная грань</GrechkaTreasures_RubyKnife.tools.0.label>
+  <GrechkaTreasures_RubySword.tools.0.label>драгоценная грань</GrechkaTreasures_RubySword.tools.0.label>
+  <GrechkaTreasures_RubySpear.tools.0.label>драгоценная грань</GrechkaTreasures_RubySpear.tools.0.label>
+  <GrechkaTreasures_RubyMace.tools.0.label>драгоценная головка</GrechkaTreasures_RubyMace.tools.0.label>
+  <GrechkaTreasures_SapphireKnife.tools.0.label>драгоценная грань</GrechkaTreasures_SapphireKnife.tools.0.label>
+  <GrechkaTreasures_SapphireSword.tools.0.label>драгоценная грань</GrechkaTreasures_SapphireSword.tools.0.label>
+  <GrechkaTreasures_SapphireSpear.tools.0.label>драгоценная грань</GrechkaTreasures_SapphireSpear.tools.0.label>
+  <GrechkaTreasures_SapphireMace.tools.0.label>драгоценная головка</GrechkaTreasures_SapphireMace.tools.0.label>
+  <GrechkaTreasures_EmeraldKnife.tools.0.label>драгоценная грань</GrechkaTreasures_EmeraldKnife.tools.0.label>
+  <GrechkaTreasures_EmeraldSword.tools.0.label>драгоценная грань</GrechkaTreasures_EmeraldSword.tools.0.label>
+  <GrechkaTreasures_EmeraldSpear.tools.0.label>драгоценная грань</GrechkaTreasures_EmeraldSpear.tools.0.label>
+  <GrechkaTreasures_EmeraldMace.tools.0.label>драгоценная головка</GrechkaTreasures_EmeraldMace.tools.0.label>
+  <GrechkaTreasures_AmethystKnife.tools.0.label>драгоценная грань</GrechkaTreasures_AmethystKnife.tools.0.label>
+  <GrechkaTreasures_AmethystSword.tools.0.label>драгоценная грань</GrechkaTreasures_AmethystSword.tools.0.label>
+  <GrechkaTreasures_AmethystSpear.tools.0.label>драгоценная грань</GrechkaTreasures_AmethystSpear.tools.0.label>
+  <GrechkaTreasures_AmethystMace.tools.0.label>драгоценная головка</GrechkaTreasures_AmethystMace.tools.0.label>
+  <GrechkaTreasures_TopazKnife.tools.0.label>драгоценная грань</GrechkaTreasures_TopazKnife.tools.0.label>
+  <GrechkaTreasures_TopazSword.tools.0.label>драгоценная грань</GrechkaTreasures_TopazSword.tools.0.label>
+  <GrechkaTreasures_TopazSpear.tools.0.label>драгоценная грань</GrechkaTreasures_TopazSpear.tools.0.label>
+  <GrechkaTreasures_TopazMace.tools.0.label>драгоценная головка</GrechkaTreasures_TopazMace.tools.0.label>
+</LanguageData>

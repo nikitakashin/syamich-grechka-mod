@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Grechka Drones</name>
+  <author>Grechka World</author>
+  <packageId>grechka.drones</packageId>
+  <modVersion>0.2.0</modVersion>
+  <description>Аддон к Misc. Robots: негорючие МЧСники и боевые дроны ближнего боя T1–T5. МЧСники спасают своих, тушат пожары пеной и по команде берут раненых врагов в плен; свои всегда имеют приоритет. Воины патрулируют домашнюю территорию и отступают к доку при 30% здоровья. Караванные дроны T1–T5 носят 50/100/150/200/250 кг, работают носильщиками и преобразуют еду в энергию. Grechka Industry необязателен; при его наличии используются корпуса и компоненты соответствующих тиров.</description>
+  <supportedVersions>
+    <li>1.7</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>haplo.miscellaneous.robots</packageId>
+      <displayName>Misc. Robots</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/724602224</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>haplo.miscellaneous.robots</li>
+    <li>grechka.industry</li>
+  </loadAfter>
+</ModMetaData>

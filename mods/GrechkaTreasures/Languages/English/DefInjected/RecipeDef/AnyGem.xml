@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <GrechkaTreasures_CutAnyGem.label>cut any gemstones</GrechkaTreasures_CutAnyGem.label>
+  <GrechkaTreasures_CutAnyGem.description>Cuts any one raw gemstone into one cut gem of the same type. Choose permitted gem types in the bill ingredient filter. Monoliths are sawn using separate bills.</GrechkaTreasures_CutAnyGem.description>
+  <GrechkaTreasures_CutAnyGem.jobString>Cutting a gemstone.</GrechkaTreasures_CutAnyGem.jobString>
+</LanguageData>

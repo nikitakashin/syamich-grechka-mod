@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Grechka Camera Plus</name>
+  <author>Grechka World</author>
+  <packageId>grechka.cameraplus</packageId>
+  <supportedVersions><li>1.7</li></supportedVersions>
+  <description>Расширяет диапазон камеры карты: по умолчанию позволяет приближать в 4 раза ближе и отдалять в 4 раза дальше ванильных пределов. Обычное колесо мыши, клавиши зума, плавность и приближение к курсору сохраняются. Оба предела настраиваются в настройках мода. Не изменяет камеру глобального мира, предметы или прогрессию.</description>
+  <modDependencies>
+    <li><packageId>brrainz.harmony</packageId><displayName>Harmony</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl></li>
+  </modDependencies>
+  <loadAfter><li>brrainz.harmony</li></loadAfter>
+  <modVersion>0.1.0</modVersion>
+</ModMetaData>

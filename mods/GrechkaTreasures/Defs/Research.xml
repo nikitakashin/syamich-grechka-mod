@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ResearchTabDef>
+    <defName>GrechkaTreasures_ResearchTab</defName>
+    <label>Сокровища</label>
+  </ResearchTabDef>
+  <ResearchProjectDef>
+    <defName>GrechkaTreasures_Jewelcraft</defName>
+    <label>ювелирное дело</label>
+    <description>Огранка камней, резьба по монолитам и роскошная мебель.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>GrechkaTreasures_ResearchTab</tab>
+    <researchViewX>0</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites>
+      <li>Stonecutting</li>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>GrechkaTreasures_Gemsmithing</defName>
+    <label>драгоценное оружие</label>
+    <description>Усиленные металлические оправы для драгоценных клинков и ударных головок.</description>
+    <baseCost>1800</baseCost>
+    <techLevel>Medieval</techLevel>
+    <tab>GrechkaTreasures_ResearchTab</tab>
+    <researchViewX>1</researchViewX>
+    <researchViewY>0</researchViewY>
+    <prerequisites>
+      <li>GrechkaTreasures_Jewelcraft</li>
+    </prerequisites>
+  </ResearchProjectDef>
+</Defs>

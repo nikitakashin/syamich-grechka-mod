@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaDestroy_Order>Destroy</GrechkaDestroy_Order>
+  <GrechkaDestroy_OrderDesc>Приказать пешке за 2 секунды дезинтегрировать весь стак или труп. Ничего не возвращается, включая экипировку трупа и содержимое упакованных вещей. Исполнитель получает −3 к настроению на 6 игровых часов; повтор обновляет длительность без накопления штрафа.</GrechkaDestroy_OrderDesc>
+  <GrechkaDestroy_Cancel>Отменить уничтожение</GrechkaDestroy_Cancel>
+  <GrechkaDestroy_CancelDesc>Отменить дезинтеграцию. Вещь остаётся целой, пока пешка не закончит работу.</GrechkaDestroy_CancelDesc>
+  <GrechkaDestroy_Prioritize>Дезинтегрировать {0}</GrechkaDestroy_Prioritize>
+  <GrechkaDestroy_Unavailable>нет пути или предмет занят</GrechkaDestroy_Unavailable>
+</LanguageData>

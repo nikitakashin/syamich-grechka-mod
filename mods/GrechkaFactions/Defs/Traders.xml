@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <TraderKindDef>
+    <defName>GrechkaFactionTrader_Mills</defName>
+    <label>обоз семи мельниц</label>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>1000~2500</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>RawRice</thingDef>
+        <countRange>400~800</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>RawCorn</thingDef>
+        <countRange>400~800</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Hay</thingDef>
+        <countRange>500~1000</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Cloth</thingDef>
+        <countRange>150~300</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>MealSurvivalPack</thingDef>
+        <countRange>20~40</countRange>
+      </li>
+    </stockGenerators>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaFactionTrader_Rescue</defName>
+    <label>медицинская бригада Нулевой смены</label>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>1000~2500</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>MedicineIndustrial</thingDef>
+        <countRange>25~60</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>MedicineUltratech</thingDef>
+        <countRange>3~8</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>MedicineHerbal</thingDef>
+        <countRange>60~120</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Neutroamine</thingDef>
+        <countRange>40~80</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef" MayRequire="grechka.pharmacy">
+        <thingDef>GrechkaPharmacy_HemostaticT1_Item</thingDef>
+        <countRange>12~24</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef" MayRequire="grechka.pharmacy">
+        <thingDef>GrechkaPharmacy_AnalgesicT1_Item</thingDef>
+        <countRange>10~20</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef" MayRequire="grechka.pharmacy">
+        <thingDef>GrechkaPharmacy_ImmunoT2_Item</thingDef>
+        <countRange>6~12</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef" MayRequire="grechka.pharmacy">
+        <thingDef>GrechkaPharmacy_RecoveryT2_Item</thingDef>
+        <countRange>6~12</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef" MayRequire="grechka.pharmacy">
+        <thingDef>GrechkaPharmacy_DetoxT2_Item</thingDef>
+        <countRange>3~6</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef" MayRequire="grechka.pharmacy">
+        <thingDef>GrechkaPharmacy_MechaniteRegenT3_Item</thingDef>
+        <countRange>2~5</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef" MayRequire="grechka.pharmacy">
+        <thingDef>GrechkaPharmacy_ScarSerumT4_Item</thingDef>
+        <countRange>1~2</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef" MayRequire="grechka.pharmacy">
+        <thingDef>GrechkaPharmacy_LimbSerumT4_Item</thingDef>
+        <countRange>1~1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef" MayRequire="grechka.pharmacy">
+        <thingDef>GrechkaPharmacy_GrechkaSerumT5_Item</thingDef>
+        <countRange>1~1</countRange>
+      </li>
+    </stockGenerators>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaFactionTrader_Artel</defName>
+    <label>снабженцы Артели</label>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>1000~2500</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentIndustrial</thingDef>
+        <countRange>30~60</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentSpacer</thingDef>
+        <countRange>5~12</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Plasteel</thingDef>
+        <countRange>100~200</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Grechka_GrechkaArmT5_Item</thingDef>
+        <countRange>1~1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Grechka_GrechkaLegT5_Item</thingDef>
+        <countRange>1~1</countRange>
+      </li>
+    </stockGenerators>
+  </TraderKindDef>
+  <TraderKindDef>
+    <defName>GrechkaFactionTrader_Post</defName>
+    <label>почтовый караван Бюро</label>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>1000~2500</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Grechka_LuckyBlockT1_Item</thingDef>
+        <countRange>2~4</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Grechka_LuckyBlockT2_Item</thingDef>
+        <countRange>1~2</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Grechka_LuckyBlockT3_Item</thingDef>
+        <countRange>1~1</countRange>
+      </li>
+    </stockGenerators>
+  </TraderKindDef>
+</Defs>

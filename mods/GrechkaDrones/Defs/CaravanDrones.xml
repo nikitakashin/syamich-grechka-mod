@@ -1,0 +1,741 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot" ParentName="Grechka_DroneBase">
+    <defName>Grechka_CaravanDroneT1_Unit</defName>
+    <label>караванный дрон T1</label>
+    <description>Негорючий караванный дрон T1. На базе выполняет обычную переноску, в караване перевозит до 50 кг. Получает энергию из еды; полный биозаряд хранит 2 единицы питательности и расходуется за сутки. Дома может заряжаться от собственного дока. При пустом заряде прекращает обычную работу, не уничтожается и сохраняет груз.</description>
+    <uiIconPath>Drones/Caravan/T1/CaravanT1_south</uiIconPath>
+    <statBases>
+      <MarketValue>500</MarketValue>
+      <MoveSpeed>5</MoveSpeed>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <CarryingCapacity>50</CarryingCapacity>
+      <Mass>15</Mass>
+    </statBases>
+    <race>
+      <baseHealthScale>1</baseHealthScale>
+      <thinkTreeMain>Grechka_CaravanDroneMain</thinkTreeMain>
+      <thinkTreeConstant>Grechka_CaravanDroneConstant</thinkTreeConstant>
+      <allowedOnCaravan>true</allowedOnCaravan>
+      <packAnimal>true</packAnimal>
+      <foodType>OmnivoreHuman</foodType>
+      <mechEnabledWorkTypes Inherit="False">
+        <li>Hauling</li>
+      </mechEnabledWorkTypes>
+    </race>
+    <tools Inherit="False">
+      <li>
+        <label>ударный манипулятор</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>4</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <chanceFactor>1</chanceFactor>
+      </li>
+    </tools>
+    <robotSkills>
+      <li>
+        <skillDef>Melee</skillDef>
+        <level>4</level>
+      </li>
+    </robotSkills>
+    <modExtensions>
+      <li Class="Grechka.Drones.DroneProperties">
+        <role>Caravan</role>
+        <tier>1</tier>
+        <foamRadius>3</foamRadius>
+        <foamCooldownTicks>300</foamCooldownTicks>
+      </li>
+    </modExtensions>
+    <thingClass>Grechka.Drones.CaravanDrone</thingClass>
+    <robotWorkTypes Inherit="False">
+      <li>
+        <workTypeDef>Hauling</workTypeDef>
+        <priority>1</priority>
+      </li>
+    </robotWorkTypes>
+  </ThingDef>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation" ParentName="Base_X2_AIRobotRechargeStation">
+    <defName>Grechka_CaravanDroneStationT1_Dock</defName>
+    <thingClass>Grechka.Drones.DroneStation</thingClass>
+    <label>док караванного дрона T1</label>
+    <description>Зарядная и ремонтная станция с караванным дроном T1. На базе он носит вещи, в пути преобразует еду в энергию и перевозит до 50 кг. Ушедший в караван дрон остаётся связан с этим доком.</description>
+    <graphicData>
+      <texPath>Docks/Caravan/T1/CaravanT1_Occupied</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
+    </graphicData>
+    <secondaryGraphicPath>Docks/Caravan/T1/CaravanT1_Empty</secondaryGraphicPath>
+    <minifiedDef>AIRobot_MinifiedRechargeStation</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <fillPercent>0.25</fillPercent>
+    <spawnThingDef>Grechka_CaravanDroneT1_Unit</spawnThingDef>
+    <rechargeEfficiency>1</rechargeEfficiency>
+    <statBases>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Beauty>0</Beauty>
+      <WorkToMake>6000</WorkToMake>
+      <MarketValue>900</MarketValue>
+      <Mass>15</Mass>
+      <SellPriceFactor>0.3</SellPriceFactor>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <robotRepairCosts>
+      <Steel>8</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </robotRepairCosts>
+    <comps Inherit="False">
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>250</basePowerConsumption>
+        <transmitsPower>false</transmitsPower>
+      </li>
+    </comps>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <researchPrerequisites>
+        <li>Fabrication</li>
+      </researchPrerequisites>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  <PawnKindDef>
+    <defName>Grechka_CaravanDroneT1_Unit</defName>
+    <label>караванный дрон T1</label>
+    <race>Grechka_CaravanDroneT1_Unit</race>
+    <combatPower>30</combatPower>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <isFighter>false</isFighter>
+    <wildGroupSize>0</wildGroupSize>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Drones/Caravan/T1/CaravanT1</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>(1.7,1.7)</drawSize>
+          <color>(1,1,1)</color>
+          <shadowData>
+            <volume>(0.3,0.1,0.3)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>0~0</weaponMoney>
+    <apparelMoney>0~0</apparelMoney>
+    <invNutrition>0</invNutrition>
+  </PawnKindDef>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot" ParentName="Grechka_DroneBase">
+    <defName>Grechka_CaravanDroneT2_Unit</defName>
+    <label>караванный дрон T2</label>
+    <description>Негорючий караванный дрон T2. На базе выполняет обычную переноску, в караване перевозит до 100 кг. Получает энергию из еды; полный биозаряд хранит 2 единицы питательности и расходуется за сутки. Дома может заряжаться от собственного дока. При пустом заряде прекращает обычную работу, не уничтожается и сохраняет груз.</description>
+    <uiIconPath>Drones/Caravan/T2/CaravanT2_south</uiIconPath>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <MoveSpeed>5.5</MoveSpeed>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+      <CarryingCapacity>100</CarryingCapacity>
+      <Mass>20</Mass>
+    </statBases>
+    <race>
+      <baseHealthScale>1.5</baseHealthScale>
+      <thinkTreeMain>Grechka_CaravanDroneMain</thinkTreeMain>
+      <thinkTreeConstant>Grechka_CaravanDroneConstant</thinkTreeConstant>
+      <allowedOnCaravan>true</allowedOnCaravan>
+      <packAnimal>true</packAnimal>
+      <foodType>OmnivoreHuman</foodType>
+      <mechEnabledWorkTypes Inherit="False">
+        <li>Hauling</li>
+      </mechEnabledWorkTypes>
+    </race>
+    <tools Inherit="False">
+      <li>
+        <label>ударный манипулятор</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>5</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <chanceFactor>1</chanceFactor>
+      </li>
+    </tools>
+    <robotSkills>
+      <li>
+        <skillDef>Melee</skillDef>
+        <level>5</level>
+      </li>
+    </robotSkills>
+    <modExtensions>
+      <li Class="Grechka.Drones.DroneProperties">
+        <role>Caravan</role>
+        <tier>2</tier>
+        <foamRadius>3.5</foamRadius>
+        <foamCooldownTicks>270</foamCooldownTicks>
+      </li>
+    </modExtensions>
+    <thingClass>Grechka.Drones.CaravanDrone</thingClass>
+    <robotWorkTypes Inherit="False">
+      <li>
+        <workTypeDef>Hauling</workTypeDef>
+        <priority>1</priority>
+      </li>
+    </robotWorkTypes>
+  </ThingDef>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation" ParentName="Base_X2_AIRobotRechargeStation">
+    <defName>Grechka_CaravanDroneStationT2_Dock</defName>
+    <thingClass>Grechka.Drones.DroneStation</thingClass>
+    <label>док караванного дрона T2</label>
+    <description>Зарядная и ремонтная станция с караванным дроном T2. На базе он носит вещи, в пути преобразует еду в энергию и перевозит до 100 кг. Ушедший в караван дрон остаётся связан с этим доком.</description>
+    <graphicData>
+      <texPath>Docks/Caravan/T2/CaravanT2_Occupied</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
+    </graphicData>
+    <secondaryGraphicPath>Docks/Caravan/T2/CaravanT2_Empty</secondaryGraphicPath>
+    <minifiedDef>AIRobot_MinifiedRechargeStation</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <fillPercent>0.25</fillPercent>
+    <spawnThingDef>Grechka_CaravanDroneT2_Unit</spawnThingDef>
+    <rechargeEfficiency>1.2</rechargeEfficiency>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Beauty>0</Beauty>
+      <WorkToMake>7500</WorkToMake>
+      <MarketValue>1400</MarketValue>
+      <Mass>18</Mass>
+      <SellPriceFactor>0.3</SellPriceFactor>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>125</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+      <Plasteel>10</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <robotRepairCosts>
+      <Steel>11</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </robotRepairCosts>
+    <comps Inherit="False">
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>400</basePowerConsumption>
+        <transmitsPower>false</transmitsPower>
+      </li>
+    </comps>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>8</Crafting>
+      </skillRequirements>
+      <researchPrerequisites>
+        <li>Fabrication</li>
+      </researchPrerequisites>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  <PawnKindDef>
+    <defName>Grechka_CaravanDroneT2_Unit</defName>
+    <label>караванный дрон T2</label>
+    <race>Grechka_CaravanDroneT2_Unit</race>
+    <combatPower>40</combatPower>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <isFighter>false</isFighter>
+    <wildGroupSize>0</wildGroupSize>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Drones/Caravan/T2/CaravanT2</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>(1.7,1.7)</drawSize>
+          <color>(1,1,1)</color>
+          <shadowData>
+            <volume>(0.3,0.1,0.3)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>0~0</weaponMoney>
+    <apparelMoney>0~0</apparelMoney>
+    <invNutrition>0</invNutrition>
+  </PawnKindDef>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot" ParentName="Grechka_DroneBase">
+    <defName>Grechka_CaravanDroneT3_Unit</defName>
+    <label>караванный дрон T3</label>
+    <description>Негорючий караванный дрон T3. На базе выполняет обычную переноску, в караване перевозит до 150 кг. Получает энергию из еды; полный биозаряд хранит 2 единицы питательности и расходуется за сутки. Дома может заряжаться от собственного дока. При пустом заряде прекращает обычную работу, не уничтожается и сохраняет груз.</description>
+    <uiIconPath>Drones/Caravan/T3/CaravanT3_south</uiIconPath>
+    <statBases>
+      <MarketValue>1500</MarketValue>
+      <MoveSpeed>6</MoveSpeed>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>0.45</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <CarryingCapacity>150</CarryingCapacity>
+      <Mass>25</Mass>
+    </statBases>
+    <race>
+      <baseHealthScale>2</baseHealthScale>
+      <thinkTreeMain>Grechka_CaravanDroneMain</thinkTreeMain>
+      <thinkTreeConstant>Grechka_CaravanDroneConstant</thinkTreeConstant>
+      <allowedOnCaravan>true</allowedOnCaravan>
+      <packAnimal>true</packAnimal>
+      <foodType>OmnivoreHuman</foodType>
+      <mechEnabledWorkTypes Inherit="False">
+        <li>Hauling</li>
+      </mechEnabledWorkTypes>
+    </race>
+    <tools Inherit="False">
+      <li>
+        <label>ударный манипулятор</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <chanceFactor>1</chanceFactor>
+      </li>
+    </tools>
+    <robotSkills>
+      <li>
+        <skillDef>Melee</skillDef>
+        <level>6</level>
+      </li>
+    </robotSkills>
+    <modExtensions>
+      <li Class="Grechka.Drones.DroneProperties">
+        <role>Caravan</role>
+        <tier>3</tier>
+        <foamRadius>4</foamRadius>
+        <foamCooldownTicks>240</foamCooldownTicks>
+      </li>
+    </modExtensions>
+    <thingClass>Grechka.Drones.CaravanDrone</thingClass>
+    <robotWorkTypes Inherit="False">
+      <li>
+        <workTypeDef>Hauling</workTypeDef>
+        <priority>1</priority>
+      </li>
+    </robotWorkTypes>
+  </ThingDef>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation" ParentName="Base_X2_AIRobotRechargeStation">
+    <defName>Grechka_CaravanDroneStationT3_Dock</defName>
+    <thingClass>Grechka.Drones.DroneStation</thingClass>
+    <label>док караванного дрона T3</label>
+    <description>Зарядная и ремонтная станция с караванным дроном T3. На базе он носит вещи, в пути преобразует еду в энергию и перевозит до 150 кг. Ушедший в караван дрон остаётся связан с этим доком.</description>
+    <graphicData>
+      <texPath>Docks/Caravan/T3/CaravanT3_Occupied</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
+    </graphicData>
+    <secondaryGraphicPath>Docks/Caravan/T3/CaravanT3_Empty</secondaryGraphicPath>
+    <minifiedDef>AIRobot_MinifiedRechargeStation</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <fillPercent>0.25</fillPercent>
+    <spawnThingDef>Grechka_CaravanDroneT3_Unit</spawnThingDef>
+    <rechargeEfficiency>1.5</rechargeEfficiency>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Beauty>0</Beauty>
+      <WorkToMake>9000</WorkToMake>
+      <MarketValue>2200</MarketValue>
+      <Mass>21</Mass>
+      <SellPriceFactor>0.3</SellPriceFactor>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>150</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <Plasteel>20</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+    </costList>
+    <robotRepairCosts>
+      <Steel>14</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </robotRepairCosts>
+    <comps Inherit="False">
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>650</basePowerConsumption>
+        <transmitsPower>false</transmitsPower>
+      </li>
+    </comps>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>9</Crafting>
+      </skillRequirements>
+      <researchPrerequisites>
+        <li>Fabrication</li>
+      </researchPrerequisites>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  <PawnKindDef>
+    <defName>Grechka_CaravanDroneT3_Unit</defName>
+    <label>караванный дрон T3</label>
+    <race>Grechka_CaravanDroneT3_Unit</race>
+    <combatPower>60</combatPower>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <isFighter>false</isFighter>
+    <wildGroupSize>0</wildGroupSize>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Drones/Caravan/T3/CaravanT3</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>(1.7,1.7)</drawSize>
+          <color>(1,1,1)</color>
+          <shadowData>
+            <volume>(0.3,0.1,0.3)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>0~0</weaponMoney>
+    <apparelMoney>0~0</apparelMoney>
+    <invNutrition>0</invNutrition>
+  </PawnKindDef>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot" ParentName="Grechka_DroneBase">
+    <defName>Grechka_CaravanDroneT4_Unit</defName>
+    <label>караванный дрон T4</label>
+    <description>Негорючий караванный дрон T4. На базе выполняет обычную переноску, в караване перевозит до 200 кг. Получает энергию из еды; полный биозаряд хранит 2 единицы питательности и расходуется за сутки. Дома может заряжаться от собственного дока. При пустом заряде прекращает обычную работу, не уничтожается и сохраняет груз.</description>
+    <uiIconPath>Drones/Caravan/T4/CaravanT4_south</uiIconPath>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+      <MoveSpeed>6.5</MoveSpeed>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+      <CarryingCapacity>200</CarryingCapacity>
+      <Mass>30</Mass>
+    </statBases>
+    <race>
+      <baseHealthScale>3</baseHealthScale>
+      <thinkTreeMain>Grechka_CaravanDroneMain</thinkTreeMain>
+      <thinkTreeConstant>Grechka_CaravanDroneConstant</thinkTreeConstant>
+      <allowedOnCaravan>true</allowedOnCaravan>
+      <packAnimal>true</packAnimal>
+      <foodType>OmnivoreHuman</foodType>
+      <mechEnabledWorkTypes Inherit="False">
+        <li>Hauling</li>
+      </mechEnabledWorkTypes>
+    </race>
+    <tools Inherit="False">
+      <li>
+        <label>ударный манипулятор</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>7</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <chanceFactor>1</chanceFactor>
+      </li>
+    </tools>
+    <robotSkills>
+      <li>
+        <skillDef>Melee</skillDef>
+        <level>7</level>
+      </li>
+    </robotSkills>
+    <modExtensions>
+      <li Class="Grechka.Drones.DroneProperties">
+        <role>Caravan</role>
+        <tier>4</tier>
+        <foamRadius>4.5</foamRadius>
+        <foamCooldownTicks>210</foamCooldownTicks>
+      </li>
+    </modExtensions>
+    <thingClass>Grechka.Drones.CaravanDrone</thingClass>
+    <robotWorkTypes Inherit="False">
+      <li>
+        <workTypeDef>Hauling</workTypeDef>
+        <priority>1</priority>
+      </li>
+    </robotWorkTypes>
+  </ThingDef>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation" ParentName="Base_X2_AIRobotRechargeStation">
+    <defName>Grechka_CaravanDroneStationT4_Dock</defName>
+    <thingClass>Grechka.Drones.DroneStation</thingClass>
+    <label>док караванного дрона T4</label>
+    <description>Зарядная и ремонтная станция с караванным дроном T4. На базе он носит вещи, в пути преобразует еду в энергию и перевозит до 200 кг. Ушедший в караван дрон остаётся связан с этим доком.</description>
+    <graphicData>
+      <texPath>Docks/Caravan/T4/CaravanT4_Occupied</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
+    </graphicData>
+    <secondaryGraphicPath>Docks/Caravan/T4/CaravanT4_Empty</secondaryGraphicPath>
+    <minifiedDef>AIRobot_MinifiedRechargeStation</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <fillPercent>0.25</fillPercent>
+    <spawnThingDef>Grechka_CaravanDroneT4_Unit</spawnThingDef>
+    <rechargeEfficiency>2</rechargeEfficiency>
+    <statBases>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Beauty>0</Beauty>
+      <WorkToMake>10500</WorkToMake>
+      <MarketValue>3200</MarketValue>
+      <Mass>24</Mass>
+      <SellPriceFactor>0.3</SellPriceFactor>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>175</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+      <Plasteel>30</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <robotRepairCosts>
+      <Steel>17</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </robotRepairCosts>
+    <comps Inherit="False">
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1000</basePowerConsumption>
+        <transmitsPower>false</transmitsPower>
+      </li>
+    </comps>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>10</Crafting>
+      </skillRequirements>
+      <researchPrerequisites>
+        <li>Fabrication</li>
+      </researchPrerequisites>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  <PawnKindDef>
+    <defName>Grechka_CaravanDroneT4_Unit</defName>
+    <label>караванный дрон T4</label>
+    <race>Grechka_CaravanDroneT4_Unit</race>
+    <combatPower>90</combatPower>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <isFighter>false</isFighter>
+    <wildGroupSize>0</wildGroupSize>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Drones/Caravan/T4/CaravanT4</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>(1.7,1.7)</drawSize>
+          <color>(1,1,1)</color>
+          <shadowData>
+            <volume>(0.3,0.1,0.3)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>0~0</weaponMoney>
+    <apparelMoney>0~0</apparelMoney>
+    <invNutrition>0</invNutrition>
+  </PawnKindDef>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot" ParentName="Grechka_DroneBase">
+    <defName>Grechka_CaravanDroneT5_Unit</defName>
+    <label>караванный дрон T5</label>
+    <description>Негорючий караванный дрон T5. На базе выполняет обычную переноску, в караване перевозит до 250 кг. Получает энергию из еды; полный биозаряд хранит 2 единицы питательности и расходуется за сутки. Дома может заряжаться от собственного дока. При пустом заряде прекращает обычную работу, не уничтожается и сохраняет груз.</description>
+    <uiIconPath>Drones/Caravan/T5/CaravanT5_south</uiIconPath>
+    <statBases>
+      <MarketValue>2500</MarketValue>
+      <MoveSpeed>7</MoveSpeed>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <CarryingCapacity>250</CarryingCapacity>
+      <Mass>35</Mass>
+    </statBases>
+    <race>
+      <baseHealthScale>4.5</baseHealthScale>
+      <thinkTreeMain>Grechka_CaravanDroneMain</thinkTreeMain>
+      <thinkTreeConstant>Grechka_CaravanDroneConstant</thinkTreeConstant>
+      <allowedOnCaravan>true</allowedOnCaravan>
+      <packAnimal>true</packAnimal>
+      <foodType>OmnivoreHuman</foodType>
+      <mechEnabledWorkTypes Inherit="False">
+        <li>Hauling</li>
+      </mechEnabledWorkTypes>
+    </race>
+    <tools Inherit="False">
+      <li>
+        <label>ударный манипулятор</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>8</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <chanceFactor>1</chanceFactor>
+      </li>
+    </tools>
+    <robotSkills>
+      <li>
+        <skillDef>Melee</skillDef>
+        <level>8</level>
+      </li>
+    </robotSkills>
+    <modExtensions>
+      <li Class="Grechka.Drones.DroneProperties">
+        <role>Caravan</role>
+        <tier>5</tier>
+        <foamRadius>5</foamRadius>
+        <foamCooldownTicks>180</foamCooldownTicks>
+      </li>
+    </modExtensions>
+    <thingClass>Grechka.Drones.CaravanDrone</thingClass>
+    <robotWorkTypes Inherit="False">
+      <li>
+        <workTypeDef>Hauling</workTypeDef>
+        <priority>1</priority>
+      </li>
+    </robotWorkTypes>
+  </ThingDef>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation" ParentName="Base_X2_AIRobotRechargeStation">
+    <defName>Grechka_CaravanDroneStationT5_Dock</defName>
+    <thingClass>Grechka.Drones.DroneStation</thingClass>
+    <label>док караванного дрона T5</label>
+    <description>Зарядная и ремонтная станция с караванным дроном T5. На базе он носит вещи, в пути преобразует еду в энергию и перевозит до 250 кг. Ушедший в караван дрон остаётся связан с этим доком.</description>
+    <graphicData>
+      <texPath>Docks/Caravan/T5/CaravanT5_Occupied</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>Cutout</shaderType>
+      <drawSize>(1,1)</drawSize>
+      <color>(1,1,1)</color>
+    </graphicData>
+    <secondaryGraphicPath>Docks/Caravan/T5/CaravanT5_Empty</secondaryGraphicPath>
+    <minifiedDef>AIRobot_MinifiedRechargeStation</minifiedDef>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <fillPercent>0.25</fillPercent>
+    <spawnThingDef>Grechka_CaravanDroneT5_Unit</spawnThingDef>
+    <rechargeEfficiency>3</rechargeEfficiency>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Beauty>0</Beauty>
+      <WorkToMake>12000</WorkToMake>
+      <MarketValue>4500</MarketValue>
+      <Mass>27</Mass>
+      <SellPriceFactor>0.3</SellPriceFactor>
+      <Flammability>0</Flammability>
+    </statBases>
+    <costList>
+      <Steel>200</Steel>
+      <ComponentIndustrial>7</ComponentIndustrial>
+      <Plasteel>40</Plasteel>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <robotRepairCosts>
+      <Steel>20</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </robotRepairCosts>
+    <comps Inherit="False">
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1500</basePowerConsumption>
+        <transmitsPower>false</transmitsPower>
+      </li>
+    </comps>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <effectWorking>Smith</effectWorking>
+      <soundWorking>Recipe_Smith</soundWorking>
+      <unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>11</Crafting>
+      </skillRequirements>
+      <researchPrerequisites>
+        <li>Fabrication</li>
+      </researchPrerequisites>
+      <recipeUsers>
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+  <PawnKindDef>
+    <defName>Grechka_CaravanDroneT5_Unit</defName>
+    <label>караванный дрон T5</label>
+    <race>Grechka_CaravanDroneT5_Unit</race>
+    <combatPower>120</combatPower>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <isFighter>false</isFighter>
+    <wildGroupSize>0</wildGroupSize>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Drones/Caravan/T5/CaravanT5</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>(1.7,1.7)</drawSize>
+          <color>(1,1,1)</color>
+          <shadowData>
+            <volume>(0.3,0.1,0.3)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <weaponMoney>0~0</weaponMoney>
+    <apparelMoney>0~0</apparelMoney>
+    <invNutrition>0</invNutrition>
+  </PawnKindDef>
+</Defs>

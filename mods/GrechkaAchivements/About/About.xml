@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ModMetaData>
+  <name>Grechka Achivements</name>
+  <author>Grechka World</author>
+  <packageId>grechka.achivements</packageId>
+  <modVersion>0.2.0</modVersion>
+  <description>42 достижения Grechka для Vanilla Achievements Expanded. Постройте первый сборочный верстак, посейте рис на ферме или установите гречневое бионическое сердце. 26 достижений учитывают накопительный прогресс: сколько продукции вы изготовили, сколько лаки-блоков открыли и сколько раз забрали квестовую награду.</description>
+  <supportedVersions>
+    <li>1.7</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>vanillaexpanded.achievements</packageId>
+      <displayName>Vanilla Achievements Expanded</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2288125657</steamWorkshopUrl>
+    </li>
+    <li>
+      <packageId>grechka.quests</packageId>
+      <displayName>Grechka Quests</displayName>
+      <downloadUrl>https://github.com/nikitakashin/syamich-grechka-mod</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>vanillaexpanded.achievements</li>
+    <li>grechka.quests</li>
+    <li>grechka.industry</li>
+    <li>grechka.storage</li>
+    <li>grechka.drones</li>
+    <li>grechka.equipment</li>
+    <li>grechka.luckyblocks</li>
+    <li>grechka.farms</li>
+  </loadAfter>
+</ModMetaData>

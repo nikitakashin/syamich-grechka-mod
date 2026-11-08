@@ -17,5 +17,5 @@
   <loadAfter>
     <li>brrainz.harmony</li>
   </loadAfter>
-  <modVersion>0.3.0</modVersion>
+  <modVersion>0.3.2</modVersion>
 </ModMetaData>

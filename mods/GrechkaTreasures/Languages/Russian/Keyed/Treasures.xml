@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <GrechkaTreasures_DecoyOpened>Позолоченная приманка! Под блестящей крышкой лежит обычный металл. Настоящий тайник может быть в другом помещении.</GrechkaTreasures_DecoyOpened>
+  <GrechkaTreasures_ChestRemaining>Сундук открыт. Часть содержимого осталась внутри: освободите место и заберите её.</GrechkaTreasures_ChestRemaining>
+  <GrechkaTreasures_ChestEmpty>Сундук пуст.</GrechkaTreasures_ChestEmpty>
+  <GrechkaTreasures_ChestSealed>Запечатан. Для вскрытия выберите колониста и нажмите правой кнопкой на сундук.</GrechkaTreasures_ChestSealed>
+  <GrechkaTreasures_CollectChest>Забрать оставшуюся добычу</GrechkaTreasures_CollectChest>
+  <GrechkaTreasures_OpenChest>Вскрыть сундук</GrechkaTreasures_OpenChest>
+  <GrechkaTreasures_ReadMap>Расшифровать карту сокровищ</GrechkaTreasures_ReadMap>
+  <GrechkaTreasures_SiteLimit>нужна колония и менее четырёх открытых экспедиций</GrechkaTreasures_SiteLimit>
+  <GrechkaTreasures_NoSiteTile>Не удалось обнаружить подходящее место. Карта сокровищ сохранена.</GrechkaTreasures_NoSiteTile>
+  <GrechkaTreasures_DefaultClue>Следы указывают на ловушки и ложные тайники. Осмотритесь перед вскрытием.</GrechkaTreasures_DefaultClue>
+  <GrechkaTreasures_DangerTier>Ожидаемая опасность: {0}/5.</GrechkaTreasures_DangerTier>
+  <GrechkaTreasures_TemporarySite>Это временная экспедиция. После полного ухода вашей группы место закрывается: вывезите нужную добычу до отъезда.</GrechkaTreasures_TemporarySite>
+  <GrechkaTreasures_SiteLetter>Получены координаты возможной сокровищницы. Ожидаемая опасность: {0}/5. Внутри могут быть охрана, ловушки и обманки. На месте ищите записки и следы прежних посетителей.</GrechkaTreasures_SiteLetter>
+  <GrechkaTreasures_NewSite>Наводка на сокровища</GrechkaTreasures_NewSite>
+  <GrechkaTreasures_DiscardLead>Отказаться от наводки</GrechkaTreasures_DiscardLead>
+  <GrechkaTreasures_DiscardLeadDescription>Удалить непосещённую наводку и освободить место для новой экспедиции.</GrechkaTreasures_DiscardLeadDescription>
+  <GrechkaTreasures_DiscardLeadConfirmation>Отказаться от наводки «{0}»? Место будет удалено с мировой карты. Вернуть потраченную карту сокровищ нельзя.</GrechkaTreasures_DiscardLeadConfirmation>
+</LanguageData>

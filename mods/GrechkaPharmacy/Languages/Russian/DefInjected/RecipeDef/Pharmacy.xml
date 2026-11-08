@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaPharmacy_MakeHemostaticT1.label>изготовить: повязка «Последний шанс»</GrechkaPharmacy_MakeHemostaticT1.label>
+  <GrechkaPharmacy_MakeHemostaticT1.description>Изготовить партию фармацевтических препаратов.</GrechkaPharmacy_MakeHemostaticT1.description>
+  <GrechkaPharmacy_MakeHemostaticT1.jobString>Изготавливает фармацевтические препараты.</GrechkaPharmacy_MakeHemostaticT1.jobString>
+  <GrechkaPharmacy_MakeAnalgesicT1.label>изготовить: полевое обезболивающее</GrechkaPharmacy_MakeAnalgesicT1.label>
+  <GrechkaPharmacy_MakeAnalgesicT1.description>Изготовить партию фармацевтических препаратов.</GrechkaPharmacy_MakeAnalgesicT1.description>
+  <GrechkaPharmacy_MakeAnalgesicT1.jobString>Изготавливает фармацевтические препараты.</GrechkaPharmacy_MakeAnalgesicT1.jobString>
+  <GrechkaPharmacy_MakeImmunoT2.label>изготовить: иммунный препарат</GrechkaPharmacy_MakeImmunoT2.label>
+  <GrechkaPharmacy_MakeImmunoT2.description>Изготовить партию фармацевтических препаратов.</GrechkaPharmacy_MakeImmunoT2.description>
+  <GrechkaPharmacy_MakeImmunoT2.jobString>Изготавливает фармацевтические препараты.</GrechkaPharmacy_MakeImmunoT2.jobString>
+  <GrechkaPharmacy_MakeRecoveryT2.label>изготовить: восстановительный раствор</GrechkaPharmacy_MakeRecoveryT2.label>
+  <GrechkaPharmacy_MakeRecoveryT2.description>Изготовить партию фармацевтических препаратов.</GrechkaPharmacy_MakeRecoveryT2.description>
+  <GrechkaPharmacy_MakeRecoveryT2.jobString>Изготавливает фармацевтические препараты.</GrechkaPharmacy_MakeRecoveryT2.jobString>
+  <GrechkaPharmacy_MakeDetoxT2.label>изготовить: курс «Чистый лист»</GrechkaPharmacy_MakeDetoxT2.label>
+  <GrechkaPharmacy_MakeDetoxT2.description>Изготовить партию фармацевтических препаратов.</GrechkaPharmacy_MakeDetoxT2.description>
+  <GrechkaPharmacy_MakeDetoxT2.jobString>Изготавливает фармацевтические препараты.</GrechkaPharmacy_MakeDetoxT2.jobString>
+  <GrechkaPharmacy_MakeMechaniteRegenT3.label>изготовить: инъектор «Живая ткань»</GrechkaPharmacy_MakeMechaniteRegenT3.label>
+  <GrechkaPharmacy_MakeMechaniteRegenT3.description>Изготовить партию фармацевтических препаратов.</GrechkaPharmacy_MakeMechaniteRegenT3.description>
+  <GrechkaPharmacy_MakeMechaniteRegenT3.jobString>Изготавливает фармацевтические препараты.</GrechkaPharmacy_MakeMechaniteRegenT3.jobString>
+  <GrechkaPharmacy_MakeCombatStimT3.label>изготовить: инъектор «Красная линия»</GrechkaPharmacy_MakeCombatStimT3.label>
+  <GrechkaPharmacy_MakeCombatStimT3.description>Изготовить партию фармацевтических препаратов.</GrechkaPharmacy_MakeCombatStimT3.description>
+  <GrechkaPharmacy_MakeCombatStimT3.jobString>Изготавливает фармацевтические препараты.</GrechkaPharmacy_MakeCombatStimT3.jobString>
+  <GrechkaPharmacy_MakeWorkStimT3.label>изготовить: концентрат «Вторая смена»</GrechkaPharmacy_MakeWorkStimT3.label>
+  <GrechkaPharmacy_MakeWorkStimT3.description>Изготовить партию фармацевтических препаратов.</GrechkaPharmacy_MakeWorkStimT3.description>
+  <GrechkaPharmacy_MakeWorkStimT3.jobString>Изготавливает фармацевтические препараты.</GrechkaPharmacy_MakeWorkStimT3.jobString>
+  <GrechkaPharmacy_MakeScarSerumT4.label>изготовить: сыворотка удаления шрамов</GrechkaPharmacy_MakeScarSerumT4.label>
+  <GrechkaPharmacy_MakeScarSerumT4.description>Изготовить партию фармацевтических препаратов.</GrechkaPharmacy_MakeScarSerumT4.description>
+  <GrechkaPharmacy_MakeScarSerumT4.jobString>Изготавливает фармацевтические препараты.</GrechkaPharmacy_MakeScarSerumT4.jobString>
+  <GrechkaPharmacy_MakeLimbSerumT4.label>изготовить: сыворотка регенерации конечности</GrechkaPharmacy_MakeLimbSerumT4.label>
+  <GrechkaPharmacy_MakeLimbSerumT4.description>Изготовить партию фармацевтических препаратов.</GrechkaPharmacy_MakeLimbSerumT4.description>
+  <GrechkaPharmacy_MakeLimbSerumT4.jobString>Изготавливает фармацевтические препараты.</GrechkaPharmacy_MakeLimbSerumT4.jobString>
+  <GrechkaPharmacy_MakeGrechkaSerumT5.label>изготовить: гречневая сыворотка регенерации</GrechkaPharmacy_MakeGrechkaSerumT5.label>
+  <GrechkaPharmacy_MakeGrechkaSerumT5.description>Изготовить партию фармацевтических препаратов.</GrechkaPharmacy_MakeGrechkaSerumT5.description>
+  <GrechkaPharmacy_MakeGrechkaSerumT5.jobString>Изготавливает фармацевтические препараты.</GrechkaPharmacy_MakeGrechkaSerumT5.jobString>
+  <GrechkaPharmacy_MakeYouthSerumT5.label>изготовить: сыворотка омоложения</GrechkaPharmacy_MakeYouthSerumT5.label>
+  <GrechkaPharmacy_MakeYouthSerumT5.description>Изготовить партию фармацевтических препаратов.</GrechkaPharmacy_MakeYouthSerumT5.description>
+  <GrechkaPharmacy_MakeYouthSerumT5.jobString>Изготавливает фармацевтические препараты.</GrechkaPharmacy_MakeYouthSerumT5.jobString>
+  <GrechkaPharmacy_MakeUltratechMedicine.label>синтезировать высокотехнологичное лекарство</GrechkaPharmacy_MakeUltratechMedicine.label>
+  <GrechkaPharmacy_MakeUltratechMedicine.description>Синтезировать лекарство для высокотехнологичного лечения и старших сывороток без обязательной закупки у торговцев.</GrechkaPharmacy_MakeUltratechMedicine.description>
+  <GrechkaPharmacy_MakeUltratechMedicine.jobString>Синтезирует высокотехнологичное лекарство.</GrechkaPharmacy_MakeUltratechMedicine.jobString>
+</LanguageData>

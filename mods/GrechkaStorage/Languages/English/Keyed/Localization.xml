@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaStorage_Text001>Quantity, maximum </GrechkaStorage_Text001>
+  <GrechkaStorage_Text002>Confirm</GrechkaStorage_Text002>
+  <GrechkaStorage_Text003>Add items from the map — pawns will haul them</GrechkaStorage_Text003>
+  <GrechkaStorage_Text004>Transfer search results</GrechkaStorage_Text004>
+  <GrechkaStorage_Text005>Transfer…</GrechkaStorage_Text005>
+  <GrechkaStorage_Text006>Unavailable</GrechkaStorage_Text006>
+  <GrechkaStorage_Text007>Add from map…</GrechkaStorage_Text007>
+  <GrechkaStorage_Text008>Optimize</GrechkaStorage_Text008>
+  <GrechkaStorage_Text009>Return buffer to network</GrechkaStorage_Text009>
+  <GrechkaStorage_Text010>Available on disks: </GrechkaStorage_Text010>
+  <GrechkaStorage_Text011>   |   Output buffer: </GrechkaStorage_Text011>
+  <GrechkaStorage_Text012>Crafter buffers: </GrechkaStorage_Text012>
+  <GrechkaStorage_Text013>Inputs already withdrawn from disks and finished products waiting to return are stored here. They are excluded from available disk stock. Materials inside a factory's native process are tracked by the factory.</GrechkaStorage_Text013>
+  <GrechkaStorage_Text014>All</GrechkaStorage_Text014>
+  <GrechkaStorage_Text015>Food</GrechkaStorage_Text015>
+  <GrechkaStorage_Text016>Equipment</GrechkaStorage_Text016>
+  <GrechkaStorage_Text017>Other</GrechkaStorage_Text017>
+  <GrechkaStorage_Text018>Recovery buffer</GrechkaStorage_Text018>
+  <GrechkaStorage_Text019>Withdraw…</GrechkaStorage_Text019>
+  <GrechkaStorage_Text020>The output buffer is full. Wait for pawns to haul its contents.</GrechkaStorage_Text020>
+  <GrechkaStorage_Text021>The item is unavailable or the buffer is full.</GrechkaStorage_Text021>
+  <GrechkaStorage_Text022>Connect a disk rack with quartz cable.</GrechkaStorage_Text022>
+  <GrechkaStorage_Text023> (no network access)</GrechkaStorage_Text023>
+  <GrechkaStorage_Text024>Install disk…</GrechkaStorage_Text024>
+  <GrechkaStorage_Text025> — items: </GrechkaStorage_Text025>
+  <GrechkaStorage_Text026>No available disks on the map</GrechkaStorage_Text026>
+  <GrechkaStorage_Text027>; types </GrechkaStorage_Text027>
+  <GrechkaStorage_Text028> items; </GrechkaStorage_Text028>
+  <GrechkaStorage_Text029> bytes</GrechkaStorage_Text029>
+  <GrechkaStorage_Text030>The disk is full. New items cannot fit. Items can still be withdrawn.</GrechkaStorage_Text030>
+  <GrechkaStorage_Text031>All 63 types are occupied. Existing types can still be added.</GrechkaStorage_Text031>
+  <GrechkaStorage_Text032>Cancel</GrechkaStorage_Text032>
+  <GrechkaStorage_Text033>Eject</GrechkaStorage_Text033>
+  <GrechkaStorage_Text034>Pawns assigned to hauling handle input and output. Disks are installed and removed at the rack itself.</GrechkaStorage_Text034>
+  <GrechkaStorage_Text035> — being hauled</GrechkaStorage_Text035>
+  <GrechkaStorage_Text036>The rack is unavailable.</GrechkaStorage_Text036>
+  <GrechkaStorage_Text037>Network controllers: </GrechkaStorage_Text037>
+  <GrechkaStorage_Text038>; active: </GrechkaStorage_Text038>
+  <GrechkaStorage_Text039>
+Network unavailable: no working controller</GrechkaStorage_Text039>
+  <GrechkaStorage_Text040>
+Signal network available</GrechkaStorage_Text040>
+  <GrechkaStorage_Text041>Open network</GrechkaStorage_Text041>
+  <GrechkaStorage_Text042>Connected devices and signal network status.</GrechkaStorage_Text042>
+  <GrechkaStorage_Text043>Not installed</GrechkaStorage_Text043>
+  <GrechkaStorage_Text044>Not owned by the colony</GrechkaStorage_Text044>
+  <GrechkaStorage_Text045>Broken down</GrechkaStorage_Text045>
+  <GrechkaStorage_Text046>Switched off</GrechkaStorage_Text046>
+  <GrechkaStorage_Text047>Stunned</GrechkaStorage_Text047>
+  <GrechkaStorage_Text048>No power</GrechkaStorage_Text048>
+  <GrechkaStorage_Text049>The controller is no longer available to the colony.</GrechkaStorage_Text049>
+  <GrechkaStorage_Text050>Network available</GrechkaStorage_Text050>
+  <GrechkaStorage_Text051>No working controller</GrechkaStorage_Text051>
+  <GrechkaStorage_Text052>   |   Controllers: </GrechkaStorage_Text052>
+  <GrechkaStorage_Text053>   |   Cables: </GrechkaStorage_Text053>
+  <GrechkaStorage_Text054>   |   Devices: </GrechkaStorage_Text054>
+  <GrechkaStorage_Text055>Storage</GrechkaStorage_Text055>
+  <GrechkaStorage_Text056>Disks</GrechkaStorage_Text056>
+  <GrechkaStorage_Text057>Devices</GrechkaStorage_Text057>
+  <GrechkaStorage_Text058>Transfers</GrechkaStorage_Text058>
+  <GrechkaStorage_Text059>Autocrafting</GrechkaStorage_Text059>
+  <GrechkaStorage_Text060>The controller is being upgraded to the new format.</GrechkaStorage_Text060>
+  <GrechkaStorage_Text061>Another signal branch</GrechkaStorage_Text061>
+  <GrechkaStorage_Text062>Available</GrechkaStorage_Text062>
+  <GrechkaStorage_Text063>Network offline</GrechkaStorage_Text063>
+  <GrechkaStorage_Text064>The device touches several separate branches and is served by another branch. Connect the branches with cable to create a shared network.</GrechkaStorage_Text064>
+  <GrechkaStorage_Text065>Show</GrechkaStorage_Text065>
+  <GrechkaStorage_Text066>Recipe catalogue</GrechkaStorage_Text066>
+  <GrechkaStorage_Text067>Orders and minimum stocks</GrechkaStorage_Text067>
+  <GrechkaStorage_Text068>Factory leftovers</GrechkaStorage_Text068>
+  <GrechkaStorage_Text069>selected item</GrechkaStorage_Text069>
+  <GrechkaStorage_Text070> — minimum </GrechkaStorage_Text070>
+  <GrechkaStorage_Text071> — remaining </GrechkaStorage_Text071>
+  <GrechkaStorage_Text072> cycles</GrechkaStorage_Text072>
+  <GrechkaStorage_Text073> items</GrechkaStorage_Text073>
+  <GrechkaStorage_Text074>No active orders match this search. Choose a recipe from the catalogue.</GrechkaStorage_Text074>
+  <GrechkaStorage_Text075>Disable</GrechkaStorage_Text075>
+  <GrechkaStorage_Text076>Available autocrafting recipes from connected workbenches and factories. Patterns are unnecessary.</GrechkaStorage_Text076>
+  <GrechkaStorage_Text077>No recipes found. Connect a crafter to the network and place it directly next to a production machine.</GrechkaStorage_Text077>
+  <GrechkaStorage_Text078>The result depends on the selected item. One cycle.</GrechkaStorage_Text078>
+  <GrechkaStorage_Text079>Select item…</GrechkaStorage_Text079>
+  <GrechkaStorage_Text080>No available workbench or crafter</GrechkaStorage_Text080>
+  <GrechkaStorage_Text081> · ingredients available</GrechkaStorage_Text081>
+  <GrechkaStorage_Text082>
+Workbench: </GrechkaStorage_Text082>
+  <GrechkaStorage_Text083>Order…</GrechkaStorage_Text083>
+  <GrechkaStorage_Text084>Minimum…</GrechkaStorage_Text084>
+  <GrechkaStorage_Text085> · order in cycles</GrechkaStorage_Text085>
+  <GrechkaStorage_Text086> · order in units</GrechkaStorage_Text086>
+  <GrechkaStorage_Text087>PipeSystem is not installed</GrechkaStorage_Text087>
+  <GrechkaStorage_Text088>Unsupported PipeSystem version: signatures changed</GrechkaStorage_Text088>
+  <GrechkaStorage_Text089>PipeSystem: native processes and physical outputs</GrechkaStorage_Text089>
+  <GrechkaStorage_Text090>Factory connection error: </GrechkaStorage_Text090>
+  <GrechkaStorage_Text091>Research required</GrechkaStorage_Text091>
+  <GrechkaStorage_Text092>The process has no result</GrechkaStorage_Text092>
+  <GrechkaStorage_Text093>Could not check requirements: </GrechkaStorage_Text093>
+  <GrechkaStorage_Text094>Waiting</GrechkaStorage_Text094>
+  <GrechkaStorage_Text095>The current native batch will finish without starting new batches</GrechkaStorage_Text095>
+  <GrechkaStorage_Text096>The native process did not activate</GrechkaStorage_Text096>
+  <GrechkaStorage_Text097>The factory is running its native process</GrechkaStorage_Text097>
+  <GrechkaStorage_Text098>Factory error: </GrechkaStorage_Text098>
+  <GrechkaStorage_Text099>Factory ingredient structure changed; input stopped</GrechkaStorage_Text099>
+  <GrechkaStorage_Text100>Missing: </GrechkaStorage_Text100>
+  <GrechkaStorage_Text101>ingredient</GrechkaStorage_Text101>
+  <GrechkaStorage_Text102>Reservation interrupted; original items preserved</GrechkaStorage_Text102>
+  <GrechkaStorage_Text103>Input paused: </GrechkaStorage_Text103>
+  <GrechkaStorage_Text104>First clear space to unload the factory buffer.</GrechkaStorage_Text104>
+  <GrechkaStorage_Text105>Crystals ready for harvest: </GrechkaStorage_Text105>
+  <GrechkaStorage_Text106>Certus growth: </GrechkaStorage_Text106>
+  <GrechkaStorage_Text107>Certus meteorite</GrechkaStorage_Text107>
+  <GrechkaStorage_Text108>A caravan spotted a crystalline meteorite. Mine certus quartz at the site and take growth sources for your own farm.</GrechkaStorage_Text108>
+  <GrechkaStorage_Text109>Not enough of a single material: </GrechkaStorage_Text109>
+  <GrechkaStorage_Text110>Waiting for an intermediate product</GrechkaStorage_Text110>
+  <GrechkaStorage_Text111>Producing</GrechkaStorage_Text111>
+  <GrechkaStorage_Text112>Crafter skill is too low</GrechkaStorage_Text112>
+  <GrechkaStorage_Text113>Recipe error: contents preserved</GrechkaStorage_Text113>
+  <GrechkaStorage_Text114>Waiting for an order</GrechkaStorage_Text114>
+  <GrechkaStorage_Text115>Waiting for space on disks</GrechkaStorage_Text115>
+  <GrechkaStorage_Text116>: work remaining </GrechkaStorage_Text116>
+  <GrechkaStorage_Text117>Return contents</GrechkaStorage_Text117>
+  <GrechkaStorage_Text118>Stop the current batch and unload the remaining items nearby.</GrechkaStorage_Text118>
+  <GrechkaStorage_Text119>No working connection.</GrechkaStorage_Text119>
+  <GrechkaStorage_Text120>Clear the recovery buffer first.</GrechkaStorage_Text120>
+  <GrechkaStorage_Text121>At least two available disks are required for redistribution.</GrechkaStorage_Text121>
+  <GrechkaStorage_Text122>Could not find a complete arrangement. Current contents preserved.</GrechkaStorage_Text122>
+  <GrechkaStorage_Text123>Operation stopped. Remaining items are in the recovery buffer; freezing preserved.</GrechkaStorage_Text123>
+  <GrechkaStorage_Text124>Operation cancelled. Items returned to their original disks.</GrechkaStorage_Text124>
+  <GrechkaStorage_Text125>Items redistributed across disks. Freshness, properties and freezing preserved.</GrechkaStorage_Text125>
+  <GrechkaStorage_Text126>Outside the map.</GrechkaStorage_Text126>
+  <GrechkaStorage_Text127>A quartz cable or its blueprint is already here.</GrechkaStorage_Text127>
+  <GrechkaStorage_Text128>Maintain at least this many on disks:</GrechkaStorage_Text128>
+  <GrechkaStorage_Text129>Number of native production cycles:</GrechkaStorage_Text129>
+  <GrechkaStorage_Text130>Units of the first product to craft:</GrechkaStorage_Text130>
+  <GrechkaStorage_Text131>Add</GrechkaStorage_Text131>
+  <GrechkaStorage_Text132>
+Disks: </GrechkaStorage_Text132>
+  <GrechkaStorage_Text133>Pawns install and remove disks.</GrechkaStorage_Text133>
+  <GrechkaStorage_Text134>Clear space for disk removal before deconstructing.</GrechkaStorage_Text134>
+  <GrechkaStorage_Text135>Remove items from the recovery buffer first.</GrechkaStorage_Text135>
+  <GrechkaStorage_Text136>Clear the controller's output buffer first.</GrechkaStorage_Text136>
+  <GrechkaStorage_Text137>Item unavailable</GrechkaStorage_Text137>
+  <GrechkaStorage_Text138>Install disks separately in a disk rack</GrechkaStorage_Text138>
+  <GrechkaStorage_Text139>This object cannot be stored on a disk</GrechkaStorage_Text139>
+  <GrechkaStorage_Text140>Empty package</GrechkaStorage_Text140>
+  <GrechkaStorage_Text141>Empty the minified container first</GrechkaStorage_Text141>
+  <GrechkaStorage_Text142>A dangerous device requires a separate adapter</GrechkaStorage_Text142>
+  <GrechkaStorage_Text143>This special item type requires an adapter: </GrechkaStorage_Text143>
+  <GrechkaStorage_Text144>Empty the nested container first</GrechkaStorage_Text144>
+  <GrechkaStorage_Text145>Nested containers are unsupported</GrechkaStorage_Text145>
+  <GrechkaStorage_Text146>An explosive item cannot be stored on a disk</GrechkaStorage_Text146>
+  <GrechkaStorage_Text147>Special spoilage requires a separate adapter</GrechkaStorage_Text147>
+  <GrechkaStorage_Text148>An active component requires an adapter: </GrechkaStorage_Text148>
+  <GrechkaStorage_Text149>
+Salvagers' archive: contents will be revealed after installation in a rack</GrechkaStorage_Text149>
+  <GrechkaStorage_Text150>
+Items: </GrechkaStorage_Text150>
+  <GrechkaStorage_Text151>; types: </GrechkaStorage_Text151>
+  <GrechkaStorage_Text152>/63
+Memory: </GrechkaStorage_Text152>
+  <GrechkaStorage_Text153>
+Permanent freezing</GrechkaStorage_Text153>
+  <GrechkaStorage_Text154>
+Normal spoilage at ambient temperature</GrechkaStorage_Text154>
+  <GrechkaStorage_Text155>The selected item will be consumed. The result depends on its material and the recipe. Other items will not be selected automatically.</GrechkaStorage_Text155>
+  <GrechkaStorage_Text156>No suitable items found. Check your search or put materials on a disk and reopen this selection.</GrechkaStorage_Text156>
+  <GrechkaStorage_Text157>Will consume: </GrechkaStorage_Text157>
+  <GrechkaStorage_Text158>Process</GrechkaStorage_Text158>
+  <GrechkaStorage_Text159>The item is already ordered, moved or unavailable. Select it from the disk again.</GrechkaStorage_Text159>
+  <GrechkaStorage_Text160>The item is unsuitable for this recipe</GrechkaStorage_Text160>
+  <GrechkaStorage_Text161>The selected item is no longer available on disks</GrechkaStorage_Text161>
+  <GrechkaStorage_Text162>The selected stack quantity changed. Cancel the order and select the item again.</GrechkaStorage_Text162>
+</LanguageData>

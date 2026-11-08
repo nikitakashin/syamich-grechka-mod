@@ -12,6 +12,15 @@ for path in (mod / 'Defs').rglob('*.xml'):
         if name:
             assert name not in defs, f'duplicate: {name}'
             defs[name] = node
+# StatsReportUtility enumerates every StatDef, including internal work-speed stats.
+# An uncategorized visible stat reaches category.displayAllByDefault and crashes
+# unrelated item/building information cards in RimWorld 1.7.
+for name, node in defs.items():
+    if node.tag == 'StatDef':
+        assert node.findtext('category') or node.findtext('alwaysHide') == 'true', f'unsafe information-card stat: {name}'
+matter_speed = defs['Grechka_MatterFixedWorkSpeed']
+assert matter_speed.findtext('alwaysHide') == 'true', 'internal matter speed must not appear on information cards'
+assert all(matter_speed.findtext(field) == '1' for field in ('defaultBaseValue', 'minValue', 'maxValue'))
 for path in (mod / 'Defs').rglob('*.xml'):
     for n in ET.parse(path).iter():
         for text in [n.tag, (n.text or '').strip()]:
@@ -48,14 +57,17 @@ for t in (4,5):
     for n in housing.findall('ingredients/li'):
         name=n.findtext('filter/thingDefs/li')
         if name != f'Grechka_HousingT{t-1}_Item':expected[name]=expected.get(name,0)+float(n.findtext('count'))
+    for n in defs[f'Grechka_AssemblyBenchT{t-1}_Building'].findall('costList/*'):
+        if n.tag in expected: expected[n.tag] -= float(n.text)
+    expected = {k:v for k,v in expected.items() if v>0}
     actual={n.findtext('filter/thingDefs/li'):float(n.findtext('count')) for n in recipe.findall('ingredients/li')}
     assert actual == expected, f'upgrade overcharges or duplicates its existing housing: T{t}'
 base_panels=1
-for stage, ratio in [(1,1),(2,2),(3,3),(4,6),(5,6),(6,8)]:
+for stage, ratio in [(1,1),(2,1),(3,1),(4,1),(5,1),(6,1)]:
     cost=defs[f'Grechka_SolarS{stage}_Building'].findtext(f'costList/Grechka_PackedSolarS{stage-1}_Item')
     assert int(cost)==ratio
     base_panels*=ratio
-assert base_panels==1728
+assert base_panels==1
 # The accepted one/three-panel load envelope, explicit rather than guessed.
 solar_power = -float(defs['Grechka_SolarS6_Building'].findtext("comps/li[@Class='CompProperties_Power']/basePowerConsumption"))
 base_load=40_000_000

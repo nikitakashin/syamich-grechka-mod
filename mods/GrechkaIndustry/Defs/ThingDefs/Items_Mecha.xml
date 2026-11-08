@@ -5,9 +5,10 @@
     <label>механиты</label>
     <description>Микроскопические машины, извлечённые из параллельного измерения. Основное сырьё меха-технологий T3.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/ComponentIndustrial</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-      <color>(0.3,0.8,1)</color>
+      <texPath>Items/Mechanites</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <color>(1,1,1)</color>
+      <drawSize>(1,1)</drawSize>
     </graphicData>
     <stackLimit>200</stackLimit>
     <soundInteract>Metal_Drop</soundInteract>
@@ -26,6 +27,7 @@
     <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>
+    <uiIconPath>Items/Mechanites</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="ResourceBase">
     <defName>Grechka_ComponentT3_Item</defName>
@@ -41,7 +43,7 @@
     <healthAffectsPrice>false</healthAffectsPrice>
     <statBases>
       <MaxHitPoints>120</MaxHitPoints>
-      <MarketValue>1300</MarketValue>
+      <MarketValue>600</MarketValue>
       <Mass>0.8</Mass>
       <Flammability>0.1</Flammability>
       <DeteriorationRate>2</DeteriorationRate>
@@ -67,7 +69,7 @@
     <healthAffectsPrice>false</healthAffectsPrice>
     <statBases>
       <MaxHitPoints>160</MaxHitPoints>
-      <MarketValue>14000</MarketValue>
+      <MarketValue>4000</MarketValue>
       <Mass>16</Mass>
       <Flammability>0.1</Flammability>
       <DeteriorationRate>2</DeteriorationRate>

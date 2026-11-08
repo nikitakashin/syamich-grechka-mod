@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Grechka_Research_IndustryT1.label>Industry T1</Grechka_Research_IndustryT1.label>
+  <Grechka_Research_IndustryT1.description>Housings, components and assembly benches T1. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_IndustryT1.description>
+  <Grechka_Research_IndustryT2.label>Industry T2</Grechka_Research_IndustryT2.label>
+  <Grechka_Research_IndustryT2.description>Housings, components and assembly benches T2. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_IndustryT2.description>
+  <Grechka_Research_IndustryT3.label>Industry T3</Grechka_Research_IndustryT3.label>
+  <Grechka_Research_IndustryT3.description>Housings, components and assembly benches T3. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_IndustryT3.description>
+  <Grechka_Research_IndustryT4.label>Industry T4</Grechka_Research_IndustryT4.label>
+  <Grechka_Research_IndustryT4.description>Housings, components and assembly benches T4. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_IndustryT4.description>
+  <Grechka_Research_IndustryT5.label>Industry T5</Grechka_Research_IndustryT5.label>
+  <Grechka_Research_IndustryT5.description>Housings, components and assembly benches T5. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_IndustryT5.description>
+  <Grechka_Research_SolarT2.label>Solar power T2</Grechka_Research_SolarT2.label>
+  <Grechka_Research_SolarT2.description>Solar cells, panels and integrations T2. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_SolarT2.description>
+  <Grechka_Research_SolarT3.label>Solar power T3</Grechka_Research_SolarT3.label>
+  <Grechka_Research_SolarT3.description>Solar cells, panels and integrations T3. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_SolarT3.description>
+  <Grechka_Research_SolarT4.label>Solar power T4</Grechka_Research_SolarT4.label>
+  <Grechka_Research_SolarT4.description>Solar cells, panels and integrations T4. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_SolarT4.description>
+  <Grechka_Research_SolarT5.label>Solar power T5</Grechka_Research_SolarT5.label>
+  <Grechka_Research_SolarT5.description>Solar cells, panels and integrations T5. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_SolarT5.description>
+  <Grechka_Research_MechaT3.label>Mechanite technology T3</Grechka_Research_MechaT3.label>
+  <Grechka_Research_MechaT3.description>Mechanite extractors, ionizers and mechaponics T3. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_MechaT3.description>
+  <Grechka_Research_MechaT4.label>Mechanite technology T4</Grechka_Research_MechaT4.label>
+  <Grechka_Research_MechaT4.description>Mechanite extractors, ionizers and mechaponics T4. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_MechaT4.description>
+  <Grechka_Research_MechaT5.label>Mechanite technology T5</Grechka_Research_MechaT5.label>
+  <Grechka_Research_MechaT5.description>Mechanite extractors, ionizers and mechaponics T5. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_MechaT5.description>
+  <Grechka_Research_ArchoT4.label>Archotechnology T4</Grechka_Research_ArchoT4.label>
+  <Grechka_Research_ArchoT4.description>Archotech generators and emitters T4. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_ArchoT4.description>
+  <Grechka_Research_ArchoT5.label>Archotechnology T5</Grechka_Research_ArchoT5.label>
+  <Grechka_Research_ArchoT5.description>Archotech generators and emitters T5. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_ArchoT5.description>
+  <Grechka_Research_MatterT4.label>Matter manipulation T4</Grechka_Research_MatterT4.label>
+  <Grechka_Research_MatterT4.description>Matter recycling and synthesis T4. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_MatterT4.description>
+  <Grechka_Research_MatterT5.label>Matter manipulation T5</Grechka_Research_MatterT5.label>
+  <Grechka_Research_MatterT5.description>Matter recycling and synthesis T5. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_MatterT5.description>
+  <Grechka_Research_StorageT1.label>Digital storage T1</Grechka_Research_StorageT1.label>
+  <Grechka_Research_StorageT1.description>Network, processors and storage disks of the corresponding capacity T1. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_StorageT1.description>
+  <Grechka_Research_StorageT2.label>Digital storage T2</Grechka_Research_StorageT2.label>
+  <Grechka_Research_StorageT2.description>Network, processors and storage disks of the corresponding capacity T2. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_StorageT2.description>
+  <Grechka_Research_StorageT3.label>Digital storage T3</Grechka_Research_StorageT3.label>
+  <Grechka_Research_StorageT3.description>Network, processors and storage disks of the corresponding capacity T3. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_StorageT3.description>
+  <Grechka_Research_StorageT4.label>Digital storage T4</Grechka_Research_StorageT4.label>
+  <Grechka_Research_StorageT4.description>Network, processors and storage disks of the corresponding capacity T4. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_StorageT4.description>
+  <Grechka_Research_StorageT5.label>Digital storage T5</Grechka_Research_StorageT5.label>
+  <Grechka_Research_StorageT5.description>Network, processors and storage disks of the corresponding capacity T5. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_StorageT5.description>
+  <Grechka_Research_AutocraftT3.label>Autocrafting T3</Grechka_Research_AutocraftT3.label>
+  <Grechka_Research_AutocraftT3.description>Network crafters T3. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_AutocraftT3.description>
+  <Grechka_Research_AutocraftT4.label>Autocrafting T4</Grechka_Research_AutocraftT4.label>
+  <Grechka_Research_AutocraftT4.description>Network crafters T4. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_AutocraftT4.description>
+  <Grechka_Research_AutocraftT5.label>Autocrafting T5</Grechka_Research_AutocraftT5.label>
+  <Grechka_Research_AutocraftT5.description>Network crafters T5. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_AutocraftT5.description>
+  <Grechka_Research_EquipmentT2.label>Equipment T2</Grechka_Research_EquipmentT2.label>
+  <Grechka_Research_EquipmentT2.description>Single-shot Wasp rifle T2. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_EquipmentT2.description>
+  <Grechka_Research_EquipmentT3.label>Equipment T3</Grechka_Research_EquipmentT3.label>
+  <Grechka_Research_EquipmentT3.description>Armor, helmets and combat equipment T3. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_EquipmentT3.description>
+  <Grechka_Research_EquipmentT4.label>Equipment T4</Grechka_Research_EquipmentT4.label>
+  <Grechka_Research_EquipmentT4.description>Armor, helmets and combat equipment T4. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_EquipmentT4.description>
+  <Grechka_Research_EquipmentT5.label>Equipment T5</Grechka_Research_EquipmentT5.label>
+  <Grechka_Research_EquipmentT5.description>Armor, helmets and combat equipment T5. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_EquipmentT5.description>
+  <Grechka_Research_BionicsT4.label>Bionics T4</Grechka_Research_BionicsT4.label>
+  <Grechka_Research_BionicsT4.description>Production of custom artificial organs T4. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_BionicsT4.description>
+  <Grechka_Research_BionicsT5.label>Bionics T5</Grechka_Research_BionicsT5.label>
+  <Grechka_Research_BionicsT5.description>Production of custom artificial organs T5. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_BionicsT5.description>
+  <Grechka_Research_ChipsT4.label>Implants T4</Grechka_Research_ChipsT4.label>
+  <Grechka_Research_ChipsT4.description>Chip production T4. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_ChipsT4.description>
+  <Grechka_Research_ChipsT5.label>Implants T5</Grechka_Research_ChipsT5.label>
+  <Grechka_Research_ChipsT5.description>Chip production T5. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_ChipsT5.description>
+  <Grechka_Research_DronesT1.label>Robotics T1</Grechka_Research_DronesT1.label>
+  <Grechka_Research_DronesT1.description>Rescue, warrior and caravan drone docks T1. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_DronesT1.description>
+  <Grechka_Research_DronesT2.label>Robotics T2</Grechka_Research_DronesT2.label>
+  <Grechka_Research_DronesT2.description>Rescue, warrior and caravan drone docks T2. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_DronesT2.description>
+  <Grechka_Research_DronesT3.label>Robotics T3</Grechka_Research_DronesT3.label>
+  <Grechka_Research_DronesT3.description>Rescue, warrior and caravan drone docks T3. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_DronesT3.description>
+  <Grechka_Research_DronesT4.label>Robotics T4</Grechka_Research_DronesT4.label>
+  <Grechka_Research_DronesT4.description>Rescue, warrior and caravan drone docks T4. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_DronesT4.description>
+  <Grechka_Research_DronesT5.label>Robotics T5</Grechka_Research_DronesT5.label>
+  <Grechka_Research_DronesT5.description>Rescue, warrior and caravan drone docks T5. Unlocks production and construction. Found items and quest rewards are available without research.</Grechka_Research_DronesT5.description>
+</LanguageData>

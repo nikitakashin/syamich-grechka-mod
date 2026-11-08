@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Grechka_CryogenicDamage.label>криогенный урон</Grechka_CryogenicDamage.label>
+  <Grechka_CryogenicDamage.deathMessage>{0} погибает от криогенных снарядов.</Grechka_CryogenicDamage.deathMessage>
+</LanguageData>

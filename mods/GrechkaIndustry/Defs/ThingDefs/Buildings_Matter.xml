@@ -21,7 +21,7 @@
     </statBases>
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
-    <designationCategory>Production</designationCategory>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
     <designatorDropdown>Grechka_MatterRecyclerGroup</designatorDropdown>
     <uiOrder>2514</uiOrder>
     <passability>PassThroughOnly</passability>
@@ -49,11 +49,18 @@
       </li>
       <li Class="CompProperties_Flickable" />
       <li Class="CompProperties_Breakdownable" />
+      <li Class="Grechka.Industry.CompProperties_OperationalGraphics">
+        <singleView>1</singleView>
+        <directionalStates>true</directionalStates>
+        <offPath>Buildings/Map/States/MatterRecyclerT4/MatterRecyclerT4_Off</offPath>
+        <idlePath>Buildings/Map/States/MatterRecyclerT4/MatterRecyclerT4_Idle</idlePath>
+        <activePath>Buildings/Map/States/MatterRecyclerT4/MatterRecyclerT4_Active</activePath>
+      </li>
       <li Class="Grechka.Industry.CompProperties_AssemblyUpgrade">
         <targetBenchName>Grechka_MatterRecyclerT5_Building</targetBenchName>
         <upgradeRecipeName>Grechka_UpgradeMatterRecyclerT5</upgradeRecipeName>
         <upgradeLabel>Улучшить до T5</upgradeLabel>
-        <upgradeDescription>Сохранить установку и задания. Добавить 32 компонента T5, 240 пластали, 48 концентрата.</upgradeDescription>
+        <upgradeDescription>Пешка улучшит этот верстак на месте. Установленный корпус и подходящие материалы уже зачтены в цене. Задания, дробный бонус выпуска и относительная прочность сохраняются.</upgradeDescription>
       </li>
     </comps>
     <placeWorkers>
@@ -64,14 +71,11 @@
       </recipes>
     <costList>
       <Grechka_HousingT4_Item>2</Grechka_HousingT4_Item>
-      <Grechka_ComponentT4_Item>16</Grechka_ComponentT4_Item>
-      <Plasteel>200</Plasteel>
-      <Uranium>100</Uranium>
+      <Grechka_ComponentT4_Item>4</Grechka_ComponentT4_Item>
+      <Plasteel>100</Plasteel>
+      <Uranium>50</Uranium>
     </costList>
     <minifiedDef>Grechka_PackedMatterRecyclerT4_Item</minifiedDef>
-    <thingCategories>
-      <li>BuildingsProduction</li>
-    </thingCategories>
     <uiIconPath>Buildings/MatterRecyclerT4</uiIconPath>
   </ThingDef>
   <ThingDef ParentName="BenchBase">
@@ -95,7 +99,7 @@
     </statBases>
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
-    <designationCategory>Production</designationCategory>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
     <designatorDropdown>Grechka_MatterRecyclerGroup</designatorDropdown>
     <uiOrder>2514</uiOrder>
     <passability>PassThroughOnly</passability>
@@ -136,14 +140,11 @@
     <recipes />
     <costList>
       <Grechka_HousingT5_Item>2</Grechka_HousingT5_Item>
-      <Grechka_ComponentT5_Item>16</Grechka_ComponentT5_Item>
-      <Plasteel>200</Plasteel>
-      <Uranium>100</Uranium>
+      <Grechka_ComponentT5_Item>4</Grechka_ComponentT5_Item>
+      <Plasteel>120</Plasteel>
+      <Uranium>50</Uranium>
     </costList>
     <minifiedDef>Grechka_PackedMatterRecyclerT5_Item</minifiedDef>
-    <thingCategories>
-      <li>BuildingsProduction</li>
-    </thingCategories>
   </ThingDef>
   <ThingDef ParentName="BenchBase">
     <defName>Grechka_MatterSynthesizerT4_Building</defName>
@@ -166,7 +167,7 @@
     </statBases>
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
-    <designationCategory>Production</designationCategory>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
     <designatorDropdown>Grechka_MatterSynthesizerGroup</designatorDropdown>
     <uiOrder>2514</uiOrder>
     <passability>PassThroughOnly</passability>
@@ -198,7 +199,7 @@
         <targetBenchName>Grechka_MatterSynthesizerT5_Building</targetBenchName>
         <upgradeRecipeName>Grechka_UpgradeMatterSynthesizerT5</upgradeRecipeName>
         <upgradeLabel>Улучшить до T5</upgradeLabel>
-        <upgradeDescription>Сохранить установку и задания. Добавить 32 компонента T5, 240 пластали, 48 концентрата.</upgradeDescription>
+        <upgradeDescription>Пешка улучшит этот верстак на месте. Установленный корпус и подходящие материалы уже зачтены в цене. Задания, дробный бонус выпуска и относительная прочность сохраняются.</upgradeDescription>
       </li>
       <li Class="Grechka.Industry.CompProperties_OperationalGraphics">
         <offPath>Buildings/Map/States/MatterSynthesizerT4/MatterSynthesizerT4_Off</offPath>
@@ -214,14 +215,11 @@
       </recipes>
     <costList>
       <Grechka_HousingT4_Item>2</Grechka_HousingT4_Item>
-      <Grechka_ComponentT4_Item>16</Grechka_ComponentT4_Item>
-      <Plasteel>200</Plasteel>
-      <Uranium>100</Uranium>
+      <Grechka_ComponentT4_Item>4</Grechka_ComponentT4_Item>
+      <Plasteel>100</Plasteel>
+      <Uranium>50</Uranium>
     </costList>
     <minifiedDef>Grechka_PackedMatterSynthesizerT4_Item</minifiedDef>
-    <thingCategories>
-      <li>BuildingsProduction</li>
-    </thingCategories>
   </ThingDef>
   <ThingDef ParentName="BenchBase">
     <defName>Grechka_MatterSynthesizerT5_Building</defName>
@@ -244,7 +242,7 @@
     </statBases>
     <altitudeLayer>Building</altitudeLayer>
     <fillPercent>0.5</fillPercent>
-    <designationCategory>Production</designationCategory>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
     <designatorDropdown>Grechka_MatterSynthesizerGroup</designatorDropdown>
     <uiOrder>2514</uiOrder>
     <passability>PassThroughOnly</passability>
@@ -285,13 +283,10 @@
     <recipes />
     <costList>
       <Grechka_HousingT5_Item>2</Grechka_HousingT5_Item>
-      <Grechka_ComponentT5_Item>16</Grechka_ComponentT5_Item>
-      <Plasteel>200</Plasteel>
-      <Uranium>100</Uranium>
+      <Grechka_ComponentT5_Item>4</Grechka_ComponentT5_Item>
+      <Plasteel>120</Plasteel>
+      <Uranium>50</Uranium>
     </costList>
     <minifiedDef>Grechka_PackedMatterSynthesizerT5_Item</minifiedDef>
-    <thingCategories>
-      <li>BuildingsProduction</li>
-    </thingCategories>
   </ThingDef>
 </Defs>

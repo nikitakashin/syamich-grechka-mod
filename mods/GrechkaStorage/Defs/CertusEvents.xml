@@ -5,7 +5,8 @@
     <label>метеорит certus</label>
     <description>Упавший метеорит с certus-рудой и переносимыми источниками кристаллов.</description>
     <workerClass>Grechka.Storage.SitePartWorker_CertusMeteor</workerClass>
-    <siteTexture>World/WorldObjects/AbandonedSettlement</siteTexture>
+    <siteTexture>World/WorldObjects/GrechkaCertusMeteor</siteTexture>
+    <expandingIconTexture>World/WorldObjects/GrechkaCertusMeteor</expandingIconTexture>
     <requiresFaction>false</requiresFaction>
     <wantsThreatPoints>false</wantsThreatPoints>
     <considerEnteringAsAttack>false</considerEnteringAsAttack>

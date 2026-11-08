@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaPharmacy_MakeTrainerInterest.label>создать нейротренер интереса</GrechkaPharmacy_MakeTrainerInterest.label>
+  <GrechkaPharmacy_MakeTrainerInterest.description>Синтезировать нейротренер из фармацевтических препаратов и драгоценных камней.</GrechkaPharmacy_MakeTrainerInterest.description>
+  <GrechkaPharmacy_MakeTrainerInterest.jobString>Синтезирует нейротренер.</GrechkaPharmacy_MakeTrainerInterest.jobString>
+  <GrechkaPharmacy_MakeTrainerPassion.label>создать нейротренер страсти</GrechkaPharmacy_MakeTrainerPassion.label>
+  <GrechkaPharmacy_MakeTrainerPassion.description>Синтезировать нейротренер из фармацевтических препаратов и драгоценных камней.</GrechkaPharmacy_MakeTrainerPassion.description>
+  <GrechkaPharmacy_MakeTrainerPassion.jobString>Синтезирует нейротренер.</GrechkaPharmacy_MakeTrainerPassion.jobString>
+  <GrechkaPharmacy_MakeTrainerStrong.label>создать нейротренер сильной страсти</GrechkaPharmacy_MakeTrainerStrong.label>
+  <GrechkaPharmacy_MakeTrainerStrong.description>Синтезировать нейротренер из фармацевтических препаратов и драгоценных камней.</GrechkaPharmacy_MakeTrainerStrong.description>
+  <GrechkaPharmacy_MakeTrainerStrong.jobString>Синтезирует нейротренер.</GrechkaPharmacy_MakeTrainerStrong.jobString>
+  <GrechkaPharmacy_MakeTrainerTalent.label>создать нейротренер таланта</GrechkaPharmacy_MakeTrainerTalent.label>
+  <GrechkaPharmacy_MakeTrainerTalent.description>Синтезировать нейротренер из фармацевтических препаратов и драгоценных камней.</GrechkaPharmacy_MakeTrainerTalent.description>
+  <GrechkaPharmacy_MakeTrainerTalent.jobString>Синтезирует нейротренер.</GrechkaPharmacy_MakeTrainerTalent.jobString>
+  <GrechkaPharmacy_MakeTrainerCalling.label>создать нейротренер призвания</GrechkaPharmacy_MakeTrainerCalling.label>
+  <GrechkaPharmacy_MakeTrainerCalling.description>Синтезировать нейротренер из фармацевтических препаратов и драгоценных камней.</GrechkaPharmacy_MakeTrainerCalling.description>
+  <GrechkaPharmacy_MakeTrainerCalling.jobString>Синтезирует нейротренер.</GrechkaPharmacy_MakeTrainerCalling.jobString>
+</LanguageData>

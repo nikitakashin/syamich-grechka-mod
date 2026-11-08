@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaFaction_Mills.label>Союз семи мельниц</GrechkaFaction_Mills.label>
+  <GrechkaFaction_Mills.description>Мельники расселились по семи посёлкам после пожара большого элеватора. Они торгуют продовольствием и тканью и защищают свои обозы.</GrechkaFaction_Mills.description>
+  <GrechkaFaction_Mills.pawnSingular>Союз семи мельниц</GrechkaFaction_Mills.pawnSingular>
+  <GrechkaFaction_Mills.pawnsPlural>Союз семи мельниц</GrechkaFaction_Mills.pawnsPlural>
+  <GrechkaFaction_Mills.leaderTitle>представитель</GrechkaFaction_Mills.leaderTitle>
+  <GrechkaFaction_Rescue.label>Нулевая смена</GrechkaFaction_Rescue.label>
+  <GrechkaFaction_Rescue.description>Потомки аварийной бригады элеватора. В их караванах служат опытные медики; поселения снабжают соседей лекарствами.</GrechkaFaction_Rescue.description>
+  <GrechkaFaction_Rescue.pawnSingular>Нулевая смена</GrechkaFaction_Rescue.pawnSingular>
+  <GrechkaFaction_Rescue.pawnsPlural>Нулевая смена</GrechkaFaction_Rescue.pawnsPlural>
+  <GrechkaFaction_Rescue.leaderTitle>представитель</GrechkaFaction_Rescue.leaderTitle>
+  <GrechkaFaction_Artel.label>Артель последней гайки</GrechkaFaction_Artel.label>
+  <GrechkaFaction_Artel.description>Малая артель мастеров. Каждый человек имеет интеллект 16–20, два профильных навыка 16–20 и гречка-бионику T5. Мастера получают две замены, бригадир — три. Пленных можно завербовать вместе с их имплантами.</GrechkaFaction_Artel.description>
+  <GrechkaFaction_Artel.pawnSingular>Артель последней гайки</GrechkaFaction_Artel.pawnSingular>
+  <GrechkaFaction_Artel.pawnsPlural>Артель последней гайки</GrechkaFaction_Artel.pawnsPlural>
+  <GrechkaFaction_Artel.leaderTitle>бригадир</GrechkaFaction_Artel.leaderTitle>
+  <GrechkaFaction_Bare.label>Босая сотня</GrechkaFaction_Bare.label>
+  <GrechkaFaction_Bare.description>Воинские отряды с боевыми и двигательными чипами T5. Сражаются без одежды, предпочитают ближний бой. Изначально враждебны, но допускают примирение.</GrechkaFaction_Bare.description>
+  <GrechkaFaction_Bare.pawnSingular>Босая сотня</GrechkaFaction_Bare.pawnSingular>
+  <GrechkaFaction_Bare.pawnsPlural>Босая сотня</GrechkaFaction_Bare.pawnsPlural>
+  <GrechkaFaction_Bare.leaderTitle>представитель</GrechkaFaction_Bare.leaderTitle>
+  <GrechkaFaction_Post.label>Бюро невскрытых посылок</GrechkaFaction_Post.label>
+  <GrechkaFaction_Post.description>Курьеры службы, пережившей своё государство. Каждый курьер несёт настоящий лаки-блок T1–T3; посылку можно забрать как обычный трофей.</GrechkaFaction_Post.description>
+  <GrechkaFaction_Post.pawnSingular>Бюро невскрытых посылок</GrechkaFaction_Post.pawnSingular>
+  <GrechkaFaction_Post.pawnsPlural>Бюро невскрытых посылок</GrechkaFaction_Post.pawnsPlural>
+  <GrechkaFaction_Post.leaderTitle>представитель</GrechkaFaction_Post.leaderTitle>
+  <GrechkaFaction_Mills.fixedName>Союз семи мельниц</GrechkaFaction_Mills.fixedName>
+  <GrechkaFaction_Rescue.fixedName>Нулевая смена</GrechkaFaction_Rescue.fixedName>
+  <GrechkaFaction_Artel.fixedName>Артель последней гайки</GrechkaFaction_Artel.fixedName>
+  <GrechkaFaction_Bare.fixedName>Босая сотня</GrechkaFaction_Bare.fixedName>
+  <GrechkaFaction_Post.fixedName>Бюро невскрытых посылок</GrechkaFaction_Post.fixedName>
+</LanguageData>

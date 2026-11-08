@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaTreasures_CutDiamond.label>огранить алмаз</GrechkaTreasures_CutDiamond.label>
+  <GrechkaTreasures_CutDiamond.jobString>Обрабатывает драгоценный камень.</GrechkaTreasures_CutDiamond.jobString>
+  <GrechkaTreasures_SawMonolithDiamond.label>распилить монолит: алмаз</GrechkaTreasures_SawMonolithDiamond.label>
+  <GrechkaTreasures_SawMonolithDiamond.jobString>Обрабатывает драгоценный камень.</GrechkaTreasures_SawMonolithDiamond.jobString>
+  <GrechkaTreasures_CutRuby.label>огранить рубин</GrechkaTreasures_CutRuby.label>
+  <GrechkaTreasures_CutRuby.jobString>Обрабатывает драгоценный камень.</GrechkaTreasures_CutRuby.jobString>
+  <GrechkaTreasures_SawMonolithRuby.label>распилить монолит: рубин</GrechkaTreasures_SawMonolithRuby.label>
+  <GrechkaTreasures_SawMonolithRuby.jobString>Обрабатывает драгоценный камень.</GrechkaTreasures_SawMonolithRuby.jobString>
+  <GrechkaTreasures_CutSapphire.label>огранить сапфир</GrechkaTreasures_CutSapphire.label>
+  <GrechkaTreasures_CutSapphire.jobString>Обрабатывает драгоценный камень.</GrechkaTreasures_CutSapphire.jobString>
+  <GrechkaTreasures_SawMonolithSapphire.label>распилить монолит: сапфир</GrechkaTreasures_SawMonolithSapphire.label>
+  <GrechkaTreasures_SawMonolithSapphire.jobString>Обрабатывает драгоценный камень.</GrechkaTreasures_SawMonolithSapphire.jobString>
+  <GrechkaTreasures_CutEmerald.label>огранить изумруд</GrechkaTreasures_CutEmerald.label>
+  <GrechkaTreasures_CutEmerald.jobString>Обрабатывает драгоценный камень.</GrechkaTreasures_CutEmerald.jobString>
+  <GrechkaTreasures_SawMonolithEmerald.label>распилить монолит: изумруд</GrechkaTreasures_SawMonolithEmerald.label>
+  <GrechkaTreasures_SawMonolithEmerald.jobString>Обрабатывает драгоценный камень.</GrechkaTreasures_SawMonolithEmerald.jobString>
+  <GrechkaTreasures_CutAmethyst.label>огранить аметист</GrechkaTreasures_CutAmethyst.label>
+  <GrechkaTreasures_CutAmethyst.jobString>Обрабатывает драгоценный камень.</GrechkaTreasures_CutAmethyst.jobString>
+  <GrechkaTreasures_SawMonolithAmethyst.label>распилить монолит: аметист</GrechkaTreasures_SawMonolithAmethyst.label>
+  <GrechkaTreasures_SawMonolithAmethyst.jobString>Обрабатывает драгоценный камень.</GrechkaTreasures_SawMonolithAmethyst.jobString>
+  <GrechkaTreasures_CutTopaz.label>огранить топаз</GrechkaTreasures_CutTopaz.label>
+  <GrechkaTreasures_CutTopaz.jobString>Обрабатывает драгоценный камень.</GrechkaTreasures_CutTopaz.jobString>
+  <GrechkaTreasures_SawMonolithTopaz.label>распилить монолит: топаз</GrechkaTreasures_SawMonolithTopaz.label>
+  <GrechkaTreasures_SawMonolithTopaz.jobString>Обрабатывает драгоценный камень.</GrechkaTreasures_SawMonolithTopaz.jobString>
+  <GrechkaTreasures_CutDiamond.description>Огранка одного природного камня в один ювелирный камень.</GrechkaTreasures_CutDiamond.description>
+  <GrechkaTreasures_SawMonolithDiamond.description>Обработка камня на ювелирном верстаке. При распиле монолита получается 30 огранённых камней.</GrechkaTreasures_SawMonolithDiamond.description>
+  <GrechkaTreasures_CutRuby.description>Огранка одного природного камня в один ювелирный камень.</GrechkaTreasures_CutRuby.description>
+  <GrechkaTreasures_SawMonolithRuby.description>Обработка камня на ювелирном верстаке. При распиле монолита получается 30 огранённых камней.</GrechkaTreasures_SawMonolithRuby.description>
+  <GrechkaTreasures_CutSapphire.description>Огранка одного природного камня в один ювелирный камень.</GrechkaTreasures_CutSapphire.description>
+  <GrechkaTreasures_SawMonolithSapphire.description>Обработка камня на ювелирном верстаке. При распиле монолита получается 30 огранённых камней.</GrechkaTreasures_SawMonolithSapphire.description>
+  <GrechkaTreasures_CutEmerald.description>Огранка одного природного камня в один ювелирный камень.</GrechkaTreasures_CutEmerald.description>
+  <GrechkaTreasures_SawMonolithEmerald.description>Обработка камня на ювелирном верстаке. При распиле монолита получается 30 огранённых камней.</GrechkaTreasures_SawMonolithEmerald.description>
+  <GrechkaTreasures_CutAmethyst.description>Огранка одного природного камня в один ювелирный камень.</GrechkaTreasures_CutAmethyst.description>
+  <GrechkaTreasures_SawMonolithAmethyst.description>Обработка камня на ювелирном верстаке. При распиле монолита получается 30 огранённых камней.</GrechkaTreasures_SawMonolithAmethyst.description>
+  <GrechkaTreasures_CutTopaz.description>Огранка одного природного камня в один ювелирный камень.</GrechkaTreasures_CutTopaz.description>
+  <GrechkaTreasures_SawMonolithTopaz.description>Обработка камня на ювелирном верстаке. При распиле монолита получается 30 огранённых камней.</GrechkaTreasures_SawMonolithTopaz.description>
+</LanguageData>

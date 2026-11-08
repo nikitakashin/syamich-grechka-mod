@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaTrader_Industry.label>Гречневый промышленный союз</GrechkaTrader_Industry.label>
+  <GrechkaTrader_Industry.description>Материалы Grechka, компоненты и корпуса разных тиров, переносимое промышленное оборудование.</GrechkaTrader_Industry.description>
+  <GrechkaTrader_Storage.label>Гречневый цифровой караван</GrechkaTrader_Storage.label>
+  <GrechkaTrader_Storage.description>Кварцевая электроника, ячейки памяти, диски и переносимые устройства Storage.</GrechkaTrader_Storage.description>
+  <GrechkaTrader_Equipment.label>Гречневый арсенал</GrechkaTrader_Equipment.label>
+  <GrechkaTrader_Equipment.description>Оружие и броня Grechka, боевые дроны, чипы и бионические органы.</GrechkaTrader_Equipment.description>
+  <GrechkaTrader_LuckyBlocks.label>Гречневый торговец удачей</GrechkaTrader_LuckyBlocks.label>
+  <GrechkaTrader_LuckyBlocks.description>Лаки-блоки Grechka разных тиров и тематических серий.</GrechkaTrader_LuckyBlocks.description>
+  <GrechkaTrader_Automation.label>Фабрично-энергетический синдикат</GrechkaTrader_Automation.label>
+  <GrechkaTrader_Automation.description>Переносимые фабричные машины, энергооборудование, производственные станки и компоненты ARC.</GrechkaTrader_Automation.description>
+  <GrechkaTrader_Robotics.label>Караван робототехнического сервиса</GrechkaTrader_Robotics.label>
+  <GrechkaTrader_Robotics.description>Станции роботов-уборщиков и грузчиков с материалами для обслуживания.</GrechkaTrader_Robotics.description>
+  <GrechkaTrader_Medical.label>Пограничный медснаб</GrechkaTrader_Medical.label>
+  <GrechkaTrader_Medical.description>Переносимая медицинская мебель и хирургическое оснащение, лекарства и расходные материалы.</GrechkaTrader_Medical.description>
+  <GrechkaTrader_Gourmet.label>Гастрономический караван Рима</GrechkaTrader_Gourmet.label>
+  <GrechkaTrader_Gourmet.description>Ингредиенты расширенной кулинарии, консервы, выпечка, рагу, суши и рыба.</GrechkaTrader_Gourmet.description>
+  <GrechkaTrader_Agronomy.label>Агрономы фронтира</GrechkaTrader_Agronomy.label>
+  <GrechkaTrader_Agronomy.description>Модовые фрукты, овощи, грибное сырьё, фермерское оборудование и переносимые устройства питательной пасты.</GrechkaTrader_Agronomy.description>
+  <GrechkaTrader_Books.label>Странствующий книготорговец</GrechkaTrader_Books.label>
+  <GrechkaTrader_Books.description>Газеты, писательская мебель и книги для колониальной библиотеки.</GrechkaTrader_Books.description>
+  <GrechkaTrader_Defence.label>Военные инженеры фронтира</GrechkaTrader_Defence.label>
+  <GrechkaTrader_Defence.description>Материалы укреплений, переносимая оборона, нелетальное оружие и снаряжение одичавших.</GrechkaTrader_Defence.description>
+  <GrechkaTrader_Imperial.label>Имперский поставщик роскоши</GrechkaTrader_Imperial.label>
+  <GrechkaTrader_Imperial.description>Имперская одежда, оружие, аперитивы, переносимая роскошная мебель и драгоценные камни Treasures.</GrechkaTrader_Imperial.description>
+  <GrechkaTrader_Smugglers.label>Контрабандисты древних арсеналов</GrechkaTrader_Smugglers.label>
+  <GrechkaTrader_Smugglers.description>Товарное снаряжение дезертиров, пиратское оружие, древние криптотехнологии и карты сокровищ.</GrechkaTrader_Smugglers.description>
+  <GrechkaTrader_Psycasts.label>Элтексовый куратор</GrechkaTrader_Psycasts.label>
+  <GrechkaTrader_Psycasts.description>Элтекс, психическая одежда и элтексовое холодное оружие.</GrechkaTrader_Psycasts.description>
+  <GrechkaTrader_Interiors.label>Дизайнеры колониального интерьера</GrechkaTrader_Interiors.label>
+  <GrechkaTrader_Interiors.description>Переносимая мебель, предметы искусства, декор, скульптуры из камней Treasures и комфорт космической эпохи.</GrechkaTrader_Interiors.description>
+  <GrechkaTrader_Outfitter.label>Ателье пограничных миров</GrechkaTrader_Outfitter.label>
+  <GrechkaTrader_Outfitter.description>Модовая одежда, профессиональная форма, рюкзаки и носимые аксессуары.</GrechkaTrader_Outfitter.description>
+</LanguageData>

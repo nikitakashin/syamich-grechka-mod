@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <GrechkaKite_Intro>Drafted pawns fire while moving when Fire at will is enabled and a suitable hostile target is available.</GrechkaKite_Intro>
+  <GrechkaKite_Enemies>Enemies fire while moving</GrechkaKite_Enemies>
+  <GrechkaKite_EnemiesTip>Allow hostile pawns to fire during combat movement. Enabled by default. Does not affect enemies firing while stationary.</GrechkaKite_EnemiesTip>
+  <GrechkaKite_Help>Range, line of sight, aiming, bursts and cooldowns retain their normal rules. Manual attacks work as usual. Peaceful work does not trigger moving fire.</GrechkaKite_Help>
+</LanguageData>

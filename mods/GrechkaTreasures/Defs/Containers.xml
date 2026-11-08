@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="ResourceBase">
+    <defName>GrechkaTreasures_TreasureMap</defName>
+    <label>карта сокровищ</label>
+    <description>Старые координаты и сведения о драгоценностях. Положите карту на землю и прикажите колонисту расшифровать её правой кнопкой мыши. Карта расходуется только после успешного обнаружения места. Одновременно доступны четыре экспедиции; при невозможности найти место карта остаётся целой.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <graphicData><texPath>Items/TreasureMap</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <stackLimit>1</stackLimit>
+    <statBases><MarketValue>420</MarketValue><Mass>0.1</Mass><MaxHitPoints>100</MaxHitPoints><Flammability>1</Flammability></statBases>
+    <thingCategories><li>ItemsMisc</li></thingCategories>
+    <tradeability>All</tradeability>
+    <tradeTags><li>ExoticMisc</li></tradeTags>
+    <comps><li Class="Grechka.Treasures.CompProperties_TreasureMap" /></comps>
+  </ThingDef>
+  <ThingDef Name="GrechkaTreasures_ChestBase" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <size>(1,1)</size>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.5</fillPercent>
+    <altitudeLayer>Building</altitudeLayer>
+    <selectable>true</selectable>
+    <rotatable>false</rotatable>
+    <statBases><MaxHitPoints>320</MaxHitPoints><Mass>28</Mass><Flammability>0.1</Flammability><MarketValue>60</MarketValue></statBases>
+    <building><isEdifice>false</isEdifice><deconstructible>false</deconstructible><claimable>false</claimable></building>
+    <comps><li Class="Grechka.Treasures.CompProperties_TreasureChest" /></comps>
+  </ThingDef>
+  <ThingDef ParentName="GrechkaTreasures_ChestBase">
+    <defName>GrechkaTreasures_TreasureChest</defName>
+    <label>запечатанный сундук</label>
+    <description>Тяжёлый старый сундук. Прикажите колонисту вскрыть его правой кнопкой мыши. Добыча физически хранится внутри и появляется рядом после вскрытия. Разрушение также освобождает уцелевшее содержимое.</description>
+    <graphicData><texPath>Buildings/TreasureChest</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1.15,1.15)</drawSize></graphicData>
+  </ThingDef>
+  <ThingDef ParentName="GrechkaTreasures_ChestBase">
+    <defName>GrechkaTreasures_DecoyChest</defName>
+    <label>подозрительный позолоченный сундук</label>
+    <description>Слишком яркая позолота отслаивается, а рядом видны свежие следы. Возможно, это дешёвая приманка. Внутри может оказаться обычный металл вместо обещанных драгоценностей.</description>
+    <graphicData><texPath>Buildings/DecoyChest</texPath><graphicClass>Graphic_Single</graphicClass><drawSize>(1.15,1.15)</drawSize></graphicData>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBase">
+    <defName>GrechkaTreasures_WarningSign</defName>
+    <label>следы прежней экспедиции</label>
+    <description>Записка, отметки на металле и остатки проводки. Выберите объект и прочитайте подсказку в сведениях: она помогает заметить ловушки и найти настоящую добычу.</description>
+    <thingClass>Building</thingClass>
+    <graphicData><texPath>Buildings/WarningSign</texPath><graphicClass>Graphic_Single</graphicClass></graphicData>
+    <size>(1,1)</size>
+    <passability>Standable</passability>
+    <rotatable>false</rotatable>
+    <statBases><MaxHitPoints>100</MaxHitPoints><Mass>1</Mass><Flammability>0.3</Flammability><MarketValue>2</MarketValue></statBases>
+    <building><isEdifice>false</isEdifice><deconstructible>false</deconstructible><claimable>false</claimable></building>
+    <comps><li Class="Grechka.Treasures.CompProperties_TreasureClue" /></comps>
+  </ThingDef>
+</Defs>

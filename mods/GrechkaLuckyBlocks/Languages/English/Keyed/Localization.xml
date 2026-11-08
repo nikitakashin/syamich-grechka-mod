@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaLuckyBlocks_Text001>Saved outcome exceeds 2 MB.</GrechkaLuckyBlocks_Text001>
+  <GrechkaLuckyBlocks_Text002>Configuration exceeds 2 MB.</GrechkaLuckyBlocks_Text002>
+  <GrechkaLuckyBlocks_Text003>schemaVersion 1 is required.</GrechkaLuckyBlocks_Text003>
+  <GrechkaLuckyBlocks_Text004>Raider chance must be between 0 and 1.</GrechkaLuckyBlocks_Text004>
+  <GrechkaLuckyBlocks_Text005>Five non-negative tier weights with a finite positive sum are required.</GrechkaLuckyBlocks_Text005>
+  <GrechkaLuckyBlocks_Text006>Between 1 and 200 pools are required.</GrechkaLuckyBlocks_Text006>
+  <GrechkaLuckyBlocks_Text007>Duplicate or invalid pool ID.</GrechkaLuckyBlocks_Text007>
+  <GrechkaLuckyBlocks_Text008>: between 1 and 200 outcomes are required.</GrechkaLuckyBlocks_Text008>
+  <GrechkaLuckyBlocks_Text009>: invalid outcome ID.</GrechkaLuckyBlocks_Text009>
+  <GrechkaLuckyBlocks_Text010>: invalid weight.</GrechkaLuckyBlocks_Text010>
+  <GrechkaLuckyBlocks_Text011>: unknown effect.</GrechkaLuckyBlocks_Text011>
+  <GrechkaLuckyBlocks_Text012>: invalid requiredMods.</GrechkaLuckyBlocks_Text012>
+  <GrechkaLuckyBlocks_Text013>: invalid item list.</GrechkaLuckyBlocks_Text013>
+  <GrechkaLuckyBlocks_Text014>: empty reward.</GrechkaLuckyBlocks_Text014>
+  <GrechkaLuckyBlocks_Text015>: between 1 and 100 pawns of an existing kind are required.</GrechkaLuckyBlocks_Text015>
+  <GrechkaLuckyBlocks_Text016>: invalid item, material or quality.</GrechkaLuckyBlocks_Text016>
+  <GrechkaLuckyBlocks_Text017>Invalid sample.</GrechkaLuckyBlocks_Text017>
+  <GrechkaLuckyBlocks_Text018>Invalid weight.</GrechkaLuckyBlocks_Text018>
+  <GrechkaLuckyBlocks_Text019>Empty pool.</GrechkaLuckyBlocks_Text019>
+  <GrechkaLuckyBlocks_Text020>Configuration not loaded: </GrechkaLuckyBlocks_Text020>
+  <GrechkaLuckyBlocks_Text021>Reward pools (JSON). Edit weights, items, animal counts and the chance for a raider to carry a block. Applying validates the configuration; unavailable optional outcomes are skipped.</GrechkaLuckyBlocks_Text021>
+  <GrechkaLuckyBlocks_Text022>Apply</GrechkaLuckyBlocks_Text022>
+  <GrechkaLuckyBlocks_Text023>No available outcomes: </GrechkaLuckyBlocks_Text023>
+  <GrechkaLuckyBlocks_Text024>Configuration applied.</GrechkaLuckyBlocks_Text024>
+  <GrechkaLuckyBlocks_Text025>Export</GrechkaLuckyBlocks_Text025>
+  <GrechkaLuckyBlocks_Text026>Import</GrechkaLuckyBlocks_Text026>
+  <GrechkaLuckyBlocks_Text027>Place JSON files in </GrechkaLuckyBlocks_Text027>
+  <GrechkaLuckyBlocks_Text028>File exceeds 2 MB.</GrechkaLuckyBlocks_Text028>
+  <GrechkaLuckyBlocks_Text029>Draft imported. Click Apply.</GrechkaLuckyBlocks_Text029>
+  <GrechkaLuckyBlocks_Text030>No outcome.</GrechkaLuckyBlocks_Text030>
+  <GrechkaLuckyBlocks_Text031>Required mod: </GrechkaLuckyBlocks_Text031>
+  <GrechkaLuckyBlocks_Text032>Missing item: </GrechkaLuckyBlocks_Text032>
+  <GrechkaLuckyBlocks_Text033>Invalid material: </GrechkaLuckyBlocks_Text033>
+  <GrechkaLuckyBlocks_Text034>The item is not made from a material: </GrechkaLuckyBlocks_Text034>
+  <GrechkaLuckyBlocks_Text035>The item has no quality: </GrechkaLuckyBlocks_Text035>
+  <GrechkaLuckyBlocks_Text036>Missing pawn kind: </GrechkaLuckyBlocks_Text036>
+  <GrechkaLuckyBlocks_Text037>An animal kind is required.</GrechkaLuckyBlocks_Text037>
+  <GrechkaLuckyBlocks_Text038>Mechanoids unavailable.</GrechkaLuckyBlocks_Text038>
+  <GrechkaLuckyBlocks_Text039>Saved opening state is damaged; the block and remaining items have been preserved.</GrechkaLuckyBlocks_Text039>
+  <GrechkaLuckyBlocks_Text040>The unfinished opening has no saved outcome; rerolling is blocked.</GrechkaLuckyBlocks_Text040>
+  <GrechkaLuckyBlocks_Text041>No available outcomes in Lucky Blocks settings.</GrechkaLuckyBlocks_Text041>
+  <GrechkaLuckyBlocks_Text042>Open: </GrechkaLuckyBlocks_Text042>
+  <GrechkaLuckyBlocks_Text043>Open: unavailable</GrechkaLuckyBlocks_Text043>
+  <GrechkaLuckyBlocks_Text044>Open lucky block</GrechkaLuckyBlocks_Text044>
+  <GrechkaLuckyBlocks_Text045>Could not preserve the result.</GrechkaLuckyBlocks_Text045>
+  <GrechkaLuckyBlocks_Text046>Could not preserve the pawn.</GrechkaLuckyBlocks_Text046>
+  <GrechkaLuckyBlocks_Text047>Part of the result remains in the block. Clear nearby space and open it again.</GrechkaLuckyBlocks_Text047>
+  <GrechkaLuckyBlocks_Text048>[Grechka Lucky Blocks] Result preserved in block: </GrechkaLuckyBlocks_Text048>
+  <GrechkaLuckyBlocks_Text049>Could not finish opening. The block and selected result have been preserved.</GrechkaLuckyBlocks_Text049>
+</LanguageData>

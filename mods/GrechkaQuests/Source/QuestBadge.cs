@@ -30,6 +30,7 @@ namespace Grechka.Quests
         public static void Draw(Rect rect)
         {
             if (Event.current.type != EventType.Repaint) return;
+            if (QuestArt.Draw(rect, "QuestRewardReady")) return;
             Color previous = GUI.color; TextAnchor anchor = Text.Anchor; GameFont font = Text.Font;
             GUI.color = Color.white; GUI.DrawTexture(rect, Circle);
             GUI.color = new Color(0.8f, 0.03f, 0.03f); Text.Anchor = TextAnchor.MiddleCenter; Text.Font = GameFont.Small;

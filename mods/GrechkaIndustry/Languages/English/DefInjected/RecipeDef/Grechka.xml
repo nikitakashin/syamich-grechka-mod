@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Grechka_MakeSolarStorageT3.label>assemble: quartz panel</Grechka_MakeSolarStorageT3.label>
+  <Grechka_MakeSolarStorageT3.description>Upgrade one intact uninstalled device from the previous stage. Its installed housing is already credited; only new parts and solar cells are required. Produces one packed device for installation.</Grechka_MakeSolarStorageT3.description>
+  <Grechka_MakeSolarStorageT3.jobString>assemble: quartz panel.</Grechka_MakeSolarStorageT3.jobString>
+  <Grechka_MakeSolarStorageT4.label>assemble: resonance panel</Grechka_MakeSolarStorageT4.label>
+  <Grechka_MakeSolarStorageT4.description>Upgrade one intact uninstalled device from the previous stage. Its installed housing is already credited; only new parts and solar cells are required. Produces one packed device for installation.</Grechka_MakeSolarStorageT4.description>
+  <Grechka_MakeSolarStorageT4.jobString>assemble: resonance panel.</Grechka_MakeSolarStorageT4.jobString>
+  <Grechka_MakeSolarStorageT5.label>assemble: network solar panel</Grechka_MakeSolarStorageT5.label>
+  <Grechka_MakeSolarStorageT5.description>Upgrade one intact uninstalled device from the previous stage. Its installed housing is already credited; only new parts and solar cells are required. Produces one packed device for installation.</Grechka_MakeSolarStorageT5.description>
+  <Grechka_MakeSolarStorageT5.jobString>assemble: network solar panel.</Grechka_MakeSolarStorageT5.jobString>
+  <Grechka_MakeSolarEltexT3.label>assemble: eltex resonator</Grechka_MakeSolarEltexT3.label>
+  <Grechka_MakeSolarEltexT3.description>Upgrade one intact uninstalled device from the previous stage. Its installed housing is already credited; only new parts and solar cells are required. Produces one packed device for installation.</Grechka_MakeSolarEltexT3.description>
+  <Grechka_MakeSolarEltexT3.jobString>assemble: eltex resonator.</Grechka_MakeSolarEltexT3.jobString>
+  <Grechka_MakeSolarEltexT4.label>assemble: psychic solar panel</Grechka_MakeSolarEltexT4.label>
+  <Grechka_MakeSolarEltexT4.description>Upgrade one intact uninstalled device from the previous stage. Its installed housing is already credited; only new parts and solar cells are required. Produces one packed device for installation.</Grechka_MakeSolarEltexT4.description>
+  <Grechka_MakeSolarEltexT4.jobString>assemble: psychic solar panel.</Grechka_MakeSolarEltexT4.jobString>
+  <Grechka_MakeSolarEltexT5.label>assemble: psychic solar array</Grechka_MakeSolarEltexT5.label>
+  <Grechka_MakeSolarEltexT5.description>Upgrade one intact uninstalled device from the previous stage. Its installed housing is already credited; only new parts and solar cells are required. Produces one packed device for installation.</Grechka_MakeSolarEltexT5.description>
+  <Grechka_MakeSolarEltexT5.jobString>assemble: psychic solar array.</Grechka_MakeSolarEltexT5.jobString>
+  <Grechka_MakeSolarFortressT2.label>assemble: armored panel</Grechka_MakeSolarFortressT2.label>
+  <Grechka_MakeSolarFortressT2.description>Upgrade one intact uninstalled device from the previous stage. Its installed housing is already credited; only new parts and solar cells are required. Produces one packed device for installation.</Grechka_MakeSolarFortressT2.description>
+  <Grechka_MakeSolarFortressT2.jobString>assemble: armored panel.</Grechka_MakeSolarFortressT2.jobString>
+  <Grechka_MakeSolarFortressT3.label>assemble: fortress panel</Grechka_MakeSolarFortressT3.label>
+  <Grechka_MakeSolarFortressT3.description>Upgrade one intact uninstalled device from the previous stage. Its installed housing is already credited; only new parts and solar cells are required. Produces one packed device for installation.</Grechka_MakeSolarFortressT3.description>
+  <Grechka_MakeSolarFortressT3.jobString>assemble: fortress panel.</Grechka_MakeSolarFortressT3.jobString>
+  <Grechka_MakeSolarFortressT4.label>assemble: archotech fortress panel</Grechka_MakeSolarFortressT4.label>
+  <Grechka_MakeSolarFortressT4.description>Upgrade one intact uninstalled device from the previous stage. Its installed housing is already credited; only new parts and solar cells are required. Produces one packed device for installation.</Grechka_MakeSolarFortressT4.description>
+  <Grechka_MakeSolarFortressT4.jobString>assemble: archotech fortress panel.</Grechka_MakeSolarFortressT4.jobString>
+  <Grechka_MakeSolarFortressT5.label>assemble: grechka fortress panel</Grechka_MakeSolarFortressT5.label>
+  <Grechka_MakeSolarFortressT5.description>Upgrade one intact uninstalled device from the previous stage. Its installed housing is already credited; only new parts and solar cells are required. Produces one packed device for installation.</Grechka_MakeSolarFortressT5.description>
+  <Grechka_MakeSolarFortressT5.jobString>assemble: grechka fortress panel.</Grechka_MakeSolarFortressT5.jobString>
+  <Grechka_MakeSolarBiotechT3.label>assemble: sun-tracking panel</Grechka_MakeSolarBiotechT3.label>
+  <Grechka_MakeSolarBiotechT3.description>Upgrade one intact uninstalled device from the previous stage. Its installed housing is already credited; only new parts and solar cells are required. Produces one packed device for installation.</Grechka_MakeSolarBiotechT3.description>
+  <Grechka_MakeSolarBiotechT3.jobString>assemble: sun-tracking panel.</Grechka_MakeSolarBiotechT3.jobString>
+  <Grechka_MakeSolarBiotechT4.label>assemble: neural solar panel</Grechka_MakeSolarBiotechT4.label>
+  <Grechka_MakeSolarBiotechT4.description>Upgrade one intact uninstalled device from the previous stage. Its installed housing is already credited; only new parts and solar cells are required. Produces one packed device for installation.</Grechka_MakeSolarBiotechT4.description>
+  <Grechka_MakeSolarBiotechT4.jobString>assemble: neural solar panel.</Grechka_MakeSolarBiotechT4.jobString>
+  <Grechka_MakeSolarBiotechT5.label>assemble: swarm panel</Grechka_MakeSolarBiotechT5.label>
+  <Grechka_MakeSolarBiotechT5.description>Upgrade one intact uninstalled device from the previous stage. Its installed housing is already credited; only new parts and solar cells are required. Produces one packed device for installation.</Grechka_MakeSolarBiotechT5.description>
+  <Grechka_MakeSolarBiotechT5.jobString>assemble: swarm panel.</Grechka_MakeSolarBiotechT5.jobString>
+  <Grechka_MakeSolarCellT2.label>assemble improved solar cells ×8</Grechka_MakeSolarCellT2.label>
+  <Grechka_MakeSolarCellT2.description>Assemble eight tier-two solar cells from components and precious metals.</Grechka_MakeSolarCellT2.description>
+  <Grechka_MakeSolarCellT2.jobString>Assembling solar cells.</Grechka_MakeSolarCellT2.jobString>
+  <Grechka_MakeSolarS1.label>assemble reinforced solar panel</Grechka_MakeSolarS1.label>
+  <Grechka_MakeSolarS1.description>Refit an intact uninstalled vanilla solar panel with solar cells and a T2 housing. Produces a packed panel for installation on the map.</Grechka_MakeSolarS1.description>
+  <Grechka_MakeSolarS1.jobString>Assembling reinforced solar panel.</Grechka_MakeSolarS1.jobString>
+  <Grechka_MakeSolarS2.label>assemble multilayer solar panel</Grechka_MakeSolarS2.label>
+  <Grechka_MakeSolarS2.description>Upgrade one intact uninstalled device from the previous stage. Its installed housing is already credited; only new parts and solar cells are required. Produces one packed device for installation.</Grechka_MakeSolarS2.description>
+  <Grechka_MakeSolarS2.jobString>Assembling multilayer solar panel.</Grechka_MakeSolarS2.jobString>
+  <Grechka_MakeComponentT3.label>assemble mecha-component</Grechka_MakeComponentT3.label>
+  <Grechka_MakeComponentT3.description>Assemble a T3 component from advanced components, plasteel, uranium and mechanites.</Grechka_MakeComponentT3.description>
+  <Grechka_MakeComponentT3.jobString>Assembling mecha-component.</Grechka_MakeComponentT3.jobString>
+  <Grechka_MakeHousingT3.label>assemble mecha-housing</Grechka_MakeHousingT3.label>
+  <Grechka_MakeHousingT3.description>Assemble a T3 housing from the previous housing and mechanite assemblies.</Grechka_MakeHousingT3.description>
+  <Grechka_MakeHousingT3.jobString>Assembling mecha-housing.</Grechka_MakeHousingT3.jobString>
+  <Grechka_UpgradeAssemblyBenchT3.label>upgrade assembly bench to T3</Grechka_UpgradeAssemblyBenchT3.label>
+  <Grechka_UpgradeAssemblyBenchT3.description>Upgrade an installed T2 bench. Its T2 housing is reused. The normal production ingredient discount does not apply to upgrades.</Grechka_UpgradeAssemblyBenchT3.description>
+  <Grechka_UpgradeAssemblyBenchT3.jobString>Upgrading assembly bench to T3.</Grechka_UpgradeAssemblyBenchT3.jobString>
+  <Grechka_MakeArchoSubstrate.label>synthesize archotech substrate</Grechka_MakeArchoSubstrate.label>
+  <Grechka_MakeArchoSubstrate.description>synthesize archotech substrate. All recipes are available without research.</Grechka_MakeArchoSubstrate.description>
+  <Grechka_MakeArchoSubstrate.jobString>synthesize archotech substrate.</Grechka_MakeArchoSubstrate.jobString>
+  <Grechka_MakeGrechkaConcentrate.label>prepare grechka concentrate</Grechka_MakeGrechkaConcentrate.label>
+  <Grechka_MakeGrechkaConcentrate.description>prepare grechka concentrate. All recipes are available without research.</Grechka_MakeGrechkaConcentrate.description>
+  <Grechka_MakeGrechkaConcentrate.jobString>prepare grechka concentrate.</Grechka_MakeGrechkaConcentrate.jobString>
+  <Grechka_MakeComponentT4.label>assemble component T4</Grechka_MakeComponentT4.label>
+  <Grechka_MakeComponentT4.description>assemble component T4. All recipes are available without research.</Grechka_MakeComponentT4.description>
+  <Grechka_MakeComponentT4.jobString>assemble component T4.</Grechka_MakeComponentT4.jobString>
+  <Grechka_MakeHousingT4.label>assemble housing T4</Grechka_MakeHousingT4.label>
+  <Grechka_MakeHousingT4.description>assemble housing T4. All recipes are available without research.</Grechka_MakeHousingT4.description>
+  <Grechka_MakeHousingT4.jobString>assemble housing T4.</Grechka_MakeHousingT4.jobString>
+  <Grechka_MakeSolarCellT4.label>assemble solar cell T4</Grechka_MakeSolarCellT4.label>
+  <Grechka_MakeSolarCellT4.description>assemble solar cell T4. All recipes are available without research.</Grechka_MakeSolarCellT4.description>
+  <Grechka_MakeSolarCellT4.jobString>assemble solar cell T4.</Grechka_MakeSolarCellT4.jobString>
+  <Grechka_UpgradeAssemblyBenchT4.label>upgrade assembly bench to T4</Grechka_UpgradeAssemblyBenchT4.label>
+  <Grechka_UpgradeAssemblyBenchT4.description>upgrade assembly bench to T4. All recipes are available without research.</Grechka_UpgradeAssemblyBenchT4.description>
+  <Grechka_UpgradeAssemblyBenchT4.jobString>upgrade assembly bench to T4.</Grechka_UpgradeAssemblyBenchT4.jobString>
+  <Grechka_MakeComponentT5.label>assemble component T5</Grechka_MakeComponentT5.label>
+  <Grechka_MakeComponentT5.description>assemble component T5. All recipes are available without research.</Grechka_MakeComponentT5.description>
+  <Grechka_MakeComponentT5.jobString>assemble component T5.</Grechka_MakeComponentT5.jobString>
+  <Grechka_MakeHousingT5.label>assemble housing T5</Grechka_MakeHousingT5.label>
+  <Grechka_MakeHousingT5.description>assemble housing T5. All recipes are available without research.</Grechka_MakeHousingT5.description>
+  <Grechka_MakeHousingT5.jobString>assemble housing T5.</Grechka_MakeHousingT5.jobString>
+  <Grechka_MakeSolarCellT5.label>assemble solar cell T5</Grechka_MakeSolarCellT5.label>
+  <Grechka_MakeSolarCellT5.description>assemble solar cell T5. All recipes are available without research.</Grechka_MakeSolarCellT5.description>
+  <Grechka_MakeSolarCellT5.jobString>assemble solar cell T5.</Grechka_MakeSolarCellT5.jobString>
+  <Grechka_UpgradeAssemblyBenchT5.label>upgrade assembly bench to T5</Grechka_UpgradeAssemblyBenchT5.label>
+  <Grechka_UpgradeAssemblyBenchT5.description>upgrade assembly bench to T5. All recipes are available without research.</Grechka_UpgradeAssemblyBenchT5.description>
+  <Grechka_UpgradeAssemblyBenchT5.jobString>upgrade assembly bench to T5.</Grechka_UpgradeAssemblyBenchT5.jobString>
+  <Grechka_MakeComponentByHandT1.label>assemble component by hand</Grechka_MakeComponentByHandT1.label>
+  <Grechka_MakeComponentByHandT1.description>Slowly assemble one industrial component from 12 steel at a crafting spot.</Grechka_MakeComponentByHandT1.description>
+  <Grechka_MakeComponentByHandT1.jobString>Assembling component by hand.</Grechka_MakeComponentByHandT1.jobString>
+  <Grechka_MakeHousingT1.label>assemble basic housing</Grechka_MakeHousingT1.label>
+  <Grechka_MakeHousingT1.description>Assemble a light-gray T1 housing from steel and industrial components.</Grechka_MakeHousingT1.description>
+  <Grechka_MakeHousingT1.jobString>Assembling basic housing.</Grechka_MakeHousingT1.jobString>
+  <Grechka_MakeComponentBatchT1.label>assemble components in a batch ×5</Grechka_MakeComponentBatchT1.label>
+  <Grechka_MakeComponentBatchT1.description>Turn 60 steel into five industrial components at the basic assembly bench.</Grechka_MakeComponentBatchT1.description>
+  <Grechka_MakeComponentBatchT1.jobString>Assembling a batch of components.</Grechka_MakeComponentBatchT1.jobString>
+  <Grechka_MakeHousingT2.label>assemble advanced housing</Grechka_MakeHousingT2.label>
+  <Grechka_MakeHousingT2.description>Assemble a dark-gray T2 housing at the basic assembly bench.</Grechka_MakeHousingT2.description>
+  <Grechka_MakeHousingT2.jobString>Assembling advanced housing.</Grechka_MakeHousingT2.jobString>
+  <Grechka_UpgradeAssemblyBenchT2.label>upgrade assembly bench to T2</Grechka_UpgradeAssemblyBenchT2.label>
+  <Grechka_UpgradeAssemblyBenchT2.description>Upgrade this bench in place. The installed T1 housing is reused. Requires the T2 housing materials and the remaining cost of the new bench.</Grechka_UpgradeAssemblyBenchT2.description>
+  <Grechka_UpgradeAssemblyBenchT2.jobString>Upgrading assembly bench to T2.</Grechka_UpgradeAssemblyBenchT2.jobString>
+  <Grechka_UpgradeMatterRecyclerT5.label>upgrade matter device to T5</Grechka_UpgradeMatterRecyclerT5.label>
+  <Grechka_UpgradeMatterRecyclerT5.description>upgrade matter device to T5. All recipes are available without research.</Grechka_UpgradeMatterRecyclerT5.description>
+  <Grechka_UpgradeMatterRecyclerT5.jobString>upgrade matter device to T5.</Grechka_UpgradeMatterRecyclerT5.jobString>
+  <Grechka_UpgradeMatterSynthesizerT5.label>upgrade matter device to T5</Grechka_UpgradeMatterSynthesizerT5.label>
+  <Grechka_UpgradeMatterSynthesizerT5.description>upgrade matter device to T5. All recipes are available without research.</Grechka_UpgradeMatterSynthesizerT5.description>
+  <Grechka_UpgradeMatterSynthesizerT5.jobString>upgrade matter device to T5.</Grechka_UpgradeMatterSynthesizerT5.jobString>
+  <Grechka_MakeSolarS5.label>assemble solar panel S5</Grechka_MakeSolarS5.label>
+  <Grechka_MakeSolarS5.description>Upgrade one intact uninstalled device from the previous stage. Its installed housing is already credited; only new parts and solar cells are required. Produces one packed device for installation.</Grechka_MakeSolarS5.description>
+  <Grechka_MakeSolarS5.jobString>assemble solar panel S5.</Grechka_MakeSolarS5.jobString>
+  <Grechka_MakeSolarS6.label>assemble solar panel S6</Grechka_MakeSolarS6.label>
+  <Grechka_MakeSolarS6.description>Upgrade one intact uninstalled device from the previous stage. Its installed housing is already credited; only new parts and solar cells are required. Produces one packed device for installation.</Grechka_MakeSolarS6.description>
+  <Grechka_MakeSolarS6.jobString>assemble solar panel S6.</Grechka_MakeSolarS6.jobString>
+  <Grechka_MakeSolarCellT3.label>assemble mechanite solar cells ×4</Grechka_MakeSolarCellT3.label>
+  <Grechka_MakeSolarCellT3.description>Enhance the previous solar cells with mechanites and a mecha-component.</Grechka_MakeSolarCellT3.description>
+  <Grechka_MakeSolarCellT3.jobString>Assembling solar cells.</Grechka_MakeSolarCellT3.jobString>
+  <Grechka_MakeSolarS3.label>assemble mechanite solar panel</Grechka_MakeSolarS3.label>
+  <Grechka_MakeSolarS3.description>Upgrade one intact uninstalled device from the previous stage. Its installed housing is already credited; only new parts and solar cells are required. Produces one packed device for installation.</Grechka_MakeSolarS3.description>
+  <Grechka_MakeSolarS3.jobString>Assembling mechanite solar panel.</Grechka_MakeSolarS3.jobString>
+  <Grechka_MakeSolarS4.label>assemble mechanite solar array</Grechka_MakeSolarS4.label>
+  <Grechka_MakeSolarS4.description>Upgrade one intact uninstalled device from the previous stage. Its installed housing is already credited; only new parts and solar cells are required. Produces one packed device for installation.</Grechka_MakeSolarS4.description>
+  <Grechka_MakeSolarS4.jobString>Assembling mechanite solar panel.</Grechka_MakeSolarS4.jobString>
+</LanguageData>

@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Grechka_CryoSlow.label>cryo slow</Grechka_CryoSlow.label>
+  <Grechka_CryoSlow.description>Frost restricts movement. Further hits refresh the duration without increasing the effect.</Grechka_CryoSlow.description>
+  <Grechka_CombatChipT4_Hediff.label>berserker chip T4</Grechka_CombatChipT4_Hediff.label>
+  <Grechka_CombatChipT4_Hediff.description>Suppresses pain and normal mood-related mental breaks. Move speed +2, melee dodge chance +10 percentage points, melee damage ×1.5. Different chip families are compatible. Installing another tier from the same family returns the previous chip as an item.</Grechka_CombatChipT4_Hediff.description>
+  <Grechka_CombatChipT5_Hediff.label>berserker chip T5</Grechka_CombatChipT5_Hediff.label>
+  <Grechka_CombatChipT5_Hediff.description>Suppresses pain and normal mood-related mental breaks. Move speed +4, melee dodge chance +20 percentage points, melee damage ×2. Different chip families are compatible. Installing another tier from the same family returns the previous chip as an item.</Grechka_CombatChipT5_Hediff.description>
+  <Grechka_StabilityChipT4_Hediff.label>iron mind chip T4</Grechka_StabilityChipT4_Hediff.label>
+  <Grechka_StabilityChipT4_Hediff.description>Prevents normal mood-related mental breaks. Does not prevent scripted or forced mental states. Different chip families are compatible. Installing another tier from the same family returns the previous chip as an item.</Grechka_StabilityChipT4_Hediff.description>
+  <Grechka_StabilityChipT5_Hediff.label>iron mind chip T5</Grechka_StabilityChipT5_Hediff.label>
+  <Grechka_StabilityChipT5_Hediff.description>Prevents normal mood-related mental breaks. Does not prevent scripted or forced mental states. Different chip families are compatible. Installing another tier from the same family returns the previous chip as an item.</Grechka_StabilityChipT5_Hediff.description>
+  <Grechka_CraftChipT4_Hediff.label>artisan chip T4</Grechka_CraftChipT4_Hediff.label>
+  <Grechka_CraftChipT4_Hediff.description>Multiplies the wearer's global work speed by 1.5. Different chip families are compatible. Installing another tier from the same family returns the previous chip as an item.</Grechka_CraftChipT4_Hediff.description>
+  <Grechka_CraftChipT5_Hediff.label>artisan chip T5</Grechka_CraftChipT5_Hediff.label>
+  <Grechka_CraftChipT5_Hediff.description>Multiplies the wearer's global work speed by 2. Different chip families are compatible. Installing another tier from the same family returns the previous chip as an item.</Grechka_CraftChipT5_Hediff.description>
+  <Grechka_MovementChipT4_Hediff.label>pathfinder chip T4</Grechka_MovementChipT4_Hediff.label>
+  <Grechka_MovementChipT4_Hediff.description>Increases move speed by 1 and reduces rest loss by 25%. Different chip families are compatible. Installing another tier from the same family returns the previous chip as an item.</Grechka_MovementChipT4_Hediff.description>
+  <Grechka_MovementChipT5_Hediff.label>pathfinder chip T5</Grechka_MovementChipT5_Hediff.label>
+  <Grechka_MovementChipT5_Hediff.description>Increases move speed by 2 and reduces rest loss by 50%. Different chip families are compatible. Installing another tier from the same family returns the previous chip as an item.</Grechka_MovementChipT5_Hediff.description>
+  <Grechka_TonicChipT4_Hediff.label>vigor chip T4</Grechka_TonicChipT4_Hediff.label>
+  <Grechka_TonicChipT4_Hediff.description>Reduces hunger rate and rest loss by 50%. Different chip families are compatible. Installing another tier from the same family returns the previous chip as an item.</Grechka_TonicChipT4_Hediff.description>
+  <Grechka_TonicChipT5_Hediff.label>vigor chip T5</Grechka_TonicChipT5_Hediff.label>
+  <Grechka_TonicChipT5_Hediff.description>Reduces hunger rate and rest loss by 75%. Different chip families are compatible. Installing another tier from the same family returns the previous chip as an item.</Grechka_TonicChipT5_Hediff.description>
+  <Grechka_BrainChipT5_Hediff.label>grechka mind chip T5</Grechka_BrainChipT5_Hediff.label>
+  <Grechka_BrainChipT5_Hediff.description>Increases consciousness by 100 percentage points and grants +16 mood while the chip is installed. Different chip families are compatible. Installing another tier from the same family returns the previous chip as an item.</Grechka_BrainChipT5_Hediff.description>
+  <Grechka_MythicEyeT4_Hediff.label>mythical bionics: eye</Grechka_MythicEyeT4_Hediff.label>
+  <Grechka_MythicEyeT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicEyeT4_Hediff.description>
+  <Grechka_MythicEarT4_Hediff.label>mythical bionics: ear</Grechka_MythicEarT4_Hediff.label>
+  <Grechka_MythicEarT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicEarT4_Hediff.description>
+  <Grechka_MythicHeartT4_Hediff.label>mythical bionics: heart</Grechka_MythicHeartT4_Hediff.label>
+  <Grechka_MythicHeartT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicHeartT4_Hediff.description>
+  <Grechka_MythicLiverT4_Hediff.label>mythical bionics: liver</Grechka_MythicLiverT4_Hediff.label>
+  <Grechka_MythicLiverT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicLiverT4_Hediff.description>
+  <Grechka_MythicStomachT4_Hediff.label>mythical bionics: stomach</Grechka_MythicStomachT4_Hediff.label>
+  <Grechka_MythicStomachT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicStomachT4_Hediff.description>
+  <Grechka_MythicLungT4_Hediff.label>mythical bionics: lung</Grechka_MythicLungT4_Hediff.label>
+  <Grechka_MythicLungT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicLungT4_Hediff.description>
+  <Grechka_MythicKidneyT4_Hediff.label>mythical bionics: kidney</Grechka_MythicKidneyT4_Hediff.label>
+  <Grechka_MythicKidneyT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicKidneyT4_Hediff.description>
+  <Grechka_MythicArmT4_Hediff.label>mythical bionics: arm</Grechka_MythicArmT4_Hediff.label>
+  <Grechka_MythicArmT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicArmT4_Hediff.description>
+  <Grechka_MythicHandT4_Hediff.label>mythical bionics: hand</Grechka_MythicHandT4_Hediff.label>
+  <Grechka_MythicHandT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicHandT4_Hediff.description>
+  <Grechka_MythicFingerT4_Hediff.label>mythical bionics: finger</Grechka_MythicFingerT4_Hediff.label>
+  <Grechka_MythicFingerT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicFingerT4_Hediff.description>
+  <Grechka_MythicLegT4_Hediff.label>mythical bionics: leg</Grechka_MythicLegT4_Hediff.label>
+  <Grechka_MythicLegT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicLegT4_Hediff.description>
+  <Grechka_MythicFootT4_Hediff.label>mythical bionics: foot</Grechka_MythicFootT4_Hediff.label>
+  <Grechka_MythicFootT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicFootT4_Hediff.description>
+  <Grechka_MythicToeT4_Hediff.label>mythical bionics: toe</Grechka_MythicToeT4_Hediff.label>
+  <Grechka_MythicToeT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicToeT4_Hediff.description>
+  <Grechka_MythicShoulderT4_Hediff.label>mythical bionics: shoulder</Grechka_MythicShoulderT4_Hediff.label>
+  <Grechka_MythicShoulderT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicShoulderT4_Hediff.description>
+  <Grechka_MythicClavicleT4_Hediff.label>mythical bionics: clavicle</Grechka_MythicClavicleT4_Hediff.label>
+  <Grechka_MythicClavicleT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicClavicleT4_Hediff.description>
+  <Grechka_MythicHumerusT4_Hediff.label>mythical bionics: humerus</Grechka_MythicHumerusT4_Hediff.label>
+  <Grechka_MythicHumerusT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicHumerusT4_Hediff.description>
+  <Grechka_MythicRadiusT4_Hediff.label>mythical bionics: radius</Grechka_MythicRadiusT4_Hediff.label>
+  <Grechka_MythicRadiusT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicRadiusT4_Hediff.description>
+  <Grechka_MythicFemurT4_Hediff.label>mythical bionics: femur</Grechka_MythicFemurT4_Hediff.label>
+  <Grechka_MythicFemurT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicFemurT4_Hediff.description>
+  <Grechka_MythicTibiaT4_Hediff.label>mythical bionics: tibia</Grechka_MythicTibiaT4_Hediff.label>
+  <Grechka_MythicTibiaT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicTibiaT4_Hediff.description>
+  <Grechka_MythicSpineT4_Hediff.label>mythical bionics: spine</Grechka_MythicSpineT4_Hediff.label>
+  <Grechka_MythicSpineT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicSpineT4_Hediff.description>
+  <Grechka_MythicNoseT4_Hediff.label>mythical bionics: nose</Grechka_MythicNoseT4_Hediff.label>
+  <Grechka_MythicNoseT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicNoseT4_Hediff.description>
+  <Grechka_MythicJawT4_Hediff.label>mythical bionics: jaw</Grechka_MythicJawT4_Hediff.label>
+  <Grechka_MythicJawT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicJawT4_Hediff.description>
+  <Grechka_MythicTongueT4_Hediff.label>mythical bionics: tongue</Grechka_MythicTongueT4_Hediff.label>
+  <Grechka_MythicTongueT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicTongueT4_Hediff.description>
+  <Grechka_MythicRibcageT4_Hediff.label>mythical bionics: ribcage</Grechka_MythicRibcageT4_Hediff.label>
+  <Grechka_MythicRibcageT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicRibcageT4_Hediff.description>
+  <Grechka_MythicSternumT4_Hediff.label>mythical bionics: sternum</Grechka_MythicSternumT4_Hediff.label>
+  <Grechka_MythicSternumT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicSternumT4_Hediff.description>
+  <Grechka_MythicPelvisT4_Hediff.label>mythical bionics: pelvis</Grechka_MythicPelvisT4_Hediff.label>
+  <Grechka_MythicPelvisT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicPelvisT4_Hediff.description>
+  <Grechka_MythicSkullT4_Hediff.label>mythical bionics: skull</Grechka_MythicSkullT4_Hediff.label>
+  <Grechka_MythicSkullT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicSkullT4_Hediff.description>
+  <Grechka_MythicTorsoT4_Hediff.label>mythical bionics: torso</Grechka_MythicTorsoT4_Hediff.label>
+  <Grechka_MythicTorsoT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicTorsoT4_Hediff.description>
+  <Grechka_MythicNeckT4_Hediff.label>mythical bionics: neck</Grechka_MythicNeckT4_Hediff.label>
+  <Grechka_MythicNeckT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicNeckT4_Hediff.description>
+  <Grechka_MythicHeadT4_Hediff.label>mythical bionics: head</Grechka_MythicHeadT4_Hediff.label>
+  <Grechka_MythicHeadT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicHeadT4_Hediff.description>
+  <Grechka_MythicWaistT4_Hediff.label>mythical bionics: lower back</Grechka_MythicWaistT4_Hediff.label>
+  <Grechka_MythicWaistT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicWaistT4_Hediff.description>
+  <Grechka_MythicBrainT4_Hediff.label>mythical bionics: brain</Grechka_MythicBrainT4_Hediff.label>
+  <Grechka_MythicBrainT4_Hediff.description>Body part efficiency 300%.</Grechka_MythicBrainT4_Hediff.description>
+  <Grechka_GrechkaEyeT5_Hediff.label>grechka bionics: eye</Grechka_GrechkaEyeT5_Hediff.label>
+  <Grechka_GrechkaEyeT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaEyeT5_Hediff.description>
+  <Grechka_GrechkaEarT5_Hediff.label>grechka bionics: ear</Grechka_GrechkaEarT5_Hediff.label>
+  <Grechka_GrechkaEarT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaEarT5_Hediff.description>
+  <Grechka_GrechkaHeartT5_Hediff.label>grechka bionics: heart</Grechka_GrechkaHeartT5_Hediff.label>
+  <Grechka_GrechkaHeartT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaHeartT5_Hediff.description>
+  <Grechka_GrechkaLiverT5_Hediff.label>grechka bionics: liver</Grechka_GrechkaLiverT5_Hediff.label>
+  <Grechka_GrechkaLiverT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaLiverT5_Hediff.description>
+  <Grechka_GrechkaStomachT5_Hediff.label>grechka bionics: stomach</Grechka_GrechkaStomachT5_Hediff.label>
+  <Grechka_GrechkaStomachT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaStomachT5_Hediff.description>
+  <Grechka_GrechkaLungT5_Hediff.label>grechka bionics: lung</Grechka_GrechkaLungT5_Hediff.label>
+  <Grechka_GrechkaLungT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaLungT5_Hediff.description>
+  <Grechka_GrechkaKidneyT5_Hediff.label>grechka bionics: kidney</Grechka_GrechkaKidneyT5_Hediff.label>
+  <Grechka_GrechkaKidneyT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaKidneyT5_Hediff.description>
+  <Grechka_GrechkaArmT5_Hediff.label>grechka bionics: arm</Grechka_GrechkaArmT5_Hediff.label>
+  <Grechka_GrechkaArmT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaArmT5_Hediff.description>
+  <Grechka_GrechkaHandT5_Hediff.label>grechka bionics: hand</Grechka_GrechkaHandT5_Hediff.label>
+  <Grechka_GrechkaHandT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaHandT5_Hediff.description>
+  <Grechka_GrechkaFingerT5_Hediff.label>grechka bionics: finger</Grechka_GrechkaFingerT5_Hediff.label>
+  <Grechka_GrechkaFingerT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaFingerT5_Hediff.description>
+  <Grechka_GrechkaLegT5_Hediff.label>grechka bionics: leg</Grechka_GrechkaLegT5_Hediff.label>
+  <Grechka_GrechkaLegT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaLegT5_Hediff.description>
+  <Grechka_GrechkaFootT5_Hediff.label>grechka bionics: foot</Grechka_GrechkaFootT5_Hediff.label>
+  <Grechka_GrechkaFootT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaFootT5_Hediff.description>
+  <Grechka_GrechkaToeT5_Hediff.label>grechka bionics: toe</Grechka_GrechkaToeT5_Hediff.label>
+  <Grechka_GrechkaToeT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaToeT5_Hediff.description>
+  <Grechka_GrechkaShoulderT5_Hediff.label>grechka bionics: shoulder</Grechka_GrechkaShoulderT5_Hediff.label>
+  <Grechka_GrechkaShoulderT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaShoulderT5_Hediff.description>
+  <Grechka_GrechkaClavicleT5_Hediff.label>grechka bionics: clavicle</Grechka_GrechkaClavicleT5_Hediff.label>
+  <Grechka_GrechkaClavicleT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaClavicleT5_Hediff.description>
+  <Grechka_GrechkaHumerusT5_Hediff.label>grechka bionics: humerus</Grechka_GrechkaHumerusT5_Hediff.label>
+  <Grechka_GrechkaHumerusT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaHumerusT5_Hediff.description>
+  <Grechka_GrechkaRadiusT5_Hediff.label>grechka bionics: radius</Grechka_GrechkaRadiusT5_Hediff.label>
+  <Grechka_GrechkaRadiusT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaRadiusT5_Hediff.description>
+  <Grechka_GrechkaFemurT5_Hediff.label>grechka bionics: femur</Grechka_GrechkaFemurT5_Hediff.label>
+  <Grechka_GrechkaFemurT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaFemurT5_Hediff.description>
+  <Grechka_GrechkaTibiaT5_Hediff.label>grechka bionics: tibia</Grechka_GrechkaTibiaT5_Hediff.label>
+  <Grechka_GrechkaTibiaT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaTibiaT5_Hediff.description>
+  <Grechka_GrechkaSpineT5_Hediff.label>grechka bionics: spine</Grechka_GrechkaSpineT5_Hediff.label>
+  <Grechka_GrechkaSpineT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaSpineT5_Hediff.description>
+  <Grechka_GrechkaNoseT5_Hediff.label>grechka bionics: nose</Grechka_GrechkaNoseT5_Hediff.label>
+  <Grechka_GrechkaNoseT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaNoseT5_Hediff.description>
+  <Grechka_GrechkaJawT5_Hediff.label>grechka bionics: jaw</Grechka_GrechkaJawT5_Hediff.label>
+  <Grechka_GrechkaJawT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaJawT5_Hediff.description>
+  <Grechka_GrechkaTongueT5_Hediff.label>grechka bionics: tongue</Grechka_GrechkaTongueT5_Hediff.label>
+  <Grechka_GrechkaTongueT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaTongueT5_Hediff.description>
+  <Grechka_GrechkaRibcageT5_Hediff.label>grechka bionics: ribcage</Grechka_GrechkaRibcageT5_Hediff.label>
+  <Grechka_GrechkaRibcageT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaRibcageT5_Hediff.description>
+  <Grechka_GrechkaSternumT5_Hediff.label>grechka bionics: sternum</Grechka_GrechkaSternumT5_Hediff.label>
+  <Grechka_GrechkaSternumT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaSternumT5_Hediff.description>
+  <Grechka_GrechkaPelvisT5_Hediff.label>grechka bionics: pelvis</Grechka_GrechkaPelvisT5_Hediff.label>
+  <Grechka_GrechkaPelvisT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaPelvisT5_Hediff.description>
+  <Grechka_GrechkaSkullT5_Hediff.label>grechka bionics: skull</Grechka_GrechkaSkullT5_Hediff.label>
+  <Grechka_GrechkaSkullT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaSkullT5_Hediff.description>
+  <Grechka_GrechkaTorsoT5_Hediff.label>grechka bionics: torso</Grechka_GrechkaTorsoT5_Hediff.label>
+  <Grechka_GrechkaTorsoT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaTorsoT5_Hediff.description>
+  <Grechka_GrechkaNeckT5_Hediff.label>grechka bionics: neck</Grechka_GrechkaNeckT5_Hediff.label>
+  <Grechka_GrechkaNeckT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaNeckT5_Hediff.description>
+  <Grechka_GrechkaHeadT5_Hediff.label>grechka bionics: head</Grechka_GrechkaHeadT5_Hediff.label>
+  <Grechka_GrechkaHeadT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaHeadT5_Hediff.description>
+  <Grechka_GrechkaWaistT5_Hediff.label>grechka bionics: lower back</Grechka_GrechkaWaistT5_Hediff.label>
+  <Grechka_GrechkaWaistT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaWaistT5_Hediff.description>
+  <Grechka_GrechkaBrainT5_Hediff.label>grechka bionics: brain</Grechka_GrechkaBrainT5_Hediff.label>
+  <Grechka_GrechkaBrainT5_Hediff.description>Body part efficiency 600%.</Grechka_GrechkaBrainT5_Hediff.description>
+</LanguageData>

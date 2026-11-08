@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_SoundMuffler_Building</defName>
+    <label>глушитель звука</label>
+    <description>Подавляет звуки всех источников на карте в выбранном радиусе: шум машин, выстрелы, шаги, голоса и другие местные эффекты. Действует через стены. Радиус настраивается отдельно у каждого устройства от 1 до 30 клеток, по умолчанию 12. Требует 50 Вт; при отключении питания, выключении или поломке звуки возвращаются. Музыка, интерфейс и звуки без источника на карте сохраняются.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>Buildings/SoundMuffler</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <fillPercent>0.3</fillPercent>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>1200</WorkToBuild>
+      <Mass>8</Mass>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>50</basePowerConsumption>
+        <shortCircuitInRain>false</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="Grechka.Tweaks.CompProperties_SoundMuffler" />
+    </comps>
+    <researchPrerequisites><li>Electricity</li></researchPrerequisites>
+    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <uiOrder>2500</uiOrder>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <constructEffect>ConstructMetal</constructEffect>
+  </ThingDef>
+</Defs>

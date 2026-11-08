@@ -7,7 +7,7 @@
     <thingClass>Building</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
-      <texPath>Buildings/SolarPanelT4</texPath>
+      <texPath>Buildings/Solar/Main/SolarS5_Archo</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(4,4)</drawSize>
       <shadowData>
@@ -53,23 +53,23 @@
       </li>
       <li Class="Grechka.Industry.CompProperties_SolarUpgrade">
         <targetDefName>Grechka_SolarS6_Building</targetDefName>
-        <costDescription>8 панелей S5, 4 корпуса T5, 32 компонента T5, 128 фотоэлементов T5; установленная панель засчитывается</costDescription>
+        <costDescription>предыдущее устройство целиком и дополнительные материалы следующей ступени; установленный корпус уже учтён</costDescription>
       </li>
     </comps>
     <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
     <thingCategories>
       <li>BuildingsSpecial</li>
     </thingCategories>
-    <designationCategory>Power</designationCategory>
-    <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
-    <uiOrder>2105</uiOrder>
+    <designationCategory>Grechka_SolarCategory</designationCategory>
+    <uiOrder>140</uiOrder>
     <constructEffect>ConstructMetal</constructEffect>
     <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
     <costList>
-      <Grechka_PackedSolarS4_Item>6</Grechka_PackedSolarS4_Item>
-      <Grechka_HousingT4_Item>2</Grechka_HousingT4_Item>
-      <Grechka_ComponentT4_Item>16</Grechka_ComponentT4_Item>
-      <Grechka_SolarCellT4_Item>64</Grechka_SolarCellT4_Item>
+      <Grechka_PackedSolarS4_Item>1</Grechka_PackedSolarS4_Item>
+      <Grechka_ComponentT4_Item>2</Grechka_ComponentT4_Item>
+      <Grechka_SolarCellT4_Item>24</Grechka_SolarCellT4_Item>
+      <Plasteel>30</Plasteel>
+      <Grechka_ArchoSubstrate>10</Grechka_ArchoSubstrate>
     </costList>
     <modExtensions>
       <li Class="Grechka.Industry.LateSolarProperties">
@@ -133,16 +133,16 @@
     <thingCategories>
       <li>BuildingsSpecial</li>
     </thingCategories>
-    <designationCategory>Power</designationCategory>
-    <designatorDropdown>Grechka_SolarPanelGroup</designatorDropdown>
-    <uiOrder>2106</uiOrder>
+    <designationCategory>Grechka_SolarCategory</designationCategory>
+    <uiOrder>190</uiOrder>
     <constructEffect>ConstructMetal</constructEffect>
     <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
     <costList>
-      <Grechka_PackedSolarS5_Item>8</Grechka_PackedSolarS5_Item>
-      <Grechka_HousingT5_Item>4</Grechka_HousingT5_Item>
-      <Grechka_ComponentT5_Item>32</Grechka_ComponentT5_Item>
-      <Grechka_SolarCellT5_Item>128</Grechka_SolarCellT5_Item>
+      <Grechka_PackedSolarS5_Item>1</Grechka_PackedSolarS5_Item>
+      <Grechka_ComponentT5_Item>2</Grechka_ComponentT5_Item>
+      <Grechka_SolarCellT5_Item>32</Grechka_SolarCellT5_Item>
+      <Plasteel>40</Plasteel>
+      <Grechka_GrechkaConcentrate>10</Grechka_GrechkaConcentrate>
     </costList>
     <modExtensions>
       <li Class="Grechka.Industry.LateSolarProperties">

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/KeyBindingDef[defName="TimeSpeed_Ultrafast"]/devModeOnly</xpath>
+    <value><devModeOnly>false</devModeOnly></value>
+  </Operation>
+  <Operation Class="PatchOperationReplace">
+    <xpath>Defs/KeyBindingDef[defName="TimeSpeed_Ultrafast"]/label</xpath>
+    <value><label>game speed: ultrafast (4th)</label></value>
+  </Operation>
+</Patch>

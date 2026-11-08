@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <FFF.BillRequires.MarketValue>Requires total price to exceed {0}</FFF.BillRequires.MarketValue>
+  <FFF.BillRequires.Mass>Requires total mass exceeding {0}</FFF.BillRequires.Mass>
+  <FFF.DeployDroneDesc>Consume stored {0} to deploy up to {1} {2} drones. If the platform is destroyed, all {3} controlled by it will shut down. {4} operates on internal batteries and automatically returns to the platform when the battery is low.</FFF.DeployDroneDesc>
+  <FFF.Message.Modification.Applied>Modification applied</FFF.Message.Modification.Applied>
+  <FFF.Message.Modification.Removed>Modification removed</FFF.Message.Modification.Removed>
+  <FFF.RetractDronesDesc>Command all {0} controlled by this platform to withdraw, which will replenish the {1} consumption.</FFF.RetractDronesDesc>
+  <IP_TempRangeInThisMachine>Current process needs a temperature between {0} and {1} ºC</IP_TempRangeInThisMachine>
+  <LoadingProgress.Stage.ParseAndProcessXml>Parsing and processing XML...</LoadingProgress.Stage.ParseAndProcessXml>
+  <PipeSystem_ConsumptionExplained>The amount per day of {0} this building will draw from the {1} grid.</PipeSystem_ConsumptionExplained>
+  <PipeSystem_ExcessStored>{0} net excess/stored in network: {1} {3}/d / {2} {3}</PipeSystem_ExcessStored>
+</LanguageData>

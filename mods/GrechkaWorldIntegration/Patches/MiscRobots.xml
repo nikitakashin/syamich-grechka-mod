@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <!--Robots use Grechka housings; retain legacy IDs without exposing the matrix chain.-->
+  <Operation Class="PatchOperationConditional">
+    <xpath>/Defs/ThingDef[defName="Table_RPP_RoboticsBench"][/Defs/ThingDef[defName="Grechka_AssemblyBenchT1_Building"] and /Defs/ThingDef[defName="Grechka_HousingT1_Item"]]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RecipeDef[defName="RPP_Production_Cleaner_I" or defName="RPP_Production_Hauler_I" or defName="RPP_Production_Builder_I" or defName="RPP_Production_Crafter_I" or defName="RPP_Production_ER_I" or defName="RPP_Production_Kitchen_I" or defName="RPP_Production_Omni_I"][not(recipeUsers)]</xpath>
+          <value>
+            <recipeUsers Inherit="False">
+              <li>Grechka_AssemblyBenchT1_Building</li>
+              <li>Grechka_AssemblyBenchT2_Building</li>
+              <li>Grechka_AssemblyBenchT3_Building</li>
+              <li>Grechka_AssemblyBenchT4_Building</li>
+              <li>Grechka_AssemblyBenchT5_Building</li>
+            </recipeUsers>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>/Defs/RecipeDef[defName="RPP_Production_Cleaner_I" or defName="RPP_Production_Hauler_I" or defName="RPP_Production_Builder_I" or defName="RPP_Production_Crafter_I" or defName="RPP_Production_ER_I" or defName="RPP_Production_Kitchen_I" or defName="RPP_Production_Omni_I"]/recipeUsers</xpath>
+          <value>
+            <recipeUsers Inherit="False">
+              <li>Grechka_AssemblyBenchT1_Building</li>
+              <li>Grechka_AssemblyBenchT2_Building</li>
+              <li>Grechka_AssemblyBenchT3_Building</li>
+              <li>Grechka_AssemblyBenchT4_Building</li>
+              <li>Grechka_AssemblyBenchT5_Building</li>
+            </recipeUsers>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/RecipeDef[@Name="RPP_Recipe_Bot_I"]/ingredients/li/filter/thingDefs/li[text()="RPP_Matrix_I"]</xpath>
+          <value>
+            <li>Grechka_HousingT1_Item</li>
+          </value>
+          <success>Always</success>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/RecipeDef[@Name="RPP_Recipe_Bot_I"]/fixedIngredientFilter/thingDefs/li[text()="RPP_Matrix_I"]</xpath>
+          <value>
+            <li>Grechka_HousingT1_Item</li>
+          </value>
+          <success>Always</success>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef[@Name="RPP_RechargeStation_I" or @Name="RPP_RechargeStation_II" or @Name="RPP_RechargeStation_III" or @Name="RPP_RechargeStation_IV" or @Name="RPP_RechargeStation_V"]/costList/RPP_Matrix_I</xpath>
+          <value>
+            <Grechka_HousingT1_Item>1</Grechka_HousingT1_Item>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef[@Name="RPP_RechargeStation_I" or @Name="RPP_RechargeStation_II" or @Name="RPP_RechargeStation_III" or @Name="RPP_RechargeStation_IV" or @Name="RPP_RechargeStation_V"]/robotRepairCosts/RPP_Matrix_I</xpath>
+          <value>
+            <Grechka_HousingT1_Item>1</Grechka_HousingT1_Item>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RecipeDef[defName="RPP_Production_Cleaner_II" or defName="RPP_Production_Hauler_II" or defName="RPP_Production_Builder_II" or defName="RPP_Production_Crafter_II" or defName="RPP_Production_ER_II" or defName="RPP_Production_Kitchen_II" or defName="RPP_Production_Omni_II"][not(recipeUsers)]</xpath>
+          <value>
+            <recipeUsers Inherit="False">
+              <li>Grechka_AssemblyBenchT2_Building</li>
+              <li>Grechka_AssemblyBenchT3_Building</li>
+              <li>Grechka_AssemblyBenchT4_Building</li>
+              <li>Grechka_AssemblyBenchT5_Building</li>
+            </recipeUsers>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>/Defs/RecipeDef[defName="RPP_Production_Cleaner_II" or defName="RPP_Production_Hauler_II" or defName="RPP_Production_Builder_II" or defName="RPP_Production_Crafter_II" or defName="RPP_Production_ER_II" or defName="RPP_Production_Kitchen_II" or defName="RPP_Production_Omni_II"]/recipeUsers</xpath>
+          <value>
+            <recipeUsers Inherit="False">
+              <li>Grechka_AssemblyBenchT2_Building</li>
+              <li>Grechka_AssemblyBenchT3_Building</li>
+              <li>Grechka_AssemblyBenchT4_Building</li>
+              <li>Grechka_AssemblyBenchT5_Building</li>
+            </recipeUsers>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/RecipeDef[@Name="RPP_Recipe_Bot_II"]/ingredients/li/filter/thingDefs/li[text()="RPP_Matrix_II"]</xpath>
+          <value>
+            <li>Grechka_HousingT2_Item</li>
+          </value>
+          <success>Always</success>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/RecipeDef[@Name="RPP_Recipe_Bot_II"]/fixedIngredientFilter/thingDefs/li[text()="RPP_Matrix_II"]</xpath>
+          <value>
+            <li>Grechka_HousingT2_Item</li>
+          </value>
+          <success>Always</success>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef[@Name="RPP_RechargeStation_I" or @Name="RPP_RechargeStation_II" or @Name="RPP_RechargeStation_III" or @Name="RPP_RechargeStation_IV" or @Name="RPP_RechargeStation_V"]/costList/RPP_Matrix_II</xpath>
+          <value>
+            <Grechka_HousingT2_Item>1</Grechka_HousingT2_Item>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef[@Name="RPP_RechargeStation_I" or @Name="RPP_RechargeStation_II" or @Name="RPP_RechargeStation_III" or @Name="RPP_RechargeStation_IV" or @Name="RPP_RechargeStation_V"]/robotRepairCosts/RPP_Matrix_II</xpath>
+          <value>
+            <Grechka_HousingT2_Item>1</Grechka_HousingT2_Item>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RecipeDef[defName="RPP_Production_Cleaner_III" or defName="RPP_Production_Hauler_III" or defName="RPP_Production_Builder_III" or defName="RPP_Production_Crafter_III" or defName="RPP_Production_ER_III" or defName="RPP_Production_Kitchen_III" or defName="RPP_Production_Omni_III"][not(recipeUsers)]</xpath>
+          <value>
+            <recipeUsers Inherit="False">
+              <li>Grechka_AssemblyBenchT3_Building</li>
+              <li>Grechka_AssemblyBenchT4_Building</li>
+              <li>Grechka_AssemblyBenchT5_Building</li>
+            </recipeUsers>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>/Defs/RecipeDef[defName="RPP_Production_Cleaner_III" or defName="RPP_Production_Hauler_III" or defName="RPP_Production_Builder_III" or defName="RPP_Production_Crafter_III" or defName="RPP_Production_ER_III" or defName="RPP_Production_Kitchen_III" or defName="RPP_Production_Omni_III"]/recipeUsers</xpath>
+          <value>
+            <recipeUsers Inherit="False">
+              <li>Grechka_AssemblyBenchT3_Building</li>
+              <li>Grechka_AssemblyBenchT4_Building</li>
+              <li>Grechka_AssemblyBenchT5_Building</li>
+            </recipeUsers>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/RecipeDef[@Name="RPP_Recipe_Bot_III"]/ingredients/li/filter/thingDefs/li[text()="RPP_Matrix_III"]</xpath>
+          <value>
+            <li>Grechka_HousingT3_Item</li>
+          </value>
+          <success>Always</success>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/RecipeDef[@Name="RPP_Recipe_Bot_III"]/fixedIngredientFilter/thingDefs/li[text()="RPP_Matrix_III"]</xpath>
+          <value>
+            <li>Grechka_HousingT3_Item</li>
+          </value>
+          <success>Always</success>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef[@Name="RPP_RechargeStation_I" or @Name="RPP_RechargeStation_II" or @Name="RPP_RechargeStation_III" or @Name="RPP_RechargeStation_IV" or @Name="RPP_RechargeStation_V"]/costList/RPP_Matrix_III</xpath>
+          <value>
+            <Grechka_HousingT3_Item>1</Grechka_HousingT3_Item>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef[@Name="RPP_RechargeStation_I" or @Name="RPP_RechargeStation_II" or @Name="RPP_RechargeStation_III" or @Name="RPP_RechargeStation_IV" or @Name="RPP_RechargeStation_V"]/robotRepairCosts/RPP_Matrix_III</xpath>
+          <value>
+            <Grechka_HousingT3_Item>1</Grechka_HousingT3_Item>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RecipeDef[defName="RPP_Production_Cleaner_IV" or defName="RPP_Production_Hauler_IV" or defName="RPP_Production_Builder_IV" or defName="RPP_Production_Crafter_IV" or defName="RPP_Production_ER_IV" or defName="RPP_Production_Kitchen_IV" or defName="RPP_Production_Omni_IV"][not(recipeUsers)]</xpath>
+          <value>
+            <recipeUsers Inherit="False">
+              <li>Grechka_AssemblyBenchT4_Building</li>
+              <li>Grechka_AssemblyBenchT5_Building</li>
+            </recipeUsers>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>/Defs/RecipeDef[defName="RPP_Production_Cleaner_IV" or defName="RPP_Production_Hauler_IV" or defName="RPP_Production_Builder_IV" or defName="RPP_Production_Crafter_IV" or defName="RPP_Production_ER_IV" or defName="RPP_Production_Kitchen_IV" or defName="RPP_Production_Omni_IV"]/recipeUsers</xpath>
+          <value>
+            <recipeUsers Inherit="False">
+              <li>Grechka_AssemblyBenchT4_Building</li>
+              <li>Grechka_AssemblyBenchT5_Building</li>
+            </recipeUsers>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/RecipeDef[@Name="RPP_Recipe_Bot_IV"]/ingredients/li/filter/thingDefs/li[text()="RPP_Matrix_IV"]</xpath>
+          <value>
+            <li>Grechka_HousingT4_Item</li>
+          </value>
+          <success>Always</success>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/RecipeDef[@Name="RPP_Recipe_Bot_IV"]/fixedIngredientFilter/thingDefs/li[text()="RPP_Matrix_IV"]</xpath>
+          <value>
+            <li>Grechka_HousingT4_Item</li>
+          </value>
+          <success>Always</success>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef[@Name="RPP_RechargeStation_I" or @Name="RPP_RechargeStation_II" or @Name="RPP_RechargeStation_III" or @Name="RPP_RechargeStation_IV" or @Name="RPP_RechargeStation_V"]/costList/RPP_Matrix_IV</xpath>
+          <value>
+            <Grechka_HousingT4_Item>1</Grechka_HousingT4_Item>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef[@Name="RPP_RechargeStation_I" or @Name="RPP_RechargeStation_II" or @Name="RPP_RechargeStation_III" or @Name="RPP_RechargeStation_IV" or @Name="RPP_RechargeStation_V"]/robotRepairCosts/RPP_Matrix_IV</xpath>
+          <value>
+            <Grechka_HousingT4_Item>1</Grechka_HousingT4_Item>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RecipeDef[defName="RPP_Production_Cleaner_V" or defName="RPP_Production_Hauler_V" or defName="RPP_Production_Builder_V" or defName="RPP_Production_Crafter_V" or defName="RPP_Production_ER_V" or defName="RPP_Production_Kitchen_V" or defName="RPP_Production_Omni_V"][not(recipeUsers)]</xpath>
+          <value>
+            <recipeUsers Inherit="False">
+              <li>Grechka_AssemblyBenchT5_Building</li>
+            </recipeUsers>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>/Defs/RecipeDef[defName="RPP_Production_Cleaner_V" or defName="RPP_Production_Hauler_V" or defName="RPP_Production_Builder_V" or defName="RPP_Production_Crafter_V" or defName="RPP_Production_ER_V" or defName="RPP_Production_Kitchen_V" or defName="RPP_Production_Omni_V"]/recipeUsers</xpath>
+          <value>
+            <recipeUsers Inherit="False">
+              <li>Grechka_AssemblyBenchT5_Building</li>
+            </recipeUsers>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/RecipeDef[@Name="RPP_Recipe_Bot_V"]/ingredients/li/filter/thingDefs/li[text()="RPP_Matrix_V"]</xpath>
+          <value>
+            <li>Grechka_HousingT5_Item</li>
+          </value>
+          <success>Always</success>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>/Defs/RecipeDef[@Name="RPP_Recipe_Bot_V"]/fixedIngredientFilter/thingDefs/li[text()="RPP_Matrix_V"]</xpath>
+          <value>
+            <li>Grechka_HousingT5_Item</li>
+          </value>
+          <success>Always</success>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef[@Name="RPP_RechargeStation_I" or @Name="RPP_RechargeStation_II" or @Name="RPP_RechargeStation_III" or @Name="RPP_RechargeStation_IV" or @Name="RPP_RechargeStation_V"]/costList/RPP_Matrix_V</xpath>
+          <value>
+            <Grechka_HousingT5_Item>1</Grechka_HousingT5_Item>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef[@Name="RPP_RechargeStation_I" or @Name="RPP_RechargeStation_II" or @Name="RPP_RechargeStation_III" or @Name="RPP_RechargeStation_IV" or @Name="RPP_RechargeStation_V"]/robotRepairCosts/RPP_Matrix_V</xpath>
+          <value>
+            <Grechka_HousingT5_Item>1</Grechka_HousingT5_Item>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef[defName][@ParentName="RPP_RechargeStation_I" or @ParentName="RPP_RechargeStation_II" or @ParentName="RPP_RechargeStation_III" or @ParentName="RPP_RechargeStation_IV" or @ParentName="RPP_RechargeStation_V"][not(recipeMaker)]</xpath>
+          <value>
+            <recipeMaker Inherit="False" IsNull="True" />
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef[defName][@ParentName="RPP_RechargeStation_I" or @ParentName="RPP_RechargeStation_II" or @ParentName="RPP_RechargeStation_III" or @ParentName="RPP_RechargeStation_IV" or @ParentName="RPP_RechargeStation_V"]/recipeMaker</xpath>
+          <value>
+            <recipeMaker Inherit="False" IsNull="True" />
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RecipeDef[defName="RPP_Production_Component" or defName="RPP_Recycle_Matrix" or defName="RPP_Production_Matrix_I" or defName="RPP_Production_Matrix_II" or defName="RPP_Production_Matrix_III" or defName="RPP_Production_Matrix_IV" or defName="RPP_Production_Matrix_V"][not(recipeUsers)]</xpath>
+          <value>
+            <recipeUsers Inherit="False" />
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>/Defs/RecipeDef[defName="RPP_Production_Component" or defName="RPP_Recycle_Matrix" or defName="RPP_Production_Matrix_I" or defName="RPP_Production_Matrix_II" or defName="RPP_Production_Matrix_III" or defName="RPP_Production_Matrix_IV" or defName="RPP_Production_Matrix_V"]/recipeUsers</xpath>
+          <value>
+            <recipeUsers Inherit="False" />
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RecipeDef[defName="RPP_Production_Component" or defName="RPP_Recycle_Matrix" or defName="RPP_Production_Matrix_I" or defName="RPP_Production_Matrix_II" or defName="RPP_Production_Matrix_III" or defName="RPP_Production_Matrix_IV" or defName="RPP_Production_Matrix_V"][not(researchPrerequisite)]</xpath>
+          <value>
+            <researchPrerequisite IsNull="True" />
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>/Defs/RecipeDef[defName="RPP_Production_Component" or defName="RPP_Recycle_Matrix" or defName="RPP_Production_Matrix_I" or defName="RPP_Production_Matrix_II" or defName="RPP_Production_Matrix_III" or defName="RPP_Production_Matrix_IV" or defName="RPP_Production_Matrix_V"]/researchPrerequisite</xpath>
+          <value>
+            <researchPrerequisite IsNull="True" />
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/RecipeDef[defName="RPP_Production_Component" or defName="RPP_Recycle_Matrix" or defName="RPP_Production_Matrix_I" or defName="RPP_Production_Matrix_II" or defName="RPP_Production_Matrix_III" or defName="RPP_Production_Matrix_IV" or defName="RPP_Production_Matrix_V"][not(researchPrerequisites)]</xpath>
+          <value>
+            <researchPrerequisites Inherit="False" />
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>/Defs/RecipeDef[defName="RPP_Production_Component" or defName="RPP_Recycle_Matrix" or defName="RPP_Production_Matrix_I" or defName="RPP_Production_Matrix_II" or defName="RPP_Production_Matrix_III" or defName="RPP_Production_Matrix_IV" or defName="RPP_Production_Matrix_V"]/researchPrerequisites</xpath>
+          <value>
+            <researchPrerequisites Inherit="False" />
+          </value>
+        </li>
+        <li Class="PatchOperationRemove">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef/recipes/li[text()="RPP_Production_Component" or text()="RPP_Recycle_Matrix" or text()="RPP_Production_Matrix_I" or text()="RPP_Production_Matrix_II" or text()="RPP_Production_Matrix_III" or text()="RPP_Production_Matrix_IV" or text()="RPP_Production_Matrix_V"]</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef[defName="RPP_Component" or defName="RPP_Matrix_I" or defName="RPP_Matrix_II" or defName="RPP_Matrix_III" or defName="RPP_Matrix_IV" or defName="RPP_Matrix_V"][not(resourceReadoutPriority)]</xpath>
+          <value>
+            <resourceReadoutPriority>Uncounted</resourceReadoutPriority>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef[defName="RPP_Component" or defName="RPP_Matrix_I" or defName="RPP_Matrix_II" or defName="RPP_Matrix_III" or defName="RPP_Matrix_IV" or defName="RPP_Matrix_V"]/resourceReadoutPriority</xpath>
+          <value>
+            <resourceReadoutPriority>Uncounted</resourceReadoutPriority>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef[defName="RPP_Component" or defName="RPP_Matrix_I" or defName="RPP_Matrix_II" or defName="RPP_Matrix_III" or defName="RPP_Matrix_IV" or defName="RPP_Matrix_V"][not(tradeability)]</xpath>
+          <value>
+            <tradeability>None</tradeability>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef[defName="RPP_Component" or defName="RPP_Matrix_I" or defName="RPP_Matrix_II" or defName="RPP_Matrix_III" or defName="RPP_Matrix_IV" or defName="RPP_Matrix_V"]/tradeability</xpath>
+          <value>
+            <tradeability>None</tradeability>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef[defName="RPP_Component" or defName="RPP_Matrix_I" or defName="RPP_Matrix_II" or defName="RPP_Matrix_III" or defName="RPP_Matrix_IV" or defName="RPP_Matrix_V"][not(tradeTags)]</xpath>
+          <value>
+            <tradeTags Inherit="False" />
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef[defName="RPP_Component" or defName="RPP_Matrix_I" or defName="RPP_Matrix_II" or defName="RPP_Matrix_III" or defName="RPP_Matrix_IV" or defName="RPP_Matrix_V"]/tradeTags</xpath>
+          <value>
+            <tradeTags Inherit="False" />
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef[defName="RPP_Component" or defName="RPP_Matrix_I" or defName="RPP_Matrix_II" or defName="RPP_Matrix_III" or defName="RPP_Matrix_IV" or defName="RPP_Matrix_V"][not(thingCategories)]</xpath>
+          <value>
+            <thingCategories Inherit="False" />
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef[defName="RPP_Component" or defName="RPP_Matrix_I" or defName="RPP_Matrix_II" or defName="RPP_Matrix_III" or defName="RPP_Matrix_IV" or defName="RPP_Matrix_V"]/thingCategories</xpath>
+          <value>
+            <thingCategories Inherit="False" />
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef[defName="RPP_Component" or defName="RPP_Matrix_I" or defName="RPP_Matrix_II" or defName="RPP_Matrix_III" or defName="RPP_Matrix_IV" or defName="RPP_Matrix_V"][not(thingSetMakerTags)]</xpath>
+          <value>
+            <thingSetMakerTags Inherit="False" />
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef[defName="RPP_Component" or defName="RPP_Matrix_I" or defName="RPP_Matrix_II" or defName="RPP_Matrix_III" or defName="RPP_Matrix_IV" or defName="RPP_Matrix_V"]/thingSetMakerTags</xpath>
+          <value>
+            <thingSetMakerTags Inherit="False" />
+          </value>
+        </li>
+        <li Class="PatchOperationRemove">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef[@Name="RPP_Resource"]/resourceReadoutPriority</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <success>Always</success>
+          <xpath>/Defs/ThingCategoryDef[defName="RPP_Matrices"]/parent</xpath>
+        </li>
+        <li Class="PatchOperationRemove">
+          <success>Always</success>
+          <xpath>/Defs/ThingDef[defName="Table_RPP_RoboticsBench"]/designationCategory</xpath>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

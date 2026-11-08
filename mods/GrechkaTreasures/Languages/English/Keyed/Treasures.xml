@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <GrechkaTreasures_DecoyOpened>A gilded decoy! The shiny chest contains ordinary metal. The real cache may be elsewhere.</GrechkaTreasures_DecoyOpened>
+  <GrechkaTreasures_ChestRemaining>Opened. Some contents remain inside: clear a space and collect them.</GrechkaTreasures_ChestRemaining>
+  <GrechkaTreasures_ChestEmpty>Empty.</GrechkaTreasures_ChestEmpty>
+  <GrechkaTreasures_ChestSealed>Sealed. Select a colonist and right-click the chest to open it.</GrechkaTreasures_ChestSealed>
+  <GrechkaTreasures_CollectChest>Collect remaining treasure</GrechkaTreasures_CollectChest>
+  <GrechkaTreasures_OpenChest>Open treasure chest</GrechkaTreasures_OpenChest>
+  <GrechkaTreasures_ReadMap>Decipher treasure map</GrechkaTreasures_ReadMap>
+  <GrechkaTreasures_SiteLimit>requires a colony and fewer than four active expeditions</GrechkaTreasures_SiteLimit>
+  <GrechkaTreasures_NoSiteTile>No suitable treasure site was found. The map was not consumed.</GrechkaTreasures_NoSiteTile>
+  <GrechkaTreasures_DefaultClue>Evidence of traps and decoy caches. Inspect the area before opening anything.</GrechkaTreasures_DefaultClue>
+  <GrechkaTreasures_DangerTier>Expected danger: {0}/5.</GrechkaTreasures_DangerTier>
+  <GrechkaTreasures_TemporarySite>This is a temporary expedition. The site closes after your entire party leaves. Take all desired loot before departing.</GrechkaTreasures_TemporarySite>
+  <GrechkaTreasures_SiteLetter>Coordinates of a possible treasure site have been discovered. Expected danger: {0}/5. Guards, traps and decoys may be present. Look for notes and traces of earlier visitors.</GrechkaTreasures_SiteLetter>
+  <GrechkaTreasures_NewSite>Treasure lead</GrechkaTreasures_NewSite>
+  <GrechkaTreasures_DiscardLead>Discard treasure lead</GrechkaTreasures_DiscardLead>
+  <GrechkaTreasures_DiscardLeadDescription>Remove an unvisited lead to make room for another expedition.</GrechkaTreasures_DiscardLeadDescription>
+  <GrechkaTreasures_DiscardLeadConfirmation>Discard the lead to {0}? The site will be removed from the world map. A consumed treasure map will not be refunded.</GrechkaTreasures_DiscardLeadConfirmation>
+</LanguageData>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Class="AIRobot.X2_ThingDef_AIRobot" ParentName="Base_X2_AIRobot" Name="Grechka_DroneBase" Abstract="True">
+    <thingClass>Grechka.Drones.Drone</thingClass>
+    <statBases>
+      <Flammability>0</Flammability>
+      <ArmorRating_Heat>2</ArmorRating_Heat>
+      <ComfyTemperatureMax>1000</ComfyTemperatureMax>
+      <CarryingCapacity>200</CarryingCapacity>
+    </statBases>
+    <race>
+      <body>AIRobot</body>
+      <thinkTreeMain>Grechka_DroneMain</thinkTreeMain>
+      <thinkTreeConstant>Grechka_DroneConstant</thinkTreeConstant>
+      <baseBodySize>0.65</baseBodySize>
+      <baseHungerRate>0.5</baseHungerRate>
+      <mechEnabledWorkTypes Inherit="False" />
+    </race>
+    <allowLearning>false</allowLearning>
+    <robotWorkTypes Inherit="False" />
+    <recipes Inherit="False" />
+  </ThingDef>
+</Defs>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FleckDef ParentName="FleckBase">
+    <defName>Grechka_CryoMuzzleFlash</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0.03</solidTime>
+    <fadeOutTime>0.06</fadeOutTime>
+    <graphicData>
+      <texPath>Effects/CryoMuzzleFlash</texPath>
+      <graphicClass>Graphic_Fleck</graphicClass>
+      <shaderType>Mote</shaderType>
+      <color>(1,1,1)</color>
+    </graphicData>
+  </FleckDef>
+  <FleckDef ParentName="FleckBase">
+    <defName>Grechka_CryoImpactFlash</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0.06</solidTime>
+    <fadeOutTime>0.22</fadeOutTime>
+    <graphicData>
+      <texPath>Effects/CryoImpact</texPath>
+      <graphicClass>Graphic_Fleck</graphicClass>
+      <shaderType>Mote</shaderType>
+      <color>(1,1,1)</color>
+    </graphicData>
+  </FleckDef>
+  <FleckDef ParentName="FleckBase">
+    <defName>Grechka_DroneEMPFlash</defName>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <solidTime>0.06</solidTime>
+    <fadeOutTime>0.2</fadeOutTime>
+    <graphicData>
+      <texPath>Effects/DroneEMPT5</texPath>
+      <graphicClass>Graphic_Fleck</graphicClass>
+      <shaderType>Mote</shaderType>
+      <color>(1,1,1)</color>
+    </graphicData>
+  </FleckDef>
+</Defs>

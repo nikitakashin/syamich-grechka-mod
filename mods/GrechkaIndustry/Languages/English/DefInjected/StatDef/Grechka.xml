@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Grechka_MatterFixedWorkSpeed.label>matter conversion speed</Grechka_MatterFixedWorkSpeed.label>
+  <Grechka_MatterFixedWorkSpeed.description>A fixed speed enforces the actual energy and time cost.</Grechka_MatterFixedWorkSpeed.description>
+</LanguageData>

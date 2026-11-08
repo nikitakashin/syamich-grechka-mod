@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <GrechkaFarms_Fertility>Farm terrain fertility: {0}%</GrechkaFarms_Fertility>
+  <GrechkaFarms_Help>Changes immediately affect all farm tiles, including existing ones. Default: 228%. Quick construction with no materials, research or skill requirements. Add a regular growing zone after construction. Normal light, temperature and pollution rules still apply.</GrechkaFarms_Help>
+  <GrechkaFarms_Reset>Reset to 228%</GrechkaFarms_Reset>
+</LanguageData>

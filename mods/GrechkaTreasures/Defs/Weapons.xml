@@ -1,0 +1,1299 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>GrechkaTreasures_DiamondKnife</defName>
+    <label>бриллиантовый нож</label>
+    <description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Алмазные грани особенно хорошо пробивают броню.</description>
+    <graphicData>
+      <texPath>Weapons/DiamondKnife</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>false</burnableByRecipe>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>0.65</Mass>
+      <MaxHitPoints>220</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>12</Beauty>
+      <SellPriceFactor>0.8</SellPriceFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_DiamondCut>4</GrechkaTreasures_DiamondCut>
+      <Steel>30</Steel>
+      <Gold>8</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Gemsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>драгоценная грань</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>24.2</power>
+        <cooldownTime>1.3</cooldownTime>
+        <armorPenetration>0.513</armorPenetration>
+      </li>
+    </tools>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>GrechkaTreasures_DiamondSword</defName>
+    <label>бриллиантовый меч</label>
+    <description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Алмазные грани особенно хорошо пробивают броню.</description>
+    <graphicData>
+      <texPath>Weapons/DiamondSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>false</burnableByRecipe>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>1.6</Mass>
+      <MaxHitPoints>220</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>12</Beauty>
+      <SellPriceFactor>0.8</SellPriceFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_DiamondCut>12</GrechkaTreasures_DiamondCut>
+      <Steel>60</Steel>
+      <Gold>16</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Gemsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>драгоценная грань</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>37.4</power>
+        <cooldownTime>2.3</cooldownTime>
+        <armorPenetration>0.54</armorPenetration>
+      </li>
+    </tools>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>GrechkaTreasures_DiamondSpear</defName>
+    <label>бриллиантовое копьё</label>
+    <description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Алмазные грани особенно хорошо пробивают броню.</description>
+    <graphicData>
+      <texPath>Weapons/DiamondSpear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>false</burnableByRecipe>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>2.0</Mass>
+      <MaxHitPoints>220</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>12</Beauty>
+      <SellPriceFactor>0.8</SellPriceFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_DiamondCut>10</GrechkaTreasures_DiamondCut>
+      <Steel>60</Steel>
+      <Gold>16</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Gemsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>драгоценная грань</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>33.0</power>
+        <cooldownTime>2.4</cooldownTime>
+        <armorPenetration>0.878</armorPenetration>
+      </li>
+    </tools>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <defName>GrechkaTreasures_DiamondMace</defName>
+    <label>бриллиантовая булава</label>
+    <description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Алмазные грани особенно хорошо пробивают броню.</description>
+    <graphicData>
+      <texPath>Weapons/DiamondMace</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>false</burnableByRecipe>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>2.5</Mass>
+      <MaxHitPoints>220</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>12</Beauty>
+      <SellPriceFactor>0.8</SellPriceFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_DiamondCut>10</GrechkaTreasures_DiamondCut>
+      <Steel>60</Steel>
+      <Gold>16</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Gemsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>драгоценная головка</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>35.2</power>
+        <cooldownTime>2.4</cooldownTime>
+        <armorPenetration>0.378</armorPenetration>
+      </li>
+    </tools>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>GrechkaTreasures_RubyKnife</defName>
+    <label>рубиновый нож</label>
+    <description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Рубиновая геометрия усиливает удар.</description>
+    <graphicData>
+      <texPath>Weapons/RubyKnife</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>false</burnableByRecipe>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>0.65</Mass>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>12</Beauty>
+      <SellPriceFactor>0.8</SellPriceFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_RubyCut>4</GrechkaTreasures_RubyCut>
+      <Steel>30</Steel>
+      <Gold>8</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Gemsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>драгоценная грань</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>27.5</power>
+        <cooldownTime>1.3</cooldownTime>
+        <armorPenetration>0.38</armorPenetration>
+      </li>
+    </tools>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>GrechkaTreasures_RubySword</defName>
+    <label>рубиновый меч</label>
+    <description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Рубиновая геометрия усиливает удар.</description>
+    <graphicData>
+      <texPath>Weapons/RubySword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>false</burnableByRecipe>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>1.6</Mass>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>12</Beauty>
+      <SellPriceFactor>0.8</SellPriceFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_RubyCut>12</GrechkaTreasures_RubyCut>
+      <Steel>60</Steel>
+      <Gold>16</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Gemsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>драгоценная грань</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>42.5</power>
+        <cooldownTime>2.3</cooldownTime>
+        <armorPenetration>0.4</armorPenetration>
+      </li>
+    </tools>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>GrechkaTreasures_RubySpear</defName>
+    <label>рубиновое копьё</label>
+    <description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Рубиновая геометрия усиливает удар.</description>
+    <graphicData>
+      <texPath>Weapons/RubySpear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>false</burnableByRecipe>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>2.0</Mass>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>12</Beauty>
+      <SellPriceFactor>0.8</SellPriceFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_RubyCut>10</GrechkaTreasures_RubyCut>
+      <Steel>60</Steel>
+      <Gold>16</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Gemsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>драгоценная грань</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>37.5</power>
+        <cooldownTime>2.4</cooldownTime>
+        <armorPenetration>0.65</armorPenetration>
+      </li>
+    </tools>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <defName>GrechkaTreasures_RubyMace</defName>
+    <label>рубиновая булава</label>
+    <description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Рубиновая геометрия усиливает удар.</description>
+    <graphicData>
+      <texPath>Weapons/RubyMace</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>false</burnableByRecipe>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>2.5</Mass>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>12</Beauty>
+      <SellPriceFactor>0.8</SellPriceFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_RubyCut>10</GrechkaTreasures_RubyCut>
+      <Steel>60</Steel>
+      <Gold>16</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Gemsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>драгоценная головка</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>40.0</power>
+        <cooldownTime>2.4</cooldownTime>
+        <armorPenetration>0.28</armorPenetration>
+      </li>
+    </tools>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>GrechkaTreasures_SapphireKnife</defName>
+    <label>сапфировый нож</label>
+    <description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Сапфировые вставки повышают прочность.</description>
+    <graphicData>
+      <texPath>Weapons/SapphireKnife</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>false</burnableByRecipe>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>0.65</Mass>
+      <MaxHitPoints>360</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>12</Beauty>
+      <SellPriceFactor>0.8</SellPriceFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_SapphireCut>4</GrechkaTreasures_SapphireCut>
+      <Steel>30</Steel>
+      <Gold>8</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Gemsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>драгоценная грань</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>23.1</power>
+        <cooldownTime>1.3</cooldownTime>
+        <armorPenetration>0.418</armorPenetration>
+      </li>
+    </tools>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>GrechkaTreasures_SapphireSword</defName>
+    <label>сапфировый меч</label>
+    <description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Сапфировые вставки повышают прочность.</description>
+    <graphicData>
+      <texPath>Weapons/SapphireSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>false</burnableByRecipe>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>1.6</Mass>
+      <MaxHitPoints>360</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>12</Beauty>
+      <SellPriceFactor>0.8</SellPriceFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_SapphireCut>12</GrechkaTreasures_SapphireCut>
+      <Steel>60</Steel>
+      <Gold>16</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Gemsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>драгоценная грань</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>35.7</power>
+        <cooldownTime>2.3</cooldownTime>
+        <armorPenetration>0.44</armorPenetration>
+      </li>
+    </tools>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>GrechkaTreasures_SapphireSpear</defName>
+    <label>сапфировое копьё</label>
+    <description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Сапфировые вставки повышают прочность.</description>
+    <graphicData>
+      <texPath>Weapons/SapphireSpear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>false</burnableByRecipe>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>2.0</Mass>
+      <MaxHitPoints>360</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>12</Beauty>
+      <SellPriceFactor>0.8</SellPriceFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_SapphireCut>10</GrechkaTreasures_SapphireCut>
+      <Steel>60</Steel>
+      <Gold>16</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Gemsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>драгоценная грань</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>31.5</power>
+        <cooldownTime>2.4</cooldownTime>
+        <armorPenetration>0.715</armorPenetration>
+      </li>
+    </tools>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <defName>GrechkaTreasures_SapphireMace</defName>
+    <label>сапфировая булава</label>
+    <description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Сапфировые вставки повышают прочность.</description>
+    <graphicData>
+      <texPath>Weapons/SapphireMace</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>false</burnableByRecipe>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>2.5</Mass>
+      <MaxHitPoints>360</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>12</Beauty>
+      <SellPriceFactor>0.8</SellPriceFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_SapphireCut>10</GrechkaTreasures_SapphireCut>
+      <Steel>60</Steel>
+      <Gold>16</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Gemsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>драгоценная головка</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>33.6</power>
+        <cooldownTime>2.4</cooldownTime>
+        <armorPenetration>0.308</armorPenetration>
+      </li>
+    </tools>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>GrechkaTreasures_EmeraldKnife</defName>
+    <label>изумрудный нож</label>
+    <description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Изумрудная отделка особенно ценится коллекционерами.</description>
+    <graphicData>
+      <texPath>Weapons/EmeraldKnife</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>false</burnableByRecipe>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>0.65</Mass>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>25</Beauty>
+      <SellPriceFactor>0.8</SellPriceFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_EmeraldCut>4</GrechkaTreasures_EmeraldCut>
+      <Steel>30</Steel>
+      <Gold>8</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Gemsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>драгоценная грань</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>22.0</power>
+        <cooldownTime>1.3</cooldownTime>
+        <armorPenetration>0.38</armorPenetration>
+      </li>
+    </tools>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>GrechkaTreasures_EmeraldSword</defName>
+    <label>изумрудный меч</label>
+    <description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Изумрудная отделка особенно ценится коллекционерами.</description>
+    <graphicData>
+      <texPath>Weapons/EmeraldSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>false</burnableByRecipe>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>1.6</Mass>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>25</Beauty>
+      <SellPriceFactor>0.8</SellPriceFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_EmeraldCut>12</GrechkaTreasures_EmeraldCut>
+      <Steel>60</Steel>
+      <Gold>16</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Gemsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>драгоценная грань</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>34.0</power>
+        <cooldownTime>2.3</cooldownTime>
+        <armorPenetration>0.4</armorPenetration>
+      </li>
+    </tools>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>GrechkaTreasures_EmeraldSpear</defName>
+    <label>изумрудное копьё</label>
+    <description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Изумрудная отделка особенно ценится коллекционерами.</description>
+    <graphicData>
+      <texPath>Weapons/EmeraldSpear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>false</burnableByRecipe>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>2.0</Mass>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>25</Beauty>
+      <SellPriceFactor>0.8</SellPriceFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_EmeraldCut>10</GrechkaTreasures_EmeraldCut>
+      <Steel>60</Steel>
+      <Gold>16</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Gemsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>драгоценная грань</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>30.0</power>
+        <cooldownTime>2.4</cooldownTime>
+        <armorPenetration>0.65</armorPenetration>
+      </li>
+    </tools>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <defName>GrechkaTreasures_EmeraldMace</defName>
+    <label>изумрудная булава</label>
+    <description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Изумрудная отделка особенно ценится коллекционерами.</description>
+    <graphicData>
+      <texPath>Weapons/EmeraldMace</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>false</burnableByRecipe>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>2.5</Mass>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>25</Beauty>
+      <SellPriceFactor>0.8</SellPriceFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_EmeraldCut>10</GrechkaTreasures_EmeraldCut>
+      <Steel>60</Steel>
+      <Gold>16</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Gemsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>драгоценная головка</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>32.0</power>
+        <cooldownTime>2.4</cooldownTime>
+        <armorPenetration>0.28</armorPenetration>
+      </li>
+    </tools>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>GrechkaTreasures_AmethystKnife</defName>
+    <label>аметистовый нож</label>
+    <description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Аметистовые грани сочетают красоту и боевую эффективность.</description>
+    <graphicData>
+      <texPath>Weapons/AmethystKnife</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>false</burnableByRecipe>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>0.65</Mass>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>12</Beauty>
+      <SellPriceFactor>0.8</SellPriceFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_AmethystCut>4</GrechkaTreasures_AmethystCut>
+      <Steel>30</Steel>
+      <Gold>8</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Gemsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>драгоценная грань</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>20.9</power>
+        <cooldownTime>1.3</cooldownTime>
+        <armorPenetration>0.38</armorPenetration>
+      </li>
+    </tools>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>GrechkaTreasures_AmethystSword</defName>
+    <label>аметистовый меч</label>
+    <description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Аметистовые грани сочетают красоту и боевую эффективность.</description>
+    <graphicData>
+      <texPath>Weapons/AmethystSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>false</burnableByRecipe>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>1.6</Mass>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>12</Beauty>
+      <SellPriceFactor>0.8</SellPriceFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_AmethystCut>12</GrechkaTreasures_AmethystCut>
+      <Steel>60</Steel>
+      <Gold>16</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Gemsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>драгоценная грань</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>32.3</power>
+        <cooldownTime>2.3</cooldownTime>
+        <armorPenetration>0.4</armorPenetration>
+      </li>
+    </tools>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>GrechkaTreasures_AmethystSpear</defName>
+    <label>аметистовое копьё</label>
+    <description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Аметистовые грани сочетают красоту и боевую эффективность.</description>
+    <graphicData>
+      <texPath>Weapons/AmethystSpear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>false</burnableByRecipe>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>2.0</Mass>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>12</Beauty>
+      <SellPriceFactor>0.8</SellPriceFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_AmethystCut>10</GrechkaTreasures_AmethystCut>
+      <Steel>60</Steel>
+      <Gold>16</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Gemsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>драгоценная грань</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>28.5</power>
+        <cooldownTime>2.4</cooldownTime>
+        <armorPenetration>0.65</armorPenetration>
+      </li>
+    </tools>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <defName>GrechkaTreasures_AmethystMace</defName>
+    <label>аметистовая булава</label>
+    <description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Аметистовые грани сочетают красоту и боевую эффективность.</description>
+    <graphicData>
+      <texPath>Weapons/AmethystMace</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>false</burnableByRecipe>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>2.5</Mass>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>12</Beauty>
+      <SellPriceFactor>0.8</SellPriceFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_AmethystCut>10</GrechkaTreasures_AmethystCut>
+      <Steel>60</Steel>
+      <Gold>16</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Gemsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>драгоценная головка</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>30.4</power>
+        <cooldownTime>2.4</cooldownTime>
+        <armorPenetration>0.28</armorPenetration>
+      </li>
+    </tools>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>GrechkaTreasures_TopazKnife</defName>
+    <label>топазовый нож</label>
+    <description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Топазовые вставки дают доступный и прочный драгоценный клинок.</description>
+    <graphicData>
+      <texPath>Weapons/TopazKnife</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>false</burnableByRecipe>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <Mass>0.65</Mass>
+      <MaxHitPoints>240</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>12</Beauty>
+      <SellPriceFactor>0.8</SellPriceFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_TopazCut>4</GrechkaTreasures_TopazCut>
+      <Steel>30</Steel>
+      <Gold>8</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Gemsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>драгоценная грань</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>19.8</power>
+        <cooldownTime>1.3</cooldownTime>
+        <armorPenetration>0.361</armorPenetration>
+      </li>
+    </tools>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>GrechkaTreasures_TopazSword</defName>
+    <label>топазовый меч</label>
+    <description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Топазовые вставки дают доступный и прочный драгоценный клинок.</description>
+    <graphicData>
+      <texPath>Weapons/TopazSword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>false</burnableByRecipe>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>1.6</Mass>
+      <MaxHitPoints>240</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>12</Beauty>
+      <SellPriceFactor>0.8</SellPriceFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_TopazCut>12</GrechkaTreasures_TopazCut>
+      <Steel>60</Steel>
+      <Gold>16</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Gemsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>драгоценная грань</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>30.6</power>
+        <cooldownTime>2.3</cooldownTime>
+        <armorPenetration>0.38</armorPenetration>
+      </li>
+    </tools>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <defName>GrechkaTreasures_TopazSpear</defName>
+    <label>топазовое копьё</label>
+    <description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Топазовые вставки дают доступный и прочный драгоценный клинок.</description>
+    <graphicData>
+      <texPath>Weapons/TopazSpear</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>false</burnableByRecipe>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>2.0</Mass>
+      <MaxHitPoints>240</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>12</Beauty>
+      <SellPriceFactor>0.8</SellPriceFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_TopazCut>10</GrechkaTreasures_TopazCut>
+      <Steel>60</Steel>
+      <Gold>16</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Gemsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>драгоценная грань</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>27.0</power>
+        <cooldownTime>2.4</cooldownTime>
+        <armorPenetration>0.617</armorPenetration>
+      </li>
+    </tools>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+  <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+    <defName>GrechkaTreasures_TopazMace</defName>
+    <label>топазовая булава</label>
+    <description>Ювелирное оружие с усиленной металлической основой и драгоценными рабочими гранями. Топазовые вставки дают доступный и прочный драгоценный клинок.</description>
+    <graphicData>
+      <texPath>Weapons/TopazMace</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Medieval</techLevel>
+    <smeltable>false</smeltable>
+    <burnableByRecipe>false</burnableByRecipe>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <statBases>
+      <WorkToMake>26000</WorkToMake>
+      <Mass>2.5</Mass>
+      <MaxHitPoints>240</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Beauty>12</Beauty>
+      <SellPriceFactor>0.8</SellPriceFactor>
+    </statBases>
+    <costList>
+      <GrechkaTreasures_TopazCut>10</GrechkaTreasures_TopazCut>
+      <Steel>60</Steel>
+      <Gold>16</Gold>
+    </costList>
+    <recipeMaker Inherit="False">
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Crafting</workSkill>
+      <researchPrerequisite>GrechkaTreasures_Gemsmithing</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers>
+        <li>GrechkaTreasures_JewelersBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <weaponTags>
+      <li>MedievalMeleeDecent</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>драгоценная головка</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>28.8</power>
+        <cooldownTime>2.4</cooldownTime>
+        <armorPenetration>0.266</armorPenetration>
+      </li>
+    </tools>
+    <stuffCategories Inherit="False" />
+    <costStuffCount>0</costStuffCount>
+  </ThingDef>
+</Defs>

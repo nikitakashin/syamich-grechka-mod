@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <WorldObjectDef ParentName="Site">
+    <defName>GrechkaTreasures_TreasureSite</defName>
+    <label>сокровищница</label>
+    <description>Место экспедиции за драгоценностями. После полного ухода каравана временная карта и место закрываются; вывозите всё нужное до отъезда.</description>
+    <worldObjectClass>Grechka.Treasures.TreasureSite</worldObjectClass>
+    <texture>World/TreasureSite</texture>
+    <expandingIconTexture>World/TreasureSite</expandingIconTexture>
+  </WorldObjectDef>
+  <SitePartDef>
+    <defName>GrechkaTreasures_TreasureSitePart</defName>
+    <label>тайник сокровищ</label>
+    <description>Подготовленная карта руин, хранилища или лагеря. Встречаются охрана, скрытые комнаты, ловушки и ложные сундуки. Осматривайте предупреждения и вывозите добычу до ухода.</description>
+    <workerClass>Grechka.Treasures.SitePartWorker_Treasure</workerClass>
+    <siteTexture>World/TreasureSite</siteTexture>
+    <expandingIconTexture>World/TreasureSite</expandingIconTexture>
+    <requiresFaction>false</requiresFaction>
+    <wantsThreatPoints>false</wantsThreatPoints>
+    <considerEnteringAsAttack>false</considerEnteringAsAttack>
+    <disallowsAutomaticDetectionTimerStart>true</disallowsAutomaticDetectionTimerStart>
+    <approachOrderString>Исследовать сокровищницу</approachOrderString>
+    <approachingReportString>Исследование сокровищницы</approachingReportString>
+    <arrivedLetter>Караван прибыл на место. Внимательно осмотрите руины: ценные вещи могут оказаться приманкой, а обходные проходы — безопаснее парадного входа.</arrivedLetter>
+    <arrivedLetterLabelPart>Сокровищница</arrivedLetterLabelPart>
+    <minMapSize>(100,1,100)</minMapSize>
+  </SitePartDef>
+  <IncidentDef>
+    <defName>GrechkaTreasures_TreasureLead</defName>
+    <label>наводка на сокровища</label>
+    <workerClass>Grechka.Treasures.IncidentWorker_TreasureLead</workerClass>
+    <category>Misc</category>
+    <targetTags><li>Map_PlayerHome</li></targetTags>
+    <baseChance>1.2</baseChance>
+    <minRefireDays>8</minRefireDays>
+    <letterLabel>Наводка на сокровища</letterLabel>
+    <letterText>Обнаружены координаты древнего тайника.</letterText>
+    <letterDef>PositiveEvent</letterDef>
+  </IncidentDef>
+  <JobDef>
+    <defName>GrechkaTreasures_OpenChest</defName>
+    <driverClass>Grechka.Treasures.JobDriver_OpenTreasure</driverClass>
+    <reportString>вскрывает TargetA.</reportString>
+    <casualInterruptible>true</casualInterruptible>
+  </JobDef>
+  <JobDef>
+    <defName>GrechkaTreasures_ReadMap</defName>
+    <driverClass>Grechka.Treasures.JobDriver_ReadTreasureMap</driverClass>
+    <reportString>расшифровывает карту сокровищ.</reportString>
+    <casualInterruptible>true</casualInterruptible>
+  </JobDef>
+</Defs>

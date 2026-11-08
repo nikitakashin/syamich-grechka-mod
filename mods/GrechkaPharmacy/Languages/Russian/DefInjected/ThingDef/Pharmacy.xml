@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <GrechkaPharmacy_HemostaticT1_Item.label>повязка «Последний шанс»</GrechkaPharmacy_HemostaticT1_Item.label>
+  <GrechkaPharmacy_HemostaticT1_Item.description>На 3 часа снижает кровотечение на 85%. Не возвращает потерянную кровь и не заживляет раны.</GrechkaPharmacy_HemostaticT1_Item.description>
+  <GrechkaPharmacy_HemostaticT1_Item.ingestible.ingestCommandString>Применить {0}</GrechkaPharmacy_HemostaticT1_Item.ingestible.ingestCommandString>
+  <GrechkaPharmacy_HemostaticT1_Item.ingestible.ingestReportString>Применяет {0}.</GrechkaPharmacy_HemostaticT1_Item.ingestible.ingestReportString>
+  <GrechkaPharmacy_AnalgesicT1_Item.label>полевое обезболивающее</GrechkaPharmacy_AnalgesicT1_Item.label>
+  <GrechkaPharmacy_AnalgesicT1_Item.description>На 6 часов снижает боль на 55%. Обезболивание не защищает от смертельных повреждений.</GrechkaPharmacy_AnalgesicT1_Item.description>
+  <GrechkaPharmacy_AnalgesicT1_Item.ingestible.ingestCommandString>Применить {0}</GrechkaPharmacy_AnalgesicT1_Item.ingestible.ingestCommandString>
+  <GrechkaPharmacy_AnalgesicT1_Item.ingestible.ingestReportString>Применяет {0}.</GrechkaPharmacy_AnalgesicT1_Item.ingestible.ingestReportString>
+  <GrechkaPharmacy_ImmunoT2_Item.label>иммунный препарат</GrechkaPharmacy_ImmunoT2_Item.label>
+  <GrechkaPharmacy_ImmunoT2_Item.description>На сутки ускоряет выработку иммунитета на 50%. Помогает бороться с текущей болезнью, но не защищает от новых заражений.</GrechkaPharmacy_ImmunoT2_Item.description>
+  <GrechkaPharmacy_ImmunoT2_Item.ingestible.ingestCommandString>Применить {0}</GrechkaPharmacy_ImmunoT2_Item.ingestible.ingestCommandString>
+  <GrechkaPharmacy_ImmunoT2_Item.ingestible.ingestReportString>Применяет {0}.</GrechkaPharmacy_ImmunoT2_Item.ingestible.ingestReportString>
+  <GrechkaPharmacy_RecoveryT2_Item.label>восстановительный раствор</GrechkaPharmacy_RecoveryT2_Item.label>
+  <GrechkaPharmacy_RecoveryT2_Item.description>На сутки увеличивает естественное заживление в 1,75 раза и голод на 20%. Не восстанавливает утраченные части тела.</GrechkaPharmacy_RecoveryT2_Item.description>
+  <GrechkaPharmacy_RecoveryT2_Item.ingestible.ingestCommandString>Применить {0}</GrechkaPharmacy_RecoveryT2_Item.ingestible.ingestCommandString>
+  <GrechkaPharmacy_RecoveryT2_Item.ingestible.ingestReportString>Применяет {0}.</GrechkaPharmacy_RecoveryT2_Item.ingestible.ingestReportString>
+  <GrechkaPharmacy_DetoxT2_Item.label>курс «Чистый лист»</GrechkaPharmacy_DetoxT2_Item.label>
+  <GrechkaPharmacy_DetoxT2_Item.description>За сутки постепенно лечит одну обычную химическую зависимость. Не лечит зависимость от люциферия, генетические зависимости и толерантность. Повторная доза продлевает курс без ускорения.</GrechkaPharmacy_DetoxT2_Item.description>
+  <GrechkaPharmacy_DetoxT2_Item.ingestible.ingestCommandString>Применить {0}</GrechkaPharmacy_DetoxT2_Item.ingestible.ingestCommandString>
+  <GrechkaPharmacy_DetoxT2_Item.ingestible.ingestReportString>Применяет {0}.</GrechkaPharmacy_DetoxT2_Item.ingestible.ingestReportString>
+  <GrechkaPharmacy_MechaniteRegenT3_Item.label>инъектор «Живая ткань»</GrechkaPharmacy_MechaniteRegenT3_Item.label>
+  <GrechkaPharmacy_MechaniteRegenT3_Item.description>Суточный курс заживляет свежие раны: до 2 единиц повреждения в час. Не лечит шрамы, утраченные части и импланты.</GrechkaPharmacy_MechaniteRegenT3_Item.description>
+  <GrechkaPharmacy_MechaniteRegenT3_Item.ingestible.ingestCommandString>Применить {0}</GrechkaPharmacy_MechaniteRegenT3_Item.ingestible.ingestCommandString>
+  <GrechkaPharmacy_MechaniteRegenT3_Item.ingestible.ingestReportString>Применяет {0}.</GrechkaPharmacy_MechaniteRegenT3_Item.ingestible.ingestReportString>
+  <GrechkaPharmacy_CombatStimT3_Item.label>инъектор «Красная линия»</GrechkaPharmacy_CombatStimT3_Item.label>
+  <GrechkaPharmacy_CombatStimT3_Item.description>На 8 часов: скорость движения +25%, множитель точности стрельбы +10%, боль −70%. Затем 6 часов усталости. Повторная доза продлевает эффект без складывания бонусов.</GrechkaPharmacy_CombatStimT3_Item.description>
+  <GrechkaPharmacy_CombatStimT3_Item.ingestible.ingestCommandString>Применить {0}</GrechkaPharmacy_CombatStimT3_Item.ingestible.ingestCommandString>
+  <GrechkaPharmacy_CombatStimT3_Item.ingestible.ingestReportString>Применяет {0}.</GrechkaPharmacy_CombatStimT3_Item.ingestible.ingestReportString>
+  <GrechkaPharmacy_WorkStimT3_Item.label>концентрат «Вторая смена»</GrechkaPharmacy_WorkStimT3_Item.label>
+  <GrechkaPharmacy_WorkStimT3_Item.description>На сутки: общая скорость работы +35%, расход отдыха снижен вдвое. Затем 6 часов усталости. Повторная доза продлевает тот же эффект.</GrechkaPharmacy_WorkStimT3_Item.description>
+  <GrechkaPharmacy_WorkStimT3_Item.ingestible.ingestCommandString>Применить {0}</GrechkaPharmacy_WorkStimT3_Item.ingestible.ingestCommandString>
+  <GrechkaPharmacy_WorkStimT3_Item.ingestible.ingestReportString>Применяет {0}.</GrechkaPharmacy_WorkStimT3_Item.ingestible.ingestReportString>
+  <GrechkaPharmacy_ScarSerumT4_Item.label>сыворотка удаления шрамов</GrechkaPharmacy_ScarSerumT4_Item.label>
+  <GrechkaPharmacy_ScarSerumT4_Item.description>Удаляет одно постоянное повреждение естественной ткани, затем на сутки усиливает восстановление. Сохраняет импланты и особые псионические жертвы.</GrechkaPharmacy_ScarSerumT4_Item.description>
+  <GrechkaPharmacy_ScarSerumT4_Item.ingestible.ingestCommandString>Применить {0}</GrechkaPharmacy_ScarSerumT4_Item.ingestible.ingestCommandString>
+  <GrechkaPharmacy_ScarSerumT4_Item.ingestible.ingestReportString>Применяет {0}.</GrechkaPharmacy_ScarSerumT4_Item.ingestible.ingestReportString>
+  <GrechkaPharmacy_LimbSerumT4_Item.label>сыворотка регенерации конечности</GrechkaPharmacy_LimbSerumT4_Item.label>
+  <GrechkaPharmacy_LimbSerumT4_Item.description>Восстанавливает одну утраченную естественную конечность на целом естественном родителе, затем на сутки усиливает восстановление. Не восстанавливает голову и торс, не заменяет импланты и не отменяет псионические жертвы.</GrechkaPharmacy_LimbSerumT4_Item.description>
+  <GrechkaPharmacy_LimbSerumT4_Item.ingestible.ingestCommandString>Применить {0}</GrechkaPharmacy_LimbSerumT4_Item.ingestible.ingestCommandString>
+  <GrechkaPharmacy_LimbSerumT4_Item.ingestible.ingestReportString>Применяет {0}.</GrechkaPharmacy_LimbSerumT4_Item.ingestible.ingestReportString>
+  <GrechkaPharmacy_GrechkaSerumT5_Item.label>гречневая сыворотка регенерации</GrechkaPharmacy_GrechkaSerumT5_Item.label>
+  <GrechkaPharmacy_GrechkaSerumT5_Item.description>Суточный курс лечит свежие раны и один старый шрам либо поддерживаемое хроническое заболевание естественной ткани. Сохраняет импланты, гены, беременность и особые псионические состояния. Не воскрешает и не отращивает утраченные части: для них нужна сыворотка конечности.</GrechkaPharmacy_GrechkaSerumT5_Item.description>
+  <GrechkaPharmacy_GrechkaSerumT5_Item.ingestible.ingestCommandString>Применить {0}</GrechkaPharmacy_GrechkaSerumT5_Item.ingestible.ingestCommandString>
+  <GrechkaPharmacy_GrechkaSerumT5_Item.ingestible.ingestReportString>Применяет {0}.</GrechkaPharmacy_GrechkaSerumT5_Item.ingestible.ingestReportString>
+  <GrechkaPharmacy_YouthSerumT5_Item.label>сыворотка омоложения</GrechkaPharmacy_YouthSerumT5_Item.label>
+  <GrechkaPharmacy_YouthSerumT5_Item.description>Уменьшает биологический возраст человека на пять лет, но не ниже 25 лет. Хронологический возраст сохраняется. На более молодых пациентов не действует.</GrechkaPharmacy_YouthSerumT5_Item.description>
+  <GrechkaPharmacy_YouthSerumT5_Item.ingestible.ingestCommandString>Применить {0}</GrechkaPharmacy_YouthSerumT5_Item.ingestible.ingestCommandString>
+  <GrechkaPharmacy_YouthSerumT5_Item.ingestible.ingestReportString>Применяет {0}.</GrechkaPharmacy_YouthSerumT5_Item.ingestible.ingestReportString>
+  <GrechkaPharmacy_ReactorT3_Building.label>фармреактор T3</GrechkaPharmacy_ReactorT3_Building.label>
+  <GrechkaPharmacy_ReactorT3_Building.description>Производит препараты до T3. Требует работника и питание. Скорость работы ×5.</GrechkaPharmacy_ReactorT3_Building.description>
+  <GrechkaPharmacy_ReactorT4_Building.label>фармреактор T4</GrechkaPharmacy_ReactorT4_Building.label>
+  <GrechkaPharmacy_ReactorT4_Building.description>Производит препараты до T4. Требует работника и питание. Скорость работы ×12.</GrechkaPharmacy_ReactorT4_Building.description>
+  <GrechkaPharmacy_ReactorT5_Building.label>фармреактор T5</GrechkaPharmacy_ReactorT5_Building.label>
+  <GrechkaPharmacy_ReactorT5_Building.description>Производит препараты до T5. Требует работника и питание. Скорость работы ×25.</GrechkaPharmacy_ReactorT5_Building.description>
+</LanguageData>

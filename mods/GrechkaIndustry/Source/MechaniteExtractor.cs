@@ -16,7 +16,7 @@ namespace Grechka.Industry
             foreach (Action<Thing, ThingDef, int> subscriber in OutputProduced.GetInvocationList())
             {
                 try { subscriber(machine, product, amount); }
-                catch (Exception error) { Log.Error("[Grechka Industry] Ошибка подписчика выпуска: " + error); }
+                catch (Exception error) { Log.Error(IndustryText.Get("GrechkaIndustry_6909f4187d98", "[Grechka Industry] Output subscriber error: ") + error); }
             }
         }
     }
@@ -31,9 +31,9 @@ namespace Grechka.Industry
         public override IEnumerable<string> ConfigErrors(ThingDef parentDef)
         {
             foreach (string error in base.ConfigErrors(parentDef)) yield return error;
-            if (product == null) yield return "Extractor product is missing.";
+            if (product == null) yield return IndustryText.Get("GrechkaIndustry_ExtractorProduct", "Extractor product is missing.");
             if (cycleTicks <= 0 || batchCount <= 0 || product != null && batchCount > product.stackLimit)
-                yield return "Extractor cycle/count must be positive and the batch must fit one stack.";
+                yield return IndustryText.Get("GrechkaIndustry_ExtractorCycle", "Extractor cycle/count must be positive and the batch must fit one stack.");
         }
     }
 
@@ -47,6 +47,8 @@ namespace Grechka.Industry
         private CompProperties_MechaniteExtractor Props { get { return (CompProperties_MechaniteExtractor)props; } }
         private bool Powered { get { return power != null && power.PowerOn
             && (flick == null || flick.SwitchIsOn) && (breakdown == null || !breakdown.BrokenDown); } }
+
+        public bool Working => Powered && cycle.PendingCount == 0;
 
         public override void PostSpawnSetup(bool respawningAfterLoad)
         {
@@ -98,8 +100,8 @@ namespace Grechka.Industry
 
         public override string CompInspectStringExtra()
         {
-            if (cycle.PendingCount > 0) return "Готово к выгрузке: " + cycle.PendingCount + " механитов";
-            return (Powered ? "Извлечение: " : "Извлечение приостановлено: ")
+            if (cycle.PendingCount > 0) return IndustryText.Get("GrechkaIndustry_ddf3510dc180", "Ready to unload: ") + cycle.PendingCount + IndustryText.Get("GrechkaIndustry_3fa9b7d153ee", " mechanites");
+            return (Powered ? IndustryText.Get("GrechkaIndustry_1d35ff9e7950", "Extraction: ") : IndustryText.Get("GrechkaIndustry_1aa28673118c", "Extraction paused: "))
                 + ((float)cycle.WorkedTicks / Props.cycleTicks).ToString("P0");
         }
     }
