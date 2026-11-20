@@ -9,5 +9,5 @@
     <li><packageId>brrainz.harmony</packageId><displayName>Harmony</displayName><steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl></li>
   </modDependencies>
   <loadAfter><li>brrainz.harmony</li><li>grechka.industry</li><li>grechka.storage</li><li>grechka.equipment</li><li>grechka.drones</li><li>grechka.pharmacy</li><li>alaestor.miscrobots.plusplus</li></loadAfter>
-  <modVersion>0.1.0</modVersion>
+  <modVersion>0.1.1</modVersion>
 </ModMetaData>

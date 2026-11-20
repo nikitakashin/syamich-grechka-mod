@@ -136,7 +136,7 @@ require(all(defs[name].get("ParentName") == "MinifiedThing"
         "both solar generations need distinct minified definitions")
 require(solar.findtext("minifiedDef") == "Grechka_PackedSolarS1_Item"
         and solar.find("designatorDropdown") is None
-        and solar.findtext("./comps/li[@Class='CompProperties_Power']/compClass") == "CompPowerPlantSolar"
+        and solar.findtext("./comps/li[@Class='CompProperties_Power']/compClass") == "Grechka.Industry.CompPowerPlantGrechkaSolar"
         and solar.findtext("./comps/li[@Class='CompProperties_Power']/basePowerConsumption") == "-6000",
         "S1 must be a packable six-kilowatt vanilla-style solar plant")
 require(solar_cells.findtext("stackLimit") == "100"
@@ -221,7 +221,7 @@ for stage, count, housings, components, cells, power, plasteel in [
             f"S{stage} must consume the accepted previous panels and T3 parts through both paths")
     require(panel.findtext("minifiedDef") == packed and defs[packed].get("ParentName") == "MinifiedThing"
             and panel.find("designatorDropdown") is None
-            and panel.findtext("./comps/li[@Class='CompProperties_Power']/compClass") == "CompPowerPlantSolar"
+            and panel.findtext("./comps/li[@Class='CompProperties_Power']/compClass") == "Grechka.Industry.CompPowerPlantGrechkaSolar"
             and panel.findtext("./comps/li[@Class='CompProperties_Power']/basePowerConsumption") == str(-power)
             and panel.findtext("size") == "(4,4)"
             and recipe.findtext("allowMixingIngredients") == "true"
