@@ -230,10 +230,10 @@ production.PatchAll(typeof(Drone).Assembly);
 var spawnMethod = AccessTools.Method(typeof(X2_Building_AIRobotRechargeStation), "Button_SpawnBot");
 Check(Harmony.GetPatchInfo(spawnMethod).Prefixes.Any(p => p.owner == production.Id), "Repair guard binds the actual private Misc deployment method");
 var allowedHookTypes = new[] { typeof(X2_Building_AIRobotRechargeStation), typeof(Pawn_NeedsTracker), typeof(Need),
-    typeof(Need_Food), typeof(Need_Rest), typeof(MassUtility), typeof(Pawn_CarryTracker) };
+    typeof(Need_Food), typeof(Need_Rest), typeof(MassUtility), typeof(Pawn_CarryTracker), typeof(Thing), typeof(RimWorld.Planet.CaravanUIUtility) };
 Check(Harmony.GetAllPatchedMethods().Where(m => Harmony.GetPatchInfo(m).Owners.Contains(production.Id))
     .All(m => allowedHookTypes.Contains(m.DeclaringType)),
-    "Production hooks are limited to dock deployment and carrier needs/cargo, without global pawn tick or combat patches");
+    "Production hooks are limited to dock deployment, carrier needs/cargo, food portions and caravan UI sections, without global pawn tick or combat patches");
 
 // Keep native GetPriority and actual Need_Rest values. Only the final job-producing callback
 // is a boundary fixture, so a healthy-energy regression cannot hide behind a fake priority.

@@ -1287,7 +1287,8 @@
     <targetDefName>Cooler</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_144</defName>
@@ -1296,7 +1297,8 @@
     <targetDefName>Heater</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_145</defName>
@@ -1305,7 +1307,8 @@
     <targetDefName>PassiveCooler</targetDefName>
     <minimumTier>1</minimumTier>
     <addHousing>true</addHousing>
-    <note>T1; корпус T1</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_146</defName>
@@ -1323,7 +1326,8 @@
     <targetDefName>Cooler_Over</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_148</defName>
@@ -1332,7 +1336,8 @@
     <targetDefName>Cooler_Over2W</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_149</defName>
@@ -1368,7 +1373,8 @@
     <targetDefName>VFEC_HeatStones</targetDefName>
     <minimumTier>1</minimumTier>
     <addHousing>true</addHousing>
-    <note>T1; корпус T1</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_153</defName>
@@ -1377,7 +1383,8 @@
     <targetDefName>VFEC_LargePassiveCooler</targetDefName>
     <minimumTier>1</minimumTier>
     <addHousing>true</addHousing>
-    <note>T1; корпус T1</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_154</defName>
@@ -1395,7 +1402,8 @@
     <targetDefName>sbz_DoubleChestFridge</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_156</defName>
@@ -1404,7 +1412,8 @@
     <targetDefName>sbz_DoubleWallFridge</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_157</defName>
@@ -1413,7 +1422,8 @@
     <targetDefName>sbz_Fridge</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_158</defName>
@@ -1422,7 +1432,8 @@
     <targetDefName>sbz_LargeFridge</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_159</defName>
@@ -1431,7 +1442,8 @@
     <targetDefName>sbz_SingleChestFridge</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_160</defName>
@@ -1440,7 +1452,8 @@
     <targetDefName>sbz_SingleWallFridge</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_161</defName>
@@ -1557,7 +1570,8 @@
     <targetDefName>FlatscreenTelevision</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_174</defName>
@@ -1566,7 +1580,8 @@
     <targetDefName>FloodLight</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_175</defName>
@@ -1593,7 +1608,8 @@
     <targetDefName>MegascreenTelevision</targetDefName>
     <minimumTier>3</minimumTier>
     <addHousing>true</addHousing>
-    <note>T3; корпус T3</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_178</defName>
@@ -1683,7 +1699,8 @@
     <targetDefName>StandingLamp</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_188</defName>
@@ -1719,7 +1736,8 @@
     <targetDefName>TubeTelevision</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_192</defName>
@@ -1737,7 +1755,8 @@
     <targetDefName>WallLamp</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_194</defName>
@@ -1935,7 +1954,8 @@
     <targetDefName>Autobong</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_216</defName>
@@ -1981,7 +2001,8 @@
     <targetDefName>Loudspeaker</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_221</defName>
@@ -2008,7 +2029,8 @@
     <targetDefName>SleepAccelerator</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_224</defName>
@@ -2044,7 +2066,8 @@
     <targetDefName>Chemlamp</targetDefName>
     <minimumTier>1</minimumTier>
     <addHousing>true</addHousing>
-    <note>T1; корпус T1</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_228</defName>
@@ -2053,7 +2076,8 @@
     <targetDefName>ChemlampPost</targetDefName>
     <minimumTier>1</minimumTier>
     <addHousing>true</addHousing>
-    <note>T1; корпус T1</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_229</defName>
@@ -2062,7 +2086,8 @@
     <targetDefName>VFEC_Thermaebath</targetDefName>
     <minimumTier>1</minimumTier>
     <addHousing>true</addHousing>
-    <note>T1; корпус T1</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_230</defName>
@@ -2080,7 +2105,8 @@
     <targetDefName>Joy_Arcade</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_232</defName>
@@ -2089,7 +2115,8 @@
     <targetDefName>Joy_InudstrialComputer</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_233</defName>
@@ -2098,7 +2125,8 @@
     <targetDefName>Joy_ModernComputer</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_234</defName>
@@ -2107,7 +2135,8 @@
     <targetDefName>Light_Streetlamp</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_235</defName>
@@ -2116,7 +2145,8 @@
     <targetDefName>Radio_Industrial</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_236</defName>
@@ -2125,7 +2155,8 @@
     <targetDefName>Radio_Spacer</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_237</defName>
@@ -2134,7 +2165,8 @@
     <targetDefName>VFE_DeskLamp</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_238</defName>
@@ -2143,7 +2175,8 @@
     <targetDefName>VFE_FloorLamp</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_239</defName>
@@ -2161,7 +2194,8 @@
     <targetDefName>VFE_RoyalLamp</targetDefName>
     <minimumTier>2</minimumTier>
     <addHousing>true</addHousing>
-    <note>T2; корпус T2</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_241</defName>
@@ -2188,7 +2222,8 @@
     <targetDefName>Shelf_RepairRack</targetDefName>
     <minimumTier>3</minimumTier>
     <addHousing>true</addHousing>
-    <note>T3; корпус T3</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_244</defName>
@@ -2197,7 +2232,8 @@
     <targetDefName>Table_IlluminatedDresser</targetDefName>
     <minimumTier>3</minimumTier>
     <addHousing>true</addHousing>
-    <note>T3; корпус T3</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_245</defName>
@@ -2206,7 +2242,8 @@
     <targetDefName>Table_IlluminatedEndTable</targetDefName>
     <minimumTier>3</minimumTier>
     <addHousing>true</addHousing>
-    <note>T3; корпус T3</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_246</defName>
@@ -2215,7 +2252,8 @@
     <targetDefName>Table_interactive_1x1c</targetDefName>
     <minimumTier>3</minimumTier>
     <addHousing>true</addHousing>
-    <note>T3; корпус T3</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_247</defName>
@@ -2224,7 +2262,8 @@
     <targetDefName>Table_interactive_2x2c</targetDefName>
     <minimumTier>3</minimumTier>
     <addHousing>true</addHousing>
-    <note>T3; корпус T3</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_248</defName>
@@ -2233,7 +2272,8 @@
     <targetDefName>UltrascreenTV</targetDefName>
     <minimumTier>3</minimumTier>
     <addHousing>true</addHousing>
-    <note>T3; корпус T3</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_249</defName>
@@ -2242,7 +2282,8 @@
     <targetDefName>VFES_AirPurifier</targetDefName>
     <minimumTier>3</minimumTier>
     <addHousing>true</addHousing>
-    <note>T3; корпус T3</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_250</defName>
@@ -2251,7 +2292,8 @@
     <targetDefName>VFES_Table_IlluminatedWardrobe</targetDefName>
     <minimumTier>3</minimumTier>
     <addHousing>true</addHousing>
-    <note>T3; корпус T3</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_251</defName>
@@ -2260,7 +2302,8 @@
     <targetDefName>VFES_TelevisionSpeaker</targetDefName>
     <minimumTier>3</minimumTier>
     <addHousing>true</addHousing>
-    <note>T3; корпус T3</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_252</defName>
@@ -2269,7 +2312,8 @@
     <targetDefName>VFES_WallMountedTelevision</targetDefName>
     <minimumTier>3</minimumTier>
     <addHousing>true</addHousing>
-    <note>T3; корпус T3</note>
+    <retired>true</retired>
+    <note>без тиров и корпусов; старые определения сохранены для загрузки колоний</note>
   </Grechka.WorldIntegration.MachineProfileRuleDef>
   <Grechka.WorldIntegration.MachineProfileRuleDef>
     <defName>GrechkaWorld_G01_253</defName>

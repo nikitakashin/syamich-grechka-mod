@@ -120,7 +120,7 @@
   </RecipeDef>
   <RecipeDef>
     <defName>Grechka_UpgradeAssemblyBenchT3</defName>
-    <label>улучшить сборочный верстак до T3</label>
+    <label>улучшить: меха-верстак (T3)</label>
     <description>Улучшить установленный T2 верстак. Его корпус T2 используется повторно, общая скидка производственного рецепта на улучшение не применяется.</description>
     <jobString>Улучшает сборочный верстак до T3.</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>

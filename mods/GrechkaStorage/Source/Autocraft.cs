@@ -239,6 +239,7 @@ namespace Grechka.Storage
 
     public sealed class Building_StorageCrafter : Building, IThingHolder
     {
+        IThingHolder IThingHolder.ParentHolder => Spawned ? Map : ParentHolder;
         private StorageBuffer buffer;
         private StorageBuffer outputStage;
         private ThingDef dominantStuff;
@@ -311,7 +312,8 @@ namespace Grechka.Storage
                 float speed = def.GetModExtension<CrafterProperties>()?.speed ?? 1;
                 if (recipe.modExtensions?.Any(e => e.GetType().FullName == "Grechka.Industry.MatterRecipeProperties") == true) speed = 1;
                 if (recipe.workSpeedStat != null) speed *= Worker().GetStatValue(recipe.workSpeedStat);
-                if (recipe.workTableSpeedStat != null) speed *= table.GetStatValue(recipe.workTableSpeedStat);
+                StatDef tableSpeed = CraftDependencies.WorkTableSpeed(recipe, table);
+                if (tableSpeed != null) speed *= table.GetStatValue(tableSpeed);
                 if (speed > 0) { table.UsedThisTick(); CraftDependencies.ReportWork(table);
                     CompStorageMachineArt.Worked(table, 250); CompStorageMachineArt.Worked(this, 250); }
                 workLeft -= 250 * speed;
@@ -478,6 +480,15 @@ namespace Grechka.Storage
 {
     internal static class CraftDependencies
     {
+        private static readonly Func<RecipeDef, Building_WorkTable, StatDef> tierWorkTableSpeed =
+            AccessTools.TypeByName("Grechka.WorldIntegration.TierWorktableSpeed") is Type speedType
+                ? AccessTools.MethodDelegate<Func<RecipeDef, Building_WorkTable, StatDef>>(AccessTools.Method(speedType, "ForRecipe")) : null;
+        internal static StatDef WorkTableSpeed(RecipeDef recipe, Building_WorkTable table) => recipe.workTableSpeedStat
+            ?? tierWorkTableSpeed?.Invoke(recipe, table)
+            ?? (TierComp(table)?.GetType().FullName == "Grechka.Industry.CompTierBonuses" ? StatDefOf.WorkTableWorkSpeedFactor : null);
+
+        private static ThingComp TierComp(Building_WorkTable table) => table?.AllComps?.FirstOrDefault(c =>
+            c.GetType().FullName is "Grechka.Industry.CompTierBonuses" or "Grechka.WorldIntegration.CompProfileUpgrade");
         private static readonly System.Reflection.MethodInfo reportWork = AccessTools.Method(AccessTools.TypeByName("Grechka.Industry.OperationalWork"), "ReportWork", new[] { typeof(Thing), typeof(int) });
         private static readonly System.Reflection.MethodInfo captureMatter = AccessTools.Method(AccessTools.TypeByName("Grechka.Industry.MatterSnapshots"), "Capture", new[] { typeof(RecipeDef) });
         private static readonly System.Reflection.MethodInfo useMatter = AccessTools.Method(AccessTools.TypeByName("Grechka.Industry.MatterSnapshots"), "UseSnapshot", new[] { typeof(string) });
@@ -486,7 +497,7 @@ namespace Grechka.Storage
         internal static void ReportWork(Thing table) { reportWork?.Invoke(null, new object[] { table, 250 }); }
         internal static (ThingComp comp, Dictionary<string, float> values) CaptureTierCarry(Building_WorkTable table)
         {
-            ThingComp comp = table?.AllComps?.FirstOrDefault(c => c.GetType().FullName == "Grechka.Industry.CompTierBonuses");
+            ThingComp comp = TierComp(table);
             return (comp, comp == null ? null : AccessTools.Method(comp.GetType(), "CaptureCarry")?.Invoke(comp, null) as Dictionary<string, float>);
         }
         internal static void RestoreTierCarry((ThingComp comp, Dictionary<string, float> values) snapshot)
@@ -498,7 +509,7 @@ namespace Grechka.Storage
         internal static int Expected(RecipeDef recipe, Building_WorkTable table)
         {
             var product = recipe?.products?.FirstOrDefault(); if (product == null) return 0;
-            object comp = table?.AllComps?.FirstOrDefault(c => c.GetType().FullName == "Grechka.Industry.CompTierBonuses");
+            ThingComp comp = TierComp(table);
             float bonus = FactoryCraftAdapter.Get<float>(FactoryCraftAdapter.Get(comp, "Props"), "outputBonus");
             // Material/quality are unknown before input selection. A lower bound
             // avoids promising an extra item from another variant's fractional carry.

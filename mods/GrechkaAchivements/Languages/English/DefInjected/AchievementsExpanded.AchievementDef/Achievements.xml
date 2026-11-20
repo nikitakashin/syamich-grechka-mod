@@ -19,7 +19,7 @@
   <GrechkaAchivements_Rescue.label>On duty</GrechkaAchivements_Rescue.label>
   <GrechkaAchivements_Rescue.description>Install a rescue drone dock T1.</GrechkaAchivements_Rescue.description>
   <GrechkaAchivements_Guard.label>Fifth on watch</GrechkaAchivements_Guard.label>
-  <GrechkaAchivements_Guard.description>Install a warrior drone dock T5.</GrechkaAchivements_Guard.description>
+  <GrechkaAchivements_Guard.description>Install a grechka warrior drone dock (T5).</GrechkaAchivements_Guard.description>
   <GrechkaAchivements_Blizzard.label>Evening forecast</GrechkaAchivements_Blizzard.label>
   <GrechkaAchivements_Blizzard.description>Craft a Blizzard cryo rifle.</GrechkaAchivements_Blizzard.description>
   <GrechkaAchivements_Heart.label>Grechka in the blood</GrechkaAchivements_Heart.label>
@@ -27,7 +27,7 @@
   <GrechkaAchivements_Lucky.label>What is in the box?</GrechkaAchivements_Lucky.label>
   <GrechkaAchivements_Lucky.description>Fully open any Grechka lucky block.</GrechkaAchivements_Lucky.description>
   <GrechkaAchivements_Chaos.label>Hold the lid down</GrechkaAchivements_Chaos.label>
-  <GrechkaAchivements_Chaos.description>Fully open a Chaos lucky block T5.</GrechkaAchivements_Chaos.description>
+  <GrechkaAchivements_Chaos.description>Fully open a Chaos grechka lucky block (T5).</GrechkaAchivements_Chaos.description>
   <GrechkaAchivements_Rice.label>Spring sowing</GrechkaAchivements_Rice.label>
   <GrechkaAchivements_Rice.description>Sow rice on Farm terrain in your settlement.</GrechkaAchivements_Rice.description>
   <GrechkaAchivements_Reward.label>Sign here</GrechkaAchivements_Reward.label>

@@ -3,7 +3,7 @@
   <Grechka_QuartzCable.label>underground quartz cable</Grechka_QuartzCable.label>
   <Grechka_QuartzCable.description>Connects devices to the Storage controller underground. Cannot be damaged or burned and is normally hidden. Can run under buildings and ordinary power conduits. Does not transmit electricity. Signal lines appear when selecting the network or its construction tool.</Grechka_QuartzCable.description>
   <Grechka_StorageController.label>Storage controller</Grechka_StorageController.label>
-  <Grechka_StorageController.description>An access point for the quartz signal network. Shows connected devices and their status. Multiple controllers on one network provide the same access. Consumes 400 W. Signal cable does not replace a power connection.</Grechka_StorageController.description>
+  <Grechka_StorageController.description>Digital warehouse and access point for the quartz network. Regular and freezer disks have separate tabs for item filters and priority. Haulers automatically bring allowed items from lower-priority storage while disks have room. The online network supplies construction, ground and orbital trade without a beacon, and caravan loading. Controllers on the same network share the same disks. Uses 400 W; signal cables do not transmit electricity.</Grechka_StorageController.description>
   <Grechka_Inscriber.label>electric inscriber</Grechka_Inscriber.label>
   <Grechka_Inscriber.description>Prints silicon elements and quartz, silver and gold circuits, and assembles processors. All recipes are available without presses. Requires 200 W.</Grechka_Inscriber.description>
   <Grechka_Quartz.label>quartz</Grechka_Quartz.label>
@@ -28,11 +28,11 @@
   <Grechka_SilverProcessor.description>A control processor for Storage devices.</Grechka_SilverProcessor.description>
   <Grechka_GoldProcessor.label>gold processor</Grechka_GoldProcessor.label>
   <Grechka_GoldProcessor.description>A computing processor for Storage devices.</Grechka_GoldProcessor.description>
-  <Grechka_StorageCrafterT3_Building.label>Storage crafter T3</Grechka_StorageCrafterT3_Building.label>
+  <Grechka_StorageCrafterT3_Building.label>Mecha storage crafter (T3)</Grechka_StorageCrafterT3_Building.label>
   <Grechka_StorageCrafterT3_Building.description>A stationary worker for four adjacent workbenches. Runs one cycle at a time in rotation. Automatically retrieves ingredients from disks and returns products. Worker speed ×1, skill 12, power 500 W.</Grechka_StorageCrafterT3_Building.description>
-  <Grechka_StorageCrafterT4_Building.label>Storage crafter T4</Grechka_StorageCrafterT4_Building.label>
+  <Grechka_StorageCrafterT4_Building.label>Archo storage crafter (T4)</Grechka_StorageCrafterT4_Building.label>
   <Grechka_StorageCrafterT4_Building.description>A stationary worker for four adjacent workbenches. Runs one cycle at a time in rotation. Automatically retrieves ingredients from disks and returns products. Worker speed ×3, skill 16, power 2000 W.</Grechka_StorageCrafterT4_Building.description>
-  <Grechka_StorageCrafterT5_Building.label>Storage crafter T5</Grechka_StorageCrafterT5_Building.label>
+  <Grechka_StorageCrafterT5_Building.label>Grechka storage crafter (T5)</Grechka_StorageCrafterT5_Building.label>
   <Grechka_StorageCrafterT5_Building.description>A stationary worker for four adjacent workbenches. Runs one cycle at a time in rotation. Automatically retrieves ingredients from disks and returns products. Worker speed ×8, skill 20, power 8000 W.</Grechka_StorageCrafterT5_Building.description>
   <Grechka_CertusQuartz.label>certus quartz</Grechka_CertusQuartz.label>
   <Grechka_CertusQuartz.description>A resonant crystal from a meteorite. Growth sources let you grow it at home.</Grechka_CertusQuartz.description>

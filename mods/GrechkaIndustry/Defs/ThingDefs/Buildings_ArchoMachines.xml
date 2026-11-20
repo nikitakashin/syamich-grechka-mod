@@ -2,7 +2,7 @@
 <Defs>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_SuppressionEmitterT4_Building</defName>
-    <label>облучатель подавления T4</label>
+    <label>архо-облучатель подавления (T4)</label>
     <description>Облучатель подавления T4. Действует в радиусе 20 клеток. Несколько устройств одной роли не складываются; используется сильнейшее.</description>
     <thingClass>Building</thingClass>
     <graphicData>
@@ -65,7 +65,7 @@
   </ThingDef>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_SuppressionEmitterT5_Building</defName>
-    <label>облучатель подавления T5</label>
+    <label>гречневый облучатель подавления (T5)</label>
     <description>Облучатель подавления T5. Действует в радиусе 32 клеток. Несколько устройств одной роли не складываются; используется сильнейшее.</description>
     <thingClass>Building</thingClass>
     <graphicData>
@@ -125,7 +125,7 @@
   </ThingDef>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_AccelerationEmitterT4_Building</defName>
-    <label>облучатель ускорения T4</label>
+    <label>архо-облучатель ускорения (T4)</label>
     <description>Облучатель ускорения T4. Действует в радиусе 20 клеток. Несколько устройств одной роли не складываются; используется сильнейшее.</description>
     <thingClass>Building</thingClass>
     <graphicData>
@@ -188,7 +188,7 @@
   </ThingDef>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_AccelerationEmitterT5_Building</defName>
-    <label>облучатель ускорения T5</label>
+    <label>гречневый облучатель ускорения (T5)</label>
     <description>Облучатель ускорения T5. Действует в радиусе 32 клеток. Несколько устройств одной роли не складываются; используется сильнейшее.</description>
     <thingClass>Building</thingClass>
     <graphicData>
@@ -248,7 +248,7 @@
   </ThingDef>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_WellbeingEmitterT4_Building</defName>
-    <label>облучатель тонизирования T4</label>
+    <label>архо-облучатель тонизирования (T4)</label>
     <description>Облучатель тонизирования T4. Действует в радиусе 20 клеток. Несколько устройств одной роли не складываются; используется сильнейшее.</description>
     <thingClass>Building</thingClass>
     <graphicData>
@@ -311,7 +311,7 @@
   </ThingDef>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_WellbeingEmitterT5_Building</defName>
-    <label>облучатель тонизирования T5</label>
+    <label>гречневый облучатель тонизирования (T5)</label>
     <description>Облучатель тонизирования T5. Действует в радиусе 32 клеток. Несколько устройств одной роли не складываются; используется сильнейшее.</description>
     <thingClass>Building</thingClass>
     <graphicData>
@@ -371,7 +371,7 @@
   </ThingDef>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_ArchoGeneratorT4_Building</defName>
-    <label>архо-генератор T4</label>
+    <label>архо-генератор (T4)</label>
     <description>Архо-генератор T4. Постоянная генерация без топлива.</description>
     <thingClass>Building</thingClass>
     <graphicData>
@@ -430,7 +430,7 @@
   </ThingDef>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_ArchoGeneratorT5_Building</defName>
-    <label>архо-генератор T5</label>
+    <label>гречневый генератор (T5)</label>
     <description>Архо-генератор T5. Постоянная генерация без топлива.</description>
     <thingClass>Building</thingClass>
     <graphicData>

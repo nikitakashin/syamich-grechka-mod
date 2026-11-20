@@ -4,4 +4,6 @@
   <Grechka_ArchoAcceleration.description>Поле архо-облучателя временно ускоряет движение и работу. Эффект поддерживается, пока пешка находится в радиусе работающего устройства.</Grechka_ArchoAcceleration.description>
   <Grechka_ArchoSuppression.label>архо-подавление</Grechka_ArchoSuppression.label>
   <Grechka_ArchoSuppression.description>Поле архо-облучателя временно замедляет движение и снижает точность атак. Эффект ослабевает после выхода из зоны облучения.</Grechka_ArchoSuppression.description>
+  <Grechka_ArchoWellbeing.label>архо-тонизирование</Grechka_ArchoWellbeing.label>
+  <Grechka_ArchoWellbeing.description>Поле облучателя восстанавливает сон и сытость: T4 — 0,2% максимального запаса за 60 тиков, T5 — 0,8%. Действует только на своих в радиусе работающего устройства. Несколько облучателей не складываются; используется сильнейший. Эффект прекращается при выходе из зоны или отключении питания.</Grechka_ArchoWellbeing.description>
 </LanguageData>

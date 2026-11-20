@@ -3,7 +3,7 @@
   <Grechka_QuartzCable.label>подземный кварцевый кабель</Grechka_QuartzCable.label>
   <Grechka_QuartzCable.description>Соединяет устройства с контроллером Storage под землёй. Не получает урон, не горит и скрыт в обычном режиме. Прокладывается под зданиями и обычными электрокабелями; электричество не передаёт. Сигнальные линии видны при выборе сети или её строительного инструмента.</Grechka_QuartzCable.description>
   <Grechka_StorageController.label>контроллер Storage</Grechka_StorageController.label>
-  <Grechka_StorageController.description>Точка доступа к кварцевой сигнальной сети. Показывает подключённые устройства и их состояние. Несколько контроллеров одной сети дают одинаковый доступ. Потребляет 400 Вт; сигнальный кабель не заменяет электрическое подключение.</Grechka_StorageController.description>
+  <Grechka_StorageController.description>Цифровой склад и точка доступа к кварцевой сети. У обычных и морозильных дисков отдельные вкладки с фильтром и приоритетом. Пешки автоматически приносят разрешённые вещи из мест с меньшим приоритетом при наличии свободных дисков. Содержимое работающей сети доступно для строительства, наземной и орбитальной торговли без маяка и загрузки караванов. Несколько контроллеров одной сети дают доступ к общим дискам. Потребляет 400 Вт; сигнальный кабель не передаёт электричество.</Grechka_StorageController.description>
   <Grechka_Inscriber.label>электрический высекатель</Grechka_Inscriber.label>
   <Grechka_Inscriber.description>Печатает кремниевые элементы, кварцевые, серебряные и золотые схемы и собирает процессоры. Все рецепты доступны без прессов. Требует 200 Вт.</Grechka_Inscriber.description>
   <Grechka_Quartz.label>кварц</Grechka_Quartz.label>
@@ -28,11 +28,11 @@
   <Grechka_SilverProcessor.description>Управляющий процессор устройств Storage.</Grechka_SilverProcessor.description>
   <Grechka_GoldProcessor.label>золотой процессор</Grechka_GoldProcessor.label>
   <Grechka_GoldProcessor.description>Вычислительный процессор устройств Storage.</Grechka_GoldProcessor.description>
-  <Grechka_StorageCrafterT3_Building.label>крафтер Storage T3</Grechka_StorageCrafterT3_Building.label>
+  <Grechka_StorageCrafterT3_Building.label>меха-крафтер Storage (T3)</Grechka_StorageCrafterT3_Building.label>
   <Grechka_StorageCrafterT3_Building.description>Стационарный исполнитель для четырёх соседних станков. Один цикл за раз, по кругу; снабжение из дисков и возврат продукции автоматически. Скорость исполнителя ×1, квалификация 12, мощность 500 Вт.</Grechka_StorageCrafterT3_Building.description>
-  <Grechka_StorageCrafterT4_Building.label>крафтер Storage T4</Grechka_StorageCrafterT4_Building.label>
+  <Grechka_StorageCrafterT4_Building.label>архо-крафтер Storage (T4)</Grechka_StorageCrafterT4_Building.label>
   <Grechka_StorageCrafterT4_Building.description>Стационарный исполнитель для четырёх соседних станков. Один цикл за раз, по кругу; снабжение из дисков и возврат продукции автоматически. Скорость исполнителя ×3, квалификация 16, мощность 2000 Вт.</Grechka_StorageCrafterT4_Building.description>
-  <Grechka_StorageCrafterT5_Building.label>крафтер Storage T5</Grechka_StorageCrafterT5_Building.label>
+  <Grechka_StorageCrafterT5_Building.label>гречневый крафтер Storage (T5)</Grechka_StorageCrafterT5_Building.label>
   <Grechka_StorageCrafterT5_Building.description>Стационарный исполнитель для четырёх соседних станков. Один цикл за раз, по кругу; снабжение из дисков и возврат продукции автоматически. Скорость исполнителя ×8, квалификация 20, мощность 8000 Вт.</Grechka_StorageCrafterT5_Building.description>
   <Grechka_CertusQuartz.label>certus-кварц</Grechka_CertusQuartz.label>
   <Grechka_CertusQuartz.description>Резонансный кристалл из метеорита. Источники роста позволяют выращивать его дома.</Grechka_CertusQuartz.description>

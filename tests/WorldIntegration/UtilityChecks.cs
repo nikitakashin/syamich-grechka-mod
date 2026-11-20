@@ -29,6 +29,7 @@ internal static class UtilityChecks
         FactoryUpgradeSafety.SetDefinition(battery,upgraded);
         Check(battery.thingIDNumber==428&&ReferenceEquals(comp,battery.AllComps.Single())&&(float)AccessTools.Field(typeof(CompPowerBattery),"storedEnergy").GetValue(comp)==123f,
             "Utility definition swap retains the exact battery object, identity, component and stored energy");
+        BatteryChecks(battery, comp);
         var building=new Building{def=new ThingDef{defName="FixtureFuelled",thingClass=typeof(Building),size=new IntVec2(1,1)}};
         var fuelProps=new CompProperties_Refuelable();var tempProps=new CompProperties_TempControl();
         building.def.comps=new(){fuelProps,tempProps};
@@ -62,6 +63,66 @@ internal static class UtilityChecks
         Check((bool)check.Invoke(predicate,new object[]{new Building{def=shipVariant}}),"Native ship launch part predicate recognises a tiered reactor/computer/casket as its original ship part");
         Check(!(bool)check.Invoke(predicate,new object[]{new Building{def=new ThingDef{defName="UnrelatedShipPart"}}}),"Ship identity adapter does not turn an unrelated building into a required part");
         Catalog();
+    }
+    private static void BatteryChecks(Building_Battery battery, CompPowerBattery comp)
+    {
+        var harmony = new Harmony("grechka.world.battery-check");
+        var patches = harmony.CreateClassProcessor(typeof(BatteryTierPropertiesHook)).Patch();
+        Check(patches != null && patches.Count == 1, "Native battery properties getter is actually patched");
+        var source = new CompProperties_Battery { storedEnergyMax = 1400, efficiency = .5f };
+        comp.props = source;
+        var definitions = Enumerable.Range(2, 4).Select(t => new ThingDef
+        {
+            defName = "FixtureBatteryT" + t, thingClass = typeof(Building_Battery), size = new IntVec2(1,1), comps = new() { source }
+        }).ToArray();
+        foreach (var def in definitions)
+        {
+            int tier = int.Parse(def.defName.Substring(def.defName.Length - 1));
+            ProfileVariants.Entries[def.defName] = new VariantEntry { sourceName = definitions[0].defName, name = def.defName, tier = tier, minimum = 2 };
+            WorldProfile.AppliedTiers[def.defName] = tier;
+        }
+        float[] capacities = { 1400, 11200, 89600, 716800 };
+        float[] efficiencies = { .5f, .7f, .85f, .95f };
+        try
+        {
+            for (int i = 0; i < definitions.Length; i++)
+            {
+                FactoryUpgradeSafety.SetDefinition(battery, definitions[i]);
+                Check(comp.Props.storedEnergyMax == capacities[i] && comp.Props.efficiency == efficiencies[i]
+                    && Math.Abs(comp.StoredEnergyPct - 123 / capacities[i]) < .000001,
+                    "Native T" + (i + 2) + " capacity/efficiency changes immediately, retaining 123 Wd");
+                Check(comp.CompInspectStringExtra().Contains(capacities[i].ToString("F0")), "Native battery inspector reports the effective capacity at T" + (i+2));
+            }
+            Check(source.storedEnergyMax == 1400 && source.efficiency == .5f, "Tier scaling does not mutate the source or shared component properties");
+            comp.AddEnergy(100);
+            Check(Math.Abs(comp.StoredEnergy - 218) < .0001, "Native charging uses 95% efficiency at T5");
+            string path = Path.Combine(Path.GetTempPath(), "grechka-battery-" + Guid.NewGuid() + ".xml");
+            try
+            {
+                Scribe.saver.InitSaving(path, "fixture"); comp.PostExposeData(); Scribe.saver.FinalizeSaving();
+                var restored = new CompPowerBattery { parent = battery, props = source };
+                Scribe.loader.InitLoading(path); restored.PostExposeData(); Scribe.loader.FinalizeLoading();
+                Check(Math.Abs(restored.StoredEnergy - 218) < .0001 && restored.Props.storedEnergyMax == 716800,
+                    "Native Scribe restores charge and resolves the upgraded capacity without a migration");
+            }
+            finally { if (File.Exists(path)) File.Delete(path); }
+            var advanced = new CompProperties_Battery { storedEnergyMax = 2000, efficiency = .9f };
+            comp.props = advanced;
+            var entry = ProfileVariants.Entries[battery.def.defName];
+            entry.minimum = 3;
+            Check(comp.Props.storedEnergyMax == 128000 && comp.Props.efficiency == .95f,
+                "T3-native large advanced battery keeps its 2000 Wd baseline and gains two capacity steps at T5");
+            entry.tier = 4; WorldProfile.AppliedTiers[battery.def.defName] = 4;
+            Check(comp.Props.storedEnergyMax == 16000 && comp.Props.efficiency == .9f,
+                "Advanced battery upgrade never reduces its native 90% efficiency");
+            WorldProfile.AppliedTiers.Remove(battery.def.defName);
+            Check(ReferenceEquals(comp.Props, advanced), "An unapplied old-save profile keeps the exact original battery properties");
+        }
+        finally
+        {
+            harmony.UnpatchAll(harmony.Id);
+            foreach (var def in definitions) { WorldProfile.AppliedTiers.Remove(def.defName); ProfileVariants.Entries.Remove(def.defName); }
+        }
     }
     private static void Catalog()
     {

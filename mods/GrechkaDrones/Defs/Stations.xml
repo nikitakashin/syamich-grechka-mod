@@ -127,7 +127,7 @@
   <ThingDef Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation" ParentName="Base_X2_AIRobotRechargeStation">
     <defName>Grechka_RescueDroneStationT3_Dock</defName>
     <thingClass>Grechka.Drones.DroneStation</thingClass>
-    <label>док дрона-МЧСника T3</label>
+    <label>меха-док дрона-МЧСника (T3)</label>
     <description>Зарядная и ремонтная станция с дроном «МЧСник» T3. Дрон входит в комплект станции.</description>
     <graphicData>
       <texPath>Docks/Rescue/T3/RescueT3_Occupied</texPath>
@@ -190,7 +190,7 @@
   <ThingDef Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation" ParentName="Base_X2_AIRobotRechargeStation">
     <defName>Grechka_RescueDroneStationT4_Dock</defName>
     <thingClass>Grechka.Drones.DroneStation</thingClass>
-    <label>док дрона-МЧСника T4</label>
+    <label>архо-док дрона-МЧСника (T4)</label>
     <description>Зарядная и ремонтная станция с дроном «МЧСник» T4. Дрон входит в комплект станции.</description>
     <graphicData>
       <texPath>Docks/Rescue/T4/RescueT4_Occupied</texPath>
@@ -253,7 +253,7 @@
   <ThingDef Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation" ParentName="Base_X2_AIRobotRechargeStation">
     <defName>Grechka_RescueDroneStationT5_Dock</defName>
     <thingClass>Grechka.Drones.DroneStation</thingClass>
-    <label>док дрона-МЧСника T5</label>
+    <label>гречневый док дрона-МЧСника (T5)</label>
     <description>Зарядная и ремонтная станция с дроном «МЧСник» T5. Дрон входит в комплект станции.</description>
     <graphicData>
       <texPath>Docks/Rescue/T5/RescueT5_Occupied</texPath>
@@ -440,7 +440,7 @@
   <ThingDef Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation" ParentName="Base_X2_AIRobotRechargeStation">
     <defName>Grechka_WarriorDroneStationT3_Dock</defName>
     <thingClass>Grechka.Drones.DroneStation</thingClass>
-    <label>док дрона-воина T3</label>
+    <label>меха-док дрона-воина (T3)</label>
     <description>Зарядная и ремонтная станция с дроном «воин» T3. Дрон входит в комплект станции.</description>
     <graphicData>
       <texPath>Docks/Warrior/T3/WarriorT3_Occupied</texPath>
@@ -503,7 +503,7 @@
   <ThingDef Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation" ParentName="Base_X2_AIRobotRechargeStation">
     <defName>Grechka_WarriorDroneStationT4_Dock</defName>
     <thingClass>Grechka.Drones.DroneStation</thingClass>
-    <label>док дрона-воина T4</label>
+    <label>архо-док дрона-воина (T4)</label>
     <description>Зарядная и ремонтная станция с дроном «воин» T4. Дрон входит в комплект станции.</description>
     <graphicData>
       <texPath>Docks/Warrior/T4/WarriorT4_Occupied</texPath>
@@ -566,7 +566,7 @@
   <ThingDef Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation" ParentName="Base_X2_AIRobotRechargeStation">
     <defName>Grechka_WarriorDroneStationT5_Dock</defName>
     <thingClass>Grechka.Drones.DroneStation</thingClass>
-    <label>док дрона-воина T5</label>
+    <label>гречневый док дрона-воина (T5)</label>
     <description>Зарядная и ремонтная станция с дроном «воин» T5. Дрон входит в комплект станции.</description>
     <graphicData>
       <texPath>Docks/Warrior/T5/WarriorT5_Occupied</texPath>

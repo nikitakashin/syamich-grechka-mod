@@ -27,7 +27,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>GrechkaPharmacy_ResearchT3</defName>
-    <label>Pharmacy T3</label>
+    <label>Mecha pharmacy (T3)</label>
     <description>Unlocks tier 3 pharmaceutical production.</description>
     <baseCost>3000</baseCost>
     <techLevel>Spacer</techLevel>
@@ -41,7 +41,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>GrechkaPharmacy_ResearchT4</defName>
-    <label>Pharmacy T4</label>
+    <label>Archo pharmacy (T4)</label>
     <description>Unlocks tier 4 pharmaceutical production.</description>
     <baseCost>6000</baseCost>
     <techLevel>Ultra</techLevel>
@@ -54,7 +54,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>GrechkaPharmacy_ResearchT5</defName>
-    <label>Pharmacy T5</label>
+    <label>Grechka pharmacy (T5)</label>
     <description>Unlocks tier 5 pharmaceutical production.</description>
     <baseCost>10000</baseCost>
     <techLevel>Archotech</techLevel>

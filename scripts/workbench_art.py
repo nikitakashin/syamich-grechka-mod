@@ -17,6 +17,8 @@ def directional_sources(module, source):
         directory = Path('Buildings/Map') / name
         for rotation, operator in OPERATOR_SIDE.items():
             result[directory / f'{name}_{rotation}.png'] = directory / f'{name}_{operator}.png'
+            if name == 'AssemblyBenchT1':
+                result[directory / f'{name}_Orthographic_{rotation}.png'] = directory / f'{name}_Orthographic_{operator}.png'
     if module == 'GrechkaIndustry':
         # This batch calls the original west view simply Off / Idle / Active.
         directory = Path('Buildings/Map/States/MatterRecyclerT4')

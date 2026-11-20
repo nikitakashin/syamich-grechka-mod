@@ -53,7 +53,8 @@ def ancestors(key):
  return result
 assert not any(k.startswith(('route.','achievements.')) or k=='start.food' for k in ancestors('t3.extractor'))
 for chapter in chapters:
- assert sum(q['chapter']==chapter for q in book['quests'])<=35, f'Overloaded chapter: {chapter}'
+ count=sum(q['chapter']==chapter for q in book['quests'])
+ assert 15<=count<=35, f'Chapter {chapter} has {count} quests; expected 15–35'
 profile_rules=ET.parse(ROOT/'mods/GrechkaWorldIntegration/Defs/MachineProfile.xml').getroot()
 catalog_targets={o['target'] for q in book['quests'] for o in q['objectives'] if o['type']=='build'}
 for rule in profile_rules:

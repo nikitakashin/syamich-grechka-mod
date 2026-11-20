@@ -9,6 +9,7 @@ void Check(bool condition,string label){if(!condition)throw new Exception(label)
 string pipePath=Environment.GetEnvironmentVariable("PIPESYSTEM_ASSEMBLY") ?? Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile),"Library/Application Support/Steam/steamapps/workshop/content/294100/2023507013/1.7/Assemblies/PipeSystem.dll");
 var pipes=Assembly.LoadFrom(pipePath);
 var industry=Assembly.LoadFrom(Path.GetFullPath("mods/GrechkaIndustry/Assemblies/GrechkaIndustry.dll"));
+var integration = Assembly.LoadFrom(Path.GetFullPath("mods/GrechkaWorldIntegration/Assemblies/GrechkaWorldIntegration.dll"));
 var game=(Game)RuntimeHelpers.GetUninitializedObject(typeof(Game));
 AccessTools.Field(typeof(Game),"maps").SetValue(game,new List<Map>());
 AccessTools.Field(typeof(Game),"components").SetValue(game,new List<GameComponent>{new StorageDiskClock(game)});
@@ -71,6 +72,32 @@ var afterCarry=(Dictionary<string,float>)AccessTools.Field(compType,"outputCarry
 Check((bool)AccessTools.Field(typeof(Building_StorageCrafter),"faulted").GetValue(rollbackCrafter)
  && afterCarry.Count==beforeCarry.Count && beforeCarry.All(p=>afterCarry.TryGetValue(p.Key,out float value)&&value==p.Value),
  "Failed input consumption rolls back the actual Industry tier-carry mutation from staged products");
+
+var storageDependencies = typeof(StorageDisk).Assembly.GetType("Grechka.Storage.CraftDependencies");
+var profileVariants = integration.GetType("Grechka.WorldIntegration.ProfileVariants");
+var benefitType = integration.GetType("Grechka.WorldIntegration.CompProfileUpgrade");
+var profileTable = new Building_WorkTable { def = new ThingDef { defName = "FixtureAutocraftProfileTable" } };
+var benefit = (ThingComp)Activator.CreateInstance(benefitType);
+benefit.parent = profileTable;
+AccessTools.Field(typeof(ThingWithComps), "comps").SetValue(profileTable, new List<ThingComp> { benefit });
+var entry = Activator.CreateInstance(integration.GetType("Grechka.WorldIntegration.VariantEntry"));
+AccessTools.Field(entry.GetType(), "worktable").SetValue(entry, true);
+((IDictionary)AccessTools.Field(profileVariants, "Entries").GetValue(null))[profileTable.def.defName] = entry;
+var worldProfile = integration.GetType("Grechka.WorldIntegration.WorldProfile");
+((IDictionary)AccessTools.Field(worldProfile, "AppliedTiers").GetValue(null))[profileTable.def.defName] = 4;
+StatDefOf.WorkTableWorkSpeedFactor = new StatDef { defName = "FixtureAutocraftWorktableSpeed" };
+recipe.workTableSpeedStat = null;
+Check(ReferenceEquals(AccessTools.Method(storageDependencies, "WorkTableSpeed").Invoke(null, new object[] { recipe, profileTable }),
+    StatDefOf.WorkTableWorkSpeedFactor), "Storage and manual crafting use the same worktable tier fallback");
+recipe.products[0].count = 5;
+Check((int)expected.Invoke(null, new object[] { recipe, profileTable }) == 7,
+    "Storage predicts the same bounded T4 output for external tiered worktables as for Industry tables");
+var carryBefore = AccessTools.Method(storageDependencies, "CaptureTierCarry").Invoke(null, new object[] { profileTable });
+AccessTools.Method(benefitType, "Extra").Invoke(benefit, new object[] { recipe, Fixture.Create(food, 5) });
+AccessTools.Method(storageDependencies, "RestoreTierCarry").Invoke(null, new[] { carryBefore });
+Check(((Dictionary<string, float>)AccessTools.Method(benefitType, "CaptureCarry").Invoke(benefit, null)).Count == 0,
+    "A failed Storage craft can roll back output carry for a profiled external table");
+recipe.products[0].count = 1;
 var order=new CraftOrder{Id=91,ParentKey="f:77",Ancestors=new(){"f:ProcessA","v:RecipeB"},Recipe=recipe,Remaining=6};
 try{
  Scribe.saver.InitSaving(path,"fixture");Scribe_Deep.Look(ref order,"order");Scribe.saver.FinalizeSaving();

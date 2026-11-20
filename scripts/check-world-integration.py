@@ -47,4 +47,7 @@ require(len([r for r in rules if r.findtext("defName", "").startswith("GrechkaWo
         "The explicit G01 catalogue must retain all 328 source identities")
 require(not ET.parse(mod / "Patches/StorageController.xml").getroot().findall("Operation"),
         "Unconditional Storage pricing patch must not bypass per-save approval")
+upgrade_work = ET.parse(mod / "Defs/FactoryUpgradeJobs.xml").getroot().find("WorkGiverDef")
+require(upgrade_work.findtext("scanThings") == "true" and upgrade_work.findtext("directOrderable") == "true",
+        "Machine upgrades must support automatic work and direct orders")
 print("Grechka World research toggle compatibility, explicit G01 catalogue and metadata: OK")

@@ -7,7 +7,7 @@
     <thingClass>Building_WorkTable</thingClass>
     <tickerType>Normal</tickerType>
     <graphicData>
-      <texPath>Buildings/Map/AssemblyBenchT1/AssemblyBenchT1</texPath>
+      <texPath>Buildings/Map/AssemblyBenchT1/AssemblyBenchT1_Orthographic</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>CutoutComplex</shaderType>
       <drawSize>(3.5,1.5)</drawSize>
@@ -67,6 +67,6 @@
     </placeWorkers>
     <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
     <minifiedDef>MinifiedThing</minifiedDef>
-    <uiIconPath>Buildings/Map/AssemblyBenchT1/AssemblyBenchT1_north</uiIconPath>
+    <uiIconPath>Buildings/Map/AssemblyBenchT1/AssemblyBenchT1_Orthographic_north</uiIconPath>
   </ThingDef>
 </Defs>

@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <SW.ReturnWarrantViaTransportPods>Доставить цель ордера транспортными капсулами ({0})</SW.ReturnWarrantViaTransportPods>
+  <SW.WarrantDeliveredByPods>Цель выполненного ордера доставлена транспортными капсулами.</SW.WarrantDeliveredByPods>
+  <SW.WarrantSiteUnresolved>Для ордера «{0}» не нашлось фракции, способной разместить лагерь. Ордер пока нельзя принять, но он остаётся в списке.</SW.WarrantSiteUnresolved>
+</LanguageData>

@@ -44,6 +44,8 @@ for d in defs.values():
 for tier in (1, 2, 3, 4, 5):
     d = defs[f'Grechka_AssemblyBenchT{tier}_Building']
     path = f'Buildings/Map/AssemblyBenchT{tier}/AssemblyBenchT{tier}'
+    if tier == 1:
+        path += '_Orthographic'
     assert d.findtext('graphicData/texPath') == path
     assert d.findtext('size') == '(3,1)' and d.findtext('graphicData/drawSize') == '(3.5,1.5)'
     assert d.findtext('graphicData/color', '(1,1,1)') == '(1,1,1)', 'Full-colour bench must not use old tint'

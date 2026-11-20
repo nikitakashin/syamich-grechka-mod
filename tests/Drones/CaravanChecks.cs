@@ -17,6 +17,11 @@ static class CaravanChecks
     static Pawn foodOwner;
     static Faction player;
     static IReadOnlyList<Pawn> sendableCandidates;
+    static int foodSearches, rechargeJobs;
+    static bool reachableDock = true;
+    static bool forbiddenDock;
+    static readonly Job rechargeSentinel = new Job { def = new JobDef { defName = "RechargeSentinel" } };
+    static readonly Job foodSentinel = new Job { def = new JobDef { defName = "FoodSentinel" } };
     public static int Run(Harmony previousFixture, string repo)
     {
         previousFixture.UnpatchAll(previousFixture.Id);
@@ -28,6 +33,10 @@ static class CaravanChecks
             checks++; Console.WriteLine("PASS caravan drone: " + label);
         }
         void Field(object obj, string name, object value) => AccessTools.Field(obj.GetType(), name).SetValue(obj, value);
+        // Supply DLC flags without reading or writing the person's mod configuration.
+        // These APIs otherwise bootstrap the complete desktop host on first use.
+        fixture.Patch(typeof(ModsConfig).TypeInitializer, prefix: new HarmonyMethod(typeof(CaravanChecks), nameof(Skip)));
+        fixture.Patch(typeof(TransferableOneWayWidget).TypeInitializer, prefix: new HarmonyMethod(typeof(CaravanChecks), nameof(Skip)));
         fixture.Patch(AccessTools.PropertyGetter(typeof(Pawn), nameof(Pawn.Suspended)), prefix: new HarmonyMethod(typeof(CaravanChecks), nameof(False)));
         var game = (Game)RuntimeHelpers.GetUninitializedObject(typeof(Game));
         game.tickManager = new TickManager(); game.uniqueIDsManager = new UniqueIDsManager();
@@ -39,7 +48,7 @@ static class CaravanChecks
         CaravanDrone Make(int tier)
         {
             var drone = new CaravanDrone { def = new X2_ThingDef_AIRobot { defName = "FixtureCaravanDroneT" + tier,
-                label = "caravan drone", race = new RaceProperties { intelligence = Intelligence.ToolUser, allowedOnCaravan = true, packAnimal = true },
+                label = "caravan drone", category = ThingCategory.Pawn, race = new RaceProperties { intelligence = Intelligence.ToolUser, allowedOnCaravan = true, packAnimal = true },
                 modExtensions = new List<DefModExtension> { new DroneProperties { role = DroneRole.Caravan, tier = tier } } } };
             drone.health = new Pawn_HealthTracker(drone);
             drone.mindState = new Pawn_MindState(drone);
@@ -162,6 +171,87 @@ static class CaravanChecks
                 "native need Scribe preserves fractional fuel and restores its dock mirror");
         }
         finally { Scribe.mode = LoadSaveMode.Inactive; File.Delete(path); }
+        // Terrain/pathfinding and final native searches are fixture boundaries;
+        // the actual food priority, dock guards and parent recharge logic execute.
+        var dockMap = (Map)RuntimeHelpers.GetUninitializedObject(typeof(Map));
+        game.Maps.Add(dockMap);
+        var poweredDock = new DroneStation { def = new ThingDef { defName = "PoweredCaravanDock", comps = new()
+            { new CompProperties_Power { compClass = typeof(CompPowerTrader) } } } };
+        AccessTools.Method(typeof(ThingWithComps), "InitializeComps").Invoke(poweredDock, null);
+        poweredDock.powerComp = poweredDock.GetComp<CompPowerTrader>();
+        Field(poweredDock.powerComp, "powerOnInt", true);
+        Field(poweredDock,"mapIndexOrState",(sbyte)0); Field(poweredDock,"positionInt",new IntVec3(5,0,5));
+        Field(drone,"mapIndexOrState",(sbyte)0); Field(drone,"positionInt",new IntVec3(6,0,5));
+        drone.rechargeStation=poweredDock;
+        fixture.Patch(AccessTools.Method(typeof(ReservationUtility),nameof(ReservationUtility.CanReserveAndReach)),prefix:new HarmonyMethod(typeof(CaravanChecks),nameof(ReachDock)));
+        fixture.Patch(AccessTools.Method(typeof(ForbidUtility),nameof(ForbidUtility.IsForbidden),new[]{typeof(Thing),typeof(Pawn)}),prefix:new HarmonyMethod(typeof(CaravanChecks),nameof(DockForbidden)));
+        fixture.Patch(AccessTools.Method(typeof(X2_JobGiver_RechargeEnergy),"TryGiveJob"),prefix:new HarmonyMethod(typeof(CaravanChecks),nameof(RechargeJob)));
+        fixture.Patch(AccessTools.Method(typeof(JobGiver_GetFood),"TryGiveJob"),prefix:new HarmonyMethod(typeof(CaravanChecks),nameof(FoodJob)));
+        fixture.Patch(AccessTools.Method(typeof(FoodUtility),nameof(FoodUtility.ShouldBeFedBySomeone)),prefix:new HarmonyMethod(typeof(CaravanChecks),nameof(False)));
+        var foodNode=new JobGiver_CaravanFood(); var rechargeNode=new JobGiver_CaravanRecharge();
+        var getFood=AccessTools.Method(typeof(JobGiver_CaravanFood),"TryGiveJob");
+        var getRecharge=AccessTools.Method(typeof(JobGiver_CaravanRecharge),"TryGiveJob");
+        drone.needs.food.CurLevel=1.99f;
+        Check(getFood.Invoke(foodNode,new object[]{drone})==null && foodSearches==0,"An almost full drone does not search for one grain to top up its tank");
+        drone.needs.food.CurLevel=.3f;
+        Check(rechargeNode.GetPriority(drone)>0 && ReferenceEquals(getRecharge.Invoke(rechargeNode,new object[]{drone}),rechargeSentinel)
+            && getFood.Invoke(foodNode,new object[]{drone})==null && foodSearches==0 && rechargeJobs==1,
+            "A hungry drone with a reachable powered dock charges before considering food");
+        Field(poweredDock.powerComp,"powerOnInt",false);
+        Check(getRecharge.Invoke(rechargeNode,new object[]{drone})==null && ReferenceEquals(getFood.Invoke(foodNode,new object[]{drone}),foodSentinel),
+            "Power loss enables normal food refuelling");
+        Field(poweredDock.powerComp,"powerOnInt",true); reachableDock=false;
+        Check(ReferenceEquals(getFood.Invoke(foodNode,new object[]{drone}),foodSentinel),"An unreachable dock does not prevent fallback food use");
+        reachableDock=true; forbiddenDock=true;
+        Check(ReferenceEquals(getFood.Invoke(foodNode,new object[]{drone}),foodSentinel),"A forbidden dock does not prevent fallback food use");
+        forbiddenDock=false;
+        reachableDock=true; drone.rechargeStation=null;
+        Check(ReferenceEquals(getFood.Invoke(foodNode,new object[]{drone}),foodSentinel),"A missing dock enables fallback food use");
+        var riceDef=new ThingDef { defName="CaravanPortionRice", category=ThingCategory.Item,stackLimit=75,ingestible=new IngestibleProperties {maxNumToIngestAtOnce=20} };
+        Check(FoodUtility.WillIngestStackCountOf(drone,riceDef,.05f)==20,"A hungry drone requests twenty raw-food units using the native nutrition calculation");
+        object[] portionArgs={drone,.0001f};
+        AccessTools.Method(typeof(CaravanEnergy).GetNestedType("FoodPortion",BindingFlags.NonPublic),"Prefix").Invoke(null,portionArgs);
+        fixture.Patch(AccessTools.Method(typeof(FoodUtility),nameof(FoodUtility.NutritionForEater)),prefix:new HarmonyMethod(typeof(CaravanChecks),nameof(RiceNutrition)));
+        var rice=new Thing {def=riceDef,stackCount=50}; object[] amounts={drone,portionArgs[1],0,0f};
+        AccessTools.Method(typeof(Thing),"IngestedCalculateAmounts").Invoke(rice,amounts);
+        Check((int)amounts[2]==18 && Math.Abs((float)amounts[3]-.9f)<.0001f,"Caravan feeding calculates a meal-sized raw-food bite rather than one rice unit");
+        game.Maps.Clear(); Field(drone,"mapIndexOrState",(sbyte)-1);
+        var candidates=new List<Pawn>();
+        for(int tier=1;tier<=5;tier++)
+        {
+            var carrier=Make(tier); Field(carrier,"factionInt",player); candidates.Add(carrier);
+        }
+        sendableCandidates=candidates;
+        var eligible=Dialog_FormCaravan.AllSendablePawns(map,false);
+        Check(eligible.SequenceEqual(candidates),"The actual form-caravan dialog receives all five eligible carrier tiers");
+        var transferables=eligible.Select(p=>{var t=new TransferableOneWay();t.things.Add(p);return t;}).ToList();
+        var originalTransferables=transferables.ToArray();
+        var sectionsField=AccessTools.Field(typeof(TransferableOneWayWidget),"sections");
+        TransferableOneWayWidget Widget()
+        {
+            var created=(TransferableOneWayWidget)RuntimeHelpers.GetUninitializedObject(typeof(TransferableOneWayWidget));
+            sectionsField.SetValue(created,Activator.CreateInstance(sectionsField.FieldType)); return created;
+        }
+        List<TransferableOneWay> Displayed(TransferableOneWayWidget from)
+            => ((System.Collections.IEnumerable)sectionsField.GetValue(from)).Cast<object>()
+                .SelectMany(s=>(IEnumerable<TransferableOneWay>)AccessTools.Field(s.GetType(),"transferables").GetValue(s)).ToList();
+        fixture.CreateReversePatcher(AccessTools.Method(typeof(CaravanUIUtility),nameof(CaravanUIUtility.AddPawnsSections)),
+            new HarmonyMethod(typeof(CaravanChecks),nameof(NativeSectionsWithoutGrechka))).Patch(HarmonyReversePatchType.Original);
+        var baselineWidget=Widget(); NativeSectionsWithoutGrechka(baselineWidget,transferables);
+        Check(Displayed(baselineWidget).Count==0,"Unmodified native UI reproduces the bug: eligible ToolUser carriers belong to no visible pawn section");
+        var widget=Widget();
+        CaravanUIUtility.AddPawnsSections(widget,transferables);
+        var sections=((System.Collections.IEnumerable)sectionsField.GetValue(widget)).Cast<object>().ToList();
+        var displayed=sections.SelectMany(section=>(IEnumerable<TransferableOneWay>)AccessTools.Field(section.GetType(),"transferables").GetValue(section)).ToList();
+        Check(displayed.Count==5 && originalTransferables.All(t=>displayed.Count(x=>ReferenceEquals(x,t))==1),
+            "Actual native caravan sections display every carrier exactly once, including ToolUser robots without a mechanitor");
+        Check(transferables.SequenceEqual(originalTransferables),"Adding the drone UI section preserves the dialog's original transferables and selection identities");
+        Check(sections.Any(s=>AccessTools.Field(s.GetType(),"title").GetValue(s)?.ToString()=="GrechkaDrones_CaravanSection"),
+            "The form-caravan widget has a dedicated localized carrier section");
+        AccessTools.Field(typeof(ModsConfig),"biotechActive").SetValue(null,true);
+        var biotech=Widget(); CaravanUIUtility.AddPawnsSections(biotech,transferables);
+        Check(Displayed(biotech).Count==5,"Carriers remain selectable with Biotech enabled without an overseer or duplicate mech rows");
+        AccessTools.Field(typeof(ModsConfig),"biotechActive").SetValue(null,false);
         var defs = XDocument.Load(Path.Combine(repo, "mods/GrechkaDrones/Defs/CaravanDrones.xml")).Root.Elements().ToList();
         foreach (var unit in defs.Where(d => d.Element("thingClass")?.Value == typeof(CaravanDrone).FullName))
         {
@@ -183,4 +273,12 @@ static class CaravanChecks
     { food = meal; owner = foodOwner; __result = meal.stackCount > 0; return false; }
     public static bool Ingest(Thing __instance, ref float __result)
     { __instance.stackCount--; __result = .9f; return false; }
+    public static bool ReachDock(ref bool __result) { __result=reachableDock;return false; }
+    public static bool RechargeJob(ref Job __result) { rechargeJobs++;__result=rechargeSentinel;return false; }
+    public static bool FoodJob(ref Job __result) { foodSearches++;__result=foodSentinel;return false; }
+    public static bool RiceNutrition(ref float __result) { __result=.05f;return false; }
+    public static bool DockForbidden(ref bool __result) { __result=forbiddenDock;return false; }
+    [MethodImpl(MethodImplOptions.NoInlining)]
+    public static void NativeSectionsWithoutGrechka(TransferableOneWayWidget widget,List<TransferableOneWay> transferables)
+        => throw new NotImplementedException();
 }

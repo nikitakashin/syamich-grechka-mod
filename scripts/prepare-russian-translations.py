@@ -100,13 +100,32 @@ for mod in mods:
 entries = {}
 counts = Counter()
 credits = []
+# RimWorld deduplicates language files by their path relative to each load root.
+# Give the content catalogues distinct filenames while keeping the old UI layout.
+content_def_types = {
+    'ThingDef', 'TerrainDef', 'IncidentDef', 'GameConditionDef',
+    'WorldObjectDef', 'SitePartDef', 'QuestScriptDef', 'VFEProps.PropDef',
+}
+event_key = re.compile(
+    r'Letter(?:Label|Text|Title|Desc)|(?:^|[._])Letter(?:$|[_.])|'
+    r'(?:^|[._])(?:Event|Raid|Warrant|Incident|Quest)'
+    r'(?:Name|Title|Desc|Text|Label|Message|Success|Failed|Completed|Expired|Arrived)',
+    re.I,
+)
+authored_keys = {
+    node.tag
+    for path in (out/'Content').rglob('*/Keyed/*.xml')
+    for node in E.parse(path).getroot()
+}
 
 def add(kind, typ, key, value, owner, source, path):
     identity = (kind, typ, key)
-    if not value.strip():
+    if not value or (isinstance(value, str) and not value.strip()):
         issues['empty'].append([source, key]); return
     if key.endswith('.defName'):
         issues['identity_fields_omitted'].append([source, key]); return
+    if kind == 'Keyed' and key in authored_keys:
+        return
     if kind == 'Keyed' and key in english:
         # Named grammar expressions may intentionally change. Positional arguments may not.
         pattern = r'(?<!\{)\{(\d+)(?=_[A-Za-z]|[,}: ?])'
@@ -144,7 +163,13 @@ for source in sources['sources']:
                     if name not in owners:
                         issues['absent_defs_omitted'].append([source['key'], typ, n.tag]); continue
                     owner = owners[name]
-                add(kind, typ, n.tag, ''.join(n.itertext()), owner, source['key'], path)
+                if kind == 'DefInjected' and len(n):
+                    # The game distinguishes a list injection from a scalar by
+                    # the child elements, including quest grammar rules.
+                    value = [copy.deepcopy(child) for child in n]
+                else:
+                    value = ''.join(n.itertext())
+                add(kind, typ, n.tag, value, owner, source['key'], path)
         # Preserve native Strings/WordInfo data. They contain text, not game definitions.
         for folder in ('Strings', 'WordInfo'):
             for path in sorted((lang/folder).rglob('*.txt')):
@@ -167,23 +192,47 @@ for source in sources['sources']:
                     if n is not None and n.text:
                         add('DefInjected', d.tag, name+'.'+field, n.text, owners[name], source['key'], path)
 
-groups = defaultdict(list)
-for (kind,typ,key), item in entries.items():
-    groups[(item['owner'],kind,typ)].append((key,item))
-for (owner,kind,typ), items in groups.items():
-    directory = generated/'Targets'/owner/'Languages/Russian'/kind
-    if typ: directory /= typ
-    directory.mkdir(parents=True, exist_ok=True)
+def write_catalogue(destination, items):
+    destination.parent.mkdir(parents=True, exist_ok=True)
     doc = E.Element('LanguageData')
-    for key,item in sorted(items): E.SubElement(doc,key).text=item['value']
+    for key, item in sorted(items):
+        node = E.SubElement(doc, key)
+        value = item['value']
+        if isinstance(value, list):
+            node.extend(value)
+        else:
+            node.text = value
     E.indent(doc)
-    E.ElementTree(doc).write(directory/'GrechkaTranslations.xml',encoding='utf-8',xml_declaration=True)
+    E.ElementTree(doc).write(destination, encoding='utf-8', xml_declaration=True)
+
+groups = defaultdict(list)
+for (kind, typ, key), item in entries.items():
+    groups[(item['owner'], kind, typ)].append((key, item))
+for (owner, kind, typ), items in groups.items():
+    directory = generated/'Targets'/owner/'Languages/Russian'/kind
+    if typ:
+        directory /= typ
+    name = 'GrechkaTranslations.xml'
+    if typ.removesuffix('s') in content_def_types:
+        name = f'GrechkaTranslations.{owner}.xml'
+    if kind == 'Keyed':
+        event_items = [(key, item) for key, item in items if key in english and event_key.search(key)]
+        if event_items:
+            event_keys = {key for key, _ in event_items}
+            items = [(key, item) for key, item in items if key not in event_keys]
+            write_catalogue(directory/f'GrechkaEvents.{owner}.xml', event_items)
+    write_catalogue(directory/name, items)
 
 load = E.Element('loadFolders')
 branch = E.SubElement(load,'v1.7')
 E.SubElement(branch,'li').text='/'
 for directory in sorted((generated/'Targets').iterdir()):
     E.SubElement(branch,'li',{'IfModActive':directory.name}).text=str(directory.relative_to(out))
+# Authored content uses its own dependency conditions, including DLC and
+# compatibility packs. Preserve those conditions when regenerating imports.
+for folder in E.parse(out/'LoadFolders.xml').findall('v1.7/li'):
+    if (folder.text or '').startswith('Content/'):
+        branch.append(copy.deepcopy(folder))
 E.indent(load)
 E.ElementTree(load).write(out/'LoadFolders.xml',encoding='utf-8',xml_declaration=True)
 

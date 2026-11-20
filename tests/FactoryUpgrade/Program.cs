@@ -64,9 +64,12 @@ AccessTools.Field(processType,"pickUpReady").SetValue(process,true);
 Check(FactoryUpgradeSafety.Problem(building)!=null,"Undelivered native result blocks upgrade");AccessTools.Field(processType,"pickUpReady").SetValue(process,false);
 Check(FactoryUpgradeSafety.Compatible(building,target)&&FactoryUpgradeSafety.Problem(building)==null,"Empty suspended native process permits upgrade");
 Check(!FactoryUpgradeSafety.BatchInProgress(process),"Native persistent spawning permission does not make an empty process permanently busy");
-AccessTools.Field(processType,"currentResult").SetValue(process,1);
-Check(FactoryUpgradeSafety.BatchInProgress(process)&&FactoryUpgradeSafety.Problem(building)!=null,"Partial result delivery blocks upgrade even with zero reported progress");
-AccessTools.Field(processType,"currentResult").SetValue(process,0);
+if(AccessTools.Field(processType,"currentResult") is FieldInfo resultCursor)
+{
+ resultCursor.SetValue(process,1);
+ Check(FactoryUpgradeSafety.BatchInProgress(process)&&FactoryUpgradeSafety.Problem(building)!=null,"Partial result delivery blocks upgrade even with zero reported progress");
+ resultCursor.SetValue(process,0);
+}
 FactoryUpgradeSafety.SetDefinition(building,target);
 Check(ReferenceEquals(AccessTools.Field(compType,"processStack").GetValue(native),stack)&&ReferenceEquals(AccessTools.Field(processType,"parent").GetValue(process),building)&&ReferenceEquals(owners,AccessTools.Field(processType,"ingredientsOwners").GetValue(process)),"Definition change retains real process, native owner objects and parent identity");
 FactoryUpgradeSafety.SetDefinition(building,old);

@@ -54,7 +54,7 @@
   <Grechka_MakeHousingT3.label>собрать меха-корпус</Grechka_MakeHousingT3.label>
   <Grechka_MakeHousingT3.description>Собрать корпус T3 из предыдущего корпуса и механитных узлов.</Grechka_MakeHousingT3.description>
   <Grechka_MakeHousingT3.jobString>Собирает меха-корпус.</Grechka_MakeHousingT3.jobString>
-  <Grechka_UpgradeAssemblyBenchT3.label>улучшить сборочный верстак до T3</Grechka_UpgradeAssemblyBenchT3.label>
+  <Grechka_UpgradeAssemblyBenchT3.label>улучшить: меха-верстак (T3)</Grechka_UpgradeAssemblyBenchT3.label>
   <Grechka_UpgradeAssemblyBenchT3.description>Улучшить установленный T2 верстак. Его корпус T2 используется повторно, общая скидка производственного рецепта на улучшение не применяется.</Grechka_UpgradeAssemblyBenchT3.description>
   <Grechka_UpgradeAssemblyBenchT3.jobString>Улучшает сборочный верстак до T3.</Grechka_UpgradeAssemblyBenchT3.jobString>
   <Grechka_MakeArchoSubstrate.label>синтезировать архо-субстрат</Grechka_MakeArchoSubstrate.label>
@@ -63,30 +63,30 @@
   <Grechka_MakeGrechkaConcentrate.label>подготовить гречневый концентрат</Grechka_MakeGrechkaConcentrate.label>
   <Grechka_MakeGrechkaConcentrate.description>подготовить гречневый концентрат. Все рецепты доступны без исследований.</Grechka_MakeGrechkaConcentrate.description>
   <Grechka_MakeGrechkaConcentrate.jobString>подготовить гречневый концентрат.</Grechka_MakeGrechkaConcentrate.jobString>
-  <Grechka_MakeComponentT4.label>собрать компонент T4</Grechka_MakeComponentT4.label>
-  <Grechka_MakeComponentT4.description>собрать компонент T4. Все рецепты доступны без исследований.</Grechka_MakeComponentT4.description>
-  <Grechka_MakeComponentT4.jobString>собрать компонент T4.</Grechka_MakeComponentT4.jobString>
-  <Grechka_MakeHousingT4.label>собрать корпус T4</Grechka_MakeHousingT4.label>
-  <Grechka_MakeHousingT4.description>собрать корпус T4. Все рецепты доступны без исследований.</Grechka_MakeHousingT4.description>
-  <Grechka_MakeHousingT4.jobString>собрать корпус T4.</Grechka_MakeHousingT4.jobString>
-  <Grechka_MakeSolarCellT4.label>собрать фотоэлемент T4</Grechka_MakeSolarCellT4.label>
-  <Grechka_MakeSolarCellT4.description>собрать фотоэлемент T4. Все рецепты доступны без исследований.</Grechka_MakeSolarCellT4.description>
-  <Grechka_MakeSolarCellT4.jobString>собрать фотоэлемент T4.</Grechka_MakeSolarCellT4.jobString>
-  <Grechka_UpgradeAssemblyBenchT4.label>улучшить сборочный верстак до T4</Grechka_UpgradeAssemblyBenchT4.label>
-  <Grechka_UpgradeAssemblyBenchT4.description>улучшить сборочный верстак до T4. Все рецепты доступны без исследований.</Grechka_UpgradeAssemblyBenchT4.description>
-  <Grechka_UpgradeAssemblyBenchT4.jobString>улучшить сборочный верстак до T4.</Grechka_UpgradeAssemblyBenchT4.jobString>
-  <Grechka_MakeComponentT5.label>собрать компонент T5</Grechka_MakeComponentT5.label>
-  <Grechka_MakeComponentT5.description>собрать компонент T5. Все рецепты доступны без исследований.</Grechka_MakeComponentT5.description>
-  <Grechka_MakeComponentT5.jobString>собрать компонент T5.</Grechka_MakeComponentT5.jobString>
-  <Grechka_MakeHousingT5.label>собрать корпус T5</Grechka_MakeHousingT5.label>
-  <Grechka_MakeHousingT5.description>собрать корпус T5. Все рецепты доступны без исследований.</Grechka_MakeHousingT5.description>
-  <Grechka_MakeHousingT5.jobString>собрать корпус T5.</Grechka_MakeHousingT5.jobString>
-  <Grechka_MakeSolarCellT5.label>собрать фотоэлемент T5</Grechka_MakeSolarCellT5.label>
-  <Grechka_MakeSolarCellT5.description>собрать фотоэлемент T5. Все рецепты доступны без исследований.</Grechka_MakeSolarCellT5.description>
-  <Grechka_MakeSolarCellT5.jobString>собрать фотоэлемент T5.</Grechka_MakeSolarCellT5.jobString>
-  <Grechka_UpgradeAssemblyBenchT5.label>улучшить сборочный верстак до T5</Grechka_UpgradeAssemblyBenchT5.label>
-  <Grechka_UpgradeAssemblyBenchT5.description>улучшить сборочный верстак до T5. Все рецепты доступны без исследований.</Grechka_UpgradeAssemblyBenchT5.description>
-  <Grechka_UpgradeAssemblyBenchT5.jobString>улучшить сборочный верстак до T5.</Grechka_UpgradeAssemblyBenchT5.jobString>
+  <Grechka_MakeComponentT4.label>собрать архо-компонент (T4)</Grechka_MakeComponentT4.label>
+  <Grechka_MakeComponentT4.description>собрать архо-компонент (T4). Все рецепты доступны без исследований.</Grechka_MakeComponentT4.description>
+  <Grechka_MakeComponentT4.jobString>собрать архо-компонент (T4).</Grechka_MakeComponentT4.jobString>
+  <Grechka_MakeHousingT4.label>собрать архо-корпус (T4)</Grechka_MakeHousingT4.label>
+  <Grechka_MakeHousingT4.description>собрать архо-корпус (T4). Все рецепты доступны без исследований.</Grechka_MakeHousingT4.description>
+  <Grechka_MakeHousingT4.jobString>собрать архо-корпус (T4).</Grechka_MakeHousingT4.jobString>
+  <Grechka_MakeSolarCellT4.label>собрать архо-фотоэлемент (T4)</Grechka_MakeSolarCellT4.label>
+  <Grechka_MakeSolarCellT4.description>собрать архо-фотоэлемент (T4). Все рецепты доступны без исследований.</Grechka_MakeSolarCellT4.description>
+  <Grechka_MakeSolarCellT4.jobString>собрать архо-фотоэлемент (T4).</Grechka_MakeSolarCellT4.jobString>
+  <Grechka_UpgradeAssemblyBenchT4.label>улучшить: архо-верстак (T4)</Grechka_UpgradeAssemblyBenchT4.label>
+  <Grechka_UpgradeAssemblyBenchT4.description>улучшить: архо-верстак (T4). Все рецепты доступны без исследований.</Grechka_UpgradeAssemblyBenchT4.description>
+  <Grechka_UpgradeAssemblyBenchT4.jobString>улучшить: архо-верстак (T4).</Grechka_UpgradeAssemblyBenchT4.jobString>
+  <Grechka_MakeComponentT5.label>собрать гречневый компонент (T5)</Grechka_MakeComponentT5.label>
+  <Grechka_MakeComponentT5.description>собрать гречневый компонент (T5). Все рецепты доступны без исследований.</Grechka_MakeComponentT5.description>
+  <Grechka_MakeComponentT5.jobString>собрать гречневый компонент (T5).</Grechka_MakeComponentT5.jobString>
+  <Grechka_MakeHousingT5.label>собрать гречневый корпус (T5)</Grechka_MakeHousingT5.label>
+  <Grechka_MakeHousingT5.description>собрать гречневый корпус (T5). Все рецепты доступны без исследований.</Grechka_MakeHousingT5.description>
+  <Grechka_MakeHousingT5.jobString>собрать гречневый корпус (T5).</Grechka_MakeHousingT5.jobString>
+  <Grechka_MakeSolarCellT5.label>собрать гречневый фотоэлемент (T5)</Grechka_MakeSolarCellT5.label>
+  <Grechka_MakeSolarCellT5.description>собрать гречневый фотоэлемент (T5). Все рецепты доступны без исследований.</Grechka_MakeSolarCellT5.description>
+  <Grechka_MakeSolarCellT5.jobString>собрать гречневый фотоэлемент (T5).</Grechka_MakeSolarCellT5.jobString>
+  <Grechka_UpgradeAssemblyBenchT5.label>улучшить: гречневый верстак (T5)</Grechka_UpgradeAssemblyBenchT5.label>
+  <Grechka_UpgradeAssemblyBenchT5.description>улучшить: гречневый верстак (T5). Все рецепты доступны без исследований.</Grechka_UpgradeAssemblyBenchT5.description>
+  <Grechka_UpgradeAssemblyBenchT5.jobString>улучшить: гречневый верстак (T5).</Grechka_UpgradeAssemblyBenchT5.jobString>
   <Grechka_MakeComponentByHandT1.label>собрать компонент вручную</Grechka_MakeComponentByHandT1.label>
   <Grechka_MakeComponentByHandT1.description>Медленно собрать один обычный компонент из 12 стали на ремесленном месте.</Grechka_MakeComponentByHandT1.description>
   <Grechka_MakeComponentByHandT1.jobString>Собирает компонент вручную.</Grechka_MakeComponentByHandT1.jobString>
@@ -102,12 +102,12 @@
   <Grechka_UpgradeAssemblyBenchT2.label>улучшить сборочный верстак до T2</Grechka_UpgradeAssemblyBenchT2.label>
   <Grechka_UpgradeAssemblyBenchT2.description>Улучшить этот верстак на месте. Уже установленный корпус T1 используется повторно; нужны материалы корпуса T2 и остальная стоимость нового верстака.</Grechka_UpgradeAssemblyBenchT2.description>
   <Grechka_UpgradeAssemblyBenchT2.jobString>Улучшает сборочный верстак до T2.</Grechka_UpgradeAssemblyBenchT2.jobString>
-  <Grechka_UpgradeMatterRecyclerT5.label>улучшить установку материи до T5</Grechka_UpgradeMatterRecyclerT5.label>
-  <Grechka_UpgradeMatterRecyclerT5.description>улучшить установку материи до T5. Все рецепты доступны без исследований.</Grechka_UpgradeMatterRecyclerT5.description>
-  <Grechka_UpgradeMatterRecyclerT5.jobString>улучшить установку материи до T5.</Grechka_UpgradeMatterRecyclerT5.jobString>
-  <Grechka_UpgradeMatterSynthesizerT5.label>улучшить установку материи до T5</Grechka_UpgradeMatterSynthesizerT5.label>
-  <Grechka_UpgradeMatterSynthesizerT5.description>улучшить установку материи до T5. Все рецепты доступны без исследований.</Grechka_UpgradeMatterSynthesizerT5.description>
-  <Grechka_UpgradeMatterSynthesizerT5.jobString>улучшить установку материи до T5.</Grechka_UpgradeMatterSynthesizerT5.jobString>
+  <Grechka_UpgradeMatterRecyclerT5.label>улучшить: гречневая установка материи (T5)</Grechka_UpgradeMatterRecyclerT5.label>
+  <Grechka_UpgradeMatterRecyclerT5.description>улучшить: гречневая установка материи (T5). Все рецепты доступны без исследований.</Grechka_UpgradeMatterRecyclerT5.description>
+  <Grechka_UpgradeMatterRecyclerT5.jobString>улучшить: гречневая установка материи (T5).</Grechka_UpgradeMatterRecyclerT5.jobString>
+  <Grechka_UpgradeMatterSynthesizerT5.label>улучшить: гречневая установка материи (T5)</Grechka_UpgradeMatterSynthesizerT5.label>
+  <Grechka_UpgradeMatterSynthesizerT5.description>улучшить: гречневая установка материи (T5). Все рецепты доступны без исследований.</Grechka_UpgradeMatterSynthesizerT5.description>
+  <Grechka_UpgradeMatterSynthesizerT5.jobString>улучшить: гречневая установка материи (T5).</Grechka_UpgradeMatterSynthesizerT5.jobString>
   <Grechka_MakeSolarS5.label>собрать солнечную панель S5</Grechka_MakeSolarS5.label>
   <Grechka_MakeSolarS5.description>Переоснастить одно целое снятое устройство предыдущей ступени. Установленный корпус уже учтён; требуются только новые детали и фотоэлементы. Результат выпускается упакованным для установки.</Grechka_MakeSolarS5.description>
   <Grechka_MakeSolarS5.jobString>собрать солнечную панель S5.</Grechka_MakeSolarS5.jobString>

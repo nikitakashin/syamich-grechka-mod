@@ -6,7 +6,7 @@
   </DesignatorDropdownGroupDef>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_StorageCrafterT3_Building</defName>
-    <label>крафтер Storage T3</label>
+    <label>меха-крафтер Storage (T3)</label>
     <description>Стационарный исполнитель для четырёх соседних станков. Один цикл за раз, по кругу; снабжение из дисков и возврат продукции автоматически. Скорость исполнителя ×1, квалификация 12, мощность 500 Вт.</description>
     <thingClass>Grechka.Storage.Building_StorageCrafter</thingClass>
     <size>(1,1)</size>
@@ -61,7 +61,7 @@
   </ThingDef>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_StorageCrafterT4_Building</defName>
-    <label>крафтер Storage T4</label>
+    <label>архо-крафтер Storage (T4)</label>
     <description>Стационарный исполнитель для четырёх соседних станков. Один цикл за раз, по кругу; снабжение из дисков и возврат продукции автоматически. Скорость исполнителя ×3, квалификация 16, мощность 2000 Вт.</description>
     <thingClass>Grechka.Storage.Building_StorageCrafter</thingClass>
     <size>(1,1)</size>
@@ -117,7 +117,7 @@
   </ThingDef>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_StorageCrafterT5_Building</defName>
-    <label>крафтер Storage T5</label>
+    <label>гречневый крафтер Storage (T5)</label>
     <description>Стационарный исполнитель для четырёх соседних станков. Один цикл за раз, по кругу; снабжение из дисков и возврат продукции автоматически. Скорость исполнителя ×8, квалификация 20, мощность 8000 Вт.</description>
     <thingClass>Grechka.Storage.Building_StorageCrafter</thingClass>
     <size>(1,1)</size>

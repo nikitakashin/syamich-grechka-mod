@@ -30,7 +30,7 @@ namespace Grechka.WorldIntegration
         public static VariantEntry Entry(ThingDef def) => def != null && Entries.TryGetValue(def.defName, out VariantEntry value) ? value : null;
         public static bool IsRetired(VariantEntry entry) => !string.IsNullOrEmpty(entry?.ruleName)
             && DefDatabase<MachineProfileRuleDef>.GetNamedSilentFail(entry.ruleName)?.retired == true;
-        public static bool IsUpgrade(RecipeDef recipe) => recipe?.defName.StartsWith("GrechkaWorld_Upgrade_", StringComparison.Ordinal) == true;
+        public static bool IsUpgrade(RecipeDef recipe) => recipe?.defName?.StartsWith("GrechkaWorld_Upgrade_", StringComparison.Ordinal) == true;
         public static bool IsEquipmentUpgrade(RecipeDef recipe) => recipe?.workerClass?.FullName == "Grechka.Equipment.RecipeWorker_EquipmentUpgrade";
         private static List<StatModifier> CopyStats(List<StatModifier> source) => source?.Select(s => new StatModifier { stat = s.stat, value = s.value }).ToList() ?? new List<StatModifier>();
 
@@ -169,7 +169,7 @@ namespace Grechka.WorldIntegration
                         ProfileVariants.Entries[name] = new VariantEntry { sourceName = source, name = name, ruleName = ruleName, tier = tier, minimum = minimum };
                         if (root.SelectSingleNode("ThingDef[defName='" + name + "']") != null) continue;
                         var clone = document.CreateElement("ThingDef"); clone.SetAttribute("ParentName", baseName);
-                        Set(clone, "defName", name); Set(clone, "label", Inherited(original, "label") + " (legacy T" + tier + ")");
+                        Set(clone, "defName", name); Set(clone, "label", Inherited(original, "label"));
                         root.AppendChild(clone); owners[clone] = owner;
                     }
                     continue;
@@ -274,6 +274,15 @@ namespace Grechka.WorldIntegration
         private string completedBillId;
         private int retry;
         private Dictionary<string,float> carry=new Dictionary<string,float>();
+        public Dictionary<string, float> CaptureCarry() => new Dictionary<string, float>(carry);
+        public void RestoreCarry(Dictionary<string, float> snapshot) => carry = new Dictionary<string, float>(snapshot);
+        public int PreviewExtra(RecipeDef recipe, ThingDef product)
+        {
+            int tier = WorldProfile.GetTier(parent);
+            if (tier <= 1 || recipe == null || TierMachineFamilies.IsUpgrade(recipe) || ProfileVariants.IsEquipmentUpgrade(recipe)) return 0;
+            int count = recipe.products?.FirstOrDefault(p => p.thingDef == product)?.count ?? 0;
+            return (int)Math.Floor(count * (double)ProfileVariants.Output[tier] + .00001);
+        }
         private VariantEntry Entry=>ProfileVariants.Entry(parent.def);
         public override void PostExposeData(){Scribe_Values.Look(ref ready,"grechkaProfileUpgradeReady");Scribe_Values.Look(ref completedBillId,"grechkaProfileCompletedBill");Scribe_Collections.Look(ref carry,"grechkaProfileOutputCarry",LookMode.Value,LookMode.Value);carry??=new Dictionary<string,float>();}
         public void Mark(Bill_Production bill){if(Entry!=null&&bill.recipe.defName==Entry.UpgradeRecipe){ready=true;completedBillId=bill.GetUniqueLoadID();}}
@@ -287,7 +296,7 @@ namespace Grechka.WorldIntegration
             VariantEntry entry=Entry;Building_WorkTable bench=parent as Building_WorkTable;
             if(entry==null||entry.tier>=5||ready||bench==null||!WorldProfile.IsApplied(parent.def))yield break;
             RecipeDef recipe=DefDatabase<RecipeDef>.GetNamedSilentFail(entry.UpgradeRecipe);if(recipe==null||!recipe.AvailableNow||bench.BillStack.Bills.Any(b=>b.recipe==recipe))yield break;
-            yield return new Command_Action{defaultLabel=WorldText.Get("GrechkaWorldIntegration_392bededaba5", "Upgrade to T")+(entry.tier+1),defaultDesc=WorldText.Get("GrechkaWorldIntegration_f4918772c9e0", "Create an upgrade bill. The previous machine and housing count towards the cost. A pawn will bring only the additional materials."),icon=TexCommand.Install,action=()=>{var bill=new Bill_Production(recipe,null){repeatMode=BillRepeatModeDefOf.RepeatCount,repeatCount=1};bench.BillStack.AddBill(bill);}};
+            yield return new Command_Action{defaultLabel=recipe.label,defaultDesc=WorldText.Get("GrechkaWorldIntegration_f4918772c9e0", "Create an upgrade bill. The previous machine and housing count towards the cost. A pawn will bring only the additional materials."),icon=TexCommand.Install,action=()=>{var bill=new Bill_Production(recipe,null){repeatMode=BillRepeatModeDefOf.RepeatCount,repeatCount=1};bench.BillStack.AddBill(bill);}};
         }
         public override void CompTick(){TryUpgrade();}
         public override void CompTickRare(){TryUpgrade();}
@@ -374,5 +383,14 @@ namespace Grechka.WorldIntegration
             VariantEntry entry=ProfileVariants.Entry(def);
             return entry!=null&&(entry.worktable||entry.factory||SpecialTierAdapter.HasPowerBenefit(def));
         }
-        public static void Postfix(CompPowerTrader __instance,ref float __result){int tier=WorldProfile.GetTier(__instance.parent);if(tier>0&&__result<0&&HasBenefit(__instance.parent.def)&&!(__instance.parent.def.modContentPack?.PackageIdPlayerFacing.StartsWith("grechka.",StringComparison.OrdinalIgnoreCase)??false))__result*=ProfileVariants.Power[tier];}}
+        public static void Postfix(CompPowerTrader __instance, ref float __result)
+        {
+            Thing parent = __instance.parent;
+            int tier = WorldProfile.GetTier(parent);
+            if (tier == 0) return;
+            if (__result < 0 && HasBenefit(parent.def)
+                && parent.def.modContentPack?.PackageIdPlayerFacing.StartsWith("grechka.", StringComparison.OrdinalIgnoreCase) != true)
+                __result *= ProfileVariants.Power[tier];
+        }
+    }
 }

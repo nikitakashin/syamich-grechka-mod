@@ -94,7 +94,31 @@
   <GrechkaWorldIntegration_29dad5caaeac>[Grechka World Integration] All research completed. Newly completed: </GrechkaWorldIntegration_29dad5caaeac>
   <GrechkaWorldIntegration_LegacyVariant>{0} (legacy T{1})</GrechkaWorldIntegration_LegacyVariant>
   <GrechkaWorldIntegration_TierVariant>{0} (T{1})</GrechkaWorldIntegration_TierVariant>
-  <GrechkaWorldIntegration_UpgradeRecipe>upgrade this machine to T{0}</GrechkaWorldIntegration_UpgradeRecipe>
+  <GrechkaWorldIntegration_UpgradeRecipe>upgrade: {0}</GrechkaWorldIntegration_UpgradeRecipe>
   <GrechkaWorldIntegration_UpgradeRecipeDescription>Upgrade in place. The previous-tier housing and original machine count towards the cost. Material, hit points, fuel and bills are preserved.</GrechkaWorldIntegration_UpgradeRecipeDescription>
   <GrechkaWorldIntegration_UpgradeJob>Upgrading machine.</GrechkaWorldIntegration_UpgradeJob>
+  <GrechkaWorldIntegration_TierName2>standard</GrechkaWorldIntegration_TierName2>
+  <GrechkaWorldIntegration_TierName3>mecha</GrechkaWorldIntegration_TierName3>
+  <GrechkaWorldIntegration_TierName4>archo</GrechkaWorldIntegration_TierName4>
+  <GrechkaWorldIntegration_TierName5>grechka</GrechkaWorldIntegration_TierName5>
+  <GrechkaWorldIntegration_TierName5Plural>grechka</GrechkaWorldIntegration_TierName5Plural>
+  <GrechkaWorldIntegration_TierName5Feminine>grechka</GrechkaWorldIntegration_TierName5Feminine>
+  <GrechkaWorldIntegration_TierName5Neuter>grechka</GrechkaWorldIntegration_TierName5Neuter>
+  <GrechkaWorldIntegration_DeviceName_Battery>battery</GrechkaWorldIntegration_DeviceName_Battery>
+  <GrechkaWorldIntegration_DeviceName_VFE_SmallBattery>small battery</GrechkaWorldIntegration_DeviceName_VFE_SmallBattery>
+  <GrechkaWorldIntegration_DeviceName_VFE_LargeBattery>large battery</GrechkaWorldIntegration_DeviceName_VFE_LargeBattery>
+  <GrechkaWorldIntegration_DeviceName_VFE_AdvancedBattery>advanced battery</GrechkaWorldIntegration_DeviceName_VFE_AdvancedBattery>
+  <GrechkaWorldIntegration_DeviceName_VFE_LargeAdvancedBattery>large advanced battery</GrechkaWorldIntegration_DeviceName_VFE_LargeAdvancedBattery>
+  <GrechkaWorldIntegration_UpgradeNoMaterials>Missing reachable upgrade materials</GrechkaWorldIntegration_UpgradeNoMaterials>
+  <GrechkaWorldIntegration_TierInspector>Grechka • T</GrechkaWorldIntegration_TierInspector>
+  <GrechkaWorldIntegration_GeothermalOutput> • power ×</GrechkaWorldIntegration_GeothermalOutput>
+  <GrechkaWorldIntegration_DeviceName_Facility_VitalsCentre>vitals centre</GrechkaWorldIntegration_DeviceName_Facility_VitalsCentre>
+  <GrechkaWorldIntegration_DeviceName_SurgicalLamp>surgical lamp</GrechkaWorldIntegration_DeviceName_SurgicalLamp>
+  <GrechkaWorldIntegration_DeviceName_DeepDrill>deep drill</GrechkaWorldIntegration_DeviceName_DeepDrill>
+  <GrechkaWorldIntegration_DeviceName_VFEFactory_AutomatedDrillPlatform>automated drill platform</GrechkaWorldIntegration_DeviceName_VFEFactory_AutomatedDrillPlatform>
+  <GrechkaWorldIntegration_DeviceName_GeothermalGenerator>geothermal generator</GrechkaWorldIntegration_DeviceName_GeothermalGenerator>
+  <GrechkaWorldIntegration_DeviceName_VPE_AdvancedGeothermalGenerator>advanced geothermal generator</GrechkaWorldIntegration_DeviceName_VPE_AdvancedGeothermalGenerator>
+  <GrechkaWorldIntegration_DeviceName_ElectricStove>electric stove</GrechkaWorldIntegration_DeviceName_ElectricStove>
+  <GrechkaWorldIntegration_DeviceName_FueledStove>wood-fired stove</GrechkaWorldIntegration_DeviceName_FueledStove>
+  <GrechkaWorldIntegration_DeviceName_VFE_TableStoveLarge>large stove</GrechkaWorldIntegration_DeviceName_VFE_TableStoveLarge>
 </LanguageData>

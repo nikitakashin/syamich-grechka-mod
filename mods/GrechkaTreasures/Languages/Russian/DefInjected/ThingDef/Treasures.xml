@@ -105,7 +105,7 @@
   <GrechkaTreasures_DiamondObelisk.label>алмазный обелиск</GrechkaTreasures_DiamondObelisk.label>
   <GrechkaTreasures_DiamondObelisk.description>Высокий обелиск из огранённых камней и золота. Роскошный центр сада или сокровищницы.</GrechkaTreasures_DiamondObelisk.description>
   <GrechkaTreasures_DiamondThrone.label>алмазный трон</GrechkaTreasures_DiamondThrone.label>
-  <GrechkaTreasures_DiamondThrone.description>Удобный драгоценный трон с золотым каркасом. Служит креслом у стола и рабочим сиденьем; не требует Royalty.</GrechkaTreasures_DiamondThrone.description>
+  <GrechkaTreasures_DiamondThrone.description>Драгоценный трон с золотым каркасом. С Royalty его можно назначить титулованной пешке, и он засчитывается как великий трон. В обычной игре служит сиденьем.</GrechkaTreasures_DiamondThrone.description>
   <GrechkaTreasures_DiamondTable.label>алмазный стол</GrechkaTreasures_DiamondTable.label>
   <GrechkaTreasures_DiamondTable.description>Роскошный обеденный стол с драгоценной столешницей и золотым узором.</GrechkaTreasures_DiamondTable.description>
   <GrechkaTreasures_DiamondBed.label>алмазная кровать</GrechkaTreasures_DiamondBed.label>
@@ -121,7 +121,7 @@
   <GrechkaTreasures_RubyObelisk.label>рубиновый обелиск</GrechkaTreasures_RubyObelisk.label>
   <GrechkaTreasures_RubyObelisk.description>Высокий обелиск из огранённых камней и золота. Роскошный центр сада или сокровищницы.</GrechkaTreasures_RubyObelisk.description>
   <GrechkaTreasures_RubyThrone.label>рубиновый трон</GrechkaTreasures_RubyThrone.label>
-  <GrechkaTreasures_RubyThrone.description>Удобный драгоценный трон с золотым каркасом. Служит креслом у стола и рабочим сиденьем; не требует Royalty.</GrechkaTreasures_RubyThrone.description>
+  <GrechkaTreasures_RubyThrone.description>Драгоценный трон с золотым каркасом. С Royalty его можно назначить титулованной пешке, и он засчитывается как великий трон. В обычной игре служит сиденьем.</GrechkaTreasures_RubyThrone.description>
   <GrechkaTreasures_RubyTable.label>рубиновый стол</GrechkaTreasures_RubyTable.label>
   <GrechkaTreasures_RubyTable.description>Роскошный обеденный стол с драгоценной столешницей и золотым узором.</GrechkaTreasures_RubyTable.description>
   <GrechkaTreasures_RubyBed.label>рубиновая кровать</GrechkaTreasures_RubyBed.label>
@@ -137,7 +137,7 @@
   <GrechkaTreasures_SapphireObelisk.label>сапфировый обелиск</GrechkaTreasures_SapphireObelisk.label>
   <GrechkaTreasures_SapphireObelisk.description>Высокий обелиск из огранённых камней и золота. Роскошный центр сада или сокровищницы.</GrechkaTreasures_SapphireObelisk.description>
   <GrechkaTreasures_SapphireThrone.label>сапфировый трон</GrechkaTreasures_SapphireThrone.label>
-  <GrechkaTreasures_SapphireThrone.description>Удобный драгоценный трон с золотым каркасом. Служит креслом у стола и рабочим сиденьем; не требует Royalty.</GrechkaTreasures_SapphireThrone.description>
+  <GrechkaTreasures_SapphireThrone.description>Драгоценный трон с золотым каркасом. С Royalty его можно назначить титулованной пешке, и он засчитывается как великий трон. В обычной игре служит сиденьем.</GrechkaTreasures_SapphireThrone.description>
   <GrechkaTreasures_SapphireTable.label>сапфировый стол</GrechkaTreasures_SapphireTable.label>
   <GrechkaTreasures_SapphireTable.description>Роскошный обеденный стол с драгоценной столешницей и золотым узором.</GrechkaTreasures_SapphireTable.description>
   <GrechkaTreasures_SapphireBed.label>сапфировая кровать</GrechkaTreasures_SapphireBed.label>
@@ -153,7 +153,7 @@
   <GrechkaTreasures_EmeraldObelisk.label>изумрудный обелиск</GrechkaTreasures_EmeraldObelisk.label>
   <GrechkaTreasures_EmeraldObelisk.description>Высокий обелиск из огранённых камней и золота. Роскошный центр сада или сокровищницы.</GrechkaTreasures_EmeraldObelisk.description>
   <GrechkaTreasures_EmeraldThrone.label>изумрудный трон</GrechkaTreasures_EmeraldThrone.label>
-  <GrechkaTreasures_EmeraldThrone.description>Удобный драгоценный трон с золотым каркасом. Служит креслом у стола и рабочим сиденьем; не требует Royalty.</GrechkaTreasures_EmeraldThrone.description>
+  <GrechkaTreasures_EmeraldThrone.description>Драгоценный трон с золотым каркасом. С Royalty его можно назначить титулованной пешке, и он засчитывается как великий трон. В обычной игре служит сиденьем.</GrechkaTreasures_EmeraldThrone.description>
   <GrechkaTreasures_EmeraldTable.label>изумрудный стол</GrechkaTreasures_EmeraldTable.label>
   <GrechkaTreasures_EmeraldTable.description>Роскошный обеденный стол с драгоценной столешницей и золотым узором.</GrechkaTreasures_EmeraldTable.description>
   <GrechkaTreasures_EmeraldBed.label>изумрудная кровать</GrechkaTreasures_EmeraldBed.label>
@@ -169,7 +169,7 @@
   <GrechkaTreasures_AmethystObelisk.label>аметистовый обелиск</GrechkaTreasures_AmethystObelisk.label>
   <GrechkaTreasures_AmethystObelisk.description>Высокий обелиск из огранённых камней и золота. Роскошный центр сада или сокровищницы.</GrechkaTreasures_AmethystObelisk.description>
   <GrechkaTreasures_AmethystThrone.label>аметистовый трон</GrechkaTreasures_AmethystThrone.label>
-  <GrechkaTreasures_AmethystThrone.description>Удобный драгоценный трон с золотым каркасом. Служит креслом у стола и рабочим сиденьем; не требует Royalty.</GrechkaTreasures_AmethystThrone.description>
+  <GrechkaTreasures_AmethystThrone.description>Драгоценный трон с золотым каркасом. С Royalty его можно назначить титулованной пешке, и он засчитывается как великий трон. В обычной игре служит сиденьем.</GrechkaTreasures_AmethystThrone.description>
   <GrechkaTreasures_AmethystTable.label>аметистовый стол</GrechkaTreasures_AmethystTable.label>
   <GrechkaTreasures_AmethystTable.description>Роскошный обеденный стол с драгоценной столешницей и золотым узором.</GrechkaTreasures_AmethystTable.description>
   <GrechkaTreasures_AmethystBed.label>аметистовая кровать</GrechkaTreasures_AmethystBed.label>
@@ -185,7 +185,7 @@
   <GrechkaTreasures_TopazObelisk.label>топазовый обелиск</GrechkaTreasures_TopazObelisk.label>
   <GrechkaTreasures_TopazObelisk.description>Высокий обелиск из огранённых камней и золота. Роскошный центр сада или сокровищницы.</GrechkaTreasures_TopazObelisk.description>
   <GrechkaTreasures_TopazThrone.label>топазовый трон</GrechkaTreasures_TopazThrone.label>
-  <GrechkaTreasures_TopazThrone.description>Удобный драгоценный трон с золотым каркасом. Служит креслом у стола и рабочим сиденьем; не требует Royalty.</GrechkaTreasures_TopazThrone.description>
+  <GrechkaTreasures_TopazThrone.description>Драгоценный трон с золотым каркасом. С Royalty его можно назначить титулованной пешке, и он засчитывается как великий трон. В обычной игре служит сиденьем.</GrechkaTreasures_TopazThrone.description>
   <GrechkaTreasures_TopazTable.label>топазовый стол</GrechkaTreasures_TopazTable.label>
   <GrechkaTreasures_TopazTable.description>Роскошный обеденный стол с драгоценной столешницей и золотым узором.</GrechkaTreasures_TopazTable.description>
   <GrechkaTreasures_TopazBed.label>топазовая кровать</GrechkaTreasures_TopazBed.label>

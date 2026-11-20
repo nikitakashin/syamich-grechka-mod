@@ -11,7 +11,7 @@ namespace Grechka.Storage
         {
             if (!controller.Online()) return StorageText.Get("GrechkaStorage_Text119");
             if (controller.HasRecovery) return StorageText.Get("GrechkaStorage_Text120");
-            List<StorageDisk> disks = controller.ActiveDisks();
+            List<StorageDisk> disks = controller.ActiveDisks().Where(d => !d.IntakePaused).ToList();
             if (disks.Count < 2) return StorageText.Get("GrechkaStorage_Text121");
             foreach (StorageDisk disk in disks) disk.SettleRot();
             var targets = disks.Select(d => new DiskPlanTarget { Id = d.thingIDNumber, Capacity = d.Capacity, Frozen = d.Frozen }).ToList();

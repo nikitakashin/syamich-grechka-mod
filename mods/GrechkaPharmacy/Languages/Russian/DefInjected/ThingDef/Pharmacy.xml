@@ -48,10 +48,10 @@
   <GrechkaPharmacy_YouthSerumT5_Item.description>Уменьшает биологический возраст человека на пять лет, но не ниже 25 лет. Хронологический возраст сохраняется. На более молодых пациентов не действует.</GrechkaPharmacy_YouthSerumT5_Item.description>
   <GrechkaPharmacy_YouthSerumT5_Item.ingestible.ingestCommandString>Применить {0}</GrechkaPharmacy_YouthSerumT5_Item.ingestible.ingestCommandString>
   <GrechkaPharmacy_YouthSerumT5_Item.ingestible.ingestReportString>Применяет {0}.</GrechkaPharmacy_YouthSerumT5_Item.ingestible.ingestReportString>
-  <GrechkaPharmacy_ReactorT3_Building.label>фармреактор T3</GrechkaPharmacy_ReactorT3_Building.label>
+  <GrechkaPharmacy_ReactorT3_Building.label>меха-фармреактор (T3)</GrechkaPharmacy_ReactorT3_Building.label>
   <GrechkaPharmacy_ReactorT3_Building.description>Производит препараты до T3. Требует работника и питание. Скорость работы ×5.</GrechkaPharmacy_ReactorT3_Building.description>
-  <GrechkaPharmacy_ReactorT4_Building.label>фармреактор T4</GrechkaPharmacy_ReactorT4_Building.label>
+  <GrechkaPharmacy_ReactorT4_Building.label>архо-фармреактор (T4)</GrechkaPharmacy_ReactorT4_Building.label>
   <GrechkaPharmacy_ReactorT4_Building.description>Производит препараты до T4. Требует работника и питание. Скорость работы ×12.</GrechkaPharmacy_ReactorT4_Building.description>
-  <GrechkaPharmacy_ReactorT5_Building.label>фармреактор T5</GrechkaPharmacy_ReactorT5_Building.label>
+  <GrechkaPharmacy_ReactorT5_Building.label>гречневый фармреактор (T5)</GrechkaPharmacy_ReactorT5_Building.label>
   <GrechkaPharmacy_ReactorT5_Building.description>Производит препараты до T5. Требует работника и питание. Скорость работы ×25.</GrechkaPharmacy_ReactorT5_Building.description>
 </LanguageData>

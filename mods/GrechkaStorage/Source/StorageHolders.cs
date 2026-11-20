@@ -65,6 +65,7 @@ namespace Grechka.Storage
 
     public sealed class Building_DiskRack : Building, IThingHolder
     {
+        IThingHolder IThingHolder.ParentHolder => Spawned ? Map : ParentHolder;
         public const int Slots = 10;
         private readonly Graphic[] stateGraphics = new Graphic[3];
         public override Graphic Graphic
@@ -112,7 +113,7 @@ namespace Grechka.Storage
             if (!disks.Contains(disk)) return false;
             disk.SettleRot();
             bool moved = disks.TryTransferToContainer(disk, destination, false);
-            if (moved) { removeRequests.Remove(disk); RefreshDiskGraphic(); }
+            if (moved) { disk.IntakePaused = false; removeRequests.Remove(disk); RefreshDiskGraphic(); }
             return moved;
         }
         public void RequestInstall(StorageDisk disk) { if (disk != null && !installRequests.Contains(disk)) installRequests.Add(disk); }
@@ -160,8 +161,9 @@ namespace Grechka.Storage
         }
     }
 
-    public sealed class Building_StorageController : Building, IThingHolder
+    public sealed partial class Building_StorageController : Building, IThingHolder
     {
+        IThingHolder IThingHolder.ParentHolder => Spawned ? Map : ParentHolder;
         public const int OutputStacks = 32;
         private ThingOwner<Thing> root;
         private StorageBuffer output;
@@ -189,6 +191,7 @@ namespace Grechka.Storage
             Scribe_Deep.Look(ref coldRecovery, "grechkaColdRecovery", this);
             Scribe_Collections.Look(ref orders, "grechkaHaulingOrders", LookMode.Deep);
             Scribe_Values.Look(ref nextOrder, "grechkaNextOrder", 1);
+            ExposeStorageSettings();
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
                 if (output == null) output = new StorageBuffer(this);
@@ -246,15 +249,20 @@ namespace Grechka.Storage
                 if (carried is StorageDisk disk && Racks().Contains(order.Rack) && order.Rack.Install(disk)) moved = 1;
             }
             else if (order.Kind == StorageOrderKind.Import)
-            {
-                bool food = (carried as ThingWithComps)?.GetComp<CompRottable>() != null;
-                foreach (StorageDisk disk in ActiveDisks().OrderBy(d => d.Frozen == food ? 0 : 1).ThenBy(d => d.Capacity))
-                {
-                    if (carried.Destroyed || carried.holdingOwner == null || moved >= count) break;
-                    moved += disk.Accept(carried, count - moved);
-                }
-            }
+                moved = AcceptInput(carried, count);
             order.Count -= moved; Prune(); return moved;
+        }
+        internal int AcceptInput(Thing carried, int count)
+        {
+            if (carried == null || !Online()) return 0;
+            int moved = 0;
+            bool food = (carried as ThingWithComps)?.GetComp<CompRottable>() != null;
+            foreach (StorageDisk disk in ActiveDisks().OrderBy(d => d.Frozen == food ? 0 : 1).ThenBy(d => d.Capacity))
+            {
+                if (carried.Destroyed || carried.holdingOwner == null || moved >= count) break;
+                moved += disk.Accept(carried, count - moved);
+            }
+            return moved;
         }
         public int Withdraw(StorageDisk disk, Thing thing, int requested)
         {

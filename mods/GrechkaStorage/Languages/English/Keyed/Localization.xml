@@ -171,4 +171,10 @@ Normal spoilage at ambient temperature</GrechkaStorage_Text154>
   <GrechkaStorage_Text160>The item is unsuitable for this recipe</GrechkaStorage_Text160>
   <GrechkaStorage_Text161>The selected item is no longer available on disks</GrechkaStorage_Text161>
   <GrechkaStorage_Text162>The selected stack quantity changed. Cancel the order and select the item again.</GrechkaStorage_Text162>
+  <GrechkaStorage_RegularTab>Regular disks</GrechkaStorage_RegularTab>
+  <GrechkaStorage_FrozenTab>Freezer disks</GrechkaStorage_FrozenTab>
+  <GrechkaStorage_Unload>Unload items</GrechkaStorage_Unload>
+  <GrechkaStorage_CancelUnload>Cancel unloading</GrechkaStorage_CancelUnload>
+  <GrechkaStorage_ResumeIntake>Resume intake</GrechkaStorage_ResumeIntake>
+  <GrechkaStorage_UnloadTip>Haulers take the contents to a stockpile, or drop them by the rack if no space is available. Intake stays paused until you resume it.</GrechkaStorage_UnloadTip>
 </LanguageData>

@@ -18,6 +18,12 @@
     <reportString>извлекает диск из TargetA.</reportString>
     <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
   </JobDef>
+  <JobDef>
+    <defName>Grechka_UnloadDisk</defName>
+    <driverClass>Grechka.Storage.JobDriver_UnloadDisk</driverClass>
+    <reportString>разгружает диск в TargetA.</reportString>
+    <allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+  </JobDef>
   <WorkGiverDef>
     <defName>Grechka_StorageHauling</defName>
     <label>переноска для Storage</label>

@@ -1,5 +1,41 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Defs>
+  <ThingDef Name="GrechkaTreasures_JeweledThroneBase" ParentName="ArtableFurnitureBase" Abstract="True">
+    <thingClass MayRequire="Ludeon.RimWorld.Royalty">Building_Throne</thingClass>
+    <defaultPlacingRot MayRequire="Ludeon.RimWorld.Royalty">South</defaultPlacingRot>
+    <hasInteractionCell MayRequire="Ludeon.RimWorld.Royalty">true</hasInteractionCell>
+    <socialPropernessMatters MayRequire="Ludeon.RimWorld.Royalty">true</socialPropernessMatters>
+    <drawGUIOverlay MayRequire="Ludeon.RimWorld.Royalty">true</drawGUIOverlay>
+    <ritualFocus MayRequire="Ludeon.RimWorld.Royalty">
+      <spectateDistance>2</spectateDistance>
+      <allowedSpectateSides>Up</allowedSpectateSides>
+    </ritualFocus>
+    <placeWorkers>
+      <li MayRequire="Ludeon.RimWorld.Royalty">PlaceWorker_RitualFocus</li>
+    </placeWorkers>
+    <statBases>
+      <MeditationFocusStrength MayRequire="Ludeon.RimWorld.Royalty">0.15</MeditationFocusStrength>
+    </statBases>
+    <comps>
+      <li Class="CompProperties_AssignableToPawn" MayRequire="Ludeon.RimWorld.Royalty">
+        <drawAssignmentOverlay>true</drawAssignmentOverlay>
+        <compClass>CompAssignableToPawn_Throne</compClass>
+        <noAssignablePawnsDesc>Throne ownership requires a person with a royal title.</noAssignablePawnsDesc>
+      </li>
+      <li Class="CompProperties_MeditationFocus" MayRequire="Ludeon.RimWorld.Royalty">
+        <statDef>MeditationFocusStrength</statDef>
+        <focusTypes><li>Dignified</li></focusTypes>
+        <offsets>
+          <li Class="FocusStrengthOffset_ThroneSatisfiesRequirements"><offset>0.08</offset></li>
+          <li Class="FocusStrengthOffset_RoomImpressiveness">
+            <curve><points>
+              <li>(0,-0.05)</li><li>(30,0)</li><li>(60,0.04)</li><li>(100,0.08)</li><li>(170,0.10)</li>
+            </points></curve>
+          </li>
+        </offsets>
+      </li>
+    </comps>
+  </ThingDef>
   <DesignatorDropdownGroupDef>
     <defName>GrechkaTreasures_ObeliskGroup</defName>
     <label>драгоценные обелиски</label>
@@ -135,10 +171,10 @@
     <stuffCategories Inherit="False" />
     <costStuffCount>0</costStuffCount>
   </ThingDef>
-  <ThingDef ParentName="ArtableFurnitureBase">
+  <ThingDef ParentName="GrechkaTreasures_JeweledThroneBase">
     <defName>GrechkaTreasures_DiamondThrone</defName>
     <label>алмазный трон</label>
-    <description>Удобный драгоценный трон с золотым каркасом. Служит креслом у стола и рабочим сиденьем; не требует Royalty.</description>
+    <description>Драгоценный трон с золотым каркасом. С Royalty его можно назначить титулованной пешке, и он засчитывается как великий трон. В обычной игре служит сиденьем.</description>
     <graphicData>
       <texPath>Buildings/DiamondThrone</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -483,10 +519,10 @@
     <stuffCategories Inherit="False" />
     <costStuffCount>0</costStuffCount>
   </ThingDef>
-  <ThingDef ParentName="ArtableFurnitureBase">
+  <ThingDef ParentName="GrechkaTreasures_JeweledThroneBase">
     <defName>GrechkaTreasures_RubyThrone</defName>
     <label>рубиновый трон</label>
-    <description>Удобный драгоценный трон с золотым каркасом. Служит креслом у стола и рабочим сиденьем; не требует Royalty.</description>
+    <description>Драгоценный трон с золотым каркасом. С Royalty его можно назначить титулованной пешке, и он засчитывается как великий трон. В обычной игре служит сиденьем.</description>
     <graphicData>
       <texPath>Buildings/RubyThrone</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -831,10 +867,10 @@
     <stuffCategories Inherit="False" />
     <costStuffCount>0</costStuffCount>
   </ThingDef>
-  <ThingDef ParentName="ArtableFurnitureBase">
+  <ThingDef ParentName="GrechkaTreasures_JeweledThroneBase">
     <defName>GrechkaTreasures_SapphireThrone</defName>
     <label>сапфировый трон</label>
-    <description>Удобный драгоценный трон с золотым каркасом. Служит креслом у стола и рабочим сиденьем; не требует Royalty.</description>
+    <description>Драгоценный трон с золотым каркасом. С Royalty его можно назначить титулованной пешке, и он засчитывается как великий трон. В обычной игре служит сиденьем.</description>
     <graphicData>
       <texPath>Buildings/SapphireThrone</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1179,10 +1215,10 @@
     <stuffCategories Inherit="False" />
     <costStuffCount>0</costStuffCount>
   </ThingDef>
-  <ThingDef ParentName="ArtableFurnitureBase">
+  <ThingDef ParentName="GrechkaTreasures_JeweledThroneBase">
     <defName>GrechkaTreasures_EmeraldThrone</defName>
     <label>изумрудный трон</label>
-    <description>Удобный драгоценный трон с золотым каркасом. Служит креслом у стола и рабочим сиденьем; не требует Royalty.</description>
+    <description>Драгоценный трон с золотым каркасом. С Royalty его можно назначить титулованной пешке, и он засчитывается как великий трон. В обычной игре служит сиденьем.</description>
     <graphicData>
       <texPath>Buildings/EmeraldThrone</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1527,10 +1563,10 @@
     <stuffCategories Inherit="False" />
     <costStuffCount>0</costStuffCount>
   </ThingDef>
-  <ThingDef ParentName="ArtableFurnitureBase">
+  <ThingDef ParentName="GrechkaTreasures_JeweledThroneBase">
     <defName>GrechkaTreasures_AmethystThrone</defName>
     <label>аметистовый трон</label>
-    <description>Удобный драгоценный трон с золотым каркасом. Служит креслом у стола и рабочим сиденьем; не требует Royalty.</description>
+    <description>Драгоценный трон с золотым каркасом. С Royalty его можно назначить титулованной пешке, и он засчитывается как великий трон. В обычной игре служит сиденьем.</description>
     <graphicData>
       <texPath>Buildings/AmethystThrone</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -1875,10 +1911,10 @@
     <stuffCategories Inherit="False" />
     <costStuffCount>0</costStuffCount>
   </ThingDef>
-  <ThingDef ParentName="ArtableFurnitureBase">
+  <ThingDef ParentName="GrechkaTreasures_JeweledThroneBase">
     <defName>GrechkaTreasures_TopazThrone</defName>
     <label>топазовый трон</label>
-    <description>Удобный драгоценный трон с золотым каркасом. Служит креслом у стола и рабочим сиденьем; не требует Royalty.</description>
+    <description>Драгоценный трон с золотым каркасом. С Royalty его можно назначить титулованной пешке, и он засчитывается как великий трон. В обычной игре служит сиденьем.</description>
     <graphicData>
       <texPath>Buildings/TopazThrone</texPath>
       <graphicClass>Graphic_Single</graphicClass>

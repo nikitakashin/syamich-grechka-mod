@@ -51,6 +51,8 @@ Check(MatterWorkContract.EffectiveWorkerMultiplier(matter, 60) == 1
 Check(typeof(CompPowerPlant).IsAssignableFrom(typeof(CompPowerPlantLateSolar)), "Late solar remains a native power plant");
 Check(AccessTools.Field(typeof(HediffComp_Disappears), "ticksToDisappear") != null,
     "Emitter expiry uses the real installed hediff lifetime field");
+EmitterChecks.Run(game);
+RoomCoolerChecks.Run(game, args.Length > 0 ? args[0] : Directory.GetCurrentDirectory());
 Console.WriteLine("Isolated Industry native checks complete; no game session was launched.");
 
 harmony.Patch(AccessTools.Method(typeof(ThingMaker), nameof(ThingMaker.MakeThing)),
@@ -247,6 +249,7 @@ foreach (var pair in new[] { ("GrechkaIndustry", "AssemblyBenchT1"), ("GrechkaIn
     string artRoot = Path.Combine(artworkRoot, "assets", module, "Textures");
     string packaged = Path.Combine(moduleRoot, "Textures");
     string graphicPath = $"Buildings/Map/{family}/{family}";
+    if (family == "AssemblyBenchT1") graphicPath += "_Orthographic";
     var node = Directory.EnumerateFiles(Path.Combine(moduleRoot, "Defs"), "*.xml", SearchOption.AllDirectories)
         .SelectMany(file => System.Xml.Linq.XDocument.Load(file).Root!.Elements())
         .Single(def => (string)def.Element("graphicData")?.Element("texPath") == graphicPath);

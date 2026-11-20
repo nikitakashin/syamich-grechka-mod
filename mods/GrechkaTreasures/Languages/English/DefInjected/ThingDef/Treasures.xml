@@ -129,7 +129,7 @@
   <GrechkaTreasures_DiamondObelisk.label>diamond obelisk</GrechkaTreasures_DiamondObelisk.label>
   <GrechkaTreasures_DiamondObelisk.description>A tall obelisk of cut gemstones and gold, designed as the centerpiece of a garden or treasury.</GrechkaTreasures_DiamondObelisk.description>
   <GrechkaTreasures_DiamondThrone.label>diamond throne</GrechkaTreasures_DiamondThrone.label>
-  <GrechkaTreasures_DiamondThrone.description>A comfortable jeweled throne on a golden frame. Functions as a dining or work chair without requiring Royalty.</GrechkaTreasures_DiamondThrone.description>
+  <GrechkaTreasures_DiamondThrone.description>A jeweled throne on a golden frame. With Royalty, it can be assigned to a titled pawn and counts as a grand throne. Otherwise, it serves as a chair.</GrechkaTreasures_DiamondThrone.description>
   <GrechkaTreasures_DiamondTable.label>diamond table</GrechkaTreasures_DiamondTable.label>
   <GrechkaTreasures_DiamondTable.description>An opulent dining table with a gemstone surface and golden tracery.</GrechkaTreasures_DiamondTable.description>
   <GrechkaTreasures_DiamondBed.label>diamond bed</GrechkaTreasures_DiamondBed.label>
@@ -145,7 +145,7 @@
   <GrechkaTreasures_RubyObelisk.label>ruby obelisk</GrechkaTreasures_RubyObelisk.label>
   <GrechkaTreasures_RubyObelisk.description>A tall obelisk of cut gemstones and gold, designed as the centerpiece of a garden or treasury.</GrechkaTreasures_RubyObelisk.description>
   <GrechkaTreasures_RubyThrone.label>ruby throne</GrechkaTreasures_RubyThrone.label>
-  <GrechkaTreasures_RubyThrone.description>A comfortable jeweled throne on a golden frame. Functions as a dining or work chair without requiring Royalty.</GrechkaTreasures_RubyThrone.description>
+  <GrechkaTreasures_RubyThrone.description>A jeweled throne on a golden frame. With Royalty, it can be assigned to a titled pawn and counts as a grand throne. Otherwise, it serves as a chair.</GrechkaTreasures_RubyThrone.description>
   <GrechkaTreasures_RubyTable.label>ruby table</GrechkaTreasures_RubyTable.label>
   <GrechkaTreasures_RubyTable.description>An opulent dining table with a gemstone surface and golden tracery.</GrechkaTreasures_RubyTable.description>
   <GrechkaTreasures_RubyBed.label>ruby bed</GrechkaTreasures_RubyBed.label>
@@ -161,7 +161,7 @@
   <GrechkaTreasures_SapphireObelisk.label>sapphire obelisk</GrechkaTreasures_SapphireObelisk.label>
   <GrechkaTreasures_SapphireObelisk.description>A tall obelisk of cut gemstones and gold, designed as the centerpiece of a garden or treasury.</GrechkaTreasures_SapphireObelisk.description>
   <GrechkaTreasures_SapphireThrone.label>sapphire throne</GrechkaTreasures_SapphireThrone.label>
-  <GrechkaTreasures_SapphireThrone.description>A comfortable jeweled throne on a golden frame. Functions as a dining or work chair without requiring Royalty.</GrechkaTreasures_SapphireThrone.description>
+  <GrechkaTreasures_SapphireThrone.description>A jeweled throne on a golden frame. With Royalty, it can be assigned to a titled pawn and counts as a grand throne. Otherwise, it serves as a chair.</GrechkaTreasures_SapphireThrone.description>
   <GrechkaTreasures_SapphireTable.label>sapphire table</GrechkaTreasures_SapphireTable.label>
   <GrechkaTreasures_SapphireTable.description>An opulent dining table with a gemstone surface and golden tracery.</GrechkaTreasures_SapphireTable.description>
   <GrechkaTreasures_SapphireBed.label>sapphire bed</GrechkaTreasures_SapphireBed.label>
@@ -177,7 +177,7 @@
   <GrechkaTreasures_EmeraldObelisk.label>emerald obelisk</GrechkaTreasures_EmeraldObelisk.label>
   <GrechkaTreasures_EmeraldObelisk.description>A tall obelisk of cut gemstones and gold, designed as the centerpiece of a garden or treasury.</GrechkaTreasures_EmeraldObelisk.description>
   <GrechkaTreasures_EmeraldThrone.label>emerald throne</GrechkaTreasures_EmeraldThrone.label>
-  <GrechkaTreasures_EmeraldThrone.description>A comfortable jeweled throne on a golden frame. Functions as a dining or work chair without requiring Royalty.</GrechkaTreasures_EmeraldThrone.description>
+  <GrechkaTreasures_EmeraldThrone.description>A jeweled throne on a golden frame. With Royalty, it can be assigned to a titled pawn and counts as a grand throne. Otherwise, it serves as a chair.</GrechkaTreasures_EmeraldThrone.description>
   <GrechkaTreasures_EmeraldTable.label>emerald table</GrechkaTreasures_EmeraldTable.label>
   <GrechkaTreasures_EmeraldTable.description>An opulent dining table with a gemstone surface and golden tracery.</GrechkaTreasures_EmeraldTable.description>
   <GrechkaTreasures_EmeraldBed.label>emerald bed</GrechkaTreasures_EmeraldBed.label>
@@ -193,7 +193,7 @@
   <GrechkaTreasures_AmethystObelisk.label>amethyst obelisk</GrechkaTreasures_AmethystObelisk.label>
   <GrechkaTreasures_AmethystObelisk.description>A tall obelisk of cut gemstones and gold, designed as the centerpiece of a garden or treasury.</GrechkaTreasures_AmethystObelisk.description>
   <GrechkaTreasures_AmethystThrone.label>amethyst throne</GrechkaTreasures_AmethystThrone.label>
-  <GrechkaTreasures_AmethystThrone.description>A comfortable jeweled throne on a golden frame. Functions as a dining or work chair without requiring Royalty.</GrechkaTreasures_AmethystThrone.description>
+  <GrechkaTreasures_AmethystThrone.description>A jeweled throne on a golden frame. With Royalty, it can be assigned to a titled pawn and counts as a grand throne. Otherwise, it serves as a chair.</GrechkaTreasures_AmethystThrone.description>
   <GrechkaTreasures_AmethystTable.label>amethyst table</GrechkaTreasures_AmethystTable.label>
   <GrechkaTreasures_AmethystTable.description>An opulent dining table with a gemstone surface and golden tracery.</GrechkaTreasures_AmethystTable.description>
   <GrechkaTreasures_AmethystBed.label>amethyst bed</GrechkaTreasures_AmethystBed.label>
@@ -209,7 +209,7 @@
   <GrechkaTreasures_TopazObelisk.label>topaz obelisk</GrechkaTreasures_TopazObelisk.label>
   <GrechkaTreasures_TopazObelisk.description>A tall obelisk of cut gemstones and gold, designed as the centerpiece of a garden or treasury.</GrechkaTreasures_TopazObelisk.description>
   <GrechkaTreasures_TopazThrone.label>topaz throne</GrechkaTreasures_TopazThrone.label>
-  <GrechkaTreasures_TopazThrone.description>A comfortable jeweled throne on a golden frame. Functions as a dining or work chair without requiring Royalty.</GrechkaTreasures_TopazThrone.description>
+  <GrechkaTreasures_TopazThrone.description>A jeweled throne on a golden frame. With Royalty, it can be assigned to a titled pawn and counts as a grand throne. Otherwise, it serves as a chair.</GrechkaTreasures_TopazThrone.description>
   <GrechkaTreasures_TopazTable.label>topaz table</GrechkaTreasures_TopazTable.label>
   <GrechkaTreasures_TopazTable.description>An opulent dining table with a gemstone surface and golden tracery.</GrechkaTreasures_TopazTable.description>
   <GrechkaTreasures_TopazBed.label>topaz bed</GrechkaTreasures_TopazBed.label>

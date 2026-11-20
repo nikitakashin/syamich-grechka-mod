@@ -2,9 +2,9 @@
 <Defs>
   <RecipeDef>
     <defName>Grechka_UpgradeMatterRecyclerT5</defName>
-    <label>улучшить установку материи до T5</label>
-    <description>улучшить установку материи до T5. Все рецепты доступны без исследований.</description>
-    <jobString>улучшить установку материи до T5.</jobString>
+    <label>улучшить: гречневая установка материи (T5)</label>
+    <description>улучшить: гречневая установка материи (T5). Все рецепты доступны без исследований.</description>
+    <jobString>улучшить: гречневая установка материи (T5).</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <workSkill>Crafting</workSkill>
     <workAmount>20000</workAmount>
@@ -53,9 +53,9 @@
   </RecipeDef>
   <RecipeDef>
     <defName>Grechka_UpgradeMatterSynthesizerT5</defName>
-    <label>улучшить установку материи до T5</label>
-    <description>улучшить установку материи до T5. Все рецепты доступны без исследований.</description>
-    <jobString>улучшить установку материи до T5.</jobString>
+    <label>улучшить: гречневая установка материи (T5)</label>
+    <description>улучшить: гречневая установка материи (T5). Все рецепты доступны без исследований.</description>
+    <jobString>улучшить: гречневая установка материи (T5).</jobString>
     <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
     <workSkill>Crafting</workSkill>
     <workAmount>20000</workAmount>

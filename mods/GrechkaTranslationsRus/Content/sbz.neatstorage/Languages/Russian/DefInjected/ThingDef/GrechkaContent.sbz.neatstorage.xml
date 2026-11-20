@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <sbz_Drum.description>Бочка вмещает до 6 стопок разных предметов.</sbz_Drum.description>
+  <sbz_Drum.label>бочка</sbz_Drum.label>
+  <sbz_HalfPallet.description>Поддон вмещает до 12 стопок разных предметов.</sbz_HalfPallet.description>
+  <sbz_HalfPallet.label>половинный поддон</sbz_HalfPallet.label>
+  <sbz_RoundPedestal.description>Круглый пьедестал для показа одного предмета. Поселенцы могут любоваться экспонатом как произведением искусства.</sbz_RoundPedestal.description>
+  <sbz_RoundPedestal.label>круглый пьедестал</sbz_RoundPedestal.label>
+  <sbz_Safe.description>Сейф вмещает до 6 стопок разных предметов.</sbz_Safe.description>
+  <sbz_Safe.label>сейф</sbz_Safe.label>
+  <sbz_TallCrate.description>Высокий ящик вмещает до 24 стопок разных предметов.</sbz_TallCrate.description>
+  <sbz_TallCrate.label>высокий ящик</sbz_TallCrate.label>
+</LanguageData>

@@ -2,7 +2,7 @@
 <Defs>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedMechaponicsT3_Item</defName>
-    <label>упакованный мехапоника T3</label>
+    <label>упакованная мехапоника (T3)</label>
     <description>Оборудование для перевозки, торговли и повторной установки.</description>
     <modExtensions>
       <li Class="Grechka.Industry.PackedBuildingProperties">
@@ -12,7 +12,7 @@
   </ThingDef>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedMechaponicsT4_Item</defName>
-    <label>упакованный мехапоника T4</label>
+    <label>упакованная архопоника (T4)</label>
     <description>Оборудование для перевозки, торговли и повторной установки.</description>
     <modExtensions>
       <li Class="Grechka.Industry.PackedBuildingProperties">
@@ -22,7 +22,7 @@
   </ThingDef>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedMechaponicsT5_Item</defName>
-    <label>упакованный мехапоника T5</label>
+    <label>упакованная гречкапоника (T5)</label>
     <description>Оборудование для перевозки, торговли и повторной установки.</description>
     <modExtensions>
       <li Class="Grechka.Industry.PackedBuildingProperties">
@@ -32,7 +32,7 @@
   </ThingDef>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedIonizerT3_Item</defName>
-    <label>упакованный комнатный ионизатор T3</label>
+    <label>упакованный меха-комнатный ионизатор (T3)</label>
     <description>Оборудование для перевозки, торговли и повторной установки.</description>
     <modExtensions>
       <li Class="Grechka.Industry.PackedBuildingProperties">
@@ -42,7 +42,7 @@
   </ThingDef>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedIonizerT4_Item</defName>
-    <label>упакованный комнатный ионизатор T4</label>
+    <label>упакованный архо-комнатный ионизатор (T4)</label>
     <description>Оборудование для перевозки, торговли и повторной установки.</description>
     <modExtensions>
       <li Class="Grechka.Industry.PackedBuildingProperties">
@@ -52,7 +52,7 @@
   </ThingDef>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedIonizerT5_Item</defName>
-    <label>упакованный комнатный ионизатор T5</label>
+    <label>упакованный гречневый комнатный ионизатор (T5)</label>
     <description>Оборудование для перевозки, торговли и повторной установки.</description>
     <modExtensions>
       <li Class="Grechka.Industry.PackedBuildingProperties">
@@ -72,7 +72,7 @@
   </ThingDef>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedMechaniteExtractorT4_Item</defName>
-    <label>упакованный экстрактор механитов T4</label>
+    <label>упакованный архо-экстрактор механитов (T4)</label>
     <description>Оборудование для перевозки, торговли и повторной установки.</description>
     <modExtensions>
       <li Class="Grechka.Industry.PackedBuildingProperties">
@@ -82,7 +82,7 @@
   </ThingDef>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedMechaniteExtractorT5_Item</defName>
-    <label>упакованный экстрактор механитов T5</label>
+    <label>упакованный гречневый экстрактор механитов (T5)</label>
     <description>Оборудование для перевозки, торговли и повторной установки.</description>
     <modExtensions>
       <li Class="Grechka.Industry.PackedBuildingProperties">
@@ -92,7 +92,7 @@
   </ThingDef>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedSuppressionEmitterT4_Item</defName>
-    <label>упакованный облучатель подавления T4</label>
+    <label>упакованный архо-облучатель подавления (T4)</label>
     <description>Оборудование для перевозки, торговли и повторной установки.</description>
     <modExtensions>
       <li Class="Grechka.Industry.PackedBuildingProperties">
@@ -102,7 +102,7 @@
   </ThingDef>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedSuppressionEmitterT5_Item</defName>
-    <label>упакованный облучатель подавления T5</label>
+    <label>упакованный гречневый облучатель подавления (T5)</label>
     <description>Оборудование для перевозки, торговли и повторной установки.</description>
     <modExtensions>
       <li Class="Grechka.Industry.PackedBuildingProperties">
@@ -112,7 +112,7 @@
   </ThingDef>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedAccelerationEmitterT4_Item</defName>
-    <label>упакованный облучатель ускорения T4</label>
+    <label>упакованный архо-облучатель ускорения (T4)</label>
     <description>Оборудование для перевозки, торговли и повторной установки.</description>
     <modExtensions>
       <li Class="Grechka.Industry.PackedBuildingProperties">
@@ -122,7 +122,7 @@
   </ThingDef>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedAccelerationEmitterT5_Item</defName>
-    <label>упакованный облучатель ускорения T5</label>
+    <label>упакованный гречневый облучатель ускорения (T5)</label>
     <description>Оборудование для перевозки, торговли и повторной установки.</description>
     <modExtensions>
       <li Class="Grechka.Industry.PackedBuildingProperties">
@@ -132,7 +132,7 @@
   </ThingDef>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedWellbeingEmitterT4_Item</defName>
-    <label>упакованный облучатель тонизирования T4</label>
+    <label>упакованный архо-облучатель тонизирования (T4)</label>
     <description>Оборудование для перевозки, торговли и повторной установки.</description>
     <modExtensions>
       <li Class="Grechka.Industry.PackedBuildingProperties">
@@ -142,7 +142,7 @@
   </ThingDef>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedWellbeingEmitterT5_Item</defName>
-    <label>упакованный облучатель тонизирования T5</label>
+    <label>упакованный гречневый облучатель тонизирования (T5)</label>
     <description>Оборудование для перевозки, торговли и повторной установки.</description>
     <modExtensions>
       <li Class="Grechka.Industry.PackedBuildingProperties">
@@ -152,7 +152,7 @@
   </ThingDef>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedArchoGeneratorT4_Item</defName>
-    <label>упакованный архо-генератор T4</label>
+    <label>упакованный архо-генератор (T4)</label>
     <description>Оборудование для перевозки, торговли и повторной установки.</description>
     <modExtensions>
       <li Class="Grechka.Industry.PackedBuildingProperties">
@@ -162,7 +162,7 @@
   </ThingDef>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedArchoGeneratorT5_Item</defName>
-    <label>упакованный архо-генератор T5</label>
+    <label>упакованный гречневый генератор (T5)</label>
     <description>Оборудование для перевозки, торговли и повторной установки.</description>
     <modExtensions>
       <li Class="Grechka.Industry.PackedBuildingProperties">
@@ -172,7 +172,7 @@
   </ThingDef>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedMatterRecyclerT4_Item</defName>
-    <label>упакованный генератор материи T4</label>
+    <label>упакованный архо-генератор материи (T4)</label>
     <description>Оборудование для перевозки, торговли и повторной установки.</description>
     <modExtensions>
       <li Class="Grechka.Industry.PackedBuildingProperties">
@@ -182,7 +182,7 @@
   </ThingDef>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedMatterRecyclerT5_Item</defName>
-    <label>упакованный генератор материи T5</label>
+    <label>упакованный гречневый генератор материи (T5)</label>
     <description>Оборудование для перевозки, торговли и повторной установки.</description>
     <modExtensions>
       <li Class="Grechka.Industry.PackedBuildingProperties">
@@ -192,7 +192,7 @@
   </ThingDef>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedMatterSynthesizerT4_Item</defName>
-    <label>упакованный синтезатор материи T4</label>
+    <label>упакованный архо-синтезатор материи (T4)</label>
     <description>Оборудование для перевозки, торговли и повторной установки.</description>
     <modExtensions>
       <li Class="Grechka.Industry.PackedBuildingProperties">
@@ -202,7 +202,7 @@
   </ThingDef>
   <ThingDef ParentName="MinifiedThing">
     <defName>Grechka_PackedMatterSynthesizerT5_Item</defName>
-    <label>упакованный синтезатор материи T5</label>
+    <label>упакованный гречневый синтезатор материи (T5)</label>
     <description>Оборудование для перевозки, торговли и повторной установки.</description>
     <modExtensions>
       <li Class="Grechka.Industry.PackedBuildingProperties">

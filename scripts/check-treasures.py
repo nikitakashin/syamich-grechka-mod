@@ -21,6 +21,9 @@ defs = [node for path in (module / 'Defs').rglob('*.xml') for node in ET.parse(p
 named = [node for node in defs if node.findtext('defName')]
 identities = [(n.tag, n.findtext('defName')) for n in named]
 require(len(identities) == len(set(identities)), 'unique definitions per type')
+jeweler_work = next(n for n in named if n.findtext('defName') == 'GrechkaTreasures_DoBillsJeweler')
+require(jeweler_work.findtext('scanThings') == 'true' and jeweler_work.findtext('directOrderable') == 'true',
+        'the bill scanner must support automatic work and direct orders at the jeweler')
 things = {n.findtext('defName'): n for n in named if n.tag == 'ThingDef'}
 gems = ('Diamond', 'Ruby', 'Sapphire', 'Emerald', 'Amethyst', 'Topaz')
 for gem in gems:

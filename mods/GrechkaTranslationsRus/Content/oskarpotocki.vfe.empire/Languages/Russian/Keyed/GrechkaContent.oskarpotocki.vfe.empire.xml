@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <VFEE.Parade.CalledOffIn>Отмена через {0}</VFEE.Parade.CalledOffIn>
+  <VFEE.Parade.CalledOffOn>Если знать не успеет приземлиться, парад отменят {0}.</VFEE.Parade.CalledOffOn>
+  <VFEE.Parade.EndGame.Ending>Имперский челнок увёз с этой планеты {STELLARCH_nameDef} и всех, кто отправился вместе с {STELLARCH_objective}. Теперь {STELLARCH_pronoun} служит при дворе императора {EMPEROR_nameFull}.\n\nКолония остаётся, и её история продолжается.</VFEE.Parade.EndGame.Ending>
+  <VFEE.Parade.EndGame.Intro>{STELLARCH_nameDef} покидает планету!</VFEE.Parade.EndGame.Intro>
+  <VFEE.Parade.NoblesArriveIn>Знать прибудет через {0}</VFEE.Parade.NoblesArriveIn>
+  <VFEE.Parade.NoblesArriveInDesc>Челнок с аристократами для парада вознесения прибудет через {0}. До этого у колонии есть время подготовиться. Челнок отложит посадку, пока стелларха нет в колонии или пока колонии грозит опасность. Если ожидание продлится сутки, парад отменят.</VFEE.Parade.NoblesArriveInDesc>
+  <VFEE.Parade.NoblesArriveOn>Знать прибудет {0}.</VFEE.Parade.NoblesArriveOn>
+  <VFEE.Parade.NoblesWaiting>Знать ожидает посадки</VFEE.Parade.NoblesWaiting>
+  <VFEE.Parade.NoblesWaitingAwayDesc>Аристократы ждут, пока {STELLARCH_nameDef} вернётся в колонию, чтобы их встретить. Если через {TIME} {STELLARCH_pronoun} всё ещё будет отсутствовать, парад отменят.</VFEE.Parade.NoblesWaitingAwayDesc>
+  <VFEE.Parade.NoblesWaitingThreatDesc>Аристократы ждут, пока колонии перестанет грозить опасность. Если за {TIME} угроза не минует, парад отменят.</VFEE.Parade.NoblesWaitingThreatDesc>
+</LanguageData>

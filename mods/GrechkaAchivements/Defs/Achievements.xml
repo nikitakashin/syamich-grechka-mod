@@ -116,7 +116,7 @@
   <AchievementsExpanded.AchievementDef MayRequire="grechka.drones">
     <defName>GrechkaAchivements_Guard</defName>
     <label>Пятый на страже</label>
-    <description>Установите док дрона-воина T5.</description>
+    <description>Установите гречневый док дрона-воина (T5).</description>
     <tab>GrechkaAchivements_Tab</tab>
     <tracker Class="AchievementsExpanded.BuildingTracker">
       <def>Grechka_WarriorDroneStationT5_Dock</def>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <VFEArch_BridgeConcrete.description>Мост позволяет быстрее пересекать воду и строить в болотистых биомах. Выдерживает тяжёлые постройки и стены любого типа.\n\nДля строительства подходят любые каменные блоки.</VFEArch_BridgeConcrete.description>
+  <VFEArch_BridgeConcrete.label>бетонный мост</VFEArch_BridgeConcrete.label>
+  <VFEArch_CobblestoneFloorConcrete.description>Плитка разного размера напоминает мощение старого замка. Её проще уложить, чем обычную каменную плитку, но она уступает полированному полу по красоте.</VFEArch_CobblestoneFloorConcrete.description>
+  <VFEArch_CobblestoneFloorConcrete.label>бетонная брусчатка</VFEArch_CobblestoneFloorConcrete.label>
+  <VFEArch_PolishedStoneFloorConcrete.description>Нарядная полированная плитка для роскошных интерьеров. Укладывается быстрее изысканных каменных полов, но требует много материала.</VFEArch_PolishedStoneFloorConcrete.description>
+  <VFEArch_PolishedStoneFloorConcrete.label>пол из полированного бетона</VFEArch_PolishedStoneFloorConcrete.label>
+  <VFEArch_SlabsConcrete.description>Большие плиты, уложенные вразнобой, придают помещению вид храма. Красивый пол, требующий много труда и материала.</VFEArch_SlabsConcrete.description>
+  <VFEArch_SlabsConcrete.label>бетонные плиты</VFEArch_SlabsConcrete.label>
+  <VFEArch_WoodPlankFloorConcrete.description>Бетонные планки вместо деревянных. Смотрятся почти по-домашнему, быстро укладываются и не горят.</VFEArch_WoodPlankFloorConcrete.description>
+  <VFEArch_WoodPlankFloorConcrete.label>пол из бетонных планок</VFEArch_WoodPlankFloorConcrete.label>
+  <VFEArch_WoodenParquetConcrete.description>Паркет из сборных бетонных планок. Выглядит изящно и не горит, но его укладка занимает много времени.</VFEArch_WoodenParquetConcrete.description>
+  <VFEArch_WoodenParquetConcrete.label>бетонный паркет</VFEArch_WoodenParquetConcrete.label>
+</LanguageData>

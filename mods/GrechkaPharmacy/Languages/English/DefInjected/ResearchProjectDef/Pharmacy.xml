@@ -4,10 +4,10 @@
   <GrechkaPharmacy_ResearchT1.description>Unlocks tier 1 pharmaceutical production.</GrechkaPharmacy_ResearchT1.description>
   <GrechkaPharmacy_ResearchT2.label>Pharmacy T2</GrechkaPharmacy_ResearchT2.label>
   <GrechkaPharmacy_ResearchT2.description>Unlocks tier 2 pharmaceutical production.</GrechkaPharmacy_ResearchT2.description>
-  <GrechkaPharmacy_ResearchT3.label>Pharmacy T3</GrechkaPharmacy_ResearchT3.label>
+  <GrechkaPharmacy_ResearchT3.label>Mecha pharmacy (T3)</GrechkaPharmacy_ResearchT3.label>
   <GrechkaPharmacy_ResearchT3.description>Unlocks tier 3 pharmaceutical production.</GrechkaPharmacy_ResearchT3.description>
-  <GrechkaPharmacy_ResearchT4.label>Pharmacy T4</GrechkaPharmacy_ResearchT4.label>
+  <GrechkaPharmacy_ResearchT4.label>Archo pharmacy (T4)</GrechkaPharmacy_ResearchT4.label>
   <GrechkaPharmacy_ResearchT4.description>Unlocks tier 4 pharmaceutical production.</GrechkaPharmacy_ResearchT4.description>
-  <GrechkaPharmacy_ResearchT5.label>Pharmacy T5</GrechkaPharmacy_ResearchT5.label>
+  <GrechkaPharmacy_ResearchT5.label>Grechka pharmacy (T5)</GrechkaPharmacy_ResearchT5.label>
   <GrechkaPharmacy_ResearchT5.description>Unlocks tier 5 pharmaceutical production.</GrechkaPharmacy_ResearchT5.description>
 </LanguageData>

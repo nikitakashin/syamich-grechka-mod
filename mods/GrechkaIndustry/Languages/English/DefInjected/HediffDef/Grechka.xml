@@ -4,4 +4,6 @@
   <Grechka_ArchoAcceleration.description>The archotech emitter field temporarily speeds up movement and work. The effect is sustained while the pawn remains within range of an active device.</Grechka_ArchoAcceleration.description>
   <Grechka_ArchoSuppression.label>archotech suppression</Grechka_ArchoSuppression.label>
   <Grechka_ArchoSuppression.description>The archotech emitter field temporarily slows movement and reduces attack accuracy. The effect fades after leaving its range.</Grechka_ArchoSuppression.description>
+  <Grechka_ArchoWellbeing.label>archotech wellbeing</Grechka_ArchoWellbeing.label>
+  <Grechka_ArchoWellbeing.description>The emitter restores rest and food: T4 restores 0.2% of each need's maximum every 60 ticks, T5 restores 0.8%. Only affects the device's faction within range while powered. Multiple emitters do not stack; the strongest applies. Restoration stops outside the field or when power is lost.</Grechka_ArchoWellbeing.description>
 </LanguageData>

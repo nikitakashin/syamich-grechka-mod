@@ -161,35 +161,35 @@
 • кварцевый процессор ×8 + серебряный процессор ×4 (нужен Grechka Storage)
 • диск хранения 4K ×1 (нужен Grechka Storage)
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockStorageT2_Item.description>
-  <Grechka_LuckyBlockT3_Item.label>лаки-блок T3</Grechka_LuckyBlockT3_Item.label>
+  <Grechka_LuckyBlockT3_Item.label>меха-лаки-блок (T3)</Grechka_LuckyBlockT3_Item.label>
   <Grechka_LuckyBlockT3_Item.description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
 • меха-компонент ×6 + механиты ×60 (нужен Grechka Industry)
 • продвинутый компонент ×12 + пласталь ×120
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockT3_Item.description>
-  <Grechka_LuckyBlockResourcesT3_Item.label>лаки-блок «Сырьё» T3</Grechka_LuckyBlockResourcesT3_Item.label>
+  <Grechka_LuckyBlockResourcesT3_Item.label>меха-лаки-блок «Сырьё» (T3)</Grechka_LuckyBlockResourcesT3_Item.label>
   <Grechka_LuckyBlockResourcesT3_Item.description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
 • сталь ×450
 • древесина ×750
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockResourcesT3_Item.description>
-  <Grechka_LuckyBlockIndustryT3_Item.label>лаки-блок «Промышленность» T3</Grechka_LuckyBlockIndustryT3_Item.label>
+  <Grechka_LuckyBlockIndustryT3_Item.label>меха-лаки-блок «Промышленность» (T3)</Grechka_LuckyBlockIndustryT3_Item.label>
   <Grechka_LuckyBlockIndustryT3_Item.description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
 • меха-компонент ×6 + механиты ×60 (нужен Grechka Industry)
 • компонент ×24 + пласталь ×60
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockIndustryT3_Item.description>
-  <Grechka_LuckyBlockEnergyT3_Item.label>лаки-блок «Энергетика» T3</Grechka_LuckyBlockEnergyT3_Item.label>
+  <Grechka_LuckyBlockEnergyT3_Item.label>меха-лаки-блок «Энергетика» (T3)</Grechka_LuckyBlockEnergyT3_Item.label>
   <Grechka_LuckyBlockEnergyT3_Item.description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
 • компонент ×18 + сталь ×360
 • механитный фотоэлемент ×9 (нужен Grechka Industry)
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockEnergyT3_Item.description>
-  <Grechka_LuckyBlockMedicalT3_Item.label>лаки-блок «Медицина» T3</Grechka_LuckyBlockMedicalT3_Item.label>
+  <Grechka_LuckyBlockMedicalT3_Item.label>меха-лаки-блок «Медицина» (T3)</Grechka_LuckyBlockMedicalT3_Item.label>
   <Grechka_LuckyBlockMedicalT3_Item.description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
@@ -197,28 +197,28 @@
 • передовые медикаменты ×12
 • инъектор «Живая ткань» ×3 + инъектор «Красная линия» ×2 + концентрат «Вторая смена» ×2 (нужен Grechka Pharmacy)
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockMedicalT3_Item.description>
-  <Grechka_LuckyBlockCombatT3_Item.label>лаки-блок «Арсенал» T3</Grechka_LuckyBlockCombatT3_Item.label>
+  <Grechka_LuckyBlockCombatT3_Item.label>меха-лаки-блок «Арсенал» (T3)</Grechka_LuckyBlockCombatT3_Item.label>
   <Grechka_LuckyBlockCombatT3_Item.description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
 • автомат (качество: отличное) ×1
 • бронежилет ×1
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockCombatT3_Item.description>
-  <Grechka_LuckyBlockFarmT3_Item.label>лаки-блок «Фермерский» T3</Grechka_LuckyBlockFarmT3_Item.label>
+  <Grechka_LuckyBlockFarmT3_Item.label>меха-лаки-блок «Фермерский» (T3)</Grechka_LuckyBlockFarmT3_Item.label>
   <Grechka_LuckyBlockFarmT3_Item.description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
 • рис ×600
 • сухой паёк ×30
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockFarmT3_Item.description>
-  <Grechka_LuckyBlockZooT3_Item.label>лаки-блок «Зоопарк» T3</Grechka_LuckyBlockZooT3_Item.label>
+  <Grechka_LuckyBlockZooT3_Item.label>меха-лаки-блок «Зоопарк» (T3)</Grechka_LuckyBlockZooT3_Item.label>
   <Grechka_LuckyBlockZooT3_Item.description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
 • кошка ×100
 • курица ×6
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockZooT3_Item.description>
-  <Grechka_LuckyBlockMechsT3_Item.label>лаки-блок «Мехи повсюду» T3</Grechka_LuckyBlockMechsT3_Item.label>
+  <Grechka_LuckyBlockMechsT3_Item.label>меха-лаки-блок «Мехи повсюду» (T3)</Grechka_LuckyBlockMechsT3_Item.label>
   <Grechka_LuckyBlockMechsT3_Item.description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
@@ -226,7 +226,7 @@
 • враждебные механоиды: жнец ×4
 • враждебные механоиды: жнец ×12
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockMechsT3_Item.description>
-  <Grechka_LuckyBlockChaosT3_Item.label>лаки-блок «Гречневое безумие» T3</Grechka_LuckyBlockChaosT3_Item.label>
+  <Grechka_LuckyBlockChaosT3_Item.label>меха-лаки-блок «Гречневое безумие» (T3)</Grechka_LuckyBlockChaosT3_Item.label>
   <Grechka_LuckyBlockChaosT3_Item.description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
@@ -236,42 +236,42 @@
 • энерговинтовка (качество: шедевр) ×1
 • простое блюдо ×1 + картофель ×500
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockChaosT3_Item.description>
-  <Grechka_LuckyBlockStorageT3_Item.label>лаки-блок «Цифровой» T3</Grechka_LuckyBlockStorageT3_Item.label>
+  <Grechka_LuckyBlockStorageT3_Item.label>меха-лаки-блок «Цифровой» (T3)</Grechka_LuckyBlockStorageT3_Item.label>
   <Grechka_LuckyBlockStorageT3_Item.description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
 • кварцевый процессор ×12 + серебряный процессор ×6 (нужен Grechka Storage)
 • диск хранения 16K ×1 (нужен Grechka Storage)
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockStorageT3_Item.description>
-  <Grechka_LuckyBlockT4_Item.label>лаки-блок T4</Grechka_LuckyBlockT4_Item.label>
+  <Grechka_LuckyBlockT4_Item.label>архо-лаки-блок (T4)</Grechka_LuckyBlockT4_Item.label>
   <Grechka_LuckyBlockT4_Item.description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
 • архо-компонент ×4 + архо-субстрат ×20 (нужен Grechka Industry)
 • продвинутый компонент ×20 + золото ×150
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockT4_Item.description>
-  <Grechka_LuckyBlockResourcesT4_Item.label>лаки-блок «Сырьё» T4</Grechka_LuckyBlockResourcesT4_Item.label>
+  <Grechka_LuckyBlockResourcesT4_Item.label>архо-лаки-блок «Сырьё» (T4)</Grechka_LuckyBlockResourcesT4_Item.label>
   <Grechka_LuckyBlockResourcesT4_Item.description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
 • сталь ×600
 • древесина ×1000
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockResourcesT4_Item.description>
-  <Grechka_LuckyBlockIndustryT4_Item.label>лаки-блок «Промышленность» T4</Grechka_LuckyBlockIndustryT4_Item.label>
+  <Grechka_LuckyBlockIndustryT4_Item.label>архо-лаки-блок «Промышленность» (T4)</Grechka_LuckyBlockIndustryT4_Item.label>
   <Grechka_LuckyBlockIndustryT4_Item.description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
 • архо-компонент ×4 + архо-субстрат ×20 (нужен Grechka Industry)
 • компонент ×32 + пласталь ×80
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockIndustryT4_Item.description>
-  <Grechka_LuckyBlockEnergyT4_Item.label>лаки-блок «Энергетика» T4</Grechka_LuckyBlockEnergyT4_Item.label>
+  <Grechka_LuckyBlockEnergyT4_Item.label>архо-лаки-блок «Энергетика» (T4)</Grechka_LuckyBlockEnergyT4_Item.label>
   <Grechka_LuckyBlockEnergyT4_Item.description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
 • компонент ×24 + сталь ×480
 • механитный фотоэлемент ×12 (нужен Grechka Industry)
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockEnergyT4_Item.description>
-  <Grechka_LuckyBlockMedicalT4_Item.label>лаки-блок «Медицина» T4</Grechka_LuckyBlockMedicalT4_Item.label>
+  <Grechka_LuckyBlockMedicalT4_Item.label>архо-лаки-блок «Медицина» (T4)</Grechka_LuckyBlockMedicalT4_Item.label>
   <Grechka_LuckyBlockMedicalT4_Item.description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
@@ -279,28 +279,28 @@
 • передовые медикаменты ×16
 • сыворотка удаления шрамов ×2 + сыворотка регенерации конечности ×1 (нужен Grechka Pharmacy)
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockMedicalT4_Item.description>
-  <Grechka_LuckyBlockCombatT4_Item.label>лаки-блок «Арсенал» T4</Grechka_LuckyBlockCombatT4_Item.label>
+  <Grechka_LuckyBlockCombatT4_Item.label>архо-лаки-блок «Арсенал» (T4)</Grechka_LuckyBlockCombatT4_Item.label>
   <Grechka_LuckyBlockCombatT4_Item.description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
 • автомат (качество: отличное) ×1
 • бронежилет ×1
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockCombatT4_Item.description>
-  <Grechka_LuckyBlockFarmT4_Item.label>лаки-блок «Фермерский» T4</Grechka_LuckyBlockFarmT4_Item.label>
+  <Grechka_LuckyBlockFarmT4_Item.label>архо-лаки-блок «Фермерский» (T4)</Grechka_LuckyBlockFarmT4_Item.label>
   <Grechka_LuckyBlockFarmT4_Item.description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
 • рис ×800
 • сухой паёк ×40
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockFarmT4_Item.description>
-  <Grechka_LuckyBlockZooT4_Item.label>лаки-блок «Зоопарк» T4</Grechka_LuckyBlockZooT4_Item.label>
+  <Grechka_LuckyBlockZooT4_Item.label>архо-лаки-блок «Зоопарк» (T4)</Grechka_LuckyBlockZooT4_Item.label>
   <Grechka_LuckyBlockZooT4_Item.description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
 • кошка ×100
 • курица ×6
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockZooT4_Item.description>
-  <Grechka_LuckyBlockMechsT4_Item.label>лаки-блок «Мехи повсюду» T4</Grechka_LuckyBlockMechsT4_Item.label>
+  <Grechka_LuckyBlockMechsT4_Item.label>архо-лаки-блок «Мехи повсюду» (T4)</Grechka_LuckyBlockMechsT4_Item.label>
   <Grechka_LuckyBlockMechsT4_Item.description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
@@ -308,7 +308,7 @@
 • враждебные механоиды: жнец ×4
 • враждебные механоиды: жнец ×12
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockMechsT4_Item.description>
-  <Grechka_LuckyBlockChaosT4_Item.label>лаки-блок «Гречневое безумие» T4</Grechka_LuckyBlockChaosT4_Item.label>
+  <Grechka_LuckyBlockChaosT4_Item.label>архо-лаки-блок «Гречневое безумие» (T4)</Grechka_LuckyBlockChaosT4_Item.label>
   <Grechka_LuckyBlockChaosT4_Item.description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
@@ -318,42 +318,42 @@
 • энерговинтовка (качество: шедевр) ×1
 • простое блюдо ×1 + картофель ×500
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockChaosT4_Item.description>
-  <Grechka_LuckyBlockStorageT4_Item.label>лаки-блок «Цифровой» T4</Grechka_LuckyBlockStorageT4_Item.label>
+  <Grechka_LuckyBlockStorageT4_Item.label>архо-лаки-блок «Цифровой» (T4)</Grechka_LuckyBlockStorageT4_Item.label>
   <Grechka_LuckyBlockStorageT4_Item.description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
 • кварцевый процессор ×16 + серебряный процессор ×8 (нужен Grechka Storage)
 • диск хранения 64K ×1 (нужен Grechka Storage)
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockStorageT4_Item.description>
-  <Grechka_LuckyBlockT5_Item.label>лаки-блок T5</Grechka_LuckyBlockT5_Item.label>
+  <Grechka_LuckyBlockT5_Item.label>гречневый лаки-блок (T5)</Grechka_LuckyBlockT5_Item.label>
   <Grechka_LuckyBlockT5_Item.description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
 • гречневый компонент ×4 + гречневый концентрат ×30 (нужен Grechka Industry)
 • продвинутый компонент ×40 + пласталь ×300
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockT5_Item.description>
-  <Grechka_LuckyBlockResourcesT5_Item.label>лаки-блок «Сырьё» T5</Grechka_LuckyBlockResourcesT5_Item.label>
+  <Grechka_LuckyBlockResourcesT5_Item.label>гречневый лаки-блок «Сырьё» (T5)</Grechka_LuckyBlockResourcesT5_Item.label>
   <Grechka_LuckyBlockResourcesT5_Item.description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
 • сталь ×750
 • древесина ×1250
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockResourcesT5_Item.description>
-  <Grechka_LuckyBlockIndustryT5_Item.label>лаки-блок «Промышленность» T5</Grechka_LuckyBlockIndustryT5_Item.label>
+  <Grechka_LuckyBlockIndustryT5_Item.label>гречневый лаки-блок «Промышленность» (T5)</Grechka_LuckyBlockIndustryT5_Item.label>
   <Grechka_LuckyBlockIndustryT5_Item.description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
 • гречневый компонент ×4 + гречневый концентрат ×30 (нужен Grechka Industry)
 • компонент ×40 + пласталь ×100
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockIndustryT5_Item.description>
-  <Grechka_LuckyBlockEnergyT5_Item.label>лаки-блок «Энергетика» T5</Grechka_LuckyBlockEnergyT5_Item.label>
+  <Grechka_LuckyBlockEnergyT5_Item.label>гречневый лаки-блок «Энергетика» (T5)</Grechka_LuckyBlockEnergyT5_Item.label>
   <Grechka_LuckyBlockEnergyT5_Item.description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
 • компонент ×30 + сталь ×600
 • механитный фотоэлемент ×15 (нужен Grechka Industry)
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockEnergyT5_Item.description>
-  <Grechka_LuckyBlockMedicalT5_Item.label>лаки-блок «Медицина» T5</Grechka_LuckyBlockMedicalT5_Item.label>
+  <Grechka_LuckyBlockMedicalT5_Item.label>гречневый лаки-блок «Медицина» (T5)</Grechka_LuckyBlockMedicalT5_Item.label>
   <Grechka_LuckyBlockMedicalT5_Item.description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
@@ -361,28 +361,28 @@
 • передовые медикаменты ×20
 • гречневая сыворотка регенерации ×1 + сыворотка омоложения ×1 (нужен Grechka Pharmacy)
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockMedicalT5_Item.description>
-  <Grechka_LuckyBlockCombatT5_Item.label>лаки-блок «Арсенал» T5</Grechka_LuckyBlockCombatT5_Item.label>
+  <Grechka_LuckyBlockCombatT5_Item.label>гречневый лаки-блок «Арсенал» (T5)</Grechka_LuckyBlockCombatT5_Item.label>
   <Grechka_LuckyBlockCombatT5_Item.description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
 • автомат (качество: отличное) ×1
 • бронежилет ×1
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockCombatT5_Item.description>
-  <Grechka_LuckyBlockFarmT5_Item.label>лаки-блок «Фермерский» T5</Grechka_LuckyBlockFarmT5_Item.label>
+  <Grechka_LuckyBlockFarmT5_Item.label>гречневый лаки-блок «Фермерский» (T5)</Grechka_LuckyBlockFarmT5_Item.label>
   <Grechka_LuckyBlockFarmT5_Item.description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
 • рис ×1000
 • сухой паёк ×50
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockFarmT5_Item.description>
-  <Grechka_LuckyBlockZooT5_Item.label>лаки-блок «Зоопарк» T5</Grechka_LuckyBlockZooT5_Item.label>
+  <Grechka_LuckyBlockZooT5_Item.label>гречневый лаки-блок «Зоопарк» (T5)</Grechka_LuckyBlockZooT5_Item.label>
   <Grechka_LuckyBlockZooT5_Item.description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
 • кошка ×100
 • курица ×6
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockZooT5_Item.description>
-  <Grechka_LuckyBlockMechsT5_Item.label>лаки-блок «Мехи повсюду» T5</Grechka_LuckyBlockMechsT5_Item.label>
+  <Grechka_LuckyBlockMechsT5_Item.label>гречневый лаки-блок «Мехи повсюду» (T5)</Grechka_LuckyBlockMechsT5_Item.label>
   <Grechka_LuckyBlockMechsT5_Item.description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
@@ -390,7 +390,7 @@
 • враждебные механоиды: жнец ×4
 • враждебные механоиды: жнец ×12
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockMechsT5_Item.description>
-  <Grechka_LuckyBlockChaosT5_Item.label>лаки-блок «Гречневое безумие» T5</Grechka_LuckyBlockChaosT5_Item.label>
+  <Grechka_LuckyBlockChaosT5_Item.label>гречневый лаки-блок «Гречневое безумие» (T5)</Grechka_LuckyBlockChaosT5_Item.label>
   <Grechka_LuckyBlockChaosT5_Item.description>Опасная тематическая награда: возможны враждебные механоиды! Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):
@@ -400,7 +400,7 @@
 • энерговинтовка (качество: шедевр) ×1
 • простое блюдо ×1 + картофель ×500
 Недоступные награды исключаются. Состав можно изменить в настройках мода.</Grechka_LuckyBlockChaosT5_Item.description>
-  <Grechka_LuckyBlockStorageT5_Item.label>лаки-блок «Цифровой» T5</Grechka_LuckyBlockStorageT5_Item.label>
+  <Grechka_LuckyBlockStorageT5_Item.label>гречневый лаки-блок «Цифровой» (T5)</Grechka_LuckyBlockStorageT5_Item.label>
   <Grechka_LuckyBlockStorageT5_Item.description>Положите блок на карту и прикажите пешке открыть его правой кнопкой мыши. Результат появится рядом. Блоки не складываются.
 
 Возможное содержимое при стандартных настройках (один из вариантов):

@@ -72,5 +72,22 @@
     <li IfModActive="vanillaquestsexpanded.ancients">Translations/Targets/vanillaquestsexpanded.ancients</li>
     <li IfModActive="vanillaquestsexpanded.cryptoforge">Translations/Targets/vanillaquestsexpanded.cryptoforge</li>
     <li IfModActive="vanillaquestsexpanded.generator">Translations/Targets/vanillaquestsexpanded.generator</li>
+    <li IfModActive="alaestor.miscrobots.plusplus">Content/alaestor.miscrobots.plusplus</li>
+    <li IfModActive="aoba.fortress.industrial" IfModNotActive="ceteam.combatextended,ceteam.combatextended_steam">Content/aoba.fortress.industrial</li>
+    <li IfModActive="aoba.fortress.industrial.citadel" IfModNotActive="ceteam.combatextended,ceteam.combatextended_steam">Content/aoba.fortress.industrial.citadel</li>
+    <li IfModActiveAll="aoba.fortress.industrial,vanillaexpanded.vfearchitect">Content/aoba.fortress.industrial/Architect</li>
+    <li IfModActive="aoba.framework">Content/aoba.framework</li>
+    <li IfModActive="memegoddess.replacestuff">Content/memegoddess.replacestuff</li>
+    <li IfModActive="oskarpotocki.vanillafactionsexpanded.core">Content/oskarpotocki.vanillafactionsexpanded.core</li>
+    <li IfModActive="oskarpotocki.vfe.empire">Content/oskarpotocki.vfe.empire</li>
+    <li IfModActive="pb3n.simplewarrants">Content/pb3n.simplewarrants</li>
+    <li IfModActive="redmattis.bigsmall.core">Content/redmattis.bigsmall.core</li>
+    <li IfModActive="regrowth.botr.core">Content/regrowth.botr.core</li>
+    <li IfModActiveAll="regrowth.botr.core,ludeon.rimworld.royalty">Content/regrowth.botr.core/Royalty</li>
+    <li IfModActive="sbz.neatstorage">Content/sbz.neatstorage</li>
+    <li IfModActive="vanillaexpanded.vaeaccessories">Content/vanillaexpanded.vaeaccessories</li>
+    <li IfModActiveAll="vanillaexpanded.vfepropsanddecor,vanillaquestsexpanded.ancients">Content/vanillaexpanded.vfepropsanddecor/Ancients</li>
+    <li IfModActiveAll="vanillaexpanded.vfepropsanddecor,vanillaexpanded.vcookebakery">Content/vanillaexpanded.vfepropsanddecor/Bakery</li>
+    <li IfModActive="woolstrand.realruins">Content/woolstrand.realruins</li>
   </v1.7>
 </loadFolders>

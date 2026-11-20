@@ -2,7 +2,7 @@
 <Defs>
   <ThingDef ParentName="BenchBase">
     <defName>Grechka_AssemblyBenchT3_Building</defName>
-    <label>меха-сборочный верстак</label>
+    <label>меха-верстак (T3)</label>
     <description>Сборочный верстак третьего тира. Скорость ×5, скидка сырья 20%, накопительный бонус к обычному выпуску 20%. Требует 840 Вт.</description>
     <thingClass>Building_WorkTable</thingClass>
     <tickerType>Normal</tickerType>

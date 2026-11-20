@@ -30,7 +30,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_IndustryT3</defName>
-    <label>Промышленность T3</label>
+    <label>Меха-промышленность (T3)</label>
     <description>Корпуса, компоненты и сборочные верстаки T3. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>3000</baseCost>
     <techLevel>Spacer</techLevel>
@@ -44,7 +44,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_IndustryT4</defName>
-    <label>Промышленность T4</label>
+    <label>Архо-промышленность (T4)</label>
     <description>Корпуса, компоненты и сборочные верстаки T4. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>6000</baseCost>
     <techLevel>Spacer</techLevel>
@@ -57,7 +57,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_IndustryT5</defName>
-    <label>Промышленность T5</label>
+    <label>Гречневая промышленность (T5)</label>
     <description>Корпуса, компоненты и сборочные верстаки T5. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>10000</baseCost>
     <techLevel>Ultra</techLevel>
@@ -83,7 +83,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_SolarT3</defName>
-    <label>Солнечная энергетика T3</label>
+    <label>Меха-солнечная энергетика (T3)</label>
     <description>Солнечные ячейки, панели и их интеграции T3. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>2000</baseCost>
     <techLevel>Spacer</techLevel>
@@ -97,7 +97,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_SolarT4</defName>
-    <label>Солнечная энергетика T4</label>
+    <label>Архо-солнечная энергетика (T4)</label>
     <description>Солнечные ячейки, панели и их интеграции T4. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>4000</baseCost>
     <techLevel>Spacer</techLevel>
@@ -111,7 +111,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_SolarT5</defName>
-    <label>Солнечная энергетика T5</label>
+    <label>Гречневая солнечная энергетика (T5)</label>
     <description>Солнечные ячейки, панели и их интеграции T5. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>7000</baseCost>
     <techLevel>Ultra</techLevel>
@@ -125,7 +125,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_MechaT3</defName>
-    <label>Механитные технологии T3</label>
+    <label>Меха-технологии механитов (T3)</label>
     <description>Экстракторы механитов, ионизаторы и мехапоника T3. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>2000</baseCost>
     <techLevel>Spacer</techLevel>
@@ -138,7 +138,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_MechaT4</defName>
-    <label>Механитные технологии T4</label>
+    <label>Архо-технологии механитов (T4)</label>
     <description>Экстракторы механитов, ионизаторы и мехапоника T4. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>4000</baseCost>
     <techLevel>Spacer</techLevel>
@@ -152,7 +152,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_MechaT5</defName>
-    <label>Механитные технологии T5</label>
+    <label>Гречневые технологии механитов (T5)</label>
     <description>Экстракторы механитов, ионизаторы и мехапоника T5. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>7000</baseCost>
     <techLevel>Ultra</techLevel>
@@ -166,7 +166,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_ArchoT4</defName>
-    <label>Архотехнологии T4</label>
+    <label>Архо-технологии (T4)</label>
     <description>Архогенераторы и облучатели T4. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>4000</baseCost>
     <techLevel>Spacer</techLevel>
@@ -179,7 +179,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_ArchoT5</defName>
-    <label>Архотехнологии T5</label>
+    <label>Гречневые технологии (T5)</label>
     <description>Архогенераторы и облучатели T5. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>7000</baseCost>
     <techLevel>Ultra</techLevel>
@@ -193,7 +193,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_MatterT4</defName>
-    <label>Управление материей T4</label>
+    <label>Архо-управление материей (T4)</label>
     <description>Переработка и синтез материи T4. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>4000</baseCost>
     <techLevel>Spacer</techLevel>
@@ -206,7 +206,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_MatterT5</defName>
-    <label>Управление материей T5</label>
+    <label>Гречневое управление материей (T5)</label>
     <description>Переработка и синтез материи T5. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>7000</baseCost>
     <techLevel>Ultra</techLevel>
@@ -248,7 +248,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_StorageT3</defName>
-    <label>Цифровое хранение T3</label>
+    <label>Меха-цифровое хранение (T3)</label>
     <description>Сеть, процессоры и диски хранения соответствующей ёмкости T3. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>2000</baseCost>
     <techLevel>Spacer</techLevel>
@@ -262,7 +262,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_StorageT4</defName>
-    <label>Цифровое хранение T4</label>
+    <label>Архо-цифровое хранение (T4)</label>
     <description>Сеть, процессоры и диски хранения соответствующей ёмкости T4. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>4000</baseCost>
     <techLevel>Spacer</techLevel>
@@ -276,7 +276,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_StorageT5</defName>
-    <label>Цифровое хранение T5</label>
+    <label>Гречневое цифровое хранение (T5)</label>
     <description>Сеть, процессоры и диски хранения соответствующей ёмкости T5. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>7000</baseCost>
     <techLevel>Ultra</techLevel>
@@ -290,7 +290,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_AutocraftT3</defName>
-    <label>Автокрафт T3</label>
+    <label>Меха-автокрафт (T3)</label>
     <description>Сетевые крафтеры T3. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>2000</baseCost>
     <techLevel>Spacer</techLevel>
@@ -304,7 +304,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_AutocraftT4</defName>
-    <label>Автокрафт T4</label>
+    <label>Архо-автокрафт (T4)</label>
     <description>Сетевые крафтеры T4. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>4000</baseCost>
     <techLevel>Spacer</techLevel>
@@ -319,7 +319,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_AutocraftT5</defName>
-    <label>Автокрафт T5</label>
+    <label>Гречневый автокрафт (T5)</label>
     <description>Сетевые крафтеры T5. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>7000</baseCost>
     <techLevel>Ultra</techLevel>
@@ -347,7 +347,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_EquipmentT3</defName>
-    <label>Оснащение T3</label>
+    <label>Меха-оснащение (T3)</label>
     <description>Броня, шлемы и боевое оснащение T3. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>2000</baseCost>
     <techLevel>Spacer</techLevel>
@@ -360,7 +360,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_EquipmentT4</defName>
-    <label>Оснащение T4</label>
+    <label>Архо-оснащение (T4)</label>
     <description>Броня, шлемы и боевое оснащение T4. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>4000</baseCost>
     <techLevel>Spacer</techLevel>
@@ -374,7 +374,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_EquipmentT5</defName>
-    <label>Оснащение T5</label>
+    <label>Гречневое оснащение (T5)</label>
     <description>Броня, шлемы и боевое оснащение T5. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>7000</baseCost>
     <techLevel>Ultra</techLevel>
@@ -388,7 +388,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_BionicsT4</defName>
-    <label>Бионика T4</label>
+    <label>Архо-бионика (T4)</label>
     <description>Производство собственных искусственных органов T4. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>4000</baseCost>
     <techLevel>Spacer</techLevel>
@@ -402,7 +402,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_BionicsT5</defName>
-    <label>Бионика T5</label>
+    <label>Гречневая бионика (T5)</label>
     <description>Производство собственных искусственных органов T5. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>7000</baseCost>
     <techLevel>Ultra</techLevel>
@@ -417,7 +417,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_ChipsT4</defName>
-    <label>Импланты T4</label>
+    <label>Архо-импланты (T4)</label>
     <description>Производство чипов T4. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>4000</baseCost>
     <techLevel>Spacer</techLevel>
@@ -431,7 +431,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_ChipsT5</defName>
-    <label>Импланты T5</label>
+    <label>Гречневые импланты (T5)</label>
     <description>Производство чипов T5. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>7000</baseCost>
     <techLevel>Ultra</techLevel>
@@ -474,7 +474,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_DronesT3</defName>
-    <label>Робототехника T3</label>
+    <label>Меха-робототехника (T3)</label>
     <description>Доки дронов-МЧСников, воинов и караванных носильщиков T3. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>2000</baseCost>
     <techLevel>Spacer</techLevel>
@@ -488,7 +488,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_DronesT4</defName>
-    <label>Робототехника T4</label>
+    <label>Архо-робототехника (T4)</label>
     <description>Доки дронов-МЧСников, воинов и караванных носильщиков T4. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>4000</baseCost>
     <techLevel>Spacer</techLevel>
@@ -502,7 +502,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>Grechka_Research_DronesT5</defName>
-    <label>Робототехника T5</label>
+    <label>Гречневая робототехника (T5)</label>
     <description>Доки дронов-МЧСников, воинов и караванных носильщиков T5. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>7000</baseCost>
     <techLevel>Ultra</techLevel>
@@ -543,7 +543,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>GrechkaPharmacy_ResearchT3</defName>
-    <label>Фармацевтика T3</label>
+    <label>Меха-фармацевтика (T3)</label>
     <description>Лечебные препараты, стимуляторы и фармацевтические реакторы T3. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>2000</baseCost>
     <techLevel>Spacer</techLevel>
@@ -557,7 +557,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>GrechkaPharmacy_ResearchT4</defName>
-    <label>Фармацевтика T4</label>
+    <label>Архо-фармацевтика (T4)</label>
     <description>Лечебные препараты, стимуляторы и фармацевтические реакторы T4. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>4000</baseCost>
     <techLevel>Spacer</techLevel>
@@ -571,7 +571,7 @@
   </ResearchProjectDef>
   <ResearchProjectDef>
     <defName>GrechkaPharmacy_ResearchT5</defName>
-    <label>Фармацевтика T5</label>
+    <label>Гречневая фармацевтика (T5)</label>
     <description>Лечебные препараты, стимуляторы и фармацевтические реакторы T5. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.</description>
     <baseCost>7000</baseCost>
     <techLevel>Ultra</techLevel>

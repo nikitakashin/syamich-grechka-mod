@@ -508,6 +508,8 @@
     <giverClass>WorkGiver_DoBill</giverClass>
     <workType>Crafting</workType>
     <priorityInType>80</priorityInType>
+    <scanThings>true</scanThings>
+    <directOrderable>true</directOrderable>
     <fixedBillGiverDefs>
       <li>GrechkaTreasures_JewelersBench</li>
     </fixedBillGiverDefs>

@@ -1,465 +1,465 @@
 <?xml version='1.0' encoding='utf-8'?>
 <LanguageData>
-  <Install_Grechka_CombatChipT4.label>установить: чип «берсерк» T4</Install_Grechka_CombatChipT4.label>
-  <Install_Grechka_CombatChipT4.description>Установить чип «берсерк» T4. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_CombatChipT4.description>
+  <Install_Grechka_CombatChipT4.label>установить: архо-чип «берсерк» (T4)</Install_Grechka_CombatChipT4.label>
+  <Install_Grechka_CombatChipT4.description>Установить архо-чип «берсерк» (T4). На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_CombatChipT4.description>
   <Install_Grechka_CombatChipT4.jobString>Установка импланта.</Install_Grechka_CombatChipT4.jobString>
-  <Remove_Grechka_CombatChipT4.label>извлечь: чип «берсерк» T4</Remove_Grechka_CombatChipT4.label>
+  <Remove_Grechka_CombatChipT4.label>извлечь: архо-чип «берсерк» (T4)</Remove_Grechka_CombatChipT4.label>
   <Remove_Grechka_CombatChipT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_CombatChipT4.description>
   <Remove_Grechka_CombatChipT4.jobString>Извлечение импланта.</Remove_Grechka_CombatChipT4.jobString>
-  <Install_Grechka_CombatChipT5.label>установить: чип «берсерк» T5</Install_Grechka_CombatChipT5.label>
-  <Install_Grechka_CombatChipT5.description>Установить чип «берсерк» T5. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_CombatChipT5.description>
+  <Install_Grechka_CombatChipT5.label>установить: гречневый чип «берсерк» (T5)</Install_Grechka_CombatChipT5.label>
+  <Install_Grechka_CombatChipT5.description>Установка: гречневый чип «берсерк» (T5). На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_CombatChipT5.description>
   <Install_Grechka_CombatChipT5.jobString>Установка импланта.</Install_Grechka_CombatChipT5.jobString>
-  <Remove_Grechka_CombatChipT5.label>извлечь: чип «берсерк» T5</Remove_Grechka_CombatChipT5.label>
+  <Remove_Grechka_CombatChipT5.label>извлечь: гречневый чип «берсерк» (T5)</Remove_Grechka_CombatChipT5.label>
   <Remove_Grechka_CombatChipT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_CombatChipT5.description>
   <Remove_Grechka_CombatChipT5.jobString>Извлечение импланта.</Remove_Grechka_CombatChipT5.jobString>
-  <Install_Grechka_StabilityChipT4.label>установить: чип «стальной разум» T4</Install_Grechka_StabilityChipT4.label>
-  <Install_Grechka_StabilityChipT4.description>Установить чип «стальной разум» T4. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_StabilityChipT4.description>
+  <Install_Grechka_StabilityChipT4.label>установить: архо-чип «стальной разум» (T4)</Install_Grechka_StabilityChipT4.label>
+  <Install_Grechka_StabilityChipT4.description>Установить архо-чип «стальной разум» (T4). На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_StabilityChipT4.description>
   <Install_Grechka_StabilityChipT4.jobString>Установка импланта.</Install_Grechka_StabilityChipT4.jobString>
-  <Remove_Grechka_StabilityChipT4.label>извлечь: чип «стальной разум» T4</Remove_Grechka_StabilityChipT4.label>
+  <Remove_Grechka_StabilityChipT4.label>извлечь: архо-чип «стальной разум» (T4)</Remove_Grechka_StabilityChipT4.label>
   <Remove_Grechka_StabilityChipT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_StabilityChipT4.description>
   <Remove_Grechka_StabilityChipT4.jobString>Извлечение импланта.</Remove_Grechka_StabilityChipT4.jobString>
-  <Install_Grechka_StabilityChipT5.label>установить: чип «стальной разум» T5</Install_Grechka_StabilityChipT5.label>
-  <Install_Grechka_StabilityChipT5.description>Установить чип «стальной разум» T5. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_StabilityChipT5.description>
+  <Install_Grechka_StabilityChipT5.label>установить: гречневый чип «стальной разум» (T5)</Install_Grechka_StabilityChipT5.label>
+  <Install_Grechka_StabilityChipT5.description>Установка: гречневый чип «стальной разум» (T5). На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_StabilityChipT5.description>
   <Install_Grechka_StabilityChipT5.jobString>Установка импланта.</Install_Grechka_StabilityChipT5.jobString>
-  <Remove_Grechka_StabilityChipT5.label>извлечь: чип «стальной разум» T5</Remove_Grechka_StabilityChipT5.label>
+  <Remove_Grechka_StabilityChipT5.label>извлечь: гречневый чип «стальной разум» (T5)</Remove_Grechka_StabilityChipT5.label>
   <Remove_Grechka_StabilityChipT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_StabilityChipT5.description>
   <Remove_Grechka_StabilityChipT5.jobString>Извлечение импланта.</Remove_Grechka_StabilityChipT5.jobString>
-  <Install_Grechka_CraftChipT4.label>установить: чип «ремесленник» T4</Install_Grechka_CraftChipT4.label>
-  <Install_Grechka_CraftChipT4.description>Установить чип «ремесленник» T4. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_CraftChipT4.description>
+  <Install_Grechka_CraftChipT4.label>установить: архо-чип «ремесленник» (T4)</Install_Grechka_CraftChipT4.label>
+  <Install_Grechka_CraftChipT4.description>Установить архо-чип «ремесленник» (T4). На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_CraftChipT4.description>
   <Install_Grechka_CraftChipT4.jobString>Установка импланта.</Install_Grechka_CraftChipT4.jobString>
-  <Remove_Grechka_CraftChipT4.label>извлечь: чип «ремесленник» T4</Remove_Grechka_CraftChipT4.label>
+  <Remove_Grechka_CraftChipT4.label>извлечь: архо-чип «ремесленник» (T4)</Remove_Grechka_CraftChipT4.label>
   <Remove_Grechka_CraftChipT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_CraftChipT4.description>
   <Remove_Grechka_CraftChipT4.jobString>Извлечение импланта.</Remove_Grechka_CraftChipT4.jobString>
-  <Install_Grechka_CraftChipT5.label>установить: чип «ремесленник» T5</Install_Grechka_CraftChipT5.label>
-  <Install_Grechka_CraftChipT5.description>Установить чип «ремесленник» T5. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_CraftChipT5.description>
+  <Install_Grechka_CraftChipT5.label>установить: гречневый чип «ремесленник» (T5)</Install_Grechka_CraftChipT5.label>
+  <Install_Grechka_CraftChipT5.description>Установка: гречневый чип «ремесленник» (T5). На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_CraftChipT5.description>
   <Install_Grechka_CraftChipT5.jobString>Установка импланта.</Install_Grechka_CraftChipT5.jobString>
-  <Remove_Grechka_CraftChipT5.label>извлечь: чип «ремесленник» T5</Remove_Grechka_CraftChipT5.label>
+  <Remove_Grechka_CraftChipT5.label>извлечь: гречневый чип «ремесленник» (T5)</Remove_Grechka_CraftChipT5.label>
   <Remove_Grechka_CraftChipT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_CraftChipT5.description>
   <Remove_Grechka_CraftChipT5.jobString>Извлечение импланта.</Remove_Grechka_CraftChipT5.jobString>
-  <Install_Grechka_MovementChipT4.label>установить: чип «следопыт» T4</Install_Grechka_MovementChipT4.label>
-  <Install_Grechka_MovementChipT4.description>Установить чип «следопыт» T4. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MovementChipT4.description>
+  <Install_Grechka_MovementChipT4.label>установить: архо-чип «следопыт» (T4)</Install_Grechka_MovementChipT4.label>
+  <Install_Grechka_MovementChipT4.description>Установить архо-чип «следопыт» (T4). На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MovementChipT4.description>
   <Install_Grechka_MovementChipT4.jobString>Установка импланта.</Install_Grechka_MovementChipT4.jobString>
-  <Remove_Grechka_MovementChipT4.label>извлечь: чип «следопыт» T4</Remove_Grechka_MovementChipT4.label>
+  <Remove_Grechka_MovementChipT4.label>извлечь: архо-чип «следопыт» (T4)</Remove_Grechka_MovementChipT4.label>
   <Remove_Grechka_MovementChipT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MovementChipT4.description>
   <Remove_Grechka_MovementChipT4.jobString>Извлечение импланта.</Remove_Grechka_MovementChipT4.jobString>
-  <Install_Grechka_MovementChipT5.label>установить: чип «следопыт» T5</Install_Grechka_MovementChipT5.label>
-  <Install_Grechka_MovementChipT5.description>Установить чип «следопыт» T5. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MovementChipT5.description>
+  <Install_Grechka_MovementChipT5.label>установить: гречневый чип «следопыт» (T5)</Install_Grechka_MovementChipT5.label>
+  <Install_Grechka_MovementChipT5.description>Установка: гречневый чип «следопыт» (T5). На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MovementChipT5.description>
   <Install_Grechka_MovementChipT5.jobString>Установка импланта.</Install_Grechka_MovementChipT5.jobString>
-  <Remove_Grechka_MovementChipT5.label>извлечь: чип «следопыт» T5</Remove_Grechka_MovementChipT5.label>
+  <Remove_Grechka_MovementChipT5.label>извлечь: гречневый чип «следопыт» (T5)</Remove_Grechka_MovementChipT5.label>
   <Remove_Grechka_MovementChipT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MovementChipT5.description>
   <Remove_Grechka_MovementChipT5.jobString>Извлечение импланта.</Remove_Grechka_MovementChipT5.jobString>
-  <Install_Grechka_TonicChipT4.label>установить: чип «тонизатор» T4</Install_Grechka_TonicChipT4.label>
-  <Install_Grechka_TonicChipT4.description>Установить чип «тонизатор» T4. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_TonicChipT4.description>
+  <Install_Grechka_TonicChipT4.label>установить: архо-чип «тонизатор» (T4)</Install_Grechka_TonicChipT4.label>
+  <Install_Grechka_TonicChipT4.description>Установить архо-чип «тонизатор» (T4). На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_TonicChipT4.description>
   <Install_Grechka_TonicChipT4.jobString>Установка импланта.</Install_Grechka_TonicChipT4.jobString>
-  <Remove_Grechka_TonicChipT4.label>извлечь: чип «тонизатор» T4</Remove_Grechka_TonicChipT4.label>
+  <Remove_Grechka_TonicChipT4.label>извлечь: архо-чип «тонизатор» (T4)</Remove_Grechka_TonicChipT4.label>
   <Remove_Grechka_TonicChipT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_TonicChipT4.description>
   <Remove_Grechka_TonicChipT4.jobString>Извлечение импланта.</Remove_Grechka_TonicChipT4.jobString>
-  <Install_Grechka_TonicChipT5.label>установить: чип «тонизатор» T5</Install_Grechka_TonicChipT5.label>
-  <Install_Grechka_TonicChipT5.description>Установить чип «тонизатор» T5. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_TonicChipT5.description>
+  <Install_Grechka_TonicChipT5.label>установить: гречневый чип «тонизатор» (T5)</Install_Grechka_TonicChipT5.label>
+  <Install_Grechka_TonicChipT5.description>Установка: гречневый чип «тонизатор» (T5). На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_TonicChipT5.description>
   <Install_Grechka_TonicChipT5.jobString>Установка импланта.</Install_Grechka_TonicChipT5.jobString>
-  <Remove_Grechka_TonicChipT5.label>извлечь: чип «тонизатор» T5</Remove_Grechka_TonicChipT5.label>
+  <Remove_Grechka_TonicChipT5.label>извлечь: гречневый чип «тонизатор» (T5)</Remove_Grechka_TonicChipT5.label>
   <Remove_Grechka_TonicChipT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_TonicChipT5.description>
   <Remove_Grechka_TonicChipT5.jobString>Извлечение импланта.</Remove_Grechka_TonicChipT5.jobString>
-  <Install_Grechka_BrainChipT5.label>установить: чип «гречневый разум» T5</Install_Grechka_BrainChipT5.label>
-  <Install_Grechka_BrainChipT5.description>Установить чип «гречневый разум» T5. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_BrainChipT5.description>
+  <Install_Grechka_BrainChipT5.label>установить: чип «гречневый разум» (T5)</Install_Grechka_BrainChipT5.label>
+  <Install_Grechka_BrainChipT5.description>Установить чип «гречневый разум» (T5). На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_BrainChipT5.description>
   <Install_Grechka_BrainChipT5.jobString>Установка импланта.</Install_Grechka_BrainChipT5.jobString>
-  <Remove_Grechka_BrainChipT5.label>извлечь: чип «гречневый разум» T5</Remove_Grechka_BrainChipT5.label>
+  <Remove_Grechka_BrainChipT5.label>извлечь: чип «гречневый разум» (T5)</Remove_Grechka_BrainChipT5.label>
   <Remove_Grechka_BrainChipT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_BrainChipT5.description>
   <Remove_Grechka_BrainChipT5.jobString>Извлечение импланта.</Remove_Grechka_BrainChipT5.jobString>
-  <Install_Grechka_MythicEyeT4.label>установить: мифическая бионика: глаз</Install_Grechka_MythicEyeT4.label>
-  <Install_Grechka_MythicEyeT4.description>Установить мифическая бионика: глаз. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicEyeT4.description>
+  <Install_Grechka_MythicEyeT4.label>установить: мифический глаз</Install_Grechka_MythicEyeT4.label>
+  <Install_Grechka_MythicEyeT4.description>Установка: мифический глаз. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicEyeT4.description>
   <Install_Grechka_MythicEyeT4.jobString>Установка импланта.</Install_Grechka_MythicEyeT4.jobString>
-  <Remove_Grechka_MythicEyeT4.label>извлечь: мифическая бионика: глаз</Remove_Grechka_MythicEyeT4.label>
+  <Remove_Grechka_MythicEyeT4.label>извлечь: мифический глаз</Remove_Grechka_MythicEyeT4.label>
   <Remove_Grechka_MythicEyeT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicEyeT4.description>
   <Remove_Grechka_MythicEyeT4.jobString>Извлечение импланта.</Remove_Grechka_MythicEyeT4.jobString>
-  <Install_Grechka_MythicEarT4.label>установить: мифическая бионика: ухо</Install_Grechka_MythicEarT4.label>
-  <Install_Grechka_MythicEarT4.description>Установить мифическая бионика: ухо. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicEarT4.description>
+  <Install_Grechka_MythicEarT4.label>установить: мифическое ухо</Install_Grechka_MythicEarT4.label>
+  <Install_Grechka_MythicEarT4.description>Установка: мифическое ухо. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicEarT4.description>
   <Install_Grechka_MythicEarT4.jobString>Установка импланта.</Install_Grechka_MythicEarT4.jobString>
-  <Remove_Grechka_MythicEarT4.label>извлечь: мифическая бионика: ухо</Remove_Grechka_MythicEarT4.label>
+  <Remove_Grechka_MythicEarT4.label>извлечь: мифическое ухо</Remove_Grechka_MythicEarT4.label>
   <Remove_Grechka_MythicEarT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicEarT4.description>
   <Remove_Grechka_MythicEarT4.jobString>Извлечение импланта.</Remove_Grechka_MythicEarT4.jobString>
-  <Install_Grechka_MythicHeartT4.label>установить: мифическая бионика: сердце</Install_Grechka_MythicHeartT4.label>
-  <Install_Grechka_MythicHeartT4.description>Установить мифическая бионика: сердце. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicHeartT4.description>
+  <Install_Grechka_MythicHeartT4.label>установить: мифическое сердце</Install_Grechka_MythicHeartT4.label>
+  <Install_Grechka_MythicHeartT4.description>Установка: мифическое сердце. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicHeartT4.description>
   <Install_Grechka_MythicHeartT4.jobString>Установка импланта.</Install_Grechka_MythicHeartT4.jobString>
-  <Remove_Grechka_MythicHeartT4.label>извлечь: мифическая бионика: сердце</Remove_Grechka_MythicHeartT4.label>
+  <Remove_Grechka_MythicHeartT4.label>извлечь: мифическое сердце</Remove_Grechka_MythicHeartT4.label>
   <Remove_Grechka_MythicHeartT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicHeartT4.description>
   <Remove_Grechka_MythicHeartT4.jobString>Извлечение импланта.</Remove_Grechka_MythicHeartT4.jobString>
-  <Install_Grechka_MythicLiverT4.label>установить: мифическая бионика: печень</Install_Grechka_MythicLiverT4.label>
-  <Install_Grechka_MythicLiverT4.description>Установить мифическая бионика: печень. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicLiverT4.description>
+  <Install_Grechka_MythicLiverT4.label>установить: мифическая печень</Install_Grechka_MythicLiverT4.label>
+  <Install_Grechka_MythicLiverT4.description>Установка: мифическая печень. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicLiverT4.description>
   <Install_Grechka_MythicLiverT4.jobString>Установка импланта.</Install_Grechka_MythicLiverT4.jobString>
-  <Remove_Grechka_MythicLiverT4.label>извлечь: мифическая бионика: печень</Remove_Grechka_MythicLiverT4.label>
+  <Remove_Grechka_MythicLiverT4.label>извлечь: мифическая печень</Remove_Grechka_MythicLiverT4.label>
   <Remove_Grechka_MythicLiverT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicLiverT4.description>
   <Remove_Grechka_MythicLiverT4.jobString>Извлечение импланта.</Remove_Grechka_MythicLiverT4.jobString>
-  <Install_Grechka_MythicStomachT4.label>установить: мифическая бионика: желудок</Install_Grechka_MythicStomachT4.label>
-  <Install_Grechka_MythicStomachT4.description>Установить мифическая бионика: желудок. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicStomachT4.description>
+  <Install_Grechka_MythicStomachT4.label>установить: мифический желудок</Install_Grechka_MythicStomachT4.label>
+  <Install_Grechka_MythicStomachT4.description>Установка: мифический желудок. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicStomachT4.description>
   <Install_Grechka_MythicStomachT4.jobString>Установка импланта.</Install_Grechka_MythicStomachT4.jobString>
-  <Remove_Grechka_MythicStomachT4.label>извлечь: мифическая бионика: желудок</Remove_Grechka_MythicStomachT4.label>
+  <Remove_Grechka_MythicStomachT4.label>извлечь: мифический желудок</Remove_Grechka_MythicStomachT4.label>
   <Remove_Grechka_MythicStomachT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicStomachT4.description>
   <Remove_Grechka_MythicStomachT4.jobString>Извлечение импланта.</Remove_Grechka_MythicStomachT4.jobString>
-  <Install_Grechka_MythicLungT4.label>установить: мифическая бионика: лёгкое</Install_Grechka_MythicLungT4.label>
-  <Install_Grechka_MythicLungT4.description>Установить мифическая бионика: лёгкое. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicLungT4.description>
+  <Install_Grechka_MythicLungT4.label>установить: мифическое лёгкое</Install_Grechka_MythicLungT4.label>
+  <Install_Grechka_MythicLungT4.description>Установка: мифическое лёгкое. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicLungT4.description>
   <Install_Grechka_MythicLungT4.jobString>Установка импланта.</Install_Grechka_MythicLungT4.jobString>
-  <Remove_Grechka_MythicLungT4.label>извлечь: мифическая бионика: лёгкое</Remove_Grechka_MythicLungT4.label>
+  <Remove_Grechka_MythicLungT4.label>извлечь: мифическое лёгкое</Remove_Grechka_MythicLungT4.label>
   <Remove_Grechka_MythicLungT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicLungT4.description>
   <Remove_Grechka_MythicLungT4.jobString>Извлечение импланта.</Remove_Grechka_MythicLungT4.jobString>
-  <Install_Grechka_MythicKidneyT4.label>установить: мифическая бионика: почка</Install_Grechka_MythicKidneyT4.label>
-  <Install_Grechka_MythicKidneyT4.description>Установить мифическая бионика: почка. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicKidneyT4.description>
+  <Install_Grechka_MythicKidneyT4.label>установить: мифическая почка</Install_Grechka_MythicKidneyT4.label>
+  <Install_Grechka_MythicKidneyT4.description>Установка: мифическая почка. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicKidneyT4.description>
   <Install_Grechka_MythicKidneyT4.jobString>Установка импланта.</Install_Grechka_MythicKidneyT4.jobString>
-  <Remove_Grechka_MythicKidneyT4.label>извлечь: мифическая бионика: почка</Remove_Grechka_MythicKidneyT4.label>
+  <Remove_Grechka_MythicKidneyT4.label>извлечь: мифическая почка</Remove_Grechka_MythicKidneyT4.label>
   <Remove_Grechka_MythicKidneyT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicKidneyT4.description>
   <Remove_Grechka_MythicKidneyT4.jobString>Извлечение импланта.</Remove_Grechka_MythicKidneyT4.jobString>
-  <Install_Grechka_MythicArmT4.label>установить: мифическая бионика: рука</Install_Grechka_MythicArmT4.label>
-  <Install_Grechka_MythicArmT4.description>Установить мифическая бионика: рука. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicArmT4.description>
+  <Install_Grechka_MythicArmT4.label>установить: мифическая рука</Install_Grechka_MythicArmT4.label>
+  <Install_Grechka_MythicArmT4.description>Установка: мифическая рука. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicArmT4.description>
   <Install_Grechka_MythicArmT4.jobString>Установка импланта.</Install_Grechka_MythicArmT4.jobString>
-  <Remove_Grechka_MythicArmT4.label>извлечь: мифическая бионика: рука</Remove_Grechka_MythicArmT4.label>
+  <Remove_Grechka_MythicArmT4.label>извлечь: мифическая рука</Remove_Grechka_MythicArmT4.label>
   <Remove_Grechka_MythicArmT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicArmT4.description>
   <Remove_Grechka_MythicArmT4.jobString>Извлечение импланта.</Remove_Grechka_MythicArmT4.jobString>
-  <Install_Grechka_MythicHandT4.label>установить: мифическая бионика: кисть</Install_Grechka_MythicHandT4.label>
-  <Install_Grechka_MythicHandT4.description>Установить мифическая бионика: кисть. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicHandT4.description>
+  <Install_Grechka_MythicHandT4.label>установить: мифическая кисть</Install_Grechka_MythicHandT4.label>
+  <Install_Grechka_MythicHandT4.description>Установка: мифическая кисть. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicHandT4.description>
   <Install_Grechka_MythicHandT4.jobString>Установка импланта.</Install_Grechka_MythicHandT4.jobString>
-  <Remove_Grechka_MythicHandT4.label>извлечь: мифическая бионика: кисть</Remove_Grechka_MythicHandT4.label>
+  <Remove_Grechka_MythicHandT4.label>извлечь: мифическая кисть</Remove_Grechka_MythicHandT4.label>
   <Remove_Grechka_MythicHandT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicHandT4.description>
   <Remove_Grechka_MythicHandT4.jobString>Извлечение импланта.</Remove_Grechka_MythicHandT4.jobString>
-  <Install_Grechka_MythicFingerT4.label>установить: мифическая бионика: палец руки</Install_Grechka_MythicFingerT4.label>
-  <Install_Grechka_MythicFingerT4.description>Установить мифическая бионика: палец руки. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicFingerT4.description>
+  <Install_Grechka_MythicFingerT4.label>установить: мифический палец руки</Install_Grechka_MythicFingerT4.label>
+  <Install_Grechka_MythicFingerT4.description>Установка: мифический палец руки. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicFingerT4.description>
   <Install_Grechka_MythicFingerT4.jobString>Установка импланта.</Install_Grechka_MythicFingerT4.jobString>
-  <Remove_Grechka_MythicFingerT4.label>извлечь: мифическая бионика: палец руки</Remove_Grechka_MythicFingerT4.label>
+  <Remove_Grechka_MythicFingerT4.label>извлечь: мифический палец руки</Remove_Grechka_MythicFingerT4.label>
   <Remove_Grechka_MythicFingerT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicFingerT4.description>
   <Remove_Grechka_MythicFingerT4.jobString>Извлечение импланта.</Remove_Grechka_MythicFingerT4.jobString>
-  <Install_Grechka_MythicLegT4.label>установить: мифическая бионика: нога</Install_Grechka_MythicLegT4.label>
-  <Install_Grechka_MythicLegT4.description>Установить мифическая бионика: нога. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicLegT4.description>
+  <Install_Grechka_MythicLegT4.label>установить: мифическая нога</Install_Grechka_MythicLegT4.label>
+  <Install_Grechka_MythicLegT4.description>Установка: мифическая нога. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicLegT4.description>
   <Install_Grechka_MythicLegT4.jobString>Установка импланта.</Install_Grechka_MythicLegT4.jobString>
-  <Remove_Grechka_MythicLegT4.label>извлечь: мифическая бионика: нога</Remove_Grechka_MythicLegT4.label>
+  <Remove_Grechka_MythicLegT4.label>извлечь: мифическая нога</Remove_Grechka_MythicLegT4.label>
   <Remove_Grechka_MythicLegT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicLegT4.description>
   <Remove_Grechka_MythicLegT4.jobString>Извлечение импланта.</Remove_Grechka_MythicLegT4.jobString>
-  <Install_Grechka_MythicFootT4.label>установить: мифическая бионика: стопа</Install_Grechka_MythicFootT4.label>
-  <Install_Grechka_MythicFootT4.description>Установить мифическая бионика: стопа. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicFootT4.description>
+  <Install_Grechka_MythicFootT4.label>установить: мифическая стопа</Install_Grechka_MythicFootT4.label>
+  <Install_Grechka_MythicFootT4.description>Установка: мифическая стопа. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicFootT4.description>
   <Install_Grechka_MythicFootT4.jobString>Установка импланта.</Install_Grechka_MythicFootT4.jobString>
-  <Remove_Grechka_MythicFootT4.label>извлечь: мифическая бионика: стопа</Remove_Grechka_MythicFootT4.label>
+  <Remove_Grechka_MythicFootT4.label>извлечь: мифическая стопа</Remove_Grechka_MythicFootT4.label>
   <Remove_Grechka_MythicFootT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicFootT4.description>
   <Remove_Grechka_MythicFootT4.jobString>Извлечение импланта.</Remove_Grechka_MythicFootT4.jobString>
-  <Install_Grechka_MythicToeT4.label>установить: мифическая бионика: палец ноги</Install_Grechka_MythicToeT4.label>
-  <Install_Grechka_MythicToeT4.description>Установить мифическая бионика: палец ноги. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicToeT4.description>
+  <Install_Grechka_MythicToeT4.label>установить: мифический палец ноги</Install_Grechka_MythicToeT4.label>
+  <Install_Grechka_MythicToeT4.description>Установка: мифический палец ноги. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicToeT4.description>
   <Install_Grechka_MythicToeT4.jobString>Установка импланта.</Install_Grechka_MythicToeT4.jobString>
-  <Remove_Grechka_MythicToeT4.label>извлечь: мифическая бионика: палец ноги</Remove_Grechka_MythicToeT4.label>
+  <Remove_Grechka_MythicToeT4.label>извлечь: мифический палец ноги</Remove_Grechka_MythicToeT4.label>
   <Remove_Grechka_MythicToeT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicToeT4.description>
   <Remove_Grechka_MythicToeT4.jobString>Извлечение импланта.</Remove_Grechka_MythicToeT4.jobString>
-  <Install_Grechka_MythicShoulderT4.label>установить: мифическая бионика: плечо</Install_Grechka_MythicShoulderT4.label>
-  <Install_Grechka_MythicShoulderT4.description>Установить мифическая бионика: плечо. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicShoulderT4.description>
+  <Install_Grechka_MythicShoulderT4.label>установить: мифическое плечо</Install_Grechka_MythicShoulderT4.label>
+  <Install_Grechka_MythicShoulderT4.description>Установка: мифическое плечо. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicShoulderT4.description>
   <Install_Grechka_MythicShoulderT4.jobString>Установка импланта.</Install_Grechka_MythicShoulderT4.jobString>
-  <Remove_Grechka_MythicShoulderT4.label>извлечь: мифическая бионика: плечо</Remove_Grechka_MythicShoulderT4.label>
+  <Remove_Grechka_MythicShoulderT4.label>извлечь: мифическое плечо</Remove_Grechka_MythicShoulderT4.label>
   <Remove_Grechka_MythicShoulderT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicShoulderT4.description>
   <Remove_Grechka_MythicShoulderT4.jobString>Извлечение импланта.</Remove_Grechka_MythicShoulderT4.jobString>
-  <Install_Grechka_MythicClavicleT4.label>установить: мифическая бионика: ключица</Install_Grechka_MythicClavicleT4.label>
-  <Install_Grechka_MythicClavicleT4.description>Установить мифическая бионика: ключица. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicClavicleT4.description>
+  <Install_Grechka_MythicClavicleT4.label>установить: мифическая ключица</Install_Grechka_MythicClavicleT4.label>
+  <Install_Grechka_MythicClavicleT4.description>Установка: мифическая ключица. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicClavicleT4.description>
   <Install_Grechka_MythicClavicleT4.jobString>Установка импланта.</Install_Grechka_MythicClavicleT4.jobString>
-  <Remove_Grechka_MythicClavicleT4.label>извлечь: мифическая бионика: ключица</Remove_Grechka_MythicClavicleT4.label>
+  <Remove_Grechka_MythicClavicleT4.label>извлечь: мифическая ключица</Remove_Grechka_MythicClavicleT4.label>
   <Remove_Grechka_MythicClavicleT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicClavicleT4.description>
   <Remove_Grechka_MythicClavicleT4.jobString>Извлечение импланта.</Remove_Grechka_MythicClavicleT4.jobString>
-  <Install_Grechka_MythicHumerusT4.label>установить: мифическая бионика: плечевая кость</Install_Grechka_MythicHumerusT4.label>
-  <Install_Grechka_MythicHumerusT4.description>Установить мифическая бионика: плечевая кость. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicHumerusT4.description>
+  <Install_Grechka_MythicHumerusT4.label>установить: мифическая плечевая кость</Install_Grechka_MythicHumerusT4.label>
+  <Install_Grechka_MythicHumerusT4.description>Установка: мифическая плечевая кость. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicHumerusT4.description>
   <Install_Grechka_MythicHumerusT4.jobString>Установка импланта.</Install_Grechka_MythicHumerusT4.jobString>
-  <Remove_Grechka_MythicHumerusT4.label>извлечь: мифическая бионика: плечевая кость</Remove_Grechka_MythicHumerusT4.label>
+  <Remove_Grechka_MythicHumerusT4.label>извлечь: мифическая плечевая кость</Remove_Grechka_MythicHumerusT4.label>
   <Remove_Grechka_MythicHumerusT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicHumerusT4.description>
   <Remove_Grechka_MythicHumerusT4.jobString>Извлечение импланта.</Remove_Grechka_MythicHumerusT4.jobString>
-  <Install_Grechka_MythicRadiusT4.label>установить: мифическая бионика: лучевая кость</Install_Grechka_MythicRadiusT4.label>
-  <Install_Grechka_MythicRadiusT4.description>Установить мифическая бионика: лучевая кость. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicRadiusT4.description>
+  <Install_Grechka_MythicRadiusT4.label>установить: мифическая лучевая кость</Install_Grechka_MythicRadiusT4.label>
+  <Install_Grechka_MythicRadiusT4.description>Установка: мифическая лучевая кость. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicRadiusT4.description>
   <Install_Grechka_MythicRadiusT4.jobString>Установка импланта.</Install_Grechka_MythicRadiusT4.jobString>
-  <Remove_Grechka_MythicRadiusT4.label>извлечь: мифическая бионика: лучевая кость</Remove_Grechka_MythicRadiusT4.label>
+  <Remove_Grechka_MythicRadiusT4.label>извлечь: мифическая лучевая кость</Remove_Grechka_MythicRadiusT4.label>
   <Remove_Grechka_MythicRadiusT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicRadiusT4.description>
   <Remove_Grechka_MythicRadiusT4.jobString>Извлечение импланта.</Remove_Grechka_MythicRadiusT4.jobString>
-  <Install_Grechka_MythicFemurT4.label>установить: мифическая бионика: бедренная кость</Install_Grechka_MythicFemurT4.label>
-  <Install_Grechka_MythicFemurT4.description>Установить мифическая бионика: бедренная кость. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicFemurT4.description>
+  <Install_Grechka_MythicFemurT4.label>установить: мифическая бедренная кость</Install_Grechka_MythicFemurT4.label>
+  <Install_Grechka_MythicFemurT4.description>Установка: мифическая бедренная кость. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicFemurT4.description>
   <Install_Grechka_MythicFemurT4.jobString>Установка импланта.</Install_Grechka_MythicFemurT4.jobString>
-  <Remove_Grechka_MythicFemurT4.label>извлечь: мифическая бионика: бедренная кость</Remove_Grechka_MythicFemurT4.label>
+  <Remove_Grechka_MythicFemurT4.label>извлечь: мифическая бедренная кость</Remove_Grechka_MythicFemurT4.label>
   <Remove_Grechka_MythicFemurT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicFemurT4.description>
   <Remove_Grechka_MythicFemurT4.jobString>Извлечение импланта.</Remove_Grechka_MythicFemurT4.jobString>
-  <Install_Grechka_MythicTibiaT4.label>установить: мифическая бионика: большеберцовая кость</Install_Grechka_MythicTibiaT4.label>
-  <Install_Grechka_MythicTibiaT4.description>Установить мифическая бионика: большеберцовая кость. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicTibiaT4.description>
+  <Install_Grechka_MythicTibiaT4.label>установить: мифическая большеберцовая кость</Install_Grechka_MythicTibiaT4.label>
+  <Install_Grechka_MythicTibiaT4.description>Установка: мифическая большеберцовая кость. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicTibiaT4.description>
   <Install_Grechka_MythicTibiaT4.jobString>Установка импланта.</Install_Grechka_MythicTibiaT4.jobString>
-  <Remove_Grechka_MythicTibiaT4.label>извлечь: мифическая бионика: большеберцовая кость</Remove_Grechka_MythicTibiaT4.label>
+  <Remove_Grechka_MythicTibiaT4.label>извлечь: мифическая большеберцовая кость</Remove_Grechka_MythicTibiaT4.label>
   <Remove_Grechka_MythicTibiaT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicTibiaT4.description>
   <Remove_Grechka_MythicTibiaT4.jobString>Извлечение импланта.</Remove_Grechka_MythicTibiaT4.jobString>
-  <Install_Grechka_MythicSpineT4.label>установить: мифическая бионика: позвоночник</Install_Grechka_MythicSpineT4.label>
-  <Install_Grechka_MythicSpineT4.description>Установить мифическая бионика: позвоночник. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicSpineT4.description>
+  <Install_Grechka_MythicSpineT4.label>установить: мифический позвоночник</Install_Grechka_MythicSpineT4.label>
+  <Install_Grechka_MythicSpineT4.description>Установка: мифический позвоночник. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicSpineT4.description>
   <Install_Grechka_MythicSpineT4.jobString>Установка импланта.</Install_Grechka_MythicSpineT4.jobString>
-  <Remove_Grechka_MythicSpineT4.label>извлечь: мифическая бионика: позвоночник</Remove_Grechka_MythicSpineT4.label>
+  <Remove_Grechka_MythicSpineT4.label>извлечь: мифический позвоночник</Remove_Grechka_MythicSpineT4.label>
   <Remove_Grechka_MythicSpineT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicSpineT4.description>
   <Remove_Grechka_MythicSpineT4.jobString>Извлечение импланта.</Remove_Grechka_MythicSpineT4.jobString>
-  <Install_Grechka_MythicNoseT4.label>установить: мифическая бионика: нос</Install_Grechka_MythicNoseT4.label>
-  <Install_Grechka_MythicNoseT4.description>Установить мифическая бионика: нос. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicNoseT4.description>
+  <Install_Grechka_MythicNoseT4.label>установить: мифический нос</Install_Grechka_MythicNoseT4.label>
+  <Install_Grechka_MythicNoseT4.description>Установка: мифический нос. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicNoseT4.description>
   <Install_Grechka_MythicNoseT4.jobString>Установка импланта.</Install_Grechka_MythicNoseT4.jobString>
-  <Remove_Grechka_MythicNoseT4.label>извлечь: мифическая бионика: нос</Remove_Grechka_MythicNoseT4.label>
+  <Remove_Grechka_MythicNoseT4.label>извлечь: мифический нос</Remove_Grechka_MythicNoseT4.label>
   <Remove_Grechka_MythicNoseT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicNoseT4.description>
   <Remove_Grechka_MythicNoseT4.jobString>Извлечение импланта.</Remove_Grechka_MythicNoseT4.jobString>
-  <Install_Grechka_MythicJawT4.label>установить: мифическая бионика: челюсть</Install_Grechka_MythicJawT4.label>
-  <Install_Grechka_MythicJawT4.description>Установить мифическая бионика: челюсть. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicJawT4.description>
+  <Install_Grechka_MythicJawT4.label>установить: мифическая челюсть</Install_Grechka_MythicJawT4.label>
+  <Install_Grechka_MythicJawT4.description>Установка: мифическая челюсть. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicJawT4.description>
   <Install_Grechka_MythicJawT4.jobString>Установка импланта.</Install_Grechka_MythicJawT4.jobString>
-  <Remove_Grechka_MythicJawT4.label>извлечь: мифическая бионика: челюсть</Remove_Grechka_MythicJawT4.label>
+  <Remove_Grechka_MythicJawT4.label>извлечь: мифическая челюсть</Remove_Grechka_MythicJawT4.label>
   <Remove_Grechka_MythicJawT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicJawT4.description>
   <Remove_Grechka_MythicJawT4.jobString>Извлечение импланта.</Remove_Grechka_MythicJawT4.jobString>
-  <Install_Grechka_MythicTongueT4.label>установить: мифическая бионика: язык</Install_Grechka_MythicTongueT4.label>
-  <Install_Grechka_MythicTongueT4.description>Установить мифическая бионика: язык. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicTongueT4.description>
+  <Install_Grechka_MythicTongueT4.label>установить: мифический язык</Install_Grechka_MythicTongueT4.label>
+  <Install_Grechka_MythicTongueT4.description>Установка: мифический язык. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicTongueT4.description>
   <Install_Grechka_MythicTongueT4.jobString>Установка импланта.</Install_Grechka_MythicTongueT4.jobString>
-  <Remove_Grechka_MythicTongueT4.label>извлечь: мифическая бионика: язык</Remove_Grechka_MythicTongueT4.label>
+  <Remove_Grechka_MythicTongueT4.label>извлечь: мифический язык</Remove_Grechka_MythicTongueT4.label>
   <Remove_Grechka_MythicTongueT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicTongueT4.description>
   <Remove_Grechka_MythicTongueT4.jobString>Извлечение импланта.</Remove_Grechka_MythicTongueT4.jobString>
-  <Install_Grechka_MythicRibcageT4.label>установить: мифическая бионика: грудная клетка</Install_Grechka_MythicRibcageT4.label>
-  <Install_Grechka_MythicRibcageT4.description>Установить мифическая бионика: грудная клетка. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicRibcageT4.description>
+  <Install_Grechka_MythicRibcageT4.label>установить: мифическая грудная клетка</Install_Grechka_MythicRibcageT4.label>
+  <Install_Grechka_MythicRibcageT4.description>Установка: мифическая грудная клетка. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicRibcageT4.description>
   <Install_Grechka_MythicRibcageT4.jobString>Установка импланта.</Install_Grechka_MythicRibcageT4.jobString>
-  <Remove_Grechka_MythicRibcageT4.label>извлечь: мифическая бионика: грудная клетка</Remove_Grechka_MythicRibcageT4.label>
+  <Remove_Grechka_MythicRibcageT4.label>извлечь: мифическая грудная клетка</Remove_Grechka_MythicRibcageT4.label>
   <Remove_Grechka_MythicRibcageT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicRibcageT4.description>
   <Remove_Grechka_MythicRibcageT4.jobString>Извлечение импланта.</Remove_Grechka_MythicRibcageT4.jobString>
-  <Install_Grechka_MythicSternumT4.label>установить: мифическая бионика: грудина</Install_Grechka_MythicSternumT4.label>
-  <Install_Grechka_MythicSternumT4.description>Установить мифическая бионика: грудина. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicSternumT4.description>
+  <Install_Grechka_MythicSternumT4.label>установить: мифическая грудина</Install_Grechka_MythicSternumT4.label>
+  <Install_Grechka_MythicSternumT4.description>Установка: мифическая грудина. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicSternumT4.description>
   <Install_Grechka_MythicSternumT4.jobString>Установка импланта.</Install_Grechka_MythicSternumT4.jobString>
-  <Remove_Grechka_MythicSternumT4.label>извлечь: мифическая бионика: грудина</Remove_Grechka_MythicSternumT4.label>
+  <Remove_Grechka_MythicSternumT4.label>извлечь: мифическая грудина</Remove_Grechka_MythicSternumT4.label>
   <Remove_Grechka_MythicSternumT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicSternumT4.description>
   <Remove_Grechka_MythicSternumT4.jobString>Извлечение импланта.</Remove_Grechka_MythicSternumT4.jobString>
-  <Install_Grechka_MythicPelvisT4.label>установить: мифическая бионика: таз</Install_Grechka_MythicPelvisT4.label>
-  <Install_Grechka_MythicPelvisT4.description>Установить мифическая бионика: таз. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicPelvisT4.description>
+  <Install_Grechka_MythicPelvisT4.label>установить: мифический таз</Install_Grechka_MythicPelvisT4.label>
+  <Install_Grechka_MythicPelvisT4.description>Установка: мифический таз. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicPelvisT4.description>
   <Install_Grechka_MythicPelvisT4.jobString>Установка импланта.</Install_Grechka_MythicPelvisT4.jobString>
-  <Remove_Grechka_MythicPelvisT4.label>извлечь: мифическая бионика: таз</Remove_Grechka_MythicPelvisT4.label>
+  <Remove_Grechka_MythicPelvisT4.label>извлечь: мифический таз</Remove_Grechka_MythicPelvisT4.label>
   <Remove_Grechka_MythicPelvisT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicPelvisT4.description>
   <Remove_Grechka_MythicPelvisT4.jobString>Извлечение импланта.</Remove_Grechka_MythicPelvisT4.jobString>
-  <Install_Grechka_MythicSkullT4.label>установить: мифическая бионика: череп</Install_Grechka_MythicSkullT4.label>
-  <Install_Grechka_MythicSkullT4.description>Установить мифическая бионика: череп. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicSkullT4.description>
+  <Install_Grechka_MythicSkullT4.label>установить: мифический череп</Install_Grechka_MythicSkullT4.label>
+  <Install_Grechka_MythicSkullT4.description>Установка: мифический череп. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicSkullT4.description>
   <Install_Grechka_MythicSkullT4.jobString>Установка импланта.</Install_Grechka_MythicSkullT4.jobString>
-  <Remove_Grechka_MythicSkullT4.label>извлечь: мифическая бионика: череп</Remove_Grechka_MythicSkullT4.label>
+  <Remove_Grechka_MythicSkullT4.label>извлечь: мифический череп</Remove_Grechka_MythicSkullT4.label>
   <Remove_Grechka_MythicSkullT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicSkullT4.description>
   <Remove_Grechka_MythicSkullT4.jobString>Извлечение импланта.</Remove_Grechka_MythicSkullT4.jobString>
-  <Install_Grechka_MythicTorsoT4.label>установить: мифическая бионика: торс</Install_Grechka_MythicTorsoT4.label>
-  <Install_Grechka_MythicTorsoT4.description>Установить мифическая бионика: торс. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicTorsoT4.description>
+  <Install_Grechka_MythicTorsoT4.label>установить: мифический торс</Install_Grechka_MythicTorsoT4.label>
+  <Install_Grechka_MythicTorsoT4.description>Установка: мифический торс. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicTorsoT4.description>
   <Install_Grechka_MythicTorsoT4.jobString>Установка импланта.</Install_Grechka_MythicTorsoT4.jobString>
-  <Remove_Grechka_MythicTorsoT4.label>извлечь: мифическая бионика: торс</Remove_Grechka_MythicTorsoT4.label>
+  <Remove_Grechka_MythicTorsoT4.label>извлечь: мифический торс</Remove_Grechka_MythicTorsoT4.label>
   <Remove_Grechka_MythicTorsoT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicTorsoT4.description>
   <Remove_Grechka_MythicTorsoT4.jobString>Извлечение импланта.</Remove_Grechka_MythicTorsoT4.jobString>
-  <Install_Grechka_MythicNeckT4.label>установить: мифическая бионика: шея</Install_Grechka_MythicNeckT4.label>
-  <Install_Grechka_MythicNeckT4.description>Установить мифическая бионика: шея. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicNeckT4.description>
+  <Install_Grechka_MythicNeckT4.label>установить: мифическая шея</Install_Grechka_MythicNeckT4.label>
+  <Install_Grechka_MythicNeckT4.description>Установка: мифическая шея. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicNeckT4.description>
   <Install_Grechka_MythicNeckT4.jobString>Установка импланта.</Install_Grechka_MythicNeckT4.jobString>
-  <Remove_Grechka_MythicNeckT4.label>извлечь: мифическая бионика: шея</Remove_Grechka_MythicNeckT4.label>
+  <Remove_Grechka_MythicNeckT4.label>извлечь: мифическая шея</Remove_Grechka_MythicNeckT4.label>
   <Remove_Grechka_MythicNeckT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicNeckT4.description>
   <Remove_Grechka_MythicNeckT4.jobString>Извлечение импланта.</Remove_Grechka_MythicNeckT4.jobString>
-  <Install_Grechka_MythicHeadT4.label>установить: мифическая бионика: голова</Install_Grechka_MythicHeadT4.label>
-  <Install_Grechka_MythicHeadT4.description>Установить мифическая бионика: голова. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicHeadT4.description>
+  <Install_Grechka_MythicHeadT4.label>установить: мифическая голова</Install_Grechka_MythicHeadT4.label>
+  <Install_Grechka_MythicHeadT4.description>Установка: мифическая голова. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicHeadT4.description>
   <Install_Grechka_MythicHeadT4.jobString>Установка импланта.</Install_Grechka_MythicHeadT4.jobString>
-  <Remove_Grechka_MythicHeadT4.label>извлечь: мифическая бионика: голова</Remove_Grechka_MythicHeadT4.label>
+  <Remove_Grechka_MythicHeadT4.label>извлечь: мифическая голова</Remove_Grechka_MythicHeadT4.label>
   <Remove_Grechka_MythicHeadT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicHeadT4.description>
   <Remove_Grechka_MythicHeadT4.jobString>Извлечение импланта.</Remove_Grechka_MythicHeadT4.jobString>
-  <Install_Grechka_MythicWaistT4.label>установить: мифическая бионика: поясница</Install_Grechka_MythicWaistT4.label>
-  <Install_Grechka_MythicWaistT4.description>Установить мифическая бионика: поясница. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicWaistT4.description>
+  <Install_Grechka_MythicWaistT4.label>установить: мифическая поясница</Install_Grechka_MythicWaistT4.label>
+  <Install_Grechka_MythicWaistT4.description>Установка: мифическая поясница. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicWaistT4.description>
   <Install_Grechka_MythicWaistT4.jobString>Установка импланта.</Install_Grechka_MythicWaistT4.jobString>
-  <Remove_Grechka_MythicWaistT4.label>извлечь: мифическая бионика: поясница</Remove_Grechka_MythicWaistT4.label>
+  <Remove_Grechka_MythicWaistT4.label>извлечь: мифическая поясница</Remove_Grechka_MythicWaistT4.label>
   <Remove_Grechka_MythicWaistT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicWaistT4.description>
   <Remove_Grechka_MythicWaistT4.jobString>Извлечение импланта.</Remove_Grechka_MythicWaistT4.jobString>
-  <Install_Grechka_MythicBrainT4.label>установить: мифическая бионика: мозг</Install_Grechka_MythicBrainT4.label>
-  <Install_Grechka_MythicBrainT4.description>Установить мифическая бионика: мозг. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicBrainT4.description>
+  <Install_Grechka_MythicBrainT4.label>установить: мифический мозг</Install_Grechka_MythicBrainT4.label>
+  <Install_Grechka_MythicBrainT4.description>Установка: мифический мозг. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_MythicBrainT4.description>
   <Install_Grechka_MythicBrainT4.jobString>Установка импланта.</Install_Grechka_MythicBrainT4.jobString>
-  <Remove_Grechka_MythicBrainT4.label>извлечь: мифическая бионика: мозг</Remove_Grechka_MythicBrainT4.label>
+  <Remove_Grechka_MythicBrainT4.label>извлечь: мифический мозг</Remove_Grechka_MythicBrainT4.label>
   <Remove_Grechka_MythicBrainT4.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_MythicBrainT4.description>
   <Remove_Grechka_MythicBrainT4.jobString>Извлечение импланта.</Remove_Grechka_MythicBrainT4.jobString>
-  <Install_Grechka_GrechkaEyeT5.label>установить: гречневая бионика: глаз</Install_Grechka_GrechkaEyeT5.label>
-  <Install_Grechka_GrechkaEyeT5.description>Установить гречневая бионика: глаз. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaEyeT5.description>
+  <Install_Grechka_GrechkaEyeT5.label>установить: гречневый глаз</Install_Grechka_GrechkaEyeT5.label>
+  <Install_Grechka_GrechkaEyeT5.description>Установка: гречневый глаз. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaEyeT5.description>
   <Install_Grechka_GrechkaEyeT5.jobString>Установка импланта.</Install_Grechka_GrechkaEyeT5.jobString>
-  <Remove_Grechka_GrechkaEyeT5.label>извлечь: гречневая бионика: глаз</Remove_Grechka_GrechkaEyeT5.label>
+  <Remove_Grechka_GrechkaEyeT5.label>извлечь: гречневый глаз</Remove_Grechka_GrechkaEyeT5.label>
   <Remove_Grechka_GrechkaEyeT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaEyeT5.description>
   <Remove_Grechka_GrechkaEyeT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaEyeT5.jobString>
-  <Install_Grechka_GrechkaEarT5.label>установить: гречневая бионика: ухо</Install_Grechka_GrechkaEarT5.label>
-  <Install_Grechka_GrechkaEarT5.description>Установить гречневая бионика: ухо. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaEarT5.description>
+  <Install_Grechka_GrechkaEarT5.label>установить: гречневое ухо</Install_Grechka_GrechkaEarT5.label>
+  <Install_Grechka_GrechkaEarT5.description>Установка: гречневое ухо. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaEarT5.description>
   <Install_Grechka_GrechkaEarT5.jobString>Установка импланта.</Install_Grechka_GrechkaEarT5.jobString>
-  <Remove_Grechka_GrechkaEarT5.label>извлечь: гречневая бионика: ухо</Remove_Grechka_GrechkaEarT5.label>
+  <Remove_Grechka_GrechkaEarT5.label>извлечь: гречневое ухо</Remove_Grechka_GrechkaEarT5.label>
   <Remove_Grechka_GrechkaEarT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaEarT5.description>
   <Remove_Grechka_GrechkaEarT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaEarT5.jobString>
-  <Install_Grechka_GrechkaHeartT5.label>установить: гречневая бионика: сердце</Install_Grechka_GrechkaHeartT5.label>
-  <Install_Grechka_GrechkaHeartT5.description>Установить гречневая бионика: сердце. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaHeartT5.description>
+  <Install_Grechka_GrechkaHeartT5.label>установить: гречневое сердце</Install_Grechka_GrechkaHeartT5.label>
+  <Install_Grechka_GrechkaHeartT5.description>Установка: гречневое сердце. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaHeartT5.description>
   <Install_Grechka_GrechkaHeartT5.jobString>Установка импланта.</Install_Grechka_GrechkaHeartT5.jobString>
-  <Remove_Grechka_GrechkaHeartT5.label>извлечь: гречневая бионика: сердце</Remove_Grechka_GrechkaHeartT5.label>
+  <Remove_Grechka_GrechkaHeartT5.label>извлечь: гречневое сердце</Remove_Grechka_GrechkaHeartT5.label>
   <Remove_Grechka_GrechkaHeartT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaHeartT5.description>
   <Remove_Grechka_GrechkaHeartT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaHeartT5.jobString>
-  <Install_Grechka_GrechkaLiverT5.label>установить: гречневая бионика: печень</Install_Grechka_GrechkaLiverT5.label>
-  <Install_Grechka_GrechkaLiverT5.description>Установить гречневая бионика: печень. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaLiverT5.description>
+  <Install_Grechka_GrechkaLiverT5.label>установить: гречневая печень</Install_Grechka_GrechkaLiverT5.label>
+  <Install_Grechka_GrechkaLiverT5.description>Установка: гречневая печень. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaLiverT5.description>
   <Install_Grechka_GrechkaLiverT5.jobString>Установка импланта.</Install_Grechka_GrechkaLiverT5.jobString>
-  <Remove_Grechka_GrechkaLiverT5.label>извлечь: гречневая бионика: печень</Remove_Grechka_GrechkaLiverT5.label>
+  <Remove_Grechka_GrechkaLiverT5.label>извлечь: гречневая печень</Remove_Grechka_GrechkaLiverT5.label>
   <Remove_Grechka_GrechkaLiverT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaLiverT5.description>
   <Remove_Grechka_GrechkaLiverT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaLiverT5.jobString>
-  <Install_Grechka_GrechkaStomachT5.label>установить: гречневая бионика: желудок</Install_Grechka_GrechkaStomachT5.label>
-  <Install_Grechka_GrechkaStomachT5.description>Установить гречневая бионика: желудок. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaStomachT5.description>
+  <Install_Grechka_GrechkaStomachT5.label>установить: гречневый желудок</Install_Grechka_GrechkaStomachT5.label>
+  <Install_Grechka_GrechkaStomachT5.description>Установка: гречневый желудок. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaStomachT5.description>
   <Install_Grechka_GrechkaStomachT5.jobString>Установка импланта.</Install_Grechka_GrechkaStomachT5.jobString>
-  <Remove_Grechka_GrechkaStomachT5.label>извлечь: гречневая бионика: желудок</Remove_Grechka_GrechkaStomachT5.label>
+  <Remove_Grechka_GrechkaStomachT5.label>извлечь: гречневый желудок</Remove_Grechka_GrechkaStomachT5.label>
   <Remove_Grechka_GrechkaStomachT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaStomachT5.description>
   <Remove_Grechka_GrechkaStomachT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaStomachT5.jobString>
-  <Install_Grechka_GrechkaLungT5.label>установить: гречневая бионика: лёгкое</Install_Grechka_GrechkaLungT5.label>
-  <Install_Grechka_GrechkaLungT5.description>Установить гречневая бионика: лёгкое. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaLungT5.description>
+  <Install_Grechka_GrechkaLungT5.label>установить: гречневое лёгкое</Install_Grechka_GrechkaLungT5.label>
+  <Install_Grechka_GrechkaLungT5.description>Установка: гречневое лёгкое. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaLungT5.description>
   <Install_Grechka_GrechkaLungT5.jobString>Установка импланта.</Install_Grechka_GrechkaLungT5.jobString>
-  <Remove_Grechka_GrechkaLungT5.label>извлечь: гречневая бионика: лёгкое</Remove_Grechka_GrechkaLungT5.label>
+  <Remove_Grechka_GrechkaLungT5.label>извлечь: гречневое лёгкое</Remove_Grechka_GrechkaLungT5.label>
   <Remove_Grechka_GrechkaLungT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaLungT5.description>
   <Remove_Grechka_GrechkaLungT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaLungT5.jobString>
-  <Install_Grechka_GrechkaKidneyT5.label>установить: гречневая бионика: почка</Install_Grechka_GrechkaKidneyT5.label>
-  <Install_Grechka_GrechkaKidneyT5.description>Установить гречневая бионика: почка. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaKidneyT5.description>
+  <Install_Grechka_GrechkaKidneyT5.label>установить: гречневая почка</Install_Grechka_GrechkaKidneyT5.label>
+  <Install_Grechka_GrechkaKidneyT5.description>Установка: гречневая почка. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaKidneyT5.description>
   <Install_Grechka_GrechkaKidneyT5.jobString>Установка импланта.</Install_Grechka_GrechkaKidneyT5.jobString>
-  <Remove_Grechka_GrechkaKidneyT5.label>извлечь: гречневая бионика: почка</Remove_Grechka_GrechkaKidneyT5.label>
+  <Remove_Grechka_GrechkaKidneyT5.label>извлечь: гречневая почка</Remove_Grechka_GrechkaKidneyT5.label>
   <Remove_Grechka_GrechkaKidneyT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaKidneyT5.description>
   <Remove_Grechka_GrechkaKidneyT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaKidneyT5.jobString>
-  <Install_Grechka_GrechkaArmT5.label>установить: гречневая бионика: рука</Install_Grechka_GrechkaArmT5.label>
-  <Install_Grechka_GrechkaArmT5.description>Установить гречневая бионика: рука. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaArmT5.description>
+  <Install_Grechka_GrechkaArmT5.label>установить: гречневая рука</Install_Grechka_GrechkaArmT5.label>
+  <Install_Grechka_GrechkaArmT5.description>Установка: гречневая рука. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaArmT5.description>
   <Install_Grechka_GrechkaArmT5.jobString>Установка импланта.</Install_Grechka_GrechkaArmT5.jobString>
-  <Remove_Grechka_GrechkaArmT5.label>извлечь: гречневая бионика: рука</Remove_Grechka_GrechkaArmT5.label>
+  <Remove_Grechka_GrechkaArmT5.label>извлечь: гречневая рука</Remove_Grechka_GrechkaArmT5.label>
   <Remove_Grechka_GrechkaArmT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaArmT5.description>
   <Remove_Grechka_GrechkaArmT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaArmT5.jobString>
-  <Install_Grechka_GrechkaHandT5.label>установить: гречневая бионика: кисть</Install_Grechka_GrechkaHandT5.label>
-  <Install_Grechka_GrechkaHandT5.description>Установить гречневая бионика: кисть. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaHandT5.description>
+  <Install_Grechka_GrechkaHandT5.label>установить: гречневая кисть</Install_Grechka_GrechkaHandT5.label>
+  <Install_Grechka_GrechkaHandT5.description>Установка: гречневая кисть. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaHandT5.description>
   <Install_Grechka_GrechkaHandT5.jobString>Установка импланта.</Install_Grechka_GrechkaHandT5.jobString>
-  <Remove_Grechka_GrechkaHandT5.label>извлечь: гречневая бионика: кисть</Remove_Grechka_GrechkaHandT5.label>
+  <Remove_Grechka_GrechkaHandT5.label>извлечь: гречневая кисть</Remove_Grechka_GrechkaHandT5.label>
   <Remove_Grechka_GrechkaHandT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaHandT5.description>
   <Remove_Grechka_GrechkaHandT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaHandT5.jobString>
-  <Install_Grechka_GrechkaFingerT5.label>установить: гречневая бионика: палец руки</Install_Grechka_GrechkaFingerT5.label>
-  <Install_Grechka_GrechkaFingerT5.description>Установить гречневая бионика: палец руки. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaFingerT5.description>
+  <Install_Grechka_GrechkaFingerT5.label>установить: гречневый палец руки</Install_Grechka_GrechkaFingerT5.label>
+  <Install_Grechka_GrechkaFingerT5.description>Установка: гречневый палец руки. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaFingerT5.description>
   <Install_Grechka_GrechkaFingerT5.jobString>Установка импланта.</Install_Grechka_GrechkaFingerT5.jobString>
-  <Remove_Grechka_GrechkaFingerT5.label>извлечь: гречневая бионика: палец руки</Remove_Grechka_GrechkaFingerT5.label>
+  <Remove_Grechka_GrechkaFingerT5.label>извлечь: гречневый палец руки</Remove_Grechka_GrechkaFingerT5.label>
   <Remove_Grechka_GrechkaFingerT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaFingerT5.description>
   <Remove_Grechka_GrechkaFingerT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaFingerT5.jobString>
-  <Install_Grechka_GrechkaLegT5.label>установить: гречневая бионика: нога</Install_Grechka_GrechkaLegT5.label>
-  <Install_Grechka_GrechkaLegT5.description>Установить гречневая бионика: нога. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaLegT5.description>
+  <Install_Grechka_GrechkaLegT5.label>установить: гречневая нога</Install_Grechka_GrechkaLegT5.label>
+  <Install_Grechka_GrechkaLegT5.description>Установка: гречневая нога. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaLegT5.description>
   <Install_Grechka_GrechkaLegT5.jobString>Установка импланта.</Install_Grechka_GrechkaLegT5.jobString>
-  <Remove_Grechka_GrechkaLegT5.label>извлечь: гречневая бионика: нога</Remove_Grechka_GrechkaLegT5.label>
+  <Remove_Grechka_GrechkaLegT5.label>извлечь: гречневая нога</Remove_Grechka_GrechkaLegT5.label>
   <Remove_Grechka_GrechkaLegT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaLegT5.description>
   <Remove_Grechka_GrechkaLegT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaLegT5.jobString>
-  <Install_Grechka_GrechkaFootT5.label>установить: гречневая бионика: стопа</Install_Grechka_GrechkaFootT5.label>
-  <Install_Grechka_GrechkaFootT5.description>Установить гречневая бионика: стопа. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaFootT5.description>
+  <Install_Grechka_GrechkaFootT5.label>установить: гречневая стопа</Install_Grechka_GrechkaFootT5.label>
+  <Install_Grechka_GrechkaFootT5.description>Установка: гречневая стопа. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaFootT5.description>
   <Install_Grechka_GrechkaFootT5.jobString>Установка импланта.</Install_Grechka_GrechkaFootT5.jobString>
-  <Remove_Grechka_GrechkaFootT5.label>извлечь: гречневая бионика: стопа</Remove_Grechka_GrechkaFootT5.label>
+  <Remove_Grechka_GrechkaFootT5.label>извлечь: гречневая стопа</Remove_Grechka_GrechkaFootT5.label>
   <Remove_Grechka_GrechkaFootT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaFootT5.description>
   <Remove_Grechka_GrechkaFootT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaFootT5.jobString>
-  <Install_Grechka_GrechkaToeT5.label>установить: гречневая бионика: палец ноги</Install_Grechka_GrechkaToeT5.label>
-  <Install_Grechka_GrechkaToeT5.description>Установить гречневая бионика: палец ноги. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaToeT5.description>
+  <Install_Grechka_GrechkaToeT5.label>установить: гречневый палец ноги</Install_Grechka_GrechkaToeT5.label>
+  <Install_Grechka_GrechkaToeT5.description>Установка: гречневый палец ноги. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaToeT5.description>
   <Install_Grechka_GrechkaToeT5.jobString>Установка импланта.</Install_Grechka_GrechkaToeT5.jobString>
-  <Remove_Grechka_GrechkaToeT5.label>извлечь: гречневая бионика: палец ноги</Remove_Grechka_GrechkaToeT5.label>
+  <Remove_Grechka_GrechkaToeT5.label>извлечь: гречневый палец ноги</Remove_Grechka_GrechkaToeT5.label>
   <Remove_Grechka_GrechkaToeT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaToeT5.description>
   <Remove_Grechka_GrechkaToeT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaToeT5.jobString>
-  <Install_Grechka_GrechkaShoulderT5.label>установить: гречневая бионика: плечо</Install_Grechka_GrechkaShoulderT5.label>
-  <Install_Grechka_GrechkaShoulderT5.description>Установить гречневая бионика: плечо. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaShoulderT5.description>
+  <Install_Grechka_GrechkaShoulderT5.label>установить: гречневое плечо</Install_Grechka_GrechkaShoulderT5.label>
+  <Install_Grechka_GrechkaShoulderT5.description>Установка: гречневое плечо. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaShoulderT5.description>
   <Install_Grechka_GrechkaShoulderT5.jobString>Установка импланта.</Install_Grechka_GrechkaShoulderT5.jobString>
-  <Remove_Grechka_GrechkaShoulderT5.label>извлечь: гречневая бионика: плечо</Remove_Grechka_GrechkaShoulderT5.label>
+  <Remove_Grechka_GrechkaShoulderT5.label>извлечь: гречневое плечо</Remove_Grechka_GrechkaShoulderT5.label>
   <Remove_Grechka_GrechkaShoulderT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaShoulderT5.description>
   <Remove_Grechka_GrechkaShoulderT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaShoulderT5.jobString>
-  <Install_Grechka_GrechkaClavicleT5.label>установить: гречневая бионика: ключица</Install_Grechka_GrechkaClavicleT5.label>
-  <Install_Grechka_GrechkaClavicleT5.description>Установить гречневая бионика: ключица. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaClavicleT5.description>
+  <Install_Grechka_GrechkaClavicleT5.label>установить: гречневая ключица</Install_Grechka_GrechkaClavicleT5.label>
+  <Install_Grechka_GrechkaClavicleT5.description>Установка: гречневая ключица. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaClavicleT5.description>
   <Install_Grechka_GrechkaClavicleT5.jobString>Установка импланта.</Install_Grechka_GrechkaClavicleT5.jobString>
-  <Remove_Grechka_GrechkaClavicleT5.label>извлечь: гречневая бионика: ключица</Remove_Grechka_GrechkaClavicleT5.label>
+  <Remove_Grechka_GrechkaClavicleT5.label>извлечь: гречневая ключица</Remove_Grechka_GrechkaClavicleT5.label>
   <Remove_Grechka_GrechkaClavicleT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaClavicleT5.description>
   <Remove_Grechka_GrechkaClavicleT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaClavicleT5.jobString>
-  <Install_Grechka_GrechkaHumerusT5.label>установить: гречневая бионика: плечевая кость</Install_Grechka_GrechkaHumerusT5.label>
-  <Install_Grechka_GrechkaHumerusT5.description>Установить гречневая бионика: плечевая кость. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaHumerusT5.description>
+  <Install_Grechka_GrechkaHumerusT5.label>установить: гречневая плечевая кость</Install_Grechka_GrechkaHumerusT5.label>
+  <Install_Grechka_GrechkaHumerusT5.description>Установка: гречневая плечевая кость. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaHumerusT5.description>
   <Install_Grechka_GrechkaHumerusT5.jobString>Установка импланта.</Install_Grechka_GrechkaHumerusT5.jobString>
-  <Remove_Grechka_GrechkaHumerusT5.label>извлечь: гречневая бионика: плечевая кость</Remove_Grechka_GrechkaHumerusT5.label>
+  <Remove_Grechka_GrechkaHumerusT5.label>извлечь: гречневая плечевая кость</Remove_Grechka_GrechkaHumerusT5.label>
   <Remove_Grechka_GrechkaHumerusT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaHumerusT5.description>
   <Remove_Grechka_GrechkaHumerusT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaHumerusT5.jobString>
-  <Install_Grechka_GrechkaRadiusT5.label>установить: гречневая бионика: лучевая кость</Install_Grechka_GrechkaRadiusT5.label>
-  <Install_Grechka_GrechkaRadiusT5.description>Установить гречневая бионика: лучевая кость. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaRadiusT5.description>
+  <Install_Grechka_GrechkaRadiusT5.label>установить: гречневая лучевая кость</Install_Grechka_GrechkaRadiusT5.label>
+  <Install_Grechka_GrechkaRadiusT5.description>Установка: гречневая лучевая кость. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaRadiusT5.description>
   <Install_Grechka_GrechkaRadiusT5.jobString>Установка импланта.</Install_Grechka_GrechkaRadiusT5.jobString>
-  <Remove_Grechka_GrechkaRadiusT5.label>извлечь: гречневая бионика: лучевая кость</Remove_Grechka_GrechkaRadiusT5.label>
+  <Remove_Grechka_GrechkaRadiusT5.label>извлечь: гречневая лучевая кость</Remove_Grechka_GrechkaRadiusT5.label>
   <Remove_Grechka_GrechkaRadiusT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaRadiusT5.description>
   <Remove_Grechka_GrechkaRadiusT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaRadiusT5.jobString>
-  <Install_Grechka_GrechkaFemurT5.label>установить: гречневая бионика: бедренная кость</Install_Grechka_GrechkaFemurT5.label>
-  <Install_Grechka_GrechkaFemurT5.description>Установить гречневая бионика: бедренная кость. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaFemurT5.description>
+  <Install_Grechka_GrechkaFemurT5.label>установить: гречневая бедренная кость</Install_Grechka_GrechkaFemurT5.label>
+  <Install_Grechka_GrechkaFemurT5.description>Установка: гречневая бедренная кость. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaFemurT5.description>
   <Install_Grechka_GrechkaFemurT5.jobString>Установка импланта.</Install_Grechka_GrechkaFemurT5.jobString>
-  <Remove_Grechka_GrechkaFemurT5.label>извлечь: гречневая бионика: бедренная кость</Remove_Grechka_GrechkaFemurT5.label>
+  <Remove_Grechka_GrechkaFemurT5.label>извлечь: гречневая бедренная кость</Remove_Grechka_GrechkaFemurT5.label>
   <Remove_Grechka_GrechkaFemurT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaFemurT5.description>
   <Remove_Grechka_GrechkaFemurT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaFemurT5.jobString>
-  <Install_Grechka_GrechkaTibiaT5.label>установить: гречневая бионика: большеберцовая кость</Install_Grechka_GrechkaTibiaT5.label>
-  <Install_Grechka_GrechkaTibiaT5.description>Установить гречневая бионика: большеберцовая кость. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaTibiaT5.description>
+  <Install_Grechka_GrechkaTibiaT5.label>установить: гречневая большеберцовая кость</Install_Grechka_GrechkaTibiaT5.label>
+  <Install_Grechka_GrechkaTibiaT5.description>Установка: гречневая большеберцовая кость. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaTibiaT5.description>
   <Install_Grechka_GrechkaTibiaT5.jobString>Установка импланта.</Install_Grechka_GrechkaTibiaT5.jobString>
-  <Remove_Grechka_GrechkaTibiaT5.label>извлечь: гречневая бионика: большеберцовая кость</Remove_Grechka_GrechkaTibiaT5.label>
+  <Remove_Grechka_GrechkaTibiaT5.label>извлечь: гречневая большеберцовая кость</Remove_Grechka_GrechkaTibiaT5.label>
   <Remove_Grechka_GrechkaTibiaT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaTibiaT5.description>
   <Remove_Grechka_GrechkaTibiaT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaTibiaT5.jobString>
-  <Install_Grechka_GrechkaSpineT5.label>установить: гречневая бионика: позвоночник</Install_Grechka_GrechkaSpineT5.label>
-  <Install_Grechka_GrechkaSpineT5.description>Установить гречневая бионика: позвоночник. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaSpineT5.description>
+  <Install_Grechka_GrechkaSpineT5.label>установить: гречневый позвоночник</Install_Grechka_GrechkaSpineT5.label>
+  <Install_Grechka_GrechkaSpineT5.description>Установка: гречневый позвоночник. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaSpineT5.description>
   <Install_Grechka_GrechkaSpineT5.jobString>Установка импланта.</Install_Grechka_GrechkaSpineT5.jobString>
-  <Remove_Grechka_GrechkaSpineT5.label>извлечь: гречневая бионика: позвоночник</Remove_Grechka_GrechkaSpineT5.label>
+  <Remove_Grechka_GrechkaSpineT5.label>извлечь: гречневый позвоночник</Remove_Grechka_GrechkaSpineT5.label>
   <Remove_Grechka_GrechkaSpineT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaSpineT5.description>
   <Remove_Grechka_GrechkaSpineT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaSpineT5.jobString>
-  <Install_Grechka_GrechkaNoseT5.label>установить: гречневая бионика: нос</Install_Grechka_GrechkaNoseT5.label>
-  <Install_Grechka_GrechkaNoseT5.description>Установить гречневая бионика: нос. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaNoseT5.description>
+  <Install_Grechka_GrechkaNoseT5.label>установить: гречневый нос</Install_Grechka_GrechkaNoseT5.label>
+  <Install_Grechka_GrechkaNoseT5.description>Установка: гречневый нос. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaNoseT5.description>
   <Install_Grechka_GrechkaNoseT5.jobString>Установка импланта.</Install_Grechka_GrechkaNoseT5.jobString>
-  <Remove_Grechka_GrechkaNoseT5.label>извлечь: гречневая бионика: нос</Remove_Grechka_GrechkaNoseT5.label>
+  <Remove_Grechka_GrechkaNoseT5.label>извлечь: гречневый нос</Remove_Grechka_GrechkaNoseT5.label>
   <Remove_Grechka_GrechkaNoseT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaNoseT5.description>
   <Remove_Grechka_GrechkaNoseT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaNoseT5.jobString>
-  <Install_Grechka_GrechkaJawT5.label>установить: гречневая бионика: челюсть</Install_Grechka_GrechkaJawT5.label>
-  <Install_Grechka_GrechkaJawT5.description>Установить гречневая бионика: челюсть. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaJawT5.description>
+  <Install_Grechka_GrechkaJawT5.label>установить: гречневая челюсть</Install_Grechka_GrechkaJawT5.label>
+  <Install_Grechka_GrechkaJawT5.description>Установка: гречневая челюсть. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaJawT5.description>
   <Install_Grechka_GrechkaJawT5.jobString>Установка импланта.</Install_Grechka_GrechkaJawT5.jobString>
-  <Remove_Grechka_GrechkaJawT5.label>извлечь: гречневая бионика: челюсть</Remove_Grechka_GrechkaJawT5.label>
+  <Remove_Grechka_GrechkaJawT5.label>извлечь: гречневая челюсть</Remove_Grechka_GrechkaJawT5.label>
   <Remove_Grechka_GrechkaJawT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaJawT5.description>
   <Remove_Grechka_GrechkaJawT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaJawT5.jobString>
-  <Install_Grechka_GrechkaTongueT5.label>установить: гречневая бионика: язык</Install_Grechka_GrechkaTongueT5.label>
-  <Install_Grechka_GrechkaTongueT5.description>Установить гречневая бионика: язык. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaTongueT5.description>
+  <Install_Grechka_GrechkaTongueT5.label>установить: гречневый язык</Install_Grechka_GrechkaTongueT5.label>
+  <Install_Grechka_GrechkaTongueT5.description>Установка: гречневый язык. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaTongueT5.description>
   <Install_Grechka_GrechkaTongueT5.jobString>Установка импланта.</Install_Grechka_GrechkaTongueT5.jobString>
-  <Remove_Grechka_GrechkaTongueT5.label>извлечь: гречневая бионика: язык</Remove_Grechka_GrechkaTongueT5.label>
+  <Remove_Grechka_GrechkaTongueT5.label>извлечь: гречневый язык</Remove_Grechka_GrechkaTongueT5.label>
   <Remove_Grechka_GrechkaTongueT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaTongueT5.description>
   <Remove_Grechka_GrechkaTongueT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaTongueT5.jobString>
-  <Install_Grechka_GrechkaRibcageT5.label>установить: гречневая бионика: грудная клетка</Install_Grechka_GrechkaRibcageT5.label>
-  <Install_Grechka_GrechkaRibcageT5.description>Установить гречневая бионика: грудная клетка. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaRibcageT5.description>
+  <Install_Grechka_GrechkaRibcageT5.label>установить: гречневая грудная клетка</Install_Grechka_GrechkaRibcageT5.label>
+  <Install_Grechka_GrechkaRibcageT5.description>Установка: гречневая грудная клетка. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaRibcageT5.description>
   <Install_Grechka_GrechkaRibcageT5.jobString>Установка импланта.</Install_Grechka_GrechkaRibcageT5.jobString>
-  <Remove_Grechka_GrechkaRibcageT5.label>извлечь: гречневая бионика: грудная клетка</Remove_Grechka_GrechkaRibcageT5.label>
+  <Remove_Grechka_GrechkaRibcageT5.label>извлечь: гречневая грудная клетка</Remove_Grechka_GrechkaRibcageT5.label>
   <Remove_Grechka_GrechkaRibcageT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaRibcageT5.description>
   <Remove_Grechka_GrechkaRibcageT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaRibcageT5.jobString>
-  <Install_Grechka_GrechkaSternumT5.label>установить: гречневая бионика: грудина</Install_Grechka_GrechkaSternumT5.label>
-  <Install_Grechka_GrechkaSternumT5.description>Установить гречневая бионика: грудина. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaSternumT5.description>
+  <Install_Grechka_GrechkaSternumT5.label>установить: гречневая грудина</Install_Grechka_GrechkaSternumT5.label>
+  <Install_Grechka_GrechkaSternumT5.description>Установка: гречневая грудина. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaSternumT5.description>
   <Install_Grechka_GrechkaSternumT5.jobString>Установка импланта.</Install_Grechka_GrechkaSternumT5.jobString>
-  <Remove_Grechka_GrechkaSternumT5.label>извлечь: гречневая бионика: грудина</Remove_Grechka_GrechkaSternumT5.label>
+  <Remove_Grechka_GrechkaSternumT5.label>извлечь: гречневая грудина</Remove_Grechka_GrechkaSternumT5.label>
   <Remove_Grechka_GrechkaSternumT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaSternumT5.description>
   <Remove_Grechka_GrechkaSternumT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaSternumT5.jobString>
-  <Install_Grechka_GrechkaPelvisT5.label>установить: гречневая бионика: таз</Install_Grechka_GrechkaPelvisT5.label>
-  <Install_Grechka_GrechkaPelvisT5.description>Установить гречневая бионика: таз. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaPelvisT5.description>
+  <Install_Grechka_GrechkaPelvisT5.label>установить: гречневый таз</Install_Grechka_GrechkaPelvisT5.label>
+  <Install_Grechka_GrechkaPelvisT5.description>Установка: гречневый таз. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaPelvisT5.description>
   <Install_Grechka_GrechkaPelvisT5.jobString>Установка импланта.</Install_Grechka_GrechkaPelvisT5.jobString>
-  <Remove_Grechka_GrechkaPelvisT5.label>извлечь: гречневая бионика: таз</Remove_Grechka_GrechkaPelvisT5.label>
+  <Remove_Grechka_GrechkaPelvisT5.label>извлечь: гречневый таз</Remove_Grechka_GrechkaPelvisT5.label>
   <Remove_Grechka_GrechkaPelvisT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaPelvisT5.description>
   <Remove_Grechka_GrechkaPelvisT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaPelvisT5.jobString>
-  <Install_Grechka_GrechkaSkullT5.label>установить: гречневая бионика: череп</Install_Grechka_GrechkaSkullT5.label>
-  <Install_Grechka_GrechkaSkullT5.description>Установить гречневая бионика: череп. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaSkullT5.description>
+  <Install_Grechka_GrechkaSkullT5.label>установить: гречневый череп</Install_Grechka_GrechkaSkullT5.label>
+  <Install_Grechka_GrechkaSkullT5.description>Установка: гречневый череп. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaSkullT5.description>
   <Install_Grechka_GrechkaSkullT5.jobString>Установка импланта.</Install_Grechka_GrechkaSkullT5.jobString>
-  <Remove_Grechka_GrechkaSkullT5.label>извлечь: гречневая бионика: череп</Remove_Grechka_GrechkaSkullT5.label>
+  <Remove_Grechka_GrechkaSkullT5.label>извлечь: гречневый череп</Remove_Grechka_GrechkaSkullT5.label>
   <Remove_Grechka_GrechkaSkullT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaSkullT5.description>
   <Remove_Grechka_GrechkaSkullT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaSkullT5.jobString>
-  <Install_Grechka_GrechkaTorsoT5.label>установить: гречневая бионика: торс</Install_Grechka_GrechkaTorsoT5.label>
-  <Install_Grechka_GrechkaTorsoT5.description>Установить гречневая бионика: торс. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaTorsoT5.description>
+  <Install_Grechka_GrechkaTorsoT5.label>установить: гречневый торс</Install_Grechka_GrechkaTorsoT5.label>
+  <Install_Grechka_GrechkaTorsoT5.description>Установка: гречневый торс. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaTorsoT5.description>
   <Install_Grechka_GrechkaTorsoT5.jobString>Установка импланта.</Install_Grechka_GrechkaTorsoT5.jobString>
-  <Remove_Grechka_GrechkaTorsoT5.label>извлечь: гречневая бионика: торс</Remove_Grechka_GrechkaTorsoT5.label>
+  <Remove_Grechka_GrechkaTorsoT5.label>извлечь: гречневый торс</Remove_Grechka_GrechkaTorsoT5.label>
   <Remove_Grechka_GrechkaTorsoT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaTorsoT5.description>
   <Remove_Grechka_GrechkaTorsoT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaTorsoT5.jobString>
-  <Install_Grechka_GrechkaNeckT5.label>установить: гречневая бионика: шея</Install_Grechka_GrechkaNeckT5.label>
-  <Install_Grechka_GrechkaNeckT5.description>Установить гречневая бионика: шея. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaNeckT5.description>
+  <Install_Grechka_GrechkaNeckT5.label>установить: гречневая шея</Install_Grechka_GrechkaNeckT5.label>
+  <Install_Grechka_GrechkaNeckT5.description>Установка: гречневая шея. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaNeckT5.description>
   <Install_Grechka_GrechkaNeckT5.jobString>Установка импланта.</Install_Grechka_GrechkaNeckT5.jobString>
-  <Remove_Grechka_GrechkaNeckT5.label>извлечь: гречневая бионика: шея</Remove_Grechka_GrechkaNeckT5.label>
+  <Remove_Grechka_GrechkaNeckT5.label>извлечь: гречневая шея</Remove_Grechka_GrechkaNeckT5.label>
   <Remove_Grechka_GrechkaNeckT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaNeckT5.description>
   <Remove_Grechka_GrechkaNeckT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaNeckT5.jobString>
-  <Install_Grechka_GrechkaHeadT5.label>установить: гречневая бионика: голова</Install_Grechka_GrechkaHeadT5.label>
-  <Install_Grechka_GrechkaHeadT5.description>Установить гречневая бионика: голова. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaHeadT5.description>
+  <Install_Grechka_GrechkaHeadT5.label>установить: гречневая голова</Install_Grechka_GrechkaHeadT5.label>
+  <Install_Grechka_GrechkaHeadT5.description>Установка: гречневая голова. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaHeadT5.description>
   <Install_Grechka_GrechkaHeadT5.jobString>Установка импланта.</Install_Grechka_GrechkaHeadT5.jobString>
-  <Remove_Grechka_GrechkaHeadT5.label>извлечь: гречневая бионика: голова</Remove_Grechka_GrechkaHeadT5.label>
+  <Remove_Grechka_GrechkaHeadT5.label>извлечь: гречневая голова</Remove_Grechka_GrechkaHeadT5.label>
   <Remove_Grechka_GrechkaHeadT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaHeadT5.description>
   <Remove_Grechka_GrechkaHeadT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaHeadT5.jobString>
-  <Install_Grechka_GrechkaWaistT5.label>установить: гречневая бионика: поясница</Install_Grechka_GrechkaWaistT5.label>
-  <Install_Grechka_GrechkaWaistT5.description>Установить гречневая бионика: поясница. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaWaistT5.description>
+  <Install_Grechka_GrechkaWaistT5.label>установить: гречневая поясница</Install_Grechka_GrechkaWaistT5.label>
+  <Install_Grechka_GrechkaWaistT5.description>Установка: гречневая поясница. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaWaistT5.description>
   <Install_Grechka_GrechkaWaistT5.jobString>Установка импланта.</Install_Grechka_GrechkaWaistT5.jobString>
-  <Remove_Grechka_GrechkaWaistT5.label>извлечь: гречневая бионика: поясница</Remove_Grechka_GrechkaWaistT5.label>
+  <Remove_Grechka_GrechkaWaistT5.label>извлечь: гречневая поясница</Remove_Grechka_GrechkaWaistT5.label>
   <Remove_Grechka_GrechkaWaistT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaWaistT5.description>
   <Remove_Grechka_GrechkaWaistT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaWaistT5.jobString>
-  <Install_Grechka_GrechkaBrainT5.label>установить: гречневая бионика: мозг</Install_Grechka_GrechkaBrainT5.label>
-  <Install_Grechka_GrechkaBrainT5.description>Установить гречневая бионика: мозг. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaBrainT5.description>
+  <Install_Grechka_GrechkaBrainT5.label>установить: гречневый мозг</Install_Grechka_GrechkaBrainT5.label>
+  <Install_Grechka_GrechkaBrainT5.description>Установка: гречневый мозг. На естественной родительской части. Аналогичный старый имплант возвращается предметом.</Install_Grechka_GrechkaBrainT5.description>
   <Install_Grechka_GrechkaBrainT5.jobString>Установка импланта.</Install_Grechka_GrechkaBrainT5.jobString>
-  <Remove_Grechka_GrechkaBrainT5.label>извлечь: гречневая бионика: мозг</Remove_Grechka_GrechkaBrainT5.label>
+  <Remove_Grechka_GrechkaBrainT5.label>извлечь: гречневый мозг</Remove_Grechka_GrechkaBrainT5.label>
   <Remove_Grechka_GrechkaBrainT5.description>Снять имплант и вернуть пригодный к повторной установке предмет.</Remove_Grechka_GrechkaBrainT5.description>
   <Remove_Grechka_GrechkaBrainT5.jobString>Извлечение импланта.</Remove_Grechka_GrechkaBrainT5.jobString>
-  <Grechka_UpgradeArmorT4.label>улучшить броню до T4</Grechka_UpgradeArmorT4.label>
+  <Grechka_UpgradeArmorT4.label>улучшить: архо-броня (T4)</Grechka_UpgradeArmorT4.label>
   <Grechka_UpgradeArmorT4.description>Предыдущий комплект и его электроника используются в улучшении. Добавьте только пласталь и материал новой ступени. Одна вещь превращается в одну новую; бонус выпуска к улучшению не применяется. Качество определяет работа мастера.</Grechka_UpgradeArmorT4.description>
   <Grechka_UpgradeArmorT4.jobString>Улучшение оснащения.</Grechka_UpgradeArmorT4.jobString>
-  <Grechka_UpgradeHelmetT4.label>улучшить шлем до T4</Grechka_UpgradeHelmetT4.label>
+  <Grechka_UpgradeHelmetT4.label>улучшить: архо-шлем (T4)</Grechka_UpgradeHelmetT4.label>
   <Grechka_UpgradeHelmetT4.description>Предыдущий комплект и его электроника используются в улучшении. Добавьте только пласталь и материал новой ступени. Одна вещь превращается в одну новую; бонус выпуска к улучшению не применяется. Качество определяет работа мастера.</Grechka_UpgradeHelmetT4.description>
   <Grechka_UpgradeHelmetT4.jobString>Улучшение оснащения.</Grechka_UpgradeHelmetT4.jobString>
-  <Grechka_UpgradeArmorT5.label>улучшить броню до T5</Grechka_UpgradeArmorT5.label>
+  <Grechka_UpgradeArmorT5.label>улучшить: гречневая броня (T5)</Grechka_UpgradeArmorT5.label>
   <Grechka_UpgradeArmorT5.description>Предыдущий комплект и его электроника используются в улучшении. Добавьте только пласталь и материал новой ступени. Одна вещь превращается в одну новую; бонус выпуска к улучшению не применяется. Качество определяет работа мастера.</Grechka_UpgradeArmorT5.description>
   <Grechka_UpgradeArmorT5.jobString>Улучшение оснащения.</Grechka_UpgradeArmorT5.jobString>
-  <Grechka_UpgradeHelmetT5.label>улучшить шлем до T5</Grechka_UpgradeHelmetT5.label>
+  <Grechka_UpgradeHelmetT5.label>улучшить: гречневый шлем (T5)</Grechka_UpgradeHelmetT5.label>
   <Grechka_UpgradeHelmetT5.description>Предыдущий комплект и его электроника используются в улучшении. Добавьте только пласталь и материал новой ступени. Одна вещь превращается в одну новую; бонус выпуска к улучшению не применяется. Качество определяет работа мастера.</Grechka_UpgradeHelmetT5.description>
   <Grechka_UpgradeHelmetT5.jobString>Улучшение оснащения.</Grechka_UpgradeHelmetT5.jobString>
 </LanguageData>

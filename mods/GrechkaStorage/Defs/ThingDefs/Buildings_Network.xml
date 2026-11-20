@@ -19,6 +19,7 @@
     </graphicData>
     <uiIconPath>Things/Building/Linked/HiddenConduit_MenuIcon</uiIconPath>
     <uiIconColor>(0.75,0.6,1)</uiIconColor>
+    <drawStyleCategory>Conduits</drawStyleCategory>
     <building>
       <isEdifice>false</isEdifice>
       <isInert>true</isInert>
@@ -56,8 +57,12 @@
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_StorageController</defName>
     <label>контроллер Storage</label>
-    <description>Точка доступа к кварцевой сигнальной сети. Показывает подключённые устройства и их состояние. Несколько контроллеров одной сети дают одинаковый доступ. Потребляет 400 Вт; сигнальный кабель не заменяет электрическое подключение.</description>
+    <description>Цифровой склад и точка доступа к кварцевой сети. У обычных и морозильных дисков отдельные вкладки с фильтром и приоритетом. Пешки автоматически приносят разрешённые вещи из мест с меньшим приоритетом при наличии свободных дисков. Содержимое работающей сети доступно для строительства, наземной и орбитальной торговли без маяка и загрузки караванов. Несколько контроллеров одной сети дают доступ к общим дискам. Потребляет 400 Вт; сигнальный кабель не передаёт электричество.</description>
     <thingClass>Grechka.Storage.Building_StorageController</thingClass>
+    <inspectorTabs>
+      <li>Grechka.Storage.ITab_RegularDisks</li>
+      <li>Grechka.Storage.ITab_FrozenDisks</li>
+    </inspectorTabs>
     <size>(1,1)</size>
     <rotatable>false</rotatable>
     <passability>Impassable</passability>

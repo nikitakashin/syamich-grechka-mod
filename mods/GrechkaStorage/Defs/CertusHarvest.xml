@@ -11,6 +11,8 @@
     <giverClass>Grechka.Storage.WorkGiver_HarvestCertus</giverClass>
     <workType>Growing</workType>
     <priorityInType>95</priorityInType>
+    <scanThings>true</scanThings>
+    <directOrderable>true</directOrderable>
     <verb>собрать кристаллы certus</verb>
     <gerund>собирает кристаллы certus</gerund>
     <requiredCapacities><li>Manipulation</li></requiredCapacities>

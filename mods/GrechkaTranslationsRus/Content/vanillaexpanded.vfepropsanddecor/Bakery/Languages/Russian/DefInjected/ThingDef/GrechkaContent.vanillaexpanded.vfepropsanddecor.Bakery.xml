@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <VPEPD_VCE_BakeryOven_Electric.description>Электрическая печь для печенья, выпечки и тортов. Стабильный нагрев даёт предсказуемый результат. Не работает.</VPEPD_VCE_BakeryOven_Electric.description>
+  <VPEPD_VCE_BakeryOven_Electric.label>электрическая пекарная печь</VPEPD_VCE_BakeryOven_Electric.label>
+  <VPEPD_VCE_BakeryOven_Fueled.description>Дровяная печь для печенья, выпечки и тортов. Ровный жар позволяет выпекать их равномерно. Не работает.</VPEPD_VCE_BakeryOven_Fueled.description>
+  <VPEPD_VCE_BakeryOven_Fueled.label>дровяная пекарная печь</VPEPD_VCE_BakeryOven_Fueled.label>
+</LanguageData>

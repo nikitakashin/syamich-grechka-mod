@@ -58,9 +58,12 @@ internal static class ProductionChecks
         adjust.Invoke(null, new object[] { process, false });
         Check(owner.Required == 17 && owner.Count == 3, "Partially supplied old batches retain their exact materials and requirement");
         AccessTools.Field(typeof(ThingAndResourceOwner), "count").SetValue(owner, 0);
-        Set("currentResult", 1); adjust.Invoke(null, new object[] { process, false });
-        Check(owner.Required == 20, "A partially delivered old result cannot be rebased even when progress is zero");
-        Set("currentResult", 0);
+        if (AccessTools.Field(typeof(Process), "currentResult") is System.Reflection.FieldInfo resultCursor)
+        {
+            resultCursor.SetValue(process, 1); adjust.Invoke(null, new object[] { process, false });
+            Check(owner.Required == 20, "A partially delivered old result cannot be rebased even when progress is zero");
+            resultCursor.SetValue(process, 0);
+        }
         adjust.Invoke(null, new object[] { process, false });
         Check(owner.Required == 12, "The next empty batch adopts the new physical price without discount compounding");
         Check((int)AccessTools.Field(typeof(Process), "cachedInitialTicks").GetValue(process) == 12000

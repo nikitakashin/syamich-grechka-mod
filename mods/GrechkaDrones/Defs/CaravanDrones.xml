@@ -296,8 +296,8 @@
   </PawnKindDef>
   <ThingDef Class="AIRobot.X2_ThingDef_AIRobot" ParentName="Grechka_DroneBase">
     <defName>Grechka_CaravanDroneT3_Unit</defName>
-    <label>караванный дрон T3</label>
-    <description>Негорючий караванный дрон T3. На базе выполняет обычную переноску, в караване перевозит до 150 кг. Получает энергию из еды; полный биозаряд хранит 2 единицы питательности и расходуется за сутки. Дома может заряжаться от собственного дока. При пустом заряде прекращает обычную работу, не уничтожается и сохраняет груз.</description>
+    <label>меха-караванный дрон (T3)</label>
+    <description>Негорючий меха-караванный дрон (T3). На базе выполняет обычную переноску, в караване перевозит до 150 кг. Получает энергию из еды; полный биозаряд хранит 2 единицы питательности и расходуется за сутки. Дома может заряжаться от собственного дока. При пустом заряде прекращает обычную работу, не уничтожается и сохраняет груз.</description>
     <uiIconPath>Drones/Caravan/T3/CaravanT3_south</uiIconPath>
     <statBases>
       <MarketValue>1500</MarketValue>
@@ -356,7 +356,7 @@
   <ThingDef Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation" ParentName="Base_X2_AIRobotRechargeStation">
     <defName>Grechka_CaravanDroneStationT3_Dock</defName>
     <thingClass>Grechka.Drones.DroneStation</thingClass>
-    <label>док караванного дрона T3</label>
+    <label>меха-док караванного дрона (T3)</label>
     <description>Зарядная и ремонтная станция с караванным дроном T3. На базе он носит вещи, в пути преобразует еду в энергию и перевозит до 150 кг. Ушедший в караван дрон остаётся связан с этим доком.</description>
     <graphicData>
       <texPath>Docks/Caravan/T3/CaravanT3_Occupied</texPath>
@@ -418,7 +418,7 @@
   </ThingDef>
   <PawnKindDef>
     <defName>Grechka_CaravanDroneT3_Unit</defName>
-    <label>караванный дрон T3</label>
+    <label>меха-караванный дрон (T3)</label>
     <race>Grechka_CaravanDroneT3_Unit</race>
     <combatPower>60</combatPower>
     <chemicalAddictionChance>0</chemicalAddictionChance>
@@ -444,8 +444,8 @@
   </PawnKindDef>
   <ThingDef Class="AIRobot.X2_ThingDef_AIRobot" ParentName="Grechka_DroneBase">
     <defName>Grechka_CaravanDroneT4_Unit</defName>
-    <label>караванный дрон T4</label>
-    <description>Негорючий караванный дрон T4. На базе выполняет обычную переноску, в караване перевозит до 200 кг. Получает энергию из еды; полный биозаряд хранит 2 единицы питательности и расходуется за сутки. Дома может заряжаться от собственного дока. При пустом заряде прекращает обычную работу, не уничтожается и сохраняет груз.</description>
+    <label>архо-караванный дрон (T4)</label>
+    <description>Негорючий архо-караванный дрон (T4). На базе выполняет обычную переноску, в караване перевозит до 200 кг. Получает энергию из еды; полный биозаряд хранит 2 единицы питательности и расходуется за сутки. Дома может заряжаться от собственного дока. При пустом заряде прекращает обычную работу, не уничтожается и сохраняет груз.</description>
     <uiIconPath>Drones/Caravan/T4/CaravanT4_south</uiIconPath>
     <statBases>
       <MarketValue>2000</MarketValue>
@@ -504,7 +504,7 @@
   <ThingDef Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation" ParentName="Base_X2_AIRobotRechargeStation">
     <defName>Grechka_CaravanDroneStationT4_Dock</defName>
     <thingClass>Grechka.Drones.DroneStation</thingClass>
-    <label>док караванного дрона T4</label>
+    <label>архо-док караванного дрона (T4)</label>
     <description>Зарядная и ремонтная станция с караванным дроном T4. На базе он носит вещи, в пути преобразует еду в энергию и перевозит до 200 кг. Ушедший в караван дрон остаётся связан с этим доком.</description>
     <graphicData>
       <texPath>Docks/Caravan/T4/CaravanT4_Occupied</texPath>
@@ -566,7 +566,7 @@
   </ThingDef>
   <PawnKindDef>
     <defName>Grechka_CaravanDroneT4_Unit</defName>
-    <label>караванный дрон T4</label>
+    <label>архо-караванный дрон (T4)</label>
     <race>Grechka_CaravanDroneT4_Unit</race>
     <combatPower>90</combatPower>
     <chemicalAddictionChance>0</chemicalAddictionChance>
@@ -592,8 +592,8 @@
   </PawnKindDef>
   <ThingDef Class="AIRobot.X2_ThingDef_AIRobot" ParentName="Grechka_DroneBase">
     <defName>Grechka_CaravanDroneT5_Unit</defName>
-    <label>караванный дрон T5</label>
-    <description>Негорючий караванный дрон T5. На базе выполняет обычную переноску, в караване перевозит до 250 кг. Получает энергию из еды; полный биозаряд хранит 2 единицы питательности и расходуется за сутки. Дома может заряжаться от собственного дока. При пустом заряде прекращает обычную работу, не уничтожается и сохраняет груз.</description>
+    <label>гречневый караванный дрон (T5)</label>
+    <description>Негорючий гречневый караванный дрон (T5). На базе выполняет обычную переноску, в караване перевозит до 250 кг. Получает энергию из еды; полный биозаряд хранит 2 единицы питательности и расходуется за сутки. Дома может заряжаться от собственного дока. При пустом заряде прекращает обычную работу, не уничтожается и сохраняет груз.</description>
     <uiIconPath>Drones/Caravan/T5/CaravanT5_south</uiIconPath>
     <statBases>
       <MarketValue>2500</MarketValue>
@@ -652,7 +652,7 @@
   <ThingDef Class="AIRobot.X2_ThingDef_AIRobot_Building_RechargeStation" ParentName="Base_X2_AIRobotRechargeStation">
     <defName>Grechka_CaravanDroneStationT5_Dock</defName>
     <thingClass>Grechka.Drones.DroneStation</thingClass>
-    <label>док караванного дрона T5</label>
+    <label>гречневый док караванного дрона (T5)</label>
     <description>Зарядная и ремонтная станция с караванным дроном T5. На базе он носит вещи, в пути преобразует еду в энергию и перевозит до 250 кг. Ушедший в караван дрон остаётся связан с этим доком.</description>
     <graphicData>
       <texPath>Docks/Caravan/T5/CaravanT5_Occupied</texPath>
@@ -714,7 +714,7 @@
   </ThingDef>
   <PawnKindDef>
     <defName>Grechka_CaravanDroneT5_Unit</defName>
-    <label>караванный дрон T5</label>
+    <label>гречневый караванный дрон (T5)</label>
     <race>Grechka_CaravanDroneT5_Unit</race>
     <combatPower>120</combatPower>
     <chemicalAddictionChance>0</chemicalAddictionChance>

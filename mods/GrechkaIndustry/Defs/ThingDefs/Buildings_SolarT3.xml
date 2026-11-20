@@ -50,7 +50,7 @@
         <costDescription>предыдущее устройство целиком и дополнительные материалы следующей ступени; установленный корпус уже учтён</costDescription>
       </li>
       <li Class="CompProperties_Power">
-        <compClass>CompPowerPlantSolar</compClass>
+        <compClass>Grechka.Industry.CompPowerPlantGrechkaSolar</compClass>
         <basePowerConsumption>-72000</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
       </li>
@@ -117,7 +117,7 @@
     </costList>
     <comps>
       <li Class="CompProperties_Power">
-        <compClass>CompPowerPlantSolar</compClass>
+        <compClass>Grechka.Industry.CompPowerPlantGrechkaSolar</compClass>
         <basePowerConsumption>-576000</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
       </li>

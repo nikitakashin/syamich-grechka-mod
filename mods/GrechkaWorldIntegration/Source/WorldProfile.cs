@@ -181,6 +181,7 @@ namespace Grechka.WorldIntegration
             }
             ProfileVariants.Restore(); CostListCalculator.Reset(); AppliedTiers.Clear(); Report.Clear();
             FamilyWorkDiscovery.Refresh();
+            FacilityTierLinks.RefreshLinks();
             RefreshRelatedMarketValues();
         }
 
@@ -242,6 +243,7 @@ namespace Grechka.WorldIntegration
             ProfileVariants.Apply(state, acceptCurrent);
             TierArtwork.Apply();
             FamilyWorkDiscovery.Refresh();
+            FacilityTierLinks.RefreshLinks();
             CostListCalculator.Reset();
             RefreshRelatedMarketValues();
             Log.Message(WorldText.Get("GrechkaWorldIntegration_8c9f3d7d8335", "[Grechka World] Profile: ") + AppliedTiers.Count + WorldText.Get("GrechkaWorldIntegration_dec7488fd72a", " machines with minimum tier. Detailed report in settings."));
@@ -301,5 +303,6 @@ namespace Grechka.WorldIntegration
         }
         public override void StartedNewGame() { WorldProfile.Apply(this, true); }
         public override void LoadedGame() { WorldProfile.Apply(this, false); }
+        public override void GameComponentUpdate() { FacilityTierLinks.RelinkLoadedMapBuildings(ownerGame); }
     }
 }

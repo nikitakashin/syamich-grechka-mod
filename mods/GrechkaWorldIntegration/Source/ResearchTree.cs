@@ -104,7 +104,10 @@ namespace Grechka.WorldIntegration
             }
             // Foreign source machines retain their original research. New tiers also require
             // the matching Industry level; no requirements are added to the source itself.
-            foreach (VariantEntry entry in ProfileVariants.Entries.Values.Where(e => e.name != e.sourceName))
+            var retiredRules = new HashSet<string>(root.SelectNodes("Grechka.WorldIntegration.MachineProfileRuleDef[retired='true']")
+                .Cast<XmlNode>().Where(n => Owned(n, "grechka.world.integration"))
+                .Select(n => n.SelectSingleNode("defName")?.InnerText));
+            foreach (VariantEntry entry in ProfileVariants.Entries.Values.Where(e => e.name != e.sourceName && !retiredRules.Contains(e.ruleName)))
             {
                 string project = "Grechka_Research_IndustryT" + entry.tier;
                 if (!nodes.ContainsKey("ResearchProjectDef/" + project)) continue;

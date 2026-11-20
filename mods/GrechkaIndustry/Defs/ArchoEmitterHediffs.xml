@@ -16,4 +16,16 @@
       <li><minSeverity>0.9</minSeverity><statFactors><MoveSpeed>0.5</MoveSpeed><MeleeHitChance>0.6</MeleeHitChance><ShootingAccuracyPawn>0.6</ShootingAccuracyPawn></statFactors></li>
     </stages>
   </HediffDef>
+  <HediffDef>
+    <defName>Grechka_ArchoWellbeing</defName>
+    <label>архо-тонизирование</label>
+    <description>Поле облучателя восстанавливает сон и сытость: T4 — 0,2% максимального запаса за 60 тиков, T5 — 0,8%. Действует только на своих в радиусе работающего устройства. Несколько облучателей не складываются; используется сильнейший. Эффект прекращается при выходе из зоны или отключении питания.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <disappearsAfterTicks>120~120</disappearsAfterTicks>
+      </li>
+    </comps>
+  </HediffDef>
 </Defs>

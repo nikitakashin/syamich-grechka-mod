@@ -121,6 +121,13 @@ namespace Grechka.Treasures
             var guards = new List<IntVec3>();
             var spawnedGuards = new List<Pawn>();
             var markers = new List<(char symbol, IntVec3 cell, int index)>();
+            var random = new Random(site.treasureSeed);
+            TerrainDef interior = (random.Next(3) switch
+            {
+                0 => DefDatabase<TerrainDef>.GetNamedSilentFail("TileGranite"),
+                1 => DefDatabase<TerrainDef>.GetNamedSilentFail("FlagstoneSlate"),
+                _ => null
+            }) ?? TerrainDefOf.Concrete;
             // This is a newly generated, owned encounter footprint. No home map is ever modified.
             // All cells are processed before entities so generated walls are not erased on the next row.
             for (int z = 0; z < layout.Height; z++) for (int x = 0; x < layout.Width; x++) {
@@ -132,28 +139,37 @@ namespace Grechka.Treasures
                 foreach (Thing thing in cell.GetThingList(map).ToList()) thing.Destroy(DestroyMode.Vanish);
                 map.roofGrid.SetRoof(cell, null);
                 map.terrainGrid.SetTerrain(cell, symbol == '~' ? TerrainDefOf.WaterShallow : symbol == '=' ? TerrainDefOf.Bridge :
-                    symbol == ',' ? TerrainDefOf.FlagstoneSandstone : TerrainDefOf.Concrete);
+                    symbol == ',' ? TerrainDefOf.FlagstoneSandstone : interior);
                 markers.Add((symbol, cell, x + z * layout.Width));
+            }
+            var enclosed = EnclosedCells(markers.Select(m => (m.symbol, m.cell)));
+            var furniture = markers.Where(m => m.symbol is 'S' or 'B').SelectMany(m => GenAdj.OccupiedRect(m.cell,
+                Rot4.North, m.symbol == 'S' ? new IntVec2(2, 2) : new IntVec2(1, 2))).ToHashSet();
+            var trapPoints = markers.Where(m => m.symbol == 'T').Select(m => m.cell).ToList();
+            var extraTraps = markers.Where(m => m.symbol == '.' && !furniture.Contains(m.cell) &&
+                    layout.Tier >= 2 && site.scenario != 2 && trapPoints.Any(c => c.InHorDistOf(m.cell, 3f)))
+                .OrderBy(_ => random.Next()).Take(layout.Tier - 1).Select(m => m.cell).ToHashSet();
+            Thing SpawnAt(IntVec3 cell, string defName, string stuff = null, Faction faction = null)
+            {
+                ThingDef def = DefDatabase<ThingDef>.GetNamedSilentFail(defName);
+                if (def == null) { Log.Warning("[GrechkaTreasures] Missing site object " + defName); return null; }
+                if (GenAdj.OccupiedRect(cell, Rot4.North, def.size).Any(c => !c.InBounds(map)
+                    || c.GetThingList(map).Any(t => t is Pawn || t is Building))) {
+                    Log.Warning("[GrechkaTreasures] Skipped obstructed site object " + defName + " at " + cell);
+                    return null;
+                }
+                ThingDef material = stuff == null ? null : DefDatabase<ThingDef>.GetNamedSilentFail(stuff);
+                Thing thing = ThingMaker.MakeThing(def, def.MadeFromStuff ? material ?? ThingDefOf.Steel : null);
+                if (faction != null && def.CanHaveFaction) thing.SetFaction(faction);
+                return GenSpawn.Spawn(thing, cell, map, WipeMode.Vanish);
             }
             foreach (var marker in markers) {
                 char symbol = marker.symbol;
                 IntVec3 cell = marker.cell;
-                Thing Spawn(string defName, string stuff = null, Faction faction = null) {
-                    ThingDef def = DefDatabase<ThingDef>.GetNamedSilentFail(defName);
-                    if (def == null) { Log.Warning("[GrechkaTreasures] Missing site object " + defName); return null; }
-                    if (GenAdj.OccupiedRect(cell, Rot4.North, def.size).Any(c => !c.InBounds(map)
-                        || c.GetThingList(map).Any(t => t is Pawn || t is Building))) {
-                        Log.Warning("[GrechkaTreasures] Skipped obstructed site object " + defName + " at " + cell);
-                        return null;
-                    }
-                    ThingDef material = stuff == null ? null : DefDatabase<ThingDef>.GetNamedSilentFail(stuff);
-                    Thing thing = ThingMaker.MakeThing(def, def.MadeFromStuff ? material ?? ThingDefOf.Steel : null);
-                    if (faction != null && def.CanHaveFaction) thing.SetFaction(faction);
-                    return GenSpawn.Spawn(thing, cell, map, WipeMode.Vanish);
-                }
+                Thing Spawn(string defName, string stuff = null, Faction faction = null) => SpawnAt(cell, defName, stuff, faction);
                 if (symbol == '#') Spawn("Wall", "BlocksGranite");
                 else if (symbol == '+') Spawn("Door", "Steel");
-                else if (symbol == 'T') Spawn("TrapSpike", "Steel", site.Faction);
+                else if (symbol == 'T' || extraTraps.Contains(cell)) Spawn("TrapSpike", layout.Tier >= 4 ? "Plasteel" : "Steel", site.Faction);
                 else if (symbol == 'G') guards.Add(cell);
                 else if (symbol == 'C' || symbol == 'H' || symbol == 'D') {
                     bool decoy = symbol == 'D';
@@ -178,40 +194,64 @@ namespace Grechka.Treasures
                 else if (symbol == 'V') Spawn("GrechkaTreasures_" + layout.Gem + "Vase");
                 else if (symbol == 'L') Spawn("GrechkaTreasures_" + layout.Gem + "Lamp");
                 else if (symbol == 'R') Spawn("GrechkaTreasures_" + layout.Gem + "Throne");
-                if (symbol == '.' || symbol == 'C' || symbol == 'D' || symbol == 'H')
-                    map.roofGrid.SetRoof(cell, RoofDefOf.RoofConstructed);
             }
-            // Supported ruin roofs only. RoofGrid.SetRoof itself does not validate support;
-            // remove unsupported new roof cells before the encounter can begin ticking.
-            bool removedRoof;
-            do {
-                removedRoof = false;
-                foreach (var marker in markers.Where(m => m.symbol == '.' || m.symbol == 'C' || m.symbol == 'D' || m.symbol == 'H')) {
-                    if (map.roofGrid.RoofAt(marker.cell) != RoofDefOf.RoofConstructed
-                        || RoofCollapseUtility.WithinRangeOfRoofHolder(marker.cell, map)) continue;
-                    map.roofGrid.SetRoof(marker.cell, null);
-                    removedRoof = true;
-                }
-            } while (removedRoof);
+            // Large chambers need their own supports. Columns are passable and
+            // are placed only on unused floor tiles, after all furniture spawns.
+            foreach (var marker in markers.Where(m => m.symbol == '.' && enclosed.Contains(m.cell)))
+                if (!RoofCollapseUtility.WithinRangeOfRoofHolder(marker.cell, map)
+                    && !marker.cell.GetThingList(map).Any(t => t is Building || t is Pawn))
+                    SpawnAt(marker.cell, "Column", "BlocksGranite");
+            foreach (IntVec3 cell in enclosed)
+            {
+                if (RoofCollapseUtility.WithinRangeOfRoofHolder(cell, map))
+                    map.roofGrid.SetRoof(cell, RoofDefOf.RoofConstructed);
+                map.fogGrid.Refog(new CellRect(cell.x, cell.z, 1, 1));
+            }
             // Scenario 0: deserted, 1: raider occupation, 2: plundered with a surviving cache,
             // 3: rival looters waiting in ambush. Markers and fixed traps remain in every scenario.
-            if (site.scenario != 0) {
+            if (site.Faction != null && guards.Count > 0 && (site.scenario != 0 || layout.Tier >= 3)) {
                 int limit = site.scenario == 2 ? Math.Max(1, layout.Tier / 2) : 1 + layout.Tier * 2;
-                string kindName = layout.Enemy == "mechanoids" ? (layout.Tier >= 4 ? "Lancer" : "Scyther") :
-                    layout.Tier <= 2 ? "Pirate" : "Mercenary_Gunner";
-                PawnKindDef kind = DefDatabase<PawnKindDef>.GetNamedSilentFail(kindName);
-                if (kind != null && site.Faction != null)
-                    foreach (IntVec3 cell in guards.Take(limit)) {
+                bool mechs = site.Faction == Faction.OfMechanoids;
+                string[] kindNames = mechs
+                    ? (layout.Tier >= 4 ? new[] { "Scyther", "Pikeman", "Lancer", "Centipede" } : new[] { "Scyther", "Pikeman" })
+                    : (layout.Tier >= 3 ? new[] { "Mercenary_Gunner", "Mercenary_Slasher", "Mercenary_Heavy" } : new[] { "Pirate", "Mercenary_Slasher" });
+                var kinds = kindNames.Select(DefDatabase<PawnKindDef>.GetNamedSilentFail).Where(k => k != null).ToArray();
+                var positions = guards.OrderBy(_ => random.Next()).Concat(markers
+                    .Where(m => (m.symbol == '.' || m.symbol == ',') && guards.Any(g => g.InHorDistOf(m.cell, 6f)))
+                    .OrderBy(_ => random.Next()).Select(m => m.cell))
+                    .Where(c => !extraTraps.Contains(c) && c.Walkable(map) && c.GetEdifice(map) == null)
+                    .Take(limit);
+                if (kinds.Length > 0)
+                    foreach (IntVec3 cell in positions) {
+                        PawnKindDef kind = kinds[random.Next(kinds.Length)];
                         Pawn pawn = PawnGenerator.GeneratePawn(kind, site.Faction, map.Tile);
                         GenSpawn.Spawn(pawn, cell, map);
                         spawnedGuards.Add(pawn);
                     }
                 if (spawnedGuards.Count > 0) {
                     LordJob behavior = site.scenario == 3 ? (LordJob)new LordJob_AssaultColony(site.Faction)
-                        : new LordJob_DefendPoint(map.Center, 8f, 35f, false, true);
+                        : new LordJob_DefendPoint(spawnedGuards[0].Position, 8f, 35f, false, true);
                     LordMaker.MakeNewLord(site.Faction, behavior, map, spawnedGuards);
                 }
             }
+        }
+
+        internal static HashSet<IntVec3> EnclosedCells(IEnumerable<(char symbol, IntVec3 cell)> markers)
+        {
+            // Walls and doors seal rooms. Courtyards are left open wherever the
+            // plan uses outdoor terrain or connects them to the outer footprint.
+            var floor = markers.Where(m => m.symbol != '#' && m.symbol != '+').ToDictionary(m => m.cell, m => m.symbol);
+            var footprint = floor.Keys.Concat(markers.Where(m => m.symbol == '#' || m.symbol == '+').Select(m => m.cell)).ToHashSet();
+            var open = new Queue<IntVec3>(floor.Where(pair => pair.Value is '~' or '=' or ',' ||
+                GenAdj.CardinalDirections.Any(d => !footprint.Contains(pair.Key + d))).Select(pair => pair.Key));
+            var enclosed = floor.Keys.ToHashSet();
+            while (open.TryDequeue(out IntVec3 cell))
+            {
+                if (!enclosed.Remove(cell)) continue;
+                foreach (IntVec3 direction in GenAdj.CardinalDirections)
+                    if (enclosed.Contains(cell + direction)) open.Enqueue(cell + direction);
+            }
+            return enclosed;
         }
     }
 }

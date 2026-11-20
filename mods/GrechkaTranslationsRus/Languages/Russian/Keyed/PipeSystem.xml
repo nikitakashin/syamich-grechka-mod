@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <PipeSystem_MakeProcess>Производить {0}</PipeSystem_MakeProcess>
+  <PipeSystem_OutputToNet>{0} в сеть</PipeSystem_OutputToNet>
+  <PipeSystem_OrNet>или из сети «{0}»</PipeSystem_OrNet>
+  <PipeSystem_XFromNet>{0} из сети</PipeSystem_XFromNet>
+  <PipeSystem_Processes>Процессы</PipeSystem_Processes>
+  <PipeSystem_AddProcess>Добавить процесс</PipeSystem_AddProcess>
+  <PipeSystem_CancelCurrentProcess>Отменить текущий процесс</PipeSystem_CancelCurrentProcess>
+  <PipeSystem_OutputOnGround>Можно выгружать на землю</PipeSystem_OutputOnGround>
+  <PipeSystem_NoProcess>Нет текущего процесса</PipeSystem_NoProcess>
+  <PipeSystem_NoProcessAvailable>Нет доступных процессов</PipeSystem_NoProcessAvailable>
+  <PipeSystem_Product>Продукт</PipeSystem_Product>
+  <PipeSystem_MissingInputIngredients>Не хватает сырья: {0}</PipeSystem_MissingInputIngredients>
+  <PipeSystem_CopyProcesses>Копировать процессы</PipeSystem_CopyProcesses>
+  <PipeSystem_PasteProcesses>Вставить процессы</PipeSystem_PasteProcesses>
+  <PipeSystem_PasteAllRecipes>Вставить все процессы</PipeSystem_PasteAllRecipes>
+  <PipeSystem_PasteAllRecipes_Desc>Вставить все скопированные процессы в выбранное оборудование. Можно выбрать несколько устройств сразу.</PipeSystem_PasteAllRecipes_Desc>
+  <PipeSystem_OutputFactoryHopperIncorrect>Выходной бункер отсутствует или его фильтр не принимает продукт.</PipeSystem_OutputFactoryHopperIncorrect>
+  <PipeSystem_OutputFactoryHopperFull>Выходной бункер заполнен (максимум {0} ед.).</PipeSystem_OutputFactoryHopperFull>
+</LanguageData>

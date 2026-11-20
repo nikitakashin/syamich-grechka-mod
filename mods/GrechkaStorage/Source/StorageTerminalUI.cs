@@ -200,7 +200,7 @@ namespace Grechka.Storage
         private void DrawDisks(Rect rect, Building_StorageController controller)
         {
             List<Building_DiskRack> racks = controller.Node.Manager.ViewFor(controller.Node).Devices.OfType<Building_DiskRack>().ToList();
-            Rect inner = new Rect(0, 0, rect.width - 20, Math.Max(rect.height, racks.Sum(r => 55 + r.Disks.Count() * 48)));
+            Rect inner = new Rect(0, 0, rect.width - 20, Math.Max(rect.height, racks.Sum(r => 55 + r.Disks.Count() * DiskRowHeight)));
             Widgets.BeginScrollView(rect, ref diskScroll, inner);
             try
             {
@@ -210,6 +210,7 @@ namespace Grechka.Storage
             }
             finally { Widgets.EndScrollView(); }
         }
+        internal const int DiskRowHeight = 64;
         internal static float DrawRack(float width, float y, Building_DiskRack rack)
         {
             Widgets.Label(new Rect(0, y + 5, width - 165, 35), rack.LabelCap + " — " + rack.Disks.Count() + "/" + Building_DiskRack.Slots
@@ -226,16 +227,21 @@ namespace Grechka.Storage
             foreach (StorageDisk disk in rack.Disks.ToList())
             {
                 Widgets.ThingIcon(new Rect(0, y + 3, 34, 34), disk);
-                Widgets.Label(new Rect(44, y, width - 165, 24), disk.LabelCap + StorageText.Get("GrechkaStorage_Text027") + disk.Space.Types + "/63");
+                Widgets.Label(new Rect(44, y, width - 337, 24), disk.LabelCap + StorageText.Get("GrechkaStorage_Text027") + disk.Space.Types + "/63");
                 bool full = disk.Space.IsFull;
-                StorageArt.Status(new Rect(44, y + 23, width - 165, 25), disk.Space.ItemCount.ToString("N0") + StorageText.Get("GrechkaStorage_Text028")
+                StorageArt.Status(new Rect(44, y + 23, width - 337, 25), disk.Space.ItemCount.ToString("N0") + StorageText.Get("GrechkaStorage_Text028")
                     + disk.Space.UsedBytes.ToString("N0") + "/" + disk.Capacity.ToString("N0") + StorageText.Get("GrechkaStorage_Text029"), full ? "StorageDiskFull" : null,
                     full ? StorageText.Get("GrechkaStorage_Text030")
                         : disk.Space.Types >= DiskSpace.TypeLimit ? StorageText.Get("GrechkaStorage_Text031") : null);
+                Rect unload = new Rect(width - 285, y + 5, 172, 32);
+                string action = !disk.IntakePaused ? "GrechkaStorage_Unload" : disk.Items.Any() ? "GrechkaStorage_CancelUnload" : "GrechkaStorage_ResumeIntake";
+                if (Widgets.ButtonText(unload, StorageText.Get(action))) disk.IntakePaused = !disk.IntakePaused;
+                TooltipHandler.TipRegion(unload, StorageText.Get("GrechkaStorage_UnloadTip"));
                 bool requested = rack.RemoveRequests.Contains(disk);
                 if (StorageArt.Button(new Rect(width - 110, y + 5, 108, 32), requested ? StorageText.Get("GrechkaStorage_Text032") : StorageText.Get("GrechkaStorage_Text033"), requested ? "StorageCraftCancel" : "StorageOutput"))
                 { if (requested) rack.CancelRequests(disk); else rack.RequestRemove(disk); }
-                y += 48;
+                Widgets.FillableBar(new Rect(44, y + 47, width - 337, 7), disk.Space.FillFraction);
+                y += DiskRowHeight;
             }
             return y + 7;
         }
@@ -269,7 +275,7 @@ namespace Grechka.Storage
         public override void DoWindowContents(Rect rect)
         {
             if (!rack.Spawned || rack.Faction != Faction.OfPlayer) { Widgets.Label(rect, StorageText.Get("GrechkaStorage_Text036")); return; }
-            Rect inner = new Rect(0, 0, rect.width - 20, Math.Max(rect.height, 55 + rack.Disks.Count() * 48));
+            Rect inner = new Rect(0, 0, rect.width - 20, Math.Max(rect.height, 55 + rack.Disks.Count() * StorageTerminalUI.DiskRowHeight));
             Widgets.BeginScrollView(rect, ref scroll, inner);
             try
             {

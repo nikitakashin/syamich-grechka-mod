@@ -54,7 +54,7 @@
   <Grechka_MakeHousingT3.label>assemble mecha-housing</Grechka_MakeHousingT3.label>
   <Grechka_MakeHousingT3.description>Assemble a T3 housing from the previous housing and mechanite assemblies.</Grechka_MakeHousingT3.description>
   <Grechka_MakeHousingT3.jobString>Assembling mecha-housing.</Grechka_MakeHousingT3.jobString>
-  <Grechka_UpgradeAssemblyBenchT3.label>upgrade assembly bench to T3</Grechka_UpgradeAssemblyBenchT3.label>
+  <Grechka_UpgradeAssemblyBenchT3.label>upgrade: mecha workbench (T3)</Grechka_UpgradeAssemblyBenchT3.label>
   <Grechka_UpgradeAssemblyBenchT3.description>Upgrade an installed T2 bench. Its T2 housing is reused. The normal production ingredient discount does not apply to upgrades.</Grechka_UpgradeAssemblyBenchT3.description>
   <Grechka_UpgradeAssemblyBenchT3.jobString>Upgrading assembly bench to T3.</Grechka_UpgradeAssemblyBenchT3.jobString>
   <Grechka_MakeArchoSubstrate.label>synthesize archotech substrate</Grechka_MakeArchoSubstrate.label>
@@ -63,30 +63,30 @@
   <Grechka_MakeGrechkaConcentrate.label>prepare grechka concentrate</Grechka_MakeGrechkaConcentrate.label>
   <Grechka_MakeGrechkaConcentrate.description>prepare grechka concentrate. All recipes are available without research.</Grechka_MakeGrechkaConcentrate.description>
   <Grechka_MakeGrechkaConcentrate.jobString>prepare grechka concentrate.</Grechka_MakeGrechkaConcentrate.jobString>
-  <Grechka_MakeComponentT4.label>assemble component T4</Grechka_MakeComponentT4.label>
-  <Grechka_MakeComponentT4.description>assemble component T4. All recipes are available without research.</Grechka_MakeComponentT4.description>
-  <Grechka_MakeComponentT4.jobString>assemble component T4.</Grechka_MakeComponentT4.jobString>
-  <Grechka_MakeHousingT4.label>assemble housing T4</Grechka_MakeHousingT4.label>
-  <Grechka_MakeHousingT4.description>assemble housing T4. All recipes are available without research.</Grechka_MakeHousingT4.description>
-  <Grechka_MakeHousingT4.jobString>assemble housing T4.</Grechka_MakeHousingT4.jobString>
-  <Grechka_MakeSolarCellT4.label>assemble solar cell T4</Grechka_MakeSolarCellT4.label>
-  <Grechka_MakeSolarCellT4.description>assemble solar cell T4. All recipes are available without research.</Grechka_MakeSolarCellT4.description>
-  <Grechka_MakeSolarCellT4.jobString>assemble solar cell T4.</Grechka_MakeSolarCellT4.jobString>
-  <Grechka_UpgradeAssemblyBenchT4.label>upgrade assembly bench to T4</Grechka_UpgradeAssemblyBenchT4.label>
-  <Grechka_UpgradeAssemblyBenchT4.description>upgrade assembly bench to T4. All recipes are available without research.</Grechka_UpgradeAssemblyBenchT4.description>
-  <Grechka_UpgradeAssemblyBenchT4.jobString>upgrade assembly bench to T4.</Grechka_UpgradeAssemblyBenchT4.jobString>
-  <Grechka_MakeComponentT5.label>assemble component T5</Grechka_MakeComponentT5.label>
-  <Grechka_MakeComponentT5.description>assemble component T5. All recipes are available without research.</Grechka_MakeComponentT5.description>
-  <Grechka_MakeComponentT5.jobString>assemble component T5.</Grechka_MakeComponentT5.jobString>
-  <Grechka_MakeHousingT5.label>assemble housing T5</Grechka_MakeHousingT5.label>
-  <Grechka_MakeHousingT5.description>assemble housing T5. All recipes are available without research.</Grechka_MakeHousingT5.description>
-  <Grechka_MakeHousingT5.jobString>assemble housing T5.</Grechka_MakeHousingT5.jobString>
-  <Grechka_MakeSolarCellT5.label>assemble solar cell T5</Grechka_MakeSolarCellT5.label>
-  <Grechka_MakeSolarCellT5.description>assemble solar cell T5. All recipes are available without research.</Grechka_MakeSolarCellT5.description>
-  <Grechka_MakeSolarCellT5.jobString>assemble solar cell T5.</Grechka_MakeSolarCellT5.jobString>
-  <Grechka_UpgradeAssemblyBenchT5.label>upgrade assembly bench to T5</Grechka_UpgradeAssemblyBenchT5.label>
-  <Grechka_UpgradeAssemblyBenchT5.description>upgrade assembly bench to T5. All recipes are available without research.</Grechka_UpgradeAssemblyBenchT5.description>
-  <Grechka_UpgradeAssemblyBenchT5.jobString>upgrade assembly bench to T5.</Grechka_UpgradeAssemblyBenchT5.jobString>
+  <Grechka_MakeComponentT4.label>assemble archo component (T4)</Grechka_MakeComponentT4.label>
+  <Grechka_MakeComponentT4.description>assemble archo component (T4). All recipes are available without research.</Grechka_MakeComponentT4.description>
+  <Grechka_MakeComponentT4.jobString>assemble archo component (T4).</Grechka_MakeComponentT4.jobString>
+  <Grechka_MakeHousingT4.label>assemble archo housing (T4)</Grechka_MakeHousingT4.label>
+  <Grechka_MakeHousingT4.description>assemble archo housing (T4). All recipes are available without research.</Grechka_MakeHousingT4.description>
+  <Grechka_MakeHousingT4.jobString>assemble archo housing (T4).</Grechka_MakeHousingT4.jobString>
+  <Grechka_MakeSolarCellT4.label>assemble archo solar cell (T4)</Grechka_MakeSolarCellT4.label>
+  <Grechka_MakeSolarCellT4.description>assemble archo solar cell (T4). All recipes are available without research.</Grechka_MakeSolarCellT4.description>
+  <Grechka_MakeSolarCellT4.jobString>assemble archo solar cell (T4).</Grechka_MakeSolarCellT4.jobString>
+  <Grechka_UpgradeAssemblyBenchT4.label>upgrade: archo workbench (T4)</Grechka_UpgradeAssemblyBenchT4.label>
+  <Grechka_UpgradeAssemblyBenchT4.description>upgrade: archo workbench (T4). All recipes are available without research.</Grechka_UpgradeAssemblyBenchT4.description>
+  <Grechka_UpgradeAssemblyBenchT4.jobString>upgrade: archo workbench (T4).</Grechka_UpgradeAssemblyBenchT4.jobString>
+  <Grechka_MakeComponentT5.label>assemble grechka component (T5)</Grechka_MakeComponentT5.label>
+  <Grechka_MakeComponentT5.description>assemble grechka component (T5). All recipes are available without research.</Grechka_MakeComponentT5.description>
+  <Grechka_MakeComponentT5.jobString>assemble grechka component (T5).</Grechka_MakeComponentT5.jobString>
+  <Grechka_MakeHousingT5.label>assemble grechka housing (T5)</Grechka_MakeHousingT5.label>
+  <Grechka_MakeHousingT5.description>assemble grechka housing (T5). All recipes are available without research.</Grechka_MakeHousingT5.description>
+  <Grechka_MakeHousingT5.jobString>assemble grechka housing (T5).</Grechka_MakeHousingT5.jobString>
+  <Grechka_MakeSolarCellT5.label>assemble grechka solar cell (T5)</Grechka_MakeSolarCellT5.label>
+  <Grechka_MakeSolarCellT5.description>assemble grechka solar cell (T5). All recipes are available without research.</Grechka_MakeSolarCellT5.description>
+  <Grechka_MakeSolarCellT5.jobString>assemble grechka solar cell (T5).</Grechka_MakeSolarCellT5.jobString>
+  <Grechka_UpgradeAssemblyBenchT5.label>upgrade: grechka workbench (T5)</Grechka_UpgradeAssemblyBenchT5.label>
+  <Grechka_UpgradeAssemblyBenchT5.description>upgrade: grechka workbench (T5). All recipes are available without research.</Grechka_UpgradeAssemblyBenchT5.description>
+  <Grechka_UpgradeAssemblyBenchT5.jobString>upgrade: grechka workbench (T5).</Grechka_UpgradeAssemblyBenchT5.jobString>
   <Grechka_MakeComponentByHandT1.label>assemble component by hand</Grechka_MakeComponentByHandT1.label>
   <Grechka_MakeComponentByHandT1.description>Slowly assemble one industrial component from 12 steel at a crafting spot.</Grechka_MakeComponentByHandT1.description>
   <Grechka_MakeComponentByHandT1.jobString>Assembling component by hand.</Grechka_MakeComponentByHandT1.jobString>
@@ -102,12 +102,12 @@
   <Grechka_UpgradeAssemblyBenchT2.label>upgrade assembly bench to T2</Grechka_UpgradeAssemblyBenchT2.label>
   <Grechka_UpgradeAssemblyBenchT2.description>Upgrade this bench in place. The installed T1 housing is reused. Requires the T2 housing materials and the remaining cost of the new bench.</Grechka_UpgradeAssemblyBenchT2.description>
   <Grechka_UpgradeAssemblyBenchT2.jobString>Upgrading assembly bench to T2.</Grechka_UpgradeAssemblyBenchT2.jobString>
-  <Grechka_UpgradeMatterRecyclerT5.label>upgrade matter device to T5</Grechka_UpgradeMatterRecyclerT5.label>
-  <Grechka_UpgradeMatterRecyclerT5.description>upgrade matter device to T5. All recipes are available without research.</Grechka_UpgradeMatterRecyclerT5.description>
-  <Grechka_UpgradeMatterRecyclerT5.jobString>upgrade matter device to T5.</Grechka_UpgradeMatterRecyclerT5.jobString>
-  <Grechka_UpgradeMatterSynthesizerT5.label>upgrade matter device to T5</Grechka_UpgradeMatterSynthesizerT5.label>
-  <Grechka_UpgradeMatterSynthesizerT5.description>upgrade matter device to T5. All recipes are available without research.</Grechka_UpgradeMatterSynthesizerT5.description>
-  <Grechka_UpgradeMatterSynthesizerT5.jobString>upgrade matter device to T5.</Grechka_UpgradeMatterSynthesizerT5.jobString>
+  <Grechka_UpgradeMatterRecyclerT5.label>upgrade: grechka matter device (T5)</Grechka_UpgradeMatterRecyclerT5.label>
+  <Grechka_UpgradeMatterRecyclerT5.description>upgrade: grechka matter device (T5). All recipes are available without research.</Grechka_UpgradeMatterRecyclerT5.description>
+  <Grechka_UpgradeMatterRecyclerT5.jobString>upgrade: grechka matter device (T5).</Grechka_UpgradeMatterRecyclerT5.jobString>
+  <Grechka_UpgradeMatterSynthesizerT5.label>upgrade: grechka matter device (T5)</Grechka_UpgradeMatterSynthesizerT5.label>
+  <Grechka_UpgradeMatterSynthesizerT5.description>upgrade: grechka matter device (T5). All recipes are available without research.</Grechka_UpgradeMatterSynthesizerT5.description>
+  <Grechka_UpgradeMatterSynthesizerT5.jobString>upgrade: grechka matter device (T5).</Grechka_UpgradeMatterSynthesizerT5.jobString>
   <Grechka_MakeSolarS5.label>assemble solar panel S5</Grechka_MakeSolarS5.label>
   <Grechka_MakeSolarS5.description>Upgrade one intact uninstalled device from the previous stage. Its installed housing is already credited; only new parts and solar cells are required. Produces one packed device for installation.</Grechka_MakeSolarS5.description>
   <Grechka_MakeSolarS5.jobString>assemble solar panel S5.</Grechka_MakeSolarS5.jobString>

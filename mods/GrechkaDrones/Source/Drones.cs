@@ -77,6 +77,9 @@ namespace Grechka.Drones
 
         protected override void Tick()
         {
+            if ((CurJobDef == JobDefOf.AttackMelee || CurJobDef == JobDefOf.AttackStatic)
+                && DroneRules.IsOwn(this) && DroneRules.IsOwn(CurJob?.targetA.Pawn))
+                jobs.EndCurrentJob(JobCondition.InterruptForced);
             base.Tick();
             if (!Spawned || Dead || Downed || Faction?.IsPlayer != true || Properties == null) return;
             if (Properties.role == DroneRole.Warrior && DroneRules.ShouldRetreat(HealthFraction, repairing))
@@ -265,7 +268,7 @@ namespace Grechka.Drones
         public static bool IsThreatToColony(Drone drone, Pawn target)
         {
             if (target == null || target == drone || target.Dead || target.Downed || !target.Spawned
-                || target.Map != drone.Map || target.IsPrisonerOfColony) return false;
+                || target.Map != drone.Map || target.IsPrisonerOfColony || DroneRules.IsOwn(target)) return false;
             if (target.HostileTo(drone)) return true;
             if (!target.RaceProps.Animal) return false;
             if (target.mindState?.enemyTarget is Pawn victim && DroneRules.IsOwn(victim)) return true;

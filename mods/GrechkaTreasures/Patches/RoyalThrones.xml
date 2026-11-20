@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RoyalTitleDef/throneRoomRequirements/li[@Class='RoomRequirement_HasAssignedThroneAnyOf']/things[li='GrandThrone']</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/RoyalTitleDef/throneRoomRequirements/li[@Class='RoomRequirement_HasAssignedThroneAnyOf']/things[li='GrandThrone']</xpath>
+      <value>
+        <li>GrechkaTreasures_DiamondThrone</li>
+        <li>GrechkaTreasures_RubyThrone</li>
+        <li>GrechkaTreasures_SapphireThrone</li>
+        <li>GrechkaTreasures_EmeraldThrone</li>
+        <li>GrechkaTreasures_AmethystThrone</li>
+        <li>GrechkaTreasures_TopazThrone</li>
+      </value>
+    </match>
+  </Operation>
+</Patch>

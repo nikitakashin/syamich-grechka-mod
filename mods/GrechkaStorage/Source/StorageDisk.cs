@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using HarmonyLib;
 using RimWorld;
+using UnityEngine;
 using Verse;
 
 namespace Grechka.Storage
@@ -83,7 +84,7 @@ namespace Grechka.Storage
         }
     }
 
-    public sealed class StorageDisk : ThingWithComps, IThingHolder
+    public sealed class StorageDisk : ThingWithComps, IThingHolder, IHaulSource
     {
         private ThingOwner<Thing> contents;
         private DiskSpace space;
@@ -96,6 +97,8 @@ namespace Grechka.Storage
         public IEnumerable<Thing> Items { get { return contents; } }
         public DiskSpace Space { get { EnsureSpace(); return space; } }
         public bool SealedContents;
+        public bool IntakePaused;
+        IThingHolder IThingHolder.ParentHolder => Spawned ? Map : ParentHolder;
         public StorageDisk() { MakeContainer(); }
         private void MakeContainer()
         {
@@ -104,6 +107,13 @@ namespace Grechka.Storage
             contents.OnContentsChanged += Changed;
         }
         private void Changed() { space = null; Version++; }
+        internal void ContentsChangedExternally() { Changed(); }
+        Map IHaulSource.Map => MapHeld;
+        public bool HaulSourceEnabled => StorageMapAccess.ControllerFor(this) != null;
+        public bool StorageTabVisible => false;
+        public StorageSettings GetStoreSettings() => StorageMapAccess.ControllerFor(this)?.SettingsFor(Frozen) ?? new StorageSettings(this);
+        public StorageSettings GetParentStoreSettings() => null;
+        public void Notify_SettingsChanged() { }
         private void Register()
         {
             if (Current.Game == null) return;
@@ -116,6 +126,7 @@ namespace Grechka.Storage
             base.ExposeData();
             Scribe_Deep.Look(ref contents, "grechkaDiskContents", this);
             Scribe_Values.Look(ref SealedContents, "grechkaSealedContents");
+            Scribe_Values.Look(ref IntakePaused, "grechkaDiskIntakePaused");
             Scribe_Values.Look(ref lastRotTick, "grechkaDiskRotTick", -1);
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
@@ -133,7 +144,7 @@ namespace Grechka.Storage
         }
         public int Acceptable(Thing thing)
         {
-            return DiskItemPolicy.Problem(thing) == null
+            return !IntakePaused && DiskItemPolicy.Problem(thing) == null
                 ? (int)Math.Min(int.MaxValue, Space.MaxAccept(DiskItemPolicy.Key(thing))) : 0;
         }
         public int Accept(Thing thing, int requested, bool compact = true)
@@ -204,6 +215,11 @@ namespace Grechka.Storage
                 + StorageText.Get("GrechkaStorage_Text151") + Space.Types + StorageText.Get("GrechkaStorage_Text152") + Space.UsedBytes.ToString("N0") + "/" + Capacity.ToString("N0")
                 + StorageText.Get("GrechkaStorage_Text029") + (Frozen ? StorageText.Get("GrechkaStorage_Text153") : StorageText.Get("GrechkaStorage_Text154"));
         }
+        public override IEnumerable<Gizmo> GetGizmos()
+        {
+            foreach (Gizmo gizmo in base.GetGizmos()) yield return gizmo;
+            if (Find.Selector.NumSelected == 1) yield return new Gizmo_DiskCapacity(this);
+        }
         public override void Destroy(DestroyMode mode = DestroyMode.Vanish)
         {
             if (Destroyed) return;
@@ -212,6 +228,28 @@ namespace Grechka.Storage
         }
         public ThingOwner GetDirectlyHeldThings() { return contents; }
         public void GetChildHolders(List<IThingHolder> children) { ThingOwnerUtility.AppendThingHoldersFromThings(children, contents); }
+    }
+
+    internal sealed class Gizmo_DiskCapacity : Gizmo
+    {
+        private readonly StorageDisk disk;
+        internal Gizmo_DiskCapacity(StorageDisk disk) { this.disk = disk; }
+        public override float GetWidth(float maxWidth) => Math.Min(180f, maxWidth);
+        public override GizmoResult GizmoOnGUI(Vector2 topLeft, float maxWidth, GizmoRenderParms parms)
+        {
+            var rect = new Rect(topLeft.x, topLeft.y, GetWidth(maxWidth), 75f);
+            Widgets.DrawWindowBackground(rect);
+            Rect inner = rect.ContractedBy(8f);
+            DiskSpace space = disk.Space;
+            GameFont old = Text.Font;
+            Text.Font = GameFont.Tiny;
+            Widgets.Label(new Rect(inner.x, inner.y, inner.width, 22f), disk.LabelCap);
+            Widgets.FillableBar(new Rect(inner.x, inner.y + 23f, inner.width, 12f), space.FillFraction);
+            Widgets.Label(new Rect(inner.x, inner.y + 39f, inner.width, 20f),
+                space.UsedBytes.ToString("N0") + " / " + space.Capacity.ToString("N0") + StorageText.Get("GrechkaStorage_Text029"));
+            Text.Font = old;
+            return new GizmoResult(GizmoState.Clear);
+        }
     }
 
     public sealed class StorageDiskClock : GameComponent

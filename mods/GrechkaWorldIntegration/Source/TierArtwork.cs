@@ -96,6 +96,20 @@ namespace Grechka.WorldIntegration
 
         private static bool ReviewedExternalClass(TierArtworkDef art, Type type)
         {
+            // This battery draws the native charge overlay in DrawAt and uses
+            // the inherited Graphic for its chassis.
+            if (art.packageId == "vanillaexpanded.vfepower" && art.sourceDefName == "VFE_SmallBattery"
+                && type.FullName == "VanillaPowerExpanded.Building_SmallBattery") return true;
+            if (art.packageId == "oskarpotocki.vfe.pirates" && art.sourceDefName == "VFEP_WarcasketFoundry"
+                && type.FullName == "VFEPirates.Building_WarcasketFoundry")
+            {
+                var drawArgs = new[] { typeof(Vector3), typeof(bool) };
+                var nativeDraw = AccessTools.Method(typeof(ThingWithComps), "DrawAt", drawArgs);
+                var draw = AccessTools.Method(type, "DrawAt", drawArgs);
+                // The native chassis is drawn first. Keep the separate occupant frame and progress bar.
+                return AccessTools.Method(type, "Print", new[] { typeof(SectionLayer) })?.DeclaringType == typeof(ThingWithComps)
+                    && draw?.GetMethodBody() != null && PatchProcessor.GetOriginalInstructions(draw).Any(i => i.Calls(nativeDraw));
+            }
             bool reviewed = (art.packageId == "aoba.fortress.industrial.citadel"
                 && (art.sourceDefName == "FT_ArcFurnace" || art.sourceDefName == "FT_HeavyChem")
                 && type.FullName == "Fortified.Building_WorkTableAutonomous") ||

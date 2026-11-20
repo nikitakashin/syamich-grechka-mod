@@ -5,7 +5,7 @@
   </DesignatorDropdownGroupDef>
   <ThingDef ParentName="BenchBase">
     <defName>GrechkaPharmacy_ReactorT3_Building</defName>
-    <label>pharmaceutical reactor T3</label>
+    <label>mecha pharmaceutical reactor (T3)</label>
     <description>Produces preparations up to tier 3. Requires a worker and power. Work speed x5.</description>
     <thingClass>Building_WorkTable</thingClass>
     <rotatable>false</rotatable>
@@ -65,7 +65,7 @@
   </ThingDef>
   <ThingDef ParentName="BenchBase">
     <defName>GrechkaPharmacy_ReactorT4_Building</defName>
-    <label>pharmaceutical reactor T4</label>
+    <label>archo pharmaceutical reactor (T4)</label>
     <description>Produces preparations up to tier 4. Requires a worker and power. Work speed x12.</description>
     <thingClass>Building_WorkTable</thingClass>
     <rotatable>false</rotatable>
@@ -125,7 +125,7 @@
   </ThingDef>
   <ThingDef ParentName="BenchBase">
     <defName>GrechkaPharmacy_ReactorT5_Building</defName>
-    <label>pharmaceutical reactor T5</label>
+    <label>grechka pharmaceutical reactor (T5)</label>
     <description>Produces preparations up to tier 5. Requires a worker and power. Work speed x25.</description>
     <thingClass>Building_WorkTable</thingClass>
     <rotatable>false</rotatable>

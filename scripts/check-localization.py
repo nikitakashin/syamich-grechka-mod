@@ -40,7 +40,12 @@ for mod in sorted((ROOT / 'mods').iterdir()):
         if category == 'Keyed': keyed = {'Russian': ru, 'English': en}
         if not ru and not en and category == 'Keyed':
             continue  # Content-only modules may only have DefInjected entries.
-        for key in ru.keys() - en.keys(): errors.append(f'{mod.name}/{category}: missing English {key}')
+        for key in ru.keys() - en.keys():
+            # This language patch supplies Russian values for keys owned and
+            # already defined in English by Vanilla Expanded Framework.
+            if mod.name == 'GrechkaTranslationsRus' and category == 'Keyed' and key[1].startswith('PipeSystem_'):
+                continue
+            errors.append(f'{mod.name}/{category}: missing English {key}')
         for key in en.keys() - ru.keys(): errors.append(f'{mod.name}/{category}: missing Russian {key}')
         for key in ru.keys() & en.keys():
             if placeholders(ru[key]) != placeholders(en[key]):

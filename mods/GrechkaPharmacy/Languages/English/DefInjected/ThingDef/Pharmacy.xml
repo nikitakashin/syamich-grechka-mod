@@ -48,10 +48,10 @@
   <GrechkaPharmacy_YouthSerumT5_Item.description>Reduces human biological age by five years, down to a minimum of 25 years. Chronological age is unchanged. Has no effect on younger patients.</GrechkaPharmacy_YouthSerumT5_Item.description>
   <GrechkaPharmacy_YouthSerumT5_Item.ingestible.ingestCommandString>Apply {0}</GrechkaPharmacy_YouthSerumT5_Item.ingestible.ingestCommandString>
   <GrechkaPharmacy_YouthSerumT5_Item.ingestible.ingestReportString>Applying {0}.</GrechkaPharmacy_YouthSerumT5_Item.ingestible.ingestReportString>
-  <GrechkaPharmacy_ReactorT3_Building.label>pharmaceutical reactor T3</GrechkaPharmacy_ReactorT3_Building.label>
+  <GrechkaPharmacy_ReactorT3_Building.label>mecha pharmaceutical reactor (T3)</GrechkaPharmacy_ReactorT3_Building.label>
   <GrechkaPharmacy_ReactorT3_Building.description>Produces preparations up to tier 3. Requires a worker and power. Work speed x5.</GrechkaPharmacy_ReactorT3_Building.description>
-  <GrechkaPharmacy_ReactorT4_Building.label>pharmaceutical reactor T4</GrechkaPharmacy_ReactorT4_Building.label>
+  <GrechkaPharmacy_ReactorT4_Building.label>archo pharmaceutical reactor (T4)</GrechkaPharmacy_ReactorT4_Building.label>
   <GrechkaPharmacy_ReactorT4_Building.description>Produces preparations up to tier 4. Requires a worker and power. Work speed x12.</GrechkaPharmacy_ReactorT4_Building.description>
-  <GrechkaPharmacy_ReactorT5_Building.label>pharmaceutical reactor T5</GrechkaPharmacy_ReactorT5_Building.label>
+  <GrechkaPharmacy_ReactorT5_Building.label>grechka pharmaceutical reactor (T5)</GrechkaPharmacy_ReactorT5_Building.label>
   <GrechkaPharmacy_ReactorT5_Building.description>Produces preparations up to tier 5. Requires a worker and power. Work speed x25.</GrechkaPharmacy_ReactorT5_Building.description>
 </LanguageData>

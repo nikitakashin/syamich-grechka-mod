@@ -21,7 +21,7 @@ namespace Grechka.WorldIntegration
         internal static readonly FieldInfo TickLeft = Field(ProcessType, "tickLeft"), CurrentResult = Field(ProcessType, "currentResult");
         private static readonly ConditionalWeakTable<object, FactoryBatchState> states = new ConditionalWeakTable<object, FactoryBatchState>();
         private static FieldInfo Field(Type type, string name) => type == null ? null : AccessTools.Field(type, name);
-        internal static bool Available => ProcessType != null && ResultType != null && parent != null && owners != null && wanted != null && TickLeft != null && CurrentResult != null;
+        internal static bool Available => ProcessType != null && ResultType != null && parent != null && owners != null && wanted != null && TickLeft != null;
         public static bool Supports(ThingDef def) => ProfileVariants.Entry(def) != null &&
             def.comps?.Any(c => c.compClass?.FullName == "PipeSystem.CompAdvancedResourceProcessor") == true;
         private static Thing Machine(object process) => parent?.GetValue(process) as Thing;
@@ -78,11 +78,19 @@ namespace Grechka.WorldIntegration
             state.pending[index] = (float)Math.Max(0, bonus - extra);
             amount = Saturate((double)amount + extra);
         }
-        // Called at native currentResult++ only: previews and failed/blocked deliveries do not consume carry.
+        // Older PipeSystem commits through its result cursor. Newer versions report
+        // successful physical and pipe deliveries directly, without a saved cursor.
         internal static void CommitOutput(object process)
         {
+            CommitIndex(process, (int)CurrentResult.GetValue(process));
+        }
+        internal static void CommitResult(object process, object result)
+        {
+            CommitIndex(process, ResultIndex(process, result));
+        }
+        private static void CommitIndex(object process, int index)
+        {
             FactoryBatchState state = State(process);
-            int index = (int)CurrentResult.GetValue(process);
             if (!state.pending.TryGetValue(index, out float next)) return;
             state.carry[index] = next;
             state.pending.Remove(index);
@@ -115,6 +123,7 @@ namespace Grechka.WorldIntegration
         internal static IEnumerable<CodeInstruction> DeliveryInstructions(IEnumerable<CodeInstruction> source)
         {
             var code = source.ToList();
+            if (CurrentResult == null) return PipeDeliveryInstructions(code);
             int matches = 0;
             for (int i = 0; i + 5 < code.Count; i++)
                 if (code[i].opcode == OpCodes.Ldarg_0 && code[i + 1].opcode == OpCodes.Ldarg_0 && code[i + 2].LoadsField(CurrentResult)
@@ -127,6 +136,36 @@ namespace Grechka.WorldIntegration
                     matches++; i += 7;
                 }
             if (matches != 1) throw new InvalidOperationException("Unsupported PipeSystem output IL: expected one committed result increment, got " + matches);
+            return code;
+        }
+        private static IEnumerable<CodeInstruction> PipeDeliveryInstructions(List<CodeInstruction> code)
+        {
+            MethodInfo getCount = AccessTools.Method(ResultType, "GetCount", new[] { ProcessType });
+            int countCall = code.FindIndex(instruction => instruction.Calls(getCount));
+            if (countCall < 2 || code[countCall - 1].opcode != OpCodes.Ldarg_0)
+                throw new InvalidOperationException("Unsupported PipeSystem output IL: missing pipe result local");
+            int resultStart = countCall - 2;
+            // The native result is captured by the resource-matching lambda in
+            // some builds, so its load includes the closure local and its field.
+            if (code[resultStart].opcode == OpCodes.Ldfld && code[resultStart].operand is FieldInfo field
+                && field.FieldType == ResultType) resultStart--;
+            if (resultStart < 0 || !code[resultStart].IsLdloc())
+                throw new InvalidOperationException("Unsupported PipeSystem output IL: missing pipe result load");
+            List<CodeInstruction> resultLoad = code.GetRange(resultStart, countCall - 1 - resultStart);
+            int matches = 0;
+            for (int i = 0; i < code.Count; i++)
+            {
+                if (code[i].operand is not MethodInfo method || method.DeclaringType?.FullName != "PipeSystem.PipeNet"
+                    || (method.Name != "DistributeAmongStorage" && method.Name != "DistributeAmongConverters"
+                        && method.Name != "DistributeAmongRefillables")) continue;
+                var commit = new List<CodeInstruction> { new CodeInstruction(OpCodes.Ldarg_0) };
+                commit.AddRange(resultLoad.Select(instruction => new CodeInstruction(instruction.opcode, instruction.operand)));
+                commit.Add(CodeInstruction.Call(typeof(FactoryTierAdapter), nameof(CommitResult)));
+                code.InsertRange(i + 1, commit);
+                matches++; i += commit.Count;
+            }
+            if (matches != 3)
+                throw new InvalidOperationException("Unsupported PipeSystem output IL: expected three pipe delivery paths, got " + matches);
             return code;
         }
     }
@@ -186,5 +225,16 @@ namespace Grechka.WorldIntegration
         public static bool Prepare() => FactoryTierAdapter.Available;
         public static MethodBase TargetMethod() => AccessTools.Method(FactoryTierAdapter.ProcessType, "SpawnOrPushToNet");
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions) => FactoryTierAdapter.DeliveryInstructions(instructions);
+    }
+    [HarmonyPatch]
+    public static class FactoryTierPhysicalDeliveryHook
+    {
+        public static bool Prepare() => FactoryTierAdapter.Available && FactoryTierAdapter.CurrentResult == null;
+        public static MethodBase TargetMethod() => AccessTools.Method(FactoryTierAdapter.ProcessType, "TrySpawnAtCell",
+            new[] { FactoryTierAdapter.ResultType, typeof(IntVec3), typeof(Map), typeof(Thing).MakeByRefType() });
+        public static void Postfix(object __instance, object __0, bool __result)
+        {
+            if (__result) FactoryTierAdapter.CommitResult(__instance, __0);
+        }
     }
 }

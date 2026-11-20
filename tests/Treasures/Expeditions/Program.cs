@@ -32,9 +32,20 @@ harmony.Patch(AccessTools.PropertyGetter(typeof(Find),nameof(Find.FactionManager
 var pref=AccessTools.Field(typeof(Prefs),"data");pref.SetValue(null,Activator.CreateInstance(pref.FieldType));
 TreasureCatalog.Load(Path.Combine(repo,"mods/GrechkaTreasures/Config/Sites"));
 Check(Fixture.Errors.Count==0,"Prepared catalog has no rejected layouts: "+string.Join(";",Fixture.Errors));
-Check(TreasureCatalog.Layouts.Count==26,"All 26 prepared XML layouts load and validate");
-Check(TreasureCatalog.Layouts.Select(l=>string.Join("\n",l.Rows)).Distinct().Count()==26,"Each encounter has an independently stored distinct footprint");
+Check(TreasureCatalog.Layouts.Count==29,"All 29 prepared XML layouts load and validate");
+Check(TreasureCatalog.Layouts.Select(l=>string.Join("\n",l.Rows)).Distinct().Count()==29,"Each encounter has an independently stored distinct footprint");
 Check(TreasureCatalog.Layouts.Select(l=>l.Tier).Distinct().Order().SequenceEqual(new[]{1,2,3,4,5}),"Prepared sites span danger tiers 1–5");
+var enclosedCells = AccessTools.Method(typeof(TreasureMapBuilder), "EnclosedCells");
+foreach (string id in new[] { "caravan_weigh_station", "sluice_gallery", "bastion_archive" })
+{
+    var layout = TreasureCatalog.Get(id);
+    var markers = layout.Rows.SelectMany((row, z) => row.Select((c, x) => (symbol:c, cell:new IntVec3(x, 0, z))))
+        .Where(p => p.symbol != ' ').ToList();
+    var enclosed = (HashSet<IntVec3>)enclosedCells.Invoke(null, new object[] { markers });
+    Check(markers.Where(p => "CDH".Contains(p.symbol)).All(p => enclosed.Contains(p.cell))
+        && markers.Where(p => ",~=".Contains(p.symbol)).All(p => !enclosed.Contains(p.cell)),
+        "Closed vault chambers are concealed while each new courtyard and crossing stays open: " + id);
+}
 foreach(var l in TreasureCatalog.Layouts){
  l.Validate();
  foreach(var pos in l.Rows.SelectMany((row,z)=>row.Select((c,x)=>(c,x,z))).Where(p=>p.c=='S'||p.c=='B')){

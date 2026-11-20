@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>Grechka_RoomCooler_Building</defName>
+    <label>комнатный электроохладитель</label>
+    <description>Напольный электрический охладитель с настраиваемой целевой температурой. Охлаждает комнату вдвое мощнее деревянного охладителя. Потребляет 250 Вт при охлаждении и 25 Вт после достижения температуры. Работает внутри закрытого помещения.</description>
+    <thingClass>Grechka.Industry.Building_RoomCooler</thingClass>
+    <graphicData>
+      <texPath>Things/Building/Misc/TempControl/Heater</texPath>
+      <graphicClass>Grechka.Industry.Graphic_RoomCooler</graphicClass>
+      <shadowData>
+        <volume>(0.5,0.3,0.7)</volume>
+        <offset>(0,0,-0.15)</offset>
+      </shadowData>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <size>(1,1)</size>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <blockWind>true</blockWind>
+    <rotatable>false</rotatable>
+    <fillPercent>0.4</fillPercent>
+    <thingCategories>
+      <li>BuildingsTemperature</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>1200</WorkToBuild>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Mass>8</Mass>
+      <Flammability>0.3</Flammability>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+    </building>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <placeWorkers>
+      <li>PlaceWorker_CoolerSimple</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>250</basePowerConsumption>
+        <shortCircuitInRain>true</shortCircuitInRain>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_TempControl">
+        <energyPerSecond>-22</energyPerSecond>
+        <defaultTargetTemperature>21</defaultTargetTemperature>
+        <lowPowerConsumptionFactor>0.1</lowPowerConsumptionFactor>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(90,170,255,0)</glowColor>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+    </comps>
+    <designationCategory>Grechka_IndustryCategory</designationCategory>
+    <uiOrder>2490</uiOrder>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <constructEffect>ConstructMetal</constructEffect>
+  </ThingDef>
+</Defs>

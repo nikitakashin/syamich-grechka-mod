@@ -27,7 +27,7 @@ foreach (Type hook in typeof(StorageDisk).Assembly.GetTypes().Where(t => t.Name.
     bool bound = Harmony.GetAllPatchedMethods().Any(m =>
     {
         var info = Harmony.GetPatchInfo(m);
-        return info.Prefixes.Concat(info.Postfixes).Any(p => p.owner == harmony.Id && p.PatchMethod.DeclaringType == hook);
+        return info.Prefixes.Concat(info.Postfixes).Concat(info.Transpilers).Any(p => p.owner == harmony.Id && p.PatchMethod.DeclaringType == hook);
     });
     Check(bound, "Game hook bound: " + hook.Name);
 }
@@ -85,6 +85,7 @@ string path = Path.Combine(Path.GetTempPath(), "grechka-storage-roundtrip-" + Gu
 try
 {
     StorageDisk savedCold = cold, savedGear = large;
+    cold.IntakePaused = true;
     Scribe.saver.InitSaving(path, "storageFixture");
     Scribe_Deep.Look(ref savedCold, "cold"); Scribe_Deep.Look(ref savedGear, "gear");
     Scribe.saver.FinalizeSaving();
@@ -92,6 +93,8 @@ try
     Scribe.loader.InitLoading(path);
     Scribe_Deep.Look(ref loadedCold, "cold"); Scribe_Deep.Look(ref loadedGear, "gear");
     Scribe.loader.FinalizeLoading();
+    Check(loadedCold.IntakePaused && !loadedGear.IntakePaused, "Scribe preserves per-disk intake locks across reloads");
+    cold.IntakePaused = false;
     Thing restoredMeal = loadedCold.Items.Single(), restoredArmor = loadedGear.Items.Single();
     Check(loadedCold.Space.ItemCount == 5 && restoredMeal.def == mealDef
         && Math.Abs((float)AccessTools.Field(typeof(CompRottable), "rotProgressInt").GetValue(((ThingWithComps)restoredMeal).GetComp<CompRottable>()) - 1234f) < 0.001f,
@@ -241,6 +244,7 @@ try
 finally { if (File.Exists(path)) File.Delete(path); }
 cold.Destroy(DestroyMode.Vanish);
 Check(meal.Destroyed && !holder.Contents.Contains(cold), "Destroying a disk destroys its actual contents exactly once");
+StorageAccessChecks.Run(Check, Path.GetFullPath(args.FirstOrDefault() ?? Directory.GetCurrentDirectory()));
 CertusChecks.Run(Check);
 MeteorChecks.Run(Check);
 Console.WriteLine("Isolated library checks only; no RimWorld process was launched or controlled.");

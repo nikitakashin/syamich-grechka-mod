@@ -19,7 +19,7 @@
   <ThingDef ParentName="Grechka_ApparelBase">
     <defName>Grechka_ArmorT3_Item</defName>
     <label>броня: механитное наследие</label>
-    <description>Оснащение T3. Защита от острых / тупых / тепловых атак: 150% / 80% / 105%.</description>
+    <description>Меха-оснащение (T3). Защита от острых / тупых / тепловых атак: 150% / 80% / 105%.</description>
     <graphicData>
       <texPath>Items/ArmorT3</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -79,7 +79,7 @@
   <ThingDef ParentName="Grechka_ApparelBase">
     <defName>Grechka_HelmetT3_Item</defName>
     <label>шлем: механитное наследие</label>
-    <description>Оснащение T3. Защита от острых / тупых / тепловых атак: 150% / 80% / 105%.</description>
+    <description>Меха-оснащение (T3). Защита от острых / тупых / тепловых атак: 150% / 80% / 105%.</description>
     <graphicData>
       <texPath>Items/HelmetT3</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -131,7 +131,7 @@
   <ThingDef ParentName="Grechka_ApparelBase">
     <defName>Grechka_ArmorT4_Item</defName>
     <label>броня: радужный архо-комплект</label>
-    <description>Оснащение T4. Защита от острых / тупых / тепловых атак: 215% / 140% / 165%.</description>
+    <description>Архо-оснащение (T4). Защита от острых / тупых / тепловых атак: 215% / 140% / 165%.</description>
     <graphicData>
       <texPath>Items/ArmorT4</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -192,7 +192,7 @@
   <ThingDef ParentName="Grechka_ApparelBase">
     <defName>Grechka_HelmetT4_Item</defName>
     <label>шлем: радужный архо-комплект</label>
-    <description>Оснащение T4. Защита от острых / тупых / тепловых атак: 215% / 140% / 165%.</description>
+    <description>Архо-оснащение (T4). Защита от острых / тупых / тепловых атак: 215% / 140% / 165%.</description>
     <graphicData>
       <texPath>Items/HelmetT4</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -245,7 +245,7 @@
   <ThingDef ParentName="Grechka_ApparelBase">
     <defName>Grechka_ArmorT5_Item</defName>
     <label>броня: золотая гречневая героика</label>
-    <description>Оснащение T5. Защита от острых / тупых / тепловых атак: 240% / 165% / 190%.</description>
+    <description>Гречневое оснащение (T5). Защита от острых / тупых / тепловых атак: 240% / 165% / 190%.</description>
     <graphicData>
       <texPath>Items/ArmorT5</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -306,7 +306,7 @@
   <ThingDef ParentName="Grechka_ApparelBase">
     <defName>Grechka_HelmetT5_Item</defName>
     <label>шлем: золотая гречневая героика</label>
-    <description>Оснащение T5. Защита от острых / тупых / тепловых атак: 240% / 165% / 190%.</description>
+    <description>Гречневое оснащение (T5). Защита от острых / тупых / тепловых атак: 240% / 165% / 190%.</description>
     <graphicData>
       <texPath>Items/HelmetT5</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -407,7 +407,7 @@
   </ThingDef>
   <ThingDef ParentName="Grechka_ApparelBase">
     <defName>Grechka_CombatDroneT4_Item</defName>
-    <label>боевой дрон T4</label>
+    <label>архо-боевой дрон (T4)</label>
     <thingClass>Grechka.Equipment.CombatDrone</thingClass>
     <description>Независимый боевой спутник в слоте utility. Очередь 3 × 12, дальность 24, EMP 5. Не действует без живого носителя на карте.</description>
     <graphicData>
@@ -473,7 +473,7 @@
   </ThingDef>
   <ThingDef ParentName="BaseBullet">
     <defName>Grechka_DroneBulletT4_Item</defName>
-    <label>выстрел дрона T4</label>
+    <label>архо-выстрел дрона (T4)</label>
     <graphicData>
       <texPath>Projectiles/DroneProjectileT4</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -493,7 +493,7 @@
   </ThingDef>
   <ThingDef ParentName="Grechka_ApparelBase">
     <defName>Grechka_CombatDroneT5_Item</defName>
-    <label>боевой дрон T5</label>
+    <label>гречневый боевой дрон (T5)</label>
     <thingClass>Grechka.Equipment.CombatDrone</thingClass>
     <description>Независимый боевой спутник в слоте utility. Очередь 3 × 18, дальность 30, EMP 8. Не действует без живого носителя на карте.</description>
     <graphicData>
@@ -560,7 +560,7 @@
   <ThingDef ParentName="BaseBullet">
     <defName>Grechka_DroneBulletT5_Item</defName>
     <thingClass>Grechka.Equipment.DroneBulletT5</thingClass>
-    <label>выстрел дрона T5</label>
+    <label>гречневый выстрел дрона (T5)</label>
     <graphicData>
       <texPath>Projectiles/DroneProjectileT5</texPath>
       <graphicClass>Graphic_Single</graphicClass>

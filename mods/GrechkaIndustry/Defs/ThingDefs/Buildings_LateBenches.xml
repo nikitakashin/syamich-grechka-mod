@@ -2,7 +2,7 @@
 <Defs>
   <ThingDef ParentName="BenchBase">
     <defName>Grechka_AssemblyBenchT4_Building</defName>
-    <label>сборочный верстак T4</label>
+    <label>архо-верстак (T4)</label>
     <description>Тир 4. Скорость ×15, скидка сырья 35%, бонус выхода 50%. Потребление 2800 Вт.</description>
     <thingClass>Building_WorkTable</thingClass>
     <tickerType>Normal</tickerType>
@@ -89,7 +89,7 @@
   </ThingDef>
   <ThingDef ParentName="BenchBase">
     <defName>Grechka_AssemblyBenchT5_Building</defName>
-    <label>сборочный верстак T5</label>
+    <label>гречневый верстак (T5)</label>
     <description>Тир 5. Скорость ×60, скидка сырья 50%, бонус выхода 100%. Потребление 11200 Вт.</description>
     <thingClass>Building_WorkTable</thingClass>
     <tickerType>Normal</tickerType>

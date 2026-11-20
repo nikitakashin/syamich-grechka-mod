@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Xml.Linq;
+using HarmonyLib;
 using Verse;
 
 namespace Grechka.Treasures
@@ -11,6 +12,7 @@ namespace Grechka.Treasures
     {
         public TreasuresMod(ModContentPack content) : base(content)
         {
+            new Harmony("grechka.treasures.royal-thrones").CreateClassProcessor(typeof(RoyalThroneSave)).Patch();
             TreasureCatalog.Load(Path.Combine(content.RootDir, "Config", "Sites"));
         }
     }

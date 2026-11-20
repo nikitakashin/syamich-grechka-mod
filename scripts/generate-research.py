@@ -82,6 +82,8 @@ def catalogue():
                 name = node.findtext("defName")
                 if not name or node.tag not in ("ThingDef", "RecipeDef"):
                     continue
+                if name == "Grechka_RoomCooler_Building":
+                    continue  # Uses vanilla Electricity, without a tier research gate.
                 if node.tag == "RecipeDef" and (name.startswith("Install_") or name.startswith("Remove_")):
                     continue  # Found/bought implants remain usable, including removal.
                 if node.tag == "ThingDef" and (node.find("projectile") is not None
@@ -100,6 +102,21 @@ def add(node, name, text):
     ET.SubElement(node, name).text = str(text)
 
 
+def tier_label(branch, label, tier):
+    if tier < 3:
+        return label + " T" + str(tier)
+    if branch == "Mecha":
+        label = "технологии механитов"
+    elif branch == "Archo":
+        label = "технологии"
+    if tier in (3, 4):
+        return ("Меха-" if tier == 3 else "Архо-") + label.lower() + f" (T{tier})"
+    ending = {"Industry": "ая", "Solar": "ая", "Mecha": "ые", "Archo": "ые", "Matter": "ое",
+              "Storage": "ое", "Autocraft": "ый", "Equipment": "ое", "Bionics": "ая", "Chips": "ые",
+              "Drones": "ая", "Pharmacy": "ая"}[branch]
+    return "Гречнев" + ending + " " + label.lower() + f" (T{tier})"
+
+
 def render():
     root = ET.Element("Defs")
     tab = ET.SubElement(root, "ResearchTabDef")
@@ -109,7 +126,7 @@ def render():
         for tier in range(first, last + 1):
             project = ET.SubElement(root, "ResearchProjectDef")
             add(project, "defName", project_name(branch, tier))
-            add(project, "label", label + " T" + str(tier))
+            add(project, "label", tier_label(branch, label, tier))
             content = "Одиночная винтовка «Оса»" if branch == "Equipment" and tier == 2 else description
             add(project, "description", content + f" T{tier}. Открывает производство и строительство; найденные вещи и квестовые награды доступны без исследования.")
             add(project, "baseCost", [0, 400, 1500, 3000, 6000, 10000][tier] if branch == "Industry" else [0, 500, 1000, 2000, 4000, 7000][tier])

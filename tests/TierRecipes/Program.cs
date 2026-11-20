@@ -48,6 +48,21 @@ Check(!unrelated.AllRecipes.Contains(low), "Unrelated workbench families stay se
 Check(!TierMachineFamilies.TryDescribe(new ThingDef { defName = benches[0].defName, modContentPack = core }, out _, out _), "A matching ID from another package cannot establish a family");
 var reactor3 = Bench("GrechkaPharmacy_ReactorT3_Building", pharmacy); var reactor5 = Bench("GrechkaPharmacy_ReactorT5_Building", pharmacy); reactor3.recipes.Add(middle);
 Check(reactor5.AllRecipes.Contains(middle) && !reactor5.AllRecipes.Contains(low), "Pharmacy reactors inherit only within their own series");
+var matterPairs = new List<(ThingDef lower, ThingDef higher, RecipeDef oldRecipe)>();
+foreach (string kind in new[] { "Recycler", "Synthesizer" })
+{
+    var lower = Bench("Grechka_Matter" + kind + "T4_Building", industry);
+    var higher = Bench("Grechka_Matter" + kind + "T5_Building", industry);
+    var oldRecipe = Recipe("Grechka_" + kind + "_T4_Fixture");
+    var ownRecipe = Recipe("Grechka_" + kind + "_T5_Fixture");
+    oldRecipe.recipeUsers = new() { lower }; ownRecipe.recipeUsers = new() { higher };
+    Check(lower.AllRecipes.SequenceEqual(new[] { oldRecipe }) && higher.AllRecipes.SequenceEqual(new[] { ownRecipe }),
+        kind + " T5 offers its own conversion recipe while T4 retains its original recipe");
+    Check(TierMachineFamilies.Members(higher).ToHashSet().SetEquals(new[] { lower, higher })
+        && SaveSettingsCompatibility.Key(higher.defName) == lower.defName,
+        kind + " keeps its family identity for work discovery and existing presets");
+    matterPairs.Add((lower, higher, oldRecipe));
+}
 var source = Bench("ElectricStove", core); source.recipes.Add(low);
 var variant = Bench("GrechkaWorld_ElectricStove_T5_Building", core);
 ProfileVariants.Entries[source.defName] = new VariantEntry { name = source.defName, sourceName = source.defName, tier = 1, minimum = 1, worktable = true };
@@ -63,6 +78,25 @@ BillRepeatModeDefOf.Forever = new BillRepeatModeDef { defName = "Forever" };
 BillRepeatModeDefOf.TargetCount = new BillRepeatModeDef { defName = "TargetCount" };
 BillStoreModeDefOf.BestStockpile = new BillStoreModeDef { defName = "BestStockpile" }; DefDatabase<BillStoreModeDef>.Add(BillStoreModeDefOf.BestStockpile);
 BillStack Stack(ThingDef def) => new Building_WorkTable { def = def }.BillStack;
+foreach (var pair in matterPairs)
+{
+    var stack = Stack(pair.higher);
+    var oldBill = new Bill_Production(pair.oldRecipe, null) { repeatCount = 7, suspended = true };
+    stack.AddBill(oldBill);
+    string path = Path.Combine(Path.GetTempPath(), "grechka-matter-bill-" + Guid.NewGuid() + ".xml");
+    try
+    {
+        Scribe.saver.InitSaving(path, "fixture"); Scribe_Deep.Look(ref stack, "bills", new Building_WorkTable { def = pair.higher });
+        Scribe.saver.FinalizeSaving();
+        BillStack restored = null;
+        Scribe.loader.InitLoading(path); Scribe_Deep.Look(ref restored, "bills", new Building_WorkTable { def = pair.higher });
+        Scribe.loader.FinalizeLoading();
+        Check(restored.Bills.Single() is Bill_Production bill && bill.recipe == pair.oldRecipe
+            && bill.repeatCount == 7 && bill.suspended,
+            pair.higher.defName + " restores existing T4 bills with their saved settings");
+    }
+    finally { if (File.Exists(path)) File.Delete(path); }
+}
 var lowStack = Stack(benches[0]); var highStack = Stack(benches[4]);
 var preset = new List<Bill> { new Bill_Production(low, null), new Bill_Production(high, null) };
 SaveSettingsCompatibility.FilterForTarget(lowStack, preset);

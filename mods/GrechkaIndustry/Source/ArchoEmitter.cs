@@ -2,12 +2,35 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using RimWorld;
+using UnityEngine;
 using Verse;
 
 namespace Grechka.Industry
 {
     public sealed class LateSolarProperties : DefModExtension { public float nightFraction = .25f; }
-    public sealed class CompPowerPlantLateSolar : CompPowerPlantSolar
+    public class CompPowerPlantGrechkaSolar : CompPowerPlantSolar
+    {
+        private static readonly Material barFill = SolidColorMaterials.SimpleSolidColorMaterial(new Color(.83f, .71f, .24f));
+        private static readonly Material barBack = SolidColorMaterials.SimpleSolidColorMaterial(new Color(.10f, .12f, .14f));
+
+        public override void PostDraw()
+        {
+            Rot4 rotation = parent.Rotation;
+            rotation.Rotate(RotationDirection.Clockwise);
+            GenDraw.DrawFillableBar(new GenDraw.FillableBarRequest
+            {
+                center = parent.DrawPos + Vector3.up * .1f,
+                size = new Vector2(.86f, .24f),
+                fillPercent = Mathf.Clamp01(PowerOutput / -Props.PowerConsumption),
+                filledMat = barFill,
+                unfilledMat = barBack,
+                margin = .028f,
+                rotation = rotation
+            });
+        }
+    }
+
+    public sealed class CompPowerPlantLateSolar : CompPowerPlantGrechkaSolar
     {
         private float RoofFactor()
         {
@@ -41,6 +64,11 @@ namespace Grechka.Industry
         { base.PostSpawnSetup(respawningAfterLoad); parent.Map.GetComponent<ArchoEmitterMap>().Register(this); }
         public override void PostDeSpawn(Map map, DestroyMode mode = DestroyMode.Vanish)
         { map.GetComponent<ArchoEmitterMap>().Unregister(this); base.PostDeSpawn(map, mode); }
+        public override void PostDrawExtraSelectionOverlays()
+        {
+            base.PostDrawExtraSelectionOverlays();
+            if (parent.Spawned) GenDraw.DrawRadiusRing(parent.Position, Settings.radius);
+        }
         public override string CompInspectStringExtra() => IndustryText.Get("GrechkaIndustry_7a0e4324377b", "Radius: ") + Settings.radius + "; " + (Active ? IndustryText.Get("GrechkaIndustry_c01295237efa", "active") : IndustryText.Get("GrechkaIndustry_f2d86ccb744a", "disabled"));
     }
     public sealed class ArchoEmitterMap : MapComponent
@@ -67,6 +95,8 @@ namespace Grechka.Industry
                 }
                 Apply(pawn, "Grechka_ArchoAcceleration", acceleration);
                 Apply(pawn, "Grechka_ArchoSuppression", suppression);
+                if (pawn.needs?.food == null && pawn.needs?.rest == null) wellbeing = 0;
+                Apply(pawn, "Grechka_ArchoWellbeing", wellbeing);
                 if (wellbeing > 0)
                 {
                     float restore = wellbeing >= 5 ? .008f : .002f;

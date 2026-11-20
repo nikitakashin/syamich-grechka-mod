@@ -10,7 +10,7 @@ namespace Grechka.Equipment
 {
     public sealed class EquipmentMod : Mod
     {
-        public EquipmentMod(ModContentPack content) : base(content) { new Harmony("grechka.equipment").PatchAll(); }
+        public EquipmentMod(ModContentPack content) : base(content) { new Harmony("grechka.equipment").PatchAll(typeof(EquipmentMod).Assembly); }
     }
 
     public sealed class ImplantFamily : DefModExtension
@@ -166,6 +166,7 @@ namespace Grechka.Equipment
         private bool ValidTarget(Thing candidate, Pawn wearer, DroneProperties props)
         {
             return candidate is Pawn pawn && pawn.Spawned && pawn.Map == wearer.Map && !pawn.Dead && !pawn.Downed &&
+                !(wearer.Faction?.IsPlayer == true && (pawn.Faction == wearer.Faction || pawn.HostFaction == wearer.Faction)) &&
                 pawn.HostileTo(wearer) && !pawn.IsPsychologicallyInvisible() &&
                 wearer.Position.DistanceToSquared(pawn.Position) <= props.range * props.range &&
                 GenSight.LineOfSight(wearer.Position, pawn.Position, wearer.Map);

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Reflection.Emit;
 using System.Runtime.CompilerServices;
 using HarmonyLib;
@@ -130,22 +131,28 @@ namespace Grechka.Tweaks
         }
     }
 
-    [HarmonyPatch(typeof(StartingPawnUtility), nameof(StartingPawnUtility.NewGeneratedStartingPawn))]
-    static class StartingSpecialist
+    [HarmonyPatch(typeof(PawnGenerator), "GenerateSkills")]
+    static class GeneratedSpecialist
     {
-        static void Postfix(Pawn __result)
+        [HarmonyPriority(Priority.Last)]
+        static void Postfix(Pawn pawn, PawnGenerationRequest request)
         {
-            if (__result?.skills == null || !__result.DevelopmentalStage.Adult() || !Rand.Chance(.2f)) return;
-            SkillRecord best = null;
-            foreach (var skill in __result.skills.skills)
-            {
-                if (skill.TotallyDisabled) continue;
-                if (best == null || Mastery.Effective(skill) > Mastery.Effective(best) ||
-                    (Mastery.Effective(skill) == Mastery.Effective(best) && Mastery.Grade(skill) > Mastery.Grade(best)))
-                    best = skill;
-            }
-            if (best == null || Mastery.Effective(best) >= 21) return;
-            Mastery.SetLevel(best, Rand.RangeInclusive(21, 35) - best.Aptitude, 0);
+            if (pawn.skills == null || !pawn.RaceProps.Humanlike || !pawn.DevelopmentalStage.Adult()) return;
+            bool starter = request.Context == PawnGenerationContext.PlayerStarter;
+            float roll = Rand.Value;
+            if (roll >= (starter ? .20f : .08f)) return;
+            var best = pawn.skills.skills.Where(s => !s.TotallyDisabled)
+                .OrderByDescending(Mastery.Effective).ThenByDescending(Mastery.Grade).Take(3).ToList();
+            if (best.Count == 0) return;
+            var principal = best[0];
+            bool exceptional = roll < (starter ? .05f : .02f);
+            int level = exceptional ? Rand.RangeInclusive(50, 65) : Rand.RangeInclusive(21, 35);
+            if (Mastery.Effective(principal) < level) Mastery.SetLevel(principal, level - principal.Aptitude, 0);
+            Mastery.SetGrade(principal, Math.Max(Mastery.Grade(principal), exceptional ? 6 : 4));
+            if (!exceptional || best.Count < 2) return;
+            Mastery.SetGrade(best[1], 6);
+            if (best.Count < 3 || !Rand.Chance(.3f)) return;
+            Mastery.SetGrade(best[2], Math.Max(Mastery.Grade(best[2]), 5));
         }
     }
 

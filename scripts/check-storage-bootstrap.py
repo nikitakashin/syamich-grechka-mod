@@ -139,6 +139,8 @@ require(source.findtext("minifiedDef") == "MinifiedThing"
         "Crystal source must be removable intact rather than dismantled")
 require(defs["Grechka_CertusHarvestWork"].findtext("workType") == "Growing"
         and defs["Grechka_CertusHarvestWork"].findtext("giverClass") == "Grechka.Storage.WorkGiver_HarvestCertus"
+        and defs["Grechka_CertusHarvestWork"].findtext("scanThings") == "true"
+        and defs["Grechka_CertusHarvestWork"].findtext("directOrderable") == "true"
         and defs["Grechka_HarvestCertus"].findtext("driverClass") == "Grechka.Storage.JobDriver_HarvestCertus",
         "Ripe crystals must have a registered pawn harvest job")
 for stage in range(5):

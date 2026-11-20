@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <VFEPD_AberrationRedirector.description>Старый отключённый перенаправитель отклонений.</VFEPD_AberrationRedirector.description>
+  <VFEPD_AberrationRedirector.label>перенаправитель отклонений</VFEPD_AberrationRedirector.label>
+  <VFEPD_AncientBattery.description>Большая старая батарея, какие часто встречаются в убежищах. Когда-то могла питать весь комплекс почти бесконечно. Не работает.</VFEPD_AncientBattery.description>
+  <VFEPD_AncientBattery.label>древняя батарея</VFEPD_AncientBattery.label>
+  <VFEPD_AncientBedTwo.description>Старомодная металлическая кровать с жёстким матрасом и неудобным одеялом.</VFEPD_AncientBedTwo.description>
+  <VFEPD_AncientBedTwo.label>древняя кровать</VFEPD_AncientBedTwo.label>
+  <VFEPD_AncientBioBatteryTank.description>Вырабатывал электричество, перерабатывая органику, включая людей и животных. Не работает.</VFEPD_AncientBioBatteryTank.description>
+  <VFEPD_AncientBioBatteryTank.label>древний бак биогенератора</VFEPD_AncientBioBatteryTank.label>
+  <VFEPD_AncientBroadcastingStation.description>Древняя станция вещания. Не работает.</VFEPD_AncientBroadcastingStation.description>
+  <VFEPD_AncientBroadcastingStation.label>древняя станция вещания</VFEPD_AncientBroadcastingStation.label>
+  <VFEPD_AncientBroadcastingStation_Old.description>Древняя станция вещания. Не работает.</VFEPD_AncientBroadcastingStation_Old.description>
+  <VFEPD_AncientBroadcastingStation_Old.label>древняя станция вещания</VFEPD_AncientBroadcastingStation_Old.label>
+  <VFEPD_AncientBrokenDefensiveTurret.description>Разбитая верхняя часть защитной турели.</VFEPD_AncientBrokenDefensiveTurret.description>
+  <VFEPD_AncientBrokenDefensiveTurret.label>сломанная древняя турель</VFEPD_AncientBrokenDefensiveTurret.label>
+  <VFEPD_AncientBustedTurretPlatform.description>Разбитое основание турели.</VFEPD_AncientBustedTurretPlatform.description>
+  <VFEPD_AncientBustedTurretPlatform.label>разбитая древняя платформа турели</VFEPD_AncientBustedTurretPlatform.label>
+  <VFEPD_AncientChemfuelPoweredGenerator.description>Мог бы стабильно вырабатывать электричество из химтоплива, если бы работал.</VFEPD_AncientChemfuelPoweredGenerator.description>
+  <VFEPD_AncientChemfuelPoweredGenerator.label>древний генератор на химтопливе</VFEPD_AncientChemfuelPoweredGenerator.label>
+  <VFEPD_AncientChemfuelPoweredGenerator_Old.description>Мог бы стабильно вырабатывать электричество из химтоплива, если бы работал.</VFEPD_AncientChemfuelPoweredGenerator_Old.description>
+  <VFEPD_AncientChemfuelPoweredGenerator_Old.label>древний генератор на химтопливе</VFEPD_AncientChemfuelPoweredGenerator_Old.label>
+  <VFEPD_AncientComputerDesk.description>Старый компьютерный стол. Оборудование больше не работает.</VFEPD_AncientComputerDesk.description>
+  <VFEPD_AncientComputerDesk.label>древний компьютерный стол</VFEPD_AncientComputerDesk.label>
+  <VFEPD_AncientCooler.description>Древний кондиционер. Не работает.</VFEPD_AncientCooler.description>
+  <VFEPD_AncientCooler.label>древний кондиционер</VFEPD_AncientCooler.label>
+  <VFEPD_AncientCryptosleepSarcophagus.description>Древний саркофаг криптосна. Наглухо запечатан.</VFEPD_AncientCryptosleepSarcophagus.description>
+  <VFEPD_AncientCryptosleepSarcophagus.label>древний саркофаг криптосна</VFEPD_AncientCryptosleepSarcophagus.label>
+  <VFEPD_AncientCryptosleepSuspender.description>Древняя медицинская капсула вводила пациента в частичный криптосон, чтобы замедлить ухудшение ран и дать телу восстановиться. Наглухо запечатана.</VFEPD_AncientCryptosleepSuspender.description>
+  <VFEPD_AncientCryptosleepSuspender.label>древняя капсула частичного криптосна</VFEPD_AncientCryptosleepSuspender.label>
+  <VFEPD_AncientEducator.description>Очень старая интерактивная машина. В убежищах за ней часто коротали время. Эта отключена.</VFEPD_AncientEducator.description>
+  <VFEPD_AncientEducator.label>древний учебный терминал</VFEPD_AncientEducator.label>
+  <VFEPD_AncientEmergencyPurifier.description>Древний аварийный очиститель. Выглядит работающим, хотя отключён.</VFEPD_AncientEmergencyPurifier.description>
+  <VFEPD_AncientEmergencyPurifier.label>древний аварийный очиститель</VFEPD_AncientEmergencyPurifier.label>
+  <VFEPD_AncientEmergencyPurifier_Off.description>Древний аварийный очиститель. Отключён навсегда.</VFEPD_AncientEmergencyPurifier_Off.description>
+  <VFEPD_AncientEmergencyPurifier_Off.label>древний аварийный очиститель</VFEPD_AncientEmergencyPurifier_Off.label>
+  <VFEPD_AncientFauxPlant.description>Древнее искусственное растение.</VFEPD_AncientFauxPlant.description>
+  <VFEPD_AncientFauxPlant.label>древнее искусственное растение</VFEPD_AncientFauxPlant.label>
+  <VFEPD_AncientFoosballTable.description>За этим реликтом можно было бы сыграть в давно забытый футбол, не покидая убежища. Но игровые штанги приварены и не двигаются.</VFEPD_AncientFoosballTable.description>
+  <VFEPD_AncientFoosballTable.label>древний настольный футбол</VFEPD_AncientFoosballTable.label>
+  <VFEPD_AncientFuelTank.description>Большой бак. Если бы в нём осталось топливо, его можно было бы извлечь при разборке.</VFEPD_AncientFuelTank.description>
+  <VFEPD_AncientFuelTank.label>древний топливный бак</VFEPD_AncientFuelTank.label>
+  <VFEPD_AncientGenepackCrate.description>Древний ящик для генопакетов. Наглухо запечатан.</VFEPD_AncientGenepackCrate.description>
+  <VFEPD_AncientGenepackCrate.label>древний ящик генопакетов</VFEPD_AncientGenepackCrate.label>
+  <VFEPD_AncientGenepackCrate_Empty.description>Древний пустой ящик для генопакетов.</VFEPD_AncientGenepackCrate_Empty.description>
+  <VFEPD_AncientGenepackCrate_Empty.label>древний ящик генопакетов</VFEPD_AncientGenepackCrate_Empty.label>
+  <VFEPD_AncientGeothermalPlant.description>Могла бы вырабатывать электричество из пара гейзеров, если бы работала.</VFEPD_AncientGeothermalPlant.description>
+  <VFEPD_AncientGeothermalPlant.label>древняя геотермальная станция</VFEPD_AncientGeothermalPlant.label>
+  <VFEPD_AncientHeater.description>Древний обогреватель. Не работает.</VFEPD_AncientHeater.description>
+  <VFEPD_AncientHeater.label>древний обогреватель</VFEPD_AncientHeater.label>
+  <VFEPD_AncientHospitalArmchair.description>Древнее больничное кресло.</VFEPD_AncientHospitalArmchair.description>
+  <VFEPD_AncientHospitalArmchair.label>древнее больничное кресло</VFEPD_AncientHospitalArmchair.label>
+  <VFEPD_AncientHospitalBench.description>Древняя больничная скамья.</VFEPD_AncientHospitalBench.description>
+  <VFEPD_AncientHospitalBench.label>древняя больничная скамья</VFEPD_AncientHospitalBench.label>
+  <VFEPD_AncientHospitalCrib.description>Древняя больничная колыбель.</VFEPD_AncientHospitalCrib.description>
+  <VFEPD_AncientHospitalCrib.label>древняя больничная колыбель</VFEPD_AncientHospitalCrib.label>
+  <VFEPD_AncientIVStand.description>Древняя стойка для капельницы.</VFEPD_AncientIVStand.description>
+  <VFEPD_AncientIVStand.label>древняя стойка для капельницы</VFEPD_AncientIVStand.label>
+  <VFEPD_AncientIncubator.description>Древний инкубатор.</VFEPD_AncientIncubator.description>
+  <VFEPD_AncientIncubator.label>древний инкубатор</VFEPD_AncientIncubator.label>
+  <VFEPD_AncientInputTerminal.description>Пульт с кнопками и рычагами.</VFEPD_AncientInputTerminal.description>
+  <VFEPD_AncientInputTerminal.label>древний пульт управления</VFEPD_AncientInputTerminal.label>
+  <VFEPD_AncientKitchenette.description>Древний кухонный уголок.</VFEPD_AncientKitchenette.description>
+  <VFEPD_AncientKitchenette.label>древний кухонный уголок</VFEPD_AncientKitchenette.label>
+  <VFEPD_AncientMachinery.description>Набор старых машинных блоков. Их назначение давно забыто.</VFEPD_AncientMachinery.description>
+  <VFEPD_AncientMachinery.label>древнее оборудование</VFEPD_AncientMachinery.label>
+  <VFEPD_AncientMedicalPartition.description>Древняя медицинская ширма.</VFEPD_AncientMedicalPartition.description>
+  <VFEPD_AncientMedicalPartition.label>древняя медицинская ширма</VFEPD_AncientMedicalPartition.label>
+  <VFEPD_AncientMonitorBank.description>Несколько старых компьютерных экранов.</VFEPD_AncientMonitorBank.description>
+  <VFEPD_AncientMonitorBank.label>древний блок мониторов</VFEPD_AncientMonitorBank.label>
+  <VFEPD_AncientOfficeDesk.description>Древний письменный стол.</VFEPD_AncientOfficeDesk.description>
+  <VFEPD_AncientOfficeDesk.label>древний письменный стол</VFEPD_AncientOfficeDesk.label>
+  <VFEPD_AncientOfficePrinter.description>Древний офисный принтер.</VFEPD_AncientOfficePrinter.description>
+  <VFEPD_AncientOfficePrinter.label>древний офисный принтер</VFEPD_AncientOfficePrinter.label>
+  <VFEPD_AncientOrganBox.description>Защищённый контейнер со встроенным охлаждением для длительного хранения органов. Наглухо запечатан.</VFEPD_AncientOrganBox.description>
+  <VFEPD_AncientOrganBox.label>древний контейнер для органов</VFEPD_AncientOrganBox.label>
+  <VFEPD_AncientOrganBox_Empty.description>Пустой контейнер со встроенным охлаждением. Обычно в таких долго хранили органы.</VFEPD_AncientOrganBox_Empty.description>
+  <VFEPD_AncientOrganBox_Empty.label>пустой древний контейнер для органов</VFEPD_AncientOrganBox_Empty.label>
+  <VFEPD_AncientRepairBench.description>Древний ремонтный стол.</VFEPD_AncientRepairBench.description>
+  <VFEPD_AncientRepairBench.label>древний ремонтный стол</VFEPD_AncientRepairBench.label>
+  <VFEPD_AncientResearchCountertop.description>Древняя лабораторная столешница.</VFEPD_AncientResearchCountertop.description>
+  <VFEPD_AncientResearchCountertop.label>древняя лабораторная столешница</VFEPD_AncientResearchCountertop.label>
+  <VFEPD_AncientShuttle.description>Древний нерабочий шаттл.</VFEPD_AncientShuttle.description>
+  <VFEPD_AncientShuttle.label>древний шаттл</VFEPD_AncientShuttle.label>
+  <VFEPD_AncientSink.description>Древняя маленькая раковина.</VFEPD_AncientSink.description>
+  <VFEPD_AncientSink.label>древняя маленькая раковина</VFEPD_AncientSink.label>
+  <VFEPD_AncientSolarGenerator.description>Теперь он даст свет разве что если его поджечь.</VFEPD_AncientSolarGenerator.description>
+  <VFEPD_AncientSolarGenerator.label>древний солнечный генератор</VFEPD_AncientSolarGenerator.label>
+  <VFEPD_AncientStorageHeater.description>Древний накопительный обогреватель.</VFEPD_AncientStorageHeater.description>
+  <VFEPD_AncientStorageHeater.label>древний накопительный обогреватель</VFEPD_AncientStorageHeater.label>
+  <VFEPD_AncientSunLamp.description>Древняя солнцелампа. Не работает.</VFEPD_AncientSunLamp.description>
+  <VFEPD_AncientSunLamp.label>древняя солнцелампа</VFEPD_AncientSunLamp.label>
+  <VFEPD_AncientSupplyCrate.description>Древний ящик со стройматериалами и компонентами. Наглухо запечатан.</VFEPD_AncientSupplyCrate.description>
+  <VFEPD_AncientSupplyCrate.label>древний ящик припасов</VFEPD_AncientSupplyCrate.label>
+  <VFEPD_AncientSupplySlingshot.description>Сложный механизм, который запускал ящики с припасами на огромные расстояния. Такие часто встречаются в древних убежищах. Этот не работает.</VFEPD_AncientSupplySlingshot.description>
+  <VFEPD_AncientSupplySlingshot.label>древняя катапульта снабжения</VFEPD_AncientSupplySlingshot.label>
+  <VFEPD_AncientToyBox.description>Древний ящик игрушек.</VFEPD_AncientToyBox.description>
+  <VFEPD_AncientToyBox.label>древний ящик игрушек</VFEPD_AncientToyBox.label>
+  <VFEPD_AncientTransmitter.description>Передатчик для дальней связи. Не работает.</VFEPD_AncientTransmitter.description>
+  <VFEPD_AncientTransmitter.label>древний передатчик</VFEPD_AncientTransmitter.label>
+  <VFEPD_AncientTripWarning.description>Древний предупреждающий знак.</VFEPD_AncientTripWarning.description>
+  <VFEPD_AncientTripWarning.label>знак «Осторожно, можно споткнуться»</VFEPD_AncientTripWarning.label>
+  <VFEPD_AncientVaultLamp.description>Древняя солнцелампа. Не работает.</VFEPD_AncientVaultLamp.description>
+  <VFEPD_AncientVaultLamp.label>древняя лампа убежища</VFEPD_AncientVaultLamp.label>
+  <VFEPD_AncientVitalsMonitorTwo.description>Старый блок мониторов для наблюдения за восстановлением раненых бойцов. Не работает.</VFEPD_AncientVitalsMonitorTwo.description>
+  <VFEPD_AncientVitalsMonitorTwo.label>древний медицинский монитор</VFEPD_AncientVitalsMonitorTwo.label>
+  <VFEPD_AncientWaterCooler.description>Древний кулер для воды.</VFEPD_AncientWaterCooler.description>
+  <VFEPD_AncientWaterCooler.label>древний кулер для воды</VFEPD_AncientWaterCooler.label>
+  <VFEPD_AncientWaterFilter.description>Крупная система очистки воды.</VFEPD_AncientWaterFilter.description>
+  <VFEPD_AncientWaterFilter.label>древний фильтр воды</VFEPD_AncientWaterFilter.label>
+  <VFEPD_ArchiteCapsuleContainment.description>Муляж камеры для архитной капсулы.</VFEPD_ArchiteCapsuleContainment.description>
+  <VFEPD_ArchiteCapsuleContainment.label>камера архитной капсулы</VFEPD_ArchiteCapsuleContainment.label>
+  <VFEPD_ArchiteCapsuleContainment_Empty.description>Пустая камера для архитной капсулы.</VFEPD_ArchiteCapsuleContainment_Empty.description>
+  <VFEPD_ArchiteCapsuleContainment_Empty.label>камера архитной капсулы</VFEPD_ArchiteCapsuleContainment_Empty.label>
+  <VFEPD_ArchitePathingArray.description>Старый отключённый блок маршрутизации архитов.</VFEPD_ArchitePathingArray.description>
+  <VFEPD_ArchitePathingArray.label>блок маршрутизации архитов</VFEPD_ArchitePathingArray.label>
+  <VFEPD_ArchiteRecycler.description>Старый отключённый переработчик архитов.</VFEPD_ArchiteRecycler.description>
+  <VFEPD_ArchiteRecycler.label>переработчик архитов</VFEPD_ArchiteRecycler.label>
+  <VFEPD_ArchogenInjector.description>Старый отключённый инъектор архогенов.</VFEPD_ArchogenInjector.description>
+  <VFEPD_ArchogenInjector.label>инъектор архогенов</VFEPD_ArchogenInjector.label>
+  <VFEPD_BustedAncientWonderdoc.description>Древняя медицинская машина когда-то могла выполнять чудо-циклы, но полностью вышла из строя после аварии. Камеры треснули, системы отказали, и аппарат больше не работает. Внутри всё ещё можно найти что-нибудь ценное.</VFEPD_BustedAncientWonderdoc.description>
+  <VFEPD_BustedAncientWonderdoc.label>разбитый древний чудо-доктор</VFEPD_BustedAncientWonderdoc.label>
+  <VFEPD_BustedControlPanel.description>Древняя разбитая панель управления.</VFEPD_BustedControlPanel.description>
+  <VFEPD_BustedControlPanel.label>разбитая панель управления</VFEPD_BustedControlPanel.label>
+  <VFEPD_CognitiveRecoveryArray.description>Старый отключённый блок восстановления когнитивных функций.</VFEPD_CognitiveRecoveryArray.description>
+  <VFEPD_CognitiveRecoveryArray.label>блок восстановления когнитивных функций</VFEPD_CognitiveRecoveryArray.label>
+  <VFEPD_ComplexityHarmonizer.description>Старый отключённый гармонизатор сложности.</VFEPD_ComplexityHarmonizer.description>
+  <VFEPD_ComplexityHarmonizer.label>гармонизатор сложности</VFEPD_ComplexityHarmonizer.label>
+  <VFEPD_CreepyBabyToy.description>Жуткая детская игрушка.</VFEPD_CreepyBabyToy.description>
+  <VFEPD_CreepyBabyToy.label>жуткая детская игрушка</VFEPD_CreepyBabyToy.label>
+  <VFEPD_EmptyContainment.description>Пустая камера содержания.</VFEPD_EmptyContainment.description>
+  <VFEPD_EmptyContainment.label>пустая камера содержания</VFEPD_EmptyContainment.label>
+  <VFEPD_GeneTailoringPod.description>Старая отключённая капсула настройки генов.</VFEPD_GeneTailoringPod.description>
+  <VFEPD_GeneTailoringPod.label>капсула настройки генов</VFEPD_GeneTailoringPod.label>
+  <VFEPD_GenomicAttenuator.description>Старый отключённый геномный аттенюатор.</VFEPD_GenomicAttenuator.description>
+  <VFEPD_GenomicAttenuator.label>геномный аттенюатор</VFEPD_GenomicAttenuator.label>
+  <VFEPD_LargeSupplyCrate.description>Большой ящик со стройматериалами и компонентами. Наглухо запечатан.</VFEPD_LargeSupplyCrate.description>
+  <VFEPD_LargeSupplyCrate.label>большой герметичный ящик</VFEPD_LargeSupplyCrate.label>
+  <VFEPD_LargeWoodenMilitaryCrate.description>Сгнивший военный ящик. Наглухо запечатан.</VFEPD_LargeWoodenMilitaryCrate.description>
+  <VFEPD_LargeWoodenMilitaryCrate.label>сгнивший военный ящик</VFEPD_LargeWoodenMilitaryCrate.label>
+  <VFEPD_LockedVaultDoor.description>Запечатанный вход в подземную лабораторию. При ближайшем рассмотрении оказывается картонным.</VFEPD_LockedVaultDoor.description>
+  <VFEPD_LockedVaultDoor.label>запертая дверь убежища</VFEPD_LockedVaultDoor.label>
+  <VFEPD_MutagenInhibitorCore.description>Старое отключённое ядро подавления мутагенов.</VFEPD_MutagenInhibitorCore.description>
+  <VFEPD_MutagenInhibitorCore.label>ядро подавления мутагенов</VFEPD_MutagenInhibitorCore.label>
+  <VFEPD_NeurostabilizerArray.description>Старый отключённый блок нейростабилизации.</VFEPD_NeurostabilizerArray.description>
+  <VFEPD_NeurostabilizerArray.label>блок нейростабилизации</VFEPD_NeurostabilizerArray.label>
+  <VFEPD_PipelineJunction.description>Крупный подземный трубопровод химтоплива. Ни к чему не подключён.</VFEPD_PipelineJunction.description>
+  <VFEPD_PipelineJunction.label>узел трубопровода</VFEPD_PipelineJunction.label>
+  <VFEPD_PneumaticTubeLaunchPort.description>Муляж станции отправки пневмопочты.</VFEPD_PneumaticTubeLaunchPort.description>
+  <VFEPD_PneumaticTubeLaunchPort.label>станция отправки пневмопочты</VFEPD_PneumaticTubeLaunchPort.label>
+  <VFEPD_PneumaticTubes.description>Муляж труб пневмопочты.</VFEPD_PneumaticTubes.description>
+  <VFEPD_PneumaticTubes.label>трубы пневмопочты</VFEPD_PneumaticTubes.label>
+  <VFEPD_PneumaticTubes_Corner.description>Сеть древних труб для отправки небольших и средних предметов между убежищами. Некоторые капсулы до сих пор застряли внутри.</VFEPD_PneumaticTubes_Corner.description>
+  <VFEPD_PneumaticTubes_Corner.label>трубы пневмопочты</VFEPD_PneumaticTubes_Corner.label>
+  <VFEPD_PneumaticTubes_Long.description>Сеть древних труб для отправки небольших и средних предметов между убежищами. Некоторые капсулы до сих пор застряли внутри.</VFEPD_PneumaticTubes_Long.description>
+  <VFEPD_PneumaticTubes_Long.label>трубы пневмопочты</VFEPD_PneumaticTubes_Long.label>
+  <VFEPD_PneumaticTubes_Terminus.description>Здесь находился выход сети пневмопочты. Сейчас он пуст.</VFEPD_PneumaticTubes_Terminus.description>
+  <VFEPD_PneumaticTubes_Terminus.label>пустая станция получения пневмопочты</VFEPD_PneumaticTubes_Terminus.label>
+  <VFEPD_PneumaticTubes_Terminus_Closed.description>Здесь находился выход сети пневмопочты. Его можно открыть и забрать содержимое.</VFEPD_PneumaticTubes_Terminus_Closed.description>
+  <VFEPD_PneumaticTubes_Terminus_Closed.label>закрытая станция получения пневмопочты</VFEPD_PneumaticTubes_Terminus_Closed.label>
+  <VFEPD_PneumaticTubes_Triple.description>Сеть древних труб для отправки небольших и средних предметов между убежищами. Некоторые капсулы до сих пор застряли внутри.</VFEPD_PneumaticTubes_Triple.description>
+  <VFEPD_PneumaticTubes_Triple.label>трубы пневмопочты</VFEPD_PneumaticTubes_Triple.label>
+  <VFEPD_PneumaticTubes_Underground.description>Сеть древних труб для отправки небольших и средних предметов между убежищами. Некоторые капсулы до сих пор застряли внутри.</VFEPD_PneumaticTubes_Underground.description>
+  <VFEPD_PneumaticTubes_Underground.label>подземные трубы пневмопочты</VFEPD_PneumaticTubes_Underground.label>
+  <VFEPD_PneumaticTubes_Wall.description>Сеть древних труб для отправки небольших и средних предметов между убежищами. Некоторые капсулы до сих пор застряли внутри.</VFEPD_PneumaticTubes_Wall.description>
+  <VFEPD_PneumaticTubes_Wall.label>трубы пневмопочты</VFEPD_PneumaticTubes_Wall.label>
+  <VFEPD_RapidInfusionPump.description>Старый отключённый насос быстрой инфузии.</VFEPD_RapidInfusionPump.description>
+  <VFEPD_RapidInfusionPump.label>насос быстрой инфузии</VFEPD_RapidInfusionPump.label>
+  <VFEPD_RejectionBufferCoil.description>Старая отключённая катушка подавления отторжения.</VFEPD_RejectionBufferCoil.description>
+  <VFEPD_RejectionBufferCoil.label>катушка подавления отторжения</VFEPD_RejectionBufferCoil.label>
+  <VFEPD_RubbishPile.description>Несколько мешков с мусором.</VFEPD_RubbishPile.description>
+  <VFEPD_RubbishPile.label>мешки с мусором</VFEPD_RubbishPile.label>
+  <VFEPD_RuinedAberrationRedirector.description>Разбитый перенаправитель отклонений.</VFEPD_RuinedAberrationRedirector.description>
+  <VFEPD_RuinedAberrationRedirector.label>разбитый перенаправитель отклонений</VFEPD_RuinedAberrationRedirector.label>
+  <VFEPD_RuinedArchitePathingArray.description>Разбитый блок маршрутизации архитов.</VFEPD_RuinedArchitePathingArray.description>
+  <VFEPD_RuinedArchitePathingArray.label>разбитый блок маршрутизации архитов</VFEPD_RuinedArchitePathingArray.label>
+  <VFEPD_RuinedArchiteRecycler.description>Разбитый переработчик архитов.</VFEPD_RuinedArchiteRecycler.description>
+  <VFEPD_RuinedArchiteRecycler.label>разбитый переработчик архитов</VFEPD_RuinedArchiteRecycler.label>
+  <VFEPD_RuinedArchogenInjector.description>Разбитый инъектор архогенов.</VFEPD_RuinedArchogenInjector.description>
+  <VFEPD_RuinedArchogenInjector.label>разбитый инъектор архогенов</VFEPD_RuinedArchogenInjector.label>
+  <VFEPD_RuinedCognitiveRecoveryArray.description>Разбитый блок восстановления когнитивных функций.</VFEPD_RuinedCognitiveRecoveryArray.description>
+  <VFEPD_RuinedCognitiveRecoveryArray.label>разбитый блок восстановления когнитивных функций</VFEPD_RuinedCognitiveRecoveryArray.label>
+  <VFEPD_RuinedComplexityHarmonizer.description>Разбитый гармонизатор сложности.</VFEPD_RuinedComplexityHarmonizer.description>
+  <VFEPD_RuinedComplexityHarmonizer.label>разбитый гармонизатор сложности</VFEPD_RuinedComplexityHarmonizer.label>
+  <VFEPD_RuinedGenomicAttenuator.description>Разбитый геномный аттенюатор.</VFEPD_RuinedGenomicAttenuator.description>
+  <VFEPD_RuinedGenomicAttenuator.label>разбитый геномный аттенюатор</VFEPD_RuinedGenomicAttenuator.label>
+  <VFEPD_RuinedMutagenInhibitorCore.description>Разбитое ядро подавления мутагенов.</VFEPD_RuinedMutagenInhibitorCore.description>
+  <VFEPD_RuinedMutagenInhibitorCore.label>разбитое ядро подавления мутагенов</VFEPD_RuinedMutagenInhibitorCore.label>
+  <VFEPD_RuinedNeurostabilizerArray.description>Разбитый блок нейростабилизации.</VFEPD_RuinedNeurostabilizerArray.description>
+  <VFEPD_RuinedNeurostabilizerArray.label>разбитый блок нейростабилизации</VFEPD_RuinedNeurostabilizerArray.label>
+  <VFEPD_RuinedRapidInfusionPump.description>Разбитый насос быстрой инфузии.</VFEPD_RuinedRapidInfusionPump.description>
+  <VFEPD_RuinedRapidInfusionPump.label>разбитый насос быстрой инфузии</VFEPD_RuinedRapidInfusionPump.label>
+  <VFEPD_RuinedRejectionBufferCoil.description>Разбитая катушка подавления отторжения.</VFEPD_RuinedRejectionBufferCoil.description>
+  <VFEPD_RuinedRejectionBufferCoil.label>разбитая катушка подавления отторжения</VFEPD_RuinedRejectionBufferCoil.label>
+  <VFEPD_RuinedSpliceframeUplink.description>Разбитый узел связи с установкой сращивания.</VFEPD_RuinedSpliceframeUplink.description>
+  <VFEPD_RuinedSpliceframeUplink.label>разбитый узел связи с установкой сращивания</VFEPD_RuinedSpliceframeUplink.label>
+  <VFEPD_RuinedTraitSelectionPrism.description>Разбитая призма отбора признаков.</VFEPD_RuinedTraitSelectionPrism.description>
+  <VFEPD_RuinedTraitSelectionPrism.label>разбитая призма отбора признаков</VFEPD_RuinedTraitSelectionPrism.label>
+  <VFEPD_RustedHospitalBed.description>Старомодная металлическая кровать с жёстким матрасом и неудобным одеялом.</VFEPD_RustedHospitalBed.description>
+  <VFEPD_RustedHospitalBed.label>ржавая больничная койка</VFEPD_RustedHospitalBed.label>
+  <VFEPD_RustedWheeledTray.description>Ржавая тележка с подносом.</VFEPD_RustedWheeledTray.description>
+  <VFEPD_RustedWheeledTray.label>ржавая тележка с подносом</VFEPD_RustedWheeledTray.label>
+  <VFEPD_SimulationDrive.description>Компактный суперкомпьютер. Сделан из картона.</VFEPD_SimulationDrive.description>
+  <VFEPD_SimulationDrive.label>блок симуляции</VFEPD_SimulationDrive.label>
+  <VFEPD_SplicefiendContainment.description>Муляж камеры содержания срощенного изувера.</VFEPD_SplicefiendContainment.description>
+  <VFEPD_SplicefiendContainment.label>камера содержания срощенного изувера</VFEPD_SplicefiendContainment.label>
+  <VFEPD_SpliceframeUplink.description>Старый отключённый узел связи с установкой сращивания.</VFEPD_SpliceframeUplink.description>
+  <VFEPD_SpliceframeUplink.label>узел связи с установкой сращивания</VFEPD_SpliceframeUplink.label>
+  <VFEPD_SplicehulkContainment.description>Муляж камеры содержания срощенного громилы.</VFEPD_SplicehulkContainment.description>
+  <VFEPD_SplicehulkContainment.label>камера содержания срощенного громилы</VFEPD_SplicehulkContainment.label>
+  <VFEPD_SplicelingContainment.description>Муляж камеры содержания срощенного мутанта.</VFEPD_SplicelingContainment.description>
+  <VFEPD_SplicelingContainment.label>камера содержания срощенного мутанта</VFEPD_SplicelingContainment.label>
+  <VFEPD_SplicetootsContainment.description>Муляж камеры содержания срощенного крохи.</VFEPD_SplicetootsContainment.description>
+  <VFEPD_SplicetootsContainment.label>камера содержания срощенного крохи</VFEPD_SplicetootsContainment.label>
+  <VFEPD_StorageShelf_Empty.description>Пустой шаткий стеллаж. Всё ценное давно забрали.</VFEPD_StorageShelf_Empty.description>
+  <VFEPD_StorageShelf_Empty.label>пустой складской стеллаж</VFEPD_StorageShelf_Empty.label>
+  <VFEPD_StorageShelf_Gowns.description>Шаткий стеллаж со стопками бутафорских больничных халатов.</VFEPD_StorageShelf_Gowns.description>
+  <VFEPD_StorageShelf_Gowns.label>стеллаж с больничными халатами</VFEPD_StorageShelf_Gowns.label>
+  <VFEPD_StorageShelf_Meals.description>Шаткий стеллаж с муляжами сухпайков.</VFEPD_StorageShelf_Meals.description>
+  <VFEPD_StorageShelf_Meals.label>стеллаж с сухпайками</VFEPD_StorageShelf_Meals.label>
+  <VFEPD_StorageShelf_Medicine.description>Шаткий стеллаж с муляжами медикаментов.</VFEPD_StorageShelf_Medicine.description>
+  <VFEPD_StorageShelf_Medicine.label>стеллаж с медикаментами</VFEPD_StorageShelf_Medicine.label>
+  <VFEPD_StorageShelf_Neutroamine.description>Шаткий стеллаж с муляжами бутылок нейтроамина.</VFEPD_StorageShelf_Neutroamine.description>
+  <VFEPD_StorageShelf_Neutroamine.label>стеллаж с нейтроамином</VFEPD_StorageShelf_Neutroamine.label>
+  <VFEPD_TraitSelectionPrism.description>Старая отключённая призма отбора признаков.</VFEPD_TraitSelectionPrism.description>
+  <VFEPD_TraitSelectionPrism.label>призма отбора признаков</VFEPD_TraitSelectionPrism.label>
+  <VFEPD_VaultRamp.description>Усиленный пандус для транспорта с лестницей для людей посередине. При ближайшем рассмотрении оказывается картонным.</VFEPD_VaultRamp.description>
+  <VFEPD_VaultRamp.label>пандус убежища</VFEPD_VaultRamp.label>
+  <VFEPD_VaultTerminal.description>Древний терминал убежища.</VFEPD_VaultTerminal.description>
+  <VFEPD_VaultTerminal.label>терминал убежища</VFEPD_VaultTerminal.label>
+  <VFEPD_VaultTerminalBank.description>Древний блок терминалов убежища.</VFEPD_VaultTerminalBank.description>
+  <VFEPD_VaultTerminalBank.label>блок терминалов убежища</VFEPD_VaultTerminalBank.label>
+  <VFEPD_WarpedMopBucket.description>Деформированное ведро для швабры.</VFEPD_WarpedMopBucket.description>
+  <VFEPD_WarpedMopBucket.label>деформированное ведро для швабры</VFEPD_WarpedMopBucket.label>
+  <VFEPD_WheeledBed.description>Старомодная металлическая кровать с жёстким матрасом и неудобным одеялом.</VFEPD_WheeledBed.description>
+  <VFEPD_WheeledBed.label>койка на колёсах</VFEPD_WheeledBed.label>
+  <VFEPD_WoodenMilitaryCrate.description>Сгнившая военная коробка. Наглухо запечатана.</VFEPD_WoodenMilitaryCrate.description>
+  <VFEPD_WoodenMilitaryCrate.label>сгнившая военная коробка</VFEPD_WoodenMilitaryCrate.label>
+</LanguageData>

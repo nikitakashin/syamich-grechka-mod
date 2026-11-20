@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <FFF_Company_DescNoTarget>Подразделение «{1}» принадлежит фракции «{0}». Его цель неизвестна.</FFF_Company_DescNoTarget>
+  <FFF_Company_DescTarget>Подразделение «{1}» принадлежит фракции «{0}». Вероятная цель в радиусе действия — {2}.</FFF_Company_DescTarget>
+  <FFF_Company_RaidLabel>Нападение: {0}</FFF_Company_RaidLabel>
+  <FFF_Company_RaidText>Подразделение «{1}» фракции «{0}» движется к вашей колонии. Его взводы атакуют с нескольких направлений.</FFF_Company_RaidText>
+  <FFF_ReadinessPatrol_Label>Подкрепление</FFF_ReadinessPatrol_Label>
+  <FFF_ReadinessPatrol_Text>Сюда прибыл патруль фракции «{0}». Следующие отряды будут прибывать быстрее.</FFF_ReadinessPatrol_Text>
+  <FFF_Readiness_AlertExplanation>{0}: текущий уровень боеготовности — {1}.</FFF_Readiness_AlertExplanation>
+  <FFF_Readiness_AtWar>Ведёт войну с фракцией «{0}».</FFF_Readiness_AtWar>
+  <FFF_Readiness_DropIn>Если новых провокаций не будет, боеготовность снизится через {0}.</FFF_Readiness_DropIn>
+  <FFF_Readiness_DropLabel>{0} снижает боеготовность</FFF_Readiness_DropLabel>
+  <FFF_Readiness_DropText>Обстановка успокоилась, и {0} снижает боеготовность до уровня «{1}».</FFF_Readiness_DropText>
+  <FFF_Readiness_LevelN>Уровень {0}</FFF_Readiness_LevelN>
+  <FFF_Readiness_PermanentHostilityLabel>{0}: непримиримый враг</FFF_Readiness_PermanentHostilityLabel>
+  <FFF_Readiness_PermanentHostilityText>Фракция «{0}» объявила вашу колонию непримиримым врагом. Снизить её боеготовность больше не получится.</FFF_Readiness_PermanentHostilityText>
+  <FFF_Readiness_Pressure>До следующего уровня пройдено {0}.</FFF_Readiness_Pressure>
+  <FFF_Readiness_RiseLabel>{0} повышает боеготовность</FFF_Readiness_RiseLabel>
+  <FFF_Readiness_RiseText>Из-за недавних событий {0} повышает боеготовность до уровня «{1}».</FFF_Readiness_RiseText>
+  <FFF_Readiness_TakeoverLabel>Поселение захвачено</FFF_Readiness_TakeoverLabel>
+  <FFF_Readiness_TakeoverText>Фракция «{0}» захватила у фракции «{1}» поселение «{2}» и переименовала его в «{3}».</FFF_Readiness_TakeoverText>
+  <FFF_Readiness_WarLabel>Объявлена война</FFF_Readiness_WarLabel>
+  <FFF_Readiness_WarOverLabel>Война окончена</FFF_Readiness_WarOverLabel>
+  <FFF_Readiness_WarOverText>{0} объявляет о завершении кампании против фракции «{1}». Войска возвращаются к обычному режиму службы.</FFF_Readiness_WarOverText>
+  <FFF_Readiness_WarText>{0} объявляет войну фракции «{1}» и направит войска против её поселений.</FFF_Readiness_WarText>
+</LanguageData>

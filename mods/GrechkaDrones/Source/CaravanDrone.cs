@@ -55,11 +55,39 @@ namespace Grechka.Drones
 
     public class JobGiver_CaravanRecharge : JobGiver_DroneRecharge
     {
+        public static bool PoweredDockAvailable(CaravanDrone drone)
+        {
+            var station = drone.rechargeStation;
+            return drone.Spawned && !drone.Drafted && station?.Spawned == true && station.Map == drone.Map
+                && station.powerComp?.PowerOn == true && !station.IsBrokenDown() && FlickUtility.WantsToBeOn(station)
+                && !station.IsForbidden(drone)
+                && !CaravanFormingUtility.IsFormingCaravan(drone)
+                && drone.CanReserveAndReach(station, PathEndMode.Touch, Danger.Some);
+        }
+
+        public override float GetPriority(Pawn pawn)
+        {
+            if (!(pawn is CaravanDrone drone) || !PoweredDockAvailable(drone)) return 0f;
+            // Misc's near-dock threshold was lower than the food threshold. When
+            // food would be wanted, return to the powered dock first.
+            return Math.Max(base.GetPriority(pawn), new JobGiver_GetFood().GetPriority(pawn));
+        }
+
         protected override Job TryGiveJob(Pawn pawn)
         {
-            if (!(pawn is CaravanDrone drone) || drone.rechargeStation?.Spawned != true
-                || drone.rechargeStation.Map != drone.Map || drone.rechargeStation.powerComp?.PowerOn != true
-                || CaravanFormingUtility.IsFormingCaravan(drone)) return null;
+            if (!(pawn is CaravanDrone drone) || !PoweredDockAvailable(drone)) return null;
+            return base.TryGiveJob(pawn);
+        }
+    }
+
+    public class JobGiver_CaravanFood : JobGiver_GetFood
+    {
+        protected override Job TryGiveJob(Pawn pawn)
+        {
+            // A plain Priority node invokes TryGiveJob without consulting GetPriority.
+            // The native food giver otherwise eats even a single missing grain at 99%.
+            if (!(pawn is CaravanDrone drone) || GetPriority(pawn) <= 0f
+                || JobGiver_CaravanRecharge.PoweredDockAvailable(drone)) return null;
             return base.TryGiveJob(pawn);
         }
     }
@@ -85,6 +113,18 @@ namespace Grechka.Drones
             synchronizing = true;
             try { drone.needs.rest.CurLevel = drone.needs.food.CurLevel / MaxNutrition; }
             finally { synchronizing = false; }
+        }
+
+        [HarmonyPatch(typeof(Thing), nameof(Thing.Ingested))]
+        static class FoodPortion
+        {
+            static void Prefix(Pawn ingester, ref float nutritionWanted)
+            {
+                if (!(ingester is CaravanDrone drone) || drone.needs?.food == null) return;
+                // Caravan feeding asks for a tiny bite. Use up to a meal's nutrition;
+                // native ingestion still obeys the food's portion and stack limits.
+                nutritionWanted = Math.Max(nutritionWanted, Math.Min(.9f, drone.needs.food.NutritionWanted));
+            }
         }
 
         [HarmonyPatch(typeof(Pawn_NeedsTracker), "ShouldHaveNeed")]

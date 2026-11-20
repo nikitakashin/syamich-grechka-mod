@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <Plant_DesertDandelion.description>Крошечные оранжевые цветы, растущие большими группами. Одуванчики часто считают сорняками, хотя в цвету они очень красивы.</Plant_DesertDandelion.description>
+  <Plant_DesertDandelion.label>одуванчики</Plant_DesertDandelion.label>
+  <RG_AncientRustedHog.description>Сломанный лёгкий разведывательный джип. Всё, что не проржавело насквозь, давно растащили.</RG_AncientRustedHog.description>
+  <RG_AncientRustedHog.label>древний «Боров»</RG_AncientRustedHog.label>
+  <RG_BogBeacon.description>Светящийся гриб на длинной ножке. Растёт группами только в осиновых лесах.</RG_BogBeacon.description>
+  <RG_BogBeacon.label>болотный светляк</RG_BogBeacon.label>
+  <RG_BoulderRockLargeGranite.label>гранитный валун</RG_BoulderRockLargeGranite.label>
+  <RG_BoulderRockLargeLimestone.label>известняковый валун</RG_BoulderRockLargeLimestone.label>
+  <RG_BoulderRockLargeMarble.label>мраморный валун</RG_BoulderRockLargeMarble.label>
+  <RG_BoulderRockLargeSandstone.label>валун из песчаника</RG_BoulderRockLargeSandstone.label>
+  <RG_BoulderRockLargeSlate.label>сланцевый валун</RG_BoulderRockLargeSlate.label>
+  <RG_BoulderRockMediumGranite.label>гранитный валун</RG_BoulderRockMediumGranite.label>
+  <RG_BoulderRockMediumLimestone.label>известняковый валун</RG_BoulderRockMediumLimestone.label>
+  <RG_BoulderRockMediumMarble.label>мраморный валун</RG_BoulderRockMediumMarble.label>
+  <RG_BoulderRockMediumSandstone.label>валун из песчаника</RG_BoulderRockMediumSandstone.label>
+  <RG_BoulderRockMediumSlate.label>сланцевый валун</RG_BoulderRockMediumSlate.label>
+  <RG_Cibarius.description>Крошечный и очень вкусный жёлтый гриб. Растёт небольшими группами только в умеренных биомах.</RG_Cibarius.description>
+  <RG_Cibarius.label>лисичка</RG_Cibarius.label>
+  <RG_DinosaursHideHeavy.description>Толстая шкура крупного теропода или завропода. Даёт неплохую защиту.</RG_DinosaursHideHeavy.description>
+  <RG_DinosaursHideHeavy.label>толстая шкура динозавра</RG_DinosaursHideHeavy.label>
+  <RG_DinosaursHideMedium.description>Шкура теропода или завропода средней толщины. Часто встречается у видов со слабой природной защитой.</RG_DinosaursHideMedium.description>
+  <RG_DinosaursHideMedium.label>шкура динозавра средней толщины</RG_DinosaursHideMedium.label>
+  <RG_DinosaursHideThin.description>Лёгкая тонкая кожа небольшого теропода или завропода. Плохо удерживает тепло.</RG_DinosaursHideThin.description>
+  <RG_DinosaursHideThin.label>тонкая шкура динозавра</RG_DinosaursHideThin.label>
+  <RG_DustDevil.label>пыльный вихрь</RG_DustDevil.label>
+  <RG_EggArticDrakFertilized.description>Оплодотворённое яйцо драка. Если всё пойдёт хорошо, из него вылупится детёныш. Можно съесть сырым, но приготовленное вкуснее.</RG_EggArticDrakFertilized.description>
+  <RG_EggArticDrakFertilized.label>яйцо драка (оплод.)</RG_EggArticDrakFertilized.label>
+  <RG_EggArticDrakUnfertilized.description>Неоплодотворённое яйцо драка. Можно съесть сырым, но приготовленное вкуснее.</RG_EggArticDrakUnfertilized.description>
+  <RG_EggArticDrakUnfertilized.label>яйцо драка (неоплод.)</RG_EggArticDrakUnfertilized.label>
+  <RG_EggDodoEggFertilized.description>Оплодотворённое яйцо додо. Если всё пойдёт хорошо, из него вылупится додо. Можно съесть сырым, но приготовленное вкуснее.</RG_EggDodoEggFertilized.description>
+  <RG_EggDodoEggFertilized.label>яйцо додо (оплод.)</RG_EggDodoEggFertilized.label>
+  <RG_EggDodoEggUnfertilized.description>Неоплодотворённое яйцо додо. Можно съесть сырым, но приготовленное гораздо вкуснее.</RG_EggDodoEggUnfertilized.description>
+  <RG_EggDodoEggUnfertilized.label>яйцо додо (неоплод.)</RG_EggDodoEggUnfertilized.label>
+  <RG_EggKiwiFertilized.description>Оплодотворённое яйцо киви. Если всё пойдёт хорошо, из него вылупится птенец киви. Можно съесть сырым, но приготовленное вкуснее.</RG_EggKiwiFertilized.description>
+  <RG_EggKiwiFertilized.label>яйцо киви (оплод.)</RG_EggKiwiFertilized.label>
+  <RG_EggKiwiUnfertilized.description>Неоплодотворённое яйцо киви. Можно съесть сырым, но приготовленное вкуснее.</RG_EggKiwiUnfertilized.description>
+  <RG_EggKiwiUnfertilized.label>яйцо киви (неоплод.)</RG_EggKiwiUnfertilized.label>
+  <RG_EggThrinaxodonFertilized.description>Оплодотворённое яйцо тринаксодона. Если всё пойдёт хорошо, из него вылупится детёныш. Можно съесть сырым, но приготовленное вкуснее.</RG_EggThrinaxodonFertilized.description>
+  <RG_EggThrinaxodonFertilized.label>яйцо тринаксодона (оплод.)</RG_EggThrinaxodonFertilized.label>
+  <RG_EggThrinaxodonUnfertilized.description>Неоплодотворённое яйцо тринаксодона. Можно съесть сырым, но приготовленное вкуснее.</RG_EggThrinaxodonUnfertilized.description>
+  <RG_EggThrinaxodonUnfertilized.label>яйцо тринаксодона (неоплод.)</RG_EggThrinaxodonUnfertilized.label>
+  <RG_EggVelociraptorFertilized.description>Оплодотворённое яйцо велоцираптора. Если всё пойдёт хорошо, из него вылупится детёныш. Можно съесть сырым, но приготовленное вкуснее.</RG_EggVelociraptorFertilized.description>
+  <RG_EggVelociraptorFertilized.label>яйцо велоцираптора (оплод.)</RG_EggVelociraptorFertilized.label>
+  <RG_EggWoollyStegosaurusFertilized.description>Оплодотворённое яйцо шерстистого стегозавра. Если всё пойдёт хорошо, из него вылупится стегозаврик. Можно съесть сырым, но приготовленное вкуснее.</RG_EggWoollyStegosaurusFertilized.description>
+  <RG_EggWoollyStegosaurusFertilized.label>яйцо шерстистого стегозавра (оплод.)</RG_EggWoollyStegosaurusFertilized.label>
+  <RG_EggWoollyStegosaurusUnfertilized.description>Неоплодотворённое яйцо шерстистого стегозавра. Можно съесть сырым, но приготовленное вкуснее.</RG_EggWoollyStegosaurusUnfertilized.description>
+  <RG_EggWoollyStegosaurusUnfertilized.label>яйцо шерстистого стегозавра (неоплод.)</RG_EggWoollyStegosaurusUnfertilized.label>
+  <RG_FilthWater.label>вода</RG_FilthWater.label>
+  <RG_FilthWaterSpatter.label>вода</RG_FilthWaterSpatter.label>
+  <RG_Filth_LeavesAspenRedTree.label>листья осины</RG_Filth_LeavesAspenRedTree.label>
+  <RG_Filth_LeavesAspenYellowTree.label>листья осины</RG_Filth_LeavesAspenYellowTree.label>
+  <RG_Filth_LeavesTreeAnima.label>листья анимы</RG_Filth_LeavesTreeAnima.label>
+  <RG_Filth_LeavesTreeBirch.label>листья</RG_Filth_LeavesTreeBirch.label>
+  <RG_Filth_LeavesTreeOak.label>листья</RG_Filth_LeavesTreeOak.label>
+  <RG_Filth_LeavesTreePopolar.label>листья</RG_Filth_LeavesTreePopolar.label>
+  <RG_Filth_Neutroamine.label>нейтроамин</RG_Filth_Neutroamine.label>
+  <RG_FlowerCactus.description>Крошечный кактус с фиолетовым цветком.</RG_FlowerCactus.description>
+  <RG_FlowerCactus.label>цветущий кактус</RG_FlowerCactus.label>
+  <RG_NeoAmanita.description>Генетически изменённый мухомор, безопасный для человека. Растёт группами только в тропиках.</RG_NeoAmanita.description>
+  <RG_NeoAmanita.label>неомухомор</RG_NeoAmanita.label>
+  <RG_Plant_AridGrass.description>Дикая трава. Растёт в засушливых местах с малым количеством света и скудной почвой.</RG_Plant_AridGrass.description>
+  <RG_Plant_AspenFern.description>Невысокое растение с длинными тонкими листьями. Растёт в осиновых лесах.</RG_Plant_AspenFern.description>
+  <RG_Plant_AspenFern.label>папоротник</RG_Plant_AspenFern.label>
+  <RG_Plant_AspenGrass.description>Высокая дикая трава. Растёт в осиновых лесах при слабом освещении на скудной почве.</RG_Plant_AspenGrass.description>
+  <RG_Plant_BerryCultivated.description>Дикий куст с вкусными ягодами. Их можно есть сырыми или использовать в готовке.</RG_Plant_BerryCultivated.description>
+  <RG_Plant_BerryCultivated.label>ягодный куст</RG_Plant_BerryCultivated.label>
+  <RG_Plant_BlueDandelion.description>Крошечные голубые цветы, растущие большими группами. Одуванчики часто считают сорняками, хотя в цвету они очень красивы.</RG_Plant_BlueDandelion.description>
+  <RG_Plant_BlueDandelion.label>одуванчики</RG_Plant_BlueDandelion.label>
+  <RG_Plant_BlueTreePine.description>Невысокое сизоватое хвойное дерево с мелкими шишками. Растёт лишь в холодных местах и на больших высотах.</RG_Plant_BlueTreePine.description>
+  <RG_Plant_BlueTreePine.label>сосна</RG_Plant_BlueTreePine.label>
+  <RG_Plant_BorealFern.description>Невысокое растение с длинными тонкими листьями. Растёт в северных лесах.</RG_Plant_BorealFern.description>
+  <RG_Plant_BorealFern.label>папоротник</RG_Plant_BorealFern.label>
+  <RG_Plant_BramblesRed.description>Переплетённые колючие одревесневшие побеги с листвой. Растут зарослями и замедляют всех, кто через них пробирается.</RG_Plant_BramblesRed.description>
+  <RG_Plant_BramblesYellow.description>Переплетённые колючие одревесневшие побеги с листвой. Растут зарослями и замедляют всех, кто через них пробирается.</RG_Plant_BramblesYellow.description>
+  <RG_Plant_Cathedralis.description>Крупный красивый фиолетовый цветок, растущий в тёплом климате.</RG_Plant_Cathedralis.description>
+  <RG_Plant_Cathedralis.label>катедралис</RG_Plant_Cathedralis.label>
+  <RG_Plant_Coldheart.description>Генетически изменённый обыкновенный плющ, приспособленный к низким температурам.</RG_Plant_Coldheart.description>
+  <RG_Plant_Coldheart.label>холодник</RG_Plant_Coldheart.label>
+  <RG_Plant_CreepStern.description>Дикий плющ со звёздчатыми листьями. Стелется по земле в холодных влажных биомах. Растёт медленно, но хорошо переносит морозы.</RG_Plant_CreepStern.description>
+  <RG_Plant_CreepStern.label>звёздчатый плющ</RG_Plant_CreepStern.label>
+  <RG_Plant_CrimsonCushion.description>Дикое почвопокровное растение багрового цвета. Разрастается медленно, но хорошо переносит морозы.</RG_Plant_CrimsonCushion.description>
+  <RG_Plant_CrimsonCushion.label>багровая подушка</RG_Plant_CrimsonCushion.label>
+  <RG_Plant_Deathbell.description>Фиолетовый цветок, растущий большими группами. Говорят, он всходит там, где кто-то трагически погиб.</RG_Plant_Deathbell.description>
+  <RG_Plant_Deathbell.label>погребальный колокольчик</RG_Plant_Deathbell.label>
+  <RG_Plant_Dervish.description>Красивый голубоватый цветок. Встречается только в холодных болотах.</RG_Plant_Dervish.description>
+  <RG_Plant_Dervish.label>дервиш</RG_Plant_Dervish.label>
+  <RG_Plant_LargeTreePine.description>Высокое ярко-зелёное хвойное дерево с тонкой корой. Перерастает другие сосны.</RG_Plant_LargeTreePine.description>
+  <RG_Plant_LargeTreePine.label>сосна</RG_Plant_LargeTreePine.label>
+  <RG_Plant_LupineIceland.description>Высокий красивый полевой цветок, растущий в холодном климате.</RG_Plant_LupineIceland.description>
+  <RG_Plant_LupineIceland.label>люпин</RG_Plant_LupineIceland.label>
+  <RG_Plant_OrangeTreePine.description>Крупное оранжевое хвойное дерево с колючими шишками и конической кроной.</RG_Plant_OrangeTreePine.description>
+  <RG_Plant_OrangeTreePine.label>сосна</RG_Plant_OrangeTreePine.label>
+  <RG_Plant_Oxalis.description>Небольшой фиолетовый цветок, растущий большими группами.</RG_Plant_Oxalis.description>
+  <RG_Plant_Oxalis.label>кислица</RG_Plant_Oxalis.label>
+  <RG_Plant_Plumeria.description>Мягкий бархатистый цветок, растущий большими группами.</RG_Plant_Plumeria.description>
+  <RG_Plant_Plumeria.label>плюмерия</RG_Plant_Plumeria.label>
+  <RG_Plant_Raspberry.description>Дикий куст с вкусными красными ягодами. Их можно есть сырыми или использовать в готовке.</RG_Plant_Raspberry.description>
+  <RG_Plant_Raspberry.label>куст малины</RG_Plant_Raspberry.label>
+  <RG_Plant_RaspberryCultivated.description>Дикий куст с вкусными красными ягодами. Их можно есть сырыми или использовать в готовке.</RG_Plant_RaspberryCultivated.description>
+  <RG_Plant_RaspberryCultivated.label>куст малины</RG_Plant_RaspberryCultivated.label>
+  <RG_Plant_RedDandelion.description>Крошечные красные цветы, растущие большими группами. Одуванчики часто считают сорняками, хотя в цвету они очень красивы.</RG_Plant_RedDandelion.description>
+  <RG_Plant_RedDandelion.label>одуванчики</RG_Plant_RedDandelion.label>
+  <RG_Plant_RedMountainFlower.description>Крошечный красный цветок, растущий большими группами.</RG_Plant_RedMountainFlower.description>
+  <RG_Plant_RedMountainFlower.label>горный цветок</RG_Plant_RedMountainFlower.label>
+  <RG_Plant_SaffronCushion.description>Почвопокровные кустарнички с жёлтыми листьями. Растут в осиновых лесах, медленно разрастаются и хорошо переносят морозы.</RG_Plant_SaffronCushion.description>
+  <RG_Plant_SaffronCushion.label>шафрановая подушка</RG_Plant_SaffronCushion.label>
+  <RG_Plant_SwampPod.description>Небольшое грибовидное растение, похожее на глаз в твёрдой оболочке. Встречается только на болотах.</RG_Plant_SwampPod.description>
+  <RG_Plant_SwampPod.label>болотная коробочка</RG_Plant_SwampPod.label>
+  <RG_Plant_TallAspenGrass.description>Высокая дикая трава. Растёт в осиновых лесах при слабом освещении на скудной почве.</RG_Plant_TallAspenGrass.description>
+  <RG_Plant_TallPalmTree.description>Тропическое дерево с длинным голым стволом и пучком широких листьев на верхушке. Этот сорт не даёт съедобных кокосов.</RG_Plant_TallPalmTree.description>
+  <RG_Plant_TallPalmTree.label>пальма</RG_Plant_TallPalmTree.label>
+  <RG_Plant_TemperateFern.description>Невысокое растение с длинными тонкими листьями. Растёт в тёплых лесах.</RG_Plant_TemperateFern.description>
+  <RG_Plant_TemperateFern.label>папоротник</RG_Plant_TemperateFern.label>
+  <RG_Plant_TemperateIvy.description>Дикий стелющийся плющ. Растёт в тёплых местах, разрастается медленно и хорошо переносит морозы.</RG_Plant_TemperateIvy.description>
+  <RG_Plant_TemperateIvy.label>плющ</RG_Plant_TemperateIvy.label>
+  <RG_Plant_Tidalis.description>Генетически изменённый гибрид обыкновенного плюща и тропического цветка, приспособленный к тропическому климату.</RG_Plant_Tidalis.description>
+  <RG_Plant_Tidalis.label>тидалис</RG_Plant_Tidalis.label>
+  <RG_Plant_TigerLily.description>Крошечные оранжевые цветы, растущие большими группами. Тигровые лилии часто считают сорняками, хотя в цвету они очень красивы.</RG_Plant_TigerLily.description>
+  <RG_Plant_TigerLily.label>тигровая лилия</RG_Plant_TigerLily.label>
+  <RG_Plant_TreeAspenRed.description>Генетически модифицированное дерево холодных биомов. Отличается тонкой белой корой и яркой листвой.</RG_Plant_TreeAspenRed.description>
+  <RG_Plant_TreeAspenRed.label>осина</RG_Plant_TreeAspenRed.label>
+  <RG_Plant_TreeAspenYellow.description>Генетически модифицированное дерево холодных биомов. Отличается тонкой белой корой и яркой листвой.</RG_Plant_TreeAspenYellow.description>
+  <RG_Plant_TreeAspenYellow.label>осина</RG_Plant_TreeAspenYellow.label>
+  <RG_Plant_TreeCornish.description>Крупное средиземноморское хвойное дерево с мелкими шишками. Растёт только в умеренных биомах.</RG_Plant_TreeCornish.description>
+  <RG_Plant_TreeCornish.label>корнуолльская сосна</RG_Plant_TreeCornish.label>
+  <RG_Plant_TreeDwarfPalm.description>Невысокое тропическое дерево с голым стволом и пучком широких листьев на верхушке.</RG_Plant_TreeDwarfPalm.description>
+  <RG_Plant_TreeDwarfPalm.label>карликовая пальма</RG_Plant_TreeDwarfPalm.label>
+  <RG_Plant_TreeWhiteWillow.description>Генетически модифицированная обыкновенная ива с красивой белой кроной. Даёт мало пригодной древесины.</RG_Plant_TreeWhiteWillow.description>
+  <RG_Plant_TreeWhiteWillow.label>ива</RG_Plant_TreeWhiteWillow.label>
+  <RG_Plant_TropicalBrambles.description>Переплетённые колючие одревесневшие побеги с листвой. Растут зарослями и замедляют всех, кто через них пробирается.</RG_Plant_TropicalBrambles.description>
+  <RG_Plant_TropicalChokevine.description>Колючие плети переплетаются в густой ковёр и сильно замедляют движение. В разных племенах детям рассказывают, будто эти лианы душат тех, кто не вернулся домой до темноты.</RG_Plant_TropicalChokevine.description>
+  <RG_Plant_TropicalChokevine.label>душащая лиана</RG_Plant_TropicalChokevine.label>
+  <RG_Plant_TropicalFern.description>Невысокое растение с длинными тонкими листьями. Растёт в тропиках.</RG_Plant_TropicalFern.description>
+  <RG_Plant_TropicalFern.label>папоротник</RG_Plant_TropicalFern.label>
+  <RG_Plant_TropicalIvy.description>Дикий стелющийся плющ, растущий в тропиках.</RG_Plant_TropicalIvy.description>
+  <RG_Plant_TropicalIvy.label>плющ</RG_Plant_TropicalIvy.label>
+  <RG_Plant_TundraCotton.description>Небольшой цветок с крупными белыми пушистыми головками. Хорошо переносит морозы и растёт только в тундре.</RG_Plant_TundraCotton.description>
+  <RG_Plant_TundraCotton.label>тундровая пушица</RG_Plant_TundraCotton.label>
+  <RG_Plant_TundraTallGrass.description>Высокая дикая трава тундры. Замедляет всех, кто через неё пробирается.</RG_Plant_TundraTallGrass.description>
+  <RG_Potokus.description>Небольшой вкусный коричневый гриб. Растёт группами только в северных лесах.</RG_Potokus.description>
+  <RG_Potokus.label>потокус</RG_Potokus.label>
+  <RG_RimclawEggFertilized.description>Оплодотворённое яйцо римкогтя. Если всё пойдёт хорошо, из него вылупится детёныш. Можно съесть сырым, но приготовленное вкуснее.</RG_RimclawEggFertilized.description>
+  <RG_RimclawEggFertilized.label>яйцо римкогтя (оплод.)</RG_RimclawEggFertilized.label>
+  <RG_RimclawEggUnfertilized.description>Неоплодотворённое яйцо римкогтя. Можно съесть сырым, но приготовленное вкуснее.</RG_RimclawEggUnfertilized.description>
+  <RG_RimclawEggUnfertilized.label>яйцо римкогтя (неоплод.)</RG_RimclawEggUnfertilized.label>
+  <RG_SychiCap.description>Небольшой красноватый гриб. Растёт группами только в холодных болотах.</RG_SychiCap.description>
+  <RG_SychiCap.label>гриб сичи</RG_SychiCap.label>
+  <RG_Tree_TundraTreePine.description>Крупное жёлтое хвойное дерево с колючими шишками и конической кроной.</RG_Tree_TundraTreePine.description>
+  <RG_Tree_TundraTreePine.label>сосна</RG_Tree_TundraTreePine.label>
+  <RG_WoolStegosaurus.description>Густая и грубая шерсть шерстистого стегозавра. Хорошо удерживает тепло.</RG_WoolStegosaurus.description>
+  <RG_WoolStegosaurus.label>шерсть шерстистого стегозавра</RG_WoolStegosaurus.label>
+</LanguageData>

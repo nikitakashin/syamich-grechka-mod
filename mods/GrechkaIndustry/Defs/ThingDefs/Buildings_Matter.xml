@@ -2,7 +2,7 @@
 <Defs>
   <ThingDef ParentName="BenchBase">
     <defName>Grechka_MatterRecyclerT4_Building</defName>
-    <label>генератор материи T4</label>
+    <label>архо-генератор материи (T4)</label>
     <description>Генератор материи T4. Потребляет 8,000,000 Вт. Задания выполняет пешка или подключённый крафтер. Цена материи определяется рыночной стоимостью предмета без торговых наценок. Контейнеры, живые существа и уникальное состояние не копируются.</description>
     <thingClass>Building_WorkTable</thingClass>
     <tickerType>Normal</tickerType>
@@ -80,7 +80,7 @@
   </ThingDef>
   <ThingDef ParentName="BenchBase">
     <defName>Grechka_MatterRecyclerT5_Building</defName>
-    <label>генератор материи T5</label>
+    <label>гречневый генератор материи (T5)</label>
     <description>Генератор материи T5. Потребляет 30,000,000 Вт. Задания выполняет пешка или подключённый крафтер. Цена материи определяется рыночной стоимостью предмета без торговых наценок. Контейнеры, живые существа и уникальное состояние не копируются.</description>
     <thingClass>Building_WorkTable</thingClass>
     <tickerType>Normal</tickerType>
@@ -148,7 +148,7 @@
   </ThingDef>
   <ThingDef ParentName="BenchBase">
     <defName>Grechka_MatterSynthesizerT4_Building</defName>
-    <label>синтезатор материи T4</label>
+    <label>архо-синтезатор материи (T4)</label>
     <description>Синтезатор материи T4. Потребляет 12,000,000 Вт. Задания выполняет пешка или подключённый крафтер. Цена материи определяется рыночной стоимостью предмета без торговых наценок. Контейнеры, живые существа и уникальное состояние не копируются.</description>
     <thingClass>Building_WorkTable</thingClass>
     <tickerType>Normal</tickerType>
@@ -223,7 +223,7 @@
   </ThingDef>
   <ThingDef ParentName="BenchBase">
     <defName>Grechka_MatterSynthesizerT5_Building</defName>
-    <label>синтезатор материи T5</label>
+    <label>гречневый синтезатор материи (T5)</label>
     <description>Синтезатор материи T5. Потребляет 60,000,000 Вт. Задания выполняет пешка или подключённый крафтер. Цена материи определяется рыночной стоимостью предмета без торговых наценок. Контейнеры, живые существа и уникальное состояние не копируются.</description>
     <thingClass>Building_WorkTable</thingClass>
     <tickerType>Normal</tickerType>

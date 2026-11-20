@@ -11,7 +11,11 @@ void Check(bool ok,string name){if(!ok)throw new Exception(name);Console.WriteLi
 var prefsField=AccessTools.Field(typeof(Prefs),"data");prefsField.SetValue(null,Activator.CreateInstance(prefsField.FieldType));
 var harmony=new Harmony("grechka.test.factory-tier.native");
 foreach(var type in typeof(FactoryTierAdapter).Assembly.GetTypes().Where(t=>t.Name.StartsWith("FactoryTier")&&t.Name.EndsWith("Hook")))
-{harmony.CreateClassProcessor(type).Patch();Console.WriteLine("PASS native hook binds: "+type.Name);}
+{
+ var patched=harmony.CreateClassProcessor(type).Patch();
+ if(type==typeof(FactoryTierPhysicalDeliveryHook) && AccessTools.Field(typeof(Process),"currentResult")!=null) continue;
+ Check(patched?.Count>0,"Native hook binds: "+type.Name);
+}
 var def=new ThingDef{defName="GrechkaFactoryFixture",comps=new List<CompProperties>{new CompProperties{compClass=typeof(CompAdvancedResourceProcessor)}}};
 ProfileVariants.Entries[def.defName]=new VariantEntry{sourceName=def.defName,name=def.defName,tier=5,minimum=2};
 var applied=(Dictionary<string,int>)AccessTools.Field(typeof(WorldProfile),"AppliedTiers").GetValue(null);applied[def.defName]=5;
@@ -33,13 +37,13 @@ process.Tick(10);
 Check(process.TickLeft==99400,"Native Process.Tick consumes 600 work ticks for 10 real ticks at T5");
 Check(result.GetCount(process)==10&&result.GetCount(process)==10,"Native Result.GetCount shows doubled quantity without consuming carry");
 applied[def.defName]=2;result.count=1;
-var commit=AccessTools.Method(typeof(FactoryTierAdapter),"CommitOutput");
+var commit=AccessTools.Method(typeof(FactoryTierAdapter),"CommitResult");
 int total=0;
 for(int i=0;i<10;i++)
 {
  int count=result.GetCount(process);
  Check(count==result.GetCount(process),"Preview and failed retries preserve the same bonus quote");
- total+=count;commit.Invoke(null,new object[]{process});
+ total+=count;commit.Invoke(null,new object[]{process,result});
 }
 Check(total==11,"Ten committed T2 outputs preserve their one fractional bonus item");
 var before=result.GetCount(process);
@@ -54,4 +58,5 @@ try
 }
 finally{if(File.Exists(path))File.Delete(path);}
 applied.Remove(def.defName);Check(result.GetCount(process)==1,"Unapplied machines receive no output bonus");
+DrillTierChecks.Run();
 Console.WriteLine("Factory tier native adapter checks complete; game process untouched.");

@@ -219,25 +219,42 @@ namespace Grechka.WorldIntegration
 
     public sealed class WorkGiver_FactoryUpgrade : WorkGiver_Scanner
     {
+        public override ThingRequest PotentialWorkThingRequest => ThingRequest.ForGroup(ThingRequestGroup.BuildingArtificial);
         public override IEnumerable<Thing> PotentialWorkThingsGlobal(Pawn pawn) => pawn.Map.listerBuildings.allBuildingsColonist.Where(b => b.GetComp<CompFactoryUpgrade>()?.Requested == true);
         public override PathEndMode PathEndMode => PathEndMode.Touch;
         public override bool HasJobOnThing(Pawn pawn, Thing t, bool forced = false) => JobOnThing(pawn, t, forced) != null;
         public override Job JobOnThing(Pawn pawn, Thing thing, bool forced = false)
         {
             var upgrade = (thing as ThingWithComps)?.GetComp<CompFactoryUpgrade>();
-            if (upgrade?.Requested != true || thing.IsForbidden(pawn) || !pawn.CanReserveAndReach(thing, PathEndMode.Touch, Danger.Some)) return null;
+            Danger danger = forced ? Danger.Deadly : MaxPathDanger(pawn);
+            if (upgrade?.Requested != true || thing.Faction != pawn.Faction || thing.IsForbidden(pawn)
+                || !pawn.CanReserveAndReach(thing, PathEndMode.Touch, danger, ignoreOtherReservations: forced)) return null;
             var costs = upgrade.Costs(); if (costs == null) return null;
             foreach (ThingDefCountClass cost in costs)
             {
                 int need = upgrade.Need(cost.thingDef); if (need == 0) continue;
-                Thing source = pawn.Map.listerThings.ThingsOfDef(cost.thingDef).Where(t => t.Spawned && !t.IsForbidden(pawn) && pawn.CanReserveAndReach(t, PathEndMode.ClosestTouch, Danger.Some))
-                    .OrderBy(t => t.Position.DistanceToSquared(pawn.Position)).FirstOrDefault();
+                Thing source = FindMaterials(pawn, cost.thingDef, danger, forced);
                 if (source == null) continue;
-                Job job = JobMaker.MakeJob(DefDatabase<JobDef>.GetNamed("Grechka_DeliverFactoryUpgrade"), thing, source); job.count = Math.Min(need, source.stackCount); return job;
+                int amount = Math.Min(need, Math.Min(source.stackCount, pawn.carryTracker.AvailableStackSpace(source.def)));
+                if (amount <= 0) continue;
+                Job job = JobMaker.MakeJob(DefDatabase<JobDef>.GetNamed("Grechka_DeliverFactoryUpgrade"), thing, source);
+                job.count = amount;
+                return job;
             }
-            if (!upgrade.HasAll || FactoryUpgradeSafety.Problem((ThingWithComps)thing) != null) return null;
+            string problem = upgrade.HasAll ? FactoryUpgradeSafety.Problem((ThingWithComps)thing) :
+                WorldText.Get("GrechkaWorldIntegration_UpgradeNoMaterials", "Missing reachable upgrade materials");
+            if (problem != null)
+            {
+                if (forced) JobFailReason.Is(problem);
+                return null;
+            }
             return JobMaker.MakeJob(DefDatabase<JobDef>.GetNamed("Grechka_WorkFactoryUpgrade"), thing);
         }
+
+        private static Thing FindMaterials(Pawn pawn, ThingDef material, Danger danger, bool forced)
+            => pawn.Map.listerThings.ThingsOfDef(material).Where(t => t.Spawned && !t.IsForbidden(pawn)
+                && pawn.CanReserveAndReach(t, PathEndMode.ClosestTouch, danger, ignoreOtherReservations: forced))
+                .OrderBy(t => t.Position.DistanceToSquared(pawn.Position)).FirstOrDefault();
     }
     public sealed class JobDriver_DeliverFactoryUpgrade : JobDriver
     {
@@ -246,8 +263,8 @@ namespace Grechka.WorldIntegration
         protected override IEnumerable<Toil> MakeNewToils()
         {
             this.FailOnDespawnedNullOrForbidden(TargetIndex.A); this.FailOn(() => Upgrade?.Requested != true);
-            yield return Toils_Goto.GotoThing(TargetIndex.B, PathEndMode.ClosestTouch);
-            yield return Toils_Haul.StartCarryThing(TargetIndex.B);
+            yield return Toils_Goto.GotoThing(TargetIndex.B, PathEndMode.ClosestTouch, canGotoSpawnedParent: true);
+            yield return Toils_Haul.StartCarryThing(TargetIndex.B, canTakeFromInventory: true);
             yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch);
             yield return Toils_General.Do(() => Upgrade.Accept(pawn.carryTracker.CarriedThing));
         }

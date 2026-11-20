@@ -94,7 +94,31 @@
   <GrechkaWorldIntegration_29dad5caaeac>[Grechka World Integration] Завершены все исследования; новых: </GrechkaWorldIntegration_29dad5caaeac>
   <GrechkaWorldIntegration_LegacyVariant>{0} (устаревший T{1})</GrechkaWorldIntegration_LegacyVariant>
   <GrechkaWorldIntegration_TierVariant>{0} (T{1})</GrechkaWorldIntegration_TierVariant>
-  <GrechkaWorldIntegration_UpgradeRecipe>улучшить этот станок до T{0}</GrechkaWorldIntegration_UpgradeRecipe>
+  <GrechkaWorldIntegration_UpgradeRecipe>улучшить: {0}</GrechkaWorldIntegration_UpgradeRecipe>
   <GrechkaWorldIntegration_UpgradeRecipeDescription>Улучшение на месте. Корпус предыдущего тира и исходная машина засчитываются. Сохраняются материал, прочность, топливо и задания.</GrechkaWorldIntegration_UpgradeRecipeDescription>
   <GrechkaWorldIntegration_UpgradeJob>Улучшение станка.</GrechkaWorldIntegration_UpgradeJob>
+  <GrechkaWorldIntegration_TierName2>обычный</GrechkaWorldIntegration_TierName2>
+  <GrechkaWorldIntegration_TierName3>меха-</GrechkaWorldIntegration_TierName3>
+  <GrechkaWorldIntegration_TierName4>архо-</GrechkaWorldIntegration_TierName4>
+  <GrechkaWorldIntegration_TierName5>гречневый</GrechkaWorldIntegration_TierName5>
+  <GrechkaWorldIntegration_TierName5Plural>гречневые</GrechkaWorldIntegration_TierName5Plural>
+  <GrechkaWorldIntegration_TierName5Feminine>гречневая</GrechkaWorldIntegration_TierName5Feminine>
+  <GrechkaWorldIntegration_TierName5Neuter>гречневое</GrechkaWorldIntegration_TierName5Neuter>
+  <GrechkaWorldIntegration_DeviceName_Battery>батарея</GrechkaWorldIntegration_DeviceName_Battery>
+  <GrechkaWorldIntegration_DeviceName_VFE_SmallBattery>малая батарея</GrechkaWorldIntegration_DeviceName_VFE_SmallBattery>
+  <GrechkaWorldIntegration_DeviceName_VFE_LargeBattery>большая батарея</GrechkaWorldIntegration_DeviceName_VFE_LargeBattery>
+  <GrechkaWorldIntegration_DeviceName_VFE_AdvancedBattery>улучшенная батарея</GrechkaWorldIntegration_DeviceName_VFE_AdvancedBattery>
+  <GrechkaWorldIntegration_DeviceName_VFE_LargeAdvancedBattery>большая улучшенная батарея</GrechkaWorldIntegration_DeviceName_VFE_LargeAdvancedBattery>
+  <GrechkaWorldIntegration_UpgradeNoMaterials>Нет доступных материалов для улучшения</GrechkaWorldIntegration_UpgradeNoMaterials>
+  <GrechkaWorldIntegration_TierInspector>Гречка • T</GrechkaWorldIntegration_TierInspector>
+  <GrechkaWorldIntegration_GeothermalOutput> • мощность ×</GrechkaWorldIntegration_GeothermalOutput>
+  <GrechkaWorldIntegration_DeviceName_Facility_VitalsCentre>центр жизненных показателей</GrechkaWorldIntegration_DeviceName_Facility_VitalsCentre>
+  <GrechkaWorldIntegration_DeviceName_SurgicalLamp>хирургическая лампа</GrechkaWorldIntegration_DeviceName_SurgicalLamp>
+  <GrechkaWorldIntegration_DeviceName_DeepDrill>глубинный бур</GrechkaWorldIntegration_DeviceName_DeepDrill>
+  <GrechkaWorldIntegration_DeviceName_VFEFactory_AutomatedDrillPlatform>автоматическая буровая платформа</GrechkaWorldIntegration_DeviceName_VFEFactory_AutomatedDrillPlatform>
+  <GrechkaWorldIntegration_DeviceName_GeothermalGenerator>геотермальный генератор</GrechkaWorldIntegration_DeviceName_GeothermalGenerator>
+  <GrechkaWorldIntegration_DeviceName_VPE_AdvancedGeothermalGenerator>улучшенный геотермальный генератор</GrechkaWorldIntegration_DeviceName_VPE_AdvancedGeothermalGenerator>
+  <GrechkaWorldIntegration_DeviceName_ElectricStove>электрическая плита</GrechkaWorldIntegration_DeviceName_ElectricStove>
+  <GrechkaWorldIntegration_DeviceName_FueledStove>дровяная плита</GrechkaWorldIntegration_DeviceName_FueledStove>
+  <GrechkaWorldIntegration_DeviceName_VFE_TableStoveLarge>большая плита</GrechkaWorldIntegration_DeviceName_VFE_TableStoveLarge>
 </LanguageData>

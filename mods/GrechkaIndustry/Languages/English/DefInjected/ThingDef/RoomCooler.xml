@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Grechka_RoomCooler_Building.label>electric room cooler</Grechka_RoomCooler_Building.label>
+  <Grechka_RoomCooler_Building.description>A freestanding electric cooler with an adjustable target temperature. Provides twice the cooling power of a passive cooler. Uses 250 W while cooling and 25 W after reaching the target. Operates inside an enclosed room.</Grechka_RoomCooler_Building.description>
+</LanguageData>

@@ -69,40 +69,40 @@
   <Grechka_AssemblyBenchT2_Building.description>Электрический сборочный верстак второго тира. Для строительства нужен продвинутый корпус, изготовленный на базовом верстаке.</Grechka_AssemblyBenchT2_Building.description>
   <Grechka_AssemblyBenchT2_Building.comps.1.upgradeLabel>Улучшить до T3</Grechka_AssemblyBenchT2_Building.comps.1.upgradeLabel>
   <Grechka_AssemblyBenchT2_Building.comps.1.upgradeDescription>Пешка улучшит это устройство на месте. Установленный корпус и подходящие материалы уже зачтены в цене. Задания, дробный бонус выпуска и относительная прочность сохраняются.</Grechka_AssemblyBenchT2_Building.comps.1.upgradeDescription>
-  <Grechka_AssemblyBenchT3_Building.label>меха-сборочный верстак</Grechka_AssemblyBenchT3_Building.label>
+  <Grechka_AssemblyBenchT3_Building.label>меха-верстак (T3)</Grechka_AssemblyBenchT3_Building.label>
   <Grechka_AssemblyBenchT3_Building.description>Сборочный верстак третьего тира. Скорость ×5, скидка сырья 20%, накопительный бонус к обычному выпуску 20%. Требует 840 Вт.</Grechka_AssemblyBenchT3_Building.description>
   <Grechka_AssemblyBenchT3_Building.comps.5.upgradeLabel>Улучшить до T4</Grechka_AssemblyBenchT3_Building.comps.5.upgradeLabel>
   <Grechka_AssemblyBenchT3_Building.comps.5.upgradeDescription>Пешка улучшит это устройство на месте. Установленный корпус и подходящие материалы уже зачтены в цене. Задания, дробный бонус выпуска и относительная прочность сохраняются.</Grechka_AssemblyBenchT3_Building.comps.5.upgradeDescription>
-  <Grechka_IonizerT4_Building.label>комнатный ионизатор T4</Grechka_IonizerT4_Building.label>
+  <Grechka_IonizerT4_Building.label>архо-комнатный ионизатор (T4)</Grechka_IonizerT4_Building.label>
   <Grechka_IonizerT4_Building.description>Усиленное оборудование T4. Освещает всю закрытую комнату и убирает грязь. Без суммирования одинаковых эффектов.</Grechka_IonizerT4_Building.description>
   <Grechka_IonizerT4_Building.comps.5.costDescription>предыдущее устройство целиком и дополнительные материалы следующей ступени; установленный корпус уже учтён</Grechka_IonizerT4_Building.comps.5.costDescription>
-  <Grechka_IonizerT5_Building.label>комнатный ионизатор T5</Grechka_IonizerT5_Building.label>
+  <Grechka_IonizerT5_Building.label>гречневый комнатный ионизатор (T5)</Grechka_IonizerT5_Building.label>
   <Grechka_IonizerT5_Building.description>Усиленное оборудование T5. Освещает всю закрытую комнату и убирает грязь. Без суммирования одинаковых эффектов.</Grechka_IonizerT5_Building.description>
-  <Grechka_MechaniteExtractorT4_Building.label>экстрактор механитов T4</Grechka_MechaniteExtractorT4_Building.label>
+  <Grechka_MechaniteExtractorT4_Building.label>архо-экстрактор механитов (T4)</Grechka_MechaniteExtractorT4_Building.label>
   <Grechka_MechaniteExtractorT4_Building.description>Усиленное оборудование T4. Извлекает механиты без газа. Прогресс сохраняется без питания.</Grechka_MechaniteExtractorT4_Building.description>
   <Grechka_MechaniteExtractorT4_Building.comps.5.costDescription>предыдущее устройство целиком и дополнительные материалы следующей ступени; установленный корпус уже учтён</Grechka_MechaniteExtractorT4_Building.comps.5.costDescription>
-  <Grechka_MechaniteExtractorT5_Building.label>экстрактор механитов T5</Grechka_MechaniteExtractorT5_Building.label>
+  <Grechka_MechaniteExtractorT5_Building.label>гречневый экстрактор механитов (T5)</Grechka_MechaniteExtractorT5_Building.label>
   <Grechka_MechaniteExtractorT5_Building.description>Усиленное оборудование T5. Извлекает механиты без газа. Прогресс сохраняется без питания.</Grechka_MechaniteExtractorT5_Building.description>
-  <Grechka_IonizerT3_Building.label>комнатный ионизатор T3</Grechka_IonizerT3_Building.label>
+  <Grechka_IonizerT3_Building.label>меха-комнатный ионизатор (T3)</Grechka_IonizerT3_Building.label>
   <Grechka_IonizerT3_Building.description>Механитный ионизатор освещает всю закрытую комнату и автоматически убирает обычную грязь, кровь и рвоту. Потребляет 1000 Вт, очищает до восьми слоёв грязи каждые 250 тиков. Не обслуживает соседние комнаты через стены и не работает на улице. При отключении или поломке свет и уборка прекращаются. Несколько ионизаторов в одной комнате не усиливают эффект.</Grechka_IonizerT3_Building.description>
   <Grechka_IonizerT3_Building.comps.5.costDescription>предыдущее устройство целиком и дополнительные материалы следующей ступени; установленный корпус уже учтён</Grechka_IonizerT3_Building.comps.5.costDescription>
-  <Grechka_AssemblyBenchT4_Building.label>сборочный верстак T4</Grechka_AssemblyBenchT4_Building.label>
+  <Grechka_AssemblyBenchT4_Building.label>архо-верстак (T4)</Grechka_AssemblyBenchT4_Building.label>
   <Grechka_AssemblyBenchT4_Building.description>Тир 4. Скорость ×15, скидка сырья 35%, бонус выхода 50%. Потребление 2800 Вт.</Grechka_AssemblyBenchT4_Building.description>
   <Grechka_AssemblyBenchT4_Building.comps.5.upgradeLabel>Улучшить до T5</Grechka_AssemblyBenchT4_Building.comps.5.upgradeLabel>
   <Grechka_AssemblyBenchT4_Building.comps.5.upgradeDescription>Пешка улучшит это устройство на месте. Установленный корпус и подходящие материалы уже зачтены в цене. Задания, дробный бонус выпуска и относительная прочность сохраняются.</Grechka_AssemblyBenchT4_Building.comps.5.upgradeDescription>
-  <Grechka_AssemblyBenchT5_Building.label>сборочный верстак T5</Grechka_AssemblyBenchT5_Building.label>
+  <Grechka_AssemblyBenchT5_Building.label>гречневый верстак (T5)</Grechka_AssemblyBenchT5_Building.label>
   <Grechka_AssemblyBenchT5_Building.description>Тир 5. Скорость ×60, скидка сырья 50%, бонус выхода 100%. Потребление 11200 Вт.</Grechka_AssemblyBenchT5_Building.description>
-  <Grechka_MatterRecyclerT4_Building.label>генератор материи T4</Grechka_MatterRecyclerT4_Building.label>
+  <Grechka_MatterRecyclerT4_Building.label>архо-генератор материи (T4)</Grechka_MatterRecyclerT4_Building.label>
   <Grechka_MatterRecyclerT4_Building.description>Генератор материи T4. Потребляет 8,000,000 Вт. Задания выполняет пешка или подключённый крафтер. Цена материи определяется рыночной стоимостью предмета без торговых наценок. Контейнеры, живые существа и уникальное состояние не копируются.</Grechka_MatterRecyclerT4_Building.description>
   <Grechka_MatterRecyclerT4_Building.comps.6.upgradeLabel>Улучшить до T5</Grechka_MatterRecyclerT4_Building.comps.6.upgradeLabel>
   <Grechka_MatterRecyclerT4_Building.comps.6.upgradeDescription>Пешка улучшит это устройство на месте. Установленный корпус и подходящие материалы уже зачтены в цене. Задания, дробный бонус выпуска и относительная прочность сохраняются.</Grechka_MatterRecyclerT4_Building.comps.6.upgradeDescription>
-  <Grechka_MatterRecyclerT5_Building.label>генератор материи T5</Grechka_MatterRecyclerT5_Building.label>
+  <Grechka_MatterRecyclerT5_Building.label>гречневый генератор материи (T5)</Grechka_MatterRecyclerT5_Building.label>
   <Grechka_MatterRecyclerT5_Building.description>Генератор материи T5. Потребляет 30,000,000 Вт. Задания выполняет пешка или подключённый крафтер. Цена материи определяется рыночной стоимостью предмета без торговых наценок. Контейнеры, живые существа и уникальное состояние не копируются.</Grechka_MatterRecyclerT5_Building.description>
-  <Grechka_MatterSynthesizerT4_Building.label>синтезатор материи T4</Grechka_MatterSynthesizerT4_Building.label>
+  <Grechka_MatterSynthesizerT4_Building.label>архо-синтезатор материи (T4)</Grechka_MatterSynthesizerT4_Building.label>
   <Grechka_MatterSynthesizerT4_Building.description>Синтезатор материи T4. Потребляет 12,000,000 Вт. Задания выполняет пешка или подключённый крафтер. Цена материи определяется рыночной стоимостью предмета без торговых наценок. Контейнеры, живые существа и уникальное состояние не копируются.</Grechka_MatterSynthesizerT4_Building.description>
   <Grechka_MatterSynthesizerT4_Building.comps.5.upgradeLabel>Улучшить до T5</Grechka_MatterSynthesizerT4_Building.comps.5.upgradeLabel>
   <Grechka_MatterSynthesizerT4_Building.comps.5.upgradeDescription>Пешка улучшит это устройство на месте. Установленный корпус и подходящие материалы уже зачтены в цене. Задания, дробный бонус выпуска и относительная прочность сохраняются.</Grechka_MatterSynthesizerT4_Building.comps.5.upgradeDescription>
-  <Grechka_MatterSynthesizerT5_Building.label>синтезатор материи T5</Grechka_MatterSynthesizerT5_Building.label>
+  <Grechka_MatterSynthesizerT5_Building.label>гречневый синтезатор материи (T5)</Grechka_MatterSynthesizerT5_Building.label>
   <Grechka_MatterSynthesizerT5_Building.description>Синтезатор материи T5. Потребляет 60,000,000 Вт. Задания выполняет пешка или подключённый крафтер. Цена материи определяется рыночной стоимостью предмета без торговых наценок. Контейнеры, живые существа и уникальное состояние не копируются.</Grechka_MatterSynthesizerT5_Building.description>
   <Grechka_SolarS3_Building.label>механитная солнечная панель</Grechka_SolarS3_Building.label>
   <Grechka_SolarS3_Building.description>Механитная ступень S3: до 72 000 Вт днём. Переоснащается из одной панели предыдущей ступени; её корпус учитывается.</Grechka_SolarS3_Building.description>
@@ -144,47 +144,47 @@
   <Grechka_SolarS2_Building.label>многослойная солнечная панель</Grechka_SolarS2_Building.label>
   <Grechka_SolarS2_Building.description>Вторая промышленная ступень солнечной линии. Производит до 18000 Вт при достаточном солнечном освещении; ночью не работает.</Grechka_SolarS2_Building.description>
   <Grechka_SolarS2_Building.comps.0.costDescription>предыдущее устройство целиком и дополнительные материалы следующей ступени; установленный корпус уже учтён</Grechka_SolarS2_Building.comps.0.costDescription>
-  <Grechka_PackedMechaponicsT3_Item.label>упакованный мехапоника T3</Grechka_PackedMechaponicsT3_Item.label>
+  <Grechka_PackedMechaponicsT3_Item.label>упакованная мехапоника (T3)</Grechka_PackedMechaponicsT3_Item.label>
   <Grechka_PackedMechaponicsT3_Item.description>Оборудование для перевозки, торговли и повторной установки.</Grechka_PackedMechaponicsT3_Item.description>
-  <Grechka_PackedMechaponicsT4_Item.label>упакованный мехапоника T4</Grechka_PackedMechaponicsT4_Item.label>
+  <Grechka_PackedMechaponicsT4_Item.label>упакованная архопоника (T4)</Grechka_PackedMechaponicsT4_Item.label>
   <Grechka_PackedMechaponicsT4_Item.description>Оборудование для перевозки, торговли и повторной установки.</Grechka_PackedMechaponicsT4_Item.description>
-  <Grechka_PackedMechaponicsT5_Item.label>упакованный мехапоника T5</Grechka_PackedMechaponicsT5_Item.label>
+  <Grechka_PackedMechaponicsT5_Item.label>упакованная гречкапоника (T5)</Grechka_PackedMechaponicsT5_Item.label>
   <Grechka_PackedMechaponicsT5_Item.description>Оборудование для перевозки, торговли и повторной установки.</Grechka_PackedMechaponicsT5_Item.description>
-  <Grechka_PackedIonizerT3_Item.label>упакованный комнатный ионизатор T3</Grechka_PackedIonizerT3_Item.label>
+  <Grechka_PackedIonizerT3_Item.label>упакованный меха-комнатный ионизатор (T3)</Grechka_PackedIonizerT3_Item.label>
   <Grechka_PackedIonizerT3_Item.description>Оборудование для перевозки, торговли и повторной установки.</Grechka_PackedIonizerT3_Item.description>
-  <Grechka_PackedIonizerT4_Item.label>упакованный комнатный ионизатор T4</Grechka_PackedIonizerT4_Item.label>
+  <Grechka_PackedIonizerT4_Item.label>упакованный архо-комнатный ионизатор (T4)</Grechka_PackedIonizerT4_Item.label>
   <Grechka_PackedIonizerT4_Item.description>Оборудование для перевозки, торговли и повторной установки.</Grechka_PackedIonizerT4_Item.description>
-  <Grechka_PackedIonizerT5_Item.label>упакованный комнатный ионизатор T5</Grechka_PackedIonizerT5_Item.label>
+  <Grechka_PackedIonizerT5_Item.label>упакованный гречневый комнатный ионизатор (T5)</Grechka_PackedIonizerT5_Item.label>
   <Grechka_PackedIonizerT5_Item.description>Оборудование для перевозки, торговли и повторной установки.</Grechka_PackedIonizerT5_Item.description>
   <Grechka_PackedMechaniteExtractorT3_Item.label>упакованный межпространственный экстрактор механитов</Grechka_PackedMechaniteExtractorT3_Item.label>
   <Grechka_PackedMechaniteExtractorT3_Item.description>Оборудование для перевозки, торговли и повторной установки.</Grechka_PackedMechaniteExtractorT3_Item.description>
-  <Grechka_PackedMechaniteExtractorT4_Item.label>упакованный экстрактор механитов T4</Grechka_PackedMechaniteExtractorT4_Item.label>
+  <Grechka_PackedMechaniteExtractorT4_Item.label>упакованный архо-экстрактор механитов (T4)</Grechka_PackedMechaniteExtractorT4_Item.label>
   <Grechka_PackedMechaniteExtractorT4_Item.description>Оборудование для перевозки, торговли и повторной установки.</Grechka_PackedMechaniteExtractorT4_Item.description>
-  <Grechka_PackedMechaniteExtractorT5_Item.label>упакованный экстрактор механитов T5</Grechka_PackedMechaniteExtractorT5_Item.label>
+  <Grechka_PackedMechaniteExtractorT5_Item.label>упакованный гречневый экстрактор механитов (T5)</Grechka_PackedMechaniteExtractorT5_Item.label>
   <Grechka_PackedMechaniteExtractorT5_Item.description>Оборудование для перевозки, торговли и повторной установки.</Grechka_PackedMechaniteExtractorT5_Item.description>
-  <Grechka_PackedSuppressionEmitterT4_Item.label>упакованный облучатель подавления T4</Grechka_PackedSuppressionEmitterT4_Item.label>
+  <Grechka_PackedSuppressionEmitterT4_Item.label>упакованный архо-облучатель подавления (T4)</Grechka_PackedSuppressionEmitterT4_Item.label>
   <Grechka_PackedSuppressionEmitterT4_Item.description>Оборудование для перевозки, торговли и повторной установки.</Grechka_PackedSuppressionEmitterT4_Item.description>
-  <Grechka_PackedSuppressionEmitterT5_Item.label>упакованный облучатель подавления T5</Grechka_PackedSuppressionEmitterT5_Item.label>
+  <Grechka_PackedSuppressionEmitterT5_Item.label>упакованный гречневый облучатель подавления (T5)</Grechka_PackedSuppressionEmitterT5_Item.label>
   <Grechka_PackedSuppressionEmitterT5_Item.description>Оборудование для перевозки, торговли и повторной установки.</Grechka_PackedSuppressionEmitterT5_Item.description>
-  <Grechka_PackedAccelerationEmitterT4_Item.label>упакованный облучатель ускорения T4</Grechka_PackedAccelerationEmitterT4_Item.label>
+  <Grechka_PackedAccelerationEmitterT4_Item.label>упакованный архо-облучатель ускорения (T4)</Grechka_PackedAccelerationEmitterT4_Item.label>
   <Grechka_PackedAccelerationEmitterT4_Item.description>Оборудование для перевозки, торговли и повторной установки.</Grechka_PackedAccelerationEmitterT4_Item.description>
-  <Grechka_PackedAccelerationEmitterT5_Item.label>упакованный облучатель ускорения T5</Grechka_PackedAccelerationEmitterT5_Item.label>
+  <Grechka_PackedAccelerationEmitterT5_Item.label>упакованный гречневый облучатель ускорения (T5)</Grechka_PackedAccelerationEmitterT5_Item.label>
   <Grechka_PackedAccelerationEmitterT5_Item.description>Оборудование для перевозки, торговли и повторной установки.</Grechka_PackedAccelerationEmitterT5_Item.description>
-  <Grechka_PackedWellbeingEmitterT4_Item.label>упакованный облучатель тонизирования T4</Grechka_PackedWellbeingEmitterT4_Item.label>
+  <Grechka_PackedWellbeingEmitterT4_Item.label>упакованный архо-облучатель тонизирования (T4)</Grechka_PackedWellbeingEmitterT4_Item.label>
   <Grechka_PackedWellbeingEmitterT4_Item.description>Оборудование для перевозки, торговли и повторной установки.</Grechka_PackedWellbeingEmitterT4_Item.description>
-  <Grechka_PackedWellbeingEmitterT5_Item.label>упакованный облучатель тонизирования T5</Grechka_PackedWellbeingEmitterT5_Item.label>
+  <Grechka_PackedWellbeingEmitterT5_Item.label>упакованный гречневый облучатель тонизирования (T5)</Grechka_PackedWellbeingEmitterT5_Item.label>
   <Grechka_PackedWellbeingEmitterT5_Item.description>Оборудование для перевозки, торговли и повторной установки.</Grechka_PackedWellbeingEmitterT5_Item.description>
-  <Grechka_PackedArchoGeneratorT4_Item.label>упакованный архо-генератор T4</Grechka_PackedArchoGeneratorT4_Item.label>
+  <Grechka_PackedArchoGeneratorT4_Item.label>упакованный архо-генератор (T4)</Grechka_PackedArchoGeneratorT4_Item.label>
   <Grechka_PackedArchoGeneratorT4_Item.description>Оборудование для перевозки, торговли и повторной установки.</Grechka_PackedArchoGeneratorT4_Item.description>
-  <Grechka_PackedArchoGeneratorT5_Item.label>упакованный архо-генератор T5</Grechka_PackedArchoGeneratorT5_Item.label>
+  <Grechka_PackedArchoGeneratorT5_Item.label>упакованный гречневый генератор (T5)</Grechka_PackedArchoGeneratorT5_Item.label>
   <Grechka_PackedArchoGeneratorT5_Item.description>Оборудование для перевозки, торговли и повторной установки.</Grechka_PackedArchoGeneratorT5_Item.description>
-  <Grechka_PackedMatterRecyclerT4_Item.label>упакованный генератор материи T4</Grechka_PackedMatterRecyclerT4_Item.label>
+  <Grechka_PackedMatterRecyclerT4_Item.label>упакованный архо-генератор материи (T4)</Grechka_PackedMatterRecyclerT4_Item.label>
   <Grechka_PackedMatterRecyclerT4_Item.description>Оборудование для перевозки, торговли и повторной установки.</Grechka_PackedMatterRecyclerT4_Item.description>
-  <Grechka_PackedMatterRecyclerT5_Item.label>упакованный генератор материи T5</Grechka_PackedMatterRecyclerT5_Item.label>
+  <Grechka_PackedMatterRecyclerT5_Item.label>упакованный гречневый генератор материи (T5)</Grechka_PackedMatterRecyclerT5_Item.label>
   <Grechka_PackedMatterRecyclerT5_Item.description>Оборудование для перевозки, торговли и повторной установки.</Grechka_PackedMatterRecyclerT5_Item.description>
-  <Grechka_PackedMatterSynthesizerT4_Item.label>упакованный синтезатор материи T4</Grechka_PackedMatterSynthesizerT4_Item.label>
+  <Grechka_PackedMatterSynthesizerT4_Item.label>упакованный архо-синтезатор материи (T4)</Grechka_PackedMatterSynthesizerT4_Item.label>
   <Grechka_PackedMatterSynthesizerT4_Item.description>Оборудование для перевозки, торговли и повторной установки.</Grechka_PackedMatterSynthesizerT4_Item.description>
-  <Grechka_PackedMatterSynthesizerT5_Item.label>упакованный синтезатор материи T5</Grechka_PackedMatterSynthesizerT5_Item.label>
+  <Grechka_PackedMatterSynthesizerT5_Item.label>упакованный гречневый синтезатор материи (T5)</Grechka_PackedMatterSynthesizerT5_Item.label>
   <Grechka_PackedMatterSynthesizerT5_Item.description>Оборудование для перевозки, торговли и повторной установки.</Grechka_PackedMatterSynthesizerT5_Item.description>
   <Grechka_HousingT1_Item.label>базовый корпус</Grechka_HousingT1_Item.label>
   <Grechka_HousingT1_Item.description>Светло-серый корпус для первых промышленных станков. Его собирают вручную из стали и обычных компонентов.</Grechka_HousingT1_Item.description>
@@ -196,7 +196,7 @@
   <Grechka_ComponentT3_Item.description>Компонент третьего тира с активными механитами. Нужен для меха-машин и корпусов T3.</Grechka_ComponentT3_Item.description>
   <Grechka_HousingT3_Item.label>меха-корпус</Grechka_HousingT3_Item.label>
   <Grechka_HousingT3_Item.description>Голубой корпус третьего промышленного тира с механитными узлами.</Grechka_HousingT3_Item.description>
-  <Grechka_MechaponicsT3_Building.label>мехапоника T3</Grechka_MechaponicsT3_Building.label>
+  <Grechka_MechaponicsT3_Building.label>мехапоника (T3)</Grechka_MechaponicsT3_Building.label>
   <Grechka_MechaponicsT3_Building.description>Одноклеточная ферма с механитами. При питании 500 Вт растение не требует света и растёт в пять раз быстрее своей обычной скорости при тех же температуре и прочих условиях. Нужны обычные посев и сбор. Без питания рост приостанавливается; само отключение не повреждает растение. Питательный раствор не нужен.</Grechka_MechaponicsT3_Building.description>
   <Grechka_MechaponicsT3_Building.comps.4.costDescription>предыдущее устройство целиком и дополнительные материалы следующей ступени; установленный корпус уже учтён</Grechka_MechaponicsT3_Building.comps.4.costDescription>
   <Grechka_MechaniteExtractorT3_Building.label>межпространственный экстрактор механитов</Grechka_MechaniteExtractorT3_Building.label>
@@ -213,25 +213,25 @@
   <Grechka_SolarS5_Building.comps.3.costDescription>предыдущее устройство целиком и дополнительные материалы следующей ступени; установленный корпус уже учтён</Grechka_SolarS5_Building.comps.3.costDescription>
   <Grechka_SolarS6_Building.label>гречневое солнце</Grechka_SolarS6_Building.label>
   <Grechka_SolarS6_Building.description>Солнечная ступень S6: 55,296,000 Вт. Работает круглосуточно на полной мощности.</Grechka_SolarS6_Building.description>
-  <Grechka_SuppressionEmitterT4_Building.label>облучатель подавления T4</Grechka_SuppressionEmitterT4_Building.label>
+  <Grechka_SuppressionEmitterT4_Building.label>архо-облучатель подавления (T4)</Grechka_SuppressionEmitterT4_Building.label>
   <Grechka_SuppressionEmitterT4_Building.description>Облучатель подавления T4. Действует в радиусе 20 клеток. Несколько устройств одной роли не складываются; используется сильнейшее.</Grechka_SuppressionEmitterT4_Building.description>
   <Grechka_SuppressionEmitterT4_Building.comps.5.costDescription>предыдущее устройство целиком и дополнительные материалы следующей ступени; установленный корпус уже учтён</Grechka_SuppressionEmitterT4_Building.comps.5.costDescription>
-  <Grechka_SuppressionEmitterT5_Building.label>облучатель подавления T5</Grechka_SuppressionEmitterT5_Building.label>
+  <Grechka_SuppressionEmitterT5_Building.label>гречневый облучатель подавления (T5)</Grechka_SuppressionEmitterT5_Building.label>
   <Grechka_SuppressionEmitterT5_Building.description>Облучатель подавления T5. Действует в радиусе 32 клеток. Несколько устройств одной роли не складываются; используется сильнейшее.</Grechka_SuppressionEmitterT5_Building.description>
-  <Grechka_AccelerationEmitterT4_Building.label>облучатель ускорения T4</Grechka_AccelerationEmitterT4_Building.label>
+  <Grechka_AccelerationEmitterT4_Building.label>архо-облучатель ускорения (T4)</Grechka_AccelerationEmitterT4_Building.label>
   <Grechka_AccelerationEmitterT4_Building.description>Облучатель ускорения T4. Действует в радиусе 20 клеток. Несколько устройств одной роли не складываются; используется сильнейшее.</Grechka_AccelerationEmitterT4_Building.description>
   <Grechka_AccelerationEmitterT4_Building.comps.5.costDescription>предыдущее устройство целиком и дополнительные материалы следующей ступени; установленный корпус уже учтён</Grechka_AccelerationEmitterT4_Building.comps.5.costDescription>
-  <Grechka_AccelerationEmitterT5_Building.label>облучатель ускорения T5</Grechka_AccelerationEmitterT5_Building.label>
+  <Grechka_AccelerationEmitterT5_Building.label>гречневый облучатель ускорения (T5)</Grechka_AccelerationEmitterT5_Building.label>
   <Grechka_AccelerationEmitterT5_Building.description>Облучатель ускорения T5. Действует в радиусе 32 клеток. Несколько устройств одной роли не складываются; используется сильнейшее.</Grechka_AccelerationEmitterT5_Building.description>
-  <Grechka_WellbeingEmitterT4_Building.label>облучатель тонизирования T4</Grechka_WellbeingEmitterT4_Building.label>
+  <Grechka_WellbeingEmitterT4_Building.label>архо-облучатель тонизирования (T4)</Grechka_WellbeingEmitterT4_Building.label>
   <Grechka_WellbeingEmitterT4_Building.description>Облучатель тонизирования T4. Действует в радиусе 20 клеток. Несколько устройств одной роли не складываются; используется сильнейшее.</Grechka_WellbeingEmitterT4_Building.description>
   <Grechka_WellbeingEmitterT4_Building.comps.5.costDescription>предыдущее устройство целиком и дополнительные материалы следующей ступени; установленный корпус уже учтён</Grechka_WellbeingEmitterT4_Building.comps.5.costDescription>
-  <Grechka_WellbeingEmitterT5_Building.label>облучатель тонизирования T5</Grechka_WellbeingEmitterT5_Building.label>
+  <Grechka_WellbeingEmitterT5_Building.label>гречневый облучатель тонизирования (T5)</Grechka_WellbeingEmitterT5_Building.label>
   <Grechka_WellbeingEmitterT5_Building.description>Облучатель тонизирования T5. Действует в радиусе 32 клеток. Несколько устройств одной роли не складываются; используется сильнейшее.</Grechka_WellbeingEmitterT5_Building.description>
-  <Grechka_ArchoGeneratorT4_Building.label>архо-генератор T4</Grechka_ArchoGeneratorT4_Building.label>
+  <Grechka_ArchoGeneratorT4_Building.label>архо-генератор (T4)</Grechka_ArchoGeneratorT4_Building.label>
   <Grechka_ArchoGeneratorT4_Building.description>Архо-генератор T4. Постоянная генерация без топлива.</Grechka_ArchoGeneratorT4_Building.description>
   <Grechka_ArchoGeneratorT4_Building.comps.4.costDescription>предыдущее устройство целиком и дополнительные материалы следующей ступени; установленный корпус уже учтён</Grechka_ArchoGeneratorT4_Building.comps.4.costDescription>
-  <Grechka_ArchoGeneratorT5_Building.label>архо-генератор T5</Grechka_ArchoGeneratorT5_Building.label>
+  <Grechka_ArchoGeneratorT5_Building.label>гречневый генератор (T5)</Grechka_ArchoGeneratorT5_Building.label>
   <Grechka_ArchoGeneratorT5_Building.description>Архо-генератор T5. Постоянная генерация без топлива.</Grechka_ArchoGeneratorT5_Building.description>
   <Grechka_PackedSolarS3_Item.label>упакованная механитная солнечная панель</Grechka_PackedSolarS3_Item.label>
   <Grechka_PackedSolarS3_Item.description>Целиком снятая панель S3 для повторной установки или дальнейшей сборки.</Grechka_PackedSolarS3_Item.description>
@@ -239,9 +239,9 @@
   <Grechka_PackedSolarS4_Item.description>Целиком снятая панель S4 для повторной установки или дальнейшей сборки.</Grechka_PackedSolarS4_Item.description>
   <Grechka_SolarCellT3_Item.label>механитный фотоэлемент</Grechka_SolarCellT3_Item.label>
   <Grechka_SolarCellT3_Item.description>Фотоэлемент третьего тира: предыдущие фотоэлементы усилены механитами. Используется в механитных солнечных панелях и матрицах.</Grechka_SolarCellT3_Item.description>
-  <Grechka_MechaponicsT4_Building.label>мехапоника T4</Grechka_MechaponicsT4_Building.label>
+  <Grechka_MechaponicsT4_Building.label>архопоника (T4)</Grechka_MechaponicsT4_Building.label>
   <Grechka_MechaponicsT4_Building.description>Рост ×20, 3000 Вт, без света и раствора. Посев и сбор выполняют пешки.</Grechka_MechaponicsT4_Building.description>
   <Grechka_MechaponicsT4_Building.comps.4.costDescription>предыдущее устройство целиком и дополнительные материалы следующей ступени; установленный корпус уже учтён</Grechka_MechaponicsT4_Building.comps.4.costDescription>
-  <Grechka_MechaponicsT5_Building.label>мехапоника T5</Grechka_MechaponicsT5_Building.label>
+  <Grechka_MechaponicsT5_Building.label>гречкапоника (T5)</Grechka_MechaponicsT5_Building.label>
   <Grechka_MechaponicsT5_Building.description>Рост ×50, 10000 Вт, без света и раствора. Посев и сбор выполняют пешки.</Grechka_MechaponicsT5_Building.description>
 </LanguageData>

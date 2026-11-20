@@ -54,7 +54,7 @@
   </PawnKindDef>
   <PawnKindDef>
     <defName>Grechka_RescueDroneT3_Unit</defName>
-    <label>дрон-МЧСник T3</label>
+    <label>меха-дрон-МЧСник (T3)</label>
     <race>Grechka_RescueDroneT3_Unit</race>
     <combatPower>60</combatPower>
     <chemicalAddictionChance>0</chemicalAddictionChance>
@@ -80,7 +80,7 @@
   </PawnKindDef>
   <PawnKindDef>
     <defName>Grechka_RescueDroneT4_Unit</defName>
-    <label>дрон-МЧСник T4</label>
+    <label>архо-дрон-МЧСник (T4)</label>
     <race>Grechka_RescueDroneT4_Unit</race>
     <combatPower>90</combatPower>
     <chemicalAddictionChance>0</chemicalAddictionChance>
@@ -106,7 +106,7 @@
   </PawnKindDef>
   <PawnKindDef>
     <defName>Grechka_RescueDroneT5_Unit</defName>
-    <label>дрон-МЧСник T5</label>
+    <label>гречневый дрон-МЧСник (T5)</label>
     <race>Grechka_RescueDroneT5_Unit</race>
     <combatPower>120</combatPower>
     <chemicalAddictionChance>0</chemicalAddictionChance>
@@ -184,7 +184,7 @@
   </PawnKindDef>
   <PawnKindDef>
     <defName>Grechka_WarriorDroneT3_Unit</defName>
-    <label>дрон-воин T3</label>
+    <label>меха-дрон-воин (T3)</label>
     <race>Grechka_WarriorDroneT3_Unit</race>
     <combatPower>300</combatPower>
     <chemicalAddictionChance>0</chemicalAddictionChance>
@@ -210,7 +210,7 @@
   </PawnKindDef>
   <PawnKindDef>
     <defName>Grechka_WarriorDroneT4_Unit</defName>
-    <label>дрон-воин T4</label>
+    <label>архо-дрон-воин (T4)</label>
     <race>Grechka_WarriorDroneT4_Unit</race>
     <combatPower>500</combatPower>
     <chemicalAddictionChance>0</chemicalAddictionChance>
@@ -236,7 +236,7 @@
   </PawnKindDef>
   <PawnKindDef>
     <defName>Grechka_WarriorDroneT5_Unit</defName>
-    <label>дрон-воин T5</label>
+    <label>гречневый дрон-воин (T5)</label>
     <race>Grechka_WarriorDroneT5_Unit</race>
     <combatPower>800</combatPower>
     <chemicalAddictionChance>0</chemicalAddictionChance>

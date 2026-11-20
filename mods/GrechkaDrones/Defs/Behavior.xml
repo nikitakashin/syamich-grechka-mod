@@ -63,7 +63,7 @@
           <treeDef>LordDuty</treeDef>
         </li>
         <li Class="Grechka.Drones.JobGiver_CaravanRecharge" />
-        <li Class="JobGiver_GetFood" />
+        <li Class="Grechka.Drones.JobGiver_CaravanFood" />
         <li Class="Grechka.Drones.JobGiver_CaravanHaul" />
         <li Class="JobGiver_WanderColony" />
         <li Class="JobGiver_IdleForever" />

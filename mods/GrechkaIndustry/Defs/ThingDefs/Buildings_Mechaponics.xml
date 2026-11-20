@@ -2,7 +2,7 @@
 <Defs>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_MechaponicsT3_Building</defName>
-    <label>мехапоника T3</label>
+    <label>мехапоника (T3)</label>
     <description>Одноклеточная ферма с механитами. При питании 500 Вт растение не требует света и растёт в пять раз быстрее своей обычной скорости при тех же температуре и прочих условиях. Нужны обычные посев и сбор. Без питания рост приостанавливается; само отключение не повреждает растение. Питательный раствор не нужен.</description>
     <thingClass>Grechka.Industry.Building_Mechaponics</thingClass>
     <graphicData>

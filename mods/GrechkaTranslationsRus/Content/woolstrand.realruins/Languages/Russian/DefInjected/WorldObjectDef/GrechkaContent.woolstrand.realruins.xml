@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LanguageData>
+  <AbandonedBase.description>Остатки покинутого поселения.</AbandonedBase.description>
+  <AbandonedBase.label>руины</AbandonedBase.label>
+  <CaravanSmallRuinsWorldObject.description>Небольшие руины.</CaravanSmallRuinsWorldObject.description>
+  <CaravanSmallRuinsWorldObject.label>небольшие руины</CaravanSmallRuinsWorldObject.label>
+  <RealRuinsPOI.description>Группа построек. Стоит осмотреть.</RealRuinsPOI.description>
+  <RealRuinsPOI.label>группа построек</RealRuinsPOI.label>
+</LanguageData>

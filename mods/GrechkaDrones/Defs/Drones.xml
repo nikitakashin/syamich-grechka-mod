@@ -86,7 +86,7 @@
   </ThingDef>
   <ThingDef Class="AIRobot.X2_ThingDef_AIRobot" ParentName="Grechka_DroneBase">
     <defName>Grechka_RescueDroneT3_Unit</defName>
-    <label>дрон-МЧСник T3</label>
+    <label>меха-дрон-МЧСник (T3)</label>
     <description>Негорючий спасательный дрон. Переносит своих раненых в медицинские кровати и тушит пожары пеной по площади. По переключателю берёт раненых врагов в плен при наличии тюремных мест. Ради спасения своего оставляет переносимого врага.</description>
     <uiIconPath>Drones/Rescue/T3/RescueT3_south</uiIconPath>
     <statBases>
@@ -128,7 +128,7 @@
   </ThingDef>
   <ThingDef Class="AIRobot.X2_ThingDef_AIRobot" ParentName="Grechka_DroneBase">
     <defName>Grechka_RescueDroneT4_Unit</defName>
-    <label>дрон-МЧСник T4</label>
+    <label>архо-дрон-МЧСник (T4)</label>
     <description>Негорючий спасательный дрон. Переносит своих раненых в медицинские кровати и тушит пожары пеной по площади. По переключателю берёт раненых врагов в плен при наличии тюремных мест. Ради спасения своего оставляет переносимого врага.</description>
     <uiIconPath>Drones/Rescue/T4/RescueT4_south</uiIconPath>
     <statBases>
@@ -170,7 +170,7 @@
   </ThingDef>
   <ThingDef Class="AIRobot.X2_ThingDef_AIRobot" ParentName="Grechka_DroneBase">
     <defName>Grechka_RescueDroneT5_Unit</defName>
-    <label>дрон-МЧСник T5</label>
+    <label>гречневый дрон-МЧСник (T5)</label>
     <description>Негорючий спасательный дрон. Переносит своих раненых в медицинские кровати и тушит пожары пеной по площади. По переключателю берёт раненых врагов в плен при наличии тюремных мест. Ради спасения своего оставляет переносимого врага.</description>
     <uiIconPath>Drones/Rescue/T5/RescueT5_south</uiIconPath>
     <statBases>
@@ -296,7 +296,7 @@
   </ThingDef>
   <ThingDef Class="AIRobot.X2_ThingDef_AIRobot" ParentName="Grechka_DroneBase">
     <defName>Grechka_WarriorDroneT3_Unit</defName>
-    <label>дрон-воин T3</label>
+    <label>меха-дрон-воин (T3)</label>
     <description>Негорючий боевой дрон ближнего боя с огромным запасом здоровья. Патрулирует домашнюю территорию и защищает колонию от нападающих. При 30% здоровья отступает к своему доку на ремонт.</description>
     <uiIconPath>Drones/Warrior/T3/WarriorT3_south</uiIconPath>
     <statBases>
@@ -338,7 +338,7 @@
   </ThingDef>
   <ThingDef Class="AIRobot.X2_ThingDef_AIRobot" ParentName="Grechka_DroneBase">
     <defName>Grechka_WarriorDroneT4_Unit</defName>
-    <label>дрон-воин T4</label>
+    <label>архо-дрон-воин (T4)</label>
     <description>Негорючий боевой дрон ближнего боя с огромным запасом здоровья. Патрулирует домашнюю территорию и защищает колонию от нападающих. При 30% здоровья отступает к своему доку на ремонт.</description>
     <uiIconPath>Drones/Warrior/T4/WarriorT4_south</uiIconPath>
     <statBases>
@@ -380,7 +380,7 @@
   </ThingDef>
   <ThingDef Class="AIRobot.X2_ThingDef_AIRobot" ParentName="Grechka_DroneBase">
     <defName>Grechka_WarriorDroneT5_Unit</defName>
-    <label>дрон-воин T5</label>
+    <label>гречневый дрон-воин (T5)</label>
     <description>Негорючий боевой дрон ближнего боя с огромным запасом здоровья. Патрулирует домашнюю территорию и защищает колонию от нападающих. При 30% здоровья отступает к своему доку на ремонт.</description>
     <uiIconPath>Drones/Warrior/T5/WarriorT5_south</uiIconPath>
     <statBases>

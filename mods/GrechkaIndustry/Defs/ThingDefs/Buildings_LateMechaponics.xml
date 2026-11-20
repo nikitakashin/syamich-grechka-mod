@@ -2,7 +2,7 @@
 <Defs>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_MechaponicsT4_Building</defName>
-    <label>мехапоника T4</label>
+    <label>архопоника (T4)</label>
     <description>Рост ×20, 3000 Вт, без света и раствора. Посев и сбор выполняют пешки.</description>
     <thingClass>Grechka.Industry.Building_Mechaponics</thingClass>
     <graphicData>
@@ -72,7 +72,7 @@
   </ThingDef>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_MechaponicsT5_Building</defName>
-    <label>мехапоника T5</label>
+    <label>гречкапоника (T5)</label>
     <description>Рост ×50, 10000 Вт, без света и раствора. Посев и сбор выполняют пешки.</description>
     <thingClass>Grechka.Industry.Building_Mechaponics</thingClass>
     <graphicData>

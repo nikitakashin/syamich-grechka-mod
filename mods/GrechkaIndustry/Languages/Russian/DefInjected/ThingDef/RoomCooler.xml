@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <Grechka_RoomCooler_Building.label>комнатный электроохладитель</Grechka_RoomCooler_Building.label>
+  <Grechka_RoomCooler_Building.description>Напольный электрический охладитель с настраиваемой целевой температурой. Охлаждает комнату вдвое мощнее деревянного охладителя. Потребляет 250 Вт при охлаждении и 25 Вт после достижения температуры. Работает внутри закрытого помещения.</Grechka_RoomCooler_Building.description>
+</LanguageData>

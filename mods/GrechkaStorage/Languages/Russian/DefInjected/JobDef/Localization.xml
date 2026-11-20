@@ -3,4 +3,5 @@
   <Grechka_ImportStorage.reportString>переносит TargetA в Storage.</Grechka_ImportStorage.reportString>
   <Grechka_ExportStorage.reportString>выдаёт предметы из Storage.</Grechka_ExportStorage.reportString>
   <Grechka_RemoveDisk.reportString>извлекает диск из TargetA.</Grechka_RemoveDisk.reportString>
+  <Grechka_UnloadDisk.reportString>разгружает диск в TargetA.</Grechka_UnloadDisk.reportString>
 </LanguageData>

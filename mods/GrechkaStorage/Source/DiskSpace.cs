@@ -24,6 +24,7 @@ namespace Grechka.Storage
         public readonly long Capacity;
         private readonly Dictionary<DiskItemKey, long> counts = new Dictionary<DiskItemKey, long>();
         public long UsedBytes { get; private set; }
+        public float FillFraction => Math.Clamp((float)UsedBytes / Capacity, 0f, 1f);
         public int Types { get { return counts.Count; } }
         public long ItemCount { get { return counts.Values.Sum(); } }
         // The 63-type limit alone does not fill a disk: existing types can still grow.

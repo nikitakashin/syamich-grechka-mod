@@ -2,7 +2,7 @@
 <Defs>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_IonizerT4_Building</defName>
-    <label>комнатный ионизатор T4</label>
+    <label>архо-комнатный ионизатор (T4)</label>
     <description>Усиленное оборудование T4. Освещает всю закрытую комнату и убирает грязь. Без суммирования одинаковых эффектов.</description>
     <thingClass>Building</thingClass>
     <graphicData>
@@ -66,7 +66,7 @@
   </ThingDef>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_IonizerT5_Building</defName>
-    <label>комнатный ионизатор T5</label>
+    <label>гречневый комнатный ионизатор (T5)</label>
     <description>Усиленное оборудование T5. Освещает всю закрытую комнату и убирает грязь. Без суммирования одинаковых эффектов.</description>
     <thingClass>Building</thingClass>
     <graphicData>
@@ -126,7 +126,7 @@
   </ThingDef>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_MechaniteExtractorT4_Building</defName>
-    <label>экстрактор механитов T4</label>
+    <label>архо-экстрактор механитов (T4)</label>
     <description>Усиленное оборудование T4. Извлекает механиты без газа. Прогресс сохраняется без питания.</description>
     <thingClass>Building</thingClass>
     <graphicData>
@@ -194,7 +194,7 @@
   </ThingDef>
   <ThingDef ParentName="BuildingBase">
     <defName>Grechka_MechaniteExtractorT5_Building</defName>
-    <label>экстрактор механитов T5</label>
+    <label>гречневый экстрактор механитов (T5)</label>
     <description>Усиленное оборудование T5. Извлекает механиты без газа. Прогресс сохраняется без питания.</description>
     <thingClass>Building</thingClass>
     <graphicData>

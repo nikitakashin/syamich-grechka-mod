@@ -9,7 +9,11 @@ namespace Grechka.Storage
     public sealed class GrechkaStorageMod : Mod
     {
         public GrechkaStorageMod(ModContentPack content) : base(content)
-        { new Harmony("grechka.storage.signal-network").PatchAll(typeof(GrechkaStorageMod).Assembly); }
+        {
+            var harmony = new Harmony("grechka.storage.signal-network");
+            harmony.PatchAll(typeof(GrechkaStorageMod).Assembly);
+            StorageRobotRepair.Install(harmony);
+        }
     }
 
     public sealed class NetworkView

@@ -171,4 +171,10 @@
   <GrechkaStorage_Text160>Предмет не подходит для этого рецепта</GrechkaStorage_Text160>
   <GrechkaStorage_Text161>Выбранная вещь больше не доступна на дисках</GrechkaStorage_Text161>
   <GrechkaStorage_Text162>Количество выбранного стека изменилось. Отмените заказ и выберите вещь заново.</GrechkaStorage_Text162>
+  <GrechkaStorage_RegularTab>Обычные диски</GrechkaStorage_RegularTab>
+  <GrechkaStorage_FrozenTab>Морозильные диски</GrechkaStorage_FrozenTab>
+  <GrechkaStorage_Unload>Извлечь предметы</GrechkaStorage_Unload>
+  <GrechkaStorage_CancelUnload>Отменить разгрузку</GrechkaStorage_CancelUnload>
+  <GrechkaStorage_ResumeIntake>Возобновить приём</GrechkaStorage_ResumeIntake>
+  <GrechkaStorage_UnloadTip>Пешки перенесут содержимое на склад или положат рядом со стойкой, если места нет. Диск останется закрыт для приёма, пока вы его не включите.</GrechkaStorage_UnloadTip>
 </LanguageData>

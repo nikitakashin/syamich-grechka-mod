@@ -33,6 +33,37 @@ void Patch(Type type,string method,string prefix) => ht.Patch(AccessTools.Method
 
 var live = new Harmony("grechka.tweaks");
 live.PatchAll(module);
+var arrival = AccessTools.Method(typeof(ScenPart_PlayerPawnsArriveMethod), "DoDropPods");
+var deliver = AccessTools.Method(T("StartingDropPods"), "Deliver");
+Check(PatchProcessor.GetCurrentInstructions(arrival).Count(op => op.Calls(deliver)) == 1,
+    "The native starting scenario routes its complete drop groups through the landing guard");
+Check(Harmony.GetPatchInfo(AccessTools.Method(typeof(MapGenerator), nameof(MapGenerator.GenerateMap)))
+    .Postfixes.Any(p => p.PatchMethod.DeclaringType == T("StartingDropPods+Finish")),
+    "The starting capsules are released when the native map generator returns");
+var lootPatch = AccessTools.Method(typeof(IncidentWorker_RaidEnemy), "GenerateRaidLoot");
+Check(Harmony.GetPatchInfo(lootPatch).Postfixes.Any(p => p.PatchMethod.DeclaringType == T("RaidSupplies")),
+    "Varied raid cargo is registered on native enemy raid loot generation");
+var savedMarketValue = StatDefOf.MarketValue;
+StatDefOf.MarketValue = new StatDef { defName = "FixtureRaidMarketValue", defaultBaseValue = 1 };
+try
+{
+    var offerings = new[] { ("Pemmican", 2f), ("MedicineHerbal", 10f), ("ComponentIndustrial", 25f), ("Gold", 10f), ("Silver", 1f) }
+        .ToDictionary(i => i.Item1, i => new ThingDef { defName = i.Item1,
+            statBases = new() { new StatModifier { stat = StatDefOf.MarketValue, value = i.Item2 } } });
+    Func<string, ThingDef> resolve = n => offerings.GetValueOrDefault(n);
+    Rand.PushState(447);
+    try
+    {
+        var loot = (List<ThingDefCountClass>)Call(T("RaidSupplies"), "Plan", 4000f, resolve);
+        float value = loot.Sum(entry => entry.count * entry.thingDef.BaseMarketValue);
+        Check(loot.Count == 4 && loot.Select(e => e.thingDef).Distinct().Count() == 4 && value is > 2900 and <= 3000,
+            "A large raid carries four types of loot within the previous 0.75-per-point budget");
+        Check(((List<ThingDefCountClass>)Call(T("RaidSupplies"), "Plan", 0f, resolve)).Count == 0,
+            "A raid without points adds no cargo");
+    }
+    finally { Rand.PopState(); }
+}
+finally { StatDefOf.MarketValue = savedMarketValue; }
 Call(T("Editors"),"Install");
 foreach (var (key,owner) in new[]{("CHARACTER_EDITOR_ASSEMBLY","charactereditor"),("PREPARE_CAREFULLY_ASSEMBLY","preparecarefully")})
     if (!string.IsNullOrEmpty(Environment.GetEnvironmentVariable(key)))
@@ -237,14 +268,16 @@ object[] lateSpeed={StatRequest.For(pawn),new StatDef{defName="GeneralLaborSpeed
 Call(worker,"Postfix",lateSpeed);
 Check((float)lateSpeed[2]>3 && MeanQuality(200)>quality100+.2,"mastery continues to improve work and quality through 200");
 
-var rollSpecialist=AccessTools.Method(T("StartingSpecialist"),"Postfix");
+var rollSpecialist=AccessTools.Method(T("GeneratedSpecialist"),"Postfix");
 var rollInterest=AccessTools.Method(T("GenerateInterest"),"Postfix");
 var request=new PawnGenerationRequest {Context=PawnGenerationContext.PlayerStarter};
 var sample=TeamPawn(12,3);
+sample.def = new ThingDef { race = new RaceProperties { intelligence = Intelligence.Humanlike } };
 var main=sample.skills.GetSkill(def);
 var second=new SkillRecord(sample,SkillDefOf.Social);
 sample.skills.skills.Add(second);
 int specialists=0;
+int exceptionalStarters=0, exceptionalVisitors=0, ordinaryVisitors=0;
 var grades=new int[7];
 int upgradedMinor=0;
 Rand.PushState(973196);
@@ -257,16 +290,25 @@ try
         rollInterest.Invoke(null,new object[]{sample,request});
         grades[Mastery.Grade(main)]++;
         if(Mastery.Grade(second)==4) upgradedMinor++;
-        rollSpecialist.Invoke(null,new object[]{sample});
+        rollSpecialist.Invoke(null,new object[]{sample,request});
         int level=Mastery.Level(main);
         if(level>=21 && level<=35) specialists++;
+        else if(level>=50 && level<=65 && Mastery.Grade(main)==6 && Mastery.Grade(second)==6) exceptionalStarters++;
         else if(level!=12) throw new Exception("Invalid starter specialism");
         if(Mastery.Level(second)!=6) throw new Exception("Two specialisms on one pawn");
+        Mastery.SetLevel(main,12,0); Mastery.SetGrade(main,3);
+        Mastery.SetLevel(second,6,0); Mastery.SetGrade(second,2);
+        rollSpecialist.Invoke(null,new object[]{sample,new PawnGenerationRequest { Context = PawnGenerationContext.NonPlayer }});
+        level=Mastery.Level(main);
+        if(level is >=21 and <=35) ordinaryVisitors++;
+        if(level is >=50 and <=65 && Mastery.Grade(main)==6 && Mastery.Grade(second)==6) exceptionalVisitors++;
     }
 }
 finally { Rand.PopState(); }
 Console.WriteLine($"Starting sample of 10000: {specialists} specialists; Major rolls Triple {grades[4]}, Pink {grades[5]}, Violet {grades[6]}; Minor to Triple {upgradedMinor}");
-Check(specialists is >1800 and <2200 && grades[4] is >2700 and <3300 && grades[5] is >1350 and <1650 &&
+Check(specialists is >1350 and <1650 && exceptionalStarters is >425 and <575 &&
+      ordinaryVisitors is >500 and <700 && exceptionalVisitors is >145 and <260 &&
+      grades[4] is >2700 and <3300 && grades[5] is >1350 and <1650 &&
       grades[6] is >425 and <575 && upgradedMinor is >850 and <1150,"starter frequencies on 10,000 reproducible draws");
 ThingDef StackDef(string name, ThingCategory category, int limit)
 {

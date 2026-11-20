@@ -50,7 +50,7 @@ namespace Grechka.WorldIntegration
         }
 
         public static bool IsUpgrade(RecipeDef recipe) => recipe != null &&
-            (ProfileVariants.IsUpgrade(recipe) || recipe.defName.StartsWith("Grechka_Upgrade", StringComparison.Ordinal));
+            (ProfileVariants.IsUpgrade(recipe) || recipe.defName?.StartsWith("Grechka_Upgrade", StringComparison.Ordinal) == true);
     }
 
     [HarmonyPatch(typeof(ThingDef), "get_AllRecipes")]
@@ -69,7 +69,10 @@ namespace Grechka.WorldIntegration
         public static void Postfix(ThingDef __instance, ref List<RecipeDef> __result)
         {
             if (__result == null || __instance.thingClass == null || !typeof(IBillGiver).IsAssignableFrom(__instance.thingClass)
-                || !TierMachineFamilies.TryDescribe(__instance, out _, out int tier)) return;
+                || !TierMachineFamilies.TryDescribe(__instance, out string family, out int tier)) return;
+            // Matter conversion recipes encode their own tier-specific budgets.
+            // Keep family identity for work/presets while offering each bench's own recipes.
+            if (family == "Grechka_MatterRecyclerT4_Building" || family == "Grechka_MatterSynthesizerT4_Building") return;
             if (!lowerDefs.TryGetValue(__instance, out var lower))
                 lowerDefs[__instance] = lower = TierMachineFamilies.Members(__instance)
                     .Where(d => d != __instance && d.thingClass != null && typeof(IBillGiver).IsAssignableFrom(d.thingClass)

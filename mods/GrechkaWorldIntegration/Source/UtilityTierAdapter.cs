@@ -9,8 +9,35 @@ using Verse;
 
 namespace Grechka.WorldIntegration
 {
+    internal static class TierGeothermal
+    {
+        internal static bool Applies(ThingDef def) => def?.comps?.Any(p => p.compClass != null
+            && typeof(CompPowerPlantSteam).IsAssignableFrom(p.compClass)) == true;
+
+        internal static float Multiplier(ThingDef def, int tier)
+            => Math.Max(0, tier - (ProfileVariants.Entry(def)?.minimum ?? tier)) switch
+            {
+                1 => 1.5f,
+                2 => 2f,
+                >= 3 => 3f,
+                _ => 1f
+            };
+    }
+
+    [HarmonyPatch(typeof(CompPowerPlant), "UpdateDesiredPowerOutput")]
+    internal static class TierGeothermalOutputHook
+    {
+        static void Postfix(CompPowerPlant __instance)
+        {
+            var parent = __instance.parent;
+            int tier = WorldProfile.GetTier(parent);
+            if (tier == 0 || !TierGeothermal.Applies(parent.def)) return;
+            float watts = __instance.PowerOutput;
+            if (watts > 0f) __instance.PowerOutput = watts * TierGeothermal.Multiplier(parent.def, tier);
+        }
+    }
     /// <summary>
-    /// Explicit non-production families. Tiers change construction/progression, not the original function.
+    /// Explicit non-production families. Battery scaling has its own native adapter.
     /// In particular, a decorative T5 lamp does not draw 80 times as much power for no benefit.
     /// </summary>
     public static class UtilityTierAdapter
@@ -95,13 +122,18 @@ namespace Grechka.WorldIntegration
             int tier = WorldProfile.GetTier(parent);
             VariantEntry entry = ProfileVariants.Entry(parent.def);
             if (tier == 0 || entry == null) return null;
+            string tierLabel = WorldText.Get("GrechkaWorldIntegration_TierInspector", "Grechka • T") + tier;
             if (entry.worktable || entry.factory)
-                return "Grechka: T" + tier + WorldText.Get("GrechkaWorldIntegration_4dc34041f85e", " • speed ×") + ProfileVariants.Speed[tier]
+                return tierLabel + WorldText.Get("GrechkaWorldIntegration_4dc34041f85e", " • speed ×") + ProfileVariants.Speed[tier]
                     + WorldText.Get("GrechkaWorldIntegration_aa2dc98e87d8", ", input −") + Math.Round(ProfileVariants.Discount[tier] * 100) + "%"
                     + WorldText.Get("GrechkaWorldIntegration_bf266285ec80", ", output +") + Math.Round(ProfileVariants.Output[tier] * 100) + "%";
+            if (parent.TryGetComp<CompPowerBattery>() != null) return null; // Native battery inspector shows the effective capacity and efficiency.
+            if (FacilityTierLinks.HasScaledOffsets(parent.def)) return null; // The native facility shows the real offsets and link status.
+            if (TierGeothermal.Applies(parent.def))
+                return tierLabel + WorldText.Get("GrechkaWorldIntegration_GeothermalOutput", " • power ×") + TierGeothermal.Multiplier(parent.def, tier);
             if (SpecialTierAdapter.HasPowerBenefit(parent.def))
-                return "Grechka: T" + tier + WorldText.Get("GrechkaWorldIntegration_75f3dec4f377", " • faster device operation.");
-            return "Grechka: T" + tier + WorldText.Get("GrechkaWorldIntegration_4ed65b1894f6", " • housing and upgrades. Original device stats preserved.");
+                return tierLabel + WorldText.Get("GrechkaWorldIntegration_75f3dec4f377", " • faster device operation.");
+            return tierLabel + WorldText.Get("GrechkaWorldIntegration_4ed65b1894f6", " • housing and upgrades. Original device stats preserved.");
         }
     }
 }

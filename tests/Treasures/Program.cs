@@ -11,6 +11,7 @@ using Verse;
 int checks=0;
 void Check(bool ok,string message){if(!ok)throw new Exception(message);checks++;Console.WriteLine("PASS "+message);}
 string repo=args.Length>0?args[0]:Directory.GetCurrentDirectory();
+bool royalty = !args.Contains("--no-royalty");
 AccessTools.Method(Type.GetType("Waylith.Rendering.ShaderSourceLoader, Waylith",true),"SetOverrideShaderDirectories").Invoke(null,new object[]{new[]{Path.Combine(Environment.GetEnvironmentVariable("RIMWORLD_MANAGED_DIR"),"Rendering/Shaders")}});
 AccessTools.Field(typeof(UnityData),"mainThreadId").SetValue(null,Environment.CurrentManagedThreadId);
 var harmony=new Harmony("grechka.treasures.isolated-tests");
@@ -19,9 +20,22 @@ AccessTools.Field(typeof(Prefs),"data").SetValue(null,new PrefsData());
 var temp=Path.Combine(Path.GetTempPath(),"grechka-treasures-tests-"+Guid.NewGuid().ToString("N"));Directory.CreateDirectory(temp);
 AccessTools.Field(typeof(GenFilePaths),"saveDataPath").SetValue(null,temp);
 Directory.CreateDirectory(Path.Combine(temp,"Config"));Directory.CreateDirectory(Path.Combine(temp,"Mods"));Directory.CreateDirectory(Path.Combine(temp,"Data"));
-File.WriteAllText(Path.Combine(temp,"Config/ModsConfig.xml"),"<ModsConfigData><version>1.7.4998</version><activeMods><li>ludeon.rimworld</li></activeMods></ModsConfigData>");
+File.WriteAllText(Path.Combine(temp,"Config/ModsConfig.xml"),"<ModsConfigData><version>1.7.4998</version><activeMods><li>ludeon.rimworld</li>"
+    + (royalty ? "<li>ludeon.rimworld.royalty</li>" : "") + "</activeMods></ModsConfigData>");
 Directory.CreateDirectory(Path.Combine(temp,"Data/Core/About"));File.WriteAllText(Path.Combine(temp,"Data/Core/About/About.xml"),"<ModMetaData><name>Core</name><author>Ludeon Studios</author><packageId>ludeon.rimworld</packageId><supportedVersions><li>1.7</li></supportedVersions></ModMetaData>");
+if (royalty)
+{
+ Directory.CreateDirectory(Path.Combine(temp, "Data/Royalty/About"));
+ File.WriteAllText(Path.Combine(temp, "Data/Royalty/About/About.xml"), "<ModMetaData><name>Royalty</name><author>Ludeon Studios</author><packageId>ludeon.rimworld.royalty</packageId><supportedVersions><li>1.7</li></supportedVersions></ModMetaData>");
+}
+void FilterThroneDlc(XmlDocument doc)
+{
+ if (royalty) return;
+ foreach (XmlNode item in doc.SelectNodes("Defs/ThingDef[@Name='GrechkaTreasures_JeweledThroneBase']//*[@MayRequire='Ludeon.RimWorld.Royalty']").Cast<XmlNode>().ToList())
+    item.ParentNode.RemoveChild(item);
+}
 AccessTools.Field(typeof(GenFilePaths),"modsFolderPath").SetValue(null,Path.Combine(temp,"Mods"));AccessTools.Field(typeof(GenFilePaths),"officialModsFolderPath").SetValue(null,Path.Combine(temp,"Data"));
+Check(ModsConfig.RoyaltyActive == royalty, "Native DLC state matches the fixture configuration");
 var gameRoot=new DirectoryInfo(Environment.GetEnvironmentVariable("RIMWORLD_MANAGED_DIR"));
 while(!Directory.Exists(Path.Combine(gameRoot.FullName,"Data/Core")))gameRoot=gameRoot.Parent??throw new Exception("Missing game data");
 var moduleAssembly=Assembly.LoadFrom(Path.Combine(repo,"mods/GrechkaTreasures/Assemblies/GrechkaTreasures.dll"));
@@ -33,7 +47,7 @@ foreach(string folder in new[]{"Core","Royalty","Ideology","Biotech","Odyssey","
 {
  if(!Directory.Exists(folder))continue;
  foreach(string file in Directory.GetFiles(folder,"*.xml",SearchOption.AllDirectories)){
-  var doc=new XmlDocument();doc.Load(file);allDocuments.Add(doc);
+  var doc=new XmlDocument();doc.Load(file);FilterThroneDlc(doc);allDocuments.Add(doc);
   foreach(XmlNode node in doc.DocumentElement.ChildNodes){if(node is not XmlElement)continue;string name=node.SelectSingleNode("defName")?.InnerText;var type=TypeFor(node.Name);if(name!=null&&type!=null&&typeof(Def).IsAssignableFrom(type))index[(type,name)]=XElement.Parse(node.OuterXml);}
  }
 }
@@ -51,7 +65,7 @@ foreach(var doc in allDocuments)
   if(node is XmlElement&&node.Attributes?["Name"]!=null&&node.Attributes?["MayRequire"]==null&&node.Attributes?["MayRequireAnyOf"]==null)XmlInheritance.TryRegister(node,pack);
 var nodes=new List<XmlNode>();
 foreach(string file in Directory.GetFiles(Path.Combine(repo,"mods/GrechkaTreasures/Defs"),"*.xml")){
- var doc=new XmlDocument();doc.Load(file);
+ var doc=new XmlDocument();doc.Load(file);FilterThroneDlc(doc);
  foreach(XmlNode node in doc.DocumentElement.ChildNodes)if(node is XmlElement){nodes.Add(node);if(node.Attributes?["Name"]==null)XmlInheritance.TryRegister(node,pack);}
 }
 XmlInheritance.Resolve();
@@ -78,11 +92,21 @@ void Schema(XmlNode node,Type type,bool root=false){
 foreach(var node in resolved)Schema(node,TypeFor(node.Name)??throw new Exception(node.Name),true);
 Check(true,"All inherited XML fields and enum values match installed RimWorld 1.7");
 foreach(string name in new[]{"SculptureSmall","SculptureLarge","SculptureGrand"})Reference(typeof(ThingDef),name);
-foreach(var (type,name) in refs){var def=(Def)Activator.CreateInstance(type);def.defName=name;typeof(DefDatabase<>).MakeGenericType(type).GetMethod("Add",new[]{type}).Invoke(null,new object[]{def});}
+foreach(var (type,name) in refs.Where(r=>!r.Item2.StartsWith("GrechkaTreasures_"))){var def=(Def)Activator.CreateInstance(type);def.defName=name;typeof(DefDatabase<>).MakeGenericType(type).GetMethod("Add",new[]{type}).Invoke(null,new object[]{def});}
 Fixture.Errors.Clear();
 var loaded=new List<Def>();
 foreach(var node in nodes.Where(n=>n.SelectSingleNode("defName")!=null)){Type type=TypeFor(node.Name);var method=typeof(DirectXmlToObject).GetMethods().Single(m=>m.Name=="ObjectFromXml"&&m.IsGenericMethodDefinition&&m.GetParameters().Length==2);var def=(Def)method.MakeGenericMethod(type).Invoke(null,new object[]{node,false});loaded.Add(def);}
-foreach(var group in loaded.GroupBy(d=>d.GetType())){var database=typeof(DefDatabase<>).MakeGenericType(group.Key);database.GetMethod("Clear").Invoke(null,null);foreach(var def in group)database.GetMethod("Add",new[]{group.Key}).Invoke(null,new object[]{def});}
+foreach (var group in loaded.GroupBy(d => d.GetType()))
+{
+ var database = typeof(DefDatabase<>).MakeGenericType(group.Key);
+ database.GetMethod("Clear").Invoke(null, null);
+ var add = database.GetMethod("Add", new[] { group.Key });
+ foreach (var def in group)
+ {
+  def.modContentPack = pack;
+  add.Invoke(null, new object[] { def });
+ }
+}
 // Restore external seeded references after replacing only the module's native definitions.
 foreach(var (type,name) in refs.Where(r=>!r.Item2.StartsWith("GrechkaTreasures_"))){var database=typeof(DefDatabase<>).MakeGenericType(type);if(database.GetMethod("GetNamedSilentFail").Invoke(null,new object[]{name})!=null)continue;var def=(Def)Activator.CreateInstance(type);def.defName=name;database.GetMethod("Add",new[]{type}).Invoke(null,new object[]{def});}
 DirectXmlCrossRefLoader.ResolveAllWantedCrossReferences(FailMode.LogErrors);
@@ -91,7 +115,40 @@ Check(Fixture.Errors.Count==0,"Native XML parser and cross references report no 
 var things=loaded.OfType<ThingDef>().ToDictionary(t=>t.defName);
 var recipes=loaded.OfType<RecipeDef>().ToList();
 var gems=new[]{"Diamond","Ruby","Sapphire","Emerald","Amethyst","Topaz"};
+var titleDefs = new XmlDocument();
+titleDefs.Load(Path.Combine(gameRoot.FullName, "Data", "Royalty", "Defs", "RoyalTitles", "RoyalTitles_Empire.xml"));
+var royalPatch = new XmlDocument();
+royalPatch.Load(Path.Combine(repo, "mods/GrechkaTreasures/Patches/RoyalThrones.xml"));
+var addThrones = DirectXmlToObject.ObjectFromXml<PatchOperation>(royalPatch.SelectSingleNode("Patch/Operation"), false);
+Check(addThrones.Apply(titleDefs), "Native XML patch adds jeweled thrones to the Empire title requirements");
+var requirements = titleDefs.SelectNodes("Defs/RoyalTitleDef/throneRoomRequirements/li[@Class='RoomRequirement_HasAssignedThroneAnyOf']/things[li='GrandThrone']");
+Check(requirements.Count > 0, "The installed Empire titles contain grand throne requirements");
+foreach (XmlNode list in requirements)
+    Check(gems.All(g => list.SelectSingleNode($"li[text()='GrechkaTreasures_{g}Throne']") != null),
+        "All six Thrones are valid in a native grand throne requirement");
+var withoutRoyalty = new XmlDocument();
+withoutRoyalty.LoadXml("<Defs/>");
+Check(addThrones.Apply(withoutRoyalty) && !withoutRoyalty.DocumentElement.HasChildNodes,
+    "The title patch is inert when the Royalty definitions are absent");
+const string legacyThrone = "<savegame><thing Class='Building'><def>GrechkaTreasures_SapphireThrone</def><id>example</id></thing><thing Class='Building'><def>DiningChair</def></thing></savegame>";
+var legacyPath = Path.Combine(temp, "legacy-throne.rws");
+File.WriteAllText(legacyPath, legacyThrone);
+var migration = moduleAssembly.GetType("Grechka.Treasures.RoyalThroneSave", true);
+harmony.CreateClassProcessor(migration).Patch();
+Scribe.loader.InitLoading(legacyPath);
+var saveRoot = (XmlNode)AccessTools.Field(typeof(ScribeLoader), "curXmlParent").GetValue(Scribe.loader);
+Check(saveRoot.SelectSingleNode("thing[1]/@Class").Value == (royalty ? typeof(Building_Throne).FullName : "Building")
+    && saveRoot.SelectSingleNode("thing[1]/id").InnerText == "example"
+    && saveRoot.SelectSingleNode("thing[2]/@Class").Value == "Building"
+    && File.ReadAllText(legacyPath) == legacyThrone,
+    "Native save loader upgrades the throne with Royalty and preserves ID, unrelated furniture and the source file");
+Scribe.loader.ForceStop();
 foreach(string gem in gems){
+ var throne = things["GrechkaTreasures_" + gem + "Throne"];
+ Check(throne.size == new IntVec2(1, 1) && throne.building.isSittable, "Existing throne footprint and seat are preserved for " + gem);
+ Check((throne.thingClass == typeof(Building_Throne) && throne.hasInteractionCell
+    && throne.comps.Any(c => c.compClass == typeof(CompAssignableToPawn_Throne))) == royalty,
+    "Royal throne ownership follows DLC availability for " + gem);
  foreach(string form in new[]{"Raw","Cut","Monolith","Ore"})Check(things.ContainsKey("GrechkaTreasures_"+gem+form),gem+" has "+form);
  foreach(string weapon in new[]{"Knife","Sword","Spear","Mace"}){
   var def=things["GrechkaTreasures_"+gem+weapon];
@@ -126,6 +183,7 @@ foreach(var t in makeable){
  DefDatabase<RecipeDef>.Add(r);
 }
 var bench=loaded.OfType<ThingDef>().Single(t=>t.defName=="GrechkaTreasures_JewelersBench");
+Check(made.All(r => r.recipeUsers.Contains(bench)), "Generated recipes point to the same loaded workbench instance");
 Check(bench.AllRecipes.Count(r=>r.defName.StartsWith("Make_GrechkaTreasures_"))==36,"All 36 generated recipes available through bench.AllRecipes");
 Check(Fixture.Errors.Count==0,"No logged native errors after recipe generation: "+string.Join(";",Fixture.Errors));
 
